@@ -1,0 +1,45 @@
+@import url('https://rsms.me/inter/inter.css');
+
+
+html, body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    outline: none;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+:focus-visible {
+    box-shadow: 0 0 0 2px var(--text-primary) !important;
+}
+
+.theme-light {
+    --accent: #0078d4;
+    --accent-hover: #005ca3;
+    --accent-active: #006bbd;
+
+    --background-primary: #fff;
+    --background-secondary: #f1f1f1;
+    --text-primary: #141414;
+    --text-secondary: #6f6f6f;
+
+    --acrylic-layer: linear-gradient(0deg, rgba(239, 239, 239, 0.3), rgba(239, 239, 239, 0.3)), rgba(239, 239, 239, 0.95) url('https://modernflyouts-community.github.io/assets/noise.png') center/196px repeat;
+}
+
+.theme-dark {
+    --accent: #0078d4;
+    --accent-hover: #005ca3;
+    --accent-active: #006bbd;
+
+    --background-primary: #000;
+    --background-secondary: #0f0f0f;
+    --text-primary: #f1f1f1;
+    --text-secondary: #a6a6a6;
+
+    --acrylic-layer: linear-gradient(0deg, rgba(45, 45, 45, 0.2), rgba(45, 45, 45, 0.2)), rgba(45, 45, 45, .95) url('https://modernflyouts-community.github.io/assets/noise.png') center/196px repeat;
+}
