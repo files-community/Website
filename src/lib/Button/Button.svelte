@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { ButtonStyles } from "$types";
+    import type { ButtonStyles } from "$types";
 
     export let style: ButtonStyles = "standard";
     export let type: string = "button";
