@@ -1,3 +1,5 @@
+@use "static/mixins";
+
 @import url("https://rsms.me/inter/inter.css");
 
 @font-face {
@@ -106,7 +108,7 @@
 
     // Corner Radius
     --control-corner-radius: 4px;
-    --overlay-corner-radius: 8px 8px 8px 8px;
+    --overlay-corner-radius: 8px;
 
     // Control Text
     --control-font-family: "Segoe UI", sans-serif;
@@ -348,7 +350,13 @@
 
 html, body {
     margin: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--background-secondary);
+}
+
+body {
+    @include mixins.flex($direction: column);
 }
 
 *, *::before, *::after {

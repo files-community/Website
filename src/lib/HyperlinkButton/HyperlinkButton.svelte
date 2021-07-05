@@ -5,7 +5,7 @@
     export {className as class};
 </script>
 
-<style lang="scss" src="./HyperlinkButton.scss" global></style>
+<style lang="scss" src="./HyperlinkButton.scss"></style>
 
 <a
     class={"hyperlink-button" + ` ${className}` || ""}

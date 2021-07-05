@@ -1,6 +1,6 @@
-import { writable } from 'svelte/store';
+import { readable, writable } from 'svelte/store';
 
-export const links = writable({
+export const links = readable({
     discordInvite: "G5aqYcgWxB",
     github: {
         owner: "files-community",
@@ -9,7 +9,7 @@ export const links = writable({
     }
 });
 
-export const docsMap = writable([
+export const docsMap = readable([
     {
         name: "Overview",
         path: ""
