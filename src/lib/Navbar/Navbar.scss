@@ -1,0 +1,86 @@
+@use "static/mixins";
+
+.navbar, .inner, .item {
+    @include mixins.flex($align: center);
+}
+
+.navbar {
+    user-select: none;
+    justify-content: space-between;
+    padding: 12px 18px;
+    background-color: var(--background-base);
+}
+
+.item {
+    color: var(--text-color-secondary);
+    background-color: var(--subtle-color-transparent);
+    border-radius: var(--control-corner-radius);
+    justify-content: center;
+    padding: 5px 11px 6px 11px;
+    margin: 0 4px;
+    text-decoration: none;
+    transition: 83ms linear background-color;
+    font: {
+        size: 0.85rem;
+        weight: normal;
+    }
+    &:hover {
+        background-color: var(--subtle-color-secondary);
+    }
+    &:active {
+        background-color: var(--subtle-color-tertiary);
+    }
+    &.selected {
+        background-color: var(--subtle-color-secondary);
+        &, & .icon {
+            color: var(--accent-text-default);
+        }
+    }
+}
+
+.icon {
+    color: var(--text-color-disabled);
+    margin-right: 0.25rem;
+    font: {
+        family: var(--font-family-icon);
+        size: 1rem;
+    }
+}
+
+.divider {
+    margin: 0 8px;
+    height: 30px;
+    border-left: 1px solid var(--subtle-color-secondary);
+}
+
+.logo {
+    width: 32px;
+    height: auto;
+    &-wrap {
+        margin-right: 8px;
+    }
+}
+
+.buttons {
+    display: flex;
+    a {
+        @include mixins.flex($align: center, $justify: center);
+        margin-left: 8px;
+        width: 36px;
+        height: 36px;
+        color: var(--text-color-secondary);
+        border-radius: var(--control-corner-radius);
+        text-decoration: none;
+        font: {
+            family: var(--font-family-icon);
+            size: 18px;
+            weight: normal;
+        }
+        &:hover {
+            background-color: var(--subtle-color-secondary);
+        }
+        &:active {
+            background-color: var(--subtle-color-tertiary);
+        }
+    }
+}

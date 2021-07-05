@@ -1,0 +1,71 @@
+@use "static/mixins";
+
+@keyframes selection-indicator {
+    0% {
+        transform: scaleY(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.tree-item {
+    @include mixins.flex($justify: between, $align: center);
+    text-decoration: none;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 36px;
+    margin-bottom: 4px;
+    padding: 0 10px;
+    cursor: default;
+    user-select: none;
+    color: var(--text-color-primary);
+    border-radius: var(--control-corner-radius);
+    font: {
+        size: var(--control-font-size);
+        family: var(--control-font-family);
+        weight: normal;
+    }
+    &:active,
+    &.selected:hover {
+        background-color: var(--subtle-color-tertiary);
+    }
+    &.selected {
+        color: var(--text-color-primary);
+        &::before {
+            content: "";
+            width: 3px;
+            height: 50%;
+            border-radius: 6px;
+            background-color: var(--accent-color-secondary);
+            position: absolute;
+            left: 0;
+            animation: selection-indicator 83ms linear;
+        }
+    }
+    &.expanded .icon {
+        transform: rotate(180deg);
+    }
+    &:hover,
+    &.selected,
+    &.selected:active {
+        background-color: var(--subtle-color-secondary);
+    }
+    &:active {
+        color: var(--text-color-secondary);
+    }
+    .icon {
+        transition: 166ms cubic-bezier(0, 0, 0, 1) transform;
+        font: {
+            family: var(--font-family-icon);
+            size: 12px;
+        }
+    }
+}
+
+.subtree-items {
+    padding-left: 16px;
+}

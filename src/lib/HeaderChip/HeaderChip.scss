@@ -1,0 +1,11 @@
+.header-chip {
+    padding: 4px 16px;
+    border-radius: 50px;
+    background-color: var(--subtle-color-secondary);
+    color: var(--text-color-secondary);
+    line-height: 18px;
+    font: {
+        size: 14px;
+        weight: 600;
+    }
+}

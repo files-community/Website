@@ -1,6 +1,4 @@
-/node_modules/
-# /public/build/
-
 .DS_Store
-/.idea
-/.vscode
+node_modules
+/.svelte-kit
+/package
