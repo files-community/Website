@@ -81,7 +81,7 @@
         padding-left: 2em;
     }
     li {
-        word-wrap: break-all;
+        word-break: break-all;
     }
     li + li {
         margin-top: 0.25em;
@@ -182,7 +182,6 @@
     pre {
         padding: 12px 16px;
         overflow: auto;
-        overflow: overlay;
         font-size: 15px;
         background-clip: padding-box;
         background-color: var(--CardBackgroundFillColorDefault);
@@ -206,10 +205,14 @@
 
     // Anchors
     a {
-        color: var(--text-link) !important;
-        text-decoration: none;
+        color: var(--accent-text-default);
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
         &:hover {
-            text-decoration: underline;
+            text-decoration: none;
+        }
+        &:active {
+            color: var(--accent-text-tertiary); 
         }
     }
 

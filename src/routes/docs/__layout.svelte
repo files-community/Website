@@ -11,7 +11,7 @@
             <TextBox type="search" placeholder="Search Documentation"/>
         </div>
         <div class="divider" role="separator"></div>
-        <TreeView tree={$docsMap} />
+        <TreeView tree={docsMap} />
     </aside>
     <article class="page markdown-body">
         <slot />
@@ -34,6 +34,9 @@
         flex: 1 1 auto;
         display: flex;
         background-color: var(--background-base);
+        :global(~ section) {
+            display: none !important;
+        }
     }
 
     .sidebar {

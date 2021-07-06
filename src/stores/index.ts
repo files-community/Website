@@ -1,15 +1,13 @@
-import { readable, writable } from 'svelte/store';
-
-export const links = readable({
+export const links = {
     discordInvite: "G5aqYcgWxB",
     github: {
         owner: "files-community",
         repo: "files",
         siteRepo: "website"
     }
-});
+};
 
-export const docsMap = readable([
+export const docsMap = [
     {
         name: "Overview",
         path: ""
@@ -66,4 +64,4 @@ export const docsMap = readable([
             }
         ]
     }
-]);
+];

@@ -1,4 +1,4 @@
-@use "static/mixins";
+@use "static/mixins" as *;
 
 .textbox-underline-frame {
     width: 100%;
@@ -12,7 +12,7 @@
 }
 
 .textbox-container {
-    @include mixins.flex($align: center);
+    @include flex($align: center);
     border-radius: var(--control-corner-radius);
     border: 1px solid var(--ControlStrokeColorDefault);
     background-color: var(--control-color-default);
@@ -87,11 +87,11 @@
 }
 
 .textbox-buttons {
-    @include mixins.flex($align: center);
+    @include flex($align: center);
 }
 
 .textbox-button {
-    @include mixins.flex($align: center, $justify: center);
+    @include flex($align: center, $justify: center);
     border: none;
     width: 30px;
     height: 22px;

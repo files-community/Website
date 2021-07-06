@@ -1,7 +1,7 @@
-@use "static/mixins";
+@use "static/mixins" as *;
 
 .component-showcase {
-    @include mixins.flex($direction: column, $wrap: true);
+    @include flex($direction: column, $wrap: true);
     height: 1665px;
     flex-wrap: wrap; 
     > * {

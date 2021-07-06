@@ -2,7 +2,7 @@
     import { links } from "$stores";
     import { Button, Navbar } from "$lib";
 
-    const { github, discordInvite } = $links;
+    const { github, discordInvite } = links;
 
     const navbarItems = [
         {

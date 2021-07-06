@@ -1,4 +1,4 @@
-@use "static/mixins";
+@use "static/mixins" as *;
 
 @import url("https://rsms.me/inter/inter.css");
 
@@ -356,7 +356,7 @@ html, body {
 }
 
 body {
-    @include mixins.flex($direction: column);
+    @include flex($direction: column);
 }
 
 *, *::before, *::after {

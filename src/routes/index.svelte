@@ -56,6 +56,7 @@
         </Button>
     </div>
 </PageSection>
+
 <PageSection id="design-section">
     <div class="design-section-content">
         <HeaderChip>Design</HeaderChip>
@@ -69,7 +70,7 @@
 </PageSection>
 
 <style lang="scss">
-    @use "static/mixins";
+    @use "static/mixins" as *;
 
     :global(.page-section) {
         h1 {
@@ -88,33 +89,35 @@
         }
     }
 
-    :global(#hero-section) {
-        @include mixins.flex($direction: column, $justify: center);
-        overflow: hidden;
-        height: 75vh;
-        min-height: 512px;
-        max-height: 1024px;
-        canvas {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            width: 100vh;
-            height: 100vh;
-            opacity: 0.5;
-            mask: radial-gradient(at bottom right, var(--background-base), transparent 70%);
-            z-index: -1;
-            pointer-events: none;
-        }
-        :global(.button) {
-            font: {
-                size: 18px;
-                family: var(--font-family-icon);
+    :global {
+        #hero-section {
+            @include flex($direction: column, $justify: center);
+            overflow: hidden;
+            height: 75vh;
+            min-height: 512px;
+            max-height: 1024px;
+            canvas {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 100vh;
+                height: 100vh;
+                opacity: 0.5;
+                mask: radial-gradient(at bottom right, var(--background-base), transparent 70%);
+                z-index: -1;
+                pointer-events: none;
+            }
+            .button {
+                font: {
+                    size: 18px;
+                    family: var(--font-family-icon);
+                }
             }
         }
     }
 
     .hero-button-inner {
-        @include mixins.flex($direction: column);
+        @include flex($direction: column);
         font-size: 10px;
         line-height: normal;
         margin-left: 8px;
@@ -134,7 +137,7 @@
     }
 
     :global(#design-section) {
-        @include mixins.flex($align: center);
+        @include flex($align: center);
         min-height: 600px;
         background-color: var(--background-base);
         overflow: hidden;

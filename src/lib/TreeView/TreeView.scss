@@ -1,4 +1,4 @@
-@use "static/mixins";
+@use "static/mixins" as *;
 
 @keyframes selection-indicator {
     0% {
@@ -12,7 +12,7 @@
 }
 
 .tree-item {
-    @include mixins.flex($justify: between, $align: center);
+    @include flex($justify: between, $align: center);
     text-decoration: none;
     box-sizing: border-box;
     position: relative;

@@ -1,7 +1,7 @@
-@use "static/mixins";
+@use "static/mixins" as *;
 
 .navbar, .inner, .item {
-    @include mixins.flex($align: center);
+    @include flex($align: center);
 }
 
 .navbar {
@@ -65,7 +65,7 @@
 .buttons {
     display: flex;
     a {
-        @include mixins.flex($align: center, $justify: center);
+        @include flex($align: center, $justify: center);
         margin-left: 8px;
         width: 36px;
         height: 36px;
