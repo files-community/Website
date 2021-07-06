@@ -2,11 +2,11 @@
 
 Files allows you to customize the application with custom skins by modifying xaml resource dictionaries, this allows users to override the default brushes used throughout the app.
 
-Skins are loaded from the ```Skins``` folder in the app's ```LocalState``` folder. A drop-down (Custom skin) is located in Appearance settings that allows you to select a custom skin.
+Skins are loaded from the `Skins` folder in the app's `LocalState` folder. A drop-down (Custom skin) is located in Appearance settings that allows you to select a custom skin.
 
 ### Quick start
 
-1. Open your text editor of choice, and paste in the template located below. Then, save the file as ```%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Skins\test1.xaml```.
+1. Open your text editor of choice, and paste in the template located below. Then, save the file as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Skins\test1.xaml`.
 
 2. Change some of the color values around.
 
@@ -19,7 +19,7 @@ Files will now use your custom skin. If you add more skins, you can switch betwe
 Default template
 </summary>
 
-```
+```xml
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"

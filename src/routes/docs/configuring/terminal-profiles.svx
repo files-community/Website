@@ -8,7 +8,7 @@ _Profiles will only function, if the corresponding terminals are installed. Star
 
 Cmd:
 
-```
+```json
 {
       "name": "CMD",
       "path": "cmd.exe",
@@ -19,7 +19,7 @@ Cmd:
 
 PowerShell
 
-```
+```json
 {
       "name": "PowerShell",
       "path": "powershell.exe",
@@ -30,7 +30,7 @@ PowerShell
 
 PowerShell Core:
 
-```
+```json
 {
       "name": "PowerShell Core",
       "path": "pwsh.exe",
@@ -41,7 +41,7 @@ PowerShell Core:
 
 Windows Terminal:
 
-```
+```json
 {
       "name": "Windows Terminal",
       "path": "wt.exe",
@@ -52,7 +52,7 @@ Windows Terminal:
 
 Fluent Terminal:
 
-```
+```json
 {
       "name": "Fluent Terminal",
       "path": "flute.exe",

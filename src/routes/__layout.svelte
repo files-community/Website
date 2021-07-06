@@ -39,4 +39,7 @@
 <Navbar items={navbarItems} buttons={navbarButtons} />
 <slot />
 
-<style lang="scss" global src="../lib/_global.scss"></style>
+<style lang="scss" global>
+    @use "static/global";
+    @use "static/markdown";
+</style>

@@ -3,7 +3,7 @@
 **Option 1: using an AutoHotkey script**
 
 You can configure Files to launch using the Win + E shortcut by using this [AutoHotKey](https://www.autohotkey.com/) script:
-```
+```autohotkey
 ; Win + E
 #e::
 FilesTitle := "Files ahk_class ApplicationFrameWindow ahk_exe ApplicationFrameHost.exe"

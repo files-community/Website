@@ -1,49 +1,49 @@
 <script lang="ts">
+    import { page } from "$app/stores";
+
     import { docsMap } from "$stores";
     import { TreeView, TextBox } from "$lib";
 </script>
 
-<main class="docs-body">
-    <aside class="docs-sidebar">
-        <div class="docs-search-container">
+<section class="docs">
+    <aside class="sidebar">
+        <div class="search">
             <TextBox type="search" placeholder="Search Documentation"/>
         </div>
         <div class="divider" role="separator"></div>
         <TreeView tree={$docsMap} />
     </aside>
-    <article class="docs-page">
+    <article class="page markdown-body">
         <slot />
     </article>
-</main>
+</section>
 
 <style lang="scss">
-    .docs- {
-        &body {
-            flex: 1 1 auto;
-            display: flex;
-            background-color: var(--background-base);
-            overflow: auto;
-        }
-        &search-container {
-            padding: 0 8px;
-        }
-        &sidebar {
-            flex: 0 0 auto;
-            width: 316px;
-            padding: 8px;
-            position: sticky;
-            top: 0;
-        }
-        &page {
-            padding: 16px;
-            flex: 1 1 auto;
-            height: fit-content;
-            min-height: 100%;
-            background-clip: padding-box;
-            background-color: var(--background-tertiary);
-            border-top-left-radius: var(--overlay-corner-radius);
-            border: 1px solid var(--CardStrokeColorDefault);
-        }
+    .page {
+        padding: 48px;
+        flex: 1 1 auto;
+        overflow: auto;
+        background-clip: padding-box;
+        background-color: var(--background-tertiary);
+        border-top-left-radius: var(--overlay-corner-radius);
+        border: 1px solid var(--CardStrokeColorDefault);
+    }
+
+    .docs {
+        overflow: hidden;
+        flex: 1 1 auto;
+        display: flex;
+        background-color: var(--background-base);
+    }
+
+    .sidebar {
+        flex: 0 0 auto;
+        width: 316px;
+        padding: 8px;
+    }
+
+    .search {
+        padding: 0 8px;
     }
 
     .divider {
