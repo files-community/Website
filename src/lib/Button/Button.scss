@@ -3,11 +3,13 @@
  */
 
 .button {
+    -webkit-user-drag: none;
     box-sizing: border-box;
     user-select: none;
     display: inline-flex;
     align-items: center;
     text-align: left;
+    text-decoration: none;
     word-break: break-word;
     border: 1px solid;
     border-radius: var(--control-corner-radius);
@@ -44,7 +46,8 @@
             }
 
             // Disabled state
-            &:disabled {
+            &:disabled,
+            &.disabled {
                 background-color: var(--control-color-disabled);
                 border-color: var(--ControlStrokeColorDefault);
                 color: var(--text-color-disabled);
@@ -72,7 +75,8 @@
             }
 
             // Disabled state
-            &:disabled {
+            &:disabled,
+            &.disabled {
                 color: var(--accent-text-contrast-disabled);
                 background-color: var(--AccentFillColorDisabled);
                 border-color: transparent;

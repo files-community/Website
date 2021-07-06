@@ -12,7 +12,7 @@
     let className = undefined;
     export { className as class };
 
-    let input;
+    let input: HTMLInputElement;
 
     const dispatch = createEventDispatcher();
 

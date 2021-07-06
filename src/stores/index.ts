@@ -1,5 +1,6 @@
 export const links = {
-    discordInvite: "G5aqYcgWxB",
+    discord: "G5aqYcgWxB",
+    storeId: "9nghp3dx8hdx",
     github: {
         owner: "files-community",
         repo: "files",

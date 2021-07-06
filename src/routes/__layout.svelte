@@ -2,7 +2,7 @@
     import { links } from "$stores";
     import { Button, Navbar } from "$lib";
 
-    const { github, discordInvite } = links;
+    const { github, discord } = links;
 
     const navbarItems = [
         {
@@ -25,7 +25,7 @@
     const navbarButtons = [
         {
             label: "Discord",
-            href: `https://discord.gg/${discordInvite}`,
+            href: `https://discord.gg/${discord}`,
             icon: ""
         },
         {

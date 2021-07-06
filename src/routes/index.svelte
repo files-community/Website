@@ -1,12 +1,23 @@
 <script lang="ts">
     import { onMount } from "svelte";
 
+    import { links } from "$stores";
     import { PageSection, Button, HyperlinkButton, ComponentShowcase, HeaderChip } from "$lib";
+    import { getReleaseVersion } from "./fetchHomepageData";
 
-    let canvas;
-    let componentShowcase;
+    let isWindows;
+    let version;
+    let canvas: HTMLCanvasElement;
 
-    onMount(async () => {
+    onMount(async() => {
+
+        // Platform detection
+        isWindows = navigator.platform === "Win32";
+
+        // Fetch release version
+        let version = await getReleaseVersion();
+
+        // Canvas
         let time = 0;
         const context = canvas.getContext('2d');
         const getColor = (x, y, r, g, b) => {
@@ -40,14 +51,23 @@
     <h1>Files</h1>
     <p>A modern file explorer that pushes the boundaries of the platform.</p>
     <div>
-        <Button style="accent">
+        <Button
+            href={isWindows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
+            target="_blank"
+            rel="noreferrer noopener"
+            style="accent"
+        >
             
             <div class="hero-button-inner">
-                <h5>Download v2.0.0</h5>
+                <h5>Download {version || ""}</h5>
                 <span>Get it from Microsoft</span>
             </div>
         </Button>
-        <Button>
+        <Button
+            href="https://github.com/{links.github.owner}/{links.github.repo}/"
+            target="_blank"
+            rel="noreferrer noopener"
+        >
             
             <div class="hero-button-inner">
                 <h5>View GitHub</h5>
@@ -64,7 +84,7 @@
         <p>Files utilizes the tried and true Fluent Design system in it's UI. All elements of the application are consistent and beautiful native components.</p>
         <HyperlinkButton>Learn More</HyperlinkButton>
     </div>
-    <div class="component-showcase-outer" bind:this={componentShowcase}>
+    <div class="component-showcase-outer">
         <ComponentShowcase theme="light" />
     </div>
 </PageSection>
