@@ -160,6 +160,7 @@
             background-color: var(--background-base);
             overflow: hidden;
             .design-section-content {
+                @include flex($direction: column);
                 width: 45%;
                 min-width: 478px;
             }
