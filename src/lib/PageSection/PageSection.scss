@@ -2,4 +2,25 @@
     position: relative;
     z-index: 1;
     padding: 72px;
+
+    h1, h2, h3 {
+        margin: 0;
+        font-weight: 600;
+        color: var(--text-color-primary);
+    }
+    h1 {
+        font-size: 72px;
+    }
+    h2 {
+        font-size: 48px;
+    }
+    h3 {
+        font-size: 32px;
+    }
+    p {
+        margin-bottom: 24px;
+        margin-top: 12px;
+        font-size: 1rem;
+        color: var(--text-color-tertiary);
+    }
 }

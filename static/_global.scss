@@ -218,6 +218,12 @@
         --system-background-critical: #FDE7E9;
         --system-background-neutral: #00000006;
 
+        // Elevation
+        --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.04);
+        --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.14);
+        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474);
+        --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474); 
+
         // Accent Colors
         --accent-color-default: var(--accent-color-dark-1);
         --accent-color-secondary: var(--accent-color-dark-1-90);
@@ -330,6 +336,12 @@
         --system-background-caution: #433519;
         --system-background-critical: #442726;
         --system-background-neutral: #FFFFFF08;
+
+        // Elevation
+        --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.13);
+        --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.26);
+        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
+        --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
         
         // Accent Colors
         --accent-color-default: var(--accent-color-light-2);

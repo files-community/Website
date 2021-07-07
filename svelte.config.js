@@ -23,6 +23,7 @@ const config = {
                     "$routes": path.resolve(__dirname, "./src/routes"),
                     "$stores": path.resolve(__dirname, "./src/stores"),
                     "$types": path.resolve(__dirname, "./src/types"),
+                    "$static": path.resolve(__dirname, "./static")
                 }
             }
         },

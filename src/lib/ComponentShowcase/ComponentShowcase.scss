@@ -1,67 +1,42 @@
 @use "static/mixins" as *;
 
 .component-showcase {
-    @include flex($direction: column, $wrap: true);
-    height: 1665px;
-    flex-wrap: wrap; 
-    > * {
-        position: relative;
+    @include flex($align: center, $gap: 16px);
+    .column {
+        @include flex($direction: column, $gap: 16px);
+        &.left {
+            align-items: flex-end;
+        }
+        &.right {
+            align-items: flex-start;
+        }
+    }
+    :global(svg) {
+        border-radius: var(--overlay-corner-radius);
+        box-shadow: var(--flyout-elevation);
+        &.InfoBar {
+            border-radius: 0;
+            box-shadow: none;
+        }
     }
 }
 
-.ContentDialog {
-    transform: translateX(-48px);
-    bottom: 32px;
-}
+:global {
+    @media screen and (max-width: 1224px) {
+        .DatePicker,
+        .TeachingTip {
+            visibility: hidden;
+        }
+    }
 
-.DatePicker {
-    bottom: 116px;
-    left: 26px;
-}
-
-.ComboBox {
-    right: -56px;
-}
-
-.RichEditBox {
-    right: 128px;
-    bottom: 194px; 
-}
-
-.InkToolbar {
-    right: 104px;
-    bottom: 155px;
-}
-
-.TeachingTip {
-    bottom: 120px;
-    margin-bottom: 258px;
-}
-
-.InfoBar {
-    bottom: 170px;
-    right: 110px;
-}
-
-.NavigationView {
-    bottom: 185px;
-    right: 150px;
-}
-
-@media screen and (max-width: 1224px) {
-    .DatePicker,
-    .TeachingTip {
-        visibility: hidden;
+    @media screen and (max-width: 856px) {
+        .NavigationView {
+            visibility: hidden;
+        }
     }
 }
 
-@media screen and (max-width: 968px) {
-    .ContentDialog {
-        visibility: hidden;
-    }
-}
-
-@media screen and (max-width: 832px) {
+@media screen and (max-width: 620px) {
     .component-showcase {
         display: none;
     }

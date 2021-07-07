@@ -32,6 +32,7 @@
         background-color: var(--subtle-color-tertiary);
     }
     &.selected {
+        pointer-events: none;
         background-color: var(--subtle-color-secondary);
         color: var(--accent-text-default);
     }

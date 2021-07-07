@@ -88,8 +88,8 @@
 <PageSection id="design-section">
     <div class="design-section-content">
         <HeaderChip>Design</HeaderChip>
-        <h1>Consistent</h1>
-        <p>Files utilizes the tried and true Fluent Design system in it's UI. All elements of the application are consistent and beautiful native components.</p>
+        <h2>Power meets beauty.</h2>
+        <p>Explore a beautiful windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
         <HyperlinkButton
             href="https://www.microsoft.com/design/fluent/"
             target="_blank"
@@ -98,30 +98,11 @@
             Learn More
         </HyperlinkButton>
     </div>
-    <div class="component-showcase-outer">
-        <ComponentShowcase theme="light" />
-    </div>
+    <ComponentShowcase />
 </PageSection>
 
 <style lang="scss">
     @use "static/mixins" as *;
-
-    :global(.page-section) {
-        h1 {
-            margin: 0;
-            color: var(--text-color-primary);
-            font: {
-                size: 72px;
-                weight: 600;
-            }
-        }
-        p {
-            margin-bottom: 24px;
-            margin-top: 12px;
-            font-size: 1rem;
-            color: var(--text-color-tertiary);
-        }
-    }
 
     :global {
         #hero-section {
@@ -172,27 +153,27 @@
         }
     }
 
-    :global(#design-section) {
-        @include flex($align: center);
-        min-height: 600px;
-        background-color: var(--background-base);
-        overflow: hidden;
-        .design-section-content {
-            width: 45%;
-            min-width: 478px;
-        }
-        @media screen and (max-width: 832px) {
+    :global {
+        #design-section {
+            @include flex($align: center);
+            min-height: 600px;
+            background-color: var(--background-base);
+            overflow: hidden;
             .design-section-content {
-                width: 100%;
-                min-width: unset;
+                width: 45%;
+                min-width: 478px;
+            }
+            @media screen and (max-width: 832px) {
+                .design-section-content {
+                    width: 100%;
+                    min-width: unset;
+                }
+            }
+            .component-showcase {
+                position: absolute;
+                right: -400px;
+                transform: rotate(30deg);
             }
         }
-    }
-
-    .component-showcase-outer {
-        position: absolute;
-        right: 150px;
-        margin-top: 420px;
-        transform: rotate(30deg);
     }
 </style>

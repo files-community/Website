@@ -27,10 +27,10 @@
 	} @else if $align == evenly { align-content: space-evenly }
 
 	// flex-wrap
-	@if $wrap { flex-wrap: wrap } @else { flex-wrap: nowrap }
+	@if $wrap { flex-wrap: wrap }
 
 	// gap
-	@if $gap { gap: 10px }
+	@if $gap { gap: $gap }
 }
 
 @mixin icon($size: 14px) {
