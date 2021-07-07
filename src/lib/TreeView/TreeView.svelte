@@ -4,7 +4,7 @@
     import { cubicInOut } from 'svelte/easing';
 
     import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
-    
+
     export let tree = [];
 
     $: expansionState = {};

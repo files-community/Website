@@ -90,7 +90,13 @@
         <HeaderChip>Design</HeaderChip>
         <h1>Consistent</h1>
         <p>Files utilizes the tried and true Fluent Design system in it's UI. All elements of the application are consistent and beautiful native components.</p>
-        <HyperlinkButton>Learn More</HyperlinkButton>
+        <HyperlinkButton
+            href="https://www.microsoft.com/design/fluent/"
+            target="_blank"
+            rel="noreferrer noopener"
+        >
+            Learn More
+        </HyperlinkButton>
     </div>
     <div class="component-showcase-outer">
         <ComponentShowcase theme="light" />
@@ -137,6 +143,11 @@
             }
             .button svg {
                 @include icon($size: 18px);
+            }
+        }
+        @media (prefers-color-scheme: dark) {
+            #hero-section canvas {
+                opacity: 0.15;
             }
         }
     }

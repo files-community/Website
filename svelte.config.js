@@ -1,6 +1,6 @@
 import path from "path";
 
-import adapter from "@sveltejs/adapter-node";
+import adapter from '@sveltejs/adapter-netlify';
 
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
@@ -16,6 +16,7 @@ const config = {
     ],
 	kit: {
 		target: "body",
+        router: false,
         vite: {
             resolve: {
                 alias: {
@@ -25,14 +26,7 @@ const config = {
                 }
             }
         },
-        adapter: adapter({
-			out: "build",
-			precompress: false,
-			env: {
-				host: "0.0.0.0",
-				port: "PORT",
-			},
-		}),
+        adapter: adapter()
 	},
     preprocess: [
         mdsvex({}),
