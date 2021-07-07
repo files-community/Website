@@ -5,35 +5,38 @@
     import { PageSection, Button, HyperlinkButton, ComponentShowcase, HeaderChip } from "$lib";
     import { getReleaseVersion } from "./fetchHomepageData";
 
-    let isWindows;
-    let version;
+    import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
+    import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
+
+    let windows: boolean;
+    let version: string;
     let canvas: HTMLCanvasElement;
 
     onMount(async() => {
 
         // Platform detection
-        isWindows = navigator.platform === "Win32";
+        windows = navigator.platform === "Win32";
 
         // Fetch release version
-        let version = await getReleaseVersion();
+        version = await getReleaseVersion();
 
-        // Canvas
-        let time = 0;
-        const context = canvas.getContext('2d');
-        const getColor = (x, y, r, g, b) => {
+        // Rainbow canvas
+        let time: number = 0;
+        const context: CanvasRenderingContext2D = canvas.getContext('2d');
+        const getColor = (x: number, y: number, r: number, g: number, b: number): void => {
             context.fillStyle = `rgb(${r}, ${g}, ${b})`;
             context.fillRect(x, y, 1, 1);
         }
-        const red = (x, y, t) => {
+        const red = (x: number, y: number, t: number): number => {
             return (Math.floor(192 + 64 * Math.cos((x * x - y * y) / 300 + t)));
         }
-        const green = (x, y, t) => {
+        const green = (x: number, y: number, t: number): number => {
             return (Math.floor(192 + 64 * Math.sin((x * x * Math.cos(t / 4) + y * y * Math.sin(t / 3)) / 300)));
         }
-        const blue = (x, y, t) => {
+        const blue = (x: number, y: number, t: number): number => {
             return (Math.floor(192 + 64 * Math.sin(5 * Math.sin(t / 9) + ((x - 100) * (x - 100) + (y - 100) * (y - 100)) / 1100)));
         }
-        const run = () => {
+        const run = (): void => {
             for (let x = 0; x <= 35; x++) {
                 for (let y = 0; y <= 35; y++) {
                     getColor(x, y, red(x, y, time), green(x, y, time), blue(x, y, time));
@@ -46,18 +49,23 @@
     });
 </script>
 
+<svelte:head>
+    <title>Files</title>
+    <meta property="og:title" content="Files">
+</svelte:head>
+
 <PageSection id="hero-section">
     <canvas width="32" height="32" bind:this={canvas}/>
     <h1>Files</h1>
     <p>A modern file explorer that pushes the boundaries of the platform.</p>
     <div>
         <Button
-            href={isWindows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
+            href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
             target="_blank"
             rel="noreferrer noopener"
             style="accent"
         >
-            
+            {@html ArrowDownload}
             <div class="hero-button-inner">
                 <h5>Download {version || ""}</h5>
                 <span>Get it from Microsoft</span>
@@ -68,7 +76,7 @@
             target="_blank"
             rel="noreferrer noopener"
         >
-            
+            {@html Code}
             <div class="hero-button-inner">
                 <h5>View GitHub</h5>
                 <span>Files is open source!</span>
@@ -127,11 +135,8 @@
                 z-index: -1;
                 pointer-events: none;
             }
-            .button {
-                font: {
-                    size: 18px;
-                    family: var(--font-family-icon);
-                }
+            .button svg {
+                @include icon($size: 18px);
             }
         }
     }

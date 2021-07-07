@@ -33,18 +33,11 @@
     }
     &.selected {
         background-color: var(--subtle-color-secondary);
-        &, & .icon {
-            color: var(--accent-text-default);
-        }
+        color: var(--accent-text-default);
     }
-}
-
-.icon {
-    color: var(--text-color-disabled);
-    margin-right: 0.25rem;
-    font: {
-        family: var(--font-family-icon);
-        size: 1rem;
+    :global(svg) {
+        @include icon($size: 16px);
+        margin-right: 4px;
     }
 }
 
@@ -72,16 +65,14 @@
         color: var(--text-color-secondary);
         border-radius: var(--control-corner-radius);
         text-decoration: none;
-        font: {
-            family: var(--font-family-icon);
-            size: 18px;
-            weight: normal;
-        }
         &:hover {
             background-color: var(--subtle-color-secondary);
         }
         &:active {
             background-color: var(--subtle-color-tertiary);
+        }
+        :global(svg) {
+            @include icon($size: 18px);
         }
     }
 }

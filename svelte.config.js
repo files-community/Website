@@ -19,6 +19,7 @@ const config = {
         vite: {
             resolve: {
                 alias: {
+                    "$routes": path.resolve(__dirname, "./src/routes"),
                     "$stores": path.resolve(__dirname, "./src/stores"),
                     "$types": path.resolve(__dirname, "./src/types"),
                 }

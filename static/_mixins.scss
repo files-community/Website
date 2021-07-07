@@ -32,3 +32,9 @@
 	// gap
 	@if $gap { gap: 10px }
 }
+
+@mixin icon($size: 14px) {
+    width: $size;
+    height: auto;
+    fill: currentColor;
+}

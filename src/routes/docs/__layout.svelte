@@ -5,6 +5,11 @@
     import { TreeView, TextBox } from "$lib";
 </script>
 
+<svelte:head>
+    <title>Files - Docs</title>
+    <meta property="og:title" content="Files - Themes">
+</svelte:head>
+
 <section class="docs">
     <aside class="sidebar">
         <div class="search">
@@ -34,9 +39,6 @@
         flex: 1 1 auto;
         display: flex;
         background-color: var(--background-base);
-        :global(~ section) {
-            display: none !important;
-        }
     }
 
     .sidebar {

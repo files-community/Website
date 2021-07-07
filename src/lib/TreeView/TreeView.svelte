@@ -2,6 +2,9 @@
     import { page } from "$app/stores";
     import { slide } from 'svelte/transition';
     import { cubicInOut } from 'svelte/easing';
+
+    import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
+    
     export let tree = [];
 
     $: expansionState = {};
@@ -21,7 +24,7 @@
         <div class="subtree">
             <a class="tree-item" class:expanded={expansionState[name]} class:selected={`/docs${path}` === $page.path} href="/docs{path}" on:click={toggleExpansion(name)}>
                 <span>{name}</span>
-                <span class="icon"></span>
+                {@html ChevronDown}
             </a>
             {#if expansionState[name]}
                 <div class="subtree-items" transition:slide="{{duration: 250, easing: cubicInOut}}">

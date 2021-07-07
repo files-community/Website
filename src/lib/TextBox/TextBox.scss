@@ -33,11 +33,13 @@
             }
         }
     }
-    &.disabled {
-        pointer-events: none;
-        background-color: var(--ControlFillColorDisabled);
-        + .textbox-underline {
-            display: none;
+    :global {
+        &.disabled {
+            pointer-events: none;
+            background-color: var(--ControlFillColorDisabled);
+            + .textbox-underline {
+                display: none;
+            }
         }
     }
 }

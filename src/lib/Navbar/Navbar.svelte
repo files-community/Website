@@ -22,10 +22,10 @@
                     class:selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
                     href={path}
                     target={external ? "_blank" :  ""}
-                    rel={external ? "noreferrer noopener" : ""}
+                    rel={external ? "noreferrer noopener" : "prefetch"}
                 >
                     {#if icon}
-                        <span class="icon">{icon}</span>
+                        {@html icon}
                     {/if}
                     <span>{name}</span>
                 </a>
@@ -35,7 +35,7 @@
     <div class="buttons">
         {#each buttons as { icon, href, label }}
             <a {href} aria-label={label} title={label} target="_blank" rel="noreferrer noopener">
-                {icon}
+                {@html icon}
             </a>
         {/each}
     </div>
