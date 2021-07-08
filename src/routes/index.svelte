@@ -56,32 +56,51 @@
 
 <PageSection id="hero-section">
     <canvas width="32" height="32" bind:this={canvas}/>
-    <h1>Files</h1>
-    <p>A modern file explorer that pushes the boundaries of the platform.</p>
-    <div>
-        <Button
-            href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
-            target="_blank"
-            rel="noreferrer noopener"
-            style="accent"
-        >
-            {@html ArrowDownload}
-            <div class="hero-button-inner">
-                <h5>Download {version || ""}</h5>
-                <span>Get it from Microsoft</span>
-            </div>
-        </Button>
-        <Button
-            href="https://github.com/{links.github.owner}/{links.github.repo}/"
-            target="_blank"
-            rel="noreferrer noopener"
-        >
-            {@html Code}
-            <div class="hero-button-inner">
-                <h5>View GitHub</h5>
-                <span>Files is open source!</span>
-            </div>
-        </Button>
+    <div class="hero-left">
+        <h1>Files</h1>
+        <p>A modern file explorer that pushes the boundaries of the platform.</p>
+        <div>
+            <Button
+                href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
+                target="_blank"
+                rel="noreferrer noopener"
+                style="accent"
+            >
+                {@html ArrowDownload}
+                <div class="hero-button-inner">
+                    <h5>Download {version || ""}</h5>
+                    <span>Get it from Microsoft</span>
+                </div>
+            </Button>
+            <Button
+                href="https://github.com/{links.github.owner}/{links.github.repo}/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                {@html Code}
+                <div class="hero-button-inner">
+                    <h5>View GitHub</h5>
+                    <span>Files is open source!</span>
+                </div>
+            </Button>
+        </div>
+    </div>
+    <div class="hero-right">
+        <picture>
+            <source
+                media="(prefers-color-scheme: dark)" 
+                srcset="static/screenshots/hero-dark.png"
+            >
+            <source
+                media="(prefers-color-scheme: light)"
+                srcset="static/screenshots/hero-light.png"
+            >
+            <img
+                class="hero-screenshot"
+                src="static/screenshots/hero-light.png"
+                alt="Files new tab screenshot"
+            >
+        </picture>
     </div>
 </PageSection>
 
@@ -106,7 +125,8 @@
 
     :global {
         #hero-section {
-            @include flex($direction: column, $justify: center);
+            @include flex($direction: row);
+            gap: 4rem;
             overflow: hidden;
             height: 75vh;
             min-height: 512px;
@@ -117,7 +137,7 @@
                 right: 0;
                 width: 100vh;
                 height: 100vh;
-                opacity: 0.5;
+                opacity: 0.8;
                 mask: radial-gradient(at bottom right, var(--background-base), transparent 70%);
                 z-index: -1;
                 pointer-events: none;
@@ -125,10 +145,32 @@
             .button svg {
                 @include icon($size: 18px);
             }
+
+            .hero-left {
+                @include flex($direction: column, $justify: center);
+                max-width: 40%;
+                height: auto;
+            }
+
+            .hero-right {
+                max-width: 60%;
+            
+                .hero-screenshot {
+                    width: 55vw;
+                    height: auto;
+                    background-color: var(--control-color-disabled);
+                    border: 1px solid var(--SurfaceStrokeColorDefault);
+                    border-radius: 7px;
+                    box-sizing: border-box;
+                    backdrop-filter: blur(200px) saturate(150%);
+                    -webkit-backdrop-filter: blur(200px) saturate(150%);
+                    box-shadow: var(--window-elevation);
+                }
+            }
         }
         @media (prefers-color-scheme: dark) {
             #hero-section canvas {
-                opacity: 0.15;
+                opacity: 0.4;
             }
         }
     }
