@@ -1,11 +1,12 @@
 <script lang="ts">
     import { onMount } from "svelte";
-
+    
     import CalendarView_light from "$static/exported/CalendarView_light.svg?raw";
     import CalendarView_dark from "$static/exported/CalendarView_dark.svg?raw";
     import ContentDialog_light from "$static/exported/ContentDialog_light.svg?raw";
     import ContentDialog_dark from "$static/exported/ContentDialog_dark.svg?raw";
     import DatePicker_light from "$static/exported/DatePicker_light.svg?raw";
+    import DatePicker_dark from "$static/exported/DatePicker_dark.svg?raw";
     import InfoBar_dark from "$static/exported/InfoBar_dark.svg?raw";
     import InfoBar_light from "$static/exported/InfoBar_light.svg?raw";
     import InkToolbar_dark from "$static/exported/InkToolbar_dark.svg?raw";
@@ -15,10 +16,10 @@
     import TeachingTip_dark from "$static/exported/TeachingTip_dark.svg?raw";
     import TeachingTip_light from "$static/exported/TeachingTip_light.svg?raw";
 
-    let theme;
+    let theme = "light";
 
     onMount(() => {
-        theme = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
     });
 </script>
 
@@ -42,7 +43,7 @@
             <div class="column left">
                 {@html CalendarView_dark}
                 {@html ContentDialog_dark}
-                {@html DatePicker_light}
+                {@html DatePicker_dark}
                 {@html TeachingTip_dark}
             </div>
             <div class="column right">

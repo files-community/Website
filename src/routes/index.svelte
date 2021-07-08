@@ -13,7 +13,7 @@
     let canvas: HTMLCanvasElement;
 
     onMount(async() => {
-
+        
         // Platform detection
         windows = navigator.platform === "Win32";
 
@@ -58,7 +58,7 @@
     <canvas width="32" height="32" bind:this={canvas}/>
     <h1>Files</h1>
     <p>A modern file explorer that pushes the boundaries of the platform.</p>
-    <div>
+    <div class="hero-buttons">
         <Button
             href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
             target="_blank"
@@ -109,7 +109,7 @@
             @include flex($direction: column, $justify: center);
             overflow: hidden;
             height: 75vh;
-            min-height: 512px;
+            min-height: 572px;
             max-height: 1024px;
             canvas {
                 position: absolute;
@@ -131,6 +131,10 @@
                 opacity: 0.15;
             }
         }
+    }
+
+    .hero-buttons {
+        @include flex($wrap: true, $gap: 5px);
     }
 
     .hero-button-inner {
