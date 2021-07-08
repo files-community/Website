@@ -27,7 +27,7 @@ const config = {
                 }
             }
         },
-        adapter: adapterNetlify()
+        adapter: adapter()
 	},
     preprocess: [
         mdsvex({}),
