@@ -4,7 +4,6 @@ import adapter from '@sveltejs/adapter-netlify';
 
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
-import { mdsvex } from "mdsvex";
 
 const __dirname = path.resolve();
 
@@ -30,7 +29,6 @@ const config = {
         adapter: adapter()
 	},
     preprocess: [
-        mdsvex({}),
         sveltePreprocess({
             defaults: {
                 style: "scss"
