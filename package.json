@@ -12,8 +12,8 @@
     },
     "devDependencies": {
         "@fluentui/svg-icons": "^1.1.135",
-        "@sveltejs/adapter-netlify": "^1.0.0-next.19",
-        "@sveltejs/kit": "^1.0.0-next.120",
+        "@sveltejs/adapter-netlify": "^1.0.0",
+        "@sveltejs/kit": "^1.0.0",
         "@typescript-eslint/eslint-plugin": "^4.19.0",
         "@typescript-eslint/parser": "^4.19.0",
         "autoprefixer": "^10.2.6",
