@@ -2,8 +2,6 @@
     import { onMount } from "svelte";
     
     import { page } from "$app/stores";
-    import { slide } from 'svelte/transition';
-    import { cubicInOut } from 'svelte/easing';
 
     import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 
@@ -14,29 +12,26 @@
     onMount(() => {
         treeViewState = JSON.parse(localStorage.getItem("treeViewState") ?? "{}");
     });
+    
+    const id = s => s.toLowerCase().split(" ").join("-");
 
-    function toggleExpansion(path) {
-        treeViewState[path] = !treeViewState[path];
+    function toggleExpansion(name) {
+        treeViewState[id(name)] = !treeViewState[id(name)];
         localStorage.setItem("treeViewState", JSON.stringify(treeViewState));
     }
 </script>
 
 <style lang="scss" src="./TreeView.scss"></style>
 
-{#each tree as {name, path, children}}
-    {#if children}
-        <div class="subtree" class:expanded={treeViewState?.[path]}>
-            <a
-                class="tree-item"
-                class:selected={`/docs${path}` === $page.path}
-                href="/docs{path}"
-                on:click={toggleExpansion(path)}
-            >
+{#each tree as {name, path, type, pages}}
+    {#if type === "category"}
+        <div class="subtree" class:expanded={treeViewState?.[id(name)]}>
+            <div class="tree-item" on:click={toggleExpansion(name)}>
                 <span>{name}</span>
                 {@html ChevronDown}
-            </a>
-            <div class="subtree-items" style="--treeview-subtree-height: {(children.length) * 40}px">
-                <svelte:self tree={children} />
+            </div>
+            <div class="subtree-items" style="--treeview-subtree-height: {(pages?.length || 0) * 40}px">
+                <svelte:self tree={pages} />
             </div>
         </div>
     {:else}

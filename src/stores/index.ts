@@ -10,15 +10,15 @@ export const links = {
     }
 };
 
-export const docsMap: DocsPage = [
+export const docsMap = [
     {
         name: "Overview",
         path: ""
     },
     {
+        type: "category",
         name: "Configuring Files",
-        path: "/configuring",
-        children: [
+        pages: [
             {
                 name: "Terminal Profiles",
                 path: "/configuring/terminal-profiles"
@@ -46,9 +46,9 @@ export const docsMap: DocsPage = [
         ]
     },
     {
+        type: "category",
         name: "Contributing",
-        path: "/contributing",
-        children: [
+        pages: [
             {
                 name: "Translating Files",
                 path: "/contributing/translating-files"
