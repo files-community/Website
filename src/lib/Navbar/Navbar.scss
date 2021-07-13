@@ -25,16 +25,15 @@
         size: 0.85rem;
         weight: normal;
     }
+    &.selected {
+        background-color: var(--subtle-color-secondary);
+        color: var(--accent-text-default);
+    }
     &:hover {
         background-color: var(--subtle-color-secondary);
     }
     &:active {
         background-color: var(--subtle-color-tertiary);
-    }
-    &.selected {
-        pointer-events: none;
-        background-color: var(--subtle-color-secondary);
-        color: var(--accent-text-default);
     }
     :global(svg) {
         @include icon($size: 16px);

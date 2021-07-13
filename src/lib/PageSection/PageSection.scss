@@ -2,7 +2,7 @@
     position: relative;
     z-index: 1;
     padding: 72px;
-
+    
     h1, h2, h3 {
         margin: 0;
         font-weight: 600;
@@ -20,7 +20,11 @@
     p {
         margin-bottom: 24px;
         margin-top: 12px;
-        font-size: 1rem;
+        line-height: 1.65;
         color: var(--text-color-tertiary);
+        font: {
+            size: 1rem;
+            weight: 400;
+        }
     }
 }

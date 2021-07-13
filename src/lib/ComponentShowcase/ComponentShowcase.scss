@@ -1,6 +1,7 @@
 @use "static/mixins" as *;
 
 .component-showcase {
+    pointer-events: none;
     @include flex($align: center, $gap: 16px);
     .column {
         @include flex($direction: column, $gap: 16px);
