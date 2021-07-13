@@ -24,10 +24,6 @@ export const docsMap: DocsPage = [
                 path: "/configuring/terminal-profiles"
             },
             {
-                name: "Performance Settings",
-                path: "/configuring/performance-settings"
-            },
-            {
                 name: "Date Formats",
                 path: "/configuring/date-formats"
             },
