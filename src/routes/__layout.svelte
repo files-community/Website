@@ -47,7 +47,7 @@
 
     <meta property="og:type" content="website">
     
-    <link rel="icon" type="image/svg+xml" href="branding/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="/branding/logo.svg">
 
     <meta name="description" content="A modern file explorer that pushes the boundaries of the platform.">
     <meta property="og:description" content="A modern file explorer that pushes the boundaries of the platform.">
