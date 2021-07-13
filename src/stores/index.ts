@@ -32,8 +32,8 @@ export const docsMap: DocsPage = [
                 path: "/configuring/date-formats"
             },
             {
-                name: "Custom Skins",
-                path: "/configuring/custom-skins"
+                name: "Custom Themes",
+                path: "/configuring/custom-themes"
             },
             {
                 name: "Keyboard Shortcuts",
