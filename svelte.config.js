@@ -16,7 +16,7 @@ const config = {
     ],
 	kit: {
 		target: "body",
-        router: false,
+        router: true,
         vite: {
             resolve: {
                 alias: {

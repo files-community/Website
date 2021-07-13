@@ -25,10 +25,9 @@
 
 {#each tree as {name, path, children}}
     {#if children}
-        <div class="subtree">
+        <div class="subtree" class:expanded={treeViewState?.[path]}>
             <a
                 class="tree-item"
-                class:expanded={treeViewState?.[path]}
                 class:selected={`/docs${path}` === $page.path}
                 href="/docs{path}"
                 on:click={toggleExpansion(path)}
@@ -36,11 +35,9 @@
                 <span>{name}</span>
                 {@html ChevronDown}
             </a>
-            {#if treeViewState?.[path]}
-                <div class="subtree-items" transition:slide="{{duration: 250, easing: cubicInOut}}">
-                    <svelte:self tree={children} />
-                </div>
-            {/if}
+            <div class="subtree-items" style="--treeview-subtree-height: {(children.length) * 40}px">
+                <svelte:self tree={children} />
+            </div>
         </div>
     {:else}
         <a
