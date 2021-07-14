@@ -128,9 +128,8 @@
             @include flex($direction: row);
             gap: 4rem;
             overflow: hidden;
-            height: 75vh;
-            min-height: 572px;
-            max-height: 1024px;
+            min-height: 85%;
+            justify-content: space-between;
             canvas {
                 position: absolute;
                 bottom: 0;
@@ -154,10 +153,11 @@
 
             .hero-right {
                 max-width: 60%;
+                
             
                 .hero-screenshot {
-                    width: 55vw;
-                    height: auto;
+                    width: auto;
+                    height: 100%;
                     background-color: var(--control-color-disabled);
                     border: 1px solid var(--SurfaceStrokeColorDefault);
                     border-radius: 7px;
