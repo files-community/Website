@@ -9,8 +9,8 @@
         HyperlinkButton,
         ComponentShowcase,
         HeaderChip,
-        Rainbow,
-        RainbowAlt
+        RainbowCanvas,
+        RainbowCanvasAlt
     } from "$lib";
 
     import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
@@ -28,8 +28,8 @@
 
         contributors = await getContributors(1);
 
-        new Rainbow(heroCanvas).render();
-        new RainbowAlt(communityCanvas).render();
+        new RainbowCanvas(heroCanvas).render();
+        new RainbowCanvasAlt(communityCanvas).render();
     });
 </script>
 

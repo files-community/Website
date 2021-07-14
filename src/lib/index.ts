@@ -6,4 +6,4 @@ export { default as HyperlinkButton } from "./HyperlinkButton/HyperlinkButton.sv
 export { default as TreeView } from "./TreeView/TreeView.svelte";
 export { default as HeaderChip } from "./HeaderChip/HeaderChip.svelte";
 export { default as ComponentShowcase } from "./ComponentShowcase/ComponentShowcase.svelte";
-export { Rainbow, RainbowAlt } from "./canvas";
+export { RainbowCanvas, RainbowCanvasAlt } from "./canvas";

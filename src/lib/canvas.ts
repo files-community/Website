@@ -1,6 +1,6 @@
 import * as THREE from "three";
 
-export class Rainbow {
+export class RainbowCanvas {
     constructor(node) {
         this.node = node;
     }
@@ -39,7 +39,7 @@ export class Rainbow {
 }
 
 // Adapted from https://fjolt.com/article/3d-web-gl-javascript-gradient-effect
-export class RainbowAlt {
+export class RainbowCanvasAlt {
     constructor(node) {
         this.node = node;
     }
