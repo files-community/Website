@@ -131,6 +131,7 @@
             overflow: hidden;
             min-height: 85%;
             justify-content: space-between;
+            align-items: center;
             canvas {
                 position: absolute;
                 bottom: 0;
@@ -154,10 +155,10 @@
 
             .hero-right {
                 max-width: 60%;
-                
             
                 .hero-screenshot {
-                    width: auto;
+                    align-self: center;
+                    width: 100%;
                     height: 100%;
                     background-color: var(--control-color-disabled);
                     border: 1px solid var(--SurfaceStrokeColorDefault);
