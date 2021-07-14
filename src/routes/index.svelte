@@ -5,9 +5,6 @@
     import { PageSection, Button, HyperlinkButton, ComponentShowcase, HeaderChip } from "$lib";
     import { getReleaseVersion } from "./fetchHomepageData";
 
-    import HeroScreenshotLight from "../../static/screenshots/hero-light.png"
-    import HeroScreenshotDark from "../../static/screenshots/hero-dark.png"
-
     import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
@@ -92,15 +89,15 @@
         <picture>
             <source
                 media="(prefers-color-scheme: dark)" 
-                srcset={HeroScreenshotDark}
+                srcset="/screenshots/hero-dark.png"
             >
             <source
                 media="(prefers-color-scheme: light)"
-                srcset={HeroScreenshotLight}
+                srcset="/screenshots/hero-light.png"
             >
             <img
                 class="hero-screenshot"
-                src={HeroScreenshotLight}
+                src="/screenshots/hero-light.png"
                 alt="Files new tab screenshot"
             >
         </picture>
@@ -112,7 +109,7 @@
     <div class="design-section-content">
         <HeaderChip>Design</HeaderChip>
         <h2>Power meets beauty.</h2>
-        <p>Explore a beautiful windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
+        <p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
         <HyperlinkButton
             href="https://www.microsoft.com/design/fluent/"
             target="_blank"
@@ -122,6 +119,56 @@
         </HyperlinkButton>
     </div>
     <ComponentShowcase />
+</PageSection>
+
+<PageSection id="design-section-newstyle">
+    <div class="design-section-content">
+        <div class="design-section-text">
+            <HeaderChip>Design</HeaderChip>
+            <h2>Power meets beauty.</h2>
+            <p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
+            <HyperlinkButton
+                href="https://www.microsoft.com/design/fluent/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                Learn More
+            </HyperlinkButton>
+        </div>
+        <div class="design-image">
+            <picture class="files-screensot-container">
+                <source
+                    media="(prefers-color-scheme: dark)" 
+                    srcset="/screenshots/hero-dark.png"
+                >
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/screenshots/hero-light.png"
+                >
+                <img
+                    class="files-screenshot"
+                    src="/screenshots/hero-light.png"
+                    alt="Files new tab screenshot"
+                >
+            </picture>
+            <picture>
+                <source
+                    media="(prefers-color-scheme: dark)" 
+                    srcset="/screenshots/win11-dark.png"
+                >
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/screenshots/win11-light.png"
+                >
+                <img
+                    class="files-wallpaper"
+                    src="/screenshots/win11-light.png"
+                    alt="Files new tab screenshot"
+                >
+            </picture>
+        </div>
+
+    </div>
 </PageSection>
 
 <style lang="scss">
@@ -165,8 +212,8 @@
                     height: 100%;
                     background-color: var(--control-color-disabled);
                     border: 1px solid var(--SurfaceStrokeColorDefault);
-                    border-radius: 7px;
-                    box-sizing: border-box;
+                    border-radius: var(--overlay-corner-radius);
+                    box-sizing: content-box;
                     backdrop-filter: blur(200px) saturate(150%);
                     -webkit-backdrop-filter: blur(200px) saturate(150%);
                     box-shadow: var(--window-elevation);
@@ -254,6 +301,84 @@
                 position: absolute;
                 right: -400px;
                 transform: rotate(30deg);
+            }
+        }
+    }
+
+    :global {
+        #design-section-newstyle {
+            @include flex($align: center);
+            min-height: fit-content;
+            align-items: flex-start;
+            margin: auto;
+
+            .design-section-content {
+                @include flex($direction: column, $align: center);
+
+                .design-section-text{
+                    text-align: center;
+                    p {
+                        max-width: 65ch;
+                    }
+                }
+
+
+                .design-image {
+                    position: relative;
+                    width: 80vw;
+                    height: 100%;
+                    margin-top: 9rem;
+                    text-align: center;
+
+                    .files-screensot-container {
+                        height: auto;
+                    }
+
+                    .files-screenshot {
+                        position: absolute;
+                        width: 70%;
+                        max-width: 1024px;
+                        height: auto;
+                        margin-left: auto;
+                        margin-right: auto;
+                        left: 0;
+                        right: 0;
+                        top: -6rem;
+                        z-index: 5;
+                        background-color: var(--LayerFillColorDefault);
+                        border: 1px solid var(--SurfaceStrokeColorDefault);
+                        border-radius: var(--overlay-corner-radius);
+                        box-sizing: content-box;
+                        backdrop-filter: blur(60px) saturate(150%);
+                        -webkit-backdrop-filter: blur(60px) saturate(150%);
+                        box-shadow: var(--window-elevation);
+                    }
+
+                    .files-wallpaper {
+                        position: relative;
+                        width: 90%;
+                        max-width: 1440px;
+                        height: auto;
+                        border-radius: calc(var(--overlay-corner-radius) * 1.5);
+                        border: 1px solid var(--CardStrokeColorDefault);
+                        box-shadow: var(--card-elevation);
+                    }
+                }
+
+                @media only screen and (max-width: 768px) {
+                    .design-image {
+                        width: 100%;
+
+                        .files-screenshot {
+                            width: 90%;
+                        }
+
+                        .files-wallpaper {
+                            width: 100%;
+                            border-radius: var(--overlay-corner-radius);
+                        }
+                    }
+                }
             }
         }
     }
