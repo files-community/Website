@@ -173,6 +173,25 @@
                 opacity: 0.4;
             }
         }
+
+        @media only screen and (max-width: 768px) {
+            #hero-section {
+                @include flex($direction: column);
+                min-height: 115vw;
+
+                .hero-left {
+                    max-width: 100%;
+                }
+
+                .hero-right {
+                    max-width: 100%;
+                    .hero-screenshot {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
     }
 
     .hero-buttons {
