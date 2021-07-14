@@ -38,39 +38,75 @@
 </svelte:head>
 
 <PageSection id="hero-section">
-    <h1>Files</h1>
-    <p>A modern file explorer that pushes the boundaries of the platform.</p>
-    <div class="buttons-spacer">
-        <div class="split-button">
+    <div class="hero-left">
+        <h1>Files</h1>
+        <p>A modern file explorer that pushes the boundaries of the platform.</p>
+        <div class="buttons-spacer">
+            <div class="split-button">
+                <Button
+                    href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    style="accent"
+                >
+                    {@html ArrowDownload}
+                    <div class="hero-button-inner">
+                        <h5>Download</h5>
+                        <span>Microsoft Store</span>
+                    </div>
+                </Button>
+                <Button style="accent">
+                    {@html ChevronDown}
+                </Button>
+            </div>
             <Button
-                href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
+                href="https://github.com/{links.github.owner}/{links.github.repo}/"
                 target="_blank"
                 rel="noreferrer noopener"
-                style="accent"
             >
-                {@html ArrowDownload}
+                {@html Code}
                 <div class="hero-button-inner">
-                    <h5>Download</h5>
-                    <span>Microsoft Store</span>
+                    <h5>View GitHub</h5>
+                    <span>Files is open source!</span>
                 </div>
             </Button>
-            <Button style="accent">
-                {@html ChevronDown}
-            </Button>
         </div>
-        <Button
-            href="https://github.com/{links.github.owner}/{links.github.repo}/"
+    </div>
+    <picture>
+        <source
+            media="(prefers-color-scheme: dark)" 
+            srcset="/screenshots/hero-dark.png"
+        >
+        <source
+            media="(prefers-color-scheme: light)"
+            srcset="/screenshots/hero-light.png"
+        >
+        <img
+            class="hero-screenshot"
+            src="/screenshots/hero-light.png"
+            alt="Files new tab screenshot"
+        >
+    </picture>
+    <canvas width="32" height="32" bind:this={heroCanvas}></canvas>
+</PageSection>
+
+<PageSection id="design-section">
+    <HeaderChip>Design</HeaderChip>
+    <h2>Power meets beauty.</h2>
+    <p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
+    <div class="buttons-spacer">
+        <Button style="accent" href="">
+            Try it out
+        </Button>
+        <HyperlinkButton
+            href="https://www.microsoft.com/design/fluent/"
             target="_blank"
             rel="noreferrer noopener"
         >
-            {@html Code}
-            <div class="hero-button-inner">
-                <h5>View GitHub</h5>
-                <span>Files is open source!</span>
-            </div>
-        </Button>
+            Learn More
+        </HyperlinkButton>
     </div>
-    <div class="hero-right">
+    <div class="design-image">
         <picture>
             <source
                 media="(prefers-color-scheme: dark)" 
@@ -81,30 +117,44 @@
                 srcset="/screenshots/hero-light.png"
             >
             <img
-                class="hero-screenshot"
+                class="files-screenshot"
                 src="/screenshots/hero-light.png"
                 alt="Files new tab screenshot"
             >
         </picture>
+        <picture>
+            <source
+                media="(prefers-color-scheme: dark)" 
+                srcset="/screenshots/win11-dark.png"
+            >
+            <source
+                media="(prefers-color-scheme: light)"
+                srcset="/screenshots/win11-light.png"
+            >
+            <img
+                class="files-wallpaper"
+                src="/screenshots/win11-light.png"
+                alt="Files new tab screenshot"
+            >
+        </picture>
     </div>
-    <canvas width="32" height="32" bind:this={heroCanvas}></canvas>
 </PageSection>
 
-<PageSection id="design-section">
+<PageSection id="design-section-alt">
     <div class="design-section-content">
-        <HeaderChip>Design</HeaderChip>
-        <h2>Power meets beauty.</h2>
-        <p>Explore a beautiful windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
+        <HeaderChip>I am out of ideas</HeaderChip>
+        <h2>What do I put here?</h2>
+        <p>why are you looking at me?</p>
         <div class="buttons-spacer">
             <Button style="accent" href="">
-                Try it out
+                Learn more
             </Button>
             <HyperlinkButton
                 href="https://www.microsoft.com/design/fluent/"
                 target="_blank"
                 rel="noreferrer noopener"
             >
-                Learn More
+                Learn less
             </HyperlinkButton>
         </div>
     </div>
@@ -124,60 +174,6 @@
     </div>
 </PageSection>
 
-
-<PageSection id="design-section-newstyle">
-    <div class="design-section-content">
-        <div class="design-section-text">
-            <HeaderChip>Design</HeaderChip>
-            <h2>Power meets beauty.</h2>
-            <p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs, and so much more.</p>
-            <Button style="accent" href="">
-                Try it out
-            </Button>
-            <HyperlinkButton
-                href="https://www.microsoft.com/design/fluent/"
-                target="_blank"
-                rel="noreferrer noopener"
-            >
-                Learn More
-            </HyperlinkButton>
-        </div>
-        <div class="design-image">
-            <picture class="files-screenshot-container">
-                <source
-                    media="(prefers-color-scheme: dark)" 
-                    srcset="/screenshots/hero-dark.png"
-                >
-                <source
-                    media="(prefers-color-scheme: light)"
-                    srcset="/screenshots/hero-light.png"
-                >
-                <img
-                    class="files-screenshot"
-                    src="/screenshots/hero-light.png"
-                    alt="Files new tab screenshot"
-                >
-            </picture>
-            <picture>
-                <source
-                    media="(prefers-color-scheme: dark)" 
-                    srcset="/screenshots/win11-dark.png"
-                >
-                <source
-                    media="(prefers-color-scheme: light)"
-                    srcset="/screenshots/win11-light.png"
-                >
-                <img
-                    class="files-wallpaper"
-                    src="/screenshots/win11-light.png"
-                    alt="Files new tab screenshot"
-                >
-            </picture>
-        </div>
-
-    </div>
-</PageSection>
-
 <style lang="scss">
     @use "static/mixins" as *;
 
@@ -187,8 +183,9 @@
             gap: 4rem;
             overflow: hidden;
             height: 75vh;
-            min-height: 572px;
+            min-height: 584px;
             max-height: 1024px;
+            border-bottom: 1px solid var(--DividerStrokeColorDefault);
             .button {
                 padding: 7px 12px;
                 svg {
@@ -215,69 +212,18 @@
             .button svg {
                 @include icon($size: 18px);
             }
-
-            .hero-left {
-                @include flex($direction: column, $justify: center);
-                max-width: 40%;
-                height: auto;
-            }
-
-            .hero-right {
-                max-width: 60%;
-            
-                .hero-screenshot {
-                    align-self: center;
-                    width: 100%;
-                    height: 100%;
-                    background-color: var(--control-color-disabled);
-                    border: 1px solid var(--SurfaceStrokeColorDefault);
-                    border-radius: var(--overlay-corner-radius);
-                    box-sizing: content-box;
-                    backdrop-filter: blur(200px) saturate(150%);
-                    -webkit-backdrop-filter: blur(200px) saturate(150%);
-                    box-shadow: var(--window-elevation);
-                }
-            }
-
-            .divider {
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: 0;
-                height: 1px;
-                background-color: var(--DividerStrokeColorDefault);
-                border: none;
-            }
         }
         @media (prefers-color-scheme: dark) {
             #hero-section canvas {
                 opacity: 0.4;
             }
         }
-
-        @media only screen and (max-width: 768px) {
-            #hero-section {
-                @include flex($direction: column);
-                min-height: 115vw;
-
-                .hero-left {
-                    max-width: 100%;
-                }
-
-                .hero-right {
-                    max-width: 100%;
-                    .hero-screenshot {
-                        width: 100%;
-                        height: auto;
-                    }
-                }
-            }
-        }
     }
 
-    .buttons-spacer {
-        @include flex($wrap: true, $gap: 8px);
+    .hero-left {
+        @include flex($direction: column, $justify: center);
+        flex: 1 1 auto;
+        height: auto;
     }
 
     .hero-button-inner {
@@ -300,8 +246,35 @@
         }
     }
 
+    .hero-screenshot {
+        height: 100%;
+        width: auto;
+        background-color: var(--control-color-disabled);
+        border: 1px solid var(--SurfaceStrokeColorDefault);
+        border-radius: calc(var(--overlay-corner-radius) / 2);
+        box-sizing: content-box;
+        backdrop-filter: blur(200px) saturate(150%);
+        box-shadow: var(--window-elevation);
+    }
+
+    @media only screen and (max-width: 1068px) {
+        :global(#hero-section) {
+            @include flex($direction: column);
+            height: auto;
+            max-height: unset;
+        }
+        .hero-left {
+            text-align: center;
+            align-items: center;
+        }
+        .hero-screenshot {
+            width: 100%;
+            height: auto;
+        }
+    }
+
     :global {
-        #design-section {
+        #design-section-alt {
             @include flex($align: center);
             border-radius: 0 0 12px 12px;
             min-height: 600px;
@@ -369,80 +342,63 @@
     }
 
     :global {
-        #design-section-newstyle {
-            @include flex($align: center);
-            min-height: fit-content;
-            align-items: flex-start;
-            margin: auto;
-
-            .design-section-content {
-                @include flex($direction: column, $align: center);
-
-                .design-section-text{
-                    text-align: center;
-                    p {
-                        max-width: 65ch;
-                    }
-                }
-
-
-                .design-image {
-                    position: relative;
-                    width: 80vw;
-                    height: 100%;
-                    margin-top: 9rem;
-                    text-align: center;
-
-                    .files-screensot-container {
-                        height: auto;
-                    }
-
-                    .files-screenshot {
-                        position: absolute;
-                        width: 70%;
-                        max-width: 1024px;
-                        height: auto;
-                        margin-left: auto;
-                        margin-right: auto;
-                        left: 0;
-                        right: 0;
-                        top: -6rem;
-                        z-index: 5;
-                        background-color: var(--LayerFillColorDefault);
-                        border: 1px solid var(--SurfaceStrokeColorDefault);
-                        border-radius: var(--overlay-corner-radius);
-                        box-sizing: content-box;
-                        backdrop-filter: blur(60px) saturate(150%);
-                        -webkit-backdrop-filter: blur(60px) saturate(150%);
-                        box-shadow: var(--window-elevation);
-                    }
-
-                    .files-wallpaper {
-                        position: relative;
-                        width: 90%;
-                        max-width: 1440px;
-                        height: auto;
-                        border-radius: calc(var(--overlay-corner-radius) * 1.5);
-                        border: 1px solid var(--CardStrokeColorDefault);
-                        box-shadow: var(--card-elevation);
-                    }
-                }
-
-                @media only screen and (max-width: 768px) {
-                    .design-image {
-                        width: 100%;
-
-                        .files-screenshot {
-                            width: 90%;
-                        }
-
-                        .files-wallpaper {
-                            width: 100%;
-                            border-radius: var(--overlay-corner-radius);
-                        }
-                    }
-                }
+        #design-section {
+            @include flex($direction: column, $align: center);
+            text-align: center;
+            p {
+                max-width: 650px;
             }
         }
+    }
+
+    .design-image {
+        @include flex($direction: column, $justify: center, $align: center);
+        position: relative;
+        width: 80vw;
+        height: 100%;
+        margin-top: 128px;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .design-image {
+            width: 100%;
+        }
+        .files-screenshot {
+            width: 90%;
+            border-radius: calc(var(--overlay-corner-radius) / 2);
+        }
+
+        .files-wallpaper {
+            width: 100%;
+            border-radius: var(--overlay-corner-radius);
+        }
+    }
+
+    .files-screenshot {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 70%;
+        max-width: 1024px;
+        height: auto;
+        top: -64px;
+        z-index: 1;
+        background-color: var(--LayerFillColorDefault);
+        border: 1px solid var(--SurfaceStrokeColorDefault);
+        border-radius: var(--overlay-corner-radius);
+        box-sizing: content-box;
+        backdrop-filter: blur(60px) saturate(150%);
+        box-shadow: var(--window-elevation);
+    }
+
+    .files-wallpaper {
+        position: relative;
+        width: 90%;
+        max-width: 1440px;
+        height: auto;
+        border-radius: calc(var(--overlay-corner-radius) * 1.5);
+        border: 1px solid var(--CardStrokeColorDefault);
     }
 </style>

@@ -1,3 +1,5 @@
+@use "static/mixins" as *;
+
 .page-section {
     position: relative;
     z-index: 1;
@@ -30,5 +32,9 @@
             size: 1rem;
             weight: 400;
         }
+    }
+
+    .buttons-spacer {
+        @include flex($wrap: true, $gap: 8px);
     }
 }
