@@ -313,8 +313,8 @@
             --subtle-color-secondary: rgba(0, 0, 0, 0.035);
             --subtle-color-tertiary: rgba(0, 0, 0, 0.024);
             --subtle-color-disabled: rgba(255, 255, 255, 0);
-            --accent-text-default: var(--accent-color-dark-2);
-            --accent-text-tertiary: var(--accent-color-dark-1);
+            --accent-text-default: var(--accent-color-dark-3);
+            --accent-text-tertiary: var(--accent-color-dark-2);
         }
         .community-section-card {
             @include flex($direction: column, $justify: center, $align: center);
