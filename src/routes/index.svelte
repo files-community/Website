@@ -121,7 +121,7 @@
             >
             <img
                 class="files-screenshot"
-                style="transform: translatey({scrollY / -7.5}px)"
+                style="transform: translatey({scrollY / -10}px)"
                 src="/screenshots/hero-light.png"
                 alt="Files new tab screenshot"
             >
@@ -321,7 +321,6 @@
             width: 100%;
             min-height: 600px;
             max-width: 2048px;
-            margin-top: -144px;
             padding: 72px 48px;
             position: relative;
             z-index: 0;
@@ -360,7 +359,7 @@
         position: relative;
         width: 80vw;
         height: 100%;
-        margin-top: 128px;
+        margin-top: 164px;
         text-align: center;
     }
 
@@ -372,7 +371,6 @@
             width: 90%;
             border-radius: calc(var(--overlay-corner-radius) / 2);
         }
-
         .files-wallpaper {
             width: 100%;
             border-radius: var(--overlay-corner-radius);
@@ -381,6 +379,7 @@
 
     .files-screenshot {
         position: absolute;
+        top: -56px;
         left: 0;
         right: 0;
         margin: 0 auto;

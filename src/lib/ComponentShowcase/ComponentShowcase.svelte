@@ -16,7 +16,8 @@
     import TeachingTip_dark from "$static/exported/TeachingTip_dark.svg?raw";
     import TeachingTip_light from "$static/exported/TeachingTip_light.svg?raw";
 
-    let theme = "light";
+    let scrollY: number;
+    let theme: string = "light";
 
     onMount(() => {
         theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
@@ -25,32 +26,29 @@
 
 <style lang="scss" src="./ComponentShowcase.scss"></style>
 
-<template>
-    <div class="component-showcase">
+<div class="component-showcase">
+    <div class="column left">
         {#if theme === "light"}
-            <div class="column left">
-                {@html CalendarView_light}
-                {@html ContentDialog_light}
-                {@html DatePicker_light}
-                {@html TeachingTip_light}
-            </div>
-            <div class="column right">
-                {@html InfoBar_light}
-                {@html InkToolbar_light}
-                {@html NavigationView_light}
-            </div>
-            {:else if theme === "dark"}
-            <div class="column left">
-                {@html CalendarView_dark}
-                {@html ContentDialog_dark}
-                {@html DatePicker_dark}
-                {@html TeachingTip_dark}
-            </div>
-            <div class="column right">
-                {@html InfoBar_dark}
-                {@html InkToolbar_dark}
-                {@html NavigationView_dark}
-            </div>
+            {@html CalendarView_light}
+            {@html ContentDialog_light}
+            {@html DatePicker_light}
+            {@html TeachingTip_light}
+            {:else}
+            {@html CalendarView_dark}
+            {@html ContentDialog_dark}
+            {@html DatePicker_dark}
+            {@html TeachingTip_dark}
         {/if}
     </div>
-</template>
+    <div class="column right">
+        {#if theme === "light"}
+            {@html InfoBar_light}
+            {@html InkToolbar_light}
+            {@html NavigationView_light}
+            {:else}
+            {@html InfoBar_dark}
+            {@html InkToolbar_dark}
+            {@html NavigationView_dark}
+        {/if}
+    </div>
+</div>
