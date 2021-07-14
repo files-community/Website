@@ -2,7 +2,11 @@
     position: relative;
     z-index: 1;
     padding: 72px;
-    
+
+    @media only screen and (max-width: 640px) {
+        padding: 48px;
+    }
+
     h1, h2, h3 {
         margin: 0;
         font-weight: 600;
