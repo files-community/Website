@@ -102,6 +102,7 @@
             >
         </picture>
     </div>
+    <hr class="divider"/>
 </PageSection>
 
 <PageSection id="design-section">
@@ -166,6 +167,17 @@
                     -webkit-backdrop-filter: blur(200px) saturate(150%);
                     box-shadow: var(--window-elevation);
                 }
+            }
+
+            .divider {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+                height: 1px;
+                background-color: var(--DividerStrokeColorDefault);
+                border: none;
             }
         }
         @media (prefers-color-scheme: dark) {
