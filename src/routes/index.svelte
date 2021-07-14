@@ -5,6 +5,9 @@
     import { PageSection, Button, HyperlinkButton, ComponentShowcase, HeaderChip } from "$lib";
     import { getReleaseVersion } from "./fetchHomepageData";
 
+    import HeroScreenshotLight from "../../static/screenshots/hero-light.png"
+    import HeroScreenshotDark from "../../static/screenshots/hero-dark.png"
+
     import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
@@ -89,15 +92,15 @@
         <picture>
             <source
                 media="(prefers-color-scheme: dark)" 
-                srcset="static/screenshots/hero-dark.png"
+                srcset={HeroScreenshotDark}
             >
             <source
                 media="(prefers-color-scheme: light)"
-                srcset="static/screenshots/hero-light.png"
+                srcset={HeroScreenshotLight}
             >
             <img
                 class="hero-screenshot"
-                src="static/screenshots/hero-light.png"
+                src={HeroScreenshotLight}
                 alt="Files new tab screenshot"
             >
         </picture>
