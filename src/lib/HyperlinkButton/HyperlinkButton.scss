@@ -1,12 +1,14 @@
+@use "static/mixins" as *;
+
 /*
  * HyperlinkButton Element
  */
 
 .hyperlink-button {
+    @include flex($inline: true, $align: center);
+
     box-sizing: border-box;
     user-select: none;
-    display: inline-flex;
-    align-items: center;
     text-align: left;
     word-break: break-word;
     color: var(--accent-text-default);

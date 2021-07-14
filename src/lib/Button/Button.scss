@@ -1,16 +1,18 @@
+@use "static/mixins" as *;
+
 /*
  * Button Element
  */
 
 .button {
+    @include flex($inline: true, $align: center);
     -webkit-user-drag: none;
     box-sizing: border-box;
     user-select: none;
-    display: inline-flex;
-    align-items: center;
     text-align: left;
     text-decoration: none;
     word-break: break-word;
+    cursor: default;
     border: 1px solid;
     border-radius: var(--control-corner-radius);
     padding: 5px 11px 6px 11px;
@@ -97,5 +99,30 @@
     .button.style-standard {
         border-color: var(--ControlStrokeColorDefault);
         border-bottom-color: var(--ControlStrokeColorSecondary);
+    }
+}
+
+/*
+ * Split buttons
+ * ==========================================
+ * Wrapper element for styling multiple
+ * <Button /> components as a singular split
+ * style button.
+*/
+
+// NOTE: !important is required because we are using scoped styles
+:global {
+    .split-button {
+        @include flex($align: center);
+        > .button {
+            height: 100%;
+            border-radius: 0 !important;
+            &:first-child {
+                border-radius: var(--control-corner-radius) 0 0 var(--control-corner-radius) !important;
+            }
+            &:last-child {
+                border-radius: 0 var(--control-corner-radius) var(--control-corner-radius) 0 !important;
+            }
+        }
     }
 }

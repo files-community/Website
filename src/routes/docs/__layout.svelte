@@ -42,6 +42,7 @@
     }
 
     .sidebar {
+        overflow: auto;
         flex: 0 0 auto;
         width: 316px;
         padding: 8px;
