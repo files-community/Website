@@ -47,7 +47,7 @@
 
     <meta property="og:type" content="website">
     
-    <link rel="icon" type="image/svg+xml" href="static/branding/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="/branding/logo.svg">
 
     <meta name="description" content="A modern file explorer that pushes the boundaries of the platform.">
     <meta property="og:description" content="A modern file explorer that pushes the boundaries of the platform.">
@@ -59,8 +59,8 @@
     <!-- <meta property="og:image" content=""> -->
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@Files24335245">
-    <meta name="twitter:creator" content="@Files24335245">
+    <meta name="twitter:site" content="@FilesForWindows">
+    <meta name="twitter:creator" content="@FilesForWindows">
 </svelte:head>
 
 <Navbar items={navbarItems} buttons={navbarButtons} />

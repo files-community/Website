@@ -13,7 +13,7 @@
     let canvas: HTMLCanvasElement;
 
     onMount(async() => {
-
+        
         // Platform detection
         windows = navigator.platform === "Win32";
 
@@ -129,7 +129,7 @@
             gap: 4rem;
             overflow: hidden;
             height: 75vh;
-            min-height: 512px;
+            min-height: 572px;
             max-height: 1024px;
             canvas {
                 position: absolute;
@@ -173,6 +173,10 @@
                 opacity: 0.4;
             }
         }
+    }
+
+    .hero-buttons {
+        @include flex($wrap: true, $gap: 5px);
     }
 
     .hero-button-inner {

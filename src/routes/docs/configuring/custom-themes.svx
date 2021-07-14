@@ -1,18 +1,18 @@
-# Custom Skins
+# Custom Themes
 
-Files allows you to customize the application with custom skins by modifying xaml resource dictionaries, this allows users to override the default brushes used throughout the app.
+Files allows you to customize the application with custom themes by modifying xaml resource dictionaries, this allows users to override the default brushes used throughout the app.
 
-Skins are loaded from the `Skins` folder in the app's `LocalState` folder. A drop-down (Custom skin) is located in Appearance settings that allows you to select a custom skin.
+Themes are loaded from the `Themes` folder in the app's `LocalState` folder. A drop-down (Custom theme) is located in Appearance settings that allows you to select a custom theme.
 
 ### Quick start
 
-1. Open your text editor of choice, and paste in the template located below. Then, save the file as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Skins\test1.xaml`.
+1. Open your text editor of choice, and paste in the template located below. Then, save the file as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Themes\test1.xaml`.
 
 2. Change some of the color values around.
 
-3. Change the selected skin from the appearance settings page.
+3. Change the selected theme from the appearance settings page.
 
-Files will now use your custom skin. If you add more skins, you can switch between them using the dropdown.
+Files will now use your custom theme. If you add more themes, you can switch between them using the dropdown.
 
 <details>
 <summary>
@@ -111,6 +111,6 @@ Default template
 ```
 </details> 
 
-You can also use the [Fluent XAML Theme Editor](https://github.com/microsoft/fluent-xaml-theme-editor) to easily modify custom skins.
+You can also use the [Fluent XAML Theme Editor](https://github.com/microsoft/fluent-xaml-theme-editor) to easily modify custom themes.
 
-You can view other skins and contribute your own [here](https://github.com/files-community/custom-skins).
+You can view other themes and contribute your own [here](https://github.com/files-community/custom-themes).

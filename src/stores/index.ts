@@ -10,30 +10,26 @@ export const links = {
     }
 };
 
-export const docsMap: DocsPage = [
+export const docsMap = [
     {
         name: "Overview",
         path: ""
     },
     {
+        type: "category",
         name: "Configuring Files",
-        path: "/configuring",
-        children: [
+        pages: [
             {
                 name: "Terminal Profiles",
                 path: "/configuring/terminal-profiles"
-            },
-            {
-                name: "Performance Settings",
-                path: "/configuring/performance-settings"
             },
             {
                 name: "Date Formats",
                 path: "/configuring/date-formats"
             },
             {
-                name: "Custom Skins",
-                path: "/configuring/custom-skins"
+                name: "Custom Themes",
+                path: "/configuring/custom-themes"
             },
             {
                 name: "Keyboard Shortcuts",
@@ -50,9 +46,9 @@ export const docsMap: DocsPage = [
         ]
     },
     {
+        type: "category",
         name: "Contributing",
-        path: "/contributing",
-        children: [
+        pages: [
             {
                 name: "Translating Files",
                 path: "/contributing/translating-files"

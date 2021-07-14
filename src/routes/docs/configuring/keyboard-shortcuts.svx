@@ -15,3 +15,5 @@ Files comes with built in keyboard shortcuts to make naviagting the app easier.
 | `Ctrl` + `Tab` | Switch tab |
 | `Ctrl` + `N` | New window |
 | `Ctrl` + `Shift` + `N` | New file |
+| `Ctrl` + `Alt` + `Up` | Open compact overlay |
+| `Ctrl` + `Alt` + `Down` | Close compact overlay |
