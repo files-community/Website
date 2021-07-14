@@ -35,6 +35,6 @@
     }
 
     .buttons-spacer {
-        @include flex($wrap: true, $gap: 8px);
+        @include flex($wrap: true, $gap: 8px, $wrap true);
     }
 }
