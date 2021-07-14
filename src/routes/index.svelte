@@ -369,6 +369,7 @@
         }
         .files-screenshot {
             width: 90%;
+            transform: none !important;
             border-radius: calc(var(--overlay-corner-radius) / 2);
         }
         .files-wallpaper {
