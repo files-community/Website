@@ -20,6 +20,7 @@
     let windows: boolean;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
+    let scrollY: number;
     let contributors = [];
 
     onMount(async () => {
@@ -36,6 +37,8 @@
     <title>Files</title>
     <meta property="og:title" content="Files">
 </svelte:head>
+
+<svelte:window bind:scrollY/>
 
 <PageSection id="hero-section">
     <div class="hero-left">
@@ -118,6 +121,7 @@
             >
             <img
                 class="files-screenshot"
+                style="transform: translatey({scrollY / -7.5}px)"
                 src="/screenshots/hero-light.png"
                 alt="Files new tab screenshot"
             >
@@ -383,7 +387,6 @@
         width: 70%;
         max-width: 1024px;
         height: auto;
-        top: -64px;
         z-index: 1;
         background-color: var(--LayerFillColorDefault);
         border: 1px solid var(--SurfaceStrokeColorDefault);
