@@ -98,7 +98,7 @@
             alt="Files new tab screenshot"
         >
     </picture>
-    <canvas width="32" height="32" bind:this={heroCanvas}></canvas>
+    <canvas width={32} height={32} bind:this={heroCanvas}></canvas>
 </PageSection>
 
 <PageSection id="design-section">
@@ -419,7 +419,6 @@
         }
     }
 
-
     :global(#community-section) {
         @include flex($justify: center);
         min-height: fit-content;
@@ -461,8 +460,8 @@
                 position: absolute;
                 top: 0;
                 left: 0;
-                width: 100%;
-                height: 100%;
+                width: 100% !important;
+                height: 100% !important;
             }
         }
     }
