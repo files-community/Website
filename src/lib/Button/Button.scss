@@ -80,7 +80,7 @@
             &:disabled,
             &.disabled {
                 color: var(--accent-text-contrast-disabled);
-                background-color: var(--AccentFillColorDisabled);
+                background-color: var(--accent-color-disabled);
                 border-color: transparent;
             }
         }

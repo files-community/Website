@@ -70,9 +70,9 @@
     }
     &:disabled {
         pointer-events: none;
-        color: var(--TextFillColorDisabled);
+        color: var(--text-color-disabled);
         &::placeholder {
-            color: var(--TextFillColorDisabled);
+            color: var(--text-color-disabled);
         }
     }
 }

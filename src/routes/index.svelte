@@ -9,6 +9,7 @@
         HyperlinkButton,
         ComponentShowcase,
         HeaderChip,
+        Contributor,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -21,15 +22,22 @@
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let scrollY: number;
-    let contributors = [];
+
+    let contributors1 = [];
+    let contributors2 = [];
+    let contributors3 = [];
+
+    const shuffle = a => a.sort(() => Math.random() - 0.5);
 
     onMount(async () => {
-        windows = navigator.platform === "Win32";
-
-        contributors = await getContributors(1);
-
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
+
+        windows = navigator.platform === "Win32";
+
+        contributors1 = await getContributors(1);
+        contributors2 = await getContributors(2);
+        contributors3 = await getContributors(3);
     });
 </script>
 
@@ -167,12 +175,49 @@
 
 <PageSection id="community-section">
     <div class="community-section-card">
-        <HeaderChip>Community</HeaderChip>
-        <h2>Designed and developed by you.</h2>
-        <p>Files is free and open source software, maintained and designed by a collective of hundreds of contributors.</p>
-        <div class="button-spacer">
-            <HyperlinkButton href="https://discord.gg/{links.discord}">Join the discussion</HyperlinkButton>
-            <HyperlinkButton href="/docs/contributing/code-style">Become a contributor</HyperlinkButton>
+        <div class="community-section-text">
+            <HeaderChip>Community</HeaderChip>
+            <h2>Designed and developed by you.</h2>
+            <p>Files is free and open source software, maintained and designed by a collective of hundreds of contributors.</p>
+            <div class="buttons-spacer">
+                <HyperlinkButton href="https://discord.gg/{links.discord}">Join the discussion</HyperlinkButton>
+                <HyperlinkButton href="/docs/contributing/code-style">Become a contributor</HyperlinkButton>
+            </div>
+        </div>
+        <div class="contributors-container">
+            <div class="contributors-row">
+                {#each shuffle(contributors1) as {html_url, avatar_url, login, contributions, type}}
+                    <Contributor
+                        {html_url}
+                        {avatar_url}
+                        {login}
+                        {contributions}
+                        {type}
+                    />
+                {/each}
+            </div>
+            <div class="contributors-row">
+                {#each shuffle(contributors2) as {html_url, avatar_url, login, contributions, type}}
+                    <Contributor
+                        {html_url}
+                        {avatar_url}
+                        {login}
+                        {contributions}
+                        {type}
+                    />
+                {/each}
+            </div>
+            <div class="contributors-row">
+                {#each shuffle(contributors3) as {html_url, avatar_url, login, contributions, type}}
+                    <Contributor
+                        {html_url}
+                        {avatar_url}
+                        {login}
+                        {contributions}
+                        {type}
+                    />
+                {/each}
+            </div>
         </div>
         <canvas bind:this={communityCanvas}></canvas>
     </div>
@@ -217,6 +262,12 @@
                 @include icon($size: 18px);
             }
         }
+        .style-standard .hero-button-inner {
+            color: var(--text-color-secondary);
+            h5 {
+                color: var(--text-color-primary);
+            }
+        }
         @media (prefers-color-scheme: dark) {
             #hero-section canvas {
                 opacity: 0.4;
@@ -224,41 +275,35 @@
         }
     }
 
-    .hero-left {
-        @include flex($direction: column, $justify: center);
-        flex: 1 1 auto;
-        height: auto;
-    }
-
-    .hero-button-inner {
-        @include flex($direction: column);
-        font-size: 10px;
-        line-height: normal;
-        margin-left: 8px;
-        h5 {
-            font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            margin: 0;
+    .hero- {
+        &left {
+            @include flex($direction: column, $justify: center);
+            flex: 1 1 auto;
+            height: auto;   
         }
-    }
-
-    :global(.style-standard .hero-button-inner) {
-        color: var(--text-color-secondary);
-        h5 {
-            color: var(--text-color-primary);
+        &button-inner {
+            @include flex($direction: column);
+            font-size: 10px;
+            line-height: normal;
+            margin-left: 8px;
+            h5 {
+                font-size: 12px;
+                font-weight: 600;
+                margin-bottom: 8px;
+                margin: 0;
+            }
         }
-    }
-
-    .hero-screenshot {
-        height: 100%;
-        width: auto;
-        background-color: var(--control-color-disabled);
-        border: 1px solid var(--SurfaceStrokeColorDefault);
-        border-radius: calc(var(--overlay-corner-radius) / 2);
-        box-sizing: content-box;
-        backdrop-filter: blur(200px) saturate(150%);
-        box-shadow: var(--window-elevation);
+        &screenshot {
+            -webkit-user-drag: none;
+            user-select: none;
+            height: 100%;
+            width: auto;
+            background-color: var(--control-color-disabled);
+            border: 1px solid var(--SurfaceStrokeColorDefault);
+            border-radius: calc(var(--overlay-corner-radius) / 2);
+            backdrop-filter: blur(200px) saturate(150%);
+            box-shadow: var(--window-elevation);
+        }
     }
 
     @media only screen and (max-width: 1068px) {
@@ -267,79 +312,16 @@
             height: auto;
             max-height: unset;
         }
-        .hero-left {
-            text-align: center;
-            align-items: center;
-        }
-        .hero-screenshot {
-            width: 100%;
-            height: auto;
-        }
-    }
-
-    :global {
-        #design-section-alt {
-            @include flex($align: center);
-            border-radius: 0 0 12px 12px;
-            min-height: 600px;
-            background-color: var(--background-base);
-            overflow: hidden;
-            .design-section-content {
-                width: 45%;
-                min-width: 478px;
+        .hero- {
+            &left {
+                text-align: center;
+                align-items: center;
             }
-            @media screen and (max-width: 832px) {
-                .design-section-content {
-                    width: 100%;
-                    min-width: unset;
-                }
-            }
-            .component-showcase {
-                position: absolute;
-                right: -400px;
-                transform: rotate(30deg);
-            }
-        }
-    }
-
-    :global {
-        #community-section {
-            @include flex($justify: center);
-            text-align: center;
-            --background-base: #F3F3F3;
-            --text-color-primary: #202020;
-            --text-color-secondary: #282828;
-            --text-color-tertiary: var(--text-color-secondary);
-            --subtle-color-secondary: rgba(0, 0, 0, 0.035);
-            --subtle-color-tertiary: rgba(0, 0, 0, 0.024);
-            --subtle-color-disabled: rgba(255, 255, 255, 0);
-            --accent-text-default: var(--accent-color-dark-3);
-            --accent-text-tertiary: var(--accent-color-dark-2);
-        }
-        .community-section-card {
-            @include flex($direction: column, $justify: center, $align: center);
-            width: 100%;
-            min-height: 600px;
-            max-width: 2048px;
-            padding: 72px 48px;
-            position: relative;
-            z-index: 0;
-            border-radius: var(--overlay-corner-radius);
-            background-color: var(--background-base);
-            box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-                        0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-                        0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-                        0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-                        0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-                        0 96.0454px 89.1851px rgb(0 0 0 / 9%);
-            canvas {
-                z-index: -1;
-                border-radius: var(--overlay-corner-radius);
-                position: absolute;
-                top: 0;
-                left: 0;
+            &screenshot {
+                -webkit-user-drag: none;
+                user-select: none;
                 width: 100%;
-                height: 100%;
+                height: auto;
             }
         }
     }
@@ -363,45 +345,154 @@
         text-align: center;
     }
 
+    .files- {
+        &screenshot, &wallpaper {
+            -webkit-user-drag: none;
+            user-select: none;
+            height: auto;
+        }
+        &screenshot {
+            position: absolute;
+            top: -36px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            width: 70%;
+            max-width: 1024px;
+            z-index: 1;
+            background-color: var(--LayerFillColorDefault);
+            border: 1px solid var(--SurfaceStrokeColorDefault);
+            border-radius: var(--overlay-corner-radius);
+            backdrop-filter: blur(60px) saturate(150%);
+            box-shadow: var(--window-elevation);
+        }
+        &wallpaper {
+            position: relative;
+            width: 90%;
+            max-width: 1440px;
+            border-radius: calc(var(--overlay-corner-radius) * 1.5);
+            border: 1px solid var(--CardStrokeColorDefault);
+        }
+    }
+
     @media only screen and (max-width: 768px) {
         .design-image {
             width: 100%;
         }
-        .files-screenshot {
-            width: 90%;
-            transform: none !important;
-            border-radius: calc(var(--overlay-corner-radius) / 2);
+        .files- {
+            &screenshot {
+                width: 90%;
+                transform: none !important;
+                border-radius: calc(var(--overlay-corner-radius) / 2);
+            }
+            &wallpaper {
+                width: 100%;
+                border-radius: var(--overlay-corner-radius);
+            }
         }
-        .files-wallpaper {
+    }
+
+    :global {
+        #design-section-alt {
+            @include flex($align: center);
+            border-radius: 0 0 12px 12px;
+            min-height: 600px;
+            background-color: var(--background-base);
+            overflow: hidden;
+            .component-showcase {
+                position: absolute;
+                right: -400px;
+                transform: rotate(30deg);
+            }
+        }
+    }
+
+    .design-section-content {
+        width: 45%;
+        min-width: 478px;
+    }
+
+    @media screen and (max-width: 832px) {
+        .design-section-content {
             width: 100%;
-            border-radius: var(--overlay-corner-radius);
+            min-width: unset;
         }
     }
 
-    .files-screenshot {
-        position: absolute;
-        top: -56px;
-        left: 0;
-        right: 0;
-        margin: 0 auto;
-        width: 70%;
-        max-width: 1024px;
-        height: auto;
-        z-index: 1;
-        background-color: var(--LayerFillColorDefault);
-        border: 1px solid var(--SurfaceStrokeColorDefault);
-        border-radius: var(--overlay-corner-radius);
-        box-sizing: content-box;
-        backdrop-filter: blur(60px) saturate(150%);
-        box-shadow: var(--window-elevation);
+
+    :global(#community-section) {
+        @include flex($justify: center);
+        min-height: fit-content;
+        overflow: hidden;
     }
 
-    .files-wallpaper {
-        position: relative;
-        width: 90%;
-        max-width: 1440px;
-        height: auto;
-        border-radius: calc(var(--overlay-corner-radius) * 1.5);
-        border: 1px solid var(--CardStrokeColorDefault);
+    .community-section- {
+        &text {
+            text-align: center;
+            --background-base: #F3F3F3;
+            --text-color-primary: #202020;
+            --text-color-secondary: #282828;
+            --text-color-tertiary: var(--text-color-secondary);
+            --subtle-color-secondary: rgba(0, 0, 0, 0.035);
+            --subtle-color-tertiary: rgba(0, 0, 0, 0.024);
+            --subtle-color-disabled: rgba(255, 255, 255, 0);
+            --accent-text-default: var(--accent-color-dark-3);
+            --accent-text-tertiary: var(--accent-color-dark-2);
+        }
+        &card {
+            @include flex($direction: column, $justify: center, $align: center);
+            width: 100%;
+            min-height: 600px;
+            max-width: 2048px;
+            padding: 72px 48px;
+            position: relative;
+            z-index: 0;
+            border-radius: var(--overlay-corner-radius);
+            background-color: #F9F9F9;
+            box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
+                        0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+                        0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+                        0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+                        0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+                        0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+            canvas {
+                z-index: -1;
+                border-radius: var(--overlay-corner-radius);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    @media only screen and (max-width: 768px) {
+        .community-section-card {
+            padding: 24px;
+            h2 {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .contributors- {
+        &container {
+            margin-top: 48px;
+        }
+        &row {
+            @include flex($align: center, $gap: 12px);
+            position: relative;
+            margin-bottom: 12px;
+            &:nth-child(even) {
+                left: 24px;
+            }
+            &:nth-child(odd) {
+                left: -24px;
+            }
+            &:last-child {
+                margin: 0;
+            }
+        }
     }
 </style>

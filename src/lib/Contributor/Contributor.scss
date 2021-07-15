@@ -1,0 +1,48 @@
+@use "static/mixins" as *;
+
+.contributor {
+    @include flex($align: center);
+    -webkit-user-drag: none;
+    text-decoration: none;
+    user-select: none;
+    padding: 0 12px;
+    width: 156px;
+    padding: 12px;
+    transition: 250ms ease;
+    border-radius: var(--control-corner-radius);
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--CardStrokeColorDefault);
+    box-shadow: var(--flyout-elevation);
+    img {
+        -webkit-user-drag: none;
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+    }
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: var(--dialog-elevation);
+    }
+}
+
+.info {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 8px;
+    color: var(--text-color-tertiary);
+    font: {
+        size: 12px;
+        weight: normal;
+    }
+    h5 {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        margin: 0;
+        color: var(--text-color-primary);
+        font: {
+            size: 14px;
+            weight: 600;
+        }
+    }
+}
