@@ -98,8 +98,8 @@
         padding: 0.2em 0.4em;
         margin: 0;
         font-size: 85%;
-        background-color: var(--CardBackgroundFillColorDefault);
-        border: 1px solid var(--CardStrokeColorDefault);
+        background-color: var(--card-background-default);
+        border: 1px solid var(--card-stroke-default);
         background-clip: padding-box;
         font-family: var(--font-family-monospace);
         border-radius: var(--control-corner-radius);
@@ -184,8 +184,8 @@
         overflow: auto;
         font-size: 15px;
         background-clip: padding-box;
-        background-color: var(--CardBackgroundFillColorDefault);
-        border: 1px solid var(--CardStrokeColorDefault);
+        background-color: var(--card-background-default);
+        border: 1px solid var(--card-stroke-default);
         border-radius: var(--overlay-corner-radius);
 
         code {
@@ -220,7 +220,7 @@
     hr {
         margin: 24px 0;
         border: none;
-        border-top: 1px solid var(--DividerStrokeColorDefault);
+        border-top: 1px solid var(--divider-color-default);
     }
 
     // Tables
@@ -230,8 +230,8 @@
         border-collapse: collapse;
         background-clip: padding-box;
         border-radius: var(--overlay-corner-radius);
-        border: 1px solid var(--ControlStrokeColorDefault);
-        border-top-color: var(--ControlStrokeColorSecondary);
+        border: 1px solid var(--control-stroke-default);
+        border-top-color: var(--control-stroke-secondary);
         th,
         td {
             padding: 6px 13px;

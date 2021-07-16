@@ -35,6 +35,9 @@ const config = {
             defaults: {
                 style: "scss"
             },
+            scss: {
+                additionalData: `@use "src/styles/test" as *;`
+            },
             postcss: {
                 plugins: [
                     autoprefixer()

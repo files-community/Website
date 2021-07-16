@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 .textbox-underline-frame {
     width: 100%;
@@ -14,14 +14,14 @@
 .textbox-container {
     @include flex($align: center);
     border-radius: var(--control-corner-radius);
-    border: 1px solid var(--ControlStrokeColorDefault);
+    border: 1px solid var(--control-stroke-default);
     background-color: var(--control-color-default);
     background-clip: padding-box;
     &:hover {
         background-color: var(--control-color-secondary);
     }
     &:focus-within {
-        border-color: var(--ControlStrokeColorDefault);
+        border-color: var(--control-stroke-default);
         background-color: var(--ControlFillColorInputActive);
         .textbox::placeholder {
             color: var(--text-color-tertiary);
@@ -54,7 +54,6 @@
     color: var(--text-color-primary);
     background-color: transparent;
     font: {
-        family: var(--control-font-family);
         size: 14px;
         weight: 400;
     }
@@ -84,7 +83,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    border-bottom: 1px solid var(--ControlStrongStrokeColorDefault);
+    border-bottom: 1px solid var(--control-strong-stroke-default);
     border-radius: calc(var(--control-corner-radius) - 0.75px);
 }
 

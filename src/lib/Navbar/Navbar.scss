@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 .navbar, .inner, .item {
     @include flex($align: center);
@@ -6,6 +6,7 @@
 
 .navbar {
     flex: 0 0 auto;
+    overflow: hidden;
     user-select: none;
     justify-content: space-between;
     padding: 12px 18px;
@@ -14,7 +15,6 @@
 
 .item {
     color: var(--text-color-secondary);
-    background-color: var(--subtle-color-transparent);
     border-radius: var(--control-corner-radius);
     justify-content: center;
     padding: 5px 11px 6px 11px;
@@ -48,10 +48,18 @@
 }
 
 .logo {
-    width: 32px;
-    height: auto;
-    &-wrap {
-        margin-right: 8px;
+    @include flex($align: center);  
+    margin-right: 8px;
+    color: var(--text-color-primary);
+    text-decoration: none;
+    font: {
+        size: 20px;
+        weight: 600;
+    }
+    img {
+        margin-right: 12px;
+        width: 32px;
+        height: auto;
     }
 }
 

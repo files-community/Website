@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 /*
  * HyperlinkButton Element
@@ -19,7 +19,6 @@
     text-decoration: none;
     font: {
         size: var(--control-font-size);
-        family: var(--control-font-family);
         weight: normal;
     }
 

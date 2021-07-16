@@ -1,0 +1,350 @@
+@use "src/styles/mixins" as *;
+
+@import url("https://rsms.me/inter/inter.css");
+
+@font-face {
+    font-family: "FluentSystemIcons-Regular";
+    src: url("/fonts/FluentSystemIcons-Regular.ttf") format("truetype");
+}
+  
+@font-face {
+    font-family: "FluentSystemIcons-Filled";
+    src: url("/fonts/FluentSystemIcons-Filled.ttf") format("truetype");
+}
+
+/*
+ * Global Variables
+ */
+
+:root {
+
+    --font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter var", sans-serif;
+    --font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
+
+    // Accent Colors
+    --accent-color-hue: 206;
+    --accent-color-saturation: 100%;
+    --accent-color-lightness: 42%;
+    --accent-color-alpha: 1;
+
+    --accent-color: hsla(
+        var(--accent-color-hue),
+        var(--accent-color-saturation),
+        var(--accent-color-lightness),
+        var(--accent-color-alpha)
+    );
+
+    --accent-color-dark-1: hsla(
+        calc(var(--accent-color-hue) + 2),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) - 6%),
+        var(--accent-color-alpha)
+    );
+
+    --accent-color-dark-1-90: hsla(
+        calc(var(--accent-color-hue) + 2),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) - 6%),
+        calc(var(--accent-color-alpha) * 0.9)
+    );
+
+    --accent-color-dark-1-80: hsla(
+        calc(var(--accent-color-hue) + 2),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) - 6%),
+        calc(var(--accent-color-alpha) * 0.8)
+    );
+    
+    --accent-color-dark-2: hsla(
+        calc(var(--accent-color-hue) + 8),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) - 13%),
+        var(--accent-color-alpha)
+    );
+
+    --accent-color-dark-3: hsla(
+        calc(var(--accent-color-hue) + 18),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) - 21%),
+        var(--accent-color-alpha)
+    );
+
+    --accent-color-light-1: hsla(
+        calc(var(--accent-color-hue) - 1),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) + 9%),
+        var(--accent-color-alpha)
+    );
+    
+    --accent-color-light-2: hsla(
+        calc(var(--accent-color-hue) - 6),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) + 23%),
+        var(--accent-color-alpha)
+    );
+
+    --accent-color-light-2-90: hsla(
+        calc(var(--accent-color-hue) - 6),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) + 23%),
+        calc(var(--accent-color-alpha) * 0.9)
+    );
+
+    --accent-color-light-2-80: hsla(
+        calc(var(--accent-color-hue) - 6),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) + 23%),
+        calc(var(--accent-color-alpha) * 0.8)
+    );
+
+    --accent-color-light-3: hsla(
+        calc(var(--accent-color-hue) - 14),
+        var(--accent-color-saturation),
+        calc(var(--accent-color-lightness) + 38%),
+        var(--accent-color-alpha)
+    );
+
+    // Corner Radius
+    --control-corner-radius: 4px;
+    --overlay-corner-radius: 8px;
+
+    // Control Text
+    --control-font-size: 14px;
+
+    // Border Brushes
+    --CircleElevationBorderBrush: 0;
+}
+
+/*
+ * Light Theme Colors
+ */
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color-scheme: light;
+
+        --text-color-primary: rgba(0, 0, 0, 0.894);
+        --text-color-secondary: rgba(0, 0, 0, 0.62);
+        --text-color-tertiary: rgba(0, 0, 0, 0.447);
+        --text-color-disabled: rgba(0, 0, 0, 0.361);
+        --text-color-inverse: #FFFFFF;
+        
+        --accent-text-disabled: rgba(0, 0, 0, 0.361);
+
+        --accent-text-contrast-primary: #FFFFFF;
+        --accent-text-contrast-secondary: rgba(255, 255, 255, 0.702);
+        --accent-text-contrast-selected: #FFFFFF;
+        --accent-text-contrast-disabled: #FFFFFF;
+
+        --control-color-default: rgba(255, 255, 255, 0.702);
+        --control-color-secondary: rgba(249, 249, 249, 0.502);
+        --control-color-tertiary: rgba(249, 249, 249, 0.302);
+        --control-color-disabled: rgba(249, 249, 249, 0.302);
+        --control-color-input-active: #FFFFFF;
+
+        --control-strong-color-default: rgba(0, 0, 0, 0.447);
+        --control-strong-color-disabled: rgba(0, 0, 0, 0.318);
+        
+        --control-strong-stroke-default: rgba(0, 0, 0, 0.447);
+        --control-strong-stroke-disabled: rgba(0, 0, 0, 0.216);
+
+        --control-solid-color-default: #FFFFFF;
+
+        --subtle-color-secondary: rgba(0, 0, 0, 0.035);
+        --subtle-color-tertiary: rgba(0, 0, 0, 0.024);
+        --subtle-color-disabled: rgba(255, 255, 255, 0);
+
+        --control-alt-color-secondary: rgba(0, 0, 0, 0.024);
+        --control-alt-color-tertiary: rgba(0, 0, 0, 0.059);
+        --control-alt-color-quarternary: rgba(0, 0, 0, 0.094);
+        --control-alt-color-disabled: rgba(255, 255, 255, 0);
+
+        --control-stroke-default: rgba(0, 0, 0, 0.059);
+        --control-stroke-secondary: rgba(0, 0, 0, 0.161);
+
+        --control-accent-stroke-default: rgba(255, 255, 255, 0.078);
+        --control-accent-stroke-secondary: rgba(0, 0, 0, 0.4);
+        --control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
+        --control-accent-stroke-disabled:   rgba(0, 0, 0, 0.059);
+
+        --card-stroke-default: rgba(0, 0, 0, 0.059);
+        --card-stroke-solid: #ebebeb;
+
+        --surface-stroke-default: rgba(0, 0, 0, 0.059);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.059);
+        --surface-stroke-inverse: rgba(255, 255, 255, 0.082);
+
+        --divider-color-default: rgba(0, 0, 0, 0.059);
+
+        --focus-stroke-outer: rgba(0, 0, 0, 0.894);
+        --focus-stroke-inner: rgba(255, 255, 255, 0.702);
+
+        --card-background-default: rgba(255, 255, 255, 0.702);
+        --card-background-secondary: rgba(246, 246, 246, 0.502);
+
+        --smoke-color-default: rgba(0, 0, 0, 0.302);
+
+        --layer-color-default: rgba(255, 255, 255, 0.502);
+        --layer-color-alt: #FFFFFF;
+
+        --background-base: #F3F3F3;
+        --background-secondary: #EEEEEE;
+        --background-tertiary: #F9F9F9;
+        --background-quarternary: #FFFFFF;
+
+        --system-color-success: #0F7B0F;
+        --system-color-caution: #9D5D00;
+        --system-color-critical: #C42B1C;
+        --system-color-neutral: #00000072;
+        --system-background-attention: #F6F6F680;
+        --system-background-success: #DFF6DD;
+        --system-background-caution: #FFF4CE;
+        --system-background-critical: #FDE7E9;
+        --system-background-neutral: #00000006;
+
+        // Elevation
+        --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.04);
+        --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.14);
+        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474);
+        --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474); 
+
+        // Accent Colors
+        --accent-color-default: var(--accent-color-dark-1);
+        --accent-color-secondary: var(--accent-color-dark-1-90);
+        --accent-color-tertiary: var(--accent-color-dark-1-80);
+        --accent-color-disabled: rgba(0, 0, 0, 0.216);
+
+        --accent-text-default: var(--accent-color-dark-2);
+        --accent-text-secondary: var(--accent-color-dark-3);
+        --accent-text-tertiary: var(--accent-color-dark-1);
+    }
+}
+
+/*
+ * Dark Theme Colors
+ */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+
+        --text-color-primary: #FFFFFF;
+        --text-color-secondary: rgba(255, 255, 255, 0.773);
+        --text-color-tertiary: rgba(255, 255, 255, 0.529);
+        --text-color-disabled: rgba(255, 255, 255, 0.365);
+        --text-color-inverse: rgba(0, 0, 0, 0.894);
+
+        --accent-text-disabled: rgba(255, 255, 255, 0.365);
+
+        --accent-text-contrast-primary: #000000;
+        --accent-text-contrast-secondary: rgba(0, 0, 0, 0.502);
+        --accent-text-contrast-selected: #FFFFFF;
+        --accent-text-contrast-disabled: rgba(255, 255, 255, 0.529);
+
+        --control-color-default: rgba(255, 255, 255, 0.059);
+        --control-color-secondary: rgba(255, 255, 255, 0.082);
+        --control-color-tertiary: rgba(255, 255, 255, 0.031);
+        --control-color-disabled: rgba(255, 255, 255, 0.043);
+        --control-color-input-active: rgba(30, 30, 30, 0.702);
+
+        --control-strong-color-default: rgba(255, 255, 255, 0.545);
+        --control-strong-color-disabled: rgba(255, 255, 255, 0.247);
+
+        --control-strong-stroke-default: rgba(255, 255, 255, 0.545);
+        --control-strong-stroke-disabled: rgba(255, 255, 255, 0.157);
+        
+        --control-solid-color-default: #454545;
+
+        --subtle-color-secondary: rgba(255, 255, 255, 0.059);
+        --subtle-color-tertiary: rgba(255, 255, 255, 0.039);
+        --subtle-color-disabled: rgba(255, 255, 255, 0);
+
+        --control-alt-color-secondary: rgba(0, 0, 0, 0.098);
+        --control-alt-color-tertiary: rgba(255, 255, 255, 0.043);
+        --control-alt-color-quarternary: rgba(255, 255, 255, 0.071);
+        --control-alt-color-disabled: rgba(255, 255, 255, 0);
+
+        --control-stroke-default: rgba(255, 255, 255, 0.071);
+        --control-stroke-secondary: rgba(255, 255, 255, 0.094);
+
+        --control-accent-stroke-default: rgba(255, 255, 255, 0.078);
+        --control-accent-stroke-secondary: rgba(0, 0, 0, 0.137);
+        --control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
+        --control-accent-stroke-disabled: rgba(0, 0, 0, 0.2);
+
+        --card-stroke-default: rgba(0, 0, 0, 0.098);
+        --card-stroke-solid: #1C1C1C;
+
+        --surface-stroke-default: rgba(255, 255, 255, 0.082);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.2);
+        --surface-stroke-inverse: rgba(0, 0, 0, 0.059);
+
+        --divider-color-default: rgba(255, 255, 255, 0.082);
+
+        --focus-stroke-outer: #FFFFFF;
+        --focus-stroke-inner: rgba(0, 0, 0, 0.702);
+
+        --card-background-default: rgba(255, 255, 255, 0.051);
+        --card-background-secondary: rgba(255, 255, 255, 0.031);
+
+        --smoke-color-default: rgba(0, 0, 0, 0.302);
+
+        --layer-color-default: rgba(58, 58, 58, 0.298);
+        --layer-color-alt: rgba(255, 255, 255, 0.051);
+
+        --background-base: #202020;
+        --background-secondary: #1C1C1C;
+        --background-tertiary: #282828;
+        --background-quarternary: #2C2C2C;
+
+        --system-color-success: #6CCB5F;
+        --system-color-caution: #FCE100;
+        --system-color-critical: #FF99A4;
+        --system-color-neutral: #FFFFFF8B;
+        --system-background-attention: #FFFFFF08;
+        --system-background-success: #393D1B;
+        --system-background-caution: #433519;
+        --system-background-critical: #442726;
+        --system-background-neutral: #FFFFFF08;
+
+        // Elevation
+        --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.13);
+        --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.26);
+        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
+        --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
+        
+        // Accent Colors
+        --accent-color-default: var(--accent-color-light-2);
+        --accent-color-secondary: var(--accent-color-light-2-90);
+        --accent-color-tertiary: var(--accent-color-light-2-80);
+        --accent-color-disabled: rgba(255, 255, 255, 0.157);
+
+        --accent-text-default: var(--accent-color-light-3);
+        --accent-text-secondary: var(--accent-color-light-3);
+        --accent-text-tertiary: var(--accent-color-light-2);
+    }
+}
+
+/*
+ * Base styles
+ */
+
+html, body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-secondary);
+}
+
+body {
+    height: fit-content;
+    min-height: 100%;
+    @include flex($direction: column);
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font: {
+        family: var(--font-family-sans-serif);
+    }
+}

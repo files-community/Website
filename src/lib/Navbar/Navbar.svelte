@@ -9,8 +9,9 @@
 
 <header class="navbar">
     <nav class="inner">
-        <a href="/" class="logo-wrap">
-            <img alt="Files logo" class="logo" width="32" height="32" src="/branding/logo.svg" />
+        <a href="/" class="logo">
+            <img alt="Files logo" class="logo-image" width="32" height="32" src="/branding/logo.svg" />
+            Files
         </a>
         <div class="divider" role="separator"></div>
         {#each items as { name, path, external, icon, type }}

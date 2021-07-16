@@ -67,6 +67,6 @@
 <slot />
 
 <style lang="scss" global>
-    @use "static/global";
-    @use "static/markdown";
+    @use "src/styles/global";
+    @use "src/styles/markdown";
 </style>

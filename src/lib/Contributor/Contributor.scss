@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 .contributor {
     @include flex($align: center);
@@ -11,7 +11,7 @@
     transition: 250ms ease;
     border-radius: var(--control-corner-radius);
     background-color: var(--background-tertiary);
-    border: 1px solid var(--CardStrokeColorDefault);
+    border: 1px solid var(--card-stroke-default);
     box-shadow: var(--flyout-elevation);
     img {
         -webkit-user-drag: none;

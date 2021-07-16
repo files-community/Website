@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 @import url("https://rsms.me/inter/inter.css");
 
@@ -109,7 +109,6 @@
     --overlay-corner-radius: 8px;
 
     // Control Text
-    --control-font-family: "Segoe UI", sans-serif;
     --control-font-size: 14px;
 
     // Border Brushes
@@ -141,56 +140,52 @@
         --control-color-secondary: rgba(249, 249, 249, 0.502);
         --control-color-tertiary: rgba(249, 249, 249, 0.302);
         --control-color-disabled: rgba(249, 249, 249, 0.302);
-        --control-color-transparent: rgba(255, 255, 255, 0);
         --control-color-input-active: #FFFFFF;
 
         --control-strong-color-default: rgba(0, 0, 0, 0.447);
         --control-strong-color-disabled: rgba(0, 0, 0, 0.318);
+        
+        --control-strong-stroke-default: rgba(0, 0, 0, 0.447);
+        --control-strong-stroke-disabled: rgba(0, 0, 0, 0.216);
 
         --control-solid-color-default: #FFFFFF;
 
-        --subtle-color-transparent: rgba(255, 255, 255, 0);
         --subtle-color-secondary: rgba(0, 0, 0, 0.035);
         --subtle-color-tertiary: rgba(0, 0, 0, 0.024);
         --subtle-color-disabled: rgba(255, 255, 255, 0);
 
-        --control-alt-color-transparent: rgba(255, 255, 255, 0);
         --control-alt-color-secondary: rgba(0, 0, 0, 0.024);
         --control-alt-color-tertiary: rgba(0, 0, 0, 0.059);
         --control-alt-color-quarternary: rgba(0, 0, 0, 0.094);
         --control-alt-color-disabled: rgba(255, 255, 255, 0);
 
-        --ControlStrokeColorDefault: rgba(0, 0, 0, 0.059);
-        --ControlStrokeColorSecondary: rgba(0, 0, 0, 0.161);
-        --ControlStrokeColorOnAccentDefault: rgba(255, 255, 255, 0.078);
-        --ControlStrokeColorOnAccentSecondary: rgba(0, 0, 0, 0.4);
-        --ControlStrokeColorOnAccentTertiary: rgba(0, 0, 0, 0.216);
-        --ControlStrokeColorOnAccentDisabled:   rgba(0, 0, 0, 0.059);
+        --control-stroke-default: rgba(0, 0, 0, 0.059);
+        --control-stroke-secondary: rgba(0, 0, 0, 0.161);
 
-        --CardStrokeColorDefault: rgba(0, 0, 0, 0.059);
-        --CardStrokeColorDefaultSolid: #ebebeb;
+        --control-accent-stroke-default: rgba(255, 255, 255, 0.078);
+        --control-accent-stroke-secondary: rgba(0, 0, 0, 0.4);
+        --control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
+        --control-accent-stroke-disabled:   rgba(0, 0, 0, 0.059);
 
-        --ControlStrongStrokeColorDefault: rgba(0, 0, 0, 0.447);
-        --ControlStrongStrokeColorDisabled: rgba(0, 0, 0, 0.216);
+        --card-stroke-default: rgba(0, 0, 0, 0.059);
+        --card-stroke-solid: #ebebeb;
 
-        --SurfaceStrokeColorDefault: rgba(0, 0, 0, 0.059);
-        --SurfaceStrokeColorFlyout: rgba(0, 0, 0, 0.059);
-        --SurfaceStrokeColorInverse: rgba(255, 255, 255, 0.082);
+        --surface-stroke-default: rgba(0, 0, 0, 0.059);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.059);
+        --surface-stroke-inverse: rgba(255, 255, 255, 0.082);
 
-        --DividerStrokeColorDefault: rgba(0, 0, 0, 0.059);
+        --divider-color-default: rgba(0, 0, 0, 0.059);
 
-        --FocusStrokeColorOuter: rgba(0, 0, 0, 0.894);
-        --FocusStrokeColorInner: rgba(255, 255, 255, 0.702);
+        --focus-stroke-outer: rgba(0, 0, 0, 0.894);
+        --focus-stroke-inner: rgba(255, 255, 255, 0.702);
 
-        --CardBackgroundFillColorDefault: rgba(255, 255, 255, 0.702);
-        --CardBackgroundFillColorSecondary: rgba(246, 246, 246, 0.502);
+        --card-background-default: rgba(255, 255, 255, 0.702);
+        --card-background-secondary: rgba(246, 246, 246, 0.502);
 
-        --SmokeFillColorDefault: rgba(0, 0, 0, 0.302);
+        --smoke-color-default: rgba(0, 0, 0, 0.302);
 
-        --LayerFillColorDefault: rgba(255, 255, 255, 0.502);
-        --LayerFillColorAlt: #FFFFFF;
-        --LayerOnAcrylicFillColorDefault: rgba(255, 255, 255, 0.251);
-        --LayerOnAccentAcrylicFillColorDefault: rgba(255, 255, 255, 0.251);
+        --layer-color-default: rgba(255, 255, 255, 0.502);
+        --layer-color-alt: #FFFFFF;
 
         --background-base: #F3F3F3;
         --background-secondary: #EEEEEE;
@@ -234,72 +229,68 @@
         color-scheme: dark;
 
         --text-color-primary: #FFFFFF;
-        --text-color-secondary: #FFFFFFC5;
-        --text-color-tertiary: #FFFFFF87;
-        --text-color-disabled: #FFFFFF5D;
-        --text-color-inverse: #000000E4;
+        --text-color-secondary: rgba(255, 255, 255, 0.773);
+        --text-color-tertiary: rgba(255, 255, 255, 0.529);
+        --text-color-disabled: rgba(255, 255, 255, 0.365);
+        --text-color-inverse: rgba(0, 0, 0, 0.894);
 
-        --accent-text-disabled: #FFFFFF5D;
+        --accent-text-disabled: rgba(255, 255, 255, 0.365);
 
         --accent-text-contrast-primary: #000000;
         --accent-text-contrast-secondary: rgba(0, 0, 0, 0.502);
         --accent-text-contrast-selected: #FFFFFF;
         --accent-text-contrast-disabled: rgba(255, 255, 255, 0.529);
 
-        --control-color-default: #FFFFFF0F;
-        --control-color-secondary: #FFFFFF15;
-        --control-color-tertiary: #FFFFFF08;
-        --control-color-disabled: #FFFFFF0B;
-        --control-color-transparent: #FFFFFF00;
-        --control-color-input-active: #1E1E1EB3;
+        --control-color-default: rgba(255, 255, 255, 0.059);
+        --control-color-secondary: rgba(255, 255, 255, 0.082);
+        --control-color-tertiary: rgba(255, 255, 255, 0.031);
+        --control-color-disabled: rgba(255, 255, 255, 0.043);
+        --control-color-input-active: rgba(30, 30, 30, 0.702);
 
-        --control-strong-color-default: #FFFFFF8B;
-        --control-strong-color-disabled: #FFFFFF3F;
+        --control-strong-color-default: rgba(255, 255, 255, 0.545);
+        --control-strong-color-disabled: rgba(255, 255, 255, 0.247);
 
+        --control-strong-stroke-default: rgba(255, 255, 255, 0.545);
+        --control-strong-stroke-disabled: rgba(255, 255, 255, 0.157);
+        
         --control-solid-color-default: #454545;
 
-        --subtle-color-transparent: #FFFFFF00;
-        --subtle-color-secondary: #FFFFFF0F;
-        --subtle-color-tertiary: #FFFFFF0A;
-        --subtle-color-disabled: #FFFFFF00;
+        --subtle-color-secondary: rgba(255, 255, 255, 0.059);
+        --subtle-color-tertiary: rgba(255, 255, 255, 0.039);
+        --subtle-color-disabled: rgba(255, 255, 255, 0);
 
-        --control-alt-color-transparent: #FFFFFF00;
-        --control-alt-color-secondary: #00000019;
-        --control-alt-color-tertiary: #FFFFFF0B;
-        --control-alt-color-quarternary: #FFFFFF12;
-        --control-alt-color-disabled: #FFFFFF00;
+        --control-alt-color-secondary: rgba(0, 0, 0, 0.098);
+        --control-alt-color-tertiary: rgba(255, 255, 255, 0.043);
+        --control-alt-color-quarternary: rgba(255, 255, 255, 0.071);
+        --control-alt-color-disabled: rgba(255, 255, 255, 0);
 
-        --ControlStrokeColorDefault: #FFFFFF12;
-        --ControlStrokeColorSecondary: #FFFFFF18;
-        --ControlStrokeColorOnAccentDefault: #FFFFFF14;
-        --ControlStrokeColorOnAccentSecondary: #00000023;
-        --ControlStrokeColorOnAccentTertiary: #00000037;
-        --ControlStrokeColorOnAccentDisabled: #00000033;
+        --control-stroke-default: rgba(255, 255, 255, 0.071);
+        --control-stroke-secondary: rgba(255, 255, 255, 0.094);
 
-        --CardStrokeColorDefault: #00000019;
-        --CardStrokeColorDefaultSolid: #1C1C1C;
+        --control-accent-stroke-default: rgba(255, 255, 255, 0.078);
+        --control-accent-stroke-secondary: rgba(0, 0, 0, 0.137);
+        --control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
+        --control-accent-stroke-disabled: rgba(0, 0, 0, 0.2);
 
-        --ControlStrongStrokeColorDefault: #FFFFFF8B;
-        --ControlStrongStrokeColorDisabled: #FFFFFF28;
+        --card-stroke-default: rgba(0, 0, 0, 0.098);
+        --card-stroke-solid: #1C1C1C;
 
-        --SurfaceStrokeColorDefault: #FFFFFF15;
-        --SurfaceStrokeColorFlyout: #00000033;
-        --SurfaceStrokeColorInverse: #0000000F;
+        --surface-stroke-default: rgba(255, 255, 255, 0.082);
+        --surface-stroke-flyout: rgba(0, 0, 0, 0.2);
+        --surface-stroke-inverse: rgba(0, 0, 0, 0.059);
 
-        --DividerStrokeColorDefault: #FFFFFF15;
+        --divider-color-default: rgba(255, 255, 255, 0.082);
 
-        --FocusStrokeColorOuter: #FFFFFF;
-        --FocusStrokeColorInner: #000000B3;
+        --focus-stroke-outer: #FFFFFF;
+        --focus-stroke-inner: rgba(0, 0, 0, 0.702);
 
-        --CardBackgroundFillColorDefault: #FFFFFF0D;
-        --CardBackgroundFillColorSecondary: #FFFFFF08;
+        --card-background-default: rgba(255, 255, 255, 0.051);
+        --card-background-secondary: rgba(255, 255, 255, 0.031);
 
-        --SmokeFillColorDefault: #0000004D;
+        --smoke-color-default: rgba(0, 0, 0, 0.302);
 
-        --LayerFillColorDefault: #3A3A3A4C;
-        --LayerFillColorAlt: #FFFFFF0D;
-        --LayerOnAcrylicFillColorDefault: #FFFFFF09;
-        --LayerOnAccentAcrylicFillColorDefault: #FFFFFF09;
+        --layer-color-default: rgba(58, 58, 58, 0.298);
+        --layer-color-alt: rgba(255, 255, 255, 0.051);
 
         --background-base: #202020;
         --background-secondary: #1C1C1C;

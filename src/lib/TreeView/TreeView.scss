@@ -1,4 +1,4 @@
-@use "static/mixins" as *;
+@use "src/styles/mixins" as *;
 
 @keyframes selection-indicator {
     0% {
@@ -26,7 +26,6 @@
     border-radius: var(--control-corner-radius);
     font: {
         size: var(--control-font-size);
-        family: var(--control-font-family);
         weight: normal;
     }
     &:active,

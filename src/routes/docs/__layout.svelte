@@ -31,7 +31,7 @@
         background-clip: padding-box;
         background-color: var(--background-tertiary);
         border-top-left-radius: var(--overlay-corner-radius);
-        border: 1px solid var(--CardStrokeColorDefault);
+        border: 1px solid var(--card-stroke-default);
     }
 
     .docs {
@@ -54,7 +54,7 @@
 
     .divider {
         width: 100%;
-        border-top: 1px solid var(--DividerStrokeColorDefault);
+        border-top: 1px solid var(--divider-color-default);
         margin: 12px 0;
     }
 </style>
