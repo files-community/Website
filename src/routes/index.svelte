@@ -10,6 +10,7 @@
         ComponentShowcase,
         HeaderChip,
         Contributor,
+        ColorSwatch,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -22,6 +23,7 @@
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let scrollY: number;
+    let themes = 1;
 
     let [contributors1, contributors2, contributors3] = [[], [], []];
 
@@ -163,6 +165,14 @@
         <HeaderChip>Themes</HeaderChip>
         <h2>Customize to your liking.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <div class="theme-chooser">
+            <ColorSwatch value={1} bind:group={themes} />
+            <ColorSwatch value={2} bind:group={themes} />
+            <ColorSwatch value={3} bind:group={themes} />
+            <ColorSwatch value={4} bind:group={themes} />
+            <ColorSwatch value={5} bind:group={themes} />
+            <ColorSwatch value={6} bind:group={themes} />
+        </div>
         <div class="buttons-spacer">
             <Button style="accent" href="themes">
                 Get Themes

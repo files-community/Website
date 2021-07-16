@@ -51,10 +51,14 @@
     @include flex($align: center);  
     margin-right: 8px;
     color: var(--text-color-primary);
+    transition: 150ms ease;
     text-decoration: none;
     font: {
         size: 20px;
         weight: 600;
+    }
+    &:hover {
+        color: var(--text-color-secondary);
     }
     img {
         margin-right: 12px;

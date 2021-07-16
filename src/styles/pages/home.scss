@@ -187,6 +187,14 @@
     min-width: 478px;
 }
 
+.theme-chooser {
+    width: fit-content;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 8px;
+}
+
 @media screen and (max-width: 832px) {
     .themes-section-content {
         width: 100%;
