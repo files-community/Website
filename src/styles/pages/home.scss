@@ -167,6 +167,10 @@
     }
 }
 
+:global(#features-section) {
+    background-color: var(--subtle-color-tertiary);
+}
+
 :global {
     #themes-section {
         @include flex($align: center);
