@@ -9,7 +9,7 @@
     export let searchButton: boolean = true;
     export let revealButton: boolean = true;
     export let disabled: boolean = false;
-    let className = undefined;
+    let className: string = "";
     export { className as class };
 
     let input: HTMLInputElement;
@@ -50,7 +50,7 @@
 
 <style lang="scss" src="./TextBox.scss"></style>
 
-<div class={"textbox-underline-frame" + ` ${className}` || ""}>
+<div class="textbox-underline-frame {className || ""}">
     <div class="textbox-container" class:disabled>
         <input
             class="textbox"

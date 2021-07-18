@@ -6,7 +6,7 @@
     export let id = undefined;
     export let href = undefined;
     export let disabled: boolean = false;
-    let className = undefined;
+    let className: string = "";
     export {className as class};
 </script>
 
@@ -14,7 +14,7 @@
 
 {#if href}
     <a
-        class={`button style-${style}` + ` ${className || ""}`}
+        class="button style-{style} {className || ""}"
         class:disabled
         on:click
         on:keypress
@@ -29,7 +29,7 @@
     </a>
     {:else}
     <button
-        class={`button style-${style}` + ` ${className || ""}`}
+        class="button style-{style} {className || ""}"
         on:click
         on:keypress
         on:keydown

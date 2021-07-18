@@ -160,17 +160,17 @@
     <HeaderChip>Features</HeaderChip>
 </PageSection>
 
-<PageSection id="themes-section">
+<PageSection id="themes-section" class="theme-{themes}">
     <div class="themes-section-content">
         <HeaderChip>Themes</HeaderChip>
         <h2>Customize to your liking.</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
         <div class="theme-chooser">
             <ColorSwatch color="var(--background-tertiary);" value={1} bind:group={themes} />
-            <ColorSwatch color="#3ecc9c" value={2} bind:group={themes} />
-            <ColorSwatch color="#ea5b7a" value={3} bind:group={themes} />
-            <ColorSwatch color="#c34735" value={4} bind:group={themes} />
-            <ColorSwatch color="#274370" value={5} bind:group={themes} />
+            <ColorSwatch color="#414958" value={2} bind:group={themes} />
+            <ColorSwatch color="#6441a4" value={3} bind:group={themes} />
+            <ColorSwatch color="#feb400" value={4} bind:group={themes} />
+            <ColorSwatch color="#073642" value={5} bind:group={themes} />
             <ColorSwatch color="#88c0d0" value={6} bind:group={themes} />
         </div>
         <div class="buttons-spacer">

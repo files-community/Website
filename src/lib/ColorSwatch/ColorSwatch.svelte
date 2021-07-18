@@ -1,8 +1,8 @@
 <script lang="ts">
-        export let value: any = undefined;
+    export let value: any = undefined;
     export let color: string = "#000000";
     export let group = [];
-    let className;
+    let className: string = "";
     export { className as class };
 </script>
 
@@ -12,7 +12,7 @@
     bind:group
     {value}
     type="radio"
-    class={"color-swatch" + (className || "")}
+    class="color-swatch {className || ""}"
     style="background-color: {color}"
     {...$$restProps}
 />

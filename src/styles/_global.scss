@@ -348,3 +348,8 @@ body {
         family: var(--font-family-sans-serif);
     }
 }
+
+::selection {
+    background-color: var(--accent-color-dark-1);
+    color: #fff;
+}

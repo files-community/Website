@@ -149,6 +149,12 @@
     }
 }
 
+@media only screen and (max-width: 1068px) {
+    .files-screenshot {
+        top: 0;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     .design-image {
         width: 100%;
@@ -174,10 +180,62 @@
 :global {
     #themes-section {
         @include flex($align: center);
-        border-radius: 0 0 12px 12px;
+        border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
         min-height: 600px;
         background-color: var(--background-base);
         overflow: hidden;
+        &:not(.theme-1) ::selection {
+            background-color: var(--accent-color-default);
+        }
+        &.theme- {
+            &2 {
+                --accent-color-default: #3ecc9c;
+                --accent-text-default: var(--accent-color-default);
+                --text-color-primary: var(--accent-color-default);
+                --text-color-tertiary: #a6aebf;
+                --text-color-secondary: #a6aebf;
+                --subtle-color-secondary: #363c4a;
+                --background-base: #2b303a;
+            }
+            &3 {
+                --accent-color-default: #6441a4;
+                --accent-text-default: var(--text-color-tertiary);
+                --text-color-primary: #ffffff;
+                --text-color-tertiary: #b19dd8;
+                --text-color-secondary: #b19dd8;
+                --subtle-color-secondary: #2c2642;
+                --background-base: #17141f;
+            }
+            &4 {
+                --accent-color-default: #fff;
+                --accent-text-default: var(--text-color-tertiary);
+                --accent-text-contrast-primary: #000000;
+                --text-color-primary: #000000;
+                --text-color-tertiary: #332500;
+                --text-color-secondary: #000000;
+                --subtle-color-secondary: #ffffff;
+                --background-base: #feb400;
+            }
+            &5 {
+                --accent-color-default: #eee8d5;
+                --accent-text-default: var(--text-color-tertiary);
+                --accent-text-contrast-primary: #000000;
+                --text-color-primary: #fdf6e3;
+                --text-color-tertiary: #93a1a1;
+                --text-color-secondary: #839496;
+                --subtle-color-secondary: #073642;
+                --background-base: #002b36;
+            }
+            &6 {
+                --accent-color-default: #88C0D0;
+                --accent-text-default: var(--text-color-tertiary);
+                --text-color-primary: #2e3440;
+                --text-color-tertiary: #4C566A;
+                --text-color-secondary: var(--text-color-primary);
+                --subtle-color-secondary: var(--accent-color-default);
+                --background-base: #d8dee9;
+            }
+        }
         .component-showcase {
             position: absolute;
             right: -400px;
@@ -196,10 +254,10 @@
     margin-bottom: 24px;
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-gap: 8px;
+    grid-gap: 12px;
 }
 
-@media screen and (max-width: 832px) {
+@media only screen and (max-width: 832px) {
     .themes-section-content {
         width: 100%;
         min-width: unset;
