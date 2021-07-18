@@ -1,0 +1,31 @@
+@use "src/styles/mixins" as *;
+
+.feature-card {
+    padding: 24px;
+    break-inside: avoid-column;
+    border-radius: var(--control-corner-radius);
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--card-stroke-default);
+    :global(svg) {
+        @include icon($size: 24px);
+        color: var(--accent-color-default);
+    }
+    h4 {
+        margin: 0;
+        margin-top: 8px;
+        color: var(--text-color-primary);
+        font: {
+            size: 18px;
+            weight: 600;
+        }
+    }
+    p {
+        margin: 0;
+        margin-top: 8px;
+        color: var(--text-color-tertiary);
+        font: {
+            size: 14px;
+            weight: 400;
+        }
+    }
+}

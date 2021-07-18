@@ -11,6 +11,7 @@
         HeaderChip,
         Contributor,
         ColorSwatch,
+        FeatureCard,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -158,6 +159,16 @@
 
 <PageSection id="features-section">
     <HeaderChip>Features</HeaderChip>
+    <h2>Lorem ipsum dolor.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <div class="feature-cards-container">
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem" />
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem" />
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem" />
+        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
+    </div>
 </PageSection>
 
 <PageSection id="themes-section" class="theme-{themes}">

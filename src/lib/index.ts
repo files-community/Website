@@ -7,5 +7,6 @@ export { default as TreeView } from "./TreeView/TreeView.svelte";
 export { default as HeaderChip } from "./HeaderChip/HeaderChip.svelte";
 export { default as ComponentShowcase } from "./ComponentShowcase/ComponentShowcase.svelte";
 export { default as Contributor } from "./Contributor/Contributor.svelte";
+export { default as FeatureCard } from "./FeatureCard/FeatureCard.svelte";
 export { default as ColorSwatch } from "./ColorSwatch/ColorSwatch.svelte";
 export { RainbowCanvas, RainbowCanvasAlt } from "./canvas";

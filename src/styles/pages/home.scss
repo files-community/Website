@@ -177,6 +177,16 @@
     background-color: var(--subtle-color-tertiary);
 }
 
+.feature-cards-container {
+    display: block;
+    column-count: 2;
+    column-gap: 8px;
+    max-width: 524px;
+    :global(.feature-card) {
+        margin-bottom: 8px;
+    }
+}
+
 :global {
     #themes-section {
         @include flex($align: center);
