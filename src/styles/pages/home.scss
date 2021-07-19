@@ -174,14 +174,24 @@
 }
 
 :global(#features-section) {
-    background-color: var(--subtle-color-tertiary);
+    @include flex($wrap: true);
+    background-color: var(--background-base);
+}
+
+.features-section- {
+    &left {
+        flex: 1 1 auto;
+    }
+    &right {
+        width: 50%;
+        margin-left: 48px;
+    }
 }
 
 .feature-cards-container {
     display: block;
     column-count: 2;
     column-gap: 8px;
-    max-width: 524px;
     :global(.feature-card) {
         margin-bottom: 8px;
     }
@@ -192,10 +202,13 @@
         @include flex($align: center);
         border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
         min-height: 600px;
-        background-color: var(--background-base);
+        background-color: var(--card-background-secondary);
         overflow: hidden;
-        &:not(.theme-1) ::selection {
-            background-color: var(--accent-color-default);
+        &:not(.theme-1) {
+            background-color: var(--background-base);
+            ::selection {
+                background-color: var(--accent-color-default);
+            }
         }
         &.theme- {
             &2 {
@@ -255,7 +268,7 @@
 }
 
 .themes-section-content {
-    width: 45%;
+    width: 52%;
     min-width: 478px;
 }
 

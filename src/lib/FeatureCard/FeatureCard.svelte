@@ -6,7 +6,7 @@
 
 <style lang="scss" src="./FeatureCard.scss"></style>
 
-<div class="feature-card">
+<div class="feature-card" {...$$restProps}>
     <slot name="icon">
         {@html Question}
     </slot>

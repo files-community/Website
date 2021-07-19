@@ -2,10 +2,16 @@
 
 .feature-card {
     padding: 24px;
+    position: relative;
     break-inside: avoid-column;
+    cursor: default;
+    transition: 250ms ease;
     border-radius: var(--control-corner-radius);
     background-color: var(--background-tertiary);
     border: 1px solid var(--card-stroke-default);
+    &:hover {
+        box-shadow: var(--card-elevation);
+    }
     :global(svg) {
         @include icon($size: 24px);
         color: var(--accent-color-default);

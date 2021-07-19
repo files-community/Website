@@ -19,12 +19,17 @@
     import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
     import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
+    import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
+    import PreviewLink from "@fluentui/svg-icons/icons/preview_link_20_regular.svg?raw";
+    import ShieldKeyhole from "@fluentui/svg-icons/icons/shield_keyhole_24_regular.svg?raw";
+    import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
 
     let windows: boolean;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let scrollY: number;
-    let themes = 1;
+    let themes: number = 1;
+    let features: number = 1;
 
     let [contributors1, contributors2, contributors3] = [[], [], []];
 
@@ -158,16 +163,39 @@
 </PageSection>
 
 <PageSection id="features-section">
-    <HeaderChip>Features</HeaderChip>
-    <h2>Lorem ipsum dolor.</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-    <div class="feature-cards-container">
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem" />
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem" />
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem" />
-        <FeatureCard description="Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum" />
+    <div class="features-section-left">
+        <!-- todo -->
+    </div>
+    <div class="features-section-right">
+        <HeaderChip>Features</HeaderChip>
+        <h2>Lorem ipsum dolor.</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="feature-cards-container">
+            <FeatureCard description="Files provides integrations with cloud services such as OneDrive and Google Drive. Manage your documents and photos in the cloud right from the sidebar.">
+                <svelte:fragment slot="icon">
+                    {@html Cloud}
+                </svelte:fragment>
+                Seamless cloud integration.
+            </FeatureCard>
+            <FeatureCard description="Preview all your documents and photos without opening them. We even support syntax highlighting and markdown!">
+                <svelte:fragment slot="icon">
+                    {@html PreviewLink}
+                </svelte:fragment>
+                File Previewer
+            </FeatureCard>
+            <FeatureCard description="Use the same familiar permissions system from File Explorer, but with a new and updated design.">
+                <svelte:fragment slot="icon">
+                    {@html ShieldKeyhole}
+                </svelte:fragment>
+                Permissions Management
+            </FeatureCard>
+            <FeatureCard description="Don't waste your time dealing with 5 windows at once. Use our powerful browser-like tabbing interface complete with keyboard shortcuts.">
+                <svelte:fragment slot="icon">
+                    {@html TabDesktop}
+                </svelte:fragment>
+                Multitask with Tabs
+            </FeatureCard>
+        </div>
     </div>
 </PageSection>
 
