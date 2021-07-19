@@ -54,10 +54,6 @@ export const docsMap = [
                 path: "/contributing/translating-files"
             },
             {
-                name: "Building Extensions for Files",
-                path: "/contributing/building-extensions"
-            },
-            {
                 name: "Code Style",
                 path: "/contributing/code-style"
             }
