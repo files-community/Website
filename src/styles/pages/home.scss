@@ -2,7 +2,9 @@
 
 :global {
     #hero-section {
-        @include flex($align: normal, $gap: 64px);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 64px;
         overflow: hidden;
         height: 75vh;
         min-height: 584px;
@@ -67,12 +69,11 @@
         }
     }
     &right {
-        flex: 0 0 auto;
         img {
             -webkit-user-drag: none;
             user-select: none;
-            height: 100%;
-            width: auto;
+            width: 100%;
+            height: auto;
             aspect-ratio: 1280 / 960;
             box-shadow: var(--window-elevation);
             background-color: var(--control-color-disabled);
@@ -85,7 +86,7 @@
 
 @media only screen and (max-width: 1024px) {
     :global(#hero-section) {
-        flex-direction: column;
+        grid-template-columns: auto;
         height: auto;
         max-height: unset;
     }
