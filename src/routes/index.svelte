@@ -169,7 +169,7 @@
     <div class="features-section-right">
         <HeaderChip>Features</HeaderChip>
         <h2>It already does that.</h2>
-        <p>Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered, with robust features you expect from a modern file manager.</p>
+        <p>Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.</p>
         <div class="feature-cards-container">
             <FeatureCard description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.">
                 <svelte:fragment slot="icon">
