@@ -73,6 +73,7 @@
             user-select: none;
             height: 100%;
             width: auto;
+            aspect-ratio: 1280 / 960;
             box-shadow: var(--window-elevation);
             background-color: var(--control-color-disabled);
             border: 1px solid var(--surface-stroke-default);
@@ -175,7 +176,6 @@
         }
         &wallpaper {
             object-fit: cover;
-            height: 300px;
             width: 170%;
             left: -35%;
             border-radius: 0;
