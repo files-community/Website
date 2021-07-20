@@ -2,9 +2,7 @@
 
 :global {
     #hero-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 64px;
+        @include flex($align: normal, $gap: 64px);
         overflow: hidden;
         height: 75vh;
         min-height: 584px;
@@ -68,25 +66,25 @@
             margin: 0;
         }
     }
-    &container {
-        margin: auto;
-    }
-    &screenshot {
-        -webkit-user-drag: none;
-        user-select: none;
-        height: auto;
-        width: 100%;
-        box-shadow: var(--window-elevation);
-        background-color: var(--control-color-disabled);
-        border: 1px solid var(--surface-stroke-default);
-        border-radius: calc(var(--overlay-corner-radius) / 2);
-        backdrop-filter: blur(200px) saturate(150%);
+    &right {
+        flex: 0 0 auto;
+        img {
+            -webkit-user-drag: none;
+            user-select: none;
+            height: 100%;
+            width: auto;
+            box-shadow: var(--window-elevation);
+            background-color: var(--control-color-disabled);
+            border: 1px solid var(--surface-stroke-default);
+            border-radius: calc(var(--overlay-corner-radius) / 2);
+            backdrop-filter: blur(200px) saturate(150%);
+        }
     }
 }
 
 @media only screen and (max-width: 1024px) {
     :global(#hero-section) {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         height: auto;
         max-height: unset;
     }
@@ -98,9 +96,7 @@
                 justify-content: center;
             }
         }
-        &screenshot {
-            -webkit-user-drag: none;
-            user-select: none;
+        &right img {
             width: 100%;
             height: auto;
         }
@@ -173,14 +169,16 @@
     .files- {
         &screenshot {
             width: 100%;
-            top: -72px;
+            top: -64px;
             transform: none !important;
             border-radius: calc(var(--overlay-corner-radius) / 2);
         }
         &wallpaper {
+            object-fit: cover;
+            height: 300px;
             width: 170%;
             left: -35%;
-            border-radius: var(--overlay-corner-radius);
+            border-radius: 0;
         }
     }
 }

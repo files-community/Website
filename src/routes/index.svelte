@@ -93,7 +93,7 @@
             </Button>
         </div>
     </div>
-    <picture class="hero-container">
+    <picture class="hero-right">
         <source
             media="(prefers-color-scheme: dark)"
             srcset="/screenshots/hero-dark.png"
@@ -103,7 +103,6 @@
             srcset="/screenshots/hero-light.png"
         >
         <img
-            class="hero-screenshot"
             src="/screenshots/hero-light.png"
             alt="Files new tab screenshot"
         >
