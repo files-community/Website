@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    
+    import {onMount} from "svelte";
+
     import CalendarView_light from "$static/exported/CalendarView_light.svg?raw";
     import CalendarView_dark from "$static/exported/CalendarView_dark.svg?raw";
     import ContentDialog_light from "$static/exported/ContentDialog_light.svg?raw";
@@ -17,14 +17,12 @@
     import TeachingTip_light from "$static/exported/TeachingTip_light.svg?raw";
 
     let scrollY: number;
-    let theme: string = "light";
+    let theme = "light";
 
     onMount(() => {
         theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
     });
 </script>
-
-<style lang="scss" src="./ComponentShowcase.scss"></style>
 
 <div class="component-showcase">
     <div class="column left">
@@ -33,7 +31,7 @@
             {@html ContentDialog_light}
             {@html DatePicker_light}
             {@html TeachingTip_light}
-            {:else}
+        {:else}
             {@html CalendarView_dark}
             {@html ContentDialog_dark}
             {@html DatePicker_dark}
@@ -45,10 +43,14 @@
             {@html InfoBar_light}
             {@html InkToolbar_light}
             {@html NavigationView_light}
-            {:else}
+        {:else}
             {@html InfoBar_dark}
             {@html InkToolbar_dark}
             {@html NavigationView_dark}
         {/if}
     </div>
 </div>
+
+<style lang="scss">
+  @use "ComponentShowcase";
+</style>
