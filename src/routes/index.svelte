@@ -20,9 +20,9 @@
     import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
     import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
-    import PreviewLink from "@fluentui/svg-icons/icons/preview_link_20_regular.svg?raw";
     import ShieldKeyhole from "@fluentui/svg-icons/icons/shield_keyhole_24_regular.svg?raw";
     import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
+    import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
 
     let windows: boolean;
     let heroCanvas: HTMLCanvasElement;
@@ -168,32 +168,32 @@
     </div>
     <div class="features-section-right">
         <HeaderChip>Features</HeaderChip>
-        <h2>Lorem ipsum dolor.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <h2>It already does that.</h2>
+        <p>Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered, with robust features you expect from a modern file manager.</p>
         <div class="feature-cards-container">
-            <FeatureCard description="Files provides integrations with cloud services such as OneDrive and Google Drive. Manage your documents and photos in the cloud right from the sidebar.">
+            <FeatureCard description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.">
                 <svelte:fragment slot="icon">
                     {@html Cloud}
                 </svelte:fragment>
-                Seamless cloud integration.
+                Seamless cloud integration
             </FeatureCard>
-            <FeatureCard description="Preview all your documents and photos without opening them. We even support syntax highlighting and markdown!">
+            <FeatureCard description="Preview documents, photos, and more without opening them. Peek at code files with advanced syntax highlighting and markdown support.">
                 <svelte:fragment slot="icon">
-                    {@html PreviewLink}
+                    {@html EyeVisible}
                 </svelte:fragment>
-                File Previewer
+                File previewer
             </FeatureCard>
-            <FeatureCard description="Use the same familiar permissions system from File Explorer, but with a new and updated design.">
+            <FeatureCard description="Use the same familiar permissions system from File Explorer, but with a new modern design that's a delight to use.">
                 <svelte:fragment slot="icon">
                     {@html ShieldKeyhole}
                 </svelte:fragment>
-                Permissions Management
+                Permissions management
             </FeatureCard>
-            <FeatureCard description="Don't waste your time dealing with 5 windows at once. Use our powerful browser-like tabbing interface complete with keyboard shortcuts.">
+            <FeatureCard description="Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts.">
                 <svelte:fragment slot="icon">
                     {@html TabDesktop}
                 </svelte:fragment>
-                Multitask with Tabs
+                Multitask with tabs
             </FeatureCard>
         </div>
     </div>
@@ -202,8 +202,8 @@
 <PageSection id="themes-section" class="theme-{themes}">
     <div class="themes-section-content">
         <HeaderChip>Themes</HeaderChip>
-        <h2>Customize to your liking.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <h2>Disctinctly personal.</h2>
+        <p>Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Explore themes created by the community or dive right into the docs and create your own.</p>
         <div class="theme-chooser">
             <ColorSwatch color="var(--background-tertiary);" value={1} bind:group={themes} />
             <ColorSwatch color="#414958" value={2} bind:group={themes} />
