@@ -5,8 +5,9 @@ export type Contributor = {
 	avatar_url: string;
 	contributions: number;
 };
-export type DocsPage = {
-    name: string;
-    path: string;
-    children?: DocsPage[]
+export type DocsMap = {
+    name?: string;
+    path?: string;
+    type?: string;
+    pages?: DocsMap;
 }

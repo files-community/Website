@@ -7,7 +7,7 @@
     color: var(--text-color-secondary);
     line-height: 18px;
     font: {
-        size: 14px;
+        size: var(--control-font-size);
         weight: 600;
     }
 }

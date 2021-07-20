@@ -15,23 +15,31 @@
         color: var(--text-color-primary);
     }
     h1 {
-        font-size: 72px;
+        font-size: 7.2rem;
     }
     h2 {
-        font-size: 48px;
+        font-size: 4.8rem;
     }
     h3 {
-        font-size: 32px;
+        font-size: 3.2rem;
     }
     p {
+        max-width: 65ch;
         margin-bottom: 24px;
         margin-top: 12px;
         line-height: 1.65;
         color: var(--text-color-tertiary);
         font: {
-            size: 1rem;
+            size: 1.6rem;
             weight: 400;
         }
+    }
+
+    hr {
+        margin: 0;
+        margin-bottom: 24px;
+        border: none;
+        border-top: 1px solid var(--divider-color-default);
     }
 
     .buttons-spacer {

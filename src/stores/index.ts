@@ -1,7 +1,7 @@
-import type DocsPage from "$types";
+import type DocsMap from "$types";
 
 export const links = {
-    discord: "G5aqYcgWxB",
+    discord: "files",
     storeId: "9nghp3dx8hdx",
     github: {
         owner: "files-community",
@@ -10,7 +10,7 @@ export const links = {
     }
 };
 
-export const docsMap = [
+export const docsMap: DocsMap = [
     {
         name: "Overview",
         path: ""

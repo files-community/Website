@@ -58,11 +58,11 @@
     }
     &button-inner {
         @include flex($direction: column);
-        font-size: 10px;
+        font-size: 1rem;
         line-height: normal;
         margin-left: 8px;
         h5 {
-            font-size: 12px;
+            font-size: 1.2rem;
             font-weight: 600;
             margin-bottom: 8px;
             margin: 0;
@@ -208,6 +208,24 @@
     }
 }
 
+@media only screen and (max-width: 1164px) {
+    .feature-cards-container {
+        column-count: 1;
+    }
+}
+
+@media only screen and (max-width: 924px) {
+    .features-section- {
+        &left {
+            display: none;
+        }
+        &right {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
+
 :global {
     #themes-section {
         @include flex($align: center);
@@ -223,20 +241,30 @@
         &.theme- {
             &2 {
                 --accent-color-default: #3ecc9c;
+                --accent-color-secondary: #70ccad;
+                --accent-color-tertiary: #339b78;
                 --accent-text-default: var(--accent-color-default);
+                --accent-text-tertiary: var(--accent-color-secondary);
                 --text-color-primary: var(--accent-color-default);
                 --text-color-tertiary: #a6aebf;
                 --text-color-secondary: #a6aebf;
                 --subtle-color-secondary: #363c4a;
+                --subtle-color-tertiary: #2f3541;
                 --background-base: #2b303a;
             }
             &3 {
                 --accent-color-default: #6441a4;
+                --accent-color-secondary: #7d5bbf;
+                --accent-color-tertiary: var(--accent-color-secondary);
                 --accent-text-default: var(--text-color-tertiary);
+                --accent-text-tertiary: var(--accent-color-secondary);
+                --accent-text-contrast-primary: #ffffff;
+                --accent-text-contrast-secondary: rgba(255, 255, 255, 0.6);
                 --text-color-primary: #ffffff;
                 --text-color-tertiary: #b19dd8;
                 --text-color-secondary: #b19dd8;
                 --subtle-color-secondary: #2c2642;
+                --subtle-color-tertiary: var(--subtle-color-secondary);
                 --background-base: #17141f;
             }
             &4 {
@@ -258,6 +286,9 @@
                 --text-color-secondary: #839496;
                 --subtle-color-secondary: #073642;
                 --background-base: #002b36;
+                ::selection {
+                    color: var(--accent-text-contrast-primary);
+                }
             }
             &6 {
                 --accent-color-default: #88C0D0;
@@ -353,7 +384,7 @@
     .community-section-card {
         padding: 24px;
         h2 {
-            font-size: 32px;
+            font-size: 3.2rem;
         }
     }
 }

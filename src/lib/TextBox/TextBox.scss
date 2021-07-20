@@ -54,8 +54,8 @@
     color: var(--text-color-primary);
     background-color: transparent;
     font: {
-        size: 14px;
-        weight: 400;
+        size: var(--control-font-size);
+        weight: normal;
     }
     &::-webkit-search-decoration,
     &::-webkit-search-cancel-button,
