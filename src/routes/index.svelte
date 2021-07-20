@@ -1,17 +1,17 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+    import {onMount} from "svelte";
 
-    import { links } from "$stores";
-    import { getContributors } from "./fetchHomepageData";
+    import {links} from "$stores";
+    import {getContributors} from "./fetchHomepageData";
     import {
-        PageSection,
         Button,
-        HyperlinkButton,
-        ComponentShowcase,
-        HeaderChip,
-        Contributor,
         ColorSwatch,
+        ComponentShowcase,
+        Contributor,
         FeatureCard,
+        HeaderChip,
+        HyperlinkButton,
+        PageSection,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -28,13 +28,13 @@
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let scrollY: number;
-    let themes: number = 1;
-    let features: number = 1;
+    let themes = 1;
+    let features = 1;
 
     let [contributors1, contributors2, contributors3] = [[], [], []];
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
-    
+
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
