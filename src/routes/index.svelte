@@ -131,16 +131,16 @@
         <picture>
             <source
                 media="(prefers-color-scheme: dark)"
-                srcset="/screenshots/hero-dark.png"
+                srcset="/screenshots/folder-list-dark.png"
             >
             <source
                 media="(prefers-color-scheme: light)"
-                srcset="/screenshots/hero-light.png"
+                srcset="/screenshots/folder-list-light.png"
             >
             <img
                 class="files-screenshot"
-                style="transform: translatey({scrollY / -10}px)"
-                src="/screenshots/hero-light.png"
+                style="transform: translatey({scrollY / -150}vw)"
+                src="/screenshots/folder-list-light.png"
                 alt="Files new tab screenshot"
             >
         </picture>
