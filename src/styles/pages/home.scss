@@ -110,6 +110,7 @@
 :global {
     #design-section {
         @include flex($direction: column, $align: center);
+        overflow: hidden;
         text-align: center;
     }
 }
