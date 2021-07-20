@@ -12,6 +12,8 @@
         HeaderChip,
         HyperlinkButton,
         PageSection,
+        MenuFlyout,
+        MenuFlyoutItem,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -76,9 +78,16 @@
                         <span>Microsoft Store</span>
                     </div>
                 </Button>
-                <Button style="accent">
-                    {@html ChevronDown}
-                </Button>
+                <MenuFlyout>
+                    <Button style="accent">
+                        {@html ChevronDown}
+                    </Button>
+                    <svelte:fragment slot="menu">
+                        <MenuFlyoutItem>Microsoft Store</MenuFlyoutItem>
+                        <MenuFlyoutItem>Github Releases</MenuFlyoutItem>
+                        <MenuFlyoutItem>Winget CLI</MenuFlyoutItem>
+                    </svelte:fragment>
+                </MenuFlyout>
             </div>
             <Button
                 href="https://github.com/{links.github.owner}/{links.github.repo}/"
@@ -163,7 +172,6 @@
 
 <PageSection id="features-section">
     <div class="features-section-left">
-        <!-- todo -->
     </div>
     <div class="features-section-right">
         <HeaderChip>Features</HeaderChip>

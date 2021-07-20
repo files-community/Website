@@ -3,6 +3,8 @@ export { default as TextBox } from "./TextBox/TextBox.svelte";
 export { default as Navbar } from "./Navbar/Navbar.svelte";
 export { default as PageSection } from "./PageSection/PageSection.svelte";
 export { default as HyperlinkButton } from "./HyperlinkButton/HyperlinkButton.svelte";
+export { default as MenuFlyout } from "./MenuFlyout/MenuFlyoutWrapper.svelte";
+export { default as MenuFlyoutItem } from "./MenuFlyout/MenuFlyoutItem.svelte";
 export { default as TreeView } from "./TreeView/TreeView.svelte";
 export { default as HeaderChip } from "./HeaderChip/HeaderChip.svelte";
 export { default as ComponentShowcase } from "./ComponentShowcase/ComponentShowcase.svelte";

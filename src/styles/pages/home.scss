@@ -16,10 +16,16 @@
                 @include icon($size: 18px);
             }
         }
-        .split-button .button:last-child {
-            padding: 0 8px;
-            svg {
-                @include icon($size: 12px);
+        .split-button {
+            position: relative;
+            .menu-flyout-container {
+                display: contents;
+                &:last-child .button {
+                    padding: 0 8px;
+                    svg {
+                        @include icon($size: 12px);
+                    }
+                }
             }
         }
 
