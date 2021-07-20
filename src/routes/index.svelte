@@ -181,7 +181,7 @@
                 <svelte:fragment slot="icon">
                     {@html EyeVisible}
                 </svelte:fragment>
-                File previewer
+                File preview
             </FeatureCard>
             <FeatureCard description="Use the same familiar permissions system from File Explorer, but with a new modern design that's a delight to use.">
                 <svelte:fragment slot="icon">
