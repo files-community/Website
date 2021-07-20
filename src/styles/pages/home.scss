@@ -104,9 +104,6 @@
     #design-section {
         @include flex($direction: column, $align: center);
         text-align: center;
-        p {
-            max-width: 650px;
-        }
     }
 }
 
@@ -150,15 +147,15 @@
 }
 
 @media only screen and (max-width: 1068px) {
+    .design-image {
+        width: 100%;
+    }
     .files-screenshot {
         top: 0;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .design-image {
-        width: 100%;
-    }
     .files- {
         &screenshot {
             width: 90%;
@@ -200,7 +197,6 @@
 :global {
     #themes-section {
         @include flex($align: center);
-        border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
         min-height: 600px;
         background-color: var(--card-background-secondary);
         overflow: hidden;
@@ -305,6 +301,11 @@
         --subtle-color-disabled: rgba(255, 255, 255, 0);
         --accent-text-default: var(--accent-color-dark-3);
         --accent-text-tertiary: var(--accent-color-dark-2);
+
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &card {
         @include flex($direction: column, $justify: center, $align: center);
