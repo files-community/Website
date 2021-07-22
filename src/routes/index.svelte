@@ -108,7 +108,7 @@
             </div>
         </div>
         <div class="hero-right">
-            <div>
+            <div class="hero-image-container">
                 <picture>
                     <source
                         media="(prefers-color-scheme: dark)"
@@ -217,7 +217,7 @@
     </div>
 </PageSection>
 
-<PageSection id="themes-section" class="theme-{themes}">
+<PageSection id="themes-section" class="theme-{themes + 1}">
     <div class="themes-section-content">
         <HeaderChip>Themes</HeaderChip>
         <h2>Disctinctly personal.</h2>
