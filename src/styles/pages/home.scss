@@ -2,28 +2,32 @@
 
 :global {
     #hero-section {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 64px;
         overflow: hidden;
-        height: 75vh;
-        min-height: 584px;
-        max-height: 1024px;
         border-bottom: 1px solid var(--divider-color-default);
-        .button {
-            padding: 7px 12px;
-            svg {
-                @include icon($size: 18px);
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            max-width: 1920px;
+            margin: auto;
+            height: 75vh;
+            min-height: 584px;
+            max-height: 1024px;
+            .button {
+                padding: 7px 12px;
+                svg {
+                    @include icon($size: 18px);
+                }
             }
-        }
-        .split-button {
-            position: relative;
-            .menu-flyout-container {
-                display: contents;
-                &:last-child .button {
-                    padding: 0 8px;
-                    svg {
-                        @include icon($size: 12px);
+            .split-button {
+                position: relative;
+                .menu-flyout-container {
+                    display: contents;
+                    &:last-child .button {
+                        padding: 0 8px;
+                        svg {
+                            @include icon($size: 12px);
+                        }
                     }
                 }
             }
@@ -75,6 +79,8 @@
         }
     }
     &right {
+        height: fit-content;
+        margin: auto;
         img {
             -webkit-user-drag: none;
             user-select: none;
