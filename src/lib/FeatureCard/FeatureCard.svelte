@@ -2,11 +2,12 @@
     import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw";
 
     export let description: string = "";
+    export let selected: boolean = false;
 </script>
 
 <style lang="scss" src="./FeatureCard.scss"></style>
 
-<div class="feature-card" {...$$restProps}>
+<div class="feature-card" class:selected {...$$restProps}>
     <slot name="icon">
         {@html Question}
     </slot>

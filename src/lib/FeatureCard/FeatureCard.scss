@@ -12,6 +12,9 @@
     &:hover {
         box-shadow: var(--card-elevation);
     }
+    &.selected {
+        border: 2px solid var(--accent-color-default);
+    }
     :global(svg) {
         @include icon($size: 24px);
         color: var(--accent-color-default);
