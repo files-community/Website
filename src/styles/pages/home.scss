@@ -2,17 +2,20 @@
 
 :global {
     #hero-section {
+        position: relative;
         overflow: hidden;
         border-bottom: 1px solid var(--divider-color-default);
+        height: 75vh;
+        min-height: 584px;
+        max-height: 1024px;
         .hero-grid {
+            position: relative;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            height: 100%;
             gap: 64px;
             max-width: 1920px;
             margin: auto;
-            height: 75vh;
-            min-height: 584px;
-            max-height: 1024px;
             .button {
                 padding: 7px 12px;
                 svg {
@@ -64,7 +67,6 @@
     &left {
         @include flex($direction: column, $justify: center);
         flex: 1 1 auto;
-        height: auto;   
     }
     &button-inner {
         @include flex($direction: column);
@@ -79,19 +81,21 @@
         }
     }
     &right {
-        height: fit-content;
+        height: 90%;
+        width: auto;
+        overflow: hidden;
         margin: auto;
+        box-shadow: var(--window-elevation);
+        background-color: var(--control-color-disabled);
+        border: 1px solid var(--surface-stroke-default);
+        border-radius: calc(var(--overlay-corner-radius) / 2);
+        backdrop-filter: blur(200px) saturate(150%);
         img {
+            height: 100%;
+            width: 100%;
             -webkit-user-drag: none;
             user-select: none;
-            width: 100%;
-            height: auto;
             aspect-ratio: 1280 / 960;
-            box-shadow: var(--window-elevation);
-            background-color: var(--control-color-disabled);
-            border: 1px solid var(--surface-stroke-default);
-            border-radius: calc(var(--overlay-corner-radius) / 2);
-            backdrop-filter: blur(200px) saturate(150%);
         }
     }
 }
