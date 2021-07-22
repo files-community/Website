@@ -152,7 +152,7 @@
                 class="files-screenshot"
                 style="transform: translatey({scrollY / -150}vw)"
                 src="/screenshots/folder-list-light.png"
-                alt="Files new tab screenshot"
+                alt="Files folder list screenshot"
             >
         </picture>
         <picture>
@@ -167,7 +167,7 @@
             <img
                 class="files-wallpaper"
                 src="/screenshots/win11-light.png"
-                alt="Files new tab screenshot"
+                alt="Windows 11 wallpaper"
             >
         </picture>
     </div>
