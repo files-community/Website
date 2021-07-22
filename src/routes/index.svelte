@@ -102,16 +102,6 @@
                         <span>Files is open source!</span>
                     </div>
                 </Button>
-                <MenuFlyout>
-                    <Button style="accent">
-                        {@html ChevronDown}
-                    </Button>
-                    <svelte:fragment slot="menu">
-                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="store">Microsoft Store</MenuFlyoutItem>
-                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="github">MSIX Package (GitHub)</MenuFlyoutItem>
-                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="winget">Winget (CLI)</MenuFlyoutItem>
-                    </svelte:fragment>
-                </MenuFlyout>
             </div>
         </div>
         <picture class="hero-right">
