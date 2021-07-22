@@ -26,17 +26,18 @@
     import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
     import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
 
+    let [contributors1, contributors2, contributors3] = [[], [], []];
     let windows: boolean;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
-    let downloadSource: "store" | "github" | "winget" = "store";
+    let downloadSource: number = 0;
     let scrollY: number;
-    let themes: number = 1;
-    let features: number = 1;
-
-    let [contributors1, contributors2, contributors3] = [[], [], []];
+    let themes: number = 0;
+    let features: number = 0;
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
+
+    const downloadSources = ["Microsoft Store", "GitHub Release", "Winget CLI"];
 
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
@@ -77,7 +78,7 @@
                         {@html ArrowDownload}
                         <div class="hero-button-inner">
                             <h5>Download</h5>
-                            <span>Microsoft Store</span>
+                            <span>{downloadSources[downloadSource]}</span>
                         </div>
                     </Button>
                     <MenuFlyout>
@@ -85,9 +86,11 @@
                             {@html ChevronDown}
                         </Button>
                         <svelte:fragment slot="menu">
-                            <MenuFlyoutItem>Microsoft Store</MenuFlyoutItem>
-                            <MenuFlyoutItem>Github Releases</MenuFlyoutItem>
-                            <MenuFlyoutItem>Winget CLI</MenuFlyoutItem>
+                            {#each downloadSources as source, i}
+                                <MenuFlyoutItem type="combobox" bind:group={downloadSource} value={i}>
+                                    {source}
+                                </MenuFlyoutItem>
+                            {/each}
                         </svelte:fragment>
                     </MenuFlyout>
                 </div>
@@ -152,7 +155,7 @@
             >
             <img
                 class="files-screenshot"
-                style="transform: translatey({scrollY / -150}vw)"
+                style="transform: translatey({Math.floor(scrollY / -10)}px)"
                 src="/screenshots/folder-list-light.png"
                 alt="Files folder list screenshot"
             >
@@ -218,12 +221,12 @@
         <h2>Disctinctly personal.</h2>
         <p>Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Explore themes created by the community or dive right into the docs and create your own.</p>
         <div class="theme-chooser">
-            <ColorSwatch color="var(--background-tertiary);" value={1} bind:group={themes} />
-            <ColorSwatch color="#414958" value={2} bind:group={themes} />
-            <ColorSwatch color="#6441a4" value={3} bind:group={themes} />
-            <ColorSwatch color="#feb400" value={4} bind:group={themes} />
-            <ColorSwatch color="#073642" value={5} bind:group={themes} />
-            <ColorSwatch color="#88c0d0" value={6} bind:group={themes} />
+            <ColorSwatch color="var(--background-tertiary);" value={0} bind:group={themes} />
+            <ColorSwatch color="#414958" value={1} bind:group={themes} />
+            <ColorSwatch color="#6441a4" value={2} bind:group={themes} />
+            <ColorSwatch color="#feb400" value={3} bind:group={themes} />
+            <ColorSwatch color="#073642" value={4} bind:group={themes} />
+            <ColorSwatch color="#88c0d0" value={5} bind:group={themes} />
         </div>
         <div class="buttons-spacer">
             <Button style="accent" href="themes">

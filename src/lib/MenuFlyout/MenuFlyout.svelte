@@ -12,7 +12,7 @@
 <style lang="scss" src="./MenuFlyout.scss"></style>
 
 <div
-    on:click
+    on:click|stopPropagation
     bind:this={outer}
     class="menu-flyout-outer"
 >
