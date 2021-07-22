@@ -105,20 +105,22 @@
             </div>
         </div>
         <div class="hero-right">
-            <picture>
-                <source
-                    media="(prefers-color-scheme: dark)"
-                    srcset="/screenshots/hero-dark.png"
-                >
-                <source
-                    media="(prefers-color-scheme: light)"
-                    srcset="/screenshots/hero-light.png"
-                >
-                <img
-                    src="/screenshots/hero-light.png"
-                    alt="Files new tab screenshot"
-                >
-            </picture>
+            <div>
+                <picture>
+                    <source
+                        media="(prefers-color-scheme: dark)"
+                        srcset="/screenshots/hero-dark.png"
+                    >
+                    <source
+                        media="(prefers-color-scheme: light)"
+                        srcset="/screenshots/hero-light.png"
+                    >
+                    <img
+                        src="/screenshots/hero-light.png"
+                        alt="Files new tab screenshot"
+                    >
+                </picture>
+            </div>
         </div>
     </div>
     <canvas width={32} height={32} bind:this={heroCanvas}></canvas>

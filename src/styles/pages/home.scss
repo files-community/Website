@@ -16,6 +16,7 @@
             gap: 64px;
             max-width: 1920px;
             margin: auto;
+            align-items: center;
             .button {
                 padding: 7px 12px;
                 svg {
@@ -81,44 +82,54 @@
         }
     }
     &right {
-        height: 90%;
-        width: auto;
-        overflow: hidden;
-        margin: auto;
-        box-shadow: var(--window-elevation);
-        background-color: var(--control-color-disabled);
-        border: 1px solid var(--surface-stroke-default);
-        border-radius: calc(var(--overlay-corner-radius) / 2);
-        backdrop-filter: blur(200px) saturate(150%);
-        img {
-            height: 100%;
+        height: 100%;
+        div {
+            @include flex($direction: row, $align: center);
             width: 100%;
-            -webkit-user-drag: none;
-            user-select: none;
-            aspect-ratio: 1280 / 960;
+            height: 100%;
+            img {
+                position: absolute;
+                top: 0;
+                width: auto;
+                height: 100%;
+                -webkit-user-drag: none;
+                user-select: none;
+                aspect-ratio: 1280 / 960;
+                overflow: hidden;
+                box-shadow: var(--window-elevation);
+                border-radius: calc(var(--overlay-corner-radius) / 2);
+                background-color: var(--control-color-disabled);
+                border: 1px solid var(--surface-stroke-default);
+                border-radius: calc(var(--overlay-corner-radius) / 2);
+                backdrop-filter: blur(200px) saturate(150%);             
+            }
         }
     }
 }
 
 @media only screen and (max-width: 1024px) {
     :global(#hero-section) {
-        grid-template-columns: auto;
         height: auto;
         max-height: unset;
-    }
-    .hero- {
-        &left {
-            text-align: center;
-            align-items: center;
-            .buttons-spacer {
-                justify-content: center;
+        .hero-grid {
+            grid-template-columns: auto;
+            .hero- {
+                &left {
+                    text-align: center;
+                    align-items: center;
+                    .buttons-spacer {
+                        justify-content: center;
+                    }
+                }
+                &right img {
+                    position: relative;
+                    width: 100%;
+                    height: auto;
+                }
             }
         }
-        &right img {
-            width: 100%;
-            height: auto;
-        }
     }
+
 }
 
 :global {
