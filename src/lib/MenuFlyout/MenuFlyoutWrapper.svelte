@@ -9,12 +9,12 @@
         open = !open;
     }
 
-    function handleWindowClick(e) {
+    function handleOuterClick(e) {
         if (open && (!e.target === container || !container.contains(e.target))) toggleDropdown();
     }
 </script>
 
-<svelte:window on:mousedown={handleWindowClick} />
+<svelte:window on:mousedown={handleOuterClick} />
 
 <div
     bind:this={container}
@@ -31,7 +31,7 @@
     {/if}
 </div>
 
-<style lang="scss">
+<style lang="scss" global>
     .menu-flyout-container {
         display: inline-flex;
         max-width: 100%;
