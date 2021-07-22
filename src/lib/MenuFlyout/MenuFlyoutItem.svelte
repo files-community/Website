@@ -1,7 +1,43 @@
-<script lang="ts"></script>
+<script lang="ts">
+    export let group = [];
+    export let value = undefined;
+    export let selected: boolean = false;
+    export let disabled: boolean = false;
+    export let compact: boolean = false;
+    export let type: "default" | "checkbox" | "radio" | "combobox" | "link" = "default";
+</script>
 
 <style lang="scss" src="./MenuFlyoutItem.scss"></style>
 
-<li role="menuitem" class="menu-flyout-item">
-    <slot/>
-</li>
+{#if type === "default"}
+    <li role="menuitem" class="menu-flyout-item" {...$$restProps}>
+        <slot/>
+    </li>
+    {:else if type === "link"}
+
+    <!-- svelte-ignore a11y-missing-attribute -->
+    <a role="menuitem" class="menu-flyout-item" {...$$restProps}>
+        <slot/>
+    </a>
+    {:else if type === "checkbox"}
+    <label
+        role="menuitem"
+        class="menu-flyout-item"
+        class:selected
+        {...$$restProps}
+    >
+        <input {value} bind:checked={selected} bind:group type="checkbox" hidden />
+        <slot/>
+    </label>
+    {:else if type === "radio" || type === "combobox"}
+    <label
+        role="menuitem"
+        class="menu-flyout-item"
+        class:combo-box-item={type === "combobox"}
+        class:selected={(group === value) || selected}
+        {...$$restProps}
+    >
+        <input bind:value bind:group checked={selected} type="radio" hidden />
+        <slot/>
+    </label>
+{/if}

@@ -338,6 +338,9 @@
     @include flex($justify: center);
     min-height: fit-content;
     overflow: hidden;
+    .buttons-spacer {
+        justify-content: center;
+    }
 }
 
 .community-section- {

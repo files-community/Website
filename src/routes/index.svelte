@@ -29,9 +29,10 @@
     let windows: boolean;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
+    let downloadSource: "store" | "github" | "winget" = "store";
     let scrollY: number;
-    let themes = 1;
-    let features = 1;
+    let themes: number = 1;
+    let features: number = 1;
 
     let [contributors1, contributors2, contributors3] = [[], [], []];
 
@@ -83,9 +84,9 @@
                         {@html ChevronDown}
                     </Button>
                     <svelte:fragment slot="menu">
-                        <MenuFlyoutItem>Microsoft Store</MenuFlyoutItem>
-                        <MenuFlyoutItem>Github Releases</MenuFlyoutItem>
-                        <MenuFlyoutItem>Winget CLI</MenuFlyoutItem>
+                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="store">Microsoft Store</MenuFlyoutItem>
+                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="github">MSIX Package (GitHub)</MenuFlyoutItem>
+                        <MenuFlyoutItem bind:group={downloadSource} type="combobox" value="winget">Winget (CLI)</MenuFlyoutItem>
                     </svelte:fragment>
                 </MenuFlyout>
             </div>
@@ -179,7 +180,7 @@
         <p>Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.</p>
         <hr />
         <div class="feature-cards-container">
-            <FeatureCard description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.">
+            <FeatureCard selected description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.">
                 <svelte:fragment slot="icon">
                     {@html Cloud}
                 </svelte:fragment>

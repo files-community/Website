@@ -14,7 +14,7 @@
     }
 </script>
 
-<svelte:window on:mousedown={handleWindowClick}/>
+<svelte:window on:mousedown={handleWindowClick} />
 
 <div
     bind:this={container}

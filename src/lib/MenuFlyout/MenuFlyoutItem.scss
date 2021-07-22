@@ -2,6 +2,7 @@
 
 .menu-flyout-item {
     @include flex($align: center);
+    text-decoration: none;
     white-space: nowrap;
     border-radius: var(--control-corner-radius);
     padding: 8px 11px 9px 11px;
@@ -16,5 +17,8 @@
     }
     &:active {
         background-color: var(--subtle-color-tertiary);
+    }
+    &.combo-box-item.selected {
+        background: red;
     }
 }
