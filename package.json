@@ -1,0 +1,38 @@
+{
+    "name": "files-community",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "svelte-kit dev",
+        "build": "svelte-kit build",
+        "preview": "svelte-kit preview",
+        "check": "svelte-check --tsconfig ./tsconfig.json",
+        "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
+        "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+        "format": "prettier --write --plugin-search-dir=. ."
+    },
+    "devDependencies": {
+        "@fluentui/svg-icons": "^1.1.135",
+        "@sveltejs/adapter-vercel": "^1.0.0-next.26",
+        "@sveltejs/kit": "^1.0.0-next.132",
+        "@typescript-eslint/eslint-plugin": "^4.28.4",
+        "@typescript-eslint/parser": "^4.28.4",
+        "autoprefixer": "^10.3.1",
+        "eslint": "^7.31.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^3.2.0",
+        "mdsvex": "^0.9.8",
+        "postcss": "^8.3.5",
+        "prettier": "~2.3.2",
+        "prettier-plugin-svelte": "^2.3.1",
+        "sass": "^1.35.2",
+        "svelte": "^3.38.3",
+        "svelte-check": "^2.2.3",
+        "svelte-preprocess": "^4.7.4",
+        "tslib": "^2.3.0",
+        "typescript": "^4.3.5"
+    },
+    "type": "module",
+    "dependencies": {
+        "three": "^0.130.1"
+    }
+}

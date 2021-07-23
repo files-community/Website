@@ -1,0 +1,40 @@
+@use "src/styles/mixins" as *;
+
+.feature-card {
+    padding: 24px;
+    position: relative;
+    break-inside: avoid-column;
+    cursor: default;
+    transition: 250ms ease;
+    border-radius: var(--control-corner-radius);
+    background-color: var(--background-tertiary);
+    border: 1px solid var(--card-stroke-default);
+    &:hover {
+        box-shadow: var(--card-elevation);
+    }
+    &.selected {
+        border: 2px solid var(--accent-color-default);
+    }
+    :global(svg) {
+        @include icon($size: 24px);
+        color: var(--accent-color-default);
+    }
+    h4 {
+        margin: 0;
+        margin-top: 8px;
+        color: var(--text-color-primary);
+        font: {
+            size: 1.8rem;
+            weight: 600;
+        }
+    }
+    p {
+        margin: 0;
+        margin-top: 8px;
+        color: var(--text-color-tertiary);
+        font: {
+            size: 1.4rem;
+            weight: 400;
+        }
+    }
+}

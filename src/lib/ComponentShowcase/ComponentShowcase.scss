@@ -1,0 +1,54 @@
+@use "src/styles/mixins" as *;
+
+.component-showcase {
+  pointer-events: none;
+  @include flex($align: center, $gap: 16px);
+
+  .column {
+    @include flex($direction: column, $gap: 16px);
+
+    &.left {
+      align-items: flex-end;
+    }
+
+    &.right {
+      align-items: flex-start;
+    }
+  }
+
+  :global(svg) {
+    border-radius: var(--overlay-corner-radius);
+    box-shadow: var(--flyout-elevation);
+
+    &.InfoBar {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+}
+
+:global(svg .accent-color) {
+  fill: var(--accent-color-default);
+  stroke: var(--accent-color-default);
+}
+
+:global {
+  @media only screen and (max-width: 1224px) {
+    .DatePicker,
+    .TeachingTip {
+      visibility: hidden;
+    }
+  }
+
+  @media only screen and (max-width: 856px) {
+    .NavigationView {
+      visibility: hidden;
+    }
+  }
+}
+
+@media only screen and (max-width: 620px) {
+  .component-showcase {
+    display: none;
+  }
+}
