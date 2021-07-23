@@ -1,38 +1,24 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import BezierEasing from "bezier-easing";
     
-    import { ListViewItem } from "$lib";
+    // for some reason vite gets angery when trying to import this from $lib
+    import ListViewItem from "../ListViewItem/ListViewItem.svelte";
 
     import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
     export let items = [];
     export let buttons = [];
 
-    let innerWidth: number = 641; // Don't render the mobile layout before hydration
-    let sidebarOpen: boolean = false;
+    let innerWidth: number = 649; // Don't render the mobile layout before hydration
+    let sidebarVisible: boolean = false;
     let sidebar;
 
     function toggleSidebar() {
-        sidebarOpen = !sidebarOpen;
+        sidebarVisible = !sidebarVisible;
     }
 
     function handleOuterClick(e) {
-        if (sidebarOpen && (!e.target === sidebar || !sidebar.contains(e.target))) toggleSidebar();
-    }
-
-    function sidebarSlide(node, { duration = 350, easing = BezierEasing(0.1, 0.9, 0.2, 1) }) {
-        const style = getComputedStyle(node);
-        const transform = style.transform === "none" ? "" : style.transform;
-        const height = node.offsetHeight;
-
-        return {
-            duration,
-            easing,
-            css: t => {
-                return `transform: ${transform} translateX(${(1 - t) * height}px);`;
-            }
-        };
+        if (sidebarVisible && (!e.target === sidebar || !sidebar.contains(e.target))) toggleSidebar();
     }
 </script>
 
@@ -56,8 +42,8 @@
                         class="item"
                         class:selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
                         href={path}
-                        target={external ? "_blank" :  ""}
-                        rel={external ? "noreferrer noopener" : "prefetch"}
+                        target={external ? "_blank" :  undefined}
+                        rel={external ? "noreferrer noopener" : undefined}
                     >
                         {#if icon}
                             {@html icon}
@@ -81,50 +67,47 @@
             </button>
         {/if}
     </div>
-    {#if sidebarOpen && innerWidth <= 648}
-        <aside
-            in:sidebarSlide
-            out:sidebarSlide={{ duration: 120 }}
-            on:click|stopPropagation
-            bind:this={sidebar}
-            class="sidebar"
-        >
-            {#each items as { name, path, external, icon, type }}
-                {#if type === "divider"}
-                    <hr role="separator" />
-                    {:else}
-                    <ListViewItem
-                        style="navigation"
-                        selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
-                        href={path}
-                        target={external ? "_blank" :  ""}
-                        rel={external ? "noreferrer noopener" : "prefetch"}
-                    >
-                        <svelte:fragment slot="icon">
-                            {#if icon}
-                                {@html icon}
-                            {/if}
-                        </svelte:fragment>
-                        <span>{name}</span>
-                    </ListViewItem>
-                {/if}
-            {/each}
-            <hr role="separator" />
-            {#each buttons as { icon, href, label }}
+    <aside
+        on:click|stopPropagation
+        bind:this={sidebar}
+        class:visible={sidebarVisible}
+        class="sidebar"
+    >
+        {#each items as { name, path, external, icon, type }}
+            {#if type === "divider"}
+                <hr role="separator" />
+                {:else}
                 <ListViewItem
-                        {href}
-                        style="navigation"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <svelte:fragment slot="icon">
-                            {#if icon}
-                                {@html icon}
-                            {/if}
-                        </svelte:fragment>
-                        <span>{label}</span>
-                    </ListViewItem>
-            {/each}
-        </aside>
-    {/if}
+                    style="navigation"
+                    selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
+                    href={path}
+                    target={external ? "_blank" :  undefined}
+                    rel={external ? "noreferrer noopener" : undefined}
+                >
+                    <svelte:fragment slot="icon">
+                        {#if icon}
+                            {@html icon}
+                        {/if}
+                    </svelte:fragment>
+                    <span>{name}</span>
+                </ListViewItem>
+            {/if}
+        {/each}
+        <hr role="separator" />
+        {#each buttons as { icon, href, label }}
+            <ListViewItem
+                {href}
+                style="navigation"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                <svelte:fragment slot="icon">
+                    {#if icon}
+                        {@html icon}
+                    {/if}
+                </svelte:fragment>
+                <span>{label}</span>
+            </ListViewItem>
+        {/each}
+    </aside>
 </header>
