@@ -1,0 +1,63 @@
+@use "src/styles/mixins" as *;
+
+.list-view-item {
+    @include flex($align: center);
+    -webkit-user-drag: none;
+    text-decoration: none;
+    user-select: none;
+    position: relative;
+    height: 36px;
+    padding: 0 16px;
+    margin: 2px 4px;
+    border-radius: var(--control-corner-radius);
+    color: var(--text-primary);
+    cursor: default;
+    font: {
+        size: var(--control-font-size);
+        weight: normal;
+    }
+    &.type-icon {
+        padding-left: 11px;
+    }
+    &::before {
+        content: "";
+        transition: height 333ms cubic-bezier(0.1, 0.9, 0.2, 1);
+        position: absolute;
+        left: 0;
+        width: 3px;
+        height: 0;
+        opacity: 0;
+        background-color: var(--accent-color-default);
+        border-radius: 3px;
+    }
+    &:hover,
+    &.selected {
+        background-color: var(--subtle-color-secondary);
+    }
+    &:active {
+        background-color: var(--subtle-color-tertiary);
+        color: var(--text-color-secondary);
+    }
+    &.selected::before {
+        opacity: 1;
+        height: 16px;
+    }
+    &.style- {
+        &default:active::before {
+            opacity: 1;
+            height: 10px;
+        }
+        &navigation.selected {
+            &:hover {
+                background-color: var(--subtle-color-tertiary);
+            }
+            &:active {
+                background-color: var(--subtle-color-secondary);
+            }
+        }
+    }
+    :global(svg) {
+        @include icon($size: 16px);
+        margin-right: 16px;
+    }
+}

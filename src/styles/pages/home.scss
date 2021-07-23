@@ -11,9 +11,8 @@
         .page-section-inner {
             position: relative;
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1fr 1.5fr;
             gap: 64px;
-            margin: auto;
             align-items: center;
         }
         .button {
@@ -82,8 +81,8 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: auto;
-            height: 100%;
+            max-width: 100%;
+            max-height: 100%;
             -webkit-user-drag: none;
             user-select: none;
             aspect-ratio: 1280 / 960;
@@ -106,14 +105,16 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    :global(#hero-section) {
-        height: auto;
-        max-height: unset;
+    :global {
+        #hero-section {
+            height: auto;
+            max-height: unset;
+            .page-section-inner {
+                grid-template-columns: auto;
+            }
+        }
     }
     .hero- {
-        &grid {
-            grid-template-columns: auto;
-        }
         &left {
             text-align: center;
             align-items: center;
@@ -357,8 +358,11 @@
     }
 }
 
-:global(#community-section .buttons-spacer) {
-    justify-content: center;
+:global(#community-section) {
+    overflow: hidden;
+    .buttons-spacer {
+        justify-content: center;
+    }
 }
 
 .community-section- {

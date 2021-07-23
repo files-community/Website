@@ -1,4 +1,6 @@
 <script lang="ts">
+import { onMount } from "svelte";
+
     import MenuFlyout from "./MenuFlyout.svelte";
 
     export let open = false;
@@ -12,6 +14,16 @@
     function handleOuterClick(e) {
         if (open && (!e.target === container || !container.contains(e.target))) toggleDropdown();
     }
+
+    onMount(() => {
+        if (container.querySelectorAll("menu-flyout-item")) {
+            for (const item of container.querySelectorAll("menu-flyout-item")) {
+                item.addEventListener("menuclose", e => {
+                    console.log(e);
+                });
+            }
+        } 
+    });
 </script>
 
 <svelte:window on:mousedown={handleOuterClick} />
