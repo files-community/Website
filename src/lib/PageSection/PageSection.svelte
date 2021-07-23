@@ -3,8 +3,13 @@
     export { className as class };
 </script>
 
-<style lang="scss" src="./PageSection.scss" global></style>
+<style lang="scss" src="./PageSection.scss"></style>
 
 <section class="page-section {className || ""}" {...$$restProps}>
-    <slot />
+    <slot name="outer" />
+    {#if $$slots.default}
+        <div class="page-section-inner">
+            <slot />
+        </div>
+    {/if}
 </section>

@@ -63,70 +63,68 @@
 <svelte:window bind:scrollY/>
 
 <PageSection id="hero-section">
-    <div class="hero-grid">
-        <div class="hero-left">
-            <h1>Files</h1>
-            <p>A modern file explorer that pushes the boundaries of the platform.</p>
-            <div class="buttons-spacer">
-                <div class="split-button">
-                    <Button
-                        href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
-                        target="_blank"
-                        rel="noreferrer noopener"
-                        style="accent"
-                    >
-                        {@html ArrowDownload}
-                        <div class="hero-button-inner">
-                            <h5>Download</h5>
-                            <span>{downloadSources[downloadSource]}</span>
-                        </div>
-                    </Button>
-                    <MenuFlyout>
-                        <Button style="accent">
-                            {@html ChevronDown}
-                        </Button>
-                        <svelte:fragment slot="menu">
-                            {#each downloadSources as source, i}
-                                <MenuFlyoutItem type="combobox" bind:group={downloadSource} value={i}>
-                                    {source}
-                                </MenuFlyoutItem>
-                            {/each}
-                        </svelte:fragment>
-                    </MenuFlyout>
-                </div>
+    <div class="hero-left">
+        <h1>Files</h1>
+        <p>A modern file explorer that pushes the boundaries of the platform.</p>
+        <div class="buttons-spacer">
+            <div class="split-button">
                 <Button
-                    href="https://github.com/{links.github.owner}/{links.github.repo}/"
+                    href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
                     target="_blank"
                     rel="noreferrer noopener"
+                    style="accent"
                 >
-                    {@html Code}
+                    {@html ArrowDownload}
                     <div class="hero-button-inner">
-                        <h5>View GitHub</h5>
-                        <span>Files is open source!</span>
+                        <h5>Download</h5>
+                        <span>{downloadSources[downloadSource]}</span>
                     </div>
                 </Button>
+                <MenuFlyout>
+                    <Button style="accent">
+                        {@html ChevronDown}
+                    </Button>
+                    <svelte:fragment slot="menu">
+                        {#each downloadSources as source, i}
+                            <MenuFlyoutItem type="combobox" bind:group={downloadSource} value={i}>
+                                {source}
+                            </MenuFlyoutItem>
+                        {/each}
+                    </svelte:fragment>
+                </MenuFlyout>
             </div>
-        </div>
-        <div class="hero-right">
-            <div class="hero-image-container">
-                <picture>
-                    <source
-                        media="(prefers-color-scheme: dark)"
-                        srcset="/screenshots/hero-dark.png"
-                    >
-                    <source
-                        media="(prefers-color-scheme: light)"
-                        srcset="/screenshots/hero-light.png"
-                    >
-                    <img
-                        src="/screenshots/hero-light.png"
-                        alt="Files new tab screenshot"
-                    >
-                </picture>
-            </div>
+            <Button
+                href="https://github.com/{links.github.owner}/{links.github.repo}/"
+                target="_blank"
+                rel="noreferrer noopener"
+            >
+                {@html Code}
+                <div class="hero-button-inner">
+                    <h5>View GitHub</h5>
+                    <span>Files is open source!</span>
+                </div>
+            </Button>
         </div>
     </div>
-    <canvas width={32} height={32} bind:this={heroCanvas}></canvas>
+    <div class="hero-right">
+        <div class="hero-image-container">
+            <picture>
+                <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/screenshots/hero-dark.png"
+                >
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/screenshots/hero-light.png"
+                >
+                <img
+                    src="/screenshots/hero-light.png"
+                    alt="Files new tab screenshot"
+                >
+            </picture>
+        </div>
+    </div>
+    <canvas slot="outer" width={32} height={32} bind:this={heroCanvas}></canvas>
 </PageSection>
 
 <PageSection id="design-section">
