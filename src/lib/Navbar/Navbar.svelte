@@ -8,7 +8,7 @@
     export let items = [];
     export let buttons = [];
 
-    let innerWidth: number = 641; // Don't render the mobile layout before hydration
+    let innerWidth: number = 649; // Don't render the mobile layout before hydration
     let sidebarVisible: boolean = false;
     let sidebar;
     let sidebarButton: HTMLButtonElement;
@@ -18,7 +18,7 @@
     }
 
     function handleOuterClick(e) {
-        if (!e.target === sidebarButton || !sidebarButton.contains(e.target) || (sidebarVisible && (!e.target === sidebar || !sidebar.contains(e.target)))) return;
+        if (!sidebarVisible || (e.target === sidebarButton || sidebarButton.contains(e.target)) || (e.target === sidebar || sidebar.contains(e.target))) return;
         toggleSidebar();
     }
 </script>
