@@ -1,24 +1,25 @@
 <script lang="ts">
     import { page } from "$app/stores";
     
-    // for some reason vite gets angery when trying to import this from $lib
-    import ListViewItem from "../ListViewItem/ListViewItem.svelte";
+    import ListViewItem from "../ListViewItem/ListViewItem.svelte"; // for some reason vite gets ang
 
     import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
     export let items = [];
     export let buttons = [];
 
-    let innerWidth: number = 649; // Don't render the mobile layout before hydration
+    let innerWidth: number = 641; // Don't render the mobile layout before hydration
     let sidebarVisible: boolean = false;
     let sidebar;
+    let sidebarButton: HTMLButtonElement;
 
     function toggleSidebar() {
         sidebarVisible = !sidebarVisible;
     }
 
     function handleOuterClick(e) {
-        if (sidebarVisible && (!e.target === sidebar || !sidebar.contains(e.target))) toggleSidebar();
+        if (!e.target === sidebarButton || !sidebarButton.contains(e.target) || (sidebarVisible && (!e.target === sidebar || !sidebar.contains(e.target)))) return;
+        toggleSidebar();
     }
 </script>
 
@@ -62,13 +63,16 @@
                 </a>
             {/each}
             {:else}
-            <button class="button sidebar-button" on:click|stopPropagation={toggleSidebar}>
+            <button
+                on:click|stopPropagation={toggleSidebar}
+                bind:this={sidebarButton}
+                class="button sidebar-button"
+            >
                 {@html Navigation}
             </button>
         {/if}
     </div>
     <aside
-        on:click|stopPropagation
         bind:this={sidebar}
         class:visible={sidebarVisible}
         class="sidebar"
