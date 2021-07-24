@@ -99,7 +99,7 @@ Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of 
 
 ### Editing Existing Pages
 
-Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the layout of page URLs. To edit an existing page, find the corresponding `*.svx` file in the [`docs`]((https://github.com/files-community/Website/tree/main/src/routes/docs)) directory, and edit it like a normal markdown file.
+Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.svx` file in the [`docs`]((https://github.com/files-community/Website/tree/main/src/routes/docs)) directory, and edit it like a normal markdown file.
 
 ### Adding or Deleting a Page
 
