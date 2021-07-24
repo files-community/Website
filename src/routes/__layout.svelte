@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { links } from "$stores";
-    import { Button, Navbar } from "$lib";
+    import { links } from "$stores/links";
+    import { Navbar } from "$lib";
     
     import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";

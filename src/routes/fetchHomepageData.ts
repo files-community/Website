@@ -1,5 +1,5 @@
 import type { Contributor } from "$types";
-import { links } from "$stores";
+import { links } from "$stores/links";
 
 const { owner, repo } = links.github;
 

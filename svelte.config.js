@@ -33,10 +33,8 @@ const config = {
         mdsvex({}),
         sveltePreprocess({
             defaults: {
-                style: "scss"
-            },
-            scss: {
-                additionalData: `@use "src/styles/test" as *;`
+                style: "scss",
+                script: "ts"
             },
             postcss: {
                 plugins: [

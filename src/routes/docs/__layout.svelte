@@ -1,7 +1,5 @@
 <script lang="ts">
-    import { page } from "$app/stores";
-
-    import { docsMap } from "$stores";
+    import { docs } from "$stores/docs";
     import { TreeView, TextBox } from "$lib";
 </script>
 
@@ -16,7 +14,7 @@
             <TextBox type="search" placeholder="Search Documentation"/>
         </div>
         <div class="divider" role="separator"></div>
-        <TreeView tree={docsMap} />
+        <TreeView tree={docs} />
     </aside>
     <article class="page markdown-body">
         <slot />

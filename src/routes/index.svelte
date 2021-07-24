@@ -1,8 +1,8 @@
 <script lang="ts">
-    import {onMount} from "svelte";
+    import { onMount } from "svelte";
 
-    import {links} from "$stores";
-    import {getContributors} from "./fetchHomepageData";
+    import { links } from "$stores/links";
+    import { getContributors } from "./fetchHomepageData";
     import {
         Button,
         ColorSwatch,
