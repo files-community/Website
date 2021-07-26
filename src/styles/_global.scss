@@ -193,7 +193,8 @@
         --layer-color-default: rgba(255, 255, 255, 0.502);
         --layer-color-alt: #FFFFFF;
 
-        --mica-tint: rgba(243, 243, 243, 0.8);
+        --mica-tint: 243, 243, 243;
+        --mica-tint-opacity: 0.8;
 
         --background-base: #F3F3F3;
         --background-secondary: #EEEEEE;
@@ -300,7 +301,8 @@
         --layer-color-default: rgba(58, 58, 58, 0.298);
         --layer-color-alt: rgba(255, 255, 255, 0.051);
 
-        --mica-tint: rgba(32, 32, 32, 0.8);
+        --mica-tint: 32, 32, 32;
+        --mica-tint-opacity: 0.8;
 
         --background-base: #202020;
         --background-secondary: #1C1C1C;

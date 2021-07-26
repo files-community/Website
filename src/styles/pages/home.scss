@@ -2,6 +2,7 @@
 
 :global {
     #hero-section {
+        overflow: hidden;
         position: relative;
         border-bottom: 1px solid var(--divider-color-default);
         height: 75vh;
@@ -88,7 +89,7 @@
             overflow: hidden;
             box-shadow: var(--window-elevation);
             border-radius: calc(var(--overlay-corner-radius) / 2);
-            background-color: var(--layer-color-default);
+            background-color: rgba(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
             border: 1px solid var(--surface-stroke-default);
             border-radius: calc(var(--overlay-corner-radius) / 2);
             backdrop-filter: blur(200px) saturate(150%);             
@@ -160,7 +161,7 @@
         width: 70%;
         max-width: 1024px;
         z-index: 1;
-        background-color: var(--mica-tint);
+        background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
         border: 1px solid var(--surface-stroke-default);
         border-radius: var(--overlay-corner-radius);
         backdrop-filter: blur(60px) saturate(150%);
