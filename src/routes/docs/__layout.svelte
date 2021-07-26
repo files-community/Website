@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onMount } from "svelte";
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
 
@@ -17,7 +16,9 @@
         autoSuggestVisible = true;
     }
 
-    function updateSearchQuery(e) {searchQuery = value}
+    function updateSearchQuery() {
+        searchQuery = value;
+    }
 
     function handleSearchKeys(e) {
         const { key } = e;
