@@ -89,7 +89,7 @@
             overflow: hidden;
             box-shadow: var(--window-elevation);
             border-radius: calc(var(--overlay-corner-radius) / 2);
-            background-color: var(--control-color-disabled);
+            background-color: var(--layer-color-default);
             border: 1px solid var(--surface-stroke-default);
             border-radius: calc(var(--overlay-corner-radius) / 2);
             backdrop-filter: blur(200px) saturate(150%);             
@@ -161,7 +161,7 @@
         width: 70%;
         max-width: 1024px;
         z-index: 1;
-        background-color: var(--layer-color-default);
+        background-color: var(--mica-tint);
         border: 1px solid var(--surface-stroke-default);
         border-radius: var(--overlay-corner-radius);
         backdrop-filter: blur(60px) saturate(150%);
@@ -192,17 +192,23 @@
 }
 
 @media only screen and (max-width: 768px) {
+    .design-image {
+        margin-top: 48px;
+    }
     .files- {
         &screenshot {
-            width: 100%;
-            top: -64px;
+            width: 105%;
+            left: -2.5%;
+            top: 32px;
             transform: none !important;
             border-radius: calc(var(--overlay-corner-radius) / 2);
         }
         &wallpaper {
             object-fit: cover;
-            width: 170%;
-            left: -35%;
+            object-position: bottom;
+            height: 81vw;
+            width: 180%;
+            left: -40%;
             border-radius: 0;
         }
     }
