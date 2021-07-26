@@ -5,7 +5,7 @@
     flex: 1 1 auto;
     overflow: auto;
     background-clip: padding-box;
-    background-color: var(--background-tertiary);
+    background-color: var(--layer-color-default);
     border-top-left-radius: var(--overlay-corner-radius);
     border: 1px solid var(--card-stroke-default);
 }
@@ -14,7 +14,6 @@
     overflow: hidden;
     flex: 1 1 auto;
     display: flex;
-    background-color: var(--background-base);
 }
 
 .sidebar {
