@@ -22,7 +22,7 @@
     function handleSearchKeys(e) {
         const { key } = e;
         if (key === "ArrowUp" || key === "ArrowDown") e.preventDefault();
-        if (key === "Enter" || key === " ") {
+        if (key === "Enter" ) {
             if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
                 keepfocus: true
             });
