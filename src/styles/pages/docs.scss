@@ -1,0 +1,51 @@
+@use "../mixins" as *;
+
+.page {
+    padding: 48px;
+    flex: 1 1 auto;
+    overflow: auto;
+    background-clip: padding-box;
+    background-color: var(--background-tertiary);
+    border-top-left-radius: var(--overlay-corner-radius);
+    border: 1px solid var(--card-stroke-default);
+}
+
+.docs {
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    background-color: var(--background-base);
+}
+
+.sidebar {
+    overflow: auto;
+    flex: 0 0 auto;
+    width: 316px;
+    padding: 8px;
+}
+
+.search {
+    position: relative;
+    margin: 0 8px;
+}
+
+.autosuggest-flyout {
+    position: absolute;
+    overflow: auto;
+    max-height: 350px;
+    z-index: 10;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 2px 0;
+    border: 1px solid var(--surface-stroke-flyout);
+    background-color: var(--background-quarternary);
+    border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
+    box-shadow: var(--flyout-elevation);
+}
+
+.divider {
+    width: 100%;
+    border-top: 1px solid var(--divider-color-default);
+    margin: 12px 0;
+}

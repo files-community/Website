@@ -8,6 +8,7 @@
     export let clearButton: boolean = true;
     export let searchButton: boolean = true;
     export let revealButton: boolean = true;
+    export let flyoutVisible: boolean = false;
     export let disabled: boolean = false;
     let className: string = "";
     export { className as class };
@@ -50,13 +51,19 @@
 
 <style lang="scss" src="./TextBox.scss"></style>
 
-<div class="textbox-underline-frame {className || ""}">
+<div class="textbox-underline-frame {className || ""}" class:flyout-visible={flyoutVisible}>
     <div class="textbox-container" class:disabled>
         <input
             class="textbox"
             autocomplete="off"
             bind:this={input}
             on:input={updateValue}
+            on:click
+            on:focus
+            on:blur
+            on:keydown
+            on:keypress
+            on:keyup
             {type}
             {disabled}
             {value}

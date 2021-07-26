@@ -2,7 +2,7 @@
     export let href = undefined;
     export let selected: boolean = false;
     export let style: "default" | "navigation" = "default";
-    let className;
+    let className = undefined;
     export { className as class };
 </script>
 

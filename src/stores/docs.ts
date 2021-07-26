@@ -1,6 +1,6 @@
 import type DocsMap from "$types";
 
-export const docsMap: DocsMap = [
+export const docs: DocsMap = [
     {
         name: "Overview",
         path: ""
@@ -42,10 +42,6 @@ export const docsMap: DocsMap = [
             {
                 name: "Translating Files",
                 path: "/contributing/translating-files"
-            },
-            {
-                name: "Building Extensions for Files",
-                path: "/contributing/building-extensions"
             },
             {
                 name: "Code Style",

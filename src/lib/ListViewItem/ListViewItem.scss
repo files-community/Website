@@ -7,7 +7,7 @@
     user-select: none;
     position: relative;
     height: 36px;
-    padding: 0 16px;
+    padding: 0 11px;
     margin: 2px 4px;
     border-radius: var(--control-corner-radius);
     color: var(--text-primary);
@@ -15,9 +15,6 @@
     font: {
         size: var(--control-font-size);
         weight: normal;
-    }
-    &.type-icon {
-        padding-left: 11px;
     }
     &::before {
         content: "";
@@ -43,7 +40,7 @@
         height: 16px;
     }
     &.style- {
-        &default:active::before {
+        &default.selected:active::before {
             opacity: 1;
             height: 10px;
         }
