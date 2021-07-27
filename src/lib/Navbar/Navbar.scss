@@ -141,7 +141,7 @@
         height: 64px;
         overflow: visible;
         background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
-        backdrop-filter: blur(240px) saturate(150%);
+        backdrop-filter: blur(60px) saturate(150%);
     }
     .sidebar {
         @include flex($direction: column, $justify: space-between);

@@ -92,7 +92,7 @@
             background-color: rgba(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
             border: 1px solid var(--surface-stroke-default);
             border-radius: calc(var(--overlay-corner-radius) / 2);
-            backdrop-filter: blur(200px) saturate(150%);             
+            backdrop-filter: blur(60px) saturate(150%);             
         }
     }
     &image-container {

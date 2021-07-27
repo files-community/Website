@@ -28,6 +28,8 @@
         *:not(code), *::before, *::after {
             font-family: "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
             font-smooth: never;
+            -webkit-font-smooth: never;
+            -moz-osx-font-smoothing: never;
         }
         ::selection {
             background-color: navy;
@@ -40,6 +42,7 @@
             min-height: 23px;
             padding: 0 12px;
             background: silver;
+            font-size: 1.2rem;
             box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
             &:not(:disabled):active {
                 box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
@@ -133,11 +136,10 @@
     }
 
     .titlebar {
+        @include flex($justify: between, $align: center);
+        user-select: none;
         background: linear-gradient(90deg, navy, #1084d0);
         padding: 3px 2px 3px 3px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
         &-text {
             font-weight: 700;
             color: #fff;
@@ -175,13 +177,17 @@
 
     .error-inner {
         margin-top: 4px;
+        margin-bottom: 8px;
         display: flex;
         img {
+            user-select: none;
+            -webkit-user-drag: none;
             width: 32px;
             height: 32px;
             margin-right: 1em;
         }
-        p:first-child {
+        p {
+            line-height: 1.5;
             margin: 0;
         }
     }
@@ -201,19 +207,22 @@
 <section class="error-page">
     <div class="window">
         <div class="titlebar">
-          <div class="titlebar-text">Error: {status}</div>
-          <div class="titlebar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-          </div>
+            <div class="titlebar-text">Error: {status}</div>
+            <div class="titlebar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+            </div>
         </div>
         <div class="window-body">
             <div class="error-inner">
                 <img alt="Error icon" src="ui/98-error.png" />
                 <div class="error-message">
-                    <p>Uh Oh! Something went wrong while loading this page.</p>
-                    <p>{error.message}</p>
+                    <p>
+                        Uh Oh! Something went wrong while loading this page.
+                        <br />
+                        {error.message}
+                    </p>
                 </div>
             </div>
             {#if error.stack}

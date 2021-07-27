@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onDestroy, onMount } from "svelte";
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
 
