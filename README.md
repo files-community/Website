@@ -9,7 +9,7 @@
 <p align="center">  
     <img alt="Files website preview" src="https://i.imgur.com/lf3n86K.png"/>
     <br/>
-    The      starting page for everything related to <a href="https://github.com/files-community/files">Files</a> — documentation and themes included!
+    The starting page for everything related to <a href="https://github.com/files-community/files">Files</a> — documentation and themes included!
     <br/>
     <br/>
     <a href="https://discord.com/invite/files/" target="_blank">
@@ -35,6 +35,7 @@ This repository contains the source code for the new [Files website](https://fil
 .
 ├──static                 // Contains static assets including branding, images, fonts, etc...
 |  ├──branding            // Branding media (logos, banners, etc...)
+|  ├──ui                  // Images used in the website's user interface.
 |  └──screenshots         // Screenshots and renders of the app used in the website.
 └──src                    // The website's source code.
    ├──lib                 // Svelte components used within the website.
