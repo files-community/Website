@@ -174,6 +174,7 @@
     }
 
     .error-inner {
+        margin-top: 4px;
         display: flex;
         img {
             width: 32px;
@@ -209,7 +210,7 @@
         </div>
         <div class="window-body">
             <div class="error-inner">
-                <img alt="Error icon" src="https://win98icons.alexmeub.com/icons/png/msg_error-0.png" />
+                <img alt="Error icon" src="ui/98-error.png" />
                 <div class="error-message">
                     <p>Uh Oh! Something went wrong while loading this page.</p>
                     <p>{error.message}</p>
