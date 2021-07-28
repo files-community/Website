@@ -41,9 +41,6 @@ Default template
             <Color x:Key="SolidBackgroundAcrylic">#592A37</Color>
             <!-- Accent Color -->
             <Color x:Key="SystemAccentColor">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight1">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight2">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight3">#CB607C</Color>
             <Color x:Key="SystemAccentColorDark1">#CB607C</Color>
             <Color x:Key="SystemAccentColorDark2">#CB607C</Color>
             <Color x:Key="SystemAccentColorDark3">#CB607C</Color>
@@ -66,9 +63,6 @@ Default template
             <Color x:Key="SystemAccentColorLight1">#97475C</Color>
             <Color x:Key="SystemAccentColorLight2">#97475C</Color>
             <Color x:Key="SystemAccentColorLight3">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark1">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark2">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark3">#97475C</Color>
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
