@@ -35,7 +35,7 @@
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let downloadSource: number = 0;
-    let githubRelease: string = "";
+    let releaseUrl: string = "";
     let scrollY: number;
     let themes: number = 0;
     let features: number = 0;
@@ -43,8 +43,9 @@
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
     const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
+    const storeUrl = windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
     
-    $: downloadUrl = downloadSource === 0 ? windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}` : githubRelease;
+    $: downloadUrl = downloadSource === 0 ? storeUrl : releaseUrl;
 
     function copyWingetCommand() {
         navigator.clipboard.writeText("winget install Files-Community.Files");
@@ -54,13 +55,19 @@
         }, 500);
     }
 
+    function updateDownloadSource(value) {
+        localStorage.setItem("downloadSource", value);
+    }
+
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
 
+        if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", 0);
+        downloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
+        
         windows = navigator.platform === "Win32";
-
-        githubRelease = await getReleaseUrl();
+        releaseUrl = await getReleaseUrl();
 
         contributors1 = await getContributors(1);
         contributors2 = await getContributors(2);
@@ -115,13 +122,26 @@
                         {@html ChevronDown}
                     </Button>
                     <svelte:fragment slot="menu">
-                        <ListViewItem bind:group={downloadSource} value={0}>
+                        <ListViewItem
+                            bind:group={downloadSource}
+                            on:change={updateDownloadSource(0)}
+                            value={0}
+                        >
                             Microsoft Store
                         </ListViewItem>
-                        <ListViewItem bind:group={downloadSource} value={1}>
+                        <ListViewItem
+                            bind:group={downloadSource}
+                            on:change={updateDownloadSource(1)}
+                            value={1}
+                        >
                             Github Release
                         </ListViewItem>
-                        <ListViewItem bind:group={downloadSource} value={2} on:click={() => wingetDialogOpen = true}>
+                        <ListViewItem
+                            bind:group={downloadSource}
+                            on:change={updateDownloadSource(2)}
+                            on:click={() => wingetDialogOpen = true}
+                            value={2}
+                        >
                             Winget (CLI)
                         </ListViewItem>
                     </svelte:fragment>
