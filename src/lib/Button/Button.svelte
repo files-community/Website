@@ -3,7 +3,6 @@
 
     export let style: ButtonStyles = "standard";
     export let type: string = "button";
-    export let id = undefined;
     export let href = undefined;
     export let disabled: boolean = false;
     let className: string = "";
@@ -21,7 +20,6 @@
         on:keydown
         on:focus
         on:blur
-        {id}
         href={disabled ? undefined : href}
         {...$$restProps}
     >
@@ -36,7 +34,6 @@
         on:focus
         on:blur
         {type}
-        {id}
         {disabled}
         {...$$restProps}
     >

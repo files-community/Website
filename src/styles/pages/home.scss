@@ -50,6 +50,9 @@
             color: var(--text-color-primary);
         }
     }
+    #hero-download-button {
+        min-width: 121px;
+    }
     @media (prefers-color-scheme: dark) {
         #hero-section canvas {
             opacity: 0.4;

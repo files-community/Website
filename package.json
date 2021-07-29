@@ -12,7 +12,7 @@
     },
     "devDependencies": {
         "@fluentui/svg-icons": "^1.1.135",
-        "@sveltejs/adapter-vercel": "^1.0.0-next.26",
+        "@sveltejs/adapter-netlify": "^1.0.0-next.25",
         "@sveltejs/kit": "^1.0.0-next.132",
         "@typescript-eslint/eslint-plugin": "^4.28.4",
         "@typescript-eslint/parser": "^4.28.4",
@@ -34,7 +34,6 @@
     },
     "type": "module",
     "dependencies": {
-        "prismjs": "^1.24.1",
         "three": "^0.130.1"
     }
 }

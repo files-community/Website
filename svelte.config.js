@@ -1,6 +1,6 @@
 import path from "path";
 
-import vercel from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-netlify';
 
 import sveltePreprocess from "svelte-preprocess";
 import autoprefixer from "autoprefixer";
@@ -27,7 +27,7 @@ const config = {
                 }
             }
         },
-        adapter: vercel()
+        adapter: adapter()
 	},
     preprocess: [
         mdsvex({}),
