@@ -1,10 +1,10 @@
 <script lang="ts">
-    export let group = [];
+    export let group = undefined;
     export let value = undefined;
     export let selected: boolean = false;
     export let disabled: boolean = false;
     export let compact: boolean = false;
-    export let type: "default" | "checkbox" | "radio" | "combobox" | "link" = "default";
+    export let type: "default" | "checkbox" | "radio" | "link" = "default";
 </script>
 
 <style lang="scss" src="./MenuFlyoutItem.scss"></style>
@@ -29,11 +29,10 @@
         <input bind:checked={selected} bind:group {value} type="checkbox" hidden />
         <slot/>
     </label>
-    {:else if type === "radio" || type === "combobox"}
+    {:else if type === "radio"}
     <label
         role="menuitem"
         class="menu-flyout-item"
-        class:combo-box-item={type === "combobox"}
         class:selected={(group === value) || selected}
         {...$$restProps}
     >

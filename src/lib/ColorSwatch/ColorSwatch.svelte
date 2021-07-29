@@ -1,7 +1,7 @@
 <script lang="ts">
     export let value: any = undefined;
     export let color = "#000000";
-    export let group = [];
+    export let group = undefined;
     let className = "";
     export { className as class };
 </script>

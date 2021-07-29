@@ -214,7 +214,6 @@
         // Elevation
         --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.04);
         --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.14);
-        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474);
         --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474); 
 
         // Accent Colors
@@ -322,7 +321,6 @@
         // Elevation
         --card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.13);
         --flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.26);
-        --dialog-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
         --window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
         
         // Accent Colors
@@ -414,5 +412,22 @@ body {
             display: block;
             height: 14px;
         }
+    }
+}
+
+
+.hyperlink {
+    color: var(--accent-text-default);
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    cursor: default;
+    &:hover, &:active {
+        text-decoration: none;
+    }
+    &:hover {
+        color: var(--accent-text-tertiary);
+    }
+    &:active {
+        color: var(--accent-text-secondary); 
     }
 }

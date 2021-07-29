@@ -13,7 +13,9 @@
         HyperlinkButton,
         PageSection,
         MenuFlyout,
-        MenuFlyoutItem,
+        ListViewItem,
+        ContentDialog,
+        TerminalCommand,
         RainbowCanvas,
         RainbowCanvasAlt
     } from "$lib";
@@ -28,6 +30,8 @@
 
     let [contributors1, contributors2, contributors3] = [[], [], []];
     let windows: boolean;
+    let wingetDialogOpen: boolean = false;
+    let wingetCommandCopied: boolean = false;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let downloadSource: number = 0;
@@ -37,7 +41,15 @@
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
-    const downloadSources = ["Microsoft Store", "GitHub Release", "Winget CLI"];
+    const downloadSources = ["Microsoft Store", "GitHub Releases", "Winget (CLI)"];
+
+    function copyWingetCommand() {
+        navigator.clipboard.writeText("winget install Files-Community.Files");
+        wingetCommandCopied = true; 
+        setTimeout(() => {
+            wingetCommandCopied = false; 
+        }, 500);
+    }
 
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
@@ -62,6 +74,15 @@
 
 <svelte:window bind:scrollY/>
 
+<ContentDialog title="Installing Files via winget" width="448" bind:open={wingetDialogOpen}>
+    To download and install Files using <a class="hyperlink" href="https://github.com/microsoft/winget-cli" target="_blank" rel="noreferrer noopener">winget</a>, paste the following command into a terminal of your choice:
+    <TerminalCommand command="winget install Files-Community.Files" />
+    <svelte:fragment slot="footer">
+        <Button style="accent" on:click={copyWingetCommand}>{wingetCommandCopied ? "Copied!" : "Copy"}</Button>
+        <Button on:click={() => wingetDialogOpen = false}>Close</Button>
+    </svelte:fragment>
+</ContentDialog>
+
 <PageSection id="hero-section">
     <div class="hero-left">
         <h1>Files</h1>
@@ -85,11 +106,15 @@
                         {@html ChevronDown}
                     </Button>
                     <svelte:fragment slot="menu">
-                        {#each downloadSources as source, i}
-                            <MenuFlyoutItem type="combobox" bind:group={downloadSource} value={i}>
-                                {source}
-                            </MenuFlyoutItem>
-                        {/each}
+                        <ListViewItem bind:group={downloadSource} value={0}>
+                            Microsoft Store
+                        </ListViewItem>
+                        <ListViewItem bind:group={downloadSource} value={1}>
+                            Github Releases
+                        </ListViewItem>
+                        <ListViewItem bind:group={downloadSource} value={2} on:click={() => wingetDialogOpen = true}>
+                            Winget (CLI)
+                        </ListViewItem>
                     </svelte:fragment>
                 </MenuFlyout>
             </div>
@@ -253,41 +278,43 @@
                 <HyperlinkButton href="/docs/contributing/code-style">Become a contributor</HyperlinkButton>
             </div>
         </div>
-        <div class="contributors-container">
-            <div class="contributors-row">
-                {#each shuffle(contributors1) as {html_url, avatar_url, login, contributions, type}}
-                    <Contributor
-                        {html_url}
-                        {avatar_url}
-                        {login}
-                        {contributions}
-                        {type}
-                    />
-                {/each}
+        {#if contributors1 && contributors2 && contributors3}
+            <div class="contributors-container">
+                <div class="contributors-row">
+                    {#each shuffle(contributors1) as {html_url, avatar_url, login, contributions, type}}
+                        <Contributor
+                            {html_url}
+                            {avatar_url}
+                            {login}
+                            {contributions}
+                            {type}
+                        />
+                    {/each}
+                </div>
+                <div class="contributors-row">
+                    {#each shuffle(contributors2) as {html_url, avatar_url, login, contributions, type}}
+                        <Contributor
+                            {html_url}
+                            {avatar_url}
+                            {login}
+                            {contributions}
+                            {type}
+                        />
+                    {/each}
+                </div>
+                <div class="contributors-row">
+                    {#each shuffle(contributors3) as {html_url, avatar_url, login, contributions, type}}
+                        <Contributor
+                            {html_url}
+                            {avatar_url}
+                            {login}
+                            {contributions}
+                            {type}
+                        />
+                    {/each}
+                </div>
             </div>
-            <div class="contributors-row">
-                {#each shuffle(contributors2) as {html_url, avatar_url, login, contributions, type}}
-                    <Contributor
-                        {html_url}
-                        {avatar_url}
-                        {login}
-                        {contributions}
-                        {type}
-                    />
-                {/each}
-            </div>
-            <div class="contributors-row">
-                {#each shuffle(contributors3) as {html_url, avatar_url, login, contributions, type}}
-                    <Contributor
-                        {html_url}
-                        {avatar_url}
-                        {login}
-                        {contributions}
-                        {type}
-                    />
-                {/each}
-            </div>
-        </div>
+        {/if}
         <canvas bind:this={communityCanvas}></canvas>
     </div>
 </PageSection>

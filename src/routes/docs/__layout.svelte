@@ -1,16 +1,16 @@
 <script lang="ts">
-    import { onDestroy, onMount } from "svelte";
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
 
     import { docs } from "$stores/docs";
-    import { TreeView, TextBox, ListViewItem } from "$lib";
+    import { TreeView, TextBox, ListViewItem, RainbowCanvasAlt } from "$lib";
 
     let value: string = "";
     let searchQuery: string = "";
     let searchFocused: boolean = false;
     let autoSuggestVisible: boolean = false;
     let selection: number = 0;
+    let canvas: HTMLCanvasElement;
 
     $: searchResults = filterPages(docs).filter(page => page.name.toLowerCase().split(" ").join("").includes((searchQuery ?? "").toLowerCase().split(" ").join("")));
     $: if (searchQuery && searchFocused) {
@@ -28,7 +28,7 @@
             if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
                 keepfocus: true
             });
-        } else if (key === "ArrowDown") {
+        } else if (key=== "ArrowDown") {
             selection++;
             if (selection > searchResults.length - 1) selection = 0;
         } else if (key === "ArrowUp") {

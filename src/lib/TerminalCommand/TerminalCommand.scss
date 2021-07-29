@@ -1,0 +1,55 @@
+@use "src/styles/mixins" as *;
+
+.terminal-command {
+    @include flex($align: center);
+    line-height: normal;
+    margin-top: 12px;
+    border-radius: var(--control-corner-radius);
+    background-color: var(--card-background-default);
+    border: 1px solid var(--card-stroke-default);
+    padding: 8px 12px;
+    padding-right: 8px;
+    font-size: var(--control-font-size);
+    transition: 83ms ease background-color;
+    &.copied {
+        background-color: var(--system-background-success);
+    }
+}
+
+.shell-prefix,
+.copy-button {
+    flex: 0 0 auto;
+}
+
+.shell-prefix {
+    user-select: none;
+    color: var(--text-color-tertiary);
+    margin-right: 12px;
+}
+
+.command {
+    flex: 1 1 auto;
+    font-family: var(--font-family-monospace);
+}
+
+.copy-button {
+    @include flex($align: center, $justify: center);
+    margin-left: 8px;
+    width: 34px;
+    height: 34px;
+    border: none;
+    background-color: transparent;
+    color: var(--text-color-secondary);
+    border-radius: var(--control-corner-radius);
+    text-decoration: none;
+    &:hover {
+        background-color: var(--subtle-color-secondary);
+    }
+    &:active {
+        background-color: var(--subtle-color-tertiary);
+    }
+    :global(svg) {
+        transition: 130ms cubic-bezier(0.16, 0.16, 0, 1) transform;
+        @include icon($size: 18px);
+    }
+}

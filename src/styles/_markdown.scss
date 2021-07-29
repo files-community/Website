@@ -208,11 +208,15 @@
         color: var(--accent-text-default);
         text-decoration: underline;
         text-decoration-skip-ink: none;
-        &:hover {
+        cursor: default;
+        &:hover, &:active {
             text-decoration: none;
         }
+        &:hover {
+            color: var(--accent-text-tertiary);
+        }
         &:active {
-            color: var(--accent-text-tertiary); 
+            color: var(--accent-text-secondary); 
         }
     }
 
