@@ -27,7 +27,7 @@
 
 # Overview
 
-This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with [Vercel](https://vercel.com/).
+This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with [Netlify](https://www.netlify.com/).
 
 ## Codebase Structure
 
