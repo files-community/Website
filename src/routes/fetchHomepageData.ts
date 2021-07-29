@@ -11,3 +11,12 @@ export const getContributors: (pageNumber: number) => Promise<Contributor[]> = a
             console.error(err);
             return "";
         });
+
+export const getReleaseUrl = async () =>
+    await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`)
+        .then(result => result.json())
+        .then(result => result.assets.find(a => a.name.endsWith(".msixbundle")).browser_download_url)
+        .catch(err => {
+            console.error(err);
+            return "";
+        });

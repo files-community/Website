@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
 
     import { links } from "$stores/links";
-    import { getContributors } from "./fetchHomepageData";
+    import { getContributors, getReleaseUrl } from "./fetchHomepageData";
     import {
         Button,
         ColorSwatch,
@@ -35,13 +35,16 @@
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
     let downloadSource: number = 0;
+    let githubRelease: string = "";
     let scrollY: number;
     let themes: number = 0;
     let features: number = 0;
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
-    const downloadSources = ["Microsoft Store", "GitHub Releases", "Winget (CLI)"];
+    const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
+    
+    $: downloadUrl = downloadSource === 0 ? windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}` : githubRelease;
 
     function copyWingetCommand() {
         navigator.clipboard.writeText("winget install Files-Community.Files");
@@ -56,6 +59,8 @@
         new RainbowCanvasAlt(communityCanvas).render();
 
         windows = navigator.platform === "Win32";
+
+        githubRelease = await getReleaseUrl();
 
         contributors1 = await getContributors(1);
         contributors2 = await getContributors(2);
@@ -90,10 +95,14 @@
         <div class="buttons-spacer">
             <div class="split-button">
                 <Button
-                    href={windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`}
-                    target="_blank"
-                    rel="noreferrer noopener"
                     style="accent"
+                    id="hero-download-button"
+                    href={downloadSource !== 2 ? downloadUrl : undefined}
+                    target={downloadSource !== 2 ? "_blank" : undefined}
+                    rel={downloadSource !== 2 ? "noreferrer noopener" : undefined}
+                    on:click={() => {
+                        if (downloadSource === 2) wingetDialogOpen = true;
+                    }}
                 >
                     {@html ArrowDownload}
                     <div class="hero-button-inner">
@@ -110,7 +119,7 @@
                             Microsoft Store
                         </ListViewItem>
                         <ListViewItem bind:group={downloadSource} value={1}>
-                            Github Releases
+                            Github Release
                         </ListViewItem>
                         <ListViewItem bind:group={downloadSource} value={2} on:click={() => wingetDialogOpen = true}>
                             Winget (CLI)
@@ -180,7 +189,7 @@
             >
             <img
                 class="files-screenshot"
-                style="transform: translatey({Math.floor(scrollY / -10)}px)"
+                style="transform: translateY({Math.floor(scrollY / -10)}px)"
                 src="/screenshots/folder-list-light.png"
                 alt="Files folder list screenshot"
             >

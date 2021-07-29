@@ -29,7 +29,7 @@
     {:else}
     <label>
         <input bind:group type="radio" {value} checked={selected} hidden />
-        <svelte:self on:click {style} {className} {href} selected={(group === value) || selected} {...$$restProps}>
+        <svelte:self on:click {style} class={className} {href} selected={(group === value) || selected} {...$$restProps}>
             <slot />
         </svelte:self>
     </label>
