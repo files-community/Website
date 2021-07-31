@@ -56,7 +56,7 @@
 
     <meta name="theme-color" content="#005fb8">
 
-    <!-- <meta property="og:image" content=""> -->
+    <meta property="og:image" content="/branding/banner.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@FilesForWindows">

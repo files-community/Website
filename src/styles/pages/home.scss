@@ -180,17 +180,12 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .design-image {
-        margin-top: 120px;
+    .design-image,
+    .files-wallpaper {
         width: 100%;
     }
-    .files- {
-        &screenshot {
-            top: 0;
-        }
-        &wallpaper {
-            width: 100%;
-        }    
+    .files-screenshot {
+        top: 0;
     }
 }
 
