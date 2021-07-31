@@ -3,15 +3,15 @@
     import { page } from "$app/stores";
 
     import { docs } from "$stores/docs";
-    import { TreeView, TextBox, ListViewItem, RainbowCanvasAlt } from "$lib";
+    import { TreeView, TextBox, ListViewItem } from "$lib";
 
     let value: string = "";
     let searchQuery: string = "";
     let searchFocused: boolean = false;
     let autoSuggestVisible: boolean = false;
     let selection: number = 0;
-    let canvas: HTMLCanvasElement;
-
+    
+    $: pageTitle = filterPages(docs).find(a => a.path === $page.path.replace("/docs", "")).name;
     $: searchResults = filterPages(docs).filter(page => page.name.toLowerCase().split(" ").join("").includes((searchQuery ?? "").toLowerCase().split(" ").join("")));
     $: if (searchQuery && searchFocused) {
         autoSuggestVisible = true;
@@ -61,7 +61,7 @@
 </script>
 
 <svelte:head>
-    <title>Files - Docs</title>
+    <title>Files - {pageTitle ? `Docs - ${pageTitle}` : "Docs"}</title>
     <meta property="og:title" content="Files - Docs">
 </svelte:head>
 
