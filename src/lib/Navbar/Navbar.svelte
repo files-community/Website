@@ -30,7 +30,23 @@
 <header class="navbar">
     <nav class="inner">
         <a href="/" class="logo">
-            <img alt="Files logo" class="logo-image" width="32" height="32" src="/branding/logo.svg" />
+            <picture>
+                <source
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/branding/logo-dark.svg"
+                >
+                <source
+                    media="(prefers-color-scheme: light)"
+                    srcset="/branding/logo-light.svg"
+                >
+                <img
+                    class="logo-image"
+                    src="/branding/logo-light.svg"
+                    alt="Files logo"
+                    width="32"
+                    height="32"
+                >
+            </picture>
             Files
         </a>
         {#if innerWidth > 648}

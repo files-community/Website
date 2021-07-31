@@ -82,9 +82,11 @@
 <svelte:head>
     <title>Files</title>
     <meta property="og:title" content="Files">
+
+    <meta property="og:image" content="/branding/banner-light.png">
 </svelte:head>
 
-<svelte:window bind:scrollY/>
+<svelte:window bind:scrollY />
 
 <ContentDialog title="Installing Files via winget" width="448" bind:open={wingetDialogOpen}>
     To download and install Files using <a class="hyperlink" href="https://github.com/microsoft/winget-cli" target="_blank" rel="noreferrer noopener">winget</a>, paste the following command into a terminal of your choice:

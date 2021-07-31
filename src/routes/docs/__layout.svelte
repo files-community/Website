@@ -62,7 +62,9 @@
 
 <svelte:head>
     <title>Files - {pageTitle ? `Docs - ${pageTitle}` : "Docs"}</title>
-    <meta property="og:title" content="Files - Docs">
+    <meta property="og:title" content="Files - {pageTitle ? `Docs - ${pageTitle}` : "Docs"}">
+
+    <meta property="og:image" content="/branding/banner-docs-light.png">
 </svelte:head>
 
 <section class="docs">

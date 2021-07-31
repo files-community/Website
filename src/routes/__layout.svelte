@@ -1,12 +1,19 @@
 <script lang="ts">
     import { links } from "$stores/links";
     import { Navbar } from "$lib";
+    import { onMount } from "svelte";
     
     import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
     import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
     import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
     import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
+
+    let theme = "light";
+    
+    onMount(() => {
+        if (window.matchMedia) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+    });
 
     const { github, discord } = links;
 
@@ -47,7 +54,7 @@
 
     <meta property="og:type" content="website">
     
-    <link rel="icon" type="image/svg+xml" href="/branding/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="/branding/logo-{theme === "light" ? "light" : "dark"}.svg">
 
     <meta name="description" content="A modern file explorer that pushes the boundaries of the platform.">
     <meta property="og:description" content="A modern file explorer that pushes the boundaries of the platform.">
@@ -55,8 +62,6 @@
     <meta name="author" content="Files Community">
 
     <meta name="theme-color" content="#005fb8">
-
-    <meta property="og:image" content="/branding/banner.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@FilesForWindows">
