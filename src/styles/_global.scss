@@ -424,7 +424,7 @@ picture {
     color: var(--accent-text-default);
     text-decoration: underline;
     text-decoration-skip-ink: none;
-    cursor: default;
+    cursor: pointer;
     &:hover, &:active {
         text-decoration: none;
     }
@@ -435,6 +435,8 @@ picture {
         color: var(--accent-text-secondary); 
     }
 }
-a:hover{
-    cursor: pointer;
+
+*:focus-visible:not(.textbox) {
+    outline: none !important;
+    box-shadow: 0 0 0 2px var(--focus-stroke-outer) !important;
 }

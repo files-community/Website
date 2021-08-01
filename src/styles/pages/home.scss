@@ -51,7 +51,7 @@
         }
     }
     #hero-download-button {
-        min-width: 121px;
+        min-width: 128px;
     }
     @media (prefers-color-scheme: dark) {
         #hero-section canvas {
@@ -67,11 +67,11 @@
     }
     &button-inner {
         @include flex($direction: column);
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         line-height: normal;
         margin-left: 8px;
         h5 {
-            font-size: 1.5rem;
+            font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 8px;
             margin: 0;
@@ -274,6 +274,7 @@
         }
         &.theme- {
             &2 {
+                --focus-stroke-outer: #fff;
                 --accent-color-default: #3ecc9c;
                 --accent-color-secondary: #70ccad;
                 --accent-color-tertiary: #339b78;
@@ -287,6 +288,7 @@
                 --background-base: #2b303a;
             }
             &3 {
+                --focus-stroke-outer: #fff;
                 --accent-color-default: #6441a4;
                 --accent-color-secondary: #7d5bbf;
                 --accent-color-tertiary: var(--accent-color-secondary);
@@ -302,6 +304,7 @@
                 --background-base: #17141f;
             }
             &4 {
+                --focus-stroke-outer: #000;
                 --accent-color-default: #fff;
                 --accent-text-default: var(--text-color-tertiary);
                 --accent-text-contrast-primary: #000000;
@@ -312,6 +315,7 @@
                 --background-base: #feb400;
             }
             &5 {
+                --focus-stroke-outer: #fff;
                 --accent-color-default: #eee8d5;
                 --accent-text-default: var(--text-color-tertiary);
                 --accent-text-contrast-primary: #000000;
@@ -325,6 +329,7 @@
                 }
             }
             &6 {
+                --focus-stroke-outer: #000;
                 --accent-color-default: #88C0D0;
                 --accent-text-default: var(--text-color-tertiary);
                 --text-color-primary: #2e3440;
