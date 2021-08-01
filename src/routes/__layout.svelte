@@ -12,7 +12,11 @@
     let theme = "light";
     
     onMount(() => {
-        if (window.matchMedia) theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? "dark" : "light";
+        theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
+
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+            theme = e.matches ? "dark" : "light";
+        });
     });
 
     const { github, discord } = links;

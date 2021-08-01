@@ -16,11 +16,14 @@
     import TeachingTip_dark from "$static/exported/TeachingTip_dark.svg?raw";
     import TeachingTip_light from "$static/exported/TeachingTip_light.svg?raw";
 
-    let scrollY: number;
     let theme = "light";
 
     onMount(() => {
         theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
+
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+            theme = e.matches ? "dark" : "light";
+        });
     });
 </script>
 
