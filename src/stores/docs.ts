@@ -46,20 +46,6 @@ export const docs: DocsMap = [
             {
                 name: "Code Style",
                 path: "/contributing/code-style"
-            },
-            {
-                type: "category",
-                name: "test",
-                pages: [
-                    {
-                        name: "Translating Files",
-                        path: "/contributing/translating-files"
-                    },
-                    {
-                        name: "Code Style",
-                        path: "/contributing/code-style"
-                    }
-                ]
             }
         ]
     }

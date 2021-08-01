@@ -6,8 +6,8 @@ export type Contributor = {
 	contributions: number;
 };
 export type DocsMap = {
-    name?: string;
+    name: string;
     path?: string;
-    type?: string;
+    type?: "page" | "category";
     pages?: DocsMap;
 }
