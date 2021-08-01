@@ -57,7 +57,7 @@
     position: absolute;
     max-height: 350px;
     z-index: 10;
-    top: 100%;
+    top: calc(100% - 12px);
     left: 0;
     width: 100%;
     padding: 2px 0;
