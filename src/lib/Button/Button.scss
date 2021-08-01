@@ -38,6 +38,7 @@
             // Hover state
             &:hover {
                 background-color: var(--control-color-secondary);
+                cursor: pointer;
             }
 
             // Active (pressed) state
@@ -67,6 +68,7 @@
             // Hover state
             &:hover {
                 background-color: var(--accent-color-secondary);
+                cursor: pointer;
             }
 
             // Active (pressed) state

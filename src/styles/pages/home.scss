@@ -67,11 +67,11 @@
     }
     &button-inner {
         @include flex($direction: column);
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: normal;
         margin-left: 8px;
         h5 {
-            font-size: 1.2rem;
+            font-size: 1.5rem;
             font-weight: 600;
             margin-bottom: 8px;
             margin: 0;
