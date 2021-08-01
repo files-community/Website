@@ -33,6 +33,7 @@
 
 .sidebar {
     @include flex($direction: column);
+    padding: 0 4px;
     flex: 0 0 auto;
     width: 316px;
 }
@@ -41,7 +42,8 @@
     position: sticky;
     z-index: 1;
     top: 0;
-    margin: 4px 16px 12px 16px;
+    margin: 12px;
+    margin-top: 4px;
     background-color: var(--background-base);
     hr {
         border: none;
