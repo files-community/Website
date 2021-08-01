@@ -3,7 +3,7 @@
     
     import { page } from "$app/stores";
 
-    import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
+    import ListViewItem from "../ListViewItem/ListViewItem.svelte";
 
     export let tree = [];
 
@@ -26,21 +26,16 @@
 {#each tree as {name, path, type, pages}}
     {#if type === "category"}
         <div class="subtree" class:expanded={treeViewState?.[id(name)]}>
-            <div class="tree-item" on:click={toggleExpansion(name)}>
-                <span>{name}</span>
-                {@html ChevronDown}
-            </div>
-            <div class="subtree-items" style="--treeview-subtree-height: {(pages?.length || 0) * 40}px">
-                <svelte:self tree={pages} />
+            <ListViewItem type="expander" expanded={treeViewState?.[id(name)]} on:click={toggleExpansion(name)}>
+                {name}
+            </ListViewItem>
+            <div class="subtree-items" style="--treeview-subtree-height: {(pages?.length || 0) * 38.3334}px">
+                {#each pages as {name, path}}
+                    <ListViewItem type="navigation" selected={`/docs${path}` === $page.path} href="/docs{path}">{name}</ListViewItem>
+                {/each}
             </div>
         </div>
     {:else}
-        <a
-            class="tree-item"
-            class:selected={`/docs${path}` === $page.path}
-            href="/docs{path}"
-        >
-            {name}
-        </a>
+        <ListViewItem type="navigation" selected={`/docs${path}` === $page.path} href="/docs{path}">{name}</ListViewItem>
     {/if}
 {/each}

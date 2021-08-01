@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page } from "$app/stores";
     
-    import ListViewItem from "../ListViewItem/ListViewItem.svelte"; // for some reason vite gets ang
+    import ListViewItem from "../ListViewItem/ListViewItem.svelte";
 
     import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -98,7 +98,7 @@
                 <hr role="separator" />
                 {:else}
                 <ListViewItem
-                    style="navigation"
+                    type="navigation"
                     selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
                     href={path}
                     target={external ? "_blank" :  undefined}
@@ -117,7 +117,7 @@
         {#each buttons as { icon, href, label }}
             <ListViewItem
                 {href}
-                style="navigation"
+                type="navigation"
                 target="_blank"
                 rel="noreferrer noopener"
             >

@@ -3,18 +3,24 @@
 .page {
     padding: 48px;
     flex: 1 1 auto;
-    overflow: auto;
     background-clip: padding-box;
     background-color: var(--layer-color-default);
     border-top-left-radius: var(--overlay-corner-radius);
-    border: 1px solid var(--card-stroke-default);
+    border: {
+        top: 1px solid var(--card-stroke-default);
+        left: 1px solid var(--card-stroke-default);
+    }
 }
 
 .docs {
+    max-height: calc(100vh - 58px);
     overflow: hidden;
     flex: 1 1 auto;
     display: flex;
     background-color: var(--background-base);
+    @media only screen and (max-width: 648px) {
+        max-height: calc(100vh - 64px);
+    }
     canvas {
         z-index: -1;
         position: fixed;
@@ -26,20 +32,25 @@
 }
 
 .sidebar {
-    overflow: auto;
+    @include flex($direction: column);
     flex: 0 0 auto;
     width: 316px;
-    padding: 8px;
+    padding: 8px 0;
+    &-header {
+        z-index: 1;
+        background-color: var(--background-base);
+        position: sticky;
+        top: 0;
+    }
 }
 
 .search {
     position: relative;
-    margin: 0 8px;
+    margin: 0 12px;
 }
 
 .autosuggest-flyout {
     position: absolute;
-    overflow: auto;
     max-height: 350px;
     z-index: 10;
     top: 100%;

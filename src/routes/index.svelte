@@ -81,7 +81,7 @@
 
 <svelte:head>
     <title>Files</title>
-    <meta property="og:title" content="Files">
+    <meta property="og:title" content="Files - Home">
 
     <meta property="og:image" content="/branding/banner-light.png">
 </svelte:head>

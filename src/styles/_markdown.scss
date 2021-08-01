@@ -186,7 +186,7 @@
         background-clip: padding-box;
         background-color: var(--card-background-default);
         border: 1px solid var(--card-stroke-default);
-        border-radius: var(--overlay-corner-radius);
+        border-radius: var(--control-corner-radius);
 
         code {
             padding: 0;
@@ -233,7 +233,7 @@
         display: inline-block;
         border-collapse: collapse;
         background-clip: padding-box;
-        border-radius: var(--overlay-corner-radius);
+        border-radius: var(--control-corner-radius);
         border: 1px solid var(--control-stroke-default);
         border-top-color: var(--control-stroke-secondary);
         th,
