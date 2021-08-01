@@ -30,9 +30,7 @@
                 {name}
             </ListViewItem>
             <div class="subtree-items" style="--treeview-subtree-height: {(pages?.length || 0) * 38.3334}px">
-                {#each pages as {name, path}}
-                    <ListViewItem type="navigation" selected={`/docs${path}` === $page.path} href="/docs{path}">{name}</ListViewItem>
-                {/each}
+                <svelte:self tree={pages} />
             </div>
         </div>
     {:else}
