@@ -82,7 +82,7 @@
     &-container:focus-within,
     &-underline-frame.flyout-visible &-container {
         border-color: var(--control-stroke-default);
-        background-color: var(--ControlFillColorInputActive);
+        background-color: var(--control-color-input-active);
         .textbox::placeholder {
             color: var(--text-color-tertiary);
         }

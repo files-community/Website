@@ -35,18 +35,18 @@
     @include flex($direction: column);
     flex: 0 0 auto;
     width: 316px;
-    padding: 8px 0;
     &-header {
         z-index: 1;
         background-color: var(--background-base);
         position: sticky;
+        padding-top: 4px;
         top: 0;
     }
 }
 
 .search {
     position: relative;
-    margin: 0 12px;
+    margin: 0 16px;
 }
 
 .autosuggest-flyout {
