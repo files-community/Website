@@ -24,7 +24,7 @@
     import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
     import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
     import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
-    import ShieldKeyhole from "@fluentui/svg-icons/icons/shield_keyhole_24_regular.svg?raw";
+    import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
     import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
     import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
 
@@ -255,11 +255,11 @@
                 </svelte:fragment>
                 File preview
             </FeatureCard>
-            <FeatureCard description="Use the same familiar permissions system from File Explorer, but with a new modern design that's a delight to use.">
+            <FeatureCard description="Quickly mark and organize your items for later by assigning them colored tags for easy identification.">
                 <svelte:fragment slot="icon">
-                    {@html ShieldKeyhole}
+                    {@html Tag}
                 </svelte:fragment>
-                Permissions management
+                Tagged Files & Folders
             </FeatureCard>
             <FeatureCard description="Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts.">
                 <svelte:fragment slot="icon">

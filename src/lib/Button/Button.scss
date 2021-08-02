@@ -34,6 +34,12 @@
             border-color: var(--control-stroke-default);
             border-top-color: var(--control-stroke-secondary);
 
+            // Light theme styles
+            @media (prefers-color-scheme: light) {
+                border-color: var(--control-stroke-default);
+                border-bottom-color: var(--control-stroke-secondary);
+            }
+
             // Interaction states
             // Hover state
             &:hover {
@@ -84,21 +90,6 @@
                 border-color: transparent;
             }
         }
-    }
-}
-
-/*
- * Light-theme specific styles
- * ==========================================
- * The borders on default buttons are
- * slightly different on light theme and
- * therefore must be styled accordingly.
- */
-
-@media (prefers-color-scheme: light) {
-    .button.style-standard {
-        border-color: var(--control-stroke-default);
-        border-bottom-color: var(--control-stroke-secondary);
     }
 }
 

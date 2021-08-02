@@ -108,6 +108,14 @@
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
     background: silver;
     padding: 3px;
+    @media only screen and (max-width: 648px) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: calc(100% - 48px);
+        height: calc(100% - 48px);
+        margin: 24px;
+    }
     pre,
     &-body {
         flex: 1 1 auto;
@@ -176,16 +184,5 @@
     p {
         line-height: 1.5;
         margin: 0;
-    }
-}
-
-@media only screen and (max-width: 648px) {
-    .window {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: calc(100% - 48px);
-        height: calc(100% - 48px);
-        margin: 24px;
     }
 }

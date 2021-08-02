@@ -42,6 +42,9 @@
             position: absolute;
             bottom: 0;
             right: 0;
+            @media (prefers-color-scheme: dark) {
+                opacity: 0.4;
+            }
         }
     }
     .style-standard .hero-button-inner {
@@ -52,11 +55,6 @@
     }
     #hero-download-button {
         min-width: 128px;
-    }
-    @media (prefers-color-scheme: dark) {
-        #hero-section canvas {
-            opacity: 0.4;
-        }
     }
 }
 
@@ -238,10 +236,7 @@
     :global(.feature-card) {
         margin-bottom: 8px;
     }
-}
-
-@media only screen and (max-width: 1164px) {
-    .feature-cards-container {
+    @media only screen and (max-width: 1164px) {
         column-count: 1;
     }
 }
@@ -350,6 +345,10 @@
 .themes-section-content {
     width: 52%;
     min-width: 478px;
+    @media only screen and (max-width: 832px) {
+        width: 100%;
+        min-width: unset;
+    }
 }
 
 .theme-chooser {
@@ -358,13 +357,6 @@
     display: grid;
     grid-template-columns: auto auto auto;
     grid-gap: 12px;
-}
-
-@media only screen and (max-width: 832px) {
-    .themes-section-content {
-        width: 100%;
-        min-width: unset;
-    }
 }
 
 :global(#community-section) {
