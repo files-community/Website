@@ -1,5 +1,6 @@
 <script lang="ts">
     import { links } from "$stores/links";
+    import { docs } from "$stores/docs";
     import { Navbar } from "$lib";
     import { onMount } from "svelte";
     
@@ -30,6 +31,7 @@
         {
             name: "Docs",
             path: "/docs",
+            sidebarTree: docs,
             icon: Book
         },
         {

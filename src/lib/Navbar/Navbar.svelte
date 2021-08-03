@@ -2,6 +2,7 @@
     import { page } from "$app/stores";
     
     import ListViewItem from "../ListViewItem/ListViewItem.svelte";
+    import TreeView from "../TreeView/TreeView.svelte";
 
     import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -91,26 +92,37 @@
     <aside
         bind:this={sidebar}
         class:visible={sidebarVisible}
-        class="sidebar"
+        class="sidebar scroller"
     >
-        {#each items as { name, path, external, icon, type }}
+        {#each items as { name, path, external, sidebarTree, icon, type }}
             {#if type === "divider"}
                 <hr role="separator" />
                 {:else}
-                <ListViewItem
-                    type="navigation"
-                    selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
-                    href={path}
-                    target={external ? "_blank" :  undefined}
-                    rel={external ? "noreferrer noopener" : undefined}
-                >
-                    <svelte:fragment slot="icon">
-                        {#if icon}
-                            {@html icon}
-                        {/if}
-                    </svelte:fragment>
-                    <span>{name}</span>
-                </ListViewItem>
+                {#if !sidebarTree}
+                    <ListViewItem
+                        type="navigation"
+                        selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
+                        href={path}
+                        target={external ? "_blank" :  undefined}
+                        rel={external ? "noreferrer noopener" : undefined}
+                    >
+                        <svelte:fragment slot="icon">
+                            {#if icon}
+                                {@html icon}
+                            {/if}
+                        </svelte:fragment>
+                        <span>{name}</span>
+                    </ListViewItem>
+                    {:else}
+                    <TreeView tree={[
+                        {
+                            type: "category",
+                            name,
+                            icon,
+                            pages: [ ...sidebarTree ]
+                        }
+                    ]} />
+                {/if}
             {/if}
         {/each}
         <hr role="separator" />

@@ -1,7 +1,7 @@
 @use "../mixins" as *;
 
 .page {
-    padding: 48px;
+    padding: 44px 56px;
     flex: 1 1 auto;
     background-clip: padding-box;
     background-color: var(--layer-color-default);
@@ -21,14 +21,6 @@
     @media only screen and (max-width: 648px) {
         max-height: calc(100vh - 64px);
     }
-    canvas {
-        z-index: -1;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
-    }
 }
 
 .sidebar {
@@ -36,6 +28,24 @@
     padding: 0 4px;
     flex: 0 0 auto;
     width: 316px;
+    @media only screen and (max-width: 648px) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 648px) {
+    .docs {
+        margin-top: 2px;
+        max-height: calc(100vh - 66px);
+        border-top: 1px solid var(--card-stroke-default);
+    }
+    .sidebar {
+        display: none;
+    }
+    .page {
+        border-radius: 0;
+        border: none;
+    }
 }
 
 .search {

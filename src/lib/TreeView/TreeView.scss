@@ -1,14 +1,5 @@
 @use "src/styles/mixins" as *;
 
-.subtree {
-    &-items {
-        padding-left: 24px;
-        height: 0;
-        min-height: 0;
-        overflow: hidden;
-        transition: 250ms cubic-bezier(0, 0, 0, 1) min-height;
-    }
-    &.expanded &-items {
-        min-height: var(--treeview-subtree-height);
-    }
+.subtree-items {
+    padding-left: 24px;
 }
