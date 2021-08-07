@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import { draw } from "svelte/transition";
 
     import { links } from "$stores/links";
     import { getContributors, getReleaseUrl } from "./fetchHomepageData";
@@ -28,6 +29,9 @@
     import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
     import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
 
+    import Checkmark from "@fluentui/svg-icons/icons/checkmark_20_regular.svg?raw";
+    import ArrowSync from "@fluentui/svg-icons/icons/arrow_sync_20_regular.svg?raw";
+
     let [contributors1, contributors2, contributors3] = [[], [], []];
     let windows: boolean;
     let wingetDialogOpen: boolean = false;
@@ -38,12 +42,49 @@
     let releaseUrl: string = "";
     let scrollY: number;
     let themes: number = 0;
-    let features: number = 0;
+    let currentFeature: 0 | 1 | 2 | 3 = 0;
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
     const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
     const storeUrl = windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
+    const cloudTable = [
+        {
+            name: "GitHub",
+            icon: "folder",
+            status: "success"
+        },
+        {
+            name: "electron-v1.4.13-win32-ia32.zip",
+            icon: "zip",
+            status: "sync"
+        },
+        {
+            name: "start.js",
+            icon: "note",
+            status: "success"
+        },
+        {
+            name: "2021-08-05 15.03.05.mp4",
+            icon: "video",
+            status: "success"
+        },
+        {
+            name: "christmas-2017.png",
+            icon: "picture",
+            status: "success"
+        },
+        {
+            name: "install.bat",
+            icon: "exe",
+            status: "success"
+        },
+        {
+            name: "dQw4w9WgXcQ.mp3",
+            icon: "music",
+            status: "success"
+        },
+    ]
     
     $: downloadUrl = downloadSource === 0 ? storeUrl : releaseUrl;
 
@@ -58,6 +99,18 @@
     function updateDownloadSource(value) {
         localStorage.setItem("downloadSource", value);
     }
+
+    function setFeature(value) {
+        currentFeature = value;
+    }
+
+    setInterval(() => {
+        if (currentFeature !== 3)  {
+            currentFeature++;
+        } else {
+            currentFeature = 0;
+        }
+    }, 8000);
 
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
@@ -236,6 +289,42 @@
 
 <PageSection id="features-section">
     <div class="features-section-left">
+        {#if currentFeature === 0}
+            <svg class="backdrop-logo" width="256" height="256" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                <path in:draw={{ duration: 1000 }} xmlns="http://www.w3.org/2000/svg" d="M24 10C18.262 10 13.5501 14.3935 13.0448 20H12.75C8.46979 20 5 23.4698 5 27.75C5 32.0302 8.46979 35.5 12.75 35.5H35.25C39.5302 35.5 43 32.0302 43 27.75C43 23.4698 39.5302 20 35.25 20H34.9552C34.4499 14.3935 29.738 10 24 10Z" />
+            </svg>
+            <div class="cloud-files-preview">
+                <svg class="cloud-provider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 87.3 78">
+                    <path d="m6.6 66.85 3.85 6.65c.8 1.4 1.95 2.5 3.3 3.3l13.75-23.8h-27.5c0 1.55.4 3.1 1.2 4.5z" fill="#0066da"/>
+                    <path d="m43.65 25-13.75-23.8c-1.35.8-2.5 1.9-3.3 3.3l-25.4 44a9.06 9.06 0 0 0 -1.2 4.5h27.5z" fill="#00ac47"/>
+                    <path d="m73.55 76.8c1.35-.8 2.5-1.9 3.3-3.3l1.6-2.75 7.65-13.25c.8-1.4 1.2-2.95 1.2-4.5h-27.502l5.852 11.5z" fill="#ea4335"/>
+                    <path d="m43.65 25 13.75-23.8c-1.35-.8-2.9-1.2-4.5-1.2h-18.5c-1.6 0-3.15.45-4.5 1.2z" fill="#00832d"/>
+                    <path d="m59.8 53h-32.3l-13.75 23.8c1.35.8 2.9 1.2 4.5 1.2h50.8c1.6 0 3.15-.45 4.5-1.2z" fill="#2684fc"/>
+                    <path d="m73.4 26.5-12.7-22c-.8-1.4-1.95-2.5-3.3-3.3l-13.75 23.8 16.15 28h27.45c0-1.55-.4-3.1-1.2-4.5z" fill="#ffba00"/>
+                </svg>
+                <svg class="cloud-provider" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 595.3 841.9">
+                    <path fill="#D9272E" d="M296.8,168.2C157.2,168.2,43.9,281.4,43.9,421c0,139.6,113.2,252.8,252.8,252.8S549.6,560.6,549.6,421  C549.6,281.4,436.4,168.2,296.8,168.2z M428.1,510.5c0,4.3-3.5,7.8-7.8,7.8h-33.1c-4.3,0-7.8-3.5-7.8-7.8V408.8c0-0.9-1-1.3-1.7-0.7  l-70,70c-6.1,6.1-15.9,6.1-22,0l-70-70c-0.6-0.6-1.7-0.2-1.7,0.7v101.7c0,4.3-3.5,7.8-7.8,7.8h-33.1c-4.3,0-7.8-3.5-7.8-7.8V331.5  c0-4.3,3.5-7.8,7.8-7.8H196c4.1,0,8.1,1.6,11,4.6l87,87c1.5,1.5,4,1.5,5.5,0l87-87c2.9-2.9,6.9-4.6,11-4.6h22.7  c4.3,0,7.8,3.5,7.8,7.8V510.5z"/>
+                </svg>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Name</th>
+                        <th>Status</th>
+                    </tr>
+                    {#each cloudTable as { name, icon, status }, i}
+                        <tr style="--file-index: {i}">
+                            <td>
+                                <img src="ui/{icon}.png" alt={icon === "folder" ? `${icon} file` : "File Folder"} width="24" height="24" />
+                            </td>
+                            <td>{name}</td>
+                            <td class="status-{status === "success" ? "success" : "sync"}">
+                                {@html status === "success" ? Checkmark : ArrowSync}
+                            </td>
+                        </tr>
+                    {/each}
+                </table>
+            </div>
+        {/if}
     </div>
     <div class="features-section-right">
         <HeaderChip>Features</HeaderChip>
@@ -243,25 +332,41 @@
         <p>Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.</p>
         <hr role="separator" />
         <div class="feature-cards-container">
-            <FeatureCard selected description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.">
+            <FeatureCard
+                on:click={() => setFeature(0)}
+                selected={currentFeature === 0}
+                description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+            >
                 <svelte:fragment slot="icon">
                     {@html Cloud}
                 </svelte:fragment>
                 Seamless cloud integration
             </FeatureCard>
-            <FeatureCard description="Preview documents, photos, and more without opening them. Peek at code files with advanced syntax highlighting and markdown support.">
+            <FeatureCard
+                on:click={() => setFeature(1)}
+                selected={currentFeature === 1}
+                description="Preview documents, photos, and more without opening them. Peek at code files with advanced syntax highlighting and markdown support."
+            >
                 <svelte:fragment slot="icon">
                     {@html EyeVisible}
                 </svelte:fragment>
                 File preview
             </FeatureCard>
-            <FeatureCard description="Quickly mark and organize your items for later by assigning them colored tags for easy identification.">
+            <FeatureCard
+                on:click={() => setFeature(2)}
+                selected={currentFeature === 2}
+                description="Quickly mark and organize your items for later by assigning them colored tags for easy identification."
+            >
                 <svelte:fragment slot="icon">
                     {@html Tag}
                 </svelte:fragment>
                 Tagged Files & Folders
             </FeatureCard>
-            <FeatureCard description="Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts.">
+            <FeatureCard
+                on:click={() => setFeature(3)}
+                selected={currentFeature === 3}
+                description="Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+            >
                 <svelte:fragment slot="icon">
                     {@html TabDesktop}
                 </svelte:fragment>

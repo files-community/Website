@@ -6,14 +6,16 @@
     break-inside: avoid-column;
     cursor: default;
     transition: 250ms ease;
+    backface-visibility: hidden;
     border-radius: var(--control-corner-radius);
     background-color: var(--background-tertiary);
-    border: 1px solid var(--card-stroke-default);
+    box-shadow: 0 0 0 1px var(--card-stroke-default);
+    border: 2px solid transparent;
     &:hover {
-        box-shadow: var(--card-elevation);
+        box-shadow: var(--card-elevation), 0 0 0 1px var(--card-stroke-default);
     }
     &.selected {
-        border: 2px solid var(--accent-color-default);
+        border-color: var(--accent-color-default);
     }
     :global(svg) {
         @include icon($size: 24px);

@@ -34,7 +34,7 @@ const config = {
         sveltePreprocess({
             defaults: {
                 style: "scss",
-                script: "ts"
+                script: "typescript"
             },
             postcss: {
                 plugins: [
