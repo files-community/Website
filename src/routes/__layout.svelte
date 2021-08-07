@@ -52,7 +52,7 @@
             href: `https://github.com/${github.owner}/${github.repo}`,
             icon: Code
         }
-    ]
+    ];
 </script>
 
 <svelte:head>

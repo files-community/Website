@@ -7,7 +7,7 @@
 
 <style lang="scss" src="./FeatureCard.scss"></style>
 
-<div class="feature-card" class:selected {...$$restProps}>
+<div class="feature-card" on:click class:selected {...$$restProps}>
     <slot name="icon">
         {@html Question}
     </slot>
