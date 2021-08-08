@@ -252,27 +252,32 @@
     }
 }
 
+@keyframes preview-pane-open {
+    from {
+        transform: translateX(80%);
+        opacity: 0;
+    }
+}
+
 .features-section- {
     &left {
         @include flex($align: center, $justify: center);
         position: relative;
         flex: 1 1 auto;
+
+        // Common elements
         .backdrop-logo {
             height: 100%;
             width: auto;
             max-width: 100%;
-            transform: rotate(-10deg);
+            transform: rotate(-10deg) scale(var(--logo-scale));
             path {
                 fill: none;
                 stroke: var(--card-stroke-default);
                 stroke-width: 0.25;
             }
-        } 
-        .cloud-files-preview {
-            position: absolute;
-            animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
-            width: 416px;
-            max-width: 100%;
+        }
+        .showcase-panel {
             border: 1px solid var(--surface-stroke-default);
             background-color: var(--background-base);
             border-radius: var(--overlay-corner-radius);
@@ -282,13 +287,20 @@
                         0 20.5812px 20.5812px rgb(0 0 0 / 6%),
                         0 41.1623px 41.1623px rgb(0 0 0 / 7%),
                         0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+        }
+
+        // Cloud showcase
+        .cloud-files-showcase {
+            position: absolute;
+            animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+            width: 416px;
+            max-width: 100%;
             table {
                 user-select: none;
                 white-space: nowrap;
                 margin-bottom: 3px;
                 width: 100%;
                 border-collapse: collapse;
-                font-size: 1.4rem;
                 line-height: 1.4rem;
                 * {
                     font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
@@ -371,6 +383,32 @@
                 width: 128px;
                 animation: cloud-provider 250ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1000ms,
                            cloud-provider-float 10s ease infinite 1400ms;
+            }
+        }
+        
+        // Previewer showcase
+        .previewer-showcase {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            .preview-pane {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards 800ms;
+                border-radius: var(--control-corner-radius) 0 0 var(--control-corner-radius);
+                &-outer {
+                    position: relative;
+                    width: 260px;
+                    height: 400px;
+                }
+            }
+            .files-list {
+                @include flex($direction: column, $gap: 16px);
+                position: relative;
+                z-index: 1;
+                animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+                width: 96px;
             }
         }
     }
