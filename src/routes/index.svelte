@@ -154,7 +154,8 @@
         }, 500);
     }
 
-    function updateDownloadSource(value) {
+    function updateDownloadSource(value: number) {
+        console.log("updateDownloadSource called");
         localStorage.setItem("downloadSource", value);
     }
 
@@ -237,22 +238,24 @@
                     <svelte:fragment slot="menu">
                         <ListViewItem
                             bind:group={downloadSource}
-                            on:change={updateDownloadSource(0)}
+                            on:change={() => updateDownloadSource(0)}
                             value={0}
                         >
                             Microsoft Store
                         </ListViewItem>
                         <ListViewItem
                             bind:group={downloadSource}
-                            on:change={updateDownloadSource(1)}
+                            on:change={() => updateDownloadSource(1)}
                             value={1}
                         >
                             Github Release
                         </ListViewItem>
                         <ListViewItem
                             bind:group={downloadSource}
-                            on:change={updateDownloadSource(2)}
-                            on:click={() => wingetDialogOpen = true}
+                            on:change={() => {
+                                updateDownloadSource(2);
+                                wingetDialogOpen = true;
+                            }}
                             value={2}
                         >
                             Winget (CLI)
