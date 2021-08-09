@@ -1,6 +1,6 @@
 <script lang="ts">
-    import { links } from "$stores/links";
-    import { docs } from "$stores/docs";
+    import { links } from "$data/links";
+    import { docs } from "$data/docs";
     import { Navbar } from "$lib";
     import { onMount } from "svelte";
     

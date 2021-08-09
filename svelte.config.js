@@ -21,7 +21,7 @@ const config = {
             resolve: {
                 alias: {
                     "$routes": path.resolve(__dirname, "./src/routes"),
-                    "$stores": path.resolve(__dirname, "./src/stores"),
+                    "$data": path.resolve(__dirname, "./src/data"),
                     "$types": path.resolve(__dirname, "./src/types"),
                     "$static": path.resolve(__dirname, "./static")
                 }

@@ -32,8 +32,8 @@
       "$routes": [
         "src/routes/*"
       ],
-      "$stores": [
-        "src/stores/*"
+      "$data": [
+        "src/data/*"
       ],
       "$types": [
         "src/types/*"

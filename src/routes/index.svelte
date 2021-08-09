@@ -2,7 +2,7 @@
     import { onMount } from "svelte";
     import { draw } from "svelte/transition";
 
-    import { links } from "$stores/links";
+    import { links } from "$data/links";
     import { getContributors, getReleaseUrl } from "./fetchHomepageData";
     import {
         Button,
@@ -42,8 +42,8 @@
     let releaseUrl: string = "";
     let scrollY: number;
     let themes: number = 0;
-    let currentFeature: 0 | 1 | 2 | 3 = 0;
-    let currentPreviewFile = 0;
+    let currentFeature: number = 0;
+    let currentPreviewFile: number = 0;
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
@@ -90,21 +90,21 @@
         {
             name: "June 2018",
             icon: "/ui/folder.png",
-            type: "folder",
+            previewType: "folder",
             items: 3,
             added: "Thursday, June 21, 2018 11:24 AM",
             modified: "Sunday, November 15, 2020 6:50 PM",
-            path: "C:\\Users\\Sara\\Desktop\\June 2018"
+            path: "C:\\Users\\Austin\\Desktop\\June 2018"
         },
         {
             name: "waves",
-            extension: "jpg",
-            icon: "/preview-samples/waves.jpg",
-            type: "image",
+            extension: "png",
+            icon: "/preview-samples/waves.png",
+            previewType: "image",
             bitDepth: 24,
             dimensions: {
-                horizontal: 5760,
-                vertical: 3840
+                horizontal: 1496,
+                vertical: 960
             },
             dpi: {
                 horizontal: 72,
@@ -112,22 +112,22 @@
             },
             added: "Sunday, August 1, 2021 12:34 AM",
             modified: "Monday, August 9, 2021 12:34 AM",
-            path: "C:\\Users\\Sara\\Pictures\\waves.png"
+            path: "C:\\Users\\Austin\\Pictures\\waves.png"
         },
         {
             name: "index",
             extension: "html",
             icon: "/ui/note.png",
-            type: "website",
+            previewType: "website",
             added: "Wednesday, July 14, 2021 8:47 PM",
             modified: "Monday, July 31, 2021 4:32 AM",
-            path: "C:\\Users\\Sara\\Documents\\index.html"
+            path: "C:\\Users\\Austin\\Documents\\index.html"
         },
         {
             name: "main",
             extension: "cpp",
             icon: "/ui/cpp.svg",
-            type: "code",
+            previewType: "code",
             added: "Monday, June 28, 2021 8:20 AM",
             modified: "Monday, July 12, 2021 1:30 PM",
             code: `
@@ -140,7 +140,7 @@
                     cout << "Hello World" << endl;
                 }
             `,
-            path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png"
+            path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
         }
     ];
     
@@ -399,8 +399,8 @@
                             class:selected={currentPreviewFile === i}
                             on:click={() => currentPreviewFile = i}
                         >
-                            <img src={file.icon} alt={file.type ? file.extension ? `${file.extension.toUpperCase()} File` : "File" : "File Folder"} />
-                            {file.name}{typeof file.extension !== "undefined" ? `.${file.extension}` : ""}
+                            <img src={file.icon} alt="File icon" />
+                            {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
                         </div>
                     {/each}
                 </div>

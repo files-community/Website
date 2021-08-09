@@ -2,7 +2,7 @@
     import { goto } from "$app/navigation";
     import { page } from "$app/stores";
 
-    import { docs } from "$stores/docs";
+    import { docs } from "$data/docs";
     import { TreeView, TextBox, ListViewItem } from "$lib";
 
     let value: string = "";
