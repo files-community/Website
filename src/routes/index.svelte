@@ -175,7 +175,7 @@
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
 
-        if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", 0);
+        if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0");
         downloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
         
         windows = navigator.platform === "Win32";

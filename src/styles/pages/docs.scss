@@ -1,7 +1,6 @@
 @use "../mixins" as *;
 
 .page {
-    padding: 44px 56px;
     flex: 1 1 auto;
     background-clip: padding-box;
     background-color: var(--layer-color-default);
@@ -9,6 +8,9 @@
     border: {
         top: 1px solid var(--card-stroke-default);
         left: 1px solid var(--card-stroke-default);
+    }
+    &-inner {
+        padding: 44px 56px;
     }
 }
 
@@ -30,21 +32,6 @@
     width: 316px;
 }
 
-@media only screen and (max-width: 648px) {
-    .docs {
-        margin-top: 2px;
-        max-height: calc(100vh - 66px);
-        border-top: 1px solid var(--card-stroke-default);
-    }
-    .sidebar {
-        display: none;
-    }
-    .page {
-        border-radius: 0;
-        border: none;
-    }
-}
-
 .search {
     position: sticky;
     z-index: 1;
@@ -58,24 +45,56 @@
         margin: 0;
         margin-top: 12px;
     }
+    &-mobile {
+        border-bottom: 1px solid var(--divider-color-default);
+        padding: 12px;
+        display: none;
+    }
 }
 
-.autosuggest-flyout {
-    position: absolute;
-    max-height: 350px;
-    z-index: 10;
-    top: calc(100% - 12px);
-    left: 0;
-    width: 100%;
-    padding: 2px 0;
-    border: 1px solid var(--surface-stroke-flyout);
-    background-color: var(--background-quarternary);
-    border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
-    box-shadow: var(--flyout-elevation);
+.autosuggest {
+    &-wrapper {
+        position: relative;
+    }
+    &-flyout {
+        position: absolute;
+        max-height: 350px;
+        z-index: 10;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 2px 0;
+        border: 1px solid var(--surface-stroke-flyout);
+        background-color: var(--background-quarternary);
+        border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
+        box-shadow: var(--flyout-elevation);
+    }
 }
 
 .divider {
     width: 100%;
     border-top: 1px solid var(--divider-color-default);
     margin: 12px 0;
+}
+
+@media only screen and (max-width: 648px) {
+    .docs {
+        flex-direction: column;
+        margin-top: 2px;
+        max-height: calc(100vh - 66px);
+        border-top: 1px solid var(--card-stroke-default);
+    }
+    .sidebar {
+        display: none;
+    }
+    .page {
+        border-radius: 0;
+        border: none;
+        &-inner {
+            padding: 48px;
+        }
+    }
+    .search-mobile {
+        display: block;
+    }
 }

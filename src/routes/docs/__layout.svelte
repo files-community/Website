@@ -69,47 +69,89 @@
 
 <section class="docs">
     <aside class="sidebar scroller">
-        <div
-            use:clickOutside={() => autoSuggestVisible = false}
-            class="search"
-        >
-            <TextBox
-                bind:value
-                on:keydown={handleSearchKeys}
-                on:input={updateSearchQuery}
-                on:clear={updateSearchQuery}
-                on:focus={() => searchFocused = true}
-                on:search={() => {
-                    if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
-                        keepfocus: true
-                    });
-                }}
-                flyoutVisible={autoSuggestVisible}
-                type="search"
-                placeholder="Search Documentation"
-            />
-            {#if autoSuggestVisible}
-                <div class="autosuggest-flyout scroller">
-                    {#if searchResults.length > 0}
-                        {#each searchResults as {name, path}, i}
-                            <ListViewItem
-                                selected={selection === i}
-                                href="/docs{path}"
-                            >
-                                {name}
-                            </ListViewItem>
-                        {/each}
-                        {:else}
-                        <ListViewItem>No results found</ListViewItem>
-                    {/if}
-                </div>
-            {/if}
+        <div class="search">
+            <div
+                class="autosuggest-wrapper"
+                use:clickOutside={() => autoSuggestVisible = false}
+            >
+                <TextBox
+                    bind:value
+                    on:keydown={handleSearchKeys}
+                    on:input={updateSearchQuery}
+                    on:clear={updateSearchQuery}
+                    on:focus={() => searchFocused = true}
+                    on:search={() => {
+                        if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
+                            keepfocus: true
+                        });
+                    }}
+                    flyoutVisible={autoSuggestVisible}
+                    type="search"
+                    placeholder="Search Documentation"
+                />
+                {#if autoSuggestVisible}
+                    <div class="autosuggest-flyout scroller">
+                        {#if searchResults.length > 0}
+                            {#each searchResults as {name, path}, i}
+                                <ListViewItem
+                                    selected={selection === i}
+                                    href="/docs{path}"
+                                >
+                                    {name}
+                                </ListViewItem>
+                            {/each}
+                            {:else}
+                            <ListViewItem>No results found</ListViewItem>
+                        {/if}
+                    </div>
+                {/if}
+            </div>
             <hr role="separator" />
         </div>
         <TreeView tree={docs} />
     </aside>
-    <article class="page scroller markdown-body">
-        <slot />
+    <article class="page scroller">
+        <div class="search-mobile">
+            <div
+                class="autosuggest-wrapper"
+                use:clickOutside={() => autoSuggestVisible = false}
+            >
+                <TextBox
+                    bind:value
+                    on:keydown={handleSearchKeys}
+                    on:input={updateSearchQuery}
+                    on:clear={updateSearchQuery}
+                    on:focus={() => searchFocused = true}
+                    on:search={() => {
+                        if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
+                            keepfocus: true
+                        });
+                    }}
+                    flyoutVisible={autoSuggestVisible}
+                    type="search"
+                    placeholder="Search Documentation"
+                />
+                {#if autoSuggestVisible}
+                    <div class="autosuggest-flyout scroller">
+                        {#if searchResults.length > 0}
+                            {#each searchResults as {name, path}, i}
+                                <ListViewItem
+                                    selected={selection === i}
+                                    href="/docs{path}"
+                                >
+                                    {name}
+                                </ListViewItem>
+                            {/each}
+                            {:else}
+                            <ListViewItem>No results found</ListViewItem>
+                        {/if}
+                    </div>
+                {/if}
+            </div>
+        </div>
+        <div class="page-inner markdown-body">
+            <slot />
+        </div>
     </article>
 </section>
 
