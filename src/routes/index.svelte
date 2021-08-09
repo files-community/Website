@@ -43,6 +43,7 @@
     let scrollY: number;
     let themes: number = 0;
     let currentFeature: 0 | 1 | 2 | 3 = 0;
+    let currentPreviewFile = 0;
 
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
@@ -70,7 +71,7 @@
             status: "success"
         },
         {
-            name: "christmas-2017.png",
+            name: "christmas-card-2017.png",
             icon: "picture",
             status: "success"
         },
@@ -84,7 +85,64 @@
             icon: "music",
             status: "success"
         },
-    ]
+    ];
+    const previewFiles = [
+        {
+            name: "June 2018",
+            icon: "/ui/folder.png",
+            type: "folder",
+            items: 3,
+            added: "Thursday, June 21, 2018 11:24 AM",
+            modified: "Sunday, November 15, 2020 6:50 PM",
+            path: "C:\\Users\\Sara\\Desktop\\June 2018"
+        },
+        {
+            name: "waves",
+            extension: "jpg",
+            icon: "/preview-samples/waves.jpg",
+            type: "image",
+            bitDepth: 24,
+            dimensions: {
+                horizontal: 5760,
+                vertical: 3840
+            },
+            dpi: {
+                horizontal: 72,
+                vertical: 72
+            },
+            added: "Sunday, August 1, 2021 12:34 AM",
+            modified: "Monday, August 9, 2021 12:34 AM",
+            path: "C:\\Users\\Sara\\Pictures\\waves.png"
+        },
+        {
+            name: "index",
+            extension: "html",
+            icon: "/ui/note.png",
+            type: "website",
+            added: "Wednesday, July 14, 2021 8:47 PM",
+            modified: "Monday, July 31, 2021 4:32 AM",
+            path: "C:\\Users\\Sara\\Documents\\index.html"
+        },
+        {
+            name: "main",
+            extension: "cpp",
+            icon: "/ui/cpp.svg",
+            type: "code",
+            added: "Monday, June 28, 2021 8:20 AM",
+            modified: "Monday, July 12, 2021 1:30 PM",
+            code: `
+                #include <iostream>
+
+                using namespace std;
+
+                int main()
+                {
+                    cout << "Hello World" << endl;
+                }
+            `,
+            path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png"
+        }
+    ];
     
     $: downloadUrl = downloadSource === 0 ? storeUrl : releaseUrl;
 
@@ -104,13 +162,13 @@
         currentFeature = value;
     }
 
-    setInterval(() => {
-        if (currentFeature !== 3)  {
-            currentFeature++;
-        } else {
-            currentFeature = 0;
-        }
-    }, 8000);
+    // setInterval(() => {
+    //     if (currentFeature !== 3)  {
+    //         currentFeature++;
+    //     } else {
+    //         currentFeature = 0;
+    //     }
+    // }, 8000);
 
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
@@ -289,7 +347,7 @@
 
 <PageSection id="features-section">
     <div class="features-section-left">
-        {#if currentFeature === 0}
+        {#if currentFeature === 1}
             <svg class="backdrop-logo" width="256" height="256" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path in:draw={{ duration: 1000 }} d="M24 10C18.262 10 13.5501 14.3935 13.0448 20H12.75C8.46979 20 5 23.4698 5 27.75C5 32.0302 8.46979 35.5 12.75 35.5H35.25C39.5302 35.5 43 32.0302 43 27.75C43 23.4698 39.5302 20 35.25 20H34.9552C34.4499 14.3935 29.738 10 24 10Z" />
             </svg>
@@ -314,7 +372,7 @@
                     {#each cloudTable as { name, icon, status }, i}
                         <tr style="--file-index: {i}">
                             <td>
-                                <img src="ui/{icon}.png" alt={icon === "folder" ? `${icon} file` : "File Folder"} width="24" height="24" />
+                                <img src="ui/{icon}.png" alt={icon === "folder" ? `${icon} file` : "Folder"} width="24" height="24" />
                             </td>
                             <td>{name}</td>
                             <td class="status-{status === "success" ? "success" : "sync"}">
@@ -324,20 +382,27 @@
                     {/each}
                 </table>
             </div>
-            {:else if currentFeature === 1}
+            {:else if currentFeature === 0}
             <svg class="backdrop-logo" style="--logo-scale: 0.9" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <path in:draw={{ duration: 1250 }} xmlns="http://www.w3.org/2000/svg" d="M24.833 12.5H40.25C42.2543 12.5 43.8913 14.0724 43.9948 16.0508L44 16.25V35.25C44 37.2543 42.4276 38.8913 40.4492 38.9948L40.25 39H7.75C5.74574 39 4.10873 37.4276 4.0052 35.4492L4 35.25V18.999L17.8036 19L18.0297 18.9932C19.0049 18.9344 19.9192 18.4968 20.5769 17.7743L20.724 17.6025L24.833 12.5ZM17.0607 9C17.8933 9 18.7 9.27703 19.3552 9.78393L19.5301 9.92784L21.974 12.066L18.7771 16.0342L18.6826 16.1388C18.4832 16.336 18.223 16.4605 17.9443 16.4921L17.8036 16.5L4 16.499V12.75C4 10.7457 5.57236 9.10873 7.55084 9.0052L7.75 9H17.0607Z" />
             </svg>
             <div class="previewer-showcase">
                 <div class="preview-pane-outer">
                     <div class="showcase-panel preview-pane">
-                        TODO: Preview Pane
+                        {JSON.stringify(previewFiles[currentPreviewFile])}
                     </div>
                 </div>
-                <div class="showcase-panel files-list">
-                    <div style="height: 450px">
-                        TODO: GridView Files go here
-                    </div>
+                <div class="showcase-panel files-grid">
+                    {#each previewFiles as file, i}
+                        <div
+                            class="file"
+                            class:selected={currentPreviewFile === i}
+                            on:click={() => currentPreviewFile = i}
+                        >
+                            <img src={file.icon} alt={file.type ? file.extension ? `${file.extension.toUpperCase()} File` : "File" : "File Folder"} />
+                            {file.name}{typeof file.extension !== "undefined" ? `.${file.extension}` : ""}
+                        </div>
+                    {/each}
                 </div>
             </div>
         {/if}
