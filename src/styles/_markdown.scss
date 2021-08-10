@@ -1,3 +1,5 @@
+@use "./mixins" as *;
+
 .markdown-body {
     line-height: 1.45;
     font-size: 1.4rem;
@@ -103,80 +105,8 @@
         background-clip: padding-box;
         font-family: var(--font-family-monospace);
         border-radius: var(--control-corner-radius);
-
         * {
             font-family: inherit;
-        }
-
-        // Syntax highlighting
-        .comment,
-        .prolog,
-        .doctype,
-        .cdata {
-            color: #5C6370;
-        }
-
-        .punctuation {
-            color: #abb2bf;
-        }
-
-        .selector,
-        .tag {
-            color: #e06c75;
-        }
-
-        .property,
-        .boolean,
-        .number,
-        .constant,
-        .symbol,
-        .attr-name,
-        .deleted {
-            color: #d19a66;
-        }
-
-        .string,
-        .char,
-        .attr-value,
-        .builtin,
-        .inserted {
-            color: #98c379;
-        }
-
-        .operator,
-        .entity,
-        .url,
-        .language-css .string,
-        .style .string {
-            color: #56b6c2;
-        }
-
-        .atrule,
-        .keyword {
-            color: #c678dd;
-        }
-
-        .function {
-            color: #61afef;
-        }
-
-        .regex,
-        .important,
-        .variable {
-            color: #c678dd;
-        }
-
-        .important,
-        .bold {
-            font-weight: bold;
-        }
-
-        .italic {
-            font-style: italic;
-        }
-
-        .entity {
-            cursor: help;
         }
     }
     pre {
@@ -192,6 +122,13 @@
             padding: 0;
             background-color: transparent;
             border: none;
+
+            @media (prefers-color-scheme: light) {
+                @include prism-vs-light;
+            }
+            @media (prefers-color-scheme: dark) {
+                @include prism-vs-dark;
+            }
         }
     }
 
