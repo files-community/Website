@@ -136,6 +136,7 @@ using namespace std;
 int main()
 {
     cout << "Hello World" << endl;
+    return 0;
 }`,
             path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
         }
