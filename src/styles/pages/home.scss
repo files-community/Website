@@ -536,17 +536,11 @@
 }
 
 .feature-cards-container {
-    display: block;
-    column-count: 2;
-    column-gap: 8px;
-    :global(.feature-card) {
-        margin-bottom: 8px;
-        &.selected {
-            border-color: transparent;
-        }
-    }
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
     @media only screen and (max-width: 1164px) {
-        column-count: 1;
+        grid-template-columns: 1fr;
     }
 }
 
@@ -559,6 +553,9 @@
             width: 100%;
             margin: 0;
         }
+    }
+    .feature-cards-container :global(.feature-card.selected) {
+        border-color: transparent;
     }
 }
 
