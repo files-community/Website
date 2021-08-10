@@ -262,8 +262,8 @@
 .features-section- {
     &left {
         @include flex($align: center, $justify: center);
+        width: 50%;
         position: relative;
-        flex: 1 1 auto;
         .backdrop-logo {
             position: absolute;
             height: 100%;
@@ -297,7 +297,7 @@
         }
     }
     &right {
-        flex: 0 0 auto;
+        flex: 1 1 auto;
         width: 50%;
         margin-left: 48px;
     }
