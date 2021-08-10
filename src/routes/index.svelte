@@ -389,7 +389,7 @@ int main()
             </svg>
             <div class="previewer-showcase">
                 <div class="preview-pane-outer">
-                    <div class="showcase-panel preview-pane">
+                    <aside class="showcase-panel preview-pane">
                         {#each [previewFiles[currentPreviewFile]] as file}
                             <div class="preview">
                                 {#if file?.extension === "html"}
@@ -446,7 +446,7 @@ int main()
                                 {/if}
                             </div>
                         {/each}
-                    </div>
+                    </aside>
                 </div>
                 <div class="showcase-panel files-grid">
                     {#each previewFiles as file, i}
