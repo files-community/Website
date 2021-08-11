@@ -514,10 +514,11 @@
         }
 
         // File preview
-        // Main container for rich previews
+        // Main container for rich previewsT
         .preview {
             @include flex($align: center);
-            height: 150px;
+            flex: 0 0 auto;
+            height: 144px;
         }
 
         // Rich preview elements
@@ -527,9 +528,10 @@
             width: 100%;
             height: 100%;
             overflow: auto;
-            user-select: text;
         }
         img {
+            user-select: none;
+            -webkit-user-drag: none;
             object-fit: contain;
         }
         iframe {
@@ -538,6 +540,7 @@
         :global {
             pre {
                 margin: 0;
+                user-select: text;
                 font-family: var(--font-family-monospace);
                 &::-webkit-scrollbar {
                     display: none;
@@ -549,6 +552,7 @@
         // Used for scaling up the preview size
         .grabber {
             @include flex($align: center, $justify: center);
+            flex: 0 0 auto;
             width: 100%;
             height: 20px;
             cursor: n-resize;
@@ -773,7 +777,7 @@
                 --text-color-tertiary: #332500;
                 --text-color-secondary: var(--text-color-primary);
                 --subtle-color-secondary: #fff;
-                --background-base: #a27b18;
+                --background-base: #feb400;
                 .hyperlink-button {
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.1);
@@ -786,26 +790,41 @@
             &5 {
                 --focus-stroke-outer: #fff;
                 --accent-color-default: #eee8d5;
+                --accent-color-secondary: #fdf6e3;
+                --accent-color-tertiary: #e8e1c9;
                 --accent-text-default: var(--text-color-tertiary);
-                --accent-text-contrast-primary: #000000;
+                --accent-text-tertiary: var(--accent-color-secondary);
+                --accent-text-contrast-primary: #586e75;
+                --accent-text-contrast-secondary: #657b83;
                 --text-color-primary: #fdf6e3;
                 --text-color-tertiary: #93a1a1;
                 --text-color-secondary: #839496;
                 --subtle-color-secondary: #073642;
+                --subtle-color-tertiary: #083945;
                 --background-base: #002b36;
-                ::selection {
-                    color: var(--accent-text-contrast-primary);
-                }
             }
             &6 {
                 --focus-stroke-outer: #000;
-                --accent-color-default: #88C0D0;
+                --accent-color-default: #88c0d0;
+                --accent-color-secondary: #79b8ca;
+                --accent-color-tertiary: #6bb1c4;
                 --accent-text-default: var(--text-color-tertiary);
+                --accent-text-tertiary: var(--text-color-secondary);
+                --accent-text-contrast-primary: var(--text-color-primary);
+                --accent-text-contrast-secondary: var(--text-color-tertiary);
                 --text-color-primary: #2e3440;
-                --text-color-tertiary: #4C566A;
+                --text-color-tertiary: #4c566a;
                 --text-color-secondary: var(--text-color-primary);
                 --subtle-color-secondary: var(--accent-color-default);
                 --background-base: #d8dee9;
+                .hyperlink-button {
+                    &:hover {
+                        background-color: #e5e9f0;
+                    }
+                    &:active {
+                        background-color: #eceff4;
+                    }
+                }
             }
         }
 
@@ -920,27 +939,53 @@
     }
 }
 
+// Contributors
+
+// Left scroller animation
+@keyframes contributors-left {
+    to {
+        transform: translateX(50%);
+    }
+}
+
+// Right scroller animation
+@keyframes contributors-right {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
 // Contributor cards
 .contributors- {
 
     // Contributors container
     // Serves no other purpose other than spacing it from the main text.
     &container {
+        position: relative;
         margin-top: 48px;
     }
 
     // Contributor rows
     &row {
-        @include flex($align: center, $gap: 12px);
         position: relative;
+        white-space: nowrap;
         margin-bottom: 12px;
+
+        :global(.contributor) {
+            margin-right: 12px;
+        }
 
         // Add some variation between rows
         &:nth-child(even) {
             left: 24px;
+            float: left;
+            animation: contributors-right 80s linear infinite;
+
         }
         &:nth-child(odd) {
             left: -24px;
+            float: right;
+            animation: contributors-left 80s linear infinite;
         }
 
         // Prevent extra bottom margins

@@ -1,7 +1,7 @@
 @use "src/styles/mixins" as *;
 
 .contributor {
-    @include flex($align: center);
+    @include flex($inline: true, $align: center);
     -webkit-user-drag: none;
     text-decoration: none;
     user-select: none;
