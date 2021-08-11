@@ -962,7 +962,25 @@
     // Serves no other purpose other than spacing it from the main text.
     &container {
         position: relative;
+        overflow: hidden;
+        max-width: 2800px;
         margin-top: 48px;
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 96px;
+            height: 100%;
+        }
+        &::before {
+            left: 0;
+            background-image: linear-gradient(90deg, var(--background-secondary), transparent);
+        }
+        &::after {
+            right: 0;
+            background: linear-gradient(90deg, transparent, var(--background-secondary));
+        }
     }
 
     // Contributor rows
