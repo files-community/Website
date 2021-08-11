@@ -36,14 +36,16 @@ This repository contains the source code for the new [Files website](https://fil
 .
 ├──static                 // Contains static assets including branding, images, fonts, etc...
 |  ├──branding            // Branding media (logos, banners, etc...)
-|  ├──ui                  // Images used in the website's user interface.
-|  └──screenshots         // Screenshots and renders of the app used in the website.
+|  ├──fonts               // Static font files loaded by the website.
+|  ├──preview-samples     // Sample files used in the preview pane in the features section.
+|  ├──screenshots         // Screenshots and renders of the app used in the website.
+|  └──ui                  // Images other than branding used in the website's user interface.
 └──src                    // The website's source code.
    ├──lib                 // Svelte components used within the website.
    ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
    |  ├──docs             // Documentation and associated files.
    |  └──themes           // The themes page and associated files.
-   ├──stores              // Data storage used across various components and routes.
+   ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
    ├──styles              // SCSS styles that are NOT tied to components in /lib.
    └──types               // Various type mappings used by TypeScript.
 ```
