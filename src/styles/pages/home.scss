@@ -964,7 +964,14 @@
         position: relative;
         overflow: hidden;
         max-width: 2800px;
-        margin-top: 48px;
+
+        // Preserve box-shadows when overflow is hidden
+        padding: 128px 0;
+        margin-top: calc(-128px + 48px);
+        margin-bottom: -128px;
+
+        // Fade gutters
+        // Seamlessly fades incoming/outgoing cards into the section at large resolutions.
         &::before,
         &::after {
             content: "";
@@ -989,6 +996,7 @@
         white-space: nowrap;
         margin-bottom: 12px;
 
+        // Space out contributor cards
         :global(.contributor) {
             margin-right: 12px;
         }
@@ -998,7 +1006,6 @@
             left: 24px;
             float: left;
             animation: contributors-right 80s linear infinite;
-
         }
         &:nth-child(odd) {
             left: -24px;
@@ -1009,6 +1016,7 @@
         // Prevent extra bottom margins
         &:last-child {
             margin: 0;
+            animation-delay: 2s;
         }
     }
 }
