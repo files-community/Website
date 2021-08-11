@@ -1,5 +1,22 @@
 @use "../mixins" as *;
 
+// Main docs container
+.docs {
+    max-height: calc(100vh - 58px);
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    background-color: var(--background-base);
+
+    // Small device support
+    @media only screen and (max-width: 648px) {
+
+        // Account for the adjusted navbar height on mobile
+        max-height: calc(100vh - 64px);
+    }
+}
+
+// Docs page
 .page {
     flex: 1 1 auto;
     background-clip: padding-box;
@@ -9,22 +26,17 @@
         top: 1px solid var(--card-stroke-default);
         left: 1px solid var(--card-stroke-default);
     }
+
+    // Inner page
+    // This is mainly here because I didn't want to use 
+    // absolute positioning on the mobile search UI.
     &-inner {
         padding: 44px 56px;
     }
 }
 
-.docs {
-    max-height: calc(100vh - 58px);
-    overflow: hidden;
-    flex: 1 1 auto;
-    display: flex;
-    background-color: var(--background-base);
-    @media only screen and (max-width: 648px) {
-        max-height: calc(100vh - 64px);
-    }
-}
-
+// Docs sidebar
+// Not much to say here
 .sidebar {
     @include flex($direction: column);
     padding: 0 4px;
@@ -32,6 +44,7 @@
     width: 316px;
 }
 
+// Sidebar search wrapper
 .search {
     position: sticky;
     z-index: 1;
@@ -39,12 +52,17 @@
     margin: 12px;
     margin-top: 4px;
     background-color: var(--background-base);
+
+    // Divider between the <TreeView /> and search box
     hr {
         border: none;
         border-top: 1px solid var(--divider-color-default);
         margin: 0;
         margin-top: 12px;
     }
+
+    // Mobile container
+    // Integrated into docs pages rather than in the sidebar
     &-mobile {
         border-bottom: 1px solid var(--divider-color-default);
         padding: 12px;
@@ -52,10 +70,16 @@
     }
 }
 
+// Search autosuggest
 .autosuggest {
+
+    // Wrapper for positioning it
+    // Both the flyout and the searchbox need to be contained within this
     &-wrapper {
         position: relative;
     }
+
+    // Autosuggest flyout
     &-flyout {
         position: absolute;
         max-height: 350px;
@@ -71,29 +95,37 @@
     }
 }
 
-.divider {
-    width: 100%;
-    border-top: 1px solid var(--divider-color-default);
-    margin: 12px 0;
-}
 
+// Small device support
 @media only screen and (max-width: 648px) {
+
+    // Since we don't have a sidebar anymore, vertically stack the elements in the page
     .docs {
         flex-direction: column;
         margin-top: 2px;
         max-height: calc(100vh - 66px);
         border-top: 1px solid var(--card-stroke-default);
     }
+
+    // Hide the sidebar
     .sidebar {
         display: none;
     }
+
+    // Remove page rounding and borders
     .page {
         border-radius: 0;
         border: none;
+
+        // The inconsistency between vertical and horizontal
+        // page padding looks good on desktop, but can be
+        // ugly on mobile.
         &-inner {
             padding: 48px;
         }
     }
+
+    // Show the mobile search UI
     .search-mobile {
         display: block;
     }

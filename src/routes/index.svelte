@@ -161,23 +161,31 @@
     }
 
     onMount(async () => {
+
+        // Render canvases
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
 
+        // Get the user's download preference
         if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0");
         downloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
         
+        // Check the user agent for a windows install
         windows = navigator.platform === "Win32";
+
+        // Fetch the URL for the latest files package from GitHub
         releaseUrl = await getReleaseUrl();
 
-        setInterval(() => {
-            if (currentFeature !== 3)  {
-                currentFeature++;
-            } else {
-                currentFeature = 0;
-            }
-        }, 8000);
+        // Iterate through feature cards every 8 seconds
+        // setInterval(() => {
+        //     if (currentFeature !== 3)  {
+        //         currentFeature++;
+        //     } else {
+        //         currentFeature = 0;
+        //     }
+        // }, 8000);
 
+        // Fetch contributors for the community section
         contributors1 = await getContributors(1);
         contributors2 = await getContributors(2);
         contributors3 = await getContributors(3);
@@ -347,8 +355,8 @@
 
 <PageSection id="features-section">
     <div class="features-section-left">
-        {#if currentFeature === 0}
-            <svg class="backdrop-logo" width="256" height="256" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+        {#if currentFeature === 1}
+            <svg class="backdrop-icon" width="256" height="256" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
                 <path in:draw={{ duration: 1000 }} d="M24 10C18.262 10 13.5501 14.3935 13.0448 20H12.75C8.46979 20 5 23.4698 5 27.75C5 32.0302 8.46979 35.5 12.75 35.5H35.25C39.5302 35.5 43 32.0302 43 27.75C43 23.4698 39.5302 20 35.25 20H34.9552C34.4499 14.3935 29.738 10 24 10Z" />
             </svg>
             <div class="showcase-panel cloud-files-showcase">
@@ -382,75 +390,73 @@
                     {/each}
                 </table>
             </div>
-            {:else if currentFeature === 1}
-            <svg class="backdrop-logo" style="--logo-scale: 0.9" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+            {:else if currentFeature === 0}
+            <svg class="backdrop-icon" style="--logo-scale: 0.9" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                 <path in:draw={{ duration: 1250 }} xmlns="http://www.w3.org/2000/svg" d="M24.833 12.5H40.25C42.2543 12.5 43.8913 14.0724 43.9948 16.0508L44 16.25V35.25C44 37.2543 42.4276 38.8913 40.4492 38.9948L40.25 39H7.75C5.74574 39 4.10873 37.4276 4.0052 35.4492L4 35.25V18.999L17.8036 19L18.0297 18.9932C19.0049 18.9344 19.9192 18.4968 20.5769 17.7743L20.724 17.6025L24.833 12.5ZM17.0607 9C17.8933 9 18.7 9.27703 19.3552 9.78393L19.5301 9.92784L21.974 12.066L18.7771 16.0342L18.6826 16.1388C18.4832 16.336 18.223 16.4605 17.9443 16.4921L17.8036 16.5L4 16.499V12.75C4 10.7457 5.57236 9.10873 7.55084 9.0052L7.75 9H17.0607Z" />
             </svg>
             <div class="previewer-showcase">
-                <div class="preview-pane-outer">
-                    <aside class="showcase-panel preview-pane">
-                        {#each [previewFiles[currentPreviewFile]] as file}
-                            <div class="preview">
-                                {#if file?.extension === "html"}
-                                    <iframe title="Document" frameBorder={0} src="/preview-samples/{file.name}.{file.extension}" />
-                                    {:else if file?.code}
-                                        <pre>
-                                            <code>
-                                                {@html file.code}
-                                            </code>
-                                        </pre>
-                                    {:else}
-                                    <img src={file.icon} alt="File icon" />
-                                {/if}
-                            </div>
-                            <div class="grabber"></div>
-                            <div class="metadata scroller">
-                                <h4>
-                                    {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
-                                </h4>
-                                <h5>
-                                    {file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
-                                </h5>
-                                {#if file.bitDepth}
-                                    <h6>Bit Depth</h6>
-                                    <span>{file.bitDepth}</span>
-                                {/if}
-                                {#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
-                                    <h6>Dimensions</h6>
-                                    <span>{file.dimensions.horizontal} x {file.dimensions.vertical}</span>
-                                {/if}
-                                {#if file?.dpi?.horizontal}
-                                    <h6>Horizontal Resolution</h6>
-                                    <span>{file.dpi.horizontal}</span>
-                                {/if}
-                                {#if file?.dpi?.vertical}
-                                    <h6>Vertical Resolution</h6>
-                                    <span>{file.dpi.vertical}</span>
-                                {/if}
-                                {#if file.items}
-                                    <h6>Item Count</h6>
-                                    <span>{file.items}</span>
-                                {/if}
-                                {#if file.lineCount}
-                                    <h6>Line Count</h6>
-                                    <span>{file.lineCount}</span>
-                                {/if}
-                                {#if file.path}
-                                    <h6>Path</h6>
-                                    <span>{file.path}</span>
-                                {/if}
-                                {#if file.added}
-                                    <h6>Date Created</h6>
-                                    <span>{file.added}</span>
-                                {/if}
-                                {#if file.modified}
-                                    <h6>Date Created</h6>
-                                    <span>{file.modified}</span>
-                                {/if}
-                            </div>
-                        {/each}
-                    </aside>
-                </div>
+                <aside class="showcase-panel preview-pane">
+                    {#each [previewFiles[currentPreviewFile]] as file}
+                        <div class="preview">
+                            {#if file?.extension === "html"}
+                                <iframe title="Document" frameBorder={0} src="/preview-samples/{file.name}.{file.extension}" />
+                                {:else if file?.code}
+                                    <pre class="scroller">
+                                        <code>
+                                            {@html file.code}
+                                        </code>
+                                    </pre>
+                                {:else}
+                                <img src={file.icon} alt="File icon" />
+                            {/if}
+                        </div>
+                        <div class="grabber"></div>
+                        <div class="metadata scroller">
+                            <h4>
+                                {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
+                            </h4>
+                            <h5>
+                                {file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
+                            </h5>
+                            {#if file.bitDepth}
+                                <h6>Bit Depth</h6>
+                                <span>{file.bitDepth}</span>
+                            {/if}
+                            {#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
+                                <h6>Dimensions</h6>
+                                <span>{file.dimensions.horizontal} x {file.dimensions.vertical}</span>
+                            {/if}
+                            {#if file?.dpi?.horizontal}
+                                <h6>Horizontal Resolution</h6>
+                                <span>{file.dpi.horizontal}</span>
+                            {/if}
+                            {#if file?.dpi?.vertical}
+                                <h6>Vertical Resolution</h6>
+                                <span>{file.dpi.vertical}</span>
+                            {/if}
+                            {#if file.items}
+                                <h6>Item Count</h6>
+                                <span>{file.items}</span>
+                            {/if}
+                            {#if file.lineCount}
+                                <h6>Line Count</h6>
+                                <span>{file.lineCount}</span>
+                            {/if}
+                            {#if file.path}
+                                <h6>Path</h6>
+                                <span>{file.path}</span>
+                            {/if}
+                            {#if file.added}
+                                <h6>Date Created</h6>
+                                <span>{file.added}</span>
+                            {/if}
+                            {#if file.modified}
+                                <h6>Date Created</h6>
+                                <span>{file.modified}</span>
+                            {/if}
+                        </div>
+                    {/each}
+                </aside>
                 <div class="showcase-panel files-grid">
                     {#each previewFiles as file, i}
                         <div

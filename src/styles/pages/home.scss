@@ -1,6 +1,12 @@
 @use "../mixins" as *;
 
+/*
+ * Section 1 (Hero)
+ */
+
 :global {
+
+    // Outer section
     #hero-section {
         overflow: hidden;
         position: relative;
@@ -8,6 +14,8 @@
         height: 75vh;
         min-height: 584px;
         max-height: 1024px;
+
+        // Inner Section
         .page-section-inner {
             position: relative;
             display: grid;
@@ -15,12 +23,26 @@
             gap: 64px;
             align-items: center;
         }
+        
+        // Custom button styling
+        // Applied on download and source buttons respectively
         .button {
             padding: 7px 12px;
             svg {
                 @include icon($size: 18px);
             }
         }
+        .style-standard .hero-button-inner {
+            color: var(--text-color-secondary);
+            h5 {
+                color: var(--text-color-primary);
+            }
+        }
+        #hero-download-button {
+            min-width: 128px;
+        }
+
+        // Properly position download source flyout
         .split-button {
             position: relative;
             .menu-flyout-container {
@@ -33,6 +55,8 @@
                 }
             }
         }
+
+        // Backdrop canvas -- RainbowCanvas()
         canvas {
             z-index: -1;
             opacity: 0.5;
@@ -47,34 +71,18 @@
             }
         }
     }
-    .style-standard .hero-button-inner {
-        color: var(--text-color-secondary);
-        h5 {
-            color: var(--text-color-primary);
-        }
-    }
-    #hero-download-button {
-        min-width: 128px;
-    }
 }
 
+// Hero container elements
 .hero- {
+
+    // Left container
     &left {
         @include flex($direction: column, $justify: center);
         flex: 1 1 auto;
     }
-    &button-inner {
-        @include flex($direction: column);
-        font-size: 1.1rem;
-        line-height: normal;
-        margin-left: 8px;
-        h5 {
-            font-size: 1.25rem;
-            font-weight: 600;
-            margin-bottom: 8px;
-            margin: 0;
-        }
-    }
+
+    // Right container
     &right {
         @include flex($align: center);
         height: 100%;
@@ -95,6 +103,22 @@
             backdrop-filter: blur(60px) saturate(150%);             
         }
     }
+
+    // Inner hero buttons
+    &button-inner {
+        @include flex($direction: column);
+        font-size: 1.1rem;
+        line-height: normal;
+        margin-left: 8px;
+        h5 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin: 0;
+        }
+    }
+
+    // Hero image container
     &image-container {
         @include flex($align: center, $justify: center);
         position: relative;
@@ -104,17 +128,25 @@
     }
 }
 
+// Hero section small device support
 @media only screen and (max-width: 1024px) {
     :global {
+
+        // Remove height constraints on outer container
         #hero-section {
             height: auto;
             max-height: unset;
+
+            // Position inner containers vertically
             .page-section-inner {
                 grid-template-columns: auto;
             }
         }
     }
+    
     .hero- {
+
+        // Centrally align content in the left container
         &left {
             text-align: center;
             align-items: center;
@@ -122,6 +154,8 @@
                 justify-content: center;
             }
         }
+
+        // Properly position hero image
         &right img {
             position: relative;
             max-width: 708px;
@@ -131,13 +165,18 @@
     }
 }
 
+/*
+ * Section 2 (Design)
+ */
 
+// Inner section
 :global(#design-section .page-section-inner) {
     @include flex($direction: column, $align: center);
     overflow: hidden;
     text-align: center;
 }
 
+// Image container (Screenshot + Wallpaper)
 .design-image {
     @include flex($direction: column, $justify: center, $align: center);
     position: relative;
@@ -147,6 +186,7 @@
     text-align: center;
 }
 
+// Screenshot and wallpaper styling
 .files- {
     &screenshot, &wallpaper {
         -webkit-user-drag: none;
@@ -177,7 +217,11 @@
     }
 }
 
+
+// Design section small device support
 @media only screen and (max-width: 1024px) {
+
+    // Enlarge wallpaper and screenshot
     .design-image,
     .files-wallpaper {
         width: 100%;
@@ -188,17 +232,25 @@
 }
 
 @media only screen and (max-width: 768px) {
+
+    // Add some margins to account for more space available
     .design-image {
         margin-top: 48px;
     }
+
+    // Screenshot and wallpaper
     .files- {
+
+        // Position screenshot wihin wallpaper
         &screenshot {
             width: 105%;
             left: -2.5%;
             top: 32px;
-            transform: none !important;
+            transform: none !important; // Prevent parallax scrolling
             border-radius: calc(var(--overlay-corner-radius) / 2);
         }
+
+        // Fit wallpaper to viewport
         &wallpaper {
             object-fit: cover;
             object-position: bottom;
@@ -209,15 +261,26 @@
     }
 }
 
+/*
+ * Section 3 (Features)
+ */
+
 :global {
+
+    // Outer section
     #features-section {
         background-color: var(--background-base);
+
+        // Inner section
         .page-section-inner {
             display: flex;
         }
     }
 }
 
+// Animations for the feature previews
+
+// Panel entrance animation
 @keyframes feature-preview {
     from {
         opacity: 0;
@@ -226,6 +289,7 @@
     }
 }
 
+// Cloud icon entrance animation
 @keyframes cloud-provider {
     from {
         opacity: 0;
@@ -233,6 +297,7 @@
     }
 }
 
+// Cloud icon float animation
 @keyframes cloud-provider-float {
     0% {
         transform: rotate(var(--provider-rotate)) translateY(0);
@@ -245,6 +310,7 @@
     }
 }
 
+// File status indicator entrance animation
 @keyframes cloud-status-icon {
     from {
         transform: scale(0.75);
@@ -252,6 +318,7 @@
     }
 }
 
+// Preview pane entrance animation
 @keyframes preview-pane-open {
     from {
         transform: translateX(80%);
@@ -259,12 +326,19 @@
     }
 }
 
+
+// Features section container
 .features-section- {
+
+    // Left container
     &left {
         @include flex($align: center, $justify: center, $gap: 48px);
         width: 50%;
         position: relative;
-        .backdrop-logo {
+
+        // Backdrop icons
+        // Used as a decoration behind feature showcases
+        .backdrop-icon {
             position: absolute;
             height: 100%;
             width: auto;
@@ -276,6 +350,9 @@
                 stroke-width: 0.25;
             }
         }
+
+        // Showcase panels
+        // Floating, transient surfaces representing different UI elements
         .showcase-panel {
             position: relative;
             user-select: none;
@@ -288,34 +365,46 @@
                         0 20.5812px 20.5812px rgb(0 0 0 / 6%),
                         0 41.1623px 41.1623px rgb(0 0 0 / 7%),
                         0 96.0454px 89.1851px rgb(0 0 0 / 9%);
-            * {
-                font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
-            }
+            font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
+
+            // Disable user dragging on images to be consistent with Files
             img {
                 -webkit-user-drag: none;
             }
         }
     }
+
+    // Right container (info + feature cards)
     &right {
         flex: 1 1 auto;
         width: 50%;
     }
 }
 
-// Cloud showcase
+// Feature showcases
+
+// Cloud integration showcase
 .cloud-files-showcase {
     animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
     width: 416px;
     max-width: 100%;
+
+    // Files table (details view)
     table {
         white-space: nowrap;
         margin-bottom: 3px;
         width: 100%;
         border-collapse: collapse;
         line-height: 1.4rem;
+
+        // Rows
         tr {
             height: 36px;
             position: relative;
+
+            // Tables are rather limited with margins/ To get around
+            // some of these limitations, I'm using apsuedoelement as
+            // a replacement for background-color.
             &:not(:first-child) {
                 &::after {
                     content: "";
@@ -335,19 +424,37 @@
                 }
             }
         }
+
+        // Table contents (headers and columns)
         td, th {
             position: relative;
             vertical-align: middle;
             z-index: 1;
             padding: 0 12px;
             color: var(--text-color-primary);
+
+            // Blank first cell for the file icon
             &:first-child {
                 border-left: none;
                 padding-right: 6px;
                 padding-left: 12px;
             }
         }
+
+        // Table headers
+        th {
+            font-weight: 600;
+            text-align: left;
+            border-left: 1px solid var(--control-stroke-default);
+            border-bottom: 1px solid var(--control-stroke-default);
+            &:last-child {
+                width: 100%;
+            }
+        }
+
         td {
+
+            // Sync status icons
             &.status-success :global(svg) {
                 color: var(--system-color-success);
             }
@@ -359,16 +466,9 @@
                 animation: 250ms ease cloud-status-icon backwards calc(600ms + (100ms * var(--file-index)));
             }
         }
-        th {
-            font-weight: 600;
-            text-align: left;
-            border-left: 1px solid var(--control-stroke-default);
-            border-bottom: 1px solid var(--control-stroke-default);
-            &:last-child {
-                width: 100%;
-            }
-        }
     }
+
+    // Cloud provider icons
     .cloud-provider {
         position: absolute;
         z-index: 2;
@@ -394,53 +494,33 @@
     }
 }
 
-// Previewer showcase
+// Preview pane showcase
 .previewer-showcase {
     @include flex($align: center);
+
+    // Preview pane sidebar
     .preview-pane {
         @include flex($direction: column);
-        position: absolute;
-        width: 100%;
-        height: 100%;
+        width: 260px;
+        height: 390px;
         animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards 800ms;
         border-radius: var(--overlay-corner-radius) 0 0 var(--overlay-corner-radius);
-        &-outer {
-            position: relative;
-            width: 260px;
-            height: 390px;
-        }
-        .grabber {
-            @include flex($align: center, $justify: center);
-            width: 100%;
-            height: 20px;
-            cursor: n-resize;
-            &::before {
-                content: "";
-                position: absolute;
-                background: var(--subtle-color-secondary);
-                border-radius: 4px;
-                height: 4px;
-                width: 28px;
-            }
-        }
+
+        // Inner preview pane elements
+        // File preview and file metadata
         .preview,
         .metadata {
             padding: 8px;
         }
+
+        // File preview
+        // Main container for rich previews
         .preview {
             @include flex($align: center);
             height: 150px;
         }
-        .metadata {
-            user-select: text;
-            word-break: break-word;
-            color: var(--text-color-primary);
-            line-height: normal;
-            font: {
-                size: var(--control-font-size);
-                weight: normal;
-            }
-        }
+
+        // Rich preview elements
         img,
         iframe,
         :global(pre) {
@@ -458,19 +538,53 @@
         :global {
             pre {
                 margin: 0;
+                font-family: var(--font-family-monospace);
                 &::-webkit-scrollbar {
                     display: none;
                 }
-                * {
-                    font-family: var(--font-family-monospace);
-                }
             }
         }
+        
+        // Grabber
+        // Used for scaling up the preview size
+        .grabber {
+            @include flex($align: center, $justify: center);
+            width: 100%;
+            height: 20px;
+            cursor: n-resize;
+
+            // Inner grabber
+            &::before {
+                content: "";
+                position: absolute;
+                background: var(--subtle-color-secondary);
+                border-radius: 4px;
+                height: 4px;
+                width: 28px;
+            }
+        }
+
+        // File metadata
+        // Displays information relating to the relevant file
+        .metadata {
+            user-select: text;
+            word-break: break-word;
+            color: var(--text-color-primary);
+            line-height: normal;
+            font: {
+                size: var(--control-font-size);
+                weight: normal;
+            }
+        }
+
+        // Metadata elements
         h4,
         h5 {
             margin: 0;
             text-align: center;
         }
+
+        // Used to display file name
         h4 {
             margin-bottom: 5px;
             font: {
@@ -478,12 +592,16 @@
                 weight: 700;
             }
         }
+
+        // Used to display file extension
         h5 {
             font: {
                 size: 18px;
                 weight: normal;
             }
         }
+
+        // Used as secondary headers for metadata entries
         h6 {
             user-select: none;
             margin: 0;
@@ -494,6 +612,9 @@
             }
         }
     }
+
+    // Files GridView
+    // Serves as a picker for previewing files
     .files-grid {
         display: grid;
         grid-gap: 4px;
@@ -501,6 +622,8 @@
         position: relative;
         z-index: 1;
         animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+
+        // File entries
         .file {
             @include flex($direction: column, $justify: between, $align: center);
             width: 84px;
@@ -521,6 +644,8 @@
                 box-shadow: inset 0 0 0 2px var(--accent-color-default),
                             inset 0 0 0 3px var(--background-base);
             }
+
+            // File entry icon
             img {
                 width: 88%;
                 height: auto;
@@ -529,45 +654,81 @@
     }
 }
 
+// <FeatureCard /> container
+// Container element for selecting features to preview
 .feature-cards-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
+
+    // Small device support
     @media only screen and (max-width: 1164px) {
+
+        // Stack cards vertically
         grid-template-columns: auto;
     }
 }
 
+// Features section small device support
 @media only screen and (max-width: 924px) {
     .features-section- {
+
+        // Hide showcases on mobile
         &left {
             display: none;
         }
+
+        // Right portion of the section now takes up fullwidth
         &right {
             width: 100%;
             margin: 0;
         }
     }
+
+    // HACK: Remove selected card styling on mobile
+    // Figured this was both easier and faster than dealing with bind:innerWidth
     .feature-cards-container :global(.feature-card.selected) {
         border-color: transparent;
     }
 }
 
+/*
+ * Section 4 (Themes)
+ */
+
 :global {
+
+    // Outer section
     #themes-section {
-        min-height: 600px;
+        min-height: 600px; // I want to avoid cutting off the component showcase
         background-color: var(--card-background-secondary);
         border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
         overflow: hidden;
+
+        // Inner section
         .page-section-inner {
             @include flex($align: center);
         }
+
+        // HACK: --background-base is a fairly generic variable that makes more sense to style on themes other than default.
         &:not(.theme-1) {
             background-color: var(--background-base);
+            
+            // Use default accent color instead of dark-1 (see reasoning below)
             ::selection {
                 background-color: var(--accent-color-default);
             }
         }
+
+        // Themes
+        // CSS variables behave rather strange.
+        // Setting a scoped variable that changes the value
+        // in another parent variable's hsla() function
+        // doesn't actually update the actual parent color.
+        //
+        // This means that we are basically forced to hardcode
+        // hex colors for our accent color, since we use hsla
+        // calcs. That really sucks. /rant
         &.theme- {
             &2 {
                 --focus-stroke-outer: #fff;
@@ -612,7 +773,7 @@
                 --text-color-tertiary: #332500;
                 --text-color-secondary: var(--text-color-primary);
                 --subtle-color-secondary: #fff;
-                --background-base: #feb400;
+                --background-base: #a27b18;
                 .hyperlink-button {
                     &:hover {
                         background-color: rgba(0, 0, 0, 0.1);
@@ -647,6 +808,9 @@
                 --background-base: #d8dee9;
             }
         }
+
+        // Position our component showcase
+        // Seen on the right side of the section
         .component-showcase {
             position: absolute;
             right: -400px;
@@ -655,33 +819,53 @@
     }
 }
 
+// Main themes section content
+// Encompasses the left side of the section
 .themes-section-content {
     width: 52%;
     min-width: 478px;
+
+    // Small device support
+    // Since our component showcase will be hidden at this size, fill 100% of the available width.
     @media only screen and (max-width: 832px) {
         width: 100%;
         min-width: unset;
     }
 }
 
+// Theme picker
+// Container for <ColorSwatch /> components
 .theme-chooser {
     width: fit-content;
     margin-bottom: 24px;
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 12px;
+    grid: {
+        template-columns: auto auto auto;
+        gap: 12px;
+    }
 }
 
+/*
+ * Section 4 (Community)
+ */
+
+// Outer section
 :global(#community-section) {
     overflow: hidden;
+
+    // Center our buttons
     .buttons-spacer {
         justify-content: center;
     }
 }
 
 .community-section- {
+
+    // Since we need to always contrast against a
+    // light-ish background, we'll need to hardcode
+    // some variables.
     &text {
-        text-align: center;
+        text-align: center; // Align text to center
         --background-base: #F3F3F3;
         --text-color-primary: #202020;
         --text-color-secondary: #282828;
@@ -692,19 +876,23 @@
         --accent-text-default: var(--accent-color-dark-3);
         --accent-text-tertiary: var(--accent-color-dark-2);
 
+        // Align descriptions to center
         p {
             margin-left: auto;
             margin-right: auto;
         }
     }
+
+    // Inner card element
+    // Encompasses the content of the community section
     &card {
         @include flex($direction: column, $justify: center, $align: center);
+        position: relative;
+        z-index: 0;
         width: 100%;
         min-height: 600px;
         max-width: 2048px;
         padding: 72px 48px;
-        position: relative;
-        z-index: 0;
         border-radius: var(--overlay-corner-radius);
         background-color: #F9F9F9;
         box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
@@ -713,43 +901,67 @@
                     0 20.5812px 20.5812px rgb(0 0 0 / 6%),
                     0 41.1623px 41.1623px rgb(0 0 0 / 7%),
                     0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+
+        // Background canvas -- RainbowCanvas2()
         canvas {
             z-index: -1;
             border-radius: var(--overlay-corner-radius);
             position: absolute;
             top: 0;
             left: 0;
+
+            // This is necessary because threejs uses
+            // inline styles instead of the native
+            // width and height attributes on <canvas>
+            // WHY?
             width: 100% !important;
             height: 100% !important;
         }
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .community-section-card {
-        padding: 24px;
-        h2 {
-            font-size: 3.2rem;
-        }
-    }
-}
-
+// Contributor cards
 .contributors- {
+
+    // Contributors container
+    // Serves no other purpose other than spacing it from the main text.
     &container {
         margin-top: 48px;
     }
+
+    // Contributor rows
     &row {
         @include flex($align: center, $gap: 12px);
         position: relative;
         margin-bottom: 12px;
+
+        // Add some variation between rows
         &:nth-child(even) {
             left: 24px;
         }
         &:nth-child(odd) {
             left: -24px;
         }
+
+        // Prevent extra bottom margins
         &:last-child {
             margin: 0;
+        }
+    }
+}
+
+// Community section small device support
+@media only screen and (max-width: 768px) {
+
+    // We have less space to work with here,
+    // so we'll decrease the padding of the card.
+    .community-section-card {
+        padding: 24px;
+
+        // The header also starts to look bad when it
+        // wraps toomuch, so decrease the font-size
+        h2 {
+            font-size: 3.2rem;
         }
     }
 }
