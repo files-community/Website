@@ -132,15 +132,15 @@
             // documentation and support for SvelteKit, and
             // I don't want to add another highlighter
             // just for something completely decorative.
-            code: `<span macro property"><span directive-hash">#</span><span directive keyword">include</span> <span string">&lt;iostream&gt;</span></span>
+            code: `<span class="macro property"><span class="directive-hash">#</span><span class="directive keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
 
-<span keyword">using</span> <span keyword">namespace</span> std<span punctuation">;</span>
+<span class="keyword">using</span> <span class="keyword">namespace</span> std<span class="punctuation">;</span>
 
-<span keyword">int</span> <span function">main</span><span punctuation">(</span><span punctuation">)</span>
-<span punctuation">{</span>
-    cout <span operator">&lt;&lt;</span> <span string">"Hello World"</span> <span operator">&lt;&lt;</span> endl<span punctuation">;</span>
-    <span keyword">return</span> <span number">0</span><span punctuation">;</span>
-<span punctuation">}</span>`,
+<span class="keyword">int</span> <span class="function">main</span><span class="punctuation">(</span><span class="punctuation">)</span>
+<span class="punctuation">{</span>
+    cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</span> <span class="operator">&lt;&lt;</span> endl<span class="punctuation">;</span>
+    <span class="keyword">return</span> <span class="number">0</span><span class="punctuation">;</span>
+<span class="punctuation">}</span>`,
             path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
         }
     ];
