@@ -563,6 +563,7 @@
     #themes-section {
         min-height: 600px;
         background-color: var(--card-background-secondary);
+        border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
         overflow: hidden;
         .page-section-inner {
             @include flex($align: center);

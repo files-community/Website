@@ -19,11 +19,6 @@
   :global(svg) {
     border-radius: var(--overlay-corner-radius);
     box-shadow: var(--flyout-elevation);
-
-    &.InfoBar {
-      border-radius: 0;
-      box-shadow: none;
-    }
   }
 }
 
