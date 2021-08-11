@@ -126,7 +126,7 @@
             added: "Monday, June 28, 2021 8:20 AM",
             modified: "Monday, July 12, 2021 1:30 PM",
             lineCount: 8,
-            
+
             // Yep, this is a very ugly way to do this, but
             // PrismJS and shiki both have extremely poor
             // documentation and support for SvelteKit, and
@@ -157,7 +157,7 @@
 
     function updateDownloadSource(value: number) {
         console.log("updateDownloadSource called");
-        localStorage.setItem("downloadSource", value);
+        localStorage.setItem("downloadSource", value.toString());
     }
 
     onMount(async () => {
