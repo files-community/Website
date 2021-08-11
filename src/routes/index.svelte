@@ -132,15 +132,15 @@
             // documentation and support for SvelteKit, and
             // I don't want to add another highlighter
             // just for something completely decorative.
-            code: `<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+            code: `<span macro property"><span directive-hash">#</span><span directive keyword">include</span> <span string">&lt;iostream&gt;</span></span>
 
-<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+<span keyword">using</span> <span keyword">namespace</span> std<span punctuation">;</span>
 
-<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
-<span class="token punctuation">{</span>
-    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello World"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
-    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>`,
+<span keyword">int</span> <span function">main</span><span punctuation">(</span><span punctuation">)</span>
+<span punctuation">{</span>
+    cout <span operator">&lt;&lt;</span> <span string">"Hello World"</span> <span operator">&lt;&lt;</span> endl<span punctuation">;</span>
+    <span keyword">return</span> <span number">0</span><span punctuation">;</span>
+<span punctuation">}</span>`,
             path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
         }
     ];
@@ -394,7 +394,11 @@
                                 {#if file?.extension === "html"}
                                     <iframe title="Document" frameBorder={0} src="/preview-samples/{file.name}.{file.extension}" />
                                     {:else if file?.code}
-                                        {file.code}
+                                        <pre>
+                                            <code>
+                                                {@html file.code}
+                                            </code>
+                                        </pre>
                                     {:else}
                                     <img src={file.icon} alt="File icon" />
                                 {/if}
@@ -452,12 +456,7 @@
                         <div
                             class="file"
                             class:selected={currentPreviewFile === i}
-                            on:click={() => {
-                                currentPreviewFile = i
-                                if (file?.code) {
-                                    Prism.highlightAll();
-                                }
-                            }}
+                            on:click={() => currentPreviewFile = i}
                         >
                             <img src={file.icon} alt="File icon" />
                             {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
