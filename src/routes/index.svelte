@@ -2,9 +2,6 @@
     import { onMount } from "svelte";
     import { draw } from "svelte/transition";
 
-    import Highlight from "svelte-highlight";
-    import cpp from "svelte-highlight/src/languages/cpp";
-
     import { links } from "$data/links";
     import { getContributors, getReleaseUrl } from "./fetchHomepageData";
     import {
@@ -129,15 +126,21 @@
             added: "Monday, June 28, 2021 8:20 AM",
             modified: "Monday, July 12, 2021 1:30 PM",
             lineCount: 8,
-            code: `#include <iostream>
+            
+            // Yep, this is a very ugly way to do this, but
+            // PrismJS and shiki both have extremely poor
+            // documentation and support for SvelteKit, and
+            // I don't want to add another highlighter
+            // just for something completely decorative.
+            code: `<span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
 
-using namespace std;
+<span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
 
-int main()
-{
-    cout << "Hello World" << endl;
-    return 0;
-}`,
+<span class="token keyword">int</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Hello World"</span> <span class="token operator">&lt;&lt;</span> endl<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>`,
             path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
         }
     ];
@@ -157,18 +160,6 @@ int main()
         localStorage.setItem("downloadSource", value);
     }
 
-    function setFeature(value) {
-        currentFeature = value;
-    }
-
-    setInterval(() => {
-        if (currentFeature !== 3)  {
-            currentFeature++;
-        } else {
-            currentFeature = 0;
-        }
-    }, 8000);
-
     onMount(async () => {
         new RainbowCanvas(heroCanvas).render();
         new RainbowCanvasAlt(communityCanvas).render();
@@ -178,6 +169,14 @@ int main()
         
         windows = navigator.platform === "Win32";
         releaseUrl = await getReleaseUrl();
+
+        setInterval(() => {
+            if (currentFeature !== 3)  {
+                currentFeature++;
+            } else {
+                currentFeature = 0;
+            }
+        }, 8000);
 
         contributors1 = await getContributors(1);
         contributors2 = await getContributors(2);
@@ -394,8 +393,8 @@ int main()
                             <div class="preview">
                                 {#if file?.extension === "html"}
                                     <iframe title="Document" frameBorder={0} src="/preview-samples/{file.name}.{file.extension}" />
-                                    {:else if file?.extension === "cpp"}
-                                        <Highlight language={cpp} code={file?.code} />
+                                    {:else if file?.code}
+                                        {file.code}
                                     {:else}
                                     <img src={file.icon} alt="File icon" />
                                 {/if}
@@ -453,7 +452,12 @@ int main()
                         <div
                             class="file"
                             class:selected={currentPreviewFile === i}
-                            on:click={() => currentPreviewFile = i}
+                            on:click={() => {
+                                currentPreviewFile = i
+                                if (file?.code) {
+                                    Prism.highlightAll();
+                                }
+                            }}
                         >
                             <img src={file.icon} alt="File icon" />
                             {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
@@ -470,7 +474,7 @@ int main()
         <hr role="separator" />
         <div class="feature-cards-container">
             <FeatureCard
-                on:click={() => setFeature(0)}
+                on:click={() => currentFeature = 0}
                 selected={currentFeature === 0}
                 description="Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
             >
@@ -480,7 +484,7 @@ int main()
                 Seamless cloud integration
             </FeatureCard>
             <FeatureCard
-                on:click={() => setFeature(1)}
+                on:click={() => currentFeature = 1}
                 selected={currentFeature === 1}
                 description="Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
             >
@@ -490,7 +494,7 @@ int main()
                 File preview
             </FeatureCard>
             <FeatureCard
-                on:click={() => setFeature(2)}
+                on:click={() => currentFeature = 2}
                 selected={currentFeature === 2}
                 description="Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
             >
@@ -500,7 +504,7 @@ int main()
                 Tagged Files & Folders
             </FeatureCard>
             <FeatureCard
-                on:click={() => setFeature(3)}
+                on:click={() => currentFeature = 3}
                 selected={currentFeature === 3}
                 description="Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
             >

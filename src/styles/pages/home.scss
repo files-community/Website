@@ -461,12 +461,6 @@
                 &::-webkit-scrollbar {
                     display: none;
                 }
-                @media (prefers-color-scheme: light) {
-                    @include hljs-vs-light;
-                }
-                @media (prefers-color-scheme: dark) {
-                    @include hljs-vs-dark;
-                }
                 * {
                     font-family: var(--font-family-monospace);
                 }
@@ -540,7 +534,7 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: 8px;
     @media only screen and (max-width: 1164px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
     }
 }
 

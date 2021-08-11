@@ -363,6 +363,15 @@ picture {
     display: contents;
 }
 
+code {
+    @media (prefers-color-scheme: light) {
+        @include prism-vs-light;
+    }
+    @media (prefers-color-scheme: dark) {
+        @include prism-vs-dark;
+    }
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     font: {
@@ -424,7 +433,6 @@ picture {
         }
     }
 }
-
 
 .hyperlink {
     color: var(--accent-text-default);

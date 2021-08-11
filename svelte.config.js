@@ -25,9 +25,6 @@ const config = {
                     "$types": path.resolve(__dirname, "./src/types"),
                     "$static": path.resolve(__dirname, "./static")
                 }
-            },
-            optimizeDeps: {
-                include: ["highlight.js/lib/core"]
             }
         },
         adapter: adapter()
