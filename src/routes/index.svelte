@@ -44,6 +44,7 @@
     let currentFeature: number = 0;
     let currentPreviewFile: number = 0;
 
+    // Utility function for randomly shuffling an array
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
     const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
@@ -156,7 +157,6 @@
     }
 
     function updateDownloadSource(value: number) {
-        console.log("updateDownloadSource called");
         localStorage.setItem("downloadSource", value.toString());
     }
 

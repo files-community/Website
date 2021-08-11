@@ -11,16 +11,23 @@
     let autoSuggestVisible: boolean = false;
     let selection: number = 0;
     
+    // Gets the name of the current page
     $: pageTitle = filterPages(docs).find(a => a.path === $page.path.replace("/docs", "")).name;
+
+    // Matches all pages to a query
     $: searchResults = filterPages(docs).filter(page => page.name.toLowerCase().split(" ").join("").includes((searchQuery ?? "").toLowerCase().split(" ").join("")));
+
+    // Determines if the autosuggest flyout should be shown
     $: if (searchQuery && searchFocused) {
         autoSuggestVisible = true;
     }
 
+    // Since we can't use bind:value with the clear button present, best way is through this handler
     function updateSearchQuery() {
         searchQuery = value;
     }
 
+    // Handler for keyboard navigation in the search autocomplete flyout
     function handleSearchKeys(e) {
         const { key } = e;
         if (key === "ArrowUp" || key === "ArrowDown") e.preventDefault();
@@ -37,6 +44,7 @@
         }
     }
 
+    // Action for handling clicks outside of a DOM node
     function clickOutside(node, eventHandler) {
         const handleClick = event => {
             const path = event.composedPath();
@@ -50,7 +58,7 @@
         }
     }
 
-    // I have literally no idea what this even does, but it seems to work sooooo
+    // ??????
     function filterPages(array) {
         if (Array.isArray(array)) return array.map(a => filterPages(a)).flat(Infinity).filter(a => a.hasOwnProperty("path"));
         if (array.hasOwnProperty("pages")) return [{

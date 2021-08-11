@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from "svelte";
-    
     import { page } from "$app/stores";
 
     import ListViewItem from "../ListViewItem/ListViewItem.svelte";
@@ -10,14 +9,22 @@
     let treeViewState;
 
     onMount(() => {
+        // Check localStorage for an existing treeViewState
+        // If none exists, use a blank object string
         treeViewState = JSON.parse(localStorage.getItem("treeViewState") ?? "{}");
     });
     
+    // Utility function for converting regular names to kebab case
     const id = s => s.toLowerCase().split(" ").join("-");
 
+    // Function for expanding/collapsing docs categoeies
     function toggleExpansion(name) {
         event.stopPropagation();
+
+        // Modify treeViewState to have the opposite of the previous entry for the category
         treeViewState[id(name)] = !treeViewState[id(name)];
+
+        // Update value in localStorage for persistence
         localStorage.setItem("treeViewState", JSON.stringify(treeViewState));
     }
 </script>
