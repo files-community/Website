@@ -38,9 +38,14 @@
 
     // Page header
     header {
+        white-space: nowrap;
         margin-bottom: -20px;
         color: var(--text-color-tertiary);
         @include flex($align: center, $justify: between);
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
     }
 
     .header-right {

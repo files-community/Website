@@ -165,7 +165,9 @@
         </div>
         <div class="page-inner markdown-body">
             <header>
-                <span class="breadcrumb">{$page.path.split("/").join(" / ").substring(2)}{$page.path === "/docs" ? " / overview" : ""}</span>
+                <span>
+                    {$page.path.split("/").join(" / ").substring(2)}{$page.path === "/docs" ? " / overview" : ""}
+                </span>
                 <div class="header-right">
                     <HyperlinkButton
                         href="https://github.com/{links.github.owner}/{links.github.siteRepo}/edit/main/src/routes/docs{currentPage.path || "/index"}.svx"
