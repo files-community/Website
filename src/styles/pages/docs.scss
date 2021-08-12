@@ -18,6 +18,7 @@
 
 // Docs page
 .page {
+    @include flex($direction: column);
     flex: 1 1 auto;
     background-clip: padding-box;
     background-color: var(--layer-color-default);
@@ -31,7 +32,19 @@
     // This is mainly here because I didn't want to use 
     // absolute positioning on the mobile search UI.
     &-inner {
+        flex: 1 1 auto;
         padding: 44px 56px;
+    }
+
+    // Page header
+    header {
+        margin-bottom: -20px;
+        color: var(--text-color-tertiary);
+        @include flex($align: center, $justify: between);
+    }
+
+    .header-right {
+        @include flex($align: center);
     }
 }
 

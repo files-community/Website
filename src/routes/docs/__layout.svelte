@@ -3,7 +3,9 @@
     import { page } from "$app/stores";
 
     import { docs } from "$data/docs";
-    import { TreeView, TextBox, ListViewItem } from "$lib";
+    import { links } from "$data/links";
+
+    import { Button, HyperlinkButton, TreeView, TextBox, ListViewItem } from "$lib";
 
     let value: string = "";
     let searchQuery: string = "";
@@ -11,18 +13,22 @@
     let autoSuggestVisible: boolean = false;
     let selection: number = 0;
     
-    // Gets the name of the current page
-    $: pageTitle = filterPages(docs).find(a => a.path === $page.path.replace("/docs", "")).name;
+    // A recursively flattened version of the docs mapping containing an array of all pages
+    const docsPages = filterPages(docs);
 
-    // Matches all pages to a query
-    $: searchResults = filterPages(docs).filter(page => page.name.toLowerCase().split(" ").join("").includes((searchQuery ?? "").toLowerCase().split(" ").join("")));
+    // These are pretty self-explanatory
+    $: currentPage = docsPages.find(p => `/docs${p.path}` === $page.path);
+    
+    // Name of the current page used in <title>
+    $: pageTitle = currentPage.name;
+
+    // Basic search matching for filtering docs pages
+    $: searchResults = docsPages.filter(page => page.name.toLowerCase().split(" ").join("").includes((searchQuery ?? "").toLowerCase().split(" ").join("")));
 
     // Determines if the autosuggest flyout should be shown
-    $: if (searchQuery && searchFocused) {
-        autoSuggestVisible = true;
-    }
+    $: if (searchQuery && searchFocused) autoSuggestVisible = true;
 
-    // Since we can't use bind:value with the clear button present, best way is through this handler
+    // Since we can't use bind:value and have our clear button work, the best way is through this handler
     function updateSearchQuery() {
         searchQuery = value;
     }
@@ -158,6 +164,18 @@
             </div>
         </div>
         <div class="page-inner markdown-body">
+            <header>
+                <span class="breadcrumb">{$page.path.split("/").join(" / ").substring(2)}</span>
+                <div class="header-right">
+                    <HyperlinkButton
+                        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/tree/main/src/routes/docs{currentPage.path || "/index"}.svx"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        Edit this page
+                    </HyperlinkButton>
+                </div>
+            </header>
             <slot />
         </div>
     </article>
