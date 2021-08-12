@@ -107,7 +107,7 @@ Documentation files are located at [`src/routes/docs`](https://github.com/files-
 
 ### Adding or Deleting a Page
 
-Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping *must* be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/stores/docs.ts`](https://github.com/files-community/Website/tree/main/src/stores/docs.ts) as a JSON-like format.
+Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping *must* be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/data/docs.ts`](https://github.com/files-community/Website/tree/main/src/data/docs.ts) as a JSON-like format.
 
 This is an example docs mapping:
 
@@ -121,7 +121,7 @@ This is an example docs mapping:
     └──category-page-2.svx
 ```
 
-#### src/stores/docs.ts
+#### src/data/docs.ts
 ```ts
 [
     {
