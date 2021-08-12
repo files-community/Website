@@ -168,7 +168,7 @@
                 <span class="breadcrumb">{$page.path.split("/").join(" / ").substring(2)}</span>
                 <div class="header-right">
                     <HyperlinkButton
-                        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/tree/main/src/routes/docs{currentPage.path || "/index"}.svx"
+                        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/edit/main/src/routes/docs{currentPage.path || "/index"}.svx"
                         target="_blank"
                         rel="noreferrer noopener"
                     >
