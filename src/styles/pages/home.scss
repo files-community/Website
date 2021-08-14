@@ -273,7 +273,7 @@
 
         // Inner section
         .page-section-inner {
-            display: flex;
+            @include flex($gap: 48px);
         }
     }
 }
@@ -332,7 +332,7 @@
 
     // Left container
     &left {
-        @include flex($align: center, $justify: center, $gap: 48px);
+        @include flex($align: center, $justify: center);
         width: 50%;
         position: relative;
 
@@ -343,7 +343,7 @@
             height: 100%;
             width: auto;
             max-width: 132%;
-            transform: rotate(-10deg) scale(var(--logo-scale, 1));
+            transform: rotate(-10deg) scale(var(--icon-scale, 1));
             path {
                 fill: none;
                 stroke: var(--card-stroke-default);
@@ -376,7 +376,7 @@
 
     // Right container (info + feature cards)
     &right {
-        flex: 1 1 auto;
+        flex: 0 0 auto;
         width: 50%;
     }
 }
@@ -655,6 +655,15 @@
                 height: auto;
             }
         }
+    }
+}
+
+// Tags showcase
+.tags-showcase {
+    .showcase-panel {
+        animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+        width: 328px;
+        height: 260px;
     }
 }
 
