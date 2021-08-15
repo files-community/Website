@@ -5,7 +5,7 @@
     import { docs } from "$data/docs";
     import { links } from "$data/links";
 
-    import { Button, HyperlinkButton, TreeView, TextBox, ListViewItem } from "$lib";
+    import { HyperlinkButton, TreeView, TextBox, ListViewItem } from "$lib";
 
     let value: string = "";
     let searchQuery: string = "";
@@ -66,8 +66,8 @@
 
     // ??????
     function filterPages(array) {
-        if (Array.isArray(array)) return array.map(a => filterPages(a)).flat(Infinity).filter(a => a.hasOwnProperty("path"));
-        if (array.hasOwnProperty("pages")) return [{
+        if (Array.isArray(array)) return array.map(a => filterPages(a)).flat(Infinity).filter(a => a.hasOwnProperty("path")); // ???
+        if (array.hasOwnProperty("pages")) return [{ 
             ...array
         }, ...array.pages.map(a => filterPages(a))];
         return array;

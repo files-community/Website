@@ -3,6 +3,7 @@
     import { draw } from "svelte/transition";
 
     import { links } from "$data/links";
+    import { cloudFiles, previewFiles, tags } from "$data/features";
     import { getContributors, getReleaseUrl } from "./fetchHomepageData";
     import {
         Button,
@@ -37,116 +38,23 @@
     let wingetCommandCopied: boolean = false;
     let heroCanvas: HTMLCanvasElement;
     let communityCanvas: HTMLCanvasElement;
-    let downloadSource: number = 0;
     let releaseUrl: string = "";
     let scrollY: number;
-    let themes: number = 0;
+
+    // Group bindings
+    let currentDownloadSource: number = 0;
+    let currentTheme: number = 0;
     let currentFeature: number = 0;
     let currentPreviewFile: number = 0;
+    let currentTag: number = 0;
 
     // Utility function for randomly shuffling an array
     const shuffle = a => a.sort(() => Math.random() - 0.5);
 
     const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
     const storeUrl = windows ? `ms-windows-store://pdp/?ProductId=${links.storeId}` : `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
-    const cloudTable = [
-        {
-            name: "GitHub",
-            icon: "folder",
-            status: "success"
-        },
-        {
-            name: "electron-v1.4.13-win32-ia32.zip",
-            icon: "zip",
-            status: "sync"
-        },
-        {
-            name: "start.js",
-            icon: "note",
-            status: "success"
-        },
-        {
-            name: "2021-08-05 15.03.05.mp4",
-            icon: "video",
-            status: "success"
-        },
-        {
-            name: "christmas-card-2017.png",
-            icon: "picture",
-            status: "success"
-        },
-        {
-            name: "install.bat",
-            icon: "exe",
-            status: "success"
-        },
-        {
-            name: "dQw4w9WgXcQ.mp3",
-            icon: "music",
-            status: "success"
-        },
-    ];
-    const previewFiles = [
-        {
-            name: "June 2018",
-            icon: "/ui/folder.png",
-            items: 3,
-            added: "Thursday, June 21, 2018 11:24 AM",
-            modified: "Sunday, November 15, 2020 6:50 PM",
-            path: "C:\\Users\\Austin\\Desktop\\June 2018"
-        },
-        {
-            name: "waves",
-            extension: "png",
-            icon: "/preview-samples/waves.png",
-            bitDepth: 24,
-            dimensions: {
-                horizontal: 1496,
-                vertical: 960
-            },
-            dpi: {
-                horizontal: 72,
-                vertical: 72
-            },
-            added: "Sunday, August 1, 2021 12:34 AM",
-            modified: "Monday, August 9, 2021 12:34 AM",
-            path: "C:\\Users\\Austin\\Pictures\\waves.png"
-        },
-        {
-            name: "index",
-            extension: "html",
-            icon: "/ui/note.png",
-            added: "Wednesday, July 14, 2021 8:47 PM",
-            modified: "Monday, July 31, 2021 4:32 AM",
-            path: "C:\\Users\\Austin\\Documents\\index.html"
-        },
-        {
-            name: "main",
-            extension: "cpp",
-            icon: "/ui/cpp.svg",
-            added: "Monday, June 28, 2021 8:20 AM",
-            modified: "Monday, July 12, 2021 1:30 PM",
-            lineCount: 8,
 
-            // Yep, this is a very ugly way to do this, but
-            // PrismJS and shiki both have extremely poor
-            // documentation and support for SvelteKit, and
-            // I don't want to add another highlighter
-            // just for something completely decorative.
-            code: `<span class="macro property"><span class="directive-hash">#</span><span class="directive keyword">include</span> <span class="string">&lt;iostream&gt;</span></span>
-
-<span class="keyword">using</span> <span class="keyword">namespace</span> std<span class="punctuation">;</span>
-
-<span class="keyword">int</span> <span class="function">main</span><span class="punctuation">(</span><span class="punctuation">)</span>
-<span class="punctuation">{</span>
-    cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</span> <span class="operator">&lt;&lt;</span> endl<span class="punctuation">;</span>
-    <span class="keyword">return</span> <span class="number">0</span><span class="punctuation">;</span>
-<span class="punctuation">}</span>`,
-            path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
-        }
-    ];
-    
-    $: downloadUrl = downloadSource === 0 ? storeUrl : releaseUrl;
+    $: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl;
 
     function copyWingetCommand() {
         navigator.clipboard.writeText("winget install Files-Community.Files");
@@ -168,7 +76,7 @@
 
         // Get the user's download preference
         if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0");
-        downloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
+        currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
         
         // Check the user agent for a windows install
         windows = navigator.platform === "Win32";
@@ -223,17 +131,17 @@
                 <Button
                     style="accent"
                     id="hero-download-button"
-                    href={downloadSource !== 2 ? downloadUrl : undefined}
-                    target={downloadSource !== 2 ? "_blank" : undefined}
-                    rel={downloadSource !== 2 ? "noreferrer noopener" : undefined}
+                    href={currentDownloadSource !== 2 ? downloadUrl : undefined}
+                    target={currentDownloadSource !== 2 ? "_blank" : undefined}
+                    rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
                     on:click={() => {
-                        if (downloadSource === 2) wingetDialogOpen = true;
+                        if (currentDownloadSource === 2) wingetDialogOpen = true;
                     }}
                 >
                     {@html ArrowDownload}
                     <div class="hero-button-inner">
                         <h5>Download</h5>
-                        <span>{downloadSources[downloadSource]}</span>
+                        <span>{downloadSources[currentDownloadSource]}</span>
                     </div>
                 </Button>
                 <MenuFlyout>
@@ -242,21 +150,21 @@
                     </Button>
                     <svelte:fragment slot="menu">
                         <ListViewItem
-                            bind:group={downloadSource}
+                            bind:group={currentDownloadSource}
                             on:change={() => updateDownloadSource(0)}
                             value={0}
                         >
                             Microsoft Store
                         </ListViewItem>
                         <ListViewItem
-                            bind:group={downloadSource}
+                            bind:group={currentDownloadSource}
                             on:change={() => updateDownloadSource(1)}
                             value={1}
                         >
                             Github Release
                         </ListViewItem>
                         <ListViewItem
-                            bind:group={downloadSource}
+                            bind:group={currentDownloadSource}
                             on:change={() => {
                                 updateDownloadSource(2);
                                 wingetDialogOpen = true;
@@ -377,7 +285,7 @@
                         <th>Name</th>
                         <th>Status</th>
                     </tr>
-                    {#each cloudTable as { name, icon, status }, i}
+                    {#each cloudFiles as { name, icon, status }, i}
                         <tr style="--file-index: {i}">
                             <td>
                                 <img src="ui/{icon}.png" alt={icon === "folder" ? `${icon} file` : "Folder"} width="24" height="24" />
@@ -475,7 +383,20 @@
                 <path in:draw={{ duration: 1200 }} d="M15.9516 4.07892C16.6927 3.38568 17.6695 3 18.6842 3H25.4998C27.4328 3 28.9998 4.567 28.9998 6.5V13.2574C28.9998 14.3182 28.5783 15.3356 27.8282 16.0858L16.005 27.909C14.3452 29.5687 11.6543 29.5687 9.99455 27.909L3.66863 21.5831C1.96966 19.8841 2.01578 17.1157 3.77041 15.4742L15.9516 4.07892ZM22.4998 12C23.8805 12 24.9998 10.8807 24.9998 9.5C24.9998 8.11929 23.8805 7 22.4998 7C21.119 7 19.9998 8.11929 19.9998 9.5C19.9998 10.8807 21.119 12 22.4998 12Z" />
             </svg>
             <div class="tags-showcase">
-                <div class="showcase-panel"></div>
+                <div class="showcase-panel">
+                    <div class="showcase-panel tags-picker">
+                        {#each tags as { color }, i}
+                            <ColorSwatch
+                                bind:group={currentTag}
+                                --color-index={i}
+                                tabindex="-1"
+                                type="round"
+                                value={i}
+                                {color}
+                            />
+                        {/each}
+                    </div>
+                </div>
             </div>
         {/if}
     </div>
@@ -529,18 +450,18 @@
     </div>
 </PageSection>
 
-<PageSection id="themes-section" class="theme-{themes + 1}">
+<PageSection id="themes-section" class="theme-{currentTheme + 1}">
     <div class="themes-section-content">
         <HeaderChip>Themes</HeaderChip>
         <h2>Disctinctly personal.</h2>
         <p>Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Explore themes created by the community or dive right into the docs and create your own.</p>
         <div class="theme-chooser">
-            <ColorSwatch color="var(--background-tertiary);" value={0} bind:group={themes} />
-            <ColorSwatch color="#414958" value={1} bind:group={themes} />
-            <ColorSwatch color="#6441a4" value={2} bind:group={themes} />
-            <ColorSwatch color="#feb400" value={3} bind:group={themes} />
-            <ColorSwatch color="#073642" value={4} bind:group={themes} />
-            <ColorSwatch color="#88c0d0" value={5} bind:group={themes} />
+            <ColorSwatch color="var(--background-tertiary);" value={0} bind:group={currentTheme} />
+            <ColorSwatch color="#414958" value={1} bind:group={currentTheme} />
+            <ColorSwatch color="#6441a4" value={2} bind:group={currentTheme} />
+            <ColorSwatch color="#feb400" value={3} bind:group={currentTheme} />
+            <ColorSwatch color="#073642" value={4} bind:group={currentTheme} />
+            <ColorSwatch color="#88c0d0" value={5} bind:group={currentTheme} />
         </div>
         <div class="buttons-spacer">
             <Button style="accent" href="themes">
