@@ -18,3 +18,5 @@ Files comes with built in keyboard shortcuts to make naviagting the app easier.
 | `Ctrl` + `Alt` + `Up` | Open compact overlay |
 | `Ctrl` + `Alt` + `Down` | Close compact overlay |
 | `Ctrl` + `D` | Delete |
+| `Ctrl` + `F` | Search |
+| `F3`| Search |
