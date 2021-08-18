@@ -1,7 +1,12 @@
-import type { Contributor } from "$types";
 import { links } from "$data/links";
 
 const { owner, repo } = links.github;
+
+export type Contributor = {
+	login: string;
+	avatar_url: string;
+	contributions: number;
+};
 
 // Returns a list of 35 paged contributors to the files-community/files repository 
 export const getContributors: (pageNumber: number) => Promise<Contributor[]> = async (pageNumber: number = 1) =>

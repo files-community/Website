@@ -1,4 +1,9 @@
-import type DocsMap from "$types";
+export type DocsMap = {
+    name: string;
+    path?: string;
+    type?: "page" | "category";
+    pages?: DocsMap;
+};
 
 export const docs: DocsMap = [
     {

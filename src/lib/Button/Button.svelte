@@ -1,5 +1,8 @@
+<script context="module" lang="ts">
+    export type ButtonStyles = "standard" | "primary";
+</script>
+
 <script lang="ts">
-    import type { ButtonStyles } from "$types";
 
     export let style: ButtonStyles = "standard";
     export let type: string = "button";
