@@ -13,4 +13,5 @@ export { default as FeatureCard } from "./FeatureCard/FeatureCard.svelte";
 export { default as ColorSwatch } from "./ColorSwatch/ColorSwatch.svelte";
 export { default as ContentDialog } from "./ContentDialog/ContentDialog.svelte";
 export { default as TerminalCommand } from "./TerminalCommand/TerminalCommand.svelte";
+export { default as Titlebar } from "./Titlebar/Titlebar.svelte";
 export { RainbowCanvas, RainbowCanvasAlt } from "./canvas";

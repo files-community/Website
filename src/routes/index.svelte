@@ -15,6 +15,7 @@
         HyperlinkButton,
         PageSection,
         MenuFlyout,
+        Titlebar,
         ListViewItem,
         ContentDialog,
         TerminalCommand,
@@ -42,11 +43,11 @@
     let scrollY: number;
 
     // Group bindings
-    let currentDownloadSource: number = 0;
-    let currentTheme: number = 0;
-    let currentFeature: number = 0;
-    let currentPreviewFile: number = 0;
-    let currentTag: number = 0;
+    let currentDownloadSource = 0;
+    let currentTheme = 0;
+    let currentFeature = 0;
+    let currentPreviewFile = 0;
+    let currentTag = 0;
 
     // Utility function for randomly shuffling an array
     const shuffle = a => a.sort(() => Math.random() - 0.5);
@@ -366,14 +367,14 @@
                     {/each}
                 </aside>
                 <div class="showcase-panel files-grid">
-                    {#each previewFiles as file, i}
+                    {#each previewFiles as { name, extension, icon }, i}
                         <div
                             class="file"
                             class:selected={currentPreviewFile === i}
                             on:click={() => currentPreviewFile = i}
                         >
-                            <img src={file.icon} alt="File icon" />
-                            {file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
+                            <img src={icon} alt="File icon" />
+                            {name}{typeof extension !== "undefined" ? "." : ""}{extension ?? ""}
                         </div>
                     {/each}
                 </div>
@@ -396,6 +397,21 @@
                             />
                         {/each}
                     </div>
+                </div>
+            </div>
+            {:else if currentFeature === 3}
+            <svg class="backdrop-icon" style="--icon-scale: 0.9; --icon-stroke-width: 0.1" width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path in:draw={{ duration: 1200 }} d="M5.49707 3C4.11636 3 2.99707 4.11929 2.99707 5.5V14.5C2.99707 15.8807 4.11636 17 5.49707 17H14.4971C15.8778 17 16.9971 15.8807 16.9971 14.5V7H9.49707C8.66864 7 7.99707 6.32843 7.99707 5.5V3H5.49707Z M8.99707 3V5.5C8.99707 5.77614 9.22093 6 9.49707 6H16.9971V5.5C16.9971 4.11929 15.8778 3 14.4971 3H8.99707Z" />
+            </svg>
+            <div class="tabs-showcase">
+                <div class="showcase-panel">
+                    <Titlebar>Window</Titlebar>
+                </div>
+                <div class="showcase-panel">
+                    <Titlebar>Window</Titlebar>
+                </div>
+                <div class="showcase-panel">
+                    <Titlebar>Window</Titlebar>
                 </div>
             </div>
         {/if}

@@ -281,10 +281,10 @@
 // Animations for the feature previews
 
 // Panel entrance animation
-@keyframes feature-preview {
+@keyframes feature-panel {
     from {
         opacity: 0;
-        transform: translateY(48px) scale(0.9);
+        transform: translate(var(--panel-offset, 0px), var(--panel-offset, 0px)) scale(calc(0.9 + var(--panel-scale, 0)));
         transform-origin: bottom;
     }
 }
@@ -326,6 +326,14 @@
     }
 }
 
+// Window "merging" animation
+@keyframes merge-windows {
+    to {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
 
 // Features section container
 .features-section- {
@@ -347,7 +355,7 @@
             path {
                 fill: none;
                 stroke: var(--card-stroke-default);
-                stroke-width: 0.25;
+                stroke-width: var(--icon-stroke-width, 0.25);
             }
         }
 
@@ -385,7 +393,7 @@
 
 // Cloud integration showcase
 .cloud-files-showcase {
-    animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+    animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
     width: 416px;
     max-width: 100%;
 
@@ -630,7 +638,7 @@
         padding: 12px;
         position: relative;
         z-index: 1;
-        animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
 
         // File entries
         .file {
@@ -666,7 +674,7 @@
 // Tags showcase
 .tags-showcase {
     .showcase-panel {
-        animation: feature-preview 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
     }
     > .showcase-panel {
         @include flex($justify: center);
@@ -683,6 +691,31 @@
     }
     :global(.color-swatch) {
         animation: 250ms ease feature-item-scale backwards calc(800ms + (100ms * var(--color-index)));
+    }
+}
+
+// Tabs showcase
+.tabs-showcase {
+    @include flex($align: center, $justify: center);
+
+    .showcase-panel {
+        overflow: hidden;
+        position: absolute;
+        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms;
+        width: 400px;
+        height: 300px;
+        &:first-child {
+            --panel-offset: -32px;
+            transform: translate(var(--panel-offset), var(--panel-offset));
+            animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms,
+                        merge-windows 250ms ease forwards 2s;
+        }
+        &:last-child {
+            --panel-offset: 32px;
+            transform: translate(var(--panel-offset), var(--panel-offset));
+            animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1200ms,
+                        merge-windows 250ms ease forwards 2s;
+        }
     }
 }
 

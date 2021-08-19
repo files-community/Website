@@ -1,0 +1,44 @@
+@use "src/styles/mixins" as *;
+
+.titlebar {
+    @include flex($align: center);
+    position: relative;
+    height: 32px;
+    padding-left: 16px;
+    font-size: var(--control-font-size);
+    color: var(--text-color-primary);
+    span {
+        flex: 1 1 auto;
+    }
+    .caption-buttons {
+        @include flex($align: center);
+    }
+    button {
+        @include flex($justify: center, $align: center);
+        width: 46px;
+        height: 32px;
+        border: none;
+        background-color: transparent;
+        color: var(--text-color-primary);
+        &:hover {
+            background-color: var(--subtle-color-secondary);
+        }
+        &:active {
+            color: var(--text-color-secondary);
+            background-color: var(--subtle-color-tertiary);
+        }
+        &.close {
+            color: #fff;
+            &:hover {
+                background-color: #c42b11;
+            }
+            &:active {
+                color: rgba(255, 255, 255, 0.7);
+                background-color: rgba(196, 43, 28, 0.9);
+            }
+        }
+        svg {
+            @include icon($size: 10px);
+        }
+    }
+}
