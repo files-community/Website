@@ -1,7 +1,7 @@
-<script lang="ts">
-	import { Button, HeaderChip, HyperlinkButton, PageSection } from "$lib/index"
+<script>
+	import { Button, HeaderChip, HyperlinkButton, PageSection } from "$lib";
 
-	let scrollY: number
+	let scrollY: number;
 </script>
 
 <svelte:window bind:scrollY/>
@@ -12,7 +12,7 @@
 	<p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple
 		folders with tabs. And so much more.</p>
 	<div class="buttons-spacer">
-		<Button buttonStyle="accent" href="">
+		<Button variant="accent" href="">
 			Try it out
 		</Button>
 		<HyperlinkButton

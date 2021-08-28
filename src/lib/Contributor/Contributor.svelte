@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
     export let html_url: string = undefined;
     export let avatar_url: string = undefined;
     export let type = "User";
@@ -6,7 +6,7 @@
     export let contributions = 0;
 </script>
 
-<style lang="scss" src="./Contributor.scss"></style>
+<style src="./Contributor.scss"></style>
 
 {#if type === "User"}
     <a tabindex="-1" class="contributor" href={html_url} target="_blank" rel="noreferrer noopener">

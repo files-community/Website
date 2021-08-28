@@ -1,4 +1,4 @@
-@use "src/styles/mixins";
+@use "../../../styles/mixins" as *;
 
 // Cloud integration showcase
 .cloud-files-showcase {
@@ -84,7 +84,7 @@
 			}
 
 			:global(svg) {
-				@include mixins.icon($size: 20px);
+				@include icon($size: 20px);
 				animation: 250ms ease feature-item-scale backwards calc(600ms + (100ms * var(--file-index)));
 			}
 		}

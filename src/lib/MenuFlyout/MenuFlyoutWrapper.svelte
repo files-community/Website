@@ -1,12 +1,12 @@
-<script lang="ts">
-	import MenuFlyout from "./MenuFlyout.svelte"
+<script>
+	import MenuFlyout from "./MenuFlyout.svelte";
 
-	export let open = false
-	const toggleDropdown = () => open = !open
+	export let open = false;
+	const toggleDropdown = () => open = !open;
 
-	let container: HTMLDivElement
+	let container: HTMLDivElement;
 	const handleOuterClick = (e) => {
-		if (open && ((!e.target && container) || !container.contains(e.target))) toggleDropdown()
+		if (open && ((!e.target && container) || !container.contains(e.target))) toggleDropdown();
 	}
 </script>
 
@@ -27,7 +27,7 @@
 	{/if}
 </div>
 
-<style lang="scss" global>
+<style global>
 	.menu-flyout-container {
 		position: relative;
 		display: inline-flex;

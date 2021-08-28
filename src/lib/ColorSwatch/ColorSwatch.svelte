@@ -1,10 +1,10 @@
-<script lang="ts">
-	export let type: "standard" | "round" = "standard"
-	export let value: any = undefined
-	export let color = "#000"
-	export let group = []
-	let className = ""
-	export { className as class }
+<script>
+	export let type: "standard" | "round" = "standard";
+	export let value: any = undefined;
+	export let color = "#000";
+	export let group = [];
+	let className = "";
+	export { className as class };
 </script>
 
 <style lang="scss">

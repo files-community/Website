@@ -1,11 +1,11 @@
-import path from "path"
-import adapter from "@sveltejs/adapter-netlify"
-import sveltePreprocess from "svelte-preprocess"
-import autoprefixer from "autoprefixer"
-import {mdsvex} from "mdsvex"
-import remarkGfm from "remark-gfm"
-import remarkA11yEmoji from "@fec/remark-a11y-emoji"
-import remarkSlug from "remark-slug"
+import path from "path";
+import adapter from "@sveltejs/adapter-netlify";
+import sveltePreprocess from "svelte-preprocess";
+import autoprefixer from "autoprefixer";
+import { mdsvex } from "mdsvex";
+import remarkGfm from "remark-gfm";
+import remarkA11yEmoji from "@fec/remark-a11y-emoji";
+import remarkSlug from "remark-slug";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -18,8 +18,7 @@ const config = {
 				alias: {
 					"$routes": path.resolve("./src/routes"),
 					"$data": path.resolve("./src/data"),
-					"$main-sections": path.resolve("./src/main-sections"),
-					"$types": path.resolve("./src/types"),
+					"$page-sections": path.resolve("./src/page-sections"),
 					"$static": path.resolve("./static")
 				}
 			}
@@ -50,4 +49,4 @@ const config = {
 	]
 }
 
-export default config
+export default config;

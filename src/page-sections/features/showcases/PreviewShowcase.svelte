@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { previewFiles } from "$data/features"
 	import { draw } from "svelte/transition"
 

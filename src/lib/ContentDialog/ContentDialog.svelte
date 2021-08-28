@@ -1,42 +1,42 @@
-<script lang="ts">
-	import { createEventDispatcher } from "svelte"
+<script>
+	import { createEventDispatcher } from "svelte";
 
-	export let open: boolean = false
-	export let title: string = "unknown"
-	export let width: string = "auto"
+	export let open: boolean = false;
+	export let title: string = "unknown";
+	export let width: string = "auto";
 
-	const dispatch = createEventDispatcher()
+	const dispatch = createEventDispatcher();
 
 	const appendModal = (node: HTMLDivElement) => {
-		let modalsLayer = document.getElementById("modals-layer")
+		let modalsLayer = document.getElementById("modals-layer");
 		if (!modalsLayer) {
 			modalsLayer = Object.assign(document.createElement("div"), {
 				className: "layer-container",
 				id: "modals-layer"
 			})
-			document.body.appendChild(modalsLayer)
+			document.body.appendChild(modalsLayer);
 		}
 
-		modalsLayer.appendChild(node)
-		node.focus()
-		document.body.style.overflow = "hidden"
+		modalsLayer.appendChild(node);
+		node.focus();
+		document.body.style.overflow = "hidden";
 
 		return {
 			destroy() {
-				node.remove()
-				if (modalsLayer.childNodes) modalsLayer.remove()
-				document.body.style.overflow = ""
+				node.remove();
+				if (modalsLayer.childNodes) modalsLayer.remove();
+				document.body.style.overflow = "";
 			}
 		}
 	}
 
 	const close = () => {
-		open = false
-		dispatch("close")
+		open = false;
+		dispatch("close");
 	}
 
 	const handleEscapeKey = (e: KeyboardEvent) => {
-		if (e.key === "Escape" && open) close()
+		if (e.key === "Escape" && open) close();
 	}
 </script>
 

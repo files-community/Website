@@ -1,4 +1,4 @@
-@use "src/styles/mixins";
+@use "src/styles/mixins" as *;
 
 // Preview pane entrance animation
 @keyframes preview-pane-open {
@@ -10,11 +10,11 @@
 
 // Preview pane showcase
 .previewer-showcase {
-	@include mixins.flex($align: center);
+	@include flex($align: center);
 
 	// Preview pane sidebar
 	.preview-pane {
-		@include mixins.flex($direction: column);
+		@include flex($direction: column);
 		width: 29rem;
 		height: 40rem;
 		padding: 1rem;
@@ -28,7 +28,7 @@
 		// File preview
 		// Main container for rich previewsT
 		.preview {
-			@include mixins.flex($align: center);
+			@include flex($align: center);
 			flex: 0 0 auto;
 			height: 144px;
 		}
@@ -65,7 +65,7 @@
 		// Grabber
 		// Used for scaling up the preview size
 		.grabber {
-			@include mixins.flex($align: center, $justify: center);
+			@include flex($align: center, $justify: center);
 			flex: 0 0 auto;
 			width: 100%;
 			height: 20px;
@@ -144,7 +144,7 @@
 
 		// File entries
 		.file {
-			@include mixins.flex($direction: column, $justify: between, $align: center);
+			@include flex($direction: column, $justify: between, $align: center);
 			width: 8.5rem;
 			height: 10rem;
 			padding: 12px;

@@ -1,22 +1,24 @@
-<script lang="ts">
-	import { Contributor, HeaderChip, HyperlinkButton, PageSection } from "$lib/"
-	import renderCommunityCanvas from "./community-canvas"
-	import { links } from "$data/links"
-	import type { ContributorData } from "$data/fetchHomepageData"
-	import { getContributors } from "$data/fetchHomepageData"
-	import { onMount } from "svelte"
+<script>
+	import type { ContributorData } from "$data/fetchHomepageData";
+
+    import { onMount } from "svelte";
+
+	import { links } from "$data/links";
+	import { getContributors } from "$data/fetchHomepageData";
+	import { Contributor, HeaderChip, HyperlinkButton, PageSection } from "$lib";
+	import renderCommunityCanvas from "./community-canvas";
 
 	// Fetch contributors for the community section
-	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> = [[], [], []]
+	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> = [[], [], []];
 
 	// Utility function for randomly shuffling an array
-	const shuffle = a => a.sort(() => Math.random() - 0.5)
+	const shuffle = a => a.sort(() => Math.random() - 0.5);
 
 	onMount(async () => {
 		// Fetch contributors for the community section
-		contributors1 = await getContributors(1)
-		contributors2 = await getContributors(2)
-		contributors3 = await getContributors(3)
+		contributors1 = await getContributors(1);
+		contributors2 = await getContributors(2);
+		contributors3 = await getContributors(3);
 	})
 </script>
 
@@ -54,7 +56,7 @@
 </PageSection>
 
 <style lang="scss">
-	@use "../../styles/mixins" as *;
+	@use "src/styles/mixins" as *;
 
 	// Outer section
 	:global(#community-section) {

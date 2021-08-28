@@ -1,0 +1,58 @@
+@use "src/styles/mixins" as *;
+
+:global {
+    #blog {
+        position: relative;
+        .page-section-inner {
+            position: static;
+            max-width: 1200px;
+        }
+    }
+}
+
+.blog-backdrop {
+    position: absolute;
+    z-index: -1;
+    top: -64px;
+    left: 0;
+    width: 100%;
+    mask: linear-gradient(black, transparent 80%);
+    opacity: 0.25;
+    img {
+        object-fit: cover;
+        width: 100%;
+        height: 664px;
+    }
+}
+
+.main-post {
+    @include flex($align: center, $gap: 48px, $wrap: true);
+    max-height: 700px;
+    margin-bottom: 72px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid var(--divider-color-default);
+
+    img {
+        -webkit-user-drag: none;
+        transition: 200ms ease !important;
+        width: 640px;
+        height: auto;
+        aspect-ratio: 640 / 420;
+        max-width: 100%;
+        object-fit: cover;
+		border: 1px solid var(--surface-stroke-default);
+        border-radius: var(--overlay-corner-radius);
+        box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
+                    0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+                    0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+                    0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+                    0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+                    0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+    }
+}
+
+.blog-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 24px;
+}

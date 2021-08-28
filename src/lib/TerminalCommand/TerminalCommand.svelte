@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw"
 
 	export let command = "";
@@ -22,4 +22,4 @@
     </button>
 </div>
 
-<style lang="scss" src="./TerminalCommand.scss"></style>
+<style src="./TerminalCommand.scss"></style>

@@ -1,5 +1,5 @@
-<script lang="ts">
-	import { ColorSwatch } from "$lib/"
+<script>
+	import { ColorSwatch } from "$lib"
 	import { draw } from "svelte/transition"
 	import { tags } from "$data/features"
 
@@ -29,7 +29,7 @@
 </div>
 
 <style lang="scss">
-	@use "src/styles/mixins";
+	@use "src/styles/mixins" as *;
 
 	// Tags showcase
 	.tags-showcase {
@@ -38,13 +38,13 @@
 		}
 
 		& > .showcase-panel {
-			@include mixins.flex($justify: center);
+			@include flex($justify: center);
 			width: 400px;
 			height: 260px;
 		}
 
 		.tags-picker {
-			@include mixins.flex($gap: 16px);
+			@include flex($gap: 16px);
 			position: absolute;
 			bottom: -24px;
 			z-index: 1;

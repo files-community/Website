@@ -1,8 +1,15 @@
-<script lang="ts">
-	import { Button, ColorSwatch, ComponentShowcase, HeaderChip, HyperlinkButton, PageSection } from "$lib/"
+<script>
+	import {
+        Button,
+        ColorSwatch,
+        ComponentShowcase,
+        HeaderChip,
+        HyperlinkButton,
+        PageSection
+    } from "$lib";
 
-	let currentTheme = 0
-	const colors = ["var(--background-tertiary);", "#6441a4", "#414958", "#feb400", "#073642", "#88c0d0"]
+	let currentTheme: any = 0;
+	const colors = ["var(--background-tertiary);", "#6441a4", "#414958", "#feb400", "#073642", "#88c0d0"];
 </script>
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
@@ -17,7 +24,7 @@
 			{/each}
 		</div>
 		<div class="buttons-spacer">
-			<Button buttonStyle="accent" href="themes">
+			<Button variant="accent" href="themes">
 				Get Themes
 			</Button>
 			<HyperlinkButton

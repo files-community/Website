@@ -1,9 +1,9 @@
-<script lang="ts">
+<script>
     let className = "";
     export { className as class };
 </script>
 
-<style lang="scss" src="./PageSection.scss"></style>
+<style src="./PageSection.scss"></style>
 
 <section {...$$restProps} class="page-section {className || ''}">
     <slot name="outer" />

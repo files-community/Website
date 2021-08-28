@@ -1,11 +1,11 @@
-<script lang="ts">
+<script>
 	import { goto } from "$app/navigation"
 	import { page } from "$app/stores"
 
 	import { docs } from "$data/docs"
 	import { links } from "$data/links"
 
-	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib/"
+	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib"
 
 	let value: string = ""
 	let searchQuery: string = ""

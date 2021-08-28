@@ -1,8 +1,8 @@
-<script lang="ts">
-	import { onMount } from "svelte"
-	import { page } from "$app/stores"
+<script>
+	import { onMount } from "svelte";
+	import { page } from "$app/stores";
 
-	import ListViewItem from "../ListViewItem/ListViewItem.svelte"
+	import ListViewItem from "../ListViewItem/ListViewItem.svelte";
 
 	export let tree = [];
 

@@ -1,17 +1,17 @@
-<script lang="ts">
-	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw"
+<script>
+	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 
-	export let href = false
-	export let group = undefined
-	export let value = undefined
-	export let selected: boolean = false
-	export let expanded: boolean = false
-	export let type: "default" | "navigation" | "expander" = "default"
-	let className = ""
-	export { className as class }
+	export let href = undefined;
+	export let group = undefined;
+	export let value = undefined;
+	export let selected: boolean = false;
+	export let expanded: boolean = false;
+	export let type: "default" | "navigation" | "expander" = "default";
+	let className = "";
+	export { className as class };
 </script>
 
-<style lang="scss" src="./ListViewItem.scss"></style>
+<style src="./ListViewItem.scss"></style>
 
 {#if typeof group === "undefined"}
 	{#if !href}
@@ -34,12 +34,12 @@
 		</li>
 	{:else}
 		<a
-				on:click
-				class="list-view-item type-{type} {className || ''}"
-				class:type-icon={$$slots.icon}
-				class:selected
-				{href}
-				{...$$restProps}
+            on:click
+            class="list-view-item type-{type} {className || ''}"
+            class:type-icon={$$slots.icon}
+            class:selected
+            {href}
+            {...$$restProps}
 		>
 			<slot name="icon"/>
 			<span>

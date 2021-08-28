@@ -1,12 +1,12 @@
-<script lang="ts">
-	import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw"
+<script>
+	import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw";
 
-	export let description: string = ""
-	export let selected: boolean = false
-	export let icon = Question
+	export let description: string = "";
+	export let selected: boolean = false;
+	export let icon = Question;
 </script>
 
-<style lang="scss" src="./FeatureCard.scss"></style>
+<style src="./FeatureCard.scss"></style>
 
 <div class="feature-card" on:click class:selected {...$$restProps}>
 	{@html icon}

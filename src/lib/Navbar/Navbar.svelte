@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	import { page } from "$app/stores"
 
 	import ListViewItem from "../ListViewItem/ListViewItem.svelte"
@@ -24,7 +24,7 @@
 	}
 </script>
 
-<style lang="scss" src="./Navbar.scss"></style>
+<style src="./Navbar.scss"></style>
 
 <svelte:window bind:innerWidth on:click={handleOuterClick}/>
 

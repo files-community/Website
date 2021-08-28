@@ -1,15 +1,15 @@
-@use "../../styles/mixins";
+@use "src/styles/mixins" as *;
 
 // Inner section
 :global(#design-section .page-section-inner) {
-	@include mixins.flex($direction: column, $align: center);
+	@include flex($direction: column, $align: center);
 	text-align: center;
 	overflow: hidden;
 }
 
 // Image container (Screenshot + Wallpaper)
 .design-image {
-	@include mixins.flex($direction: column, $justify: center, $align: center);
+	@include flex($direction: column, $justify: center, $align: center);
 	position: relative;
 	width: 80vw;
 	height: 100%;

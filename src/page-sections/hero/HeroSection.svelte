@@ -1,48 +1,57 @@
-<script lang="ts">
-	import { Button, ContentDialog, ListViewItem, MenuFlyout, PageSection, TerminalCommand } from "$lib/"
-	import renderHeroCanvas from "./hero-canvas"
-	import { links } from "$data/links"
-	import { onMount } from "svelte"
-	import { getReleaseUrl } from "$data/fetchHomepageData"
-	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw"
-	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw"
-	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw"
+<script>
+	import {
+        Button,
+        ContentDialog,
+        ListViewItem,
+        MenuFlyout,
+        PageSection,
+        TerminalCommand
+    } from "$lib";
+    
+    import renderHeroCanvas from "./hero-canvas";
+	import { links } from "$data/links";
+	import { onMount } from "svelte";
+	import { getReleaseUrl } from "$data/fetchHomepageData";
+    
+	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
+	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
+	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
 	// Check the user agent for a windows install
-	let isInWindows: boolean
+	let isWindows: boolean;
 
-	let wingetDialogOpen = false
-	let wingetCommandCopied = false
+	let wingetDialogOpen = false;
+	let wingetCommandCopied = false;
 
 	// Group bindings
-	let currentDownloadSource = 0
+	let currentDownloadSource = 0;
 
-	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"]
-	const storeUrl = isInWindows ? `ms-windows-store://pdp/?ProductId=${ links.storeId }` : `https://www.microsoft.com/en-us/p/files/${ links.storeId }`
-	let releaseUrl = ""
+	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
+	const storeUrl = isWindows ? `ms-windows-store://pdp/?ProductId=${ links.storeId }` : `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
+	let releaseUrl = "";
 
-	$: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl
+	$: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl;
 
 	const copyWingetCommand = () => {
-		navigator.clipboard.writeText("winget install Files-Community.Files")
-		wingetCommandCopied = true
+		navigator.clipboard.writeText("winget install Files-Community.Files");
+		wingetCommandCopied = true;
 		setTimeout(() => {
-			wingetCommandCopied = false
-		}, 500)
+			wingetCommandCopied = false;
+		}, 500);
 	}
 
-	const updateDownloadSource = (value: number) => localStorage.setItem("downloadSource", value.toString())
+	const updateDownloadSource = (value: number) => localStorage.setItem("downloadSource", value.toString());
 
 	onMount(async () => {
 		// Get the user's download preference
-		if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0")
-		currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0
+		if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0");
+		currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
 
 		// Fetch the URL for the latest files package from GitHub
-		releaseUrl = await getReleaseUrl()
+		releaseUrl = await getReleaseUrl();
 
-		isInWindows = navigator.platform === "Win32"
-	})
+		isWindows = navigator.platform === "Win32";
+	});
 </script>
 
 <PageSection id="hero-section">
@@ -52,14 +61,14 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-						buttonStyle="accent"
+						variant="accent"
 						href={currentDownloadSource !== 2 ? downloadUrl : undefined}
 						id="hero-download-button"
-						on:click={() => {
-              if (currentDownloadSource === 2) wingetDialogOpen = true;
-            }}
 						rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
 						target={currentDownloadSource !== 2 ? "_blank" : undefined}
+                        on:click={() => {
+                            if (currentDownloadSource === 2) wingetDialogOpen = true;
+                        }}
 				>
 					{@html ArrowDownload}
 					<div class="hero-button-inner">
@@ -68,7 +77,7 @@
 					</div>
 				</Button>
 				<MenuFlyout>
-					<Button buttonStyle="accent">{@html ChevronDown}</Button>
+					<Button variant="accent">{@html ChevronDown}</Button>
 					<svelte:fragment slot="menu">
 						{#each ["Microsoft Store", "Github Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem
@@ -124,7 +133,7 @@
 	command into a terminal of your choice:
 	<TerminalCommand command="winget install Files-Community.Files"/>
 	<svelte:fragment slot="footer">
-		<Button buttonStyle="accent" on:click={copyWingetCommand}>{wingetCommandCopied ? "Copied!" : "Copy"}</Button>
+		<Button variant="accent" on:click={copyWingetCommand}>{wingetCommandCopied ? "Copied!" : "Copy"}</Button>
 		<Button on:click={() => wingetDialogOpen = false}>Close</Button>
 	</svelte:fragment>
 </ContentDialog>

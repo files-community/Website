@@ -1,5 +1,5 @@
-<script context="module" lang="ts">
-	import type { ErrorLoad } from "@sveltejs/kit"
+<script context="module">
+	import type { ErrorLoad } from "@sveltejs/kit";
 
 	export const load: ErrorLoad = ({error, status}) => {
 		return {
@@ -11,9 +11,9 @@
 	}
 </script>
 
-<script lang="ts">
-	export let status: number
-	export let error: Error
+<script>
+	export let status: number;
+	export let error: Error;
 </script>
 
 <section class="error-page">
@@ -50,5 +50,5 @@
 </section>
 
 <style lang="scss">
-	@use "src/styles/pages/error.scss";
+	@use "src/styles/pages/error";
 </style>

@@ -1,8 +1,8 @@
-<script context="module" lang="ts">
+<script context="module">
 	export type TextBoxTypes = "text" | "search" | "tel" | "email" | "url" | "password";
 </script>
 
-<script lang="ts">
+<script>
 	import { createEventDispatcher } from "svelte"
 
 	export let type: TextBoxTypes = "text"
@@ -51,7 +51,7 @@
 	}
 </script>
 
-<style lang="scss" src="./TextBox.scss"></style>
+<style src="./TextBox.scss"></style>
 
 <div class="textbox-underline-frame {className ||''}" class:flyout-visible={flyoutVisible}>
 	<div class="textbox-container" class:disabled>

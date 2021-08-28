@@ -1,4 +1,4 @@
-<script lang="ts">
+<script>
 	let menu: HTMLUListElement
 
 	const bindMenuDimensions = (node: HTMLDivElement) => {
@@ -6,7 +6,7 @@
 	}
 </script>
 
-<style lang="scss" src="./MenuFlyout.scss"></style>
+<style src="./MenuFlyout.scss"></style>
 
 <div
 		class="menu-flyout-outer"

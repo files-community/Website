@@ -1,14 +1,16 @@
-<script lang="ts">
-	import { links } from "$data/links"
-	import { docs } from "$data/docs"
-	import { Navbar } from "$lib/"
-	import { onMount } from "svelte"
+<script>
+	import { onMount } from "svelte";
 
-	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw"
-	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw"
-	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw"
-	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw"
-	import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw"
+	import { links } from "$data/links";
+	import { docs } from "$data/docs";
+	import { Navbar } from "$lib";
+
+	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
+	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
+	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
+	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
+    import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
+	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	let theme = "light";
     
@@ -34,10 +36,15 @@
             sidebarTree: docs,
             icon: Book
         },
+        // {
+        //     name: "Themes",
+        //     path: "/themes",
+        //     icon: PaintBrush
+        // },
         {
-            name: "Themes",
-            path: "/themes",
-            icon: PaintBrush
+            name: "Blog",
+            path: "/blog",
+            icon: News
         }
     ];
 
@@ -60,8 +67,8 @@
 
     <meta property="og:type" content="website">
     
-    <link href="/branding/logo-{theme === 'light' ? 'light' : 'dark'}.svg" rel="icon" type="image/svg+xml">
-    <meta content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png" property="og:image">
+    <link href="/branding/logo-{theme === "light" ? "light" : "dark"}.svg" rel="icon" type="image/svg+xml">
+    <meta content="/branding/banner-{theme === "light" ? "light" : "dark"}.png" property="og:image">
 
     <meta name="description" content="A modern file explorer that pushes the boundaries of the platform.">
     <meta property="og:description" content="A modern file explorer that pushes the boundaries of the platform.">
@@ -78,7 +85,7 @@
 <Navbar items={navbarItems} buttons={navbarButtons} />
 <slot />
 
-<style lang="scss" global>
+<style global>
     @use "src/styles/global";
     @use "src/styles/markdown";
 </style>

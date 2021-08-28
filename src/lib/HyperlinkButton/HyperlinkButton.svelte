@@ -1,8 +1,8 @@
-<script lang="ts">
-	export let href = undefined
-	export let disabled: boolean = false
-	let className: string = ""
-	export { className as class }
+<script>
+	export let href = undefined;
+	export let disabled: boolean = false;
+	let className: string = "";
+	export { className as class };
 </script>
 
 <style lang="scss">

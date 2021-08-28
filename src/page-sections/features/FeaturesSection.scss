@@ -1,4 +1,4 @@
-@use "src/styles/mixins";
+@use "src/styles/mixins" as *;
 
 // Outer section
 :global {
@@ -7,7 +7,7 @@
 
 		// Inner section
 		.page-section-inner {
-			@include mixins.flex($gap: 48px);
+			@include flex($gap: 48px);
 		}
 	}
 
@@ -15,7 +15,7 @@
 	.features-section- {
 		// Left container
 		&left {
-			@include mixins.flex($align: center, $justify: center);
+			@include flex($align: center, $justify: center);
 			position: relative;
 			width: 50%;
 

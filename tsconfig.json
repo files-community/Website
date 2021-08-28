@@ -26,19 +26,19 @@
     "allowJs": true,
     "checkJs": true,
     "paths": {
-      "$lib/*": [
+      "$lib": [
         "src/lib/*", "src/lib/index"
       ],
       "$data/*": [
         "src/data/*"
       ],
-      "$main-sections/*": [
-        "src/main-sections/*", "src/main-sections/index"
+      "$page-sections": [
+        "src/page-sections/*", "src/page-sections/index"
       ],
-      "$routes/*": [
+      "$routes": [
         "src/routes/*"
       ],
-      "$static/*": [
+      "$static": [
         "static/*"
       ],
     }

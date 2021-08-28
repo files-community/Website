@@ -1,5 +1,5 @@
-<script lang="ts">
-	import { CommunitySection, DesignSection, FeaturesSection, HeroSection, ThemesSection } from "$main-sections/"
+<script>
+	import { HeroSection, DesignSection, ThemesSection, FeaturesSection, CommunitySection } from "$page-sections";
 </script>
 
 <svelte:head>
@@ -9,16 +9,12 @@
 	<meta content="/branding/banner-light.png" property="og:image">
 </svelte:head>
 
-<HeroSection/>
+<HeroSection />
 
-<DesignSection/>
+<DesignSection />
 
-<FeaturesSection/>
+<FeaturesSection />
 
-<ThemesSection/>
+<ThemesSection />
 
-<CommunitySection/>
-
-<style lang="scss">
-	@use "../main-sections/hero/HeroSection";
-</style>
+<CommunitySection />
