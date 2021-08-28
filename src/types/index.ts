@@ -1,3 +1,3 @@
-export type {ButtonStyles} from "$lib/Button";
-export type {Contributor} from "$routes/fetchHomepageData";
+export type ButtonStyles = "standard" | "accent";
+export type {ContributorData} from "$data/fetchHomepageData";
 export type {DocsMap} from "$data/docs";

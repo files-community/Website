@@ -1,48 +1,53 @@
-import path from "path";
-
-import adapter from '@sveltejs/adapter-netlify';
-
-import sveltePreprocess from "svelte-preprocess";
-import autoprefixer from "autoprefixer";
-import { mdsvex } from "mdsvex";
-
-const __dirname = path.resolve();
+import path from "path"
+import adapter from "@sveltejs/adapter-netlify"
+import sveltePreprocess from "svelte-preprocess"
+import autoprefixer from "autoprefixer"
+import {mdsvex} from "mdsvex"
+import remarkGfm from "remark-gfm"
+import remarkA11yEmoji from "@fec/remark-a11y-emoji"
+import remarkSlug from "remark-slug"
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
-    extensions: [
-        ".svelte",
-        ".svx"
-    ],
+	extensions: [".svelte", ".svx"],
 	kit: {
 		target: "body",
-        router: true,
-        vite: {
-            resolve: {
-                alias: {
-                    "$routes": path.resolve(__dirname, "./src/routes"),
-                    "$data": path.resolve(__dirname, "./src/data"),
-                    "$types": path.resolve(__dirname, "./src/types"),
-                    "$static": path.resolve(__dirname, "./static")
-                }
-            }
-        },
-        adapter: adapter()
+		router: true,
+		vite: {
+			resolve: {
+				alias: {
+					"$routes": path.resolve("./src/routes"),
+					"$data": path.resolve("./src/data"),
+					"$main-sections": path.resolve("./src/main-sections"),
+					"$types": path.resolve("./src/types"),
+					"$static": path.resolve("./static")
+				}
+			}
+		},
+		adapter: adapter()
 	},
-    preprocess: [
-        mdsvex({}),
-        sveltePreprocess({
-            defaults: {
-                style: "scss",
-                script: "typescript"
-            },
-            postcss: {
-                plugins: [
-                    autoprefixer()
-                ]
-            }
-        })
-    ]
-};
+	preprocess: [
+		mdsvex({
+			extensions: [".svx"],
 
-export default config;
+			smartypants: {
+				dashes: "oldschool",
+			},
+
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm],
+		}),
+		sveltePreprocess({
+			defaults: {
+				style: "scss",
+				script: "typescript"
+			},
+			postcss: {
+				plugins: [
+					autoprefixer()
+				]
+			}
+		})
+	]
+}
+
+export default config

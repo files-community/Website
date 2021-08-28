@@ -1,0 +1,84 @@
+@use "../../styles/mixins";
+
+// Inner section
+:global(#design-section .page-section-inner) {
+	@include mixins.flex($direction: column, $align: center);
+	text-align: center;
+	overflow: hidden;
+}
+
+// Image container (Screenshot + Wallpaper)
+.design-image {
+	@include mixins.flex($direction: column, $justify: center, $align: center);
+	position: relative;
+	width: 80vw;
+	height: 100%;
+	margin-top: 164px;
+	text-align: center;
+}
+
+// Screenshot and wallpaper styling
+.files- {
+	&screenshot, &wallpaper {
+		height: auto;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+
+	&screenshot {
+		position: absolute;
+		top: -36px;
+		right: 0;
+		left: 0;
+		z-index: 1;
+		width: 70%;
+		max-width: 1024px;
+		margin: 0 auto;
+		border: 1px solid var(--surface-stroke-default);
+		border-radius: var(--overlay-corner-radius);
+		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
+		box-shadow: var(--window-elevation);
+		backdrop-filter: blur(60px) saturate(150%);
+	}
+
+	&wallpaper {
+		position: relative;
+		width: 90%;
+		max-width: 1440px;
+		border: 1px solid var(--card-stroke-default);
+		border-radius: calc(var(--overlay-corner-radius) * 1.5);
+	}
+}
+
+// Design section small device support
+@media only screen and (max-width: 1024px) {
+	// Enlarge wallpaper and screenshot
+	.design-image, .files-wallpaper { width: 100% }
+	.files-screenshot { top: 0 }
+}
+
+@media only screen and (max-width: 768px) {
+	// Add some margins to account for more space available
+	.design-image { margin-top: 48px }
+
+	// Screenshot and wallpaper
+	.files- {
+		// Position screenshot within wallpaper
+		&screenshot {
+			top: 32px;
+			left: -2.5%;
+			width: 105%;
+			border-radius: calc(var(--overlay-corner-radius) / 2);
+			transform: none !important; // Prevent parallax scrolling
+		}
+
+		// Fit wallpaper to viewport
+		&wallpaper {
+			width: 180%;
+			height: 80vw;
+			border-radius: 0;
+			object-fit: cover;
+			object-position: bottom;
+		}
+	}
+}

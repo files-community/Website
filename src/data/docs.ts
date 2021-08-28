@@ -2,10 +2,10 @@ export type DocsMap = {
     name: string;
     path?: string;
     type?: "page" | "category";
-    pages?: DocsMap;
+    pages?: DocsMap[];
 };
 
-export const docs: DocsMap = [
+export const docs: DocsMap[] = [
     {
         name: "Overview",
         path: ""

@@ -1,16 +1,16 @@
 <script lang="ts">
-    import { links } from "$data/links";
-    import { docs } from "$data/docs";
-    import { Navbar } from "$lib";
-    import { onMount } from "svelte";
-    
-    import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
-    import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
-    import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
-    import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
-    import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
+	import { links } from "$data/links"
+	import { docs } from "$data/docs"
+	import { Navbar } from "$lib/"
+	import { onMount } from "svelte"
 
-    let theme = "light";
+	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw"
+	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw"
+	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw"
+	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw"
+	import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw"
+
+	let theme = "light";
     
     onMount(() => {
         theme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
@@ -60,7 +60,8 @@
 
     <meta property="og:type" content="website">
     
-    <link rel="icon" type="image/svg+xml" href="/branding/logo-{theme === "light" ? "light" : "dark"}.svg">
+    <link href="/branding/logo-{theme === 'light' ? 'light' : 'dark'}.svg" rel="icon" type="image/svg+xml">
+    <meta content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png" property="og:image">
 
     <meta name="description" content="A modern file explorer that pushes the boundaries of the platform.">
     <meta property="og:description" content="A modern file explorer that pushes the boundaries of the platform.">

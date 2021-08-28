@@ -27,20 +27,20 @@
     "checkJs": true,
     "paths": {
       "$lib/*": [
-        "src/lib/*"
+        "src/lib/*", "src/lib/index"
       ],
-      "$routes": [
-        "src/routes/*"
-      ],
-      "$data": [
+      "$data/*": [
         "src/data/*"
       ],
-      "$types": [
-        "src/types/*"
+      "$main-sections/*": [
+        "src/main-sections/*", "src/main-sections/index"
       ],
-      "$static": [
+      "$routes/*": [
+        "src/routes/*"
+      ],
+      "$static/*": [
         "static/*"
-      ]
+      ],
     }
   },
   "include": [

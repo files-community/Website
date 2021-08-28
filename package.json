@@ -11,29 +11,33 @@
         "format": "prettier --write --plugin-search-dir=. ."
     },
     "devDependencies": {
-        "@fluentui/svg-icons": "^1.1.135",
-        "@sveltejs/adapter-netlify": "^1.0.0-next.25",
-        "@sveltejs/kit": "^1.0.0-next.132",
-        "@typescript-eslint/eslint-plugin": "^4.28.4",
-        "@typescript-eslint/parser": "^4.28.4",
-        "autoprefixer": "^10.3.1",
+        "@fec/remark-a11y-emoji": "^3.1.0",
+        "@fluentui/svg-icons": "^1.1.137",
+        "@sveltejs/adapter-netlify": "^1.0.0-next.29",
+        "@sveltejs/kit": "^1.0.0-next.158",
+        "@types/three": "^0.131.0",
+        "@typescript-eslint/eslint-plugin": "^4.29.3",
+        "@typescript-eslint/parser": "^4.29.3",
+        "autoprefixer": "^10.3.3",
         "bezier-easing": "^2.1.0",
-        "eslint": "^7.31.0",
+        "eslint": "^7.32.0",
         "eslint-config-prettier": "^8.3.0",
         "eslint-plugin-svelte3": "^3.2.0",
         "mdsvex": "^0.9.8",
-        "postcss": "^8.3.5",
+        "postcss": "^8.3.6",
         "prettier": "~2.3.2",
-        "prettier-plugin-svelte": "^2.3.1",
-        "sass": "^1.35.2",
-        "svelte": "^3.42.1",
-        "svelte-check": "^2.2.3",
-        "svelte-preprocess": "^4.7.4",
-        "tslib": "^2.3.0",
-        "typescript": "^4.3.5"
+        "prettier-plugin-svelte": "^2.4.0",
+        "remark-gfm": "^2.0.0",
+        "remark-slug": "^7.0.0",
+        "sass": "^1.38.2",
+        "svelte": "^3.42.4",
+        "svelte-check": "^2.2.5",
+        "svelte-preprocess": "^4.8.0",
+        "tslib": "^2.3.1",
+        "typescript": "^4.4.2"
     },
     "type": "module",
     "dependencies": {
-        "three": "^0.130.1"
+        "three": "^0.132.2"
     }
 }

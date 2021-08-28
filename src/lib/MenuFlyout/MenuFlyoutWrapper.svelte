@@ -1,40 +1,36 @@
 <script lang="ts">
-    import MenuFlyout from "./MenuFlyout.svelte";
-    
-    export let open = false;
+	import MenuFlyout from "./MenuFlyout.svelte"
 
-    let container;
+	export let open = false
+	const toggleDropdown = () => open = !open
 
-    function toggleDropdown() {
-        open = !open;
-    }
-
-    function handleOuterClick(e) {
-        if (open && (!e.target === container || !container.contains(e.target))) toggleDropdown();
-    }
+	let container: HTMLDivElement
+	const handleOuterClick = (e) => {
+		if (open && ((!e.target && container) || !container.contains(e.target))) toggleDropdown()
+	}
 </script>
 
-<svelte:window on:mousedown={handleOuterClick} />
+<svelte:window on:mousedown={handleOuterClick}/>
 
 <div
-    bind:this={container}
-    on:click={toggleDropdown}
-    class:open
-    class="menu-flyout-container"
-    aria-expanded={open}
+		aria-expanded={open}
+		bind:this={container}
+		class="menu-flyout-container"
+		class:open
+		on:click={toggleDropdown}
 >
-    <slot/>
-    {#if open}
-        <MenuFlyout on:click>
-            <slot name="menu"/>
-        </MenuFlyout>
-    {/if}
+	<slot/>
+	{#if open}
+		<MenuFlyout on:click>
+			<slot name="menu"/>
+		</MenuFlyout>
+	{/if}
 </div>
 
 <style lang="scss" global>
-    .menu-flyout-container {
-        display: inline-flex;
-        max-width: 100%;
-        position: relative;
-    }
+	.menu-flyout-container {
+		position: relative;
+		display: inline-flex;
+		max-width: 100%;
+	}
 </style>

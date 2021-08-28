@@ -1,11 +1,11 @@
 <script lang="ts">
-    let className: string = "";
+    let className = "";
     export { className as class };
 </script>
 
 <style lang="scss" src="./PageSection.scss"></style>
 
-<section class="page-section {className || ""}" {...$$restProps}>
+<section {...$$restProps} class="page-section {className || ''}">
     <slot name="outer" />
     {#if $$slots.default}
         <div class="page-section-inner">

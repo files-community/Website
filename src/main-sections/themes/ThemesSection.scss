@@ -1,0 +1,170 @@
+@use "src/styles/mixins";
+
+:global {
+	// Outer section
+	#themes-section {
+		min-height: 600px; // I want to avoid cutting off the component showcase
+		border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
+		background-color: var(--card-background-secondary);
+		overflow: hidden;
+
+		// Inner section
+		.page-section-inner {
+			@include mixins.flex($align: center);
+		}
+
+		// HACK: --background-base is a fairly generic variable that makes more sense to style on themes other than default.
+		&:not(.theme-1) {
+			background-color: var(--background-base);
+
+			// Use default accent color instead of dark-1 (see reasoning below)
+			::selection {
+				background-color: var(--accent-color-default);
+			}
+		}
+
+		// Themes
+		// CSS variables behave rather strange.
+		// Setting a scoped variable that changes the value
+		// in another parent variable's hsla() function
+		// doesn't actually update the actual parent color.
+		//
+		// This means that we are basically forced to hardcode
+		// hex colors for our accent color, since we use hsla
+		// calcs. That really sucks. /rant
+		&.theme- {
+			&2 {
+				--focus-stroke-outer: #fff;
+				--accent-color-default: #3ecc9c;
+				--accent-color-secondary: #70ccad;
+				--accent-color-tertiary: #339b78;
+				--accent-text-default: var(--accent-color-default);
+				--accent-text-tertiary: var(--accent-color-secondary);
+				--text-color-primary: var(--accent-color-default);
+				--text-color-tertiary: #a6aebf;
+				--text-color-secondary: #a6aebf;
+				--subtle-color-secondary: #363c4a;
+				--subtle-color-tertiary: #2f3541;
+				--background-base: #2b303a;
+			}
+
+			&3 {
+				--focus-stroke-outer: #fff;
+				--accent-color-default: #6441a4;
+				--accent-color-secondary: #7d5bbf;
+				--accent-color-tertiary: var(--accent-color-secondary);
+				--accent-text-default: var(--text-color-tertiary);
+				--accent-text-tertiary: var(--accent-color-secondary);
+				--accent-text-contrast-primary: #fff;
+				--accent-text-contrast-secondary: rgba(255, 255, 255, 0.6);
+				--text-color-primary: #fff;
+				--text-color-tertiary: #b19dd8;
+				--text-color-secondary: #b19dd8;
+				--subtle-color-secondary: #2c2642;
+				--subtle-color-tertiary: var(--subtle-color-secondary);
+				--background-base: #17141f;
+			}
+
+			&4 {
+				--focus-stroke-outer: #000;
+				--accent-color-default: #fff;
+				--accent-color-secondary: rgba(255, 255, 255, 0.8);
+				--accent-color-tertiary: rgba(255, 255, 255, 0.6);
+				--accent-text-default: var(--text-color-tertiary);
+				--accent-text-tertiary: var(--accent-text-default);
+				--accent-text-contrast-primary: #000;
+				--accent-text-contrast-secondary: var(--accent-text-contrast-primary);
+				--text-color-primary: #000;
+				--text-color-tertiary: #332500;
+				--text-color-secondary: var(--text-color-primary);
+				--subtle-color-secondary: #fff;
+				--background-base: #feb400;
+
+				.hyperlink-button {
+					&:hover {
+						background-color: rgba(0, 0, 0, 0.1);
+					}
+
+					&:active {
+						background-color: rgba(0, 0, 0, 0.2);
+					}
+				}
+			}
+
+			&5 {
+				--focus-stroke-outer: #fff;
+				--accent-color-default: #eee8d5;
+				--accent-color-secondary: #fdf6e3;
+				--accent-color-tertiary: #e8e1c9;
+				--accent-text-default: var(--text-color-tertiary);
+				--accent-text-tertiary: var(--accent-color-secondary);
+				--accent-text-contrast-primary: #586e75;
+				--accent-text-contrast-secondary: #657b83;
+				--text-color-primary: #fdf6e3;
+				--text-color-tertiary: #93a1a1;
+				--text-color-secondary: #839496;
+				--subtle-color-secondary: #073642;
+				--subtle-color-tertiary: #083945;
+				--background-base: #002b36;
+			}
+
+			&6 {
+				--focus-stroke-outer: #000;
+				--accent-color-default: #88c0d0;
+				--accent-color-secondary: #79b8ca;
+				--accent-color-tertiary: #6bb1c4;
+				--accent-text-default: var(--text-color-tertiary);
+				--accent-text-tertiary: var(--text-color-secondary);
+				--accent-text-contrast-primary: var(--text-color-primary);
+				--accent-text-contrast-secondary: var(--text-color-tertiary);
+				--text-color-primary: #2e3440;
+				--text-color-tertiary: #4c566a;
+				--text-color-secondary: var(--text-color-primary);
+				--subtle-color-secondary: var(--accent-color-default);
+				--background-base: #d8dee9;
+
+				.hyperlink-button {
+					&:hover {
+						background-color: #e5e9f0;
+					}
+
+					&:active {
+						background-color: #eceff4;
+					}
+				}
+			}
+		}
+
+		// Position our component showcase
+		// Seen on the right side of the section
+		.component-showcase {
+			position: absolute;
+			right: -400px;
+			transform: rotate(30deg);
+		}
+	}
+}
+
+// Main themes section content
+// Encompasses the left side of the section
+.themes-section-content {
+	width: 52%;
+	min-width: 478px;
+
+	// Small device support
+	// Since our component showcase will be hidden at this size, fill 100% of the available width.
+	@media only screen and (max-width: 832px) {
+		width: 100%;
+		min-width: unset;
+	}
+}
+
+// Theme picker
+// Container for <ColorSwatch /> components
+.theme-chooser {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 12px;
+	width: fit-content;
+	margin-bottom: 24px;
+}

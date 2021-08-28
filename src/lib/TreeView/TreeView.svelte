@@ -1,10 +1,10 @@
 <script lang="ts">
-    import { onMount } from "svelte";
-    import { page } from "$app/stores";
+	import { onMount } from "svelte"
+	import { page } from "$app/stores"
 
-    import ListViewItem from "../ListViewItem/ListViewItem.svelte";
+	import ListViewItem from "../ListViewItem/ListViewItem.svelte"
 
-    export let tree = [];
+	export let tree = [];
 
     let treeViewState;
 
@@ -17,9 +17,9 @@
     // Utility function for converting regular names to kebab case
     const id = s => s.toLowerCase().split(" ").join("-");
 
-    // Function for expanding/collapsing docs categoeies
-    function toggleExpansion(name) {
-        event.stopPropagation();
+    // Function for expanding/collapsing docs categories
+    const toggleExpansion = (event: MouseEvent, name) => {
+        event.stopPropagation()
 
         // Modify treeViewState to have the opposite of the previous entry for the category
         treeViewState[id(name)] = !treeViewState[id(name)];
@@ -29,12 +29,17 @@
     }
 </script>
 
-<style lang="scss" src="./TreeView.scss"></style>
+<style lang="scss">
+    // Add padding to subtrees for the nesting effect
+    .subtree-items {
+        padding-left: 24px;
+    }
+</style>
 
 {#each tree as { name, path, type, pages, icon }}
     {#if type === "category"}
         <div class="subtree" class:expanded={treeViewState?.[id(name)]}>
-            <ListViewItem type="expander" expanded={treeViewState?.[id(name)]} on:click={toggleExpansion(name)}>
+            <ListViewItem type="expander" expanded={treeViewState?.[id(name)]} on:click={e => toggleExpansion(e, name)}>
                 <svelte:fragment slot="icon">
                     {@html icon || ""}
                 </svelte:fragment>

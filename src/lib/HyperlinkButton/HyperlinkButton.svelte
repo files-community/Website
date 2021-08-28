@@ -1,22 +1,24 @@
 <script lang="ts">
-    export let href = undefined;
-    export let disabled: boolean = false;
-    let className: string = "";
-    export { className as class };
+	export let href = undefined
+	export let disabled: boolean = false
+	let className: string = ""
+	export { className as class }
 </script>
 
-<style lang="scss" src="./HyperlinkButton.scss"></style>
+<style lang="scss">
+	@use "HyperlinkButton";
+</style>
 
 <a
-    class="hyperlink-button {className || ""}"
-    class:disabled
-    on:click
-    on:keypress
-    on:keydown
-    on:focus
-    on:blur
-    href={(href && !disabled) ? href : undefined}
-    {...$$restProps}
+		{...$$restProps}
+		class="hyperlink-button {className || ''}"
+		class:disabled
+		href={(href && !disabled) ? href : undefined}
+		on:blur
+		on:click
+		on:focus
+		on:keydown
+		on:keypress
 >
-    <slot />
+	<slot/>
 </a>

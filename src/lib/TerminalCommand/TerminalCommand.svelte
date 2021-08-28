@@ -1,11 +1,11 @@
 <script lang="ts">
-    import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw";
+	import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw"
 
-    export let command: string = "";
+	export let command = "";
 
-    let copied: boolean = false;
+    let copied = false;
 
-    function copy() {
+    const copy = () => {
         navigator.clipboard.writeText(command);
         copied = true;
         setTimeout(() => {

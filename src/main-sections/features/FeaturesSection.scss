@@ -1,0 +1,121 @@
+@use "src/styles/mixins";
+
+// Outer section
+:global {
+	#features-section {
+		background-color: var(--background-base);
+
+		// Inner section
+		.page-section-inner {
+			@include mixins.flex($gap: 48px);
+		}
+	}
+
+	// Features section container
+	.features-section- {
+		// Left container
+		&left {
+			@include mixins.flex($align: center, $justify: center);
+			position: relative;
+			width: 50%;
+
+			// Backdrop icons
+			// Used as a decoration behind feature showcases
+			.backdrop-icon {
+				position: absolute;
+				width: auto;
+				max-width: 132%;
+				height: 100%;
+				transform: rotate(-10deg) scale(var(--icon-scale, 1));
+
+				path {
+					fill: none;
+					stroke: var(--card-stroke-default);
+					stroke-width: 0.25;
+				}
+			}
+
+			// Showcase panels
+			// Floating, transient surfaces representing different UI elements
+			.showcase-panel {
+				position: relative;
+				border: 1px solid var(--surface-stroke-default);
+				border-radius: var(--overlay-corner-radius);
+				background-color: var(--background-base);
+				box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
+				0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+				0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+				0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+				0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+				0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+				font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
+				user-select: none;
+
+				// Disable user dragging on images to be consistent with Files
+				img {
+					-webkit-user-drag: none;
+				}
+			}
+		}
+
+		// Right container (info + feature cards)
+		&right {
+			flex: 0 0 auto;
+			width: 50%;
+		}
+	}
+}
+
+// <FeatureCard /> container
+// Container element for selecting features to preview
+.feature-cards-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 8px;
+
+	// Small device support
+	@media only screen and (max-width: 1164px) {
+
+		// Stack cards vertically
+		grid-template-columns: auto;
+	}
+}
+
+// Features section small device support
+@media only screen and (max-width: 924px) {
+	.features-section- {
+		// Hide showcases on mobile
+		&left {
+			display: none;
+		}
+
+		// Right portion of the section now takes up fullwidth
+		&right {
+			width: 100%;
+			margin: 0;
+		}
+	}
+
+	// HACK: Remove selected card styling on mobile
+	// Figured this was both easier and faster than dealing with bind:innerWidth
+	.feature-cards-container :global(.feature-card.selected) {
+		border-color: transparent;
+	}
+}
+
+// Panel entrance animation
+@keyframes feature-preview {
+	from {
+		opacity: 0;
+		transform: translateY(48px) scale(0.9);
+		transform-origin: bottom;
+	}
+}
+
+// Generic scale animation
+@keyframes feature-item-scale {
+	from {
+		opacity: 0;
+		transform: scale(0.75);
+	}
+}
