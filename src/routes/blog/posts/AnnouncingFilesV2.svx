@@ -1,6 +1,6 @@
 ---
 title: Announcing General Availability of Files v2
-description: saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+description: Today, we're excited to announce that we are releasing Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the platform, and with v2, we've taken that to a whole new level.
 thumbnail: https://raw.githubusercontent.com/files-community/Files/main/Files/Assets/FilesHome.png
 ---
 
