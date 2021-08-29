@@ -1,8 +1,7 @@
 <script lang="ts">
 	export let type: "standard" | "round" = "standard";
-	export let value: any = undefined;
 	export let color = "#000";
-	export let group = [];
+    export let selected = false;
 	let className = "";
 	export { className as class };
 </script>
@@ -11,15 +10,12 @@
 	@use "ColorSwatch";
 </style>
 
-<label>
-    <input
-        {...$$restProps}
-        bind:group
-        class="color-swatch {className || ``}"
-        class:type-round={type === "round"}
-        class:type-standard={type === "standard"}
-        style="background-color: {color}"
-        type="radio"
-        {value}
-    />
-</label>
+<div
+    {...$$restProps}
+    on:click
+    class="color-swatch {className || ``}"
+    class:type-round={type === "round"}
+    class:type-standard={type === "standard"}
+    class:selected
+    style="background-color: {color}"
+></div>

@@ -4,10 +4,7 @@
 	import { FeatureCard, HeaderChip, PageSection } from "$lib";    
 	import { featureCards } from "$data/features";
 
-	import CloudShowcase from "./showcases/CloudShowcase.svelte";
-	import PreviewShowcase from "./showcases/PreviewShowcase.svelte";
-	import TagsShowcase from "./showcases/TagsShowcase.svelte";
-	import TabsShowcase from "./showcases/TabsShowcase.svelte";
+	import FeatureShowcase from "./FeatureShowcase.svelte";
 
 	let currentFeature = 0;
 
@@ -21,15 +18,7 @@
 
 <PageSection id="features-section">
 	<div class="features-section-left">
-		{#if currentFeature === 0}
-			<CloudShowcase />
-		{:else if currentFeature === 1}
-			<PreviewShowcase />
-		{:else if currentFeature === 2}
-			<TagsShowcase />
-		{:else if currentFeature === 3}
-			<TabsShowcase />
-		{/if}
+		<FeatureShowcase feature={currentFeature} />
 	</div>
 	<div class="features-section-right">
 		<HeaderChip>Features</HeaderChip>
