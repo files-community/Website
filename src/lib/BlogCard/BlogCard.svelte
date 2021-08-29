@@ -25,7 +25,7 @@
                     {author}
                 </a>
             </object>
-            <span>{new Date(date).toLocaleDateString("en-US", {
+            <span>{new Date(date.replace(/-/g, "\/").replace(/T.+/, "")).toLocaleDateString("en-US", {
                 year: 'numeric', day: "numeric", month: 'short'
             })}</span>
         </div>

@@ -56,7 +56,7 @@
             height="422"
         />
         <div class="main-post-info">
-            <HeaderChip>{new Date(mainPost.metadata.date).toLocaleDateString("en-US", {
+            <HeaderChip>{new Date(mainPost.metadata.date.replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", {
                 year: 'numeric', day: "numeric", month: 'short'
             })}</HeaderChip>
             <h2>{mainPost.metadata.title}</h2>

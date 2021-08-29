@@ -43,7 +43,7 @@
                 rel="noreferrer noopener"
             >@{author}</a>
             <span>•</span>
-            {new Date(date).toLocaleDateString("en-US", {
+            {new Date(date.replace(/-/g, '\/').replace(/T.+/, '')).toLocaleDateString("en-US", {
                 year: 'numeric', day: "numeric", month: 'short'
             })}
             <MenuFlyout>
