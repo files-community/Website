@@ -22,7 +22,7 @@
 
     export let posts: Post[];
 
-    const mainPost = posts[0];
+    const mainPost: Post = posts[0];
 
     let scrollY: number;
 </script>
@@ -50,8 +50,8 @@
             use:tilt={{ max: 3, scale: 1.02 }}
             src={mainPost.metadata.thumbnail}
             alt="Main post thumbnail"
-            width="640"
-            height="420"
+            width="633"
+            height="422"
         />
         <div class="main-post-info">
             <h2>{mainPost.metadata.title}</h2>
@@ -59,6 +59,7 @@
             <Button variant="accent" href="blog/{mainPost.path.replace(/\.[^/.]+$/, "")}">Read More</Button>
         </div>
     </div>
+    <h3>Recent Posts</h3>
     <div class="blog-cards">
         {#each posts.slice(1) as post}
             <BlogCard path={post.path} {...post.metadata} />

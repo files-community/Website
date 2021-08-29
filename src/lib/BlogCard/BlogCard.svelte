@@ -1,8 +1,8 @@
 <script>
-    export let path;
-    export let title;
-    export let description;
-    export let thumbnail;
+    export let path = "";
+    export let title = "";
+    export let description = "";
+    export let thumbnail = "";
 </script>
 
 <a class="blog-card" href="/blog/{path.replace(/\.[^/.]+$/, "")}" {...$$restProps}>

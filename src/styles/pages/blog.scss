@@ -1,5 +1,3 @@
-@use "src/styles/mixins" as *;
-
 :global {
     #blog {
         position: relative;
@@ -26,18 +24,24 @@
 }
 
 .main-post {
-    @include flex($align: center, $gap: 48px, $wrap: true);
-    max-height: 700px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 48px;
+    align-items: center;
+    position: relative;
+    width: 100%;
     margin-bottom: 72px;
     padding-bottom: 72px;
     border-bottom: 1px solid var(--divider-color-default);
+    @media only screen and (max-width: 1024px) {
+        grid-template-columns: auto;
+    }
 
     img {
         -webkit-user-drag: none;
         transition: 200ms ease !important;
-        width: 640px;
         height: auto;
-        aspect-ratio: 640 / 420;
+        aspect-ratio: 3 / 2;
         max-width: 100%;
         object-fit: cover;
 		border: 1px solid var(--surface-stroke-default);
@@ -52,6 +56,7 @@
 }
 
 .blog-cards {
+    margin-top: 24px;
     display: grid;
     grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
     grid-gap: 24px;

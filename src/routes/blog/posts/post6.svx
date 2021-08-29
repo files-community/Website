@@ -1,7 +1,7 @@
 ---
-title: This is a test (post 6, the sequel sequel sequel).
-description: sup
-thumbnail: https://source.unsplash.com/random/1600x900/?nature,water,mountains
+title: Post 6
+description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
+thumbnail: https://source.unsplash.com/random/1600x900/?nature,trees
 ---
 
 # Hi! This is post6

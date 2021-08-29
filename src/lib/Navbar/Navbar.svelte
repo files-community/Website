@@ -94,39 +94,37 @@
 			class="sidebar scroller"
 			class:visible={sidebarVisible}
 	>
-		<ul>
-			{#each items as {name, path, external, sidebarTree, icon, type}}
-				{#if type === "divider"}
-					<hr role="separator"/>
-				{:else}
-					{#if !sidebarTree}
-						<ListViewItem
-								type="navigation"
-								selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
-								href={path}
-								target={external ? "_blank" :  undefined}
-								rel={external ? "noreferrer noopener" : undefined}
-						>
-							<svelte:fragment slot="icon">
-								{#if icon}
-									{@html icon}
-								{/if}
-							</svelte:fragment>
-							<span>{name}</span>
-						</ListViewItem>
-					{:else}
-						<TreeView tree={[
+        {#each items as {name, path, external, sidebarTree, icon, type}}
+            {#if type === "divider"}
+                <hr role="separator"/>
+            {:else}
+                {#if !sidebarTree}
+                    <ListViewItem
+                            type="navigation"
+                            selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
+                            href={path}
+                            target={external ? "_blank" :  undefined}
+                            rel={external ? "noreferrer noopener" : undefined}
+                    >
+                        <svelte:fragment slot="icon">
+                            {#if icon}
+                                {@html icon}
+                            {/if}
+                        </svelte:fragment>
+                        <span>{name}</span>
+                    </ListViewItem>
+                {:else}
+                    <TreeView tree={[
                         {
                             type: "category",
                             name,
                             icon,
                             pages: [ ...sidebarTree ]
-                      }
-          ]}/>
-					{/if}
-				{/if}
-			{/each}
-		</ul>
+                        }
+                    ]}/>
+                {/if}
+            {/if}
+        {/each}
 		<hr role="separator"/>
 		{#each buttons as {icon, href, label}}
 			<ListViewItem
