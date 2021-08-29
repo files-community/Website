@@ -77,7 +77,7 @@
 					</div>
 				</Button>
 				<MenuFlyout>
-					<Button variant="accent">{@html ChevronDown}</Button>
+					<Button variant="accent" aria-label="Choose download source">{@html ChevronDown}</Button>
 					<svelte:fragment slot="menu">
 						{#each ["Microsoft Store", "Github Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem

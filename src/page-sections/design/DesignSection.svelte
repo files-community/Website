@@ -20,7 +20,7 @@
 				rel="noreferrer noopener"
 				target="_blank"
 		>
-			Learn More
+			Read More
 		</HyperlinkButton>
 	</div>
 	<div class="design-image">

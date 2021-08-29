@@ -14,7 +14,7 @@
         <span>{description}</span>
     </div>
     <footer>
-        <img src="https://github.com/{author}.png" alt="{author} avatar" />
+        <img src="https://github.com/{author}.png" loading="lazy" alt="{author} avatar" />
         <div class="post-info">
             <object aria-label="Author link">
                 <a

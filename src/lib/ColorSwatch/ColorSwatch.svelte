@@ -11,13 +11,15 @@
 	@use "ColorSwatch";
 </style>
 
-<input
-		{...$$restProps}
-		bind:group
-		class="color-swatch {className || ``}"
-		class:type-round={type === "round"}
-		class:type-standard={type === "standard"}
-		style="background-color: {color}"
-		type="radio"
-		{value}
-/>
+<label>
+    <input
+        {...$$restProps}
+        bind:group
+        class="color-swatch {className || ``}"
+        class:type-round={type === "round"}
+        class:type-standard={type === "standard"}
+        style="background-color: {color}"
+        type="radio"
+        {value}
+    />
+</label>
