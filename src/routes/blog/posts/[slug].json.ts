@@ -1,6 +1,6 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
-const slugFromPath = path => path.match(/([\w-]+)\.(svelte\.md|md|svx)/i)?.[1] ?? null;
+const slugFromPath = path => path.match(/([\w-]+)\.(md|svx)/i)?. [1] ?? null;
 
 export const get: RequestHandler = async ({ params }) => {
     const modules = import.meta.glob("./*.svx");
@@ -13,11 +13,7 @@ export const get: RequestHandler = async ({ params }) => {
 		}
 	}
 
-    if (!match) {
-		return {
-			status: 404
-		};
-	}
+    if (!match) return { status: 404 };
 
     const post = await match[1]();
 
