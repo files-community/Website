@@ -59,14 +59,13 @@
             {#each [previewFiles[currentPreviewFile]] as file}
                 <div class="preview">
                     {#if file?.extension === "html"}
-                        <iframe title="Document" style="border: none"
-                                src="/preview-samples/{file.name}.{file.extension}"></iframe>
+                        <iframe title="Document" style="border: none" src="/preview-samples/{file.name}.{file.extension}"></iframe>
                     {:else if file?.code}
-                                    <pre class="scroller">
-                      <code>
-                        {@html file.code}
-                      </code>
-                   </pre>
+                        <pre class="scroller">
+                            <code>
+                                {@html file.code}
+                            </code>
+                        </pre>
                     {:else}
                         <img src={file.icon} alt="File icon"/>
                     {/if}
@@ -140,11 +139,11 @@
             <div class="showcase-panel tags-picker">
                 {#each tags as { color }, i}
                     <ColorSwatch
-                        bind:group={currentTag}
+                        on:click={() => currentTag = i}
+                        selected={currentTag === i}
                         --color-index={i}
                         tabindex="-1"
                         type="round"
-                        value={i}
                         {color}
                     />
                 {/each}
