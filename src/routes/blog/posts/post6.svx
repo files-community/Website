@@ -2,6 +2,8 @@
 title: Post 6
 description: Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam
 thumbnail: https://source.unsplash.com/random/1600x900/?nature,trees
+date: 2020-01-05
+author: tropix126
 ---
 
 # Hi! This is post6

@@ -1,12 +1,12 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
 export const get: RequestHandler = async () => {
-    const imports = import.meta.glob("./posts/*.svx");
+    const modules = import.meta.glob("./posts/*.svx");
     let body = [];
 
-    for (const path in imports) {
+    for (const path in modules) {
         body.push(
-            imports[path]().then(({ metadata }) => {
+            modules[path]().then(({ metadata }) => {
                 return {
                     metadata,
                     path
@@ -16,6 +16,10 @@ export const get: RequestHandler = async () => {
     }
 
     const posts = await Promise.all(body);
+
+    posts.sort((a, b) => {
+        return +new Date(b.metadata.date) - +new Date(a.metadata.date);
+    });
 
     return { body: posts }
 }

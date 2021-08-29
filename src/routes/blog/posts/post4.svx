@@ -2,6 +2,8 @@
 title: Post 4
 description: voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
 thumbnail: https://source.unsplash.com/random/1600x900/?nature,forest
+date: 2020-01-03
+author: tropix126
 ---
 
 # Hi! This is post4

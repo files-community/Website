@@ -1,1 +1,85 @@
-<slot />
+<script context="module" lang="ts">
+	import type { Load } from "@sveltejs/kit";
+
+    export const load: Load = async ({ page, fetch }) => ({
+        props: {
+            post: await fetch(`${page.path}.json`).then(response => response.json())
+        }
+    });
+</script>
+
+<script lang="ts">
+    import { MenuFlyout, ListViewItem } from "$lib";
+
+	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
+    import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
+
+    export let post;
+
+    const { title, thumbnail, author, date } = post.metadata;
+</script>
+
+<svelte:head>
+    <title>Files - {title}</title>
+    <meta property="og:title" content="Files - {title}">
+
+    <meta property="og:image" content={thumbnail}>
+</svelte:head>
+
+<section class="blog-post">
+    <article>
+        <div class="post-title">
+            <a class="back-button" href="/blog" title="Back to Blog" aria-label="Back to Blog">
+                {@html ArrowLeft}
+            </a>
+            <h1>{title}</h1>
+        </div>
+        <div class="post-info">
+            <img src="https://github.com/{author}.png" alt="{author} avatar" />
+            <a
+                class="hyperlink"
+                href="https://github.com/{author}"
+                target="_blank"
+                rel="noreferrer noopener"
+            >@{author}</a>
+            <span>•</span>
+            {new Date(date).toLocaleDateString("en-US", {
+                year: 'numeric', day: "numeric", month: 'short'
+            })}
+            <MenuFlyout>
+                <button class="share-button" title="Share" aria-label="Share">
+                    {@html Share}
+                </button>
+                <svelte:fragment slot="menu">
+                    <ListViewItem on:click={() => navigator.clipboard.writeText(window.location.href)}>
+                        Copy URL
+                    </ListViewItem>
+                    <ListViewItem
+                        href="https://twitter.com/intent/tweet?text={window.location.href}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        Twitter
+                    </ListViewItem>
+                    <ListViewItem
+                        href="https://www.facebook.com/sharer/sharer.php?u={window.location.href}"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                    >
+                        Facebook
+                    </ListViewItem>
+                </svelte:fragment>
+            </MenuFlyout>
+        </div>
+        {#if thumbnail}
+            <img class="post-thumbnail" src="{thumbnail}" alt="Thumbnail" />
+        {/if}
+        <div class="markdown-body">
+            <slot />
+        </div>
+    </article>
+</section>
+
+<style lang="scss">
+    @use "../src/styles/pages/blogPost";
+</style>

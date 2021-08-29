@@ -2,6 +2,8 @@
 title: Post 2
 description: soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas
 thumbnail: https://source.unsplash.com/random/1600x900/?nature,water
+date: 2020-01-01
+author: tropix126
 ---
 
 # Hi! This is post2.

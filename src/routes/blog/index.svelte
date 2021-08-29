@@ -3,20 +3,22 @@
 
     export const load: Load = async ({ fetch }) => ({
 		props: {
-			posts: await fetch("/blog/posts.json").then(response => response.json())
+			posts: await fetch("/blog.json").then(response => response.json())
 		}
 	});
 </script>
 
 <script lang="ts">
-    import { Button, PageSection, BlogCard, tilt } from "$lib";
+    import { Button, PageSection, HeaderChip, BlogCard, tilt } from "$lib";
 
     interface Post {
         path: string,
         metadata: {
-            title?: string,
+            title: string,
+            date: string,
             description?: string,
-            thumbnail?: string
+            thumbnail?: string,
+            author?: string
         }
     }
 
@@ -54,6 +56,9 @@
             height="422"
         />
         <div class="main-post-info">
+            <HeaderChip>{new Date(mainPost.metadata.date).toLocaleDateString("en-US", {
+                year: 'numeric', day: "numeric", month: 'short'
+            })}</HeaderChip>
             <h2>{mainPost.metadata.title}</h2>
             <p>{mainPost.metadata.description}</p>
             <Button variant="accent" href="blog/{mainPost.path.replace(/\.[^/.]+$/, "")}">Read More</Button>

@@ -1,17 +1,20 @@
 <script lang="ts">
-	let menu: HTMLUListElement
+    import { onMount } from "svelte";
 
-	const bindMenuDimensions = (node: HTMLDivElement) => {
-		node.setAttribute("style", `--menu-flyout-height: ${ menu.offsetHeight }px; --menu-flyout-width: ${ menu.offsetWidth }px;`)
-	}
+    let menu: HTMLUListElement;
+    let outer: HTMLDivElement;
+
+    onMount(() => {
+        outer.setAttribute("style", `--menu-flyout-height: ${menu.offsetHeight}px; --menu-flyout-width: ${menu.offsetWidth}px;`);
+    });
 </script>
 
 <style src="./MenuFlyout.scss"></style>
 
 <div
-		class="menu-flyout-outer"
-		on:click|stopPropagation
-		use:bindMenuDimensions
+    class="menu-flyout-outer"
+    bind:this={outer}
+    on:click|stopPropagation
 >
 	<ul bind:this={menu} class="menu-flyout" role="menu">
 		<slot/>
