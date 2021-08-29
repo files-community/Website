@@ -32,4 +32,5 @@ In addition to the most noteworthy features, we improved existing features like 
 Files thrives off community feedback because it helps shape the features we work on and makes the app better for everyone. We invite you to submit your feedback through our GitHub repository.
 
 – Yair
+
 Download from the Microsoft Store || See Files on GitHub
