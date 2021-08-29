@@ -8,7 +8,7 @@ thumbnail: https://raw.githubusercontent.com/files-community/Files/main/Files/As
 
 Today, we're excited to announce that we are releasing Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the platform, and with v2, we've taken that to a whole new level. We're excited to share with everyone what we've been working on for the last seven months!
 
-We redesigned the layout of the app, taking advantage of the latest improvements with WinUI and Windows 11. We added new features that provide users more flexibility in managing their files. The improvements to stability and accessibility will allow users to be more productive than ever before.
+We redesigned the layout of the app, taking advantage of the latest improvements with WinUI and Windows 11. We added new features that provide users more flexibility in managing their files, and we made improvements to the stability and accessibility to allow users to be more productive than ever before.
 
 Files v2 was made possible through the contributions of the open-source community on GitHub. Over the last year, the number of contributors has more than doubled and we're incredibly thankful for all their help. There were a couple of contributors who really went all out and spent a lot of time putting together the update.
 - Winston de Jong
