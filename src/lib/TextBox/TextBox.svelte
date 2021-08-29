@@ -1,8 +1,8 @@
-<script context="module">
+<script context="module" lang="ts">
 	export type TextBoxTypes = "text" | "search" | "tel" | "email" | "url" | "password";
 </script>
 
-<script>
+<script lang="ts">
 	import { createEventDispatcher } from "svelte"
 
 	export let type: TextBoxTypes = "text"

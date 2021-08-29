@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { draw } from "svelte/transition";
     
     import { cloudFiles } from "$data/features";

@@ -1,4 +1,4 @@
-<script context="module">
+<script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
 
     export const load: Load = async ({ fetch }) => ({
@@ -8,7 +8,7 @@
 	});
 </script>
 
-<script>
+<script lang="ts">
     import { Button, PageSection, BlogCard, tilt } from "$lib";
 
     interface Post {

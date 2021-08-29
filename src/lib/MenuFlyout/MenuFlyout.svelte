@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let menu: HTMLUListElement
 
 	const bindMenuDimensions = (node: HTMLDivElement) => {

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { createEventDispatcher } from "svelte";
 
 	export let open: boolean = false;

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw";
 
 	export let description: string = "";

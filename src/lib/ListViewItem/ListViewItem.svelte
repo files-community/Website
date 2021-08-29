@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 
 	export let href = undefined;

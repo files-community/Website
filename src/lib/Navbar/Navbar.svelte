@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { page } from "$app/stores"
 
 	import ListViewItem from "../ListViewItem/ListViewItem.svelte"

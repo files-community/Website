@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     import {onMount} from "svelte";
 
     import CalendarView_light from "$static/exported/CalendarView_light.svg?raw";

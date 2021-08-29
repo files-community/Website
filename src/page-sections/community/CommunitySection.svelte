@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import type { ContributorData } from "$data/fetchHomepageData";
 
     import { onMount } from "svelte";

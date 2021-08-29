@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export let type: "standard" | "round" = "standard";
 	export let value: any = undefined;
 	export let color = "#000";

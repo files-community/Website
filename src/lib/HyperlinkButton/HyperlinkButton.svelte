@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	export let href = undefined;
 	export let disabled: boolean = false;
 	let className: string = "";

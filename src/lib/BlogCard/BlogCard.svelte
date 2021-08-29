@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let path = "";
     export let title = "";
     export let description = "";

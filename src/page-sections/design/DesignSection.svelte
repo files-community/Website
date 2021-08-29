@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Button, HeaderChip, HyperlinkButton, PageSection } from "$lib";
 
 	let scrollY: number;

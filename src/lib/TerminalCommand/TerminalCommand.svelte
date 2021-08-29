@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw"
 
 	export let command = "";

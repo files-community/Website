@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
     export let html_url: string = undefined;
     export let avatar_url: string = undefined;
     export let type = "User";

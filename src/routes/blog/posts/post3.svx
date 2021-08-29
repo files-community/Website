@@ -1,7 +1,7 @@
 ---
 title: Post 3
 description: excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est
-thumbnail: https://source.unsplash.com/random/1600x900/?mountains, earth
+thumbnail: https://source.unsplash.com/random/1600x900/?mountains, sunset
 ---
 
 # Hi! This is post3.

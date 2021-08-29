@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { Titlebar } from "$lib"
 	import { draw } from "svelte/transition"
 </script>

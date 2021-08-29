@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { ColorSwatch } from "$lib"
 	import { draw } from "svelte/transition"
 	import { tags } from "$data/features"

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { HeroSection, DesignSection, ThemesSection, FeaturesSection, CommunitySection } from "$page-sections";
 </script>
 
