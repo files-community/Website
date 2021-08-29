@@ -16,7 +16,7 @@ Files v2 was made possible through the contributions of the open-source communit
 - Martin Anderson
 - Michael West
 
-# New Features
+## New Features
 The new features in v2 were designed based off user feedback from more than 4,000 beta users.
 - Columns allow multiple levels of the hierarchy to be open at once, and provides a visual representation of the current directory
 - Compact Overlay is a great way to overlay Files on top of other windows so that users can quickly look for a file without losing focus on their main task
@@ -28,7 +28,7 @@ The new features in v2 were designed based off user feedback from more than 4,00
 
 In addition to the most noteworthy features, we improved existing features like the context menu, preview pane, details layout, search experience, settings dialog, folder enumeration speed, file transfer operations and so much more!
 
-# Feedback
+## Feedback
 Files thrives off community feedback because it helps shape the features we work on and makes the app better for everyone. We invite you to submit your feedback through our GitHub repository.
 
 – Yair
