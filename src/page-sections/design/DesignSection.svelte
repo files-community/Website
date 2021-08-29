@@ -1,4 +1,6 @@
 <script lang="ts">
+    import { links } from "$data/links";
+
 	import { Button, HeaderChip, HyperlinkButton, PageSection } from "$lib";
 
 	let scrollY: number;
@@ -12,7 +14,12 @@
 	<p>Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple
 		folders with tabs. And so much more.</p>
 	<div class="buttons-spacer">
-		<Button variant="accent" href="">
+		<Button
+            variant="accent"
+            href="https://microsoft.com/store/apps/{links.storeId}"
+            rel="noreferrer noopener"
+            target="_blank"
+        >
 			Try it out
 		</Button>
 		<HyperlinkButton
@@ -20,7 +27,7 @@
 				rel="noreferrer noopener"
 				target="_blank"
 		>
-			Read More
+			Design System
 		</HyperlinkButton>
 	</div>
 	<div class="design-image">
@@ -38,6 +45,8 @@
 					class="files-screenshot"
 					src="/screenshots/folder-list-light.png"
 					style="transform: translateY({Math.floor(scrollY / -10)}px)"
+                    width="1024"
+                    height="768"
 			>
 		</picture>
 		<picture>
@@ -53,6 +62,8 @@
 					alt="Windows 11 wallpaper"
 					class="files-wallpaper"
 					src="/screenshots/win11-light.png"
+                    width="1440"
+                    height="900"
 			>
 		</picture>
 	</div>

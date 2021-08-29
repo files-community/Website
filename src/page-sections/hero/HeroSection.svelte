@@ -61,14 +61,14 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-						variant="accent"
-						href={currentDownloadSource !== 2 ? downloadUrl : undefined}
-						id="hero-download-button"
-						rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
-						target={currentDownloadSource !== 2 ? "_blank" : undefined}
-                        on:click={() => {
-                            if (currentDownloadSource === 2) wingetDialogOpen = true;
-                        }}
+                    variant="accent"
+                    href={currentDownloadSource !== 2 ? downloadUrl : undefined}
+                    id="hero-download-button"
+                    rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
+                    target={currentDownloadSource !== 2 ? "_blank" : undefined}
+                    on:click={() => {
+                        if (currentDownloadSource === 2) wingetDialogOpen = true;
+                    }}
 				>
 					{@html ArrowDownload}
 					<div class="hero-button-inner">
@@ -94,9 +94,9 @@
 				</MenuFlyout>
 			</div>
 			<Button
-					href="https://github.com/{links.github.owner}/{links.github.repo}/"
-					rel="noreferrer noopener"
-					target="_blank"
+                href="https://github.com/{links.github.owner}/{links.github.repo}/"
+                rel="noreferrer noopener"
+                target="_blank"
 			>
 				{@html Code}
 				<div class="hero-button-inner">
@@ -110,16 +110,18 @@
 		<div class="hero-image-container">
 			<picture>
 				<source
-						media="(prefers-color-scheme: dark)"
-						srcset="/screenshots/hero-dark.png"
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/screenshots/hero-dark.png"
 				>
 				<source
-						media="(prefers-color-scheme: light)"
-						srcset="/screenshots/hero-light.png"
+                    media="(prefers-color-scheme: light)"
+                    srcset="/screenshots/hero-light.png"
 				>
 				<img
-						alt="Files new tab screenshot"
-						src="/screenshots/hero-light.png"
+                    alt="Files new tab screenshot"
+                    src="/screenshots/hero-light.png"
+                    width="1024"
+                    height="768"
 				>
 			</picture>
 		</div>
