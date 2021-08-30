@@ -24,12 +24,11 @@
 			{/each}
 		</div>
 		<div class="buttons-spacer">
-			<Button variant="accent" href="themes">
+			<Button variant="accent" href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ">
 				Get Themes
 			</Button>
 			<HyperlinkButton
-					href="docs/configuring/custom-themes"
-			>
+					href="docs/configuring/custom-themes">
 				Read the docs
 			</HyperlinkButton>
 		</div>
