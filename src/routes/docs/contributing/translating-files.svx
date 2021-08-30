@@ -15,7 +15,7 @@
 - Inside the `MultilingualResources` folder, open the `.xlf` of the language you want to translate.
     - You can open using any text editor, or you can use the [Multilingual Editor](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit)
 - If you're using a text editor, translate the strings inside the `<target>` node. Then change the `state` property to `translated`.
-    ![](/docs-resources/Text-translate.png)
+    ![](../docs-resources/Text-translate.png)
 - If you're using the Multilingual Editor, translate the strings inside the `Translation` text field. Make sure to save to preserve your changes.
-    ![](/docs-resources/Toolkit-translate.png)
+    ![](../docs-resources/Toolkit-translate.png)
 - Once you're done, commit your changes, push to GitHub, and make a pull request.
