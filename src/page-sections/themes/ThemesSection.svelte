@@ -28,7 +28,7 @@
 				Get Themes
 			</Button>
 			<HyperlinkButton
-					href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ"
+					href="docs/configuring/custom-themes"
 			>
 				Read the docs
 			</HyperlinkButton>
