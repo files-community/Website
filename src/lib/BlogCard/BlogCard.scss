@@ -71,23 +71,14 @@
     color: var(--text-color-secondary);
     font-size: 16px;
     line-height: 24px;
-    h5, h6 {
+    h5 {
         margin: 0;
         margin-bottom: 4px;
-    }
-    h5 {
         color: var(--text-color-primary);
         line-height: 32px;
         font: {
             size: 24px;
             weight: 600;
-        }
-    }
-    h6 {
-        color: var(--text-color-tertiary);
-        font: {
-            size: inherit;
-            weight: inherit;
         }
     }
 }

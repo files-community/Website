@@ -9,7 +9,7 @@
     } from "$lib";
 
 	let currentTheme: any = 0;
-	const colors = ["var(--background-tertiary);", "#414958", "#6441a4", "#feb400", "#073642", "#88c0d0"];
+	const themeColors = ["var(--background-tertiary);", "#414958", "#6441a4", "#feb400", "#073642", "#88c0d0"];
 </script>
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
@@ -19,8 +19,8 @@
 		<p>Have it your way. Files features a fully customizable user interface, right down to the colors and materials.
 			Explore themes created by the community or dive right into the docs and create your own.</p>
 		<div class="theme-chooser">
-			{#each colors as color, i}
-				<ColorSwatch {color} selected={currentTheme === i} on:click={() => currentTheme = i} />
+			{#each themeColors as color, i}
+				<ColorSwatch bind:group={currentTheme} value={i} {color} />
 			{/each}
 		</div>
 		<div class="buttons-spacer">

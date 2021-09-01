@@ -9,7 +9,7 @@
 			border-radius: var(--control-corner-radius);
 			overflow: hidden;
 
-			&.selected {
+			&:checked {
 				border-radius: calc(var(--control-corner-radius) + 2px);
 				box-shadow: inset 0 0 0 2px var(--accent-color-default),
 				inset 0 0 0 3px var(--background-base);
@@ -28,7 +28,7 @@
 			height: 36px;
 			border-radius: 36px;
 
-			&.selected {
+			&:checked {
 				box-shadow: 0 0 0 1px var(--background-base),
 				0 0 0 3px var(--focus-stroke-outer);
 			}

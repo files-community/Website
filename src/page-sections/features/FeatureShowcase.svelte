@@ -139,8 +139,8 @@
             <div class="showcase-panel tags-picker">
                 {#each tags as { color }, i}
                     <ColorSwatch
-                        on:click={() => currentTag = i}
-                        selected={currentTag === i}
+                        bind:group={currentTag}
+                        value={i}
                         --color-index={i}
                         tabindex="-1"
                         type="round"
