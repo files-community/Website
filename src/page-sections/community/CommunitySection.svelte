@@ -150,11 +150,10 @@
 		&container {
 			position: relative;
 			max-width: 2800px;
-			margin-top: calc(-128px + 48px);
 
 			// Preserve box-shadows when overflow is hidden
 			margin-bottom: -128px;
-			padding: 128px 0;
+			padding: 64px 0 128px 0;
 			overflow: hidden;
 
 			// Fade gutters

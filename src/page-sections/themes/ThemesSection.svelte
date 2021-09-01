@@ -20,7 +20,7 @@
 			Explore themes created by the community or dive right into the docs and create your own.</p>
 		<div class="theme-chooser">
 			{#each colors as color, i}
-				<ColorSwatch {color} selected={currentTheme === i} on:click={() => currentTheme = i} />
+				<ColorSwatch {color} selected={currentTheme === i} on:click={() => currentTheme = i} index={i}/>
 			{/each}
 		</div>
 		<div class="buttons-spacer">
