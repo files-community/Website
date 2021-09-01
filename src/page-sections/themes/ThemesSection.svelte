@@ -20,16 +20,15 @@
 			Explore themes created by the community or dive right into the docs and create your own.</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
-				<ColorSwatch bind:group={currentTheme} value={i} {color} />
+				<ColorSwatch bind:group={currentTheme} value={i} {color} aria-label="Select theme {i + 1}" />
 			{/each}
 		</div>
 		<div class="buttons-spacer">
-			<Button variant="accent" href="themes">
+			<Button variant="accent" href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ" target="_blank">
 				Get Themes
 			</Button>
 			<HyperlinkButton
-					href="docs/configuring/custom-themes"
-			>
+					href="docs/configuring/custom-themes">
 				Read the docs
 			</HyperlinkButton>
 		</div>

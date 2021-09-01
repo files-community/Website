@@ -18,9 +18,12 @@
 	word-break: break-word;
 	transition: 83ms ease background-color,
 	83ms ease box-shadow;
-	cursor: default;
 	user-select: none;
 	-webkit-user-drag: none;
+
+	&:hover {
+		cursor: pointer;
+	}
 
 	// Button styles
 	&.style- {

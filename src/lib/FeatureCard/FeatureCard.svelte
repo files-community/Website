@@ -8,10 +8,10 @@
 
 <style src="./FeatureCard.scss"></style>
 
-<div class="feature-card" on:click class:selected {...$$restProps}>
+<button class="feature-card" on:click class:selected {...$$restProps}>
 	{@html icon}
 	<h4>
 		<slot>Unknown</slot>
 	</h4>
 	<p>{description}</p>
-</div>
+</button>

@@ -2,8 +2,8 @@
 	export let type: "standard" | "round" = "standard";
 	export let color = "#000";
     export let value: any = undefined;
-    export let group = [];
-	let className = "";
+    export let group: any = [];
+    let className = "";
 	export { className as class };
 </script>
 
