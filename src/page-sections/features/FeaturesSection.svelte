@@ -30,6 +30,7 @@
 			{#each featureCards as feature, i}
 				<FeatureCard
                     on:click={() => currentFeature = i}
+                    clickable
                     selected={currentFeature === i}
                     description={feature.description}
                     icon={feature.icon}
