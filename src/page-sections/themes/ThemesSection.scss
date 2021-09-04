@@ -81,7 +81,6 @@
 				--text-color-secondary: var(--text-color-primary);
 				--subtle-color-secondary: #fff;
 				--background-base: #feb400;
-
 				.hyperlink-button {
 					&:hover {
 						background-color: rgba(0, 0, 0, 0.1);
@@ -124,6 +123,7 @@
 				--text-color-secondary: var(--text-color-primary);
 				--subtle-color-secondary: var(--accent-color-default);
 				--background-base: #d8dee9;
+                --layer-color-default: #3b4252;
 
 				.hyperlink-button {
 					&:hover {
