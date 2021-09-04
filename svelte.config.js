@@ -36,10 +36,6 @@ const config = {
 			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm],
 		}),
 		sveltePreprocess({
-			defaults: {
-				style: "scss",
-				script: "typescript"
-			},
 			postcss: {
 				plugins: [
 					autoprefixer()
