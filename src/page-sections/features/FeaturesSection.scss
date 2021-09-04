@@ -13,16 +13,15 @@
 
 	// Features section container
 	.features-section- {
+        &right, &left {
+            flex: 0 0 auto;
+            width: 50%;
+        }
+
 		// Left container
 		&left {
 			@include flex($align: center, $justify: center);
 			position: relative;
-			width: 50%;
-		}
-
-		// Right container (info + feature cards)
-		&right {
-			flex: 0 0 auto;
 			width: 50%;
 		}
 	}
