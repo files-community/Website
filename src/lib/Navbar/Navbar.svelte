@@ -24,7 +24,7 @@
 	}
 </script>
 
-<style src="./Navbar.scss"></style>
+<style lang="scss" src="./Navbar.scss"></style>
 
 <svelte:window bind:innerWidth on:click={handleOuterClick}/>
 

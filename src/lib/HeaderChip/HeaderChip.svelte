@@ -1,4 +1,4 @@
-<style src="./HeaderChip.scss"></style>
+<style lang="scss" src="./HeaderChip.scss"></style>
 
 <span class="header-chip">
     <slot />

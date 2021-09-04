@@ -9,7 +9,7 @@
     });
 </script>
 
-<style src="./MenuFlyout.scss"></style>
+<style lang="scss" src="./MenuFlyout.scss"></style>
 
 <div
     class="menu-flyout-outer"

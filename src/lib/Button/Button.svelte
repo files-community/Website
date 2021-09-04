@@ -7,7 +7,7 @@
 	export { className as class };
 </script>
 
-<style src="./Button.scss"></style>
+<style lang="scss" src="./Button.scss"></style>
 
 {#if href}
 	<a

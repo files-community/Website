@@ -51,7 +51,7 @@
 	}
 </script>
 
-<style src="./TextBox.scss"></style>
+<style lang="scss" src="./TextBox.scss"></style>
 
 <div class="textbox-underline-frame {className ||''}" class:flyout-visible={flyoutVisible}>
 	<div class="textbox-container" class:disabled>

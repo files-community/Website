@@ -7,7 +7,7 @@
 	export let icon = Question;
 </script>
 
-<style src="./FeatureCard.scss"></style>
+<style lang="scss" src="./FeatureCard.scss"></style>
 
 {#if clickable}
     <button class="feature-card" on:click class:selected {...$$restProps}>

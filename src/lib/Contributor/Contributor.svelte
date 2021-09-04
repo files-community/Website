@@ -6,7 +6,7 @@
     export let contributions = 0;
 </script>
 
-<style src="./Contributor.scss"></style>
+<style lang="scss" src="./Contributor.scss"></style>
 
 {#if type === "User"}
     <a tabindex="-1" class="contributor" href={html_url} target="_blank" rel="noreferrer noopener">

@@ -11,7 +11,7 @@
 	export { className as class };
 </script>
 
-<style src="./ListViewItem.scss"></style>
+<style lang="scss" src="./ListViewItem.scss"></style>
 
 {#if typeof group === "undefined"}
 	{#if !href}

@@ -93,7 +93,7 @@
 <Navbar items={navbarItems} buttons={navbarButtons} />
 <slot />
 
-<style global>
+<style lang="scss" global>
     @use "src/styles/global";
     @use "src/styles/markdown";
 </style>

@@ -3,7 +3,7 @@
     export { className as class };
 </script>
 
-<style src="./PageSection.scss"></style>
+<style lang="scss" src="./PageSection.scss"></style>
 
 <section {...$$restProps} class="page-section {className || ''}">
     <slot name="outer" />

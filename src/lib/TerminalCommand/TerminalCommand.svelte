@@ -22,4 +22,4 @@
     </button>
 </div>
 
-<style src="./TerminalCommand.scss"></style>
+<style lang="scss" src="./TerminalCommand.scss"></style>

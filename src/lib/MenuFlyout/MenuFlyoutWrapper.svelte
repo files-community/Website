@@ -13,11 +13,11 @@
 <svelte:window on:mousedown={handleOuterClick}/>
 
 <div
-		aria-expanded={open}
-		bind:this={container}
-		class="menu-flyout-container"
-		class:open
-		on:click={toggleDropdown}
+    aria-expanded={open}
+    bind:this={container}
+    class="menu-flyout-container"
+    class:open
+    on:click={toggleDropdown}
 >
 	<slot/>
 	{#if open}
@@ -27,7 +27,7 @@
 	{/if}
 </div>
 
-<style global>
+<style lang="scss" global>
 	.menu-flyout-container {
 		position: relative;
 		display: inline-flex;

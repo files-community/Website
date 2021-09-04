@@ -34,4 +34,4 @@
     <slot />
 </a>
 
-<style src="./BlogCard.scss"></style>
+<style lang="scss" src="./BlogCard.scss"></style>
