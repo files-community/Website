@@ -9,7 +9,7 @@
 <p align="center">  
     <img alt="Files website preview" src="https://i.imgur.com/lf3n86K.png"/>
     <br/>
-    The starting page for everything related to <a href="https://github.com/files-community/files">Files</a> — documentation and themes included!
+    The starting page for everything related to <a href="https://github.com/files-community/files">Files</a> — documentation and news included!
     <br/>
     <br/>
     <a href="https://github.com/files-community/Website/blob/main/LICENSE" target="_blank">
