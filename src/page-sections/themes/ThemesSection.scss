@@ -141,7 +141,6 @@
 		// Seen on the right side of the section
 		.component-showcase {
             @include flex($gap: 16px);
-            pointer-events: none;
 			position: absolute;
 			top: -100px;
             right: -100px;
