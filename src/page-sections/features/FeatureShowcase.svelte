@@ -142,7 +142,6 @@
                         bind:group={currentTag}
                         value={i}
                         --color-index={i}
-                        tabindex="-1"
                         type="round"
                         {color}
                     />

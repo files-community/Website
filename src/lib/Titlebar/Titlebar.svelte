@@ -35,48 +35,4 @@
 	</div>
 </header>
 
-<style lang="scss">
-	@use "src/styles/mixins" as *;
-
-	.titlebar {
-		@include flex($align: center);
-		position: relative;
-		height: 32px;
-		padding-left: 16px;
-		color: var(--text-color-primary);
-		font-size: var(--control-font-size);
-
-		span { flex: 1 1 auto }
-
-		.caption-buttons { @include flex($align: center) }
-
-		button {
-			@include flex($justify: center, $align: center);
-			width: 46px;
-			height: 32px;
-			border: none;
-			background-color: transparent;
-			color: var(--text-color-primary);
-
-			&:hover { background-color: var(--subtle-color-secondary) }
-
-			&:active {
-				background-color: var(--subtle-color-tertiary);
-				color: var(--text-color-secondary);
-			}
-
-			&.close {
-				color: white;
-
-				&:hover { background-color: #c42b11 }
-
-				&:active {
-					background-color: hsla(5, 75%, 44%, 0.9);
-					color: transparentize(red, .3);
-				}
-			}
-
-			svg { @include icon($size: 10px) }
-		}
-	}
-</style>
+<style lang="scss" src="./Titlebar.scss"></style>
