@@ -101,6 +101,7 @@
 				--subtle-color-secondary: #fff;
                 --subtle-color-tertiary: rgba(0, 0, 0, 0.1);
 				--background-base: #feb400;
+                --layer-color-default: #ffda80;
                 --dots-color: rgba(0, 0, 0, 0.2);
 				.hyperlink-button {
                     --subtle-color-secondary: rgba(0, 0, 0, 0.05);
@@ -122,6 +123,7 @@
 				--subtle-color-secondary: #073642;
 				--subtle-color-tertiary: #083945;
 				--background-base: #002b36;
+                --layer-color-default: var(--accent-color-secondary);
                 --dots-color: var(--accent-text-contrast-primary);
 			}
 
