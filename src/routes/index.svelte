@@ -1,5 +1,11 @@
 <script lang="ts">
-	import { HeroSection, DesignSection, ThemesSection, FeaturesSection, CommunitySection } from "$page-sections";
+	import {
+        HeroSection,
+        DesignSection,
+        ThemesSection,
+        FeaturesSection,
+        CommunitySection
+    } from "$page-sections";
 </script>
 
 <svelte:head>

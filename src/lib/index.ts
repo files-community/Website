@@ -17,4 +17,6 @@ export { default as Titlebar } from "./Titlebar/Titlebar.svelte"
 export { default as BlogCard } from "./BlogCard/BlogCard.svelte"
 
 // Actions
-export { default as tilt } from "./tilt";
+export { default as tilt } from "./rainbowCanvasAlt";
+export { default as rainbowCanvasAlt } from "./rainbowCanvasAlt";
+export { default as rainbowCanvas } from "./rainbowCanvas";

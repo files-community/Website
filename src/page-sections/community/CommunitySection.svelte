@@ -5,8 +5,13 @@
 
 	import { links } from "$data/links";
 	import { getContributors } from "$data/fetchHomepageData";
-	import { Contributor, HeaderChip, HyperlinkButton, PageSection } from "$lib";
-	import renderCommunityCanvas from "./community-canvas";
+	import {
+        Contributor,
+        HeaderChip,
+        HyperlinkButton,
+        PageSection,
+        rainbowCanvasAlt
+    } from "$lib";
 
 	// Fetch contributors for the community section
 	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> = [[], [], []];
@@ -40,18 +45,18 @@
 					<div class="contributors-row">
 						{#each shuffle(contributors) as {html_url, avatar_url, login, contributions, type}}
 							<Contributor
-									{html_url}
-									{avatar_url}
-									{login}
-									{contributions}
-									{type}
+                                {html_url}
+                                {avatar_url}
+                                {login}
+                                {contributions}
+                                {type}
 							/>
 						{/each}
 					</div>
 				{/each}
 			</div>
 		{/if}
-		<canvas use:renderCommunityCanvas></canvas>
+		<canvas use:rainbowCanvasAlt></canvas>
 	</div>
 </PageSection>
 

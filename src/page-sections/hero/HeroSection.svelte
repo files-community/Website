@@ -5,10 +5,10 @@
         ListViewItem,
         MenuFlyout,
         PageSection,
-        TerminalCommand
+        TerminalCommand,
+        rainbowCanvas
     } from "$lib";
     
-    import renderHeroCanvas from "./hero-canvas";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
 	import { getReleaseUrl } from "$data/fetchHomepageData";
@@ -126,7 +126,7 @@
 			</picture>
 		</div>
 	</div>
-	<canvas height={32} slot="outer" use:renderHeroCanvas width={32}></canvas>
+	<canvas height={32} slot="outer" use:rainbowCanvas width={32}></canvas>
 </PageSection>
 
 <ContentDialog bind:open={wingetDialogOpen} title="Installing Files via winget" width="448">
