@@ -63,19 +63,33 @@
 			}
 		}
 
-		// Backdrop canvas -- RainbowCanvas()
+        @keyframes hue-rotate {
+            0% {
+                filter: none;
+            }
+            50% {
+                filter: hue-rotate(135deg);
+            }
+            100% {
+                filter: none;
+            }
+        }
+
+		// Backdrop canvas
 		canvas {
+            --gradient-color-1: #1f79df;
+            --gradient-color-2: #aa75ff;
+            --gradient-color-3: #75ffc6;
+            --gradient-color-4: var(--background-base); 
+            filter: blur(20px);
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			z-index: -1;
 			width: 100vh;
-			height: 100vh;
-			opacity: 0.5;
-			mask: radial-gradient(at bottom right, var(--background-base), transparent 70%);
-			@media (prefers-color-scheme: dark) {
-				opacity: 0.4;
-			}
+			height: 100%;
+            animation: hue-rotate 10s infinite linear;
+			mask: radial-gradient(at bottom right, var(--background-base) 10%, transparent 70%);
 		}
 	}
 }

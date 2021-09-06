@@ -10,7 +10,7 @@
         HeaderChip,
         HyperlinkButton,
         PageSection,
-        rainbowCanvasAlt
+        rainbowCanvas
     } from "$lib";
 
 	// Fetch contributors for the community section
@@ -56,7 +56,7 @@
 				{/each}
 			</div>
 		{/if}
-		<canvas use:rainbowCanvasAlt></canvas>
+		<canvas use:rainbowCanvas></canvas>
 	</div>
 </PageSection>
 
@@ -124,8 +124,8 @@
 				top: 0;
 				left: 0;
 				z-index: -1;
-				width: 100% !important;
-				height: 100% !important;
+				width: 100%;
+				height: 100%;
 				border-radius: var(--overlay-corner-radius);
 			}
 		}

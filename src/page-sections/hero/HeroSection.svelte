@@ -126,7 +126,7 @@
 			</picture>
 		</div>
 	</div>
-	<canvas height={32} slot="outer" use:rainbowCanvas width={32}></canvas>
+	<canvas slot="outer" use:rainbowCanvas></canvas>
 </PageSection>
 
 <ContentDialog bind:open={wingetDialogOpen} title="Installing Files via winget" width="448">
