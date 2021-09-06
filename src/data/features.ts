@@ -73,7 +73,7 @@ export const cloudFiles = [
 export const previewFiles = [
     {
         name: "June 2018",
-        icon: "/ui/folder.png",
+        icon: "/ui/icons/folder.png",
         items: 3,
         added: "Thursday, June 21, 2018 11:24 AM",
         modified: "Sunday, November 15, 2020 6:50 PM",
@@ -99,7 +99,7 @@ export const previewFiles = [
     {
         name: "index",
         extension: "html",
-        icon: "/ui/note.png",
+        icon: "/ui/icons/note.png",
         added: "Wednesday, July 14, 2021 8:47 PM",
         modified: "Monday, July 31, 2021 4:32 AM",
         path: "C:\\Users\\Austin\\Documents\\index.html"
@@ -107,7 +107,7 @@ export const previewFiles = [
     {
         name: "main",
         extension: "cpp",
-        icon: "/ui/cpp.svg",
+        icon: "/ui/icons/cpp.svg",
         added: "Monday, June 28, 2021 8:20 AM",
         modified: "Monday, July 12, 2021 1:30 PM",
         lineCount: 8,

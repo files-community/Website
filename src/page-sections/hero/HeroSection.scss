@@ -62,34 +62,33 @@
 				}
 			}
 		}
-
-        @keyframes hue-rotate {
+        
+        @keyframes canvas-hue-rotate {
             0% {
                 filter: none;
             }
             50% {
-                filter: hue-rotate(135deg);
+                filter: hue-rotate(90deg);
             }
-            100% {
+            to {
                 filter: none;
             }
         }
 
 		// Backdrop canvas
 		canvas {
-            --gradient-color-1: #1f79df;
-            --gradient-color-2: #aa75ff;
-            --gradient-color-3: #75ffc6;
+            --gradient-color-1: #036998;
+            --gradient-color-2: #4f39b4;
+            --gradient-color-3: #04e2b7;
             --gradient-color-4: var(--background-base); 
-            filter: blur(20px);
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			z-index: -1;
 			width: 100vh;
-			height: 100%;
-            animation: hue-rotate 10s infinite linear;
-			mask: radial-gradient(at bottom right, var(--background-base) 10%, transparent 70%);
+			height: 100vh;
+            animation: canvas-hue-rotate 15s infinite linear;
+			mask: url("/ui/hero-mask.png") bottom right/100% no-repeat;
 		}
 	}
 }

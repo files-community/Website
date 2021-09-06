@@ -40,7 +40,7 @@
             {#each cloudFiles as {name, icon, status}, i}
                 <tr style="--file-index: {i}">
                     <td>
-                        <img src="ui/{icon}.png" alt={icon === "folder" ? `${icon} file` : "Folder"} width="24" height="24"/>
+                        <img src="/ui/icons/{icon}.png" alt={icon === "folder" ? `${icon} file` : "Folder"} width="24" height="24"/>
                     </td>
                     <td>{name}</td>
                     <td class="status-{status === 'success' ? status : 'sync'}">
