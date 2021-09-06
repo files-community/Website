@@ -80,6 +80,7 @@
     background-color: transparent;
     color: var(--text-color-secondary);
     text-decoration: none;
+    cursor: pointer;
 
     &:hover { background-color: var(--subtle-color-secondary) }
     &:active { background-color: var(--subtle-color-tertiary) }

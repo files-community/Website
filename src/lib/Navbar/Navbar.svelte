@@ -1,26 +1,26 @@
 <script lang="ts">
-	import { page } from "$app/stores"
+	import { page } from "$app/stores";
 
-	import ListViewItem from "../ListViewItem/ListViewItem.svelte"
-	import TreeView from "../TreeView/TreeView.svelte"
+	import ListViewItem from "../ListViewItem/ListViewItem.svelte";
+	import TreeView from "../TreeView/TreeView.svelte";
 
-	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw"
+	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
-	export let items = []
-	export let buttons = []
+	export let items = [];
+	export let buttons = [];
 
-	let innerWidth = 649 // Don't render the mobile layout before hydration
-	let sidebarVisible = false
-	let sidebar
-	let sidebarButton: HTMLButtonElement
+	let innerWidth = 649; // Don't render the mobile layout before hydration
+	let sidebarVisible = false;
+	let sidebar;
+	let sidebarButton: HTMLButtonElement;
 
 	function toggleSidebar() {
-		sidebarVisible = !sidebarVisible
+		sidebarVisible = !sidebarVisible;
 	}
 
 	function handleOuterClick(e) {
-		if (!sidebarVisible || (e.target === sidebarButton || sidebarButton.contains(e.target)) || (e.target === sidebar || sidebar.contains(e.target))) return
-		toggleSidebar()
+		if (!sidebarVisible || (e.target === sidebarButton || sidebarButton.contains(e.target)) || (e.target === sidebar || sidebar.contains(e.target))) return;
+		toggleSidebar();
 	}
 </script>
 
@@ -33,19 +33,19 @@
 		<a class="logo" href="/">
 			<picture>
 				<source
-						media="(prefers-color-scheme: dark)"
-						srcset="/branding/logo-dark.svg"
+                    media="(prefers-color-scheme: dark)"
+                    srcset="/branding/logo-dark.svg"
 				>
 				<source
-						media="(prefers-color-scheme: light)"
-						srcset="/branding/logo-light.svg"
+                    media="(prefers-color-scheme: light)"
+                    srcset="/branding/logo-light.svg"
 				>
 				<img
-						alt="Files logo"
-						class="logo-image"
-						height="32"
-						src="/branding/logo-light.svg"
-						width="32"
+                    alt="Files logo"
+                    class="logo-image"
+                    height="32"
+                    src="/branding/logo-light.svg"
+                    width="32"
 				>
 			</picture>
 			Files
@@ -57,11 +57,11 @@
 					<div class="divider" role="separator"></div>
 				{:else}
 					<a
-							class="item"
-							class:selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
-							href={path}
-							target={external ? "_blank" :  undefined}
-							rel={external ? "noreferrer noopener" : undefined}
+                        class="item"
+                        class:selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
+                        href={path}
+                        target={external ? "_blank" :  undefined}
+                        rel={external ? "noreferrer noopener" : undefined}
 					>
 						{#if icon}
 							{@html icon}
@@ -81,18 +81,18 @@
 			{/each}
 		{:else}
 			<button
-					on:click|stopPropagation={toggleSidebar}
-					bind:this={sidebarButton}
-					class="button sidebar-button"
+                on:click|stopPropagation={toggleSidebar}
+                bind:this={sidebarButton}
+                class="button sidebar-button"
 			>
 				{@html Navigation}
 			</button>
 		{/if}
 	</div>
 	<aside
-			bind:this={sidebar}
-			class="sidebar scroller"
-			class:visible={sidebarVisible}
+        bind:this={sidebar}
+        class="sidebar scroller"
+        class:visible={sidebarVisible}
 	>
         {#each items as {name, path, external, sidebarTree, icon, type}}
             {#if type === "divider"}
@@ -100,11 +100,12 @@
             {:else}
                 {#if !sidebarTree}
                     <ListViewItem
-                            type="navigation"
-                            selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
-                            href={path}
-                            target={external ? "_blank" :  undefined}
-                            rel={external ? "noreferrer noopener" : undefined}
+                        type="navigation"
+                        on:click={toggleSidebar}
+                        selected={$page.path === path || ($page.path.split("/").length > 1 && path.split("/").length > 1 && $page.path.startsWith(path) && !(path === "" || path === "/")) || (path === "/" && $page.path === "")}
+                        href={path}
+                        target={external ? "_blank" :  undefined}
+                        rel={external ? "noreferrer noopener" : undefined}
                     >
                         <svelte:fragment slot="icon">
                             {#if icon}

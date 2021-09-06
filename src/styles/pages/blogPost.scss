@@ -16,6 +16,7 @@
 .back {
     &-button {
         @include flex($align: center, $justify: center);
+        cursor: pointer;
         padding: 0;
         border: none;
         border-radius: var(--control-corner-radius);

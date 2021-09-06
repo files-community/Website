@@ -85,7 +85,8 @@
 			right: 0;
 			bottom: 0;
 			z-index: -1;
-			width: 100vh;
+			width: 60%;
+            min-width: 100vh;
 			height: 100vh;
             animation: canvas-hue-rotate 15s infinite linear;
 			mask: url("/ui/hero-mask.png") bottom right/100% no-repeat;

@@ -16,11 +16,11 @@
 {#if typeof group === "undefined"}
 	{#if !href}
 		<li
-				on:click
-				class="list-view-item type-{type} {className || ''}"
-				class:type-icon={$$slots.icon}
-				class:selected
-				{...$$restProps}
+            on:click
+            class="list-view-item type-{type} {className || ''}"
+            class:type-icon={$$slots.icon}
+            class:selected
+            {...$$restProps}
 		>
 			<slot name="icon"/>
 			<span>
