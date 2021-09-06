@@ -13,6 +13,8 @@
 
 <input
     bind:group
+    on:click
+    on:change
     {...$$restProps}
     {value}
     type="radio"

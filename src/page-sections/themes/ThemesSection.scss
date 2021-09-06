@@ -202,12 +202,11 @@
         }
     }
 
+    // Items
     img,
     .card {
-        transition: 250ms cubic-bezier(0, 0, 0, 1) transform, 250ms cubic-bezier(0, 0, 0, 1) opacity;
-        transition-delay: 250ms, 250ms;
-        transform: scale(0.8);
         opacity: 0;
+        transform: scale(0.8);
         border-radius: var(--overlay-corner-radius);
         box-shadow: var(--flyout-elevation);
     }
@@ -218,33 +217,48 @@
         width: 100%;
     }
 
-    // Visible state
-    // For animating components on scroll
-    &.visible {
-        img, .card {
+    // Scale animations
+    @keyframes showcase-item {
+        from {
+            transform: scale(0.8);
+            opacity: 0;
+        }
+        to {
             transform: scale(1);
             opacity: 1;
         }
+    }
 
-        // Transition delays for skewed animation
+    // Visible state
+    // For animating components on scroll
+    &.visible {
+        --initial-delay: 250ms;
+        img, .card {
+            animation: showcase-item 250ms cubic-bezier(0, 0, 0, 1) forwards var(--initial-delay);
+        }
         .layout {
-            transition-delay: 300ms;
+            animation-delay: calc(var(--initial-delay) + 50ms);
         }
         .card:last-child {
-            transition-delay: 350ms;
+            animation-delay: calc(var(--initial-delay) + 100ms);
         }
         .card:first-child {
-            transition-delay: 400ms;
+            animation-delay: calc(var(--initial-delay) + 150ms);
         }
         .properties {
-            transition-delay: 450ms;
+            animation-delay: calc(var(--initial-delay) + 200ms);
         }
         .tabs {
-            transition-delay: 500ms;
+            animation-delay: calc(var(--initial-delay) + 250ms);
         }
         .drive {
-            transition-delay: 550ms;
+            animation-delay: calc(var(--initial-delay) + 300ms);
         }
+    }
+
+    // We don't want the 250ms delay we normally get when replaying them.
+    &.no-initial-delay {
+        --initial-delay: 0ms;
     }
 }
 

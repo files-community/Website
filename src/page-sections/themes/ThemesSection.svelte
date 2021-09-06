@@ -13,13 +13,31 @@
     let scrollY = 0;
     let innerHeight = 0;
     let visible = true;
+    let noInitialDelay = false;
     let anchor: HTMLDivElement;
+    let showcase: HTMLDivElement;
 
 	const themeColors = ["var(--background-tertiary);", "#414958", "#6441a4", "#feb400", "#073642", "#88c0d0"];
     
     $: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
+
+    // Essentially determines if the user has seen the top 1/4th of the themes section or not
     $: if (anchor && anchor.getBoundingClientRect().top + (anchor.offsetHeight / 4) + scrollY < scrollY + innerHeight) visible = true;
 
+    // HTMLElement.prototype.getAnimations isn't well supported in safari, so we'll have to suffer with this for now.
+    function replayAnimations() {
+        noInitialDelay = true;
+
+        if (!!HTMLElement.prototype.getAnimations) {
+            for (const node of showcase.querySelectorAll(".card, img")) {
+                for (const animation of node.getAnimations()) {
+                    animation.finish();
+                    animation.play();
+                }
+            }
+        }
+    }
+    
     onMount(() => {
         visible = false; // We want SSR to have these visible by default, so we'll just do this.
 
@@ -42,7 +60,7 @@
 			Explore themes created by the community or dive right into the docs and create your own.</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
-				<ColorSwatch bind:group={currentTheme} value={i} {color} aria-label="Select theme {i + 1}" />
+				<ColorSwatch on:change={replayAnimations} bind:group={currentTheme} value={i} {color} aria-label="Select theme {i + 1}" />
 			{/each}
 		</div>
 		<div class="buttons-spacer">
@@ -55,7 +73,7 @@
 			</HyperlinkButton>
 		</div>
 	</div>
-	<div class="component-showcase" class:visible>
+	<div class="component-showcase" bind:this={showcase} class:visible class:no-initial-delay={noInitialDelay}>
         <div class="column left">
             <div class="card" style="height: 72px;"></div>
             <img
