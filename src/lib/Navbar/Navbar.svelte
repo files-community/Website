@@ -115,7 +115,7 @@
                         <span>{name}</span>
                     </ListViewItem>
                 {:else}
-                    <TreeView tree={[
+                    <TreeView on:click={toggleSidebar} tree={[
                         {
                             type: "category",
                             name,

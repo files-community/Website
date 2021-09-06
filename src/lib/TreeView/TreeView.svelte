@@ -52,7 +52,7 @@
             {/if}
         </div>
     {:else}
-        <ListViewItem type="navigation" selected={`/docs${path}` === $page.path} href="/docs{path}">
+        <ListViewItem on:click type="navigation" selected={`/docs${path}` === $page.path} href="/docs{path}">
             <svelte:fragment slot="icon">
                 {@html icon || ""}
             </svelte:fragment>
