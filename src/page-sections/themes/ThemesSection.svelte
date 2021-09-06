@@ -50,7 +50,7 @@
             <div class="card" style="height: 72px;"></div>
             <img
                 class="properties"
-                src="exported/properties-{themeSrc}.png"
+                src="exported/properties-{themeSrc}.svg"
                 alt="Properties dialog"
                 width="413"
                 height="583"
@@ -59,7 +59,7 @@
             <div>
                 <img
                     class="drive"
-                    src="exported/drive-{themeSrc}.png"
+                    src="exported/drive-{themeSrc}.svg"
                     alt="Drive button"
                     width="88"
                     height="280"
@@ -67,7 +67,7 @@
                 />
                 <img
                     class="tabs"
-                    src="exported/tabs-{themeSrc}.png"
+                    src="exported/tabs-{themeSrc}.svg"
                     alt="Tabs flyout"
                     width="309"
                     height="233"
@@ -78,7 +78,7 @@
         <div class="column right">
             <img
                 class="calendar"
-                src="exported/calendar-{themeSrc}.png"
+                src="exported/calendar-{themeSrc}.svg"
                 alt="Calendar flyout"
                 width="300"
                 height="348"
@@ -86,7 +86,7 @@
             />
             <img
                 class="layout"
-                src="exported/layout-{themeSrc}.png"
+                src="exported/layout-{themeSrc}.svg"
                 alt="Layout flyout"
                 width="270"
                 height="270"

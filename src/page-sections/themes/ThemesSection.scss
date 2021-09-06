@@ -63,7 +63,7 @@
 				--subtle-color-secondary: #363c4a;
 				--subtle-color-tertiary: #2f3541;
 				--background-base: #2b303a;
-                --layer-color-default: var(--subtle-color-secondary);
+                --background-quarternary: var(--subtle-color-secondary);
                 --dots-color: #404859;
 			}
 
@@ -82,7 +82,7 @@
 				--subtle-color-secondary: #2c2642;
 				--subtle-color-tertiary: #211d2f;
 				--background-base: #17141f;
-                --layer-color-default: var(--subtle-color-tertiary);
+                --background-quarternary: var(--subtle-color-tertiary);
                 --dots-color: #2c2642;
 			}
 
@@ -101,7 +101,7 @@
 				--subtle-color-secondary: #fff;
                 --subtle-color-tertiary: rgba(0, 0, 0, 0.1);
 				--background-base: #feb400;
-                --layer-color-default: #ffda80;
+                --background-quarternary: #ffda80;
                 --dots-color: rgba(0, 0, 0, 0.2);
 				.hyperlink-button {
                     --subtle-color-secondary: rgba(0, 0, 0, 0.05);
@@ -123,7 +123,7 @@
 				--subtle-color-secondary: #073642;
 				--subtle-color-tertiary: #083945;
 				--background-base: #002b36;
-                --layer-color-default: var(--accent-color-secondary);
+                --background-quarternary: var(--accent-color-secondary);
                 --dots-color: var(--accent-text-contrast-primary);
 			}
 
@@ -142,7 +142,7 @@
 				--subtle-color-secondary: var(--accent-color-default);
                 --subtle-color-tertiary: #bec8da;
 				--background-base: #d8dee9;
-                --layer-color-default: #3b4252;
+                --background-quarternary: #3b4252;
                 --dots-color: var(--text-color-tertiary);
 				.hyperlink-button {
                     --subtle-color-secondary: #ced6e3;
@@ -192,13 +192,13 @@
         
             img,
             .card {
-                background-color: var(--layer-color-default);
                 border-radius: var(--overlay-corner-radius);
                 box-shadow: var(--flyout-elevation);
             }
 
             // Placeholder cards
             .card {
+                background-color: var(--background-quarternary);
                 width: 100%;
             }
 		}
