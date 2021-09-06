@@ -150,7 +150,7 @@
 			}
 		}
 
-		// Position our component showcase
+		// Component showcase
 		// Seen on the right side of the section
 		.component-showcase {
             @include flex($gap: 16px);
@@ -166,9 +166,11 @@
                 display: none;
             }
             
+            // Main columns
             .column {
                 @include flex($direction: column, $gap: 16px);
         
+                // Inner row containers
                 > div {
                     @include flex($gap: 16px);
                 }
@@ -188,15 +190,16 @@
                 }
             }
         
-            .card {
-                width: 100%;
-            }
-        
             img,
             .card {
                 background-color: var(--layer-color-default);
                 border-radius: var(--overlay-corner-radius);
                 box-shadow: var(--flyout-elevation);
+            }
+
+            // Placeholder cards
+            .card {
+                width: 100%;
             }
 		}
 	}

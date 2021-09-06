@@ -69,7 +69,7 @@
 		if (Array.isArray(array)) return array.map(a => filterPages(a)).flat(Infinity).filter(a => a.hasOwnProperty("path")) // ???
 		if (array.hasOwnProperty("pages")) return [{
 			...array
-		}, ...array.pages.map(a => filterPages(a))]
+		}, ...array.pages.map(a => filterPages(a))] // ?????????
 		return array
 	}
 </script>
@@ -85,17 +85,17 @@
 	<aside class="sidebar scroller">
 		<div class="search">
 			<div
-					class="autosuggest-wrapper"
-					use:clickOutside={() => autoSuggestVisible = false}
+                class="autosuggest-wrapper"
+                use:clickOutside={() => autoSuggestVisible = false}
 			>
 				<TextBox
-						bind:value
-						flyoutVisible={autoSuggestVisible}
-						on:clear={updateSearchQuery}
-						on:focus={() => searchFocused = true}
-						on:input={updateSearchQuery}
-						on:keydown={handleSearchKeys}
-						on:search={() => {
+                    bind:value
+                    flyoutVisible={autoSuggestVisible}
+                    on:clear={updateSearchQuery}
+                    on:focus={() => searchFocused = true}
+                    on:input={updateSearchQuery}
+                    on:keydown={handleSearchKeys}
+                    on:search={() => {
                         if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
                             keepfocus: true
                         });
@@ -127,31 +127,31 @@
 	<article class="page scroller">
 		<div class="search-mobile">
 			<div
-					class="autosuggest-wrapper"
-					use:clickOutside={() => autoSuggestVisible = false}
+                class="autosuggest-wrapper"
+                use:clickOutside={() => autoSuggestVisible = false}
 			>
 				<TextBox
-						bind:value
-						flyoutVisible={autoSuggestVisible}
-						on:clear={updateSearchQuery}
-						on:focus={() => searchFocused = true}
-						on:input={updateSearchQuery}
-						on:keydown={handleSearchKeys}
-						on:search={() => {
+                    bind:value
+                    flyoutVisible={autoSuggestVisible}
+                    on:clear={updateSearchQuery}
+                    on:focus={() => searchFocused = true}
+                    on:input={updateSearchQuery}
+                    on:keydown={handleSearchKeys}
+                    on:search={() => {
                         if (searchResults.length > 0 && $page.path !== `/docs${searchResults[selection].path}`) goto(`/docs${searchResults[selection].path}`, {
                             keepfocus: true
                         });
                     }}
-						placeholder="Search Documentation"
-						type="search"
+                    placeholder="Search Documentation"
+                    type="search"
 				/>
 				{#if autoSuggestVisible}
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
 							{#each searchResults as {name, path}, i}
 								<ListViewItem
-										selected={selection === i}
-										href="/docs{path}"
+                                    selected={selection === i}
+                                    href="/docs{path}"
 								>
 									{name}
 								</ListViewItem>
@@ -170,12 +170,11 @@
                 </span>
 				<div class="header-right">
 					<HyperlinkButton
-							href="https://github.com/{links.github.owner}/{links.github.siteRepo}/edit/main/src/routes/docs{currentPage.path || '/index'}.svx"
-							rel="noreferrer noopener"
-							target="_blank"
+                        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/edit/main/src/routes/docs{currentPage.path || '/index'}.svx"
+                        rel="noreferrer noopener"
+                        target="_blank"
 					>
 						Edit this page
-
 					</HyperlinkButton>
 				</div>
 			</header>

@@ -116,16 +116,15 @@
 			0 96.0454px 89.1851px rgb(0 0 0 / 9%);
 
 			canvas {
+                --gradient-color-1: #8560f2; 
+                --gradient-color-2: #d264e9; 
+                --gradient-color-3: #ccbad4;  
+                --gradient-color-4: #a8d2ff;
 				position: absolute;
 				top: 0;
 				left: 0;
 				z-index: -1;
 				width: 100% !important;
-
-				// This is necessary because three.js uses
-				// inline styles instead of the native
-				// width and height attributes on <canvas>
-				// WHY?
 				height: 100% !important;
 				border-radius: var(--overlay-corner-radius);
 			}
