@@ -24,7 +24,6 @@
     // Essentially determines if the user has seen the top 1/4th of the themes section or not
     $: if (anchor && anchor.getBoundingClientRect().top + (anchor.offsetHeight / 4) + scrollY < scrollY + innerHeight) visible = true;
 
-    // HTMLElement.prototype.getAnimations isn't well supported in safari, so we'll have to suffer with this for now.
     function replayAnimations() {
         noInitialDelay = true;
 

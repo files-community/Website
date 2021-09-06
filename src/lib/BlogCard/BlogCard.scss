@@ -41,7 +41,7 @@
             @include flex($direction: column);
             color: var(--text-color-tertiary);
             font: {
-                size: 12px;
+                size: 1.2rem;
                 weight: 400;
             }
             a {
@@ -54,7 +54,7 @@
                     weight: 600;
                 }
                 &:hover {
-                    color: var(--accent-color-secondary);
+                    color: var(--accent-color-default);
                 }
                 &:active {
                     color: var(--accent-color-tertiary);
@@ -69,7 +69,7 @@
     padding: 24px;
     padding-bottom: 0;
     color: var(--text-color-secondary);
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 24px;
     h5 {
         margin: 0;

@@ -140,8 +140,8 @@
                 {#each tags as { color }, i}
                     <ColorSwatch
                         bind:group={currentTag}
-                        value={i}
                         --color-index={i}
+                        value={i}
                         type="round"
                         {color}
                     />

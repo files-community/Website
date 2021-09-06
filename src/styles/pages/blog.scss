@@ -52,6 +52,11 @@
                     0 41.1623px 41.1623px rgb(0 0 0 / 7%),
                     0 96.0454px 89.1851px rgb(0 0 0 / 9%);
     }
+    h2 {
+        @media only screen and (max-width: 1280px) {
+            font-size: 3.6rem;
+        }
+    }
 }
 
 .blog-cards {
