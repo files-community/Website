@@ -10,12 +10,19 @@
 
     let systemTheme = "light";
 	let currentTheme = 0;
+    let scrollY = 0;
+    let innerHeight = 0;
+    let visible = true;
+    let anchor: HTMLDivElement;
 
 	const themeColors = ["var(--background-tertiary);", "#414958", "#6441a4", "#feb400", "#073642", "#88c0d0"];
     
     $: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
+    $: if (anchor && anchor.getBoundingClientRect().top + (anchor.offsetHeight / 4) + scrollY < scrollY + innerHeight) visible = true;
 
     onMount(() => {
+        visible = false; // We want SSR to have these visible by default, so we'll just do this.
+
         systemTheme = window?.matchMedia('(prefers-color-scheme: dark)')?.matches ? "dark" : "light";
 
         window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
@@ -24,7 +31,10 @@
     });
 </script>
 
+<svelte:window bind:scrollY bind:innerHeight />
+
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
+    <div class="scroll-anchor" bind:this={anchor}></div>
 	<div class="themes-section-content">
 		<HeaderChip>Themes</HeaderChip>
 		<h2>Distinctly personal.</h2>
@@ -45,7 +55,7 @@
 			</HyperlinkButton>
 		</div>
 	</div>
-	<div class="component-showcase">
+	<div class="component-showcase" class:visible>
         <div class="column left">
             <div class="card" style="height: 72px;"></div>
             <img

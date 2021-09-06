@@ -149,60 +149,103 @@
 				}
 			}
 		}
+	}
+}
 
-		// Component showcase
-		// Seen on the right side of the section
-		.component-showcase {
+.scroll-anchor {
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+}
+
+// Component showcase
+// Seen on the right side of the section
+.component-showcase {
+    @include flex($gap: 16px);
+    position: absolute;
+    top: -100px;
+    right: -100px;
+    transform: rotate(30deg);
+    @media only screen and (max-width: 1224px) {
+        top: -100px;
+        right: -156px;
+    }
+    @media only screen and (max-width: 920px) {
+        display: none;
+    }
+    
+    // Main columns
+    .column {
+        @include flex($direction: column, $gap: 16px);
+
+        // Inner row containers
+        > div {
             @include flex($gap: 16px);
-			position: absolute;
-			top: -100px;
-            right: -100px;
-			transform: rotate(30deg);
-            @media only screen and (max-width: 1224px) {
-                top: -100px;
-                right: -156px;
-            }
-            @media only screen and (max-width: 920px) {
+        }
+
+        &.left {
+            align-items: flex-end;
+        }
+
+        @media only screen and (max-width: 1224px) {
+            .drive,
+            .properties {
                 display: none;
             }
-            
-            // Main columns
-            .column {
-                @include flex($direction: column, $gap: 16px);
-        
-                // Inner row containers
-                > div {
-                    @include flex($gap: 16px);
-                }
-        
-                &.left {
-                    align-items: flex-end;
-                }
-        
-                @media only screen and (max-width: 1224px) {
-                    .drive,
-                    .properties {
-                        display: none;
-                    }
-                    .card {
-                        order: -1;
-                    }
-                }
-            }
-        
-            img,
             .card {
-                border-radius: var(--overlay-corner-radius);
-                box-shadow: var(--flyout-elevation);
+                order: -1;
             }
+        }
+    }
 
-            // Placeholder cards
-            .card {
-                background-color: var(--background-quarternary);
-                width: 100%;
-            }
-		}
-	}
+    img,
+    .card {
+        transition: 250ms cubic-bezier(0, 0, 0, 1) transform, 250ms cubic-bezier(0, 0, 0, 1) opacity;
+        transition-delay: 250ms, 250ms;
+        transform: scale(0.8);
+        opacity: 0;
+        border-radius: var(--overlay-corner-radius);
+        box-shadow: var(--flyout-elevation);
+    }
+
+    // Placeholder cards
+    .card {
+        background-color: var(--background-quarternary);
+        width: 100%;
+    }
+
+    // Visible state
+    // For animating components on scroll
+    &.visible {
+        img, .card {
+            transform: scale(1);
+            opacity: 1;
+        }
+
+        // Transition delays for skewed animation
+        .layout {
+            transition-delay: 300ms;
+        }
+        .card:last-child {
+            transition-delay: 350ms;
+        }
+        .card:first-child {
+            transition-delay: 400ms;
+        }
+        .properties {
+            transition-delay: 450ms;
+        }
+        .tabs {
+            transition-delay: 500ms;
+        }
+        .drive {
+            transition-delay: 550ms;
+        }
+    }
 }
 
 // Main themes section content
