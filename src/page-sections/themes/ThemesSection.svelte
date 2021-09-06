@@ -36,7 +36,7 @@
 			{/each}
 		</div>
 		<div class="buttons-spacer">
-			<Button variant="accent" href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ" target="_blank">
+			<Button variant="accent" href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ" target="_blank" rel="noreferrer noopener">
 				Get Themes
 			</Button>
 			<HyperlinkButton
