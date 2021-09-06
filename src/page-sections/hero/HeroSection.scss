@@ -89,6 +89,9 @@
 			height: 100vh;
             animation: canvas-hue-rotate 15s infinite linear;
 			mask: url("/ui/hero-mask.png") bottom right/100% no-repeat;
+            @media (prefers-color-scheme: light) {
+                opacity: 0.5;
+            } 
 		}
 	}
 }

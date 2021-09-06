@@ -3,7 +3,6 @@
 .list-view-item {
     @include flex($align: center);
     flex: 0 0 auto;
-    -webkit-user-drag: none;
     text-decoration: none;
     user-select: none;
     position: relative;
