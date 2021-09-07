@@ -234,7 +234,7 @@
     // Visible state
     // For animating components on scroll
     &.visible {
-        --initial-delay: 500ms;
+        --initial-delay: 300ms;
         img, .card {
             animation: showcase-item 250ms cubic-bezier(0, 0, 0, 1) forwards var(--initial-delay);
         }
