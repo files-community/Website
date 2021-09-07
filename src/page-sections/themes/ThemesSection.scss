@@ -219,10 +219,13 @@
 
     // Scale animations
     @keyframes showcase-item {
+        0% {
+            opacity: 0;
+        }
         50% {
             opacity: 1;
         }
-        to {
+        100% {
             transform: scale(1);
             opacity: 1;
         }
@@ -231,31 +234,31 @@
     // Visible state
     // For animating components on scroll
     &.visible {
-        --initial-delay: 250ms;
+        --initial-delay: 500ms;
         img, .card {
             animation: showcase-item 250ms cubic-bezier(0, 0, 0, 1) forwards var(--initial-delay);
         }
         .layout {
-            animation-delay: calc(var(--initial-delay) + 100ms);
-        }
-        .card:last-child {
             animation-delay: calc(var(--initial-delay) + 200ms);
         }
+        .card:last-child {
+            animation-delay: calc(var(--initial-delay) + 275ms);
+        }
         .card:first-child {
-            animation-delay: calc(var(--initial-delay) + 250ms);
-        }
-        .properties {
-            animation-delay: calc(var(--initial-delay) + 300ms);
-        }
-        .tabs {
             animation-delay: calc(var(--initial-delay) + 350ms);
         }
+        .properties {
+            animation-delay: calc(var(--initial-delay) + 425ms);
+        }
+        .tabs {
+            animation-delay: calc(var(--initial-delay) + 500ms);
+        }
         .drive {
-            animation-delay: calc(var(--initial-delay) + 400ms);
+            animation-delay: calc(var(--initial-delay) + 575ms);
         }
     }
 
-    // We don't want the 250ms delay we normally get when replaying them.
+    // We don't want the 500ms delay we normally get when replaying them.
     &.no-initial-delay {
         --initial-delay: 0ms;
     }
