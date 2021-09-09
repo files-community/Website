@@ -1,13 +1,13 @@
 .header-chip {
-    display: inline-flex;
-    margin-bottom: 8px;
-    padding: 4px 16px;
-    border-radius: 50px;
-    background-color: var(--subtle-color-secondary);
-    color: var(--text-color-secondary);
-    line-height: 18px;
-    font: {
-        size: var(--control-font-size);
-        weight: 600;
-    }
+	display: inline-flex;
+	margin-bottom: 8px;
+	padding: 4px 16px;
+	border-radius: 50px;
+	background-color: var(--subtle-color-secondary);
+	color: var(--text-color-secondary);
+	font: {
+		size: var(--control-font-size);
+		weight: 600;
+	}
+	line-height: 18px;
 }

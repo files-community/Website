@@ -1,48 +1,51 @@
 @use "src/styles/mixins" as *;
 
 .contributor {
-    @include flex($inline: true, $align: center);
-    -webkit-user-drag: none;
-    text-decoration: none;
-    user-select: none;
-    padding: 0 12px;
-    width: 156px;
-    padding: 12px;
-    transition: 250ms ease;
-    border-radius: var(--control-corner-radius);
-    background-color: var(--background-tertiary);
-    border: 1px solid var(--card-stroke-default);
-    box-shadow: var(--flyout-elevation);
-    img {
-        -webkit-user-drag: none;
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-    }
-    &:hover {
-        transform: translateY(-2px);
-        box-shadow: var(--window-elevation);
-    }
+	@include flex($inline: true, $align: center);
+	width: 156px;
+	padding: 0 12px;
+	padding: 12px;
+	border: 1px solid var(--card-stroke-default);
+	border-radius: var(--control-corner-radius);
+	background-color: var(--background-tertiary);
+	box-shadow: var(--flyout-elevation);
+	text-decoration: none;
+	transition: 250ms ease;
+	user-select: none;
+	-webkit-user-drag: none;
+
+	img {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		-webkit-user-drag: none;
+	}
+
+	&:hover {
+		box-shadow: var(--window-elevation);
+		transform: translateY(-2px);
+	}
 }
 
 .info {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    margin-left: 8px;
-    color: var(--text-color-tertiary);
-    font: {
-        size: 1.2rem;
-        weight: normal;
-    }
-    h5 {
-        text-overflow: ellipsis;
-        overflow: hidden;
-        margin: 0;
-        color: var(--text-color-primary);
-        font: {
-            size: 1.4rem;
-            weight: 600;
-        }
-    }
+	margin-left: 8px;
+	color: var(--text-color-tertiary);
+	font: {
+		size: 1.2rem;
+		weight: normal;
+	}
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+
+	h5 {
+		margin: 0;
+		color: var(--text-color-primary);
+		font: {
+			size: 1.4rem;
+			weight: 600;
+		}
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
 }

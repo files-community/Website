@@ -1,18 +1,12 @@
 <script lang="ts">
-	import {
-        HeroSection,
-        DesignSection,
-        ThemesSection,
-        FeaturesSection,
-        CommunitySection
-    } from "$page-sections";
+  import { CommunitySection, DesignSection, FeaturesSection, HeroSection, ThemesSection } from "$page-sections";
 </script>
 
 <svelte:head>
-	<title>Files</title>
-	<meta content="Files - Home" property="og:title">
+  <title>Files</title>
+  <meta content="Files - Home" property="og:title">
 
-	<meta content="/branding/banner-light.png" property="og:image">
+  <meta content="/branding/banner-light.png" property="og:image">
 </svelte:head>
 
 <HeroSection />

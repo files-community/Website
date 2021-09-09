@@ -1,86 +1,98 @@
 @use "../mixins" as *;
 
 .blog-post {
-    @include flex($justify: center);
-    padding: 48px;
-    article {
-        max-width: 768px;
-    }
-    .markdown-body {
-        font-size: 1.6rem;
-        line-height: 2.6rem;
-    }
+	@include flex($justify: center);
+	padding: 48px;
+
+	article {
+		max-width: 768px;
+	}
+
+	.markdown-body {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+	}
 }
 
 .share,
 .back {
-    &-button {
-        @include flex($align: center, $justify: center);
-        cursor: pointer;
-        padding: 0;
-        border: none;
-        border-radius: var(--control-corner-radius);
-        background-color: transparent;
-        width: 36px;
-        height: 36px;
-        &:hover {
-            background-color: var(--subtle-color-secondary);
-        }
-        &:active {
-            background-color: var(--subtle-color-tertiary);
-        }
-        :global(svg) {
-            @include icon($size: 20px);
-        }
-    }
+	&-button {
+		@include flex($align: center, $justify: center);
+		width: 36px;
+		height: 36px;
+		padding: 0;
+		border: none;
+		border-radius: var(--control-corner-radius);
+		background-color: transparent;
+		cursor: pointer;
+
+		&:hover {
+			background-color: var(--subtle-color-secondary);
+		}
+
+		&:active {
+			background-color: var(--subtle-color-tertiary);
+		}
+
+		:global(svg) {
+			@include icon($size: 20px);
+		}
+	}
 }
 
 .back-button {
-    color: var(--text-color-tertiary);
+	color: var(--text-color-tertiary);
 }
 
 .post- {
-    &title {
-        @include flex($align: center, $gap: 12px);
-        margin-left: -48px;
-        h1 {
-            margin: 0;
-            font: {
-                size: 3.6rem;
-                weight: 600;
-            }
-        }
-        @media only screen and (max-width: 1024px) {
-            margin: 0;
-            flex-direction: column;
-            align-items: flex-start;
-        }
-    }
-    &info {
-        @include flex($align: center, $gap: 12px);
-        padding: 18px 0;
-        margin-bottom: 24px;
-        color: var(--text-color-tertiary);
-        background-color: var(--background-secondary);
-        border-bottom: 1px solid var(--divider-color-default);
-        img {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            border: 1px solid var(--card-stroke-default);
-        }
-        :global {
-            .menu-flyout {
-                min-width: 120px;
-                &-container {
-                    margin-left: auto;
-                }
-            }
-        }
-    }
-    &thumbnail {
-        border-radius: var(--overlay-corner-radius);
-        max-width: 100%;
-        margin-bottom: 48px;
-    }
+	&title {
+		@include flex($align: center, $gap: 12px);
+		margin-left: -48px;
+
+		h1 {
+			margin: 0;
+			font: {
+				size: 3.6rem;
+				weight: 600;
+			}
+		}
+
+		@media only screen and (max-width: 1024px) {
+			align-items: flex-start;
+			flex-direction: column;
+			margin: 0;
+		}
+	}
+
+	&info {
+		@include flex($align: center, $gap: 12px);
+		margin-bottom: 24px;
+		padding: 18px 0;
+		border-bottom: 1px solid var(--divider-color-default);
+		background-color: var(--background-secondary);
+		color: var(--text-color-tertiary);
+
+		img {
+			width: 32px;
+			height: 32px;
+			border: 1px solid var(--card-stroke-default);
+			border-radius: 50%;
+		}
+
+		:global {
+			.menu-flyout {
+				min-width: 120px;
+
+				&-container {
+					margin-left: auto;
+				}
+			}
+		}
+	}
+
+	&thumbnail {
+		max-width: 100%;
+		margin-bottom: 48px;
+		border-radius: var(--overlay-corner-radius);
+	}
 }

@@ -62,42 +62,42 @@
 				}
 			}
 		}
-        
-        @keyframes canvas-hue-rotate {
-            0% {
-                filter: none;
-            }
-            50% {
-                filter: hue-rotate(180deg);
-            }
-            to {
-                filter: none;
-            }
-        }
+
+		@keyframes canvas-hue-rotate {
+			0% {
+				filter: none;
+			}
+			50% {
+				filter: hue-rotate(180deg);
+			}
+			to {
+				filter: none;
+			}
+		}
 
 		// Backdrop canvas
 		canvas {
-            --gradient-color-1: #52dd70;
-            --gradient-color-2: #00d6b9;
-            --gradient-color-3: #0491e2;
-            --gradient-color-4: var(--background-base); 
 			position: absolute;
 			right: 0;
 			bottom: 0;
 			z-index: -1;
-            width: 60vw;
-            min-width: 100vh;
+			width: 60vw;
+			min-width: 100vh;
 			height: 100%;
-            animation: canvas-hue-rotate 15s infinite linear;
+			animation: canvas-hue-rotate 15s infinite linear;
+			--gradient-color-1: #52dd70;
+			--gradient-color-2: #00d6b9;
+			--gradient-color-3: #0491e2;
+			--gradient-color-4: var(--background-base);
 			mask: url("/ui/hero-mask.png") bottom right/cover no-repeat;
-            @media (prefers-color-scheme: light) {
-                opacity: 0.5;
-            }
-            @media only screen and (max-width: 648px) {
-                width: 100%;
-                height: 60vh;
-                mask-size: 100% 100%;
-            }
+			@media (prefers-color-scheme: light) {
+				opacity: 0.5;
+			}
+			@media only screen and (max-width: 648px) {
+				width: 100%;
+				height: 60vh;
+				mask-size: 100% 100%;
+			}
 		}
 	}
 }
@@ -119,9 +119,9 @@
 		img {
 			position: absolute;
 			right: 0;
-            width: auto;
-            height: auto;
+			width: auto;
 			max-width: 100%;
+			height: auto;
 			max-height: 100%;
 			border: 1px solid var(--surface-stroke-default);
 			border-radius: calc(var(--overlay-corner-radius) / 2);

@@ -3,142 +3,147 @@
 .navbar, .inner, .item { @include flex($align: center) }
 
 .navbar {
-    height: 58px;
-    background-color: var(--background-base);
-    position: relative;
-    z-index: 10;
-    flex: 0 0 auto;
-    overflow: hidden;
-    user-select: none;
-    justify-content: space-between;
-    padding: 12px 18px;
+	position: relative;
+	z-index: 10;
+	justify-content: space-between;
+	flex: 0 0 auto;
+	height: 58px;
+	padding: 12px 18px;
+	background-color: var(--background-base);
+	overflow: hidden;
+	user-select: none;
 }
 
 .item {
-    justify-content: center;
-    margin: 0 4px;
-    padding: 5px 11px 6px 11px;
-    border-radius: var(--control-corner-radius);
-    color: var(--text-color-secondary);
-    text-decoration: none;
-    transition: 83ms linear background-color;
-    font: {
-        size: 1.36rem;
-        weight: normal;
-    }
+	justify-content: center;
+	margin: 0 4px;
+	padding: 5px 11px 6px 11px;
+	border-radius: var(--control-corner-radius);
+	color: var(--text-color-secondary);
+	font: {
+		size: 1.36rem;
+		weight: normal;
+	}
+	text-decoration: none;
+	transition: 83ms linear background-color;
 
-    &.selected {
-        background-color: var(--subtle-color-secondary);
-        color: var(--accent-text-default);
-    }
+	&.selected {
+		background-color: var(--subtle-color-secondary);
+		color: var(--accent-text-default);
+	}
 
-    &:hover { background-color: var(--subtle-color-secondary) }
-    &:active { background-color: var(--subtle-color-tertiary) }
+	&:hover { background-color: var(--subtle-color-secondary) }
 
-    :global(svg) {
-        @include icon($size: 16px);
-        margin-right: 4px;
-    }
+	&:active { background-color: var(--subtle-color-tertiary) }
+
+	:global(svg) {
+		@include icon($size: 16px);
+		margin-right: 4px;
+	}
 }
 
 .divider {
-    margin: 0 8px;
-    height: 30px;
-    border-left: 1px solid var(--subtle-color-secondary);
+	height: 30px;
+	margin: 0 8px;
+	border-left: 1px solid var(--subtle-color-secondary);
 }
 
 .logo {
-    @include flex($align: center);  
-    margin-right: 8px;
-    color: var(--text-color-primary);
-    text-decoration: none;
-    transition: 100ms ease;
-    font: {
-        size: 2rem;
-        weight: 600;
-    }
-    &:hover { color: var(--text-color-secondary) }
-    img {
-        margin-right: 12px;
-        width: auto;
-        height: 32px;
-    }
+	@include flex($align: center);
+	margin-right: 8px;
+	color: var(--text-color-primary);
+	font: {
+		size: 2rem;
+		weight: 600;
+	}
+	text-decoration: none;
+	transition: 100ms ease;
+
+	&:hover { color: var(--text-color-secondary) }
+
+	img {
+		width: auto;
+		height: 32px;
+		margin-right: 12px;
+	}
 }
 
 .buttons {
-    display: flex;
-    z-index: 1;
+	z-index: 1;
+	display: flex;
 }
 
 .button {
-    @include flex($align: center, $justify: center);
-    width: 34px;
-    height: 34px;
-    margin-left: 8px;
-    border: none;
-    border-radius: var(--control-corner-radius);
-    background-color: transparent;
-    color: var(--text-color-secondary);
-    text-decoration: none;
-    cursor: pointer;
+	@include flex($align: center, $justify: center);
+	width: 34px;
+	height: 34px;
+	margin-left: 8px;
+	border: none;
+	border-radius: var(--control-corner-radius);
+	background-color: transparent;
+	color: var(--text-color-secondary);
+	text-decoration: none;
+	cursor: pointer;
 
-    &:hover { background-color: var(--subtle-color-secondary) }
-    &:active { background-color: var(--subtle-color-tertiary) }
+	&:hover { background-color: var(--subtle-color-secondary) }
 
-    :global(svg) {
-        transition: 130ms cubic-bezier(0.16, 0.16, 0, 1) transform;
-        @include icon($size: 18px);
-    }
+	&:active { background-color: var(--subtle-color-tertiary) }
+
+	:global(svg) {
+		transition: 130ms cubic-bezier(0.16, 0.16, 0, 1) transform;
+		@include icon($size: 18px);
+	}
 }
 
 :global {
-    .navbar .button.sidebar-button {
-        width: 38px;
+	.navbar .button.sidebar-button {
+		width: 38px;
 
-        &:active svg { transform: scaleX(0.65) }
-        svg { width: 16px }
-    }
+		&:active svg { transform: scaleX(0.65) }
+
+		svg { width: 16px }
+	}
 }
 
 .sidebar {
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: none;
-    width: 272px;
-    height: 100vh;
-    padding-top: 62px;
-    border: 1px solid var(--surface-stroke-default);
-    border-radius: var(--overlay-corner-radius);
-    background-color: var(--background-base);
-    transform: translateX(100%);
-    transition: 120ms cubic-bezier(0.1, 0.9, 0.2, 1);
+	position: fixed;
+	top: 0;
+	right: 0;
+	display: none;
+	width: 272px;
+	height: 100vh;
+	padding-top: 62px;
+	border: 1px solid var(--surface-stroke-default);
+	border-radius: var(--overlay-corner-radius);
+	background-color: var(--background-base);
+	transform: translateX(100%);
+	transition: 120ms cubic-bezier(0.1, 0.9, 0.2, 1);
 
-    &.visible {
-        transition-duration: 350ms;
-        transform: none;
-    }
+	&.visible {
+		transform: none;
+		transition-duration: 350ms;
+	}
 
-    hr {
-        margin: 4px 0;
-        border: none;
-        border-top: 1px solid var(--divider-color-default);
-    }
+	hr {
+		margin: 4px 0;
+		border: none;
+		border-top: 1px solid var(--divider-color-default);
+	}
 }
 
 @media screen and (max-width: 648px) {
-    .navbar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 64px;
-        overflow: visible;
-        background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
-        backdrop-filter: blur(60px) saturate(150%);
-    }
+	.navbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 64px;
+		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
+		overflow: visible;
+		backdrop-filter: blur(60px) saturate(150%);
+	}
 
-    .sidebar { @include flex($direction: column, $justify: space-between); }
+	.sidebar { @include flex($direction: column, $justify: space-between); }
 
-    :global(body) { padding-top: 62px; }
+	:global(body) { padding-top: 62px; }
 }

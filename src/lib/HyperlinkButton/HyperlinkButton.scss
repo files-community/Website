@@ -5,38 +5,38 @@
  */
 
 .hyperlink-button {
-    @include flex($inline: true, $align: center);
+	@include flex($inline: true, $align: center);
 
-    box-sizing: border-box;
-    user-select: none;
-    text-align: left;
-    word-break: break-word;
-    color: var(--accent-text-default);
-    background-color: transparent;
-    border-radius: var(--control-corner-radius);
-    padding: 5px 11px 6px 11px;
-    transition: 83ms ease background-color;
-    text-decoration: none;
-    font: {
-        size: var(--control-font-size);
-        weight: normal;
-    }
+	box-sizing: border-box;
+	padding: 5px 11px 6px 11px;
+	border-radius: var(--control-corner-radius);
+	background-color: transparent;
+	color: var(--accent-text-default);
+	font: {
+		size: var(--control-font-size);
+		weight: normal;
+	}
+	text-decoration: none;
+	text-align: left;
+	word-break: break-word;
+	transition: 83ms ease background-color;
+	user-select: none;
 
-    // Interaction states
-    // Hover state
-    &:hover {
-        background-color: var(--subtle-color-secondary);
-    }
+	// Interaction states
+	// Hover state
+	&:hover {
+		background-color: var(--subtle-color-secondary);
+	}
 
-    // Active (pressed) state
-    &:active {
-        color: var(--accent-text-tertiary);
-        background-color: var(--subtle-color-tertiary);
-    }
+	// Active (pressed) state
+	&:active {
+		background-color: var(--subtle-color-tertiary);
+		color: var(--accent-text-tertiary);
+	}
 
-    // Disabled state
-    &.disabled {
-        pointer-events: none;
-        color: var(--accent-text-disabled);
-    }
+	// Disabled state
+	&.disabled {
+		color: var(--accent-text-disabled);
+		pointer-events: none;
+	}
 }

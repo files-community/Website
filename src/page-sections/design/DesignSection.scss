@@ -38,7 +38,7 @@
 		border-radius: var(--overlay-corner-radius);
 		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
 		box-shadow: var(--window-elevation);
-        transition: 50ms linear transform;
+		transition: 50ms linear transform;
 		backdrop-filter: blur(60px) saturate(150%);
 	}
 

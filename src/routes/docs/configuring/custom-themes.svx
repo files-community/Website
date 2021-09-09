@@ -1,12 +1,15 @@
 # Custom Themes
 
-Files allows you to customize the application with custom themes by modifying xaml resource dictionaries, this allows users to override the default brushes used throughout the app.
+Files allows you to customize the application with custom themes by modifying xaml resource dictionaries, this allows
+users to override the default brushes used throughout the app.
 
-Themes are loaded from the `Themes` folder in the app's `LocalState` folder. A drop-down (Custom theme) is located in Appearance settings that allows you to select a custom theme.
+Themes are loaded from the `Themes` folder in the app's `LocalState` folder. A drop-down (Custom theme) is located in
+Appearance settings that allows you to select a custom theme.
 
 ### Quick start
 
-1. Open your text editor of choice, and paste in the template located below. Then, save the file as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Themes\test1.xaml`.
+1. Open your text editor of choice, and paste in the template located below. Then, save the file
+   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Themes\test1.xaml`.
 
 2. Change some of the color values around.
 
@@ -67,8 +70,10 @@ Default template
     </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
 ```
+
 </details> 
 
-You can also use the [Fluent XAML Theme Editor](https://github.com/microsoft/fluent-xaml-theme-editor) to easily modify custom themes.
+You can also use the [Fluent XAML Theme Editor](https://github.com/microsoft/fluent-xaml-theme-editor) to easily modify
+custom themes.
 
 You can view other themes and contribute your own [here](https://github.com/files-community/custom-themes).

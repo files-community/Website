@@ -3,421 +3,441 @@
 // Backdrop icons
 // Used as a decoration behind feature showcases
 .backdrop-icon {
-    position: absolute;
-    height: 100%;
-    width: auto;
-    max-width: 132%;
-    transform: rotate(-10deg) scale(var(--icon-scale, 1));
-    path {
-        fill: none;
-        stroke: var(--card-stroke-default);
-        stroke-width: var(--icon-stroke-width, 0.25);
-    }
+	position: absolute;
+	width: auto;
+	max-width: 132%;
+	height: 100%;
+	transform: rotate(-10deg) scale(var(--icon-scale, 1));
+
+	path {
+		fill: none;
+		stroke: var(--card-stroke-default);
+		stroke-width: var(--icon-stroke-width, 0.25);
+	}
 }
 
 // Showcase panels
 // Floating, transient surfaces representing different UI elements
 .showcase-panel {
-    position: relative;
-    user-select: none;
-    border: 1px solid var(--surface-stroke-default);
-    background-color: var(--background-base);
-    border-radius: var(--overlay-corner-radius);
-    box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-                0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-                0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-                0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-                0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-                0 96.0454px 89.1851px rgb(0 0 0 / 9%);
-    font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
+	position: relative;
+	border: 1px solid var(--surface-stroke-default);
+	border-radius: var(--overlay-corner-radius);
+	background-color: var(--background-base);
+	box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
+	0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+	0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+	0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+	0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+	0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+	font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
+	user-select: none;
 
-    // Disable user dragging on images to be consistent with Files
-    img {
-        -webkit-user-drag: none;
-    }
+	// Disable user dragging on images to be consistent with Files
+	img {
+		-webkit-user-drag: none;
+	}
 }
 
 // Animations for the feature previews
 
 // Panel entrance animation
 @keyframes feature-panel {
-    from {
-        opacity: 0;
-        transform: translate(var(--panel-offset, 0px), var(--panel-offset, 0px)) scale(calc(0.9 + var(--panel-scale, 0)));
-        transform-origin: bottom;
-    }
+	from {
+		opacity: 0;
+		transform: translate(var(--panel-offset, 0px), var(--panel-offset, 0px)) scale(calc(0.9 + var(--panel-scale, 0)));
+		transform-origin: bottom;
+	}
 }
 
 // Generic scale animation
 @keyframes feature-item-scale {
-    from {
-        opacity: 0;
-        transform: scale(0.75);
-    }
+	from {
+		opacity: 0;
+		transform: scale(0.75);
+	}
 }
 
 // Cloud icon entrance animation
 @keyframes cloud-provider {
-    from {
-        opacity: 0;
-        transform: rotate(var(--provider-rotate)) scale(0.5);
-    }
+	from {
+		opacity: 0;
+		transform: rotate(var(--provider-rotate)) scale(0.5);
+	}
 }
 
 // Cloud icon float animation
 @keyframes cloud-provider-float {
-    0% {
-        transform: rotate(var(--provider-rotate)) translateY(0);
-    }
-    50% {
-        transform: rotate(calc(var(--provider-rotate) * -1)) translateY(-10px);
-    }
-    to {
-        transform: rotate(var(--provider-rotate)) translateY(0);
-    }
+	0% {
+		transform: rotate(var(--provider-rotate)) translateY(0);
+	}
+	50% {
+		transform: rotate(calc(var(--provider-rotate) * -1)) translateY(-10px);
+	}
+	to {
+		transform: rotate(var(--provider-rotate)) translateY(0);
+	}
 }
 
 // Preview pane entrance animation
 @keyframes preview-pane-open {
-    from {
-        opacity: 0;
-        transform: translateX(80%);
-    }
+	from {
+		opacity: 0;
+		transform: translateX(80%);
+	}
 }
 
 // Window "merging" animation
 @keyframes merge-windows {
-    to {
-        transform: none;
-        box-shadow: none;
-    }
+	to {
+		transform: none;
+		box-shadow: none;
+	}
 }
 
 // Feature showcases
 
 // Cloud integration showcase
 .cloud-files-showcase {
-    animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
-    width: 416px;
-    max-width: 100%;
+	width: 416px;
+	max-width: 100%;
+	animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
 
-    // Files table (details view)
-    table {
-        white-space: nowrap;
-        margin-bottom: 3px;
-        width: 100%;
-        border-collapse: collapse;
-        line-height: 1.4rem;
+	// Files table (details view)
+	table {
+		width: 100%;
+		margin-bottom: 3px;
+		border-collapse: collapse;
+		line-height: 1.4rem;
+		white-space: nowrap;
 
-        // Rows
-        tr {
-            height: 36px;
-            position: relative;
+		// Rows
+		tr {
+			position: relative;
+			height: 36px;
 
-            // Tables are rather limited with margins/ To get around
-            // some of these limitations, I'm using apsuedoelement as
-            // a replacement for background-color.
-            &:not(:first-child) {
-                &::after {
-                    content: "";
-                    position: absolute;
-                    top: 3px;
-                    left: 5px;
-                    width: calc(100% - 10px);
-                    height: 30px;
-                    z-index: 0;
-                    border-radius: var(--control-corner-radius);
-                }
-                &:hover::after {
-                    background-color: var(--subtle-color-secondary);
-                }
-                &:active::after {
-                    background-color: var(--subtle-color-tertiary);
-                }
-            }
-        }
+			// Tables are rather limited with margins/ To get around
+			// some of these limitations, I'm using apsuedoelement as
+			// a replacement for background-color.
+			&:not(:first-child) {
+				&::after {
+					content: "";
+					position: absolute;
+					top: 3px;
+					left: 5px;
+					z-index: 0;
+					width: calc(100% - 10px);
+					height: 30px;
+					border-radius: var(--control-corner-radius);
+				}
 
-        // Table contents (headers and columns)
-        td, th {
-            position: relative;
-            vertical-align: middle;
-            z-index: 1;
-            padding: 0 12px;
-            color: var(--text-color-primary);
+				&:hover::after {
+					background-color: var(--subtle-color-secondary);
+				}
 
-            // Blank first cell for the file icon
-            &:first-child {
-                border-left: none;
-                padding-right: 6px;
-                padding-left: 12px;
-            }
-        }
+				&:active::after {
+					background-color: var(--subtle-color-tertiary);
+				}
+			}
+		}
 
-        // Table headers
-        th {
-            font-weight: 600;
-            text-align: left;
-            border-left: 1px solid var(--control-stroke-default);
-            border-bottom: 1px solid var(--control-stroke-default);
-            &:last-child {
-                width: 100%;
-            }
-        }
+		// Table contents (headers and columns)
+		td, th {
+			position: relative;
+			z-index: 1;
+			padding: 0 12px;
+			color: var(--text-color-primary);
+			vertical-align: middle;
 
-        td {
-            // Sync status icons
-            &.status-success :global(svg) {
-                color: var(--system-color-success);
-            }
-            &.status-sync :global(svg) {
-                color: var(--system-color-attention);
-            }
-            :global(svg) {
-                @include icon($size: 20px);
-                animation: 250ms ease feature-item-scale backwards calc(600ms + (100ms * var(--file-index)));
-            }
-        }
-    }
+			// Blank first cell for the file icon
+			&:first-child {
+				padding-right: 6px;
+				padding-left: 12px;
+				border-left: none;
+			}
+		}
 
-    // Cloud provider icons
-    .cloud-provider {
-        position: absolute;
-        z-index: 2;
-        width: 108px;
-        height: auto;
-        filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
-        transform: rotate(var(--provider-rotate));
-        &:nth-child(1) {
-            --provider-rotate: 5deg;
-            bottom: 36px;
-            left: -54px;
-            animation: cloud-provider 250ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms,
-                       cloud-provider-float 10s ease infinite 1000ms;
-        }
-        &:nth-child(2) {
-            --provider-rotate: -8deg;
-            right: -54px;
-            top: 12px;
-            width: 128px;
-            animation: cloud-provider 250ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1000ms,
-                       cloud-provider-float 10s ease infinite 1400ms;
-        }
-    }
+		// Table headers
+		th {
+			border-bottom: 1px solid var(--control-stroke-default);
+			border-left: 1px solid var(--control-stroke-default);
+			font-weight: 600;
+			text-align: left;
+
+			&:last-child {
+				width: 100%;
+			}
+		}
+
+		td {
+			// Sync status icons
+			&.status-success :global(svg) {
+				color: var(--system-color-success);
+			}
+
+			&.status-sync :global(svg) {
+				color: var(--system-color-attention);
+			}
+
+			:global(svg) {
+				@include icon($size: 20px);
+				animation: 250ms ease feature-item-scale backwards calc(600ms + (100ms * var(--file-index)));
+			}
+		}
+	}
+
+	// Cloud provider icons
+	.cloud-provider {
+		position: absolute;
+		z-index: 2;
+		width: 108px;
+		height: auto;
+		transform: rotate(var(--provider-rotate));
+		filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+
+		&:nth-child(1) {
+			bottom: 36px;
+			left: -54px;
+			animation: cloud-provider 250ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms,
+			cloud-provider-float 10s ease infinite 1000ms;
+			--provider-rotate: 5deg;
+		}
+
+		&:nth-child(2) {
+			top: 12px;
+			right: -54px;
+			width: 128px;
+			animation: cloud-provider 250ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1000ms,
+			cloud-provider-float 10s ease infinite 1400ms;
+			--provider-rotate: -8deg;
+		}
+	}
 }
 
 // Preview pane showcase
 .previewer-showcase {
-    @include flex($align: center);
+	@include flex($align: center);
 
-    // Preview pane sidebar
-    .preview-pane {
-        @include flex($direction: column);
-        width: 260px;
-        height: 390px;
-        animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards 800ms;
-        border-radius: var(--overlay-corner-radius) 0 0 var(--overlay-corner-radius);
+	// Preview pane sidebar
+	.preview-pane {
+		@include flex($direction: column);
+		width: 260px;
+		height: 390px;
+		border-radius: var(--overlay-corner-radius) 0 0 var(--overlay-corner-radius);
+		animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards 800ms;
 
-        // Inner preview pane elements
-        // File preview and file metadata
-        .preview,
-        .metadata {
-            padding: 8px;
-        }
+		// Inner preview pane elements
+		// File preview and file metadata
+		.preview,
+		.metadata {
+			padding: 8px;
+		}
 
-        // File preview
-        // Main container for rich previewsT
-        .preview {
-            @include flex($align: center);
-            flex: 0 0 auto;
-            height: 144px;
-        }
+		// File preview
+		// Main container for rich previewsT
+		.preview {
+			@include flex($align: center);
+			flex: 0 0 auto;
+			height: 144px;
+		}
 
-        // Rich preview elements
-        img,
-        iframe,
-        :global(pre) {
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-        }
-        img {
-            user-select: none;
-            -webkit-user-drag: none;
-            object-fit: contain;
-        }
-        iframe {
-            border-radius: var(--control-corner-radius);   
-        }
-        :global {
-            pre {
-                margin: 0;
-                user-select: text;
-                font-family: var(--font-family-monospace);
-                &::-webkit-scrollbar {
-                    display: none;
-                }
-            }
-        }
-        
-        // Grabber
-        // Used for scaling up the preview size
-        .grabber {
-            @include flex($align: center, $justify: center);
-            flex: 0 0 auto;
-            width: 100%;
-            height: 20px;
-            cursor: n-resize;
+		// Rich preview elements
+		img,
+		iframe,
+		:global(pre) {
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+		}
 
-            // Inner grabber
-            &::before {
-                content: "";
-                position: absolute;
-                background: var(--subtle-color-secondary);
-                border-radius: 4px;
-                height: 4px;
-                width: 28px;
-            }
-        }
+		img {
+			user-select: none;
+			-webkit-user-drag: none;
+			object-fit: contain;
+		}
 
-        // File metadata
-        // Displays information relating to the relevant file
-        .metadata {
-            user-select: text;
-            word-break: break-word;
-            line-height: normal;
-            color: var(--text-color-secondary);
-            font: {
-                size: var(--control-font-size);
-                weight: normal;
-            }
-        }
+		iframe {
+			border-radius: var(--control-corner-radius);
+		}
 
-        // Metadata elements
-        h4, h5, h6 {
-            color: var(--text-color-primary);
-        }
+		:global {
+			pre {
+				margin: 0;
+				font-family: var(--font-family-monospace);
+				user-select: text;
 
-        h4, h5 {
-            margin: 0;
-            text-align: center;
-        }
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
 
-        // Used to display file name
-        h4 {
-            font-family: var(--font-family-sans-serif);
-            margin-bottom: 5px;
-            font: {
-                size: 20px;
-                weight: 600;
-            }
-        }
+		// Grabber
+		// Used for scaling up the preview size
+		.grabber {
+			@include flex($align: center, $justify: center);
+			flex: 0 0 auto;
+			width: 100%;
+			height: 20px;
+			cursor: n-resize;
 
-        // Used to display file extension
-        h5 {
-            font: {
-                size: 14px;
-                weight: normal;
-            }
-        }
+			// Inner grabber
+			&::before {
+				content: "";
+				position: absolute;
+				width: 28px;
+				height: 4px;
+				border-radius: 4px;
+				background: var(--subtle-color-secondary);
+			}
+		}
 
-        // Used as secondary headers for metadata entries
-        h6 {
-            user-select: none;
-            margin: 0;
-            margin-top: 8px;
-            margin-bottom: 2px;
-            font: {
-                size: var(--control-font-size);
-                weight: normal;
-            }
-        }
-    }
+		// File metadata
+		// Displays information relating to the relevant file
+		.metadata {
+			color: var(--text-color-secondary);
+			font: {
+				size: var(--control-font-size);
+				weight: normal;
+			}
+			line-height: normal;
+			word-break: break-word;
+			user-select: text;
+		}
 
-    // Files GridView
-    // Serves as a picker for previewing files
-    .files-grid {
-        display: grid;
-        grid-gap: 4px;
-        padding: 12px;
-        position: relative;
-        z-index: 1;
-        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+		// Metadata elements
+		h4, h5, h6 {
+			color: var(--text-color-primary);
+		}
 
-        // File entries
-        .file {
-            @include flex($direction: column, $justify: between, $align: center);
-            width: 84px;
-            height: 96px;
-            padding: 12px;
-            border-radius: var(--control-corner-radius);
-            color: var(--text-color-primary);
-            font-size: var(--control-font-size);
-            &:hover {
-                background-color: var(--subtle-color-secondary);
-            }
-            &:active {
-                background-color: var(--subtle-color-tertiary);
-            }
-            &.selected {
-                background-color: var(--subtle-color-secondary);
-                border-radius: calc(var(--control-corner-radius) + 2px);
-                box-shadow: inset 0 0 0 2px var(--accent-color-default),
-                            inset 0 0 0 3px var(--background-base);
-            }
+		h4, h5 {
+			margin: 0;
+			text-align: center;
+		}
 
-            // File entry icon
-            img {
-                width: 88%;
-                height: auto;
-            }
-        }
-    }
+		// Used to display file name
+		h4 {
+			margin-bottom: 5px;
+			font: {
+				size: 20px;
+				weight: 600;
+			}
+			font-family: var(--font-family-sans-serif);
+		}
+
+		// Used to display file extension
+		h5 {
+			font: {
+				size: 14px;
+				weight: normal;
+			}
+		}
+
+		// Used as secondary headers for metadata entries
+		h6 {
+			margin: 0;
+			margin-top: 8px;
+			margin-bottom: 2px;
+			font: {
+				size: var(--control-font-size);
+				weight: normal;
+			}
+			user-select: none;
+		}
+	}
+
+	// Files GridView
+	// Serves as a picker for previewing files
+	.files-grid {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-gap: 4px;
+		padding: 12px;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+
+		// File entries
+		.file {
+			@include flex($direction: column, $justify: between, $align: center);
+			width: 84px;
+			height: 96px;
+			padding: 12px;
+			border-radius: var(--control-corner-radius);
+			color: var(--text-color-primary);
+			font-size: var(--control-font-size);
+
+			&:hover {
+				background-color: var(--subtle-color-secondary);
+			}
+
+			&:active {
+				background-color: var(--subtle-color-tertiary);
+			}
+
+			&.selected {
+				border-radius: calc(var(--control-corner-radius) + 2px);
+				background-color: var(--subtle-color-secondary);
+				box-shadow: inset 0 0 0 2px var(--accent-color-default),
+				inset 0 0 0 3px var(--background-base);
+			}
+
+			// File entry icon
+			img {
+				width: 88%;
+				height: auto;
+			}
+		}
+	}
 }
 
 // Tags showcase
 .tags-showcase {
-    .showcase-panel {
-        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
-    }
-    > .showcase-panel {
-        @include flex($justify: center);
-        width: 400px;
-        height: 260px;
-    }
-    .tags-picker {
-        @include flex($gap: 16px);
-        animation-delay: 600ms;
-        z-index: 1;
-        position: absolute;
-        bottom: -24px;
-        padding: 12px;
-    }
-    :global(.color-swatch) {
-        animation: 250ms ease feature-item-scale backwards calc(800ms + (100ms * var(--color-index)));
-    }
+	.showcase-panel {
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+	}
+
+	> .showcase-panel {
+		@include flex($justify: center);
+		width: 400px;
+		height: 260px;
+	}
+
+	.tags-picker {
+		@include flex($gap: 16px);
+		position: absolute;
+		bottom: -24px;
+		z-index: 1;
+		padding: 12px;
+		animation-delay: 600ms;
+	}
+
+	:global(.color-swatch) {
+		animation: 250ms ease feature-item-scale backwards calc(800ms + (100ms * var(--color-index)));
+	}
 }
 
 // Tabs showcase
 .tabs-showcase {
-    @include flex($align: center, $justify: center);
+	@include flex($align: center, $justify: center);
 
-    .showcase-panel {
-        overflow: hidden;
-        position: absolute;
-        animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms;
-        width: 400px;
-        height: 300px;
-        &:first-child {
-            --panel-offset: -32px;
-            transform: translate(var(--panel-offset), var(--panel-offset));
-            animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms,
-                        merge-windows 250ms ease forwards 2s;
-        }
-        &:last-child {
-            --panel-offset: 32px;
-            transform: translate(var(--panel-offset), var(--panel-offset));
-            animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1200ms,
-                        merge-windows 250ms ease forwards 2s;
-        }
-    }
+	.showcase-panel {
+		position: absolute;
+		width: 400px;
+		height: 300px;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms;
+		overflow: hidden;
+
+		&:first-child {
+			transform: translate(var(--panel-offset), var(--panel-offset));
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms,
+			merge-windows 250ms ease forwards 2s;
+			--panel-offset: -32px;
+		}
+
+		&:last-child {
+			transform: translate(var(--panel-offset), var(--panel-offset));
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1200ms,
+			merge-windows 250ms ease forwards 2s;
+			--panel-offset: 32px;
+		}
+	}
 }
