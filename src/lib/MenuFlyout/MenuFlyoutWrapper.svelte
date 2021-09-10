@@ -4,8 +4,8 @@
 	export let open = false;
 	const toggleDropdown = () => (open = !open);
 
-	$: console.log(`Inner: ${open}`);
-	// $: if (open) toggleDropdown()
+	// $: console.log(`Inner: ${open}`);
+	// $: if (open) toggleDropdown();
 
 	let container: HTMLDivElement;
 	const handleOuterClick = e => {
