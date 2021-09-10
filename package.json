@@ -26,7 +26,7 @@
 		"eslint-plugin-svelte3": "^3.2.0",
 		"mdsvex": "^0.9.8",
 		"postcss": "^8.3.6",
-		"prettier": "~2.3.2",
+		"prettier": "~2.4.0",
 		"prettier-plugin-svelte": "^2.4.0",
 		"remark-gfm": "^2.0.0",
 		"remark-github": "^11.1.0",
