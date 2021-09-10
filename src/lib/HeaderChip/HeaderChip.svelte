@@ -1,5 +1,5 @@
-<style lang="scss" src="./HeaderChip.scss"></style>
-
 <span class="header-chip">
-    <slot />
+	<slot />
 </span>
+
+<style lang="scss" src="./HeaderChip.scss"></style>

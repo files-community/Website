@@ -8,9 +8,13 @@
 	color: var(--text-color-primary);
 	font-size: var(--control-font-size);
 
-	span { flex: 1 1 auto }
+	span {
+		flex: 1 1 auto;
+	}
 
-	.caption-buttons { @include flex($align: center) }
+	.caption-buttons {
+		@include flex($align: center);
+	}
 
 	button {
 		@include flex($justify: center, $align: center);
@@ -20,7 +24,9 @@
 		background-color: transparent;
 		color: var(--text-color-primary);
 
-		&:hover { background-color: var(--subtle-color-secondary) }
+		&:hover {
+			background-color: var(--subtle-color-secondary);
+		}
 
 		&:active {
 			background-color: var(--subtle-color-tertiary);
@@ -39,6 +45,8 @@
 			}
 		}
 
-		svg { @include icon($size: 10px) }
+		svg {
+			@include icon($size: 10px);
+		}
 	}
 }

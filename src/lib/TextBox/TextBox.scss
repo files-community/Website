@@ -62,7 +62,8 @@
 			&.flyout-visible {
 				&,
 				.textbox-container {
-					border-radius: var(--control-corner-radius) var(--control-corner-radius) 0 0;
+					border-radius: var(--control-corner-radius)
+						var(--control-corner-radius) 0 0;
 				}
 			}
 		}
@@ -75,14 +76,18 @@
 		background-color: var(--control-color-default);
 		background-clip: padding-box;
 
-		&:hover { background-color: var(--control-color-secondary) }
+		&:hover {
+			background-color: var(--control-color-secondary);
+		}
 
 		:global {
 			&.disabled {
 				background-color: var(--ControlFillColorDisabled);
 				pointer-events: none;
 
-				+ .textbox-underline { display: none }
+				+ .textbox-underline {
+					display: none;
+				}
 			}
 		}
 	}
@@ -92,15 +97,21 @@
 		border-color: var(--control-stroke-default);
 		background-color: var(--control-color-input-active);
 
-		.textbox::placeholder { color: var(--text-color-tertiary) }
+		.textbox::placeholder {
+			color: var(--text-color-tertiary);
+		}
 
 		.textbox-buttons {
 			.textbox-clear-button,
-			.textbox-reveal-button { display: flex }
+			.textbox-reveal-button {
+				display: flex;
+			}
 		}
 	}
 
-	&-buttons { @include flex($align: center) }
+	&-buttons {
+		@include flex($align: center);
+	}
 
 	&-button {
 		@include flex($align: center, $justify: center);
@@ -121,14 +132,18 @@
 		&:active {
 			background-color: var(--subtle-color-tertiary);
 
-			svg { color: var(--text-color-tertiary) }
+			svg {
+				color: var(--text-color-tertiary);
+			}
 		}
 
 		&.textbox-clear-button,
 		&.textbox-reveal-button {
 			display: none;
 
-			&:active { display: flex }
+			&:active {
+				display: flex;
+			}
 		}
 
 		&.textbox-clear-button svg {

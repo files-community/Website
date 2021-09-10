@@ -24,7 +24,8 @@
  */
 
 :root {
-	--font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter", sans-serif;
+	--font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter",
+		sans-serif;
 	--font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
 
 	// Accent Colors
@@ -34,80 +35,80 @@
 	--accent-color-alpha: 1;
 
 	--accent-color: hsla(
-					var(--accent-color-hue),
-					var(--accent-color-saturation),
-					var(--accent-color-lightness),
-					var(--accent-color-alpha)
+		var(--accent-color-hue),
+		var(--accent-color-saturation),
+		var(--accent-color-lightness),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-dark-1: hsla(
-					calc(var(--accent-color-hue) + 2),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) - 6%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) + 2),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) - 6%),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-dark-1-90: hsla(
-					calc(var(--accent-color-hue) + 2),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) - 6%),
-					calc(var(--accent-color-alpha) * 0.9)
+		calc(var(--accent-color-hue) + 2),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) - 6%),
+		calc(var(--accent-color-alpha) * 0.9)
 	);
 
 	--accent-color-dark-1-80: hsla(
-					calc(var(--accent-color-hue) + 2),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) - 6%),
-					calc(var(--accent-color-alpha) * 0.8)
+		calc(var(--accent-color-hue) + 2),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) - 6%),
+		calc(var(--accent-color-alpha) * 0.8)
 	);
 
 	--accent-color-dark-2: hsla(
-					calc(var(--accent-color-hue) + 8),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) - 13%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) + 8),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) - 13%),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-dark-3: hsla(
-					calc(var(--accent-color-hue) + 18),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) - 21%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) + 18),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) - 21%),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-light-1: hsla(
-					calc(var(--accent-color-hue) - 1),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) + 9%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) - 1),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) + 9%),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-light-2: hsla(
-					calc(var(--accent-color-hue) - 6),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) + 23%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) - 6),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) + 23%),
+		var(--accent-color-alpha)
 	);
 
 	--accent-color-light-2-90: hsla(
-					calc(var(--accent-color-hue) - 6),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) + 23%),
-					calc(var(--accent-color-alpha) * 0.9)
+		calc(var(--accent-color-hue) - 6),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) + 23%),
+		calc(var(--accent-color-alpha) * 0.9)
 	);
 
 	--accent-color-light-2-80: hsla(
-					calc(var(--accent-color-hue) - 6),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) + 23%),
-					calc(var(--accent-color-alpha) * 0.8)
+		calc(var(--accent-color-hue) - 6),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) + 23%),
+		calc(var(--accent-color-alpha) * 0.8)
 	);
 
 	--accent-color-light-3: hsla(
-					calc(var(--accent-color-hue) - 14),
-					var(--accent-color-saturation),
-					calc(var(--accent-color-lightness) + 38%),
-					var(--accent-color-alpha)
+		calc(var(--accent-color-hue) - 14),
+		var(--accent-color-saturation),
+		calc(var(--accent-color-lightness) + 38%),
+		var(--accent-color-alpha)
 	);
 
 	// Corner Radius
@@ -215,7 +216,8 @@
 		// Elevation
 		--card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.04);
 		--flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.14);
-		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876), 0px 2px 21px rgba(0, 0, 0, 0.1474);
+		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876),
+			0px 2px 21px rgba(0, 0, 0, 0.1474);
 
 		// Accent Colors
 		--accent-color-default: var(--accent-color-dark-1);
@@ -323,7 +325,8 @@
 		// Elevation
 		--card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.13);
 		--flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.26);
-		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37), 0px 2px 21px rgba(0, 0, 0, 0.37);
+		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37),
+			0px 2px 21px rgba(0, 0, 0, 0.37);
 
 		// Accent Colors
 		--accent-color-default: var(--accent-color-light-2);
@@ -342,7 +345,9 @@
  */
 
 // Properly size box model
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 }
 
@@ -353,7 +358,12 @@
 }
 
 // Set font
-::-webkit-input-placeholder, body, button, input, select, textarea {
+::-webkit-input-placeholder,
+body,
+button,
+input,
+select,
+textarea {
 	font-family: var(--font-family-sans-serif);
 }
 
@@ -364,7 +374,8 @@
 }
 
 // Outer elements -- <html> and <body>
-html, body {
+html,
+body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
@@ -404,7 +415,9 @@ code {
 // Utility class to create a styled scroller and scrollbar
 .scroller {
 	overflow: auto;
-	@supports (overflow: overlay) { overflow: overlay }
+	@supports (overflow: overlay) {
+		overflow: overlay;
+	}
 
 	// An attempt at recreating WinUI 2.6 scrollbars
 	// (mixed results)
@@ -438,9 +451,10 @@ code {
 		}
 
 		&:hover {
-			background: var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
-			var(--scrollbar-caret-top) top center/contain no-repeat,
-			rgba(var(--mica-tint), var(--mica-tint-opacity));
+			background: var(--scrollbar-caret-bottom) bottom center/contain
+					no-repeat,
+				var(--scrollbar-caret-top) top center/contain no-repeat,
+				rgba(var(--mica-tint), var(--mica-tint-opacity));
 		}
 
 		&-thumb {
@@ -470,7 +484,8 @@ code {
 	cursor: pointer;
 	text-decoration-skip-ink: none;
 
-	&:hover, &:active {
+	&:hover,
+	&:active {
 		text-decoration: none;
 	}
 

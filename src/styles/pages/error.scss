@@ -11,7 +11,9 @@
 	font-size: 1.2rem;
 	color-scheme: light;
 
-	*:not(code), *::before, *::after {
+	*:not(code),
+	*::before,
+	*::after {
 		font-family: "Microsoft Sans Serif", Tahoma, Arial, sans-serif;
 		font-smooth: never;
 		-webkit-font-smooth: never;
@@ -30,12 +32,14 @@
 		border: none;
 		border-radius: 0;
 		background: silver;
-		box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+		box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+			inset -2px -2px grey, inset 2px 2px #dfdfdf;
 		font-size: 1.2rem;
 
 		&:not(:disabled):active {
 			padding: 2px 11px 0 13px;
-			box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+			box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
+				inset -2px -2px #dfdfdf, inset 2px 2px grey;
 		}
 
 		&:focus {
@@ -49,10 +53,8 @@
 		margin: 0;
 		padding: 12px 8px;
 		background: #fff;
-		box-shadow: inset -1px -1px #fff,
-		inset 1px 1px grey,
-		inset -2px -2px #dfdfdf,
-		inset 2px 2px #0a0a0a;
+		box-shadow: inset -1px -1px #fff, inset 1px 1px grey,
+			inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
 		overflow: auto;
 
 		code {
@@ -69,7 +71,7 @@
 			&:horizontal:start:decrement,
 			&:vertical:end:increment,
 			&:vertical:start:decrement {
-				display: block
+				display: block;
 			}
 
 			&:horizontal {
@@ -109,10 +111,8 @@
 
 		&-thumb {
 			background-color: #dfdfdf;
-			box-shadow: inset -1px -1px #0a0a0a,
-			inset 1px 1px #fff,
-			inset -2px -2px #808080,
-			inset 2px 2px #dfdfdf;
+			box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
+				inset -2px -2px #808080, inset 2px 2px #dfdfdf;
 		}
 	}
 }
@@ -124,7 +124,8 @@
 	max-width: calc(100% - 48px);
 	padding: 3px;
 	background: silver;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
+		inset -2px -2px grey, inset 2px 2px #fff;
 	overflow: auto;
 	resize: both;
 	@media only screen and (max-width: 648px) {

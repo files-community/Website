@@ -55,26 +55,33 @@ This repository contains the source code for the new [Files website](https://fil
 # Development
 
 ## Prerequisites
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/) with `npm`.
-- Command line of your choice.
+
+-   [Git](https://git-scm.com)
+-   [Node.js](https://nodejs.org/en/) with `npm`.
+-   Command line of your choice.
 
 ## Building
 
 ### 1: Clone the repository.
+
 ```ps
 git clone https://github.com/files-community/Website && cd Website
 ```
+
 This will create a local copy of this repository and navigate you to the root folder of the repository.
 
 ### 2: Install Dependencies
+
 Run this command at the root folder to install dependencies:
+
 ```ps
 npm i
 ```
 
 ### 3: Run Build Script
+
 To build the site in development mode, simply run the following command:
+
 ```ps
 npm run dev
 ```
@@ -82,7 +89,9 @@ npm run dev
 ## Additional Scripts
 
 ### Linting
+
 This project uses [prettier](https://prettier.io) and [eslint](https://eslint.org/). Run this command to lint your changes:
+
 ```ps
 npm run lint
 ```
@@ -103,15 +112,16 @@ Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of 
 
 ### Editing Existing Pages
 
-Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.svx` file in the [`docs`]((https://github.com/files-community/Website/tree/main/src/routes/docs)) directory, and edit it like a normal markdown file.
+Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.svx` file in the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory, and edit it like a normal markdown file.
 
 ### Adding or Deleting a Page
 
-Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping *must* be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/data/docs.ts`](https://github.com/files-community/Website/tree/main/src/data/docs.ts) as a JSON-like format.
+Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping _must_ be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/data/docs.ts`](https://github.com/files-community/Website/tree/main/src/data/docs.ts) as a JSON-like format.
 
 This is an example docs mapping:
 
 #### src/routes/docs/
+
 ```
 .
 ├──page-1.svx
@@ -122,37 +132,40 @@ This is an example docs mapping:
 ```
 
 #### src/data/docs.ts
+
 ```ts
 [
-    {
-        name: "Page 1",
-        path: "/page-1"
-    },
-    {
-        name: "Page 2",
-        path: "/page-2"
-    },
-    {
-        type: "category",
-        name: "Nested Category",
-        pages: [
-            {
-                name: "Category Page 1",
-                path: "/category/category-page-1"
-            },
-            {
-                name: "Category Page 2",
-                path: "/category/category-page-2"
-            }
-        ]
-    },
-]
+	{
+		name: "Page 1",
+		path: "/page-1"
+	},
+	{
+		name: "Page 2",
+		path: "/page-2"
+	},
+	{
+		type: "category",
+		name: "Nested Category",
+		pages: [
+			{
+				name: "Category Page 1",
+				path: "/category/category-page-1"
+			},
+			{
+				name: "Category Page 2",
+				path: "/category/category-page-2"
+			}
+		]
+	}
+];
 ```
 
 ## Using the Blog
+
 Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.svx` files. Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
+
 To publish a post, create a new `svx` file in the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder. At the top of a the file, you'll need to include a few required things before typing the post.
 
 ```md
@@ -160,7 +173,7 @@ To publish a post, create a new `svx` file in the [`posts`](https://github.com/f
 title: Title of the Post
 author: author-github-handle
 description: Description of the post.
-thumbnail: https://path-to-thumbnail-image.png 
+thumbnail: https://path-to-thumbnail-image.png
 date: 2021-09-06
 ---
 ```
@@ -168,6 +181,7 @@ date: 2021-09-06
 This metadata table is required for all posts, and gives the website some basic information about the post to work with. Below the table, you're free to use whatever markdown or components you want.
 
 ### Removing or Editing a Post
+
 Since we don't need any mapping to be updated, posts can simply be deleted from the folder or edited without any hassle or extra steps.
 
 # Contributors

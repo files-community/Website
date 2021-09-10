@@ -10,7 +10,6 @@
 
 	// Small device support
 	@media only screen and (max-width: 648px) {
-
 		// Account for the adjusted navbar height on mobile
 		max-height: calc(100vh - 64px);
 	}
@@ -91,7 +90,6 @@
 
 // Search autosuggest
 .autosuggest {
-
 	// Wrapper for positioning it
 	// Both the flyout and the searchbox need to be contained within this
 	&-wrapper {
@@ -108,16 +106,15 @@
 		max-height: 350px;
 		padding: 2px 0;
 		border: 1px solid var(--surface-stroke-flyout);
-		border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
+		border-radius: 0 0 var(--overlay-corner-radius)
+			var(--overlay-corner-radius);
 		background-color: var(--background-quarternary);
 		box-shadow: var(--flyout-elevation);
 	}
 }
 
-
 // Small device support
 @media only screen and (max-width: 648px) {
-
 	// Since we don't have a sidebar anymore, vertically stack the elements in the page
 	.docs {
 		flex-direction: column;
