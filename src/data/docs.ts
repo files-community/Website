@@ -19,6 +19,10 @@ export const docs: DocsMap[] = [
 				path: "/configuring/terminal-profiles"
 			},
 			{
+				name: "Performance Settings",
+				path: "/configuring/performance-settings"
+			},
+			{
 				name: "Date Formats",
 				path: "/configuring/date-formats"
 			},
@@ -45,8 +49,16 @@ export const docs: DocsMap[] = [
 		name: "Contributing",
 		pages: [
 			{
+				name: "Building Files from source",
+				path: "/contributing/building-from-source"
+			},
+			{
 				name: "Translating Files",
 				path: "/contributing/translating-files"
+			},
+			{
+				name: "Building Extensions for Files",
+				path: "/contributing/building-extensions"
 			},
 			{
 				name: "Code Style",
