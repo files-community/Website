@@ -3,8 +3,8 @@
 	"version": "0.0.1",
 	"repository": "https://github.com/files-community/files",
 	"scripts": {
-		"dev": "svelte-kit dev",
 	        "prebuild": "test \"$CI\" = true && npx pnpm install -r --store=node_modules/.pnpm-store || echo skipping pnpm install",
+		"dev": "svelte-kit dev",
 		"build": "svelte-kit build",
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
