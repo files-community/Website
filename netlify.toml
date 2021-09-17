@@ -1,4 +1,5 @@
 [build]
   NPM_FLAGS="--prefix=/dev/null"
+  command = "npm run build"
   publish = "build/"
   functions = "functions/"
