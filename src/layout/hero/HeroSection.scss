@@ -125,8 +125,8 @@
 			border-radius: calc(var(--overlay-corner-radius) / 2);
 			border-radius: calc(var(--overlay-corner-radius) / 2);
 			background-color: rgba(
-				var(--mica-tint),
-				calc(var(--mica-tint-opacity) / 1.5)
+							var(--mica-tint),
+							calc(var(--mica-tint-opacity) / 1.5)
 			);
 			box-shadow: var(--window-elevation);
 			overflow: hidden;

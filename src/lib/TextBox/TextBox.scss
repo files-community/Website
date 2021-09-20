@@ -62,8 +62,7 @@
 			&.flyout-visible {
 				&,
 				.textbox-container {
-					border-radius: var(--control-corner-radius)
-						var(--control-corner-radius) 0 0;
+					border-radius: var(--control-corner-radius) var(--control-corner-radius) 0 0;
 				}
 			}
 		}

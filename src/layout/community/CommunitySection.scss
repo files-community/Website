@@ -46,11 +46,11 @@
 		border-radius: var(--overlay-corner-radius);
 		background-color: #f9f9f9;
 		box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-			0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-			0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-			0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-			0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-			0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+		0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+		0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+		0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+		0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+		0 96.0454px 89.1851px rgb(0 0 0 / 9%);
 
 		canvas {
 			position: absolute;
@@ -110,18 +110,18 @@
 		&::before {
 			left: 0;
 			background-image: linear-gradient(
-				90deg,
-				var(--background-secondary),
-				transparent
+							90deg,
+							var(--background-secondary),
+							transparent
 			);
 		}
 
 		&::after {
 			right: 0;
 			background: linear-gradient(
-				90deg,
-				transparent,
-				var(--background-secondary)
+							90deg,
+							transparent,
+							var(--background-secondary)
 			);
 		}
 	}
