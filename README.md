@@ -58,6 +58,7 @@ This repository contains the source code for the new [Files website](https://fil
 
 -   [Git](https://git-scm.com)
 -   [Node.js](https://nodejs.org/en/) with `npm`.
+-   [`pnpm`](https://pnpm.io)
 -   Command line of your choice.
 
 ## Building
@@ -75,7 +76,7 @@ This will create a local copy of this repository and navigate you to the root fo
 Run this command at the root folder to install dependencies:
 
 ```ps
-npm i
+pnpm i
 ```
 
 ### 3: Run Build Script
@@ -83,7 +84,7 @@ npm i
 To build the site in development mode, simply run the following command:
 
 ```ps
-npm run dev
+pnpm run dev
 ```
 
 ## Additional Scripts
@@ -93,7 +94,7 @@ npm run dev
 This project uses [prettier](https://prettier.io) and [eslint](https://eslint.org/). Run this command to lint your changes:
 
 ```ps
-npm run lint
+pnpm run lint
 ```
 
 ### Compiling & Distribution
@@ -101,10 +102,10 @@ npm run lint
 We currently use [SvelteKit's vercel adapter](https://www.npmjs.com/package/@sveltejs/adapter-vercel) module, which allows us to deploy to vercel. To simply build a production bundle, use the following script:
 
 ```ps
-npm run build
+pnpm run build
 ```
 
-> Alternatively, to preview your changes in a production-like build, use `npm run preview`.
+> Alternatively, to preview your changes in a production-like build, use `pnpm run preview`.
 
 ## Contributing to Documentation
 
