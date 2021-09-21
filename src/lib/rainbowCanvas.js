@@ -739,9 +739,9 @@ export default function rainbowCanvas(node) {
           /*this.isIntersecting && */
           !this.isLoadedClass &&
           ((this.isLoadedClass = !0),
-            this.el.classList.add("isLoaded"),
+            this.el.classList.add("canvas-loaded"),
             setTimeout(() => {
-              this.el.parentElement.classList.add("isLoaded");
+              this.el.parentElement.classList.add("canvas-loaded");
             }, 3e3));
         }),
         e(this, "pause", () => {

@@ -1,8 +1,7 @@
 <script lang="ts">
   import { page } from "$app/stores";
 
-  import ListViewItem from "../ListViewItem/ListViewItem.svelte";
-  import TreeView from "../TreeView/TreeView.svelte";
+  import { TreeView, ListViewItem } from "$lib";
 
   import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 

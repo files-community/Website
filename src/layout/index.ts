@@ -1,6 +1,7 @@
 // sections
-export { default as HeroSection } from "./hero/HeroSection.svelte";
-export { default as DesignSection } from "./design/DesignSection.svelte";
-export { default as FeaturesSection } from "./features/FeaturesSection.svelte";
-export { default as ThemesSection } from "./themes/ThemesSection.svelte";
-export { default as CommunitySection } from "./community/CommunitySection.svelte";
+export { default as HeroSection } from "./HeroSection/HeroSection.svelte";
+export { default as DesignSection } from "./DesignSection/DesignSection.svelte";
+export { default as FeaturesSection } from "./FeaturesSection/FeaturesSection.svelte";
+export { default as ThemesSection } from "./ThemesSection/ThemesSection.svelte";
+export { default as CommunitySection } from "./CommunitySection/CommunitySection.svelte";
+export { default as Navbar } from "./Navbar/Navbar.svelte";

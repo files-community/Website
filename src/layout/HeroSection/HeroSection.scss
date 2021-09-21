@@ -83,17 +83,19 @@
 			width: 60vw;
 			min-width: 100vh;
 			height: 100%;
+			mask: url("/ui/hero-mask.png") bottom right/cover no-repeat;
 			animation: canvas-hue-rotate 15s infinite linear;
 			--gradient-color-1: #52dd70;
 			--gradient-color-2: #00d6b9;
 			--gradient-color-3: #0491e2;
 			--gradient-color-4: var(--background-base);
-			mask: url("/ui/hero-mask.png") bottom right/cover no-repeat;
 			@media (prefers-color-scheme: light) {
 				opacity: 0.5;
 			}
-			@media only screen and (max-width: 648px) {
+			@media only screen and (max-width: 1024px) {
 				width: 100%;
+			}
+			@media only screen and (max-width: 648px) {
 				height: 60vh;
 				mask-size: 100% 100%;
 			}
@@ -125,8 +127,8 @@
 			border-radius: calc(var(--overlay-corner-radius) / 2);
 			border-radius: calc(var(--overlay-corner-radius) / 2);
 			background-color: rgba(
-							var(--mica-tint),
-							calc(var(--mica-tint-opacity) / 1.5)
+				var(--mica-tint),
+				calc(var(--mica-tint-opacity) / 1.5)
 			);
 			box-shadow: var(--window-elevation);
 			overflow: hidden;

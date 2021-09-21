@@ -112,12 +112,14 @@
 
 		> .button:first-child,
 		> *:first-child .button {
-			border-radius: var(--control-corner-radius) 0 0 var(--control-corner-radius) !important;
+			border-radius: var(--control-corner-radius) 0 0
+				var(--control-corner-radius) !important;
 		}
 
 		> .button:last-child,
 		> *:last-child .button {
-			border-radius: 0 var(--control-corner-radius) var(--control-corner-radius) 0 !important;
+			border-radius: 0 var(--control-corner-radius)
+				var(--control-corner-radius) 0 !important;
 		}
 	}
 }
