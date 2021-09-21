@@ -19,9 +19,10 @@ specifiers:
   remark-gfm: ^2.0.0
   remark-github: ^11.1.0
   remark-slug: ^7.0.0
-  sass: ^1.41.1
+  sass: ^1.42.0
   svelte: ^3.42.6
   svelte-check: ^2.2.6
+  svelte-drag: ^1.3.1
   svelte-preprocess: ^4.9.5
   tslib: ^2.3.1
   typescript: ^4.4.3
@@ -45,10 +46,11 @@ devDependencies:
   remark-gfm: 2.0.0
   remark-github: 11.1.0
   remark-slug: 7.0.0
-  sass: 1.41.1
+  sass: 1.42.0
   svelte: 3.42.6
-  svelte-check: 2.2.6_16ca048cd75567671e3f5108e4598509
-  svelte-preprocess: 4.9.5_6616b98b6f6d93e1f767290b7d63f4d6
+  svelte-check: 2.2.6_8ad19a3e93520dca7b30f665282b162a
+  svelte-drag: 1.3.1
+  svelte-preprocess: 4.9.5_278e105b2dbffa37ca392aa380dfc577
   tslib: 2.3.1
   typescript: 4.4.3
 
@@ -845,6 +847,10 @@ packages:
     resolution: {integrity: sha1-PYpcZog6FqMMqGQ+hR8Zuqd5eRc=}
     dev: true
 
+  /fast-memoize/2.5.2:
+    resolution: {integrity: sha512-Ue0LwpDYErFbmNnZSF0UH6eImUwDmogUO1jyE+JbN2gsQz/jICm1Ve7t9QT0rNSsfJt+Hs4/S3GnsDVjL4HVrw==}
+    dev: true
+
   /fastq/1.12.0:
     resolution: {integrity: sha512-VNX0QkHK3RsXVKr9KrlUv/FoTa0NdbYoHHl7uXHv2rzyHSlxjdNAKug2twd9luJxpcyNeAgf5iPPMutJO67Dfg==}
     dependencies:
@@ -1634,8 +1640,8 @@ packages:
       rimraf: 2.7.1
     dev: true
 
-  /sass/1.41.1:
-    resolution: {integrity: sha512-vIjX7izRxw3Wsiez7SX7D+j76v7tenfO18P59nonjr/nzCkZuoHuF7I/Fo0ZRZPKr88v29ivIdE9BqGDgQD/Nw==}
+  /sass/1.42.0:
+    resolution: {integrity: sha512-kcjxsemgaOnfl43oZgO/IePLvXQI0ZKzo0/xbCt6uyrg3FY/FF8hVK9YoO8GiZBcEG2Ebl79EKnUc+aiE4f2Vw==}
     engines: {node: '>=8.9.0'}
     hasBin: true
     dependencies:
@@ -1746,7 +1752,7 @@ packages:
       has-flag: 4.0.0
     dev: true
 
-  /svelte-check/2.2.6_16ca048cd75567671e3f5108e4598509:
+  /svelte-check/2.2.6_8ad19a3e93520dca7b30f665282b162a:
     resolution: {integrity: sha512-oJux/afbmcZO+N+ADXB88h6XANLie8Y2rh2qBlhgfkpr2c3t/q/T0w2JWrHqagaDL8zeNwO8a8RVFBkrRox8gg==}
     hasBin: true
     peerDependencies:
@@ -1760,7 +1766,7 @@ packages:
       sade: 1.7.4
       source-map: 0.7.3
       svelte: 3.42.6
-      svelte-preprocess: 4.9.5_6616b98b6f6d93e1f767290b7d63f4d6
+      svelte-preprocess: 4.9.5_278e105b2dbffa37ca392aa380dfc577
       typescript: 4.4.3
     transitivePeerDependencies:
       - '@babel/core'
@@ -1775,6 +1781,12 @@ packages:
       - sugarss
     dev: true
 
+  /svelte-drag/1.3.1:
+    resolution: {integrity: sha512-GvWv1VdS+B55wXDHnP+QdDjvfaHBkbk5uAtPPOFnBht8Y3h38xZGH2vZVZH8vmiE9JZ5ZKiJnH5cRajH1pUAKQ==}
+    dependencies:
+      fast-memoize: 2.5.2
+    dev: true
+
   /svelte-hmr/0.14.7_svelte@3.42.6:
     resolution: {integrity: sha512-pDrzgcWSoMaK6AJkBWkmgIsecW0GChxYZSZieIYfCP0v2oPyx2CYU/zm7TBIcjLVUPP714WxmViE9Thht4etog==}
     peerDependencies:
@@ -1783,7 +1795,7 @@ packages:
       svelte: 3.42.6
     dev: true
 
-  /svelte-preprocess/4.9.5_6616b98b6f6d93e1f767290b7d63f4d6:
+  /svelte-preprocess/4.9.5_278e105b2dbffa37ca392aa380dfc577:
     resolution: {integrity: sha512-RbJbtuwKbuZq9RyzlljZUmmFNaojrg/zUEyDrS8io7haTcuITQmE4NERx8qiqHreApo6cQst5Qtp4MxUwr58Ew==}
     engines: {node: '>= 9.11.2'}
     requiresBuild: true
@@ -1829,7 +1841,7 @@ packages:
       detect-indent: 6.1.0
       magic-string: 0.25.7
       postcss: 8.3.6
-      sass: 1.41.1
+      sass: 1.42.0
       sorcery: 0.10.0
       strip-indent: 3.0.0
       svelte: 3.42.6

@@ -12,12 +12,19 @@
 </script>
 
 <script lang="ts">
+  import { draggable, SvelteDragOptions } from "svelte-drag"
+
   export let status: number;
   export let error: Error;
+
+  const draggableOptions: SvelteDragOptions = {
+    bounds: "parent",
+    handle: ".titlebar",
+  }
 </script>
 
 <section class="error-page">
-  <div class="window">
+  <div class="window" use:draggable={draggableOptions}>
     <div class="titlebar">
       <div class="titlebar-text">Error: {status}</div>
       <div class="titlebar-controls">
