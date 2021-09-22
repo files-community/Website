@@ -57,20 +57,20 @@
 		/>
 		<div class="main-post-info">
 			<HeaderChip
-				>{new Date(
-					mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
-				).toLocaleDateString("en-US", {
-					year: "numeric",
-					day: "numeric",
-					month: "short"
-				})}</HeaderChip
+			>{new Date(
+				mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
+			).toLocaleDateString("en-US", {
+				year: "numeric",
+				day: "numeric",
+				month: "short"
+			})}</HeaderChip
 			>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
 				href="blog/{mainPost.path.replace(/\.[^/.]+$/, '')}"
 				variant="accent"
-				>Read More
+			>Read More
 			</Button>
 		</div>
 	</div>
@@ -80,7 +80,7 @@
 				<BlogCard path={post.path} {...post.metadata} />
 			{/each}
 		</div>
-		{:else}
+	{:else}
 		<p>More posts coming soon!</p>
 	{/if}
 </PageSection>

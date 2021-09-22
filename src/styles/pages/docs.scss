@@ -67,14 +67,12 @@
 	position: sticky;
 	top: 0;
 	z-index: 1;
-	margin: 12px;
-	margin-top: 4px;
+	margin: 4px 12px 12px;
 	background-color: var(--background-base);
 
 	// Divider between the <TreeView /> and search box
 	hr {
-		margin: 0;
-		margin-top: 12px;
+		margin: 12px 0 0;
 		border: none;
 		border-top: 1px solid var(--divider-color-default);
 	}
@@ -137,8 +135,7 @@
 		// page padding looks good on desktop, but can be
 		// ugly on mobile.
 		&-inner {
-			padding: 24px;
-			padding-top: 16px;
+			padding: 16px 24px 24px;
 		}
 	}
 
