@@ -1,0 +1,43 @@
+@use "src/styles/mixins" as *;
+
+.footer {
+	@include flex($align: top);
+	gap: 2rem;
+
+	@media only screen and (max-width: 1024px) {
+		@include flex($direction: column)
+	}
+}
+
+.footer {
+	position: relative;
+	z-index: 10;
+	justify-content: space-between;
+	padding: 72px;
+	background-color: var(--background-base);
+	color: var(--text-color-tertiary);
+	overflow: hidden;
+}
+
+.info {
+	.social-icons {
+		@include flex($direction: row);
+		margin: auto -11px;
+	}
+}
+
+.contributors {
+	@include flex($direction: column);
+
+	.lead {
+		font-weight: 600;
+	}
+
+	:global(.hyperlink-button) {
+		margin: auto -11px;
+
+		@media only screen and (min-width: 1024px) {
+			max-width: fit-content;
+		}
+	}
+}

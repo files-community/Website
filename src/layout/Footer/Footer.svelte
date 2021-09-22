@@ -1,0 +1,48 @@
+<script lang="ts">
+    import { HyperlinkButton } from "$lib";
+</script>
+
+
+<footer class="footer">
+	<div class="info">
+        <p>
+            Copyright &copy; 2021, The Files Authors
+        </p>
+        <div class="social-icons">
+            <HyperlinkButton href="https://twitter.com/FilesForWindows" target="_blank" rel="nofollow">
+                Twitter
+            </HyperlinkButton>
+        </div>
+    </div>
+    <div class="contributors">
+        <p class="lead">
+            Built by an amazing team of contributors
+        </p>
+        <HyperlinkButton href="https://github.com/Tropix126" target="_blank" rel="nofollow">
+            Tropical
+        </HyperlinkButton>
+        <HyperlinkButton href="https://www.theonlytails.com" target="_blank" rel="nofollow">
+            TheOnlyTails
+        </HyperlinkButton>
+        <HyperlinkButton href="https://github.com/yaichenbaum" target="_blank" rel="nofollow">
+            Yair
+        </HyperlinkButton>
+        <HyperlinkButton href="https://github.com/chingucoding" target="_blank" rel="nofollow">
+            Marcel Wagner
+        </HyperlinkButton>
+        <HyperlinkButton href="https://github.com/5E7EN" target="_blank" rel="nofollow">
+            Simon
+        </HyperlinkButton>
+        <HyperlinkButton href="https://michaelwe.st/" target="_blank" rel="nofollow">
+            Michael West
+        </HyperlinkButton>
+        <p>
+            Become a contributor yourself:
+        </p>
+        <HyperlinkButton href="https://github.com/itsmichaelwest" target="_blank" rel="nofollow">
+            Files Website GitHub
+        </HyperlinkButton>
+    </div>
+</footer>
+
+<style lang="scss" src="./Footer.scss"></style>
