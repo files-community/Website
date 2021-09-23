@@ -27,7 +27,7 @@ contributors who really went all out and spent a lot of time putting together th
 
 ## New Features
 
-The new features in v2 were designed based off user feedback from more than 4,000 beta users.
+The new features in v2 were designed based off user feedback from more than 4,000 beta users. The full changelog for v2 is quite lentghy and can be found on our GitHub repo but we wanted to highlight a couple of the bigger changes.
 
 - Columns allow multiple levels of the hierarchy to be open at once, and provides a visual representation of the current
   directory
