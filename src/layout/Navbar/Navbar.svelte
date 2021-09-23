@@ -34,7 +34,7 @@
 
 <header class="navbar">
   <nav class="inner">
-    <a class="logo" href="/">
+    <a class="logo" href="/" sveltekit:prefetch>
       <picture>
         <source
           media="(prefers-color-scheme: dark)"
@@ -62,6 +62,7 @@
         {:else}
           <a
             class="item"
+            sveltekit:prefetch
             class:selected={$page.path === path ||
 							($page.path.split("/").length > 1 &&
 								path.split("/").length > 1 &&
@@ -116,6 +117,7 @@
       {:else if !sidebarTree}
         <ListViewItem
           type="navigation"
+          sveltekit:prefetch
           on:click={toggleSidebar}
           selected={$page.path === path ||
 						($page.path.split("/").length > 1 &&
@@ -152,6 +154,7 @@
     {#each buttons as { icon, href, label }}
       <ListViewItem
         {href}
+        sveltekit:prefetch
         type="navigation"
         target="_blank"
         rel="noreferrer noopener"
