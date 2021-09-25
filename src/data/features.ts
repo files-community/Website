@@ -81,7 +81,7 @@ export const previewFiles = [
 		items: 3,
 		added: "Thursday, June 21, 2018 11:24 AM",
 		modified: "Sunday, November 15, 2020 6:50 PM",
-		path: "C:\\Users\\Austin\\Desktop\\June 2018"
+		path: "C:\\Users\\Sara\\Desktop\\June 2018"
 	},
 	{
 		name: "waves",
@@ -98,7 +98,7 @@ export const previewFiles = [
 		},
 		added: "Sunday, August 1, 2021 12:34 AM",
 		modified: "Monday, August 9, 2021 12:34 AM",
-		path: "C:\\Users\\Austin\\Pictures\\waves.png"
+		path: "C:\\Users\\Sara\\Pictures\\waves.png"
 	},
 	{
 		name: "index",
@@ -106,7 +106,7 @@ export const previewFiles = [
 		icon: "/ui/icons/note.png",
 		added: "Wednesday, July 14, 2021 8:47 PM",
 		modified: "Monday, July 31, 2021 4:32 AM",
-		path: "C:\\Users\\Austin\\Documents\\index.html"
+		path: "C:\\Users\\Sara\\Documents\\index.html"
 	},
 	{
 		name: "main",
@@ -130,7 +130,7 @@ export const previewFiles = [
 cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</span> <span class="operator">&lt;&lt;</span> endl<span class="punctuation">;</span>
 <span class="keyword">return</span> <span class="number">0</span><span class="punctuation">;</span>
 <span class="punctuation">}</span>`,
-		path: "C:\\Users\\Austin\\Documents\\GitHub\\\\waves.png"
+		path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png"
 	}
 ];
 
