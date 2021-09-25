@@ -118,8 +118,8 @@
 
 		> .button:last-child,
 		> *:last-child .button {
-			border-radius: 0 var(--control-corner-radius)
-				var(--control-corner-radius) 0 !important;
+			border-radius: 0 var(--control-corner-radius) var(--control-corner-radius)
+				0 !important;
 		}
 	}
 }

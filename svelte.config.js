@@ -34,12 +34,7 @@ const config = {
 				dashes: "oldschool"
 			},
 
-			remarkPlugins: [
-				remarkA11yEmoji,
-				remarkSlug,
-				remarkGfm,
-				remarkGithub
-			]
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub]
 		}),
 		sveltePreprocess({
 			postcss: {

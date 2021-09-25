@@ -24,10 +24,8 @@
 	border-radius: var(--overlay-corner-radius);
 	background-color: var(--background-base);
 	box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-		0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-		0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-		0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-		0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+		0 5.48831px 5.48831px rgb(0 0 0 / 4%), 0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+		0 20.5812px 20.5812px rgb(0 0 0 / 6%), 0 41.1623px 41.1623px rgb(0 0 0 / 7%),
 		0 96.0454px 89.1851px rgb(0 0 0 / 9%);
 	font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
 	user-select: none;
@@ -228,10 +226,9 @@
 		@include flex($direction: column);
 		width: 260px;
 		height: 390px;
-		border-radius: var(--overlay-corner-radius) 0 0
-			var(--overlay-corner-radius);
-		animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open
-			backwards 800ms;
+		border-radius: var(--overlay-corner-radius) 0 0 var(--overlay-corner-radius);
+		animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards
+			800ms;
 
 		// Inner preview pane elements
 		// File preview and file metadata
@@ -364,16 +361,12 @@
 		display: grid;
 		grid-gap: 4px;
 		padding: 12px;
-		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
-			backwards 400ms;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+			400ms;
 
 		// File entries
 		.file {
-			@include flex(
-				$direction: column,
-				$justify: between,
-				$align: center
-			);
+			@include flex($direction: column, $justify: between, $align: center);
 			width: 84px;
 			height: 96px;
 			padding: 12px;
@@ -408,8 +401,8 @@
 // Tags showcase
 .tags-showcase {
 	.showcase-panel {
-		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
-			backwards 400ms;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+			400ms;
 	}
 
 	> .showcase-panel {
@@ -441,8 +434,8 @@
 		position: absolute;
 		width: 400px;
 		height: 300px;
-		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
-			backwards 800ms;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+			800ms;
 		overflow: hidden;
 
 		&:first-child {

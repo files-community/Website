@@ -18,8 +18,7 @@
 			&:focus-visible {
 				box-shadow: inset 0 0 0 2px var(--accent-color-default),
 					inset 0 0 0 3px var(--background-base),
-					0 0 0 1px var(--background-base),
-					0 0 0 3px var(--focus-stroke-outer) !important;
+					0 0 0 1px var(--background-base), 0 0 0 3px var(--focus-stroke-outer) !important;
 			}
 		}
 

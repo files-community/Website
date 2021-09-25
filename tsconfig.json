@@ -25,18 +25,10 @@
 		"paths": {
 			"$lib": ["src/lib/*", "src/lib/index"],
 			"$data/*": ["src/data/*"],
-			"$page-sections": [
-				"src/page-sections/*",
-				"src/page-sections/index"
-			],
+			"$page-sections": ["src/page-sections/*", "src/page-sections/index"],
 			"$routes": ["src/routes/*"],
 			"$static": ["static/*"]
 		}
 	},
-	"include": [
-		"src/**/*.d.ts",
-		"src/**/*.js",
-		"src/**/*.ts",
-		"src/**/*.svelte"
-	]
+	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]
 }

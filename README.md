@@ -56,10 +56,10 @@ This repository contains the source code for the new [Files website](https://fil
 
 ## Prerequisites
 
--   [Git](https://git-scm.com)
--   [Node.js](https://nodejs.org/en/) with `npm`.
--   [`pnpm`](https://pnpm.io)
--   Command line of your choice.
+- [Git](https://git-scm.com)
+- [Node.js](https://nodejs.org/en/) with `npm`.
+- [`pnpm`](https://pnpm.io)
+- Command line of your choice.
 
 ## Building
 

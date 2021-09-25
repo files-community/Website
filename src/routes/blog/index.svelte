@@ -10,6 +10,7 @@
 
 <script lang="ts">
 	import { Button, PageSection, HeaderChip, BlogCard, tilt } from "$lib";
+	import { Footer } from "$layout";
 
 	interface Post {
 		path: string;
@@ -57,20 +58,20 @@
 		/>
 		<div class="main-post-info">
 			<HeaderChip
-			>{new Date(
-				mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
-			).toLocaleDateString("en-US", {
-				year: "numeric",
-				day: "numeric",
-				month: "short"
-			})}</HeaderChip
+				>{new Date(
+					mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
+				).toLocaleDateString("en-US", {
+					year: "numeric",
+					day: "numeric",
+					month: "short"
+				})}</HeaderChip
 			>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
 				href="blog/{mainPost.path.replace(/\.[^/.]+$/, '')}"
 				variant="accent"
-			>Read More
+				>Read More
 			</Button>
 		</div>
 	</div>
@@ -84,6 +85,8 @@
 		<p>More posts coming soon!</p>
 	{/if}
 </PageSection>
+
+<Footer />
 
 <style lang="scss">
 	@use "../src/styles/pages/blog";

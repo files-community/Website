@@ -52,8 +52,7 @@
 	onMount(() => {
 		visible = false; // We want SSR to have these visible by default, so we'll just do this.
 
-		systemTheme = window?.matchMedia("(prefers-color-scheme: dark)")
-			?.matches
+		systemTheme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches
 			? "dark"
 			: "light";
 
@@ -73,10 +72,9 @@
 		<HeaderChip>Themes</HeaderChip>
 		<h2>Distinctly personal.</h2>
 		<p>
-			Have it your way. Files features a fully customizable user
-			interface, right down to the colors and materials. Explore themes
-			created by the community or dive right into the docs and create your
-			own.
+			Have it your way. Files features a fully customizable user interface,
+			right down to the colors and materials. Explore themes created by the
+			community or dive right into the docs and create your own.
 		</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}

@@ -3,8 +3,7 @@
 :global {
 	// Outer section
 	#themes-section {
-		border-radius: 0 0 var(--overlay-corner-radius)
-			var(--overlay-corner-radius);
+		border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
 		background-color: var(--card-background-secondary);
 		overflow: hidden;
 
@@ -100,9 +99,7 @@
 				--accent-text-default: var(--text-color-tertiary);
 				--accent-text-tertiary: var(--accent-text-default);
 				--accent-text-contrast-primary: #000;
-				--accent-text-contrast-secondary: var(
-					--accent-text-contrast-primary
-				);
+				--accent-text-contrast-secondary: var(--accent-text-contrast-primary);
 				--text-color-primary: #000;
 				--text-color-tertiary: #332500;
 				--text-color-secondary: var(--text-color-primary);

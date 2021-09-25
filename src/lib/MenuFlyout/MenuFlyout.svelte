@@ -1,8 +1,8 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+	import { onMount } from "svelte";
 
-  let menu: HTMLUListElement;
-  let outer: HTMLDivElement;
+	let menu: HTMLUListElement;
+	let outer: HTMLDivElement;
 
 	onMount(() => {
 		outer.style.setProperty(

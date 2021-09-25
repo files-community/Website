@@ -3,15 +3,14 @@
 
 	export const load: Load = async ({ page, fetch }) => ({
 		props: {
-			post: await fetch(`${page.path}.json`).then(response =>
-				response.json()
-			)
+			post: await fetch(`${page.path}.json`).then(response => response.json())
 		}
 	});
 </script>
 
 <script lang="ts">
 	import { MenuFlyout, ListViewItem } from "$lib";
+	import { Footer } from "$layout";
 
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
@@ -50,35 +49,34 @@
 				target="_blank">@{author}</a
 			>
 			<span>•</span>
-			{new Date(
-				date.replace(/-/g, "/").replace(/T.+/, "")
-			).toLocaleDateString("en-US", {
-				year: "numeric",
-				day: "numeric",
-				month: "short"
-			})}
+			{new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString(
+				"en-US",
+				{
+					year: "numeric",
+					day: "numeric",
+					month: "short"
+				}
+			)}
 			<MenuFlyout>
 				<button aria-label="Share" class="share-button" title="Share">
 					{@html Share}
 				</button>
 				<svelte:fragment slot="menu">
 					<ListViewItem
-						on:click={() =>
-							navigator.clipboard.writeText(window.location.href)}
+						on:click={() => navigator.clipboard.writeText(window.location.href)}
 					>
 						Copy URL
 					</ListViewItem>
 					<ListViewItem
-						href="https://twitter.com/intent/tweet?text={window
-							.location.href}"
+						href="https://twitter.com/intent/tweet?text={window.location.href}"
 						rel="noreferrer noopener"
 						target="_blank"
 					>
 						Twitter
 					</ListViewItem>
 					<ListViewItem
-						href="https://www.facebook.com/sharer/sharer.php?u={window
-							.location.href}"
+						href="https://www.facebook.com/sharer/sharer.php?u={window.location
+							.href}"
 						rel="noreferrer noopener"
 						target="_blank"
 					>
@@ -95,6 +93,8 @@
 		</div>
 	</article>
 </section>
+
+<Footer />
 
 <style lang="scss">
 	@use "../src/styles/pages/blogPost";

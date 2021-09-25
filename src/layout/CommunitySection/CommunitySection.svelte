@@ -14,9 +14,8 @@
 	} from "$lib";
 
 	// Fetch contributors for the community section
-	let [contributors1, contributors2, contributors3]: Array<
-		ContributorData[]
-	> = [[], [], []];
+	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> =
+		[[], [], []];
 
 	// Utility function for randomly shuffling an array
 	const shuffle = a => a.sort(() => Math.random() - 0.5);
@@ -35,8 +34,8 @@
 			<HeaderChip>Community</HeaderChip>
 			<h2>Designed and developed by you.</h2>
 			<p>
-				Files is free and open source software, maintained and designed
-				by a collective of hundreds of contributors.
+				Files is free and open source software, maintained and designed by a
+				collective of hundreds of contributors.
 			</p>
 			<div class="buttons-spacer">
 				<HyperlinkButton href="https://discord.gg/{links.discord}"

@@ -15,10 +15,7 @@
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions =
-		| "Microsoft Store"
-		| "Github Release"
-		| "Winget (CLI)";
+	type DownloadOptions = "Microsoft Store" | "Github Release" | "Winget (CLI)";
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -31,11 +28,7 @@
 	// Group bindings
 	let currentDownloadSource = 0;
 
-	const downloadSources = [
-		"Microsoft Store",
-		"GitHub Release",
-		"Winget (CLI)"
-	];
+	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
 	const storeUrl = isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
@@ -91,21 +84,16 @@
 <PageSection id="hero-section">
 	<div class="hero-left">
 		<h1>Files</h1>
-		<p>
-			A modern file explorer that pushes the boundaries of the platform.
-		</p>
+		<p>A modern file explorer that pushes the boundaries of the platform.</p>
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
 					href={currentDownloadSource !== 2 ? downloadUrl : undefined}
 					id="hero-download-button"
 					on:click={() => {
-						if (currentDownloadSource === 2)
-							wingetDialogOpen = true;
+						if (currentDownloadSource === 2) wingetDialogOpen = true;
 					}}
-					rel={currentDownloadSource !== 2
-						? "noreferrer noopener"
-						: undefined}
+					rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
 					target={currentDownloadSource !== 2 ? "_blank" : undefined}
 					variant="accent"
 				>
@@ -125,8 +113,7 @@
 						{#each ["Microsoft Store", "Github Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
-								on:change={() =>
-									changeDownloadSource(downloadOption, id)}
+								on:change={() => changeDownloadSource(downloadOption, id)}
 								value={id}
 							>
 								{downloadOption}
@@ -136,8 +123,7 @@
 				</MenuFlyout>
 			</div>
 			<Button
-				href="https://github.com/{links.github.owner}/{links.github
-					.repo}/"
+				href="https://github.com/{links.github.owner}/{links.github.repo}/"
 				rel="noreferrer noopener"
 				target="_blank"
 			>

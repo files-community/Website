@@ -4,7 +4,8 @@
 		DesignSection,
 		FeaturesSection,
 		HeroSection,
-		ThemesSection
+		ThemesSection,
+		Footer
 	} from "$layout/";
 </script>
 
@@ -24,3 +25,5 @@
 <ThemesSection />
 
 <CommunitySection />
+
+<Footer />

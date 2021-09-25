@@ -118,8 +118,7 @@
 					on:search={() => {
 						if (
 							searchResults.length > 0 &&
-							$page.path !==
-								`/docs${searchResults[selection].path}`
+							$page.path !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
 								keepfocus: true
@@ -132,10 +131,7 @@
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
 							{#each searchResults as { name, path }, i}
-								<ListViewItem
-									selected={selection === i}
-									href="/docs{path}"
-								>
+								<ListViewItem selected={selection === i} href="/docs{path}">
 									{name}
 								</ListViewItem>
 							{/each}
@@ -165,8 +161,7 @@
 					on:search={() => {
 						if (
 							searchResults.length > 0 &&
-							$page.path !==
-								`/docs${searchResults[selection].path}`
+							$page.path !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
 								keepfocus: true
@@ -179,10 +174,7 @@
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
 							{#each searchResults as { name, path }, i}
-								<ListViewItem
-									selected={selection === i}
-									href="/docs{path}"
-								>
+								<ListViewItem selected={selection === i} href="/docs{path}">
 									{name}
 								</ListViewItem>
 							{/each}
@@ -196,17 +188,14 @@
 		<div class="page-inner markdown-body">
 			<header>
 				<span>
-					{$page.path
-						.split("/")
-						.join(" / ")
-						.substring(2)}{$page.path === "/docs"
+					{$page.path.split("/").join(" / ").substring(2)}{$page.path ===
+					"/docs"
 						? " / overview"
 						: ""}
 				</span>
 				<div class="header-right">
 					<HyperlinkButton
-						href="https://github.com/{links.github.owner}/{links
-							.github
+						href="https://github.com/{links.github.owner}/{links.github
 							.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
 							'/index'}.svx"
 						rel="noreferrer noopener"

@@ -13,8 +13,8 @@
 	<h2>Power meets beauty.</h2>
 	<p>
 		Explore a beautiful Windows-first design. Manage all your files with
-		increased productivity. Work across multiple folders with tabs. And so
-		much more.
+		increased productivity. Work across multiple folders with tabs. And so much
+		more.
 	</p>
 	<div class="buttons-spacer">
 		<Button

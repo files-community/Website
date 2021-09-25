@@ -11,9 +11,7 @@
 	onMount(() => {
 		// Check localStorage for an existing treeViewState
 		// If none exists, use a blank object string
-		treeViewState = JSON.parse(
-			localStorage.getItem("treeViewState") ?? "{}"
-		);
+		treeViewState = JSON.parse(localStorage.getItem("treeViewState") ?? "{}");
 	});
 
 	// Utility function for converting regular names to kebab case

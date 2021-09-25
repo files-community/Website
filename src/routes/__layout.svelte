@@ -3,7 +3,7 @@
 
 	import { links } from "$data/links";
 	import { docs } from "$data/docs";
-	import { Navbar, Footer } from "$lib";
+	import { Navbar } from "$layout";
 
 	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
@@ -120,7 +120,6 @@
 
 <Navbar buttons={navbarButtons} items={navbarItems} />
 <slot />
-<Footer />
 
 <style global lang="scss">
 	@use "src/styles/global";

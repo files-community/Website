@@ -451,8 +451,7 @@ code {
 		}
 
 		&:hover {
-			background: var(--scrollbar-caret-bottom) bottom center/contain
-					no-repeat,
+			background: var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
 				var(--scrollbar-caret-top) top center/contain no-repeat,
 				rgba(var(--mica-tint), var(--mica-tint-opacity));
 		}

@@ -13,8 +13,7 @@
 	onMount(() => {
 		// Iterate through feature cards every n seconds
 		setInterval(
-			() =>
-				(currentFeature += currentFeature !== 3 ? 1 : -currentFeature),
+			() => (currentFeature += currentFeature !== 3 ? 1 : -currentFeature),
 			cardPaginationInterval * 1000
 		);
 	});
@@ -28,9 +27,9 @@
 		<HeaderChip>Features</HeaderChip>
 		<h2>It already does that.</h2>
 		<p>
-			Cloud files integration? Tabs and multiple layouts? Rich file
-			previews? Files has it covered with robust features you expect from
-			a modern file manager.
+			Cloud files integration? Tabs and multiple layouts? Rich file previews?
+			Files has it covered with robust features you expect from a modern file
+			manager.
 		</p>
 		<hr role="separator" />
 		<div class="feature-cards-container">

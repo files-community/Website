@@ -146,8 +146,7 @@
 					{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
 						<h6>Dimensions</h6>
 						<span
-							>{file.dimensions.horizontal} x {file.dimensions
-								.vertical}</span
+							>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
 						>
 					{/if}
 					{#if file?.dpi?.horizontal}
