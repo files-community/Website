@@ -15,15 +15,21 @@
 	</div>
 	<div class="become-a-contributor">
 		<p>
-			Become a contributor yourself:
+			Contribute to this website
 		</p>
-		<HyperlinkButton href="https://github.com/itsmichaelwest" target="_blank" rel="nofollow">
+		<HyperlinkButton href="https://github.com/files-community/Website" target="_blank" rel="nofollow">
 			Files Website GitHub
+		</HyperlinkButton>
+		<p>
+			Something missing or broken?
+		</p>
+		<HyperlinkButton href="https://github.com/files-community/Website/issues/new" target="_blank" rel="nofollow">
+			Open a new issue
 		</HyperlinkButton>
 	</div>
 	<div class="contributors">
 		<p class="lead">
-			Built by an amazing team of contributors
+			Built by an amazing team of people
 		</p>
 		<HyperlinkButton href="https://github.com/Tropix126" target="_blank" rel="nofollow">
 			Tropical
@@ -37,9 +43,6 @@
 		<HyperlinkButton href="https://github.com/chingucoding" target="_blank" rel="nofollow">
 			Marcel Wagner
 		</HyperlinkButton>
-		<HyperlinkButton href="https://github.com/5E7EN" target="_blank" rel="nofollow">
-			Simon
-		</HyperlinkButton>
 		<HyperlinkButton href="https://michaelwe.st/" target="_blank" rel="nofollow">
 			Michael West
 		</HyperlinkButton>
@@ -51,10 +54,9 @@
 
 	.footer {
 		@include flex($align: top);
-		gap: 2rem;
+		gap: 4rem;
 
 		position: relative;
-		z-index: 10;
 		justify-content: space-between;
 		padding: 3.5rem;
 		background-color: var(--background-base);
