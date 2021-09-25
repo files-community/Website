@@ -34,7 +34,6 @@
 		height: calc(var(--menu-flyout-height) + 64px);
 		margin: 4px 0;
 		transform: translateX(-50%);
-		overflow: hidden;
 		pointer-events: none;
 
 		> * {
