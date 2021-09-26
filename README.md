@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">  
-    <img alt="Files website preview" src="https://i.imgur.com/lf3n86K.png"/>
+    <img alt="Files website preview" src="https://i.imgur.com/U0iIVcf.png"/>
     <br/>
     The starting page for everything related to <a href="https://github.com/files-community/files">Files</a> — documentation and news included!
     <br/>
@@ -41,13 +41,14 @@ This repository contains the source code for the new [Files website](https://fil
 |  ├──screenshots         // Screenshots and renders of the app used in the website.
 |  └──ui                  // Images other than branding used in the website's user interface.
 └──src                    // The website's source code.
-   ├──lib                 // Svelte components used within the website.
+   ├──lib                 // Re-usable Svelte components used within the website.
+   ├──layout              // Components responsible for defining page layout, such as headers, footers, page sections, etc...
    ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
    |  ├──docs             // Documentation and associated files.
-   |  └──themes           // The themes page and associated files.
+   |  └──blog             // Blog page and associated files.
+   |     └──posts         // Folder containing blog posts in MDSveX format (*.svx).
    ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
-   ├──styles              // SCSS styles that are NOT tied to components in /lib.
-   └──types               // Various type mappings used by TypeScript.
+   └──styles              // SCSS styles that are NOT tied to components in /lib.
 ```
 
 ---
