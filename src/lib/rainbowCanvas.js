@@ -615,15 +615,6 @@ export default function rainbowCanvas(node) {
 					(this.conf.playing || this.isMouseDown) &&
 						requestAnimationFrame(this.animate);
 				}),
-				e(this, "addIsLoadedClass", () => {
-					/*this.isIntersecting && */
-					!this.isLoadedClass &&
-						((this.isLoadedClass = !0),
-						this.el.classList.add("canvas-loaded"),
-						setTimeout(() => {
-							this.el.parentElement.classList.add("canvas-loaded");
-						}, 3e3));
-				}),
 				e(this, "pause", () => {
 					this.conf.playing = false;
 				}),
@@ -847,7 +838,7 @@ export default function rainbowCanvas(node) {
 						.getPropertyValue("--gradient-color-1")
 						.indexOf("#")
 			)
-				this.init(), this.addIsLoadedClass();
+				this.init()
 			else {
 				if (
 					((this.cssVarRetries += 1),
