@@ -124,8 +124,7 @@
 			height: auto;
 			max-height: 100%;
 			border: 1px solid var(--surface-stroke-default);
-			border-radius: calc(var(--overlay-corner-radius) / 2);
-			border-radius: calc(var(--overlay-corner-radius) / 2);
+			border-radius: calc(var(--overlay-corner-radius) / 1.5); 
 			background-color: rgba(
 				var(--mica-tint),
 				calc(var(--mica-tint-opacity) / 1.5)
@@ -136,6 +135,9 @@
 			-webkit-user-drag: none;
 			aspect-ratio: 1280 / 960;
 			backdrop-filter: blur(60px) saturate(150%);
+			@media only screen and (min-width: 2048px) {
+				border-radius: var(--overlay-corner-radius);
+			}
 		}
 	}
 

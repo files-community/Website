@@ -36,11 +36,14 @@
 		max-width: 1024px;
 		margin: 0 auto;
 		border: 1px solid var(--surface-stroke-default);
-		border-radius: var(--overlay-corner-radius);
+		border-radius: calc(var(--overlay-corner-radius) / 1.25); 
 		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
 		box-shadow: var(--window-elevation);
 		transition: 50ms linear transform;
 		backdrop-filter: blur(60px) saturate(150%);
+		@media only screen and (min-width: 2048px) {
+			border-radius: var(--overlay-corner-radius);
+		}
 	}
 
 	&wallpaper {
@@ -77,7 +80,6 @@
 			top: 32px;
 			left: -2.5%;
 			width: 105%;
-			border-radius: calc(var(--overlay-corner-radius) / 2);
 			transform: none !important; // Prevent parallax scrolling
 		}
 
