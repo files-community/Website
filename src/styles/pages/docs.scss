@@ -37,10 +37,10 @@
 
 	// Page header
 	header {
+		@include flex($align: center, $justify: between);
 		margin-bottom: -20px;
 		color: var(--text-color-tertiary);
 		white-space: nowrap;
-		@include flex($align: center, $justify: between);
 
 		span {
 			text-overflow: ellipsis;

@@ -5,6 +5,7 @@ export { default as Navbar } from "../layout/Navbar/Navbar.svelte";
 export { default as Footer } from "../layout/Footer/Footer.svelte";
 export { default as PageSection } from "./PageSection/PageSection.svelte";
 export { default as HyperlinkButton } from "./HyperlinkButton/HyperlinkButton.svelte";
+export { default as IconButton } from "./IconButton/IconButton.svelte";
 export { default as MenuFlyout } from "./MenuFlyout/MenuFlyoutWrapper.svelte";
 export { default as ListViewItem } from "./ListViewItem/ListViewItem.svelte";
 export { default as TreeView } from "./TreeView/TreeView.svelte";

@@ -1,13 +1,8 @@
 @use "src/styles/mixins" as *;
 
-// Outer section
-:global(#community-section) {
-	overflow: hidden;
-
-	// Center our buttons
-	.buttons-spacer {
-		justify-content: center;
-	}
+// Center our buttons
+:global(#community-section .buttons-spacer) {
+	justify-content: center;
 }
 
 .community-section- {
@@ -89,6 +84,7 @@
 	// Serves no other purpose other than spacing it from the main text.
 	&container {
 		position: relative;
+		width: 100vw;
 		max-width: 2800px;
 
 		// Preserve box-shadows when overflow is hidden
@@ -100,11 +96,13 @@
 		// Seamlessly fades incoming/outgoing cards into the section at large resolutions.
 		&::before,
 		&::after {
-			content: "";
 			position: absolute;
 			z-index: 1;
 			width: 96px;
 			height: 100%;
+			@media only screen and (min-width: 2800px) {
+				content: "";
+			}
 		}
 
 		&::before {

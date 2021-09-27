@@ -1,7 +1,7 @@
 <script lang="ts">
 	export let href = undefined;
-	export let disabled: boolean = false;
-	let className: string = "";
+	export let disabled = false;
+	let className = "";
 	export { className as class };
 </script>
 

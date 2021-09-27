@@ -5,7 +5,7 @@
 	let outer: HTMLDivElement;
 
 	onMount(() => {
-		outer.style.setAttribute(
+		outer.setAttribute(
 			"style",
 			`--menu-flyout-height: ${menu.offsetHeight}px; --menu-flyout-width: ${menu.offsetWidth}px;`
 		);

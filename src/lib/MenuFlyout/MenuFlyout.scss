@@ -26,6 +26,7 @@
 :global {
 	.menu-flyout-outer {
 		position: absolute;
+		overflow: hidden;
 		top: 100%;
 		left: 50%;
 		@include flex($justify: center);

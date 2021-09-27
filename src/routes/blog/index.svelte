@@ -10,7 +10,6 @@
 
 <script lang="ts">
 	import { Button, PageSection, HeaderChip, BlogCard, tilt } from "$lib";
-	import { Footer } from "$layout";
 
 	interface Post {
 		path: string;
@@ -85,8 +84,6 @@
 		<p>More posts coming soon!</p>
 	{/if}
 </PageSection>
-
-<Footer />
 
 <style lang="scss">
 	@use "../src/styles/pages/blog";

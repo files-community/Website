@@ -9,8 +9,7 @@
 </script>
 
 <script lang="ts">
-	import { MenuFlyout, ListViewItem } from "$lib";
-	import { Footer } from "$layout";
+	import { MenuFlyout, ListViewItem, IconButton } from "$lib";
 
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
@@ -30,14 +29,15 @@
 <section class="blog-post">
 	<article>
 		<div class="post-title">
-			<a
+			<IconButton
+				--icon-color="var(--text-color-secondary)"
 				aria-label="Back to Blog"
 				class="back-button"
 				href="/blog"
 				title="Back to Blog"
 			>
 				{@html ArrowLeft}
-			</a>
+			</IconButton>
 			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
@@ -58,11 +58,12 @@
 				}
 			)}
 			<MenuFlyout>
-				<button aria-label="Share" class="share-button" title="Share">
+				<IconButton size={20} aria-label="Share" class="share-button" title="Share">
 					{@html Share}
-				</button>
+				</IconButton>
 				<svelte:fragment slot="menu">
 					<ListViewItem
+						tabindex="0"
 						on:click={() => navigator.clipboard.writeText(window.location.href)}
 					>
 						Copy URL
@@ -93,8 +94,6 @@
 		</div>
 	</article>
 </section>
-
-<Footer />
 
 <style lang="scss">
 	@use "../src/styles/pages/blogPost";
