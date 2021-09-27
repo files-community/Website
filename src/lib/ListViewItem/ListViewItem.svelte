@@ -4,8 +4,8 @@
 	export let href = undefined;
 	export let group = undefined;
 	export let value = undefined;
-	export let selected: boolean = false;
-	export let expanded: boolean = false;
+	export let selected = false;
+	export let expanded= false;
 	export let type: "default" | "navigation" | "expander" = "default";
 	let className = "";
 	export { className as class };

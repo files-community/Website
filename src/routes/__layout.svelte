@@ -55,12 +55,12 @@
 	const navbarButtons = [
 		{
 			label: "Discord",
-			href: `https://discord.gg/${discord}`,
+			href: `https://discord.gg/${ discord }`,
 			icon: Chat
 		},
 		{
 			label: "GitHub",
-			href: `https://github.com/${github.owner}/${github.repo}`,
+			href: `https://github.com/${ github.owner }/${ github.repo }`,
 			icon: Code
 		}
 	];
@@ -103,10 +103,10 @@
 	<meta content="@FilesForWindows" name="twitter:creator" />
 
 	<script type="text/javascript">
-		(function (c, l, a, r, i, t, y) {
+		(function(c, l, a, r, i, t, y) {
 			c[a] =
 				c[a] ||
-				function () {
+				function() {
 					(c[a].q = c[a].q || []).push(arguments);
 				};
 			t = l.createElement(r);
