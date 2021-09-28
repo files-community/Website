@@ -14,7 +14,7 @@
 	}
 }
 
-.back-button {
+:global(.back-button) {
 	color: var(--text-color-tertiary);
 }
 

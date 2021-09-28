@@ -2,7 +2,10 @@
 
 1. Install Microsoft Visual Studio 2017 or later and the UWP Development kit.
 2. Clone the Files [repository](https://github.com/files-community/files) and open `Files.sln` in Visual Studio.
-3. Set the `Files.Package` project as the startup item by right-clicking on `Files.Package` in the solution explorer and hitting 'Set as Startup item'.
-4. In the architecture pane, select the correct acrtitecture for your system as `Debug` which should look like this:
-![VS Run config image](../../docs-resources/vs-architecture-config.png)
+3. Set the `Files.Package` project as the startup item by right-clicking on `Files.Package` in the solution explorer and
+   hitting 'Set as Startup item'.
+4. In the architecture pane, select the correct architecture for your system as `Debug` which should look like this:
+
+   ![VS Run config: Debug, x64, Files.Package, Local Machine](/docs-resources/vs-architecture-config.png)
+
 5. You're good to go!

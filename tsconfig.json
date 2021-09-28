@@ -27,7 +27,7 @@
 			"$data/*": ["src/data/*"],
 			"$page-sections": ["src/page-sections/*", "src/page-sections/index"],
 			"$routes": ["src/routes/*"],
-			"$static": ["static/*"]
+			"$static/*": ["static/*"]
 		}
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]

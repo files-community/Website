@@ -3,7 +3,7 @@
 
 	export const load: Load = async ({ page, fetch }) => ({
 		props: {
-			post: await fetch(`${page.path}.json`).then(response => response.json())
+			post: await fetch(`${ page.path }.json`).then(response => response.json())
 		}
 	});
 </script>
