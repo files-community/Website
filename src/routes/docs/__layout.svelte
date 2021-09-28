@@ -17,7 +17,7 @@
 	const docsPages = filterPages(docs);
 
 	// These are pretty self-explanatory
-	$: currentPage = docsPages.find(p => `/docs${p.path}` === $page.path);
+	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.path);
 
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.name;
@@ -43,9 +43,9 @@
 		if (key === "Enter") {
 			if (
 				searchResults.length > 0 &&
-				$page.path !== `/docs${searchResults[selection].path}`
+				$page.path !== `/docs${ searchResults[selection].path }`
 			)
-				goto(`/docs${searchResults[selection].path}`, {
+				goto(`/docs${ searchResults[selection].path }`, {
 					keepfocus: true
 				});
 		} else if (key === "ArrowDown") {
@@ -188,10 +188,8 @@
 		<div class="page-inner markdown-body">
 			<header>
 				<span>
-					{$page.path.split("/").join(" / ").substring(2)}{$page.path ===
-					"/docs"
-						? " / overview"
-						: ""}
+					{$page.path.split("/").join(" / ").substring(2)}
+					{$page.path === "/docs" ? " / overview" : ""}
 				</span>
 				<div class="header-right">
 					<HyperlinkButton
