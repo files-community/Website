@@ -67,6 +67,7 @@
 	&thumbnail {
 		max-width: 100%;
 		margin-bottom: 48px;
+		border: 1px solid var(--card-stroke-default);
 		border-radius: var(--overlay-corner-radius);
 	}
 }
