@@ -37,8 +37,8 @@
     }
 }
 
-@media only screen and (max-width: 500px) {
-    :global(#footer .page-section-inner) {
+@media only screen and (max-width: 768px) {
+    :global(#page-footer .page-section-inner) {
         grid-template-columns: auto;
     }
 }
