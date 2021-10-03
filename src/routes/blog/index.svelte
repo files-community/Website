@@ -31,9 +31,11 @@
 
 <svelte:head>
 	<title>Files - Blog</title>
-	<meta content="Files - Blog" property="og:title"/>
+	<meta content="Files - Blog" name="og:title"/>
+	<meta content="Files - Blog" name="twitter:title"/>
 
-	<meta content="/branding/banner-blog-light.png" property="og:image"/>
+	<meta content="/branding/banner-blog-light.png" name="og:image"/>
+	<meta content="/branding/banner-blog-light.png" name="twitter:image"/>
 </svelte:head>
 
 <svelte:window bind:scrollY/>

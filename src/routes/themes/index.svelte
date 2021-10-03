@@ -1,8 +1,10 @@
 <svelte:head>
 	<title>Files - Themes</title>
-	<meta content="Files - Themes" property="og:title" />
+	<meta content="Files - Themes" name="og:title" />
+	<meta content="Files - Themes" name="twitter:title" />
 
-	<meta content="/branding/banner-themes-light.png" property="og:image" />
+	<meta content="/branding/banner-themes-light.png" name="og:image" />
+	<meta content="/branding/banner-themes-light.png" name="twitter:image" />
 </svelte:head>
 
 todo
