@@ -18,6 +18,8 @@ body:
         - Chrome
         - Safari
         - Microsoft Edge
+    validations:
+      required: true
   - type: textarea
     attributes:
       label: Description
