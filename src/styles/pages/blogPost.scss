@@ -68,8 +68,13 @@
             border-radius: 50%;
             border: 1px solid var(--card-stroke-default);
         }
-        :global(.menu-flyout-container) {
-            margin-left: auto;
+        :global {
+            .menu-flyout {
+                min-width: 120px;
+                &-container {
+                    margin-left: auto;
+                }
+            }
         }
     }
     &thumbnail {
