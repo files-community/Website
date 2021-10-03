@@ -139,8 +139,16 @@
 		// Seen on the right side of the section
 		.component-showcase {
 			position: absolute;
-			right: 0;
+			top: -100px;
+            right: -100px;
 			transform: rotate(30deg);
+            @media only screen and (max-width: 1224px) {
+                top: -100px;
+                right: -156px;
+            }
+            @media only screen and (max-width: 920px) {
+                display: none;
+            }
 		}
 	}
 }

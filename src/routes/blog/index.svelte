@@ -64,7 +64,6 @@
             <Button variant="accent" href="blog/{mainPost.path.replace(/\.[^/.]+$/, "")}">Read More</Button>
         </div>
     </div>
-    <h3>Recent Posts</h3>
     <div class="blog-cards">
         {#each posts.slice(1) as post}
             <BlogCard path={post.path} {...post.metadata} />
