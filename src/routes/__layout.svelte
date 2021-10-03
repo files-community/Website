@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { page } from "$app/stores";
 
 	import { links } from "$data/links";
 	import { docs } from "$data/docs";
@@ -83,7 +84,7 @@
 	/>
 
 	<meta
-		content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+		content="{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
 		name="twitter:image"
 	/>
 

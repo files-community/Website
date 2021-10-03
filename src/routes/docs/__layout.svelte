@@ -103,7 +103,7 @@
 	/>
 
 	<meta content="/branding/banner-docs-light.png" name="og:image" />
-	<meta content="/branding/banner-docs-light.png" name="twitter:image" />
+	<meta content="{$page.host}/branding/banner-docs-light.png" name="twitter:image" />
 </svelte:head>
 
 <section class="docs">
