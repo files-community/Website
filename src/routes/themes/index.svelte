@@ -7,7 +7,7 @@
 	<meta content="Files - Themes" name="twitter:title" />
 
 	<meta content="/branding/banner-themes-light.png" name="og:image" />
-	<meta content="{$page.host}/branding/banner-themes-light.png" name="twitter:image" />
+	<meta content="https://{$page.host}/branding/banner-themes-light.png" name="twitter:image" />
 </svelte:head>
 
 todo

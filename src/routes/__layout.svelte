@@ -84,7 +84,7 @@
 	/>
 
 	<meta
-		content="{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+		content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
 		name="twitter:image"
 	/>
 

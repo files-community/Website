@@ -16,7 +16,7 @@
 	<meta content="Files - Home" name="twitter:title" />
 
 	<meta content="/branding/banner-light.png" name="og:image" />
-	<meta content="{$page.host}/branding/banner-light.png" name="twitter:image" />
+	<meta content="https://{$page.host}/branding/banner-light.png" name="twitter:image" />
 </svelte:head>
 
 <HeroSection />

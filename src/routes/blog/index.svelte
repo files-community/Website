@@ -36,7 +36,7 @@
 	<meta content="Files - Blog" name="twitter:title"/>
 
 	<meta content="/branding/banner-blog-light.png" name="og:image"/>
-	<meta content="{$page.host}/branding/banner-blog-light.png" name="twitter:image"/>
+	<meta content="https://{$page.host}/branding/banner-blog-light.png" name="twitter:image"/>
 </svelte:head>
 
 <svelte:window bind:scrollY/>
