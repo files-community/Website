@@ -51,7 +51,7 @@
 		<p>Pages</p>
 		<HyperlinkButton
 			sveltekit:prefetch
-			href="https://twitter.com/FilesForWindows"
+			href="/"
 		>
 			Home
 		</HyperlinkButton>
