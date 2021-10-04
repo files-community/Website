@@ -10,6 +10,7 @@
 
 <script lang="ts">
 	import { Button, PageSection, HeaderChip, BlogCard, tilt } from "$lib"
+	import { page } from "$app/stores";
 
 	interface Post {
 		path: string;
@@ -31,9 +32,11 @@
 
 <svelte:head>
 	<title>Files - Blog</title>
-	<meta content="Files - Blog" property="og:title"/>
+	<meta content="Files - Blog" name="og:title"/>
+	<meta content="Files - Blog" name="twitter:title"/>
 
-	<meta content="/branding/banner-blog-light.png" property="og:image"/>
+	<meta content="/branding/banner-blog-light.png" name="og:image"/>
+	<meta content="https://{$page.host}/branding/banner-blog-light.png" name="twitter:image"/>
 </svelte:head>
 
 <svelte:window bind:scrollY/>

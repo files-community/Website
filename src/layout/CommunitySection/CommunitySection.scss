@@ -15,7 +15,7 @@
 		--text-color-primary: #202020;
 		--text-color-secondary: #282828;
 		--text-color-tertiary: var(--text-color-secondary);
-		--subtle-color-secondary: rgba(0, 0, 0, 0.035);
+		--subtle-color-secondary: rgba(0, 0, 0, 0.095);
 		--subtle-color-tertiary: rgba(0, 0, 0, 0.024);
 		--subtle-color-disabled: rgba(255, 255, 255, 0);
 		--accent-text-default: var(--accent-color-dark-3);
@@ -41,11 +41,11 @@
 		border-radius: var(--overlay-corner-radius);
 		background-color: #f9f9f9;
 		box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-			0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-			0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-			0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-			0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-			0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+		0 5.48831px 5.48831px rgb(0 0 0 / 4%),
+		0 13.7208px 10.9766px rgb(0 0 0 / 5%),
+		0 20.5812px 20.5812px rgb(0 0 0 / 6%),
+		0 41.1623px 41.1623px rgb(0 0 0 / 7%),
+		0 96.0454px 89.1851px rgb(0 0 0 / 9%);
 
 		canvas {
 			position: absolute;
@@ -108,18 +108,18 @@
 		&::before {
 			left: 0;
 			background-image: linear-gradient(
-				90deg,
-				var(--background-secondary),
-				transparent
+							90deg,
+							var(--background-secondary),
+							transparent
 			);
 		}
 
 		&::after {
 			right: 0;
 			background: linear-gradient(
-				90deg,
-				transparent,
-				var(--background-secondary)
+							90deg,
+							transparent,
+							var(--background-secondary)
 			);
 		}
 	}
@@ -139,13 +139,13 @@
 		&:nth-child(even) {
 			left: 24px;
 			float: left;
-			animation: contributors-right 80s linear infinite;
+			animation: contributors-right 80s linear infinite alternate;
 		}
 
 		&:nth-child(odd) {
 			left: -24px;
 			float: right;
-			animation: contributors-left 80s linear infinite;
+			animation: contributors-left 80s linear infinite alternate;
 		}
 
 		// Prevent extra bottom margins

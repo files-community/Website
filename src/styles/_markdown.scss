@@ -1,7 +1,7 @@
 @use "./mixins" as *;
 
 .markdown-body {
-	color: var(--text-color-secondary);
+	color: var(--text-color-primary);
 	font-size: 1.4rem;
 	line-height: 1.45;
 
@@ -31,10 +31,28 @@
 	}
 
 	// Images
-	img {
-		max-width: 100%;
-		height: auto;
-		border-radius: var(--control-corner-radius);
+	figure {
+		margin: 16px 0;
+		
+		&.margin- {
+			&top {
+				margin: 48px 0 16px 0;
+			}
+			&bottom {
+				margin: 16px 0 48px 0;
+			}
+		}
+
+		img {
+			max-width: 100%;
+			height: auto;
+			border-radius: var(--overlay-corner-radius);
+			border: 1px solid var(--card-stroke-default);
+		}
+
+		figcaption {
+			color: var(--text-color-secondary);
+		}
 	}
 
 	// Header text (<h1> through <h6>)

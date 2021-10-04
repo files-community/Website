@@ -95,10 +95,15 @@
 	<title>Files - {pageTitle ? `Docs - ${pageTitle}` : "Docs"}</title>
 	<meta
 		content="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-		property="og:title"
+		name="og:title"
+	/>
+	<meta
+		content="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+		name="twitter:title"
 	/>
 
-	<meta content="/branding/banner-docs-light.png" property="og:image" />
+	<meta content="/branding/banner-docs-light.png" name="og:image" />
+	<meta content="https://{$page.host}/branding/banner-docs-light.png" name="twitter:image" />
 </svelte:head>
 
 <section class="docs">

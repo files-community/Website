@@ -25,8 +25,7 @@
 		"paths": {
 			"$lib": ["src/lib/*", "src/lib/index"],
 			"$data/*": ["src/data/*"],
-			"$page-sections": ["src/page-sections/*", "src/page-sections/index"],
-			"$routes": ["src/routes/*"]
+			"$page-sections": ["src/page-sections/*", "src/page-sections/index"]
 		}
 	},
 	"include": ["src/**/*.d.ts", "src/**/*.js", "src/**/*.ts", "src/**/*.svelte"]

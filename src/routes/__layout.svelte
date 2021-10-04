@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { page } from "$app/stores";
 
 	import { links } from "$data/links";
 	import { docs } from "$data/docs";
@@ -67,9 +68,9 @@
 </script>
 
 <svelte:head>
-	<meta content="Files" property="og:site_name" />
+	<meta content="Files" name="og:site_name" />
 
-	<meta content="website" property="og:type" />
+	<meta content="website" name="og:type" />
 
 	<link
 		href="/branding/logo-{theme === 'light' ? 'light' : 'dark'}.svg"
@@ -79,7 +80,12 @@
 
 	<meta
 		content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
-		property="og:image"
+		name="og:image"
+	/>
+
+	<meta
+		content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+		name="twitter:image"
 	/>
 
 	<meta
@@ -88,7 +94,11 @@
 	/>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
-		property="og:description"
+		name="og:description"
+	/>
+	<meta
+		content="A modern file explorer that pushes the boundaries of the platform."
+		name="twitter:description"
 	/>
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"

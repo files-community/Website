@@ -3,7 +3,7 @@
 
 	export const load: Load = async ({ page, fetch }) => ({
 		props: {
-			post: await fetch(`${page.path}.json`).then(response => response.json())
+			post: await fetch(`${ page.path }.json`).then(response => response.json())
 		}
 	});
 </script>
@@ -21,9 +21,11 @@
 
 <svelte:head>
 	<title>Files - {title}</title>
-	<meta content="Files - {title}" property="og:title" />
+	<meta content="Files - {title}" name="og:title" />
+	<meta content="Files - {title}" name="twitter:title" />
 
-	<meta content={thumbnail} property="og:image" />
+	<meta content={thumbnail} name="og:image" />
+	<meta content={thumbnail} name="twitter:image" />
 </svelte:head>
 
 <section class="blog-post">

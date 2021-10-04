@@ -11,5 +11,5 @@ implementing new features, or pushing the boundaries of the platform, your input
 
 # Download Files
 
-- [Microsoft Store](https://www.microsoft.com/store/apps/9NGHP3DX8HDX)
+- [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
 - [GitHub](https://github.com/files-community/Files/releases)
