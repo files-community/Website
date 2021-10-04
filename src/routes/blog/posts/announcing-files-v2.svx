@@ -45,7 +45,7 @@ the file system.
     <figcaption>The redesigned context menu in Files v2 allows users to quickly assign tags to files and folders.</figcaption>
 </figure>
 
-**Custom themes** provide a way for users to personalize the look and feel of the app.
+[**Custom themes**](https://www.microsoft.com/store/productId/9N20KQ61LSFQ) provide a way for users to personalize the look and feel of the app.
 
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.jpg" alt="A screenshot of the settings dialog in Files v2, showing custom theme options." />
