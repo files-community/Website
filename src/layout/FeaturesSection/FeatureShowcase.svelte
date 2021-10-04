@@ -2,7 +2,7 @@
 	import { draw } from "svelte/transition";
 
 	import { cloudFiles, previewFiles, tags } from "$data/features";
-	import { ColorSwatch, Titlebar } from "$lib";
+	import { Button, ColorSwatch, Titlebar } from "$lib";
 
 	import Checkmark from "@fluentui/svg-icons/icons/checkmark_20_regular.svg?raw";
 	import ArrowSync from "@fluentui/svg-icons/icons/arrow_sync_20_regular.svg?raw";
@@ -186,6 +186,7 @@
 					class="file"
 					class:selected={currentPreviewFile === i}
 					on:click={() => (currentPreviewFile = i)}
+					style="--file-index: {i};"
 				>
 					<img src={file.icon} alt="File icon" />
 					{file.name}{typeof file.extension !== "undefined"
@@ -240,13 +241,34 @@
 	</svg>
 	<div class="tabs-showcase">
 		<div class="showcase-panel">
-			<Titlebar>Window</Titlebar>
+			<Titlebar>Files</Titlebar>
 		</div>
 		<div class="showcase-panel">
-			<Titlebar>Window</Titlebar>
+			<Titlebar>Files</Titlebar>
 		</div>
-		<div class="showcase-panel">
-			<Titlebar>Window</Titlebar>
+		<div class="tabs-anchor">
+			<div class="tab-row">
+				<div class="tab selected">
+					<img src="/ui/icons/documents.png" alt="Documents folder icon" width="16" height="16" />
+					Documents
+				</div>
+				<div class="tab">
+					<img src="/ui/icons/desktop.png" alt="Desktop folder icon" width="16" height="16" />
+					Desktop
+				</div>
+				<div class="tab">
+					<img src="/ui/icons/pictures.png" alt="Pictures folder icon" width="16" height="16" />
+					Pictures
+				</div>
+			</div>
+			<div class="showcase-panel">
+				<Titlebar>Files</Titlebar>
+				<div class="files-grid">
+					{#each Array(12) as file, i}
+						<div style="--file-index: {i};" class="placeholder-file"></div>
+					{/each}
+				</div>
+			</div>
 		</div>
 	</div>
 {/if}
