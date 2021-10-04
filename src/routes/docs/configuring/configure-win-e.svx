@@ -32,9 +32,7 @@ Please keep in mind that this method is unsupported and may not work for everyon
 
 1. Create a backup of the registry, make sure to store the backup in your desktop folder so that you can access it in
    the event that Files won't open.
-2.
-
-Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/OpenFilesOnWinE.zip)
+2. Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/OpenFilesOnWinE.zip)
 archive and extract *both* of the contained .reg files *to the desktop*
 
 3. Run `OpenFilesOnWinE.reg` to open Files on Win+E
@@ -48,6 +46,6 @@ archive and extract *both* of the contained .reg files *to the desktop*
 3. Navigate to `HKEY_CURRENT_USER\SOFTWARE\Classes\CLSID`
 4. Create a key named `{52205fd8-5dfb-447d-801a-d0b52f2e83e1}`
 5. Create a key named `shell` under `{52205fd8-5dfb-447d-801a-d0b52f2e83e1}`
-5. Create a key named `opennewwindow` under `shell`
-5. Create a key named `command` under `opennewwindow` and set the default key value to:
+6. Create a key named `opennewwindow` under `shell`
+7. Create a key named `command` under `opennewwindow` and set the default key value to:
    `C:\Users\<YOURUSERNAME>\AppData\Local\Microsoft\WindowsApps\files.exe`
