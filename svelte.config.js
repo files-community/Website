@@ -17,7 +17,6 @@ const config = {
 		vite: {
 			resolve: {
 				alias: {
-					$routes: path.resolve("./src/routes"),
 					$data: path.resolve("./src/data"),
 					$layout: path.resolve("./src/layout")
 				}
