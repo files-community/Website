@@ -19,8 +19,7 @@ const config = {
 				alias: {
 					$routes: path.resolve("./src/routes"),
 					$data: path.resolve("./src/data"),
-					$layout: path.resolve("./src/layout"),
-					$static: path.resolve("./static")
+					$layout: path.resolve("./src/layout")
 				}
 			}
 		},
