@@ -174,7 +174,7 @@
 						<span>{file.added}</span>
 					{/if}
 					{#if file.modified}
-						<h6>Date Created</h6>
+						<h6>Date Modified</h6>
 						<span>{file.modified}</span>
 					{/if}
 				</div>
