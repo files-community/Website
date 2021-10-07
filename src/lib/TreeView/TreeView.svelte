@@ -74,6 +74,6 @@
 
 	// Add padding to subtrees for the nesting effect
 	.subtree-items {
-		padding-left: 24px;
+		padding-inline-start: 24px;
 	}
 </style>

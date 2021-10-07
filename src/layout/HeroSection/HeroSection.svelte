@@ -15,7 +15,7 @@
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions = "Microsoft Store" | "Github Release" | "Winget (CLI)";
+	type DownloadOptions = "Microsoft Store" | "GitHub Release" | "Winget (CLI)";
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -55,7 +55,7 @@
 
 		switch (downloadOption) {
 			case "Microsoft Store":
-			case "Github Release":
+			case "GitHub Release":
 				window.open(downloadUrl, "_blank");
 				break;
 			case "Winget (CLI)":
@@ -76,8 +76,7 @@
 		// Fetch the URL for the latest files package from GitHub
 		releaseUrl = await getReleaseUrl();
 
-		isWindows =
-			navigator.platform === "Win32" || navigator.platform === "Win64";
+		isWindows = navigator.platform === "Win32" || navigator.platform === "Win64";
 	});
 </script>
 
@@ -110,7 +109,7 @@
 						variant="accent">{@html ChevronDown}</Button
 					>
 					<svelte:fragment slot="menu">
-						{#each ["Microsoft Store", "Github Release", "Winget (CLI)"] as downloadOption, id}
+						{#each ["Microsoft Store", "GitHub Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
 								on:change={() => changeDownloadSource(downloadOption, id)}

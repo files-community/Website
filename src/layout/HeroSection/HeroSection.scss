@@ -11,7 +11,7 @@
 		height: 75vh;
 		min-height: 584px;
 		max-height: 1024px;
-		border-bottom: 1px solid var(--divider-color-default);
+		border-block-end: 1px solid var(--divider-color-default);
 		overflow: hidden;
 
 		// Inner Section
@@ -77,8 +77,8 @@
 		// Backdrop canvas
 		canvas {
 			position: absolute;
-			right: 0;
-			bottom: 0;
+			inset-inline-end: 0;
+			inset-block-end: 0;
 			z-index: -1;
 			width: 60vw;
 			min-width: 100vh;
@@ -89,12 +89,15 @@
 			--gradient-color-2: #00d6b9;
 			--gradient-color-3: #0491e2;
 			--gradient-color-4: var(--background-base);
+
 			@media (prefers-color-scheme: light) {
 				opacity: 0.5;
 			}
+
 			@media only screen and (max-width: 1024px) {
 				width: 100%;
 			}
+
 			@media only screen and (max-width: 648px) {
 				height: 60vh;
 				mask-size: 100% 100%;
@@ -118,16 +121,16 @@
 
 		img {
 			position: absolute;
-			right: 0;
+			inset-inline-end: 0;
 			width: auto;
 			max-width: 100%;
 			height: auto;
 			max-height: 100%;
 			border: 1px solid var(--surface-stroke-default);
-			border-radius: calc(var(--overlay-corner-radius) / 1.5); 
+			border-radius: calc(var(--overlay-corner-radius) / 1.5);
 			background-color: rgba(
-				var(--mica-tint),
-				calc(var(--mica-tint-opacity) / 1.5)
+							var(--mica-tint),
+							calc(var(--mica-tint-opacity) / 1.5)
 			);
 			box-shadow: var(--window-elevation);
 			overflow: hidden;
@@ -135,6 +138,7 @@
 			-webkit-user-drag: none;
 			aspect-ratio: 1280 / 960;
 			backdrop-filter: blur(60px) saturate(150%);
+
 			@media only screen and (min-width: 2048px) {
 				border-radius: var(--overlay-corner-radius);
 			}
@@ -144,7 +148,7 @@
 	// Inner hero buttons
 	&button-inner {
 		@include flex($direction: column);
-		margin-left: 8px;
+		margin-inline-start: 8px;
 		font-size: 1.1rem;
 		line-height: normal;
 

@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { HyperlinkButton, IconButton, PageSection } from "$lib";
 	import { links } from "$data/links";
-	import Discord from "$static/ui/icons/discord.svg?raw";
-	import Github from "$static/ui/icons/github.svg?raw";
-	import Twitter from "$static/ui/icons/twitter.svg?raw";
+	import Discord from "/ui/icons/discord.svg?raw";
+	import Github from "/ui/icons/github.svg?raw";
+	import Twitter from "/ui/icons/twitter.svg?raw";
 </script>
 
 <PageSection type="footer" id="page-footer">

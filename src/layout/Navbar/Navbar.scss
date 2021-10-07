@@ -46,19 +46,19 @@
 
 	:global(svg) {
 		@include icon($size: 16px);
-		margin-right: 4px;
+		margin-inline-end: 4px;
 	}
 }
 
 .divider {
 	height: 30px;
 	margin: 0 8px;
-	border-left: 1px solid var(--subtle-color-secondary);
+	border-inline-start: 1px solid var(--subtle-color-secondary);
 }
 
 .logo {
 	@include flex($align: center);
-	margin-right: 8px;
+	margin-inline-end: 8px;
 	color: var(--text-color-primary);
 	font: {
 		size: 2rem;
@@ -74,7 +74,7 @@
 	img {
 		width: auto;
 		height: 32px;
-		margin-right: 12px;
+		margin-inline-end: 12px;
 	}
 }
 
@@ -87,7 +87,7 @@
 	@include flex($align: center, $justify: center);
 	width: 34px;
 	height: 34px;
-	margin-left: 8px;
+	margin-inline-start: 8px;
 	border: none;
 	border-radius: var(--control-corner-radius);
 	background-color: transparent;
@@ -125,12 +125,12 @@
 
 .sidebar {
 	position: fixed;
-	top: 0;
-	right: 0;
+	inset-block-start: 0;
+	inset-inline-end: 0;
 	display: none;
 	width: 272px;
 	height: 100vh;
-	padding-top: 62px;
+	padding-block-start: 62px;
 	border: 1px solid var(--surface-stroke-default);
 	border-radius: var(--overlay-corner-radius);
 	background-color: var(--background-base);
@@ -145,15 +145,15 @@
 	hr {
 		margin: 4px 0;
 		border: none;
-		border-top: 1px solid var(--divider-color-default);
+		border-block-start: 1px solid var(--divider-color-default);
 	}
 }
 
 @media screen and (max-width: 648px) {
 	.navbar {
 		position: fixed;
-		top: 0;
-		left: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
 		width: 100%;
 		height: 64px;
 		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
@@ -166,6 +166,6 @@
 	}
 
 	:global(body) {
-		padding-top: 62px;
+		padding-block-start: 62px;
 	}
 }

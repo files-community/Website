@@ -18,8 +18,8 @@
 		&::before {
 			content: "";
 			position: absolute;
-			top: -50%;
-			left: -50%;
+			inset-block-start: -50%;
+			inset-inline-start: -50%;
 			width: 200vw;
 			height: 200vw;
 			background-image: linear-gradient(
@@ -161,8 +161,8 @@
 
 .scroll-anchor {
 	position: absolute;
-	top: 0;
-	left: 0;
+	inset-block-start: 0;
+	inset-inline-start: 0;
 	visibility: hidden;
 	width: 0;
 	height: 100%;
@@ -174,12 +174,12 @@
 .component-showcase {
 	@include flex($gap: 16px);
 	position: absolute;
-	top: -100px;
-	right: -100px;
+	inset-block-start: -100px;
+	inset-inline-end: -100px;
 	transform: rotate(30deg);
 	@media only screen and (max-width: 1224px) {
-		top: -100px;
-		right: -156px;
+		inset-block-start: -100px;
+		inset-inline-end: -156px;
 	}
 	@media only screen and (max-width: 920px) {
 		display: none;
@@ -301,5 +301,5 @@
 	grid-template-columns: auto auto auto;
 	gap: 12px;
 	width: fit-content;
-	margin-bottom: 24px;
+	margin-block-end: 24px;
 }

@@ -13,7 +13,7 @@
 	position: relative;
 	width: 80vw;
 	height: 100%;
-	margin-top: 164px;
+	margin-block-start: 164px;
 	text-align: center;
 }
 
@@ -28,9 +28,9 @@
 
 	&screenshot {
 		position: absolute;
-		top: -36px;
-		right: 0;
-		left: 0;
+		inset-block-start: -36px;
+		inset-inline-end: 0;
+		inset-inline-start: 0;
 		z-index: 1;
 		width: 70%;
 		max-width: 1024px;
@@ -63,22 +63,22 @@
 		width: 100%;
 	}
 	.files-screenshot {
-		top: 0;
+		inset-block-start: 0;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	// Add some margins to account for more space available
 	.design-image {
-		margin-top: 48px;
+		margin-block-start: 48px;
 	}
 
 	// Screenshot and wallpaper
 	.files- {
 		// Position screenshot within wallpaper
 		&screenshot {
-			top: 32px;
-			left: -2.5%;
+			inset-block-start: 32px;
+			inset-inline-start: -2.5%;
 			width: 105%;
 			transform: none !important; // Prevent parallax scrolling
 		}

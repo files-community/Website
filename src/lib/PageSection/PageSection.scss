@@ -27,8 +27,7 @@
 
 		p {
 			max-width: 65ch;
-			margin-top: 12px;
-			margin-bottom: 24px;
+			margin-block: 12px 24px;
 			color: var(--text-color-secondary);
 			font: {
 				size: 1.6rem;
@@ -43,7 +42,7 @@
 		hr {
 			margin: 0 0 24px;
 			border: none;
-			border-top: 1px solid var(--divider-color-default);
+			border-block-start: 1px solid var(--divider-color-default);
 		}
 
 		.buttons-spacer {

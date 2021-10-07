@@ -458,8 +458,7 @@ code {
 
 		&-thumb {
 			border: 6px solid transparent;
-			border-top: none;
-			border-bottom: none;
+			border-block: none;
 			border-radius: 14px;
 			background: var(--control-strong-color-default);
 			background-clip: padding-box;

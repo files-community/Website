@@ -2,9 +2,9 @@
 
 .terminal-command {
 	@include flex($align: center);
-	margin-top: 12px;
+	margin-block-start: 12px;
 	padding: 8px 12px;
-	padding-right: 8px;
+	padding-inline-end: 8px;
 	border: 1px solid var(--card-stroke-default);
 	border-radius: var(--control-corner-radius);
 	background-color: var(--card-background-default);
@@ -23,7 +23,7 @@
 }
 
 .shell-prefix {
-	margin-right: 12px;
+	margin-inline-end: 12px;
 	color: var(--text-color-tertiary);
 	user-select: none;
 }
@@ -37,7 +37,7 @@
 	@include flex($align: center, $justify: center);
 	width: 34px;
 	height: 34px;
-	margin-left: 8px;
+	margin-inline-start: 8px;
 	border: none;
 	border-radius: var(--control-corner-radius);
 	background-color: transparent;
