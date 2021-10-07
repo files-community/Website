@@ -30,7 +30,7 @@
 
 	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
 	const storeUrl = isWindows
-		? `ms-windows-store://pdp/?ProductId=${links.storeId}`
+		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
 	let releaseUrl = "";
 
