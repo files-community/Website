@@ -6,7 +6,7 @@
   is a great way to sustain high code metrics. Your code must also be tested for potential regressions and unwanted memory leaks.
   
   We also prioritize accessibility, to check whether your pull request meets our accessibility standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
-  to ensure anyone can take full advantage of Files.
+  to ensure everyone can take full advantage of Files.
   
 # Code Style
 
