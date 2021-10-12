@@ -3,7 +3,7 @@
   The code must be well-written with clear purpose i.e use abstractions, inheritance, etc. as needed. In-code workarounds are not welcomed
   unless the scope of the PR touches external components (OS functions/api calls) that require unconventional practices of coding.
   
-  The code must also be tested for potential regressions and memory leaks. This is to ensure stability of the app and to provide best experience
+  The code must also be tested for potential regressions and unwanted memory leaks. This is to ensure stability of the app and to provide best experience
   for users.
   
 # Code Style
