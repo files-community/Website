@@ -1,11 +1,10 @@
-# Coding Guidelines
+# Coding quality standards
   All code contributed to the repo must follow our [Model-view-viewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) design path.
-  The code must be well-written and with clear purpose. In-code workarounds are not welcomed unless the scope of the PR touches external components
+  The code must be well-written and expose a clear purpose. In-code workarounds are not welcomed unless the scope of the PR touches external components
   (OS functions/api calls) that require unconventional practices of coding.
-  Your code must be easily maintainable without requiring rewriting core parts, making sure no code is being duplicated, utilizing abstractions and inheritance
-  is a great way to sustain high code metrics.
-  Your code must also be tested for potential regressions and unwanted memory leaks.
-  We also prioritize accessibility, to check whether your feature pull requests meets our standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
+  Your code must be easily maintainable without requiring to rewrite core parts, making sure no code is being duplicated, utilizing abstractions and inheritance
+  is a great way to sustain high code metrics. Your code must also be tested for potential regressions and unwanted memory leaks.
+  We also prioritize accessibility, to check whether your feature pull request meets our standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
   this is to ensure anyone can take full advantage of Files.
   
 # Code Style
