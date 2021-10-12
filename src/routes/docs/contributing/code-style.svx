@@ -2,6 +2,8 @@
   All code contributed to the repo must follow our [Model-view-viewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) design path.
   The code must be well-written with clear purpose i.e use abstractions, inheritance, etc. as needed. In-code workarounds are not welcomed
   unless the scope of the PR touches external components (OS functions/api calls) that require unconventional practices of coding.
+  Your code must be easily maintainable without requiring rewriting core parts, making sure no code is being duplicated and using abstractions is a great way
+  to preserve good quality.
   
   The code must also be tested for potential regressions and unwanted memory leaks. This is to ensure stability of the app and to provide best experience
   for users.
