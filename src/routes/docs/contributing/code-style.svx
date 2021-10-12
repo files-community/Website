@@ -1,3 +1,13 @@
+# Code quality standards
+  All code contributed to the repository must follow our [Model-View-ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) design path.
+  The code must be well-written and expose a clear purpose. Workarounds are not welcome unless the scope of the PR touches external components
+  (OS functions/API calls) that require unconventional practices of coding.
+  Your code must be easily maintainable without requiring to rewrite core parts, making sure no code is being duplicated, utilizing abstractions and inheritance
+  is a great way to sustain high code metrics. Your code must also be tested for potential regressions and unwanted memory leaks.
+  
+  We also prioritize accessibility, to check whether your pull request meets our accessibility standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
+  to ensure everyone can take full advantage of Files.
+  
 # Code Style
 
 1. **Use** `PascalCase`:
