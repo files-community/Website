@@ -4,8 +4,9 @@
   (OS functions/api calls) that require unconventional practices of coding.
   Your code must be easily maintainable without requiring to rewrite core parts, making sure no code is being duplicated, utilizing abstractions and inheritance
   is a great way to sustain high code metrics. Your code must also be tested for potential regressions and unwanted memory leaks.
+  
   We also prioritize accessibility, to check whether your pull request meets our accessibility standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
-  this is to ensure anyone can take full advantage of Files.
+  to ensure anyone can take full advantage of Files.
   
 # Code Style
 
