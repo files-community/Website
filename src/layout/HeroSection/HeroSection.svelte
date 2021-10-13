@@ -37,7 +37,7 @@
 	$: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl;
 
 	const copyWingetCommand = () => {
-		navigator.clipboard.writeText("winget install Files-Community.Files");
+		navigator.clipboard.writeText("winget install -e Files-Community.Files");
 		wingetCommandCopied = true;
 		setTimeout(() => {
 			wingetCommandCopied = false;
@@ -168,7 +168,7 @@
 		rel="noreferrer noopener"
 		target="_blank">winget</a
 	>, paste the following command into a terminal of your choice:
-	<TerminalCommand command="winget install Files-Community.Files" />
+	<TerminalCommand command="winget install -e Files-Community.Files" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent"
 			>{wingetCommandCopied ? "Copied!" : "Copy"}</Button

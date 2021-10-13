@@ -45,7 +45,7 @@ export const docs: DocsMap[] = [
 		name: "Contributing",
 		pages: [
 			{
-				name: "Building Files from source",
+				name: "Building Files from Source",
 				path: "/contributing/building-from-source"
 			},
 			{

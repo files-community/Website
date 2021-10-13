@@ -12,12 +12,12 @@
 </script>
 
 <script lang="ts">
-	import { draggable, SvelteDragOptions } from "svelte-drag";
+	import { draggable, DragOptions } from "svelte-drag";
 
 	export let status: number;
 	export let error: Error;
 
-	const draggableOptions: SvelteDragOptions = {
+	const draggableOptions: DragOptions = {
 		bounds: "parent",
 		handle: ".titlebar"
 	};
