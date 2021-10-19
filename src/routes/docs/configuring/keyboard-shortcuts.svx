@@ -14,7 +14,8 @@ Files comes with built in keyboard shortcuts to make naviagting the app easier.
 | `Ctrl` + `W` | Close tab |
 | `Ctrl` + `F4` | Close tab |
 | `Ctrl` + `Shift` + `T` | Reopen recently closed tab |
-| `Ctrl` + `Tab` | Switch tab |
+| `Ctrl` + `Tab` | Switch next tab |
+| `Ctrl` + `Shift` + `Tab` | Switch previous tab |
 | `Ctrl` + `N` | New window |
 | `Ctrl` + `Shift` + `N` | New file |
 | `Ctrl` + `Alt` + `Up` | Open compact overlay |
