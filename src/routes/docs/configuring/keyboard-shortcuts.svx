@@ -1,6 +1,6 @@
 # Keyboard Shortcuts
 
-Files comes with built in keyboard shortcuts to make naviagting the app easier.
+Files comes with built in keyboard shortcuts to make navigating the app easier.
 
 | Shortcut | Action |
 | :---: | :---: |
