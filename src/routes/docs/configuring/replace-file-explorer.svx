@@ -21,4 +21,4 @@ archive and extract *both* of the contained .reg files *to the desktop*
 4. Create a key named `shell` and set the default key value to `openinfiles`
 5. Create a key named `openinfiles` under `shell`
 6. Create a key named `command` under `openinfiles` and set the default key value to:
-   `C:\Users\<YOURUSERNAME>\AppData\Local\Microsoft\WindowsApps\files.exe -Directory %1`
+   `C:\Users\<YOURUSERNAME>\AppData\Local\Microsoft\WindowsApps\files.exe -Directory "%1"`
