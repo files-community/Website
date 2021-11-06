@@ -2,7 +2,7 @@
 	import { draw } from "svelte/transition";
 
 	import { cloudFiles, previewFiles, tags } from "$data/features";
-	import { Button, ColorSwatch, Titlebar } from "$lib";
+	import { ColorSwatch, Titlebar } from "$lib";
 
 	import Checkmark from "@fluentui/svg-icons/icons/checkmark_20_regular.svg?raw";
 	import ArrowSync from "@fluentui/svg-icons/icons/arrow_sync_20_regular.svg?raw";
@@ -11,6 +11,7 @@
 
 	let currentPreviewFile = 0;
 	let currentTag = 0;
+	let selectedTab = 0;
 </script>
 
 {#if feature === 0}
@@ -69,7 +70,7 @@
 		</svg>
 		<table>
 			<tr>
-				<th />
+				<th></th>
 				<th>Name</th>
 				<th>Status</th>
 			</tr>
@@ -114,25 +115,23 @@
 						<iframe
 							title="Document"
 							style="border: none"
-							src="/preview-samples/{file.name}.{file.extension}"
-						/>
+							src="/preview-samples/{file.name}.{file.extension}"></iframe>
 					{:else if file?.code}
-						<pre
-							class="scroller">
-                            <code>
-                                {@html file.code}
-                            </code>
-                        </pre>
+						<pre class="scroller">
+							<code>
+								{@html file.code}
+							</code>
+						</pre>
 					{:else}
 						<img src={file.icon} alt="File icon" />
 					{/if}
 				</div>
-				<div class="grabber" />
+				<div class="grabber"></div>
 				<div class="metadata scroller">
 					<h4>
 						{file.name}{typeof file.extension !== "undefined"
-							? "."
-							: ""}{file.extension ?? ""}
+						? "."
+						: ""}{file.extension ?? ""}
 					</h4>
 					<h5>
 						{file.extension
@@ -146,7 +145,7 @@
 					{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
 						<h6>Dimensions</h6>
 						<span
-							>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
+						>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
 						>
 					{/if}
 					{#if file?.dpi?.horizontal}
@@ -190,8 +189,8 @@
 				>
 					<img src={file.icon} alt="File icon" />
 					{file.name}{typeof file.extension !== "undefined"
-						? "."
-						: ""}{file.extension ?? ""}
+					? "."
+					: ""}{file.extension ?? ""}
 				</div>
 			{/each}
 		</div>
@@ -248,15 +247,21 @@
 		</div>
 		<div class="tabs-anchor">
 			<div class="tab-row">
-				<div class="tab selected">
+				<div class="tab"
+				     class:selected={selectedTab === 0} on:click={() => selectedTab = 0}
+				>
 					<img src="/ui/icons/documents.png" alt="Documents folder icon" width="16" height="16" />
 					Documents
 				</div>
-				<div class="tab">
+				<div class="tab"
+				     class:selected={selectedTab === 1} on:click={() => selectedTab = 1}
+				>
 					<img src="/ui/icons/desktop.png" alt="Desktop folder icon" width="16" height="16" />
 					Desktop
 				</div>
-				<div class="tab">
+				<div class="tab"
+				     class:selected={selectedTab === 2} on:click={() => selectedTab = 2}
+				>
 					<img src="/ui/icons/pictures.png" alt="Pictures folder icon" width="16" height="16" />
 					Pictures
 				</div>
