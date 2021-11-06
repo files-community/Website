@@ -29,12 +29,10 @@
 	let currentDownloadSource = 0;
 
 	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
-	const storeUrl = isWindows
+	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
 	let releaseUrl = "";
-
-	$: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -56,7 +54,7 @@
 		switch (downloadOption) {
 			case "Microsoft Store":
 			case "GitHub Release":
-				window.open(downloadUrl, "_blank");
+				window.open(currentDownloadSource === 0 ? getStoreUrl() : releaseUrl, "_blank");
 				break;
 			case "Winget (CLI)":
 				wingetDialogOpen = true;
@@ -76,8 +74,10 @@
 		// Fetch the URL for the latest files package from GitHub
 		releaseUrl = await getReleaseUrl();
 
-		isWindows = navigator.platform === "Win32" || navigator.platform === "Win64";
+		isWindows = navigator.userAgent.includes("Windows")
+		console.log(isWindows);
 	});
+
 </script>
 
 <PageSection id="hero-section">
@@ -87,7 +87,7 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 2 ? downloadUrl : undefined}
+					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : releaseUrl) : undefined}
 					id="hero-download-button"
 					on:click={() => {
 						if (currentDownloadSource === 2) wingetDialogOpen = true;
@@ -106,8 +106,10 @@
 					<Button
 						aria-label="Choose download source"
 						title="Choose download source"
-						variant="accent">{@html ChevronDown}</Button
+						variant="accent"
 					>
+						{@html ChevronDown}
+					</Button>
 					<svelte:fragment slot="menu">
 						{#each ["Microsoft Store", "GitHub Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem

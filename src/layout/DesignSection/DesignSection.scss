@@ -37,7 +37,7 @@
 		margin: 0 auto;
 		border: 1px solid var(--surface-stroke-default);
 		border-radius: calc(var(--overlay-corner-radius) / 1.25); 
-		background-color: rgba(var(--mica-tint), var(--mica-tint-opacity));
+		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
 		box-shadow: var(--window-elevation);
 		transition: 50ms linear transform;
 		backdrop-filter: blur(60px) saturate(150%);

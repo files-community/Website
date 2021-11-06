@@ -23,10 +23,10 @@
 	border: 1px solid var(--surface-stroke-default);
 	border-radius: var(--overlay-corner-radius);
 	background-color: var(--background-base);
-	box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-	0 5.48831px 5.48831px rgb(0 0 0 / 4%), 0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-	0 20.5812px 20.5812px rgb(0 0 0 / 6%), 0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-	0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+	box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
+	0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%), 0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
+	0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%), 0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
+	0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 	font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
 	user-select: none;
 
@@ -212,7 +212,7 @@
 		width: 108px;
 		height: auto;
 		transform: rotate(var(--provider-rotate));
-		filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+		filter: drop-shadow(0 4px 12px hsl(0, 0%, 0%, 0.25));
 
 		&:nth-child(1) {
 			inset-block-end: 36px;
@@ -481,6 +481,10 @@
 		animation: 250ms ease feature-item-scale backwards calc(2.4s + (100ms * var(--file-index)));
 		border-radius: var(--control-corner-radius);
 		background-color: var(--subtle-color-secondary);
+
+		&:hover {
+			background-color: var(--control-color-secondary);
+		}
 	}
 
 	.tabs-anchor {

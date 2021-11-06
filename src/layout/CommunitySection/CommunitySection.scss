@@ -10,14 +10,14 @@
 	// light-ish background, we'll need to hardcode
 	// some variables.
 	&text {
-		text-align: center; // Align text to center
-		--background-base: #f3f3f3;
-		--text-color-primary: #202020;
-		--text-color-secondary: #282828;
+		text-align: center;
+		--background-base: hsl(0, 0%, 95%);
+		--text-color-primary: hsl(0, 0%, 13%);
+		--text-color-secondary: hsl(0, 0%, 16%);
 		--text-color-tertiary: var(--text-color-secondary);
-		--subtle-color-secondary: rgba(0, 0, 0, 0.095);
-		--subtle-color-tertiary: rgba(0, 0, 0, 0.024);
-		--subtle-color-disabled: rgba(255, 255, 255, 0);
+		--subtle-color-secondary: hsl(0, 0%, 0%, 0.095);
+		--subtle-color-tertiary: hsl(0, 0%, 0%, 0.024);
+		--subtle-color-disabled: transparent;
 		--accent-text-default: var(--accent-color-dark-3);
 		--accent-text-tertiary: var(--accent-color-dark-2);
 
@@ -39,12 +39,12 @@
 		padding: 72px 48px;
 		border-radius: var(--overlay-corner-radius);
 		background-color: #f9f9f9;
-		box-shadow: 0 2.74416px 2.74416px rgb(0 0 0 / 3%),
-		0 5.48831px 5.48831px rgb(0 0 0 / 4%),
-		0 13.7208px 10.9766px rgb(0 0 0 / 5%),
-		0 20.5812px 20.5812px rgb(0 0 0 / 6%),
-		0 41.1623px 41.1623px rgb(0 0 0 / 7%),
-		0 96.0454px 89.1851px rgb(0 0 0 / 9%);
+		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
+		0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
+		0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
+		0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
+		0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
+		0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 
 		canvas {
 			position: absolute;
