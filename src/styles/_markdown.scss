@@ -140,6 +140,16 @@
 		font-size: 85%;
 	}
 
+	kbd {
+		padding: 0.3em 0.4em;
+		color: hsl(70, 5%, 22%);
+		box-shadow: inset 0 -.2em 0 var(--subtle-color-tertiary);
+
+		@media (prefers-color-scheme: dark) {
+			color: hsl(0, 0%, 83%);
+		}
+	}
+
 	pre {
 		padding: 12px 16px;
 		border: 1px solid var(--card-stroke-default);
