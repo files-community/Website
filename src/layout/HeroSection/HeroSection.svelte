@@ -154,7 +154,7 @@
 			</picture>
 		</div>
 	</div>
-	<canvas slot="outer" use:rainbowCanvas />
+	<canvas slot="outer" use:rainbowCanvas></canvas>
 </PageSection>
 
 <ContentDialog
@@ -170,9 +170,9 @@
 	>, paste the following command into a terminal of your choice:
 	<TerminalCommand command="winget install -e Files-Community.Files" />
 	<svelte:fragment slot="footer">
-		<Button on:click={copyWingetCommand} variant="accent"
-			>{wingetCommandCopied ? "Copied!" : "Copy"}</Button
-		>
+		<Button on:click={copyWingetCommand} variant="accent">
+			{wingetCommandCopied ? "Copied!" : "Copy"}
+		</Button>
 		<Button on:click={() => (wingetDialogOpen = false)}>Close</Button>
 	</svelte:fragment>
 </ContentDialog>
