@@ -15,7 +15,6 @@
 	let visible = true;
 	let noInitialDelay = false;
 	let anchor: HTMLDivElement;
-	let showcase: HTMLDivElement;
 
 	const themeColors = [
 		"var(--background-tertiary);",
@@ -101,7 +100,6 @@
 		</div>
 	</div>
 	<div
-		bind:this={showcase}
 		class="component-showcase"
 		class:no-initial-delay={noInitialDelay}
 		class:visible

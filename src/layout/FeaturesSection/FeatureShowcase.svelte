@@ -269,7 +269,7 @@
 			<div class="showcase-panel">
 				<Titlebar>Files</Titlebar>
 				<div class="files-grid">
-					{#each Array(12) as file, i}
+					{#each Array(12) as _, i}
 						<div style="--file-index: {i};" class="placeholder-file"></div>
 					{/each}
 				</div>

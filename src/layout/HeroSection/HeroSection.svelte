@@ -16,6 +16,7 @@
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
 	type DownloadOptions = "Microsoft Store" | "GitHub Release" | "Winget (CLI)";
+	const downloadOptions: DownloadOptions[] = ["Microsoft Store", "GitHub Release", "Winget (CLI)"]
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -45,10 +46,7 @@
 	const updateDownloadSource = (value: number) =>
 		localStorage.setItem("downloadSource", value.toString());
 
-	const changeDownloadSource = (
-		downloadOption: DownloadOptions,
-		id: number
-	) => {
+	const changeDownloadSource = (downloadOption: DownloadOptions, id: number) => {
 		updateDownloadSource(id);
 
 		switch (downloadOption) {
@@ -111,7 +109,7 @@
 						{@html ChevronDown}
 					</Button>
 					<svelte:fragment slot="menu">
-						{#each ["Microsoft Store", "GitHub Release", "Winget (CLI)"] as downloadOption, id}
+						{#each downloadOptions as downloadOption, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
 								on:change={() => changeDownloadSource(downloadOption, id)}
