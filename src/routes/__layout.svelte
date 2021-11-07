@@ -78,15 +78,17 @@
 		type="image/svg+xml"
 	/>
 
-	<meta
-		content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
-		name="og:image"
-	/>
+	{#if $page.path === "/"}
+		<meta
+			content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+			name="og:image"
+		/>
 
-	<meta
-		content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
-		name="twitter:image"
-	/>
+		<meta
+			content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+			name="twitter:image"
+		/>
+	{/if}
 
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
@@ -112,19 +114,16 @@
 	<meta content="@FilesForWindows" name="twitter:site" />
 	<meta content="@FilesForWindows" name="twitter:creator" />
 
-	<script type="text/javascript">
-		(function(c, l, a, r, i, t, y) {
-			c[a] =
-				c[a] ||
-				function() {
-					(c[a].q = c[a].q || []).push(arguments);
-				};
-			t = l.createElement(r);
-			t.async = 1;
-			t.src = "https://www.clarity.ms/tag/" + i;
-			y = l.getElementsByTagName(r)[0];
-			y.parentNode.insertBefore(t, y);
-		})(window, document, "clarity", "script", "4q1wajdktz");
+	<script>
+		window["clarity"] = window["clarity"] || (() => {
+			(window["clarity"].q = window["clarity"].q || []).push(arguments);
+		});
+
+		let t = document.createElement("script");
+		t.async = true;
+		t.src = "https://www.clarity.ms/tag/4q1wajdktz";
+		let y = document.getElementsByTagName("script")[0];
+		y.parentNode.insertBefore(t, y);
 	</script>
 </svelte:head>
 

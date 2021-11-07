@@ -25,7 +25,7 @@
 		"paths": {
 			"$lib": ["src/lib/*", "src/lib/index"],
 			"$layout": ["src/layout/*", "src/layout/index"],
-			"$data": ["src/data/*"],
+			"$data/*": ["src/data/*"],
 			"$static/*": ["static/*"],
 		}
 	},

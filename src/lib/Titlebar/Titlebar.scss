@@ -4,7 +4,7 @@
 	@include flex($align: center);
 	position: relative;
 	height: 32px;
-	padding-left: 16px;
+	padding-inline-start: 16px;
 	color: var(--text-color-primary);
 	font-size: var(--control-font-size);
 
@@ -40,7 +40,7 @@
 			}
 
 			&:active {
-				background-color: hsla(5, 75%, 44%, 0.9);
+				background-color: hsl(5, 75%, 44%, 0.9);
 				color: transparentize(white, 0.3);
 			}
 		}

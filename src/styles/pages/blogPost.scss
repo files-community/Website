@@ -21,7 +21,7 @@
 .post- {
 	&title {
 		@include flex($align: center, $gap: 12px);
-		margin-left: -48px;
+		margin-inline-start: -48px;
 
 		h1 {
 			margin: 0;
@@ -40,9 +40,9 @@
 
 	&info {
 		@include flex($align: center, $gap: 12px);
-		margin-bottom: 24px;
+		margin-block-end: 24px;
 		padding: 18px 0;
-		border-bottom: 1px solid var(--divider-color-default);
+		border-block-end: 1px solid var(--divider-color-default);
 		background-color: var(--background-secondary);
 		color: var(--text-color-tertiary);
 
@@ -58,7 +58,7 @@
 				min-width: 120px;
 
 				&-container {
-					margin-left: auto;
+					margin-inline-start: auto;
 				}
 			}
 		}
@@ -66,7 +66,7 @@
 
 	&thumbnail {
 		max-width: 100%;
-		margin-bottom: 48px;
+		margin-block-end: 48px;
 		border: 1px solid var(--card-stroke-default);
 		border-radius: var(--overlay-corner-radius);
 	}

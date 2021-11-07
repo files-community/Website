@@ -2,7 +2,7 @@
 
 :global {
     #page-footer {
-        border-top: 1px solid var(--divider-color-default);
+        border-block-start: 1px solid var(--divider-color-default);
         .page-section-inner {
             @include flex($align: top, $justify: between, $gap: 48px);
         }
@@ -16,10 +16,10 @@
             width: fit-content;
             margin: {
                 inline: -11px;
-                bottom: 8px;
+                block-end: 8px;
             }
             &:last-child {
-                margin-bottom: 0;
+                margin-block-end: 0;
             }
         }
     }
@@ -46,7 +46,7 @@
 .logo {
     display: flex;
     align-items: center;
-    margin-right: 8px;
+    margin-inline-end: 8px;
     color: var(--text-color-primary);
     font-size: 3.6rem;
     font-weight: 600;
@@ -55,13 +55,13 @@
     img {
         width: auto;
         height: 48px;
-        margin-right: 12px;
+        margin-inline-end: 12px;
     }
 }
 
 .social-links {
     @include flex($align: center, $gap: 4px);
-    margin-top: 12px;
+    margin-block-start: 12px;
 }
 
 .column {

@@ -34,7 +34,7 @@ export const getReleaseUrl = async () =>
 		// Find the first asset in the release that has a file extension of "msixbundle" and return it's download link
 		.then(
 			result =>
-				result.assets.find(a => a.name.endsWith(".msixbundle"))
+				result.assets.find(a => a.name.endsWith(".zip"))
 					.browser_download_url
 		)
 

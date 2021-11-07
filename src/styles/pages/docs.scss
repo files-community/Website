@@ -20,8 +20,8 @@
 	@include flex($direction: column);
 	flex: 1 1 auto;
 	border: {
-		top: 1px solid var(--card-stroke-default);
-		left: 1px solid var(--card-stroke-default);
+		block-start: 1px solid var(--card-stroke-default);
+		inline-start: 1px solid var(--card-stroke-default);
 	}
 	border-top-left-radius: var(--overlay-corner-radius);
 	background-color: var(--layer-color-default);
@@ -38,7 +38,7 @@
 	// Page header
 	header {
 		@include flex($align: center, $justify: between);
-		margin-bottom: -20px;
+		margin-block-end: -20px;
 		color: var(--text-color-tertiary);
 		white-space: nowrap;
 
@@ -65,7 +65,7 @@
 // Sidebar search wrapper
 .search {
 	position: sticky;
-	top: 0;
+	inset-block-start: 0;
 	z-index: 1;
 	margin: 4px 12px 12px;
 	background-color: var(--background-base);
@@ -74,7 +74,7 @@
 	hr {
 		margin: 12px 0 0;
 		border: none;
-		border-top: 1px solid var(--divider-color-default);
+		border-block-start: 1px solid var(--divider-color-default);
 	}
 
 	// Mobile container
@@ -82,7 +82,7 @@
 	&-mobile {
 		display: none;
 		padding: 12px;
-		border-bottom: 1px solid var(--divider-color-default);
+		border-block-end: 1px solid var(--divider-color-default);
 	}
 }
 
@@ -97,8 +97,8 @@
 	// Autosuggest flyout
 	&-flyout {
 		position: absolute;
-		top: 100%;
-		left: 0;
+		inset-block-start: 100%;
+		inset-inline-start: 0;
 		z-index: 10;
 		width: 100%;
 		max-height: 350px;
@@ -116,8 +116,8 @@
 	.docs {
 		flex-direction: column;
 		max-height: calc(100vh - 66px);
-		margin-top: 2px;
-		border-top: 1px solid var(--card-stroke-default);
+		margin-block-start: 2px;
+		border-block-start: 1px solid var(--card-stroke-default);
 	}
 
 	// Hide the sidebar

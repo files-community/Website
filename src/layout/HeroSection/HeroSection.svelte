@@ -15,7 +15,7 @@
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions = "Microsoft Store" | "Github Release" | "Winget (CLI)";
+	type DownloadOptions = "Microsoft Store" | "GitHub Release" | "Winget (CLI)";
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -29,12 +29,10 @@
 	let currentDownloadSource = 0;
 
 	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
-	const storeUrl = isWindows
-		? `ms-windows-store://pdp/?ProductId=${links.storeId}`
+	const getStoreUrl = () => isWindows
+		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
 	let releaseUrl = "";
-
-	$: downloadUrl = currentDownloadSource === 0 ? storeUrl : releaseUrl;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -55,8 +53,8 @@
 
 		switch (downloadOption) {
 			case "Microsoft Store":
-			case "Github Release":
-				window.open(downloadUrl, "_blank");
+			case "GitHub Release":
+				window.open(currentDownloadSource === 0 ? getStoreUrl() : releaseUrl, "_blank");
 				break;
 			case "Winget (CLI)":
 				wingetDialogOpen = true;
@@ -76,9 +74,10 @@
 		// Fetch the URL for the latest files package from GitHub
 		releaseUrl = await getReleaseUrl();
 
-		isWindows =
-			navigator.platform === "Win32" || navigator.platform === "Win64";
+		isWindows = navigator.userAgent.includes("Windows")
+		console.log(isWindows);
 	});
+
 </script>
 
 <PageSection id="hero-section">
@@ -88,7 +87,7 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 2 ? downloadUrl : undefined}
+					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : releaseUrl) : undefined}
 					id="hero-download-button"
 					on:click={() => {
 						if (currentDownloadSource === 2) wingetDialogOpen = true;
@@ -107,10 +106,12 @@
 					<Button
 						aria-label="Choose download source"
 						title="Choose download source"
-						variant="accent">{@html ChevronDown}</Button
+						variant="accent"
 					>
+						{@html ChevronDown}
+					</Button>
 					<svelte:fragment slot="menu">
-						{#each ["Microsoft Store", "Github Release", "Winget (CLI)"] as downloadOption, id}
+						{#each ["Microsoft Store", "GitHub Release", "Winget (CLI)"] as downloadOption, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
 								on:change={() => changeDownloadSource(downloadOption, id)}
@@ -155,7 +156,7 @@
 			</picture>
 		</div>
 	</div>
-	<canvas slot="outer" use:rainbowCanvas />
+	<canvas slot="outer" use:rainbowCanvas></canvas>
 </PageSection>
 
 <ContentDialog
@@ -171,9 +172,9 @@
 	>, paste the following command into a terminal of your choice:
 	<TerminalCommand command="winget install -e Files-Community.Files" />
 	<svelte:fragment slot="footer">
-		<Button on:click={copyWingetCommand} variant="accent"
-			>{wingetCommandCopied ? "Copied!" : "Copy"}</Button
-		>
+		<Button on:click={copyWingetCommand} variant="accent">
+			{wingetCommandCopied ? "Copied!" : "Copy"}
+		</Button>
 		<Button on:click={() => (wingetDialogOpen = false)}>Close</Button>
 	</svelte:fragment>
 </ContentDialog>
