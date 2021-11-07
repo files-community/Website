@@ -1,4 +1,4 @@
-<script lang="ts">
+ <script lang="ts">
 	export let type: string = undefined;
 
 	let className = "";
@@ -7,7 +7,7 @@
 
 <!-- go complain to https://github.com/sveltejs/svelte/pull/5481 -->
 {#if type === "header"}
-	<header {...$$restProps} class="page-section {className || ''}">
+	<header {...$$restProps} class="page-section{' ' + className || ''}">
 		<slot name="outer" />
 		{#if $$slots.default}
 			<div class="page-section-inner">
@@ -16,7 +16,7 @@
 		{/if}
 	</header>
 {:else if type === "footer"}
-	<footer {...$$restProps} class="page-section {className || ''}">
+	<footer {...$$restProps} class="page-section{' ' + className || ''}">
 		<slot name="outer" />
 		{#if $$slots.default}
 			<div class="page-section-inner">
@@ -25,7 +25,7 @@
 		{/if}
 	</footer>
 {:else}
-	<section {...$$restProps} class="page-section {className || ''}">
+	<section {...$$restProps} class="page-section{' ' + className || ''}">
 		<slot name="outer" />
 		{#if $$slots.default}
 			<div class="page-section-inner">
