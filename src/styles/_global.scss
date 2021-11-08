@@ -24,8 +24,7 @@
  */
 
 :root {
-	--font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter",
-		sans-serif;
+	--font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter", sans-serif;
 	--font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
 
 	// Accent Colors
@@ -34,77 +33,77 @@
 	--accent-color-lightness: 42%;
 	--accent-color-alpha: 1;
 
-	--accent-color: hsla(
+	--accent-color: hsl(
 		var(--accent-color-hue),
 		var(--accent-color-saturation),
 		var(--accent-color-lightness),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-dark-1: hsla(
+	--accent-color-dark-1: hsl(
 		calc(var(--accent-color-hue) + 2),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) - 6%),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-dark-1-90: hsla(
+	--accent-color-dark-1-90: hsl(
 		calc(var(--accent-color-hue) + 2),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) - 6%),
 		calc(var(--accent-color-alpha) * 0.9)
 	);
 
-	--accent-color-dark-1-80: hsla(
+	--accent-color-dark-1-80: hsl(
 		calc(var(--accent-color-hue) + 2),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) - 6%),
 		calc(var(--accent-color-alpha) * 0.8)
 	);
 
-	--accent-color-dark-2: hsla(
+	--accent-color-dark-2: hsl(
 		calc(var(--accent-color-hue) + 8),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) - 13%),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-dark-3: hsla(
+	--accent-color-dark-3: hsl(
 		calc(var(--accent-color-hue) + 18),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) - 21%),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-light-1: hsla(
+	--accent-color-light-1: hsl(
 		calc(var(--accent-color-hue) - 1),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) + 9%),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-light-2: hsla(
+	--accent-color-light-2: hsl(
 		calc(var(--accent-color-hue) - 6),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) + 23%),
 		var(--accent-color-alpha)
 	);
 
-	--accent-color-light-2-90: hsla(
+	--accent-color-light-2-90: hsl(
 		calc(var(--accent-color-hue) - 6),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) + 23%),
 		calc(var(--accent-color-alpha) * 0.9)
 	);
 
-	--accent-color-light-2-80: hsla(
+	--accent-color-light-2-80: hsl(
 		calc(var(--accent-color-hue) - 6),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) + 23%),
 		calc(var(--accent-color-alpha) * 0.8)
 	);
 
-	--accent-color-light-3: hsla(
+	--accent-color-light-3: hsl(
 		calc(var(--accent-color-hue) - 14),
 		var(--accent-color-saturation),
 		calc(var(--accent-color-lightness) + 38%),
@@ -130,100 +129,99 @@
 	:root {
 		color-scheme: light;
 
-		--text-color-primary: rgba(0, 0, 0, 0.894);
-		--text-color-secondary: rgba(0, 0, 0, 0.62);
-		--text-color-tertiary: rgba(0, 0, 0, 0.447);
-		--text-color-disabled: rgba(0, 0, 0, 0.361);
-		--text-color-inverse: #fff;
+		--text-color-primary: hsl(0, 0%, 0%, 0.894);
+		--text-color-secondary: hsl(0, 0%, 0%, 0.62);
+		--text-color-tertiary: hsl(0, 0%, 0%, 0.447);
+		--text-color-disabled: hsl(0, 0%, 0%, 0.361);
+		--text-color-inverse: white;
 
-		--accent-text-disabled: rgba(0, 0, 0, 0.361);
+		--accent-text-disabled: hsl(0, 0%, 0%, 0.361);
 
-		--accent-text-contrast-primary: #fff;
-		--accent-text-contrast-secondary: rgba(255, 255, 255, 0.702);
-		--accent-text-contrast-selected: #fff;
-		--accent-text-contrast-disabled: #fff;
+		--accent-text-contrast-primary: white;
+		--accent-text-contrast-secondary: hsl(0, 0%, 100%, 0.702);
+		--accent-text-contrast-selected: white;
+		--accent-text-contrast-disabled: white;
 
-		--control-color-default: rgba(255, 255, 255, 0.702);
-		--control-color-secondary: rgba(249, 249, 249, 0.502);
-		--control-color-tertiary: rgba(249, 249, 249, 0.302);
-		--control-color-disabled: rgba(249, 249, 249, 0.302);
-		--control-color-input-active: #fff;
+		--control-color-default: hsl(0, 0%, 100%, 0.702);
+		--control-color-secondary: hsl(0, 0%, 98%, 0.5);
+		--control-color-tertiary: hsl(0, 0%, 98%, 0.3);
+		--control-color-disabled: hsl(0, 0%, 98%, 0.3);
+		--control-color-input-active: white;
 
-		--control-strong-color-default: rgba(0, 0, 0, 0.447);
-		--control-strong-color-disabled: rgba(0, 0, 0, 0.318);
+		--control-strong-color-default: hsl(0, 0%, 0%, 0.447);
+		--control-strong-color-disabled: hsl(0, 0%, 0%, 0.318);
 
-		--control-strong-stroke-default: rgba(0, 0, 0, 0.447);
-		--control-strong-stroke-disabled: rgba(0, 0, 0, 0.216);
+		--control-strong-stroke-default: hsl(0, 0%, 0%, 0.447);
+		--control-strong-stroke-disabled: hsl(0, 0%, 0%, 0.216);
 
-		--control-solid-color-default: #fff;
+		--control-solid-color-default: white;
 
-		--subtle-color-secondary: rgba(0, 0, 0, 0.035);
-		--subtle-color-tertiary: rgba(0, 0, 0, 0.024);
-		--subtle-color-disabled: rgba(255, 255, 255, 0);
+		--subtle-color-secondary: hsl(0, 0%, 0%, 0.035);
+		--subtle-color-tertiary: hsl(0, 0%, 0%, 0.024);
+		--subtle-color-disabled: hsl(0, 0%, 100%, 0);
 
-		--control-alt-color-secondary: rgba(0, 0, 0, 0.024);
-		--control-alt-color-tertiary: rgba(0, 0, 0, 0.059);
-		--control-alt-color-quarternary: rgba(0, 0, 0, 0.094);
-		--control-alt-color-disabled: rgba(255, 255, 255, 0);
+		--control-alt-color-secondary: hsl(0, 0%, 0%, 0.024);
+		--control-alt-color-tertiary: hsl(0, 0%, 0%, 0.059);
+		--control-alt-color-quarternary: hsl(0, 0%, 0%, 0.094);
+		--control-alt-color-disabled: hsl(0, 0%, 100%, 0);
 
-		--control-stroke-default: rgba(0, 0, 0, 0.059);
-		--control-stroke-secondary: rgba(0, 0, 0, 0.161);
+		--control-stroke-default: hsl(0, 0%, 0%, 0.059);
+		--control-stroke-secondary: hsl(0, 0%, 0%, 0.161);
 
-		--control-accent-stroke-default: rgba(255, 255, 255, 0.078);
-		--control-accent-stroke-secondary: rgba(0, 0, 0, 0.4);
-		--control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
-		--control-accent-stroke-disabled: rgba(0, 0, 0, 0.059);
+		--control-accent-stroke-default: hsl(0, 0%, 100%, 0.078);
+		--control-accent-stroke-secondary: hsl(0, 0%, 0%, 0.4);
+		--control-accent-stroke-tertiary: hsl(0, 0%, 0%, 0.216);
+		--control-accent-stroke-disabled: hsl(0, 0%, 0%, 0.059);
 
-		--card-stroke-default: rgba(0, 0, 0, 0.059);
-		--card-stroke-solid: #ebebeb;
+		--card-stroke-default: hsl(0, 0%, 0%, 0.059);
+		--card-stroke-solid: hsl(0, 0%, 92%);
 
-		--surface-stroke-default: rgba(0, 0, 0, 0.059);
-		--surface-stroke-flyout: rgba(0, 0, 0, 0.059);
-		--surface-stroke-inverse: rgba(255, 255, 255, 0.082);
+		--surface-stroke-default: hsl(0, 0%, 0%, 0.059);
+		--surface-stroke-flyout: hsl(0, 0%, 0%, 0.059);
+		--surface-stroke-inverse: hsl(0, 0%, 100%, 0.082);
 
-		--divider-color-default: rgba(0, 0, 0, 0.059);
+		--divider-color-default: hsl(0, 0%, 0%, 0.059);
 
-		--focus-stroke-outer: rgba(0, 0, 0, 0.894);
-		--focus-stroke-inner: rgba(255, 255, 255, 0.702);
+		--focus-stroke-outer: hsl(0, 0%, 0%, 0.894);
+		--focus-stroke-inner: hsl(0, 0%, 100%, 0.702);
 
-		--card-background-default: rgba(255, 255, 255, 0.702);
-		--card-background-secondary: rgba(246, 246, 246, 0.502);
+		--card-background-default: hsl(0, 0%, 100%, 0.702);
+		--card-background-secondary: hsl(0, 0%, 96%, 0.5);
 
-		--smoke-color-default: rgba(0, 0, 0, 0.302);
+		--smoke-color-default: hsl(0, 0%, 0%, 0.302);
 
-		--layer-color-default: rgba(255, 255, 255, 0.502);
-		--layer-color-alt: #fff;
+		--layer-color-default: hsl(0, 0%, 100%, 0.502);
+		--layer-color-alt: white;
 
-		--mica-tint: 243, 243, 243;
+		--mica-tint: 0, 0%, 95%;
 		--mica-tint-opacity: 0.8;
 
-		--background-base: #f3f3f3;
-		--background-secondary: #eee;
-		--background-tertiary: #f9f9f9;
-		--background-quarternary: #fff;
+		--background-base: #f2f2f2; // this is only in #-HEX format for the hero section gradient to work
+		--background-secondary: hsl(0, 0%, 93%);
+		--background-tertiary: hsl(0, 0%, 98%);
+		--background-quarternary: white;
 
-		--system-color-success: #0f7b0f;
-		--system-color-caution: #9d5d00;
-		--system-color-critical: #c42b1c;
-		--system-color-attention: #005fb7;
-		--system-color-neutral: #00000072;
-		--system-background-attention: #f6f6f680;
-		--system-background-success: #dff6dd;
-		--system-background-caution: #fff4ce;
-		--system-background-critical: #fde7e9;
-		--system-background-neutral: #00000006;
+		--system-color-success: hsl(120, 78%, 27%);
+		--system-color-caution: hsl(36, 100%, 31%);
+		--system-color-critical: hsl(5, 75%, 44%);
+		--system-color-attention: hsl(209, 100%, 36%);
+		--system-color-neutral: hsl(0, 0%, 0%, 0.45);
+		--system-background-attention: hsl(0, 0%, 96%, 0.5);
+		--system-background-success: hsl(115, 58%, 92%);
+		--system-background-caution: hsl(47, 100%, 90%);
+		--system-background-critical: hsl(355, 85%, 95%);
+		--system-background-neutral: hsl(0, 0%, 0%, 0.02);
 
 		// Elevation
-		--card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.04);
-		--flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.14);
-		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.1876),
-			0px 2px 21px rgba(0, 0, 0, 0.1474);
+		--card-elevation: 0px 2px 4px hsl(0, 0%, 0%, 0.04);
+		--flyout-elevation: 0px 8px 16px hsl(0, 0%, 0%, 0.14);
+		--window-elevation: 0px 32px 64px hsl(0, 0%, 0%, 0.1876), 0px 2px 21px hsl(0, 0%, 0%, 0.1474);
 
 		// Accent Colors
 		--accent-color-default: var(--accent-color-dark-1);
 		--accent-color-secondary: var(--accent-color-dark-1-90);
 		--accent-color-tertiary: var(--accent-color-dark-1-80);
-		--accent-color-disabled: rgba(0, 0, 0, 0.216);
+		--accent-color-disabled: hsl(0, 0%, 0%, 0.216);
 
 		--accent-text-default: var(--accent-color-dark-2);
 		--accent-text-secondary: var(--accent-color-dark-3);
@@ -239,100 +237,99 @@
 	:root {
 		color-scheme: dark;
 
-		--text-color-primary: #fff;
-		--text-color-secondary: rgba(255, 255, 255, 0.773);
-		--text-color-tertiary: rgba(255, 255, 255, 0.529);
-		--text-color-disabled: rgba(255, 255, 255, 0.365);
-		--text-color-inverse: rgba(0, 0, 0, 0.894);
+		--text-color-primary: white;
+		--text-color-secondary: hsl(0, 0%, 100%, 0.773);
+		--text-color-tertiary: hsl(0, 0%, 100%, 0.529);
+		--text-color-disabled: hsl(0, 0%, 100%, 0.365);
+		--text-color-inverse: hsl(0, 0%, 0%, 0.894);
 
-		--accent-text-disabled: rgba(255, 255, 255, 0.365);
+		--accent-text-disabled: hsl(0, 0%, 100%, 0.365);
 
-		--accent-text-contrast-primary: #000;
-		--accent-text-contrast-secondary: rgba(0, 0, 0, 0.502);
-		--accent-text-contrast-selected: #fff;
-		--accent-text-contrast-disabled: rgba(255, 255, 255, 0.529);
+		--accent-text-contrast-primary: black;
+		--accent-text-contrast-secondary: hsl(0, 0%, 0%, 0.502);
+		--accent-text-contrast-selected: white;
+		--accent-text-contrast-disabled: hsl(0, 0%, 100%, 0.529);
 
-		--control-color-default: rgba(255, 255, 255, 0.059);
-		--control-color-secondary: rgba(255, 255, 255, 0.082);
-		--control-color-tertiary: rgba(255, 255, 255, 0.031);
-		--control-color-disabled: rgba(255, 255, 255, 0.043);
-		--control-color-input-active: rgba(30, 30, 30, 0.702);
+		--control-color-default: hsl(0, 0%, 100%, 0.059);
+		--control-color-secondary: hsl(0, 0%, 100%, 0.082);
+		--control-color-tertiary: hsl(0, 0%, 100%, 0.031);
+		--control-color-disabled: hsl(0, 0%, 100%, 0.043);
+		--control-color-input-active: hsl(0, 0%, 12%, 0.702);
 
-		--control-strong-color-default: rgba(255, 255, 255, 0.545);
-		--control-strong-color-disabled: rgba(255, 255, 255, 0.247);
+		--control-strong-color-default: hsl(0, 0%, 100%, 0.545);
+		--control-strong-color-disabled: hsl(0, 0%, 100%, 0.247);
 
-		--control-strong-stroke-default: rgba(255, 255, 255, 0.545);
-		--control-strong-stroke-disabled: rgba(255, 255, 255, 0.157);
+		--control-strong-stroke-default: hsl(0, 0%, 100%, 0.545);
+		--control-strong-stroke-disabled: hsl(0, 0%, 100%, 0.157);
 
-		--control-solid-color-default: #454545;
+		--control-solid-color-default: hsl(0, 0%, 27%);
 
-		--subtle-color-secondary: rgba(255, 255, 255, 0.059);
-		--subtle-color-tertiary: rgba(255, 255, 255, 0.039);
-		--subtle-color-disabled: rgba(255, 255, 255, 0);
+		--subtle-color-secondary: hsl(0, 0%, 100%, 0.059);
+		--subtle-color-tertiary: hsl(0, 0%, 100%, 0.039);
+		--subtle-color-disabled: hsl(0, 0%, 100%, 0);
 
-		--control-alt-color-secondary: rgba(0, 0, 0, 0.098);
-		--control-alt-color-tertiary: rgba(255, 255, 255, 0.043);
-		--control-alt-color-quarternary: rgba(255, 255, 255, 0.071);
-		--control-alt-color-disabled: rgba(255, 255, 255, 0);
+		--control-alt-color-secondary: hsl(0, 0%, 0%, 0.098);
+		--control-alt-color-tertiary: hsl(0, 0%, 100%, 0.043);
+		--control-alt-color-quarternary: hsl(0, 0%, 100%, 0.071);
+		--control-alt-color-disabled: hsl(0, 0%, 100%, 0);
 
-		--control-stroke-default: rgba(255, 255, 255, 0.071);
-		--control-stroke-secondary: rgba(255, 255, 255, 0.094);
+		--control-stroke-default: hsl(0, 0%, 100%, 0.071);
+		--control-stroke-secondary: hsl(0, 0%, 100%, 0.094);
 
-		--control-accent-stroke-default: rgba(255, 255, 255, 0.078);
-		--control-accent-stroke-secondary: rgba(0, 0, 0, 0.137);
-		--control-accent-stroke-tertiary: rgba(0, 0, 0, 0.216);
-		--control-accent-stroke-disabled: rgba(0, 0, 0, 0.2);
+		--control-accent-stroke-default: hsl(0, 0%, 100%, 0.078);
+		--control-accent-stroke-secondary: hsl(0, 0%, 0%, 0.137);
+		--control-accent-stroke-tertiary: hsl(0, 0%, 0%, 0.216);
+		--control-accent-stroke-disabled: hsl(0, 0%, 0%, 0.2);
 
-		--card-stroke-default: rgba(0, 0, 0, 0.098);
-		--card-stroke-solid: #1c1c1c;
+		--card-stroke-default: hsl(0, 0%, 0%, 0.098);
+		--card-stroke-solid: hsl(0, 0%, 11%);
 
-		--surface-stroke-default: rgba(255, 255, 255, 0.082);
-		--surface-stroke-flyout: rgba(0, 0, 0, 0.2);
-		--surface-stroke-inverse: rgba(0, 0, 0, 0.059);
+		--surface-stroke-default: hsl(0, 0%, 100%, 0.082);
+		--surface-stroke-flyout: hsl(0, 0%, 0%, 0.2);
+		--surface-stroke-inverse: hsl(0, 0%, 0%, 0.059);
 
-		--divider-color-default: rgba(255, 255, 255, 0.082);
+		--divider-color-default: hsl(0, 0%, 100%, 0.082);
 
-		--focus-stroke-outer: #fff;
-		--focus-stroke-inner: rgba(0, 0, 0, 0.702);
+		--focus-stroke-outer: white;
+		--focus-stroke-inner: hsl(0, 0%, 0%, 0.702);
 
-		--card-background-default: rgba(255, 255, 255, 0.051);
-		--card-background-secondary: rgba(255, 255, 255, 0.031);
+		--card-background-default: hsl(0, 0%, 100%, 0.051);
+		--card-background-secondary: hsl(0, 0%, 100%, 0.031);
 
-		--smoke-color-default: rgba(0, 0, 0, 0.302);
+		--smoke-color-default: hsl(0, 0%, 0%, 0.302);
 
-		--layer-color-default: rgba(58, 58, 58, 0.298);
-		--layer-color-alt: rgba(255, 255, 255, 0.051);
+		--layer-color-default: hsl(0, 0%, 23%, 0.29);
+		--layer-color-alt: hsl(0, 0%, 100%, 0.051);
 
-		--mica-tint: 32, 32, 32;
+		--mica-tint: 0, 0%, 13%;
 		--mica-tint-opacity: 0.8;
 
-		--background-base: #202020;
-		--background-secondary: #1c1c1c;
-		--background-tertiary: #282828;
-		--background-quarternary: #2c2c2c;
+		--background-base: #212121; // this is only in #-HEX format for the hero section gradient to work
+		--background-secondary: hsl(0, 0%, 11%);
+		--background-tertiary: hsl(0, 0%, 16%);
+		--background-quarternary: hsl(0, 0%, 17%);
 
-		--system-color-success: #6ccb5f;
-		--system-color-caution: #fce100;
-		--system-color-critical: #ff99a4;
-		--system-color-attention: #60cdff;
-		--system-color-neutral: #ffffff8b;
-		--system-background-attention: #ffffff08;
-		--system-background-success: #393d1b;
-		--system-background-caution: #433519;
-		--system-background-critical: #442726;
-		--system-background-neutral: #ffffff08;
+		--system-color-success: hsl(113, 51%, 58%);
+		--system-color-caution: hsl(54, 100%, 49%);
+		--system-color-critical: hsl(354, 100%, 80%);
+		--system-color-attention: hsl(199, 100%, 69%);
+		--system-color-neutral: hsl(0, 0%, 0%, 0.55);
+		--system-background-attention: hsl(0, 0%, 0%, 0.03);
+		--system-background-success: hsl(67, 39%, 17%);
+		--system-background-caution: hsl(40, 46%, 18%);
+		--system-background-critical: hsl(2, 28%, 21%);
+		--system-background-neutral: hsl(0, 0%, 0%, 0.03);
 
 		// Elevation
-		--card-elevation: 0px 2px 4px rgba(0, 0, 0, 0.13);
-		--flyout-elevation: 0px 8px 16px rgba(0, 0, 0, 0.26);
-		--window-elevation: 0px 32px 64px rgba(0, 0, 0, 0.37),
-			0px 2px 21px rgba(0, 0, 0, 0.37);
+		--card-elevation: 0px 2px 4px hsl(0, 0%, 0%, 0.13);
+		--flyout-elevation: 0px 8px 16px hsl(0, 0%, 0%, 0.26);
+		--window-elevation: 0px 32px 64px hsl(0, 0%, 0%, 0.37), 0px 2px 21px hsl(0, 0%, 0%, 0.37);
 
 		// Accent Colors
 		--accent-color-default: var(--accent-color-light-2);
 		--accent-color-secondary: var(--accent-color-light-2-90);
 		--accent-color-tertiary: var(--accent-color-light-2-80);
-		--accent-color-disabled: rgba(255, 255, 255, 0.157);
+		--accent-color-disabled: hsl(0, 0%, 100%, 0.157);
 
 		--accent-text-default: var(--accent-color-light-3);
 		--accent-text-secondary: var(--accent-color-light-3);
@@ -370,7 +367,7 @@ textarea {
 // Selection colors
 ::selection {
 	background-color: var(--accent-color-dark-1);
-	color: #fff;
+	color: white;
 }
 
 // Outer elements -- <html> and <body>
@@ -430,36 +427,35 @@ code {
 		// At least it's not firefox.
 		&:vertical {
 			@media (prefers-color-scheme: light) {
-				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='rgba(0, 0, 0, 0.447)'/%3E%3C/svg%3E");
-				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='rgba(0, 0, 0, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
 			}
 			@media (prefers-color-scheme: dark) {
-				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='rgba(255, 255, 255, 0.545)'/%3E%3C/svg%3E");
-				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='rgba(255, 255, 255, 0.545)'/%3E%3C/svg%3E");
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
 			}
 		}
 
 		&:horizontal {
 			@media (prefers-color-scheme: light) {
-				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='rgba(0, 0, 0, 0.447)'/%3E%3C/svg%3E");
-				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='rgba(255, 255, 255, 0.545)'/%3E%3C/svg%3E");
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
 			}
 			@media (prefers-color-scheme: dark) {
-				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='rgba(0, 0, 0, 0.447)'/%3E%3C/svg%3E");
-				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='rgba(255, 255, 255, 0.545)'/%3E%3C/svg%3E");
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
 			}
 		}
 
 		&:hover {
 			background: var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
-				var(--scrollbar-caret-top) top center/contain no-repeat,
-				rgba(var(--mica-tint), var(--mica-tint-opacity));
+			var(--scrollbar-caret-top) top center/contain no-repeat,
+			hsl(var(--mica-tint), var(--mica-tint-opacity));
 		}
 
 		&-thumb {
 			border: 6px solid transparent;
-			border-top: none;
-			border-bottom: none;
+			border-block: none;
 			border-radius: 14px;
 			background: var(--control-strong-color-default);
 			background-clip: padding-box;

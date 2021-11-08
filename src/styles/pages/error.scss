@@ -33,13 +33,13 @@
 		border-radius: 0;
 		background: silver;
 		box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-			inset -2px -2px grey, inset 2px 2px #dfdfdf;
+		inset -2px -2px grey, inset 2px 2px #dfdfdf;
 		font-size: 1.2rem;
 
 		&:not(:disabled):active {
 			padding: 2px 11px 0 13px;
 			box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
-				inset -2px -2px #dfdfdf, inset 2px 2px grey;
+			inset -2px -2px #dfdfdf, inset 2px 2px grey;
 		}
 
 		&:focus {
@@ -54,7 +54,7 @@
 		padding: 12px 8px;
 		background: #fff;
 		box-shadow: inset -1px -1px #fff, inset 1px 1px grey,
-			inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+		inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
 		overflow: auto;
 
 		code {
@@ -112,7 +112,7 @@
 		&-thumb {
 			background-color: #dfdfdf;
 			box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-				inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+			inset -2px -2px #808080, inset 2px 2px #dfdfdf;
 		}
 	}
 }
@@ -120,18 +120,23 @@
 .window {
 	@include flex($direction: column);
 	position: absolute;
+	min: {
+		width: 150px;
+		height: 375px;
+	};
 	width: 380px;
 	max-width: calc(100% - 48px);
 	padding: 3px;
 	background: silver;
 	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
-		inset -2px -2px grey, inset 2px 2px #fff;
+	inset -2px -2px grey, inset 2px 2px #fff;
 	overflow: auto;
 	resize: both;
+
 	@media only screen and (max-width: 648px) {
 		position: absolute;
-		top: 0;
-		left: 0;
+		inset-block-start: 0;
+		inset-inline-start: 0;
 		width: calc(100% - 48px);
 		height: calc(100% - 48px);
 		margin: 24px;
@@ -149,7 +154,7 @@
 
 	footer {
 		@include flex($justify: end, $gap: 6px);
-		margin-top: 8px;
+		margin-block-start: 8px;
 	}
 }
 
@@ -160,7 +165,7 @@
 	user-select: none;
 
 	&-text {
-		margin-right: 24px;
+		margin-inline-end: 24px;
 		color: #fff;
 		font-weight: 700;
 		letter-spacing: 0;
@@ -191,7 +196,7 @@
 		}
 
 		&[aria-label="Close"] {
-			margin-left: 2px;
+			margin-inline-start: 2px;
 			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='8' height='7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0h2v1h1v1h2V1h1V0h2v1H7v1H6v1H5v1h1v1h1v1h1v1H6V6H5V5H3v1H2v1H0V6h1V5h1V4h1V3H2V2H1V1H0V0z' fill='%23000'/%3E%3C/svg%3E");
 			background-repeat: no-repeat;
 			background-position: top 3px left 4px;
@@ -201,13 +206,12 @@
 
 .error-inner {
 	display: flex;
-	margin-top: 4px;
-	margin-bottom: 8px;
+	margin-block: 4px 8px;
 
 	img {
 		width: 32px;
 		height: 32px;
-		margin-right: 1em;
+		margin-inline-end: 1em;
 		user-select: none;
 		-webkit-user-drag: none;
 	}

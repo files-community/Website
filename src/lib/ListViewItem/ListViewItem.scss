@@ -20,7 +20,7 @@
 	&::before {
 		content: "";
 		position: absolute;
-		left: 0;
+		inset-inline-start: 0;
 		width: 3px;
 		height: 0;
 		border-radius: 3px;
@@ -63,7 +63,7 @@
 
 	.expander-icon {
 		flex: 0 0 auto;
-		margin-left: 8px;
+		margin-inline-start: 8px;
 		transition: 166ms cubic-bezier(0, 0, 0, 1) transform;
 
 		&.expanded {
@@ -85,6 +85,6 @@
 
 	> :global(svg) {
 		@include icon($size: 16px);
-		margin-right: 16px;
+		margin-inline-end: 16px;
 	}
 }

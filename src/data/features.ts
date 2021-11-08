@@ -76,12 +76,12 @@ export const cloudFiles = [
 
 export const previewFiles = [
 	{
-		name: "June 2018",
+		name: "Files v3",
 		icon: "/ui/icons/folder.png",
-		items: 3,
-		added: "Thursday, June 21, 2018 11:24 AM",
-		modified: "Sunday, November 15, 2020 6:50 PM",
-		path: "C:\\Users\\Sara\\Desktop\\June 2018"
+		items: 16,
+		added: "Wednesday, October 6, 2021 42:69 AM",
+		modified: "Thursday, January 1, 1970 00:00",
+		path: "C:\\Users\\Sara\\Desktop\\Files v3"
 	},
 	{
 		name: "waves",
