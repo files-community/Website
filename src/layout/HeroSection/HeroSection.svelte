@@ -75,7 +75,6 @@
 		releaseUrl = await getReleaseUrl();
 
 		isWindows = navigator.userAgent.includes("Windows")
-		console.log(isWindows);
 	});
 
 </script>

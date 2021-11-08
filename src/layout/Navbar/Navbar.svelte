@@ -10,23 +10,21 @@
 
 	let innerWidth = 649; // Don't render the mobile layout before hydration
 	let sidebarVisible = false;
-	let sidebar;
+	let sidebar: HTMLElement;
 	let sidebarButton: HTMLButtonElement;
 
-	function toggleSidebar() {
+	const toggleSidebar = () => {
 		sidebarVisible = !sidebarVisible;
-	}
+	};
 
-	function handleOuterClick(e) {
-		if (
+	const handleOuterClick = (e: MouseEvent) => {
+		if (!(
 			!sidebarVisible ||
 			e.target === sidebarButton ||
-			sidebarButton.contains(e.target) ||
+			sidebarButton.contains(e.target as Node) ||
 			e.target === sidebar ||
-			sidebar.contains(e.target)
-		)
-			return;
-		toggleSidebar();
+			sidebar.contains(e.target as Node)
+		)) toggleSidebar();
 	}
 </script>
 
@@ -55,10 +53,10 @@
 			Files
 		</a>
 		{#if innerWidth > 648}
-			<div class="divider" role="separator" />
+			<div class="divider" role="separator"></div>
 			{#each items as { name, path, external, icon, type }}
 				{#if type === "divider"}
-					<div class="divider" role="separator" />
+					<div class="divider" role="separator"></div>
 				{:else}
 					<a
 						class="item"
@@ -98,7 +96,7 @@
 			{/each}
 		{:else}
 			<button
-				on:click|stopPropagation={toggleSidebar}
+				on:click={toggleSidebar}
 				bind:this={sidebarButton}
 				class="button sidebar-button"
 			>

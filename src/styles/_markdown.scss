@@ -36,23 +36,25 @@
 		
 		&.margin- {
 			&top {
-				margin: 48px 0 16px 0;
+				margin-block: 48px 16px;
 			}
 			&bottom {
-				margin: 16px 0 48px 0;
+				margin-block: 16px 48px;
 			}
-		}
-
-		img {
-			max-width: 100%;
-			height: auto;
-			border-radius: var(--overlay-corner-radius);
-			border: 1px solid var(--card-stroke-default);
 		}
 
 		figcaption {
 			color: var(--text-color-secondary);
+			font-size: 1.45rem;
+			text-align: center;
 		}
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+		border-radius: var(--overlay-corner-radius);
+		border: 3px solid var(--card-stroke-default);
 	}
 
 	// Header text (<h1> through <h6>)
