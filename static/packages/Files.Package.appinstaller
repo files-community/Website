@@ -1,60 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
-	Uri="http://files.community/static/packages/Files.Package.appinstaller"
+	Uri="http://files.community/packages/Files.Package.appinstaller"
 	Version="2.0.34.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="Files"
 		Version="2.0.34.0"
 		Publisher="CN=Yair Aichenbaum, O=Yair Aichenbaum, L=Baltimore, S=Maryland, C=US"
-		Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Files.Package_2.0.34.0_x86_x64.msixbundle" />
+		Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Files.Package_2.0.34.0_x86_x64.msixbundle" />
 	<Dependencies>
 		<Package
 			Name="Microsoft.UI.Xaml.2.7"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.UI.Xaml.2.7.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.UI.Xaml.2.7.appx"
 			Version="7.2109.13004.0" />
 		<Package
 			Name="Microsoft.UI.Xaml.2.7"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.UI.Xaml.2.7.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.UI.Xaml.2.7.appx"
 			Version="7.2109.13004.0" />
 		<Package
 			Name="Microsoft.NET.Native.Framework.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
 			Version="2.2.29512.0" />
 		<Package
 			Name="Microsoft.NET.Native.Framework.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
 			Version="2.2.29512.0" />
 		<Package
 			Name="Microsoft.NET.Native.Runtime.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
 			Version="2.2.28604.0" />
 		<Package
 			Name="Microsoft.NET.Native.Runtime.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
 			Version="2.2.28604.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
 			Version="14.0.30035.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="http://files.community/static/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
+			Uri="http://files.community/packages/Files.Package_2.0.34.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
 			Version="14.0.30035.0" />
 	</Dependencies>
 	<UpdateSettings>
