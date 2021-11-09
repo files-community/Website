@@ -2,7 +2,7 @@
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import { docs } from "$data/docs";
+	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 
 	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib";
@@ -14,7 +14,7 @@
 	let selection: number = 0;
 
 	// A recursively flattened version of the docs mapping containing an array of all pages
-	const docsPages = filterPages(docs);
+	const docsPages: DocsMap[] = filterPages(docs);
 
 	// These are pretty self-explanatory
 	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.path);
@@ -58,8 +58,8 @@
 	};
 
 	// Action for handling clicks outside of a DOM node
-	const clickOutside = (node, eventHandler) => {
-		const handleClick = event => {
+	const clickOutside = (node: Element, eventHandler: () => boolean) => {
+		const handleClick = (event: MouseEvent) => {
 			const path = event.composedPath();
 			if (!path.includes(node)) eventHandler();
 		};

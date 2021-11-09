@@ -10,24 +10,26 @@
 
 	let innerWidth = 649; // Don't render the mobile layout before hydration
 	let sidebarVisible = false;
-	let sidebar;
+	let sidebar: HTMLElement;
 	let sidebarButton: HTMLButtonElement;
 
-	function toggleSidebar() {
+	const toggleSidebar = () => {
 		sidebarVisible = !sidebarVisible;
-	}
+	};
 
-	function handleOuterClick(e) {
+	const handleOuterClick = (e: MouseEvent) => {
 		if (
 			!sidebarVisible ||
 			e.target === sidebarButton ||
-			sidebarButton.contains(e.target) ||
+			sidebarButton.contains(e.target as Node) ||
 			e.target === sidebar ||
-			sidebar.contains(e.target)
-		)
+			sidebar.contains(e.target as Node)
+		) {
 			return;
-		toggleSidebar();
-	}
+		} else {
+			toggleSidebar();
+		}
+	};
 </script>
 
 <svelte:window bind:innerWidth on:click={handleOuterClick} />

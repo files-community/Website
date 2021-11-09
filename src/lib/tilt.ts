@@ -1,15 +1,19 @@
-function getSettings(settings = {}) {
-	return { scale: 1, max: 15, reverse: false, ...settings };
+interface TiltSettings {
+	scale?: number,
+	max?: number,
+	reverse?: false,
 }
+
+const getSettings = (settings: TiltSettings = {}) => ({ scale: 1, max: 15, reverse: false, ...settings });
 
 const TRANSITION_MS = 300;
 
-export default function tilt(node, settingsObj) {
+export default function tilt(node: HTMLElement, settingsObj: TiltSettings) {
 	const { width, height, left, top } = node.getBoundingClientRect();
 	let settings = getSettings(settingsObj);
 	let reverse = settings.reverse ? -1 : 1;
 
-	function onMouseMove(e) {
+	function onMouseMove(e: MouseEvent) {
 		const percX = (e.clientX - left) / width;
 		const percY = (e.clientY - top) / height;
 
@@ -25,7 +29,7 @@ export default function tilt(node, settingsObj) {
 			`scale3d(${Array(3).fill(scale).join(", ")})`;
 	}
 
-	let transitionId;
+	let transitionId: NodeJS.Timeout;
 
 	function smoothTransition() {
 		clearTimeout(transitionId);
@@ -61,7 +65,8 @@ export default function tilt(node, settingsObj) {
 			node.removeEventListener("mouseleave", onMouseLeave);
 			node.removeEventListener("mouseleave", onMouseEnter);
 		},
-		update(settingsObj) {
+
+		update(settingsObj: TiltSettings) {
 			settings = getSettings(settingsObj);
 			reverse = settings.reverse ? -1 : 1;
 		}

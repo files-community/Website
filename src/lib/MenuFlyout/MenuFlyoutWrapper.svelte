@@ -8,8 +8,8 @@
 	// $: if (open) toggleDropdown();
 
 	let container: HTMLDivElement;
-	const handleOuterClick = e => {
-		if (open && ((!e.target && container) || !container.contains(e.target)))
+	const handleOuterClick = (e: MouseEvent) => {
+		if (open && ((!e.target && container) || !container.contains(e.target as Node)))
 			toggleDropdown();
 	};
 </script>
