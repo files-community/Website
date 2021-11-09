@@ -5,8 +5,8 @@
 [functions]
   node_bundler = "esbuild"
   
-[[headers]]
-  for = "/*.webmanifest"
+[headers]
+  for = "/*"
   [headers.values]
-    Content-Type = "application/xml appinstaller"
-    Content-Type = "application/vns.ms-appx appxbundle appx"
+    Content-Type: = "application/xml appinstaller"
+    Content-Type: = "application/vns.ms-appx appxbundle appx"
