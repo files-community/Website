@@ -5,7 +5,7 @@
 [functions]
   node_bundler = "esbuild"
   
-[headers]
+[[headers]]
   for = "/*.webmanifest"
   [headers.values]
     Content-Type = "application/xml appinstaller"
