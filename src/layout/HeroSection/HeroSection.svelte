@@ -14,8 +14,8 @@
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions = "Microsoft Store" | "Sideload Package" | "Winget (CLI)";
-	const downloadOptions: DownloadOptions[] = ["Microsoft Store", "Sideload Package", "Winget (CLI)"]
+	type DownloadSources = "Microsoft Store" |  "Winget (CLI)" | "Sideload Package" | "Sideload Package (Preview)";
+	const downloadSources: DownloadSources[] = ["Microsoft Store", "Winget (CLI)", "Sideload Package", "Sideload Package (Preview)"]
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -28,11 +28,10 @@
 	// Group bindings
 	let currentDownloadSource = 0;
 
-	const downloadSources = ["Microsoft Store", "Sideload Package", "Winget (CLI)"];
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
-	let releaseUrl = `ms-appinstaller:?source=${links.sideloadLink}`;
+	const sideloadLink = currentDownloadSource === 2 ? links.sideloadLink : links.sideloadPreviewLink;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -45,16 +44,17 @@
 	const updateDownloadSource = (value: number) =>
 		localStorage.setItem("downloadSource", value.toString());
 
-	const changeDownloadSource = (downloadOption: DownloadOptions, id: number) => {
+	const changeDownloadSource = (downloadSource: DownloadSources, id: number) => {
 		updateDownloadSource(id);
 
-		switch (downloadOption) {
-			case "Microsoft Store":
-			case "Sideload Package":
-				window.open(currentDownloadSource === 0 ? getStoreUrl() : releaseUrl, "_blank");
-				break;
+		switch (downloadSource) {
 			case "Winget (CLI)":
 				wingetDialogOpen = true;
+				break;
+			case "Microsoft Store":
+			case "Sideload Package":
+			case "Sideload Package (Preview)":
+				window.open(downloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
 				break;
 		}
 
@@ -69,7 +69,6 @@
 			parseInt(localStorage.getItem("downloadSource")) ?? 0;
 
 		isWindows = navigator.userAgent.includes("Windows")
-		console.log(isWindows);
 	});
 
 </script>
@@ -81,7 +80,7 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : releaseUrl) : undefined}
+					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : sideloadLink) : undefined}
 					id="hero-download-button"
 					on:click={() => {
 						if (currentDownloadSource === 2) wingetDialogOpen = true;
@@ -105,13 +104,13 @@
 						{@html ChevronDown}
 					</Button>
 					<svelte:fragment slot="menu">
-						{#each downloadOptions as downloadOption, id}
+						{#each downloadSources as downloadSource, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
-								on:change={() => changeDownloadSource(downloadOption, id)}
+								on:change={() => changeDownloadSource(downloadSource, id)}
 								value={id}
 							>
-								{downloadOption}
+								{downloadSource}
 							</ListViewItem>
 						{/each}
 					</svelte:fragment>
