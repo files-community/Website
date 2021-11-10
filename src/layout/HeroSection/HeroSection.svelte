@@ -14,8 +14,8 @@
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions = "Microsoft Store" | "GitHub Release" | "Winget (CLI)";
-	const downloadOptions: DownloadOptions[] = ["Microsoft Store", "GitHub Release", "Winget (CLI)"]
+	type DownloadOptions = "Microsoft Store" | "Sideload Package" | "Winget (CLI)";
+	const downloadOptions: DownloadOptions[] = ["Microsoft Store", "Sideload Package", "Winget (CLI)"]
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -28,7 +28,7 @@
 	// Group bindings
 	let currentDownloadSource = 0;
 
-	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
+	const downloadSources = ["Microsoft Store", "Sideload Package", "Winget (CLI)"];
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
@@ -50,7 +50,7 @@
 
 		switch (downloadOption) {
 			case "Microsoft Store":
-			case "GitHub Release":
+			case "Sideload Package":
 				window.open(currentDownloadSource === 0 ? getStoreUrl() : releaseUrl, "_blank");
 				break;
 			case "Winget (CLI)":
