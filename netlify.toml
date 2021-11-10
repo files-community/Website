@@ -4,15 +4,3 @@
 
 [functions]
   node_bundler = "esbuild"
-
-[[redirects]]
-from = "/download/stable"
-to = "/ms-appinstaller:?source=https://filescommunity.blob.core.windows.net/files/stable/Files.Package.appinstaller"
-status = 301
-force = false
-
-[[redirects]]
-from = "/download/preview"
-to = "/ms-appinstaller:?source=https://filescommunity.blob.core.windows.net/files/preview/Files.Package.appinstaller"
-status = 301
-force = false
