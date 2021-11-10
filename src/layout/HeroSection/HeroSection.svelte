@@ -10,7 +10,6 @@
 	} from "$lib";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
-	import { getReleaseUrl } from "$data/fetchHomepageData";
 	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
@@ -33,7 +32,7 @@
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
-	let releaseUrl = "";
+	let releaseUrl = `ms-appinstaller:?source=${links.sideloadLink}`;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -68,9 +67,6 @@
 			localStorage.setItem("downloadSource", "0");
 		currentDownloadSource =
 			parseInt(localStorage.getItem("downloadSource")) ?? 0;
-
-		// Fetch the URL for the latest files package from GitHub
-		releaseUrl = await getReleaseUrl();
 
 		isWindows = navigator.userAgent.includes("Windows")
 		console.log(isWindows);
