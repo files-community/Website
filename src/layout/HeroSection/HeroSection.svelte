@@ -31,7 +31,7 @@
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
-	const sideloadLink = currentDownloadSource === 2 ? links.sideloadLink : links.sideloadPreviewLink;
+	const sideloadLink = `/download/${currentDownloadSource === 2 ? "stable" : "preview"}`;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -80,13 +80,13 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : sideloadLink) : undefined}
+					href={currentDownloadSource !== 1 ? (currentDownloadSource === 0 ? getStoreUrl() : sideloadLink) : undefined}
 					id="hero-download-button"
 					on:click={() => {
-						if (currentDownloadSource === 2) wingetDialogOpen = true;
+						if (currentDownloadSource === 1) wingetDialogOpen = true;
 					}}
-					rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
-					target={currentDownloadSource !== 2 ? "_blank" : undefined}
+					rel={currentDownloadSource !== 1 ? "noreferrer noopener" : undefined}
+					target={currentDownloadSource !== 1 ? "_blank" : undefined}
 					variant="accent"
 				>
 					{@html ArrowDownload}
