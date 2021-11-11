@@ -7,7 +7,7 @@
 <div class="download-page">
 	<h1>Downloading</h1>
 	<ProgressRing size={64}/>
-	<p>Starting download of sideload package...</p>
+	<p>Thank you for downloading Files! 🎉</p>
 
 	<p>Want to support the creators of Files?</p>
 	<Button
