@@ -141,11 +141,11 @@
 	width="448"
 >
 	To download and install Files using <a
-	class="hyperlink"
-	href="https://github.com/microsoft/winget-cli"
-	rel="noreferrer noopener"
-	target="_blank">winget</a
->, paste the following command into a terminal of your choice:
+		class="hyperlink"
+		href="https://github.com/microsoft/winget-cli"
+		rel="noreferrer noopener"
+		target="_blank">winget</a>,
+	paste the following command into a terminal of your choice:
 	<TerminalCommand command="winget install -e Files-Community.Files" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">
