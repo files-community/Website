@@ -27,7 +27,7 @@
 
 	const mainPost: Post = posts[0]
 
-	let scrollY: number
+	let scrollY: number;
 </script>
 
 <svelte:head>
@@ -39,7 +39,7 @@
 	<meta content="https://{$page.host}/branding/banner-blog-light.png" name="twitter:image"/>
 </svelte:head>
 
-<svelte:window bind:scrollY/>
+<svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
 
 <PageSection id="blog">
 	<div class="blog-backdrop">
