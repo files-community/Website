@@ -39,16 +39,20 @@
 	const changeDownloadSource = (downloadSource: DownloadSources, id: number) => {
 		updateDownloadSource(id);
 
-		if (downloadSource !== "Winget (CLI)")
+		if (downloadSource !== "Winget (CLI)") {
 			window.open(downloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
-		else wingetDialogOpen = true;
+		} else {
+			wingetDialogOpen = true;
+		}
 
 		isDownloadDropdownOpen = false;
 	};
 
 	onMount(async () => {
 		// Get the user's download preference
-		if (!localStorage.getItem("downloadSource")) localStorage.setItem("downloadSource", "0");
+		if (!localStorage.getItem("downloadSource")) {
+			localStorage.setItem("downloadSource", "0");
+		}
 		currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
 
 		isWindows = navigator.userAgent.includes("Windows");
