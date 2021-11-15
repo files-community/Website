@@ -24,7 +24,9 @@
 			sidebarButton.contains(e.target as Node) ||
 			e.target === sidebar ||
 			sidebar.contains(e.target as Node)
-		)) toggleSidebar();
+		)) {
+			toggleSidebar();
+		}
 	}
 </script>
 
