@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { ContributorData } from "$data/fetchHomepageData";
 	import { getContributors } from "$data/fetchHomepageData";
-
 	import { onMount } from "svelte";
 
 	import { links } from "$data/links";
@@ -16,9 +15,6 @@
 	// Fetch contributors for the community section
 	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> =
 		[[], [], []];
-
-	// Utility function for randomly shuffling an array
-	const shuffle = a => a.sort(() => Math.random() - 0.5);
 
 	onMount(async () => {
 		// Fetch contributors for the community section
@@ -38,11 +34,11 @@
 				collective of hundreds of contributors.
 			</p>
 			<div class="buttons-spacer">
-				<HyperlinkButton href="https://discord.gg/{links.discord}"
-					>Join the discussion
+				<HyperlinkButton href="https://discord.gg/{links.discord}">
+					Join the discussion
 				</HyperlinkButton>
-				<HyperlinkButton href="/docs/contributing/code-style"
-					>Become a contributor
+				<HyperlinkButton href="/docs/contributing/code-style">
+					Become a contributor
 				</HyperlinkButton>
 			</div>
 		</div>
@@ -50,7 +46,7 @@
 			<div class="contributors-container">
 				{#each [contributors1, contributors2, contributors3] as contributors}
 					<div class="contributors-row">
-						{#each shuffle(contributors) as { html_url, avatar_url, login, contributions, type }}
+						{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
 							<Contributor
 								{html_url}
 								{avatar_url}
@@ -63,7 +59,7 @@
 				{/each}
 			</div>
 		{/if}
-		<canvas use:rainbowCanvas />
+		<canvas use:rainbowCanvas></canvas>
 	</div>
 </PageSection>
 

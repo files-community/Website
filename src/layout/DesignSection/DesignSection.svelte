@@ -6,7 +6,7 @@
 	let scrollY: number;
 </script>
 
-<svelte:window bind:scrollY />
+<svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
 
 <PageSection id="design-section">
 	<HeaderChip>Design</HeaderChip>

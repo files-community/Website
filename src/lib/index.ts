@@ -17,6 +17,8 @@ export { default as ContentDialog } from "./ContentDialog/ContentDialog.svelte";
 export { default as TerminalCommand } from "./TerminalCommand/TerminalCommand.svelte";
 export { default as Titlebar } from "./Titlebar/Titlebar.svelte";
 export { default as BlogCard } from "./BlogCard/BlogCard.svelte";
+export { default as ProgressRing } from "./ProgressRing/ProgressRing.svelte";
+export { default as Metadata } from "./Metadata.svelte";
 
 // Actions
 export { default as tilt } from "./tilt";

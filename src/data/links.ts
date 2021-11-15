@@ -6,5 +6,5 @@ export const links = {
 		owner: "files-community",
 		repo: "files",
 		siteRepo: "website"
-	}
+	},
 };

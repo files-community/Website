@@ -24,22 +24,3 @@ export const getContributors: (
 			console.error(err);
 			return "";
 		});
-
-// Returns the latest msixbundle from the files github release
-export const getReleaseUrl = async () =>
-	await fetch(`https://api.github.com/repos/${owner}/${repo}/releases/latest`)
-		// Parse body to object
-		.then(result => result.json())
-
-		// Find the first asset in the release that has a file extension of "msixbundle" and return it's download link
-		.then(
-			result =>
-				result.assets.find(a => a.name.endsWith(".zip"))
-					.browser_download_url
-		)
-
-		// Error handler
-		.catch(err => {
-			console.error(err);
-			return "";
-		});

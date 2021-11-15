@@ -6,7 +6,7 @@
 		HeroSection,
 		ThemesSection,
 		Footer
-	} from "$layout/";
+	} from "$layout";
 	import { page } from "$app/stores";
 </script>
 
