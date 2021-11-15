@@ -23,7 +23,7 @@ specifiers:
   sass: ^1.43.4
   svelte: ^3.44.1
   svelte-check: ^2.2.8
-  svelte-drag: ^2.1.1
+  svelte-drag: ^2.2.0
   svelte-preprocess: ^4.9.8
   tslib: ^2.3.1
   typescript: ^4.4.4
@@ -51,7 +51,7 @@ devDependencies:
   sass: 1.43.4
   svelte: 3.44.1
   svelte-check: 2.2.8_210a682e3c539664016a09fdf260fd16
-  svelte-drag: 2.1.1
+  svelte-drag: 2.2.0
   svelte-preprocess: 4.9.8_0817bf3c3dfca1bb72a040b4f6836cb8
   tslib: 2.3.1
   typescript: 4.4.4
@@ -446,7 +446,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001280
-      electron-to-chromium: 1.3.895
+      electron-to-chromium: 1.3.896
       escalade: 3.1.1
       node-releases: 2.0.1
       picocolors: 1.0.0
@@ -733,8 +733,8 @@ packages:
       domhandler: 4.2.2
     dev: true
 
-  /electron-to-chromium/1.3.895:
-    resolution: {integrity: sha512-9Ww3fB8CWctjqHwkOt7DQbMZMpal2x2reod+/lU4b9axO1XJEDUpPMBxs7YnjLhhqpKXIIB5SRYN/B4K0QpvyQ==}
+  /electron-to-chromium/1.3.896:
+    resolution: {integrity: sha512-NcGkBVXePiuUrPLV8IxP43n1EOtdg+dudVjrfVEUd/bOqpQUFZ2diL5PPYzbgEhZFEltdXV3AcyKwGnEQ5lhMA==}
     dev: true
 
   /emoji-regex/9.2.2:
@@ -2466,8 +2466,8 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-drag/2.1.1:
-    resolution: {integrity: sha512-GxUAhE1gZZI5KZ/t5zJ55EaaLPCfuEKAqYk4B6B2nXoqlR0IZMUmYB0bjm7gskl05QP1VLPpVbRZYLvA10lFew==}
+  /svelte-drag/2.2.0:
+    resolution: {integrity: sha512-FqfG28RTgan0tO8PlzEQB7O2Ut+P9aXwnSL2AD6es7b+Y67yDqH8Bi1R5J0BVwt6I7rk2dhkX01ivLxdRp1AUA==}
     dev: true
 
   /svelte-hmr/0.14.7_svelte@3.44.1:
