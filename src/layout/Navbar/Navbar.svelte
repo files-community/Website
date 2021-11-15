@@ -18,18 +18,16 @@
 	};
 
 	const handleOuterClick = (e: MouseEvent) => {
-		if (
+		if (!(
 			!sidebarVisible ||
 			e.target === sidebarButton ||
 			sidebarButton.contains(e.target as Node) ||
 			e.target === sidebar ||
 			sidebar.contains(e.target as Node)
-		) {
-			return;
-		} else {
+		)) {
 			toggleSidebar();
 		}
-	};
+	}
 </script>
 
 <svelte:window bind:innerWidth on:click={handleOuterClick} />
@@ -57,10 +55,10 @@
 			Files
 		</a>
 		{#if innerWidth > 648}
-			<div class="divider" role="separator" />
+			<div class="divider" role="separator"></div>
 			{#each items as { name, path, external, icon, type }}
 				{#if type === "divider"}
-					<div class="divider" role="separator" />
+					<div class="divider" role="separator"></div>
 				{:else}
 					<a
 						class="item"
@@ -100,7 +98,7 @@
 			{/each}
 		{:else}
 			<button
-				on:click|stopPropagation={toggleSidebar}
+				on:click={toggleSidebar}
 				bind:this={sidebarButton}
 				class="button sidebar-button"
 			>

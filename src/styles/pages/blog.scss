@@ -35,6 +35,7 @@
 	margin-block-end: 72px;
 	padding-block-end: 72px;
 	border-block-end: 1px solid var(--divider-color-default);
+
 	@media only screen and (max-width: 1024px) {
 		grid-template-columns: auto;
 	}
