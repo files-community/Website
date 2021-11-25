@@ -1,6 +1,6 @@
 # Building Files from source
 
-1. Install Microsoft Visual Studio 2017 or later and the UWP Development kit.
+1. Install Microsoft Visual Studio 2022 and the UWP Development kit.
 2. Clone the Files [repository](https://github.com/files-community/files) and open `Files.sln` in Visual Studio.
 3. Set the `Files.Package` project as the startup item by right-clicking on `Files.Package` in the solution explorer and
    hitting 'Set as Startup item'.
