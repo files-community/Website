@@ -54,6 +54,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Use single line return `=>` for simple functions
 - Complex classes and interfaces must be documented
 - Always create new `EventArgs` classes for event arguments
+- Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
 
 3. Class structure
@@ -82,6 +83,8 @@ The following presents how a class structure should be ordered:
 - protected (virtual/override) functions/methods (with parameters amount descending)
 
 - public/protected abstract functions/methods
+
+- public operators
 
 - IDisposable.Dispose() function
 
