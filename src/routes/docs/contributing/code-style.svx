@@ -53,6 +53,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Mark classes as `abstract` or `sealed` if applicable.
 - Use single line return `=>` for simple functions
 - Complex classes and interfaces must be documented
+- Always create new `EventArgs` classes for event arguments
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
 
 3. Class structure
