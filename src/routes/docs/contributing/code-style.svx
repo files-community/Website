@@ -82,10 +82,13 @@ The following presents how a class structure should be ordered:
 - private functions/methods
 - protected (virtual/override) functions/methods (with parameters amount descending)
 
+- public/private static functions/methods
+
 - public/protected abstract functions/methods
 
 - public operators
 
+- Assertions e.g. AssertNotDisposed(), AssertInitialized(), AssertStreamOpened()
 - IDisposable.Dispose() function
 
 4. Interface structure
