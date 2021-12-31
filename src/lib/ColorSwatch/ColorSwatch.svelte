@@ -18,7 +18,7 @@
 	style="background-color: {color}"
 	type="radio"
 	{value}
-/>
+>
 
 <style lang="scss">
 	@use "ColorSwatch";

@@ -39,18 +39,18 @@
 				<source
 					media="(prefers-color-scheme: dark)"
 					srcset="/branding/logo-dark.svg"
-				/>
+				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/branding/logo-light.svg"
-				/>
+				>
 				<img
 					alt="Files logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo-light.svg"
 					width="32"
-				/>
+				>
 			</picture>
 			Files
 		</a>
@@ -63,12 +63,12 @@
 					<a
 						class="item"
 						sveltekit:prefetch
-						class:selected={$page.path === path ||
-							($page.path.split("/").length > 1 &&
+						class:selected={$page.url.pathname === path ||
+							($page.url.pathname.split("/").length > 1 &&
 								path.split("/").length > 1 &&
-								$page.path.startsWith(path) &&
+								$page.url.pathname.startsWith(path) &&
 								!(path === "" || path === "/")) ||
-							(path === "/" && $page.path === "")}
+							(path === "/" && $page.url.pathname === "")}
 						href={path}
 						target={external ? "_blank" : undefined}
 						rel={external ? "noreferrer noopener" : undefined}
@@ -113,18 +113,18 @@
 	>
 		{#each items as { name, path, external, sidebarTree, icon, type }}
 			{#if type === "divider"}
-				<hr role="separator" />
+				<hr role="separator">
 			{:else if !sidebarTree}
 				<ListViewItem
 					type="navigation"
 					sveltekit:prefetch
 					on:click={toggleSidebar}
-					selected={$page.path === path ||
-						($page.path.split("/").length > 1 &&
+					selected={$page.url.pathname === path ||
+						($page.url.pathname.split("/").length > 1 &&
 							path.split("/").length > 1 &&
-							$page.path.startsWith(path) &&
+							$page.url.pathname.startsWith(path) &&
 							!(path === "" || path === "/")) ||
-						(path === "/" && $page.path === "")}
+						(path === "/" && $page.url.pathname === "")}
 					href={path}
 					target={external ? "_blank" : undefined}
 					rel={external ? "noreferrer noopener" : undefined}
@@ -150,7 +150,7 @@
 				/>
 			{/if}
 		{/each}
-		<hr role="separator" />
+		<hr role="separator">
 		{#each buttons as { icon, href, label }}
 			<ListViewItem
 				{href}

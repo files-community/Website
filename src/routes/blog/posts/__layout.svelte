@@ -1,15 +1,15 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
 
-	export const load: Load = async ({ page, fetch }) => ({
+	export const load: Load = async ({ url, fetch }) => ({
 		props: {
-			post: await fetch(`${ page.path }.json`).then(response => response.json())
+			post: await fetch(`${ url.pathname }.json`).then(response => response.json())
 		}
 	});
 </script>
 
 <script lang="ts">
-	import { MenuFlyout, ListViewItem, IconButton } from "$lib";
+	import { MenuFlyout, ListViewItem, IconButton, Metadata } from "$lib";
 
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
@@ -28,12 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>Files - {title}</title>
-	<meta content="Files - {title}" name="og:title" />
-	<meta content="Files - {title}" name="twitter:title" />
-
-	<meta content={thumbnail} name="og:image" />
-	<meta content={thumbnail} name="twitter:image" />
+	<Metadata title="Files - {title}" image={thumbnail}/>
 </svelte:head>
 
 <section class="blog-post">
@@ -51,7 +46,7 @@
 			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
-			<img alt="{author} avatar" src="https://github.com/{author}.png" />
+			<img alt="{author} avatar" src="https://github.com/{author}.png">
 			<a
 				class="hyperlink"
 				href="https://github.com/{author}"
@@ -97,7 +92,7 @@
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
+			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail">
 		{/if}
 		<div class="markdown-body">
 			<slot />

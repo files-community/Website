@@ -20,7 +20,7 @@
 			height="32"
 			alt="{login}'s avatar"
 			loading="lazy"
-		/>
+		>
 		<div class="info">
 			<h5>{login}</h5>
 			<span>{`${contributions} ${contributions > 1 ? "contributions" : "contribution"}`}</span>

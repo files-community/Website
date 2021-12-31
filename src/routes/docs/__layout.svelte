@@ -5,7 +5,7 @@
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 
-	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib";
+	import { HyperlinkButton, ListViewItem, Metadata, TextBox, TreeView } from "$lib";
 
 	let value: string = "";
 	let searchQuery: string = "";
@@ -17,7 +17,7 @@
 	const docsPages: DocsMap[] = filterPages(docs);
 
 	// These are pretty self-explanatory
-	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.path);
+	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.url.pathname);
 
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.name;
@@ -43,7 +43,7 @@
 		if (key === "Enter") {
 			if (
 				searchResults.length > 0 &&
-				$page.path !== `/docs${ searchResults[selection].path }`
+				$page.url.pathname !== `/docs${ searchResults[selection].path }`
 			)
 				goto(`/docs${ searchResults[selection].path }`, {
 					keepfocus: true
@@ -95,18 +95,10 @@
 </script>
 
 <svelte:head>
-	<title>Files - {pageTitle ? `Docs - ${pageTitle}` : "Docs"}</title>
-	<meta
-		content="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-		name="og:title"
+	<Metadata
+		title="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+		image="/branding/banner-docs-light.png"
 	/>
-	<meta
-		content="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-		name="twitter:title"
-	/>
-
-	<meta content="/branding/banner-docs-light.png" name="og:image" />
-	<meta content="https://{$page.host}/branding/banner-docs-light.png" name="twitter:image" />
 </svelte:head>
 
 <section class="docs">
@@ -126,7 +118,7 @@
 					on:search={() => {
 						if (
 							searchResults.length > 0 &&
-							$page.path !== `/docs${searchResults[selection].path}`
+							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
 								keepfocus: true
@@ -149,7 +141,7 @@
 					</div>
 				{/if}
 			</div>
-			<hr role="separator" />
+			<hr role="separator">
 		</div>
 		<TreeView tree={docs} />
 	</aside>
@@ -169,7 +161,7 @@
 					on:search={() => {
 						if (
 							searchResults.length > 0 &&
-							$page.path !== `/docs${searchResults[selection].path}`
+							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
 								keepfocus: true
@@ -196,8 +188,8 @@
 		<div class="page-inner markdown-body">
 			<header>
 				<span>
-					{$page.path.split("/").join(" / ").substring(2)}
-					{$page.path === "/docs" ? " / overview" : ""}
+					{$page.url.pathname.split("/").join(" / ").substring(2)}
+					{$page.url.pathname === "/docs" ? " / overview" : ""}
 				</span>
 				<div class="header-right">
 					<HyperlinkButton

@@ -59,7 +59,7 @@
 			{value}
 			checked={selected}
 			hidden
-		/>
+		>
 		<svelte:self
 			on:click
 			{type}

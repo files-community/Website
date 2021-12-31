@@ -66,7 +66,7 @@
 <svelte:window bind:innerHeight bind:scrollY />
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
-	<div bind:this={anchor} class="scroll-anchor" />
+	<div bind:this={anchor} class="scroll-anchor"></div>
 	<div class="themes-section-content">
 		<HeaderChip>Themes</HeaderChip>
 		<h2>Distinctly personal.</h2>
@@ -105,7 +105,7 @@
 		class:visible
 	>
 		<div class="column left">
-			<div class="card" style="height: 72px;" />
+			<div class="card" style="height: 72px;"></div>
 			<img
 				alt="Properties dialog"
 				class="properties"
@@ -113,7 +113,7 @@
 				loading="lazy"
 				src="/ui/exported/properties-{themeSrc}.svg"
 				width="413"
-			/>
+			>
 			<div>
 				<img
 					alt="Drive button"
@@ -122,7 +122,7 @@
 					loading="lazy"
 					src="/ui/exported/drive-{themeSrc}.svg"
 					width="88"
-				/>
+				>
 				<img
 					alt="Tabs flyout"
 					class="tabs"
@@ -130,7 +130,7 @@
 					loading="lazy"
 					src="/ui/exported/tabs-{themeSrc}.svg"
 					width="309"
-				/>
+				>
 			</div>
 		</div>
 		<div class="column right">
@@ -141,7 +141,7 @@
 				loading="lazy"
 				src="/ui/exported/calendar-{themeSrc}.svg"
 				width="300"
-			/>
+			>
 			<img
 				alt="Layout flyout"
 				class="layout"
@@ -149,8 +149,8 @@
 				loading="lazy"
 				src="/ui/exported/layout-{themeSrc}.svg"
 				width="270"
-			/>
-			<div class="card" style="height: 128px;" />
+			>
+			<div class="card" style="height: 128px;"></div>
 		</div>
 	</div>
 </PageSection>

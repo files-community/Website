@@ -28,18 +28,18 @@
 		<div class="titlebar">
 			<div class="titlebar-text">Error: {status}</div>
 			<div class="titlebar-controls">
-				<button aria-label="Minimize" />
-				<button aria-label="Maximize" />
-				<button aria-label="Close" />
+				<button aria-label="Minimize"></button>
+				<button aria-label="Maximize"></button>
+				<button aria-label="Close"></button>
 			</div>
 		</div>
 		<div class="window-body">
 			<div class="error-inner">
-				<img alt="Error icon" src="/ui/icons/98-error.png" />
+				<img alt="Error icon" src="/ui/icons/98-error.png">
 				<div class="error-message">
 					<p>
 						Uh Oh! Something went wrong while loading this page.
-						<br />
+						<br>
 						{error.message}
 					</p>
 				</div>

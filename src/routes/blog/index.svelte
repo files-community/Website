@@ -9,9 +9,7 @@
 </script>
 
 <script lang="ts">
-	import { Button, PageSection, HeaderChip, BlogCard, tilt } from "$lib"
-	import { page } from "$app/stores";
-
+	import { Button, PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
 	interface Post {
 		path: string;
 		metadata: {
@@ -31,12 +29,7 @@
 </script>
 
 <svelte:head>
-	<title>Files - Blog</title>
-	<meta content="Files - Blog" name="og:title"/>
-	<meta content="Files - Blog" name="twitter:title"/>
-
-	<meta content="/branding/banner-blog-light.png" name="og:image"/>
-	<meta content="https://{$page.host}/branding/banner-blog-light.png" name="twitter:image"/>
+	<Metadata title="Files - Blog" image="/branding/banner-blog-light.png"/>
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
@@ -44,38 +37,38 @@
 <PageSection id="blog">
 	<div class="blog-backdrop">
 		<img
-				alt=""
-				src={mainPost.metadata.thumbnail}
-				style="transform: translateY({Math.floor(scrollY / 2.5)}px)"
-				width="0"
-		/>
+			alt=""
+			src={mainPost.metadata.thumbnail}
+			style="transform: translateY({Math.floor(scrollY / 2.5)}px)"
+			width="0"
+		>
 	</div>
 	<div class="main-post">
 		<a href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/">
 			<img
-					alt="Main post thumbnail"
-					height="422"
-					src={mainPost.metadata.thumbnail}
-					use:tilt={{ max: 2.5, scale: 1.01 }}
-					width="633"
-			/>
+				alt="Main post thumbnail"
+				height="422"
+				src={mainPost.metadata.thumbnail}
+				use:tilt={{ max: 2.5, scale: 1.01 }}
+				width="633"
+			>
 		</a>
 		<div class="main-post-info">
-			<HeaderChip
-			>{new Date(
-		  mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
-	  ).toLocaleDateString("en-US", {
-		  year: "numeric",
-		  day: "numeric",
-		  month: "short"
-	  })}</HeaderChip
-			>
+			<HeaderChip>{
+				new Date(mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, ""))
+					.toLocaleDateString("en-US", {
+						year: "numeric",
+						day: "numeric",
+						month: "short"
+					})
+			}</HeaderChip>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
-					href="blog/{mainPost.path.replace(/\.[^/.]+$/, '')}"
-					variant="accent"
-			>Read More
+				href="blog/{mainPost.path.replace(/\.[^/.]+$/, '')}"
+				variant="accent"
+			>
+				Read More
 			</Button>
 		</div>
 	</div>

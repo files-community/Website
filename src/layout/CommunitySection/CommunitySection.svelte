@@ -2,7 +2,6 @@
 	import type { ContributorData } from "$data/fetchHomepageData";
 	import { getContributors } from "$data/fetchHomepageData";
 	import { onMount } from "svelte";
-
 	import { links } from "$data/links";
 	import {
 		Contributor,
@@ -13,8 +12,7 @@
 	} from "$lib";
 
 	// Fetch contributors for the community section
-	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> =
-		[[], [], []];
+	let [contributors1, contributors2, contributors3]: ContributorData[][] = [[], [], []];
 
 	onMount(async () => {
 		// Fetch contributors for the community section
@@ -59,7 +57,8 @@
 				{/each}
 			</div>
 		{/if}
-		<canvas use:rainbowCanvas></canvas>
+		<!-- use:rainbowCanvas -->
+		<canvas></canvas>
 	</div>
 </PageSection>
 

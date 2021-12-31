@@ -8,12 +8,15 @@
 
 	let currentFeature = 0;
 
-	const cardPaginationInterval = 16;
+	let cardPaginationInterval = 16;
 
 	onMount(() => {
 		// Iterate through feature cards every n seconds
 		setInterval(
-			() => (currentFeature += currentFeature !== 3 ? 1 : -currentFeature),
+			() => {
+				currentFeature += currentFeature !== 3 ? 1 : -currentFeature;
+				cardPaginationInterval = 16;
+			},
 			cardPaginationInterval * 1000
 		);
 	});
@@ -31,11 +34,14 @@
 			Files has it covered with robust features you expect from a modern file
 			manager.
 		</p>
-		<hr role="separator" />
+		<hr role="separator">
 		<div class="feature-cards-container">
 			{#each featureCards as feature, i}
 				<FeatureCard
-					on:click={() => (currentFeature = i)}
+					on:click={() => {
+						currentFeature = i;
+						cardPaginationInterval += 8;
+					}}
 					clickable
 					selected={currentFeature === i}
 					description={feature.description}

@@ -82,7 +82,7 @@
 							alt={icon === "folder" ? `${icon} file` : "Folder"}
 							width="24"
 							height="24"
-						/>
+						>
 					</td>
 					<td>{name}</td>
 					<td class="status-{status === 'success' ? status : 'sync'}">
@@ -123,7 +123,7 @@
 							</code>
 						</pre>
 					{:else}
-						<img src={file.icon} alt="File icon" />
+						<img src={file.icon} alt="File icon" >
 					{/if}
 				</div>
 				<div class="grabber"></div>
@@ -187,7 +187,7 @@
 					on:click={() => (currentPreviewFile = i)}
 					style="--file-index: {i};"
 				>
-					<img src={file.icon} alt="File icon" />
+					<img src={file.icon} alt="File icon">
 					{file.name}{typeof file.extension !== "undefined"
 					? "."
 					: ""}{file.extension ?? ""}
@@ -250,19 +250,19 @@
 				<div class="tab"
 				     class:selected={selectedTab === 0} on:click={() => selectedTab = 0}
 				>
-					<img src="/ui/icons/documents.png" alt="Documents folder icon" width="16" height="16" />
+					<img src="/ui/icons/documents.png" alt="Documents folder icon" width="16" height="16">
 					Documents
 				</div>
 				<div class="tab"
 				     class:selected={selectedTab === 1} on:click={() => selectedTab = 1}
 				>
-					<img src="/ui/icons/desktop.png" alt="Desktop folder icon" width="16" height="16" />
+					<img src="/ui/icons/desktop.png" alt="Desktop folder icon" width="16" height="16">
 					Desktop
 				</div>
 				<div class="tab"
 				     class:selected={selectedTab === 2} on:click={() => selectedTab = 2}
 				>
-					<img src="/ui/icons/pictures.png" alt="Pictures folder icon" width="16" height="16" />
+					<img src="/ui/icons/pictures.png" alt="Pictures folder icon" width="16" height="16">
 					Pictures
 				</div>
 			</div>

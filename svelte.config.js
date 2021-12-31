@@ -1,17 +1,13 @@
-import path from "path";
-import adapter from "@sveltejs/adapter-netlify";
-import sveltePreprocess from "svelte-preprocess";
-import { mdsvex } from "mdsvex";
-import remarkGfm from "remark-gfm";
-import remarkA11yEmoji from "@fec/remark-a11y-emoji";
-import remarkSlug from "remark-slug";
-import remarkGithub from "remark-github";
-import autoprefixer from "autoprefixer";
-import cssnano from "cssnano";
-
-const postCssPlugins = [autoprefixer()]
-// enable cssnano in production
-if (process.env.NODE_ENV !== "development") postCssPlugins.push(cssnano({ preset: "default" }))
+import path from "path"
+import adapter from "@sveltejs/adapter-auto"
+import sveltePreprocess from "svelte-preprocess"
+import { mdsvex } from "mdsvex"
+import remarkGfm from "remark-gfm"
+import remarkA11yEmoji from "@fec/remark-a11y-emoji"
+import remarkSlug from "remark-slug"
+import remarkGithub from "remark-github"
+import autoprefixer from "autoprefixer"
+import cssnano from "cssnano"
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -42,10 +38,12 @@ const config = {
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: postCssPlugins,
+				plugins: [autoprefixer, (process.env.NODE_ENV !== "development" && cssnano)],
 			}
 		})
 	]
 };
 
+// shut up webstorm
+// noinspection JSUnusedGlobalSymbols
 export default config;

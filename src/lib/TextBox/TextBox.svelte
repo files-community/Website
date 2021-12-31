@@ -77,7 +77,7 @@
 			on:keyup
 			{type}
 			{value}
-		/>
+		>
 		<div class="textbox-buttons">
 			<slot name="buttons" />
 			{#if clearButton && value}
@@ -141,7 +141,7 @@
 				</button>
 			{/if}
 		</div>
-		<div class="textbox-underline" />
+		<div class="textbox-underline"></div>
 	</div>
 </div>
 

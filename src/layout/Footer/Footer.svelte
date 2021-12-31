@@ -77,16 +77,15 @@
 		>
 			Give Feedback
 		</HyperlinkButton>
-		<HyperlinkButton
-			href="/docs/contributing/code-style"
-		>
+
+		<HyperlinkButton href="/docs/contributing/code-style">
 			Style Guide
 		</HyperlinkButton>
-		<HyperlinkButton
-			href="/docs/contributing/translating-files"
-		>
+
+		<HyperlinkButton href="/docs/contributing/translating-files">
 			Translations
 		</HyperlinkButton>
+
 		<p>Contribute to this site</p>
 		<HyperlinkButton
 			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
@@ -95,6 +94,7 @@
 		>
 			GitHub Repo
 		</HyperlinkButton>
+
 		<HyperlinkButton
 			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
 			target="_blank"
@@ -112,6 +112,7 @@
 		>
 			Tropical
 		</HyperlinkButton>
+
 		<HyperlinkButton
 			href="https://www.theonlytails.com/"
 			target="_blank"
@@ -119,6 +120,7 @@
 		>
 			TheOnlyTails
 		</HyperlinkButton>
+
 		<HyperlinkButton
 			href="https://github.com/yaichenbaum/"
 			target="_blank"
@@ -126,6 +128,7 @@
 		>
 			Yair
 		</HyperlinkButton>
+
 		<HyperlinkButton
 			href="https://github.com/chingucoding/"
 			target="_blank"
@@ -133,6 +136,7 @@
 		>
 			Marcel Wagner
 		</HyperlinkButton>
+
 		<HyperlinkButton
 			href="https://michaelwe.st/"
 			target="_blank"
@@ -143,4 +147,6 @@
 	</div>
 </PageSection>
 
-<style lang="scss" src="./Footer.scss"></style>
+<style lang="scss">
+	@use "./Footer";
+</style>

@@ -14,10 +14,8 @@
         .hyperlink-button {
             display: block;
             width: fit-content;
-            margin: {
-                inline: -11px;
-                block-end: 8px;
-            }
+            margin-inline: -11px;
+            margin-block-end: 8px;
             &:last-child {
                 margin-block-end: 0;
             }

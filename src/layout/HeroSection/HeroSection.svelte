@@ -122,21 +122,22 @@
 				<source
 					media="(prefers-color-scheme: dark)"
 					srcset="/screenshots/hero-dark.png"
-				/>
+				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/screenshots/hero-light.png"
-				/>
+				>
 				<img
 					alt="Files new tab screenshot"
 					height="768"
 					src="/screenshots/hero-light.png"
 					width="1024"
-				/>
+				>
 			</picture>
 		</div>
 	</div>
-	<canvas slot="outer" use:rainbowCanvas></canvas>
+	<!-- use:rainbowCanvas -->
+	<div class="rainbow-background" slot="outer"></div>
 </PageSection>
 
 <ContentDialog

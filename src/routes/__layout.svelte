@@ -68,51 +68,51 @@
 </script>
 
 <svelte:head>
-	<meta content="Files" name="og:site_name" />
+	<meta content="Files" name="og:site_name">
 
-	<meta content="website" name="og:type" />
+	<meta content="website" name="og:type">
 
 	<link
 		href="/branding/logo-{theme === 'light' ? 'light' : 'dark'}.svg"
 		rel="icon"
 		type="image/svg+xml"
-	/>
+	>
 
-	{#if $page.path === "/"}
+	{#if $page.url.pathname === "/"}
 		<meta
 			content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
 			name="og:image"
-		/>
+		>
 
 		<meta
-			content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
+			content="https://{$page.url.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
 			name="twitter:image"
-		/>
+		>
 	{/if}
 
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="description"
-	/>
+	>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="og:description"
-	/>
+	>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="twitter:description"
-	/>
+	>
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"
-	/>
-	<meta content="Files Community" name="author" />
+	>
+	<meta content="Files Community" name="author">
 
-	<meta content="#005fb8" name="theme-color" />
+	<meta content="#005fb8" name="theme-color">
 
-	<meta content="summary_large_image" name="twitter:card" />
-	<meta content="@FilesForWindows" name="twitter:site" />
-	<meta content="@FilesForWindows" name="twitter:creator" />
+	<meta content="summary_large_image" name="twitter:card">
+	<meta content="@FilesForWindows" name="twitter:site">
+	<meta content="@FilesForWindows" name="twitter:creator">
 
 	<script>
 		window["clarity"] = window["clarity"] || (() => {

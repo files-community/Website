@@ -33,7 +33,7 @@ A new **column view** allow multiple levels of the hierarchy to be open at once,
 directory.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_ColumnView_Light_RGB.jpg" alt="A screenshot of column view in Files v2." />
+    <img src="/blog-resources/filesv2/Files21_V2_ColumnView_Light_RGB.jpg" alt="A screenshot of column view in Files v2.">
     <figcaption>The new column view in action.</figcaption>
 </figure>
 
@@ -41,14 +41,14 @@ directory.
 the file system.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_ContextMenu_Light_RGB.jpg" alt="A screenshot of the new context menu in Files v2. In addition to a refined design, the new menu allows users to quickly assign tags to files and folders." />
+    <img src="/blog-resources/filesv2/Files21_V2_ContextMenu_Light_RGB.jpg" alt="A screenshot of the new context menu in Files v2. In addition to a refined design, the new menu allows users to quickly assign tags to files and folders.">
     <figcaption>The redesigned context menu in Files v2 allows users to quickly assign tags to files and folders.</figcaption>
 </figure>
 
 [**Custom themes**](https://www.microsoft.com/store/productId/9N20KQ61LSFQ) provide a way for users to personalize the look and feel of the app.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.jpg" alt="A screenshot of the settings dialog in Files v2, showing custom theme options." />
+    <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.jpg" alt="A screenshot of the settings dialog in Files v2, showing custom theme options.">
     <figcaption>Custom themes can be selected from the Settings dialog.</figcaption>
 </figure>
 
