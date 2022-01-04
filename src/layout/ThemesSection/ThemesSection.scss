@@ -94,8 +94,8 @@
 			&4 {
 				--focus-stroke-outer: black;
 				--accent-color-default: white;
-				--accent-color-secondary: hsl(white, 0.8);
-				--accent-color-tertiary: hsl(white, 0.6);
+				--accent-color-secondary: hsl(0, 0%, 100%, 0.8);
+				--accent-color-tertiary: hsl(0, 0%, 100%, 0.6);
 				--accent-text-default: var(--text-color-tertiary);
 				--accent-text-tertiary: var(--accent-text-default);
 				--accent-text-contrast-primary: black;
@@ -107,10 +107,10 @@
 				--subtle-color-tertiary: hsl(black, 0.1);
 				--background-base: hsl(43, 100%, 50%);
 				--background-quarternary: hsl(43, 100%, 75%);
-				--dots-color: hsl(black, 0.2);
+				--dots-color: hsl(0, 0%, 0%, 0.2);
 
 				.hyperlink-button {
-					--subtle-color-secondary: hsl(black, 0.05);
+					--subtle-color-secondary: hsl(0, 0%, 0%, 0.05);
 				}
 			}
 
@@ -130,7 +130,7 @@
 				--subtle-color-tertiary: hsl(192, 79%, 15%);
 				--background-base: hsl(192, 100%, 11%);
 				--background-quarternary: var(--accent-color-secondary);
-				--dots-color: var(--accent-text-contrast-primary);
+				--dots-color: var(--subtle-color-tertiary);
 			}
 
 			&6 {
@@ -149,7 +149,7 @@
 				--subtle-color-tertiary: hsl(219, 27%, 80%);
 				--background-base: hsl(219, 28%, 88%);
 				--background-quarternary: hsl(222, 16%, 28%);
-				--dots-color: var(--text-color-tertiary);
+				--dots-color: hsl(220, 16%, 65%);
 
 				.hyperlink-button {
 					--subtle-color-secondary: hsl(217, 27%, 85%);

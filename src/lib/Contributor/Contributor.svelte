@@ -23,7 +23,7 @@
 		/>
 		<div class="info">
 			<h5>{login}</h5>
-			<span>{contributions} contributions</span>
+			<span>{`${contributions} ${contributions > 1 ? "contributions" : "contribution"}`}</span>
 		</div>
 	</a>
 {/if}

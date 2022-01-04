@@ -2,7 +2,7 @@
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import { docs } from "$data/docs";
+	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 
 	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib";
@@ -14,7 +14,7 @@
 	let selection: number = 0;
 
 	// A recursively flattened version of the docs mapping containing an array of all pages
-	const docsPages = filterPages(docs);
+	const docsPages: DocsMap[] = filterPages(docs);
 
 	// These are pretty self-explanatory
 	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.path);
@@ -57,9 +57,9 @@
 		}
 	};
 
-	// Action for handling clicks outside of a DOM node
-	const clickOutside = (node, eventHandler) => {
-		const handleClick = event => {
+	// Action for handling clicks outside a DOM node
+	const clickOutside = (node: Element, eventHandler: () => boolean) => {
+		const handleClick = (event: MouseEvent) => {
 			const path = event.composedPath();
 			if (!path.includes(node)) eventHandler();
 		};
@@ -73,21 +73,24 @@
 		};
 	};
 
-	// ??????
-	function filterPages(array) {
-		if (Array.isArray(array))
-			return array
-				.map(a => filterPages(a))
-				.flat(Infinity)
-				.filter(a => a.hasOwnProperty("path")); // ???
-		if (array.hasOwnProperty("pages"))
-			return [
-				{
-					...array
-				},
-				...array.pages.map(a => filterPages(a))
-			]; // ?????????
-		return array;
+	function filterPages(docsStructure: DocsMap[] | DocsMap): DocsMap[] {
+		if (Array.isArray(docsStructure)) {
+			// it's an array of pages/categories
+			return docsStructure
+				.map(page => filterPages(page)) // recursively flatten the structure and filter to only include pages
+				.flat(Infinity) as DocsMap[]; // flatten the structure to get rid of any nesting
+		} else {
+			// it's a single page/category, not a structure
+			if (docsStructure.type === "category") {
+				// it's a category
+				return docsStructure.pages
+					.map(page => filterPages(page)) // filter down and down until only pages are left
+					.flat(Infinity) as DocsMap[]; // flatten the array
+			} else {
+				// it's a page
+				return [docsStructure];
+			}
+		}
 	}
 </script>
 

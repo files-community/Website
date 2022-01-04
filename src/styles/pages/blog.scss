@@ -35,6 +35,7 @@
 	margin-block-end: 72px;
 	padding-block-end: 72px;
 	border-block-end: 1px solid var(--divider-color-default);
+
 	@media only screen and (max-width: 1024px) {
 		grid-template-columns: auto;
 	}
@@ -44,12 +45,12 @@
 		height: auto;
 		border: 1px solid var(--surface-stroke-default);
 		border-radius: var(--overlay-corner-radius);
-		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0% / 3%),
-		0 5.48831px 5.48831px hsl(0, 0%, 0% / 4%),
-		0 13.7208px 10.9766px hsl(0, 0%, 0% / 5%),
-		0 20.5812px 20.5812px hsl(0, 0%, 0% / 6%),
-		0 41.1623px 41.1623px hsl(0, 0%, 0% / 7%),
-		0 96.0454px 89.1851px hsl(0, 0%, 0% / 9%);
+		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
+		0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
+		0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
+		0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
+		0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
+		0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 		transition: 200ms ease !important;
 		-webkit-user-drag: none;
 		aspect-ratio: 3 / 2;

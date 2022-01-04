@@ -14,7 +14,15 @@
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
 
-	export let post;
+	export let post: {
+		metadata: {
+			title: string;
+			description: string;
+			thumbnail: string;
+			date: string;
+			author: string;
+		}
+	};
 
 	const { title, thumbnail, author, date } = post.metadata;
 </script>

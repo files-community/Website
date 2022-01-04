@@ -6,7 +6,7 @@
 
 	export let tree = [];
 
-	let treeViewState;
+	let treeViewState: any;
 
 	onMount(() => {
 		// Check localStorage for an existing treeViewState
@@ -15,10 +15,10 @@
 	});
 
 	// Utility function for converting regular names to kebab case
-	const id = s => s.toLowerCase().split(" ").join("-");
+	const id = (s: string) => s.toLowerCase().split(" ").join("-");
 
 	// Function for expanding/collapsing docs categories
-	const toggleExpansion = (event: MouseEvent, name) => {
+	const toggleExpansion = (event: MouseEvent, name: string) => {
 		event.stopPropagation();
 
 		// Modify treeViewState to have the opposite of the previous entry for the category

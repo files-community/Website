@@ -1,21 +1,13 @@
 <script lang="ts">
-	import {
-		Button,
-		ContentDialog,
-		ListViewItem,
-		MenuFlyout,
-		PageSection,
-		rainbowCanvas,
-		TerminalCommand
-	} from "$lib";
+	import { Button, ContentDialog, ListViewItem, MenuFlyout, PageSection, rainbowCanvas, TerminalCommand } from "$lib";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
-	import { getReleaseUrl } from "$data/fetchHomepageData";
 	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadOptions = "Microsoft Store" | "GitHub Release" | "Winget (CLI)";
+	type DownloadSources = "Microsoft Store" | "Winget (CLI)" | "Sideload Package" | "Sideload Package (Preview)";
+	const downloadSources: DownloadSources[] = ["Microsoft Store", "Winget (CLI)", "Sideload Package", "Sideload Package (Preview)"];
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -28,11 +20,11 @@
 	// Group bindings
 	let currentDownloadSource = 0;
 
-	const downloadSources = ["Microsoft Store", "GitHub Release", "Winget (CLI)"];
 	const getStoreUrl = () => isWindows
-		? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
-		: `https://www.microsoft.com/en-us/p/files/${links.storeId}`;
-	let releaseUrl = "";
+		? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
+		: `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
+	$: sideloadLink = `/download/${ currentDownloadSource !== 3 ? "stable" : "preview" }`;
+	$: downloadLink = currentDownloadSource === 0 ? getStoreUrl() : sideloadLink;
 
 	const copyWingetCommand = () => {
 		navigator.clipboard.writeText("winget install -e Files-Community.Files");
@@ -42,23 +34,15 @@
 		}, 500);
 	};
 
-	const updateDownloadSource = (value: number) =>
-		localStorage.setItem("downloadSource", value.toString());
+	const updateDownloadSource = (value: number) => localStorage.setItem("downloadSource", value.toString());
 
-	const changeDownloadSource = (
-		downloadOption: DownloadOptions,
-		id: number
-	) => {
+	const changeDownloadSource = (downloadSource: DownloadSources, id: number) => {
 		updateDownloadSource(id);
 
-		switch (downloadOption) {
-			case "Microsoft Store":
-			case "GitHub Release":
-				window.open(currentDownloadSource === 0 ? getStoreUrl() : releaseUrl, "_blank");
-				break;
-			case "Winget (CLI)":
-				wingetDialogOpen = true;
-				break;
+		if (downloadSource !== "Winget (CLI)") {
+			window.open(downloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
+		} else {
+			wingetDialogOpen = true;
 		}
 
 		isDownloadDropdownOpen = false;
@@ -66,16 +50,12 @@
 
 	onMount(async () => {
 		// Get the user's download preference
-		if (!localStorage.getItem("downloadSource"))
+		if (!localStorage.getItem("downloadSource")) {
 			localStorage.setItem("downloadSource", "0");
-		currentDownloadSource =
-			parseInt(localStorage.getItem("downloadSource")) ?? 0;
+		}
+		currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
 
-		// Fetch the URL for the latest files package from GitHub
-		releaseUrl = await getReleaseUrl();
-
-		isWindows = navigator.userAgent.includes("Windows")
-		console.log(isWindows);
+		isWindows = navigator.userAgent.includes("Windows");
 	});
 
 </script>
@@ -87,13 +67,13 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 2 ? (currentDownloadSource === 0 ? getStoreUrl() : releaseUrl) : undefined}
+					href={currentDownloadSource !== 1 ? downloadLink : undefined}
 					id="hero-download-button"
 					on:click={() => {
-						if (currentDownloadSource === 2) wingetDialogOpen = true;
+						if (currentDownloadSource === 1) wingetDialogOpen = true;
 					}}
-					rel={currentDownloadSource !== 2 ? "noreferrer noopener" : undefined}
-					target={currentDownloadSource !== 2 ? "_blank" : undefined}
+					rel={currentDownloadSource !== 1 ? "noreferrer noopener" : undefined}
+					target={currentDownloadSource !== 1 ? "_blank" : undefined}
 					variant="accent"
 				>
 					{@html ArrowDownload}
@@ -111,13 +91,13 @@
 						{@html ChevronDown}
 					</Button>
 					<svelte:fragment slot="menu">
-						{#each ["Microsoft Store", "GitHub Release", "Winget (CLI)"] as downloadOption, id}
+						{#each downloadSources as downloadSource, id}
 							<ListViewItem
 								bind:group={currentDownloadSource}
-								on:change={() => changeDownloadSource(downloadOption, id)}
+								on:change={() => changeDownloadSource(downloadSource, id)}
 								value={id}
 							>
-								{downloadOption}
+								{downloadSource}
 							</ListViewItem>
 						{/each}
 					</svelte:fragment>
@@ -168,8 +148,8 @@
 		class="hyperlink"
 		href="https://github.com/microsoft/winget-cli"
 		rel="noreferrer noopener"
-		target="_blank">winget</a
-	>, paste the following command into a terminal of your choice:
+		target="_blank">winget</a>,
+	paste the following command into a terminal of your choice:
 	<TerminalCommand command="winget install -e Files-Community.Files" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">
