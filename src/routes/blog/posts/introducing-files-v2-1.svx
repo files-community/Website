@@ -16,12 +16,16 @@ We recently added an experimental option to set Files as the default file manage
 ## What's Changed
 
 - Redesigned the settings dialog
+- Redesigned the properties window
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-1/PropertiesDialog.jpg" alt="A screenshot of the redesigned properties window in Files v2.1." />
+    <figcaption>The redesigned properties window</figcaption>
+</figure>
 - Added a hotkey for playing audio and video in the preview pane
 - Added a toolbar button to empty recycle bin
 - Set window title to be the same as the selected tab name
 - Added compatibility options to the properties dialog
 - Added Native ARM64 Support
-- Redesigned the properties window
 - Improved keyboard navigation in the column layout
 - Added support for symbolic file links
 - Added keyboard shortcut (Ctrl+H) to show/hide hidden files
