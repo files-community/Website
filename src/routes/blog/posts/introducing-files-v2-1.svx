@@ -8,8 +8,13 @@ author: yaichenbaum
 
 Today, we're pleased to announce that [Files v2.1]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'}) is now available. We focused on improving the performance and behavior of existing features in this update to make it even easier for you to use the app.
 
-## What's Changed
+## Settings Files as the default file manager
 
+
+We added an experimental option in v2.0.33 to set Files as the default file manager. This option is still experimental but improved the reliability of this option based on your feedback and we recommend giving it a try.
+
+
+## What's Changed
 
 - Redesigned the settings dialog
 - Added a hotkey for playing audio and video in the preview pane
@@ -35,7 +40,6 @@ Today, we're pleased to announce that [Files v2.1]({'https://click.linksynergy.c
 
 
 ## Bug Fixes
-
 
 - Fixed properties window not closing when clicking the OK button
 - Fixed a crash that would occur when dropping a shortcut over an executable
