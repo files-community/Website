@@ -1,11 +1,22 @@
+<script context="module">
+  export const load = async ({ page }) => ({
+    props: {
+      pagePath: page.path,
+    },
+  });
+</script>
+
 <script lang="ts">
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
+	import PageTransition from "$lib/PageTransition.svelte";
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 
 	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib";
+
+	export let pagePath;
 
 	let value: string = "";
 	let searchQuery: string = "";
@@ -193,26 +204,28 @@
 				{/if}
 			</div>
 		</div>
-		<div class="page-inner markdown-body">
-			<header>
-				<span>
-					{$page.path.split("/").join(" / ").substring(2)}
-					{$page.path === "/docs" ? " / overview" : ""}
-				</span>
-				<div class="header-right">
-					<HyperlinkButton
-						href="https://github.com/{links.github.owner}/{links.github
-							.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
-							'/index'}.svx"
-						rel="noreferrer noopener"
-						target="_blank"
-					>
-						Edit this page
-					</HyperlinkButton>
-				</div>
-			</header>
-			<slot />
-		</div>
+		<PageTransition refresh={pagePath}>
+			<div class="page-inner markdown-body">
+				<header>
+					<span>
+						{$page.path.split("/").join(" / ").substring(2)}
+						{$page.path === "/docs" ? " / overview" : ""}
+					</span>
+					<div class="header-right">
+						<HyperlinkButton
+							href="https://github.com/{links.github.owner}/{links.github
+								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
+								'/index'}.svx"
+							rel="noreferrer noopener"
+							target="_blank"
+						>
+							Edit this page
+						</HyperlinkButton>
+					</div>
+				</header>
+				<slot />
+			</div>
+		</PageTransition>
 	</article>
 </section>
 
