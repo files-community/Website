@@ -28,7 +28,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 2. Naming notation for variables
 - Use PascalCase for properties and static fields/properties
 - Use PascalCase prefixed with '_' for properties' backing fields
-- Use camelCase for protected, public fields, protected fileds backing properties, and method parameters
+- Use camelCase for protected, public fields, protected fields backing properties, and method parameters
 - Use camelCase prefixed with '_' for private fields
 - Use Hungarian Notation only for OS functions/API calls
 - Use UPPER_CASE for constant variables
