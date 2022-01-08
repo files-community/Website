@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from "$app/stores";
+	import { navigating, page } from "$app/stores";
 
 	import { TreeView, ListViewItem } from "$lib";
 
@@ -27,6 +27,10 @@
 		)) {
 			toggleSidebar();
 		}
+	}
+
+	$: {
+		$navigating && (sidebarVisible = false);
 	}
 </script>
 
