@@ -7,10 +7,11 @@
 </script>
 
 <script lang="ts">
+  import { fly } from "svelte/transition";
+
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import PageTransition from "$lib/PageTransition.svelte";
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 
@@ -204,8 +205,8 @@
 				{/if}
 			</div>
 		</div>
-		<PageTransition refresh={pagePath}>
-			<div class="page-inner markdown-body">
+		{#key pagePath}
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 400, delay: 400 }} out:fly={{ y: 6, duration: 400 }}>
 				<header>
 					<span>
 						{$page.path.split("/").join(" / ").substring(2)}
@@ -225,7 +226,7 @@
 				</header>
 				<slot />
 			</div>
-		</PageTransition>
+		{/key}
 	</article>
 </section>
 
