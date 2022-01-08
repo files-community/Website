@@ -206,7 +206,7 @@
 			</div>
 		</div>
 		{#key pagePath}
-			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 400, delay: 400 }} out:fly={{ y: 6, duration: 400 }}>
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }} out:fly={{ y: 6, duration: 300 }}>
 				<header>
 					<span>
 						{$page.path.split("/").join(" / ").substring(2)}
