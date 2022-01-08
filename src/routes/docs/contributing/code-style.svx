@@ -57,6 +57,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Do not use `RelayCommand<CustomType>`, rather rely on `ICommand`
 - Any class that implements `IDisposable` must also contain a field `private bool _disposed;`
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
+- Follow single-responsibility principle in classes, modules, and methods
 
 3. Class structure
 The following presents how a class structure should be ordered:
@@ -99,7 +100,7 @@ The following presents how an interface structure should be ordered:
 - functions (without parameters)
 
 5. Helper classes and extensions
-- Helper classes must be static and contain functions designated to their goal
+- Helper classes must be either static or fully instanced
 - Extension classes must be static and only contain extension functions related to one type or derivatives
 
 
