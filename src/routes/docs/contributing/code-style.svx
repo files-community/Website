@@ -26,13 +26,10 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Use "Page" suffix for pages
 
 2. Naming notation for variables
-- Use PascalCase for private/protected/public static fields/properties
-- Use PascalCase for properties
+- Use PascalCase for properties and static fields/properties
 - Use PascalCase prefixed with '_' for properties' backing fields
-- Use camelCase for protected and public fields
-- Use camelCase for protected fields backing properties
+- Use camelCase for protected, public fields, protected fileds backing properties, and method parameters
 - Use camelCase prefixed with '_' for private fields
-- Use camelCase for method parameters
 - Use Hungarian Notation only for OS functions/API calls
 - Use UPPER_CASE for constant variables
 - Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
@@ -50,11 +47,10 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Do not use `public` modifiers in interface's properties and functions
 - Define constant types in `Constants` class following its structure
 - Mark classes as `abstract` or `sealed` if applicable.
-- Use single line return `=>` for simple functions
 - Interfaces must be documented
 - Always create new `EventArgs` classes for event arguments
 - Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
-- Do not use `RelayCommand<CustomType>`, rather rely on `ICommand`
+- Do not use `RelayCommand<Type>`, rather rely on `ICommand`
 - Any class that implements `IDisposable` must also contain a field `private bool _disposed;`
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
 - Follow single-responsibility principle in classes, modules, and methods
@@ -62,32 +58,33 @@ To make the codebase consistent and easy to understand, we require you to follow
 3. Class structure
 The following presents how a class structure should be ordered:
 
-- private/protected/public (internal) static fields
-- readonly private/protected/public (internal) static fields
-- private/protected/public (internal) static properties
+- Static fields
+- Static fields
+- Static properties
 
-- readonly private/protected/public (internal) fields
-- private/protected/public (internal) fields
+- `readonly` fields
+- Fields
+- `_disposed` field (if applicable)
 
-- private/protected/public (internal) service property 
+- Service property 
 
-- properties
+- Properties
 - UI properties
-- ICommand properties;
+- ICommand properties
 
-- constructor { fields injection, initialization of fields, commands implementation }
+- Constructor { fields injection, initialization of fields, command implementation }
 
-- Command implementation functions (private/protected only)
+- Command implementation functions (private/protected only, can be virtual but not abstract)
 
 - public (virtual/override) methods (with parameters amount descending)
-- private methods
 - protected (virtual/override) methods (with parameters amount descending)
+- private methods
 
-- static methods
+- `static` methods
 
-- abstract methods
+- `abstract` methods
 
-- public operators
+- Operators
 
 - Assertions e.g. `AssertNotDisposed()`, `AssertInitialized()`, `AssertStreamOpened()`
 - IDisposable.Dispose() function
@@ -96,8 +93,7 @@ The following presents how a class structure should be ordered:
 The following presents how an interface structure should be ordered:
 
 - properties
-- functions (with parameters amount descending)
-- functions (without parameters)
+- functions (name descending + parameters amount descending)
 
 5. Helper classes and extensions
 - Helper classes must be either static or fully instanced
