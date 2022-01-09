@@ -1,4 +1,14 @@
+<script context="module">
+  export const load = async ({ page }) => ({
+    props: {
+      pagePath: page.path,
+    },
+  });
+</script>
+
 <script lang="ts">
+  import { fly } from "svelte/transition";
+
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
@@ -6,6 +16,8 @@
 	import { links } from "$data/links";
 
 	import { HyperlinkButton, ListViewItem, TextBox, TreeView } from "$lib";
+
+	export let pagePath;
 
 	let value: string = "";
 	let searchQuery: string = "";
@@ -193,26 +205,28 @@
 				{/if}
 			</div>
 		</div>
-		<div class="page-inner markdown-body">
-			<header>
-				<span>
-					{$page.path.split("/").join(" / ").substring(2)}
-					{$page.path === "/docs" ? " / overview" : ""}
-				</span>
-				<div class="header-right">
-					<HyperlinkButton
-						href="https://github.com/{links.github.owner}/{links.github
-							.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
-							'/index'}.svx"
-						rel="noreferrer noopener"
-						target="_blank"
-					>
-						Edit this page
-					</HyperlinkButton>
-				</div>
-			</header>
-			<slot />
-		</div>
+		{#key pagePath}
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }} out:fly={{ y: 6, duration: 300 }}>
+				<header>
+					<span>
+						{$page.path.split("/").join(" / ").substring(2)}
+						{$page.path === "/docs" ? " / overview" : ""}
+					</span>
+					<div class="header-right">
+						<HyperlinkButton
+							href="https://github.com/{links.github.owner}/{links.github
+								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
+								'/index'}.svx"
+							rel="noreferrer noopener"
+							target="_blank"
+						>
+							Edit this page
+						</HyperlinkButton>
+					</div>
+				</header>
+				<slot />
+			</div>
+		{/key}
 	</article>
 </section>
 

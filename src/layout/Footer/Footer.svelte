@@ -36,7 +36,7 @@
 				{@html Twitter}
 			</IconButton>
 			<IconButton
-				href="https://discord.gg/{links.discord}/"
+				href="https://discord.gg/{links.discord}"
 				title="Discord server"
 				aria-label="Discord server"
 				target="_blank"
