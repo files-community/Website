@@ -8,4 +8,4 @@ Please keep in mind that these changes are not reverted when removing the app so
 1. Open the settings dialog in Files
 2. Navigate to the experimental section and toggle the switch to set Files as the default file manager
 
-![Settings dialog](/docs-resources/Settings Dialog Experimental.png)
+![Settings dialog](/docs-resources/Settings-Dialog-Experimental.png)
