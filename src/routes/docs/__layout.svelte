@@ -122,7 +122,7 @@
 </svelte:head>
 
 <section class="docs">
-	<aside class="sidebar scroller">
+	<aside class="sidebar">
 		<div class="search">
 			<div
 				class="autosuggest-wrapper"
