@@ -31,10 +31,6 @@ export const docs: DocsMap[] = [
 				path: "/configuring/keyboard-shortcuts"
 			},
 			{
-				name: "Configuring the Win + E Shortcut",
-				path: "/configuring/configure-win-e"
-			},
-			{
 				name: "Replacing File Explorer with Files",
 				path: "/configuring/replace-file-explorer"
 			}
