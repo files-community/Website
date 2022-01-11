@@ -8,7 +8,7 @@ author: yaichenbaum
 
 Today, we're pleased to announce that [Files v2.1]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'}) is now available. We focused on improving the performance and behavior of existing features in this update to make it even easier for you to use the app.
 
-## Settings Files as the default file manager
+## Setting Files as the default file manager
 
 We recently added an experimental option to set Files as the default file manager. This option is still experimental but we improved the reliability based on your feedback and it's stable enough for regular use. If you're already using this option, we recommend turning it off and back on again in order to take advantage of the latest improvements.
 
