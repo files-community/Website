@@ -72,7 +72,7 @@ The following presents how a class structure should be ordered:
 - UI properties
 - ICommand properties
 
-- Constructor { fields injection, initialization of fields, command implementation }
+- Constructor \{ fields injection, initialization of fields, command implementation \}
 
 - Command implementation functions (private/protected only, can be virtual but not abstract)
 
