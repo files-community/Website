@@ -2,7 +2,7 @@
 title: Introducing Files v2.1
 description: Today, we're pleased to announce that Files v2.1 is now available. We focused on improving the performance and behavior of existing features in this update to make it even easier for you to use the app.
 thumbnail: /blog-resources/filesv2-1/HeroImage.jpg
-date: 2022-1-12
+date: 2022-1-11
 author: yaichenbaum
 ---
 
