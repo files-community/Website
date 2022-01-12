@@ -8,7 +8,7 @@
   We also prioritize accessibility, to check whether your pull request meets our accessibility standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
   to ensure everyone can take full advantage of Files.
   
-# Code Style
+## Code Style
 
 To make the codebase consistent and easy to understand, we require you to follow our predefined code style rules:
 
