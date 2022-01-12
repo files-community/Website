@@ -8,11 +8,11 @@
   We also prioritize accessibility, to check whether your pull request meets our accessibility standards, you're encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
   to ensure everyone can take full advantage of Files.
   
-# Code Style
+## Code Style
 
 To make the codebase consistent and easy to understand, we require you to follow our predefined code style rules:
 
-1. Naming notation for objects and functions
+### 1. Naming notation for objects and functions
 - Use PascalCase for classes
 - Use PascalCase prefixed with 'I' for interfaces
 - Use PascalCase for structs
@@ -25,7 +25,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Use "Control" suffix for user controls
 - Use "Page" suffix for pages
 
-2. Naming notation for variables
+### 2. Naming notation for variables
 - Use PascalCase for properties and static fields/properties
 - Use PascalCase prefixed with '_' for properties' backing fields
 - Use camelCase for protected, public fields, protected fields backing properties, and method parameters
@@ -34,7 +34,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - Use UPPER_CASE for constant variables
 - Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
 
-3. Code readability and clarity
+### 3. Code readability and clarity
 - Use curly brackets for single line `if`, `for` and `foreach` statements.'
 - Do not use `#region` directives
 - Align `while();` on the same line of curly bracket of `do..while`
@@ -55,7 +55,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
 - Follow single-responsibility principle in classes, modules, and methods
 
-3. Class structure
+### 4. Class structure
 The following presents how a class structure should be ordered:
 
 - Static fields
@@ -89,13 +89,13 @@ The following presents how a class structure should be ordered:
 - Assertions e.g. `AssertNotDisposed()`, `AssertInitialized()`, `AssertStreamOpened()`
 - IDisposable.Dispose() function
 
-4. Interface structure
+### 5. Interface structure
 The following presents how an interface structure should be ordered:
 
 - properties
 - functions (name descending + parameters amount descending)
 
-5. Helper classes and extensions
+### 6. Helper classes and extensions
 - Helper classes must be either static or fully instanced
 - Extension classes must be static and only contain extension functions related to one type or derivatives
 
