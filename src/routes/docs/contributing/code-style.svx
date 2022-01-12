@@ -95,7 +95,7 @@ The following presents how an interface structure should be ordered:
 - properties
 - functions (name descending + parameters amount descending)
 
-5. Helper classes and extensions
+### 6. Helper classes and extensions
 - Helper classes must be either static or fully instanced
 - Extension classes must be static and only contain extension functions related to one type or derivatives
 
