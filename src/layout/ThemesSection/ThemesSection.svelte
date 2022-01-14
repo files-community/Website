@@ -72,8 +72,7 @@
 		<h2>Distinctly personal.</h2>
 		<p>
 			Have it your way. Files features a fully customizable user interface,
-			right down to the colors and materials. Explore themes created by the
-			community or dive right into the docs and create your own.
+			right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.
 		</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
@@ -84,19 +83,6 @@
 					aria-label="Select theme {i + 1}"
 				/>
 			{/each}
-		</div>
-		<div class="buttons-spacer">
-			<Button
-				href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ"
-				rel="noreferrer noopener"
-				target="_blank"
-				variant="accent"
-			>
-				Get Themes
-			</Button>
-			<HyperlinkButton href="docs/configuring/custom-themes">
-				Read the docs
-			</HyperlinkButton>
 		</div>
 	</div>
 	<div
