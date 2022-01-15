@@ -37,7 +37,7 @@
 			Files has it covered with robust features you expect from a modern file
 			manager.
 		</p>
-		<hr role="separator">
+		<hr>
 		<div class="feature-cards-container">
 			{#each featureCards as feature, i}
 				<FeatureCard

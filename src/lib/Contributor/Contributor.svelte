@@ -4,7 +4,6 @@
 
 	export let html_url: string = undefined;
 	export let avatar_url: string = undefined;
-	export let icon: any = undefined;
 	export let type = "User";
 	export let login = "Unknown";
 	export let contributions = 0;

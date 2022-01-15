@@ -89,15 +89,6 @@
 	}
 
 	td {
-		// Sync status icons
-		&.status-success :global(svg) {
-			color: var(--fds-system-success);
-		}
-
-		&.status-sync :global(svg) {
-			color: var(--fds-system-attention);
-		}
-
 		:global(svg) {
 			@include icon($size: 20px);
 			animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(600ms + (100ms * var(--file-index)));

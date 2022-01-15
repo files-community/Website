@@ -55,10 +55,10 @@
 			Files
 		</a>
 		{#if innerWidth > 648}
-			<div class="divider" role="separator"></div>
+			<div class="divider"></div>
 			{#each items as { name, path, external, icon, type }}
 				{#if type === "divider"}
-					<div class="divider" role="separator"></div>
+					<div class="divider"></div>
 				{:else}
 					<a
 						class="item"

@@ -30,6 +30,17 @@
 			--provider-rotate: -8deg;
 		}
 	}
+
+	.files-table tr td {
+		// Sync status icons
+		&.status-success :global(svg) {
+			color: var(--fds-system-success);
+		}
+
+		&.status-sync :global(svg) {
+			color: var(--fds-system-attention);
+		}
+	}
 }
 
 // Cloud icon entrance animation
