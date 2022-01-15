@@ -26,6 +26,7 @@ option, we recommend turning it off and back on again in order to take advantage
     <img src="/blog-resources/filesv2-1/PropertiesDialog.jpg" alt="A screenshot of the redesigned properties window in Files v2.1." />
     <figcaption>The redesigned properties window</figcaption>
 </figure>
+
 - Added a hotkey for playing audio and video in the preview pane
 - Added a toolbar button to empty recycle bin
 - Set window title to be the same as the selected tab name
