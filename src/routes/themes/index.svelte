@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files - Themes" image="/branding/banner-themes-light.png"/>
+	<Metadata title="Files • Themes" image="/branding/banner-themes-light.png" />
 </svelte:head>
 
 todo

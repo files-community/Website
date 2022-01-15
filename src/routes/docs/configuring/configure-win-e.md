@@ -1,8 +1,9 @@
-# Configuring Files to launch with the Win + E shortcut
+# Configuring Files to launch with the <kbd>Win</kbd> + <kbd>E</kbd> shortcut
 
 **Option 1: using an AutoHotkey script**
 
-You can configure Files to launch using the Win + E shortcut by using this [AutoHotKey](https://www.autohotkey.com/)
+You can configure Files to launch using the <kbd>Win</kbd> + <kbd>E</kbd> shortcut by using
+this [AutoHotKey](https://www.autohotkey.com/)
 script:
 
 ```autohotkey
@@ -23,7 +24,8 @@ return
 
 **Option 2: modifying the registry**
 
-You can also configure Files to launch using the Win + E shortcut without an external program by editing the registry:
+You can also configure Files to launch using the <kbd>Win</kbd> + <kbd>E</kbd> shortcut without an external program by
+editing the registry:
 
 *This method involves modifying the registry, make sure to create a backup beforehand and proceed at your own risk.
 Please keep in mind that this method is unsupported and may not work for everyone.*
@@ -32,7 +34,8 @@ Please keep in mind that this method is unsupported and may not work for everyon
 
 1. Create a backup of the registry, make sure to store the backup in your desktop folder so that you can access it in
    the event that Files won't open.
-2. Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/OpenFilesOnWinE.zip)
+2.
+Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/OpenFilesOnWinE.zip)
 archive and extract *both* of the contained .reg files *to the desktop*
 
 3. Run `OpenFilesOnWinE.reg` to open Files on Win+E

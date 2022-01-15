@@ -1,9 +1,8 @@
 ---
-title: Announcing General Availability of Files v2
-description: Today, we're excited to announce that we are releasing Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the platform, and with v2, we've taken that to a whole new level.
-thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
-date: 2021-10-04
-author: yaichenbaum
+title: Announcing General Availability of Files v2 description: Today, we're excited to announce that we are releasing
+Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes
+the boundaries of the platform, and with v2, we've taken that to a whole new level. thumbnail:
+/blog-resources/filesv2/FilesV2Banner.jpg date: 2021-10-04 author: yaichenbaum
 ---
 
 Today, we're excited to announce that we are releasing Files v2 as
@@ -27,10 +26,11 @@ contributors who really went all out and spent a lot of time putting together th
 
 ## New Features
 
-The new features in v2 were designed based off user feedback from more than 4,000 beta users. The full changelog for v2 is quite lengthy and can be found on our GitHub repo but we wanted to highlight a couple of the bigger changes.
+The new features in v2 were designed based off user feedback from more than 4,000 beta users. The full changelog for v2
+is quite lengthy and can be found on our GitHub repo but we wanted to highlight a couple of the bigger changes.
 
-A new **column view** allow multiple levels of the hierarchy to be open at once, and provides a visual representation of the current
-directory.
+A new **column view** allow multiple levels of the hierarchy to be open at once, and provides a visual representation of
+the current directory.
 
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2/Files21_V2_ColumnView_Light_RGB.jpg" alt="A screenshot of column view in Files v2.">
@@ -45,7 +45,8 @@ the file system.
     <figcaption>The redesigned context menu in Files v2 allows users to quickly assign tags to files and folders.</figcaption>
 </figure>
 
-[**Custom themes**](https://www.microsoft.com/store/productId/9N20KQ61LSFQ) provide a way for users to personalize the look and feel of the app.
+[**Custom themes**](https://www.microsoft.com/store/productId/9N20KQ61LSFQ) provide a way for users to personalize the
+look and feel of the app.
 
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.jpg" alt="A screenshot of the settings dialog in Files v2, showing custom theme options.">
@@ -70,4 +71,6 @@ everyone. We invite you to submit your feedback through our GitHub repository.
 
 – Yair
 
-Download from the [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'}) || See Files on [GitHub](https://github.com/files-community/Files)
+Download from
+the [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
+|| See Files on [GitHub](https://github.com/files-community/Files)

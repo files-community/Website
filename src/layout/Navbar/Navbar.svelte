@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { page } from "$app/stores";
-
-	import { TreeView, ListViewItem } from "$lib";
-
+	import { external, TreeView } from "$lib";
+	import { ListItem } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
+	import type { NavbarItem } from "$data/links";
 
-	export let items = [];
+	export let items: NavbarItem[] = [];
 	export let buttons = [];
 
 	let innerWidth = 649; // Don't render the mobile layout before hydration
@@ -64,9 +64,9 @@
 						class="item"
 						sveltekit:prefetch
 						class:selected={$page.url.pathname === path ||
-							($page.url.pathname.split("/").length > 1 &&
-								path.split("/").length > 1 &&
-								$page.url.pathname.startsWith(path) &&
+						($page.url.pathname.split("/").length > 1 &&
+							path.split("/").length > 1 &&
+							$page.url.pathname.startsWith(path) &&
 								!(path === "" || path === "/")) ||
 							(path === "/" && $page.url.pathname === "")}
 						href={path}
@@ -90,11 +90,8 @@
 					{href}
 					aria-label={label}
 					title={label}
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					{@html icon}
-				</a>
+					{...external}
+				>{@html icon}</a>
 			{/each}
 		{:else}
 			<button
@@ -115,12 +112,12 @@
 			{#if type === "divider"}
 				<hr role="separator">
 			{:else if !sidebarTree}
-				<ListViewItem
+				<ListItem
 					type="navigation"
 					sveltekit:prefetch
 					on:click={toggleSidebar}
 					selected={$page.url.pathname === path ||
-						($page.url.pathname.split("/").length > 1 &&
+					($page.url.pathname.split("/").length > 1 &&
 							path.split("/").length > 1 &&
 							$page.url.pathname.startsWith(path) &&
 							!(path === "" || path === "/")) ||
@@ -135,7 +132,7 @@
 						{/if}
 					</svelte:fragment>
 					<span>{name}</span>
-				</ListViewItem>
+				</ListItem>
 			{:else}
 				<TreeView
 					on:click={toggleSidebar}
@@ -152,12 +149,11 @@
 		{/each}
 		<hr role="separator">
 		{#each buttons as { icon, href, label }}
-			<ListViewItem
+			<ListItem
 				{href}
 				sveltekit:prefetch
 				type="navigation"
-				target="_blank"
-				rel="noreferrer noopener"
+				{...external}
 			>
 				<svelte:fragment slot="icon">
 					{#if icon}
@@ -165,9 +161,10 @@
 					{/if}
 				</svelte:fragment>
 				<span>{label}</span>
-			</ListViewItem>
+			</ListItem>
 		{/each}
 	</aside>
 </header>
 
-<style lang="scss" src="./Navbar.scss"></style>
+<style lang="scss">@use "./Navbar";
+</style>

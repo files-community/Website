@@ -1,35 +1,26 @@
 @use "src/styles/mixins" as *;
 
 .contributor {
-	@include flex($inline: true, $align: center);
-	width: 156px;
-	padding: 0 12px;
-	padding: 12px;
-	border: 1px solid var(--card-stroke-default);
-	border-radius: var(--control-corner-radius);
-	background-color: var(--background-tertiary);
-	box-shadow: var(--flyout-elevation);
+	@include flex($inline: true, $align: center, $gap: 1rem);
+	min-inline-size: 150px;
+	padding: 1rem;
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-control-corner-radius);
+	background-color: var(--fds-solid-background-tertiary);
+	box-shadow: var(--fds-flyout-shadow);
 	text-decoration: none;
-	transition: 250ms ease;
+	transition: var(--fds-control-normal-duration) ease;
 	user-select: none;
 	-webkit-user-drag: none;
 
-	img {
-		width: 32px;
-		height: 32px;
-		border-radius: 50%;
-		-webkit-user-drag: none;
-	}
-
 	&:hover {
-		box-shadow: var(--window-elevation);
+		box-shadow: var(--fds-active-window-shadow);
 		transform: translateY(-2px);
 	}
 }
 
 .info {
-	margin-inline-start: 8px;
-	color: var(--text-color-tertiary);
+	color: var(--fds-text-tertiary);
 	font: {
 		size: 1.2rem;
 		weight: normal;
@@ -40,9 +31,9 @@
 
 	h5 {
 		margin: 0;
-		color: var(--text-color-primary);
+		color: var(--fds-text-primary);
 		font: {
-			size: 1.4rem;
+			size: var(--fds-body-font-size);
 			weight: 600;
 		}
 		text-overflow: ellipsis;

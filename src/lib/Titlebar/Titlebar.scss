@@ -3,10 +3,10 @@
 .titlebar {
 	@include flex($align: center);
 	position: relative;
-	height: 32px;
+	block-size: 32px;
 	padding-inline-start: 16px;
-	color: var(--text-color-primary);
-	font-size: var(--control-font-size);
+	color: var(--fds-text-primary);
+	font-size: var(--fds-body-font-size);
 
 	span {
 		flex: 1 1 auto;
@@ -18,19 +18,19 @@
 
 	button {
 		@include flex($justify: center, $align: center);
-		width: 46px;
-		height: 32px;
+		inline-size: 46px;
+		block-size: 32px;
 		border: none;
 		background-color: transparent;
-		color: var(--text-color-primary);
+		color: var(--fds-text-primary);
 
 		&:hover {
-			background-color: var(--subtle-color-secondary);
+			background-color: var(--fds-subtle-fill-secondary);
 		}
 
 		&:active {
-			background-color: var(--subtle-color-tertiary);
-			color: var(--text-color-secondary);
+			background-color: var(--fds-subtle-fill-tertiary);
+			color: var(--fds-text-secondary);
 		}
 
 		&.close {

@@ -8,11 +8,11 @@
 	// Outer section
 	#hero-section {
 		position: relative;
-		height: 75vh;
-		min-height: 584px;
-		max-height: 1024px;
-		border-block-end: 1px solid var(--divider-color-default);
 		overflow: hidden;
+		block-size: 75vh;
+		min-block-size: 584px;
+		max-block-size: 1024px;
+		border-block-end: 1px solid var(--fds-divider-stroke-default);
 
 		// Inner Section
 		.page-section-inner {
@@ -20,49 +20,46 @@
 			display: grid;
 			grid-template-columns: 1fr 1.5fr;
 			align-items: center;
-			gap: 64px;
+			gap: 4rem;
 		}
 
-		// Custom button styling
-		// Applied on download and source buttons respectively
-		.button {
-			padding: 7px 12px;
+		:global {
+			.split-button {
+				display: flex;
 
-			svg {
-				@include icon($size: 18px);
-			}
-		}
+				.button:first-of-type {
+					border-radius: var(--fds-control-corner-radius) 0 0 var(--fds-control-corner-radius);
+					border-inline-end: 1px solid var(--fds-divider-stroke-default);
+				}
 
-		.style-standard .hero-button-inner {
-			color: var(--text-color-secondary);
-
-			h5 {
-				color: var(--text-color-primary);
-			}
-		}
-
-		#hero-download-button {
-			min-width: 128px;
-		}
-
-		// Properly position download source flyout
-		.split-button {
-			position: relative;
-
-			.menu-flyout-container {
-				display: contents;
-
-				&:last-child .button {
-					padding: 0 8px;
-
-					svg {
-						@include icon($size: 12px);
-					}
+				.menu-flyout-wrapper .button {
+					border-radius: 0 var(--fds-control-corner-radius) var(--fds-control-corner-radius) 0;
+					block-size: 100%;
 				}
 			}
 		}
 
-		@keyframes canvas-hue-rotate {
+		// Custom button styling
+		// Applied on download and source buttons respectively
+		:global {
+			.button {
+				padding: 7px 12px;
+
+				svg {
+					@include icon($size: 18px);
+				}
+			}
+
+			.style-standard .hero-button-inner {
+				color: var(--fds-text-secondary);
+
+				h5 {
+					color: var(--fds-text-primary);
+				}
+			}
+		}
+
+		@keyframes rainbow-background-hue-rotate {
 			0% {
 				filter: none;
 			}
@@ -77,30 +74,36 @@
 		// Backdrop canvas
 		.rainbow-background {
 			position: absolute;
+			z-index: -1;
+			background: 800% 800% /* pos */
+			linear-gradient(
+							to bottom right,
+							hsl(133, 67%, 59%),
+							hsl(172, 100%, 42%),
+							hsl(202, 97%, 45%),
+							var(--fds-solid-background-base)
+			);
+			animation: rainbow-background-hue-rotate 15s infinite linear,
+			scroll-gradient 15s infinite linear;
 			inset-inline-end: 0;
 			inset-block-end: 0;
-			z-index: -1;
-			width: 60vw;
-			min-width: 100vh;
-			height: 100%;
-			mask: url("/ui/hero-mask.png") bottom right/cover no-repeat;
-			animation: canvas-hue-rotate 15s infinite linear;
-			// this is only in #-HEX format for the hero section gradient to work
-			--gradient-color-1: #50dc6f;
-			--gradient-color-2: #00d6ba;
-			--gradient-color-3: #0390e2;
-			--gradient-color-4: var(--background-base);
+			inline-size: 60vw;
+			min-inline-size: 100vh;
+			block-size: 100%;
+
+			mask: url("/ui/hero-mask.png") bottom / cover no-repeat;
 
 			@media (prefers-color-scheme: light) {
 				opacity: 0.5;
 			}
 
-			@media only screen and (max-width: 1024px) {
-				width: 100%;
+			@media screen and (width < 1024px) {
+				inline-size: 100%;
+				transform: rotate(90deg) scale(1.5);
 			}
 
-			@media only screen and (max-width: 648px) {
-				height: 60vh;
+			@media screen and (width < 648px) {
+				block-size: 60vh;
 				mask-size: 100% 100%;
 			}
 		}
@@ -118,34 +121,34 @@
 	// Right container
 	&right {
 		@include flex($align: center);
-		height: 100%;
+		block-size: 100%;
 
 		img {
 			position: absolute;
-			inset-inline-end: 0;
-			width: auto;
-			max-width: 100%;
-			height: auto;
-			max-height: 100%;
-			border: 1px solid var(--surface-stroke-default);
-			border-radius: calc(var(--overlay-corner-radius) / 1.5);
+			inline-size: auto;
+			max-inline-size: 100%;
+			border: 1px solid var(--fds-surface-stroke-default);
+			border-radius: calc(var(--fds-overlay-corner-radius) / 1.5);
 			background-color: hsl(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
-			box-shadow: var(--window-elevation);
+			box-shadow: var(--fds-dialog-shadow);
 			overflow: hidden;
 			user-select: none;
+			inset-inline-end: 0;
+			block-size: auto;
+			max-block-size: 100%;
 			-webkit-user-drag: none;
 			aspect-ratio: 1280 / 960;
 			backdrop-filter: blur(60px) saturate(150%);
 
-			@media only screen and (min-width: 2048px) {
-				border-radius: var(--overlay-corner-radius);
+			@media screen and (width > 2048px) {
+				border-radius: var(--fds-overlay-corner-radius);
 			}
 		}
 	}
 
 	// Inner hero buttons
 	&button-inner {
-		@include flex($direction: column);
+		@include flex($direction: column, $align: start);
 		margin-inline-start: 8px;
 		font-size: 1.1rem;
 		line-height: normal;
@@ -161,19 +164,19 @@
 	&image-container {
 		@include flex($align: center, $justify: center);
 		position: relative;
-		width: 100%;
-		height: 100%;
-		max-height: 768px;
+		inline-size: 100%;
+		block-size: 100%;
+		max-block-size: 768px;
 	}
 }
 
 // Hero section small device support
-@media only screen and (max-width: 1024px) {
+@media screen and (width < 1024px) {
 	:global {
 		// Remove height constraints on outer container
 		#hero-section {
-			height: auto;
-			max-height: unset;
+			block-size: auto;
+			max-block-size: unset;
 
 			// Position inner containers vertically
 			.page-section-inner {
@@ -196,9 +199,9 @@
 		// Properly position hero image
 		&right img {
 			position: relative;
-			width: 100%;
-			max-width: 708px;
-			height: auto;
+			inline-size: 100%;
+			max-inline-size: 708px;
+			block-size: auto;
 		}
 	}
 }

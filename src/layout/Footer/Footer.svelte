@@ -1,9 +1,33 @@
 <script lang="ts">
-	import { HyperlinkButton, IconButton, PageSection } from "$lib";
+	import { external, PageSection } from "$lib";
+	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
 	import Discord from "$static/ui/icons/discord.svg?raw";
 	import Github from "$static/ui/icons/github.svg?raw";
 	import Twitter from "$static/ui/icons/twitter.svg?raw";
+
+	const contributors = [
+		{
+			name: "Tropical",
+			link: "https://github.com/Tropix126/"
+		},
+		{
+			name: "TheOnlyTails",
+			link: "https://www.theonlytails.com/"
+		},
+		{
+			name: "Yair",
+			link: "https://github.com/yaichenbaum/"
+		},
+		{
+			name: "Marcel Wagner",
+			link: "https://github.com/chingucoding/"
+		},
+		{
+			name: "Michael West",
+			link: "https://michaelwe.st/"
+		}
+	];
 </script>
 
 <PageSection type="footer" id="page-footer">
@@ -21,8 +45,7 @@
 				href="https://github.com/{links.github.owner}/{links.github.repo}/"
 				title="GitHub repository"
 				aria-label="GitHub repository"
-				target="_blank"
-				rel="noreferrer noopener"
+				{...external}
 			>
 				{@html Github}
 			</IconButton>
@@ -30,8 +53,7 @@
 				href="https://twitter.com/{links.twitter}/"
 				title="Twitter profile"
 				aria-label="Twitter profile"
-				target="_blank"
-				rel="noreferrer noopener"
+				{...external}
 			>
 				{@html Twitter}
 			</IconButton>
@@ -39,8 +61,7 @@
 				href="https://discord.gg/{links.discord}"
 				title="Discord server"
 				aria-label="Discord server"
-				target="_blank"
-				rel="noreferrer noopener"
+				{...external}
 			>
 				{@html Discord}
 			</IconButton>
@@ -49,101 +70,50 @@
 	</div>
 	<div class="column">
 		<p>Pages</p>
-		<HyperlinkButton
-			sveltekit:prefetch
-			href="/"
-		>
+		<Button variant="hyperlink" sveltekit:prefetch href="/">
 			Home
-		</HyperlinkButton>
-		<HyperlinkButton
-			sveltekit:prefetch
-			href="/docs"
-		>
+		</Button>
+		<Button variant="hyperlink" sveltekit:prefetch href="/docs">
 			Documentation
-		</HyperlinkButton>
-		<HyperlinkButton
-			sveltekit:prefetch
-			href="/blog"
-		>
+		</Button>
+		<Button variant="hyperlink" sveltekit:prefetch href="/blog">
 			Blog
-		</HyperlinkButton>
+		</Button>
 	</div>
 	<div class="column">
 		<p>Contribute to Files</p>
-		<HyperlinkButton
-			href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
-			target="_blank"
-			rel="noreferrer noopener"
+		<Button variant="hyperlink" {...external}
+		        href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
 		>
 			Give Feedback
-		</HyperlinkButton>
+		</Button>
 
-		<HyperlinkButton href="/docs/contributing/code-style">
+		<Button variant="hyperlink" href="/docs/contributing/code-style">
 			Style Guide
-		</HyperlinkButton>
+		</Button>
 
-		<HyperlinkButton href="/docs/contributing/translating-files">
+		<Button variant="hyperlink" href="/docs/contributing/translating-files">
 			Translations
-		</HyperlinkButton>
+		</Button>
 
 		<p>Contribute to this site</p>
-		<HyperlinkButton
-			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
-			target="_blank"
-			rel="noreferrer noopener"
+		<Button variant="hyperlink" {...external}
+		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
 			GitHub Repo
-		</HyperlinkButton>
+		</Button>
 
-		<HyperlinkButton
-			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
-			target="_blank"
-			rel="noreferrer noopener"
+		<Button variant="hyperlink" {...external}
+		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
 		>
 			Found a bug?
-		</HyperlinkButton>
+		</Button>
 	</div>
 	<div class="column">
 		<p>Web Team</p>
-		<HyperlinkButton
-			href="https://github.com/Tropix126/"
-			target="_blank"
-			rel="noreferrer noopener"
-		>
-			Tropical
-		</HyperlinkButton>
-
-		<HyperlinkButton
-			href="https://www.theonlytails.com/"
-			target="_blank"
-			rel="noreferrer noopener"
-		>
-			TheOnlyTails
-		</HyperlinkButton>
-
-		<HyperlinkButton
-			href="https://github.com/yaichenbaum/"
-			target="_blank"
-			rel="noreferrer noopener"
-		>
-			Yair
-		</HyperlinkButton>
-
-		<HyperlinkButton
-			href="https://github.com/chingucoding/"
-			target="_blank"
-			rel="noreferrer noopener"
-		>
-			Marcel Wagner
-		</HyperlinkButton>
-
-		<HyperlinkButton
-			href="https://michaelwe.st/"
-			target="_blank"
-			rel="noreferrer noopener"
-		>
-			Michael West
-		</HyperlinkButton>
+		{#each contributors as contributor}
+			<Button variant="hyperlink" href={contributor.link} {...external}>{contributor.name}</Button>
+		{/each}
 	</div>
 </PageSection>
 

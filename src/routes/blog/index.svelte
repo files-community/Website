@@ -1,5 +1,5 @@
 <script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit"
+	import type { Load } from "@sveltejs/kit";
 
 	export const load: Load = async ({ fetch }) => ({
 		props: {
@@ -9,7 +9,9 @@
 </script>
 
 <script lang="ts">
-	import { Button, PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
+	import { PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
+	import { Button } from "fluent-svelte";
+
 	interface Post {
 		path: string;
 		metadata: {
@@ -29,7 +31,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files - Blog" image="/branding/banner-blog-light.png"/>
+	<Metadata title="Files • Blog" image="/branding/banner-blog-light.png" />
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
@@ -39,7 +41,7 @@
 		<img
 			alt=""
 			src={mainPost.metadata.thumbnail}
-			style="transform: translateY({Math.floor(scrollY / 2.5)}px)"
+			style:transform="translateY({Math.floor(scrollY / 2.5)}px)"
 			width="0"
 		>
 	</div>

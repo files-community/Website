@@ -2,59 +2,62 @@
 
 :global {
     #page-footer {
-        border-block-start: 1px solid var(--divider-color-default);
-        .page-section-inner {
-            @include flex($align: top, $justify: between, $gap: 48px);
-        }
+	    border-block-start: 1px solid var(--fds-divider-stroke-default);
 
-        p {
-            margin: 12px 0;
-        }
+	    .page-section-inner {
+		    @include flex($align: top, $justify: space-between, $gap: 48px);
+	    }
 
-        .hyperlink-button {
-            display: block;
-            width: fit-content;
-            margin-inline: -11px;
-            margin-block-end: 8px;
-            &:last-child {
-                margin-block-end: 0;
-            }
-        }
+	    p {
+		    margin: 12px 0;
+	    }
+
+	    :global(.button.style-hyperlink) {
+		    display: block;
+		    inline-size: fit-content;
+		    margin-inline: -11px;
+		    margin-block-end: 8px;
+
+		    &:last-child {
+			    margin-block-end: 0;
+		    }
+	    }
     }
 }
 
-@media only screen and (max-width: 1024px) {
-    :global(#page-footer .page-section-inner) {
-        display: grid;
-        gap: 24px;
-        grid-template-columns: 2fr 1fr;
-    }
-    .column {
-        width: 100%;
-        min-width: unset;
-    }
+@media screen and (width < 1024px) {
+	:global(#page-footer .page-section-inner) {
+		display: grid;
+		gap: 24px;
+		grid-template-columns: 2fr 1fr;
+	}
+	.column {
+		inline-size: 100%;
+		min-inline-size: unset;
+	}
 }
 
-@media only screen and (max-width: 768px) {
-    :global(#page-footer .page-section-inner) {
-        grid-template-columns: auto;
-    }
+@media screen and (width < 768px) {
+	:global(#page-footer .page-section-inner) {
+		grid-template-columns: auto;
+	}
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    margin-inline-end: 8px;
-    color: var(--text-color-primary);
-    font-size: 3.6rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 100ms ease;
-    img {
-        width: auto;
-        height: 48px;
-        margin-inline-end: 12px;
-    }
+	display: flex;
+	align-items: center;
+	margin-inline-end: 8px;
+	color: var(--fds-text-primary);
+	font-size: 3.6rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: 100ms ease;
+
+	img {
+		inline-size: auto;
+		block-size: 48px;
+		margin-inline-end: 12px;
+	}
 }
 
 .social-links {
@@ -66,7 +69,8 @@
     display: block;
     flex: 0 0 auto;
     min-width: 14vw;
-    &:first-child {
+
+	&:first-child {
         flex: 1 1 auto;
     }
 }

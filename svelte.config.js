@@ -1,17 +1,18 @@
-import path from "path"
-import adapter from "@sveltejs/adapter-auto"
-import sveltePreprocess from "svelte-preprocess"
-import { mdsvex } from "mdsvex"
-import remarkGfm from "remark-gfm"
-import remarkA11yEmoji from "@fec/remark-a11y-emoji"
-import remarkSlug from "remark-slug"
-import remarkGithub from "remark-github"
-import autoprefixer from "autoprefixer"
-import cssnano from "cssnano"
+import path from "path";
+import adapter from "@sveltejs/adapter-netlify";
+import sveltePreprocess from "svelte-preprocess";
+import { mdsvex } from "mdsvex";
+import remarkGfm from "remark-gfm";
+import remarkA11yEmoji from "@fec/remark-a11y-emoji";
+import remarkSlug from "remark-slug";
+import remarkGithub from "remark-github";
+import autoprefixer from "autoprefixer";
+import cssnano from "cssnano";
+import mediaMinMax from "postcss-media-minmax";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
-	extensions: [".svelte", ".svx"],
+	extensions: [".svelte", ".md"],
 	kit: {
 		target: "body",
 		router: true,
@@ -24,21 +25,23 @@ const config = {
 				}
 			}
 		},
-		adapter: adapter()
+		adapter: adapter({
+			split: true
+		})
 	},
 	preprocess: [
 		mdsvex({
-			extensions: [".svx"],
+			extensions: [".md"],
 
 			smartypants: {
 				dashes: "oldschool"
 			},
 
-			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub]
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: [autoprefixer, (process.env.NODE_ENV !== "development" && cssnano)],
+				plugins: [autoprefixer, cssnano, mediaMinMax]
 			}
 		})
 	]

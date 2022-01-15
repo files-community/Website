@@ -3,11 +3,29 @@ import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
 import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
 import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
 
-export interface FeatureCardData {
+export type FeatureCardData = {
 	title: string;
 	description: string;
 	icon: any;
+};
+
+export type Tag = {
+	name: string;
+	color: string;
+};
+
+export interface FileData {
+	name: string;
+	icon: string;
 }
+
+export type CloudFileData = FileData & {
+	status: "success" | "sync";
+};
+
+export type TaggedFileData = FileData & {
+	tag: string;
+};
 
 export const featureCards: FeatureCardData[] = [
 	{
@@ -36,7 +54,7 @@ export const featureCards: FeatureCardData[] = [
 	}
 ];
 
-export const cloudFiles = [
+export const cloudFiles: CloudFileData[] = [
 	{
 		name: "GitHub",
 		icon: "folder",
@@ -49,7 +67,7 @@ export const cloudFiles = [
 	},
 	{
 		name: "start.js",
-		icon: "note",
+		icon: "file",
 		status: "success"
 	},
 	{
@@ -103,9 +121,9 @@ export const previewFiles = [
 	{
 		name: "index",
 		extension: "html",
-		icon: "/ui/icons/note.png",
+		icon: "/ui/icons/file.png",
 		added: "Wednesday, July 14, 2021 8:47 PM",
-		modified: "Monday, July 31, 2021 4:32 AM",
+		modified: "Saturday, July 31, 2021 4:32 AM",
 		path: "C:\\Users\\Sara\\Documents\\index.html"
 	},
 	{
@@ -134,14 +152,10 @@ cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</
 	}
 ];
 
-export const tags = [
+export const tags: Tag[] = [
 	{
 		name: "Blue",
 		color: "#0072bd"
-	},
-	{
-		name: "Orange",
-		color: "#d95319"
 	},
 	{
 		name: "Yellow",
@@ -152,11 +166,44 @@ export const tags = [
 		color: "#77ac30"
 	},
 	{
-		name: "Azure",
-		color: "#4dbeee"
-	},
-	{
 		name: "Gray",
 		color: "#9ea3a1"
+	},
+	{
+		name: "Orange",
+		color: "#d95319"
+	}
+];
+
+export const taggedFiles: TaggedFileData[] = [
+	{
+		name: "Super Secret Plans - Do Not Publish.docx",
+		icon: "file",
+		tag: "Yellow"
+	},
+	{
+		name: "Presentation - Project Sledgehammer.pptx",
+		icon: "file",
+		tag: "Green"
+	},
+	{
+		name: "Files (MacOS)",
+		icon: "folder",
+		tag: "Gray"
+	},
+	{
+		name: "Microsoft Purchase Offer.pdf",
+		icon: "file",
+		tag: "Blue"
+	},
+	{
+		name: "Files (Linux)",
+		icon: "folder",
+		tag: "Gray"
+	},
+	{
+		name: "Files v4.0",
+		icon: "folder",
+		tag: "Orange"
 	}
 ];

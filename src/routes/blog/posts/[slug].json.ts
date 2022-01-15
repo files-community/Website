@@ -1,9 +1,10 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
-const slugFromPath = (path: string) => path.match(/([\w-]+)\.(md|svx)/i)?.[1] ?? null;
+const slugFromPath = (path: string) =>
+	path.match(/([\w-]+)\.(md|svx)/i)?.[1] ?? null;
 
 export const get: RequestHandler = async ({ params }) => {
-	const modules = import.meta.glob("./*.svx");
+	const modules = import.meta.glob("./*.md");
 
 	type Resolver = () => Promise<{[p: string]: any}>
 

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { links } from "$data/links";
-
-	import { Button, HeaderChip, HyperlinkButton, PageSection } from "$lib";
+	import { external, HeaderChip, PageSection } from "$lib";
+	import { Button } from "fluent-svelte";
 
 	let scrollY: number;
 </script>
@@ -19,19 +19,17 @@
 	<div class="buttons-spacer">
 		<Button
 			href="https://microsoft.com/store/apps/{links.storeId}"
-			rel="noreferrer noopener"
-			target="_blank"
+			{...external}
 			variant="accent"
 		>
 			Try it out
 		</Button>
-		<HyperlinkButton
-			href="https://www.microsoft.com/design/fluent/"
-			rel="noreferrer noopener"
-			target="_blank"
+		<Button variant="hyperlink"
+		        href="https://www.microsoft.com/design/fluent/"
+		        {...external}
 		>
 			Design System
-		</HyperlinkButton>
+		</Button>
 	</div>
 	<div class="design-image">
 		<picture>
@@ -48,7 +46,7 @@
 				class="files-screenshot"
 				height="768"
 				src="/screenshots/folder-list-light.png"
-				style="transform: translateY({Math.floor(scrollY / -10)}px)"
+				style:transform="translateY({Math.floor(scrollY / -10)}px)"
 				width="1024"
 			>
 		</picture>

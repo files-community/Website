@@ -4,14 +4,14 @@
 .docs {
 	display: flex;
 	flex: 1 1 auto;
-	max-height: calc(100vh - 58px);
-	background-color: var(--background-base);
+	max-block-size: calc(100vh - 58px);
+	background-color: var(--fds-solid-background-base);
 	overflow: hidden;
 
 	// Small device support
-	@media only screen and (max-width: 648px) {
+	@media screen and (width < 648px) {
 		// Account for the adjusted navbar height on mobile
-		max-height: calc(100vh - 64px);
+		max-block-size: calc(100vh - 64px);
 	}
 }
 
@@ -20,11 +20,11 @@
 	@include flex($direction: column);
 	flex: 1 1 auto;
 	border: {
-		block-start: 1px solid var(--card-stroke-default);
-		inline-start: 1px solid var(--card-stroke-default);
+		block-start: 1px solid var(--fds-card-stroke-default);
+		inline-start: 1px solid var(--fds-card-stroke-default);
 	}
-	border-top-left-radius: var(--overlay-corner-radius);
-	background-color: var(--layer-color-default);
+	border-top-left-radius: var(--fds-overlay-corner-radius);
+	background-color: var(--fds-layer-background-default);
 	background-clip: padding-box;
 
 	// Inner page
@@ -37,9 +37,9 @@
 
 	// Page header
 	header {
-		@include flex($align: center, $justify: between);
+		@include flex($align: center, $justify: space-between);
 		margin-block-end: -20px;
-		color: var(--text-color-tertiary);
+		color: var(--fds-text-tertiary);
 		white-space: nowrap;
 
 		span {
@@ -58,7 +58,7 @@
 .sidebar {
 	@include flex($direction: column);
 	flex: 0 0 auto;
-	width: 316px;
+	inline-size: 316px;
 	padding: 0 4px;
 }
 
@@ -68,13 +68,13 @@
 	inset-block-start: 0;
 	z-index: 1;
 	margin: 4px 12px 12px;
-	background-color: var(--background-base);
+	background-color: var(--fds-solid-background-base);
 
 	// Divider between the <TreeView /> and search box
 	hr {
 		margin: 12px 0 0;
 		border: none;
-		border-block-start: 1px solid var(--divider-color-default);
+		border-block-start: 1px solid var(--fds-divider-stroke-default);
 	}
 
 	// Mobile container
@@ -82,7 +82,7 @@
 	&-mobile {
 		display: none;
 		padding: 12px;
-		border-block-end: 1px solid var(--divider-color-default);
+		border-block-end: 1px solid var(--fds-divider-stroke-default);
 	}
 }
 
@@ -100,24 +100,24 @@
 		inset-block-start: 100%;
 		inset-inline-start: 0;
 		z-index: 10;
-		width: 100%;
-		max-height: 350px;
+		inline-size: 100%;
+		max-block-size: 350px;
 		padding: 2px 0;
-		border: 1px solid var(--surface-stroke-flyout);
-		border-radius: 0 0 var(--overlay-corner-radius) var(--overlay-corner-radius);
-		background-color: var(--background-quarternary);
-		box-shadow: var(--flyout-elevation);
+		border: 1px solid var(--fds-surface-stroke-flyout);
+		border-radius: 0 0 var(--fds-overlay-corner-radius) var(--fds-overlay-corner-radius);
+		background-color: var(--fds-solid-background-quarternary);
+		box-shadow: var(--fds-flyout-shadow);
 	}
 }
 
 // Small device support
-@media only screen and (max-width: 648px) {
+@media screen and (width < 648px) {
 	// Since we don't have a sidebar anymore, vertically stack the elements in the page
 	.docs {
 		flex-direction: column;
-		max-height: calc(100vh - 66px);
+		max-block-size: calc(100vh - 66px);
 		margin-block-start: 2px;
-		border-block-start: 1px solid var(--card-stroke-default);
+		border-block-start: 1px solid var(--fds-card-stroke-default);
 	}
 
 	// Hide the sidebar

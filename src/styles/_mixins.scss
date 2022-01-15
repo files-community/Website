@@ -36,11 +36,11 @@
 			justify-content: flex-start;
 		} @else if $justify == end {
 			justify-content: flex-end;
-		} @else if $justify == between {
+		} @else if $justify == space-between {
 			justify-content: space-between;
 		} @else if $justify == around {
 			justify-content: space-around;
-		} @else if $justify == evenly {
+		} @else if $justify == space-evenly {
 			justify-content: space-evenly;
 		}
 	}
@@ -55,11 +55,11 @@
 			align-items: flex-start;
 		} @else if $align == end {
 			align-items: flex-end;
-		} @else if $align == between {
+		} @else if $align == space-between {
 			align-content: space-between;
 		} @else if $align == around {
 			align-content: space-around;
-		} @else if $align == evenly {
+		} @else if $align == space-evenly {
 			align-content: space-evenly;
 		}
 	}
@@ -76,8 +76,8 @@
 }
 
 @mixin icon($size: 14px) {
-	width: $size;
-	height: auto;
+	inline-size: $size;
+	block-size: auto;
 	fill: currentColor;
 }
 

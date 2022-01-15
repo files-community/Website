@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { external } from "$lib";
+
 	export let path = "";
 	export let date = "";
 	export let author = "";
@@ -8,9 +10,9 @@
 </script>
 
 <a
-	{...$$restProps}
 	class="blog-card"
 	href="/blog/{path.replace(/\.[^/.]+$/, '')}"
+	{...$$restProps}
 >
 	<img alt="{title} thumbnail" class="thumbnail" src={thumbnail}>
 	<div class="body">
@@ -28,7 +30,7 @@
 				<a
 					href="https://github.com/{author}"
 					rel="noreferrer noopener"
-					target="_blank"
+					{...external}
 				>
 					{author}
 				</a>
@@ -45,4 +47,5 @@
 	<slot />
 </a>
 
-<style lang="scss" src="./BlogCard.scss"></style>
+<style lang="scss">@use "./BlogCard";
+</style>

@@ -26,317 +26,29 @@
 :root {
 	--font-family-sans-serif: "Segoe UI Variable Display", "Segoe UI", "Inter", sans-serif;
 	--font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
-
-	// Accent Colors
-	--accent-color-hue: 206;
-	--accent-color-saturation: 100%;
-	--accent-color-lightness: 42%;
-	--accent-color-alpha: 1;
-
-	--accent-color: hsl(
-		var(--accent-color-hue),
-		var(--accent-color-saturation),
-		var(--accent-color-lightness),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-dark-1: hsl(
-		calc(var(--accent-color-hue) + 2),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) - 6%),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-dark-1-90: hsl(
-		calc(var(--accent-color-hue) + 2),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) - 6%),
-		calc(var(--accent-color-alpha) * 0.9)
-	);
-
-	--accent-color-dark-1-80: hsl(
-		calc(var(--accent-color-hue) + 2),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) - 6%),
-		calc(var(--accent-color-alpha) * 0.8)
-	);
-
-	--accent-color-dark-2: hsl(
-		calc(var(--accent-color-hue) + 8),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) - 13%),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-dark-3: hsl(
-		calc(var(--accent-color-hue) + 18),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) - 21%),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-light-1: hsl(
-		calc(var(--accent-color-hue) - 1),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) + 9%),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-light-2: hsl(
-		calc(var(--accent-color-hue) - 6),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) + 23%),
-		var(--accent-color-alpha)
-	);
-
-	--accent-color-light-2-90: hsl(
-		calc(var(--accent-color-hue) - 6),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) + 23%),
-		calc(var(--accent-color-alpha) * 0.9)
-	);
-
-	--accent-color-light-2-80: hsl(
-		calc(var(--accent-color-hue) - 6),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) + 23%),
-		calc(var(--accent-color-alpha) * 0.8)
-	);
-
-	--accent-color-light-3: hsl(
-		calc(var(--accent-color-hue) - 14),
-		var(--accent-color-saturation),
-		calc(var(--accent-color-lightness) + 38%),
-		var(--accent-color-alpha)
-	);
-
-	// Corner Radius
-	--control-corner-radius: 4px;
-	--overlay-corner-radius: 8px;
-
-	// Control Text
-	--control-font-size: 1.4rem;
-
-	// Border Brushes
-	--CircleElevationBorderBrush: 0;
-
-	// Control Duration
-	--control-normal-duration: 250ms;
 }
 
 /*
  * Light Theme Colors
  */
-
 @media (prefers-color-scheme: light) {
 	:root {
 		color-scheme: light;
 
-		--text-color-primary: hsl(0, 0%, 0%, 0.894);
-		--text-color-secondary: hsl(0, 0%, 0%, 0.62);
-		--text-color-tertiary: hsl(0, 0%, 0%, 0.447);
-		--text-color-disabled: hsl(0, 0%, 0%, 0.361);
-		--text-color-inverse: white;
-
-		--accent-text-disabled: hsl(0, 0%, 0%, 0.361);
-
-		--accent-text-contrast-primary: white;
-		--accent-text-contrast-secondary: hsl(0, 0%, 100%, 0.702);
-		--accent-text-contrast-selected: white;
-		--accent-text-contrast-disabled: white;
-
-		--control-color-default: hsl(0, 0%, 100%, 0.702);
-		--control-color-secondary: hsl(0, 0%, 98%, 0.5);
-		--control-color-tertiary: hsl(0, 0%, 98%, 0.3);
-		--control-color-disabled: hsl(0, 0%, 98%, 0.3);
-		--control-color-input-active: white;
-
-		--control-strong-color-default: hsl(0, 0%, 0%, 0.447);
-		--control-strong-color-disabled: hsl(0, 0%, 0%, 0.318);
-
-		--control-strong-stroke-default: hsl(0, 0%, 0%, 0.447);
-		--control-strong-stroke-disabled: hsl(0, 0%, 0%, 0.216);
-
-		--control-solid-color-default: white;
-
-		--subtle-color-secondary: hsl(0, 0%, 0%, 0.035);
-		--subtle-color-tertiary: hsl(0, 0%, 0%, 0.024);
-		--subtle-color-disabled: hsl(0, 0%, 100%, 0);
-
-		--control-alt-color-secondary: hsl(0, 0%, 0%, 0.024);
-		--control-alt-color-tertiary: hsl(0, 0%, 0%, 0.059);
-		--control-alt-color-quarternary: hsl(0, 0%, 0%, 0.094);
-		--control-alt-color-disabled: hsl(0, 0%, 100%, 0);
-
-		--control-stroke-default: hsl(0, 0%, 0%, 0.059);
-		--control-stroke-secondary: hsl(0, 0%, 0%, 0.161);
-
-		--control-accent-stroke-default: hsl(0, 0%, 100%, 0.078);
-		--control-accent-stroke-secondary: hsl(0, 0%, 0%, 0.4);
-		--control-accent-stroke-tertiary: hsl(0, 0%, 0%, 0.216);
-		--control-accent-stroke-disabled: hsl(0, 0%, 0%, 0.059);
-
-		--card-stroke-default: hsl(0, 0%, 0%, 0.059);
-		--card-stroke-solid: hsl(0, 0%, 92%);
-
-		--surface-stroke-default: hsl(0, 0%, 0%, 0.059);
-		--surface-stroke-flyout: hsl(0, 0%, 0%, 0.059);
-		--surface-stroke-inverse: hsl(0, 0%, 100%, 0.082);
-
-		--divider-color-default: hsl(0, 0%, 0%, 0.059);
-
-		--focus-stroke-outer: hsl(0, 0%, 0%, 0.894);
-		--focus-stroke-inner: hsl(0, 0%, 100%, 0.702);
-
-		--card-background-default: hsl(0, 0%, 100%, 0.702);
-		--card-background-secondary: hsl(0, 0%, 96%, 0.5);
-
-		--smoke-color-default: hsl(0, 0%, 0%, 0.302);
-
-		--layer-color-default: hsl(0, 0%, 100%, 0.502);
-		--layer-color-alt: white;
-
 		--mica-tint: 0, 0%, 95%;
 		--mica-tint-opacity: 0.8;
-
-		--background-base: #f2f2f2; // this is only in #-HEX format for the hero section gradient to work
-		--background-secondary: hsl(0, 0%, 93%);
-		--background-tertiary: hsl(0, 0%, 98%);
-		--background-quarternary: white;
-
-		--system-color-success: hsl(120, 78%, 27%);
-		--system-color-caution: hsl(36, 100%, 31%);
-		--system-color-critical: hsl(5, 75%, 44%);
-		--system-color-attention: hsl(209, 100%, 36%);
-		--system-color-neutral: hsl(0, 0%, 0%, 0.45);
-		--system-background-attention: hsl(0, 0%, 96%, 0.5);
-		--system-background-success: hsl(115, 58%, 92%);
-		--system-background-caution: hsl(47, 100%, 90%);
-		--system-background-critical: hsl(355, 85%, 95%);
-		--system-background-neutral: hsl(0, 0%, 0%, 0.02);
-
-		// Elevation
-		--card-elevation: 0px 2px 4px hsl(0, 0%, 0%, 0.04);
-		--flyout-elevation: 0px 8px 16px hsl(0, 0%, 0%, 0.14);
-		--window-elevation: 0px 32px 64px hsl(0, 0%, 0%, 0.1876), 0px 2px 21px hsl(0, 0%, 0%, 0.1474);
-
-		// Accent Colors
-		--accent-color-default: var(--accent-color-dark-1);
-		--accent-color-secondary: var(--accent-color-dark-1-90);
-		--accent-color-tertiary: var(--accent-color-dark-1-80);
-		--accent-color-disabled: hsl(0, 0%, 0%, 0.216);
-
-		--accent-text-default: var(--accent-color-dark-2);
-		--accent-text-secondary: var(--accent-color-dark-3);
-		--accent-text-tertiary: var(--accent-color-dark-1);
 	}
 }
 
 /*
  * Dark Theme Colors
  */
-
 @media (prefers-color-scheme: dark) {
 	:root {
 		color-scheme: dark;
 
-		--text-color-primary: white;
-		--text-color-secondary: hsl(0, 0%, 100%, 0.773);
-		--text-color-tertiary: hsl(0, 0%, 100%, 0.529);
-		--text-color-disabled: hsl(0, 0%, 100%, 0.365);
-		--text-color-inverse: hsl(0, 0%, 0%, 0.894);
-
-		--accent-text-disabled: hsl(0, 0%, 100%, 0.365);
-
-		--accent-text-contrast-primary: black;
-		--accent-text-contrast-secondary: hsl(0, 0%, 0%, 0.502);
-		--accent-text-contrast-selected: white;
-		--accent-text-contrast-disabled: hsl(0, 0%, 100%, 0.529);
-
-		--control-color-default: hsl(0, 0%, 100%, 0.059);
-		--control-color-secondary: hsl(0, 0%, 100%, 0.082);
-		--control-color-tertiary: hsl(0, 0%, 100%, 0.031);
-		--control-color-disabled: hsl(0, 0%, 100%, 0.043);
-		--control-color-input-active: hsl(0, 0%, 12%, 0.702);
-
-		--control-strong-color-default: hsl(0, 0%, 100%, 0.545);
-		--control-strong-color-disabled: hsl(0, 0%, 100%, 0.247);
-
-		--control-strong-stroke-default: hsl(0, 0%, 100%, 0.545);
-		--control-strong-stroke-disabled: hsl(0, 0%, 100%, 0.157);
-
-		--control-solid-color-default: hsl(0, 0%, 27%);
-
-		--subtle-color-secondary: hsl(0, 0%, 100%, 0.059);
-		--subtle-color-tertiary: hsl(0, 0%, 100%, 0.039);
-		--subtle-color-disabled: hsl(0, 0%, 100%, 0);
-
-		--control-alt-color-secondary: hsl(0, 0%, 0%, 0.098);
-		--control-alt-color-tertiary: hsl(0, 0%, 100%, 0.043);
-		--control-alt-color-quarternary: hsl(0, 0%, 100%, 0.071);
-		--control-alt-color-disabled: hsl(0, 0%, 100%, 0);
-
-		--control-stroke-default: hsl(0, 0%, 100%, 0.071);
-		--control-stroke-secondary: hsl(0, 0%, 100%, 0.094);
-
-		--control-accent-stroke-default: hsl(0, 0%, 100%, 0.078);
-		--control-accent-stroke-secondary: hsl(0, 0%, 0%, 0.137);
-		--control-accent-stroke-tertiary: hsl(0, 0%, 0%, 0.216);
-		--control-accent-stroke-disabled: hsl(0, 0%, 0%, 0.2);
-
-		--card-stroke-default: hsl(0, 0%, 0%, 0.098);
-		--card-stroke-solid: hsl(0, 0%, 11%);
-
-		--surface-stroke-default: hsl(0, 0%, 100%, 0.082);
-		--surface-stroke-flyout: hsl(0, 0%, 0%, 0.2);
-		--surface-stroke-inverse: hsl(0, 0%, 0%, 0.059);
-
-		--divider-color-default: hsl(0, 0%, 100%, 0.082);
-
-		--focus-stroke-outer: white;
-		--focus-stroke-inner: hsl(0, 0%, 0%, 0.702);
-
-		--card-background-default: hsl(0, 0%, 100%, 0.051);
-		--card-background-secondary: hsl(0, 0%, 100%, 0.031);
-
-		--smoke-color-default: hsl(0, 0%, 0%, 0.302);
-
-		--layer-color-default: hsl(0, 0%, 23%, 0.29);
-		--layer-color-alt: hsl(0, 0%, 100%, 0.051);
-
 		--mica-tint: 0, 0%, 13%;
 		--mica-tint-opacity: 0.8;
-
-		--background-base: #212121; // this is only in #-HEX format for the hero section gradient to work
-		--background-secondary: hsl(0, 0%, 11%);
-		--background-tertiary: hsl(0, 0%, 16%);
-		--background-quarternary: hsl(0, 0%, 17%);
-
-		--system-color-success: hsl(113, 51%, 58%);
-		--system-color-caution: hsl(54, 100%, 49%);
-		--system-color-critical: hsl(354, 100%, 80%);
-		--system-color-attention: hsl(199, 100%, 69%);
-		--system-color-neutral: hsl(0, 0%, 0%, 0.55);
-		--system-background-attention: hsl(0, 0%, 0%, 0.03);
-		--system-background-success: hsl(67, 39%, 17%);
-		--system-background-caution: hsl(40, 46%, 18%);
-		--system-background-critical: hsl(2, 28%, 21%);
-		--system-background-neutral: hsl(0, 0%, 0%, 0.03);
-
-		// Elevation
-		--card-elevation: 0px 2px 4px hsl(0, 0%, 0%, 0.13);
-		--flyout-elevation: 0px 8px 16px hsl(0, 0%, 0%, 0.26);
-		--window-elevation: 0px 32px 64px hsl(0, 0%, 0%, 0.37), 0px 2px 21px hsl(0, 0%, 0%, 0.37);
-
-		// Accent Colors
-		--accent-color-default: var(--accent-color-light-2);
-		--accent-color-secondary: var(--accent-color-light-2-90);
-		--accent-color-tertiary: var(--accent-color-light-2-80);
-		--accent-color-disabled: hsl(0, 0%, 100%, 0.157);
-
-		--accent-text-default: var(--accent-color-light-3);
-		--accent-text-secondary: var(--accent-color-light-3);
-		--accent-text-tertiary: var(--accent-color-light-2);
 	}
 }
 
@@ -354,7 +66,7 @@
 // Focus rings
 *:focus-visible:not(.textbox) {
 	outline: none !important;
-	box-shadow: 0 0 0 2px var(--focus-stroke-outer) !important;
+	box-shadow: 0 0 0 2px var(--fds-focus-stroke-outer) !important;
 }
 
 // Set font
@@ -369,17 +81,17 @@ textarea {
 
 // Selection colors
 ::selection {
-	background-color: var(--accent-color-dark-1);
+	background-color: hsl(var(--fds-accent-dark-1));
 	color: white;
 }
 
 // Outer elements -- <html> and <body>
 html,
 body {
-	width: 100%;
-	height: 100%;
+	inline-size: 100%;
+	block-size: 100%;
 	margin: 0;
-	background-color: var(--background-secondary);
+	background-color: var(--fds-solid-background-secondary);
 }
 
 // Setting the font-size to 62.5% will
@@ -391,8 +103,8 @@ html {
 
 body {
 	@include flex($direction: column);
-	height: fit-content;
-	min-height: 100%;
+	block-size: fit-content;
+	min-block-size: 100%;
 	font-size: 1.4rem;
 }
 
@@ -423,7 +135,7 @@ code {
 	// (mixed results)
 	&::-webkit-scrollbar {
 		display: block;
-		width: 14px;
+		inline-size: 14px;
 		border-radius: 14px;
 
 		// Why does webkit have to be such a pain to work with sometimes?
@@ -460,7 +172,7 @@ code {
 			border: 6px solid transparent;
 			border-block: none;
 			border-radius: 14px;
-			background: var(--control-strong-color-default);
+			background: var(--fds-control-strong-fill-default);
 			background-clip: padding-box;
 
 			&:hover {
@@ -470,14 +182,14 @@ code {
 
 		&-button:single-button {
 			display: block;
-			height: 14px;
+			block-size: 14px;
 		}
 	}
 }
 
 // Utility class to create a styled anchor
 .hyperlink {
-	color: var(--accent-text-default);
+	color: var(--fds-accent-text-primary);
 	text-decoration: underline;
 	cursor: pointer;
 	text-decoration-skip-ink: none;
@@ -488,10 +200,22 @@ code {
 	}
 
 	&:hover {
-		color: var(--accent-text-tertiary);
+		color: var(--fds-accent-text-tertiary);
 	}
 
 	&:active {
-		color: var(--accent-text-secondary);
+		color: var(--fds-accent-text-secondary);
+	}
+}
+
+@keyframes scroll-gradient {
+	from {
+		background-position: 50% 0;
+	}
+	50% {
+		background-position: 50% 100%;
+	}
+	to {
+		background-position: 50% 0;
 	}
 }

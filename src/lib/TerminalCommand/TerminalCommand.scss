@@ -5,15 +5,15 @@
 	margin-block-start: 12px;
 	padding: 8px 12px;
 	padding-inline-end: 8px;
-	border: 1px solid var(--card-stroke-default);
-	border-radius: var(--control-corner-radius);
-	background-color: var(--card-background-default);
-	font-size: var(--control-font-size);
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-control-corner-radius);
+	background-color: var(--fds-card-background-default);
+	font-size: var(--fds-body-font-size);
 	line-height: normal;
-	transition: 83ms ease background-color;
+	transition: var(--fds-control-faster-duration) ease background-color;
 
 	&.copied {
-		background-color: var(--system-background-success);
+		background-color: var(--fds-system-background-success);
 	}
 }
 
@@ -24,7 +24,7 @@
 
 .shell-prefix {
 	margin-inline-end: 12px;
-	color: var(--text-color-tertiary);
+	color: var(--fds-text-tertiary);
 	user-select: none;
 }
 
@@ -35,21 +35,21 @@
 
 .copy-button {
 	@include flex($align: center, $justify: center);
-	width: 34px;
-	height: 34px;
+	inline-size: 34px;
+	block-size: 34px;
 	margin-inline-start: 8px;
 	border: none;
-	border-radius: var(--control-corner-radius);
+	border-radius: var(--fds-control-corner-radius);
 	background-color: transparent;
-	color: var(--text-color-secondary);
+	color: var(--fds-text-secondary);
 	text-decoration: none;
 
 	&:hover {
-		background-color: var(--subtle-color-secondary);
+		background-color: var(--fds-subtle-fill-secondary);
 	}
 
 	&:active {
-		background-color: var(--subtle-color-tertiary);
+		background-color: var(--fds-subtle-fill-tertiary);
 	}
 
 	:global(svg) {

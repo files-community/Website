@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { Button, ProgressRing } from "$lib";
+	import { external } from "$lib";
+	import { Button, ProgressRing } from "fluent-svelte";
 </script>
 
 <slot/>
@@ -13,7 +14,7 @@
 	<Button
 		href="https://github.com/sponsors/yaichenbaum"
 		variant="accent"
-		target="_blank"
+		{...external}
 	>
 		Donate
 	</Button>
@@ -44,7 +45,7 @@
 			&:nth-of-type(2) {
 				margin-block-start: 0;
 				padding-block-start: 1em;
-				border-top: 1px solid var(--subtle-color-secondary)
+				border-top: 1px solid var(--fds-subtle-fill-secondary)
 			}
 		}
 	}

@@ -5,20 +5,23 @@
 	import { featureCards } from "$data/features";
 
 	import FeatureShowcase from "./FeatureShowcase.svelte";
+	import { dev } from "$app/env";
 
 	let currentFeature = 0;
 
 	let cardPaginationInterval = 16;
 
 	onMount(() => {
-		// Iterate through feature cards every n seconds
-		setInterval(
-			() => {
-				currentFeature += currentFeature !== 3 ? 1 : -currentFeature;
-				cardPaginationInterval = 16;
-			},
-			cardPaginationInterval * 1000
-		);
+		if (!dev) {
+			// Iterate through feature cards every n seconds
+			setInterval(
+				() => {
+					currentFeature += currentFeature !== 3 ? 1 : -currentFeature;
+					cardPaginationInterval = 16;
+				},
+				cardPaginationInterval * 1000
+			);
+		}
 	});
 </script>
 

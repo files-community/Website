@@ -11,8 +11,8 @@
 .design-image {
 	@include flex($direction: column, $justify: center, $align: center);
 	position: relative;
-	width: 80vw;
-	height: 100%;
+	inline-size: 80vw;
+	block-size: 100%;
 	margin-block-start: 164px;
 	text-align: center;
 }
@@ -21,7 +21,7 @@
 .files- {
 	&screenshot,
 	&wallpaper {
-		height: auto;
+		block-size: auto;
 		user-select: none;
 		-webkit-user-drag: none;
 	}
@@ -32,42 +32,42 @@
 		inset-inline-end: 0;
 		inset-inline-start: 0;
 		z-index: 1;
-		width: 70%;
-		max-width: 1024px;
+		inline-size: 70%;
+		max-inline-size: 1024px;
 		margin: 0 auto;
-		border: 1px solid var(--surface-stroke-default);
-		border-radius: calc(var(--overlay-corner-radius) / 1.25); 
+		border: 1px solid var(--fds-surface-stroke-default);
+		border-radius: calc(var(--fds-overlay-corner-radius) / 1.25);
 		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
-		box-shadow: var(--window-elevation);
+		box-shadow: var(--fds-dialog-shadow);
 		transition: 50ms linear transform;
 		backdrop-filter: blur(60px) saturate(150%);
-		@media only screen and (min-width: 2048px) {
-			border-radius: var(--overlay-corner-radius);
+		@media screen and (width > 2048px) {
+			border-radius: var(--fds-overlay-corner-radius);
 		}
 	}
 
 	&wallpaper {
 		position: relative;
-		width: 90%;
-		max-width: 1440px;
-		border: 1px solid var(--card-stroke-default);
-		border-radius: calc(var(--overlay-corner-radius) * 1.5);
+		inline-size: 90%;
+		max-inline-size: 1440px;
+		border: 1px solid var(--fds-card-stroke-default);
+		border-radius: calc(var(--fds-overlay-corner-radius) * 1.5);
 	}
 }
 
 // Design section small device support
-@media only screen and (max-width: 1024px) {
+@media screen and (width < 1024px) {
 	// Enlarge wallpaper and screenshot
 	.design-image,
 	.files-wallpaper {
-		width: 100%;
+		inline-size: 100%;
 	}
 	.files-screenshot {
 		inset-block-start: 0;
 	}
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (width < 768px) {
 	// Add some margins to account for more space available
 	.design-image {
 		margin-block-start: 48px;
@@ -79,14 +79,14 @@
 		&screenshot {
 			inset-block-start: 32px;
 			inset-inline-start: -2.5%;
-			width: 105%;
+			inline-size: 105%;
 			transform: none !important; // Prevent parallax scrolling
 		}
 
 		// Fit wallpaper to viewport
 		&wallpaper {
-			width: 180%;
-			height: 80vw;
+			inline-size: 180%;
+			block-size: 80vw;
 			border-radius: 0;
 			object-fit: cover;
 			object-position: bottom;

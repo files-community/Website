@@ -1,11 +1,10 @@
 <script lang="ts">
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
-
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
-
-	import { HyperlinkButton, ListViewItem, Metadata, TextBox, TreeView } from "$lib";
+	import { external, Metadata, TreeView } from "$lib";
+	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	let value: string = "";
 	let searchQuery: string = "";
@@ -96,7 +95,7 @@
 
 <svelte:head>
 	<Metadata
-		title="Files - {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+		title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
 		image="/branding/banner-docs-light.png"
 	/>
 </svelte:head>
@@ -131,12 +130,12 @@
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
 							{#each searchResults as { name, path }, i}
-								<ListViewItem selected={selection === i} href="/docs{path}">
+								<ListItem selected={selection === i} href="/docs{path}">
 									{name}
-								</ListViewItem>
+								</ListItem>
 							{/each}
 						{:else}
-							<ListViewItem>No results found</ListViewItem>
+							<ListItem>No results found</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -174,12 +173,12 @@
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
 							{#each searchResults as { name, path }, i}
-								<ListViewItem selected={selection === i} href="/docs{path}">
+								<ListItem selected={selection === i} href="/docs{path}">
 									{name}
-								</ListViewItem>
+								</ListItem>
 							{/each}
 						{:else}
-							<ListViewItem>No results found</ListViewItem>
+							<ListItem>No results found</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -192,15 +191,13 @@
 					{$page.url.pathname === "/docs" ? " / overview" : ""}
 				</span>
 				<div class="header-right">
-					<HyperlinkButton
-						href="https://github.com/{links.github.owner}/{links.github
+					<Button variant="hyperlink" {...external}
+					        href="https://github.com/{links.github.owner}/{links.github
 							.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
 							'/index'}.svx"
-						rel="noreferrer noopener"
-						target="_blank"
 					>
 						Edit this page
-					</HyperlinkButton>
+					</Button>
 				</div>
 			</header>
 			<slot />

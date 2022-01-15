@@ -7,7 +7,8 @@ Please keep in mind that this method is unsupported and may not work for everyon
 
 1. Create a backup of the registry, make sure to store the backup in your desktop folder so that you can access it in
    the event that Files won't open.
-2. Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/SetFilesAsDefault.zip)
+2.
+Download [this](https://raw.githubusercontent.com/files-community/files-community.github.io/main/data/SetFilesAsDefault.zip)
 archive and extract *both* of the contained .reg files *to the desktop*
 3. Run `SetFilesAsDefault.reg` to set Files as default file explorer
 4. Run `UnsetFilesAsDefault.reg` to restore windows explorer
