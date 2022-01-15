@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { ColorSwatch, external, HeaderChip, PageSection } from "$lib";
-	import { Button, TextBlock } from "fluent-svelte";
+	import { TextBlock } from "fluent-svelte";
 	import type { Tag } from "$data/features";
 
 	let systemTheme = "light";
@@ -55,8 +55,7 @@
 		<TextBlock variant="titleLarge">Distinctly personal.</TextBlock>
 		<p>
 			Have it your way. Files features a fully customizable user interface,
-			right down to the colors and materials. Explore themes created by the
-			community or dive right into the docs and create your own.
+			right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.
 		</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
@@ -67,18 +66,6 @@
 					aria-label="Select theme {i + 1}"
 				/>
 			{/each}
-		</div>
-		<div class="buttons-spacer">
-			<Button
-				href="https://www.microsoft.com/store/productId/9N20KQ61LSFQ"
-				{...external}
-				variant="accent"
-			>
-				Get Themes
-			</Button>
-			<Button variant="hyperlink" href="docs/configuring/custom-themes">
-				Read the docs
-			</Button>
 		</div>
 	</div>
 	<div

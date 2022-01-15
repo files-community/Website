@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { page } from "$app/stores";
+	import { navigating, page } from "$app/stores";
+	import type { NavbarItem } from "$data/links";
+
 	import { external, TreeView } from "$lib";
 	import { ListItem } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
-	import type { NavbarItem } from "$data/links";
 
 	export let items: NavbarItem[] = [];
 	export let buttons = [];
@@ -27,6 +28,10 @@
 		)) {
 			toggleSidebar();
 		}
+	}
+
+	$: {
+		$navigating && (sidebarVisible = false);
 	}
 </script>
 
@@ -166,5 +171,6 @@
 	</aside>
 </header>
 
-<style lang="scss">@use "./Navbar";
+<style lang="scss">
+	@use "./Navbar";
 </style>

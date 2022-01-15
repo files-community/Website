@@ -29,7 +29,7 @@
 	};
 </script>
 
-<div class="tree-view">
+<div class="tree-view scroller">
 	{#each tree as { name, path, type, pages, icon }}
 		{#if type === "category"}
 			<div class="subtree" class:expanded={treeViewState?.[id(name)]}>

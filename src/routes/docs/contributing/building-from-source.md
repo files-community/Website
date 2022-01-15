@@ -1,21 +1,25 @@
 # Building Files from source
 
-1. Install Microsoft Visual Studio 2022 and the UWP Development kit.
-2. Clone the Files [repository](https://github.com/files-community/files) and open `Files.sln` in Visual Studio.
-3. Set the `Files.Package` project as the startup item by right-clicking on `Files.Package` in the solution explorer and
-   hitting 'Set as Startup item'.
-4. In the architecture pane, select the correct architecture for your system as `Debug` which should look like this:
+### 1: Prerequisites
 
-   ![VS Run config: Debug, x64, Files.Package, Local Machine](/docs-resources/vs-architecture-config.png)
+- [Git](https://git-scm.com)
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) with the UWP Development Kit, including C++ UWP build tools.
+- C++ ATL for UWP build tools
 
-5. You're good to go!
+### 2: Clone the repository.
 
-_The two most recent versions of Visual Studio (16.11.3 and 16.11.4) have a bug that prevents debugging Files from
-Visual Studio. You can follow these steps to downgrade to 16.11.2._
+```ps
+git clone https://github.com/files-community/Files
+```
 
-1. Uninstall Visual Studio 2019 (you may want to export the configuration)
-2. Download 16.11.2 from https://docs.microsoft.com/en-us/visualstudio/releases/2019/history
-3. Run the file you downloaded in step 2. If you want to use Visual Studio Community edition, cancel the installation
-   and in the setup window, select the community edition and install it from there, otherwise, you can continue with the
-   setup for the professional edition.
-4. Delete the nuget folder located in your user folder `%USERPROFILE%\.nuget`.
+This will create a local copy of the repository.
+
+### 3: Build the project
+
+To build the app in development mode, open the sln file in Visual Studio (Files.sln) and set the Files.Package project as the startup item by right-clicking on `Files.Package` in the solution explorer & hitting ‘Set as Startup item’.
+
+In the architecture pane, select the correct architecture for your system as `Debug` which should look like this:
+
+![VS Run config: Debug, x64, Files.Package, Local Machine](/docs-resources/vs-architecture-config.png)
+
+You're good to go!

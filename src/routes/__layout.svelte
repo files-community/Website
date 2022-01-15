@@ -20,9 +20,11 @@
 	onMount(() => {
 		theme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches ? "dark" : "light";
 
-		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
-			theme = e.matches ? "dark" : "light";
-		});
+		window
+			.matchMedia("(prefers-color-scheme: dark)")
+			.addEventListener("change", e => {
+				theme = e.matches ? "dark" : "light";
+			});
 	});
 
 	const { github, discord } = links;
@@ -112,17 +114,11 @@
 	<meta content="@FilesForWindows" name="twitter:site">
 	<meta content="@FilesForWindows" name="twitter:creator">
 
-
 	<script type="text/javascript">
-		(function(c, l, a, r, i, t, y) {
-			c[a] = c[a] || function() {
-				(c[a].q = c[a].q || []).push(arguments);
-			};
-			t = l.createElement(r);
-			t.async = true;
-			t.src = "https://www.clarity.ms/tag/" + i;
-			y = l.getElementsByTagName(r)[0];
-			y.parentNode.insertBefore(t, y);
+		(function(c,l,a,r,i,t,y){
+			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			t=l.createElement(r);t.async=true;t.src="https://www.clarity.ms/tag/"+i;
+			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
 		})(window, document, "clarity", "script", "4q1wajdktz");
 	</script>
 </svelte:head>

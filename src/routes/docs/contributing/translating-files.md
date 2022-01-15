@@ -17,7 +17,7 @@
 
 ### Improving an existing language (can be done with any text editor)
 
-- Inside the `MultilingualResources` folder, open the `.xlf` of the language you want to translate.
+- Inside the `\src\Files\MultilingualResources` folder, open the `.xlf` of the language you want to translate.
     - You can open using any text editor, or you can use
       the [Multilingual Editor](https://developer.microsoft.com/windows/develop/multilingual-app-toolkit)
 - If you're using a text editor, translate the strings inside the `<target>` node. Then change the `state` property

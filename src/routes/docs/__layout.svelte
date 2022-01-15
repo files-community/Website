@@ -1,10 +1,22 @@
+<script context="module">
+  export const load = async ({ page }) => ({
+    props: {
+      pagePath: page.url.pathname,
+    },
+  });
+</script>
+
 <script lang="ts">
+  import { fly } from "svelte/transition";
+
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 	import { external, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
+
+	export let pagePath;
 
 	let value: string = "";
 	let searchQuery: string = "";
@@ -101,7 +113,7 @@
 </svelte:head>
 
 <section class="docs">
-	<aside class="sidebar scroller">
+	<aside class="sidebar">
 		<div class="search">
 			<div
 				class="autosuggest-wrapper"
@@ -184,24 +196,27 @@
 				{/if}
 			</div>
 		</div>
-		<div class="page-inner markdown-body">
-			<header>
-				<span>
-					{$page.url.pathname.split("/").join(" / ").substring(2)}
-					{$page.url.pathname === "/docs" ? " / overview" : ""}
-				</span>
-				<div class="header-right">
-					<Button variant="hyperlink" {...external}
-					        href="https://github.com/{links.github.owner}/{links.github
-							.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
-							'/index'}.svx"
-					>
-						Edit this page
-					</Button>
-				</div>
-			</header>
-			<slot />
-		</div>
+		{#key pagePath}
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }} out:fly={{ y: 6, duration: 300 }}>
+				<header>
+					<span>
+						{$page.url.pathname.split("/").join(" / ").substring(2)}
+						{$page.url.pathname === "/docs" ? " / overview" : ""}
+					</span>
+					<div class="header-right">
+						<Button variant="hyperlink"
+							href="https://github.com/{links.github.owner}/{links.github
+								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
+								'/index'}.svx"
+							{...external}
+						>
+							Edit this page
+						</Button>
+					</div>
+				</header>
+				<slot />
+			</div>
+		{/key}
 	</article>
 </section>
 

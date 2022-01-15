@@ -1,21 +1,17 @@
 # Custom Themes
 
-Files allows you to customize the application with custom themes by modifying xaml resource dictionaries, this allows
-users to override the default brushes used throughout the app.
+Files comes with a built in selection of custom themes, but it also allows you to create your own themes by modifying xaml resource dictionaries.
 
-Themes are loaded from the `Themes` folder in the app's `LocalState` folder. A drop-down (Custom theme) is located in
-Appearance settings that allows you to select a custom theme.
+Themes are location inside the `Themes` folder in the app's `LocalState` folder. You can select a custom theme from the appearance page in the settings dialog.
 
-### Quick start
+## How to create a custom theme
 
 1. Open your text editor of choice, and paste in the template located below. Then, save the file
-   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalState\Themes\test1.xaml`.
+   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\Themes\test1.xaml`.
 
-2. Change some of the color values around.
+2. Adjust the colors until satisfied.
 
-3. Change the selected theme from the appearance settings page.
-
-Files will now use your custom theme. If you add more themes, you can switch between them using the dropdown.
+3. Select the theme from the appearance page in the settings dialog.
 
 <details>
 <summary>
@@ -47,6 +43,9 @@ Default template
             <Color x:Key="SystemAccentColorDark1">#CB607C</Color>
             <Color x:Key="SystemAccentColorDark2">#CB607C</Color>
             <Color x:Key="SystemAccentColorDark3">#CB607C</Color>
+            <Color x:Key="SystemAccentColorLight1">#CB607C</Color>
+            <Color x:Key="SystemAccentColorLight2">#CB607C</Color>
+            <Color x:Key="SystemAccentColorLight3">#CB607C</Color>
         </ResourceDictionary>
         <ResourceDictionary x:Key="Light">
             <!-- Background Resources -->
@@ -63,6 +62,9 @@ Default template
             <Color x:Key="SolidBackgroundAcrylic">#CB607C</Color>
             <!-- Accent Color -->
             <Color x:Key="SystemAccentColor">#97475C</Color>
+            <Color x:Key="SystemAccentColorDark1">#97475C</Color>
+            <Color x:Key="SystemAccentColorDark2">#97475C</Color>
+            <Color x:Key="SystemAccentColorDark3">#97475C</Color>
             <Color x:Key="SystemAccentColorLight1">#97475C</Color>
             <Color x:Key="SystemAccentColorLight2">#97475C</Color>
             <Color x:Key="SystemAccentColorLight3">#97475C</Color>
@@ -72,8 +74,3 @@ Default template
 ```
 
 </details> 
-
-You can also use the [Fluent XAML Theme Editor](https://github.com/microsoft/fluent-xaml-theme-editor) to easily modify
-custom themes.
-
-You can view other themes and contribute your own [here](https://github.com/files-community/custom-themes).
