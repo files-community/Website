@@ -1,7 +1,9 @@
 ---
-title: Introducing Files v2.0.33 description: Today, we're pleased to announce that Files v2.0.33 is now available for
-users on Windows 10 and Windows 11. thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg date: 2021-11-04 author:
-yaichenbaum
+title: Introducing Files v2.0.33
+description: Today, we're pleased to announce that Files v2.0.33 is now available for users on Windows 10 and Windows 11.
+thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
+date: 2021-11-04
+author: yaichenbaum
 ---
 
 Today, we're pleased to announce

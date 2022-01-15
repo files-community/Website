@@ -1,16 +1,18 @@
-<script context="module">
-  export const load = async ({ page }) => ({
-    props: {
-      pagePath: page.url.pathname,
-    },
-  });
+<script context="module" lang="ts">
+	import type { Load } from "@sveltejs/kit";
+
+	export const load: Load = ({ url }) => ({
+		props: {
+			pagePath: url.pathname
+		}
+	});
 </script>
 
 <script lang="ts">
-  import { fly } from "svelte/transition";
-
+	import { fly } from "svelte/transition";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
+
 	import { docs, DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 	import { external, Metadata, TreeView } from "$lib";
@@ -197,7 +199,8 @@
 			</div>
 		</div>
 		{#key pagePath}
-			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }} out:fly={{ y: 6, duration: 300 }}>
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }}
+			     out:fly={{ y: 6, duration: 300 }}>
 				<header>
 					<span>
 						{$page.url.pathname.split("/").join(" / ").substring(2)}
@@ -205,10 +208,10 @@
 					</span>
 					<div class="header-right">
 						<Button variant="hyperlink"
-							href="https://github.com/{links.github.owner}/{links.github
+						        href="https://github.com/{links.github.owner}/{links.github
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
 								'/index'}.svx"
-							{...external}
+						        {...external}
 						>
 							Edit this page
 						</Button>
