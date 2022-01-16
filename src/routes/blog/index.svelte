@@ -31,7 +31,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Blog" image="/branding/banner-blog-light.png" />
+	<Metadata title="Files • Blog" image="blog" />
 </svelte:head>
 
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />

@@ -115,7 +115,7 @@
 	>
 		{#each items as { name, path, external, sidebarTree, icon, type }}
 			{#if type === "divider"}
-				<hr role="separator">
+				<hr>
 			{:else if !sidebarTree}
 				<ListItem
 					type="navigation"
@@ -152,7 +152,7 @@
 				/>
 			{/if}
 		{/each}
-		<hr role="separator">
+		<hr>
 		{#each buttons as { icon, href, label }}
 			<ListItem
 				{href}

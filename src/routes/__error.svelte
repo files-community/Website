@@ -13,6 +13,7 @@
 
 <script lang="ts">
 	import { draggable, DragOptions } from "svelte-drag";
+	import { Metadata } from "$lib";
 
 	export let status: number;
 	export let error: Error;
@@ -22,6 +23,10 @@
 		handle: ".titlebar"
 	};
 </script>
+
+<svelte:head>
+	<Metadata />
+</svelte:head>
 
 <section class="error-page">
 	<div class="window" use:draggable={draggableOptions}>

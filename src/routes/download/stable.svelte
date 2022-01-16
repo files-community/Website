@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Download Stable" image="/branding/banner-download-light.png" />
+	<Metadata title="Files • Download Stable" image="download" />
 	<meta
 		http-equiv="refresh"
 		content="0; url=ms-appinstaller:?source=https://filescommunity.blob.core.windows.net/files/stable/Files.Package.appinstaller"

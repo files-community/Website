@@ -108,9 +108,8 @@
 </script>
 
 <svelte:head>
-	<Metadata
-		title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-		image="/branding/banner-docs-light.png"
+	<Metadata title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+	          image="docs"
 	/>
 </svelte:head>
 
