@@ -2,7 +2,6 @@
 	import { Navbar } from "$layout";
 	import { links, NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
-	import { theme } from "$data/theme";
 
 	import "fluent-svelte/theme.css";
 
@@ -13,6 +12,7 @@
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
 	import { dev } from "$app/env";
 	import { page } from "$app/stores";
+	import { onMount } from "svelte";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	const { github, discord } = links;
@@ -53,6 +53,17 @@
 			icon: Code
 		}
 	];
+
+	let theme: "light" | "dark" = "light";
+
+	onMount(() => {
+		theme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches ? "dark" : "light";
+
+		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+			theme = e.matches ? "dark" : "light";
+		});
+	});
+
 </script>
 
 <svelte:head>
@@ -61,7 +72,7 @@
 	<meta content="website" name="og:type">
 
 	<link
-		href="/branding/logo-{$theme ?? 'light'}.svg"
+		href="/branding/logo{$page.url.pathname.startsWith('/themes') ? '-themes' : ''}{'-' + (theme ?? 'light')}.svg"
 		rel="icon"
 		type="image/svg+xml"
 	>
