@@ -2,3 +2,5 @@
 . "$(dirname "$0")/_/husky.sh"
 
 pnpm up
+git add package.json
+git add pnpm-lock.yaml

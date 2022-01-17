@@ -1,4 +1,8 @@
 <script lang="ts">
+	import { dev } from "$app/env";
+	import { page } from "$app/stores";
+	import { onMount } from "svelte";
+
 	import { Navbar } from "$layout";
 	import { links, NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
@@ -10,9 +14,6 @@
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
-	import { dev } from "$app/env";
-	import { page } from "$app/stores";
-	import { onMount } from "svelte";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	const { github, discord } = links;

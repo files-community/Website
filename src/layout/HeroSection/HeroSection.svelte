@@ -28,7 +28,7 @@
 	$: downloadLink = currentDownloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink;
 
 	const copyWingetCommand = () => {
-		navigator.clipboard.writeText("winget install -e Files-Community.Files");
+		navigator.clipboard.writeText("winget install -e 9NGHP3DX8HDX");
 		wingetCommandCopied = true;
 		setTimeout(() => {
 			wingetCommandCopied = false;
@@ -142,7 +142,7 @@
 	To download and install Files using
 	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...external}>winget</a>,
 	paste the following command into a terminal of your choice:
-	<TerminalCommand command="winget install -e Files-Community.Files" />
+	<TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">
 			{wingetCommandCopied ? "Copied!" : "Copy"}
