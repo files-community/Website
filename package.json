@@ -15,10 +15,10 @@
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^3.1.0",
 		"@fluentui/svg-icons": "^1.1.155",
-		"@sveltejs/adapter-netlify": "^1.0.0-next.38",
-		"@sveltejs/kit": "^1.0.0-next.231",
-		"@typescript-eslint/eslint-plugin": "^5.9.1",
-		"@typescript-eslint/parser": "^5.9.1",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.39",
+		"@sveltejs/kit": "^1.0.0-next.232",
+		"@typescript-eslint/eslint-plugin": "^5.10.0",
+		"@typescript-eslint/parser": "^5.10.0",
 		"autoprefixer": "^10.4.2",
 		"cssnano": "^5.0.15",
 		"eslint": "^8.7.0",
@@ -38,7 +38,7 @@
 		"svelte": "^3.46.2",
 		"svelte-check": "^2.3.0",
 		"svelte-drag": "^2.4.0",
-		"svelte-preprocess": "^4.10.1",
+		"svelte-preprocess": "^4.10.2",
 		"tslib": "^2.3.1",
 		"typescript": "^4.5.4"
 	},
