@@ -1,7 +1,13 @@
 <script lang="ts">
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
+
 	import { ListItem } from "fluent-svelte";
+    
+    import { getCSSDuration } from "fluent-svelte/internal";
+    import { slide } from "svelte/transition";
+    import { circOut } from "svelte/easing";
+    
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_16_regular.svg?raw";
 
 	export let tree = [];
@@ -43,7 +49,7 @@
 					<div class="expander-icon" class:expanded={treeViewState?.[id(name)]}>{@html ChevronDown}</div>
 				</ListItem>
 				{#if treeViewState?.[id(name)]}
-					<div class="subtree-items" class:expanded={treeViewState?.[id(name)]}>
+					<div class="subtree-items" transition:slide|local={{ duration: getCSSDuration("--fds-control-fast-duration"), easing: circOut }} class:expanded={treeViewState?.[id(name)]}>
 						<svelte:self tree={pages} />
 					</div>
 				{/if}
@@ -74,9 +80,11 @@
 					inline-size: 100%;
 
 					.expander-icon {
+                        @include flex($align: center);
 						transition: transform var(--fds-control-fast-duration) var(--fds-control-fast-out-slow-in-easing);
+                        transform-origin: center;
 
-						&.expanded { transform: rotate(360deg) }
+						&.expanded { transform: rotate(180deg) }
 
 						svg { @include icon }
 					}

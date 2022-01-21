@@ -64,7 +64,7 @@
 }
 
 // Focus rings
-*:focus-visible:not(.textbox) {
+*:focus-visible:not(.text-box) {
 	outline: none !important;
 	box-shadow: 0 0 0 2px var(--fds-focus-stroke-outer) !important;
 }

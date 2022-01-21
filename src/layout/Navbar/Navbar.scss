@@ -162,7 +162,7 @@
 	}
 
 	.sidebar {
-		@include flex($direction: column, $justify: space-between);
+		display: block;
 	}
 
 	:global(body) {

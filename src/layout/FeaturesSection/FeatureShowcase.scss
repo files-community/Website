@@ -45,17 +45,32 @@
 
 	// Rows
 	tr {
+        border-radius: var(--fds-control-corner-radius);
 		position: relative;
 		block-size: 36px;
 
+        // Tables are rather limited with margins/ To get around
+        // some of these limitations, I'm using apsuedoelement as
+        // a replacement for background-color.
 		&:not(:first-child) {
-			&:hover {
-				background-color: var(--fds-subtle-fill-secondary);
-			}
+            &::after {
+                content: "";
+                position: absolute;
+                inset-block-start: 3px;
+                inset-inline-start: 5px;
+                z-index: 0;
+                width: calc(100% - 10px);
+                height: 30px;
+                border-radius: var(--fds-control-corner-radius);
+            }
 
-			&:active {
-				background-color: var(--fds-subtle-fill-tertiary);
-			}
+            &:hover::after {
+                background-color: var(--fds-subtle-fill-secondary);
+            }
+
+            &:active::after {
+                background-color: var(--fds-subtle-fill-tertiary);
+            }
 		}
 	}
 

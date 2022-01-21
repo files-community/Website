@@ -14,9 +14,9 @@
 	},
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^3.1.0",
-		"@fluentui/svg-icons": "^1.1.155",
-		"@sveltejs/adapter-netlify": "^1.0.0-next.39",
-		"@sveltejs/kit": "^1.0.0-next.232",
+		"@fluentui/svg-icons": "^1.1.157",
+		"@sveltejs/adapter-netlify": "^1.0.0-next.42",
+		"@sveltejs/kit": "^1.0.0-next.236",
 		"@typescript-eslint/eslint-plugin": "^5.10.0",
 		"@typescript-eslint/parser": "^5.10.0",
 		"autoprefixer": "^10.4.2",
@@ -34,13 +34,13 @@
 		"remark-gfm": "^3.0.1",
 		"remark-github": "^11.2.2",
 		"remark-slug": "^7.0.1",
-		"sass": "^1.48.0",
+		"sass": "^1.49.0",
 		"svelte": "^3.46.2",
 		"svelte-check": "^2.3.0",
 		"svelte-drag": "^2.4.0",
 		"svelte-preprocess": "^4.10.2",
 		"tslib": "^2.3.1",
-		"typescript": "^4.5.4"
+		"typescript": "^4.5.5"
 	},
 	"type": "module"
 }
