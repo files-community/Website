@@ -26,16 +26,21 @@
 		:global {
 			.split-button {
 				display: flex;
+                position: relative;
 
 				.button:first-of-type {
 					border-radius: var(--fds-control-corner-radius) 0 0 var(--fds-control-corner-radius);
 					border-inline-end: 1px solid var(--fds-divider-stroke-default);
 				}
 
-				.menu-flyout-wrapper .button {
-					border-radius: 0 var(--fds-control-corner-radius) var(--fds-control-corner-radius) 0;
-					block-size: 100%;
-				}
+				.menu-flyout-wrapper {
+                    display: contents;
+                    .button {
+                        border-radius: 0 var(--fds-control-corner-radius) var(--fds-control-corner-radius) 0;
+                        block-size: 100%;
+                        padding-inline: 8px;
+                    }
+                }
 			}
 		}
 
@@ -46,7 +51,7 @@
 				padding: 7px 12px;
 
 				svg {
-					@include icon($size: 18px);
+					@include icon($size: 14px);
 				}
 			}
 
