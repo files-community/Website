@@ -17,7 +17,7 @@ git clone https://github.com/files-community/Files
 ```ps
 git clone https://github.com/files-community/Files
 ```
-- Download ResX Resource Manager. The standalone version can be installed as click-once application [here](https://clickonce-tom-englert.azurewebsites.net/ResXResourceManager/ResXManager.application).
+- Download ResX Resource Manager. The standalone version can be installed as a click-once application [here](https://clickonce-tom-englert.azurewebsites.net/ResXResourceManager/ResXManager.application).
 - Open `\src\Files\Strings` in the ResX Resource Manager application
-
+- Update or fill in the missing strings
 - Once you're done, push your changes to GitHub, and open a pull request.
