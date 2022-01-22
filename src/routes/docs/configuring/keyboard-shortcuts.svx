@@ -16,6 +16,7 @@ Files comes with built in keyboard shortcuts to make navigating the app easier.
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>  |      Reopen recently closed tab       |
 |          <kbd>Ctrl</kbd> + <kbd>Tab</kbd>           |            Switch next tab            |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Tab</kbd> |          Switch previous tab          |
+|           <kbd>Ctrl</kbd> + <kbd>K</kbd>            |             Duplicate tab             |
 |           <kbd>Ctrl</kbd> + <kbd>N</kbd>            |              New window               |
 |  <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>  |               New file                |
 |  <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>   |         Open compact overlay          |
