@@ -1,7 +1,7 @@
 import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
 import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
 import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
-import EyeVisible from "@fluentui/svg-icons/icons/eye_show_20_regular.svg?raw";
+import EyeVisible from "@fluentui/svg-icons/icons/eye_20_regular.svg?raw";
 
 export type FeatureCardData = {
 	title: string;
