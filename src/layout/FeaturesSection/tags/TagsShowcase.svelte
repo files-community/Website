@@ -2,7 +2,6 @@
 	import { draw } from "svelte/transition";
 	import { taggedFiles, tags } from "$data/features";
 	import { ColorSwatch } from "$lib";
-	import { Tooltip } from "fluent-svelte";
 
 	let selectedTag = 0;
 </script>
@@ -36,16 +35,14 @@
 						     alt={file.icon === "folder" ? `${file.icon} file` : "Folder"}
 						>
 					</td>
-					<td>
-						<Tooltip text="😉">{file.name}</Tooltip>
-					</td>
+					<td>{file.name}</td>
 					<td class="tag-cell">
-                        <div class="tag-cell-inner">
-                            <svg width="16" height="16" viewBox="0 0 16 16">
-                                <circle cx="8" cy="8" r="6" fill={tags.find(t => t.name === file.tag).color} />
-                            </svg>
-                            <span>{file.tag}</span>
-                        </div>
+						<div class="tag-cell-inner">
+							<svg width="16" height="16" viewBox="0 0 16 16">
+								<circle cx="8" cy="8" r="6" fill={tags.find(t => t.name === file.tag).color} />
+							</svg>
+							<span>{file.tag}</span>
+						</div>
 					</td>
 				</tr>
 			{/each}
