@@ -7,7 +7,7 @@ Themes are location inside the `Themes` folder in the app's `LocalState` folder.
 ## How to create a custom theme
 
 1. Open your text editor of choice, and paste in the template located below. Then, save the file
-   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\Themes\test1.xaml`.
+   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalStateThemes\test1.xaml`.
 
 2. Adjust the colors until satisfied.
 
