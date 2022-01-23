@@ -67,6 +67,9 @@
 			</IconButton>
 		</div>
 		<p>Copyright © 2021 - {new Date().getFullYear()}, The Files Authors</p>
+		<a href="https://www.netlify.com" {...external}>
+			<img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+		</a>
 	</div>
 	<div class="column">
 		<p>Pages</p>
