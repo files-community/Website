@@ -43,7 +43,7 @@
 				<FeatureCard
 					on:click={() => {
 						currentFeature = i;
-						cardPaginationInterval += 8;
+						cardPaginationInterval = 24;
 					}}
 					clickable
 					selected={currentFeature === i}
