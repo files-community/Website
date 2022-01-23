@@ -3,7 +3,7 @@
 // Tags showcase
 .tags-showcase {
 	@include flex($direction: column, $justify: center, $align: center, $gap: 1rem);
-    position: relative;
+	position: relative;
 	transition: height 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
 	.showcase-panel {
@@ -21,9 +21,9 @@
 	.files-table {
 		tr {
 			&.tag-selected {
-                &::after {
-                    background-color: var(--fds-accent-default);
-                }
+				&::after {
+					background-color: var(--fds-accent-default);
+				}
 
 				td {
 					color: var(--fds-text-on-accent-primary);
@@ -36,19 +36,16 @@
 		}
 	}
 
-    .tag-cell-inner {
-        @include flex($align: center, $gap: 6px);
-    }
+	.tag-cell-inner {
+		@include flex($align: center, $gap: 6px);
+	}
 
 	.tags-picker {
 		@include flex($justify: center, $gap: 16px);
-        position: absolute;
-        bottom: 0;
 		z-index: 1;
-		padding: 12px;
+		padding: 1rem;
 		animation-delay: 600ms;
 		box-shadow: var(--fds-inactive-window-shadow);
-        transform: translateY(50%);
 
 		:global(.color-swatch) {
 			animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(800ms + (100ms * var(--color-index)));
