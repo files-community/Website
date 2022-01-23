@@ -1,14 +1,12 @@
 <script lang="ts">
 	import { getContributors } from "$data/fetchHomepageData";
 	import { links } from "$data/links";
-	import { Contributor, HeaderChip, PageSection, rangeArray } from "$lib";
+	import { Contributor, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
 
 	// Fetch contributors for the community section
-	const [contributors1, contributors2, contributors3] = rangeArray(3, 1).map(i => getContributors(i));
-
-	$: contributorRows = [contributors1, contributors2, contributors3];
+	const contributorRows = [getContributors(1), getContributors(2), getContributors(3)]
 </script>
 
 <PageSection id="community-section">
