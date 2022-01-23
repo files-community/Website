@@ -12,7 +12,7 @@
 	import { PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
 	import { Button } from "fluent-svelte";
 
-	interface Post {
+	type Post = {
 		path: string;
 		metadata: {
 			title: string;
@@ -67,7 +67,7 @@
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
-				href="blog/{mainPost.path.replace(/\.[^/.]+$/, '')}"
+				href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/"
 				variant="accent"
 			>
 				Read More
