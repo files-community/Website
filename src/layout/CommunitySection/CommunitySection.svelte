@@ -5,6 +5,8 @@
 	import { Button } from "fluent-svelte";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
 
+	console.log(`data:image/svg+xml;${Profile}`);
+
 	// Fetch contributors for the community section
 	const contributorRows = [getContributors(1), getContributors(2), getContributors(3)]
 </script>
@@ -51,7 +53,7 @@
 							{#each Array(35) as _}
 								<Contributor
 									html_url="https://github.com/yaichenbaum"
-									icon={Profile}
+									avatar_url="data:image/svg+xml;{Profile}"
 									contributions={0}
 								/>
 							{/each}
