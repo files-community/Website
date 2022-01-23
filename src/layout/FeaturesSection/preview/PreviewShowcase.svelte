@@ -20,66 +20,68 @@
 	/>
 </svg>
 <div class="previewer-showcase">
-	<aside class="showcase-panel preview-pane">
-		{#each [previewFiles[currentPreviewFile]] as file}
-			<div class="preview">
-				{#if file?.extension === "html"}
-					<iframe title="Document" style:border="none" src="/preview-samples/{file.name}.{file.extension}"></iframe>
-				{:else if file?.code}
+	{#key currentPreviewFile}
+		<aside class="showcase-panel preview-pane">
+			{#each [previewFiles[currentPreviewFile]] as file}
+				<div class="preview">
+					{#if file?.extension === "html"}
+						<iframe title="Document" style:border="none" src="/preview-samples/{file.name}.{file.extension}"></iframe>
+					{:else if file?.code}
 						<pre class="scroller">
 							<code>{@html file.code}</code>
 						</pre>
-				{:else}<img src={file.icon} alt="File icon">{/if}
-			</div>
-			<div class="grabber"></div>
-			<div class="metadata scroller">
-				<h4>
-					{file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
-				</h4>
-				<h5>
-					{file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
-				</h5>
-				{#if file.bitDepth}
-					<h6>Bit Depth</h6>
-					<span>{file.bitDepth}</span>
-				{/if}
-				{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
-					<h6>Dimensions</h6>
-					<span
-					>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
-					>
-				{/if}
-				{#if file?.dpi?.horizontal}
-					<h6>Horizontal Resolution</h6>
-					<span>{file.dpi.horizontal}</span>
-				{/if}
-				{#if file?.dpi?.vertical}
-					<h6>Vertical Resolution</h6>
-					<span>{file.dpi.vertical}</span>
-				{/if}
-				{#if file.items}
-					<h6>Item Count</h6>
-					<span>{file.items}</span>
-				{/if}
-				{#if file.lineCount}
-					<h6>Line Count</h6>
-					<span>{file.lineCount}</span>
-				{/if}
-				{#if file.path}
-					<h6>Path</h6>
-					<span>{file.path}</span>
-				{/if}
-				{#if file.added}
-					<h6>Date Created</h6>
-					<span>{file.added}</span>
-				{/if}
-				{#if file.modified}
-					<h6>Date Modified</h6>
-					<span>{file.modified}</span>
-				{/if}
-			</div>
-		{/each}
-	</aside>
+					{:else}<img src={file.icon} alt="File icon">{/if}
+				</div>
+				<div class="grabber"></div>
+				<div class="metadata scroller">
+					<h4>
+						{file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
+					</h4>
+					<h5>
+						{file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
+					</h5>
+					{#if file.bitDepth}
+						<h6>Bit Depth</h6>
+						<span>{file.bitDepth}</span>
+					{/if}
+					{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
+						<h6>Dimensions</h6>
+						<span
+						>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
+						>
+					{/if}
+					{#if file?.dpi?.horizontal}
+						<h6>Horizontal Resolution</h6>
+						<span>{file.dpi.horizontal}</span>
+					{/if}
+					{#if file?.dpi?.vertical}
+						<h6>Vertical Resolution</h6>
+						<span>{file.dpi.vertical}</span>
+					{/if}
+					{#if file.items}
+						<h6>Item Count</h6>
+						<span>{file.items}</span>
+					{/if}
+					{#if file.lineCount}
+						<h6>Line Count</h6>
+						<span>{file.lineCount}</span>
+					{/if}
+					{#if file.path}
+						<h6>Path</h6>
+						<span>{file.path}</span>
+					{/if}
+					{#if file.added}
+						<h6>Date Created</h6>
+						<span>{file.added}</span>
+					{/if}
+					{#if file.modified}
+						<h6>Date Modified</h6>
+						<span>{file.modified}</span>
+					{/if}
+				</div>
+			{/each}
+		</aside>
+	{/key}
 	<div class="showcase-panel files-grid">
 		{#each previewFiles as file, i}
 			<div

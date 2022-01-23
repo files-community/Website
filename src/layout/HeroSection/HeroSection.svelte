@@ -71,8 +71,8 @@
 					variant="accent"
 					href={currentDownloadSource !== "Winget (CLI)" ? downloadLink : undefined}
 					on:click={() => {
-							if (currentDownloadSource === "Winget (CLI)") wingetDialogOpen = true;
-						}}
+						if (currentDownloadSource === "Winget (CLI)") wingetDialogOpen = true;
+					}}
 					{...(currentDownloadSource !== "Winget (CLI)" ? external : undefined)}
 				>
 					{@html ArrowDownload}
