@@ -3,7 +3,7 @@
 // Outer section
 :global {
 	#features-section {
-		background-color: var(--background-base);
+		background-color: var(--fds-solid-background-base);
 
 		// Inner section
 		.page-section-inner {
@@ -31,14 +31,14 @@
 	grid-gap: 8px;
 
 	// Small device support
-	@media only screen and (max-width: 1164px) {
+	@media screen and (width < 1164px) {
 		// Stack cards vertically
 		grid-template-columns: auto;
 	}
 }
 
 // Features section small device support
-@media only screen and (max-width: 924px) {
+@media screen and (width < 924px) {
 	:global(#features-section .page-section-inner) {
 		grid-template-columns: auto;
 	}

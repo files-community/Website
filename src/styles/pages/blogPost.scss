@@ -5,7 +5,7 @@
 	padding: 48px;
 
 	article {
-		max-width: 768px;
+		max-inline-size: 768px;
 	}
 
 	.markdown-body {
@@ -15,7 +15,7 @@
 }
 
 :global(.back-button) {
-	color: var(--text-color-tertiary);
+	color: var(--fds-text-tertiary);
 }
 
 .post- {
@@ -31,7 +31,7 @@
 			}
 		}
 
-		@media only screen and (max-width: 1024px) {
+		@media screen and (width < 1024px) {
 			align-items: flex-start;
 			flex-direction: column;
 			margin: 0;
@@ -42,20 +42,20 @@
 		@include flex($align: center, $gap: 12px);
 		margin-block-end: 24px;
 		padding: 18px 0;
-		border-block-end: 1px solid var(--divider-color-default);
-		background-color: var(--background-secondary);
-		color: var(--text-color-tertiary);
+		border-block-end: 1px solid var(--fds-divider-stroke-default);
+		background-color: var(--fds-solid-background-secondary);
+		color: var(--fds-text-tertiary);
 
 		img {
-			width: 32px;
-			height: 32px;
-			border: 1px solid var(--card-stroke-default);
+			inline-size: 32px;
+			block-size: 32px;
+			border: 1px solid var(--fds-card-stroke-default);
 			border-radius: 50%;
 		}
 
 		:global {
 			.menu-flyout {
-				min-width: 120px;
+				min-inline-size: 120px;
 
 				&-container {
 					margin-inline-start: auto;
@@ -65,9 +65,9 @@
 	}
 
 	&thumbnail {
-		max-width: 100%;
+		max-inline-size: 100%;
 		margin-block-end: 48px;
-		border: 1px solid var(--card-stroke-default);
-		border-radius: var(--overlay-corner-radius);
+		border: 1px solid var(--fds-card-stroke-default);
+		border-radius: var(--fds-overlay-corner-radius);
 	}
 }

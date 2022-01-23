@@ -1,18 +1,18 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
 
-	export const load: Load = async ({ page, fetch }) => ({
+	export const load: Load = async ({ url, fetch }) => ({
 		props: {
-			post: await fetch(`${ page.path }.json`).then(response => response.json())
+			post: await fetch(`${ url.pathname }.json`).then(response => response.json())
 		}
 	});
 </script>
 
 <script lang="ts">
-	import { MenuFlyout, ListViewItem, IconButton } from "$lib";
-
+	import { Metadata, externalLink } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
+	import { IconButton, ListItem, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 
 	export let post: {
 		metadata: {
@@ -28,12 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>Files - {title}</title>
-	<meta content="Files - {title}" name="og:title" />
-	<meta content="Files - {title}" name="twitter:title" />
-
-	<meta content={thumbnail} name="og:image" />
-	<meta content={thumbnail} name="twitter:image" />
+	<Metadata title="Files • {title}" image={thumbnail} />
 </svelte:head>
 
 <section class="blog-post">
@@ -51,12 +46,11 @@
 			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
-			<img alt="{author} avatar" src="https://github.com/{author}.png" />
+			<img alt="{author} avatar" src="https://github.com/{author}.png">
 			<a
 				class="hyperlink"
 				href="https://github.com/{author}"
-				rel="noreferrer noopener"
-				target="_blank">@{author}</a
+				{...externalLink}>@{author}</a
 			>
 			<span>•</span>
 			{new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString(
@@ -67,37 +61,33 @@
 					month: "short"
 				}
 			)}
-			<MenuFlyout>
+			<MenuFlyout placement="bottom">
 				<IconButton size={20} aria-label="Share" class="share-button" title="Share">
 					{@html Share}
 				</IconButton>
-				<svelte:fragment slot="menu">
-					<ListViewItem
-						tabindex="0"
+				<svelte:fragment slot="flyout">
+					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText(window.location.href)}
 					>
 						Copy URL
-					</ListViewItem>
-					<ListViewItem
+					</MenuFlyoutItem>
+					<MenuFlyoutItem
 						href="https://twitter.com/intent/tweet?text={window.location.href}"
-						rel="noreferrer noopener"
-						target="_blank"
+						{...externalLink}
 					>
 						Twitter
-					</ListViewItem>
-					<ListViewItem
-						href="https://www.facebook.com/sharer/sharer.php?u={window.location
-							.href}"
-						rel="noreferrer noopener"
-						target="_blank"
+					</MenuFlyoutItem>
+					<MenuFlyoutItem
+						href="https://www.facebook.com/sharer/sharer.php?u={window.location.href}"
+						{...externalLink}
 					>
 						Facebook
-					</ListViewItem>
+					</MenuFlyoutItem>
 				</svelte:fragment>
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
+			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail">
 		{/if}
 		<div class="markdown-body">
 			<slot />

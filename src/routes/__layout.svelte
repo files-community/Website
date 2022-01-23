@@ -1,10 +1,13 @@
 <script lang="ts">
-	import { onMount } from "svelte";
+	import { dev } from "$app/env";
 	import { page } from "$app/stores";
+	import { onMount } from "svelte";
 
-	import { links } from "$data/links";
-	import { docs } from "$data/docs";
 	import { Navbar } from "$layout";
+	import { links, NavbarItem } from "$data/links";
+	import { docs } from "$data/docs";
+
+	import "fluent-svelte/theme.css";
 
 	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
@@ -13,23 +16,9 @@
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
-	let theme = "light";
-
-	onMount(() => {
-		theme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches
-			? "dark"
-			: "light";
-
-		window
-			.matchMedia("(prefers-color-scheme: dark)")
-			.addEventListener("change", e => {
-				theme = e.matches ? "dark" : "light";
-			});
-	});
-
 	const { github, discord } = links;
 
-	const navbarItems = [
+	const navbarItems: NavbarItem[] = [
 		{
 			name: "Home",
 			path: "/",
@@ -65,62 +54,68 @@
 			icon: Code
 		}
 	];
+
+	let theme: "light" | "dark" = "light";
+
+	onMount(() => {
+		theme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches ? "dark" : "light";
+
+		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+			theme = e.matches ? "dark" : "light";
+		});
+	});
+
 </script>
 
 <svelte:head>
-	<meta content="Files" name="og:site_name" />
+	<meta content="Files" name="og:site_name">
 
-	<meta content="website" name="og:type" />
+	<meta content="website" name="og:type">
 
 	<link
-		href="/branding/logo-{theme === 'light' ? 'light' : 'dark'}.svg"
+		href="/branding/logo{$page.url.pathname.startsWith('/themes') ? '-themes' : ''}{'-' + (theme ?? 'light')}.svg"
 		rel="icon"
 		type="image/svg+xml"
-	/>
-
-	{#if $page.path === "/"}
-		<meta
-			content="/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
-			name="og:image"
-		/>
-
-		<meta
-			content="https://{$page.host}/branding/banner-{theme === 'light' ? 'light' : 'dark'}.png"
-			name="twitter:image"
-		/>
-	{/if}
+	>
 
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="description"
-	/>
+	>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="og:description"
-	/>
+	>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="twitter:description"
-	/>
+	>
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"
-	/>
-	<meta content="Files Community" name="author" />
+	>
+	<meta content="Files Community" name="author">
 
-	<meta content="#005fb8" name="theme-color" />
+	<meta content="#005fb8" name="theme-color">
 
-	<meta content="summary_large_image" name="twitter:card" />
-	<meta content="@FilesForWindows" name="twitter:site" />
-	<meta content="@FilesForWindows" name="twitter:creator" />
+	<meta content="summary_large_image" name="twitter:card">
+	<meta content="@FilesForWindows" name="twitter:site">
+	<meta content="@FilesForWindows" name="twitter:creator">
 
-	<script type="text/javascript">
-		(function(c,l,a,r,i,t,y){
-			c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-			t=l.createElement(r);t.async=true;t.src="https://www.clarity.ms/tag/"+i;
-			y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-		})(window, document, "clarity", "script", "4q1wajdktz");
-	</script>
+	{#if !dev && $page.url.host !== "files.community"}
+		<script type="text/javascript">
+			(function(c, l, a, r, i, t, y) {
+				c[a] = c[a] || function() {
+					(c[a].q = c[a].q || []).push(arguments);
+				};
+				t = l.createElement(r);
+				t.async = true;
+				t.src = "https://www.clarity.ms/tag/" + i;
+				y = l.getElementsByTagName(r)[0];
+				y.parentNode.insertBefore(t, y);
+			})(window, document, "clarity", "script", "4q1wajdktz");
+		</script>
+	{/if}
 </svelte:head>
 
 <Navbar buttons={navbarButtons} items={navbarItems} />

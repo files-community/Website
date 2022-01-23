@@ -1,8 +1,24 @@
 @use "src/styles/mixins" as *;
 
+@keyframes rotate-background {
+	from {
+		background-position: 0 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	to {
+		background-position: 0 50%;
+	}
+}
+
 // Center our buttons
 :global(#community-section .buttons-spacer) {
 	justify-content: center;
+
+	:global(.button.style-hyperlink) {
+		color: var(--fds-accent-text-primary);
+	}
 }
 
 .community-section- {
@@ -11,15 +27,15 @@
 	// some variables.
 	&text {
 		text-align: center;
-		--background-base: hsl(0, 0%, 95%);
-		--text-color-primary: hsl(0, 0%, 13%);
-		--text-color-secondary: hsl(0, 0%, 16%);
-		--text-color-tertiary: var(--text-color-secondary);
-		--subtle-color-secondary: hsl(0, 0%, 0%, 0.095);
-		--subtle-color-tertiary: hsl(0, 0%, 0%, 0.024);
-		--subtle-color-disabled: transparent;
-		--accent-text-default: var(--accent-color-dark-3);
-		--accent-text-tertiary: var(--accent-color-dark-2);
+		--fds-solid-background-base: hsl(0, 0%, 95%);
+		--fds-text-primary: hsl(0, 0%, 13%);
+		--fds-text-secondary: hsl(0, 0%, 16%);
+		--fds-text-tertiary: var(--fds-text-secondary);
+		--fds-subtle-fill-secondary: hsl(0, 0%, 0%, 0.095);
+		--fds-subtle-fill-tertiary: hsl(0, 0%, 0%, 0.024);
+		--fds-subtle-fill-disabled: transparent;
+		--fds-accent-text-primary: hsl(var(--fds-accent-dark-3));
+		--fds-accent-text-tertiary: hsl(var(--fds-accent-dark-2));
 
 		// Align descriptions to center
 		p {
@@ -33,11 +49,11 @@
 		@include flex($direction: column, $justify: center, $align: center);
 		position: relative;
 		z-index: 0;
-		width: 100%;
-		max-width: 2048px;
-		min-height: 600px;
+		inline-size: 100%;
+		max-inline-size: 2048px;
+		min-block-size: 600px;
 		padding: 72px 48px;
-		border-radius: var(--overlay-corner-radius);
+		border-radius: var(--fds-overlay-corner-radius);
 		background-color: #f9f9f9;
 		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
 		0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
@@ -46,18 +62,27 @@
 		0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
 		0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 
-		canvas {
+		.rainbow-background {
 			position: absolute;
 			inset-block-start: 0;
 			inset-inline-start: 0;
 			z-index: -1;
-			width: 100%;
-			height: 100%;
-			border-radius: var(--overlay-corner-radius);
-			--gradient-color-1: #a28af1;
-			--gradient-color-2: #bf98f7;
-			--gradient-color-3: #ccbad4;
-			--gradient-color-4: #8692eb;
+			inline-size: 100%;
+			block-size: 100%;
+			border-radius: var(--fds-overlay-corner-radius);
+
+			animation: rotate-background 15s infinite linear;
+
+			background-color: hsl(282, 23%, 78%);
+			background-image: radial-gradient(at 68% 34%, hsla(233, 72%, 73%, 1) 0, transparent 43%),
+			radial-gradient(at 51% 0%, hsla(254, 79%, 75%, 1) 0, transparent 57%),
+			radial-gradient(at 80% 2%, hsla(274, 88%, 72%, 1) 0, transparent 41%),
+			radial-gradient(at 96% 100%, hsla(254, 89%, 65%, 1) 0, transparent 47%),
+			radial-gradient(at 1% 84%, hsla(233, 72%, 73%, 1) 0, transparent 41%),
+			radial-gradient(at 19% 100%, hsla(262, 73%, 70%, 1) 0, transparent 44%),
+			radial-gradient(at 46% 100%, hsla(254, 79%, 75%, 1) 0, transparent 49%),
+			radial-gradient(at 92% 72%, hsla(282, 24%, 79%, 1) 0, transparent 43%);
+			background-size: 150% 150%;
 		}
 	}
 }
@@ -83,8 +108,8 @@
 	// Serves no other purpose other than spacing it from the main text.
 	&container {
 		position: relative;
-		width: 100vw;
-		max-width: 2800px;
+		inline-size: 100vw;
+		max-inline-size: 2800px;
 
 		// Preserve box-shadows when overflow is hidden
 		margin-block-end: -128px;
@@ -97,9 +122,9 @@
 		&::after {
 			position: absolute;
 			z-index: 1;
-			width: 96px;
-			height: 100%;
-			@media only screen and (min-width: 2800px) {
+			inline-size: 96px;
+			block-size: 100%;
+			@media screen and (width > 2800px) {
 				content: "";
 			}
 		}
@@ -108,7 +133,7 @@
 			inset-inline-start: 0;
 			background-image: linear-gradient(
 							90deg,
-							var(--background-secondary),
+							var(--fds-solid-background-secondary),
 							transparent
 			);
 		}
@@ -118,7 +143,7 @@
 			background: linear-gradient(
 							90deg,
 							transparent,
-							var(--background-secondary)
+							var(--fds-solid-background-tertiary)
 			);
 		}
 	}
@@ -156,7 +181,7 @@
 }
 
 // Community section small device support
-@media only screen and (max-width: 768px) {
+@media screen and (width < 768px) {
 	// We have less space to work with here,
 	// so we'll decrease the padding of the card.
 	.community-section-card {

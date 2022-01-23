@@ -1,27 +1,12 @@
 <script lang="ts">
-	import type { ContributorData } from "$data/fetchHomepageData";
 	import { getContributors } from "$data/fetchHomepageData";
-	import { onMount } from "svelte";
-
 	import { links } from "$data/links";
-	import {
-		Contributor,
-		HeaderChip,
-		HyperlinkButton,
-		PageSection,
-		rainbowCanvas
-	} from "$lib";
+	import { Contributor, HeaderChip, PageSection } from "$lib";
+	import { Button } from "fluent-svelte";
+	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
 
 	// Fetch contributors for the community section
-	let [contributors1, contributors2, contributors3]: Array<ContributorData[]> =
-		[[], [], []];
-
-	onMount(async () => {
-		// Fetch contributors for the community section
-		contributors1 = await getContributors(1);
-		contributors2 = await getContributors(2);
-		contributors3 = await getContributors(3);
-	});
+	const contributorRows = [getContributors(1), getContributors(2), getContributors(3)]
 </script>
 
 <PageSection id="community-section">
@@ -34,33 +19,50 @@
 				collective of hundreds of contributors.
 			</p>
 			<div class="buttons-spacer">
-				<HyperlinkButton href="https://discord.gg/{links.discord}">
+				<Button variant="hyperlink" href="https://discord.gg/{links.discord}">
 					Join the discussion
-				</HyperlinkButton>
-				<HyperlinkButton href="/docs/contributing/code-style">
+				</Button>
+				<Button variant="hyperlink" href="/docs/contributing/code-style">
 					Become a contributor
-				</HyperlinkButton>
+				</Button>
 			</div>
 		</div>
-		{#if contributors1 && contributors2 && contributors3}
+		{#if contributorRows.every(it => it)}
 			<div class="contributors-container">
-				{#each [contributors1, contributors2, contributors3] as contributors}
+				{#each contributorRows as contributorsPromise}
 					<div class="contributors-row">
-						{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
-							<Contributor
-								{html_url}
-								{avatar_url}
-								{login}
-								{contributions}
-								{type}
-							/>
-						{/each}
+						{#await contributorsPromise then contributors}
+							{#each contributors.sort(() => Math.random() - 0.5) as {
+								html_url,
+								avatar_url,
+								login,
+								contributions,
+								type
+							}}
+								<Contributor
+									{html_url}
+									{avatar_url}
+									{login}
+									{contributions}
+									{type}
+								/>
+							{/each}
+						{:catch err}
+							{#each Array(35) as _}
+								<Contributor
+									html_url="https://github.com/yaichenbaum"
+									avatar_url="data:image/svg+xml;{encodeURIComponent(Profile)}"
+									contributions={0}
+								/>
+							{/each}
+						{/await}
 					</div>
 				{/each}
 			</div>
 		{/if}
-		<canvas use:rainbowCanvas></canvas>
+		<div class="rainbow-background"></div>
 	</div>
 </PageSection>
 
-<style lang="scss" src="./CommunitySection.scss"></style>
+<style lang="scss">@use "./CommunitySection";
+</style>

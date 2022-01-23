@@ -1,0 +1,188 @@
+@use "src/styles/mixins" as *;
+
+// Preview pane showcase
+.previewer-showcase {
+	@include flex($align: center);
+
+	// Preview pane sidebar
+	.preview-pane {
+		@include flex($direction: column);
+		inline-size: 260px;
+		block-size: 390px;
+		border-radius: var(--fds-overlay-corner-radius) 0 0 var(--fds-overlay-corner-radius);
+		animation: 400ms cubic-bezier(0.1, 0.9, 0.2, 1) preview-pane-open backwards 800ms;
+
+		// Inner preview pane elements
+		// File preview and file metadata
+		.preview,
+		.metadata {
+			padding: 8px;
+		}
+
+		// File preview
+		// Main container for rich previewsT
+		.preview {
+			@include flex($align: center);
+			flex: 0 0 auto;
+			block-size: 144px;
+		}
+
+		// Rich preview elements
+		img,
+		iframe,
+		:global(pre) {
+			inline-size: 100%;
+			block-size: 100%;
+			overflow: auto;
+		}
+
+		img {
+			user-select: none;
+			-webkit-user-drag: none;
+			object-fit: contain;
+		}
+
+		iframe {
+			border-radius: var(--fds-control-corner-radius);
+		}
+
+		:global {
+			pre {
+				margin: 0;
+				font-family: var(--font-family-monospace);
+				user-select: text;
+
+				&::-webkit-scrollbar {
+					display: none;
+				}
+			}
+		}
+
+		// Grabber
+		// Used for scaling up the preview size
+		.grabber {
+			@include flex($align: center, $justify: center);
+			flex: 0 0 auto;
+			inline-size: 100%;
+			block-size: 20px;
+			cursor: n-resize;
+
+			// Inner grabber
+			&::before {
+				content: "";
+				position: absolute;
+				inline-size: 28px;
+				block-size: 4px;
+				border-radius: var(--fds-control-corner-radius);
+				background: var(--fds-subtle-fill-secondary);
+			}
+		}
+
+		// File metadata
+		// Displays information relating to the relevant file
+		.metadata {
+			color: var(--fds-text-secondary);
+			font: {
+				size: var(--fds-body-font-size);
+				weight: normal;
+			}
+			line-height: normal;
+			word-break: break-word;
+			user-select: text;
+		}
+
+		// Metadata elements
+		h4,
+		h5,
+		h6 {
+			color: var(--fds-text-primary);
+		}
+
+		h4,
+		h5 {
+			margin: 0;
+			text-align: center;
+		}
+
+		// Used to display file name
+		h4 {
+			margin-block-end: 5px;
+			font: {
+				size: 20px;
+				weight: 600;
+			}
+			font-family: var(--font-family-sans-serif);
+		}
+
+		// Used to display file extension
+		h5 {
+			font: {
+				size: 14px;
+				weight: normal;
+			}
+		}
+
+		// Used as secondary headers for metadata entries
+		h6 {
+			margin-inline: 0;
+			margin-block: 8px 2px;
+			font: {
+				size: var(--fds-body-font-size);
+				weight: normal;
+			}
+			user-select: none;
+		}
+	}
+
+	// Files GridView
+	// Serves as a picker for previewing files
+	.files-grid {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		grid-gap: 4px;
+		padding: 12px;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+
+		// File entries
+		.file {
+			@include flex($direction: column, $justify: space-between, $align: center);
+			animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(400ms + (100ms * var(--file-index)));
+			inline-size: 84px;
+			block-size: 96px;
+			padding: 12px;
+			border-radius: var(--fds-control-corner-radius);
+			color: var(--fds-text-primary);
+			font-size: var(--fds-body-font-size);
+
+			&:hover {
+				background-color: var(--fds-subtle-fill-secondary);
+			}
+
+			&:active {
+				background-color: var(--fds-subtle-fill-tertiary);
+			}
+
+			&.selected {
+				border-radius: calc(var(--fds-control-corner-radius) + 2px);
+				background-color: var(--fds-subtle-fill-secondary);
+				box-shadow: inset 0 0 0 2px var(--fds-accent-default),
+				inset 0 0 0 3px var(--fds-solid-background-base);
+			}
+
+			// File entry icon
+			img {
+				inline-size: 88%;
+				block-size: auto;
+			}
+		}
+	}
+}
+
+// Preview pane entrance animation
+@keyframes preview-pane-open {
+	from {
+		opacity: 0;
+		transform: translateX(80%);
+	}
+}

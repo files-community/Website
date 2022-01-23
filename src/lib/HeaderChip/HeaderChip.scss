@@ -3,11 +3,12 @@
 	margin-block-end: 8px;
 	padding: 4px 16px;
 	border-radius: 50px;
-	background-color: var(--subtle-color-secondary);
-	color: var(--text-color-secondary);
+	background-color: var(--fds-subtle-fill-secondary);
+	color: var(--fds-text-secondary);
 	font: {
-		size: var(--control-font-size);
+		size: var(--fds-body-font-size);
 		weight: 600;
 	}
 	line-height: 18px;
+	user-select: none;
 }

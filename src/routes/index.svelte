@@ -1,22 +1,10 @@
 <script lang="ts">
-	import {
-		CommunitySection,
-		DesignSection,
-		FeaturesSection,
-		HeroSection,
-		ThemesSection,
-		Footer
-	} from "$layout";
-	import { page } from "$app/stores";
+	import { CommunitySection, DesignSection, FeaturesSection, Footer, HeroSection, ThemesSection } from "$layout";
+	import { Metadata } from "$lib";
 </script>
 
 <svelte:head>
-	<title>Files</title>
-	<meta content="Files - Home" name="og:title" />
-	<meta content="Files - Home" name="twitter:title" />
-
-	<meta content="/branding/banner-light.png" name="og:image" />
-	<meta content="https://{$page.host}/branding/banner-light.png" name="twitter:image" />
+	<Metadata title="Files • Home" />
 </svelte:head>
 
 <HeroSection />

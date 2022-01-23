@@ -5,17 +5,23 @@
 	import { featureCards } from "$data/features";
 
 	import FeatureShowcase from "./FeatureShowcase.svelte";
+	import { dev } from "$app/env";
 
 	let currentFeature = 0;
 
-	const cardPaginationInterval = 16;
+	let cardPaginationInterval = 16;
 
 	onMount(() => {
-		// Iterate through feature cards every n seconds
-		setInterval(
-			() => (currentFeature += currentFeature !== 3 ? 1 : -currentFeature),
-			cardPaginationInterval * 1000
-		);
+		if (!dev) {
+			// Iterate through feature cards every n seconds
+			setInterval(
+				() => {
+					currentFeature += currentFeature !== 3 ? 1 : -currentFeature;
+					cardPaginationInterval = 16;
+				},
+				cardPaginationInterval * 1000
+			);
+		}
 	});
 </script>
 
@@ -31,11 +37,14 @@
 			Files has it covered with robust features you expect from a modern file
 			manager.
 		</p>
-		<hr role="separator" />
+		<hr>
 		<div class="feature-cards-container">
 			{#each featureCards as feature, i}
 				<FeatureCard
-					on:click={() => (currentFeature = i)}
+					on:click={() => {
+						currentFeature = i;
+						cardPaginationInterval = 24;
+					}}
 					clickable
 					selected={currentFeature === i}
 					description={feature.description}

@@ -1,3 +1,5 @@
+import type { DocsMap } from "$data/docs";
+
 export const links = {
 	discord: "files",
 	twitter: "FilesForWindows",
@@ -6,5 +8,14 @@ export const links = {
 		owner: "files-community",
 		repo: "files",
 		siteRepo: "website"
-	},
+	}
+};
+
+export type NavbarItem = {
+	name: string;
+	path: string;
+	external?: boolean;
+	icon: any;
+	type?: string;
+	sidebarTree?: DocsMap[];
 };

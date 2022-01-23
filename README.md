@@ -1,4 +1,4 @@
-<h1 align="center">Files Website - <a href="https://files.community">files.community</a></h1>
+<h1 align="center">Files Website • <a href="https://files.community">files.community</a></h1>
 
 <p align="center">
     <a href="#overview">Overview</a> |

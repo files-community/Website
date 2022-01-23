@@ -2,4 +2,5 @@
 	<slot />
 </span>
 
-<style lang="scss" src="./HeaderChip.scss"></style>
+<style lang="scss">@use "./HeaderChip";
+</style>

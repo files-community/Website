@@ -2,12 +2,13 @@
 	import { page } from "$app/stores";
 
 	export let title = "Files";
-	export let image = "/branding/banner-light.png";
+	export let image = "";
+	$: imageFile = image.startsWith("/") ? image : `/branding/banner-${image}.png`
 </script>
 
 <title>{title}</title>
-<meta content={title} name="og:title" />
-<meta content={title} name="twitter:title" />
+<meta content={title} name="og:title">
+<meta content={title} name="twitter:title">
 
-<meta content={image} name="og:image" />
-<meta content="https://{$page.host}{image}" name="twitter:image" />
+<meta content={imageFile} name="og:image">
+<meta content="https://{$page.url.host}{imageFile}" name="twitter:image">

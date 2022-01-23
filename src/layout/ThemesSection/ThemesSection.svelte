@@ -1,12 +1,8 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import {
-		Button,
-		ColorSwatch,
-		HeaderChip,
-		HyperlinkButton,
-		PageSection
-	} from "$lib";
+	import { ColorSwatch, HeaderChip, PageSection } from "$lib";
+	import { TextBlock } from "fluent-svelte";
+	import type { Tag } from "$data/features";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
@@ -16,37 +12,24 @@
 	let noInitialDelay = false;
 	let anchor: HTMLDivElement;
 
-	const themeColors = [
-		"var(--background-tertiary);",
-		"#414958",
-		"#6441a4",
-		"#feb400",
-		"#073642",
-		"#88c0d0"
+	const themeColors: Tag[] = [
+		{ name: "Dark Grey • Light Blue", color: "var(--fds-solid-background-tertiary)" },
+		{ name: "Blue Grey • Neon Green", color: "hsl(219, 15%, 30%)" },
+		{ name: "Purple", color: "hsl(261, 43%, 45%)" },
+		{ name: "Yellow • White", color: "hsl(43, 100%, 50%)" },
+		{ name: "Cool White • Dark Teal", color: "hsl(192, 81%, 14%)" },
+		{ name: "Sky Blue", color: "hsl(193, 43%, 67%)" }
 	];
 
-	$: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
+	$: themeSrc = currentTheme > 0 ? `theme-${ currentTheme + 1 }` : systemTheme;
 
 	// Essentially determines if the user has seen the top 1/4th of the themes section or not
 	$: if (
 		anchor &&
 		anchor.getBoundingClientRect().top + anchor.offsetHeight / 4 + scrollY <
-			scrollY + innerHeight
+		scrollY + innerHeight
 	)
 		visible = true;
-
-	// function replayAnimations() {
-	// 	noInitialDelay = true;
-
-	// 	if (!!HTMLElement.prototype.getAnimations) {
-	// 		for (const node of showcase.querySelectorAll(".card, img")) {
-	// 			for (const animation of node.getAnimations()) {
-	// 				animation.finish();
-	// 				animation.play();
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	onMount(() => {
 		visible = false; // We want SSR to have these visible by default, so we'll just do this.
@@ -66,10 +49,10 @@
 <svelte:window bind:innerHeight bind:scrollY />
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
-	<div bind:this={anchor} class="scroll-anchor" />
+	<div bind:this={anchor} class="scroll-anchor"></div>
 	<div class="themes-section-content">
 		<HeaderChip>Themes</HeaderChip>
-		<h2>Distinctly personal.</h2>
+		<TextBlock variant="titleLarge">Distinctly personal.</TextBlock>
 		<p>
 			Have it your way. Files features a fully customizable user interface,
 			right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.
@@ -79,7 +62,7 @@
 				<ColorSwatch
 					bind:group={currentTheme}
 					value={i}
-					{color}
+					colorName={color}
 					aria-label="Select theme {i + 1}"
 				/>
 			{/each}
@@ -91,7 +74,7 @@
 		class:visible
 	>
 		<div class="column left">
-			<div class="card" style="height: 72px;" />
+			<div class="card" style:block-size="72px"></div>
 			<img
 				alt="Properties dialog"
 				class="properties"
@@ -99,7 +82,7 @@
 				loading="lazy"
 				src="/ui/exported/properties-{themeSrc}.svg"
 				width="413"
-			/>
+			>
 			<div>
 				<img
 					alt="Drive button"
@@ -108,7 +91,7 @@
 					loading="lazy"
 					src="/ui/exported/drive-{themeSrc}.svg"
 					width="88"
-				/>
+				>
 				<img
 					alt="Tabs flyout"
 					class="tabs"
@@ -116,7 +99,7 @@
 					loading="lazy"
 					src="/ui/exported/tabs-{themeSrc}.svg"
 					width="309"
-				/>
+				>
 			</div>
 		</div>
 		<div class="column right">
@@ -127,7 +110,7 @@
 				loading="lazy"
 				src="/ui/exported/calendar-{themeSrc}.svg"
 				width="300"
-			/>
+			>
 			<img
 				alt="Layout flyout"
 				class="layout"
@@ -135,8 +118,8 @@
 				loading="lazy"
 				src="/ui/exported/layout-{themeSrc}.svg"
 				width="270"
-			/>
-			<div class="card" style="height: 128px;" />
+			>
+			<div class="card" style:block-size="128px"></div>
 		</div>
 	</div>
 </PageSection>

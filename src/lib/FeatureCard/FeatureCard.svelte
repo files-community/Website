@@ -25,4 +25,5 @@
 	</div>
 {/if}
 
-<style lang="scss" src="./FeatureCard.scss"></style>
+<style lang="scss">@use "./FeatureCard";
+</style>

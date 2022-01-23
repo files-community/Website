@@ -1,0 +1,139 @@
+@use "src/styles/mixins" as *;
+
+// Tabs showcase
+.tabs-showcase {
+	@include flex($align: center, $justify: center);
+
+	.showcase-panel {
+		@include flex($direction: column);
+		position: absolute;
+		inline-size: 400px;
+		block-size: 300px;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms;
+		overflow: hidden;
+
+		&:first-child {
+			transform: translate(var(--panel-offset), var(--panel-offset));
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms,
+			merge-windows var(--fds-control-normal-duration) ease forwards 2s;
+			--panel-offset: -32px;
+		}
+
+		&:last-child {
+			transform: translate(var(--panel-offset), var(--panel-offset));
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1200ms,
+			merge-windows var(--fds-control-normal-duration) ease forwards 2s;
+			--panel-offset: 32px;
+		}
+	}
+
+	.files-grid {
+		animation: fade var(--fds-control-normal-duration) ease backwards 2.2s;
+		background-color: var(--fds-layer-background-default);
+		border-block-start: 1px solid var(--fds-card-stroke-default);
+		flex: 1 1 auto;
+		padding: 12px;
+		display: grid;
+		grid-gap: 12px;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+
+	.placeholder-file {
+		animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(2.4s + (100ms * var(--file-index)));
+		border-radius: var(--fds-control-corner-radius);
+		background-color: var(--fds-subtle-fill-secondary);
+
+		&:hover {
+			background-color: var(--fds-control-fill-secondary);
+		}
+	}
+
+	.tabs-anchor {
+		position: absolute;
+		margin-block-start: -40px;
+
+		.showcase-panel {
+			position: relative;
+		}
+	}
+
+	.tab {
+		@include flex($align: center, $gap: 8px);
+		user-select: none;
+		animation: tab-slide 500ms ease backwards 2.4s;
+		padding: 0 12px;
+		inline-size: 100%;
+		block-size: 32px;
+		border-radius: var(--fds-control-corner-radius);
+		border: 1px solid var(--fds-control-stroke-default);
+		background-clip: padding-box;
+		backdrop-filter: blur(10px);
+		color: var(--fds-text-primary);
+		font-size: var(--fds-body-font-size);
+
+		&:nth-child(2) {
+			animation-delay: 2.6s;
+		}
+
+		&:last-child {
+			animation-delay: 2.8s;
+		}
+
+		&:hover {
+			background-color: var(--fds-subtle-fill-secondary);
+		}
+
+		&:active {
+			background-color: var(--fds-subtle-fill-tertiary);
+		}
+
+		&.selected {
+			box-shadow: var(--fds-card-shadow);
+			background-color: var(--fds-control-fill-default);
+			border-block-start-color: var(--fds-control-stroke-secondary);
+
+			@media (prefers-color-scheme: light) {
+				border-block-start-color: var(--fds-control-fill-default);
+				border-block-end-color: var(--fds-control-fill-secondary);
+			}
+		}
+
+		img {
+			inline-size: 16px;
+			block-size: 16px;
+			flex: 0 0 auto;
+		}
+
+		&-row {
+			@include flex($align: center, $gap: 8px);
+			margin-block-end: 8px;
+			animation: show-overflow 0ms linear forwards 2.8s;
+			z-index: 1;
+			overflow: hidden;
+			inline-size: 100%;
+		}
+	}
+}
+
+// Window "merging" animation
+@keyframes merge-windows {
+	to {
+		transform: none;
+		box-shadow: none;
+	}
+}
+
+// Tab slide-in animation
+@keyframes tab-slide {
+	from {
+		transform: translateY(100%);
+	}
+}
+
+// Tab strip overflow hack to show tab shadows after animation
+@keyframes show-overflow {
+	to {
+		overflow: visible;
+	}
+}

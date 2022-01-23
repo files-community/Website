@@ -1,11 +1,12 @@
 <script lang="ts">
 	import { navigating, page } from "$app/stores";
+	import type { NavbarItem } from "$data/links";
 
-	import { TreeView, ListViewItem } from "$lib";
-
+	import { externalLink, TreeView } from "$lib";
+	import { ListItem } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
-	export let items = [];
+	export let items: NavbarItem[] = [];
 	export let buttons = [];
 
 	let innerWidth = 649; // Don't render the mobile layout before hydration
@@ -43,36 +44,36 @@
 				<source
 					media="(prefers-color-scheme: dark)"
 					srcset="/branding/logo-dark.svg"
-				/>
+				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/branding/logo-light.svg"
-				/>
+				>
 				<img
 					alt="Files logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo-light.svg"
 					width="32"
-				/>
+				>
 			</picture>
 			Files
 		</a>
 		{#if innerWidth > 648}
-			<div class="divider" role="separator"></div>
+			<div class="divider"></div>
 			{#each items as { name, path, external, icon, type }}
 				{#if type === "divider"}
-					<div class="divider" role="separator"></div>
+					<div class="divider"></div>
 				{:else}
 					<a
 						class="item"
 						sveltekit:prefetch
-						class:selected={$page.path === path ||
-							($page.path.split("/").length > 1 &&
-								path.split("/").length > 1 &&
-								$page.path.startsWith(path) &&
+						class:selected={$page.url.pathname === path ||
+						($page.url.pathname.split("/").length > 1 &&
+							path.split("/").length > 1 &&
+							$page.url.pathname.startsWith(path) &&
 								!(path === "" || path === "/")) ||
-							(path === "/" && $page.path === "")}
+							(path === "/" && $page.url.pathname === "")}
 						href={path}
 						target={external ? "_blank" : undefined}
 						rel={external ? "noreferrer noopener" : undefined}
@@ -94,11 +95,8 @@
 					{href}
 					aria-label={label}
 					title={label}
-					target="_blank"
-					rel="noreferrer noopener"
-				>
-					{@html icon}
-				</a>
+					{...externalLink}
+				>{@html icon}</a>
 			{/each}
 		{:else}
 			<button
@@ -117,18 +115,18 @@
 	>
 		{#each items as { name, path, external, sidebarTree, icon, type }}
 			{#if type === "divider"}
-				<hr role="separator" />
+				<hr>
 			{:else if !sidebarTree}
-				<ListViewItem
+				<ListItem
 					type="navigation"
 					sveltekit:prefetch
 					on:click={toggleSidebar}
-					selected={$page.path === path ||
-						($page.path.split("/").length > 1 &&
+					selected={$page.url.pathname === path ||
+					($page.url.pathname.split("/").length > 1 &&
 							path.split("/").length > 1 &&
-							$page.path.startsWith(path) &&
+							$page.url.pathname.startsWith(path) &&
 							!(path === "" || path === "/")) ||
-						(path === "/" && $page.path === "")}
+						(path === "/" && $page.url.pathname === "")}
 					href={path}
 					target={external ? "_blank" : undefined}
 					rel={external ? "noreferrer noopener" : undefined}
@@ -139,7 +137,7 @@
 						{/if}
 					</svelte:fragment>
 					<span>{name}</span>
-				</ListViewItem>
+				</ListItem>
 			{:else}
 				<TreeView
 					on:click={toggleSidebar}
@@ -154,14 +152,13 @@
 				/>
 			{/if}
 		{/each}
-		<hr role="separator" />
+		<hr>
 		{#each buttons as { icon, href, label }}
-			<ListViewItem
+			<ListItem
 				{href}
 				sveltekit:prefetch
 				type="navigation"
-				target="_blank"
-				rel="noreferrer noopener"
+				{...externalLink}
 			>
 				<svelte:fragment slot="icon">
 					{#if icon}
@@ -169,9 +166,11 @@
 					{/if}
 				</svelte:fragment>
 				<span>{label}</span>
-			</ListViewItem>
+			</ListItem>
 		{/each}
 	</aside>
 </header>
 
-<style lang="scss" src="./Navbar.scss"></style>
+<style lang="scss">
+	@use "./Navbar";
+</style>

@@ -1,7 +1,7 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
 export const get: RequestHandler = async () => {
-	const modules = import.meta.glob("./posts/*.svx");
+	const modules = import.meta.glob("./posts/*.md");
 	let body = [];
 
 	for (const path in modules) {

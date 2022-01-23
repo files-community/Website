@@ -1,13 +1,14 @@
 <script lang="ts">
-	import { Button, ContentDialog, ListViewItem, MenuFlyout, PageSection, rainbowCanvas, TerminalCommand } from "$lib";
+	import { externalLink, PageSection, TerminalCommand } from "$lib";
+	import { Button, ContentDialog, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
 	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
 
-	type DownloadSources = "Microsoft Store" | "Winget (CLI)" | "Sideload Package" | "Sideload Package (Preview)";
-	const downloadSources: DownloadSources[] = ["Microsoft Store", "Winget (CLI)", "Sideload Package", "Sideload Package (Preview)"];
+	type DownloadSource = "Microsoft Store" | "Winget (CLI)" | "Sideload Package" | "Sideload Package (Preview)";
+	const downloadSources: DownloadSource[] = ["Microsoft Store", "Winget (CLI)", "Sideload Package", "Sideload Package (Preview)"];
 
 	// Check the user agent for a windows install
 	let isWindows: boolean;
@@ -18,26 +19,25 @@
 	let isDownloadDropdownOpen = false;
 
 	// Group bindings
-	let currentDownloadSource = 0;
+	let currentDownloadSource: DownloadSource = "Microsoft Store";
 
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
 		: `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
-	$: sideloadLink = `/download/${ currentDownloadSource !== 3 ? "stable" : "preview" }`;
-	$: downloadLink = currentDownloadSource === 0 ? getStoreUrl() : sideloadLink;
+	$: sideloadLink = `/download/${ currentDownloadSource !== "Sideload Package (Preview)" ? "stable" : "preview" }`;
+	$: downloadLink = currentDownloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink;
 
 	const copyWingetCommand = () => {
-		navigator.clipboard.writeText("winget install -e Files-Community.Files");
+		navigator.clipboard.writeText("winget install -e 9NGHP3DX8HDX");
 		wingetCommandCopied = true;
 		setTimeout(() => {
 			wingetCommandCopied = false;
 		}, 500);
 	};
 
-	const updateDownloadSource = (value: number) => localStorage.setItem("downloadSource", value.toString());
-
-	const changeDownloadSource = (downloadSource: DownloadSources, id: number) => {
-		updateDownloadSource(id);
+	const changeDownloadSource = (downloadSource: DownloadSource) => {
+		currentDownloadSource = downloadSource;
+		localStorage.setItem("downloadSource", downloadSource);
 
 		if (downloadSource !== "Winget (CLI)") {
 			window.open(downloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink, "_blank");
@@ -51,9 +51,9 @@
 	onMount(async () => {
 		// Get the user's download preference
 		if (!localStorage.getItem("downloadSource")) {
-			localStorage.setItem("downloadSource", "0");
+			localStorage.setItem("downloadSource", "Microsoft Store");
 		}
-		currentDownloadSource = parseInt(localStorage.getItem("downloadSource")) ?? 0;
+		currentDownloadSource = (localStorage.getItem("downloadSource") ?? "Microsoft Store") as DownloadSource;
 
 		isWindows = navigator.userAgent.includes("Windows");
 	});
@@ -67,22 +67,21 @@
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
-					href={currentDownloadSource !== 1 ? downloadLink : undefined}
 					id="hero-download-button"
-					on:click={() => {
-						if (currentDownloadSource === 1) wingetDialogOpen = true;
-					}}
-					rel={currentDownloadSource !== 1 ? "noreferrer noopener" : undefined}
-					target={currentDownloadSource !== 1 ? "_blank" : undefined}
 					variant="accent"
+					href={currentDownloadSource !== "Winget (CLI)" ? downloadLink : undefined}
+					on:click={() => {
+						if (currentDownloadSource === "Winget (CLI)") wingetDialogOpen = true;
+					}}
+					{...(currentDownloadSource !== "Winget (CLI)" ? externalLink : undefined)}
 				>
 					{@html ArrowDownload}
 					<div class="hero-button-inner">
 						<h5>Download Files</h5>
-						<span>{downloadSources[currentDownloadSource]}</span>
+						<span>{downloadSources.find(source => source === currentDownloadSource)}</span>
 					</div>
 				</Button>
-				<MenuFlyout bind:open={isDownloadDropdownOpen}>
+				<MenuFlyout bind:open={isDownloadDropdownOpen} placement="bottom">
 					<Button
 						aria-label="Choose download source"
 						title="Choose download source"
@@ -90,23 +89,18 @@
 					>
 						{@html ChevronDown}
 					</Button>
-					<svelte:fragment slot="menu">
-						{#each downloadSources as downloadSource, id}
-							<ListViewItem
-								bind:group={currentDownloadSource}
-								on:change={() => changeDownloadSource(downloadSource, id)}
-								value={id}
-							>
+					<svelte:fragment slot="flyout">
+						{#each downloadSources as downloadSource}
+							<MenuFlyoutItem on:click={() => changeDownloadSource(downloadSource)}>
 								{downloadSource}
-							</ListViewItem>
+							</MenuFlyoutItem>
 						{/each}
 					</svelte:fragment>
 				</MenuFlyout>
 			</div>
 			<Button
 				href="https://github.com/{links.github.owner}/{links.github.repo}/"
-				rel="noreferrer noopener"
-				target="_blank"
+				{...externalLink}
 			>
 				{@html Code}
 				<div class="hero-button-inner">
@@ -122,35 +116,33 @@
 				<source
 					media="(prefers-color-scheme: dark)"
 					srcset="/screenshots/hero-dark.png"
-				/>
+				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/screenshots/hero-light.png"
-				/>
+				>
 				<img
 					alt="Files new tab screenshot"
 					height="768"
 					src="/screenshots/hero-light.png"
 					width="1024"
-				/>
+				>
 			</picture>
 		</div>
 	</div>
-	<canvas slot="outer" use:rainbowCanvas></canvas>
+	<div class="rainbow-background" slot="outer"></div>
 </PageSection>
 
 <ContentDialog
 	bind:open={wingetDialogOpen}
 	title="Installing Files via winget"
-	width="448"
+	size="max"
 >
-	To download and install Files using <a
-		class="hyperlink"
-		href="https://github.com/microsoft/winget-cli"
-		rel="noreferrer noopener"
-		target="_blank">winget</a>,
+	<br>
+	To download and install Files using
+	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...externalLink}>winget</a>,
 	paste the following command into a terminal of your choice:
-	<TerminalCommand command="winget install -e Files-Community.Files" />
+	<TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">
 			{wingetCommandCopied ? "Copied!" : "Copy"}

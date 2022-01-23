@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { page } from "$app/stores";
+	import { slide } from "svelte/transition";
+	import { circOut } from "svelte/easing";
 
-	import ListViewItem from "../ListViewItem/ListViewItem.svelte";
+	import { page } from "$app/stores";
+	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_16_regular.svg?raw";
+
+	import { ListItem } from "fluent-svelte";
+	import { getCSSDuration } from "fluent-svelte/internal";
 
 	export let tree = [];
 
@@ -33,42 +38,59 @@
 	{#each tree as { name, path, type, pages, icon }}
 		{#if type === "category"}
 			<div class="subtree" class:expanded={treeViewState?.[id(name)]}>
-				<ListViewItem
-					type="expander"
-					expanded={treeViewState?.[id(name)]}
+				<ListItem
 					on:click={e => toggleExpansion(e, name)}
 				>
 					<svelte:fragment slot="icon">
 						{@html icon || ""}
 					</svelte:fragment>
-					{name}
-				</ListViewItem>
+					<span class="tree-view-item">{name}</span>
+					<div class="expander-icon" class:expanded={treeViewState?.[id(name)]}>{@html ChevronDown}</div>
+				</ListItem>
 				{#if treeViewState?.[id(name)]}
-					<div class="subtree-items">
+					<div class="subtree-items"
+					     transition:slide|local={{ duration: getCSSDuration("--fds-control-fast-duration"), easing: circOut }}
+					     class:expanded={treeViewState?.[id(name)]}>
 						<svelte:self tree={pages} />
 					</div>
 				{/if}
 			</div>
 		{:else}
-			<ListViewItem
+			<ListItem
 				on:click
-				type="navigation"
-				selected={`/docs${path}` === $page.path}
+				selected={`/docs${path}` === $page.url.pathname}
 				href="/docs{path}"
 			>
 				<svelte:fragment slot="icon">
 					{@html icon || ""}
 				</svelte:fragment>
 				{name}
-			</ListViewItem>
+			</ListItem>
 		{/if}
 	{/each}
 </div>
 
 <style lang="scss">
-	@media only screen and (min-width: 648px) {
-		.tree-view:last-child {
-			margin-block-end: 1rem;
+	@use "src/styles/mixins" as *;
+
+	.tree-view {
+		.subtree {
+			:global {
+				.list-item span {
+					@include flex($align: center, $justify: space-between);
+					inline-size: 100%;
+
+					.expander-icon {
+						@include flex($align: center);
+						transition: transform var(--fds-control-fast-duration) var(--fds-control-fast-out-slow-in-easing);
+						transform-origin: center;
+
+						&.expanded { transform: rotate(180deg) }
+
+						svg { @include icon }
+					}
+				}
+			}
 		}
 	}
 

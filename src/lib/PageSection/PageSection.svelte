@@ -35,4 +35,5 @@
 	</section>
 {/if}
 
-<style lang="scss" src="./PageSection.scss"></style>
+<style lang="scss">@use "./PageSection";
+</style>

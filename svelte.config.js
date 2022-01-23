@@ -8,14 +8,11 @@ import remarkSlug from "remark-slug";
 import remarkGithub from "remark-github";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
-
-const postCssPlugins = [autoprefixer()]
-// enable cssnano in production
-if (process.env.NODE_ENV !== "development") postCssPlugins.push(cssnano({ preset: "default" }))
+import mediaMinMax from "postcss-media-minmax";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
-	extensions: [".svelte", ".svx"],
+	extensions: [".svelte", ".md"],
 	kit: {
 		target: "body",
 		router: true,
@@ -28,24 +25,28 @@ const config = {
 				}
 			}
 		},
-		adapter: adapter()
+		adapter: adapter({
+			split: true
+		})
 	},
 	preprocess: [
 		mdsvex({
-			extensions: [".svx"],
+			extensions: [".md"],
 
 			smartypants: {
 				dashes: "oldschool"
 			},
 
-			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub]
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: postCssPlugins,
+				plugins: [autoprefixer, cssnano, mediaMinMax]
 			}
 		})
 	]
 };
 
+// shut up webstorm
+// noinspection JSUnusedGlobalSymbols
 export default config;

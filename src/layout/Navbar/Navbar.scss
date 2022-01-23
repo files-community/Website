@@ -11,9 +11,9 @@
 	z-index: 10;
 	justify-content: space-between;
 	flex: 0 0 auto;
-	height: 58px;
+	block-size: 58px;
 	padding: 12px 18px;
-	background-color: var(--background-base);
+	background-color: var(--fds-solid-background-base);
 	overflow: hidden;
 	user-select: none;
 }
@@ -22,26 +22,26 @@
 	justify-content: center;
 	margin: 0 4px;
 	padding: 5px 11px 6px 11px;
-	border-radius: var(--control-corner-radius);
-	color: var(--text-color-secondary);
+	border-radius: var(--fds-control-corner-radius);
+	color: var(--fds-text-secondary);
 	font: {
 		size: 1.36rem;
 		weight: normal;
 	}
 	text-decoration: none;
-	transition: 83ms linear background-color;
+	transition: var(--fds-control-faster-duration) linear background-color;
 
 	&.selected {
-		background-color: var(--subtle-color-secondary);
-		color: var(--accent-text-default);
+		background-color: var(--fds-subtle-fill-secondary);
+		color: var(--fds-accent-text-primary);
 	}
 
 	&:hover {
-		background-color: var(--subtle-color-secondary);
+		background-color: var(--fds-subtle-fill-secondary);
 	}
 
 	&:active {
-		background-color: var(--subtle-color-tertiary);
+		background-color: var(--fds-subtle-fill-tertiary);
 	}
 
 	:global(svg) {
@@ -51,15 +51,15 @@
 }
 
 .divider {
-	height: 30px;
+	block-size: 30px;
 	margin: 0 8px;
-	border-inline-start: 1px solid var(--subtle-color-secondary);
+	border-inline-start: 1px solid var(--fds-subtle-fill-secondary);
 }
 
 .logo {
 	@include flex($align: center);
 	margin-inline-end: 8px;
-	color: var(--text-color-primary);
+	color: var(--fds-text-primary);
 	font: {
 		size: 2rem;
 		weight: 600;
@@ -68,12 +68,12 @@
 	transition: 100ms ease;
 
 	&:hover {
-		color: var(--text-color-secondary);
+		color: var(--fds-text-secondary);
 	}
 
 	img {
-		width: auto;
-		height: 32px;
+		inline-size: auto;
+		block-size: 32px;
 		margin-inline-end: 12px;
 	}
 }
@@ -85,22 +85,22 @@
 
 .button {
 	@include flex($align: center, $justify: center);
-	width: 34px;
-	height: 34px;
+	inline-size: 34px;
+	block-size: 34px;
 	margin-inline-start: 8px;
 	border: none;
-	border-radius: var(--control-corner-radius);
+	border-radius: var(--fds-control-corner-radius);
 	background-color: transparent;
-	color: var(--text-color-secondary);
+	color: var(--fds-text-secondary);
 	text-decoration: none;
 	cursor: pointer;
 
 	&:hover {
-		background-color: var(--subtle-color-secondary);
+		background-color: var(--fds-subtle-fill-secondary);
 	}
 
 	&:active {
-		background-color: var(--subtle-color-tertiary);
+		background-color: var(--fds-subtle-fill-tertiary);
 	}
 
 	:global(svg) {
@@ -111,14 +111,14 @@
 
 :global {
 	.navbar .button.sidebar-button {
-		width: 38px;
+		inline-size: 38px;
 
 		&:active svg {
 			transform: scaleX(0.65);
 		}
 
 		svg {
-			width: 16px;
+			inline-size: 16px;
 		}
 	}
 }
@@ -128,12 +128,12 @@
 	inset-block-start: 0;
 	inset-inline-end: 0;
 	display: none;
-	width: 272px;
-	height: 100vh;
+	inline-size: 272px;
+	block-size: 100vh;
 	padding-block-start: 62px;
-	border: 1px solid var(--surface-stroke-default);
-	border-radius: var(--overlay-corner-radius);
-	background-color: var(--background-base);
+	border: 1px solid var(--fds-surface-stroke-default);
+	border-radius: var(--fds-overlay-corner-radius);
+	background-color: var(--fds-solid-background-base);
 	transform: translateX(100%);
 	transition: 120ms cubic-bezier(0.1, 0.9, 0.2, 1);
 
@@ -145,24 +145,24 @@
 	hr {
 		margin: 4px 0;
 		border: none;
-		border-block-start: 1px solid var(--divider-color-default);
+		border-block-start: 1px solid var(--fds-divider-stroke-default);
 	}
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (width < 648px) {
 	.navbar {
 		position: fixed;
 		inset-block-start: 0;
 		inset-inline-start: 0;
-		width: 100%;
-		height: 64px;
+		inline-size: 100%;
+		block-size: 64px;
 		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
 		overflow: visible;
 		backdrop-filter: blur(60px) saturate(150%);
 	}
 
 	.sidebar {
-		@include flex($direction: column, $justify: space-between);
+		display: block;
 	}
 
 	:global(body) {

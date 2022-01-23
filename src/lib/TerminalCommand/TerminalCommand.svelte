@@ -27,4 +27,5 @@
 	</button>
 </div>
 
-<style lang="scss" src="./TerminalCommand.scss"></style>
+<style lang="scss">@use "./TerminalCommand";
+</style>
