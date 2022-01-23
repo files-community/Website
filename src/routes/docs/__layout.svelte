@@ -1,11 +1,38 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
+	import { docs, DocsMap } from "$data/docs";
 
-	export const load: Load = ({ url }) => ({
-		props: {
-			pagePath: url.pathname
+	export const load: Load = ({ url }) => {
+		const docsPages = findPages(docs);
+
+		return {
+			props: {
+				pagePath: url.pathname,
+				currentPage: docsPages.find(p => `/docs${ p.path }` === url.pathname),
+				docsPages
+			}
+		};
+	};
+
+	function findPages(docsStructure: DocsMap[] | DocsMap): DocsMap[] {
+		if (Array.isArray(docsStructure)) {
+			// it's an array of pages/categories
+			return docsStructure
+				.map(page => findPages(page)) // recursively flatten the structure and filter to only include pages
+				.flat(Infinity) as DocsMap[]; // flatten the structure to get rid of any nesting
+		} else {
+			// it's a single page/category, not a structure
+			if (docsStructure.type === "category") {
+				// it's a category
+				return docsStructure.pages
+					.map(page => findPages(page)) // filter down and down until only pages are left
+					.flat(Infinity) as DocsMap[]; // flatten the array
+			} else {
+				// it's a page
+				return [docsStructure];
+			}
 		}
-	});
+	}
 </script>
 
 <script lang="ts">
@@ -13,24 +40,20 @@
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import { docs, DocsMap } from "$data/docs";
+	import type { DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 	import { external, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
-	export let pagePath;
+	export let pagePath = "";
+	export let docsPages: DocsMap[];
+	export let currentPage: DocsMap = { name: "Overview", path: "" };
 
 	let value: string = "";
 	let searchQuery: string = "";
 	let searchFocused: boolean = false;
 	let autoSuggestVisible: boolean = false;
 	let selection: number = 0;
-
-	// A recursively flattened version of the docs mapping containing an array of all pages
-	const docsPages: DocsMap[] = filterPages(docs);
-
-	// These are pretty self-explanatory
-	$: currentPage = docsPages.find(p => `/docs${ p.path }` === $page.url.pathname);
 
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.name;
@@ -85,26 +108,6 @@
 			}
 		};
 	};
-
-	function filterPages(docsStructure: DocsMap[] | DocsMap): DocsMap[] {
-		if (Array.isArray(docsStructure)) {
-			// it's an array of pages/categories
-			return docsStructure
-				.map(page => filterPages(page)) // recursively flatten the structure and filter to only include pages
-				.flat(Infinity) as DocsMap[]; // flatten the structure to get rid of any nesting
-		} else {
-			// it's a single page/category, not a structure
-			if (docsStructure.type === "category") {
-				// it's a category
-				return docsStructure.pages
-					.map(page => filterPages(page)) // filter down and down until only pages are left
-					.flat(Infinity) as DocsMap[]; // flatten the array
-			} else {
-				// it's a page
-				return [docsStructure];
-			}
-		}
-	}
 </script>
 
 <svelte:head>
@@ -198,7 +201,8 @@
 			</div>
 		</div>
 		{#key pagePath}
-			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }} out:fly={{ y: 6, duration: 300 }}>
+			<div class="page-inner markdown-body" in:fly={{ y: 6, duration: 300, delay: 300 }}
+			     out:fly={{ y: 6, duration: 300 }}>
 				<header>
 					<span>
 						{$page.url.pathname.split("/").join(" / ").substring(2)}
