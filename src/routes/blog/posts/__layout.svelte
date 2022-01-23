@@ -9,7 +9,7 @@
 </script>
 
 <script lang="ts">
-	import { Metadata, external } from "$lib";
+	import { Metadata, externalLink } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
 	import { IconButton, ListItem, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
@@ -50,7 +50,7 @@
 			<a
 				class="hyperlink"
 				href="https://github.com/{author}"
-				{...external}>@{author}</a
+				{...externalLink}>@{author}</a
 			>
 			<span>•</span>
 			{new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString(
@@ -73,13 +73,13 @@
 					</MenuFlyoutItem>
 					<MenuFlyoutItem
 						href="https://twitter.com/intent/tweet?text={window.location.href}"
-						{...external}
+						{...externalLink}
 					>
 						Twitter
 					</MenuFlyoutItem>
 					<MenuFlyoutItem
 						href="https://www.facebook.com/sharer/sharer.php?u={window.location.href}"
-						{...external}
+						{...externalLink}
 					>
 						Facebook
 					</MenuFlyoutItem>

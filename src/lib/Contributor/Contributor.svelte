@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { external } from "$lib";
+	import { externalLink } from "$lib";
 	import { PersonPicture } from "fluent-svelte";
 
 	export let html_url: string = undefined;
@@ -14,7 +14,7 @@
 		tabindex="-1"
 		class="contributor"
 		href={html_url}
-		{...external}
+		{...externalLink}
 	>
 		<PersonPicture src={avatar_url}
 		               size={32}

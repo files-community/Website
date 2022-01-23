@@ -42,7 +42,7 @@
 
 	import type { DocsMap } from "$data/docs";
 	import { links } from "$data/links";
-	import { external, Metadata, TreeView } from "$lib";
+	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let pagePath = "";
@@ -213,7 +213,7 @@
 						        href="https://github.com/{links.github.owner}/{links.github
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
 								'/index'}.svx"
-						        {...external}
+						        {...externalLink}
 						>
 							Edit this page
 						</Button>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { external, PageSection } from "$lib";
+	import { externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
 	import Discord from "$static/ui/icons/discord.svg?raw";
@@ -45,7 +45,7 @@
 				href="https://github.com/{links.github.owner}/{links.github.repo}/"
 				title="GitHub repository"
 				aria-label="GitHub repository"
-				{...external}
+				{...externalLink}
 			>
 				{@html Github}
 			</IconButton>
@@ -53,7 +53,7 @@
 				href="https://twitter.com/{links.twitter}/"
 				title="Twitter profile"
 				aria-label="Twitter profile"
-				{...external}
+				{...externalLink}
 			>
 				{@html Twitter}
 			</IconButton>
@@ -61,13 +61,13 @@
 				href="https://discord.gg/{links.discord}"
 				title="Discord server"
 				aria-label="Discord server"
-				{...external}
+				{...externalLink}
 			>
 				{@html Discord}
 			</IconButton>
 		</div>
 		<p>Copyright © 2021 - {new Date().getFullYear()}, The Files Authors</p>
-		<a href="https://www.netlify.com" {...external}>
+		<a href="https://www.netlify.com" {...externalLink}>
 			<img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
 		</a>
 	</div>
@@ -85,7 +85,7 @@
 	</div>
 	<div class="column">
 		<p>Contribute to Files</p>
-		<Button variant="hyperlink" {...external}
+		<Button variant="hyperlink" {...externalLink}
 		        href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
 		>
 			Give Feedback
@@ -100,13 +100,13 @@
 		</Button>
 
 		<p>Contribute to this site</p>
-		<Button variant="hyperlink" {...external}
+		<Button variant="hyperlink" {...externalLink}
 		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
 			GitHub Repo
 		</Button>
 
-		<Button variant="hyperlink" {...external}
+		<Button variant="hyperlink" {...externalLink}
 		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
 		>
 			Found a bug?
@@ -115,7 +115,7 @@
 	<div class="column">
 		<p>Web Team</p>
 		{#each contributors as contributor}
-			<Button variant="hyperlink" href={contributor.link} {...external}>{contributor.name}</Button>
+			<Button variant="hyperlink" href={contributor.link} {...externalLink}>{contributor.name}</Button>
 		{/each}
 	</div>
 </PageSection>

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { ColorSwatch, external, HeaderChip, PageSection } from "$lib";
+	import { ColorSwatch, HeaderChip, PageSection } from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import type { Tag } from "$data/features";
 

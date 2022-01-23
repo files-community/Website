@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { external, PageSection, TerminalCommand } from "$lib";
+	import { externalLink, PageSection, TerminalCommand } from "$lib";
 	import { Button, ContentDialog, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
@@ -73,7 +73,7 @@
 					on:click={() => {
 						if (currentDownloadSource === "Winget (CLI)") wingetDialogOpen = true;
 					}}
-					{...(currentDownloadSource !== "Winget (CLI)" ? external : undefined)}
+					{...(currentDownloadSource !== "Winget (CLI)" ? externalLink : undefined)}
 				>
 					{@html ArrowDownload}
 					<div class="hero-button-inner">
@@ -100,7 +100,7 @@
 			</div>
 			<Button
 				href="https://github.com/{links.github.owner}/{links.github.repo}/"
-				{...external}
+				{...externalLink}
 			>
 				{@html Code}
 				<div class="hero-button-inner">
@@ -140,7 +140,7 @@
 >
 	<br>
 	To download and install Files using
-	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...external}>winget</a>,
+	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...externalLink}>winget</a>,
 	paste the following command into a terminal of your choice:
 	<TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
 	<svelte:fragment slot="footer">

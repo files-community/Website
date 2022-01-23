@@ -2,7 +2,7 @@
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 
-	import { external, TreeView } from "$lib";
+	import { externalLink, TreeView } from "$lib";
 	import { ListItem } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -95,7 +95,7 @@
 					{href}
 					aria-label={label}
 					title={label}
-					{...external}
+					{...externalLink}
 				>{@html icon}</a>
 			{/each}
 		{:else}
@@ -158,7 +158,7 @@
 				{href}
 				sveltekit:prefetch
 				type="navigation"
-				{...external}
+				{...externalLink}
 			>
 				<svelte:fragment slot="icon">
 					{#if icon}

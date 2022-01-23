@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { external } from "$lib";
+	import { externalLink } from "$lib";
 	import { Button, ProgressRing } from "fluent-svelte";
 </script>
 
@@ -14,7 +14,7 @@
 	<Button
 		href="https://github.com/sponsors/yaichenbaum"
 		variant="accent"
-		{...external}
+		{...externalLink}
 	>
 		Donate
 	</Button>

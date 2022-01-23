@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { links } from "$data/links";
-	import { external, HeaderChip, PageSection } from "$lib";
+	import { externalLink, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 
 	let scrollY: number;
@@ -19,14 +19,14 @@
 	<div class="buttons-spacer">
 		<Button
 			href="https://microsoft.com/store/apps/{links.storeId}"
-			{...external}
+			{...externalLink}
 			variant="accent"
 		>
 			Try it out
 		</Button>
 		<Button variant="hyperlink"
 		        href="https://www.microsoft.com/design/fluent/"
-		        {...external}
+		        {...externalLink}
 		>
 			Design System
 		</Button>

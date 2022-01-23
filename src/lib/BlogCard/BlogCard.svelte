@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { external } from "$lib";
+	import { externalLink } from "$lib";
 
 	export let path = "";
 	export let date = "";
@@ -30,7 +30,7 @@
 				<a
 					href="https://github.com/{author}"
 					rel="noreferrer noopener"
-					{...external}
+					{...externalLink}
 				>
 					{author}
 				</a>
