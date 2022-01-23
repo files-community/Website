@@ -45,7 +45,7 @@
 				{@html Discord}
 			</IconButton>
 		</div>
-		<p>Copyright © 2021, The Files Authors</p>
+		<p>Copyright © {new Date().getFullYear()}, The Files Authors</p>
 	</div>
 	<div class="column">
 		<p>Pages</p>
