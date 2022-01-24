@@ -63,3 +63,14 @@ Fluent Terminal:
       "icon": ""
 }
 ```
+
+ConEmu (x64):
+
+```json
+{
+      "name": "ConEmu",
+      "path": "ConEmu64.exe",
+      "arguments": "-Single -Dir \"{0}\" -run ",
+      "icon": ""
+}
+```
