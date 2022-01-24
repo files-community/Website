@@ -13,4 +13,3 @@ export { default as Metadata } from "./Metadata.svelte";
 // Actions
 export * from "./utils";
 export { default as tilt } from "./tilt";
-export * from "fluent-svelte"; // a very temporary solution

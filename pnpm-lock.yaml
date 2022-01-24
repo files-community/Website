@@ -12,7 +12,7 @@ specifiers:
   eslint: ^8.7.0
   eslint-config-prettier: ^8.3.0
   eslint-plugin-svelte3: ^3.4.0
-  fluent-svelte: 1.1.0
+  fluent-svelte: ^1.2.0
   husky: ^7.0.4
   mdsvex: ^0.9.8
   postcss: ^8.4.5
@@ -42,7 +42,7 @@ devDependencies:
   eslint: 8.7.0
   eslint-config-prettier: 8.3.0_eslint@8.7.0
   eslint-plugin-svelte3: 3.4.0_eslint@8.7.0+svelte@3.46.2
-  fluent-svelte: 1.1.0
+  fluent-svelte: 1.2.0
   husky: 7.0.4
   mdsvex: 0.9.8_svelte@3.46.2
   postcss: 8.4.5
@@ -1127,8 +1127,8 @@ packages:
     resolution: {integrity: sha512-8/sOawo8tJ4QOBX8YlQBMxL8+RLZfxMQOif9o0KUKTNTjMYElWPE0r/m5VNFxTRd0NSw8qSy8dajrwX4RYI1Hw==}
     dev: true
 
-  /fluent-svelte/1.1.0:
-    resolution: {integrity: sha512-bmmFrdsQbxTPCnceo3T3KGQO3+B5d91Tyxmp4NKzsq9Bx0OGXWNFpNxn6iiTl4tiBD9IuHs/xnLr5BYlO8AXCg==}
+  /fluent-svelte/1.2.0:
+    resolution: {integrity: sha512-UIQvaaPfGSpEdRTKMyXkNNss5Iu7MmJRLLivLppws6fNjzAKsfMSQBW+Fem/OqpMwmjlKGlnrBPqPN4r4Lu40g==}
     dependencies:
       focus-trap: 6.7.2
       tabbable: 5.2.1
