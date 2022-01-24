@@ -24,7 +24,7 @@
 		"eslint": "^8.7.0",
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-svelte3": "^3.4.0",
-		"fluent-svelte": "1.1.0",
+		"fluent-svelte": "^1.2.0",
 		"husky": "^7.0.4",
 		"mdsvex": "^0.9.8",
 		"postcss": "^8.4.5",

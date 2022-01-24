@@ -138,7 +138,6 @@
 	title="Installing Files via winget"
 	size="max"
 >
-	<br>
 	To download and install Files using
 	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...externalLink}>winget</a>,
 	paste the following command into a terminal of your choice:
