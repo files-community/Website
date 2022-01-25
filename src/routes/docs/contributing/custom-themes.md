@@ -2,16 +2,30 @@
 
 Files comes with a built in selection of custom themes, but it also allows you to create your own themes by modifying xaml resource dictionaries.
 
-Themes are location inside the `Themes` folder in the app's `LocalState` folder. You can select a custom theme from the appearance page in the settings dialog.
+Themes are located inside the `Themes` folder in the app's `LocalState` folder. You can select a custom theme from the appearance page in the settings dialog.
 
 ## How to create a custom theme
 
-1. Open your text editor of choice, and paste in the template located below. Then, save the file
-   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalStateThemes\test1.xaml`.
+1. Open your text editor of choice, and paste in the template located below. Then, save the file (with a name of your choice)
+   in `%localappdata%\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalStateThemes\`.
 
 2. Adjust the colors until satisfied.
 
 3. Select the theme from the appearance page in the settings dialog.
+
+Note: Applications - such as the Fluent XAML Theme Editor - allow the creation of themes in a simpler way than editing XAML.
+These are good ways to edit themes, especially if it's your first time.
+
+## Contributing Themes
+
+You can also contibute already existing themes to the repository.
+
+1. Open `https://github.com/files-community/Custom-themes/tree/main/Themes` and click 'Add File', then 'Upload Files'
+
+2. Select your theme (.xaml file) and click 'Open'
+
+3. Now go through the process of creating a pull-request, which you should be familiar with. Any problems regarding the creation of a PR - it is rather simple - refer
+to GitHub's own documentation.
 
 <details>
 <summary>
