@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@fec/remark-a11y-emoji': ^3.1.0
   '@fluentui/svg-icons': ^1.1.157
+  '@neodrag/svelte': ^1.0.2
   '@sveltejs/adapter-netlify': ^1.0.0-next.42
   '@sveltejs/kit': ^1.0.0-next.240
   '@typescript-eslint/eslint-plugin': ^5.10.0
@@ -25,7 +26,6 @@ specifiers:
   sass: ^1.49.0
   svelte: ^3.46.2
   svelte-check: ^2.3.0
-  svelte-drag: ^2.4.0
   svelte-preprocess: ^4.10.2
   tslib: ^2.3.1
   typescript: ^4.5.5
@@ -33,6 +33,7 @@ specifiers:
 devDependencies:
   '@fec/remark-a11y-emoji': 3.1.0
   '@fluentui/svg-icons': 1.1.157
+  '@neodrag/svelte': 1.0.2
   '@sveltejs/adapter-netlify': 1.0.0-next.42
   '@sveltejs/kit': 1.0.0-next.240_sass@1.49.0+svelte@3.46.2
   '@typescript-eslint/eslint-plugin': 5.10.0_706fb07ce74b1db611f19a02ad2ce784
@@ -55,7 +56,6 @@ devDependencies:
   sass: 1.49.0
   svelte: 3.46.2
   svelte-check: 2.3.0_77d7750cf002ab9dbc05a2cb89869e71
-  svelte-drag: 2.4.0
   svelte-preprocess: 4.10.2_6fe01f8f1773f994db5be9837dcb915c
   tslib: 2.3.1
   typescript: 4.5.5
@@ -110,6 +110,10 @@ packages:
 
   /@iarna/toml/2.2.5:
     resolution: {integrity: sha512-trnsAYxU3xnS1gPHPyU961coFyLkh4gAD/0zQ5mymY4yOZ+CYvsPqUbOFSw0aDM4y0tV7tiFxL/1XfXPNC6IPg==}
+    dev: true
+
+  /@neodrag/svelte/1.0.2:
+    resolution: {integrity: sha512-q3zi8uMsauZBPeGDTFEwQiF3Gs92pzVDczDoMGhVFRhATuQS/z0jAUnVu+vTiPvPs3osT97AA6U00OcdzwRVKQ==}
     dev: true
 
   /@nodelib/fs.scandir/2.1.5:
@@ -2439,10 +2443,6 @@ packages:
       - sass
       - stylus
       - sugarss
-    dev: true
-
-  /svelte-drag/2.4.0:
-    resolution: {integrity: sha512-9WY3L1Y+3sAHufb4e7Ml4zHZWkTXL8DfB3NYovOL1ygImBFuMfHEhoeqo/qpWSU/wjO53nzn+T3nu9lHqATAyg==}
     dev: true
 
   /svelte-hmr/0.14.9_svelte@3.46.2:
