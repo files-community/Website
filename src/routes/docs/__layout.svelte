@@ -212,7 +212,7 @@
 						<Button variant="hyperlink"
 						        href="https://github.com/{links.github.owner}/{links.github
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
-								'/index'}.svx"
+								'/index'}.md"
 						        {...externalLink}
 						>
 							Edit this page
