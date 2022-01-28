@@ -1,15 +1,9 @@
 # What is Files?
 
-Files is a file manager which leverages the latest features of the Windows platform including Fluent Design, seamless
-updates, and APIs which enable the performance and lifecycle behavior that users expect. Whether you want to simplify
-your experience with your files or try something new, Files is a one-stop solution for exploring your files on the fly.
-
-# Vision for Files
-
-The vision for Files is to make it the best file manager while keeping it simple and easy to use. Whether it's
-implementing new features, or pushing the boundaries of the platform, your input will help shape the future of Files.
+Files is a file manager for Windows with a powerful yet intuitive design. It has features like multiple tabs, panes, columns, shell extensions in the context menu and tags.
 
 # Download Files
 
 - [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
-- [GitHub](https://github.com/files-community/Files/releases)
+- [Sideload](https://files.community/download/stable)
+- [Preview](https://files.community/download/preview)
