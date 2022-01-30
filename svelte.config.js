@@ -15,7 +15,6 @@ const config = {
 	extensions: [".svelte", ".md"],
 	kit: {
 		target: "body",
-		router: true,
 		vite: {
 			resolve: {
 				alias: {
