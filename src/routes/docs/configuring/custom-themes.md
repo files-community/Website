@@ -38,4 +38,4 @@ The themeing system in Files allows you to override any resource that's included
 | `SolidBackgroundFillColorQuarternary` | `<Color x:Key="SolidBackgroundFillColorQuarternary">#A26829</Color>` |  |
 | `SolidBackgroundAcrylic` | `<Color x:Key="SolidBackgroundAcrylic">#A26829</Color>` | Light theme: `#FFFFFF` Dark theme: `#2C2C2C` |
 | `NavigationToolbarBackgroundBrush` | `<SolidColorBrush x:Key="NavigationToolbarBackgroundBrush" Color="#A26829" />` | `#00000000` |
-| `NavigationToolbarBackgroundBrush` | `<SolidColorBrush x:Key="TitlebarContentBackgroundBrush" Color="#A26829" />` | `Transparent` |
+| `TitlebarContentBackgroundBrush` | `<SolidColorBrush x:Key="TitlebarContentBackgroundBrush" Color="#A26829" />` | `Transparent` |
