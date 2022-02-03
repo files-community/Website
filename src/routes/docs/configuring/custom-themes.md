@@ -1,23 +1,14 @@
 # Custom Themes
 
-Files comes with a built in selection of custom themes, but it also allows you to create your own themes by modifying xaml resource dictionaries.
-
-Themes are location inside the `Themes` folder in the app's `LocalState` folder. You can select a custom theme from the appearance page in the settings dialog.
+Files has a selection of built-in themes but you can also create your own theme by adding a resource file to the themes directory in the `LocalState` folder.
 
 ## How to create a custom theme
 
-1. Open your text editor of choice, and paste in the template located below. Then, save the file
-   as `%userprofile%\AppData\Local\Packages\49306atecsolution.FilesUWP_et10x9a9vyk8t\LocalStateThemes\test1.xaml`.
+1. Navigate to the themes directory, you can open find this folder by clicking the information icon in the appearance page. Create a new file with the `xaml` extension, this file will contain the resources for your custom theme.
+2. Open the file in the text editor of your choice.
+3. Copy and paste the template below
 
-2. Adjust the colors until satisfied.
-
-3. Select the theme from the appearance page in the settings dialog.
-
-<details>
-<summary>
 Default template
-</summary>
-
 ```xml
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
@@ -26,51 +17,34 @@ Default template
     xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)">
     <ResourceDictionary.ThemeDictionaries>
         <ResourceDictionary x:Key="Default">
-            <!-- Background Resources -->
-            <SolidColorBrush x:Key="RootBackgroundBrush" Color="#AA7F3C4E" />
-            <Color x:Key="SolidBackgroundFillColorBase">#97475C</Color>
-            <Color x:Key="SolidBackgroundFillColorSecondary">#7F3C4E</Color>
-            <Color x:Key="SolidBackgroundFillColorTertiary">#763B4A</Color>
-            <Color x:Key="SolidBackgroundFillColorQuarternary">#592A37</Color>
-            <SolidColorBrush x:Key="SolidBackgroundFillColorBaseBrush" Color="{ThemeResource SolidBackgroundFillColorBase}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorSecondaryBrush" Color="{ThemeResource SolidBackgroundFillColorSecondary}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorTertiaryBrush" Color="{ThemeResource SolidBackgroundFillColorTertiary}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorQuarternaryBrush" Color="{ThemeResource SolidBackgroundFillColorQuarternary}" />
-            <!-- Acrylic Resources -->
-            <Color x:Key="SolidBackgroundAcrylic">#592A37</Color>
-            <!-- Accent Color -->
-            <Color x:Key="SystemAccentColor">#CB607C</Color>
-            <Color x:Key="SystemAccentColorDark1">#CB607C</Color>
-            <Color x:Key="SystemAccentColorDark2">#CB607C</Color>
-            <Color x:Key="SystemAccentColorDark3">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight1">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight2">#CB607C</Color>
-            <Color x:Key="SystemAccentColorLight3">#CB607C</Color>
         </ResourceDictionary>
         <ResourceDictionary x:Key="Light">
-            <!-- Background Resources -->
-            <SolidColorBrush x:Key="RootBackgroundBrush" Color="#AAF17293" />
-            <Color x:Key="SolidBackgroundFillColorBase">#97475C</Color>
-            <Color x:Key="SolidBackgroundFillColorSecondary">#F17293</Color>
-            <Color x:Key="SolidBackgroundFillColorTertiary">#E87490</Color>
-            <Color x:Key="SolidBackgroundFillColorQuarternary">#CB607C</Color>
-            <SolidColorBrush x:Key="SolidBackgroundFillColorBaseBrush" Color="{ThemeResource SolidBackgroundFillColorBase}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorSecondaryBrush" Color="{ThemeResource SolidBackgroundFillColorSecondary}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorTertiaryBrush" Color="{ThemeResource SolidBackgroundFillColorTertiary}" />
-            <SolidColorBrush x:Key="SolidBackgroundFillColorQuarternaryBrush" Color="{ThemeResource SolidBackgroundFillColorQuarternary}" />
-            <!-- Acrylic Resources -->
-            <Color x:Key="SolidBackgroundAcrylic">#CB607C</Color>
-            <!-- Accent Color -->
-            <Color x:Key="SystemAccentColor">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark1">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark2">#97475C</Color>
-            <Color x:Key="SystemAccentColorDark3">#97475C</Color>
-            <Color x:Key="SystemAccentColorLight1">#97475C</Color>
-            <Color x:Key="SystemAccentColorLight2">#97475C</Color>
-            <Color x:Key="SystemAccentColorLight3">#97475C</Color>
         </ResourceDictionary>
     </ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
 ```
 
-</details> 
+## Sample resources
+
+The themeing system in Files allows you to override any resource that's included in the WinUI library but most themes including the built-in themes only override a couple of brushes.
+
+#### ContentControlThemeFontFamily
+`<FontFamily x:Key="ContentControlThemeFontFamily">Segoe UI</FontFamily>`
+
+#### RootBackgroundBrush
+`<SolidColorBrush x:Key="RootBackgroundBrush" Color="#AA845a2b" />`
+
+#### SolidBackgroundFillColorBase
+`<Color x:Key="SolidBackgroundFillColorBase">#A26829</Color>`
+
+#### SolidBackgroundFillColorSecondary
+`<Color x:Key="SolidBackgroundFillColorSecondary">#845a2b</Color>`
+
+#### SolidBackgroundFillColorTertiary
+`<Color x:Key="SolidBackgroundFillColorTertiary">#A26829</Color>`
+
+#### SolidBackgroundFillColorQuarternary
+`<Color x:Key="SolidBackgroundFillColorQuarternary">#A26829</Color>`
+
+#### SolidBackgroundAcrylic
+`<Color x:Key="SolidBackgroundAcrylic">#A26829</Color>`
