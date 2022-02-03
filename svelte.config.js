@@ -14,7 +14,6 @@ import mediaMinMax from "postcss-media-minmax";
 const config = {
 	extensions: [".svelte", ".md"],
 	kit: {
-		target: "body",
 		vite: {
 			resolve: {
 				alias: {
