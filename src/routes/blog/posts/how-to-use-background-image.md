@@ -8,7 +8,7 @@ author: yaichenbaum
 
 There are a number of ways to personalize Files, today we're going to look at using a custom background.
 1. The first step is to navigate to the themes folder. The easiest way to locate this folder is by opening the settings dialog in Files, clicking the information icon by the custom themes section and clicking on the "Open themes folder" button. 
-2.  Create a new file with the `xaml` extenion and place this template in the file.
+2.  Create a new file with the `xaml` extension and place this template in the file.
 
 ```xml
 <ResourceDictionary
