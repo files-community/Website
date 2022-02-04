@@ -10,7 +10,7 @@ There are a number of ways for users to personalize Files, today we're going to 
 1. The first step is to navigate to the themes folder. The easiest way to locate this folder is by opening the settings dialog in Files, clicking the information icon by the custom themes section and clicking on the "Open themes folder" button. 
 2.  Create a new file with the `xaml` extenion and place this template in the file.
 
-```
+```xml
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
