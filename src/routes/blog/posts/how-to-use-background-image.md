@@ -27,4 +27,4 @@ There are a number of ways to personalize Files, today we're going to look at us
 </ResourceDictionary>
 ```
 
-3. Copy the background image or gif to the themes directory and set the `ImageSource` value to the files path. The `Stretch` value can be changed to `Uniform` and `None`.
+3. Copy the background image or gif to the themes directory and set the `ImageSource` value to the files path.
