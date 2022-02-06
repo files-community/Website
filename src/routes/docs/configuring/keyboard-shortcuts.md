@@ -21,6 +21,7 @@ Files comes with built in keyboard shortcuts to make navigating the app easier.
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>   | New file |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>    | Open compact overlay |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Down</kbd>  | Close compact overlay |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>     | Collapse/Expand sidebar |
 | <kbd>Ctrl</kbd> + <kbd>+</kbd>                      | Increase icon size |
 | <kbd>Ctrl</kbd> + <kbd>-</kbd>                      | Decrease icon size |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd>                      | Delete |
