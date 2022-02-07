@@ -1,14 +1,48 @@
 <script lang="ts">
-	import { externalLink } from "$lib";
-	import { Button, ProgressRing } from "fluent-svelte";
+	import { externalLink, Metadata } from "$lib";
+	import { Button, InfoBar, ProgressRing } from "fluent-svelte";
+	import { onMount } from "svelte";
+	import { fly } from "svelte/transition";
+	import { page } from "$app/stores";
+	import { dev } from "$app/env";
+
+	$: channel = $page.url.pathname.includes("preview") ? "preview" : "stable";
+
+	let link: HTMLAnchorElement;
+
+	let firefox = false;
+
+	const downloadAppInstaller = () => link.click();
+
+	onMount(() => {
+		firefox = navigator.userAgent.includes("Firefox");
+		if (!dev) downloadAppInstaller();
+	});
 </script>
 
-<slot/>
+<svelte:head>
+	<Metadata title="Files • Download {channel}" image="download" />
+</svelte:head>
 
-<div class="download-page">
-	<h1>Downloading</h1>
-	<ProgressRing size={64}/>
+<slot />
+
+<main class="download-page">
+	<h1>Downloading...</h1>
+	<ProgressRing size={64} />
 	<p>Thank you for downloading Files! 🎉</p>
+	<p>If the download hasn't started yet, press
+		<a href="/appinstallers/Files.{channel}.appinstaller" download bind:this={link}>
+			here
+		</a>
+		to start it:
+	</p>
+
+	{#if firefox}
+		<InfoBar severity="caution" closable={false}>
+			Firefox adds a <code>.xml</code> file extension to the downloaded installer.
+			Remove it before opening the installer.
+		</InfoBar>
+	{/if}
 
 	<p>Want to support the creators of Files?</p>
 	<Button
@@ -18,7 +52,7 @@
 	>
 		Donate
 	</Button>
-</div>
+</main>
 
 <style lang="scss">
 	.download-page {
@@ -28,40 +62,20 @@
 
 		h1 {
 			font-size: 5rem;
-
-			&:after {
-				content: "...";
-				animation: dots 3s linear infinite;
-			}
 		}
 
 		p {
 			font-size: 1.75rem;
 
-			&:first-of-type {
+			&:nth-last-child(2) {
 				margin-block: 2em;
 			}
 
-			&:nth-of-type(2) {
+			&:last-child {
 				margin-block-start: 0;
 				padding-block-start: 1em;
 				border-top: 1px solid var(--fds-subtle-fill-secondary)
 			}
-		}
-	}
-
-	@keyframes dots {
-		0% {
-			content: "";
-		}
-		33% {
-			content: ".";
-		}
-		66% {
-			content: "..";
-		}
-		100% {
-			content: "...";
 		}
 	}
 </style>
