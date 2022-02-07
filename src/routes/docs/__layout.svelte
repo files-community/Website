@@ -1,7 +1,6 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
 	import { docs, DocsMap } from "$data/docs";
-	import { getCSSDuration } from "fluent-svelte/internal"
 
 	export const load: Load = ({ url }) => {
 		const docsPages = findPages(docs);
