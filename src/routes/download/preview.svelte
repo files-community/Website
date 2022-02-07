@@ -8,4 +8,8 @@
 		http-equiv="refresh"
 		content="0; url=ms-appinstaller:?source=https://filescommunity.blob.core.windows.net/files/preview/Files.Package.appinstaller"
 	>
+	<meta 
+		name="directUrl" 
+		content="https://filescommunity.blob.core.windows.net/files/preview/Files.Package.appinstaller"
+	>
 </svelte:head>

@@ -1,6 +1,12 @@
 <script lang="ts">
 	import { externalLink } from "$lib";
 	import { Button, ProgressRing } from "fluent-svelte";
+	import { onMount } from 'svelte';
+
+	export let directUrl;
+	onMount(() => { 
+		directUrl = document.querySelector('meta[name=directUrl]').getAttribute('content');
+	});
 </script>
 
 <slot/>
@@ -8,8 +14,12 @@
 <div class="download-page">
 	<h1>Downloading</h1>
 	<ProgressRing size={64}/>
-	<p>Thank you for downloading Files! 🎉</p>
-
+	<p>
+		Thank you for downloading Files! 🎉
+		<br/>
+		<a id="downloadLink" href={directUrl} download>Not downloading? Click here to download!</a>
+	</p>
+	
 	<p>Want to support the creators of Files?</p>
 	<Button
 		href="https://github.com/sponsors/yaichenbaum"
@@ -21,6 +31,7 @@
 </div>
 
 <style lang="scss">
+
 	.download-page {
 		display: grid;
 		place-items: center;
@@ -40,6 +51,7 @@
 
 			&:first-of-type {
 				margin-block: 2em;
+				text-align: center;
 			}
 
 			&:nth-of-type(2) {
