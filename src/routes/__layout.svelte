@@ -3,7 +3,7 @@
 	import { page } from "$app/stores";
 	import { onMount } from "svelte";
 
-	import { Navbar } from "$layout";
+	import { Footer, Navbar } from "$layout";
 	import { links, NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
 
@@ -120,6 +120,7 @@
 
 <Navbar buttons={navbarButtons} items={navbarItems} />
 <slot />
+<Footer />
 
 <style global lang="scss">
 	@use "src/styles/global";
