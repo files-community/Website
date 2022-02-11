@@ -11,7 +11,7 @@
 	// Small device support
 	@media screen and (width < 648px) {
 		// Account for the adjusted navbar height on mobile
-		max-block-size: calc(100vh - 64px);
+		block-size: calc(100vh - 64px);
 	}
 }
 

@@ -10,6 +10,7 @@
 	import { getCSSDuration } from "fluent-svelte/internal";
 
 	export let tree = [];
+	export let initial = true;
 
 	let treeViewState: any;
 
@@ -34,7 +35,7 @@
 	};
 </script>
 
-<div class="tree-view scroller">
+<div class="tree-view scroller" class:initial>
 	{#each tree as { name, path, type, pages, icon }}
 		{#if type === "category"}
 			<div class="subtree" class:expanded={treeViewState?.[id(name)]}>
@@ -51,7 +52,7 @@
 					<div class="subtree-items"
 					     transition:slide|local={{ duration: getCSSDuration("--fds-control-fast-duration"), easing: circOut }}
 					     class:expanded={treeViewState?.[id(name)]}>
-						<svelte:self tree={pages} />
+						<svelte:self tree={pages} initial={false} />
 					</div>
 				{/if}
 			</div>
@@ -90,6 +91,12 @@
 						svg { @include icon }
 					}
 				}
+			}
+		}
+
+		&.initial {
+			@media screen and (width >= 648px) {
+				block-size: calc(100vh - 58px);
 			}
 		}
 	}

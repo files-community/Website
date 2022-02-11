@@ -67,8 +67,8 @@
 			</IconButton>
 		</div>
 		<p>Copyright © 2021 - {new Date().getFullYear()}, The Files Authors</p>
-		<a href="https://www.netlify.com" {...externalLink}>
-			<img src="https://www.netlify.com/img/global/badges/netlify-color-accent.svg" alt="Deploys by Netlify" />
+		<a href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss" {...externalLink}>
+			<img src="/branding/vercel-banner.svg" alt="Powered by Vercel" />
 		</a>
 	</div>
 	<div class="column">

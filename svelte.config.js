@@ -1,5 +1,5 @@
 import path from "path";
-import adapter from "@sveltejs/adapter-netlify";
+import adapter from "@sveltejs/adapter-vercel";
 import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import remarkGfm from "remark-gfm";
@@ -23,13 +23,11 @@ const config = {
 				}
 			}
 		},
-		adapter: adapter({
-			split: true
-		})
+		adapter: adapter()
 	},
 	preprocess: [
 		mdsvex({
-			extensions: [".md"],
+			extension: ".md",
 
 			smartypants: {
 				dashes: "oldschool"
