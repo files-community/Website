@@ -20,13 +20,13 @@
     </a>
 </p>
 
-<p align="center">Powered by Vercel ▲</p>
+<p align="center"><a href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss">Powered by Vercel ▲</a></p>
 
 ---
 
 # Overview
 
-This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with [Netlify](https://www.netlify.com/).
+This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with Vercel.
 
 ## Codebase Structure
 
