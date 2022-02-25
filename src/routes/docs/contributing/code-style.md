@@ -70,7 +70,6 @@ To make the codebase consistent and easy to understand, we require you to follow
 The following presents how a class structure should be ordered:
 
 - Static fields
-- Static fields
 - Static properties
 
 - `readonly` fields
