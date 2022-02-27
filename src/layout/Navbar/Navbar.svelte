@@ -42,20 +42,20 @@
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>
 				<source
-				media="(prefers-color-scheme: dark)"
-				srcset="/branding/logo-dark.svg"
+					media="(prefers-color-scheme: dark)"
+					srcset="/branding/logo-dark.svg"
 				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/branding/logo-light.svg"
-					>
-					<img
+				>
+				<img
 					alt="Files logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo-light.svg"
 					width="32"
-					>
+				>
 			</picture>
 			Files
 		</a>
