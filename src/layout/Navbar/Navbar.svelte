@@ -3,7 +3,7 @@
 	import type { NavbarItem } from "$data/links";
 
 	import { externalLink, TreeView } from "$lib";
-	import { ListItem } from "fluent-svelte";
+	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
 	export let items: NavbarItem[] = [];
@@ -88,6 +88,9 @@
 		{/if}
 	</nav>
 	<div class="buttons">
+		<Tooltip text="#supportukraine" placement="bottom" delay={200} offset={0}>
+			<span class="support-ukraine" aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"></span>
+		</Tooltip>
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}
 				<a
