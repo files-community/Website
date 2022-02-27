@@ -78,6 +78,22 @@
 	}
 }
 
+.support-ukraine{
+	display:flex;
+	font-size: 1.36rem;
+	width:fit-content;
+	padding: 5px 11px 6px;
+	font-weight: 400;
+
+	.flag {
+		width: 30px;
+		height: 20px;
+		margin-right: 5px;
+		background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo=);
+		background-color: initial;
+	}
+}
+
 .buttons {
 	z-index: 1;
 	display: flex;

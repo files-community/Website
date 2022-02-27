@@ -59,6 +59,7 @@
 			</picture>
 			Files
 		</a>
+
 		{#if innerWidth > 648}
 			<div class="divider"></div>
 			{#each items as { name, path, external, icon, type }}
@@ -86,6 +87,10 @@
 				{/if}
 			{/each}
 		{/if}
+		<span class="support-ukraine" href="#supportukraine">
+			<span class="flag"></span>
+			#supportukraine
+		</span>
 	</nav>
 	<div class="buttons">
 		{#if innerWidth > 648}
