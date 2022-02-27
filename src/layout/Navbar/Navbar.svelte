@@ -3,7 +3,7 @@
 	import type { NavbarItem } from "$data/links";
 
 	import { externalLink, TreeView } from "$lib";
-	import { ListItem } from "fluent-svelte";
+	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
 	export let items: NavbarItem[] = [];
@@ -42,20 +42,20 @@
 		<a class="logo" href="/" sveltekit:prefetch>
 			<picture>
 				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/branding/logo-dark.svg"
+				media="(prefers-color-scheme: dark)"
+				srcset="/branding/logo-dark.svg"
 				>
 				<source
 					media="(prefers-color-scheme: light)"
 					srcset="/branding/logo-light.svg"
-				>
-				<img
+					>
+					<img
 					alt="Files logo"
 					class="logo-image"
 					height="32"
 					src="/branding/logo-light.svg"
 					width="32"
-				>
+					>
 			</picture>
 			Files
 		</a>
@@ -87,12 +87,11 @@
 				{/if}
 			{/each}
 		{/if}
-		<span class="support-ukraine" href="#supportukraine">
-			<span class="flag"></span>
-			#supportukraine
-		</span>
 	</nav>
 	<div class="buttons">
+		<Tooltip text="#supportukraine" placement="bottom" delay={200} offset={0}>
+			<span class="support-ukraine" aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"></span>
+		</Tooltip>
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}
 				<a
