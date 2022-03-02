@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
-	Uri="https://cdn.files.communityfiles/stable/Files.Package.appinstaller"
+	Uri="https://cdn.files.community/files/stable/Files.Package.appinstaller"
 	Version="2.1.15.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="Files"
