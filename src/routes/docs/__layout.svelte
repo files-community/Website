@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
-	import { docs, DocsMap } from "$data/docs";
+	import { docs, type DocsMap } from "$data/docs";
 
 	export const load: Load = ({ url }) => {
 		const docsPages = findPages(docs);
@@ -40,7 +40,6 @@
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import type { DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
@@ -49,11 +48,11 @@
 	export let docsPages: DocsMap[];
 	export let currentPage: DocsMap = { name: "Overview", path: "" };
 
-	let value: string = "";
-	let searchQuery: string = "";
-	let searchFocused: boolean = false;
-	let autoSuggestVisible: boolean = false;
-	let selection: number = 0;
+	let value = "";
+	let searchQuery = "";
+	let searchFocused = false;
+	let autoSuggestVisible = false;
+	let selection = 0;
 
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.name;
@@ -156,7 +155,7 @@
 					</div>
 				{/if}
 			</div>
-			<hr role="separator">
+			<hr>
 		</div>
 		<TreeView tree={docs} />
 	</aside>

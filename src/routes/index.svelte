@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { CommunitySection, DesignSection, FeaturesSection, Footer, HeroSection, ThemesSection } from "$layout";
+	import { CommunitySection, DesignSection, FeaturesSection, HeroSection, ThemesSection } from "$layout";
 	import { Metadata } from "$lib";
 </script>
 

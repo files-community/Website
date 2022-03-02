@@ -12,7 +12,7 @@
 </script>
 
 <script lang="ts">
-	import { draggable, DragOptions } from "@neodrag/svelte";
+	import { draggable, type DragOptions } from "@neodrag/svelte";
 	import { Metadata } from "$lib";
 
 	export let status: number;
