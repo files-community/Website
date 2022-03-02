@@ -1,66 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
-	Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package.appinstaller"
+	Uri="https://cdn.files.communityfiles/stable/Files.Package.appinstaller"
 	Version="2.1.15.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="Files"
 		Version="2.1.15.0"
 		Publisher="CN=Yair Aichenbaum, O=Yair Aichenbaum, L=Redmond, S=Washington, C=US"
-		Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Files.Package_2.1.15.0_x86_x64_arm64.msixbundle" />
+		Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Files.Package_2.1.15.0_x86_x64_arm64.msixbundle" />
 	<Dependencies>
 		<Package
 			Name="Microsoft.NET.Native.Framework.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x86/Microsoft.NET.Native.Framework.2.2.appx"
 			Version="2.2.29512.0" />
 		<Package
 			Name="Microsoft.NET.Native.Framework.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.NET.Native.Framework.2.2.appx"
 			Version="2.2.29512.0" />
 		<Package
 			Name="Microsoft.NET.Native.Framework.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.NET.Native.Framework.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.NET.Native.Framework.2.2.appx"
 			Version="2.2.29512.0" />
 		<Package
 			Name="Microsoft.NET.Native.Runtime.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.16.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.16.0_Test/Dependencies/x86/Microsoft.NET.Native.Runtime.2.2.appx"
 			Version="2.2.28604.0" />
 		<Package
 			Name="Microsoft.NET.Native.Runtime.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.NET.Native.Runtime.2.2.appx"
 			Version="2.2.28604.0" />
 		<Package
 			Name="Microsoft.NET.Native.Runtime.2.2"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.NET.Native.Runtime.2.2.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.NET.Native.Runtime.2.2.appx"
 			Version="2.2.28604.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.VCLibs.ARM64.14.00.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/arm64/Microsoft.VCLibs.ARM64.14.00.appx"
 			Version="14.0.30035.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
 			Version="14.0.30035.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x86"
-			Uri="https://filescommunity.blob.core.windows.net/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_2.1.15.0_Test/Dependencies/x86/Microsoft.VCLibs.x86.14.00.appx"
 			Version="14.0.30035.0" />
 	</Dependencies>
 	<UpdateSettings>
