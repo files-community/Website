@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
 	import type { Load } from "@sveltejs/kit";
-	import { docs, DocsMap } from "$data/docs";
+	import { docs, type DocsMap } from "$data/docs";
 
 	export const load: Load = ({ url }) => {
 		const docsPages = findPages(docs);
