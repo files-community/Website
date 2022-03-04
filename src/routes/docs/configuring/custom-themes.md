@@ -16,7 +16,7 @@ Default template
     xmlns:BelowWindows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractNotPresent(Windows.Foundation.UniversalApiContract, 7)"
     xmlns:Windows10version1809="http://schemas.microsoft.com/winfx/2006/xaml/presentation?IsApiContractPresent(Windows.Foundation.UniversalApiContract, 7)">
     <ResourceDictionary.ThemeDictionaries>
-        <ResourceDictionary x:Key="Default">
+        <ResourceDictionary x:Key="RootBackgroundBrush">
         </ResourceDictionary>
         <ResourceDictionary x:Key="Light">
         </ResourceDictionary>
