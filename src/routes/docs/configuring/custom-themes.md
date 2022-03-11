@@ -25,7 +25,7 @@ Files has a selection of built-in themes but you can also create your own theme 
 
 ## Available resources
 
-The themeing system in Files allows you to override any resource that's included in the WinUI library but most themes including the built-in themes only override a couple of brushes.
+The theming system in Files allows you to override any resource that's included in the WinUI library but most themes including the built-in themes only override a couple of brushes.
 
 | Key | Example | Default value |
 | --------- | ----------- | ---------- |
