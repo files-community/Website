@@ -4,11 +4,10 @@ Files has a selection of built-in themes but you can also create your own theme 
 
 ## How to create a custom theme
 
-1. Navigate to the themes directory, you can open find this folder by clicking the information icon in the appearance page. Create a new file with the `xaml` extension, this file will contain the resources for your custom theme.
+1. Navigate to the themes directory -  you can find this folder by clicking the information icon in the appearance page. Create a new file with the `.xaml` extension, this file will contain the resources for your custom theme.
 2. Open the file in the text editor of your choice.
-3. Copy and paste the template below
+3. Copy and paste the template below:
 
-Default template
 ```xml
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
