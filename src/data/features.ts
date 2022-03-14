@@ -98,7 +98,7 @@ export const previewFiles = [
 		icon: "/ui/icons/folder.png",
 		items: 16,
 		added: "Wednesday, October 6, 2021 9:34 PM",
-		modified: "Monday, October 18, 2021 8:36 PM",
+		modified: "Thursday, January 1, 1970 00:00 PM",
 		path: "C:\\Users\\Sara\\source\\repos\\Files v3"
 	},
 	{
@@ -114,8 +114,8 @@ export const previewFiles = [
 			horizontal: 72,
 			vertical: 72
 		},
-		added: "Sunday, August 1, 2021 12:34 AM",
-		modified: "Monday, August 9, 2021 12:34 AM",
+		added: "Sunday, August 1, 2021 42:69 AM",
+		modified: "Monday, August 9, 2021 12:34 PM",
 		path: "C:\\Users\\Sara\\OneDrive\\Pictures\\waves.png"
 	},
 	{
@@ -131,7 +131,7 @@ export const previewFiles = [
 		extension: "cpp",
 		icon: "/ui/icons/cpp.svg",
 		added: "Monday, June 28, 2021 8:20 AM",
-		modified: "Monday, July 12, 2021 4:30 PM",
+		modified: "Friday, August 13, 2021 4:30 PM",
 		lineCount: 8,
 
 		// Yep, this is a very ugly way to do this, but
