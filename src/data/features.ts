@@ -154,8 +154,8 @@ cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</
 
 export const tags: Tag[] = [
 	{
-		name: "Blue",
-		color: "#0072bd"
+		name: "Purple",
+		color: "#800080"
 	},
 	{
 		name: "Yellow",
@@ -173,6 +173,7 @@ export const tags: Tag[] = [
 		name: "Orange",
 		color: "#d95319"
 	}
+
 ];
 
 export const taggedFiles: TaggedFileData[] = [
@@ -189,7 +190,7 @@ export const taggedFiles: TaggedFileData[] = [
 	{
 		name: "Files (MacOS)",
 		icon: "folder",
-		tag: "Blue"
+		tag: "Green"
 	},
 	{
 		name: "Estimate_261_2022-01-31 (outdated).pdf",
