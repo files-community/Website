@@ -43,7 +43,7 @@ export const featureCards: FeatureCardData[] = [
 	{
 		title: "Tagged Files & Folders",
 		description:
-			"Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!",
+			"Quickly mark and organize your files and folders for later use by assigning them colored and named tags for easy identification. You can even add your own custom tags!",
 		icon: Tag
 	},
 	{
@@ -71,12 +71,12 @@ export const cloudFiles: CloudFileData[] = [
 		status: "success"
 	},
 	{
-		name: "2021-08-05 15.03.05.mp4",
+		name: "2021-05-08 15.03.05.mp4",
 		icon: "video",
 		status: "success"
 	},
 	{
-		name: "christmas-card-2017.png",
+		name: "christmas-card-2021.pub",
 		icon: "picture",
 		status: "success"
 	},
@@ -97,9 +97,9 @@ export const previewFiles = [
 		name: "Files v3",
 		icon: "/ui/icons/folder.png",
 		items: 16,
-		added: "Wednesday, October 6, 2021 42:69 AM",
-		modified: "Thursday, January 1, 1970 00:00",
-		path: "C:\\Users\\Sara\\Desktop\\Files v3"
+		added: "Wednesday, October 6, 2021 9:34 PM",
+		modified: "Monday, October 18, 2021 8:36 PM",
+		path: "C:\\Users\\Sara\\source\\repos\\Files v3"
 	},
 	{
 		name: "waves",
@@ -116,22 +116,22 @@ export const previewFiles = [
 		},
 		added: "Sunday, August 1, 2021 12:34 AM",
 		modified: "Monday, August 9, 2021 12:34 AM",
-		path: "C:\\Users\\Sara\\Pictures\\waves.png"
+		path: "C:\\Users\\Sara\\OneDrive\\Pictures\\waves.png"
 	},
 	{
 		name: "index",
 		extension: "html",
 		icon: "/ui/icons/file.png",
 		added: "Wednesday, July 14, 2021 8:47 PM",
-		modified: "Saturday, July 31, 2021 4:32 AM",
-		path: "C:\\Users\\Sara\\Documents\\index.html"
+		modified: "Saturday, July 31, 2021 6:32 AM",
+		path: "C:\\Users\\Sara\\OneDrive\\Documents\\index.html"
 	},
 	{
 		name: "main",
 		extension: "cpp",
 		icon: "/ui/icons/cpp.svg",
 		added: "Monday, June 28, 2021 8:20 AM",
-		modified: "Monday, July 12, 2021 1:30 PM",
+		modified: "Monday, July 12, 2021 4:30 PM",
 		lineCount: 8,
 
 		// Yep, this is a very ugly way to do this, but
@@ -148,7 +148,7 @@ export const previewFiles = [
 cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</span> <span class="operator">&lt;&lt;</span> endl<span class="punctuation">;</span>
 <span class="keyword">return</span> <span class="number">0</span><span class="punctuation">;</span>
 <span class="punctuation">}</span>`,
-		path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png"
+		path: "C:\\Users\\Sara\\source\\repos\\Files v3\\main.cpp"
 	}
 ];
 
@@ -179,27 +179,27 @@ export const taggedFiles: TaggedFileData[] = [
 	{
 		name: "Super Secret Plans - Do Not Publish.docx",
 		icon: "file",
-		tag: "Yellow"
+		tag: "Purple"
 	},
 	{
 		name: "Presentation - Project Sledgehammer.pptx",
 		icon: "file",
-		tag: "Green"
+		tag: "Yellow"
 	},
 	{
 		name: "Files (MacOS)",
 		icon: "folder",
-		tag: "Gray"
+		tag: "Blue"
 	},
 	{
-		name: "Estimate_261_2022-01-31.pdf",
+		name: "Estimate_261_2022-01-31 (outdated).pdf",
 		icon: "file",
-		tag: "Blue"
+		tag: "Gray"
 	},
 	{
 		name: "Files (Linux)",
 		icon: "folder",
-		tag: "Gray"
+		tag: "Green"
 	},
 	{
 		name: "Files v4.0",
