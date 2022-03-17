@@ -12,4 +12,4 @@
 
 ![Settings dialog](/docs-resources/Settings-Dialog-Experimental.png)
 
-*If you are running the store version and do not want to sideload Files, you can run [this](https://raw.githubusercontent.com/files-community/Files/main/src/Files.Launcher/Assets/FilesOpenDialog/UnsetFilesAsDefault.reg) registry file to make the option available on your Files installation.
+*If you are running the store version and do not want to sideload Files, you can run [this](https://raw.githubusercontent.com/files-community/Files/main/src/Files.Launcher/Assets/FilesOpenDialog/FilesAsDefault.reg) registry file to make the option available on your Files installation.
