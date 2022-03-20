@@ -2,7 +2,7 @@
 title: Introducing Files v2.1.24
 description: We're pleased to announce that we're bringing back the option to set Files as the default file manager.
 thumbnail: /blog-resources/filesv2-1-24/HeroImage.jpg
-date: 2022-1-11
+date: 2022-3-28
 author: yaichenbaum
 ---
 
