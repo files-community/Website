@@ -123,7 +123,7 @@ export const previewFiles = [
 		extension: "html",
 		icon: "/ui/icons/file.png",
 		added: "Wednesday, July 14, 2021 8:47 PM",
-		modified: "Saturday, July 31, 2021 6:32 AM",
+		modified: "Saturday, July 31, 2021 4:32 AM",
 		path: "C:\\Users\\Sara\\OneDrive\\Documents\\index.html"
 	},
 	{
