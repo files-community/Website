@@ -7,7 +7,7 @@ author: yaichenbaum
 ---
 
 Today, we're pleased to announce
-that [Files v2.1]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
+that [Files v2.1]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=FilesWebsite'})
 is now available. We focused on improving the performance and behavior of existing features in this update to make it
 even easier for you to use the app.
 
