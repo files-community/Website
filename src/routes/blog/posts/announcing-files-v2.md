@@ -7,7 +7,7 @@ author: yaichenbaum
 ---
 
 Today, we're excited to announce that we are releasing Files v2 as
-a [free update]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=v2Blog'})
+a [free update]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2'})
 to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the
 platform, and with v2, we've taken that to a whole new level. We're excited to share with everyone what we've been
 working on for the last seven months!
@@ -73,5 +73,5 @@ everyone. We invite you to submit your feedback through our GitHub repository.
 – Yair
 
 Download from
-the [Microsoft Store]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=V2Blog'})
+the [Microsoft Store]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2'})
 || See Files on [GitHub](https://github.com/files-community/Files)
