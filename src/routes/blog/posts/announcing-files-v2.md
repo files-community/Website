@@ -7,7 +7,7 @@ author: yaichenbaum
 ---
 
 Today, we're excited to announce that we are releasing Files v2 as
-a [free update]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
+a [free update]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=FilesWebsite'})
 to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the
 platform, and with v2, we've taken that to a whole new level. We're excited to share with everyone what we've been
 working on for the last seven months!
