@@ -23,7 +23,7 @@
 
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
-		: `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
+		: `https://www.microsoft.com/store/apps/${ links.storeId }?cid=FilesWebsite`;
 	$: sideloadLink = `/download/${ currentDownloadSource !== "Sideload Package (Preview)" ? "stable" : "preview" }`;
 	$: downloadLink = currentDownloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink;
 
