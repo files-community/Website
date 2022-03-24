@@ -7,7 +7,7 @@ author: yaichenbaum
 ---
 
 Today, we're pleased to announce
-that [Files v2.0.33]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=FilesWebsite'})
+that [Files v2.0.33]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-0-33'})
 is now available for users on Windows 10 and Windows 11. We've been listing to your feedback, and it's clear that you
 expect better performance out of Files. There is still a lot of work to be done, but we're excited to share that we made
 several improvements to the performance when loading directories, and we hope these changes make a positive impact in
@@ -47,5 +47,5 @@ everyone. We invite you to submit your feedback through our GitHub repository.
 – Yair
 
 Download from
-the [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
+the [Microsoft Store]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-0-33'})
 || See Files on [GitHub](https://github.com/files-community/Files)
