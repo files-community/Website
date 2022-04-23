@@ -23,7 +23,7 @@ const config = {
 				}
 			}
 		},
-		adapter: adapter()
+		adapter: adapter({ edge: true })
 	},
 	preprocess: [
 		mdsvex({
