@@ -1,5 +1,5 @@
 ---
-title: Introducing the next major release of Files (version v2.3)
+title: Introducing the next major release of Files - v2.3
 description: version 2.3 is now availible to download as a free update.
 thumbnail: /blog-resources/filesv2-3/HeroImage.jpg
 date: 2022-7-5
@@ -15,7 +15,7 @@ We're pleased to announce that we relicened the Files repositroy under the MIT l
 
 ## Default file manager
 
-As many of you have noticed, we removed the option to set Files as the default file manager in order comply with the Microsoft Store Policy. We're hoping to bring this option back in the future but in the meantime, this option is still availbile in the sideload version (https://files.community/download/stable). Please note that this feature is still experimental and can have unexpected side affects.
+As many of you have noticed, we removed the option to set Files as the default file manager in order comply with the Microsoft Store Policy. We're hoping to bring this option back in the future but in the meantime, this option is still availbile in the sideload version (https://files.community/download/stable). Please note that this feature is experimental and can have unexpected side affects.
 
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/Settings-Dialog-Experimental.png" alt="A screenshot of the settings dialog in v2.3" />
