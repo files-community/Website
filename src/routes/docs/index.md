@@ -4,6 +4,6 @@ Files is a file manager for Windows with a powerful yet intuitive design. It has
 
 # Download Files
 
-- [Microsoft Store]({'https://click.linksynergy.com/deeplink?id=pVFXwNFwveg&mid=24542&murl=https%3A%2F%2Fwww.microsoft.com%2Fstore%2Fapps%2F9NGHP3DX8HDX'})
-- [Sideload](/download/stable)
-- [Preview](/download/preview)
+- [Download Files](/download/stable)
+- [Download Preview](/download/preview)
+- [Microsoft Store]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=FilesWebsite'})
