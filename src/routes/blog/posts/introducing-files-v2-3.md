@@ -8,7 +8,7 @@ author: yaichenbaum
 
 Today we're excited to introduce the next major release of Files. Building on the sucsess of v2, we're confident that this update will enable you to be more productive and inspire you to do more. In addition to all the changes in v2.3, we also put a lot of work into improving the code base. This will enable us to iterate faster and in the long term, it will pave the way for performance improvments.
 
-## GitHub
+## Giving back to the community
 
 We're pleased to announce that we relicened the Files repositroy under the MIT licence. This means that other projects can now take advantage of the innovation in Files even if they happen to be closed source.
 
