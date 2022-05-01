@@ -25,12 +25,15 @@ As many of you have noticed, we removed the option to set Files as the default f
 ## New Features
 
 **Compact sizing** allows users to view more items on the screen
-(insert picture)
+(insert photo)
 
 The **tab control** was redesigned to better connect with the rest of the app
-(insert picture)
+(insert photo)
 
 We added an option to display **tags** on the sidebar
+(insert photo)
+
+- Added support for applying bulk actions in the **conflicts dialog**
 (insert photo)
 
 
@@ -52,7 +55,6 @@ We added an option to display **tags** on the sidebar
 - Reduced the height of items in the sidebar to allow more items to be displayed at once
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
-- Added support for applying bulk actions in the confclits dialog
 - Added support for renaming items in the conflicts dialog
 
 ## Bug fixes
