@@ -64,6 +64,9 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Added examples to the date format setting
 - Improved behavior when trying to name an item with invalid characters
 - Added a notifcation when copying or moving an item fails
+- Added the archive name to the extract archive dialog
+- Added support for adding tags to items in the search results page
+- Show which process is locking a file
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
@@ -75,6 +78,7 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Fixed a crash that would sometimes occur when the favorites section was hidden
 - Fixed an issue where the UI didn't display correctly in compact overlay mode
 - Fixed an issue where the close pane button had the wrong icon
+- Fixed an issue where the disconnect drive option had the wrong icon
 - Fixed a crash that would sometimes occur when "show folder sizes" was enabled
 - Fixed an issue where the properties window sometimes used the wrong theme
 - Fixed a crash that would sometimes occur when previewing XML files
@@ -83,27 +87,14 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Fixed an issue where the import settings option didn't import all the settings
 - Fixed an issue where rotating an image multiple times would sometimes crash the app
 - Fixed an issue where the app would sometimes hang on startup
-
-
-## Changes
-
-Improve JumpString behavior by @gave92 in #8324
-Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
-Fixed tags section in the context menu by @oleklukasiewicz in #8460
-Toolbar buttons in recycle bin by @puppetsw in #8545
-Use external launcher to set Files as default explorer by @gave92 in #8684
-Notify when pinned items config changes by @jiejasonliu in #8712
-Fix new/rename dialog processing stale text by @jiejasonliu in #8783
-Fix box drive by @gave92 in #8808
-Fix crash when using "apply to all" menu item in conflicts dialog by @gave92 in #8836
-Show which process is locking a file by @gave92 in #8809
-Fix for pasting in search box by @puppetsw in #8811
-Fixed Disconnect Drive Icon by @esibruti in #8854
-Fix Ctrl+L on homepage by @gave92 in #8861
-Add archive name when extracting by @itsWindows11 in #8900
-Fix create folder with selection by @gave92 in #8929
-Fix copy/move to zip file by @gave92 in #8930
-Fixes for item context menu in search page by @gave92 in #8987
+- Fixed an issue where Box cloud drives didn't properly display files
+- Fixed an issue where the `ctrl` + `l` and `alt` + `d` shortcuts didn't set the focus to the adress bar on the home page
+- Fixed an issue where pasting text in the search box would paste the clipboard content into the current directory
+- Fixed an issue where the overflow options weren't shown when right clicking on search results
+- Fixed an issue that prevented adding items into archives
+- Fixed an issue where extra toolbar buttons were visible in recycl bin
+- Fixed an issue where the tags section was sometimes visible in the context menu even after turning off the experimental setting
+- Fixed an issue where switching the app theme would make the group headers unreadable until restarting the app
 
 ## Feedback
 
