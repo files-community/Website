@@ -63,6 +63,7 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Resizing the window no longer changes the width of columns in the details layout
 - Added examples to the date format setting
 - Improved behavior when trying to name an item with invalid characters
+- Added a notifcation when copying or moving an item fails
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
@@ -87,7 +88,6 @@ Added support for applying bulk actions in the **conflicts dialog**
 ## Changes
 
 Improve JumpString behavior by @gave92 in #8324
-Show error banner if copy or move fails by @gave92 in #8322
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Toolbar buttons in recycle bin by @puppetsw in #8545
