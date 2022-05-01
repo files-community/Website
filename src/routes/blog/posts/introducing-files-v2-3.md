@@ -56,9 +56,12 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
 - Added support for renaming items in the conflicts dialog
-- Auto refresh file list in network shares
+- Network shares will automaticlly refresh when their content changes
 - Auto select first item in user list for permissions
 - Auto select the primary button in the empty recycle bin dialog
+- Deleting an item will automaticlly move the focus to the next item in the list
+- Resizing the window no longer changes the width of columns in the details layout
+- Added examples to the date format setting
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
@@ -75,6 +78,10 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Fixed a crash that would sometimes occur when previewing XML files
 - Fixed an issue that sometimes prevented drag and drop from working
 - Fixed an issue where the clear all properties button didn't have any text
+- Fixed an issue where the import settings option didn't import all the settings
+- Fixed an issue where rotating an image multiple times would sometimes crash the app
+- Fixed an issue where the app would sometimes hang on startup
+
 
 ## Changes
 
@@ -83,9 +90,6 @@ Show error banner if copy or move fails by @gave92 in #8322
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Toolbar buttons in recycle bin by @puppetsw in #8545
-Select next item after deletion and reduce code complexity by @jiejasonliu in #8503
-Removed behavior of auto resizing columns by @yaichenbaum in #8589
-Added a debounce for image rotation command. by @devovercome in #8682
 Use external launcher to set Files as default explorer by @gave92 in #8684
 Improved behavior when entering restricted characters by @szabolcstarnai in #8204
 Notify when pinned items config changes by @jiejasonliu in #8712
@@ -93,16 +97,11 @@ Fix new/rename dialog processing stale text by @jiejasonliu in #8783
 Fix box drive by @gave92 in #8808
 Fix crash when using "apply to all" menu item in conflicts dialog by @gave92 in #8836
 Show which process is locking a file by @gave92 in #8809
-Possibly fix app hung on start by @gave92 in #8847
 Fix for pasting in search box by @puppetsw in #8811
 Fixed Disconnect Drive Icon by @esibruti in #8854
 Fix Ctrl+L on homepage by @gave92 in #8861
-Improves Setting DateFormat by @cinqmilleans in #8875
-Fix refresh in mapped network drives by @gave92 in #8897
 Add archive name when extracting by @itsWindows11 in #8900
 Fix create folder with selection by @gave92 in #8929
-"File in use" dialog improvements by @gave92 in #8925
-Fixes an issue for which settings are not imported by @gave92 in #8970
 Fix copy/move to zip file by @gave92 in #8930
 Fixes for item context menu in search page by @gave92 in #8987
 
