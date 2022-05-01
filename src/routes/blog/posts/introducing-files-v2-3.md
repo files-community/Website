@@ -33,6 +33,7 @@ The **tab control** was redesigned to better connect with the rest of the app
 We added an option to display **tags** on the sidebar
 (insert photo)
 
+
 ### Other changes:
 - Improved the reliability and speed of drag and drop
 - Added a pull to refresh gesture
@@ -51,6 +52,8 @@ We added an option to display **tags** on the sidebar
 - Reduced the height of items in the sidebar to allow more items to be displayed at once
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
+- Added support for applying bulk actions in the confclits dialog
+- Added support for renaming items in the conflicts dialog
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
