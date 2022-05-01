@@ -56,6 +56,12 @@ Drag and drop is an integral part of the file manager expereince. We listend to 
 - Aded a pull to refresh gesture
 - Added an animation when clicking on the setting and search buttons
 - Added an option to always show icons instead of thumbnails
+- Improved the spacing in the pathbar
+- Added a chevron to the pathbar to better indicate that there is a flyout menu
+- Reduced the spacing between widgets on the home page
+- Double clicking the grid splitter will now reset panes in the dual pane layout to the default width
+- More file types are now displayed in the "new" item context menu
+- Double clicking in a blank space will now go up one directory in the file tree
 
 ## Changes
 
@@ -69,35 +75,24 @@ Fixed issue that causes a window to close when a tab is torn off by @manfromarce
 Auto select primary button in empty recycle bin dialog by @mafra99 in #8442
 Fix SearchBox height by @cinqmilleans in #8452
 Improves MultiPanes by @cinqmilleans in #8321
-Properly dispose event in FolderSizeProvider by @yaichenbaum in #8454
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Removed unused resources by @yaichenbaum in #8456
 Toolbar buttons in recycle bin by @puppetsw in #8545
 Select next item after deletion and reduce code complexity by @jiejasonliu in #8503
 Removed behavior of auto resizing columns by @yaichenbaum in #8589
-chore: Remove, ungroup various enums by @lukeblevins in #8580
 Fixed the close pane icon by @bebeyaco in #8513
-Fix FilesystemTasks error code by @cinqmilleans in #8604
-Bump Microsoft.Data.Sqlite.Core from 6.0.2 to 6.0.3 by @dependabot in #8608
 Added a debounce for image rotation command. by @devovercome in #8682
-Show more file types in "New" context menu by @manfromarce in #8598
 Use external launcher to set Files as default explorer by @gave92 in #8684
 Improved behavior when entering restricted characters by @szabolcstarnai in #8204
 Copy launcher to output directory by @gave92 in #8717
 Fixed release pipeline by @yaichenbaum in #8718
 Notify when pinned items config changes by @jiejasonliu in #8712
-Implemented connected tab styles by @yaichenbaum in #8740
-Compact spacing for the details layout by @yaichenbaum in #8751
-Increased padding on Pathbar by @puppetsw in #8758
-Added chevron to pathbar to match design spec by @yaichenbaum in #8764
 Fix MainPage adaptive triggers by @gave92 in #8778
 Fix crash when "show folder sizes" is enabled by @gave92 in #8716
 Fix default & build in case of usernames with spaces by @gave92 in #8779
 Fix new/rename dialog processing stale text by @jiejasonliu in #8783
 Auto select first item in user list for permissions by @yaichenbaum in #8794
-Add support for creating google docs files from the "new" menu by @gave92 in #8784
-Reset dual pane layout when double clicking the grid splitter by @puppetsw in #8801
 Fix box drive by @gave92 in #8808
 Fix crash when using "apply to all" menu item in conflicts dialog by @gave92 in #8836
 Fixed an issue where the properties window used the wrong theme by @CarJem in #8837
@@ -107,13 +102,11 @@ Fix crash when previewing XML files by @gave92 in #8828
 Show which process is locking a file by @gave92 in #8809
 Possibly fix app hung on start by @gave92 in #8847
 Fix for pasting in search box by @puppetsw in #8811
-feat(widgets): Reduce default padding by @lukeblevins in #8851
 Fixed Disconnect Drive Icon by @esibruti in #8854
 Fix Ctrl+L on homepage by @gave92 in #8861
 Moved FileSystemDialog to Files.Backend by @d2dyno1 in #8857
 Avoid throwing NRE when getting path suggestions on Home by @gave92 in #8871
 Fixed conflicts dialog by @d2dyno1 in #8876
-Add double click to go up gesture by @gave92 in #8878
 Auto refresh file list in network shares by @gave92 in #8831
 Bump CommunityToolkit.Mvvm from 8.0.0-preview2 to 8.0.0-preview3 by @dependabot in #8879
 Improves Setting DateFormat by @cinqmilleans in #8875
