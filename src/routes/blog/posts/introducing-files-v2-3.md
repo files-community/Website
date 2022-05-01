@@ -62,6 +62,7 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Deleting an item will automaticlly move the focus to the next item in the list
 - Resizing the window no longer changes the width of columns in the details layout
 - Added examples to the date format setting
+- Improved behavior when trying to name an item with invalid characters
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
@@ -91,7 +92,6 @@ Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Toolbar buttons in recycle bin by @puppetsw in #8545
 Use external launcher to set Files as default explorer by @gave92 in #8684
-Improved behavior when entering restricted characters by @szabolcstarnai in #8204
 Notify when pinned items config changes by @jiejasonliu in #8712
 Fix new/rename dialog processing stale text by @jiejasonliu in #8783
 Fix box drive by @gave92 in #8808
