@@ -22,38 +22,21 @@ As many of you have noticed, we removed the option to set Files as the default f
     <figcaption>Experimental settings page</figcaption>
 </figure>
 
+## New Features
 
-## Drag and drop
-Drag and drop is an integral part of the file manager expereince. We listend to your feedback and we put a lot of time into improving support for this feature in Files. Dragging items is not only more reliable but it's faster as well.
-
-## Sidebar
-- The issue where expanding sidebar sections would sometimes require two clicks has been resolved
-- The issue where the sidebar state would sometimes get reset has been fixed
-- Reduced the height of items in the sidebar to allow more items to be displayed at once
-- Invalid favorites and network shares are no longer removed the sidebar
-- Added a context menu to hide sections when right clicking on the sidebar
-
-## Tabs
-- The tab control has been redesigned to better integrate with the rest of the app
+**Compact sizing** allows users to view more items on the screen
 (insert picture)
 
-## Keyboard shortcuts
-- Added a shortcut to open folders in the default terminal `ctrl` + `shift` + `'`
-- Added a shortcut to play and pause media in the preview pane `ctrl` + `space`
+The **tab control** was redesigned to better connect with the rest of the app
+(insert picture)
 
-## Properties dialog
+We added an option to display **tags** on the sidebar
+(insert photo)
+
+### Other changes
+- Improved the reliability and speed of drag and drop
+- Added a pull to refresh gesture
 - Removed the minimize and maximize buttons from the properties window
-
-## Tags
-- Adding a tag to a file no longers changes the date modified property
-- Added an option to display tags on the sidebar
-
-## Compact sizing
-- Added an option to use compact sizeing
-(insert picture)
-
-## Other changes
-- Aded a pull to refresh gesture
 - Added an animation when clicking on the setting and search buttons
 - Added an option to always show icons instead of thumbnails
 - Improved the spacing in the pathbar
@@ -62,6 +45,14 @@ Drag and drop is an integral part of the file manager expereince. We listend to 
 - Double clicking the grid splitter will now reset panes in the dual pane layout to the default width
 - More file types are now displayed in the "new" item context menu
 - Double clicking in a blank space will now go up one directory in the file tree
+- Adding a tag to a file no longers changes the date modified property
+- Added a shortcut to open folders in the default terminal `ctrl` + `shift` + `'`
+- Added a shortcut to play and pause media in the preview pane `ctrl` + `space`
+- The issue where expanding sidebar sections would sometimes require two clicks has been resolved
+- The issue where the sidebar state would sometimes get reset has been fixed
+- Reduced the height of items in the sidebar to allow more items to be displayed at once
+- Invalid favorites and network shares are no longer removed the sidebar
+- Added a context menu to hide sections when right clicking on the sidebar
 
 ## Changes
 
