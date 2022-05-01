@@ -56,6 +56,9 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
 - Added support for renaming items in the conflicts dialog
+- Auto refresh file list in network shares
+- Auto select first item in user list for permissions
+- Auto select the primary button in the empty recycle bin dialog
 
 ## Bug fixes
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
@@ -64,18 +67,19 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Fixed an issue where expanding the sidebar sections would sometimes require two clicks
 - Fixed an issue where the sidebar state would sometimes get reset
 - Fixed an issue where duplicate drives were sometimes added to the sidebar
-- Fix a crash that would sometimes occur when the favorites section was hidden
+- Fixed a crash that would sometimes occur when the favorites section was hidden
 - Fixed an issue where the UI didn't display correctly in compact overlay mode
 - Fixed an issue where the close pane button had the wrong icon
 - Fixed a crash that would sometimes occur when "show folder sizes" was enabled
 - Fixed an issue where the properties window sometimes used the wrong theme
+- Fixed a crash that would sometimes occur when previewing XML files
+- Fixed an issue that sometimes prevented drag and drop from working
+- Fixed an issue where the clear all properties button didn't have any text
 
 ## Changes
 
 Improve JumpString behavior by @gave92 in #8324
 Show error banner if copy or move fails by @gave92 in #8322
-Auto select primary button in empty recycle bin dialog by @mafra99 in #8442
-Improves MultiPanes by @cinqmilleans in #8321
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Toolbar buttons in recycle bin by @puppetsw in #8545
@@ -86,25 +90,16 @@ Use external launcher to set Files as default explorer by @gave92 in #8684
 Improved behavior when entering restricted characters by @szabolcstarnai in #8204
 Notify when pinned items config changes by @jiejasonliu in #8712
 Fix new/rename dialog processing stale text by @jiejasonliu in #8783
-Auto select first item in user list for permissions by @yaichenbaum in #8794
 Fix box drive by @gave92 in #8808
 Fix crash when using "apply to all" menu item in conflicts dialog by @gave92 in #8836
-Fix crash when previewing XML files by @gave92 in #8828
 Show which process is locking a file by @gave92 in #8809
 Possibly fix app hung on start by @gave92 in #8847
 Fix for pasting in search box by @puppetsw in #8811
 Fixed Disconnect Drive Icon by @esibruti in #8854
 Fix Ctrl+L on homepage by @gave92 in #8861
-Fixed conflicts dialog by @d2dyno1 in #8876
-Auto refresh file list in network shares by @gave92 in #8831
 Improves Setting DateFormat by @cinqmilleans in #8875
 Fix refresh in mapped network drives by @gave92 in #8897
-Fixed an issue preventing drag and drop from working by @devovercome in #8891
 Add archive name when extracting by @itsWindows11 in #8900
-Fix crash when setting compact style on app start by @gave92 in #8923
-Fix issue where clear all properties button wouldn't show any text by @winston-de in #8931
-Use correct resource for "show item type column" menu item in Details view by @gave92 in #8927
-Disable Move operation on folders when using StorageFile APIs by @gave92 in #8960
 Fix create folder with selection by @gave92 in #8929
 "File in use" dialog improvements by @gave92 in #8925
 Fixes an issue for which settings are not imported by @gave92 in #8970
