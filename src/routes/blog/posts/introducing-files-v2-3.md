@@ -48,28 +48,27 @@ We added an option to display **tags** on the sidebar
 - Adding a tag to a file no longers changes the date modified property
 - Added a shortcut to open folders in the default terminal `ctrl` + `shift` + `'`
 - Added a shortcut to play and pause media in the preview pane `ctrl` + `space`
-- The issue where expanding sidebar sections would sometimes require two clicks has been resolved
-- The issue where the sidebar state would sometimes get reset has been fixed
 - Reduced the height of items in the sidebar to allow more items to be displayed at once
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
 
 ## Bug fixes
-- Fixed an issue where duplicate drives were sometimes added to the sidebar
 - Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
-- Fixed an issue that that would cause the app window to close when dragging a tab to a new window
+- Fixed an issue that would cause the app window to close when dragging a tab to a new window
+- Fixed a crash that would sometimes occur when deleting files
+- Fixed an issue where expanding the sidebar sections would sometimes require two clicks
+- Fixed an issue where the sidebar state would sometimes get reset
+- Fixed an issue where duplicate drives were sometimes added to the sidebar
 
 ## Changes
 
 Improve JumpString behavior by @gave92 in #8324
 Show error banner if copy or move fails by @gave92 in #8322
-Fix crash when deleting files by @gave92 in #8438
 Auto select primary button in empty recycle bin dialog by @mafra99 in #8442
 Fix SearchBox height by @cinqmilleans in #8452
 Improves MultiPanes by @cinqmilleans in #8321
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
-Removed unused resources by @yaichenbaum in #8456
 Toolbar buttons in recycle bin by @puppetsw in #8545
 Select next item after deletion and reduce code complexity by @jiejasonliu in #8503
 Removed behavior of auto resizing columns by @yaichenbaum in #8589
@@ -77,8 +76,6 @@ Fixed the close pane icon by @bebeyaco in #8513
 Added a debounce for image rotation command. by @devovercome in #8682
 Use external launcher to set Files as default explorer by @gave92 in #8684
 Improved behavior when entering restricted characters by @szabolcstarnai in #8204
-Copy launcher to output directory by @gave92 in #8717
-Fixed release pipeline by @yaichenbaum in #8718
 Notify when pinned items config changes by @jiejasonliu in #8712
 Fix MainPage adaptive triggers by @gave92 in #8778
 Fix crash when "show folder sizes" is enabled by @gave92 in #8716
@@ -100,9 +97,7 @@ Moved FileSystemDialog to Files.Backend by @d2dyno1 in #8857
 Avoid throwing NRE when getting path suggestions on Home by @gave92 in #8871
 Fixed conflicts dialog by @d2dyno1 in #8876
 Auto refresh file list in network shares by @gave92 in #8831
-Bump CommunityToolkit.Mvvm from 8.0.0-preview2 to 8.0.0-preview3 by @dependabot in #8879
 Improves Setting DateFormat by @cinqmilleans in #8875
-MVVM: Changed namespace Files to Files.Uwp in Files.Uwp.csproj by @devovercome in #8898
 Fix refresh in mapped network drives by @gave92 in #8897
 Fixed an issue preventing drag and drop from working by @devovercome in #8891
 Add archive name when extracting by @itsWindows11 in #8900
@@ -111,7 +106,6 @@ Fix issue where clear all properties button wouldn't show any text by @winston-d
 Use correct resource for "show item type column" menu item in Details view by @gave92 in #8927
 Disable Move operation on folders when using StorageFile APIs by @gave92 in #8960
 Fix create folder with selection by @gave92 in #8929
-Codebase: Rename NavigationToolbar to AddressToolbar by @puppetsw in #8903
 "File in use" dialog improvements by @gave92 in #8925
 Fixes an issue for which settings are not imported by @gave92 in #8970
 Fix copy/move to zip file by @gave92 in #8930
