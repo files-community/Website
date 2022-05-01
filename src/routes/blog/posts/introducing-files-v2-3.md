@@ -33,7 +33,7 @@ The **tab control** was redesigned to better connect with the rest of the app
 We added an option to display **tags** on the sidebar
 (insert photo)
 
-### Other changes
+### Other changes:
 - Improved the reliability and speed of drag and drop
 - Added a pull to refresh gesture
 - Removed the minimize and maximize buttons from the properties window
@@ -54,15 +54,16 @@ We added an option to display **tags** on the sidebar
 - Invalid favorites and network shares are no longer removed the sidebar
 - Added a context menu to hide sections when right clicking on the sidebar
 
+## Bug fixes
+- Fixed an issue where duplicate drives were sometimes added to the sidebar
+- Fixed an issue where the adress toolbar height would sometimes change when clicking on the search box
+- Fixed an issue that that would cause the app window to close when dragging a tab to a new window
+
 ## Changes
 
-Fixed duplicate drives added to the sidebar by @gave92 in #8325
 Improve JumpString behavior by @gave92 in #8324
-Fixed an issue where the toolbar height would sometimes change by @yaichenbaum in #8404
 Show error banner if copy or move fails by @gave92 in #8322
-Fixed crash that would occur when scrolling down in the properties window by @yaichenbaum in #8403
 Fix crash when deleting files by @gave92 in #8438
-Fixed issue that causes a window to close when a tab is torn off by @manfromarce in #8433
 Auto select primary button in empty recycle bin dialog by @mafra99 in #8442
 Fix SearchBox height by @cinqmilleans in #8452
 Improves MultiPanes by @cinqmilleans in #8321
