@@ -33,7 +33,7 @@ The **tab control** was redesigned to better connect with the rest of the app
 We added an option to display **tags** on the sidebar
 (insert photo)
 
-- Added support for applying bulk actions in the **conflicts dialog**
+Added support for applying bulk actions in the **conflicts dialog**
 (insert photo)
 
 
