@@ -59,42 +59,37 @@ We added an option to display **tags** on the sidebar
 - Fixed an issue where expanding the sidebar sections would sometimes require two clicks
 - Fixed an issue where the sidebar state would sometimes get reset
 - Fixed an issue where duplicate drives were sometimes added to the sidebar
+- Fix a crash that would sometimes occur when the favorites section was hidden
+- Fixed an issue where the UI didn't display correctly in compact overlay mode
+- Fixed an issue where the close pane button had the wrong icon
+- Fixed a crash that would sometimes occur when "show folder sizes" was enabled
+- Fixed an issue where the properties window sometimes used the wrong theme
 
 ## Changes
 
 Improve JumpString behavior by @gave92 in #8324
 Show error banner if copy or move fails by @gave92 in #8322
 Auto select primary button in empty recycle bin dialog by @mafra99 in #8442
-Fix SearchBox height by @cinqmilleans in #8452
 Improves MultiPanes by @cinqmilleans in #8321
 Fix wrong foreground text color in zoomed-out Group headers by @gave92 in #8457
 Fixed tags section in the context menu by @oleklukasiewicz in #8460
 Toolbar buttons in recycle bin by @puppetsw in #8545
 Select next item after deletion and reduce code complexity by @jiejasonliu in #8503
 Removed behavior of auto resizing columns by @yaichenbaum in #8589
-Fixed the close pane icon by @bebeyaco in #8513
 Added a debounce for image rotation command. by @devovercome in #8682
 Use external launcher to set Files as default explorer by @gave92 in #8684
 Improved behavior when entering restricted characters by @szabolcstarnai in #8204
 Notify when pinned items config changes by @jiejasonliu in #8712
-Fix MainPage adaptive triggers by @gave92 in #8778
-Fix crash when "show folder sizes" is enabled by @gave92 in #8716
-Fix default & build in case of usernames with spaces by @gave92 in #8779
 Fix new/rename dialog processing stale text by @jiejasonliu in #8783
 Auto select first item in user list for permissions by @yaichenbaum in #8794
 Fix box drive by @gave92 in #8808
 Fix crash when using "apply to all" menu item in conflicts dialog by @gave92 in #8836
-Fixed an issue where the properties window used the wrong theme by @CarJem in #8837
-Fix crash when favorites section is hidden by @gave92 in #8833
-Statically link VC runtime by @gave92 in #8829
 Fix crash when previewing XML files by @gave92 in #8828
 Show which process is locking a file by @gave92 in #8809
 Possibly fix app hung on start by @gave92 in #8847
 Fix for pasting in search box by @puppetsw in #8811
 Fixed Disconnect Drive Icon by @esibruti in #8854
 Fix Ctrl+L on homepage by @gave92 in #8861
-Moved FileSystemDialog to Files.Backend by @d2dyno1 in #8857
-Avoid throwing NRE when getting path suggestions on Home by @gave92 in #8871
 Fixed conflicts dialog by @d2dyno1 in #8876
 Auto refresh file list in network shares by @gave92 in #8831
 Improves Setting DateFormat by @cinqmilleans in #8875
