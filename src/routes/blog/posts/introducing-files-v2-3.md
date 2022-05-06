@@ -7,6 +7,7 @@ author: yaichenbaum
 ---
 
 Today we're excited to introduce the next major release of Files. This milestone marks the beginning of our efforts to modernize the Files codebase. A better codebase will enable us to iterate faster and will accelerate our transition to WinApp SDK in 2023. Switching to WinApp SDK will remove the limitations that are present in UWP and will enable us to improve the performance.
+
 As part of our mission to create a stable and fully featured file manager, we worked on improving the behavior in a number of existing features. Features are the most useful when they perform as expected and we hope these improvements enhance your experience. We addressed some of the top requested features, adding a compact spacing feature, bulk actions in the conflicts dialog and a double click gesture to go up one directory.
 
 ## Giving back to the community
