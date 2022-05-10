@@ -13,14 +13,6 @@ As part of our mission to create a stable and fully featured file manager, we wo
 ## Giving back to the community
 We're pleased to announce that we relicensed the Files repository under the MIT license. This means that other projects can now take advantage of the innovation in Files even if they happen to be closed source.
 
-## Default file manager
-As many of you have noticed, we removed the option to set Files as the default file manager in order comply with the Microsoft Store Policy. We're hoping to bring this option back in the future but in the meantime, this option is still available in the sideload version (https://files.community/download/stable). Please note that this feature is experimental and can have unexpected side effects.
-
-<figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-3/Settings-Dialog-Experimental.png" alt="A screenshot of the settings dialog in v2.3" />
-    <figcaption>Experimental settings page</figcaption>
-</figure>
-
 ## New Features
 
 **Compact sizing** allows users to view more items on the screen
