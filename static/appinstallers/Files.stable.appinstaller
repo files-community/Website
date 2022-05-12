@@ -64,7 +64,6 @@
 			Version="14.0.30035.0" />
 	</Dependencies>
 	<UpdateSettings>
-		<OnLaunch HoursBetweenUpdateChecks="0" />
 		<AutomaticBackgroundTask/>
 	</UpdateSettings>
 </AppInstaller>
