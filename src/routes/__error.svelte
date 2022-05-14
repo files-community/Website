@@ -12,16 +12,11 @@
 </script>
 
 <script lang="ts">
-	import { draggable, DragOptions } from "@neodrag/svelte";
+	import { Button, ContentDialog, TextBlock } from "fluent-svelte";
 	import { Metadata } from "$lib";
 
-	export let status: number;
-	export let error: Error;
 
-	const draggableOptions: DragOptions = {
-		bounds: "parent",
-		handle: ".titlebar"
-	};
+	export let error: Error;
 </script>
 
 <svelte:head>
@@ -29,36 +24,22 @@
 </svelte:head>
 
 <section class="error-page">
-	<div class="window" use:draggable={draggableOptions}>
-		<div class="titlebar">
-			<div class="titlebar-text">Error: {status}</div>
-			<div class="titlebar-controls">
-				<button aria-label="Minimize" />
-				<button aria-label="Maximize" />
-				<button aria-label="Close" />
-			</div>
-		</div>
-		<div class="window-body">
-			<div class="error-inner">
-				<img alt="Error icon" src="/ui/icons/98-error.png" />
-				<div class="error-message">
-					<p>
-						Uh Oh! Something went wrong while loading this page.
-						<br />
-						{error.message}
-					</p>
-				</div>
-			</div>
-			{#if error.stack}
-				<pre><code>{error.stack}</code></pre>
-			{/if}
-			<footer>
-				<a href="/">
-					<button>Return Home</button>
-				</a>
-			</footer>
-		</div>
-	</div>
+	<ContentDialog open title="Uh Oh!">
+		Looks like something went wrong.
+		If you'd like to report it, please contain the following error message:
+		<br/>
+		<TextBlock variant="bodyStrong">
+			{error.message}
+		</TextBlock>
+		<svelte:fragment slot="footer">
+		<Button variant="accent" href="https://github.com/files-community/Website/issues/new?assignees=&labels=bug&template=bug_report.yml">
+			Report
+		</Button>
+		<Button href="/">
+			Return Home
+		</Button>
+	</svelte:fragment>
+	</ContentDialog>
 </section>
 
 <style lang="scss">
