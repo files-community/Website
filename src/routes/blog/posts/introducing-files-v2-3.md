@@ -16,16 +16,24 @@ We're pleased to announce that we relicensed the Files repository under the MIT 
 ## New Features
 
 **Compact sizing** allows users to view more items on the screen
-(insert photo)
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-3/CompactSpacing.png" alt="A screenshot of the new compact spacing option in Files v2.3." />
+</figure>
 
 The **tab control** was redesigned to better connect with the rest of the app
-(insert photo)
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-3/Tabs.png" alt="A screenshot of the new tab design in Files v2.3." />
+</figure>
 
 We added an option to display **tags** on the sidebar
-(insert photo)
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-3/Tags.png" alt="A screenshot of the new tags section on the sidebar in Files v2.3." />
+</figure>
 
 Added support for applying bulk actions in the **conflicts dialog**
-(insert photo)
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-3/BulkActions.png" alt="A screenshot of the redesigned conflicts dialog in Files v2.3." />
+</figure>
 
 ### Other changes:
 - Improved the reliability and speed of drag and drop
