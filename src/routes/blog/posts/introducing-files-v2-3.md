@@ -1,6 +1,6 @@
 ---
 title: Sustaining Community Momentum into 2023
-description: version 2.3 is now available to download as a free update.
+description: We're excited to not only introduce the next major release of Files, but also a series of future changes to sustain contributor momentum into 2023. 
 thumbnail: /blog-resources/filesv2-3/HeroImage.jpg
 date: 2022-7-5
 author: yaichenbaum
