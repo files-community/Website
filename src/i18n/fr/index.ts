@@ -1,6 +1,23 @@
 import type { Translation } from '../i18n-types';
 
 const fr: Translation = {
+	footer: {
+        home: "Accueil",
+        documentation: "Documentation",
+        blog: "Blog",
+        contributeToFiles: "Contribuer à Files",
+        giveFeedback: "Donnez votre avis",
+        styleGuide: "Guide de style",
+        translations: "Traductions",
+        contributeToSite: "Contribuer à ce site",
+        gitHubRepo: "Dépot GitHub",
+        foundBug: "Signaler un bug",
+        webTeam: "Équipe Web",
+        copyright: "Copyright ©2021 - {thisYear}, Les auteurs de Files",
+		gitHubRepository: "Dépot GitHub",
+        twitterProfile: "Profil Twitter",
+        discordServer: "Serveur Discord"
+    },
 	section: {
 		design: {
 			title: "design",
@@ -33,8 +50,24 @@ const fr: Translation = {
 	  	themes: {
 			title: "thèmes",
 			hook: "Indiscutablement personnel.",
-			description: "Faites-le à votre façon. Files propose une interface utilisateur entièrement personnalisable, jusque dans les couleurs et composants. Essayez des thèmes personnalisés intégrés à Files ou plongez directement dans la documentation et créez le vôtre."
-	  	}
+			description: "Faites-le à votre façon. Files propose une interface utilisateur entièrement personnalisable, jusque dans les couleurs et composants. Essayez des thèmes personnalisés intégrés à Files ou plongez directement dans la documentation et créez le vôtre.",
+			color: {
+				darkGreyLightBlue: "Gris sombre • Bleu clair",
+				blueGreyNeonGreen: "Gris bleu • Vert néon",
+				purple: "Mauve",
+				yellowWhite: "Jaune • Blanc",
+				coolWhiteDarkTeal: "Blanc froid • Vert sombre",
+				skyBlue: "Bleu ciel"
+			}
+	  	},
+		community: {
+            title: "communauté",
+            hook: "Conçu et développé par vous.",
+            description: "Files est un logiciel libre et open source, maintenu et conçu par un collectif de centaines de contributeurs.",
+            joinDiscussion: "Joindre la discussion",
+            becomeContributor: "Devenir contributeur",
+			contributions: "{0} contribution{{|s}}"
+        }
 	}
 };
 

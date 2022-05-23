@@ -14,12 +14,12 @@
 	let anchor: HTMLDivElement;
 
 	const themeColors: Tag[] = [
-		{ name: "Dark Grey • Light Blue", color: "var(--fds-solid-background-tertiary)" },
-		{ name: "Blue Grey • Neon Green", color: "hsl(219, 15%, 30%)" },
-		{ name: "Purple", color: "hsl(261, 43%, 45%)" },
-		{ name: "Yellow • White", color: "hsl(43, 100%, 50%)" },
-		{ name: "Cool White • Dark Teal", color: "hsl(192, 81%, 14%)" },
-		{ name: "Sky Blue", color: "hsl(193, 43%, 67%)" }
+		{ name: text.section.themes.color.darkGreyLightBlue(), color: "var(--fds-solid-background-tertiary)" },
+		{ name: text.section.themes.color.blueGreyNeonGreen(), color: "hsl(219, 15%, 30%)" },
+		{ name: text.section.themes.color.purple(), color: "hsl(261, 43%, 45%)" },
+		{ name: text.section.themes.color.yellowWhite(), color: "hsl(43, 100%, 50%)" },
+		{ name: text.section.themes.color.coolWhiteDarkTeal(), color: "hsl(192, 81%, 14%)" },
+		{ name: text.section.themes.color.skyBlue(), color: "hsl(193, 43%, 67%)" }
 	];
 
 	$: themeSrc = currentTheme > 0 ? `theme-${ currentTheme + 1 }` : systemTheme;

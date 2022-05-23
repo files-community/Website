@@ -1,6 +1,24 @@
 import type { BaseTranslation } from '../i18n-types';
 
 const en: BaseTranslation = {
+    footer: {
+        pages: "Pages",
+        home: "Home",
+        documentation: "Documentation",
+        blog: "Blog",
+        contributeToFiles: "Contribute to Files",
+        giveFeedback: "Give Feedback",
+        styleGuide: "Style Guide",
+        translations: "Translations",
+        contributeToSite: "Contribute to this site",
+        gitHubRepo: "GitHub Repo",
+        foundBug: "Found a bug?",
+        webTeam: "Web Team",
+        copyright: "Copyright © 2021 - {thisYear}, The Files Authors",
+        gitHubRepository: "GitHub repository",
+        twitterProfile: "Twitter profile",
+        discordServer: "Discord server"
+    },
     section: {
         design: {
             title: "design",
@@ -33,7 +51,23 @@ const en: BaseTranslation = {
         themes: {
             title: "themes",
             hook: "Distinctly personal.",
-            description: "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own."
+            description: "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
+            color: {
+				darkGreyLightBlue: "Dark Grey • Light Blue",
+				blueGreyNeonGreen: "Blue Grey • Neon Green",
+				purple: "Purple",
+				yellowWhite: "Yellow • White",
+				coolWhiteDarkTeal: "Cool White • Dark Teal",
+				skyBlue: "Sky Blue"
+			}
+        },
+        community: {
+            title: "community",
+            hook: "Designed and developed by you.",
+            description: "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+            joinDiscussion: "Join the discussion",
+            becomeContributor: "Become a contributer",
+            contributions: "{0} contribution{{|s}}"
         }
     }
 };
