@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { draw } from "svelte/transition";
 	import { cloudFiles } from "$data/features";
+	import { text } from "../../../i18n/i18n";
 
 	import Checkmark from "@fluentui/svg-icons/icons/checkmark_20_regular.svg?raw";
 	import ArrowSync from "@fluentui/svg-icons/icons/arrow_sync_20_regular.svg?raw";
@@ -62,8 +63,8 @@
 	<table class="files-table">
 		<tr>
 			<th></th>
-			<th>Name</th>
-			<th>Status</th>
+			<th>{text.section.features.columnName()}</th>
+			<th>{text.section.features.columnStatus()}</th>
 		</tr>
 		{#each cloudFiles as { name, icon, status }, i}
 			<tr style="--file-index: {i}">

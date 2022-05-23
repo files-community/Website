@@ -14,6 +14,20 @@ export type Translation = RootTranslation
 export type Translations = RootTranslation
 
 type RootTranslation = {
+	header: {
+		/**
+		 * Home
+		 */
+		home: string
+		/**
+		 * Docs
+		 */
+		docs: string
+		/**
+		 * Blog
+		 */
+		blog: string
+	}
 	footer: {
 		/**
 		 * Pages
@@ -82,6 +96,55 @@ type RootTranslation = {
 		discordServer: string
 	}
 	section: {
+		hero: {
+			/**
+			 * A modern file explorer that pushes the boundaries of the platform.
+			 */
+			hook: string
+			/**
+			 * Download Files
+			 */
+			downloadFiles: string
+			/**
+			 * Choose download source
+			 */
+			downloadSource: string
+			/**
+			 * View GitHub
+			 */
+			viewGitHub: string
+			/**
+			 * Files is open source!
+			 */
+			openSource: string
+			winget: {
+				/**
+				 * Installing Files via winget
+				 */
+				title: string
+				/**
+				 * To download and install Files using {link}, paste the following command into a terminal of your choice:
+				 * @param {unknown} link
+				 */
+				description: RequiredParams<'link'>
+				/**
+				 * Copy Command
+				 */
+				copyCommand: string
+				/**
+				 * Copy
+				 */
+				copy: string
+				/**
+				 * Copied!
+				 */
+				copied: string
+				/**
+				 * Close
+				 */
+				close: string
+			}
+		}
 		design: {
 			/**
 			 * design
@@ -109,6 +172,14 @@ type RootTranslation = {
 			 * Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.
 			 */
 			description: string
+			/**
+			 * Name
+			 */
+			columnName: string
+			/**
+			 * Status
+			 */
+			columnStatus: string
 			cards: {
 				cloud: {
 					/**
@@ -223,6 +294,20 @@ type RootTranslation = {
 }
 
 export type TranslationFunctions = {
+	header: {
+		/**
+		 * Home
+		 */
+		home: () => LocalizedString
+		/**
+		 * Docs
+		 */
+		docs: () => LocalizedString
+		/**
+		 * Blog
+		 */
+		blog: () => LocalizedString
+	}
 	footer: {
 		/**
 		 * Pages
@@ -290,6 +375,54 @@ export type TranslationFunctions = {
 		discordServer: () => LocalizedString
 	}
 	section: {
+		hero: {
+			/**
+			 * A modern file explorer that pushes the boundaries of the platform.
+			 */
+			hook: () => LocalizedString
+			/**
+			 * Download Files
+			 */
+			downloadFiles: () => LocalizedString
+			/**
+			 * Choose download source
+			 */
+			downloadSource: () => LocalizedString
+			/**
+			 * View GitHub
+			 */
+			viewGitHub: () => LocalizedString
+			/**
+			 * Files is open source!
+			 */
+			openSource: () => LocalizedString
+			winget: {
+				/**
+				 * Installing Files via winget
+				 */
+				title: () => LocalizedString
+				/**
+				 * To download and install Files using {link}, paste the following command into a terminal of your choice:
+				 */
+				description: (arg: { link: unknown }) => LocalizedString
+				/**
+				 * Copy Command
+				 */
+				copyCommand: () => LocalizedString
+				/**
+				 * Copy
+				 */
+				copy: () => LocalizedString
+				/**
+				 * Copied!
+				 */
+				copied: () => LocalizedString
+				/**
+				 * Close
+				 */
+				close: () => LocalizedString
+			}
+		}
 		design: {
 			/**
 			 * design
@@ -317,6 +450,14 @@ export type TranslationFunctions = {
 			 * Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.
 			 */
 			description: () => LocalizedString
+			/**
+			 * Name
+			 */
+			columnName: () => LocalizedString
+			/**
+			 * Status
+			 */
+			columnStatus: () => LocalizedString
 			cards: {
 				cloud: {
 					/**

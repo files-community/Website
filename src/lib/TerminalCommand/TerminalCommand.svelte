@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw";
+	import { text } from "../../i18n/i18n";
 
 	export let command = "";
 
@@ -21,7 +22,7 @@
 		aria-label="Copy terminal command"
 		class="copy-button"
 		on:click={copy}
-		title="Copy Command"
+		title="{text.section.hero.winget.copyCommand()}"
 	>
 		{@html Copy}
 	</button>

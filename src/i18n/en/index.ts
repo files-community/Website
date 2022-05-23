@@ -1,6 +1,11 @@
 import type { BaseTranslation } from '../i18n-types';
 
 const en: BaseTranslation = {
+    header: {
+        home: "Home",
+        docs: "Docs",
+        blog: "Blog",
+    },
     footer: {
         pages: "Pages",
         home: "Home",
@@ -20,6 +25,21 @@ const en: BaseTranslation = {
         discordServer: "Discord server"
     },
     section: {
+        hero: {
+            hook: "A modern file explorer that pushes the boundaries of the platform.",
+            downloadFiles: "Download Files",
+            downloadSource: "Choose download source",
+            viewGitHub: "View GitHub",
+            openSource: "Files is open source!",
+            winget: {
+                title: "Installing Files via winget",
+                description: "To download and install Files using {link}, paste the following command into a terminal of your choice:",
+                copyCommand: "Copy Command",
+                copy: "Copy",
+                copied: "Copied!",
+                close: "Close"
+            }
+        },
         design: {
             title: "design",
             hook: "Power meets beauty.",
@@ -29,6 +49,8 @@ const en: BaseTranslation = {
             title: "features",
             hook: "It already does that.",
             description: "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
+            columnName: "Name",
+            columnStatus: "Status",
             cards: {
                 cloud: {
                     title: "Seamless cloud integration",

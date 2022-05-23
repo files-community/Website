@@ -3,6 +3,7 @@
 	import { Button, ContentDialog, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { links } from "$data/links";
 	import { onMount } from "svelte";
+	import { text } from "../../i18n/i18n";
 	import ArrowDownload from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
 	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_24_regular.svg?raw";
 	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
@@ -63,7 +64,7 @@
 <PageSection id="hero-section">
 	<div class="hero-left">
 		<h1>Files</h1>
-		<p>A modern file explorer that pushes the boundaries of the platform.</p>
+		<p>{text.section.hero.hook()}</p>
 		<div class="buttons-spacer">
 			<div class="split-button">
 				<Button
@@ -77,14 +78,14 @@
 				>
 					{@html ArrowDownload}
 					<div class="hero-button-inner">
-						<h5>Download Files</h5>
+						<h5>{text.section.hero.downloadFiles()}</h5>
 						<span>{downloadSources.find(source => source === currentDownloadSource)}</span>
 					</div>
 				</Button>
 				<MenuFlyout bind:open={isDownloadDropdownOpen} placement="bottom">
 					<Button
-						aria-label="Choose download source"
-						title="Choose download source"
+						aria-label="{text.section.hero.downloadSource()}"
+						title="{text.section.hero.downloadSource()}"
 						variant="accent"
 					>
 						{@html ChevronDown}
@@ -104,8 +105,8 @@
 			>
 				{@html Code}
 				<div class="hero-button-inner">
-					<h5>View GitHub</h5>
-					<span>Files is open source!</span>
+					<h5>{text.section.hero.viewGitHub()}</h5>
+					<span>{text.section.hero.openSource()}</span>
 				</div>
 			</Button>
 		</div>
@@ -135,18 +136,16 @@
 
 <ContentDialog
 	bind:open={wingetDialogOpen}
-	title="Installing Files via winget"
+	title="{text.section.hero.winget.title()}"
 	size="max"
 >
-	To download and install Files using
-	<a href="https://github.com/microsoft/winget-cli" class="hyperlink" {...externalLink}>winget</a>,
-	paste the following command into a terminal of your choice:
+	{text.section.hero.winget.description("<a href=\"https://github.com/microsoft/winget-cli\" class=\"hyperlink\" {...externalLink}>winget</a>")}
 	<TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">
-			{wingetCommandCopied ? "Copied!" : "Copy"}
+			{wingetCommandCopied ? text.section.hero.winget.copied() : text.section.hero.winget.copy()}
 		</Button>
-		<Button on:click={() => (wingetDialogOpen = false)}>Close</Button>
+		<Button on:click={() => (wingetDialogOpen = false)}>{text.section.hero.winget.close()}</Button>
 	</svelte:fragment>
 </ContentDialog>
 

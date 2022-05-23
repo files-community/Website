@@ -1,6 +1,11 @@
 import type { Translation } from '../i18n-types';
 
 const fr: Translation = {
+	header: {
+        home: "Accueil",
+        docs: "Docs",
+        blog: "Blog",
+    },
 	footer: {
         home: "Accueil",
         documentation: "Documentation",
@@ -19,6 +24,21 @@ const fr: Translation = {
         discordServer: "Serveur Discord"
     },
 	section: {
+		hero: {
+            hook: "Un explorateur de fichiers moderne qui repousse les limites de la plateforme.",
+			downloadFiles: "Télécharger Files",
+			downloadSource: "Choisir une source de téléchargement",
+			viewGitHub: "Accéder à GitHub",
+            openSource: "Files est open source !",
+			winget: {
+                title: "Installation de Files via winget",
+				description: "Pour télécharger et installer Files avec {link}, copier la commande suivante dans un terminal de votre choix :",
+				copyCommand: "Commande Copier",
+                copy: "Copier",
+				copied: "Copié !",
+                close: "Fermer"
+            }
+        },
 		design: {
 			title: "design",
 			hook: "La Puissance rencontre la Beauté.",
@@ -28,6 +48,8 @@ const fr: Translation = {
 			title: "fonctionnalités",
 			hook: "Ça le fait déjà.",
 			description: "Intégration du cloud ? Onglets et double panneaux ? Aperçu du contenu de vos fichiers ? Files contient toutes les fonctionnalités que vous attendez d'un gestionnaire de fichiers moderne.",
+			columnName: "Nom",
+            columnStatus: "Status",
 			cards: {
 		  		cloud: {
 					title: "Intégration native du Cloud",
