@@ -3,6 +3,7 @@
 	import { ColorSwatch, HeaderChip, PageSection } from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import type { Tag } from "$data/features";
+	import { text } from "../../i18n/i18n";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
@@ -51,12 +52,9 @@
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
 	<div bind:this={anchor} class="scroll-anchor"></div>
 	<div class="themes-section-content">
-		<HeaderChip>Themes</HeaderChip>
-		<TextBlock variant="titleLarge">Distinctly personal.</TextBlock>
-		<p>
-			Have it your way. Files features a fully customizable user interface,
-			right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.
-		</p>
+		<HeaderChip>{text.section.themes.title()}</HeaderChip>
+		<TextBlock variant="titleLarge">{text.section.themes.hook()}</TextBlock>
+		<p>{text.section.themes.description()}</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
 				<ColorSwatch

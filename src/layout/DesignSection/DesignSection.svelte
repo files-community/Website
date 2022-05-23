@@ -2,6 +2,7 @@
 	import { links } from "$data/links";
 	import { externalLink, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
+	import { text } from "../../i18n/i18n";
 
 	let scrollY: number;
 </script>
@@ -9,13 +10,9 @@
 <svelte:window on:scroll={() => window.requestAnimationFrame(() => scrollY = window.scrollY )} />
 
 <PageSection id="design-section">
-	<HeaderChip>Design</HeaderChip>
-	<h2>Power meets beauty.</h2>
-	<p>
-		Explore a beautiful Windows-first design. Manage all your files with
-		increased productivity. Work across multiple folders with tabs. And so much
-		more.
-	</p>
+	<HeaderChip>{text.section.design.title()}</HeaderChip>
+	<h2>{text.section.design.hook()}</h2>
+	<p>{text.section.design.description()}</p>
 	<div class="buttons-spacer">
 		<Button
 			href="https://microsoft.com/store/apps/{links.storeId}"
