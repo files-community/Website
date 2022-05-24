@@ -24,6 +24,15 @@ const fr: Translation = {
         discordServer: "Serveur Discord"
     },
 	section: {
+		download: {
+			downloading: "Téléchargement…",
+			thankYou: "Merci de télécharger Files !",
+            comment: "Si le téléchargement ne commence pas, cliquez {link} pour le démarrer :",
+			here: "ici",
+			firefoxMessage: "Firefox ajoute une extension de fichier <code>.xml</code> à l'installeur téléchargé. Supprimez-le avant de commencer l'installation.",
+			wantSupport: "Vous voulez soutenir les créateurs de Files ?",
+            donate: "Faire un don",
+        },
 		hero: {
             hook: "Un explorateur de fichiers moderne qui repousse les limites de la plateforme.",
 			downloadFiles: "Télécharger Files",
@@ -42,14 +51,33 @@ const fr: Translation = {
 		design: {
 			title: "design",
 			hook: "La Puissance rencontre la Beauté.",
-			description: "Conçu pour Windows. Gérez tous vos fichiers avec une productivité accrue. Travaillez sur plusieurs dossiers avec des onglets. Et bien plus."
+			description: "Conçu pour Windows. Gérez tous vos fichiers avec une productivité accrue. Travaillez sur plusieurs dossiers avec des onglets. Et bien plus.",
+			tryItOut: "L'essayer",
+            designSystem: "Système Design"
 		},
 	  	features: {
 			title: "fonctionnalités",
 			hook: "Ça le fait déjà.",
 			description: "Intégration du cloud ? Onglets et double panneaux ? Aperçu du contenu de vos fichiers ? Files contient toutes les fonctionnalités que vous attendez d'un gestionnaire de fichiers moderne.",
-			columnName: "Nom",
-            columnStatus: "Status",
+            preview: {
+                name: "Nom",
+                status: "Status",
+				tag: "Tag",
+                bitDepth: "Profondeur de couleur",
+                dimensions: "Dimensions",
+                horizontalResolution: "Résolution horizontale",
+                verticalResolution: "Résolution verticale",
+                itemCount: "Nombre d'éléments",
+                lineCount: "Nombre de lignes",
+                path: "Chemin",
+                dateCreated: "Date de création",
+                dateModified: "Date de modification",
+				blueTag: "Bleu",
+				yellowTag: "Jaune",
+				greenTag: "Vert",
+				grayTag: "Gris",
+				orangeTag: "Orange"
+            },
 			cards: {
 		  		cloud: {
 					title: "Intégration native du Cloud",

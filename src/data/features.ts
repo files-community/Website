@@ -151,23 +151,23 @@ cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</
 
 export const tags: Tag[] = [
 	{
-		name: "Blue",
+		name: text.section.features.preview.blueTag(),
 		color: "#0072bd"
 	},
 	{
-		name: "Yellow",
+		name: text.section.features.preview.yellowTag(),
 		color: "#edb120"
 	},
 	{
-		name: "Green",
+		name: text.section.features.preview.greenTag(),
 		color: "#77ac30"
 	},
 	{
-		name: "Gray",
+		name: text.section.features.preview.grayTag(),
 		color: "#9ea3a1"
 	},
 	{
-		name: "Orange",
+		name: text.section.features.preview.orangeTag(),
 		color: "#d95319"
 	}
 ];
@@ -176,31 +176,31 @@ export const taggedFiles: TaggedFileData[] = [
 	{
 		name: "Super Secret Plans - Do Not Publish.docx",
 		icon: "file",
-		tag: "Yellow"
+		tag: text.section.features.preview.yellowTag()
 	},
 	{
 		name: "Presentation - Project Sledgehammer.pptx",
 		icon: "file",
-		tag: "Green"
+		tag: text.section.features.preview.greenTag()
 	},
 	{
 		name: "Files (MacOS)",
 		icon: "folder",
-		tag: "Gray"
+		tag: text.section.features.preview.grayTag()
 	},
 	{
 		name: "Estimate_261_2022-01-31.pdf",
 		icon: "file",
-		tag: "Blue"
+		tag: text.section.features.preview.blueTag()
 	},
 	{
 		name: "Files (Linux)",
 		icon: "folder",
-		tag: "Gray"
+		tag: text.section.features.preview.grayTag()
 	},
 	{
 		name: "Files v4.0",
 		icon: "folder",
-		tag: "Orange"
+		tag: text.section.features.preview.orangeTag()
 	}
 ];

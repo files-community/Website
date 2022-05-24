@@ -139,7 +139,7 @@
 	title="{text.section.hero.winget.title()}"
 	size="max"
 >
-	{text.section.hero.winget.description("<a href=\"https://github.com/microsoft/winget-cli\" class=\"hyperlink\" {...externalLink}>winget</a>")}
+	{@html text.section.hero.winget.description({link: "<a href=\"https://github.com/microsoft/winget-cli\" class=\"hyperlink\" {...externalLink}>winget</a>"})}
 	<TerminalCommand command="winget install -e 9NGHP3DX8HDX" />
 	<svelte:fragment slot="footer">
 		<Button on:click={copyWingetCommand} variant="accent">

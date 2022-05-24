@@ -96,6 +96,37 @@ type RootTranslation = {
 		discordServer: string
 	}
 	section: {
+		download: {
+			/**
+			 * Downloading...
+			 */
+			downloading: string
+			/**
+			 * Thank you for downloading Files!
+			 */
+			thankYou: string
+			/**
+			 * If the download hasn't started yet, press {link} to start it:
+			 * @param {unknown} link
+			 */
+			comment: RequiredParams<'link'>
+			/**
+			 * here
+			 */
+			here: string
+			/**
+			 * Firefox adds a <code>.xml</code> file extension to the downloaded installer. Remove it before opening the installer.
+			 */
+			firefoxMessage: string
+			/**
+			 * Want to support the creators of Files?
+			 */
+			wantSupport: string
+			/**
+			 * Donate
+			 */
+			donate: string
+		}
 		hero: {
 			/**
 			 * A modern file explorer that pushes the boundaries of the platform.
@@ -158,6 +189,14 @@ type RootTranslation = {
 			 * Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.
 			 */
 			description: string
+			/**
+			 * Try it out
+			 */
+			tryItOut: string
+			/**
+			 * Design System
+			 */
+			designSystem: string
 		}
 		features: {
 			/**
@@ -172,14 +211,76 @@ type RootTranslation = {
 			 * Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.
 			 */
 			description: string
-			/**
-			 * Name
-			 */
-			columnName: string
-			/**
-			 * Status
-			 */
-			columnStatus: string
+			preview: {
+				/**
+				 * Name
+				 */
+				name: string
+				/**
+				 * Status
+				 */
+				status: string
+				/**
+				 * Tag
+				 */
+				tag: string
+				/**
+				 * Bit Depth
+				 */
+				bitDepth: string
+				/**
+				 * Dimensions
+				 */
+				dimensions: string
+				/**
+				 * Horizontal Resolution
+				 */
+				horizontalResolution: string
+				/**
+				 * Vertical Resolution
+				 */
+				verticalResolution: string
+				/**
+				 * Item Count
+				 */
+				itemCount: string
+				/**
+				 * Line Count
+				 */
+				lineCount: string
+				/**
+				 * Path
+				 */
+				path: string
+				/**
+				 * Date Created
+				 */
+				dateCreated: string
+				/**
+				 * Date Modified
+				 */
+				dateModified: string
+				/**
+				 * Blue
+				 */
+				blueTag: string
+				/**
+				 * Yellow
+				 */
+				yellowTag: string
+				/**
+				 * Green
+				 */
+				greenTag: string
+				/**
+				 * Gray
+				 */
+				grayTag: string
+				/**
+				 * Orange
+				 */
+				orangeTag: string
+			}
 			cards: {
 				cloud: {
 					/**
@@ -375,6 +476,36 @@ export type TranslationFunctions = {
 		discordServer: () => LocalizedString
 	}
 	section: {
+		download: {
+			/**
+			 * Downloading...
+			 */
+			downloading: () => LocalizedString
+			/**
+			 * Thank you for downloading Files!
+			 */
+			thankYou: () => LocalizedString
+			/**
+			 * If the download hasn't started yet, press {link} to start it:
+			 */
+			comment: (arg: { link: unknown }) => LocalizedString
+			/**
+			 * here
+			 */
+			here: () => LocalizedString
+			/**
+			 * Firefox adds a <code>.xml</code> file extension to the downloaded installer. Remove it before opening the installer.
+			 */
+			firefoxMessage: () => LocalizedString
+			/**
+			 * Want to support the creators of Files?
+			 */
+			wantSupport: () => LocalizedString
+			/**
+			 * Donate
+			 */
+			donate: () => LocalizedString
+		}
 		hero: {
 			/**
 			 * A modern file explorer that pushes the boundaries of the platform.
@@ -436,6 +567,14 @@ export type TranslationFunctions = {
 			 * Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.
 			 */
 			description: () => LocalizedString
+			/**
+			 * Try it out
+			 */
+			tryItOut: () => LocalizedString
+			/**
+			 * Design System
+			 */
+			designSystem: () => LocalizedString
 		}
 		features: {
 			/**
@@ -450,14 +589,76 @@ export type TranslationFunctions = {
 			 * Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.
 			 */
 			description: () => LocalizedString
-			/**
-			 * Name
-			 */
-			columnName: () => LocalizedString
-			/**
-			 * Status
-			 */
-			columnStatus: () => LocalizedString
+			preview: {
+				/**
+				 * Name
+				 */
+				name: () => LocalizedString
+				/**
+				 * Status
+				 */
+				status: () => LocalizedString
+				/**
+				 * Tag
+				 */
+				tag: () => LocalizedString
+				/**
+				 * Bit Depth
+				 */
+				bitDepth: () => LocalizedString
+				/**
+				 * Dimensions
+				 */
+				dimensions: () => LocalizedString
+				/**
+				 * Horizontal Resolution
+				 */
+				horizontalResolution: () => LocalizedString
+				/**
+				 * Vertical Resolution
+				 */
+				verticalResolution: () => LocalizedString
+				/**
+				 * Item Count
+				 */
+				itemCount: () => LocalizedString
+				/**
+				 * Line Count
+				 */
+				lineCount: () => LocalizedString
+				/**
+				 * Path
+				 */
+				path: () => LocalizedString
+				/**
+				 * Date Created
+				 */
+				dateCreated: () => LocalizedString
+				/**
+				 * Date Modified
+				 */
+				dateModified: () => LocalizedString
+				/**
+				 * Blue
+				 */
+				blueTag: () => LocalizedString
+				/**
+				 * Yellow
+				 */
+				yellowTag: () => LocalizedString
+				/**
+				 * Green
+				 */
+				greenTag: () => LocalizedString
+				/**
+				 * Gray
+				 */
+				grayTag: () => LocalizedString
+				/**
+				 * Orange
+				 */
+				orangeTag: () => LocalizedString
+			}
 			cards: {
 				cloud: {
 					/**

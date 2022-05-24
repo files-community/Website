@@ -25,6 +25,15 @@ const en: BaseTranslation = {
         discordServer: "Discord server"
     },
     section: {
+        download: {
+            downloading: "Downloading...",
+			thankYou: "Thank you for downloading Files!",
+            comment: "If the download hasn't started yet, press {link} to start it:",
+            here: "here",
+            firefoxMessage: "Firefox adds a <code>.xml</code> file extension to the downloaded installer. Remove it before opening the installer.",
+            wantSupport: "Want to support the creators of Files?",
+            donate: "Donate",
+        },
         hero: {
             hook: "A modern file explorer that pushes the boundaries of the platform.",
             downloadFiles: "Download Files",
@@ -43,14 +52,33 @@ const en: BaseTranslation = {
         design: {
             title: "design",
             hook: "Power meets beauty.",
-            description: "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more."
+            description: "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+            tryItOut: "Try it out",
+            designSystem: "Design System"
         },
         features: {
             title: "features",
             hook: "It already does that.",
             description: "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-            columnName: "Name",
-            columnStatus: "Status",
+            preview: {
+                name: "Name",
+                status: "Status",
+                tag: "Tag",
+                bitDepth: "Bit Depth",
+                dimensions: "Dimensions",
+                horizontalResolution: "Horizontal Resolution",
+                verticalResolution: "Vertical Resolution",
+                itemCount: "Item Count",
+                lineCount: "Line Count",
+                path: "Path",
+                dateCreated: "Date Created",
+                dateModified: "Date Modified",
+                blueTag: "Blue",
+				yellowTag: "Yellow",
+				greenTag: "Green",
+				grayTag: "Gray",
+				orangeTag: "Orange"
+            },
             cards: {
                 cloud: {
                     title: "Seamless cloud integration",

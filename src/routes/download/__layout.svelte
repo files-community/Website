@@ -5,6 +5,7 @@
 	import { fly } from "svelte/transition";
 	import { page } from "$app/stores";
 	import { dev } from "$app/env";
+	import { text } from "../../i18n/i18n";
 
 	$: channel = $page.url.pathname.includes("preview") ? "preview" : "stable";
 
@@ -27,30 +28,31 @@
 <slot />
 
 <main class="download-page">
-	<h1>Downloading...</h1>
+	<h1>{text.section.download.downloading()}</h1>
 	<ProgressRing size={64} />
-	<p>Thank you for downloading Files! 🎉</p>
-	<p>If the download hasn't started yet, press
+	<p>{text.section.download.thankYou()} 🎉</p>
+	<p>{@html text.section.download.comment({link: "<a href=\"/appinstallers/Files.{channel}.appinstaller\" download bind:this={link}>" +  text.section.download.here() + "</a>"})}
+		
+		<!-- If the download hasn't started yet, press
 		<a href="/appinstallers/Files.{channel}.appinstaller" download bind:this={link}>
 			here
 		</a>
-		to start it:
+		to start it: -->
 	</p>
 
 	{#if firefox}
 		<InfoBar severity="caution" closable={false}>
-			Firefox adds a <code>.xml</code> file extension to the downloaded installer.
-			Remove it before opening the installer.
+			{@html text.section.download.firefoxMessage()}
 		</InfoBar>
 	{/if}
 
-	<p>Want to support the creators of Files?</p>
+	<p>{text.section.download.wantSupport()}</p>
 	<Button
 		href="https://github.com/sponsors/yaichenbaum"
 		variant="accent"
 		{...externalLink}
 	>
-		Donate
+	{text.section.download.donate()}
 	</Button>
 </main>
 

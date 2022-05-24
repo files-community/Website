@@ -19,13 +19,13 @@
 			{...externalLink}
 			variant="accent"
 		>
-			Try it out
+		{text.section.design.tryItOut()}
 		</Button>
 		<Button variant="hyperlink"
 		        href="https://www.microsoft.com/design/fluent/"
 		        {...externalLink}
 		>
-			Design System
+		{text.section.design.designSystem()}
 		</Button>
 	</div>
 	<div class="design-image">

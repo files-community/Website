@@ -1,6 +1,7 @@
 <script>
 	import { draw } from "svelte/transition";
 	import { previewFiles } from "$data/features";
+	import { text } from "../../../i18n/i18n";
 
 	let currentPreviewFile = 0;
 </script>
@@ -41,41 +42,39 @@
 						{file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
 					</h5>
 					{#if file.bitDepth}
-						<h6>Bit Depth</h6>
+						<h6>{text.section.features.preview.bitDepth()}</h6>
 						<span>{file.bitDepth}</span>
 					{/if}
 					{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
-						<h6>Dimensions</h6>
-						<span
-						>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
-						>
+						<h6>{text.section.features.preview.dimensions()}</h6>
+						<span>{file.dimensions.horizontal} x {file.dimensions.vertical}</span>
 					{/if}
 					{#if file?.dpi?.horizontal}
-						<h6>Horizontal Resolution</h6>
+						<h6>{text.section.features.preview.horizontalResolution()}</h6>
 						<span>{file.dpi.horizontal}</span>
 					{/if}
 					{#if file?.dpi?.vertical}
-						<h6>Vertical Resolution</h6>
+						<h6>{text.section.features.preview.verticalResolution()}</h6>
 						<span>{file.dpi.vertical}</span>
 					{/if}
 					{#if file.items}
-						<h6>Item Count</h6>
+						<h6>{text.section.features.preview.itemCount()}</h6>
 						<span>{file.items}</span>
 					{/if}
 					{#if file.lineCount}
-						<h6>Line Count</h6>
+						<h6>{text.section.features.preview.lineCount()}</h6>
 						<span>{file.lineCount}</span>
 					{/if}
 					{#if file.path}
-						<h6>Path</h6>
+						<h6>{text.section.features.preview.path()}</h6>
 						<span>{file.path}</span>
 					{/if}
 					{#if file.added}
-						<h6>Date Created</h6>
+						<h6>{text.section.features.preview.dateCreated()}</h6>
 						<span>{file.added}</span>
 					{/if}
 					{#if file.modified}
-						<h6>Date Modified</h6>
+						<h6>{text.section.features.preview.dateModified()}</h6>
 						<span>{file.modified}</span>
 					{/if}
 				</div>

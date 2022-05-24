@@ -63,8 +63,8 @@
 	<table class="files-table">
 		<tr>
 			<th></th>
-			<th>{text.section.features.columnName()}</th>
-			<th>{text.section.features.columnStatus()}</th>
+			<th>{text.section.features.preview.name()}</th>
+			<th>{text.section.features.preview.status()}</th>
 		</tr>
 		{#each cloudFiles as { name, icon, status }, i}
 			<tr style="--file-index: {i}">
