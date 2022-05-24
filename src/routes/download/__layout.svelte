@@ -31,14 +31,7 @@
 	<h1>{text.section.download.downloading()}</h1>
 	<ProgressRing size={64} />
 	<p>{text.section.download.thankYou()} 🎉</p>
-	<p>{@html text.section.download.comment({link: "<a href=\"/appinstallers/Files.{channel}.appinstaller\" download bind:this={link}>" +  text.section.download.here() + "</a>"})}
-		
-		<!-- If the download hasn't started yet, press
-		<a href="/appinstallers/Files.{channel}.appinstaller" download bind:this={link}>
-			here
-		</a>
-		to start it: -->
-	</p>
+	<p>{@html text.section.download.comment({link: "<a href=\"/appinstallers/Files.{channel}.appinstaller\" download bind:this={link}>" +  text.section.download.here() + "</a>"})}</p>
 
 	{#if firefox}
 		<InfoBar severity="caution" closable={false}>
@@ -52,7 +45,7 @@
 		variant="accent"
 		{...externalLink}
 	>
-	{text.section.download.donate()}
+		{text.section.download.donate()}
 	</Button>
 </main>
 
