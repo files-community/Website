@@ -50,7 +50,7 @@
 
 	onMount(async () => {
 		// Get the user's download preference
-		if (!localStorage.getItem("downloadSource")) {
+		if (!downloadSources.includes((localStorage.getItem("downloadSource") ?? "") as DownloadSource)) {
 			localStorage.setItem("downloadSource", "Microsoft Store");
 		}
 		currentDownloadSource = (localStorage.getItem("downloadSource") ?? "Microsoft Store") as DownloadSource;
