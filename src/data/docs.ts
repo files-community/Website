@@ -46,7 +46,7 @@ export const docs: DocsMap[] = [
 			},
 			{
 				name: "Updates",
-				path: "/contributing/Updates"
+				path: "/contributing/updates"
 			},
 			{
 				name: "Code Style",
