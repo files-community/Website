@@ -34,9 +34,6 @@ Added support for applying bulk actions in the **conflicts dialog**
     <img src="/blog-resources/filesv2-3/BulkActions.png" alt="A screenshot of the redesigned conflicts dialog in Files v2.3." />
 </figure>
 
-<details>
-  <summary>Expand changelog</summary>
-    
 ## Other changes
 - Improved the reliability and speed of drag and drop
 - Added a pull to refresh gesture
@@ -97,7 +94,6 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Fixed an issue where switching the app theme would make the group headers unreadable until restarting the app
 - Fixed an issue where the option to show dot files didn't work in WSL and network folders
 - Fixed an issue where the confirm delete dialog didn't display when dragging an item to recycle bin
-</details>
 
 The full list of improvements and bug fixes can be found [here](https://github.com/files-community/Files/releases)
 
