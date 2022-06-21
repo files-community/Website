@@ -103,7 +103,7 @@ This milestone marks the beginning of a reinvigorated effort to modernize and im
 
 We hope to share more about this effort in the coming months.
 
-We view these steps as critical to continuing the great work on Files. The best way for you to support current and future efforts is to [donate](https://github.com/sponsors/yaichenbaum). 
+We view these steps as critical to continuing the great work on Files. The best way for you to support current and future efforts is to [sponsor](https://github.com/sponsors/yaichenbaum) us on GitHub.
 
 ### Giving back to the community
 
