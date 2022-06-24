@@ -109,8 +109,6 @@ We view these steps as critical to continuing the great work on Files. The best 
 
 The Files contributors are pleased to announce that the main application repository has been relicensed under the MIT license. This means that other projects can now take advantage of our innovation even if they happen to be closed source.
 
-Over the next year, you'll start to see us doing our part to expand the number of Windows developers. Offering a helpful onboarding guide annotated by core Files contributors best embodies this vision. We anticipate this information will be a valuable resource for anyone studying native Windows APIs, packaged apps, and UI design practices.
-
 ## Feedback
 
 Files thrives off community feedback because it helps shape the features worked on and makes the app better for
