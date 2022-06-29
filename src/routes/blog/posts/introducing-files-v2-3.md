@@ -8,7 +8,7 @@ author: files-community
 
 The astounding growth of the project over the last three years serves to motivate our journey to build the best file manager, alongside the community. More than ever, Files plays an important role in demonstrating how impactful the latest user experience improvements in WinUI can be. A notable experience we can reflect on was fixing an issue with screen reader accessibility reported by a blind user. More recently, we were delighted to hear from a seventy-seven-year-old "non-geek" who was impressed that we made file discovery "much easier" compared to the first party solution. Both of these stories highlight the inadvertent achievements that come from engaging the broader community.
 
-Today we're excited to not only introduce the next major release of Files, but also a series of future changes to sustain contributor momentum into 2023. 
+Today we're excited to not only introduce the next major release of [Files]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-3'}), but also a series of future changes to sustain contributor momentum into 2023. 
 
 ## Files v2.3
 
