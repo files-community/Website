@@ -99,7 +99,7 @@ The full list of improvements and bug fixes can be found [here](https://github.c
 
 ## The next generation of Files
 
-This milestone marks the beginning of a reinvigorated effort to modernize and improve the architecture of the Files codebase. A well-architected, testable codebase will not only attract new contributors, but enables us to offer platform specific benefits in the long run. Further, we will be able to iterate faster, accelerating our transition to the Windows App SDK. Switching will remove longstanding limitations in the present app model and will enable us to deliver improvements in net performance and reliability.
+This milestone marks the beginning of a reinvigorated effort to modernize and improve the architecture of the Files codebase. A well-architected, testable codebase will not only attract new contributors, but enables us to offer platform specific benefits in the long run. Furthermore, we will be able to iterate faster, accelerating our transition to the Windows App SDK. Switching will remove longstanding limitations in the present app model and will enable us to deliver improvements in net performance and reliability.
 
 We hope to share more about this effort in the coming months.
 
