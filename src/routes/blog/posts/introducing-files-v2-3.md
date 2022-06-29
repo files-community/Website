@@ -19,7 +19,7 @@ As part of our mission to create a stable and fully-featured file manager, we ad
     <img src="/blog-resources/filesv2-3/CompactSpacing.png" alt="A screenshot of the new compact spacing option in Files v2.3." />
 </figure>
 
-The **tab control** was redesigned to follow our design language
+The **tab control** was redesigned to connect with the tab content.
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/Tabs.png" alt="A screenshot of the new tab design in Files v2.3." />
 </figure>
