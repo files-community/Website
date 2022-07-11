@@ -2,6 +2,7 @@
 	import { draw } from "svelte/transition";
 	import { taggedFiles, tags } from "$data/features";
 	import { ColorSwatch } from "$lib";
+	import { text } from "../../../i18n/i18n";
 
 	let selectedTag = 0;
 </script>
@@ -25,8 +26,8 @@
 		<table class="files-table">
 			<tr>
 				<th></th>
-				<th>Name</th>
-				<th>Tag</th>
+				<th>{text.section.features.preview.name()}</th>
+				<th>{text.section.features.preview.tag()}</th>
 			</tr>
 			{#each taggedFiles as file, i}
 				<tr style="--file-index: {i}" class:tag-selected={tags.findIndex(t => t.name === file.tag) === selectedTag}>

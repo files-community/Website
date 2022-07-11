@@ -2,6 +2,7 @@ import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
 import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
 import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
 import EyeVisible from "@fluentui/svg-icons/icons/eye_20_regular.svg?raw";
+import { text } from "../i18n/i18n";
 
 export type FeatureCardData = {
 	title: string;
@@ -29,27 +30,23 @@ export type TaggedFileData = FileData & {
 
 export const featureCards: FeatureCardData[] = [
 	{
-		title: "Seamless cloud integration",
-		description:
-			"Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.",
+		title: text.section.features.cards.cloud.title(),
+		description: text.section.features.cards.cloud.description(),
 		icon: Cloud
 	},
 	{
-		title: "File preview",
-		description:
-			"Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in.",
+		title: text.section.features.cards.preview.title(),
+		description: text.section.features.cards.preview.description(),
 		icon: EyeVisible
 	},
 	{
-		title: "Tagged Files & Folders",
-		description:
-			"Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!",
+		title: text.section.features.cards.tag.title(),
+		description: text.section.features.cards.tag.description(),
 		icon: Tag
 	},
 	{
-		title: "Multitask with tabs",
-		description:
-			"Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts.",
+		title: text.section.features.cards.tabs.title(),
+		description: text.section.features.cards.tabs.description(),
 		icon: TabDesktop
 	}
 ];
@@ -154,23 +151,23 @@ cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</
 
 export const tags: Tag[] = [
 	{
-		name: "Blue",
+		name: text.section.features.preview.blueTag(),
 		color: "#0072bd"
 	},
 	{
-		name: "Yellow",
+		name: text.section.features.preview.yellowTag(),
 		color: "#edb120"
 	},
 	{
-		name: "Green",
+		name: text.section.features.preview.greenTag(),
 		color: "#77ac30"
 	},
 	{
-		name: "Gray",
+		name: text.section.features.preview.grayTag(),
 		color: "#9ea3a1"
 	},
 	{
-		name: "Orange",
+		name: text.section.features.preview.orangeTag(),
 		color: "#d95319"
 	}
 ];
@@ -179,31 +176,31 @@ export const taggedFiles: TaggedFileData[] = [
 	{
 		name: "Super Secret Plans - Do Not Publish.docx",
 		icon: "file",
-		tag: "Yellow"
+		tag: text.section.features.preview.yellowTag()
 	},
 	{
 		name: "Presentation - Project Sledgehammer.pptx",
 		icon: "file",
-		tag: "Green"
+		tag: text.section.features.preview.greenTag()
 	},
 	{
 		name: "Files (MacOS)",
 		icon: "folder",
-		tag: "Gray"
+		tag: text.section.features.preview.grayTag()
 	},
 	{
 		name: "Estimate_261_2022-01-31.pdf",
 		icon: "file",
-		tag: "Blue"
+		tag: text.section.features.preview.blueTag()
 	},
 	{
 		name: "Files (Linux)",
 		icon: "folder",
-		tag: "Gray"
+		tag: text.section.features.preview.grayTag()
 	},
 	{
 		name: "Files v4.0",
 		icon: "folder",
-		tag: "Orange"
+		tag: text.section.features.preview.orangeTag()
 	}
 ];

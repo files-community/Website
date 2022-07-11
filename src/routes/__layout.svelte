@@ -6,6 +6,7 @@
 	import { Footer, Navbar } from "$layout";
 	import { links, NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
+	import { text } from "../i18n/i18n";
 
 	import "fluent-svelte/theme.css";
 
@@ -20,12 +21,12 @@
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: "Home",
+			name: text.header.home(),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: "Docs",
+			name: text.header.docs(),
 			path: "/docs",
 			sidebarTree: docs,
 			icon: Book
@@ -36,7 +37,7 @@
 		//     icon: PaintBrush
 		// },
 		{
-			name: "Blog",
+			name: text.header.blog(),
 			path: "/blog",
 			icon: News
 		}

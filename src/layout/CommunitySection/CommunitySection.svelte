@@ -3,6 +3,7 @@
 	import { links } from "$data/links";
 	import { Contributor, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
+	import { text } from "../../i18n/i18n";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
 
 	// Fetch contributors for the community section
@@ -12,18 +13,15 @@
 <PageSection id="community-section">
 	<div class="community-section-card">
 		<div class="community-section-text">
-			<HeaderChip>Community</HeaderChip>
-			<h2>Designed and developed by you.</h2>
-			<p>
-				Files is free and open source software, maintained and designed by a
-				collective of hundreds of contributors.
-			</p>
+			<HeaderChip>{text.section.community.title()}</HeaderChip>
+			<h2>{text.section.community.hook()}</h2>
+			<p>{text.section.community.description()}</p>
 			<div class="buttons-spacer">
 				<Button variant="hyperlink" href="https://discord.gg/{links.discord}">
-					Join the discussion
+					{text.section.community.joinDiscussion()}
 				</Button>
 				<Button variant="hyperlink" href="/docs/contributing/code-style">
-					Become a contributor
+					{text.section.community.becomeContributor()}
 				</Button>
 			</div>
 		</div>

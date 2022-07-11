@@ -6,6 +6,7 @@
 
 	import FeatureShowcase from "./FeatureShowcase.svelte";
 	import { dev } from "$app/env";
+	import { text } from "../../i18n/i18n";
 
 	let currentFeature = 0;
 
@@ -30,13 +31,9 @@
 		<FeatureShowcase feature={currentFeature} />
 	</div>
 	<div class="features-section-right">
-		<HeaderChip>Features</HeaderChip>
-		<h2>It already does that.</h2>
-		<p>
-			Cloud files integration? Tabs and multiple layouts? Rich file previews?
-			Files has it covered with robust features you expect from a modern file
-			manager.
-		</p>
+		<HeaderChip>{text.section.features.title()}</HeaderChip>
+		<h2>{text.section.features.hook()}</h2>
+		<p>{text.section.features.description()}</p>
 		<hr>
 		<div class="feature-cards-container">
 			{#each featureCards as feature, i}

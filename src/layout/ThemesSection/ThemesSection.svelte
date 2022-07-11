@@ -3,6 +3,7 @@
 	import { ColorSwatch, HeaderChip, PageSection } from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import type { Tag } from "$data/features";
+	import { text } from "../../i18n/i18n";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
@@ -13,12 +14,12 @@
 	let anchor: HTMLDivElement;
 
 	const themeColors: Tag[] = [
-		{ name: "Dark Grey • Light Blue", color: "var(--fds-solid-background-tertiary)" },
-		{ name: "Blue Grey • Neon Green", color: "hsl(219, 15%, 30%)" },
-		{ name: "Purple", color: "hsl(261, 43%, 45%)" },
-		{ name: "Yellow • White", color: "hsl(43, 100%, 50%)" },
-		{ name: "Cool White • Dark Teal", color: "hsl(192, 81%, 14%)" },
-		{ name: "Sky Blue", color: "hsl(193, 43%, 67%)" }
+		{ name: text.section.themes.color.darkGreyLightBlue(), color: "var(--fds-solid-background-tertiary)" },
+		{ name: text.section.themes.color.blueGreyNeonGreen(), color: "hsl(219, 15%, 30%)" },
+		{ name: text.section.themes.color.purple(), color: "hsl(261, 43%, 45%)" },
+		{ name: text.section.themes.color.yellowWhite(), color: "hsl(43, 100%, 50%)" },
+		{ name: text.section.themes.color.coolWhiteDarkTeal(), color: "hsl(192, 81%, 14%)" },
+		{ name: text.section.themes.color.skyBlue(), color: "hsl(193, 43%, 67%)" }
 	];
 
 	$: themeSrc = currentTheme > 0 ? `theme-${ currentTheme + 1 }` : systemTheme;
@@ -51,12 +52,9 @@
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
 	<div bind:this={anchor} class="scroll-anchor"></div>
 	<div class="themes-section-content">
-		<HeaderChip>Themes</HeaderChip>
-		<TextBlock variant="titleLarge">Distinctly personal.</TextBlock>
-		<p>
-			Have it your way. Files features a fully customizable user interface,
-			right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.
-		</p>
+		<HeaderChip>{text.section.themes.title()}</HeaderChip>
+		<TextBlock variant="titleLarge">{text.section.themes.hook()}</TextBlock>
+		<p>{text.section.themes.description()}</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
 				<ColorSwatch
