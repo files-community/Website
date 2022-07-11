@@ -1,8 +1,9 @@
 @use "../mixins" as *;
 
 .blog-post {
-	@include flex($justify: center);
 	padding: 48px;
+  margin-inline: auto;
+  max-inline-size: 100%;
 
 	article {
 		max-inline-size: 768px;
