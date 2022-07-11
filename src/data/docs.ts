@@ -45,8 +45,8 @@ export const docs: DocsMap[] = [
 				path: "/contributing/building-from-source"
 			},
 			{
-				name: "Translating Files",
-				path: "/contributing/translating-files"
+				name: "Updates",
+				path: "/contributing/updates"
 			},
 			{
 				name: "Code Style",
