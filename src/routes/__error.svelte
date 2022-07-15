@@ -1,7 +1,7 @@
 <script context="module" lang="ts">
-	import type { ErrorLoad } from "@sveltejs/kit";
+	import type { Load } from "@sveltejs/kit";
 
-	export const load: ErrorLoad = ({ error, status }) => {
+	export const load: Load = ({ error, status }) => {
 		return {
 			props: {
 				status: status,
@@ -12,7 +12,7 @@
 </script>
 
 <script lang="ts">
-	import { draggable, DragOptions } from "@neodrag/svelte";
+	import { draggable, type DragOptions } from "@neodrag/svelte";
 	import { Metadata } from "$lib";
 
 	export let status: number;

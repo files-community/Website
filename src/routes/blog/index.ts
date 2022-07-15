@@ -1,5 +1,16 @@
 import type { RequestHandler } from "@sveltejs/kit";
 
+export type Post = {
+	path: string;
+	metadata: {
+		title: string;
+		description: string;
+		author: string;
+		thumbnail: string;
+		date: string;
+	};
+}
+
 export const get: RequestHandler = async () => {
 	const modules = import.meta.glob("./posts/*.md");
 	let body = [];
@@ -15,11 +26,13 @@ export const get: RequestHandler = async () => {
 		);
 	}
 
-	const posts = await Promise.all(body);
+	const posts: Post[] = await Promise.all(body);
 
 	posts.sort((a, b) => {
 		return +new Date(b.metadata.date) - +new Date(a.metadata.date);
 	});
 
-	return { body: posts };
+	return {
+		body: { posts }
+	};
 };

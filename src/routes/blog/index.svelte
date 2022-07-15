@@ -1,27 +1,7 @@
-<script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit";
-
-	export const load: Load = async ({ fetch }) => ({
-		props: {
-			posts: await fetch("/blog.json").then(response => response.json())
-		}
-	})
-</script>
-
 <script lang="ts">
 	import { PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
 	import { Button } from "fluent-svelte";
-
-	type Post = {
-		path: string;
-		metadata: {
-			title: string;
-			description: string;
-			author: string;
-			thumbnail: string;
-			date: string;
-		};
-	}
+	import type { Post } from ".";
 
 	export let posts: Post[]
 
