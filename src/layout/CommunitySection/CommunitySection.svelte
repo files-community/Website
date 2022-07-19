@@ -64,5 +64,6 @@
 	</div>
 </PageSection>
 
-<style lang="scss">@use "./CommunitySection";
+<style lang="scss">
+	@use "./CommunitySection";
 </style>

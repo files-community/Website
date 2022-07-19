@@ -3,7 +3,7 @@
 
 	export let title = "Files";
 	export let image = "";
-	$: imageFile = image.startsWith("/") ? image : `/branding/banner-${image}.png`
+	$: imageFile = image.startsWith("/") ? image : `/branding/banner${image === "" ? "" : "-" + image}.png`
 </script>
 
 <title>{title}</title>

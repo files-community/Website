@@ -1,10 +1,9 @@
 <script lang="ts">
 	import { dev } from "$app/env";
 	import { page } from "$app/stores";
-	import { onMount } from "svelte";
 
 	import { Footer, Navbar } from "$layout";
-	import { links, NavbarItem } from "$data/links";
+	import { links, type NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
 
 	import "fluent-svelte/theme.css";
@@ -54,17 +53,6 @@
 			icon: Code
 		}
 	];
-
-	let theme: "light" | "dark" = "light";
-
-	onMount(() => {
-		theme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches ? "dark" : "light";
-
-		window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
-			theme = e.matches ? "dark" : "light";
-		});
-	});
-
 </script>
 
 <svelte:head>
@@ -73,8 +61,15 @@
 	<meta content="website" name="og:type">
 
 	<link
-		href="/branding/logo{$page.url.pathname.startsWith('/themes') ? '-themes' : ''}{'-' + (theme ?? 'light')}.svg"
+		href="/branding/logo{$page.url.pathname.startsWith('/themes') ? '-themes' : ''}-light.svg"
 		rel="icon"
+		media="prefers-color-scheme: light"
+		type="image/svg+xml"
+	>
+	<link
+		href="/branding/logo{$page.url.pathname.startsWith('/themes') ? '-themes' : ''}-dark.svg"
+		rel="icon"
+		media="prefers-color-scheme: dark"
 		type="image/svg+xml"
 	>
 
