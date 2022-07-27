@@ -33,7 +33,7 @@
 	// Images
 	figure {
 		margin: 16px 0;
-		
+
 		&.margin- {
 			&top {
 				margin-block: 48px 16px;
@@ -146,7 +146,7 @@
 	kbd {
 		padding: 0.3em 0.4em;
 		color: hsl(70, 5%, 22%);
-		box-shadow: inset 0 -.2em 0 var(--fds-subtle-fill-tertiary);
+		box-shadow: inset 0 -0.2em 0 var(--fds-subtle-fill-tertiary);
 
 		@media (prefers-color-scheme: dark) {
 			color: hsl(0, 0%, 83%);
@@ -211,11 +211,15 @@
 		border-radius: var(--fds-control-corner-radius);
 		border-collapse: collapse;
 		background-clip: padding-box;
-		overflow: hidden;
+		overflow-x: auto;
+		overflow-y: hidden;
+		width: 100%;
+		white-space: nowrap;
 
 		th,
 		td {
 			padding: 6px 13px;
+			width: 1%;
 		}
 
 		th {
