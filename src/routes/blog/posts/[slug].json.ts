@@ -1,24 +1,17 @@
 import type { RequestHandler } from "@sveltejs/kit";
+import type { Post } from "..";
 
 const slugFromPath = (path: string) =>
 	path.match(/([\w-]+)\.(md|svx)/i)?.[1] ?? null;
 
-export const get: RequestHandler = async ({ params }) => {
-	const modules = import.meta.glob("./*.md");
+export const GET: RequestHandler = async ({ params }) => {
+	const modules: Record<string, Post["metadata"]> = import.meta.glob("./*.md", { eager: true, import: "metadata" });
 
-	type Resolver = () => Promise<{[p: string]: any}>
-
-	let match: [string, Resolver];
-	for (const [path, resolver] of Object.entries(modules)) {
+	for (const [path, post] of Object.entries(modules)) {
 		if (slugFromPath(path) === params.slug) {
-			match = [path, resolver];
-			break;
+			return { body: post };
 		}
 	}
 
-	if (!match) return { status: 404 };
-
-	const post = await match[1]();
-
-	return { body: post };
+	return { status: 404 };
 };

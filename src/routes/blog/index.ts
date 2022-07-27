@@ -1,4 +1,4 @@
-import type { RequestHandler } from "@sveltejs/kit";
+import type { RequestHandler } from "./__types";
 
 export type Post = {
 	path: string;
@@ -11,22 +11,14 @@ export type Post = {
 	};
 }
 
-export const get: RequestHandler = async () => {
-	const modules = import.meta.glob("./posts/*.md");
-	let body = [];
+export const GET: RequestHandler = async () => {
+	const modules: Record<string, Post["metadata"]> = import.meta.glob("./posts/*.md", {
+		eager: true,
+		import: "metadata"
+	});
 
-	for (const path in modules) {
-		body.push(
-			modules[path]().then(({ metadata }) => {
-				return {
-					metadata,
-					path
-				};
-			})
-		);
-	}
-
-	const posts: Post[] = await Promise.all(body);
+	const posts: Post[] = Object.entries(modules)
+		.map(([path, metadata]) => ({ path, metadata }));
 
 	posts.sort((a, b) => {
 		return +new Date(b.metadata.date) - +new Date(a.metadata.date);

@@ -2,9 +2,9 @@
 	import { externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
-	import Discord from "$static/ui/icons/discord.svg?raw";
-	import Github from "$static/ui/icons/github.svg?raw";
-	import Twitter from "$static/ui/icons/twitter.svg?raw";
+	import Github from "./icons/github.svg?raw";
+	import Twitter from "./icons/twitter.svg?raw";
+	import Discord from "./icons/discord.svg?raw";
 
 	const contributors = [
 		{

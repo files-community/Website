@@ -1,20 +1,8 @@
 <script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit";
 	import { docs, type DocsMap } from "$data/docs";
+	import type { Load } from "@sveltejs/kit";
 
-	export const load: Load = ({ url }) => {
-		const docsPages = findPages(docs);
-
-		return {
-			props: {
-				pagePath: url.pathname,
-				currentPage: docsPages.find(p => `/docs${ p.path }` === url.pathname),
-				docsPages
-			}
-		};
-	};
-
-	function findPages(docsStructure: DocsMap[] | DocsMap): DocsMap[] {
+	export const findPages = (docsStructure: DocsMap[] | DocsMap): DocsMap[] => {
 		if (Array.isArray(docsStructure)) {
 			// it's an array of pages/categories
 			return docsStructure
@@ -32,7 +20,19 @@
 				return [docsStructure];
 			}
 		}
-	}
+	};
+
+	export const load: Load = ({ url }) => {
+		const docsPages = findPages(docs);
+
+		return {
+			props: {
+				pagePath: url.pathname,
+				currentPage: docsPages.find(p => `/docs${ p.path }` === url.pathname),
+				docsPages
+			}
+		};
+	};
 </script>
 
 <script lang="ts">
@@ -40,7 +40,6 @@
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
-	import type { DocsMap } from "$data/docs";
 	import { links } from "$data/links";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
@@ -49,11 +48,11 @@
 	export let docsPages: DocsMap[];
 	export let currentPage: DocsMap = { name: "Overview", path: "" };
 
-	let value: string = "";
-	let searchQuery: string = "";
-	let searchFocused: boolean = false;
-	let autoSuggestVisible: boolean = false;
-	let selection: number = 0;
+	let value = "";
+	let searchQuery = "";
+	let searchFocused = false;
+	let autoSuggestVisible = false;
+	let selection = 0;
 
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.name;

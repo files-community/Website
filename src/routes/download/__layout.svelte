@@ -2,7 +2,6 @@
 	import { externalLink, Metadata } from "$lib";
 	import { Button, InfoBar, ProgressRing } from "fluent-svelte";
 	import { onMount } from "svelte";
-	import { fly } from "svelte/transition";
 	import { page } from "$app/stores";
 	import { dev } from "$app/env";
 
@@ -58,7 +57,7 @@
 	.download-page {
 		display: grid;
 		place-items: center;
-		margin-block-start: 1rem;
+		block-size: calc(100vh - 58px);
 
 		h1 {
 			font-size: 5rem;
@@ -66,10 +65,6 @@
 
 		p {
 			font-size: 1.75rem;
-
-			&:nth-last-child(2) {
-				margin-block: 2em;
-			}
 
 			&:last-child {
 				margin-block-start: 0;

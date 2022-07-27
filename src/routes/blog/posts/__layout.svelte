@@ -3,7 +3,7 @@
 
 	export const load: Load = async ({ url, fetch }) => ({
 		props: {
-			post: await fetch(`${ url.pathname }.json`).then(response => response.json())
+			post: await (await fetch(`${ url.pathname }.json`)).json()
 		}
 	});
 </script>
@@ -12,19 +12,12 @@
 	import { Metadata, externalLink } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
-	import { IconButton, ListItem, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import type { Post } from "..";
 
-	export let post: {
-		metadata: {
-			title: string;
-			description: string;
-			thumbnail: string;
-			date: string;
-			author: string;
-		}
-	};
+	export let post: Post["metadata"];
 
-	const { title, thumbnail, author, date } = post.metadata;
+	const { title, thumbnail, author, date } = post;
 </script>
 
 <svelte:head>

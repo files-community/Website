@@ -103,9 +103,13 @@ html {
 
 body {
 	@include flex($direction: column);
+	font-size: 1.4rem;
 	block-size: fit-content;
 	min-block-size: 100%;
-	font-size: 1.4rem;
+
+	&:nth-child(2) {
+		min-block-size: calc(100vh - 58px);
+	}
 }
 
 // Only render inner <img> elements into the DOM

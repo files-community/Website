@@ -1,4 +1,3 @@
-import path from "path";
 import adapter from "@sveltejs/adapter-vercel";
 import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
@@ -14,16 +13,11 @@ import mediaMinMax from "postcss-media-minmax";
 const config = {
 	extensions: [".svelte", ".md"],
 	kit: {
-		vite: {
-			resolve: {
-				alias: {
-					$static: path.resolve("./static"),
-					$data: path.resolve("./src/data"),
-					$layout: path.resolve("./src/layout")
-				}
-			}
+		alias: {
+			$data: "src/data",
+			$layout: "src/layout"
 		},
-		adapter: adapter({ edge: true, split: true })
+		adapter: adapter({ edge: true })
 	},
 	preprocess: [
 		mdsvex({
