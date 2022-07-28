@@ -95,7 +95,7 @@
 			Style Guide
 		</Button>
 
-		<Button variant="hyperlink" href="/docs/contributing/translating-files">
+		<Button {...externalLink} href="https://crowdin.com/project/files-app" variant="hyperlink">
 			Translations
 		</Button>
 
