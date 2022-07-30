@@ -103,8 +103,8 @@ export const previewFiles = [
 	},
 	{
 		name: "waves",
-		extension: "png",
-		icon: "/preview-samples/waves.png",
+		extension: "jpg",
+		icon: "/preview-samples/waves.jpg",
 		bitDepth: 24,
 		dimensions: {
 			horizontal: 1496,
