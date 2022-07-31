@@ -44,7 +44,7 @@ This repository contains the source code for the new [Files website](https://fil
    ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
    |  ├──docs             // Documentation and associated files.
    |  └──blog             // Blog page and associated files.
-   |     └──posts         // Folder containing blog posts in MDSveX format (*.svx).
+   |     └──posts         // Folder containing blog posts in Markdown format.
    ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
    └──styles              // SCSS styles that are NOT tied to components in /lib.
 ```
@@ -108,11 +108,11 @@ pnpm run build
 
 ## Contributing to Documentation
 
-Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of markdown designed to work with [Svelte](htts://svelte.dev). `*.svx` files are equivalent to markdown (`*.md`) files.
+Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of markdown designed to work with [Svelte](htts://svelte.dev).
 
 ### Editing Existing Pages
 
-Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.svx` file in the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory, and edit it like a normal markdown file.
+Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.md` file in the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory.
 
 ### Adding or Deleting a Page
 
@@ -124,11 +124,11 @@ This is an example docs mapping:
 
 ```
 .
-├──page-1.svx
-├──page-2.svx
+├──page-1.md
+├──page-2.md
 └──category
-    ├──category-page-1.svx
-    └──category-page-2.svx
+    ├──category-page-1.md
+    └──category-page-2.md
 ```
 
 #### src/data/docs.ts
@@ -162,11 +162,11 @@ This is an example docs mapping:
 
 ## Using the Blog
 
-Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.svx` files. Unlike the docs, a mapping of blog posts doesn't need to be kept.
+Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files. Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
 
-To publish a post, create a new `svx` file in the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder. At the top of a the file, you'll need to include a few required things before typing the post.
+To publish a post, create a new `.md` file in the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder. At the top of a the file, you'll need to include a few required things before typing the post.
 
 ```md
 ---
