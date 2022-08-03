@@ -24,7 +24,7 @@ const config = {
 	},
 	preprocess: [
 		mdsvex({
-			extension: ".md",
+			extensions: [".md"],
 
 			smartypants: {
 				dashes: "oldschool"
@@ -34,7 +34,7 @@ const config = {
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: [autoprefixer, cssnano, mediaMinMax]
+				plugins: [autoprefixer(), cssnano(), mediaMinMax()]
 			}
 		})
 	]
