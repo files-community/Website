@@ -12,4 +12,4 @@ System is a little more compact and uses this format _6/3/2020_.
 
 **Universal**
 
-Universal uses the defacto official international format _2021-12-31_.
+Universal uses the defacto official international format _2020-06-03_.
