@@ -1,22 +1,7 @@
-<script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit";
-
-	export const load: Load = ({ error, status }) => {
-		return {
-			props: {
-				status: status,
-				error: error
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
 	import { draggable, type DragOptions } from "@neodrag/svelte";
 	import { Metadata } from "$lib";
-
-	export let status: number;
-	export let error: Error;
+	import { page } from "$app/stores";
 
 	const draggableOptions: DragOptions = {
 		bounds: "parent",
@@ -31,7 +16,7 @@
 <section class="error-page">
 	<div class="window" use:draggable={draggableOptions}>
 		<div class="titlebar">
-			<div class="titlebar-text">Error: {status}</div>
+			<div class="titlebar-text">Error: {$page.status}</div>
 			<div class="titlebar-controls">
 				<button aria-label="Minimize" />
 				<button aria-label="Maximize" />
@@ -45,12 +30,12 @@
 					<p>
 						Uh Oh! Something went wrong while loading this page.
 						<br />
-						{error.message}
+						{$page.error.message}
 					</p>
 				</div>
 			</div>
-			{#if error.stack}
-				<pre><code>{error.stack}</code></pre>
+			{#if $page.error.stack}
+				<pre><code>{$page.error.stack}</code></pre>
 			{/if}
 			<footer>
 				<a href="/">

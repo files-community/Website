@@ -1,23 +1,13 @@
-<script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit";
-
-	export const load: Load = async ({ url, fetch }) => ({
-		props: {
-			post: await (await fetch(`${ url.pathname }.json`)).json()
-		}
-	});
-</script>
-
 <script lang="ts">
-	import { Metadata, externalLink } from "$lib";
+	import { externalLink, Metadata } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
-	import type { Post } from "..";
+	import type { LayoutData } from "./$types";
 
-	export let post: Post["metadata"];
+	export let data: LayoutData;
 
-	const { title, thumbnail, author, date } = post;
+	const { title, thumbnail, author, date } = data;
 </script>
 
 <svelte:head>

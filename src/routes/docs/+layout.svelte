@@ -1,52 +1,16 @@
-<script context="module" lang="ts">
-	import { docs, type DocsMap } from "$data/docs";
-	import type { Load } from "@sveltejs/kit";
-
-	export const findPages = (docsStructure: DocsMap[] | DocsMap): DocsMap[] => {
-		if (Array.isArray(docsStructure)) {
-			// it's an array of pages/categories
-			return docsStructure
-				.map(page => findPages(page)) // recursively flatten the structure and filter to only include pages
-				.flat(Infinity) as DocsMap[]; // flatten the structure to get rid of any nesting
-		} else {
-			// it's a single page/category, not a structure
-			if (docsStructure.type === "category") {
-				// it's a category
-				return docsStructure.pages
-					.map(page => findPages(page)) // filter down and down until only pages are left
-					.flat(Infinity) as DocsMap[]; // flatten the array
-			} else {
-				// it's a page
-				return [docsStructure];
-			}
-		}
-	};
-
-	export const load: Load = ({ url }) => {
-		const docsPages = findPages(docs);
-
-		return {
-			props: {
-				pagePath: url.pathname,
-				currentPage: docsPages.find(p => `/docs${ p.path }` === url.pathname),
-				docsPages
-			}
-		};
-	};
-</script>
-
 <script lang="ts">
+	import type { LayoutData } from "./$types";
 	import { fly } from "svelte/transition";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 
 	import { links } from "$data/links";
+	import { docs } from "$data/docs";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
-	export let pagePath = "";
-	export let docsPages: DocsMap[];
-	export let currentPage: DocsMap = { name: "Overview", path: "" };
+	export let data: LayoutData;
+	const { pagePath, docsPages, currentPage = { name: "Overview", path: "" } } = data;
 
 	let value = "";
 	let searchQuery = "";

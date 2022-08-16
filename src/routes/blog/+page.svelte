@@ -1,11 +1,13 @@
 <script lang="ts">
-	import { PageSection, HeaderChip, BlogCard, tilt, Metadata } from "$lib";
+	import { BlogCard, HeaderChip, Metadata, PageSection, tilt } from "$lib";
 	import { Button } from "fluent-svelte";
 	import type { Post } from ".";
+	import type { PageData } from "./$types";
 
-	export let posts: Post[]
+	export let data: PageData;
+	const posts = data.posts;
 
-	const mainPost: Post = posts[0]
+	const mainPost: Post = posts[0];
 
 	let scrollY: number;
 </script>
@@ -26,7 +28,7 @@
 		>
 	</div>
 	<div class="main-post">
-		<a href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/">
+		<a href="/blog/{mainPost.path}/">
 			<img
 				alt="Main post thumbnail"
 				height="422"
@@ -47,7 +49,7 @@
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button
-				href="/blog/{mainPost.path.replace(/\.[^/.]+$/, '')}/"
+				href="/blog/{mainPost.path}/"
 				variant="accent"
 			>
 				Read More

@@ -112,7 +112,11 @@ Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of 
 
 ### Editing Existing Pages
 
-Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.md` file in the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory.
+Documentation files are located
+at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a
+filesystem-based router, meaning that the layout of page folders in the filesystem will reflect the URL path they are
+compiled to. To edit an existing page, find the corresponding `*.md` file in
+the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory.
 
 ### Adding or Deleting a Page
 
@@ -124,11 +128,15 @@ This is an example docs mapping:
 
 ```
 .
-├──page-1.md
-├──page-2.md
+├──page-1
+│   └──+page.md
+├──page-2
+│   └──+page.md
 └──category
-    ├──category-page-1.md
-    └──category-page-2.md
+    ├──category-page-1
+    │   └──+page.md
+    └──category-page-2
+        └──+page.md
 ```
 
 #### src/data/docs.ts
@@ -144,7 +152,6 @@ This is an example docs mapping:
 		path: "/page-2"
 	},
 	{
-		type: "category",
 		name: "Nested Category",
 		pages: [
 			{
@@ -162,11 +169,17 @@ This is an example docs mapping:
 
 ## Using the Blog
 
-Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files. Unlike the docs, a mapping of blog posts doesn't need to be kept.
+Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located
+at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files.
+Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
 
-To publish a post, create a new `.md` file in the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder. At the top of a the file, you'll need to include a few required things before typing the post.
+To publish a post, create a new folder in
+the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder, and in it place a file
+named `+page.md`. It will contain your post's content.
+
+At the top of the file, you'll need to include a few required things before typing the post.
 
 ```md
 ---
