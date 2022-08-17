@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { BlogCard, HeaderChip, Metadata, PageSection, tilt } from "$lib";
 	import { Button } from "fluent-svelte";
-	import type { Post } from ".";
+	import type { Post } from "./+page.server";
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
-	const posts = data.posts;
+	$: ({ posts } = data);
 
 	const mainPost: Post = posts[0];
 

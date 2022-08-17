@@ -7,7 +7,7 @@
 
 	export let data: LayoutData;
 
-	const { title, thumbnail, author, date } = data;
+	$: ({ title, thumbnail, author, date } = data);
 </script>
 
 <svelte:head>
@@ -29,11 +29,9 @@
 			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
-			<img alt="{author} avatar" src="https://github.com/{author}.png">
-			<a
-				class="hyperlink"
-				href="https://github.com/{author}"
-				{...externalLink}>@{author}</a
+			<img alt="{author} avatar" src="https://github.com/{author}.png" />
+			<a class="hyperlink" href="https://github.com/{author}" {...externalLink}
+				>@{author}</a
 			>
 			<span>•</span>
 			{new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString(
@@ -45,7 +43,12 @@
 				}
 			)}
 			<MenuFlyout placement="bottom">
-				<IconButton size={20} aria-label="Share" class="share-button" title="Share">
+				<IconButton
+					size={20}
+					aria-label="Share"
+					class="share-button"
+					title="Share"
+				>
 					{@html Share}
 				</IconButton>
 				<svelte:fragment slot="flyout">
@@ -61,7 +64,8 @@
 						Twitter
 					</MenuFlyoutItem>
 					<MenuFlyoutItem
-						href="https://www.facebook.com/sharer/sharer.php?u={window.location.href}"
+						href="https://www.facebook.com/sharer/sharer.php?u={window.location
+							.href}"
 						{...externalLink}
 					>
 						Facebook
@@ -70,7 +74,7 @@
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail">
+			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
 		{/if}
 		<div class="markdown-body">
 			<slot />

@@ -10,7 +10,7 @@
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
-	const { pagePath, docsPages, currentPage = { name: "Overview", path: "" } } = data;
+	$: ({ pagePath, docsPages, currentPage = { name: "Overview", path: "" } } = data);
 
 	let value = "";
 	let searchQuery = "";
