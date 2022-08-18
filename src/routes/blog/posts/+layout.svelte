@@ -83,5 +83,5 @@
 </section>
 
 <style lang="scss">
-	@use "../src/styles/pages/blogPost";
+	@use "src/styles/pages/blogPost";
 </style>

@@ -1,7 +1,7 @@
 import type { PageServerLoad } from "./$types";
 
 export type Post = {
-	path: string;
+	slug: string;
 	metadata: {
 		title: string;
 		description: string;
@@ -9,21 +9,21 @@ export type Post = {
 		thumbnail: string;
 		date: string;
 	};
-}
+};
 
 export const load: PageServerLoad = async () => {
-	const modules: Record<string, Post["metadata"]> = import.meta.glob("./posts/*/+page.md", {
+	const modules = import.meta.glob<Post["metadata"]>("./posts/*/+page.md", {
 		eager: true,
 		import: "metadata"
 	});
 
-	const posts: Post[] = Object.entries(modules)
-		.map(([path, metadata]) => ({
-			path: path
-				.substring(0, path.lastIndexOf("/+page"))
-				.replace(/\.[^/.]+$/, ""), // remove extension
-			metadata
-		}));
+	const posts = Object.entries(modules).map(
+		([path, metadata]) =>
+			({
+				slug: path.match(/\.\/posts\/([\w-]+)\/\+page\.md$/)?.[1],
+				metadata
+			} as Post)
+	);
 
 	posts.sort((a, b) => {
 		return +new Date(b.metadata.date) - +new Date(a.metadata.date);

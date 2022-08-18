@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { externalLink } from "$lib";
 
-	export let path = "";
+	export let slug = "";
 	export let date = "";
 	export let author = "";
 	export let title = "";
@@ -11,7 +11,7 @@
 
 <a
 	class="blog-card"
-	href="/blog/{path.replace(/\.[^/.]+$/, '')}"
+	href="/blog/posts/{slug}"
 	{...$$restProps}
 >
 	<img alt="{title} thumbnail" class="thumbnail" src={thumbnail}>
