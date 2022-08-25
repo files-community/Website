@@ -4,4 +4,4 @@ node_modules
 /package
 .idea
 build
-/.netlify
+/.vercel

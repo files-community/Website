@@ -50,7 +50,7 @@
 			>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
-			<Button href="/blog/{mainPost.path}/" variant="accent">Read More</Button>
+			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">Read More</Button>
 		</div>
 	</div>
 	{#if posts.slice(1).length > 0}
@@ -65,5 +65,5 @@
 </PageSection>
 
 <style lang="scss">
-	@use "../src/styles/pages/blog";
+	@use "src/styles/pages/blog";
 </style>
