@@ -1,30 +1,13 @@
-<script context="module" lang="ts">
-	import type { Load } from "@sveltejs/kit";
-
-	export const load: Load = async ({ url, fetch }) => ({
-		props: {
-			post: await fetch(`${ url.pathname }.json`).then(response => response.json())
-		}
-	});
-</script>
-
 <script lang="ts">
-	import { Metadata, externalLink } from "$lib";
+	import { externalLink, Metadata } from "$lib";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
-	import { IconButton, ListItem, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import type { LayoutData } from "./$types";
 
-	export let post: {
-		metadata: {
-			title: string;
-			description: string;
-			thumbnail: string;
-			date: string;
-			author: string;
-		}
-	};
+	export let data: LayoutData;
 
-	const { title, thumbnail, author, date } = post.metadata;
+	$: ({ title, thumbnail, author, date } = data);
 </script>
 
 <svelte:head>
@@ -46,11 +29,9 @@
 			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
-			<img alt="{author} avatar" src="https://github.com/{author}.png">
-			<a
-				class="hyperlink"
-				href="https://github.com/{author}"
-				{...externalLink}>@{author}</a
+			<img alt="{author} avatar" src="https://github.com/{author}.png" />
+			<a class="hyperlink" href="https://github.com/{author}" {...externalLink}
+				>@{author}</a
 			>
 			<span>•</span>
 			{new Date(date.replace(/-/g, "/").replace(/T.+/, "")).toLocaleDateString(
@@ -62,7 +43,12 @@
 				}
 			)}
 			<MenuFlyout placement="bottom">
-				<IconButton size={20} aria-label="Share" class="share-button" title="Share">
+				<IconButton
+					size={20}
+					aria-label="Share"
+					class="share-button"
+					title="Share"
+				>
 					{@html Share}
 				</IconButton>
 				<svelte:fragment slot="flyout">
@@ -78,7 +64,8 @@
 						Twitter
 					</MenuFlyoutItem>
 					<MenuFlyoutItem
-						href="https://www.facebook.com/sharer/sharer.php?u={window.location.href}"
+						href="https://www.facebook.com/sharer/sharer.php?u={window.location
+							.href}"
 						{...externalLink}
 					>
 						Facebook
@@ -87,7 +74,7 @@
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail">
+			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
 		{/if}
 		<div class="markdown-body">
 			<slot />
@@ -96,5 +83,5 @@
 </section>
 
 <style lang="scss">
-	@use "../src/styles/pages/blogPost";
+	@use "src/styles/pages/blogPost";
 </style>

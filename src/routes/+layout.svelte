@@ -4,7 +4,7 @@
 	import { onMount } from "svelte";
 
 	import { Footer, Navbar } from "$layout";
-	import { links, NavbarItem } from "$data/links";
+	import { links, type NavbarItem } from "$data/links";
 	import { docs } from "$data/docs";
 
 	import "fluent-svelte/theme.css";

@@ -8,8 +8,9 @@
 
 	import { ListItem } from "fluent-svelte";
 	import { getCSSDuration } from "fluent-svelte/internal";
+	import type { DocsCategory, DocsPage } from "$data/docs";
 
-	export let tree = [];
+	export let tree: (DocsPage | DocsCategory)[] = [];
 	export let initial = true;
 
 	let treeViewState: any;
@@ -36,8 +37,8 @@
 </script>
 
 <div class="tree-view scroller" class:initial>
-	{#each tree as { name, path, type, pages, icon }}
-		{#if type === "category"}
+	{#each tree as { name, path, pages, icon }}
+		{#if pages}
 			<div class="subtree" class:expanded={treeViewState?.[id(name)]}>
 				<ListItem
 					on:click={e => toggleExpansion(e, name)}

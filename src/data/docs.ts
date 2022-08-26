@@ -1,17 +1,18 @@
-export type DocsMap = {
-	name: string;
-	path?: string;
-	type?: "page" | "category";
-	pages?: DocsMap[];
-};
+export type DocsNode = {
+	name: string,
+	icon?: string,
+}
 
-export const docs: DocsMap[] = [
+export type DocsPage = DocsNode & { path: string }
+
+export type DocsCategory = DocsNode & { pages: DocsPage[] }
+
+export const docs: (DocsPage | DocsCategory)[] = [
 	{
 		name: "Overview",
 		path: ""
 	},
 	{
-		type: "category",
 		name: "Configuring Files",
 		pages: [
 			{
@@ -37,7 +38,6 @@ export const docs: DocsMap[] = [
 		]
 	},
 	{
-		type: "category",
 		name: "Contributing",
 		pages: [
 			{
