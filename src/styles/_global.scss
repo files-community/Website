@@ -6,7 +6,7 @@
 	font-style: normal;
 	font-weight: 100 900;
 	font-display: swap;
-	src: url("/static/fonts/Inter-roman.var.woff2") format("woff2");
+	src: url("/fonts/Inter-roman.var.woff2") format("woff2");
 	font-named-instance: "Regular";
 }
 
@@ -15,7 +15,7 @@
 	font-style: italic;
 	font-weight: 100 900;
 	font-display: swap;
-	src: url("/static/fonts/Inter-italic.var.woff2") format("woff2");
+	src: url("/fonts/Inter-italic.var.woff2") format("woff2");
 	font-named-instance: "Italic";
 }
 
@@ -103,9 +103,13 @@ html {
 
 body {
 	@include flex($direction: column);
+	font-size: 1.4rem;
 	block-size: fit-content;
 	min-block-size: 100%;
-	font-size: 1.4rem;
+
+	&:nth-child(2) {
+		min-block-size: calc(100vh - 58px);
+	}
 }
 
 // Only render inner <img> elements into the DOM
