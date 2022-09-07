@@ -43,7 +43,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 
 ### 3. Code readability and clarity
 
-- Use curly brackets for single line `if`, `for` and `foreach` statements.'
+- Do not use curly brackets for single line `if`, `for` and `foreach` statements.'
 - Do not use `#region` directives
 - Align `while();` on the same line of curly bracket of `do..while`
 - Use the prefixes `Is`, `Has`, `Have`, `Any`, `Can` or similar keywords for boolean names and method names if
