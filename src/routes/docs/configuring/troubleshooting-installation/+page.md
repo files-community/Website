@@ -1,4 +1,4 @@
-# Troubleshooting msix issues
+# Troubleshooting installation issues
 
 ### App installation failed with error message: error 0xC00CEE23: The XML in the .appinstaller file is not valid: Line 33, Column 5, Reason: '>' expected. (Oxc00cee23)
 This issue is usually resolved by restarting Windows before opening the installer again.
