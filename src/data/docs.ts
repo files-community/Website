@@ -37,7 +37,7 @@ export const docs: (DocsPage | DocsCategory)[] = [
 			},
 			{
 				name: "Troubleshooting Installation Issues",
-				path: "/configuring/troubleshooting-msix"
+				path: "/configuring/troubleshooting-installation"
 			}
 		]
 	},
