@@ -34,6 +34,10 @@ export const docs: (DocsPage | DocsCategory)[] = [
 			{
 				name: "Replacing File Explorer with Files",
 				path: "/configuring/replace-file-explorer"
+			},
+			{
+				name: "Troubleshooting Installation Issues",
+				path: "/configuring/troubleshooting-installation"
 			}
 		]
 	},
