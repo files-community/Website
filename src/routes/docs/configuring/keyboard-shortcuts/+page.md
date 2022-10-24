@@ -28,7 +28,7 @@ Files comes with built in keyboard shortcuts to make navigating the app easier.
 | <kbd>Ctrl</kbd> + <kbd>F</kbd>                      | Search |
 | <kbd>Ctrl</kbd> + <kbd>L</kbd>                      | Select directory path |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>   | Copy file/directory path |
-| <kbd>Ctrl</kbd> + <kbd>P</kbd>                      | Toggle preview pane |
+| <kbd>Ctrl</kbd> + <kbd>Space</kbd>                      | Toggle preview pane |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>     | Toggle media playback in preview pane |
 | <kbd>F1</kbd>                                       | Open files docs |
 | <kbd>F2</kbd>                                       | Rename file/directory |

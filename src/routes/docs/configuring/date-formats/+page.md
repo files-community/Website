@@ -1,15 +1,15 @@
 # Date Formats
 
-Files comes with three different options to let you customize the date format.
+Files includes three different options for date formats, we're planning to include additional formats in the future but at the moment, you can choose from the following options.
 
-**Application**
+## Application
 
-The default date format uses the following format _Wednesday, June 3, 2020_.
+Sample: _Wednesday, June 3, 2020_.
 
-**System**
+## System
 
-System is a little more compact and uses this format _6/3/2020_.
+Sample: _6/3/2020_.
 
-**Universal**
+## Universal
 
-Universal uses the defacto official international format _2020-06-03_.
+Sample: _2020-06-03_.
