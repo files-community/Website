@@ -32,6 +32,10 @@ export const docs: (DocsPage | DocsCategory)[] = [
 				path: "/configuring/keyboard-shortcuts"
 			},
 			{
+				name: "Cloud Drives",
+				path: "/configuring/cloud-drives"
+			},
+			{
 				name: "Replacing File Explorer with Files",
 				path: "/configuring/replace-file-explorer"
 			},
