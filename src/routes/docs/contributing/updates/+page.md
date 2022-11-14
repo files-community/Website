@@ -1,4 +1,6 @@
-# Updates
+---
+title: Updates
+---
 
 ### How updates work
 

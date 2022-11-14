@@ -17,9 +17,6 @@ const config = {
 			$data: "src/data",
 			$layout: "src/layout"
 		},
-		prerender: {
-			default: true
-		},
 		adapter: adapter({ edge: true })
 	},
 	preprocess: [

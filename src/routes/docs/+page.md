@@ -1,4 +1,6 @@
-# What is Files?
+---
+title: What is Files?
+---
 Files is a modern file manager that helps organize your files and folders easily. Robust multitasking experiences, helpful tags, and deep integrations add to an intuitive design – made by the community.
 
 ## What makes Files unique?

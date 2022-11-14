@@ -1,63 +1,67 @@
-export type DocsNode = {
-	name: string,
-	icon?: string,
-}
+export type DocsMetadata = { title: string };
 
-export type DocsPage = DocsNode & { path: string }
+export type DocsNode = DocsMetadata & {
+	path: string;
+	icon?: string;
+};
 
-export type DocsCategory = DocsNode & { pages: DocsPage[] }
+export type DocsCategory = DocsNode & { pages: DocsTree };
 
-export const docs: (DocsPage | DocsCategory)[] = [
+export type DocsTree = (DocsNode | DocsCategory)[];
+
+const docs: DocsTree = [
 	{
-		name: "Overview",
-		path: ""
+		title: "Overview",
+		path: "/"
 	},
 	{
-		name: "Configuring Files",
+		title: "Configuring Files",
+		path: "/configuring",
 		pages: [
 			{
-				name: "Terminal Profiles",
+				title: "Terminal Profiles",
 				path: "/configuring/terminal-profiles"
 			},
 			{
-				name: "Date Formats",
+				title: "Date Formats",
 				path: "/configuring/date-formats"
 			},
 			{
-				name: "Custom Themes",
+				title: "Custom Themes",
 				path: "/configuring/custom-themes"
 			},
 			{
-				name: "Keyboard Shortcuts",
+				title: "Keyboard Shortcuts",
 				path: "/configuring/keyboard-shortcuts"
 			},
 			{
-				name: "Cloud Drives",
+				title: "Cloud Drives",
 				path: "/configuring/cloud-drives"
 			},
 			{
-				name: "Replacing File Explorer with Files",
+				title: "Replacing File Explorer with Files",
 				path: "/configuring/replace-file-explorer"
 			},
 			{
-				name: "Troubleshooting Installation Issues",
+				title: "Troubleshooting Installation Issues",
 				path: "/configuring/troubleshooting-installation"
 			}
 		]
 	},
 	{
-		name: "Contributing",
+		title: "Contributing",
+		path: "/contributing",
 		pages: [
 			{
-				name: "Building Files from Source",
+				title: "Building Files from Source",
 				path: "/contributing/building-from-source"
 			},
 			{
-				name: "Updates",
+				title: "Updates",
 				path: "/contributing/updates"
 			},
 			{
-				name: "Code Style",
+				title: "Code Style",
 				path: "/contributing/code-style"
 			}
 		]

@@ -8,9 +8,9 @@
 
 	import { ListItem } from "fluent-svelte";
 	import { getCSSDuration } from "fluent-svelte/internal";
-	import type { DocsCategory, DocsPage } from "$data/docs";
+	import type { DocsTree } from "$data/docs";
 
-	export let tree: (DocsPage | DocsCategory)[] = [];
+	export let tree: DocsTree = [];
 	export let initial = true;
 
 	let treeViewState: any;
@@ -21,15 +21,12 @@
 		treeViewState = JSON.parse(localStorage.getItem("treeViewState") ?? "{}");
 	});
 
-	// Utility function for converting regular names to kebab case
-	const id = (s: string) => s.toLowerCase().split(" ").join("-");
-
 	// Function for expanding/collapsing docs categories
 	const toggleExpansion = (event: MouseEvent, name: string) => {
 		event.stopPropagation();
 
 		// Modify treeViewState to have the opposite of the previous entry for the category
-		treeViewState[id(name)] = !treeViewState[id(name)];
+		treeViewState[name] = !treeViewState[name];
 
 		// Update value in localStorage for persistence
 		localStorage.setItem("treeViewState", JSON.stringify(treeViewState));
@@ -37,22 +34,32 @@
 </script>
 
 <div class="tree-view scroller" class:initial>
-	{#each tree as { name, path, pages, icon }}
-		{#if pages}
-			<div class="subtree" class:expanded={treeViewState?.[id(name)]}>
-				<ListItem
-					on:click={e => toggleExpansion(e, name)}
-				>
+	{#each tree as tree}
+		{@const { title, path, icon } = tree}
+		{#if tree?.pages}
+			{@const pages = tree.pages}
+			<div class="subtree" class:expanded={treeViewState?.[title]}>
+				<ListItem on:click={e => toggleExpansion(e, title)}>
 					<svelte:fragment slot="icon">
 						{@html icon || ""}
 					</svelte:fragment>
-					<span class="tree-view-item">{name}</span>
-					<div class="expander-icon" class:expanded={treeViewState?.[id(name)]}>{@html ChevronDown}</div>
+					<span class="tree-view-item">{title}</span>
+					<div
+						class="expander-icon"
+						class:expanded={treeViewState?.[title]}
+					>
+						{@html ChevronDown}
+					</div>
 				</ListItem>
-				{#if treeViewState?.[id(name)]}
-					<div class="subtree-items"
-					     transition:slide|local={{ duration: getCSSDuration("--fds-control-fast-duration"), easing: circOut }}
-					     class:expanded={treeViewState?.[id(name)]}>
+				{#if treeViewState?.[title]}
+					<div
+						class="subtree-items"
+						transition:slide|local={{
+							duration: getCSSDuration("--fds-control-fast-duration"),
+							easing: circOut
+						}}
+						class:expanded={treeViewState?.[title]}
+					>
 						<svelte:self tree={pages} initial={false} />
 					</div>
 				{/if}
@@ -66,7 +73,7 @@
 				<svelte:fragment slot="icon">
 					{@html icon || ""}
 				</svelte:fragment>
-				{name}
+				{title}
 			</ListItem>
 		{/if}
 	{/each}
@@ -84,12 +91,17 @@
 
 					.expander-icon {
 						@include flex($align: center);
-						transition: transform var(--fds-control-fast-duration) var(--fds-control-fast-out-slow-in-easing);
+						transition: transform var(--fds-control-fast-duration)
+							var(--fds-control-fast-out-slow-in-easing);
 						transform-origin: center;
 
-						&.expanded { transform: rotate(180deg) }
+						&.expanded {
+							transform: rotate(180deg);
+						}
 
-						svg { @include icon }
+						svg {
+							@include icon;
+						}
 					}
 				}
 			}

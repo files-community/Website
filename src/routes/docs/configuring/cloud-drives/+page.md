@@ -1,4 +1,6 @@
-# Cloud Drives
+---
+title: Cloud Drives
+---
 
 Cloud drives require the respective desktop clients to be installed before they can be detected in Files. The following drives are currently supported 
 

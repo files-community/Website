@@ -3,7 +3,7 @@
 	import { Button, InfoBar, ProgressRing } from "fluent-svelte";
 	import { onMount } from "svelte";
 	import { page } from "$app/stores";
-	import { dev } from "$app/env";
+	import { dev } from "$app/environment";
 
 	$: channel = $page.url.pathname.includes("preview") ? "preview" : "stable";
 
@@ -29,8 +29,13 @@
 	<h1>Downloading...</h1>
 	<ProgressRing size={64} />
 	<p>Thank you for downloading Files! 🎉</p>
-	<p>If the download hasn't started yet, press
-		<a href="/appinstallers/Files.{channel}.appinstaller" download bind:this={link}>
+	<p>
+		If the download hasn't started yet, press
+		<a
+			href="/appinstallers/Files.{channel}.appinstaller"
+			download
+			bind:this={link}
+		>
 			here
 		</a>
 		to start it:
@@ -69,7 +74,7 @@
 			&:last-child {
 				margin-block-start: 0;
 				padding-block-start: 1em;
-				border-top: 1px solid var(--fds-subtle-fill-secondary)
+				border-top: 1px solid var(--fds-subtle-fill-secondary);
 			}
 		}
 	}

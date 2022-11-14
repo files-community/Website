@@ -1,4 +1,6 @@
-# Replacing File Explorer with Files 
+---
+title: Replacing File Explorer with Files 
+---
 
  Unlike other applications, Windows doesn't include a built in method for changing the default file manager. In order to work around this limitation, we developed a workaround that redirects File Explorer to open Files instead.
 

@@ -1,4 +1,6 @@
-# Date Formats
+---
+title: Date Formats
+---
 
 Files includes three different options for date formats, we're planning to include additional formats in the future but at the moment, you can choose from the following options.
 
