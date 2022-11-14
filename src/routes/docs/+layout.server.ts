@@ -1,5 +1,4 @@
 import type {
-	DocsCategory,
 	DocsMetadata,
 	DocsNode,
 	DocsTree
