@@ -9,12 +9,9 @@
 
 	let link: HTMLAnchorElement;
 
-	let firefox = false;
-
 	const downloadAppInstaller = () => link.click();
 
 	onMount(() => {
-		firefox = navigator.userAgent.includes("Firefox");
 		if (!dev) downloadAppInstaller();
 	});
 </script>
@@ -40,13 +37,6 @@
 		</a>
 		to start it:
 	</p>
-
-	{#if firefox}
-		<InfoBar severity="caution" closable={false}>
-			Firefox adds a <code>.xml</code> file extension to the downloaded installer.
-			Remove it before opening the installer.
-		</InfoBar>
-	{/if}
 
 	<p>Want to support the creators of Files?</p>
 	<Button
