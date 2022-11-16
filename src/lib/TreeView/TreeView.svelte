@@ -46,7 +46,7 @@
 					<span class="tree-view-item">{title}</span>
 					<div
 						class="expander-icon"
-						class:expanded={treeViewState?.[title]}
+						class:expanded={!treeViewState?.[title]}
 					>
 						{@html ChevronDown}
 					</div>
