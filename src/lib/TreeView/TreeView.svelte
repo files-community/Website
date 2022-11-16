@@ -51,7 +51,7 @@
 						{@html ChevronDown}
 					</div>
 				</ListItem>
-				{#if treeViewState?.[title]}
+				{#if !treeViewState?.[title]}
 					<div
 						class="subtree-items"
 						transition:slide|local={{
