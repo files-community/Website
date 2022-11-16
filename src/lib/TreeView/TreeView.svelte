@@ -38,7 +38,7 @@
 		{@const { title, path, icon } = tree}
 		{#if tree?.pages}
 			{@const pages = tree.pages}
-			<div class="subtree" class:expanded={treeViewState?.[title]}>
+			<div class="subtree" class:expanded={!treeViewState?.[title]}>
 				<ListItem on:click={e => toggleExpansion(e, title)}>
 					<svelte:fragment slot="icon">
 						{@html icon || ""}
@@ -58,7 +58,7 @@
 							duration: getCSSDuration("--fds-control-fast-duration"),
 							easing: circOut
 						}}
-						class:expanded={treeViewState?.[title]}
+						class:expanded={!treeViewState?.[title]}
 					>
 						<svelte:self tree={pages} initial={false} />
 					</div>
