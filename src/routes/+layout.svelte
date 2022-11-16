@@ -62,13 +62,13 @@
 	<meta content="website" name="og:type">
 
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-light.svg"
+		href="/branding/logo{$page.routeId === "themes" ? '-themes' : ''}-light.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: light)"
 	>
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
+		href="/branding/logo{$page.routeId === "themes" ? '-themes' : ''}-dark.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
