@@ -16,10 +16,6 @@
 			link: "https://www.theonlytails.com/"
 		},
 		{
-			name: "Yair",
-			link: "https://github.com/yaichenbaum/"
-		},
-		{
 			name: "Marcel Wagner",
 			link: "https://github.com/chingucoding/"
 		},

@@ -40,7 +40,7 @@
 
 	<p>Want to support the creators of Files?</p>
 	<Button
-		href="https://github.com/sponsors/yaichenbaum"
+		href="https://github.com/sponsors/yaira2"
 		variant="accent"
 		{...externalLink}
 	>

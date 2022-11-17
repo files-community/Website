@@ -3,7 +3,7 @@ title: How to use a custom background in Files
 description: There are a number of ways to personalize Files, today we're going to look at using a custom background.
 thumbnail: /blog-resources/setting-custom-background/HeroImage.jpg
 date: 2022-2-3
-author: yaichenbaum
+author: yaira2
 ---
 
 There are a number of ways to personalize Files, today we're going to look at using a custom background.
