@@ -112,60 +112,21 @@ Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of 
 
 ### Editing Existing Pages
 
-Documentation files are located
-at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a
+Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a
 filesystem-based router, meaning that the layout of page folders in the filesystem will reflect the URL path they are
-compiled to. To edit an existing page, find the corresponding `*.md` file in
-the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory.
+assigned to.
+
+To edit an existing page, find the corresponding folder in
+the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory, and edit the `+page.md` file inside it.
 
 ### Adding or Deleting a Page
 
-Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping _must_ be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/data/docs.ts`](https://github.com/files-community/Website/tree/main/src/data/docs.ts) as a JSON-like format.
+To create/delete a page, remove the corresponding folder for it, as long with the `+page.md` file inside it.
 
-This is an example docs mapping:
+### Using Categories
 
-#### src/routes/docs/
-
-```
-.
-├──page-1
-│   └──+page.md
-├──page-2
-│   └──+page.md
-└──category
-    ├──category-page-1
-    │   └──+page.md
-    └──category-page-2
-        └──+page.md
-```
-
-#### src/data/docs.ts
-
-```ts
-[
-	{
-		name: "Page 1",
-		path: "/page-1"
-	},
-	{
-		name: "Page 2",
-		path: "/page-2"
-	},
-	{
-		name: "Nested Category",
-		pages: [
-			{
-				name: "Category Page 1",
-				path: "/category/category-page-1"
-			},
-			{
-				name: "Category Page 2",
-				path: "/category/category-page-2"
-			}
-		]
-	}
-];
-```
+Categories are sub-folders inside `src/routes/docs`, which contain a `category.md` file. This file marks a category directory, and contains metadata relating to it.
+Categories can contain page folders (with a `+page.md` file in them), or other categories.
 
 ## Using the Blog
 
