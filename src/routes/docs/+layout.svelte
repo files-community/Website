@@ -113,9 +113,9 @@
 				{#if autoSuggestVisible}
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
-							{#each searchResults as { name, path }, i}
+							{#each searchResults as { title, path }, i}
 								<ListItem selected={selection === i} href="/docs{path}">
-									{name}
+									{title}
 								</ListItem>
 							{/each}
 						{:else}
