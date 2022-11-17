@@ -17,7 +17,7 @@
 		},
 		{
 			name: "Yair",
-			link: "https://github.com/yaichenbaum/"
+			link: "https://github.com/yaira2/"
 		},
 		{
 			name: "Marcel Wagner",

@@ -6,7 +6,11 @@
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
 
 	// Fetch contributors for the community section
-	const contributorRows = [getContributors(1), getContributors(2), getContributors(3)]
+	const contributorRows = [
+		getContributors(1),
+		getContributors(2),
+		getContributors(3)
+	];
 </script>
 
 <PageSection id="community-section">
@@ -32,13 +36,7 @@
 				{#each contributorRows as contributorsPromise}
 					<div class="contributors-row">
 						{#await contributorsPromise then contributors}
-							{#each contributors.sort(() => Math.random() - 0.5) as {
-								html_url,
-								avatar_url,
-								login,
-								contributions,
-								type
-							}}
+							{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
 								<Contributor
 									{html_url}
 									{avatar_url}
@@ -50,7 +48,7 @@
 						{:catch err}
 							{#each Array(35) as _}
 								<Contributor
-									html_url="https://github.com/yaichenbaum"
+									html_url="https://github.com/yaira2"
 									avatar_url="data:image/svg+xml;{encodeURIComponent(Profile)}"
 									contributions={0}
 								/>
@@ -60,9 +58,10 @@
 				{/each}
 			</div>
 		{/if}
-		<div class="rainbow-background"></div>
+		<div class="rainbow-background" />
 	</div>
 </PageSection>
 
-<style lang="scss">@use "./CommunitySection";
+<style lang="scss">
+	@use "./CommunitySection";
 </style>
