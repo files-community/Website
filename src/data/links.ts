@@ -1,4 +1,4 @@
-import type { DocsMap } from "$data/docs";
+import type { DocsTree } from "./docs";
 
 export const links = {
 	discord: "files",
@@ -17,5 +17,5 @@ export type NavbarItem = {
 	external?: boolean;
 	icon: any;
 	type?: string;
-	sidebarTree?: DocsMap[];
+	sidebarTree?: DocsTree;
 };

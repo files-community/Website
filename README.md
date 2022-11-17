@@ -44,7 +44,7 @@ This repository contains the source code for the new [Files website](https://fil
    ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
    |  ├──docs             // Documentation and associated files.
    |  └──blog             // Blog page and associated files.
-   |     └──posts         // Folder containing blog posts in MDSveX format (*.svx).
+   |     └──posts         // Folder containing blog posts in Markdown format.
    ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
    └──styles              // SCSS styles that are NOT tied to components in /lib.
 ```
@@ -108,65 +108,39 @@ pnpm run build
 
 ## Contributing to Documentation
 
-Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of markdown designed to work with [Svelte](htts://svelte.dev). `*.svx` files are equivalent to markdown (`*.md`) files.
+Our documentation system uses [mdsvex](https://mdsvex.pngwn.io/), a superset of markdown designed to work with [Svelte](htts://svelte.dev).
 
 ### Editing Existing Pages
 
-Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a filesystem-based router, meaning that the layout of pages in the filesystem will reflect the URL path they are compiled to. To edit an existing page, find the corresponding `*.svx` file in the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory, and edit it like a normal markdown file.
+Documentation files are located at [`src/routes/docs`](https://github.com/files-community/Website/tree/main/src/routes/docs). SvelteKit uses a
+filesystem-based router, meaning that the layout of page folders in the filesystem will reflect the URL path they are
+assigned to.
+
+To edit an existing page, find the corresponding folder in
+the [`docs`](<(https://github.com/files-community/Website/tree/main/src/routes/docs)>) directory, and edit the `+page.md` file inside it.
 
 ### Adding or Deleting a Page
 
-Modifying the location or adding/deleting pages is slightly more complex. The sidebar used to naviagate documentation is not automatically generated. As such, a mapping of all pages rendered in the sidebar must be kept. If you plan to add, delete, or modify a page's position in the filesystem, this mapping _must_ be updated, or the associated page will either be missing from the sidebar or lead to a 404. The mapping is located at [`/src/data/docs.ts`](https://github.com/files-community/Website/tree/main/src/data/docs.ts) as a JSON-like format.
+To create/delete a page, remove the corresponding folder for it, as long with the `+page.md` file inside it.
 
-This is an example docs mapping:
+### Using Categories
 
-#### src/routes/docs/
-
-```
-.
-├──page-1.svx
-├──page-2.svx
-└──category
-    ├──category-page-1.svx
-    └──category-page-2.svx
-```
-
-#### src/data/docs.ts
-
-```ts
-[
-	{
-		name: "Page 1",
-		path: "/page-1"
-	},
-	{
-		name: "Page 2",
-		path: "/page-2"
-	},
-	{
-		type: "category",
-		name: "Nested Category",
-		pages: [
-			{
-				name: "Category Page 1",
-				path: "/category/category-page-1"
-			},
-			{
-				name: "Category Page 2",
-				path: "/category/category-page-2"
-			}
-		]
-	}
-];
-```
+Categories are sub-folders inside `src/routes/docs`, which contain a `category.md` file. This file marks a category directory, and contains metadata relating to it.
+Categories can contain page folders (with a `+page.md` file in them), or other categories.
 
 ## Using the Blog
 
-Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.svx` files. Unlike the docs, a mapping of blog posts doesn't need to be kept.
+Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located
+at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files.
+Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
 
-To publish a post, create a new `svx` file in the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder. At the top of a the file, you'll need to include a few required things before typing the post.
+To publish a post, create a new folder in
+the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder, and in it place a file
+named `+page.md`. It will contain your post's content.
+
+At the top of the file, you'll need to include a few required things before typing the post.
 
 ```md
 ---

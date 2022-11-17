@@ -23,7 +23,7 @@
 
 	const getStoreUrl = () => isWindows
 		? `ms-windows-store://pdp/?ProductId=${ links.storeId }&mode=mini`
-		: `https://www.microsoft.com/en-us/p/files/${ links.storeId }`;
+		: `https://www.microsoft.com/store/apps/${ links.storeId }?cid=FilesWebsite`;
 	$: sideloadLink = `/download/${ currentDownloadSource !== "Sideload Package (Preview)" ? "stable" : "preview" }`;
 	$: downloadLink = currentDownloadSource === "Microsoft Store" ? getStoreUrl() : sideloadLink;
 
@@ -50,7 +50,7 @@
 
 	onMount(async () => {
 		// Get the user's download preference
-		if (!localStorage.getItem("downloadSource")) {
+		if (!downloadSources.includes((localStorage.getItem("downloadSource") ?? "") as DownloadSource)) {
 			localStorage.setItem("downloadSource", "Microsoft Store");
 		}
 		currentDownloadSource = (localStorage.getItem("downloadSource") ?? "Microsoft Store") as DownloadSource;
