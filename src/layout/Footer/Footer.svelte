@@ -32,11 +32,22 @@
 
 <PageSection type="footer" id="page-footer">
 	<div class="column">
-		<a class="logo" href="/" sveltekit:prefetch>
+		<a class="logo" href="/" data-sveltekit-prefetch>
 			<picture>
-				<source media="(prefers-color-scheme: dark)" srcset="/branding/logo-dark.svg">
-				<source media="(prefers-color-scheme: light)" srcset="/branding/logo-light.svg">
-				<img alt="Files logo" height="32" src="/branding/logo-light.svg" width="32">
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/branding/logo-dark.svg"
+				/>
+				<source
+					media="(prefers-color-scheme: light)"
+					srcset="/branding/logo-light.svg"
+				/>
+				<img
+					alt="Files logo"
+					height="32"
+					src="/branding/logo-light.svg"
+					width="32"
+				/>
 			</picture>
 			Files
 		</a>
@@ -67,26 +78,30 @@
 			</IconButton>
 		</div>
 		<p>Copyright © 2021 - {new Date().getFullYear()}, The Files Authors</p>
-		<a href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss" {...externalLink}>
+		<a
+			href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss"
+			{...externalLink}
+		>
 			<img src="/branding/vercel-banner.svg" alt="Powered by Vercel" />
 		</a>
 	</div>
 	<div class="column">
 		<p>Pages</p>
-		<Button variant="hyperlink" sveltekit:prefetch href="/">
-			Home
-		</Button>
-		<Button variant="hyperlink" sveltekit:prefetch href="/docs">
+		<Button variant="hyperlink" data-sveltekit-prefetch href="/">Home</Button>
+		<Button variant="hyperlink" data-sveltekit-prefetch href="/docs">
 			Documentation
 		</Button>
-		<Button variant="hyperlink" sveltekit:prefetch href="/blog">
+		<Button variant="hyperlink" data-sveltekit-prefetch href="/blog">
 			Blog
 		</Button>
 	</div>
 	<div class="column">
 		<p>Contribute to Files</p>
-		<Button variant="hyperlink" {...externalLink}
-		        href="https://github.com/{links.github.owner}/{links.github.repo}/issues/new"
+		<Button
+			variant="hyperlink"
+			{...externalLink}
+			href="https://github.com/{links.github.owner}/{links.github
+				.repo}/issues/new"
 		>
 			Give Feedback
 		</Button>
@@ -95,19 +110,28 @@
 			Style Guide
 		</Button>
 
-		<Button {...externalLink} href="https://crowdin.com/project/files-app" variant="hyperlink">
+		<Button
+			{...externalLink}
+			href="https://crowdin.com/project/files-app"
+			variant="hyperlink"
+		>
 			Translations
 		</Button>
 
 		<p>Contribute to this site</p>
-		<Button variant="hyperlink" {...externalLink}
-		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
+		<Button
+			variant="hyperlink"
+			{...externalLink}
+			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
 			GitHub Repo
 		</Button>
 
-		<Button variant="hyperlink" {...externalLink}
-		        href="https://github.com/{links.github.owner}/{links.github.siteRepo}/issues/new"
+		<Button
+			variant="hyperlink"
+			{...externalLink}
+			href="https://github.com/{links.github.owner}/{links.github
+				.siteRepo}/issues/new"
 		>
 			Found a bug?
 		</Button>
@@ -115,7 +139,9 @@
 	<div class="column">
 		<p>Web Team</p>
 		{#each contributors as contributor}
-			<Button variant="hyperlink" href={contributor.link} {...externalLink}>{contributor.name}</Button>
+			<Button variant="hyperlink" href={contributor.link} {...externalLink}
+				>{contributor.name}</Button
+			>
 		{/each}
 	</div>
 </PageSection>

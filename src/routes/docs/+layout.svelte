@@ -5,12 +5,16 @@
 	import { page } from "$app/stores";
 
 	import { links } from "$data/links";
-	import { docs } from "$data/docs";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
-	$: ({ pagePath, docsPages, currentPage = { name: "Overview", path: "" } } = data);
+	$: ({
+		docs,
+		pagePath,
+		docsPages,
+		currentPage = { title: "Overview", path: "" }
+	} = data);
 
 	let value = "";
 	let searchQuery = "";
@@ -19,11 +23,11 @@
 	let selection = 0;
 
 	// Name of the current page used in <title>
-	$: pageTitle = currentPage.name;
+	$: pageTitle = currentPage.title;
 
 	// Basic search matching for filtering docs pages
 	$: searchResults = docsPages.filter(page =>
-		page.name
+		page.title
 			.toLowerCase()
 			.replace(/ /gi, "")
 			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, ""))
@@ -42,10 +46,10 @@
 		if (key === "Enter") {
 			if (
 				searchResults.length > 0 &&
-				$page.url.pathname !== `/docs${ searchResults[selection].path }`
+				$page.url.pathname !== `/docs${searchResults[selection].path}`
 			)
-				goto(`/docs${ searchResults[selection].path }`, {
-					keepfocus: true
+				goto(`/docs${searchResults[selection].path}`, {
+					keepFocus: true
 				});
 		} else if (key === "ArrowDown") {
 			selection++;
@@ -74,8 +78,9 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-	          image="docs"
+	<Metadata
+		title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+		image="docs"
 	/>
 </svelte:head>
 
@@ -99,7 +104,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepfocus: true
+								keepFocus: true
 							});
 					}}
 					placeholder="Search Documentation"
@@ -119,7 +124,7 @@
 					</div>
 				{/if}
 			</div>
-			<hr role="separator">
+			<hr role="separator" />
 		</div>
 		<TreeView tree={docs} />
 	</aside>
@@ -142,7 +147,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepfocus: true
+								keepFocus: true
 							});
 					}}
 					placeholder="Search Documentation"
@@ -151,9 +156,9 @@
 				{#if autoSuggestVisible}
 					<div class="autosuggest-flyout scroller">
 						{#if searchResults.length > 0}
-							{#each searchResults as { name, path }, i}
+							{#each searchResults as { title, path }, i}
 								<ListItem selected={selection === i} href="/docs{path}">
-									{name}
+									{title}
 								</ListItem>
 							{/each}
 						{:else}
@@ -164,24 +169,29 @@
 			</div>
 		</div>
 		{#key pagePath}
-			<div class="page-inner markdown-body" in:fly|local={{ y: 6, duration: 300, delay: 300 }}
-			     out:fly|local={{ y: 6, duration: 300 }}>
+			<div
+				class="page-inner markdown-body"
+				in:fly|local={{ y: 6, duration: 300, delay: 300 }}
+				out:fly|local={{ y: 6, duration: 300 }}
+			>
 				<header>
 					<span>
 						{$page.url.pathname.split("/").join(" / ").substring(2)}
 						{$page.url.pathname === "/docs" ? " / overview" : ""}
 					</span>
 					<div class="header-right">
-						<Button variant="hyperlink"
-						        href="https://github.com/{links.github.owner}/{links.github
+						<Button
+							variant="hyperlink"
+							href="https://github.com/{links.github.owner}/{links.github
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
 								'/index'}.md"
-						        {...externalLink}
+							{...externalLink}
 						>
 							Edit this page
 						</Button>
 					</div>
 				</header>
+				<h1>{pageTitle}</h1>
 				<slot />
 			</div>
 		{/key}

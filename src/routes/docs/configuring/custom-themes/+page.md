@@ -1,4 +1,6 @@
-# Custom Themes
+---
+title: Custom Themes
+---
 
 Files has a selection of built-in themes but you can also create your own theme by adding a resource file to the themes directory in the `LocalState` folder.
 
@@ -28,14 +30,14 @@ Default template
 
 The themeing system in Files allows you to override any resource that's included in the WinUI library but most themes including the built-in themes only override a couple of brushes.
 
-| Key | Example | Default value |
-| --------- | ----------- | ---------- |
-| `ContentControlThemeFontFamily` | `<FontFamily x:Key="ContentControlThemeFontFamily">Comic Sans</FontFamily>` | `Segoe UI Variable` |
-| `RootBackgroundBrush` | `<SolidColorBrush x:Key="RootBackgroundBrush" Color="#AA845a2b" />` | `Transparent` | 
-| `SolidBackgroundFillColorBase` | `<Color x:Key="SolidBackgroundFillColorBase">#A26829</Color>` |  |
-| `SolidBackgroundFillColorSecondary` | `<Color x:Key="SolidBackgroundFillColorSecondary">#845a2b</Color>` |  |
-| `SolidBackgroundFillColorTertiary` | `<Color x:Key="SolidBackgroundFillColorTertiary">#A26829</Color>` |  |
-| `SolidBackgroundFillColorQuarternary` | `<Color x:Key="SolidBackgroundFillColorQuarternary">#A26829</Color>` |  |
-| `SolidBackgroundAcrylic` | `<Color x:Key="SolidBackgroundAcrylic">#A26829</Color>` | Light theme: `#FFFFFF` Dark theme: `#2C2C2C` |
-| `NavigationToolbarBackgroundBrush` | `<SolidColorBrush x:Key="NavigationToolbarBackgroundBrush" Color="#A26829" />` | `#00000000` |
-| `TitlebarContentBackgroundBrush` | `<SolidColorBrush x:Key="TitlebarContentBackgroundBrush" Color="#A26829" />` | `Transparent` |
+| Key                                   | Example                                                                        | Default value                                |
+| ------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------- |
+| `ContentControlThemeFontFamily`       | `<FontFamily x:Key="ContentControlThemeFontFamily">Comic Sans</FontFamily>`    | `Segoe UI Variable`                          |
+| `RootBackgroundBrush`                 | `<SolidColorBrush x:Key="RootBackgroundBrush" Color="#AA845a2b" />`            | `Transparent`                                |
+| `SolidBackgroundFillColorBase`        | `<Color x:Key="SolidBackgroundFillColorBase">#A26829</Color>`                  |                                              |
+| `SolidBackgroundFillColorSecondary`   | `<Color x:Key="SolidBackgroundFillColorSecondary">#845a2b</Color>`             |                                              |
+| `SolidBackgroundFillColorTertiary`    | `<Color x:Key="SolidBackgroundFillColorTertiary">#A26829</Color>`              |                                              |
+| `SolidBackgroundFillColorQuarternary` | `<Color x:Key="SolidBackgroundFillColorQuarternary">#A26829</Color>`           |                                              |
+| `SolidBackgroundAcrylic`              | `<Color x:Key="SolidBackgroundAcrylic">#A26829</Color>`                        | Light theme: `#FFFFFF` Dark theme: `#2C2C2C` |
+| `NavigationToolbarBackgroundBrush`    | `<SolidColorBrush x:Key="NavigationToolbarBackgroundBrush" Color="#A26829" />` | `#00000000`                                  |
+| `TitlebarContentBackgroundBrush`      | `<SolidColorBrush x:Key="TitlebarContentBackgroundBrush" Color="#A26829" />`   | `Transparent`                                |

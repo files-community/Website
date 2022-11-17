@@ -1,4 +1,6 @@
-# Troubleshooting installation issues
+---
+title: Troubleshooting installation issues
+---
 
 The installation process for Files relies on appinstaller and msix. While the installation process usually works as expected, it occasionally fails so we put together a list of issues and solutions.
 

@@ -1,4 +1,6 @@
-# Code quality standards
+---
+title: Code quality standards
+---
 
 All code contributed to the repository must follow
 our [Model-View-ViewModel](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93viewmodel) design path. The code

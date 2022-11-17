@@ -1,11 +1,10 @@
 <script lang="ts">
-	import { dev } from "$app/env";
+	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
 	import { onMount } from "svelte";
 
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
-	import { docs } from "$data/docs";
 
 	import "fluent-svelte/theme.css";
 
@@ -27,7 +26,7 @@
 		{
 			name: "Docs",
 			path: "/docs",
-			sidebarTree: docs,
+			sidebarTree: $page.data.docs ?? [],
 			icon: Book
 		},
 		// {
@@ -45,30 +44,30 @@
 	const navbarButtons = [
 		{
 			label: "Discord",
-			href: `https://discord.gg/${ discord }`,
+			href: `https://discord.gg/${discord}`,
 			icon: Chat
 		},
 		{
 			label: "GitHub",
-			href: `https://github.com/${ github.owner }/${ github.repo }`,
+			href: `https://github.com/${github.owner}/${github.repo}`,
 			icon: Code
 		}
 	];
 </script>
 
 <svelte:head>
-	<meta content="Files" name="og:site_name">
+	<meta content="Files" name="og:site_name" />
 
-	<meta content="website" name="og:type">
+	<meta content="website" name="og:type" />
 
 	<link
-		href="/branding/logo{$page.routeId === "themes" ? '-themes' : ''}-light.svg"
+		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-light.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: light)"
 	>
 	<link
-		href="/branding/logo{$page.routeId === "themes" ? '-themes' : ''}-dark.svg"
+		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
@@ -77,33 +76,35 @@
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="description"
-	>
+	/>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="og:description"
-	>
+	/>
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."
 		name="twitter:description"
-	>
+	/>
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"
-	>
-	<meta content="Files Community" name="author">
+	/>
+	<meta content="Files Community" name="author" />
 
-	<meta content="#005fb8" name="theme-color">
+	<meta content="#005fb8" name="theme-color" />
 
-	<meta content="summary_large_image" name="twitter:card">
-	<meta content="@FilesForWindows" name="twitter:site">
-	<meta content="@FilesForWindows" name="twitter:creator">
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="@FilesForWindows" name="twitter:site" />
+	<meta content="@FilesForWindows" name="twitter:creator" />
 
 	{#if !dev && $page.url.host === "files.community"}
 		<script type="text/javascript">
-			(function(c, l, a, r, i, t, y) {
-				c[a] = c[a] || function() {
-					(c[a].q = c[a].q || []).push(arguments);
-				};
+			(function (c, l, a, r, i, t, y) {
+				c[a] =
+					c[a] ||
+					function () {
+						(c[a].q = c[a].q || []).push(arguments);
+					};
 				t = l.createElement(r);
 				t.async = true;
 				t.src = "https://www.clarity.ms/tag/" + i;
