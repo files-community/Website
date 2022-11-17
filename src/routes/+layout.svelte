@@ -68,7 +68,6 @@
 	<link
 		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
 		rel="icon"
-		media="prefers-color-scheme: dark"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
 	>
