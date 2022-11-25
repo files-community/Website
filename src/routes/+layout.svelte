@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
-	import { onMount } from "svelte";
 
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
