@@ -183,8 +183,7 @@
 						<Button
 							variant="hyperlink"
 							href="https://github.com/{links.github.owner}/{links.github
-								.siteRepo}/edit/main/src/routes/docs{currentPage.path ||
-								'/index'}.md"
+								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
 							{...externalLink}
 						>
 							Edit this page
