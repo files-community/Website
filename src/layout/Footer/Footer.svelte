@@ -85,10 +85,10 @@
 		<p>Pages</p>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/">Home</Button>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/docs">
-			Documentation
+			Docs
 		</Button>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/blog">
-			Blog
+			News
 		</Button>
 	</div>
 	<div class="column">
