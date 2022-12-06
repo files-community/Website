@@ -23,7 +23,7 @@
 			icon: Home
 		},
 		{
-			name: "Docs",
+			name: "Documentation",
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
@@ -34,7 +34,7 @@
 		//     icon: PaintBrush
 		// },
 		{
-			name: "Blog",
+			name: "News",
 			path: "/blog",
 			icon: News
 		}
