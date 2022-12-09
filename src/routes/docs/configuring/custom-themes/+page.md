@@ -1,14 +1,17 @@
 ---
-title: Custom Themes
+title: Create a custom theme
 ---
 
-Files has a selection of built-in themes but you can also create your own theme by adding a resource file to the themes directory in the `LocalState` folder.
+Files comes with a number of built-in themes for you to use, but you can also create a custom theme the way you like.
 
-## How to create a custom theme
+## Create a custom theme
 
-1. Navigate to the themes directory, you can open find this folder by clicking the information icon in the appearance page. Create a new file with the `xaml` extension, this file will contain the resources for your custom theme.
-2. Open the file in the text editor of your choice.
-3. Copy and paste the template below
+1. Open Files and click on the settings icon.
+2. Click on the information icon by the custom theme section.
+3. Open the themes folder.
+4. Create a new file with the `xaml` extension
+5. Open the file in the text editor of your choice.
+6. Copy and paste the following template, you can include and override most XAML resources inside the ResourceDictionary. You can use the sample resources for ideas. The WinUI repository is also a good way to find resources that you can override. 
 
 Default template
 ```xml
@@ -26,9 +29,7 @@ Default template
 </ResourceDictionary>
 ```
 
-## Available resources
-
-The themeing system in Files allows you to override any resource that's included in the WinUI library but most themes including the built-in themes only override a couple of brushes.
+## Sample resources
 
 | Key                                   | Example                                                                        | Default value                                |
 | ------------------------------------- | ------------------------------------------------------------------------------ | -------------------------------------------- |
