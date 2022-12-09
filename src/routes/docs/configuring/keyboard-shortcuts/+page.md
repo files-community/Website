@@ -2,7 +2,7 @@
 title: Keyboard Shortcuts
 ---
 
-Files comes with built in keyboard shortcuts to make navigating the app easier.
+Files supports a wide range of keyboard shortcuts to help you navigate the app. There is currently no support for remapping the shortcuts.
 
 | Shortcut                                            | Action                                |
 | --------------------------------------------------- | ------------------------------------- |
@@ -38,5 +38,5 @@ Files comes with built in keyboard shortcuts to make navigating the app easier.
 | <kbd>F3</kbd>                                       | Search                                |
 | <kbd>F5</kbd> / <kbd>Ctrl</kbd> + <kbd>R</kbd>      | Refresh directory                     |
 | <kbd>F7</kbd>                                       | Turn on caret browsing                |
-| <kbd>F11</kbd>                                      | Toggle fullscreen                     |
+| <kbd>F11</kbd>                                      | Toggle full screen                    |
 | <kbd>F12</kbd>                                      | Toggle compact overlay                |
