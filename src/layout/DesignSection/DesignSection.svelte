@@ -18,17 +18,16 @@
 	</p>
 	<div class="buttons-spacer">
 		<Button
-			href="https://microsoft.com/store/apps/{links.storeId}"
-			{...externalLink}
+			href="/download/"
 			variant="accent"
 		>
-			Try it out
+			Download
 		</Button>
-		<Button variant="hyperlink"
-		        href="https://www.microsoft.com/design/fluent/"
-		        {...externalLink}
+		<Button
+			variant="hyperlink"
+		    href="/docs/"
 		>
-			Design System
+			Learn more
 		</Button>
 	</div>
 	<div class="design-image">
@@ -46,7 +45,7 @@
 				class="files-screenshot"
 				height="768"
 				src="/screenshots/folder-list-light.png"
-				style:transform="translateY({Math.floor(scrollY / -10)}px)"
+				style:transform="translateY({Math.floor(scrollY / +20)}px)"
 				width="1024"
 			>
 		</picture>
