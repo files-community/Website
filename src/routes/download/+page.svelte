@@ -25,7 +25,7 @@
 		{
 			name: "Sideload",
 			description:
-				"Install Files from an external source, without the Microsoft Store",
+				"Install Files without the Microsoft Store",
 			href: "/appinstallers/Files.stable.appinstaller",
 			icon: ""
 		},
