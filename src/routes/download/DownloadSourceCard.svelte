@@ -67,7 +67,7 @@
 				transform: translateY(-2px);
 
 				.download-source-icon {
-					box-shadow: var(--fds-flyout-shadow);
+					filter: drop-shadow(var(--fds-flyout-shadow));
 					transform: translateY(-2px);
 				}
 			}
