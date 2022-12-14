@@ -11,7 +11,7 @@
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: "Get Files from the Microsoft Store.",
+			description: "Get Files from the Microsoft Store",
 			href: isWindows
 				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
@@ -27,8 +27,8 @@
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
 		{
-			name: "Sideload Preview",
-			description: "Get early access to improvements and new features.",
+			name: "Preview",
+			description: "Get early access to improvements and new features",
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg"
 		}
