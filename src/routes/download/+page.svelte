@@ -30,7 +30,8 @@
 			name: "Preview",
 			description: "Get early access to improvements and new features",
 			href: "/appinstallers/Files.preview.appinstaller",
-			icon: "/download-sources/preview_light.svg"
+			icon: "/download-sources/preview_light.svg",
+			darkModeIcon: "/download-sources/preview_dark.svg"
 		}
 	] as const satisfies readonly DownloadSource[];
 

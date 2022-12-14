@@ -31,7 +31,7 @@
 			alt="{source.name} logo"
 		/>
 	</picture>
-	<TextBlock variant="title">{source.name}</TextBlock>
+	<TextBlock variant="title" style="text-align: center;">{source.name}</TextBlock>
 	<TextBlock class="download-source-description">
 		{source.description}
 	</TextBlock>
