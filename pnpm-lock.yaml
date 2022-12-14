@@ -4,7 +4,7 @@ specifiers:
   '@fec/remark-a11y-emoji': ^3.1.0
   '@fluentui/svg-icons': ^1.1.190
   '@neodrag/svelte': ^1.2.4
-  '@sveltejs/adapter-vercel': next
+  '@sveltejs/adapter-vercel': ^1.0.0
   '@sveltejs/kit': ^1.0.0
   '@typescript-eslint/eslint-plugin': ^5.46.1
   '@typescript-eslint/parser': ^5.46.1
@@ -25,7 +25,7 @@ specifiers:
   sass: ^1.56.2
   svelte: ^3.55.0
   svelte-check: ^2.10.2
-  svelte-preprocess: ^4.10.7
+  svelte-preprocess: ^5.0.0
   tslib: ^2.4.1
   typescript: ^4.9.4
   vite: ^4.0.1
@@ -34,7 +34,7 @@ devDependencies:
   '@fec/remark-a11y-emoji': 3.1.0
   '@fluentui/svg-icons': 1.1.190
   '@neodrag/svelte': 1.2.4
-  '@sveltejs/adapter-vercel': 1.0.0-next.88_@sveltejs+kit@1.0.0
+  '@sveltejs/adapter-vercel': 1.0.0_@sveltejs+kit@1.0.0
   '@sveltejs/kit': 1.0.0_svelte@3.55.0+vite@4.0.1
   '@typescript-eslint/eslint-plugin': 5.46.1_imrg37k3svwu377c6q7gkarwmi
   '@typescript-eslint/parser': 5.46.1_ha6vam6werchizxrnqvarmz2zu
@@ -55,7 +55,7 @@ devDependencies:
   sass: 1.56.2
   svelte: 3.55.0
   svelte-check: 2.10.2_jjwtulpyxjzt4cay7hl32wrnrq
-  svelte-preprocess: 4.10.7_ldso7g4bqx2ql5toeyux7cljnu
+  svelte-preprocess: 5.0.0_ldso7g4bqx2ql5toeyux7cljnu
   tslib: 2.4.1
   typescript: 4.9.4
   vite: 4.0.1_sass@1.56.2
@@ -382,10 +382,10 @@ packages:
       picomatch: 2.3.1
     dev: true
 
-  /@sveltejs/adapter-vercel/1.0.0-next.88_@sveltejs+kit@1.0.0:
-    resolution: {integrity: sha512-X2DewfrqALRORli1WsMszFt04Rdh5CBJbNYH+lZ5Kn7Yq6cFa6XDE5kBIbi/Z43ib0qLlWvuys03DJGbjfokDg==}
+  /@sveltejs/adapter-vercel/1.0.0_@sveltejs+kit@1.0.0:
+    resolution: {integrity: sha512-3zM/7BJbtxBo02J4/2mpZyiHZtH6HAggND/xRaBiKjSsKSMYvKC4ipqVfHoESuW5NQNAnJVf1zMAQY2PPxv91w==}
     peerDependencies:
-      '@sveltejs/kit': ^1.0.0-next.587
+      '@sveltejs/kit': ^1.0.0
     dependencies:
       '@sveltejs/kit': 1.0.0_svelte@3.55.0+vite@4.0.1
       '@vercel/nft': 0.22.5
@@ -3035,6 +3035,56 @@ packages:
       '@types/sass': 1.43.1
       detect-indent: 6.1.0
       magic-string: 0.25.9
+      postcss: 8.4.20
+      sass: 1.56.2
+      sorcery: 0.10.0
+      strip-indent: 3.0.0
+      svelte: 3.55.0
+      typescript: 4.9.4
+    dev: true
+
+  /svelte-preprocess/5.0.0_ldso7g4bqx2ql5toeyux7cljnu:
+    resolution: {integrity: sha512-q7lpa7i2FBu8Pa+G0MmuQQWETBwCKgsGmuq1Sf6n8q4uaG9ZLcLP0Y+etC6bF4sE6EbLxfiI38zV6RfPe3RSfg==}
+    engines: {node: '>= 14.10.0'}
+    requiresBuild: true
+    peerDependencies:
+      '@babel/core': ^7.10.2
+      coffeescript: ^2.5.1
+      less: ^3.11.3 || ^4.0.0
+      postcss: ^7 || ^8
+      postcss-load-config: ^2.1.0 || ^3.0.0 || ^4.0.0
+      pug: ^3.0.0
+      sass: ^1.26.8
+      stylus: ^0.55.0
+      sugarss: ^2.0.0 || ^3.0.0 || ^4.0.0
+      svelte: ^3.23.0
+      typescript: ^3.9.5 || ^4.0.0
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      coffeescript:
+        optional: true
+      less:
+        optional: true
+      postcss:
+        optional: true
+      postcss-load-config:
+        optional: true
+      pug:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      '@types/pug': 2.0.6
+      '@types/sass': 1.43.1
+      detect-indent: 6.1.0
+      magic-string: 0.27.0
       postcss: 8.4.20
       sass: 1.56.2
       sorcery: 0.10.0
