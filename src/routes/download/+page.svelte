@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { links } from "$data/links";
 	import { externalLink, Metadata } from "$lib";
-	import { Button, InfoBar, TextBlock } from "fluent-svelte";
+	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
 	import { onMount } from "svelte";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
@@ -61,6 +61,10 @@
 		>
 			Sponsor Now
 		</Button>
+
+		<svelte:fragment slot="icon">
+			&nbsp;
+		</svelte:fragment>
 	</InfoBar>
 
 	<section class="download-sources">
