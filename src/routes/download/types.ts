@@ -3,5 +3,6 @@ export type DownloadSource = Readonly<{
   description: string,
   href: string,
   icon: string,
+  darkModeIcon?: string,
   external?: boolean, 
 }>

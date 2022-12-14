@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { externalLink } from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import type { DownloadSource } from "./types";
 
@@ -6,17 +7,30 @@
 
 	let link: HTMLAnchorElement;
 
-	$: filename = source.href.substring(source.href.lastIndexOf("/") + 1)
+	$: filename = source.href.substring(source.href.lastIndexOf("/") + 1);
 
 	const downloadAppInstaller = () => link.click();
 
 	const downloadWithKeyboard = (e: KeyboardEvent) => {
-		if (e.key === "Enter") downloadAppInstaller()
-	}
+		if (e.key === "Enter") downloadAppInstaller();
+	};
 </script>
 
 <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<article tabindex="0" class="download-source" on:click={downloadAppInstaller} on:keydown={downloadWithKeyboard}>
+<article
+	tabindex="0"
+	class="download-source"
+	on:click={downloadAppInstaller}
+	on:keydown={downloadWithKeyboard}
+>
+	<picture>
+		<source media="(prefers-color-scheme: dark)" srcset={source.darkModeIcon} />
+		<img
+			class="download-source-icon"
+			src={source.icon}
+			alt="{source.name} logo"
+		/>
+	</picture>
 	<TextBlock variant="title">{source.name}</TextBlock>
 	<TextBlock class="download-source-description">
 		{source.description}
@@ -24,6 +38,7 @@
 	<a
 		href={source.href}
 		download={!source.external ? filename : ""}
+		{...externalLink}
 		bind:this={link}
 		style:display="none"
 	>
@@ -42,13 +57,20 @@
 
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		place-items: center;
 		gap: 1rem;
 		padding: 2rem;
 
-		&:hover {
-			box-shadow: var(--fds-flyout-shadow);
-			transform: translateY(-2px);
+		@media (prefers-reduced-motion: no-preference) {
+			&:hover {
+				box-shadow: var(--fds-flyout-shadow);
+				transform: translateY(-2px);
+
+				.download-source-icon {
+					box-shadow: var(--fds-flyout-shadow);
+					transform: translateY(-2px);
+				}
+			}
 		}
 
 		:global {
@@ -56,6 +78,11 @@
 				max-inline-size: 20ch;
 				text-align: center;
 			}
+		}
+
+		.download-source-icon {
+			max-inline-size: 10rem;
+			transition: var(--fds-control-normal-duration) ease;
 		}
 	}
 </style>
