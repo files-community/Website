@@ -5,7 +5,7 @@ import type {
 } from "$data/docs";
 import type { LayoutServerLoad } from "./$types";
 
-export const getPages = () => {
+const getPages = () => {
 	const rawPages = import.meta.glob<DocsMetadata>(
 		["./**/*/+page.md", "./+page.md"], // import all pages + base page
 		{ eager: true, import: "metadata" }
@@ -19,7 +19,7 @@ export const getPages = () => {
 	});
 };
 
-export const getTree = (pages: DocsNode[]) => {
+const getTree = (pages: DocsNode[]) => {
 	const rawCategories = import.meta.glob<DocsMetadata>("./**/*/category.md", {
 		eager: true,
 		import: "metadata"
