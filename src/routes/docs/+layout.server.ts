@@ -1,8 +1,4 @@
-import type {
-	DocsMetadata,
-	DocsNode,
-	DocsTree
-} from "$data/docs";
+import type { DocsMetadata, DocsNode, DocsTree } from "$data/docs";
 import type { LayoutServerLoad } from "./$types";
 
 const getPages = () => {
@@ -52,7 +48,9 @@ export const load: LayoutServerLoad = ({ url, route }) => {
 
 	return {
 		pagePath: url.pathname,
-		currentPage: pages.find(p => p.path === `/docs${route.id}`),
+		currentPage: pages.find(
+			p => p.path === route.id.substring(route.id.indexOf("/", 2))
+		) ?? { title: "Overview", path: "" },
 		docsPages: pages,
 		docs: tree
 	};
