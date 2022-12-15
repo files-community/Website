@@ -13,7 +13,7 @@
 		docs,
 		pagePath,
 		docsPages,
-		currentPage = { title: "Overview", path: "" }
+		currentPage
 	} = data);
 
 	let value = "";
