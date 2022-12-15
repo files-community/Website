@@ -19,29 +19,29 @@ export const GET: RequestHandler = async ({ url }) => {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <atom:link href="https://${
-		url.hostname
+		url.host
 	}/blog/rss" rel="self" type="application/rss+xml" />
 <title>Files News</title>
-<link>https://${url.hostname}/blog</link>
+<link>https://${url.host}/blog</link>
 <description>News about Files, the modern file explorer for Windows</description>
 <image>
-<url>https://${url.hostname}/branding/banner-blog.png</url>
+<url>https://${url.host}/branding/banner-blog.png</url>
 <title>Files News</title>
-<link>https://${url.hostname}/blog</link>
+<link>https://${url.host}/blog</link>
 </image>
 ${posts
 	.map(
 		post => `<item>
 <guid>${post.slug}</guid>
 <title>${post.metadata.title}</title>
-<link>https://${url.hostname}/blog/posts/${post.slug}</link>
+<link>https://${url.host}/blog/posts/${post.slug}</link>
 <description>${post.metadata.description}</description>
 <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
 <dc:creator>${post.metadata.author}</dc:creator>
-<enclosure url="https://${url.hostname}${
+<enclosure url="https://${url.host}${
 			post.metadata.thumbnail
 		}	" length="0" type="image/jpeg"/>
-<media:content medium="image" url="https://${url.hostname}${
+<media:content medium="image" url="https://${url.host}${
 			post.metadata.thumbnail
 		}"/>
 </item>`
