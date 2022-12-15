@@ -40,7 +40,7 @@ ${posts
 <dc:creator>${post.metadata.author}</dc:creator>
 <enclosure url="https://${url.host}${
 			post.metadata.thumbnail
-		}	" length="0" type="image/jpeg"/>
+		}" length="0" type="image/jpeg"/>
 <media:content medium="image" url="https://${url.host}${
 			post.metadata.thumbnail
 		}"/>
