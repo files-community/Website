@@ -2,8 +2,8 @@
 
 .blog-post {
 	padding: 48px;
-  margin-inline: auto;
-  max-inline-size: 100%;
+	margin-inline: auto;
+	max-inline-size: 100%;
 
 	article {
 		max-inline-size: 768px;
@@ -26,6 +26,7 @@
 
 		h1 {
 			margin: 0;
+
 			font: {
 				size: 3.6rem;
 				weight: 600;
@@ -60,6 +61,12 @@
 
 				&-container {
 					margin-inline-start: auto;
+				}
+
+				&-item :any-link {
+					text-decoration: none;
+					color: currentColor;
+					min-inline-size: 100%;
 				}
 			}
 		}

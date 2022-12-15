@@ -3,6 +3,7 @@
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import { page } from "$app/stores";
 	import type { LayoutData } from "./$types";
 
 	export let data: LayoutData;
@@ -53,22 +54,32 @@
 				</IconButton>
 				<svelte:fragment slot="flyout">
 					<MenuFlyoutItem
-						on:click={() => navigator.clipboard.writeText(window.location.href)}
+						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>
 						Copy URL
 					</MenuFlyoutItem>
-					<MenuFlyoutItem
-						href="https://twitter.com/intent/tweet?text={window.location.href}"
-						{...externalLink}
-					>
-						Twitter
+					<MenuFlyoutItem>
+						<a
+							href="https://twitter.com/intent/tweet?text={encodeURIComponent(
+								$page.url.href
+							)}"
+							{...externalLink}
+						>
+							Twitter
+						</a>
 					</MenuFlyoutItem>
-					<MenuFlyoutItem
-						href="https://www.facebook.com/sharer/sharer.php?u={window.location
-							.href}"
-						{...externalLink}
-					>
-						Facebook
+					<MenuFlyoutItem>
+						<a
+							href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(
+								$page.url.href
+							)}"
+							{...externalLink}
+						>
+							Facebook
+						</a>
+					</MenuFlyoutItem>
+					<MenuFlyoutItem>
+						<a href="/blog/feed.rss" {...externalLink}>RSS Feed</a>
 					</MenuFlyoutItem>
 				</svelte:fragment>
 			</MenuFlyout>
