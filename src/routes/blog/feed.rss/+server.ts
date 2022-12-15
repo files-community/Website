@@ -25,13 +25,9 @@ export const GET: RequestHandler = async ({ url }) => {
 <link>https://${url.hostname}/blog</link>
 <description>News about Files, the modern file explorer for Windows</description>
 <image>
-<url>
-https://${url.hostname}/branding/logo-light.svg
-</url>
+<url>https://${url.hostname}/branding/banner-blog.png</url>
 <title>Files News</title>
-<link>
-https://${url.hostname}/blog
-</link>
+<link>https://${url.hostname}/blog</link>
 </image>
 ${posts
 	.map(
