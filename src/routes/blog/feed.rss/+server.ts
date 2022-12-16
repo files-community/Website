@@ -43,7 +43,8 @@ ${posts
 <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
 <enclosure url="https://${url.host}${
 			post.metadata.thumbnail
-		}" length="0" type="image/jpeg"/>`
+		}" length="0" type="image/jpeg"/>
+</item>`
 	)
 	.join("")}
 </channel>
