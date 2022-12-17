@@ -53,16 +53,26 @@ This repository contains the source code for the new [Files website](https://fil
 
 # Development
 
-## Prerequisites
+## GitHub Codespaces
+You can develop this project using GitHub Codespaces.
+For this, click on the "Code" button on the main GitHub page of this repository. 
+
+Then click on "Codespaces" and then on "Create codespace on main".
+
+After the Codespace has initialized, you can run `pnpm dev` and are ready to go!
+
+
+## Local development
+### Prerequisites
 
 - [Git](https://git-scm.com)
 - [Node.js](https://nodejs.org/en/) with `npm`.
 - [`pnpm`](https://pnpm.io)
-- Command line of your choice.
+- Shell of your choice.
 
-## Building
+### Building
 
-### 1: Clone the repository.
+#### 1: Clone the repository.
 
 ```ps
 git clone https://github.com/files-community/Website && cd Website
@@ -70,7 +80,7 @@ git clone https://github.com/files-community/Website && cd Website
 
 This will create a local copy of this repository and navigate you to the root folder of the repository.
 
-### 2: Install Dependencies
+#### 2: Install Dependencies
 
 Run this command at the root folder to install dependencies:
 
@@ -78,7 +88,7 @@ Run this command at the root folder to install dependencies:
 pnpm i
 ```
 
-### 3: Run Build Script
+#### 3: Run Build Script
 
 To build the site in development mode, simply run the following command:
 
