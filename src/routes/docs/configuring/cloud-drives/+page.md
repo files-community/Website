@@ -36,3 +36,6 @@ Jottacloud requires downloading and installing the [desktop client](https://www.
 
 ## SynologyDrive
 SynologyDrive requires downloading and installing the [desktop client](https://www.synology.com/en-us/support/download/).
+
+## pCloud Drive
+pCloud Drive requires downloading and installing the [desktop client](https://www.pcloud.com/it/download-free-online-cloud-file-storage.html).
