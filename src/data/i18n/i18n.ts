@@ -2,7 +2,7 @@ import Languages from "./languages";
 import en from "./en/en.json";
 import ru from "./ru/ru.json";
 
-const defaultLanguage: Languages = Languages.en;
+export const defaultLanguage: Languages = Languages.en;
 const supportedLanguages: Languages[] = Object.values(Languages) as Languages[];
 const data: LanguageData = {
 	en: en,

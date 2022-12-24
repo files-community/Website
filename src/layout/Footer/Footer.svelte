@@ -5,7 +5,7 @@
 	import Github from "./icons/github.svg?raw";
 	import Twitter from "./icons/twitter.svg?raw";
 	import Discord from "./icons/discord.svg?raw";
-	import { t } from "$data/i18n";
+	import { defaultLanguage, getLanguage, t } from "$data/i18n";
 
 	const contributors = [
 		{
@@ -87,7 +87,13 @@
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/"
 			>{t("header.home")}</Button
 		>
-		<Button variant="hyperlink" data-sveltekit-prefetch href="/docs">
+		<Button
+			variant="hyperlink"
+			data-sveltekit-prefetch
+			href={getLanguage() === defaultLanguage
+				? "/docs/base/main"
+				: "/docs/" + getLanguage() + "-base/main"}
+		>
 			{t("header.documentation")}
 		</Button>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/blog">

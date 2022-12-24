@@ -7,14 +7,32 @@
 	import { links } from "$data/links";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
+	import { defaultLanguage, getLanguage, t } from "$data/i18n";
+	import Languages from "$data/i18n/languages";
 
 	export let data: LayoutData;
-	$: ({
-		docs,
-		pagePath,
-		docsPages,
-		currentPage
-	} = data);
+	$: ({ docs, pagePath, docsPages, currentPage } = data);
+	$: {
+		try {
+			// if language found successfully
+			const language = getLanguage();
+
+			if (language === defaultLanguage)
+				docs = docs.filter(
+					doc => doc.path && !/^\/([a-zA-Z]{2}-)/.test(doc.path)
+				);
+			else {
+				docs = docs.filter(
+					doc => doc.path && doc.path.startsWith("/" + language + "-")
+				);
+			}
+		} catch (error) {
+			// if language not found -> view as defaultLanguage
+			docs = docs.filter(
+				doc => doc.path && !/^\/([a-zA-Z]{2}-)/.test(doc.path)
+			);
+		}
+	}
 
 	let value = "";
 	let searchQuery = "";
@@ -107,7 +125,7 @@
 								keepFocus: true
 							});
 					}}
-					placeholder="Search Documentation"
+					placeholder={t("documentation.search.placeholder")}
 					type="search"
 				/>
 				{#if autoSuggestVisible}
@@ -150,7 +168,7 @@
 								keepFocus: true
 							});
 					}}
-					placeholder="Search Documentation"
+					placeholder={t("documentation.search.placeholder")}
 					type="search"
 				/>
 				{#if autoSuggestVisible}
@@ -186,7 +204,7 @@
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
 							{...externalLink}
 						>
-							Edit this page
+							{t("documentation.editpage")}
 						</Button>
 					</div>
 				</header>

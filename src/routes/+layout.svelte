@@ -12,20 +12,23 @@
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
-	import { t } from "$data/i18n";
+	import { defaultLanguage, getLanguage, t } from "$data/i18n";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	const { github, discord } = links;
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: t('header.home'),
+			name: t("header.home"),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: t('header.documentation'),
-			path: "/docs",
+			name: t("header.documentation"),
+			path:
+				getLanguage() === defaultLanguage
+					? "/docs/base/main"
+					: "/docs/" + getLanguage() + "-base/main",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
 		},
@@ -35,7 +38,7 @@
 		//     icon: PaintBrush
 		// },
 		{
-			name: t('header.news'),
+			name: t("header.news"),
 			path: "/blog",
 			icon: News
 		}
@@ -61,17 +64,19 @@
 	<meta content="website" name="og:type" />
 
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-light.svg"
+		href="/branding/logo{$page.route.id === 'themes'
+			? '-themes'
+			: ''}-light.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: light)"
-	>
+	/>
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
+		href="/branding/logo{$page.route.id === 'themes' ? '-themes' : ''}-dark.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
-	>
+	/>
 
 	<meta
 		content="A modern file explorer that pushes the boundaries of the platform."

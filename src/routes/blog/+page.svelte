@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { t } from "$data/i18n";
 	import { BlogCard, HeaderChip, Metadata, PageSection, tilt } from "$lib";
 	import { Button } from "fluent-svelte";
 	import type { PageData } from "./$types";
@@ -50,7 +51,7 @@
 			>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
-			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">Read More</Button>
+			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">{t('section.news.readmore')}</Button>
 		</div>
 	</div>
 	{#if posts.slice(1).length > 0}

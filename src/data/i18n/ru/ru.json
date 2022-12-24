@@ -34,5 +34,11 @@
 	"footer.team.title": "Команда",
 	"footer.website.bug": "Нашли ошибку?",
 	"footer.website.github": "Репозиторий GitHub",
-	"footer.website.title": "Внести вклад в развитие этого сайта"
+	"footer.website.title": "Внести вклад в развитие этого сайта",
+	"documentation.editpage": "Изменить эту страницу",
+	"documentation.search.placeholder": "Поиск документации",
+	"section.news.readmore": "Читать далее",
+	"section.community.members.contribution_1": "вклад",
+	"section.community.members.contributions_2_5": "вклада",
+	"section.community.members.contributions_6_0": "вкладов"
 }
