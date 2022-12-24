@@ -2,6 +2,7 @@ import Cloud from "@fluentui/svg-icons/icons/cloud_24_regular.svg?raw";
 import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
 import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
 import EyeVisible from "@fluentui/svg-icons/icons/eye_20_regular.svg?raw";
+import { t } from "./i18n";
 
 export type FeatureCardData = {
 	title: string;
@@ -29,27 +30,23 @@ export type TaggedFileData = FileData & {
 
 export const featureCards: FeatureCardData[] = [
 	{
-		title: "Seamless cloud integration",
-		description:
-			"Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar.",
+		title: t("section.features.cloud.title"),
+		description: t("section.features.cloud.description"),
 		icon: Cloud
 	},
 	{
-		title: "File preview",
-		description:
-			"Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in.",
+		title: t("section.features.filepreview.title"),
+		description: t("section.features.filepreview.description"),
 		icon: EyeVisible
 	},
 	{
-		title: "Tagged Files & Folders",
-		description:
-			"Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!",
+		title: t("section.features.tags.title"),
+		description: t("section.features.tags.description"),
 		icon: Tag
 	},
 	{
-		title: "Multitask with tabs",
-		description:
-			"Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts.",
+		title: t("section.features.multitask.title"),
+		description: t("section.features.multitask.description"),
 		icon: TabDesktop
 	}
 ];

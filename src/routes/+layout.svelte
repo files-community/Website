@@ -12,18 +12,19 @@
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
+	import { t } from "$data/i18n";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	const { github, discord } = links;
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: "Home",
+			name: t('header.home'),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: "Documentation",
+			name: t('header.documentation'),
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
@@ -34,7 +35,7 @@
 		//     icon: PaintBrush
 		// },
 		{
-			name: "News",
+			name: t('header.news'),
 			path: "/blog",
 			icon: News
 		}

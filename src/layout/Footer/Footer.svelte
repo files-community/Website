@@ -5,6 +5,7 @@
 	import Github from "./icons/github.svg?raw";
 	import Twitter from "./icons/twitter.svg?raw";
 	import Discord from "./icons/discord.svg?raw";
+	import { t } from "$data/i18n";
 
 	const contributors = [
 		{
@@ -82,28 +83,30 @@
 		</a>
 	</div>
 	<div class="column">
-		<p>Pages</p>
-		<Button variant="hyperlink" data-sveltekit-prefetch href="/">Home</Button>
+		<p>{t("footer.pages.title")}</p>
+		<Button variant="hyperlink" data-sveltekit-prefetch href="/"
+			>{t("header.home")}</Button
+		>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/docs">
-			Docs
+			{t("header.documentation")}
 		</Button>
 		<Button variant="hyperlink" data-sveltekit-prefetch href="/blog">
-			News
+			{t("header.news")}
 		</Button>
 	</div>
 	<div class="column">
-		<p>Contribute to Files</p>
+		<p>{t("footer.contribute.title")}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
 				.repo}/issues/new"
 		>
-			Give Feedback
+			{t("footer.contribute.feedback")}
 		</Button>
 
 		<Button variant="hyperlink" href="/docs/contributing/code-style">
-			Style Guide
+			{t("footer.contribute.styleguide")}
 		</Button>
 
 		<Button
@@ -111,16 +114,16 @@
 			href="https://crowdin.com/project/files-app"
 			variant="hyperlink"
 		>
-			Translations
+			{t("footer.contribute.translations")}
 		</Button>
 
-		<p>Contribute to this site</p>
+		<p>{t("footer.website.title")}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
-			GitHub Repo
+			{t("footer.website.github")}
 		</Button>
 
 		<Button
@@ -129,11 +132,11 @@
 			href="https://github.com/{links.github.owner}/{links.github
 				.siteRepo}/issues/new"
 		>
-			Found a bug?
+			{t("footer.website.bug")}
 		</Button>
 	</div>
 	<div class="column">
-		<p>Web Team</p>
+		<p>{t("footer.team.title")}</p>
 		{#each contributors as contributor}
 			<Button variant="hyperlink" href={contributor.link} {...externalLink}
 				>{contributor.name}</Button

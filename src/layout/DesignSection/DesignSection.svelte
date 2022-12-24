@@ -13,12 +13,12 @@
 />
 
 <PageSection id="design-section">
-	<HeaderChip>Design</HeaderChip>
+	<HeaderChip>{t('section.design.chip')}</HeaderChip>
 	<h2>{t("section.design.header")}</h2>
 	<p>{t("section.design.description")}</p>
 	<div class="buttons-spacer">
-		<Button href="/download/" variant="accent">Download</Button>
-		<Button variant="hyperlink" href="/docs/">Learn more</Button>
+		<Button href="/download/" variant="accent">{t('section.design.download')}</Button>
+		<Button variant="hyperlink" href="/docs/">{t('section.design.learnmore')}</Button>
 	</div>
 	<div class="design-image">
 		<picture>
