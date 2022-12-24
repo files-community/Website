@@ -111,7 +111,12 @@
 			{t("footer.contribute.feedback")}
 		</Button>
 
-		<Button variant="hyperlink" href="/docs/contributing/code-style">
+		<Button
+			variant="hyperlink"
+			href={getLanguage() === defaultLanguage
+				? "/docs/contributing/code-style"
+				: `/docs/${getLanguage()}-contributing/code-style`}
+		>
 			{t("footer.contribute.styleguide")}
 		</Button>
 
