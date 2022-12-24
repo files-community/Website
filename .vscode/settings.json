@@ -1,3 +1,10 @@
 {
-	"files.associations": { "*.svx": "markdown" }
+	"files.associations": {
+		"*.svx": "markdown"
+	},
+	"i18n-ally.localesPaths": ["src/data/i18n"],
+	"i18n-ally.enabledFrameworks": ["svelte", "vue"],
+	"i18n-ally.keystyle": "flat",
+	"i18n-ally.autoDetection": true,
+	"i18n-ally.sourceLanguage": "en"
 }
