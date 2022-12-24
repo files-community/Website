@@ -43,5 +43,10 @@
   "section.community.members.contributions_6_0": "вкладов",
   "errors.description": "О, нет! \nЧто-то пошло не так при загрузке этой страницы.",
   "errors.name": "Ошибка",
-  "errors.return": "Вернуться домой"
+  "errors.return": "Вернуться домой",
+  "meta.header.blog": "Новости",
+  "meta.header.docs": "Документация",
+  "meta.header.download": "Скачать",
+  "meta.header.home": "Главная",
+  "meta.header.themes": "Темы"
 }

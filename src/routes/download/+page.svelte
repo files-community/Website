@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { t } from "$data/i18n";
 	import { links } from "$data/links";
 	import { externalLink, Metadata } from "$lib";
 	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
@@ -41,7 +42,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Download" image="download" />
+	<Metadata title={`Files • ${t("meta.header.download")}`} image="download" />
 </svelte:head>
 
 <slot />
@@ -62,9 +63,7 @@
 			Sponsor Now
 		</Button>
 
-		<svelte:fragment slot="icon">
-			&nbsp;
-		</svelte:fragment>
+		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
 	</InfoBar>
 
 	<section class="download-sources">

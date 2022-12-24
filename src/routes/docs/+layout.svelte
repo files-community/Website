@@ -97,7 +97,7 @@
 
 <svelte:head>
 	<Metadata
-		title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+		title="Files • {pageTitle ? `${t('meta.header.docs')} - ${pageTitle}` : 'Docs'}"
 		image="docs"
 	/>
 </svelte:head>

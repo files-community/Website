@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Themes" image="themes" />
+	<Metadata title={`Files • ${t('meta.header.themes')}`} image="themes" />
 </svelte:head>
 
 todo

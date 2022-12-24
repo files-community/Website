@@ -12,7 +12,7 @@
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Blog" image="blog" />
+	<Metadata title={`Files • ${t('meta.header.blog')}`} image="blog" />
 </svelte:head>
 
 <svelte:window

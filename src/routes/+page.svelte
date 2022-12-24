@@ -1,10 +1,16 @@
 <script lang="ts">
-	import { CommunitySection, DesignSection, FeaturesSection, ThemesSection } from "$layout";
+	import { t } from "$data/i18n";
+	import {
+		CommunitySection,
+		DesignSection,
+		FeaturesSection,
+		ThemesSection
+	} from "$layout";
 	import { Metadata } from "$lib";
 </script>
 
 <svelte:head>
-	<Metadata title="Files • Home" />
+	<Metadata title={`Files • ${t("meta.header.home")}`} />
 </svelte:head>
 
 <DesignSection />

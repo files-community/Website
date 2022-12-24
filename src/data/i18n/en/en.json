@@ -43,5 +43,10 @@
   "section.community.members.contributions_6_0": "contributions",
   "errors.return": "Return Home",
   "errors.description": "Uh Oh! Something went wrong while loading this page.",
-  "errors.name": "Error"
+  "errors.name": "Error",
+  "meta.header.home": "Home",
+  "meta.header.blog": "Blog",
+  "meta.header.docs": "Docs",
+  "meta.header.download": "Download",
+  "meta.header.themes": "Themes"
 }
