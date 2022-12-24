@@ -11,8 +11,8 @@
 
 	const downloadSources = [
 		{
-			name: "Microsoft Store",
-			description: "Get Files from the Microsoft Store",
+			name: t('download.sources.store.name'),
+			description: t('download.sources.store.description'),
 			href: isWindows
 				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
@@ -21,15 +21,15 @@
 			external: true
 		},
 		{
-			name: "Sideload",
-			description: "Install Files without the Microsoft Store",
+			name: t('download.sources.sideload.title'),
+			description: t('download.sources.sideload.description'),
 			href: "/appinstallers/Files.stable.appinstaller",
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
 		{
-			name: "Preview",
-			description: "Get early access to improvements and new features",
+			name: t('download.sources.preview.title'),
+			description: t('download.sources.preview.description'),
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -49,10 +49,10 @@
 
 <main class="download-page">
 	<TextBlock variant="titleLarge" style="text-align: center;"
-		>Download Files</TextBlock
+		>{t('download.title')}</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		Please consider sponsoring Files on GitHub!
+		{t('download.sponsoring')}
 
 		<Button
 			slot="action"
@@ -60,7 +60,7 @@
 			href="https://github.com/sponsors/yaira2"
 			{...externalLink}
 		>
-			Sponsor Now
+			{t('download.sponsornow')}
 		</Button>
 
 		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>

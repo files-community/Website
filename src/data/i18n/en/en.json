@@ -48,5 +48,14 @@
   "meta.header.blog": "Blog",
   "meta.header.docs": "Docs",
   "meta.header.download": "Download",
-  "meta.header.themes": "Themes"
+  "meta.header.themes": "Themes",
+  "download.title": "Download Files",
+  "download.sponsoring": "Please consider sponsoring Files on GitHub!",
+  "download.sponsornow": "Sponsor Now",
+  "download.sources.store.name": "Microsoft Store",
+  "download.sources.store.description": "Get Files from the Microsoft Store",
+  "download.sources.sideload.title": "Sideload",
+  "download.sources.sideload.description": "Install Files without the Microsoft Store",
+  "download.sources.preview.title": "Preview",
+  "download.sources.preview.description": "Get early access to improvements and new features"
 }
