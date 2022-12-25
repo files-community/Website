@@ -40,9 +40,7 @@
 	});
 </script>
 
-<svelte:head>
-	<Metadata title="Files • Download" image="download" />
-</svelte:head>
+<Metadata title="Files • Download" image="download" />
 
 <slot />
 

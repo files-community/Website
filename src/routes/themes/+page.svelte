@@ -2,8 +2,6 @@
 	import { Metadata } from "$lib";
 </script>
 
-<svelte:head>
-	<Metadata title="Files • Themes" image="themes" />
-</svelte:head>
+<Metadata title="Files • Themes" image="themes" />
 
 todo
