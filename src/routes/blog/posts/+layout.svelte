@@ -11,9 +11,7 @@
 	$: ({ title, thumbnail, author, date } = data);
 </script>
 
-<svelte:head>
-	<Metadata title="Files • {title}" image={thumbnail} />
-</svelte:head>
+<Metadata title="Files • {title}" image={thumbnail} />
 
 <section class="blog-post">
 	<article>

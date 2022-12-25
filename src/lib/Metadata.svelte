@@ -6,9 +6,11 @@
 	$: imageFile = image.startsWith("/") ? image : `/branding/banner${image === "" ? "" : "-" + image}.png`
 </script>
 
-<title>{title}</title>
-<meta content={title} name="og:title">
-<meta content={title} name="twitter:title">
+<svelte:head>
+	<title>{title}</title>
+	<meta content={title} name="og:title">
+	<meta content={title} name="twitter:title">
 
-<meta content={imageFile} name="og:image">
-<meta content="https://{$page.url.host}{imageFile}" name="twitter:image">
+	<meta content={imageFile} name="og:image">
+	<meta content="https://{$page.url.host}{imageFile}" name="twitter:image">
+</svelte:head>

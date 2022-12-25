@@ -77,12 +77,10 @@
 	};
 </script>
 
-<svelte:head>
-	<Metadata
-		title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
-		image="docs"
-	/>
-</svelte:head>
+<Metadata
+	title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+	image="docs"
+/>
 
 <section class="docs">
 	<aside class="sidebar">

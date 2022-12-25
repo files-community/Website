@@ -3,9 +3,7 @@
 	import { Metadata } from "$lib";
 </script>
 
-<svelte:head>
-	<Metadata title="Files • Home" />
-</svelte:head>
+<Metadata title="Files • Home" />
 
 <DesignSection />
 
