@@ -17,11 +17,11 @@ In an effort to keep maintaining Files, we recently started charging for the Sto
 ### Design
 - Switched to using Mica Alt in the title bar for better contrast between the tabs
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/MicaAlt.png" alt="A screenshot Mica Alt in the title bar." />
+    <img src="/blog-resources/filesv2-4/MicaAlt.png" alt="Mica Alt in the title bar." />
 </figure>
 - Added round corners to the file area on Windows 10, previously the round corners were only on Windows 11.
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/RoundCorners.png" alt="A screenshot of round corners in the file area." />
+    <img src="/blog-resources/filesv2-4/RoundCorners.png" alt="Round corners in the file area." />
 </figure>
 - Further reduced the height of files when using the compact spacing option 
 
@@ -30,17 +30,17 @@ In an effort to keep maintaining Files, we recently started charging for the Sto
 - Added support for extracting password encrypted archives
 - Opening or selecting an archive will display a button on the toolbar to extract the files
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/ExtractArchive.png" alt="A screenshot of the extract archive toolbar button." />
+    <img src="/blog-resources/filesv2-4/ExtractArchive.png" alt="Extract archive toolbar button." />
 </figure>
 - Added support for creating new archives
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/CreateArchive.png" alt="A screenshot of the create archive dialog." />
+    <img src="/blog-resources/filesv2-4/CreateArchive.png" alt="Create archive dialog." />
 </figure>
 
 ### Drive details
 - Hovering over drives on the sidebar will display a tooltip with storage information about the drive
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/StorageInformation.png" alt="A screenshot of the storage information tooltip." />
+    <img src="/blog-resources/filesv2-4/StorageInformation.png" alt="Storage information tooltip." />
 </figure>
 
 ### Search
