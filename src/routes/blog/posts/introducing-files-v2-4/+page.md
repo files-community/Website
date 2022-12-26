@@ -53,4 +53,5 @@ We're pleased to announce that after a couple of weeks, v2.4 is available for al
 - Added support for changing the default column sizes in the details layout
 
 
+----
 Download Files from our [download page](https://www.files.community/download/).
