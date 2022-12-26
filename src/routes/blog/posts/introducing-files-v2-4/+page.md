@@ -54,4 +54,4 @@ We're pleased to announce that after a couple of weeks, v2.4 is available for al
 
 
 ----
-Download Files from our [download page](https://www.files.community/download/).
+Download Files from our [download page](/download/).
