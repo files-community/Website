@@ -1,0 +1,56 @@
+---
+title: Introducing v2.4
+description: Taking a look at the features and improvements in Files v2.4
+thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.jpg
+date: 2022-12-26
+author: files-community
+---
+
+We're pleased to announce that after a couple of weeks, v2.4 is available for all our users. Files has auto update built-in but if you're a new user or looking to manually update, you can download Files from our new [download page](https://www.files.community/download/).
+
+
+## Archives
+- Added support for extracting multiple archives together
+- Added support for extracting password encrypted archives
+- Opening or selecting an archive will display a button on the toolbar to extract the files
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4/ExtractArchive.png" alt="A screenshot of the extract archive toolbar button." />
+</figure>
+- Added support for creating new archives
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4/CreateArchive.png" alt="A screenshot of the create archive dialog." />
+</figure>
+
+## Design
+- Switched to using Mica Alt in the title bar for better contrast between the tabs
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4/MicaAlt.png" alt="A screenshot Mica Alt in the title bar." />
+</figure>
+- Added round corners to the file area on Windows 10, previously the round corners were only on Windows 11.
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4/RoundCorners.png" alt="A screenshot of round corners in the file area." />
+</figure>
+- Further reduced the height of files when using the compact spacing option 
+
+## Search
+- Clicking the search box will display a dropdown menu of the 5 most recent searches
+
+## Preview Build
+- Created a new icon to differentiate between the preview and regular versions of Files
+
+## Drive details
+- Hovering over drives on the sidebar will display a tooltip with storage information about the drive
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4/StorageInformation.png" alt="A screenshot of the storage information tooltip." />
+</figure>
+
+## Select on hover
+- Added an option to select files when hovering over them with the mouse
+
+## Layout modes
+- Added an option to change the default layout mode
+- Added an option to change the default sort option
+- Added support for changing the default column sizes in the details layout
+
+
+Download Files from our [download page](https://www.files.community/download/).
