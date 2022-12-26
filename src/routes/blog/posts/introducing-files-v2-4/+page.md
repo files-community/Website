@@ -6,7 +6,7 @@ date: 2022-12-26
 author: files-community
 ---
 
-We're pleased to announce that after a couple of weeks, v2.4 is available for all our users. Files has auto update built-in but if you're a new user or looking to manually update, you can download Files from our new [download page](https://www.files.community/download/).
+We're pleased to announce that after a couple of weeks, v2.4 is available for all our users. Files has auto update built-in but if you're a new user or looking to manually update, you can download Files from our new [download page](/download/).
 
 
 ## Archives
