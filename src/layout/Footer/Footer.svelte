@@ -3,7 +3,6 @@
 	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
 	import Github from "./icons/github.svg?raw";
-	import Twitter from "./icons/twitter.svg?raw";
 	import Discord from "./icons/discord.svg?raw";
 
 	const contributors = [
@@ -55,14 +54,6 @@
 				{...externalLink}
 			>
 				{@html Github}
-			</IconButton>
-			<IconButton
-				href="https://twitter.com/{links.twitter}/"
-				title="Twitter profile"
-				aria-label="Twitter profile"
-				{...externalLink}
-			>
-				{@html Twitter}
 			</IconButton>
 			<IconButton
 				href="https://discord.gg/{links.discord}"
