@@ -73,15 +73,15 @@
 	>
 
 	<meta
-		content="A modern file explorer that pushes the boundaries of the platform."
+		content="Building the best file manager for Windows."
 		name="description"
 	/>
 	<meta
-		content="A modern file explorer that pushes the boundaries of the platform."
+		content="Building the best file manager for Windows."
 		name="og:description"
 	/>
 	<meta
-		content="A modern file explorer that pushes the boundaries of the platform."
+		content="Building the best file manager for Windows."
 		name="twitter:description"
 	/>
 	<meta
