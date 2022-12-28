@@ -4,6 +4,7 @@
 
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
+	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
 
@@ -18,23 +19,23 @@
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: "Home",
+			name: $_("navbar.home"),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: "Documentation",
+			name: $_("navbar.docs"),
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
 		},
 		// {
-		//     name: "Themes",
+		//     name: $_("navbar.themes"),
 		//     path: "/themes",
 		//     icon: PaintBrush
 		// },
 		{
-			name: "News",
+			name: $_("navbar.news"),
 			path: "/blog",
 			icon: News
 		}
@@ -42,12 +43,12 @@
 
 	const navbarButtons = [
 		{
-			label: "Discord",
+			label: $_("navbar.discord"),
 			href: `https://discord.gg/${discord}`,
 			icon: Chat
 		},
 		{
-			label: "GitHub",
+			label: $_("navbar.github"),
 			href: `https://github.com/${github.owner}/${github.repo}`,
 			icon: Code
 		}
@@ -55,7 +56,7 @@
 </script>
 
 <svelte:head>
-	<meta content="Files" name="og:site_name" />
+	<meta content={$_("metadata.name")} name="og:site_name" />
 
 	<meta content="website" name="og:type" />
 
@@ -73,15 +74,15 @@
 	>
 
 	<meta
-		content="Building the best file manager for Windows."
+		content={$_("metadata.description")}
 		name="description"
 	/>
 	<meta
-		content="Building the best file manager for Windows."
+		content={$_("metadata.description")}
 		name="og:description"
 	/>
 	<meta
-		content="Building the best file manager for Windows."
+		content={$_("metadata.description")}
 		name="twitter:description"
 	/>
 	<meta

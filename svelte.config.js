@@ -15,7 +15,8 @@ const config = {
 	kit: {
 		alias: {
 			$data: "src/data",
-			$layout: "src/layout"
+			$layout: "src/layout",
+			$i18n: "src/i18n"
 		},
 		adapter: adapter({ edge: true })
 	},
