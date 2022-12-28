@@ -2,7 +2,7 @@
 	import { links } from "$data/links";
 	import { externalLink, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
-	import { t } from "$data/i18n";
+	import { defaultLanguage, getLanguage, t } from "$data/i18n";
 
 	let scrollY: number;
 </script>
@@ -13,12 +13,20 @@
 />
 
 <PageSection id="design-section">
-	<HeaderChip>{t('section.design.chip')}</HeaderChip>
+	<HeaderChip>{t("section.design.chip")}</HeaderChip>
 	<h2>{t("section.design.header")}</h2>
 	<p>{t("section.design.description")}</p>
 	<div class="buttons-spacer">
-		<Button href="/download/" variant="accent">{t('section.design.download')}</Button>
-		<Button variant="hyperlink" href="/docs/">{t('section.design.learnmore')}</Button>
+		<Button href="/download/" variant="accent"
+			>{t("section.design.download")}</Button
+		>
+		<Button
+			variant="hyperlink"
+			href={getLanguage() === defaultLanguage
+				? "/docs/base/main"
+				: "/docs/" + getLanguage() + "-base/main"}
+			>{t("section.design.learnmore")}</Button
+		>
 	</div>
 	<div class="design-image">
 		<picture>

@@ -11,8 +11,8 @@
 
 	const downloadSources = [
 		{
-			name: t('download.sources.store.name'),
-			description: t('download.sources.store.description'),
+			name: t("download.sources.store.name"),
+			description: t("download.sources.store.description"),
 			href: isWindows
 				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
 				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
@@ -21,15 +21,15 @@
 			external: true
 		},
 		{
-			name: t('download.sources.sideload.title'),
-			description: t('download.sources.sideload.description'),
+			name: t("download.sources.sideload.title"),
+			description: t("download.sources.sideload.description"),
 			href: "/appinstallers/Files.stable.appinstaller",
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
 		{
-			name: t('download.sources.preview.title'),
-			description: t('download.sources.preview.description'),
+			name: t("download.sources.preview.title"),
+			description: t("download.sources.preview.description"),
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -41,18 +41,16 @@
 	});
 </script>
 
-<svelte:head>
-	<Metadata title={`Files • ${t("meta.header.download")}`} image="download" />
-</svelte:head>
+<Metadata title={`Files • ${t("meta.header.download")}`} image="download" />
 
 <slot />
 
 <main class="download-page">
 	<TextBlock variant="titleLarge" style="text-align: center;"
-		>{t('download.title')}</TextBlock
+		>{t("download.title")}</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		{t('download.sponsoring')}
+		{t("download.sponsoring")}
 
 		<Button
 			slot="action"
@@ -60,7 +58,7 @@
 			href="https://github.com/sponsors/yaira2"
 			{...externalLink}
 		>
-			{t('download.sponsornow')}
+			{t("download.sponsornow")}
 		</Button>
 
 		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>

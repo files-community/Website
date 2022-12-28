@@ -5,8 +5,13 @@ title: Building Files from source
 ### 1: Prerequisites
 
 - [Git](https://git-scm.com)
-- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) with the UWP Development Kit, including C++ UWP build tools.
-- C++ ATL for UWP build tools
+- [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) with the following components installed:
+	- Windows 11 SDK (10.0.22621.0)
+	- .NET 7 SDK
+	- MSVC v143 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
+	- C++ ATL for latest v143 build tools (x86 & x64 or ARM64)
+	- Git for Windows
+- [Windows App SDK 1.2](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/downloads#current-releases)
 
 ### 2: Clone the repository.
 

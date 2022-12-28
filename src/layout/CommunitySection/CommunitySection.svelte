@@ -4,7 +4,7 @@
 	import { Contributor, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
-	import { t } from "$data/i18n";
+	import { defaultLanguage, getLanguage, t } from "$data/i18n";
 
 	// Fetch contributors for the community section
 	const contributorRows = [
@@ -24,7 +24,12 @@
 				<Button variant="hyperlink" href="https://discord.gg/{links.discord}">
 					{t("section.community.discussion")}
 				</Button>
-				<Button variant="hyperlink" href="/docs/contributing/code-style">
+				<Button
+					variant="hyperlink"
+					href={getLanguage() === defaultLanguage
+						? "/docs/contributing/code-style"
+						: `/docs/${getLanguage()}-contributing/code-style`}
+				>
 					{t("section.community.contributor")}
 				</Button>
 			</div>

@@ -9,9 +9,7 @@
 	import { Metadata } from "$lib";
 </script>
 
-<svelte:head>
-	<Metadata title={`Files • ${t("meta.header.home")}`} />
-</svelte:head>
+<Metadata title={`Files • ${t("meta.header.home")}`} />
 
 <DesignSection />
 

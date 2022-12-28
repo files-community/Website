@@ -1,15 +1,6 @@
 ---
 title: What is Files?
 ---
-Files is a modern file manager that helps organize your files and folders easily. Robust multitasking experiences, helpful tags, and deep integrations add to an intuitive design – made by the community.
+Files is a modern file manager that helps organize your files and folders easily. Built and maintained by the open-source community, robust multitasking experiences, helpful tags, and deep integrations add to an intuitive design.
 
-## What makes Files unique?
-Files has a clean UI that is designed for ease of use, this enables everyone including beginners to take advantage of the rich set of features we built.
-
-## Accessibility
-Accessibility is one of our top priorities and we're proud of the fact that Files is designed to work with screen readers, keyboard navigation and high contrast modes.
-
-## Download Files
-- [Download Files](/download/stable)
-- [Download Preview Build](/download/preview)
-- [Download from the Microsoft Store](https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=FilesWebsite)
+Building a fully featured file manager is no small task but over the last 5 years, that's just what we've been doing. Our mission is to create the best file manager for Windows. Originally built with UWP, we're currently using WinAppSdk to take advantage of the latest features and UI libraries from Microsoft.

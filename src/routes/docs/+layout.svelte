@@ -95,12 +95,12 @@
 	};
 </script>
 
-<svelte:head>
-	<Metadata
-		title="Files • {pageTitle ? `${t('meta.header.docs')} - ${pageTitle}` : 'Docs'}"
-		image="docs"
-	/>
-</svelte:head>
+<Metadata
+	title="Files • {pageTitle
+		? `${t('meta.header.docs')} - ${pageTitle}`
+		: t('meta.header.docs')}"
+	image="docs"
+/>
 
 <section class="docs">
 	<aside class="sidebar">

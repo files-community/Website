@@ -10,9 +10,7 @@
 	};
 </script>
 
-<svelte:head>
-	<Metadata />
-</svelte:head>
+<Metadata />
 
 <section class="error-page">
 	<div class="window" use:draggable={draggableOptions}>
