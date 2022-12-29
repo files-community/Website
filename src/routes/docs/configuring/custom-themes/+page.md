@@ -13,8 +13,8 @@ To access theme values that are not exposed in the settings modal
 
 | Key                                   | Example                       | Default value                                |
 | ------------------------------------- | ------------------------------| -------------------------------------------- |
-| `AppThemeBackgroundColor`             | `4282795081`                  | `0`                                          |
-| `AppThemeAddressBarBackgroundColor`   | `4281873468`                  | `0`                                          |
-| `AppThemeSidebarBackgroundColor`      | `4282795081`                  | `0`                                          |
-| `AppThemeFileAreaBackgroundColor`     | `4280425768`                  | `0`                                          |
+| `AppThemeBackgroundColor`             | `#221d28`                     | `#00000000`                                  |
+| `AppThemeAddressBarBackgroundColor`   | `#38343c`                     | `#00000000`                                  |
+| `AppThemeSidebarBackgroundColor`      | `#464449`                     | `#00000000`                                  |
+| `AppThemeFileAreaBackgroundColor`     | `#221d28`                     | `#00000000`                                  |
 | `AppThemeFontFamily`                  | `Times New Roman`             | `Segoe UI Variable`                          |
