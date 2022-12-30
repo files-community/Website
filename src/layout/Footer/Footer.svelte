@@ -45,7 +45,7 @@
 					width="32"
 				/>
 			</picture>
-			{$_("metadata.name")}
+			Files
 		</a>
 		<div class="social-links">
 			<IconButton

@@ -56,35 +56,28 @@
 </script>
 
 <svelte:head>
-	<meta content={$_("metadata.name")} name="og:site_name" />
+	<meta content="Files" name="og:site_name" />
 
 	<meta content="website" name="og:type" />
 
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-light.svg"
+		href="/branding/logo{$page.route.id === 'themes'
+			? '-themes'
+			: ''}-light.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: light)"
-	>
+	/>
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
+		href="/branding/logo{$page.route.id === 'themes' ? '-themes' : ''}-dark.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
-	>
+	/>
 
-	<meta
-		content={$_("metadata.description")}
-		name="description"
-	/>
-	<meta
-		content={$_("metadata.description")}
-		name="og:description"
-	/>
-	<meta
-		content={$_("metadata.description")}
-		name="twitter:description"
-	/>
+	<meta content={$_("metadata.description")} name="description" />
+	<meta content={$_("metadata.description")} name="og:description" />
+	<meta content={$_("metadata.description")} name="twitter:description" />
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"

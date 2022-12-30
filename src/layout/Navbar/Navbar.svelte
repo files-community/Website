@@ -63,7 +63,7 @@
 					width="32"
 				/>
 			</picture>
-			{$_("metadata.name")}
+			Files
 		</a>
 		{#if innerWidth > 648}
 			<div class="divider" />

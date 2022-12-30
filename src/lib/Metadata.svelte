@@ -2,7 +2,7 @@
 	import { page } from "$app/stores";
 	import { _ } from "svelte-i18n";
 	
-	export let title = $_("metadata.name");
+	export let title = "Files";
 	export let image = "";
 	$: imageFile = image.startsWith("/")
 		? image
