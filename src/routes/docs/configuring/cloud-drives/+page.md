@@ -39,3 +39,6 @@ SynologyDrive requires downloading and installing the [desktop client](https://w
 
 ## pCloud Drive
 pCloud Drive requires downloading and installing the [desktop client](https://www.pcloud.com/download-free-online-cloud-file-storage.html).
+
+# Nutstore
+Nutstore requires downloading and installing the [desktop client](https://www.jianguoyun.com/s/downloads).
