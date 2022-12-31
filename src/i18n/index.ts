@@ -1,8 +1,8 @@
 import { addMessages, getLocaleFromNavigator, init } from "svelte-i18n";
 import en from "./locales/en.json";
-import he from "./locales/he.json";
+import heIL from "./locales/he-IL.json";
 
-type LocalesDictionary = typeof addMessages extends (
+type LocaleDictionary = typeof addMessages extends (
 	a: any,
 	locales: infer T,
 	...other: any
@@ -10,19 +10,30 @@ type LocalesDictionary = typeof addMessages extends (
 	? T
 	: never;
 
+type Locale = {
+	readonly values: LocaleDictionary;
+	readonly dir: "ltr" | "rtl";
+};
+
 export const locales = {
-	en: en,
-	he: he,
-} as const satisfies Record<string, Readonly<LocalesDictionary>>;
+	en: {
+		values: en,
+		dir: "ltr"
+	},
+	"he-IL": {
+		values: heIL,
+		dir: "rtl"
+	}
+} as const satisfies Record<string, Locale>;
 
 export default () => {
 	for (const [locale, localeObject] of Object.entries(locales)) {
-		if (Object.keys(localeObject).length !== 0)
-			addMessages(locale, localeObject);
+		if (Object.keys(localeObject.values).length !== 0)
+			addMessages(locale, localeObject.values);
 	}
 
 	init({
 		fallbackLocale: "en",
-		initialLocale: getLocaleFromNavigator()
+		initialLocale: /*  getLocaleFromNavigator() */ "he-IL"
 	});
 };
