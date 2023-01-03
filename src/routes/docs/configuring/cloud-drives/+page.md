@@ -2,7 +2,7 @@
 title: Cloud Drives
 ---
 
-Files will detect and display drives for most cloud providers as long as the desktop client application is installed. You can use this list to find the supported cloud drives download links for the respective clients. Please note that Files is not associated nor recommending any of these third party clients. 
+Files will detect and display drives for most cloud providers as long as the desktop client application is installed. You can use this list to find the supported cloud drives and download links for the respective clients. Please note that Files is not associated nor recommending any of these third party clients. 
 
 ## OneDrive
 OneDrive is included with Windows and no additional setup is required.
