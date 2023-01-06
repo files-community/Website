@@ -88,7 +88,7 @@
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.repo}/issues/new"
+				.repo}/issues/new/choose"
 		>
 			Give Feedback
 		</Button>
@@ -118,7 +118,7 @@
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.siteRepo}/issues/new"
+				.siteRepo}/issues/new/choose"
 		>
 			Found a bug?
 		</Button>
