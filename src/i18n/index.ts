@@ -34,6 +34,6 @@ export default () => {
 
 	init({
 		fallbackLocale: "en",
-		initialLocale: /*  getLocaleFromNavigator() */ "he-IL"
+		initialLocale: getLocaleFromNavigator()
 	});
 };
