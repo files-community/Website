@@ -168,6 +168,10 @@ This metadata table is required for all posts, and gives the website some basic 
 
 Since we don't need any mapping to be updated, posts can simply be deleted from the folder or edited without any hassle or extra steps.
 
+## Translating the Site
+
+Translation is done via Crowdin: https://crowdin.com/project/files-website
+
 # Contributors
 
 Want to contribute to this project? Feel free to open an [issue](/issues) or [pull request](/pulls).
