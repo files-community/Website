@@ -101,7 +101,7 @@
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.repo}/issues/new"
+				.repo}/issues/new/choose"
 		>
 			{$_("footer.feedback")}
 		</Button>
@@ -131,7 +131,7 @@
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.siteRepo}/issues/new"
+				.siteRepo}/issues/new/choose"
 		>
 			{$_("footer.report_bug")}
 		</Button>
