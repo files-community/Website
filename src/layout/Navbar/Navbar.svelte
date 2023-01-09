@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
-
+	import { _ } from "svelte-i18n";
 	import { externalLink, TreeView } from "$lib";
 	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
@@ -45,7 +45,7 @@
 
 <header class="navbar">
 	<nav class="inner">
-		<a class="logo" href="/" data-sveltekit-prefetch>
+		<a class="logo" href="/" data-sveltekit-preload-data="hover">
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
@@ -73,7 +73,7 @@
 				{:else}
 					<a
 						class="item"
-						data-sveltekit-prefetch
+						data-sveltekit-preload-data="hover"
 						class:selected={$page.url.pathname === path ||
 							($page.url.pathname.split("/").length > 1 &&
 								path.split("/").length > 1 &&
@@ -94,7 +94,7 @@
 		{/if}
 	</nav>
 	<div class="buttons">
-		<Tooltip text="#supportukraine" placement="bottom" delay={200} offset={0}>
+		<Tooltip text={$_("navbar.ukraine")} placement="bottom" delay={200} offset={0}>
 			<span
 				class="support-ukraine"
 				aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"
@@ -133,7 +133,7 @@
 			{:else if !sidebarTree}
 				<ListItem
 					type="navigation"
-					data-sveltekit-prefetch
+					data-sveltekit-preload-data="hover"
 					on:click={toggleSidebar}
 					selected={$page.url.pathname === path ||
 						($page.url.pathname.split("/").length > 1 &&
@@ -170,7 +170,7 @@
 		{#each buttons as { icon, href, label }}
 			<ListItem
 				{href}
-				data-sveltekit-prefetch
+				data-sveltekit-preload-data="hover"
 				type="navigation"
 				{...externalLink}
 			>

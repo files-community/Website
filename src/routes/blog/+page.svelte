@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { BlogCard, HeaderChip, Metadata, PageSection, tilt } from "$lib";
 	import { Button } from "fluent-svelte";
+	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
 
 	export let data: PageData;
@@ -37,18 +38,14 @@
 			/>
 		</a>
 		<div class="main-post-info">
-			<HeaderChip
-				>{new Date(
-					mainPost.metadata.date.replace(/-/g, "/").replace(/T.+/, "")
-				).toLocaleDateString("en-US", {
-					year: "numeric",
-					day: "numeric",
-					month: "short"
-				})}</HeaderChip
-			>
+			<HeaderChip>
+				{$date(new Date(mainPost.metadata.date), { format: "medium" })}
+			</HeaderChip>
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
-			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">Read More</Button>
+			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">
+				{$_("blog.read_more")}
+			</Button>
 		</div>
 	</div>
 	{#if posts.slice(1).length > 0}
@@ -58,7 +55,7 @@
 			{/each}
 		</div>
 	{:else}
-		<p>More posts coming soon!</p>
+		<p>{$_("blog.coming_soon")}</p>
 	{/if}
 </PageSection>
 

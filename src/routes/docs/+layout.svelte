@@ -3,18 +3,14 @@
 	import { fly } from "svelte/transition";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
+	import { _ } from "svelte-i18n";
 
 	import { links } from "$data/links";
 	import { externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
-	$: ({
-		docs,
-		pagePath,
-		docsPages,
-		currentPage
-	} = data);
+	$: ({ docs, pagePath, docsPages, currentPage } = data);
 
 	let value = "";
 	let searchQuery = "";
@@ -78,7 +74,9 @@
 </script>
 
 <Metadata
-	title="Files • {pageTitle ? `Docs - ${pageTitle}` : 'Docs'}"
+	title={pageTitle
+		? $_("metadata.docs_page", { values: { title: pageTitle } })
+		: $_("metadata.docs_home")}
 	image="docs"
 />
 
@@ -117,7 +115,7 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>No results found</ListItem>
+							<ListItem>{$_("docs.autocomplete_empty")}</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -160,7 +158,7 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>No results found</ListItem>
+							<ListItem>{$_("docs.autocomplete_empty")}</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -184,7 +182,7 @@
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
 							{...externalLink}
 						>
-							Edit this page
+							{$_("docs.edit_page")}
 						</Button>
 					</div>
 				</header>
