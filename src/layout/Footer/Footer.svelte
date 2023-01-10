@@ -2,6 +2,7 @@
 	import { externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
+	import { _ } from "svelte-i18n";
 	import Github from "./icons/github.svg?raw";
 	import Discord from "./icons/discord.svg?raw";
 
@@ -27,7 +28,7 @@
 
 <PageSection type="footer" id="page-footer">
 	<div class="column">
-		<a class="logo" href="/" data-sveltekit-prefetch>
+		<a class="logo" href="/" data-sveltekit-preload-data="hover">
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
@@ -64,7 +65,9 @@
 				{@html Discord}
 			</IconButton>
 		</div>
-		<p>Copyright © 2021 - {new Date().getFullYear()}, The Files Authors</p>
+		<p>
+			{$_("footer.copyright", { values: { year: new Date().getFullYear() } })}
+		</p>
 		<a
 			href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss"
 			{...externalLink}
@@ -74,27 +77,37 @@
 	</div>
 	<div class="column">
 		<p>Pages</p>
-		<Button variant="hyperlink" data-sveltekit-prefetch href="/">Home</Button>
-		<Button variant="hyperlink" data-sveltekit-prefetch href="/docs">
-			Docs
+		<Button variant="hyperlink" data-sveltekit-preload-data="hover" href="/">
+			{$_("footer.home")}
 		</Button>
-		<Button variant="hyperlink" data-sveltekit-prefetch href="/blog">
-			News
+		<Button
+			variant="hyperlink"
+			data-sveltekit-preload-data="hover"
+			href="/docs"
+		>
+			{$_("footer.docs")}
+		</Button>
+		<Button
+			variant="hyperlink"
+			data-sveltekit-preload-data="hover"
+			href="/blog"
+		>
+			{$_("footer.news")}
 		</Button>
 	</div>
 	<div class="column">
-		<p>Contribute to Files</p>
+		<p>{$_("footer.contribute")}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.repo}/issues/new"
+				.repo}/issues/new/choose"
 		>
-			Give Feedback
+			{$_("footer.feedback")}
 		</Button>
 
 		<Button variant="hyperlink" href="/docs/contributing/code-style">
-			Style Guide
+			{$_("footer.style_guide")}
 		</Button>
 
 		<Button
@@ -102,33 +115,33 @@
 			href="https://crowdin.com/project/files-app"
 			variant="hyperlink"
 		>
-			Translations
+			{$_("footer.translations")}
 		</Button>
 
-		<p>Contribute to this site</p>
+		<p>{$_("footer.contribute_site")}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
-			GitHub Repo
+			{$_("footer.github")}
 		</Button>
 
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
-				.siteRepo}/issues/new"
+				.siteRepo}/issues/new/choose"
 		>
-			Found a bug?
+			{$_("footer.report_bug")}
 		</Button>
 	</div>
 	<div class="column">
-		<p>Web Team</p>
+		<p>{$_("footer.web_team")}</p>
 		{#each contributors as contributor}
-			<Button variant="hyperlink" href={contributor.link} {...externalLink}
-				>{contributor.name}</Button
-			>
+			<Button variant="hyperlink" href={contributor.link} {...externalLink}>
+				{contributor.name}
+			</Button>
 		{/each}
 	</div>
 </PageSection>

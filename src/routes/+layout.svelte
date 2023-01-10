@@ -4,6 +4,7 @@
 
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
+	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
 
@@ -18,23 +19,23 @@
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: "Home",
+			name: $_("navbar.home"),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: "Documentation",
+			name: $_("navbar.docs"),
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
 		},
 		// {
-		//     name: "Themes",
+		//     name: $_("navbar.themes"),
 		//     path: "/themes",
 		//     icon: PaintBrush
 		// },
 		{
-			name: "News",
+			name: $_("navbar.news"),
 			path: "/blog",
 			icon: News
 		}
@@ -42,12 +43,12 @@
 
 	const navbarButtons = [
 		{
-			label: "Discord",
+			label: $_("navbar.discord"),
 			href: `https://discord.gg/${discord}`,
 			icon: Chat
 		},
 		{
-			label: "GitHub",
+			label: $_("navbar.github"),
 			href: `https://github.com/${github.owner}/${github.repo}`,
 			icon: Code
 		}
@@ -60,30 +61,23 @@
 	<meta content="website" name="og:type" />
 
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-light.svg"
+		href="/branding/logo{$page.route.id === 'themes'
+			? '-themes'
+			: ''}-light.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: light)"
-	>
+	/>
 	<link
-		href="/branding/logo{$page.route.id === "themes" ? '-themes' : ''}-dark.svg"
+		href="/branding/logo{$page.route.id === 'themes' ? '-themes' : ''}-dark.svg"
 		rel="icon"
 		type="image/svg+xml"
 		media="(prefers-color-scheme: dark)"
-	>
+	/>
 
-	<meta
-		content="Building the best file manager for Windows."
-		name="description"
-	/>
-	<meta
-		content="Building the best file manager for Windows."
-		name="og:description"
-	/>
-	<meta
-		content="Building the best file manager for Windows."
-		name="twitter:description"
-	/>
+	<meta content={$_("metadata.description")} name="description" />
+	<meta content={$_("metadata.description")} name="og:description" />
+	<meta content={$_("metadata.description")} name="twitter:description" />
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"

@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { _ } from "svelte-i18n";
 	import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw";
 
 	export let description: string = "";
@@ -11,7 +12,7 @@
 	<button class="feature-card" on:click class:selected {...$$restProps}>
 		{@html icon}
 		<h4>
-			<slot>Unknown</slot>
+			<slot>{$_("home.features.unknown")}</slot>
 		</h4>
 		<p>{description}</p>
 	</button>
@@ -19,7 +20,7 @@
 	<div class="feature-card" on:click class:selected {...$$restProps}>
 		{@html icon}
 		<h4>
-			<slot>Unknown</slot>
+			<slot>{$_("home.features.unknown")}</slot>
 		</h4>
 		<p>{description}</p>
 	</div>

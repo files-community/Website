@@ -1,0 +1,90 @@
+{
+	"metadata": {
+		"home": "Files • Kezdőlap",
+		"docs_home": "Files • Dokumentáció",
+		"docs_page": "Files • Dokumentáció - {title}",
+		"description": "Building the best file manager for Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Közösség",
+			"title": "Tervezte és fejlesztette: te.",
+			"description": "A Files egy ingyenes és nyílt forráskódú szoftver, amit több száz közreműködőből álló közösség tervez és tart fenn.",
+			"discord": "Csatlakozz a beszélgetéshez",
+			"docs": "Legyél közreműködő",
+			"contributions": "{amount, plural, =0 {Közreműködés nélkül} one {# közreműködés} other {# közreműködés}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Power meets beauty.",
+			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+			"download": "Letöltés",
+			"learn_more": "További információk"
+		},
+		"features": {
+			"chip": "Funkciók",
+			"title": "Már ezt is tudja.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
+			"unknown": "Unknown",
+			"cloud": {
+				"title": "Felhő integráció",
+				"description": "A felhőszolgáltatókkal való integrációnak köszönhetően az oldalsávról elérheted többek között a OneDrive-ban, Google Drive-ban, vagy iCloud-ban tárolt dokumentumatidat, fotóidat is."
+			},
+			"preview": {
+				"title": "Fájl előnézet",
+				"description": "Dokumentumok, fotók, videók és még sok más fájltípus tartalmába belenézhetsz, anélkül hogy megnyitnád őket."
+			},
+			"tags": {
+				"title": "Címkézett fájlok és mappák",
+				"description": "Egyszerűen megjelölheted fájljaidat és mappáidat későbbre színezett és névvel ellátott címkékkel, az egyszerű megkülönböztetés céljából. Természetesen egyéni címkéket is létrehozhatsz!"
+			},
+			"tabs": {
+				"title": "Multitaszking lapokkal",
+				"description": "Kerüld el a sok ablak közötti navigálást. A Files a böngészőkhöz hasonló lap-elrendezést valósít meg, amit sok gyorsbillentyű egészít ki."
+			}
+		},
+		"themes": {
+			"chip": "Témák",
+			"title": "Distinctly personal.",
+			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
+			"grey_blue": "Dark Grey • Light Blue",
+			"grey_green": "Blue Grey • Neon Green",
+			"purple": "Purple",
+			"yellow_white": "Yellow • White",
+			"white_teal": "Cool White • Dark Teal",
+			"sky_blue": "Sky Blue",
+			"select_theme": "{index}. téma kiválasztása"
+		}
+	},
+	"blog": {
+		"coming_soon": "Több bejegyzés hamarosan!",
+		"read_more": "Bővebben"
+	},
+	"docs": {
+		"autocomplete_empty": "No results found",
+		"edit_page": "Oldal módosítása"
+	},
+	"footer": {
+		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"home": "Kezdőlap",
+		"docs": "Dokumentáció",
+		"news": "Hírek",
+		"contribute": "Közreműködés - Files",
+		"feedback": "Küldj visszajelzést",
+		"style_guide": "Kódstílus",
+		"translations": "Fordítások",
+		"contribute_site": "Közreműködés - honlap",
+		"github": "GitHub repó",
+		"report_bug": "Hibát találtál?",
+		"web_team": "Web team"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "Kezdőlap",
+		"docs": "Dokumentáció",
+		"news": "Hírek",
+		"themes": "Témák",
+		"discord": "Discord",
+		"github": "GitHub"
+	}
+}

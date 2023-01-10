@@ -1,0 +1,90 @@
+{
+	"metadata": {
+		"home": "Files • ホーム",
+		"docs_home": "Files • ドキュメント",
+		"docs_page": "Files • ドキュメント - {title}",
+		"description": "Windowsの最高のファイルマネージャを作る。"
+	},
+	"home": {
+		"community": {
+			"chip": "コミュニティ",
+			"title": "設計、開発はあなたの声から。",
+			"description": "Filesはフリーでオープンソースのソフトウェアで、多くの開発者によってメンテナンス・設計されています。",
+			"discord": "議論に参加",
+			"docs": "開発者になる",
+			"contributions": "{amount, plural, =0 {コントリビューションなし} one {# コントリビューション} other {# コントリビューション}}"
+		},
+		"design": {
+			"chip": "デザイン",
+			"title": "力は美と出会う。",
+			"description": "Windows ファーストの美しいデザインをあなたに。向上した生産性で、あなたのファイルを管理。複数のタブを使い、フォルダーを行き来して作業。その他にも魅力は沢山。",
+			"download": "ダウンロード",
+			"learn_more": "もっと詳しく"
+		},
+		"features": {
+			"chip": "機能",
+			"title": "準備万端。",
+			"description": "クラウドファイルの統合、複数のタブやレイアウト、リッチなプレビュー。 Filesは、モダンなファイラーらしい使える機能が盛り沢山。",
+			"unknown": "不明",
+			"cloud": {
+				"title": "シームレスなクラウド連携",
+				"description": "OneDrive、Google Drive、iCloudなどのクラウドサービスと連携して、クラウド上のドキュメントや写真をサイドバーから管理。"
+			},
+			"preview": {
+				"title": "ファイルのプレビュー",
+				"description": "ドキュメント、写真などを開かずにプレビュー。リッチなプレビュー、構文の強調表示、マークダウン、動画のプレビューまでサポート。"
+			},
+			"tags": {
+				"title": "タグ付きファイルとフォルダ",
+				"description": "色付きタグと名前付きタグを割り当ててファイルやフォルダをすばやく整理、後での確認もカンタン。 独自のカスタムタグを追加することも。"
+			},
+			"tabs": {
+				"title": "複数のタブでマルチタスク",
+				"description": "複数のウィンドウをまとめて、デスクトップをスッキリ。Filesには、ブラウザーのようにキーボードショートカットも使えるタブインターフェイスを完備。"
+			}
+		},
+		"themes": {
+			"chip": "テーマ",
+			"title": "Distinctly personal.",
+			"description": "ファイラーをあなたらしく。Filesは色から細かい見た目まで、さまざまにカスタマイズできるユーザーインターフェイスを搭載。標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズ。",
+			"grey_blue": "ダークグレー • ライトブルー",
+			"grey_green": "ブルーグレー • ネオングリーン",
+			"purple": "パープル",
+			"yellow_white": "イエロー・ホワイト",
+			"white_teal": "クールホワイト • ダークティール",
+			"sky_blue": "スカイブルー",
+			"select_theme": "テーマ #{index} を選択"
+		}
+	},
+	"blog": {
+		"coming_soon": "その他の投稿は近日公開予定です！",
+		"read_more": "もっと読む"
+	},
+	"docs": {
+		"autocomplete_empty": "結果なし",
+		"edit_page": "このページを編集"
+	},
+	"footer": {
+		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"contribute": "Filesに貢献",
+		"feedback": "フィードバックを送信",
+		"style_guide": "コーディング規約",
+		"translations": "翻訳",
+		"contribute_site": "このサイトに貢献",
+		"github": "GitHub リポジトリ",
+		"report_bug": "バグを見つけましたか？",
+		"web_team": "ウェブサイト チーム"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"themes": "テーマ",
+		"discord": "Discord",
+		"github": "GitHub"
+	}
+}
