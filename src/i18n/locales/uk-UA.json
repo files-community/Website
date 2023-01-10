@@ -45,7 +45,7 @@
 		},
 		"themes": {
 			"chip": "Themes",
-			"title": "Distictly personal.",
+			"title": "Distinctly personal.",
 			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
@@ -66,24 +66,24 @@
 	},
 	"footer": {
 		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
 		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"feedback": "Надіслати відгук",
+		"style_guide": "Посібник зі стилю коду",
+		"translations": "Переклад",
+		"contribute_site": "Внести внесок у розвиток цього сайту",
+		"github": "Репозиторій на Github",
+		"report_bug": "Знайшли помилку?",
+		"web_team": "Команда"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
+		"themes": "Теми",
 		"discord": "Discord",
 		"github": "Github"
 	}
