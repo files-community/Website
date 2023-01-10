@@ -1,0 +1,90 @@
+{
+	"metadata": {
+		"home": "Files • Accueil",
+		"docs_home": "Files • Documentation",
+		"docs_page": "Files • Documentation - {title}",
+		"description": "Construire le meilleur gestionnaire de fichiers pour Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Communauté",
+			"title": "Conçu et développé par vous.",
+			"description": "Files est un logiciel gratuit et open source, maintenu et conçu par des centaines de contributeurs.",
+			"discord": "Rejoindre la discussion",
+			"docs": "Devenir un contributeur",
+			"contributions": "{amount, plural, =0 {Aucune contribution} one {# contribution} other {# contributions}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "La puissance rencontre l'élégance.",
+			"description": "Explorez un design pensé pour Windows. Gérez tous vos fichiers avec une productivité accrue. Travaillez sur plusieurs dossiers simultanément avec des onglets. Et bien plus encore.",
+			"download": "Téléchargement",
+			"learn_more": "En apprendre plus"
+		},
+		"features": {
+			"chip": "Fonctionnalités",
+			"title": "Il le fait déjà.",
+			"description": "L'intégration du Cloud ? Des onglets et plusieurs dispositions ? Des aperçus de fichiers enrichis ? Files vous offre ces fonctionnalités robustes que vous pouvez attendre d'un gestionnaire de fichiers moderne.",
+			"unknown": "Inconnu",
+			"cloud": {
+				"title": "Intégration harmonieuse du cloud",
+				"description": "L'intégration des services cloud tels que OneDrive, Google Drive et iCloud vous permettent de gérer vos documents et photos dans le cloud, directement depuis la barre latérale."
+			},
+			"preview": {
+				"title": "Aperçu de fichiers",
+				"description": "Prévisualisez documents, photos et bien plus sans les ouvrir. La prise en charge des aperçus riches, la coloration syntaxique, le Markdown et la lecture vidéo est intégrée."
+			},
+			"tags": {
+				"title": "Fichiers & Dossiers étiquetés",
+				"description": "Marquez et organisez rapidement vos fichiers et dossiers en leur attribuant des étiquettes colorées et nommées pour en faciliter l'identification. Vous pouvez même ajouter vos propres étiquettes personnalisées !"
+			},
+			"tabs": {
+				"title": "Multitâche avec les onglets",
+				"description": "Évitez les innombrables fenêtres et maintenez votre bureau clair. Files est doté d'une interface avec onglets semblable à celle d'un navigateur, le tout avec des raccourcis clavier."
+			}
+		},
+		"themes": {
+			"chip": "Thèmes",
+			"title": "Distinctly personal.",
+			"description": "Faites ce qu'il vous plait. Files dispose d'une interface utilisateur totalement personnalisable, jusqu'à la moindre couleur et texture. Essayez les thèmes personnalisés intégrés dans Files ou plongez dans la documentation et créez les vôtres.",
+			"grey_blue": "Gris Foncé • Bleu Clair",
+			"grey_green": "Gris Bleu • Vert Fluo",
+			"purple": "Violet",
+			"yellow_white": "Jaune • Blanc",
+			"white_teal": "Blanc Froid • Bleu Foncé",
+			"sky_blue": "Bleu Ciel",
+			"select_theme": "Choisir le thème #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "De nouveaux posts bientôt !",
+		"read_more": "En Savoir Plus"
+	},
+	"docs": {
+		"autocomplete_empty": "Aucun résultat",
+		"edit_page": "Modifier cette page"
+	},
+	"footer": {
+		"copyright": "Copyright © 2021 - {year}, Les Auteurs de Files",
+		"home": "Accueil",
+		"docs": "Documentation",
+		"news": "Actualités",
+		"contribute": "Contribuer à Files",
+		"feedback": "Donner votre avis",
+		"style_guide": "Guide de style",
+		"translations": "Traductions",
+		"contribute_site": "Contribuer au site",
+		"github": "Dépôt Github",
+		"report_bug": "Un bug?",
+		"web_team": "Équipe Web"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "Accueil",
+		"docs": "Documentation",
+		"news": "Actualités",
+		"themes": "Thèmes",
+		"discord": "Discord",
+		"github": "Github"
+	}
+}

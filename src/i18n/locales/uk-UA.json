@@ -1,0 +1,90 @@
+{
+	"metadata": {
+		"home": "Files • Home",
+		"docs_home": "Files • Docs",
+		"docs_page": "Files • Docs - {title}",
+		"description": "Building the best file manager for Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Community",
+			"title": "Designed and developed by you.",
+			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"discord": "Join the discussion",
+			"docs": "Become a contributor",
+			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Power meets beauty.",
+			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+			"download": "Download",
+			"learn_more": "Learn more"
+		},
+		"features": {
+			"chip": "Features",
+			"title": "It already does that.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
+			"unknown": "Unknown",
+			"cloud": {
+				"title": "Seamless cloud integration",
+				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+			},
+			"preview": {
+				"title": "File preview",
+				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+			},
+			"tags": {
+				"title": "Tagged Files & Folders",
+				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+			},
+			"tabs": {
+				"title": "Multitask with tabs",
+				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+			}
+		},
+		"themes": {
+			"chip": "Themes",
+			"title": "Distinctly personal.",
+			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
+			"grey_blue": "Dark Grey • Light Blue",
+			"grey_green": "Blue Grey • Neon Green",
+			"purple": "Purple",
+			"yellow_white": "Yellow • White",
+			"white_teal": "Cool White • Dark Teal",
+			"sky_blue": "Sky Blue",
+			"select_theme": "Select theme #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "More posts coming soon!",
+		"read_more": "Read More"
+	},
+	"docs": {
+		"autocomplete_empty": "No results found",
+		"edit_page": "Edit this page"
+	},
+	"footer": {
+		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
+		"contribute": "Contribute to Files",
+		"feedback": "Надіслати відгук",
+		"style_guide": "Посібник зі стилю коду",
+		"translations": "Переклад",
+		"contribute_site": "Внести внесок у розвиток цього сайту",
+		"github": "Репозиторій на Github",
+		"report_bug": "Знайшли помилку?",
+		"web_team": "Команда"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
+		"themes": "Теми",
+		"discord": "Discord",
+		"github": "Github"
+	}
+}
