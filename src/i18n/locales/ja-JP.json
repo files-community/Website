@@ -1,90 +1,90 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "Files • ホーム",
+		"docs_home": "Files • ドキュメント",
+		"docs_page": "Files • ドキュメント - {title}",
+		"description": "Windowsの最高のファイルマネージャを作る。"
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "コミュニティ",
+			"title": "設計、開発はあなたの声から。",
+			"description": "Filesはフリーでオープンソースのソフトウェアで、多くの開発者によってメンテナンス・設計されています。",
+			"discord": "議論に参加",
+			"docs": "開発者になる",
+			"contributions": "{amount, plural, =0 {コントリビューションなし} one {# コントリビューション} other {# コントリビューション}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "デザイン",
+			"title": "力は美と出会う。",
+			"description": "Windows ファーストの美しいデザインをあなたに。向上した生産性で、あなたのファイルを管理。複数のタブを使い、フォルダーを行き来して作業。その他にも魅力は沢山。",
+			"download": "ダウンロード",
+			"learn_more": "もっと詳しく"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "機能",
+			"title": "準備万端。",
+			"description": "クラウドファイルの統合、複数のタブやレイアウト、リッチなプレビュー。 Filesは、モダンなファイラーらしい使える機能が盛り沢山。",
+			"unknown": "不明",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "シームレスなクラウド連携",
+				"description": "OneDrive、Google Drive、iCloudなどのクラウドサービスと連携して、クラウド上のドキュメントや写真をサイドバーから管理。"
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "ファイルのプレビュー",
+				"description": "ドキュメント、写真などを開かずにプレビュー。リッチなプレビュー、構文の強調表示、マークダウン、動画のプレビューまでサポート。"
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "タグ付きファイルとフォルダ",
+				"description": "色付きタグと名前付きタグを割り当ててファイルやフォルダをすばやく整理、後での確認もカンタン。 独自のカスタムタグを追加することも。"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "複数のタブでマルチタスク",
+				"description": "複数のウィンドウをまとめて、デスクトップをスッキリ。Filesには、ブラウザーのようにキーボードショートカットも使えるタブインターフェイスを完備。"
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distictly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "テーマ",
+			"title": "Distinctly personal.",
+			"description": "ファイラーをあなたらしく。Filesは色から細かい見た目まで、さまざまにカスタマイズできるユーザーインターフェイスを搭載。標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズ。",
+			"grey_blue": "ダークグレー • ライトブルー",
+			"grey_green": "ブルーグレー • ネオングリーン",
+			"purple": "パープル",
+			"yellow_white": "イエロー・ホワイト",
+			"white_teal": "クールホワイト • ダークティール",
+			"sky_blue": "スカイブルー",
+			"select_theme": "テーマ #{index} を選択"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "その他の投稿は近日公開予定です！",
+		"read_more": "もっと読む"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "結果なし",
+		"edit_page": "このページを編集"
 	},
 	"footer": {
 		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"contribute": "Filesに貢献",
+		"feedback": "フィードバックを送信",
+		"style_guide": "コーディング規約",
+		"translations": "翻訳",
+		"contribute_site": "このサイトに貢献",
+		"github": "GitHub リポジトリ",
+		"report_bug": "バグを見つけましたか？",
+		"web_team": "ウェブサイト チーム"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"themes": "テーマ",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	}
 }
