@@ -1,89 +1,89 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "Files • Главная",
+		"docs_home": "Files • Документация",
+		"docs_page": "Files • Документация - {title}",
+		"description": "Создание лучшего файлового менеджера для Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Сообщество",
+			"title": "Спроектировано и разработано вами.",
+			"description": "Files является свободным Open-Source программным обеспечением, которое поддерживается коллективом из сотни участников.",
+			"discord": "Присоединиться к обсуждению",
+			"docs": "Стать участником",
+			"contributions": "{amount, plural, =0 {Нет вкладов} one {# вклад} few {# вклада} other {# вкладов}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Дизайн",
+			"title": "Сила встречается с красотой.",
+			"description": "Откройте для себя красивый дизайн для Windows. Управляйте всеми своими файлами с повышенной производительностью. Работайте с несколькими папками с помощью вкладок. И многое другое.",
+			"download": "Скачать",
+			"learn_more": "Узнать больше"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Функции",
+			"title": "Уже сделано это.",
+			"description": "Интеграция с облачными сервисами? Вкладки и несколько способов расположения? Расширенный предварительный просмотр файлов? Files обладает надежными функциями, которые вы ожидаете от современного файлового менеджера.",
+			"unknown": "Неизвестно",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Полная интеграция с облачными сервисами",
+				"description": "Интеграция с облачными сервисами, такими как OneDrive, Google Drive и iCloud, позволяет вам управлять своими документами и фотографиями в облаке прямо с боковой панели."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Предварительный просмотр файла",
+				"description": "Просматривайте документы, фотографии и многое другое, не открывая их. Встроена поддержка расширенного предварительного просмотра, подсветки синтаксиса, уценки и воспроизведения видео."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Файлы и папки с метками",
+				"description": "Быстро помечайте и упорядочивайте свои файлы и папки на будущее, назначая им цветные и именованные метки для легкой идентификации. Вы даже можете добавить свои собственные метки!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Многозадачность с вкладками",
+				"description": "Избегайте нескольких окон и избавьте свой рабочий стол от беспорядка. Files имеют браузерный интерфейс с вкладками и сочетаниями клавиш."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distictly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Темы",
+			"title": "Distinctly personal.",
+			"description": "Будет так, как ты скажешь. Files имеет полностью настраиваемый пользовательский интерфейс, вплоть до цветов и материалов. Попробуйте пользовательские темы, встроенные в Files, или погрузитесь с головой и создайте свои собственные.",
+			"grey_blue": "Темно-серый • Голубой",
+			"grey_green": "Серый синий • Неоново-зеленый",
+			"purple": "Фиолетовый",
+			"yellow_white": "Желтый • Белый",
+			"white_teal": "Холодный белый • Темно-бирюзовый",
+			"sky_blue": "Лазурный",
+			"select_theme": "Выбрать тему #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Больше новостей совсем скоро!",
+		"read_more": "Читать далее"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Результаты не найдены",
+		"edit_page": "Редактировать эту страницу"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "Все права защищены © 2021 - {year}, Авторы Files",
+		"home": "Главная",
+		"docs": "Документация",
+		"news": "Новости",
+		"contribute": "Внести вклад в развитие Files",
+		"feedback": "Обратная связь",
+		"style_guide": "Руководство по стилю кода",
+		"translations": "Перевод",
+		"contribute_site": "Внести вклад в развитие этого сайта",
+		"github": "Репозиторий на Github",
+		"report_bug": "Нашли ошибку?",
+		"web_team": "Команда"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"home": "Главная",
+		"docs": "Документация",
+		"news": "Новости",
+		"themes": "Темы",
 		"discord": "Discord",
 		"github": "Github"
 	}
