@@ -42,3 +42,6 @@ https://www.pcloud.com/download-free-online-cloud-file-storage.html
 
 ## Nutstore
 https://www.jianguoyun.com/s/download
+
+## Seadrive
+https://www.seafile.com/en/download/
