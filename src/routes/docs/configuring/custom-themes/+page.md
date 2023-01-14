@@ -6,8 +6,7 @@ Files comes with a large collection of custom background colors but additional c
 
 ## Advanced themeing
 To access theme values that are not exposed in the settings modal
-1. Open Files > Settings > About > Open log location. This will open the app data folder for Files.
-2. Open the `settings` folder and open the `user_settings.json` file. It's a good idea to close Files while modifying the settings file.
+1. Open Files settings > Advanced > Edit settings file. This opens the main settings in your default text editor.
 
 ### Available resources for themeing
 
