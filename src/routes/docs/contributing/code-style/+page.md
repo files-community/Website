@@ -45,19 +45,19 @@ To make the codebase consistent and easy to understand, we require you to follow
 
 ### 3. Code readability and clarity
 
-- Do not use curly brackets for single line `if`, `for` and `foreach` statements.'
+- Do not use curly brackets for single line `if`, `for` and `foreach` statements
 - Do not use `#region` directives
 - Align `while();` on the same line of curly bracket of `do..while`
 - Use the prefixes `Is`, `Has`, `Have`, `Any`, `Can` or similar keywords for boolean names and method names if
-  applicable.
-- Do not use `Enum` or `Flag(s)` suffixes/prefixes for Enum names.
+  applicable
+- Do not use `Enum` or `Flag(s)` suffixes/prefixes for Enum names
 - Align curly brackets on new lines
 - Fields, properties, methods and constructors must be separated by one line except for property backing fields that are
   not separated by any amount of lines
 - Do not manually invoke event handling functions or commands
 - Do not use `public` modifiers in interface's properties and functions
 - Define constant types in `Constants` class following its structure
-- Mark classes as `abstract` or `sealed` if applicable.
+- Mark classes as `abstract` or `sealed` if applicable
 - Interfaces must be documented
 - Always create new `EventArgs` classes for event arguments
 - Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
