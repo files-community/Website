@@ -15,4 +15,4 @@ Windows doesn't have an official method for changing the default file manager. I
 
 ## Known limitations
 - This method doesn't replace the system file pickers
-- Some programes will still open File explorer
+- Some programs will still open File explorer
