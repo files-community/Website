@@ -8,12 +8,11 @@ Windows doesn't have an official method for changing the default file manager. I
 
 ## Set Files as the default file manager 
 
-1. Open the settings dialog in Files
-2. Navigate to the experimental page
-3. Toggle the switch for making Files the default File Manager
+1. Open Files settings > Advanced > Set Files as default manager
 
 ![Settings dialog](/docs-resources/Settings-Dialog-Experimental.jpg)
 
 
 ## Known limitations
 - This method doesn't replace the system file pickers
+- Some programes will still open File explorer
