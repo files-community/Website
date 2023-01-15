@@ -6,7 +6,7 @@ Files comes with a large collection of custom background colors but additional c
 
 ## Advanced themeing
 To access theme values that are not exposed in the settings modal
-1. Open Files settings > Advanced > Edit settings file. This opens the main settings in your default text editor.
+1. Open Files settings > Advanced > Edit settings file. This will open the main settings file in your default text editor.
 
 ### Available resources for themeing
 
