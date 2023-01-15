@@ -16,7 +16,7 @@
 		},
 		"design": {
 			"chip": "Design",
-			"title": "Power meets beauty.",
+			"title": "Gyors és szép.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
 			"download": "Letöltés",
 			"learn_more": "További információk"
@@ -25,7 +25,7 @@
 			"chip": "Funkciók",
 			"title": "Már ezt is tudja.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"unknown": "Ismeretlen",
 			"cloud": {
 				"title": "Felhő integráció",
 				"description": "A felhőszolgáltatókkal való integrációnak köszönhetően az oldalsávról elérheted többek között a OneDrive-ban, Google Drive-ban, vagy iCloud-ban tárolt dokumentumatidat, fotóidat is."
@@ -47,12 +47,12 @@
 			"chip": "Témák",
 			"title": "Distinctly personal.",
 			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
+			"grey_blue": "Sötétszürke • Világoskék",
+			"grey_green": "Kékesszürke • Neonzöld",
+			"purple": "Lila",
+			"yellow_white": "Sárga • Fehér",
+			"white_teal": "Fehér • Pávakék",
+			"sky_blue": "Égszínkék",
 			"select_theme": "{index}. téma kiválasztása"
 		}
 	},
@@ -61,7 +61,7 @@
 		"read_more": "Bővebben"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
+		"autocomplete_empty": "Nincs találat",
 		"edit_page": "Oldal módosítása"
 	},
 	"footer": {
