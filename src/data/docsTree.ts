@@ -1,4 +1,5 @@
 import type { DocsMetadata, DocsNode, DocsTree } from "$data/docs";
+import { error } from "@sveltejs/kit";
 
 const PATH_TRIM = /(?:..\/routes\/docs)((\/[\w-]+)+)\//;
 
@@ -26,8 +27,8 @@ const getTree = (pages: DocsNode[]) => {
         ([path, node]) => {
             const docsPath = path.match(PATH_TRIM)?.[1];
             if (!docsPath)
-                throw new Error(`this is an invalid docs page path: $path`);
-                
+                throw error(404, `this is an invalid docs page path: $path`);
+
             return {
                 pages: pages.filter(page => page.path.startsWith(docsPath)),
                 path: docsPath,
