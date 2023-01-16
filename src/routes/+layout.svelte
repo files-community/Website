@@ -4,6 +4,7 @@
 
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
+	import type { DocsMetadata, DocsNode } from "$data/docs";
 	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
@@ -17,6 +18,20 @@
 
 	const { github, discord } = links;
 
+	const getDocsTree = () => {
+		const rawPages = import.meta.glob<DocsMetadata>(
+			["./docs/**/*/+page.md"], // import docs sub pages
+			{ eager: true, import: "metadata" }
+		);
+
+		return Object.entries(rawPages).map(([path, node]) => {
+			return {
+				title: node.title,
+				path: path.match(/(\/[\w-]+)+/)?.[0] ?? ""
+			} as DocsNode;
+		});
+	};
+
 	const navbarItems: NavbarItem[] = [
 		{
 			name: $_("navbar.home"),
@@ -26,7 +41,7 @@
 		{
 			name: $_("navbar.docs"),
 			path: "/docs",
-			sidebarTree: $page.data.docs ?? [],
+			sidebarTree: getDocsTree(),
 			icon: Book
 		},
 		// {

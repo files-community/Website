@@ -15,6 +15,7 @@ specifiers:
   eslint-plugin-svelte3: ^4.0.0
   fluent-svelte: ^1.6.0
   mdsvex: ^0.10.6
+  pnpm: ^7.25.0
   postcss: ^8.4.21
   postcss-media-minmax: ^5.0.0
   prettier: ^2.8.2
@@ -30,6 +31,9 @@ specifiers:
   tslib: ^2.4.1
   typescript: ^4.9.4
   vite: ^4.0.4
+
+dependencies:
+  pnpm: 7.25.0
 
 devDependencies:
   '@fec/remark-a11y-emoji': 3.1.0
@@ -2461,6 +2465,12 @@ packages:
     resolution: {integrity: sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==}
     engines: {node: '>=8.6'}
     dev: true
+
+  /pnpm/7.25.0:
+    resolution: {integrity: sha512-FGFQUON8kJ6ma39elJ8lyD8wPIfgp3opGJD9sX0TgIJk4zSr556qCgC8AN+3BFHe4yuRkEauf4JVLW2RKyyEcA==}
+    engines: {node: '>=14.6'}
+    hasBin: true
+    dev: false
 
   /postcss-calc/8.2.4_postcss@8.4.21:
     resolution: {integrity: sha512-SmWMSJmB8MRnnULldx0lQIyhSNvuDl9HfrZkaqqE/WHAhToYsAvDq+yAsA/kIyINDszOp3Rh0GFoNuH5Ypsm3Q==}
