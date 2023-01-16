@@ -27,7 +27,7 @@ const getTree = (pages: DocsNode[]) => {
         ([path, node]) => {
             const docsPath = path.match(PATH_TRIM)?.[1];
             if (!docsPath)
-                throw error(404, `this is an invalid docs page path: $path`);
+                throw error(500, `this is an invalid docs page path: $path`);
 
             return {
                 pages: pages.filter(page => page.path.startsWith(docsPath)),
