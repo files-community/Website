@@ -3,8 +3,6 @@ import type { DocsMetadata, DocsNode, DocsTree } from "$data/docs";
 const PATH_TRIM = /(?:..\/routes\/docs)((\/[\w-]+)+)\//;
 
 const getPages = () => {
-    console.log("SEARH")
-    console.trace();
     const rawPages = import.meta.glob<DocsMetadata>(
         ["../routes/docs/**/*/+page.md", "../routes/docs/+page.md"], // import all docs pages + base page
         { eager: true, import: "metadata" }
@@ -26,8 +24,10 @@ const getTree = (pages: DocsNode[]) => {
 
     const categories: DocsTree = Object.entries(rawCategories).map(
         ([path, node]) => {
-            const docsPath =
-                path.match(PATH_TRIM)?.[1] ?? "this is an invalid path";
+            const docsPath = path.match(PATH_TRIM)?.[1];
+            if (!docsPath)
+                throw new Error(`this is an invalid docs page path: $path`);
+                
             return {
                 pages: pages.filter(page => page.path.startsWith(docsPath)),
                 path: docsPath,
