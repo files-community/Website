@@ -1,6 +1,6 @@
 import type { DocsMetadata, DocsNode, DocsTree } from "$data/docs";
 
-const PATH_REGEX = /(?:..\/routes\/docs)((\/[\w-]+)+)\//;
+const PATH_TRIM = /(?:..\/routes\/docs)((\/[\w-]+)+)\//;
 
 const getPages = () => {
     console.log("SEARH")
@@ -13,7 +13,7 @@ const getPages = () => {
     return Object.entries(rawPages).map(([path, node]) => {
         return {
             title: node.title,
-            path: path.match(PATH_REGEX)?.[1] ?? ""
+            path: path.match(PATH_TRIM)?.[1] ?? ""
         } as DocsNode;
     });
 };
@@ -27,7 +27,7 @@ const getTree = (pages: DocsNode[]) => {
     const categories: DocsTree = Object.entries(rawCategories).map(
         ([path, node]) => {
             const docsPath =
-                path.match(PATH_REGEX)?.[1] ?? "this is an invalid path";
+                path.match(PATH_TRIM)?.[1] ?? "this is an invalid path";
             return {
                 pages: pages.filter(page => page.path.startsWith(docsPath)),
                 path: docsPath,

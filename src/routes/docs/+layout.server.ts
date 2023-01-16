@@ -1,4 +1,4 @@
-import { docsPages } from "$data/fetchDocsData";
+import { docsPages } from "$data/docsTree";
 import type { LayoutServerLoad } from "./$types";
 
 export const load: LayoutServerLoad = ({ url, route }) => {
