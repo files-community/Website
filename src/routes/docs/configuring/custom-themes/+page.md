@@ -10,13 +10,13 @@ To access theme values that are not exposed in the settings modal
 
 ### Available resources for themeing
 
-| Key                                   | Default value                                |
-| ------------------------------------- | -------------------------------------------- |
-| `AppThemeBackgroundColor`             | `#00000000`                                  |
-| `AppThemeAddressBarBackgroundColor`   | `#00000000`                                  |
-| `AppThemeSidebarBackgroundColor`      | `#00000000`                                  |
-| `AppThemeFileAreaBackgroundColor`     | `#00000000`                                  |
-| `AppThemeFontFamily`                  | `Segoe UI Variable`                          |
+| Key                                   | Default value                 |
+| ------------------------------------- | ----------------------------- |
+| `AppThemeBackgroundColor`             | `#00000000`                   |
+| `AppThemeAddressBarBackgroundColor`   | `#00000000`                   |
+| `AppThemeSidebarBackgroundColor`      | `#00000000`                   |
+| `AppThemeFileAreaBackgroundColor`     | `#00000000`                   |
+| `AppThemeFontFamily`                  | `Segoe UI Variable`           |
 
 
 ## Sample themes
