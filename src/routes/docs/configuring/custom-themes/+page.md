@@ -36,4 +36,3 @@ To access theme values that are not exposed in the settings modal
 | `AppThemeAddressBarBackgroundColor`   | `#38343c`                     |
 | `AppThemeSidebarBackgroundColor`      | `#464449`                     |
 | `AppThemeFileAreaBackgroundColor`     | `#221d28`                     |
-| `AppThemeFontFamily`                  | `Times New Roman`             |
