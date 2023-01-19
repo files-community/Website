@@ -81,7 +81,8 @@
 		gap: 2rem;
 		padding: 2rem;
 		margin-inline: auto;
-
+		
+		inline-size: fit-content;
 		block-size: calc(100vh - 58px);
 
 		.download-sources {

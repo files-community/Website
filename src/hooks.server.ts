@@ -1,5 +1,5 @@
 import { locales } from "$i18n";
-import type { Handle } from "@sveltejs/kit";
+import type { Handle, HandleServerError } from "@sveltejs/kit";
 import { unwrapFunctionStore, locale } from "svelte-i18n";
 import { derived, type Readable } from "svelte/store";
 
@@ -9,7 +9,8 @@ export const handle: Handle = ({ event, resolve }) => {
 		() => string | undefined | null
 	>(locale, $locale => () => $locale);
 
-	const localeKey = (unwrapFunctionStore($locale)() ?? "en") as keyof typeof locales;
+	const localeKey = (unwrapFunctionStore($locale)() ??
+		"en") as keyof typeof locales;
 
 	return resolve(event, {
 		transformPageChunk: ({ html }) =>

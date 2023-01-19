@@ -2,14 +2,12 @@
 
 .error-page {
 	@include flex($direction: column, $align: center, $justify: center);
-	position: relative;
-	flex: 1 1 auto;
-	inline-size: 100%;
-	block-size: 100%;
 	background-color: var(--fds-layer-background-default);
 	color: #222;
 	font-size: 1.2rem;
 	color-scheme: light;
+
+	min-block-size: calc(100% - 58px);
 
 	*:not(code),
 	*::before,
@@ -31,13 +29,13 @@
 		border-radius: 0;
 		background: silver;
 		box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-		inset -2px -2px grey, inset 2px 2px #dfdfdf;
+			inset -2px -2px grey, inset 2px 2px #dfdfdf;
 		font-size: 1.2rem;
 
 		&:not(:disabled):active {
 			padding: 2px 11px 0 13px;
 			box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
-			inset -2px -2px #dfdfdf, inset 2px 2px grey;
+				inset -2px -2px #dfdfdf, inset 2px 2px grey;
 		}
 
 		&:focus {
@@ -46,25 +44,11 @@
 		}
 	}
 
-	pre {
-		display: block;
-		margin: 0;
-		padding: 12px 8px;
-		background: #fff;
-		box-shadow: inset -1px -1px #fff, inset 1px 1px grey,
-		inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
-		overflow: auto;
-
-		code {
-			color: inherit;
-			font-family: monospace;
-		}
-	}
-
 	::-webkit-scrollbar {
 		inline-size: 16px;
 
 		&-button {
+
 			&:horizontal:end:increment,
 			&:horizontal:start:decrement,
 			&:vertical:end:increment,
@@ -110,24 +94,19 @@
 		&-thumb {
 			background-color: #dfdfdf;
 			box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-			inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+				inset -2px -2px #808080, inset 2px 2px #dfdfdf;
 		}
 	}
 }
 
 .window {
 	@include flex($direction: column);
-	position: absolute;
-	min: {
-		inline-size: 150px;
-		block-size: 375px;
-	};
-	inline-size: 380px;
-	max-inline-size: calc(100% - 48px);
+
+	inline-size: clamp(150px, 380px, calc(100% - 48px));
 	padding: 3px;
 	background: silver;
 	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
-	inset -2px -2px grey, inset 2px 2px #fff;
+		inset -2px -2px grey, inset 2px 2px #fff;
 	overflow: auto;
 	resize: both;
 
@@ -140,7 +119,6 @@
 		margin: 24px;
 	}
 
-	pre,
 	&-body {
 		flex: 1 1 auto;
 	}
