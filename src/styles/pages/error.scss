@@ -6,6 +6,7 @@
 	color: #222;
 	font-size: 1.2rem;
 	color-scheme: light;
+	position: relative;
 
 	min-block-size: calc(100% - 58px);
 
@@ -107,7 +108,6 @@
 	background: silver;
 	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
 		inset -2px -2px grey, inset 2px 2px #fff;
-	overflow: auto;
 	resize: both;
 
 	@media screen and (width < 648px) {
@@ -115,7 +115,6 @@
 		inset-block-start: 0;
 		inset-inline-start: 0;
 		inline-size: calc(100% - 48px);
-		block-size: calc(100% - 48px);
 		margin: 24px;
 	}
 
