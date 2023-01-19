@@ -14,7 +14,7 @@
 			description: "Get Files from the Microsoft Store",
 			href: isWindows
 				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
-				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
+				: `https://www.microsoft.com/store/apps/${links.storeId}?mode=mini&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
