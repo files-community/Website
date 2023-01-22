@@ -120,11 +120,11 @@
 					</div>
 				{/if}
 			</div>
-			<hr role="separator" />
+			<hr />
 		</div>
 		<TreeView tree={docs} />
 	</aside>
-	<article class="page scroller">
+	<article class="page">
 		<div class="search-mobile">
 			<div
 				class="autosuggest-wrapper"

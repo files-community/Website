@@ -1,6 +1,6 @@
 import { locales } from "$i18n";
 import type { Handle } from "@sveltejs/kit";
-import { unwrapFunctionStore, locale } from "svelte-i18n";
+import { locale, unwrapFunctionStore } from "svelte-i18n";
 import { derived, type Readable } from "svelte/store";
 
 export const handle: Handle = ({ event, resolve }) => {
