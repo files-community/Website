@@ -41,8 +41,7 @@
 			"tabs": {
 				"title": "Multitask with tabs",
 				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
-			}
-			,
+			},
 			"columns": {
 				"title": "Organize files and directories in multiple columns",
 				"description":"Quickly navigate through columns to access different levels of the file system."
