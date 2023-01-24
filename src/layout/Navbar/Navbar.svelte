@@ -72,8 +72,9 @@
 					<div class="divider" />
 				{:else}
 					<a
-						class={"item " + (type == "accent" ? type : "")}
+						class="item"
 						data-sveltekit-preload-data="hover"
+						class:accent={type == "accent"}
 						class:selected={$page.url.pathname === path ||
 							($page.url.pathname.split("/").length > 1 &&
 								path.split("/").length > 1 &&
