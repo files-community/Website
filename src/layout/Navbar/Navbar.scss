@@ -23,12 +23,10 @@
 	padding: 5px 11px 6px 11px;
 	border-radius: var(--fds-control-corner-radius);
 	color: var(--fds-text-secondary);
-
 	font: {
 		size: 1.36rem;
 		weight: normal;
 	}
-
 	text-decoration: none;
 	transition: var(--fds-control-faster-duration) linear background-color;
 
@@ -76,12 +74,10 @@
 	@include flex($align: center);
 	margin-inline-end: 8px;
 	color: var(--fds-text-primary);
-
 	font: {
 		size: 2rem;
 		weight: 600;
 	}
-
 	text-decoration: none;
 	transition: 100ms ease;
 
