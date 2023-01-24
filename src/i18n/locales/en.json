@@ -44,7 +44,11 @@
 			},
 			"columns": {
 				"title": "Column view",
-				"description":"Quickly navigate through columns to access different levels of the file system."
+				"description": "Quickly navigate through columns to access different levels of the file system."
+			},
+			"archives": {
+				"title": "Manage archives",
+				"description": "Compress, extract and edit zipped archives all within Files."
 			}
 		},
 		"themes": {

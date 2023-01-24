@@ -21,10 +21,15 @@
 			title: $_("home.features.tabs.title"),
 			description: $_("home.features.tabs.description"),
 			icon: TabDesktop
-		},		
+		},
 		{
 			title: $_("home.features.columns.title"),
 			description: $_("home.features.columns.description"),
+			icon: TabDesktop
+		},
+		{
+			title: $_("home.features.archives.title"),
+			description: $_("home.features.archives.description"),
 			icon: TabDesktop
 		},
 		{
