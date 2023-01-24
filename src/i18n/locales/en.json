@@ -47,8 +47,8 @@
 				"description": "Quickly navigate through columns to access different levels of the file system."
 			},
 			"archives": {
-				"title": "Manage archives",
-				"description": "Compress, extract and edit zipped archives all within Files."
+				"title": "View and edit archives",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add items to archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
