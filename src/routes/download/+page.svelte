@@ -22,14 +22,14 @@
 		{
 			name: "Sideload",
 			description: "Install Files without the Microsoft Store",
-			href: "/appinstallers/Files.stable.appinstaller",
+			href: "/appinstallers/Files.Stable.exe",
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
 		{
 			name: "Preview",
 			description: "Get early access to improvements and new features",
-			href: "/appinstallers/FilesPreview.zip",
+			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
 		}
