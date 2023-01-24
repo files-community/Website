@@ -26,7 +26,7 @@
 			title: $_("home.features.columns.title"),
 			description: $_("home.features.columns.description"),
 			icon: TabDesktop
-		}
+		},
 		{
 			title: $_("home.features.cloud.title"),
 			description: $_("home.features.cloud.description"),
