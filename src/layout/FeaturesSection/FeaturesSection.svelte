@@ -51,9 +51,6 @@
 </script>
 
 <PageSection id="features-section">
-	<div class="features-section-left">
-		<FeatureShowcase feature={currentFeature} />
-	</div>
 	<div class="features-section-right">
 		<HeaderChip>{$_("home.features.chip")}</HeaderChip>
 		<h2>{$_("home.features.title")}</h2>
