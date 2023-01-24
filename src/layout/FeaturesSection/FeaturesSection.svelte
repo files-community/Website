@@ -48,16 +48,6 @@
 			icon: Tag
 		}
 	] as const satisfies readonly FeatureCardData[];
-
-	onMount(() => {
-		if (!dev) {
-			// Iterate through feature cards every n seconds
-			setInterval(() => {
-				currentFeature += currentFeature !== 3 ? 1 : -currentFeature;
-				cardPaginationInterval = 16;
-			}, cardPaginationInterval * 1000);
-		}
-	});
 </script>
 
 <PageSection id="features-section">
