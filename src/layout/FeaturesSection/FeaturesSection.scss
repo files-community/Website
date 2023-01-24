@@ -8,7 +8,7 @@
 		// Inner section
 		.page-section-inner {
 			display: grid;
-			grid-template-columns: calc(25%% - 24px) calc(25% - 24px) calc(25% - 24px) calc(25% - 24px);
+			grid-template-columns: repeat(auto-fill, 1fr);
 			grid-gap: 48px;
 		}
 	}
