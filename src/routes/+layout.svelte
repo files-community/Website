@@ -44,7 +44,7 @@
 			name: $_("navbar.download"),
 			path: "/download",
 			type:"accent",
-			icon: Arrow_Download,
+			icon: Arrow_Download
 		}
 	];
 
