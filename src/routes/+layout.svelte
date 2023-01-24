@@ -41,7 +41,7 @@
 			icon: News
 		},
 		{
-			name: $_("home.design.download"),
+			name: $_("navbar.download"),
 			path: "/download",
 			icon: Arrow_Download
 		}
