@@ -12,7 +12,7 @@
 	import EyeVisible from "@fluentui/svg-icons/icons/eye_20_regular.svg?raw";
 	import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
 	import Columns from "@fluentui/svg-icons/icons/panel_left_28_regular.svg?raw";
-	import Archive from "@fluentui/svg-icons/icons/fluent_folder_zip_24_regular.svg?raw";
+	import Archive from "@fluentui/svg-icons/icons/folder_zip_24_regular.svg?raw";
 
 	let currentFeature = 0;
 
