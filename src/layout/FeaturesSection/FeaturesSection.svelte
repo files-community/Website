@@ -18,6 +18,16 @@
 
 	export const featureCards = [
 		{
+			title: $_("home.features.tabs.title"),
+			description: $_("home.features.tabs.description"),
+			icon: TabDesktop
+		},		
+		{
+			title: $_("home.features.columns.title"),
+			description: $_("home.features.columns.description"),
+			icon: TabDesktop
+		}
+		{
 			title: $_("home.features.cloud.title"),
 			description: $_("home.features.cloud.description"),
 			icon: Cloud
@@ -31,11 +41,6 @@
 			title: $_("home.features.tags.title"),
 			description: $_("home.features.tags.description"),
 			icon: Tag
-		},
-		{
-			title: $_("home.features.tabs.title"),
-			description: $_("home.features.tabs.description"),
-			icon: TabDesktop
 		}
 	] as const satisfies readonly FeatureCardData[];
 
