@@ -48,7 +48,7 @@
 			},
 			"archives": {
 				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add items to archives, and use the create archive option to create encrypted archives."
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
