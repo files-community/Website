@@ -72,7 +72,7 @@
 					<div class="divider" />
 				{:else}
 					<a
-						class="item"
+						class={"item " + (type == "accent" ? type : "")}
 						data-sveltekit-preload-data="hover"
 						class:selected={$page.url.pathname === path ||
 							($page.url.pathname.split("/").length > 1 &&
@@ -94,7 +94,12 @@
 		{/if}
 	</nav>
 	<div class="buttons">
-		<Tooltip text={$_("navbar.ukraine")} placement="bottom" delay={200} offset={0}>
+		<Tooltip
+			text={$_("navbar.ukraine")}
+			placement="bottom"
+			delay={200}
+			offset={0}
+		>
 			<span
 				class="support-ukraine"
 				aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"
