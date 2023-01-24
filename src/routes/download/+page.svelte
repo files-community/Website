@@ -22,7 +22,7 @@
 		{
 			name: "Sideload",
 			description: "Install Files without the Microsoft Store",
-			href: "/appinstallers/Files.stable.appinstaller",
+			href: "/appinstallers/Files.Stable.exe",
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
