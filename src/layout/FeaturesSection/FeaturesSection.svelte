@@ -11,6 +11,7 @@
 	import TabDesktop from "@fluentui/svg-icons/icons/tab_desktop_20_regular.svg?raw";
 	import EyeVisible from "@fluentui/svg-icons/icons/eye_20_regular.svg?raw";
 	import Tag from "@fluentui/svg-icons/icons/tag_24_regular.svg?raw";
+	import Columns from "@fluentui/svg-icons/icons/panel_left_28_regular.svg?raw";
 
 	let currentFeature = 0;
 
@@ -25,7 +26,7 @@
 		{
 			title: $_("home.features.columns.title"),
 			description: $_("home.features.columns.description"),
-			icon: TabDesktop
+			icon: Columns
 		},
 		{
 			title: $_("home.features.archives.title"),
