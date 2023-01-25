@@ -31,4 +31,4 @@ Files is a powerful and user-friendly file manager that can help you organize an
 These are just a few of the many features and capabilities of Files. By utilizing these features, you can make your experience with Files even more efficient and convenient.
 
 ---
-Download Files [here](/download/).
+Download Files from our [download page](/download/).
