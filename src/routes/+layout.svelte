@@ -13,7 +13,6 @@
 	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
 	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
 	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
-	import Arrow_Download from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
 	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
 
 	const { github, discord } = links;
@@ -44,7 +43,7 @@
 			name: $_("navbar.download"),
 			path: "/download",
 			type:"accent",
-			icon: Arrow_Download
+			icon:undefined
 		}
 	];
 
