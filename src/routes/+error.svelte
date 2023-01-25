@@ -28,13 +28,10 @@
 					<p>
 						Uh Oh! Something went wrong while loading this page.
 						<br />
-						{$page.error.message}
+						{$page.error?.message}
 					</p>
 				</div>
 			</div>
-			{#if $page.error.stack}
-				<pre><code>{$page.error.stack}</code></pre>
-			{/if}
 			<footer>
 				<a href="/">
 					<button>Return Home</button>

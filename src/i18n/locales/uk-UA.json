@@ -1,75 +1,75 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "Files • Головна",
+		"docs_home": "Files • Документація",
+		"docs_page": "Files • Документація - {title}",
+		"description": "Створення найкращого файлового менеджера для Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Спільнота",
+			"title": "Спроектовано та розроблено вами.",
+			"description": "Files є вільним Open-Source програмним забезпеченням, яке підтримується колективом із сотні учасників.",
+			"discord": "Приєднатися до обговорення",
+			"docs": "Стати учасником",
+			"contributions": "{amount, plural, =0 {Немає вкладів} one {# внесок} few {# вклади} other {# вкладів}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Дизайн",
+			"title": "Сила зустрічається з красою.",
+			"description": "Відкрийте для себе вродливий дизайн для Windows. Керуйте всіма файлами з підвищеною продуктивністю. Працюйте з кількома папками за допомогою вкладок. І багато іншого.",
+			"download": "Завантажити",
+			"learn_more": "Дізнатися більше"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Функції",
+			"title": "Це вже зроблено.",
+			"description": "Інтеграція з облачними сервісами? Вкладки і кілька способів розташування? Розширений попередній перегляд файлів? Files володіє надійними функціями, які ви очікуєте від сучасного файлового менеджера.",
+			"unknown": "Невідомо",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Повна інтеграція з хмарними сервісами",
+				"description": "Інтеграція з хмарними службами, такими як OneDrive, Google Drive та iCloud, дозволяє керувати документами та фотографіями в хмарі прямо з бічної панелі."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Попередній перегляд файлу",
+				"description": "Переглядайте документи, фотографії та багато іншого, не відкриваючи їх. Вбудована підтримка розширеного попереднього перегляду, підсвічування синтаксису, уцінки та відтворення відео."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Файли та папки з мітками",
+				"description": "Швидко помічайте та впорядковуйте свої файли та папки на майбутнє, призначайте їм кольорові та іменовані мітки для легкої ідентифікації. Ви навіть можете додати свої власні теги!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Багатозадачність з вкладками",
+				"description": "Уникайте кількох вікон і позбавте свій робочий стіл від безладу. Files мають браузерний інтерфейс із вкладками та сполученнями клавіш."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Теми",
+			"title": "Дуже особисте.",
+			"description": "Будь по твоєму. Files має повністю настроюваний інтерфейс користувача, аж до кольорів і матеріалів. Спробуйте теми користувача, вбудовані в Files, або зануртесь прямо в інтерфейс і створіть свої власні.",
+			"grey_blue": "Темно-сірий • Світло-блакитний",
+			"grey_green": "Синій сірий • Неоновий зелений",
+			"purple": "Фіолетовий",
+			"yellow_white": "Жовтий • Білий",
+			"white_teal": "Холодний білий • Темний бірюзовий",
+			"sky_blue": "Блакитне небо",
+			"select_theme": "Вибрати тему #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Більше публікацій незабаром!",
+		"read_more": "Читати далі"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Нічого не знайдено",
+		"edit_page": "Редагувати цю сторінку"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"copyright": "Авторське право © 2021 - {year}, автори Files",
 		"home": "Головна",
 		"docs": "Документація",
 		"news": "Новини",
-		"contribute": "Contribute to Files",
+		"contribute": "Внести внесок у розвиток Files",
 		"feedback": "Надіслати відгук",
 		"style_guide": "Посібник зі стилю коду",
 		"translations": "Переклад",

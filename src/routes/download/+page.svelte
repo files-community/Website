@@ -22,7 +22,7 @@
 		{
 			name: "Sideload",
 			description: "Install Files without the Microsoft Store",
-			href: "/appinstallers/Files.stable.appinstaller",
+			href: "/appinstallers/Files.Stable.exe",
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg"
 		},
@@ -81,7 +81,8 @@
 		gap: 2rem;
 		padding: 2rem;
 		margin-inline: auto;
-
+		
+		inline-size: fit-content;
 		block-size: calc(100vh - 58px);
 
 		.download-sources {

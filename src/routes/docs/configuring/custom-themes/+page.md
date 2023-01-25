@@ -1,20 +1,39 @@
 ---
-title: Customizing colors in Files
+title: Custom themes in Files
 ---
 
 Files comes with a large collection of custom background colors but additional customization is available for advanced users.
 
 ## Advanced themeing
 To access theme values that are not exposed in the settings modal
-1. Open Files > Settings > About > Open log location. This will open the app data folder for Files.
-2. Open the `settings` folder and open the `user_settings.json` file. It's a good idea to close Files while modifying the settings file.
+1. Open Files settings > Advanced > Edit settings file. This will open the main settings file in your default text editor.
+2. Close the app before making any changes to the settings file.
 
 ### Available resources for themeing
 
-| Key                                   | Example                       | Default value                                |
-| ------------------------------------- | ------------------------------| -------------------------------------------- |
-| `AppThemeBackgroundColor`             | `#221d28`                     | `#00000000`                                  |
-| `AppThemeAddressBarBackgroundColor`   | `#38343c`                     | `#00000000`                                  |
-| `AppThemeSidebarBackgroundColor`      | `#464449`                     | `#00000000`                                  |
-| `AppThemeFileAreaBackgroundColor`     | `#221d28`                     | `#00000000`                                  |
-| `AppThemeFontFamily`                  | `Times New Roman`             | `Segoe UI Variable`                          |
+| Key                                   | Default value                 |
+| ------------------------------------- | ----------------------------- |
+| `AppThemeBackgroundColor`             | `#00000000`                   |
+| `AppThemeAddressBarBackgroundColor`   | `#00000000`                   |
+| `AppThemeSidebarBackgroundColor`      | `#00000000`                   |
+| `AppThemeFileAreaBackgroundColor`     | `#00000000`                   |
+| `AppThemeFontFamily`                  | `Segoe UI Variable`           |
+
+
+## Sample themes
+
+### Glass (requires Windows 11)
+| Key                                   | Value                         |
+| ------------------------------------- | ------------------------------|
+| `AppThemeBackgroundColor`             | `#00000000`                   |
+| `AppThemeAddressBarBackgroundColor`   | `#00000001`                   |
+| `AppThemeSidebarBackgroundColor`      | `#00000001`                   |
+| `AppThemeFileAreaBackgroundColor`     | `#00000001`                   |
+
+### Finder
+| Key                                   | Value                         |
+| ------------------------------------- | ------------------------------|
+| `AppThemeBackgroundColor`             | `#221d28`                     |
+| `AppThemeAddressBarBackgroundColor`   | `#38343c`                     |
+| `AppThemeSidebarBackgroundColor`      | `#464449`                     |
+| `AppThemeFileAreaBackgroundColor`     | `#221d28`                     |
