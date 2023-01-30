@@ -55,7 +55,7 @@
 			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
-			Sponsor Now
+			Donate
 		</Button>
 
 		<svelte:fragment slot="icon">
