@@ -47,12 +47,12 @@
 		>Download Files</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		Please consider sponsoring Files on GitHub!
+		Please consider donating to support our work on Files.
 
 		<Button
 			slot="action"
 			variant="accent"
-			href="https://github.com/sponsors/yaira2"
+			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
 			Sponsor Now
