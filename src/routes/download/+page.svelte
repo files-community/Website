@@ -12,9 +12,7 @@
 		{
 			name: "Microsoft Store",
 			description: "Get Files from the Microsoft Store",
-			href: isWindows
-				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
-				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
+			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
@@ -49,15 +47,15 @@
 		>Download Files</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		Please consider sponsoring Files on GitHub!
+		Please consider donating to support our work on Files.
 
 		<Button
 			slot="action"
 			variant="accent"
-			href="https://github.com/sponsors/yaira2"
+			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
-			Sponsor Now
+			Donate
 		</Button>
 
 		<svelte:fragment slot="icon">
