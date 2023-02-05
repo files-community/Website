@@ -26,8 +26,9 @@
 // <FeatureCard /> container
 // Container element for selecting features to preview
 .feature-cards-container {
+	--column-count: 3;
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: repeat(var(--column-count), 1fr);
 	grid-gap: 8px;
 
 	// Small device support
