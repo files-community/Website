@@ -32,6 +32,8 @@ We've moved shell extensions to a sub menu when right clicking files. This shoul
 ### Prompt for Credentials When Connecting SMB
 We've added a prompt for entering credentials when connecting to SMB, credentials can be saved to Windows Credential Manager if you don't want to manually enter them every time.
 
+
+
 We're confident that these new features will make your file management tasks easier and more efficient. So be sure to update to Files v2.4.30 and see for yourself!
 
 
