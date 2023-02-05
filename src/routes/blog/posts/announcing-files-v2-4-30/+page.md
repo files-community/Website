@@ -16,6 +16,9 @@ The latest version 2.4.30 introduces a revamped "Quick Access" widget, making it
 </figure>
 
 We're also bringing a new and improved way to organize your files with the introduction of the File Tags widget. This feature will help you categorize your files, making it easier to find what you're looking for. The new widget is a replacement for the existing Bundles widget, but we're keeping it around for a few more months to give you time to make the transition. Get ready for a more streamlined and organized experience with your files!
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4-30/Tags.png" alt="Tags Widget." />
+</figure>
 
 ### Sidebar favorites
 With the latest update, you'll never have to worry about manually transferring your pinned favorites again! The favorites you pin to the sidebar in Files will now automatically sync with File Explorer, providing you with quick and effortless access to your most important files and folders, no matter which app you're using. Whether you're opening a file in an app or browsing your files to find the one you need, your pinned favorites will always be at your fingertips. With this convenient new feature, you'll save time and streamline your workflow like never before!
