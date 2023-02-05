@@ -1,6 +1,6 @@
 {
 	"metadata": {
-		"home": "Files • Home",
+		"home": "Fayllar • Bas bet",
 		"docs_home": "Files • Docs",
 		"docs_page": "Files • Docs - {title}",
 		"description": "Building the best file manager for Windows."
@@ -18,8 +18,8 @@
 			"chip": "Design",
 			"title": "Power meets beauty.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"download": "Júklew",
+			"learn_more": "Tolıǵıraq úyreniw"
 		},
 		"features": {
 			"chip": "Features",
@@ -44,7 +44,7 @@
 			}
 		},
 		"themes": {
-			"chip": "Themes",
+			"chip": "Temalar",
 			"title": "Distinctly personal.",
 			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
@@ -61,29 +61,29 @@
 		"read_more": "Read More"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Nátiyjeler tabılmadı",
+		"edit_page": "Bul betke ózgeris kirgiziw"
 	},
 	"footer": {
 		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
+		"home": "Bas bet",
 		"docs": "Docs",
-		"news": "News",
-		"contribute": "Contribute to Files",
+		"news": "Jańalıqlar",
+		"contribute": "Files rawajlanıwına úles qosıw",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
+		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
 		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"report_bug": "Qátelik tawdıńızba?",
+		"web_team": "Topar"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
+		"home": "Bas bet",
 		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"news": "Jańalıqlar",
+		"themes": "Temalar",
 		"discord": "Discord",
 		"github": "Github"
 	}
