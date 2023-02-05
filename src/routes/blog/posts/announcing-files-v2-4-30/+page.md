@@ -6,7 +6,7 @@ date: 2/7/2023
 author: files-community
 ---
 
-We are thrilled to announce the latest update to Files. With version 2.4.30, we've made several new improvements that will enhance your overall experience.
+We are thrilled to announce the latest update to Files. With version 2.4.30, we've made several new improvements that will enhance your overall experience so be sure to update to v2.4.30 and see for yourself!
 
 
 ### Enhancing the home page
@@ -31,10 +31,6 @@ We've moved shell extensions to a sub menu when right clicking files. This shoul
 
 ### Prompt for Credentials When Connecting SMB
 We've added a prompt for entering credentials when connecting to SMB, credentials can be saved to Windows Credential Manager if you don't want to manually enter them every time.
-
-
-
-We're confident that these new features will make your file management tasks easier and more efficient. So be sure to update to Files v2.4.30 and see for yourself!
 
 
 ---
