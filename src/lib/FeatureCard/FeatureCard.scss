@@ -1,9 +1,12 @@
 @use "src/styles/mixins" as *;
 
 .feature-card {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+
 	position: relative;
 	padding: 24px;
-	border: 2px solid transparent;
 	border-radius: var(--fds-control-corner-radius);
 	background-color: var(--fds-solid-background-tertiary);
 	box-shadow: 0 0 0 1px var(--fds-card-stroke-default);
@@ -13,12 +16,15 @@
 	break-inside: avoid-column;
 	backface-visibility: hidden;
 
+	border: none;
+	outline: 2px solid transparent;
+
 	&:hover {
 		box-shadow: var(--fds-card-shadow), 0 0 0 1px var(--fds-card-stroke-default);
 	}
 
 	&.selected {
-		border-color: var(--fds-accent-default);
+		outline-color: var(--fds-accent-default);
 	}
 
 	:global(svg) {
@@ -28,7 +34,6 @@
 
 	h4 {
 		margin: 0;
-		margin-block-start: 8px;
 		color: var(--fds-text-primary);
 		font: {
 			size: 1.8rem;
@@ -38,7 +43,6 @@
 
 	p {
 		margin: 0;
-		margin-block-start: 8px;
 		color: var(--fds-text-tertiary);
 		font: {
 			size: 1.4rem;
