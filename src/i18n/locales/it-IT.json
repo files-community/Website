@@ -1,89 +1,89 @@
 {
 	"metadata": {
 		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"docs_home": "Files • Documentazione",
+		"docs_page": "Files • Documentazione - {title}",
+		"description": "Creando il miglior file manager per Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"title": "Progettato e sviluppato da voi.",
+			"description": "Files è un software open source e gratuito, mantenuto e progettato da centinaia di contributori.",
+			"discord": "Partecipa alla discussione",
+			"docs": "Diventa un contributore",
+			"contributions": "{amount, plural, =0 {Nessuna contribuzione} one {# contribuzione} other {# contribuzioni}}"
 		},
 		"design": {
 			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+			"title": "La potenza incontra la bellezza.",
+			"description": "Esplora un design stupendo pensato per Windows. Gestisci i file in modo più produttivo. Lavora tra più cartelle usando le schede. E molto altro ancora.",
 			"download": "Download",
-			"learn_more": "Learn more"
+			"learn_more": "Scopri di più"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Funzionalità",
+			"title": "Questo lo fa di già.",
+			"description": "Integrazione con il Cloud? Schede e più layout? Anteprime complete dei file? Files offre tutte queste funzionalità come ci si aspetterebbe da un file manager moderno.",
+			"unknown": "Sconosciuto",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Integrazione fluida del Cloud",
+				"description": "L'integrazione con i servizi cloud come OneDrive, Google Drive e iCloud ti permette di gestire i tuoi documenti e le tue foto salvati nel cloud direttamente dalla barra laterale."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Anteprima dei file",
+				"description": "Visualizza l'anteprima di documenti, foto e di altri file senza aprirli. Le anteprime complete, la colorazione della sintassi, il render del markdown e il playback dei video sono già supportati."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "File & Cartelle Etichettati",
+				"description": "Cataloga e organizza velocemente i tuoi file e le tue cartelle assegnandogli etichette colorate, in modo da accedervi più facilmente. Puoi anche aggiungere etichette personalizzate!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Sfrutta il multitasking grazie alle schede",
+				"description": "Evita finestre multiple e mantieni il tuo desktop ordinato. Files, come i browser, dispone di un'interfaccia a schede completa di shortcut da tastiera."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Temi",
+			"title": "Profondamente personale.",
+			"description": "Rendilo tuo. Files dispone di un'interfaccia utente completamente personalizzabile, fino ai colori e ai materiali. Prova i temi personalizzati disponibili in Files oppure esprimi la tua creatività creandone uno unico.",
+			"grey_blue": "Grigio Scuro • Azzurro",
+			"grey_green": "Grigio Blu • Verde Neon",
+			"purple": "Viola",
+			"yellow_white": "Giallo • Bianco",
+			"white_teal": "Bianco Glaciale • Verde Petrolio",
+			"sky_blue": "Azzurro Cielo",
+			"select_theme": "Seleziona il tema #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Altri post in arrivo!",
+		"read_more": "Maggiori dettagli"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Nessun risultato trovato",
+		"edit_page": "Modifica questa pagina"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"copyright": "Copyright © 2021 - {year}, Gli Autori di Files",
 		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"docs": "Documentazione",
+		"news": "Novità",
+		"contribute": "Contribuisci a Files",
+		"feedback": "Facci sapere la tua opinione",
+		"style_guide": "Guida allo Stile",
+		"translations": "Traduzioni",
+		"contribute_site": "Contribuisci a questo sito",
+		"github": "Repository di Github",
+		"report_bug": "Hai trovato un bug?",
+		"web_team": "Team Web"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
 		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"docs": "Documentazione",
+		"news": "Novità",
+		"themes": "Temi",
 		"discord": "Discord",
 		"github": "Github"
 	}
