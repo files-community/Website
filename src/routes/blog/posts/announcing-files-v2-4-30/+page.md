@@ -30,4 +30,4 @@ We're confident that these new features will make your file management tasks eas
 
 
 ---
-Download Files from our [download page](https://files.community/download/).
+Download Files from our [download page](/download/).
