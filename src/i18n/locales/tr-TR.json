@@ -1,90 +1,90 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "Files • Anasayfa",
+		"docs_home": "Files • Dökümantasyon",
+		"docs_page": "Files • Dökümentasyon - {title}",
+		"description": "Windows için en iyi dosya yöneticisini oluşturun."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
+			"chip": "Topluluk",
+			"title": "Sizin tarafınızdan tasarlandı ve geliştirildi.",
+			"description": "Files ücretsiz ve açık kaynaklı bir yazılımdır, geliştirilmesi ve tasarımı yüzlerce katılımcıdan oluşan bir ekip tarafından yapılır.",
+			"discord": "Tartışmaya Katıl",
+			"docs": "Katkıda Bulunun",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Dizayn",
+			"title": "Güç güzellikle tanıştı.",
+			"description": "Güzel bir Windows öncelikli tasarımı keşfedin. Tüm dosyalarınızı artan verimlilikle yönetin. Sekmelerle birden çok klasörde çalışın. Ve çok daha fazlası.",
+			"download": "İndir",
+			"learn_more": "Daha Fazla"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Özellikler",
+			"title": "Bunu zaten yapıyor.",
+			"description": "Bulut dosyaları entegrasyonu? Sekmeler ve çoklu düzen? Zengin dosya önizlemeleri? Files, modern bir dosya yöneticisinden beklediğiniz sağlam özelliklerle kaplıdır.",
+			"unknown": "Bilinmeyen",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Eksiksiz bulut entegrasyonu",
+				"description": "OneDrive, Google Drive ve iCloud gibi bulut hizmetleriyle entegrasyon, buluttaki belgelerinizi ve fotoğraflarınızı doğrudan kenar çubuğundan yönetmenize olanak tanır."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Dosya Önizlemesi",
+				"description": "Belgeleri, fotoğrafları ve daha fazlasını açmadan önizleyin. Zengin önizlemeler, Syntax vurgulama, işaretleme ve video oynatma desteğinin tümü gömülü gelir."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Etiketli Dosyalar ve Klasörler",
+				"description": "Kolay tanımlama için renkli ve adlandırılmış etiketler atayarak dosyalarınızı ve klasörlerinizi daha sonrası için hızla işaretleyin ve düzenleyin. Kendi özel etiketlerinizi bile ekleyebilirsiniz!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Sekmelerle çoklu görev",
+				"description": "Birden çok pencereden kaçının ve masaüstünüzü dağınıklıktan uzak tutun. Dosyalar, klavye kısayollarıyla tamamlanmış, tarayıcı benzeri bir sekme arabirimine sahiptir."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Temalar",
+			"title": "Kesinlikle kişisel.",
+			"description": "İstediğin gibi olsun. Files, renklere ve malzemelere kadar tamamen özelleştirilebilir bir kullanıcı arabirimine sahiptir. Files'da yerleşik olarak bulunan özel temaları deneyin veya doğrudan Files'a dalın ve kendinizinkini oluşturun.",
+			"grey_blue": "Koyu Gri • Açık Mavi",
+			"grey_green": "Mavi Gri • Neon Yeşili",
+			"purple": "Mor",
+			"yellow_white": "Sarı beyaz",
+			"white_teal": "Soğuk Beyaz • Koyu Deniz Mavisi",
+			"sky_blue": "Gök mavisi",
+			"select_theme": "Tema seç #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Daha fazla gönderi yakında!",
+		"read_more": "Daha Fazla"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Sonuç bulunamadı",
+		"edit_page": "Bu sayfayı düzenle"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "Copyright © 2021 - {year}, The Files Sahipleri",
+		"home": "Ana sayfa",
+		"docs": "Dokümantasyon",
+		"news": "Haberler",
+		"contribute": "Files'a Katkıda bulunun",
+		"feedback": "Geri Bildirimde Bulunun",
+		"style_guide": "Stil Rehberi",
+		"translations": "Tercümeler",
+		"contribute_site": "Bu sayfaya katkıda bulunun",
+		"github": "GitHub Deposu",
+		"report_bug": "Bir hata mı buldunuz?",
+		"web_team": "Web Ekibi"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"home": "Ana sayfa",
+		"docs": "Dökümantasyon",
+		"news": "Haberler",
+		"themes": "Temalar",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	}
 }
