@@ -2,15 +2,15 @@
 	"metadata": {
 		"home": "Files • Página Inicial",
 		"docs_home": "Files • Documentos",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"docs_page": "Files • Documentos - {title}",
+		"description": "Construindo o melhor gerenciador de arquivos para Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
+			"chip": "Comunidade",
+			"title": "Projetado e desenvolvido por você.",
+			"description": "Files é um software livre e de código aberto, mantido e projetado por um coletivo de centenas de colaboradores.",
+			"discord": "Participe da discussão",
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
