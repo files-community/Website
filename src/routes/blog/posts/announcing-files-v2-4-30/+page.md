@@ -1,7 +1,7 @@
 ---
 title: Introducing Files, version 2.4.30
 description: Better Home Page, Better Workflow
-thumbnail: /blog-resources/files-2-4-30/HeroImage.jpg
+thumbnail: /blog-resources/files2-4-30/HeroImage.jpg
 date: 2/7/2023
 author: files-community
 ---
