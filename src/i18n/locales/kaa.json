@@ -1,7 +1,7 @@
 {
 	"metadata": {
-		"home": "Files • Página Inicial",
-		"docs_home": "Files • Documentos",
+		"home": "Files • Home",
+		"docs_home": "Files • Docs",
 		"docs_page": "Files • Docs - {title}",
 		"description": "Building the best file manager for Windows."
 	},
