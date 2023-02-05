@@ -11,6 +11,9 @@ We are thrilled to announce the latest update to Files. With version 2.4.30, we'
 
 ### Enhancing the home page
 The latest version 2.4.30 introduces a revamped "Quick Access" widget, making it easier than ever to keep track of your most frequently used folders. With the ability to pin and unpin items, you'll have quick access to your most important folders. The widget also displays the four most recently opened folders, making it seamless to switch between tasks. And the best part? The widget now syncs with File Explorer, giving you a consistent experience across both apps.
+<figure class="margin-bottom">
+    <img src="/blog-resources/filesv2-4-30/QuickAccess.png" alt="Quick Access Widget." />
+</figure>
 
 We're also bringing a new and improved way to organize your files with the introduction of the File Tags widget. This feature will help you categorize your files, making it easier to find what you're looking for. The new widget is a replacement for the existing Bundles widget, but we're keeping it around for a few more months to give you time to make the transition. Get ready for a more streamlined and organized experience with your files!
 
