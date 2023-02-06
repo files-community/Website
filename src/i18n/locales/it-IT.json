@@ -41,6 +41,14 @@
 			"tabs": {
 				"title": "Sfrutta il multitasking grazie alle schede",
 				"description": "Evita finestre multiple e mantieni il tuo desktop ordinato. Files, come i browser, dispone di un'interfaccia a schede completa di shortcut da tastiera."
+			},
+			"columns": {
+				"title": "Vista a colonne",
+				"description": "Naviga rapidamente attraverso le colonne per accedere ai diversi livelli del file system."
+			},
+			"archives": {
+				"title": "Visualizza e modifica gli archivi",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
