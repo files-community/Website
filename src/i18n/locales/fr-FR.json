@@ -41,6 +41,14 @@
 			"tabs": {
 				"title": "Multitâche avec les onglets",
 				"description": "Évitez les innombrables fenêtres et maintenez votre bureau clair. Files est doté d'une interface avec onglets semblable à celle d'un navigateur, le tout avec des raccourcis clavier."
+			},
+			"columns": {
+				"title": "Column view",
+				"description": "Quickly navigate through columns to access different levels of the file system."
+			},
+			"archives": {
+				"title": "View and edit archives",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
