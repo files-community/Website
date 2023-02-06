@@ -41,6 +41,14 @@
 			"tabs": {
 				"title": "Багатозадачність з вкладками",
 				"description": "Уникайте кількох вікон і позбавте свій робочий стіл від безладу. Files мають браузерний інтерфейс із вкладками та сполученнями клавіш."
+			},
+			"columns": {
+				"title": "Column view",
+				"description": "Quickly navigate through columns to access different levels of the file system."
+			},
+			"archives": {
+				"title": "View and edit archives",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
