@@ -41,6 +41,14 @@
 			"tabs": {
 				"title": "Multitask with tabs",
 				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+			},
+			"columns": {
+				"title": "عرض الأعمدة",
+				"description": "انتقل بسرعة عبر الأعمدة للوصول إلى مختلف مستويات نظام الملفات."
+			},
+			"archives": {
+				"title": "عرض وتحرير الأرشيف",
+				"description": "إدارة الأرشيف المضغوط بما في ذلك zip ،WinRar ،7zip وأكثر من ذلك. قم بالسحب والإسقاط للإضافة إلى الأرشيف الموجود، واستخدام خيار إنشاء أرشيف لإنشاء أرشيف مشفر."
 			}
 		},
 		"themes": {
