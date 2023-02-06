@@ -29,7 +29,7 @@ Quickly switch between files and folders with ease using the `tab` and `shift + 
 ### Shell extensions
 We've moved shell extensions to a sub menu when right clicking files. This should improve performance and make the menu size a little more predictable. If you prefer having shell extensions in the main menu, you can change this behavior from the settings dialog.
 
-### Prompt for Credentials When Connecting SMB
+### Prompt for Credentials When Connecting to SMB
 We've added a prompt for entering credentials when connecting to SMB, credentials can be saved to Windows Credential Manager if you don't want to manually enter them every time.
 
 
