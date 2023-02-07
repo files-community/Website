@@ -7,7 +7,8 @@
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
+	top: 0;
 	z-index: 10;
 	justify-content: space-between;
 	flex: 0 0 auto;
