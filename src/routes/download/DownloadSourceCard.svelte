@@ -38,6 +38,15 @@
 		<TextBlock class="download-source-description">
 			{source.description}
 		</TextBlock>
+		<a
+			href={source.href}
+			download={!source.external ? filename : ""}
+			{...externalLink}
+			bind:this={link}
+			style:display="none"
+		>
+			download
+		</a>
 	</div>
 </article>
 
