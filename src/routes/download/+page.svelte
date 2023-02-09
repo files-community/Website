@@ -84,6 +84,7 @@
 
 			> p {
 				text-align: left;
+				max-width: 50rem;
 			}
 		}
 	}
