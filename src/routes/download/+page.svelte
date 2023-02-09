@@ -80,7 +80,7 @@
 		.download-sources {
 			display: flex;
 			flex-direction: column;
-			gap: 2rem;
+			gap: 1rem;
 
 			> p {
 				text-align: center;
