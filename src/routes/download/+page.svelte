@@ -5,21 +5,22 @@
 	import { onMount } from "svelte";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
+	import { _ } from "svelte-i18n";
 
 	let isWindows = false;
 
 	const downloadSources = [
 		{
-			name: "Microsoft Store",
-			description: "Purchasing Files through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements.",
+			name: $_("download.microsoft_store.title"),
+			description: $_("download.microsoft_store.description"),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
 		},
 		{
-			name: "Preview",
-			description: "The preview version can be installed alongside the stable release and provides early access to new features and improvements.",
+			name: $_("download.preview.title"),
+			description: $_("download.preview.description"),
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -37,10 +38,10 @@
 
 <main class="download-page">
 	<TextBlock variant="titleLarge" style="text-align: center;"
-		>Download Files</TextBlock
+		>{$_("download.title")}</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		Please consider donating to support our work on Files.
+		{$_("download.donation_description")}
 
 		<Button
 			slot="action"
@@ -48,7 +49,7 @@
 			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
-			Donate
+			{$_("download.donation_button")}
 		</Button>
 
 		<svelte:fragment slot="icon">
@@ -60,7 +61,7 @@
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
-		<p>Don't have access to the Microsoft Store? Try our <a href="/appinstallers/Files.Stable.exe">classic installer</a>.</p>
+		<p>{$_("download.self_signed.description")}<a href="/appinstallers/Files.Stable.exe">{$_("download.self_signed.link_text")}</a>.</p>
 	</section>
 </main>
 
