@@ -62,7 +62,7 @@
 		display: flex;
 		flex-direction: row;
 		place-items: center;
-		padding: 4rem 12rem;
+		padding: 4rem 12rem 4rem 6rem;
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
@@ -83,7 +83,7 @@
 		}
 
 		.download-source-icon {
-			max-inline-size: 8rem;
+			max-inline-size: 10rem;
 			transition: var(--fds-control-normal-duration) ease;
 		}
 
