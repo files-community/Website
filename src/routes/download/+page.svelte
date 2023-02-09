@@ -11,7 +11,7 @@
 
 	const downloadSources = [
 		{
-			name: $_("download.microsoft_store.title"),
+			name: "Microsoft Store",
 			description: $_("download.microsoft_store.description"),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
@@ -52,16 +52,19 @@
 			{$_("download.donation_button")}
 		</Button>
 
-		<svelte:fragment slot="icon">
-			&nbsp;
-		</svelte:fragment>
+		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
 	</InfoBar>
 
 	<section class="download-sources">
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
-		<p>{$_("download.self_signed.description")}<a href="/appinstallers/Files.Stable.exe">{$_("download.self_signed.link_text")}</a>.</p>
+		<p>
+			{$_("download.self_signed.description")}<a
+				href="/appinstallers/Files.Stable.exe"
+				>{$_("download.self_signed.link_text")}</a
+			>.
+		</p>
 	</section>
 </main>
 
@@ -74,7 +77,7 @@
 		gap: 2rem;
 		padding: 2rem;
 		margin-inline: auto;
-		
+
 		inline-size: fit-content;
 		block-size: calc(100vh - 58px);
 
