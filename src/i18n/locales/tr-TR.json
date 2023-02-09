@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Anasayfa",
-		"docs_home": "Files • Dökümantasyon",
-		"docs_page": "Files • Dökümentasyon - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Windows için en iyi dosya yöneticisini oluşturun."
 	},
 	"home": {
 		"community": {
 			"chip": "Topluluk",
 			"title": "Sizin tarafınızdan tasarlandı ve geliştirildi.",
-			"description": "Files ücretsiz ve açık kaynaklı bir yazılımdır, geliştirilmesi ve tasarımı yüzlerce katılımcıdan oluşan bir ekip tarafından yapılır.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Tartışmaya Katıl",
 			"docs": "Katkıda Bulunun",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Özellikler",
 			"title": "Bunu zaten yapıyor.",
-			"description": "Bulut dosyaları entegrasyonu? Sekmeler ve çoklu düzen? Zengin dosya önizlemeleri? Files, modern bir dosya yöneticisinden beklediğiniz sağlam özelliklerle kaplıdır.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Bilinmeyen",
 			"cloud": {
 				"title": "Eksiksiz bulut entegrasyonu",
@@ -40,7 +40,7 @@
 			},
 			"tabs": {
 				"title": "Sekmelerle çoklu görev",
-				"description": "Birden çok pencereden kaçının ve masaüstünüzü dağınıklıktan uzak tutun. Dosyalar, klavye kısayollarıyla tamamlanmış, tarayıcı benzeri bir sekme arabirimine sahiptir."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
 				"title": "Column view",
@@ -54,7 +54,7 @@
 		"themes": {
 			"chip": "Temalar",
 			"title": "Kesinlikle kişisel.",
-			"description": "İstediğin gibi olsun. Files, renklere ve malzemelere kadar tamamen özelleştirilebilir bir kullanıcı arabirimine sahiptir. Files'da yerleşik olarak bulunan özel temaları deneyin veya doğrudan Files'a dalın ve kendinizinkini oluşturun.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Koyu Gri • Açık Mavi",
 			"grey_green": "Mavi Gri • Neon Yeşili",
 			"purple": "Mor",
@@ -73,11 +73,11 @@
 		"edit_page": "Bu sayfayı düzenle"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Sahipleri",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Ana sayfa",
 		"docs": "Dokümantasyon",
 		"news": "Haberler",
-		"contribute": "Files'a Katkıda bulunun",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Geri Bildirimde Bulunun",
 		"style_guide": "Stil Rehberi",
 		"translations": "Tercümeler",
@@ -94,5 +94,21 @@
 		"themes": "Temalar",
 		"discord": "Discord",
 		"github": "GitHub"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
