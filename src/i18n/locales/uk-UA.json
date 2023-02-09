@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Головна",
-		"docs_home": "Files • Документація",
-		"docs_page": "Files • Документація - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Створення найкращого файлового менеджера для Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Спільнота",
 			"title": "Спроектовано та розроблено вами.",
-			"description": "Files є вільним Open-Source програмним забезпеченням, яке підтримується колективом із сотні учасників.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Приєднатися до обговорення",
 			"docs": "Стати учасником",
 			"contributions": "{amount, plural, =0 {Немає вкладів} one {# внесок} few {# вклади} other {# вкладів}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Функції",
 			"title": "Це вже зроблено.",
-			"description": "Інтеграція з облачними сервісами? Вкладки і кілька способів розташування? Розширений попередній перегляд файлів? Files володіє надійними функціями, які ви очікуєте від сучасного файлового менеджера.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Невідомо",
 			"cloud": {
 				"title": "Повна інтеграція з хмарними сервісами",
@@ -40,21 +40,21 @@
 			},
 			"tabs": {
 				"title": "Багатозадачність з вкладками",
-				"description": "Уникайте кількох вікон і позбавте свій робочий стіл від безладу. Files мають браузерний інтерфейс із вкладками та сполученнями клавіш."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Макет \"Стовпці\"",
+				"description": "Швидко переміщайтесь по стовпцях для доступу до різних рівнів файлової системи."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Перегляд та редагування архівів",
+				"description": "Керування різними форматами архівів, включаючи zip, WinRar, 7zip та інші. Перетягуйте файли до існуючих архівів та створюйте зашифровані архіви за допомогою опції \"Створити архів\"."
 			}
 		},
 		"themes": {
 			"chip": "Теми",
 			"title": "Дуже особисте.",
-			"description": "Будь по твоєму. Files має повністю настроюваний інтерфейс користувача, аж до кольорів і матеріалів. Спробуйте теми користувача, вбудовані в Files, або зануртесь прямо в інтерфейс і створіть свої власні.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Темно-сірий • Світло-блакитний",
 			"grey_green": "Синій сірий • Неоновий зелений",
 			"purple": "Фіолетовий",
@@ -73,11 +73,11 @@
 		"edit_page": "Редагувати цю сторінку"
 	},
 	"footer": {
-		"copyright": "Авторське право © 2021 - {year}, автори Files",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Головна",
 		"docs": "Документація",
 		"news": "Новини",
-		"contribute": "Внести внесок у розвиток Files",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Надіслати відгук",
 		"style_guide": "Посібник зі стилю коду",
 		"translations": "Переклад",
@@ -94,5 +94,21 @@
 		"themes": "Теми",
 		"discord": "Discord",
 		"github": "Github"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
