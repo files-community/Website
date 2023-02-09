@@ -11,22 +11,15 @@
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: "Get Files from the Microsoft Store",
+			description: "Purchasing Files through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements.",
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
 		},
 		{
-			name: "Sideload",
-			description: "Install Files without the Microsoft Store",
-			href: "/appinstallers/Files.Stable.exe",
-			icon: "/branding/logo-light.svg",
-			darkModeIcon: "/branding/logo-dark.svg"
-		},
-		{
 			name: "Preview",
-			description: "Get early access to improvements and new features",
+			description: "The preview version can be installed alongside the stable release and provides early access to new features and improvements.",
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -67,6 +60,7 @@
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
+		<p>Don't have access to the Microsoft Store? Try our <a href="/appinstallers/Files.Stable.exe">classic installer</a>.</p>
 	</section>
 </main>
 
@@ -84,9 +78,13 @@
 		block-size: calc(100vh - 58px);
 
 		.download-sources {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			> p {
+				text-align: center;
+			}
 		}
 	}
 </style>

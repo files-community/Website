@@ -31,19 +31,23 @@
 			alt="{source.name} logo"
 		/>
 	</picture>
-	<TextBlock variant="title" style="text-align: center;">{source.name}</TextBlock>
-	<TextBlock class="download-source-description">
-		{source.description}
-	</TextBlock>
-	<a
-		href={source.href}
-		download={!source.external ? filename : ""}
-		{...externalLink}
-		bind:this={link}
-		style:display="none"
-	>
-		download
-	</a>
+	<div class="label-container">
+		<TextBlock variant="title" style="text-align: center;"
+			>{source.name}</TextBlock
+		>
+		<TextBlock class="download-source-description">
+			{source.description}
+		</TextBlock>
+		<a
+			href={source.href}
+			download={!source.external ? filename : ""}
+			{...externalLink}
+			bind:this={link}
+			style:display="none"
+		>
+			download
+		</a>
+	</div>
 </article>
 
 <style lang="scss">
@@ -56,10 +60,9 @@
 		cursor: pointer;
 
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		place-items: center;
-		gap: 1rem;
-		padding: 2rem;
+		padding: 3rem 6rem;
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
@@ -75,14 +78,24 @@
 
 		:global {
 			.download-source-description {
-				max-inline-size: 20ch;
-				text-align: center;
+				text-align: left;
+				max-width: 50rem;
 			}
 		}
 
 		.download-source-icon {
 			max-inline-size: 10rem;
 			transition: var(--fds-control-normal-duration) ease;
+		}
+
+		.label-container {
+			margin-left: 4rem;
+			display: flex;
+			align-items: flex-start;
+			justify-items: stretch;
+			flex-direction: column;
+			flex-grow: 1;
+			gap: 1rem;
 		}
 	}
 </style>
