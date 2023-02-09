@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { BlogCard, HeaderChip, Metadata, PageSection, tilt } from "$lib";
+	import { BlogCard, defaultI18nValues, HeaderChip, Metadata, PageSection, tilt } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
@@ -44,7 +44,7 @@
 			<h2>{mainPost.metadata.title}</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">
-				{$_("blog.read_more")}
+				{$_("blog.read_more", defaultI18nValues)}
 			</Button>
 		</div>
 	</div>
@@ -55,7 +55,7 @@
 			{/each}
 		</div>
 	{:else}
-		<p>{$_("blog.coming_soon")}</p>
+		<p>{$_("blog.coming_soon", defaultI18nValues)}</p>
 	{/if}
 </PageSection>
 

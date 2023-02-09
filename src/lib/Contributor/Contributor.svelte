@@ -22,7 +22,7 @@
 			<h5>{login}</h5>
 			<span>
 				{$_("home.community.contributions", {
-					values: { amount: contributions }
+					values: { amount: contributions, FilesName: "Files" }
 				})}
 			</span>
 		</div>

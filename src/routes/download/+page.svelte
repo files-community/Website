@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { links } from "$data/links";
-	import { externalLink, Metadata } from "$lib";
+	import { defaultI18nValues, externalLink, Metadata } from "$lib";
 	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
 	import { onMount } from "svelte";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
@@ -12,15 +12,15 @@
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: $_("download.microsoft_store.description"),
+			description: $_("download.microsoft_store.description", defaultI18nValues),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
 		},
 		{
-			name: $_("download.preview.title"),
-			description: $_("download.preview.description"),
+			name: $_("download.preview.title", defaultI18nValues),
+			description: $_("download.preview.description", defaultI18nValues),
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -38,10 +38,10 @@
 
 <main class="download-page">
 	<TextBlock variant="titleLarge" style="text-align: center;"
-		>{$_("download.title")}</TextBlock
+		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		{$_("download.donation_description")}
+		{$_("download.donation_description", defaultI18nValues)}
 
 		<Button
 			slot="action"
@@ -49,7 +49,7 @@
 			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
-			{$_("download.donation_button")}
+			{$_("download.donation_button", defaultI18nValues)}
 		</Button>
 
 		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
@@ -60,9 +60,9 @@
 			<DownloadSourceCard {source} />
 		{/each}
 		<p>
-			{$_("download.self_signed.description")}<a
+			{$_("download.self_signed.description, defaultI18nValues")}<a
 				href="/appinstallers/Files.Stable.exe"
-				>{$_("download.self_signed.link_text")}</a
+				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
 			>.
 		</p>
 	</section>

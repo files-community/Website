@@ -5,11 +5,11 @@
 		FeaturesSection,
 		ThemesSection
 	} from "$layout";
-	import { Metadata } from "$lib";
+	import { defaultI18nValues, Metadata } from "$lib";
 	import { _ } from "svelte-i18n";
 </script>
 
-<Metadata title={$_("metadata.home")} />
+<Metadata title={$_("metadata.home", defaultI18nValues)} />
 
 <DesignSection />
 
