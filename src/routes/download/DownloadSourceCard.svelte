@@ -94,6 +94,7 @@
 			justify-items: stretch;
 			flex-direction: column;
 			flex-grow: 1;
+			gap: 1rem;
 		}
 	}
 </style>
