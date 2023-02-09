@@ -62,7 +62,7 @@
 		display: flex;
 		flex-direction: row;
 		place-items: center;
-		padding: 4rem 12rem 4rem 6rem;
+		padding: 4rem 12rem;
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
@@ -89,6 +89,7 @@
 
 		.label-container {
 			margin-left: 4rem;
+			margin-top: 1rem;
 			display: flex;
 			align-items: flex-start;
 			justify-items: stretch;
