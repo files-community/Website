@@ -1,98 +1,114 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
+		"description": "Entwicklung des besten Dateimanagers für Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"title": "Designt und entwickelt von euch.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"discord": "Nimm an der Diskussion teil",
+			"docs": "Werde Mitwirkender",
+			"contributions": "{amount, plural, =0 {Keine Beiträge} one {# Beitrag} other {# Beiträge}}"
 		},
 		"design": {
 			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"title": "Funktionalität trifft Schönheit.",
+			"description": "Entdecken Sie ein wundervolles Design für Windows Dateimanager. Verwalten Sie alle Ihre Dateien mit erhöhter Produktivität. Arbeiten Sie mit mehreren Ordnern und Tabs gleichzeitig. Und vieles mehr.",
+			"download": "Herunterladen",
+			"learn_more": "Mehr erfahren"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Funktionen",
+			"title": "Das tut es bereits.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"unknown": "Unbekannt",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Nahtlose Cloud-Integration",
+				"description": "Integration mit Cloud-Diensten wie OneDrive, Google Drive, und iCloud ermöglicht es Ihnen Ihre Dokumente und Fotos direkt von der Seitenleiste aus in der Cloud zu verwalten."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Dateivorschau",
+				"description": "Vorschau von Dokumenten, Fotos und mehr ohne sie zu öffnen. Unterstützung für ergiebige Vorschaubilder, Syntaxhervorhebung, Markdown und Videowiedergabe ist vollständig eingebaut."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Markierte Dateien & Ordner",
+				"description": "Markieren und organisieren Sie schnell Ihre Dateien und Ordner für später, indem Sie ihnen farbige und benannte Tags zuordnen, um eine einfache Identifizierung zu ermöglichen. Sie können sogar eigene Tags hinzufügen!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Multitasking mit Tabs",
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Spaltenansicht",
+				"description": "Navigieren Sie schnell durch Spalten um auf verschiedene Ebenen des Dateisystems zuzugreifen."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Dateiarchive anzeigen und bearbeiten",
+				"description": "Verwalten Sie Zip-Archive inklusive Zip, WinRAR, 7zip und mehr. Drag-and-drop, um zu existierenden Archiven hinzuzufügen, und verwenden Sie die Option zum Archiv erstellen, um verschlüsselte Archive zu erstellen."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Farbschemas",
+			"title": "Genau an dich angepasst.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"grey_blue": "Dunkelgrau • Hellblau",
+			"grey_green": "Blaugrau • Neongrün",
+			"purple": "Lila",
+			"yellow_white": "Gelb • Weiß",
+			"white_teal": "Kühles Weiß • Dunkles Türkis",
+			"sky_blue": "Himmelblau",
+			"select_theme": "Theme #{index} auswählen"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Weitere Posts kommen demnächst!",
+		"read_more": "Mehr Erfahren"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Keine Ergebnisse gefunden",
+		"edit_page": "Diese Seite bearbeiten"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
-		"home": "Home",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"home": "Startseite",
 		"docs": "Docs",
 		"news": "News",
-		"contribute": "Contribute to Files",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"contribute": "Contribute to {FilesName}",
+		"feedback": "Feedback geben",
+		"style_guide": "Styleguide",
+		"translations": "Übersetzungen",
+		"contribute_site": "Zu dieser Seite beitragen",
+		"github": "GitHub Repo",
+		"report_bug": "Fehler gefunden?",
+		"web_team": "Web-Team"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"themes": "Themes",
+		"home": "Startseite",
+		"docs": "Dokumentation",
+		"news": "Neuigkeiten",
+		"themes": "Farbschemas",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
