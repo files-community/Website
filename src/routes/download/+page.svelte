@@ -11,7 +11,7 @@
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: "Get Files from the Microsoft Store",
+			description: "Purchasing Files through the Microsoft Store helps support the developers and allows us to update the app with new features and improvements.",
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
@@ -19,7 +19,7 @@
 		},
 		{
 			name: "Preview",
-			description: "Get early access to improvements and new features",
+			description: "The preview version can be installed alongside the stable release and gives users early access to improvements and new features",
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
