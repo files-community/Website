@@ -83,7 +83,7 @@
 		}
 
 		.download-source-icon {
-			max-inline-size: 6rem;
+			max-inline-size: 8rem;
 			transition: var(--fds-control-normal-duration) ease;
 		}
 
