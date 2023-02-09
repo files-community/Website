@@ -83,8 +83,7 @@
 			gap: 1rem;
 
 			> p {
-				text-align: left;
-				max-width: 50rem;
+				text-align: center;
 			}
 		}
 	}
