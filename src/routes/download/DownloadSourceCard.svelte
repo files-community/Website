@@ -89,7 +89,6 @@
 
 		.label-container {
 			margin-left: 4rem;
-			margin-top: 1rem;
 			display: flex;
 			align-items: flex-start;
 			justify-items: stretch;
