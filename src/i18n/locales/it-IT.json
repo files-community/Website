@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Documentazione",
-		"docs_page": "Files • Documentazione - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Creando il miglior file manager per Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Community",
 			"title": "Progettato e sviluppato da voi.",
-			"description": "Files è un software open source e gratuito, mantenuto e progettato da centinaia di contributori.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Partecipa alla discussione",
 			"docs": "Diventa un contributore",
 			"contributions": "{amount, plural, =0 {Nessuna contribuzione} one {# contribuzione} other {# contribuzioni}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Funzionalità",
 			"title": "Questo lo fa di già.",
-			"description": "Integrazione con il Cloud? Schede e più layout? Anteprime complete dei file? Files offre tutte queste funzionalità come ci si aspetterebbe da un file manager moderno.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Sconosciuto",
 			"cloud": {
 				"title": "Integrazione fluida del Cloud",
@@ -40,7 +40,7 @@
 			},
 			"tabs": {
 				"title": "Sfrutta il multitasking grazie alle schede",
-				"description": "Evita finestre multiple e mantieni il tuo desktop ordinato. Files, come i browser, dispone di un'interfaccia a schede completa di shortcut da tastiera."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
 				"title": "Vista a colonne",
@@ -48,13 +48,13 @@
 			},
 			"archives": {
 				"title": "Visualizza e modifica gli archivi",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"description": "Gestisci gli archivi compressi, che siano zip, WinRar, 7zip o di altro tipo. Trascina file e cartelle sopra agli archivi già esistenti per aggiungerli e usa l'opzione \"Crea Archivio\" per creare archivi crittografati."
 			}
 		},
 		"themes": {
 			"chip": "Temi",
 			"title": "Profondamente personale.",
-			"description": "Rendilo tuo. Files dispone di un'interfaccia utente completamente personalizzabile, fino ai colori e ai materiali. Prova i temi personalizzati disponibili in Files oppure esprimi la tua creatività creandone uno unico.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Grigio Scuro • Azzurro",
 			"grey_green": "Grigio Blu • Verde Neon",
 			"purple": "Viola",
@@ -73,11 +73,11 @@
 		"edit_page": "Modifica questa pagina"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, Gli Autori di Files",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Home",
 		"docs": "Documentazione",
 		"news": "Novità",
-		"contribute": "Contribuisci a Files",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Facci sapere la tua opinione",
 		"style_guide": "Guida allo Stile",
 		"translations": "Traduzioni",
@@ -94,5 +94,21 @@
 		"themes": "Temi",
 		"discord": "Discord",
 		"github": "Github"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
