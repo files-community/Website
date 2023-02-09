@@ -78,7 +78,8 @@
 
 		:global {
 			.download-source-description {
-				text-align: center;
+				text-align: left;
+				max-width: 50rem;
 			}
 		}
 
