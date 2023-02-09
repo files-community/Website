@@ -62,7 +62,7 @@
 		display: flex;
 		flex-direction: row;
 		place-items: center;
-		padding: 4rem 8rem;
+		padding: 4rem 6rem;
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
