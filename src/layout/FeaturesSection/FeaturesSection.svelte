@@ -3,7 +3,7 @@
 	import { dev } from "$app/environment";
 	import { _ } from "svelte-i18n";
 
-	import { entries, FeatureCard, HeaderChip, PageSection } from "$lib";
+	import { defaultI18nValues, entries, FeatureCard, HeaderChip, PageSection } from "$lib";
 	import type { FeatureCardData } from "$data/features";
 
 	import FeatureShowcase from "./FeatureShowcase.svelte";
@@ -18,33 +18,33 @@
 
 	export const featureCards = {
 		tabs: {
-			title: $_("home.features.tabs.title"),
-			description: $_("home.features.tabs.description"),
+			title: $_("home.features.tabs.title", defaultI18nValues),
+			description: $_("home.features.tabs.description", defaultI18nValues),
 			icon: TabDesktop
 		},
 		columns: {
-			title: $_("home.features.columns.title"),
-			description: $_("home.features.columns.description"),
+			title: $_("home.features.columns.title", defaultI18nValues),
+			description: $_("home.features.columns.description", defaultI18nValues),
 			icon: Columns
 		},
 		archives: {
-			title: $_("home.features.archives.title"),
-			description: $_("home.features.archives.description"),
+			title: $_("home.features.archives.title", defaultI18nValues),
+			description: $_("home.features.archives.description", defaultI18nValues),
 			icon: Archive
 		},
 		cloud: {
-			title: $_("home.features.cloud.title"),
-			description: $_("home.features.cloud.description"),
+			title: $_("home.features.cloud.title", defaultI18nValues),
+			description: $_("home.features.cloud.description", defaultI18nValues),
 			icon: Cloud
 		},
 		preview: {
-			title: $_("home.features.preview.title"),
-			description: $_("home.features.preview.description"),
+			title: $_("home.features.preview.title", defaultI18nValues),
+			description: $_("home.features.preview.description", defaultI18nValues),
 			icon: EyeVisible
 		},
 		tags: {
-			title: $_("home.features.tags.title"),
-			description: $_("home.features.tags.description"),
+			title: $_("home.features.tags.title", defaultI18nValues),
+			description: $_("home.features.tags.description", defaultI18nValues),
 			icon: Tag
 		}
 	} as const satisfies { [name: string]: FeatureCardData };
