@@ -60,7 +60,7 @@
 			<DownloadSourceCard {source} />
 		{/each}
 		<p>
-			{$_("download.self_signed.description, defaultI18nValues")}<a
+			{$_("download.self_signed.description", defaultI18nValues)}<a
 				href="/appinstallers/Files.Stable.exe"
 				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
 			>.
