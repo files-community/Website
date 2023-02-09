@@ -100,7 +100,6 @@
 		"donation_description": "Please consider donating to support our work on Files",
 		"donation_button": "Donate",
 		"microsoft_store": {
-			"title": "Microsoft Store",
 			"description": "Purchasing Files through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
