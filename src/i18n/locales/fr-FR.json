@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Accueil",
-		"docs_home": "Files • Documentation",
-		"docs_page": "Files • Documentation - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Construire le meilleur gestionnaire de fichiers pour Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Communauté",
 			"title": "Conçu et développé par vous.",
-			"description": "Files est un logiciel gratuit et open source, maintenu et conçu par des centaines de contributeurs.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Rejoindre la discussion",
 			"docs": "Devenir un contributeur",
 			"contributions": "{amount, plural, =0 {Aucune contribution} one {# contribution} other {# contributions}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Fonctionnalités",
 			"title": "Il le fait déjà.",
-			"description": "L'intégration du Cloud ? Des onglets et plusieurs dispositions ? Des aperçus de fichiers enrichis ? Files vous offre ces fonctionnalités robustes que vous pouvez attendre d'un gestionnaire de fichiers moderne.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Inconnu",
 			"cloud": {
 				"title": "Intégration harmonieuse du cloud",
@@ -40,21 +40,21 @@
 			},
 			"tabs": {
 				"title": "Multitâche avec les onglets",
-				"description": "Évitez les innombrables fenêtres et maintenez votre bureau clair. Files est doté d'une interface avec onglets semblable à celle d'un navigateur, le tout avec des raccourcis clavier."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Affichage en colonne",
+				"description": "Naviguez rapidement à travers les colonnes pour accéder à différents niveaux de l'arborescence système."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Affichez et modifiez vos archives",
+				"description": "Gérez vos archives zip, WinRar, 7zip et plus encore. Glissez et déposez pour ajouter à des archives existantes, et utilisez l'option de création d'archives pour créer des archives cryptées."
 			}
 		},
 		"themes": {
 			"chip": "Thèmes",
 			"title": "Hautement personnel.",
-			"description": "Faites ce qu'il vous plait. Files dispose d'une interface utilisateur totalement personnalisable, jusqu'à la moindre couleur et texture. Essayez les thèmes personnalisés intégrés dans Files ou plongez dans la documentation et créez les vôtres.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Gris Foncé • Bleu Clair",
 			"grey_green": "Gris Bleu • Vert Fluo",
 			"purple": "Violet",
@@ -73,11 +73,11 @@
 		"edit_page": "Modifier cette page"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, Les Auteurs de Files",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Accueil",
 		"docs": "Documentation",
 		"news": "Actualités",
-		"contribute": "Contribuer à Files",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Donner votre avis",
 		"style_guide": "Guide de style",
 		"translations": "Traductions",
@@ -94,5 +94,21 @@
 		"themes": "Thèmes",
 		"discord": "Discord",
 		"github": "Github"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
