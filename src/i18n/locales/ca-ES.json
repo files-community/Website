@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Home",
-		"docs_home": "Files • Docs",
-		"docs_page": "Files • Docs - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Community",
 			"title": "Designed and developed by you.",
-			"description": "Files is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Join the discussion",
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Unknown",
 			"cloud": {
 				"title": "Seamless cloud integration",
@@ -40,7 +40,7 @@
 			},
 			"tabs": {
 				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. Files features a browser-like tabbing interface complete with keyboard shortcuts."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
 				"title": "Column view",
@@ -54,7 +54,7 @@
 		"themes": {
 			"chip": "Themes",
 			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
 			"purple": "Purple",
@@ -73,11 +73,11 @@
 		"edit_page": "Edit this page"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Home",
 		"docs": "Docs",
 		"news": "News",
-		"contribute": "Contribute to Files",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
@@ -94,5 +94,21 @@
 		"themes": "Themes",
 		"discord": "Discord",
 		"github": "Github"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }
