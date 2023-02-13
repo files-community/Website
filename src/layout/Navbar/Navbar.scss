@@ -14,7 +14,8 @@
 	flex: 0 0 auto;
 	block-size: 58px;
 	padding: 12px 18px;
-	background-color: var(--fds-solid-background-base);
+	background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
+	backdrop-filter: blur(60px) saturate(150%);
 	user-select: none;
 }
 
@@ -167,9 +168,7 @@
 		inset-inline-start: 0;
 		inline-size: 100%;
 		block-size: 64px;
-		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
 		overflow: visible;
-		backdrop-filter: blur(60px) saturate(150%);
 	}
 
 	.sidebar {
