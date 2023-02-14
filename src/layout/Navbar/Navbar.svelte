@@ -2,7 +2,7 @@
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
-	import { externalLink, isUrlContainPath, TreeView } from "$lib";
+	import { defaultI18nValues, externalLink, isUrlContainPath, TreeView } from "$lib";
 	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -89,12 +89,7 @@
 		{/if}
 	</nav>
 	<div class="buttons">
-		<Tooltip
-			text={$_("navbar.ukraine")}
-			placement="bottom"
-			delay={200}
-			offset={0}
-		>
+		<Tooltip text={$_("navbar.ukraine", defaultI18nValues)} placement="bottom" delay={200} offset={0}>
 			<span
 				class="support-ukraine"
 				aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"

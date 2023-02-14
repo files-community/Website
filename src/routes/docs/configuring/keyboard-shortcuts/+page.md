@@ -15,6 +15,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>T</kbd>                         | Create new tab                         |
 | <kbd>Ctrl</kbd> + <kbd>Enter</kbd>                     | Open selected folders in new tab       |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>  | Open selected folder in secondary pane |
+| <kbd>Ctrl</kbd> + <kbd>`<kbd>                          | Open selected path in Windows Terminal |
 | <kbd>Ctrl</kbd> + <kbd>W</kbd>                         | Close tab                              |
 | <kbd>Ctrl</kbd> + <kbd>F4</kbd>                        | Close tab                              |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>      | Reopen recently closed tab             |
