@@ -23,8 +23,7 @@ To view and filter your files by tags, follow these steps:
 
 You can also click tags in the details layout to start a search. To do that, follow these steps:
 
-- Switch to the details layout.
-- There will be a tag column where you can see tags assigned to your files and folder
+- Switch to the details layout, there will be a tag column where you can see tags assigned to your files and folder
 - Tap on the tag you want to search for
 - You will see a list of all the files or folders with that tag.
 
@@ -44,4 +43,6 @@ Note that deleting a tag will not delete the files or folders with that tag.
 
 ## How do tags work behind the scenes?
 
-Instead of creating a database with a list of files and tags, we store the tag information in the file itself using alternate data streams. This allows users to move files around without losing their tags. Another benefit is that it decouples the feature from Files and allows other apps using the same system to support this feature.
+Instead of creating a database with a list of files and tags, we store the tag information in the file itself using alternate data streams. This allows:
+- Users to move files around without losing their tags.
+- It decouples the tags feature from Files and allows other apps using the same system to support this feature.
