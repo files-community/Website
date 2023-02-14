@@ -94,6 +94,13 @@
 		>
 			{$_("footer.news", defaultI18nValues)}
 		</Button>
+		<Button
+			variant="hyperlink"
+			data-sveltekit-preload-data="hover"
+			href="/download"
+		>
+			{$_("footer.download", defaultI18nValues)}
+		</Button>
 	</div>
 	<div class="column">
 		<p>{$_("footer.contribute", defaultI18nValues)}</p>
