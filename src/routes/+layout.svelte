@@ -2,6 +2,7 @@
 	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
 
+	import { defaultI18nValues } from "$lib";
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
@@ -19,23 +20,18 @@
 
 	const navbarItems: NavbarItem[] = [
 		{
-			name: $_("navbar.home"),
+			name: $_("navbar.home", defaultI18nValues),
 			path: "/",
 			icon: Home
 		},
 		{
-			name: $_("navbar.docs"),
+			name: $_("navbar.docs", defaultI18nValues),
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
 			icon: Book
 		},
-		// {
-		//     name: $_("navbar.themes"),
-		//     path: "/themes",
-		//     icon: PaintBrush
-		// },
 		{
-			name: $_("navbar.news"),
+			name: $_("navbar.news", defaultI18nValues),
 			path: "/blog",
 			icon: News
 		},
@@ -48,12 +44,12 @@
 
 	const navbarButtons = [
 		{
-			label: $_("navbar.discord"),
+			label: $_("navbar.discord", defaultI18nValues),
 			href: `https://discord.gg/${discord}`,
 			icon: Chat
 		},
 		{
-			label: $_("navbar.github"),
+			label: $_("navbar.github", defaultI18nValues),
 			href: `https://github.com/${github.owner}/${github.repo}`,
 			icon: Code
 		}
@@ -80,9 +76,9 @@
 		media="(prefers-color-scheme: dark)"
 	/>
 
-	<meta content={$_("metadata.description")} name="description" />
-	<meta content={$_("metadata.description")} name="og:description" />
-	<meta content={$_("metadata.description")} name="twitter:description" />
+	<meta content={$_("metadata.description", defaultI18nValues)} name="description" />
+	<meta content={$_("metadata.description", defaultI18nValues)} name="og:description" />
+	<meta content={$_("metadata.description", defaultI18nValues)} name="twitter:description" />
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"

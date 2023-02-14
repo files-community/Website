@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • Kezdőlap",
-		"docs_home": "Files • Dokumentáció",
-		"docs_page": "Files • Dokumentáció - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Közösség",
 			"title": "Tervezte és fejlesztette: te.",
-			"description": "A Files egy ingyenes és nyílt forráskódú szoftver, amit több száz közreműködőből álló közösség tervez és tart fenn.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Csatlakozz a beszélgetéshez",
 			"docs": "Legyél közreműködő",
 			"contributions": "{amount, plural, =0 {Közreműködés nélkül} one {# közreműködés} other {# közreműködés}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Funkciók",
 			"title": "Már ezt is tudja.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? Files has it covered with robust features you expect from a modern file manager.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Ismeretlen",
 			"cloud": {
 				"title": "Felhő integráció",
@@ -40,13 +40,21 @@
 			},
 			"tabs": {
 				"title": "Multitaszking lapokkal",
-				"description": "Kerüld el a sok ablak közötti navigálást. A Files a böngészőkhöz hasonló lap-elrendezést valósít meg, amit sok gyorsbillentyű egészít ki."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+			},
+			"columns": {
+				"title": "Column view",
+				"description": "Quickly navigate through columns to access different levels of the file system."
+			},
+			"archives": {
+				"title": "View and edit archives",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
 			"chip": "Témák",
 			"title": "Distinctly personal.",
-			"description": "Have it your way. Files features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into Files or dive right into the docs and create your own.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Sötétszürke • Világoskék",
 			"grey_green": "Kékesszürke • Neonzöld",
 			"purple": "Lila",
@@ -65,11 +73,11 @@
 		"edit_page": "Oldal módosítása"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The Files Authors",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "Kezdőlap",
 		"docs": "Dokumentáció",
 		"news": "Hírek",
-		"contribute": "Közreműködés - Files",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "Küldj visszajelzést",
 		"style_guide": "Kódstílus",
 		"translations": "Fordítások",
@@ -86,5 +94,21 @@
 		"themes": "Témák",
 		"discord": "Discord",
 		"github": "GitHub"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }

@@ -6,7 +6,7 @@
 	import { _ } from "svelte-i18n";
 
 	import { links } from "$data/links";
-	import { externalLink, Metadata, TreeView } from "$lib";
+	import { defaultI18nValues, externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
@@ -75,8 +75,8 @@
 
 <Metadata
 	title={pageTitle
-		? $_("metadata.docs_page", { values: { title: pageTitle } })
-		: $_("metadata.docs_home")}
+		? $_("metadata.docs_page", { values: { title: pageTitle, FilesName: "Files" } })
+		: $_("metadata.docs_home", defaultI18nValues)}
 	image="docs"
 />
 
@@ -115,7 +115,7 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty")}</ListItem>
+							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -158,7 +158,7 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty")}</ListItem>
+							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
 						{/if}
 					</div>
 				{/if}
@@ -182,7 +182,7 @@
 								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
 							{...externalLink}
 						>
-							{$_("docs.edit_page")}
+							{$_("docs.edit_page", defaultI18nValues)}
 						</Button>
 					</div>
 				</header>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { externalLink, PageSection } from "$lib";
+	import { defaultI18nValues, externalLink, PageSection } from "$lib";
 	import { Button, IconButton } from "fluent-svelte";
 	import { links } from "$data/links";
 	import { _ } from "svelte-i18n";
@@ -66,7 +66,7 @@
 			</IconButton>
 		</div>
 		<p>
-			{$_("footer.copyright", { values: { year: new Date().getFullYear() } })}
+			{$_("footer.copyright", { values: { year: new Date().getFullYear(), FilesName: "Files" } })}
 		</p>
 		<a
 			href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss"
@@ -78,36 +78,36 @@
 	<div class="column">
 		<p>Pages</p>
 		<Button variant="hyperlink" data-sveltekit-preload-data="hover" href="/">
-			{$_("footer.home")}
+			{$_("footer.home", defaultI18nValues)}
 		</Button>
 		<Button
 			variant="hyperlink"
 			data-sveltekit-preload-data="hover"
 			href="/docs"
 		>
-			{$_("footer.docs")}
+			{$_("footer.docs", defaultI18nValues)}
 		</Button>
 		<Button
 			variant="hyperlink"
 			data-sveltekit-preload-data="hover"
 			href="/blog"
 		>
-			{$_("footer.news")}
+			{$_("footer.news", defaultI18nValues)}
 		</Button>
 	</div>
 	<div class="column">
-		<p>{$_("footer.contribute")}</p>
+		<p>{$_("footer.contribute", defaultI18nValues)}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github
 				.repo}/issues/new/choose"
 		>
-			{$_("footer.feedback")}
+			{$_("footer.feedback", defaultI18nValues)}
 		</Button>
 
 		<Button variant="hyperlink" href="/docs/contributing/code-style">
-			{$_("footer.style_guide")}
+			{$_("footer.style_guide", defaultI18nValues)}
 		</Button>
 
 		<Button
@@ -115,16 +115,16 @@
 			href="https://crowdin.com/project/files-app"
 			variant="hyperlink"
 		>
-			{$_("footer.translations")}
+			{$_("footer.translations", defaultI18nValues)}
 		</Button>
 
-		<p>{$_("footer.contribute_site")}</p>
+		<p>{$_("footer.contribute_site", defaultI18nValues)}</p>
 		<Button
 			variant="hyperlink"
 			{...externalLink}
 			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
 		>
-			{$_("footer.github")}
+			{$_("footer.github", defaultI18nValues)}
 		</Button>
 
 		<Button
@@ -133,11 +133,11 @@
 			href="https://github.com/{links.github.owner}/{links.github
 				.siteRepo}/issues/new/choose"
 		>
-			{$_("footer.report_bug")}
+			{$_("footer.report_bug", defaultI18nValues)}
 		</Button>
 	</div>
 	<div class="column">
-		<p>{$_("footer.web_team")}</p>
+		<p>{$_("footer.web_team", defaultI18nValues)}</p>
 		{#each contributors as contributor}
 			<Button variant="hyperlink" href={contributor.link} {...externalLink}>
 				{contributor.name}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { HeaderChip, PageSection } from "$lib";
+	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	let scrollY: number;
@@ -11,15 +11,15 @@
 />
 
 <PageSection id="design-section">
-	<HeaderChip>{$_("home.design.chip")}</HeaderChip>
-	<h2>{$_("home.design.title")}</h2>
-	<p>{$_("home.design.description")}</p>
+	<HeaderChip>{$_("home.design.chip", defaultI18nValues)}</HeaderChip>
+	<h2>{$_("home.design.title", defaultI18nValues)}</h2>
+	<p>{$_("home.design.description", defaultI18nValues)}</p>
 	<div class="buttons-spacer">
 		<Button href="/download/" variant="accent">
-			{$_("home.design.download")}
+			{$_("home.design.download", defaultI18nValues)}
 		</Button>
 		<Button variant="hyperlink" href="/docs/">
-			{$_("home.design.learn_more")}
+			{$_("home.design.learn_more", defaultI18nValues)}
 		</Button>
 	</div>
 	<div class="design-image">
