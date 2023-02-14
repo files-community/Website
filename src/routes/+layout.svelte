@@ -42,8 +42,7 @@
 		{
 			name: $_("navbar.download"),
 			path: "/download",
-			type:"accent",
-			icon:undefined
+			icon: undefined
 		}
 	];
 
