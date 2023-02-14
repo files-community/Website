@@ -8,7 +8,7 @@ Tags are a way to organize your files and folders. You can assign one or more ta
 
 To assign a tag to a file or folder, follow these steps:
 
-- Right click the file or folder you want to tag.
+- Right-click the file or folder you want to tag.
 - Click on the "edit tags" menu that appears.
 - Select a tag from the list.
 
