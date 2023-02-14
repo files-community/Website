@@ -32,7 +32,7 @@ You can also click tags in the details layout to start a search. To do that, fol
 
 You can create and edit tags from the advanced page in the settings. To do that, follow these steps:
 
-- Tap on the "Settings" icon at the top right corner of the screen.
+- Tap on the "Settings" icon in the top right corner of the screen.
 - Tap on "Advanced" in the menu that appears.
 - Tap on "Tags".
 - You will see a list of all the tags you have created.
