@@ -41,6 +41,10 @@ You can create and edit tags from the advanced page in the settings. To do that,
 Note that deleting a tag will not delete the files or folders with that tag.
 
 
+## Tags widget
+
+The Tags widget on the home page helps you organize and access your tagged files and folders. This widget shows you all the tags you have created and the files and folders that have those tags. To enable or disable the Tags widget, go to the preferences page in settings, and toggle the switch under the widgets section.
+
 ## How do tags work behind the scenes?
 
 Instead of creating a database with a list of files and tags, we store the tag information in the file itself using alternate data streams. This allows:
