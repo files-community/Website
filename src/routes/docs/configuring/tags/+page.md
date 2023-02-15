@@ -27,6 +27,12 @@ You can also click tags in the details layout to start a search. To do that, fol
 - Tap on the tag you want to search for
 - You will see a list of all the files or folders with that tag.
 
+<InfoBar
+    severity="Informational"
+    title="Available in preview"
+    message="The ability to edit tags is currently available in preview."
+/>
+
 ## How to edit or delete tags
 
 You can create and edit tags from the advanced page in the settings. To do that, follow these steps:
