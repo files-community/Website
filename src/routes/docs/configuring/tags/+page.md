@@ -1,3 +1,8 @@
+<script>
+    import { InfoBar } from "fluent-svelte";
+	import { links } from "$data/links";
+</script>
+
 ---
 title: Use tags to organize files on Windows
 ---
