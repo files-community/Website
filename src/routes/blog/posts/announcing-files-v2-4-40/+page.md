@@ -19,6 +19,8 @@ You can also remove tags from files or folders by clicking on the remove tag ico
 
 To view all files with a specific tag, you can use the search box in Files and type `tag:` followed by the tag name. For example, `tag:important` will show all files tagged as important.
 
+There is also an optional widget for the home page that will list your tagged files and folders.
+
 We hope you’ll find this feature useful and we’d love to hear your feedback on how we can improve it further.
 <figure>
     <img src="/blog-resources/files2-4-40/EditTags.png" alt="Edit tags." />
