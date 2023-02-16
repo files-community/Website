@@ -1,5 +1,5 @@
 ---
-title: Introducing Files, version 2.4.30
+title: Introducing Files, version 2.4.40
 description: Tags
 thumbnail: /blog-resources/files2-4-30/HeroImage.jpg
 date: 2/20/2023
