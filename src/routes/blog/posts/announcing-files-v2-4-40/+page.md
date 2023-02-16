@@ -38,7 +38,6 @@ Besides these major features and UI improvements, we’ve also fixed some bugs a
 - Fixed an issue where the context menu height would change after shell extensions finished loading
 - Fixed issue where tab icons weren’t showing
 - Fixed an issue with resizing columns in the details layout
-You can find more details about these fixes and enhancements on our GitHub repository: https://github.com/files-community/Files/releases/tag/v2.4.40
 
 ### Conclusion 🙌
 That’s all for this update! We hope you enjoy using Files v2.4.40 as much as we enjoyed making it.
