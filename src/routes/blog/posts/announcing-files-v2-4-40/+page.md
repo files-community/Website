@@ -30,9 +30,11 @@ We hope you’ll find this feature useful and we’d love to hear your feedback 
 </figure>
 
 ### Right click Context Menu 📎
-We’ve also made some UI improvements to the context menu starting with the size, in previous versions of Files, the menus height would change when the shell extensions finished loading. This behavior was confusing and made the menu frustrating to use. In v2.4.40, we added a loading indicator when shell extensions are still loading, not only does the menu height stay the same, it's easier to know when the shell extensions are ready to use.
+We’ve also made some UI improvements to the context menu starting with the size. In previous versions of Files, the menu height would change when the shell extensions finished loading. This behavior was confusing and made the menu frustrating to use.
 
-Also new in v2.4.40, right clicking on home page widgets will show you the shell extensions.
+In v2.4.40, we added an indicator that displays when shell extensions are still loading, this helps the user know when shell extensions are ready to use and it fixes the issue with the menu height.
+
+Also new in v2.4.40, we added support for shell extensions on the home page widgets.
 
 We also added some context menu settings to the preferences page allowing you to hide options such as “Open in new tab” and “Open in new window” if you don’t use them often.
 <figure>
