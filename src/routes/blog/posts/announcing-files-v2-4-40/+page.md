@@ -14,6 +14,9 @@ One of the most requested features from our users was the ability to add tags to
 In Files v2.4.40, we added a new settings page for editing tags allowing you to create, rename or delete tags as well as change their colors.
 
 To add or remove tags from files or folders, simply right click them and use the "edit tags" menu.
+<figure>
+    <img src="/blog-resources/files2-4-40/TagsMenu.png" alt="Tags menu." />
+</figure>
 
 You can also remove tags from files or folders by clicking on the remove tag icon in the details layout.
 
