@@ -20,13 +20,19 @@ You can also remove tags from files or folders by clicking on the remove tag ico
 To view all files with a specific tag, you can use the search box in Files and type `tag:` followed by the tag name. For example, `tag:important` will show all files tagged as important.
 
 We hope you’ll find this feature useful and we’d love to hear your feedback on how we can improve it further.
+<figure>
+    <img src="/blog-resources/files2-4-40/EditTags.png" alt="Edit tags." />
+</figure>
 
 ### UI Improvements 🎨
 We’ve also made some UI improvements to make the app more consistent and polished.
 
-One of these improvements is that we’ve refreshed the icons in the toolbar and right click context menu to better match the Fluent Design System guidelines. 
+One of these improvements is the updated icons in the toolbar and right click context menu. 
 
 We also added some context menu settings to the preferences page allowing you to hide options such as “Open in new tab” and “Open in new window” if you don’t use them often.
+<figure>
+    <img src="/blog-resources/files2-4-40/EditContextMenu.png" alt="Edit context menu." />
+</figure>
 
 ### Other Fixes and Enhancements 🛠️
 Besides these major features and UI improvements, we’ve also fixed some bugs and added some enhancements:
