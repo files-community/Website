@@ -2,7 +2,7 @@
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
-	import { defaultI18nValues, externalLink, TreeView } from "$lib";
+	import { defaultI18nValues, externalLink, isUrlContainPath, TreeView } from "$lib";
 	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -74,12 +74,7 @@
 					<a
 						class="item"
 						data-sveltekit-preload-data="hover"
-						class:selected={$page.url.pathname === path ||
-							($page.url.pathname.split("/").length > 1 &&
-								path.split("/").length > 1 &&
-								$page.url.pathname.startsWith(path) &&
-								!(path === "" || path === "/")) ||
-							(path === "/" && $page.url.pathname === "")}
+						class:selected={isUrlContainPath($page.url.pathname, path)}
 						href={path}
 						target={external ? "_blank" : undefined}
 						rel={external ? "noreferrer noopener" : undefined}
@@ -135,12 +130,7 @@
 					type="navigation"
 					data-sveltekit-preload-data="hover"
 					on:click={toggleSidebar}
-					selected={$page.url.pathname === path ||
-						($page.url.pathname.split("/").length > 1 &&
-							path.split("/").length > 1 &&
-							$page.url.pathname.startsWith(path) &&
-							!(path === "" || path === "/")) ||
-						(path === "/" && $page.url.pathname === "")}
+					selected={isUrlContainPath($page.url.pathname, path)}
 					href={path}
 					target={external ? "_blank" : undefined}
 					rel={external ? "noreferrer noopener" : undefined}
