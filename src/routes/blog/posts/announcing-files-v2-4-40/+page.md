@@ -6,7 +6,7 @@ date: 2/20/2023
 author: files-community
 ---
 
-Files is a modern file manager app for Windows that offers a sleek and intuitive user interface with powerful features. In this post, we’ll take a look at some of the new features and improvements that we’ve added in version v2.4.40.
+Files is a modern file manager app for Windows that offers a sleek and intuitive user interface with powerful features. In this post, we’ll take a look at some of the new features and improvements that we’ve added in version 2.4.40.
 
 ### Tagging System 🏷️
 One of the most requested features from our users was the ability to add tags to files and folders. Tags are labels that help you categorize and find your files faster. You can use tags to group files by project, priority, status or any other criteria that suits your needs.
