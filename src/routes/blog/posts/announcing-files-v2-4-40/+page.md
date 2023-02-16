@@ -1,6 +1,6 @@
 ---
 title: Introducing Files, version 2.4.40
-description: Tags
+description: Manage your files with tags
 thumbnail: /blog-resources/files2-4-30/HeroImage.jpg
 date: 2/20/2023
 author: files-community
@@ -21,7 +21,7 @@ To view all files with a specific tag, you can use the search box in Files and t
 
 We hope you’ll find this feature useful and we’d love to hear your feedback on how we can improve it further.
 
-### UI Improvements 💅
+### UI Improvements 🎨
 We’ve also made some UI improvements to make it more consistent and polished.
 
 One of these improvements is that we’ve refreshed the icons in the toolbar and right click context menu to better match the Fluent Design System guidelines.
