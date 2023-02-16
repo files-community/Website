@@ -29,10 +29,10 @@ We hope you’ll find this feature useful and we’d love to hear your feedback 
     <img src="/blog-resources/files2-4-40/EditTags.png" alt="Edit tags." />
 </figure>
 
-### UI Improvements 🎨
-We’ve also made some UI improvements to make the app more consistent and polished.
+### Right click context menu 📎
+We’ve also made some UI improvements to the context menu starting with the size, in previous versions of Files, the menus height would change when the shell extensions finished loading. This behavior was confusing and made the menu frustrating to use. In v2.4.40, we added a loading indicator when shell extensions are still loading, not only does the menu height stay the same, it's easier to know when the shell extensions are ready to use.
 
-One of these improvements is the updated icons in the toolbar and right click context menu. 
+Also new in v2.4.40, right clicking on home page widgets will show you the shell extensions.
 
 We also added some context menu settings to the preferences page allowing you to hide options such as “Open in new tab” and “Open in new window” if you don’t use them often.
 <figure>
@@ -42,11 +42,9 @@ We also added some context menu settings to the preferences page allowing you to
 ### Other Fixes and Enhancements 🛠️
 Besides these major features and UI improvements, we’ve also fixed some bugs and added some enhancements:
 
-- Added shell extensions when right clicking widgets on the home page
 - Added keyboard shortcut (Ctrl+Shift+`) to open Windows Terminal as administrator
 - Fixed issue where items would sometimes be selected when they shouldn’t have been
 - Fixed issue where shell extensions wouldn’t show when right clicking in archives
-- Fixed an issue where the context menu height would change after shell extensions finished loading
 - Fixed issue where tab icons weren’t showing
 - Fixed an issue with resizing columns in the details layout
 
