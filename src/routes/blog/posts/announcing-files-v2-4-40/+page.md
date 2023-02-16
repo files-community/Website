@@ -1,7 +1,7 @@
 ---
 title: Introducing Files, version 2.4.40
 description: Manage your files with tags
-thumbnail: /blog-resources/files2-4-40/HeroImage.png
+thumbnail: /blog-resources/files2-4-40/HeroImage.jpg
 date: 2/20/2023
 author: files-community
 ---
