@@ -39,7 +39,7 @@ You can create and edit tags from the advanced page in the settings. To do that,
 - You can tap on the "new tag" button to create a new tag, or the "edit" and "delete" buttons on existing tags to edit or delete them.
 - If you choose to edit, you can change the name or color of the tag.
 
-Note that deleting a tag will not delete the files or folders with that tag.
+Note that deleting a tag will not delete the files or folders with that tag but it will remove the tag from those items.
 
 
 ## Tags widget
