@@ -77,6 +77,7 @@
 		"home": "ホーム",
 		"docs": "ドキュメント",
 		"news": "ニュース",
+		"download": "Download",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "フィードバックを送信",
 		"style_guide": "コーディング規約",
@@ -91,6 +92,7 @@
 		"home": "ホーム",
 		"docs": "ドキュメント",
 		"news": "ニュース",
+		"download": "Download",
 		"themes": "テーマ",
 		"discord": "Discord",
 		"github": "GitHub"
