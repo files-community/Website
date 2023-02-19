@@ -8,7 +8,7 @@
 	"home": {
 		"community": {
 			"chip": "Comunidade",
-			"title": "Projetado e desenvolvido por você.",
+			"title": "Desenvolvido e desenvolvido por você.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Participe da discussão",
 			"docs": "Become a contributor",
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"description": "Integração von Nuvem-Bateiense? Taba undo mereré Disposições? Bienergia Dateivorschauen? {FilesName} Sala de conversação alis diese sublegenda Funkeiro, die Sie von ei nem moderne Datei “treinador” pertentar.",
 			"unknown": "Unknown",
 			"cloud": {
 				"title": "Seamless cloud integration",
@@ -77,6 +77,7 @@
 		"home": "Home",
 		"docs": "Docs",
 		"news": "News",
+		"download": "Download",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
@@ -91,6 +92,7 @@
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
+		"download": "Download",
 		"themes": "Themes",
 		"discord": "Discord",
 		"github": "Github"
