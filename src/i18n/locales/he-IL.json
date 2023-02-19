@@ -77,6 +77,7 @@
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
+		"download": "Download",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "תן משוב",
 		"style_guide": "מדריך עיצוב",
@@ -91,6 +92,7 @@
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
+		"download": "Download",
 		"themes": "ערכות נושא",
 		"discord": "דיסקורד",
 		"github": "GitHub"
