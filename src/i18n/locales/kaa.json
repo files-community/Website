@@ -1,13 +1,13 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
+		"home": "{FilesName} • Bas bet",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
+			"chip": "Birlespe",
 			"title": "Designed and developed by you.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Join the discussion",
@@ -18,20 +18,20 @@
 			"chip": "Design",
 			"title": "Power meets beauty.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Júklew",
+			"download": "Júklep alıw",
 			"learn_more": "Tolıǵıraq úyreniw"
 		},
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"unknown": "Belgisiz",
 			"cloud": {
 				"title": "Seamless cloud integration",
 				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
 			},
 			"preview": {
-				"title": "File preview",
+				"title": "Fayldı aldınnan kóriw",
 				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
 			},
 			"tags": {
@@ -58,7 +58,7 @@
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
 			"purple": "Purple",
-			"yellow_white": "Yellow • White",
+			"yellow_white": "Sarı • Aq",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
 			"select_theme": "Select theme #{index}"
@@ -77,9 +77,9 @@
 		"home": "Bas bet",
 		"docs": "Docs",
 		"news": "Jańalıqlar",
-		"download": "Download",
+		"download": "Júklep alıw",
 		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
+		"feedback": "Qayta baylanıs",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
 		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
@@ -92,7 +92,7 @@
 		"home": "Bas bet",
 		"docs": "Documentation",
 		"news": "Jańalıqlar",
-		"download": "Download",
+		"download": "Júklep alıw",
 		"themes": "Temalar",
 		"discord": "Discord",
 		"github": "Github"
