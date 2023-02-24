@@ -1,8 +1,8 @@
 {
 	"metadata": {
 		"home": "{FilesName} • Trang chủ",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"docs_home": "{FilesName} • Tài liệu",
+		"docs_page": "{FilesName} • Tài liệu - {title}",
 		"description": "Dựng nên trình quản lý tệp tốt nhất cho Windows."
 	},
 	"home": {
@@ -12,7 +12,7 @@
 			"description": "{FilesName} là phần mềm miễn phí mã nguồn mở, được vận hành và thiết kế bởi hàng trăm cộng tác viên.",
 			"discord": "Tham gia thảo luận",
 			"docs": "Trở thành cộng tác viên",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"contributions": "{amount, plural, =0 {Không có đóng góp} other {# đóng góp}}"
 		},
 		"design": {
 			"chip": "Thiết kế",
@@ -36,81 +36,81 @@
 			},
 			"tags": {
 				"title": "Gắn thẻ tệp và thư mục",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"description": "Nhanh chóng đánh dấu và sắp xếp các tệp và thư mục của bạn cho sau này bằng cách gán thẻ có màu và tên để dễ nhận dạng. Bạn còn có thể tự thêm thẻ của chính mình!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Đa nhiệm với thẻ",
+				"description": "Hạn chế nhiều cửa sổ và giúp bàn làm việc của bạn không lộn xộn. {FilesName} có giao diện thẻ như trình duyệt với hỗ trợ phím tắt bàn phím."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Hiển thị theo cột",
+				"description": "Nhanh chóng định hướng qua cột để truy cập các tầng khác nhau của tệp hệ thống."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Xem và chỉnh sửa tệp nén",
+				"description": "Quản lý tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo và thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tạo để tạo tệp nén mã hóa."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Chủ đề",
+			"title": "Cá tính riêng biệt.",
+			"description": "Theo cách của bạn. {FilesName} có giao diện hoàn toàn có thể tùy chỉnh, đến tận màu sắc và chất liệu. Thử chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc đi vào hướng dẫn và tự tay bạn tạo nên.",
+			"grey_blue": "Xám Tối • Xanh Nhạt",
+			"grey_green": "Xám Xanh • Xanh Lá Neon",
+			"purple": "Tím",
+			"yellow_white": "Vàng • Trắng",
+			"white_teal": "Trắng Mát Mẻ • Mòng Két Tối",
+			"sky_blue": "Xanh Da Trời",
+			"select_theme": "Chọn chủ đề #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Nhiều bài đăng mới sẽ sớm ra mắt!",
+		"read_more": "Đọc thêm"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Không có kết quả",
+		"edit_page": "Chỉnh sửa trang này"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "Copyright © 2021 - {year}, Tác giả {FilesName}",
+		"home": "Trang chủ",
+		"docs": "Tài liệu",
+		"news": "Tin tức",
+		"download": "Tải về",
+		"contribute": "Đóng góp cho {FilesName}",
+		"feedback": "Gửi phản hồi",
+		"style_guide": "Hướng dẫn thiết kế",
+		"translations": "Dịch thuật",
+		"contribute_site": "Đóng góp cho trang này",
+		"github": "Kho lưu trữ GitHub",
+		"report_bug": "Bạn tìm thấy lỗi?",
+		"web_team": "Đội ngũ Web"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"home": "Trang chủ",
+		"docs": "Tài liệu",
+		"news": "Tin tức",
+		"download": "Tải về",
+		"themes": "Chủ đề",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
-		"donation_button": "Donate",
+		"title": "Tải {FilesName}",
+		"donation_description": "Hãy cân nhắc quyên góp để ủng hộ công sức của chúng tôi cho {FilesName}",
+		"donation_button": "Ủng hộ",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "Mua {FilesName} trên Microsoft Store giúp hỗ trợ lập trình viên và cho phép chúng tôi tiếp tục cập nhật ứng dụng với tính năng mới và những cải thiện."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "Xem trước",
+			"description": "Phiên bản xem trước có thể được cài đặt cùng với bản ổn định và cung cấp quyền truy cập sớm vào các tính năng mới và cải thiện."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "trình cài đặt cổ điển của chúng tôi",
+			"description": "Không có quyền truy cập vào Microsoft Store? Hãy thử "
 		}
 	}
 }
