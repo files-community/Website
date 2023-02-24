@@ -1,41 +1,41 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
+		"home": "{FilesName} • Trang chủ",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Dựng nên trình quản lý tệp tốt nhất cho Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
+			"chip": "Cộng đồng",
+			"title": "Thiết kế và phát triển bởi bạn.",
+			"description": "{FilesName} là phần mềm miễn phí mã nguồn mở, được vận hành và thiết kế bởi hàng trăm cộng tác viên.",
+			"discord": "Tham gia thảo luận",
+			"docs": "Trở thành cộng tác viên",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Thiết kế",
+			"title": "Sức mạnh đi đôi với vẻ đẹp.",
+			"description": "Khám phá thiết kế đẹp chuẩn Windows. Quản lý tất cả tệp của bạn với hiệu suất tăng cao. Làm việc với nhiều thư mục bằng thẻ. Và nhiều nữa.",
+			"download": "Tải về",
+			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Tính năng",
+			"title": "Nó đã làm được việc đó sẵn rồi.",
+			"description": "Tích hợp đám mây? Thẻ và nhiều bố cục? Xem trước nhiều thông tin tệp? {FilesName} làm được hết với các tính năng mạnh mẽ bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"unknown": "Không rõ",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Tích hợp đám mây mượt mà",
+				"description": "Tích hợp với các dịch vụ đám mây như OneDrive, Google Drive, và iCloud cho phép bạn quản lý tài liệu và ảnh của mình trên đám mây, ngay từ thanh bên."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Xem trước tệp",
+				"description": "Xem trước tài liệu, ảnh, và nhiều hơn nữa mà không cần mở chúng. Hỗ trợ xem trước nhiều thông tin, nổi bật cú pháp, markdown và phát video đều được tích hợp sẵn."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
+				"title": "Gắn thẻ tệp và thư mục",
 				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
 			},
 			"tabs": {
