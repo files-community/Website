@@ -27,7 +27,7 @@
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Belgisiz",
 			"cloud": {
-				"title": "Seamless cloud integration",
+				"title": "Bultlı xızmetler menen tolıq integraciya",
 				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
 			},
 			"preview": {
@@ -43,11 +43,11 @@
 				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Qatar kórinisi",
+				"description": "Fayl sistemasınıń hár qıylı dárejelerine kiriw ushın qatarlar arqalı tez baǵdarlanıń."
 			},
 			"archives": {
-				"title": "View and edit archives",
+				"title": "Arxivlerdi kóriń hám ózgertiń",
 				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
@@ -57,10 +57,10 @@
 			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
+			"purple": "Qızǵılt kók",
 			"yellow_white": "Sarı • Aq",
 			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
+			"sky_blue": "Aqshıl kók",
 			"select_theme": "#{index} temasın tańlaw"
 		}
 	},
@@ -73,7 +73,7 @@
 		"edit_page": "Bul betke ózgeris kirgiziw"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"copyright": "Barlıq huqıqlar qorǵalǵan © 2021 - {year}, {FilesName} Avtorları",
 		"home": "Bas bet",
 		"docs": "Docs",
 		"news": "Jańalıqlar",
@@ -81,7 +81,7 @@
 		"contribute": "{FilesName} rawajlanıwına úles qosıw",
 		"feedback": "Qayta baylanıs",
 		"style_guide": "Style Guide",
-		"translations": "Translations",
+		"translations": "Awdarmalar",
 		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
 		"github": "Github Repo",
 		"report_bug": "Qátelik tawdıńızba?",
@@ -105,12 +105,12 @@
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
-			"title": "Preview",
+			"title": "Aldınnan kóriw versiyası",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "klassikalıq ornatıwshı",
+			"description": "Microsoft Storeǵa kiriw múmkinshiligi joq pa? Sınap kórıń: "
 		}
 	}
 }
