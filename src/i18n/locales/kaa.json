@@ -10,20 +10,20 @@
 			"chip": "Birlespe",
 			"title": "Designed and developed by you.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
+			"discord": "Dodalawǵa qosılıw",
+			"docs": "Aǵza bolıw",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
+			"chip": "Dizayn",
+			"title": "Kúsh gózzallıq penen ushrasadı",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
 			"download": "Júklep alıw",
 			"learn_more": "Tolıǵıraq úyreniw"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
+			"chip": "Funciyalar",
+			"title": "Bul álleqashan islendi.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "Belgisiz",
 			"cloud": {
@@ -61,12 +61,12 @@
 			"yellow_white": "Sarı • Aq",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"select_theme": "#{index} temasın tańlaw"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Kóbirek jańalıqlar jaqın arada!",
+		"read_more": "Dawamın oqıw"
 	},
 	"docs": {
 		"autocomplete_empty": "Nátiyjeler tabılmadı",
@@ -98,7 +98,7 @@
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
+		"title": "{FilesName}dı júklep alıw",
 		"donation_description": "Please consider donating to support our work on {FilesName}",
 		"donation_button": "Qollap-quwatlaw",
 		"microsoft_store": {
