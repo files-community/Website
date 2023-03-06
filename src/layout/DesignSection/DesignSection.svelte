@@ -18,7 +18,7 @@
 		<Button href="/download/" variant="accent">
 			{$_("home.design.download", defaultI18nValues)}
 		</Button>
-		<Button variant="hyperlink" href="/docs/">
+		<Button variant="hyperlink" href="/docs">
 			{$_("home.design.learn_more", defaultI18nValues)}
 		</Button>
 	</div>
