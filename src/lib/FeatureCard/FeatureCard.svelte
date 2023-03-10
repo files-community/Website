@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { _ } from "svelte-i18n";
+	import { defaultI18nValues} from "$lib";
 	import Question from "@fluentui/svg-icons/icons/question_24_regular.svg?raw";
 
 	export let description: string = "";
@@ -12,7 +13,7 @@
 	<button class="feature-card" on:click class:selected {...$$restProps}>
 		{@html icon}
 		<h4>
-			<slot>{$_("home.features.unknown")}</slot>
+			<slot>{$_("home.features.unknown", defaultI18nValues)}</slot>
 		</h4>
 		<p>{description}</p>
 	</button>
@@ -20,7 +21,7 @@
 	<div class="feature-card" on:click class:selected {...$$restProps}>
 		{@html icon}
 		<h4>
-			<slot>{$_("home.features.unknown")}</slot>
+			<slot>{$_("home.features.unknown", defaultI18nValues)}</slot>
 		</h4>
 		<p>{description}</p>
 	</div>

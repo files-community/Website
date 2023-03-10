@@ -9,6 +9,7 @@ export { default as TerminalCommand } from "./TerminalCommand/TerminalCommand.sv
 export { default as Titlebar } from "./Titlebar/Titlebar.svelte";
 export { default as BlogCard } from "./BlogCard/BlogCard.svelte";
 export { default as Metadata } from "./Metadata.svelte";
+export { defaultI18nValues } from "./i18n";
 
 // Actions
 export * from "./utils";

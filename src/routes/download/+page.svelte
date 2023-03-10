@@ -1,34 +1,26 @@
 <script lang="ts">
 	import { links } from "$data/links";
-	import { externalLink, Metadata } from "$lib";
+	import { defaultI18nValues, externalLink, Metadata } from "$lib";
 	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
 	import { onMount } from "svelte";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
+	import { _ } from "svelte-i18n";
 
 	let isWindows = false;
 
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: "Get Files from the Microsoft Store",
-			href: isWindows
-				? `ms-windows-store://pdp/?ProductId=${links.storeId}&mode=mini`
-				: `https://www.microsoft.com/store/apps/${links.storeId}?cid=FilesWebsite`,
+			description: $_("download.microsoft_store.description", defaultI18nValues),
+			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
 			external: true
 		},
 		{
-			name: "Sideload",
-			description: "Install Files without the Microsoft Store",
-			href: "/appinstallers/Files.Stable.exe",
-			icon: "/branding/logo-light.svg",
-			darkModeIcon: "/branding/logo-dark.svg"
-		},
-		{
-			name: "Preview",
-			description: "Get early access to improvements and new features",
+			name: $_("download.preview.title", defaultI18nValues),
+			description: $_("download.preview.description", defaultI18nValues),
 			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg"
@@ -46,29 +38,33 @@
 
 <main class="download-page">
 	<TextBlock variant="titleLarge" style="text-align: center;"
-		>Download Files</TextBlock
+		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
 	<InfoBar severity="success" closable={false}>
-		Please consider sponsoring Files on GitHub!
+		{$_("download.donation_description", defaultI18nValues)}
 
 		<Button
 			slot="action"
 			variant="accent"
-			href="https://github.com/sponsors/yaira2"
+			href="https://paypal.me/yaichenbaum"
 			{...externalLink}
 		>
-			Sponsor Now
+			{$_("download.donation_button", defaultI18nValues)}
 		</Button>
 
-		<svelte:fragment slot="icon">
-			&nbsp;
-		</svelte:fragment>
+		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
 	</InfoBar>
 
 	<section class="download-sources">
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
+		<p>
+			{$_("download.self_signed.description", defaultI18nValues)}<a
+				href="/appinstallers/Files.Stable.exe"
+				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
+			>.
+		</p>
 	</section>
 </main>
 
@@ -81,14 +77,18 @@
 		gap: 2rem;
 		padding: 2rem;
 		margin-inline: auto;
-		
+
 		inline-size: fit-content;
 		block-size: calc(100vh - 58px);
 
 		.download-sources {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-			grid-gap: 1rem;
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
+
+			> p {
+				text-align: center;
+			}
 		}
 	}
 </style>

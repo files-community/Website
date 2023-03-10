@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "Files • בית",
-		"docs_home": "Files • תיעוד",
-		"docs_page": "Files • תיעוד - {title}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
 		"description": "בונים את מנהל הקבצים הטוב ביותר לווינדוס."
 	},
 	"home": {
 		"community": {
 			"chip": "קהילה",
 			"title": "מעוצב ומפותח על ידיכם.",
-			"description": "Files היא תוכנה חופשית עם קוד פתוח, המתוחזקת ומעוצבת על ידי אוסף של אלפי תורמים.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "הצטרף לדיון",
 			"docs": "הצטרף לתרומה",
 			"contributions": "{amount, plural, =0 {אף תרומות} one {# תרומה} two {# תרומות} many {# תרומות} other {# תרומות}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "תכונות",
 			"title": "זה כבר עושה את זה.",
-			"description": "חיבור עם קבצים בענן? כרטיסיות ומערכים שונים? תצוגת קבצים מקדימה עשירה? Files מכסה אתכם עם תכונות שאתם מצפים להן ממנהל קבצים מודרני.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
 			"unknown": "לא ידוע",
 			"cloud": {
 				"title": "חיבור חלק עם הענן",
@@ -40,13 +40,21 @@
 			},
 			"tabs": {
 				"title": "עבוד במקביל עם כרטיסיות",
-				"description": "הימנע מחלונות מרובים ושמור על שולחן העבודה שלך נקי. Files מכיל ממשק כרטיסיות כמו דפדפן, כולל קיצורי מקלדת."
+				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+			},
+			"columns": {
+				"title": "Column view",
+				"description": "Quickly navigate through columns to access different levels of the file system."
+			},
+			"archives": {
+				"title": "View and edit archives",
+				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			}
 		},
 		"themes": {
 			"chip": "ערכות נושא",
 			"title": "אישי וייחודי.",
-			"description": "עשה את זה בדרך שלך. Files מכיל ממשק משתמש שניתן להתאמה אישית מלאה, עד לצבעים והחומרים. נסה ערכות נושא מותאמות אישית שמגיעות עם Files או צלול להוראות וצור אחת משלך.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "אפור כהה • תכלת",
 			"grey_green": "אפור כחלחל • ירוק נאון",
 			"purple": "סגול",
@@ -65,11 +73,11 @@
 		"edit_page": "ערוך דף זה"
 	},
 	"footer": {
-		"copyright": "זכויות יוצרים © 2021 - {year}, יוצרי Files",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
-		"contribute": "תרום לFiles",
+		"contribute": "Contribute to {FilesName}",
 		"feedback": "תן משוב",
 		"style_guide": "מדריך עיצוב",
 		"translations": "תרגום",
@@ -86,5 +94,21 @@
 		"themes": "ערכות נושא",
 		"discord": "דיסקורד",
 		"github": "GitHub"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
 	}
 }

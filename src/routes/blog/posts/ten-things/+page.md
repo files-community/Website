@@ -10,11 +10,11 @@ Files is a powerful and user-friendly file manager that can help you organize an
 
 1. **Custom backgrounds**: Files allows you to set custom backgrounds for your file manager. This can be a great way to personalize your experience and make it more visually appealing.
 
-2. **Keyboard shortcuts**: Files has a variety of keyboard shortcuts that can help you quickly navigate and manage your files. For example, you can press **`Ctrl+Shift+Enter`** to open a folder in the secondary pane and **`Ctrl+T`** to open a new tab.
+2. **Keyboard shortcuts**: Files has a variety of keyboard shortcuts that can help you quickly navigate and manage your files. For example, you can press **`Ctrl+Shift+Enter`** to open a folder in the secondary pane and **`Ctrl+T`** to open a new tab. Learn more about shortcuts [here](/docs/configuring/keyboard-shortcuts)
 
 3. **Check boxes**: Files allows you to show check boxes next to file names, making it easier to select multiple files at once. This can be useful when you need to move, copy, or delete multiple files at the same time. You can enable this from Settings > Folders > Show selection checkbox next to file names. 
 
-4. **Change the layout mode**: You can change the layout mode in Files, such as switching between list and tile view.
+4. **Change the layout mode**: You can change the layout mode in Files, such as switching between details and tile view.
 
 5. **Set as the default file manager on Windows**: You can set Files as the default file manager on Windows, making it easier to access and manage your files. This is done by going to settings and selecting the option to set as default file manager.
 

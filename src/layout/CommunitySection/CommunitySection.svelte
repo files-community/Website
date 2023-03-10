@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { getContributors } from "$data/fetchHomepageData";
 	import { links } from "$data/links";
-	import { Contributor, HeaderChip, PageSection } from "$lib";
+	import { Contributor, defaultI18nValues, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
@@ -17,15 +17,15 @@
 <PageSection id="community-section">
 	<div class="community-section-card">
 		<div class="community-section-text">
-			<HeaderChip>{$_("home.community.chip")}</HeaderChip>
-			<h2>{$_("home.community.title")}</h2>
-			<p>{$_("home.community.description")}</p>
+			<HeaderChip>{$_("home.community.chip", defaultI18nValues)}</HeaderChip>
+			<h2>{$_("home.community.title", defaultI18nValues)}</h2>
+			<p>{$_("home.community.description", defaultI18nValues)}</p>
 			<div class="buttons-spacer">
 				<Button variant="hyperlink" href="https://discord.gg/{links.discord}">
-					{$_("home.community.discord")}
+					{$_("home.community.discord", defaultI18nValues)}
 				</Button>
 				<Button variant="hyperlink" href="/docs/contributing/code-style">
-					{$_("home.community.docs")}
+					{$_("home.community.docs", defaultI18nValues)}
 				</Button>
 			</div>
 		</div>

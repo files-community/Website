@@ -2,7 +2,7 @@
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
-	import { externalLink, TreeView } from "$lib";
+	import { defaultI18nValues, externalLink, isUrlContainPath, TreeView } from "$lib";
 	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "@fluentui/svg-icons/icons/navigation_24_regular.svg?raw";
 
@@ -74,12 +74,7 @@
 					<a
 						class="item"
 						data-sveltekit-preload-data="hover"
-						class:selected={$page.url.pathname === path ||
-							($page.url.pathname.split("/").length > 1 &&
-								path.split("/").length > 1 &&
-								$page.url.pathname.startsWith(path) &&
-								!(path === "" || path === "/")) ||
-							(path === "/" && $page.url.pathname === "")}
+						class:selected={isUrlContainPath($page.url.pathname, path)}
 						href={path}
 						target={external ? "_blank" : undefined}
 						rel={external ? "noreferrer noopener" : undefined}
@@ -94,7 +89,7 @@
 		{/if}
 	</nav>
 	<div class="buttons">
-		<Tooltip text={$_("navbar.ukraine")} placement="bottom" delay={200} offset={0}>
+		<Tooltip text={$_("navbar.ukraine", defaultI18nValues)} placement="bottom" delay={200} offset={0}>
 			<span
 				class="support-ukraine"
 				aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"
@@ -135,12 +130,7 @@
 					type="navigation"
 					data-sveltekit-preload-data="hover"
 					on:click={toggleSidebar}
-					selected={$page.url.pathname === path ||
-						($page.url.pathname.split("/").length > 1 &&
-							path.split("/").length > 1 &&
-							$page.url.pathname.startsWith(path) &&
-							!(path === "" || path === "/")) ||
-						(path === "/" && $page.url.pathname === "")}
+					selected={isUrlContainPath($page.url.pathname, path)}
 					href={path}
 					target={external ? "_blank" : undefined}
 					rel={external ? "noreferrer noopener" : undefined}

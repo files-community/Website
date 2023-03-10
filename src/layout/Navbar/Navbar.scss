@@ -7,13 +7,15 @@
 }
 
 .navbar {
-	position: relative;
+	position: sticky;
+	inset-block-start: 0;
 	z-index: 10;
 	justify-content: space-between;
 	flex: 0 0 auto;
 	block-size: 58px;
 	padding: 12px 18px;
-	background-color: var(--fds-solid-background-base);
+	background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
+	backdrop-filter: blur(20px) saturate(150%);
 	user-select: none;
 }
 
@@ -77,8 +79,8 @@
 	}
 }
 
-.support-ukraine{
-	display:flex;
+.support-ukraine {
+	display: flex;
 	width: 30px;
 	height: 20px;
 	background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo=);
@@ -166,9 +168,7 @@
 		inset-inline-start: 0;
 		inline-size: 100%;
 		block-size: 64px;
-		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
 		overflow: visible;
-		backdrop-filter: blur(60px) saturate(150%);
 	}
 
 	.sidebar {
