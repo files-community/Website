@@ -56,7 +56,7 @@
 	<div class="features-section-right">
 		<HeaderChip>{$_("home.features.chip")}</HeaderChip>
 		<h2>{$_("home.features.title")}</h2>
-		<p>{$_("home.features.description")}</p>
+		<p>{$_("home.features.description", defaultI18nValues)}</p>
 		<hr />
 		<div class="feature-cards-container">
 			{#each entries(featureCards) as [id, feature]}
