@@ -27,6 +27,12 @@ You can also click tags in the details layout to start a search. To do that, fol
 - Tap on the tag you want to search for
 - You will see a list of all the files or folders with that tag.
 
+## How to search for tags
+
+To search for tags, follow these steps:
+
+- Tap on the search box and type in `tag:` followed by the name of the tag, for example `tag: Photos`
+- You can search for multiple tags at once by separating tag names with a comma and space. For example `tag: Photos, Important`
 
 ## How to edit or delete tags
 
