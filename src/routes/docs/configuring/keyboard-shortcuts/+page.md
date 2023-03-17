@@ -32,6 +32,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>-</kbd>                         | Decrease icon size                               |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd>                         | Delete                                           |
 | <kbd>Ctrl</kbd> + <kbd>F</kbd>                         | Search                                           |
+| <kbd>Ctrl</kbd> + <kbd>E</kbd>                         | Extract selected archive                         |
 | <kbd>Ctrl</kbd> + <kbd>L</kbd>                         | Select directory path                            |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>      | Copy file/directory path                         |
 | <kbd>Ctrl</kbd> + <kbd>Space</kbd>                     | Toggle preview pane                              |
