@@ -1,15 +1,15 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"home": "{FilesName} • בית",
+		"docs_home": "{FilesName} • תיעוד",
+		"docs_page": "{FilesName} • תיעוד - {title}",
 		"description": "בונים את מנהל הקבצים הטוב ביותר לווינדוס."
 	},
 	"home": {
 		"community": {
 			"chip": "קהילה",
 			"title": "מעוצב ומפותח על ידיכם.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"description": "{FilesName} היא תוכנה חופשית עם קוד פתוח, המתוחזקת ומעוצבת על ידי אוסף של מאות תורמים.",
 			"discord": "הצטרף לדיון",
 			"docs": "הצטרף לתרומה",
 			"contributions": "{amount, plural, =0 {אף תרומות} one {# תרומה} two {# תרומות} many {# תרומות} other {# תרומות}}"
@@ -24,7 +24,7 @@
 		"features": {
 			"chip": "תכונות",
 			"title": "זה כבר עושה את זה.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"description": "שילוב עם שירותי ענן? כרטיסיות ומערכים שונים? תצוגות מקדימות של קבצים? ל{FilesName} יש את זה, עם תכונות שאתם מצפים להן ממנהל קבצים מודרני.",
 			"unknown": "לא ידוע",
 			"cloud": {
 				"title": "חיבור חלק עם הענן",
@@ -40,21 +40,21 @@
 			},
 			"tabs": {
 				"title": "עבוד במקביל עם כרטיסיות",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"description": "המנעו מריבוי חלונות ושמרו על שולחן העבודה שלכם מסודר. {FilesName} מציג ממשק כרטיסיות כמו בדפדפן, הכולל קיצורי מקלדת."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "תצוגת טורים",
+				"description": "נווטו במהירות דרך טורים כדי לגשת לרמות שונות של מערכת הקבצים."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "צפו וערכו קבצי ארכיון",
+				"description": "נהלו קבצי ארכיון מכווצים כולל zip, WinRar, 7zip, ועוד. גררו ושחררו כדי להוסיף לארכיונים קיימים, והשתמשו באפשרות יצירת ארכיון כדי ליצור ארכיונים מוצפנים."
 			}
 		},
 		"themes": {
 			"chip": "ערכות נושא",
 			"title": "אישי וייחודי.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"description": "עשו את זה בדרככם. {FilesName} מציג ממשק משתמש הניתן להתאמה אישית מוחלטת, עד לצבעים והחומרים. נסו ערכות נושא שבאות עם {FilesName} או צללו אל תוך התיעוד וצרו ערכות משלכם.",
 			"grey_blue": "אפור כהה • תכלת",
 			"grey_green": "אפור כחלחל • ירוק נאון",
 			"purple": "סגול",
@@ -73,12 +73,12 @@
 		"edit_page": "ערוך דף זה"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"copyright": "זכויות יוצרים © 2021 - {year}, יוצרי {FilesName}",
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
+		"download": "הורדה",
+		"contribute": "תרמו ל{FilesName}",
 		"feedback": "תן משוב",
 		"style_guide": "מדריך עיצוב",
 		"translations": "תרגום",
@@ -92,25 +92,25 @@
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
-		"download": "Download",
+		"download": "הורדה",
 		"themes": "ערכות נושא",
 		"discord": "דיסקורד",
 		"github": "GitHub"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
-		"donation_button": "Donate",
+		"title": "הורידו את {FilesName}",
+		"donation_description": "אנא שקלו לתרום כדי לתמוך בעבודה שלנו על {FilesName}",
+		"donation_button": "תרומה",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "גרסה מוקדמת",
+			"description": "הגרסה המוקדמת ניתנת להתקנה לצד הגרסה היציבה ומספקת גישה מוקדמת לתכונות ושיפורים חדשים."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "המתקין הקלאסי",
+			"description": "אין גישה לMicrosoft Store? נסו את "
 		}
 	}
 }
