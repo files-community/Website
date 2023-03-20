@@ -77,6 +77,7 @@
 		"home": "Startseite",
 		"docs": "Docs",
 		"news": "News",
+		"download": "Herunterladen",
 		"contribute": "Zu {FilesName} beitragen",
 		"feedback": "Feedback geben",
 		"style_guide": "Styleguide",
@@ -91,6 +92,7 @@
 		"home": "Startseite",
 		"docs": "Dokumentation",
 		"news": "Neuigkeiten",
+		"download": "Herunterladen",
 		"themes": "Farbschemas",
 		"discord": "Discord",
 		"github": "GitHub"

@@ -77,6 +77,7 @@
 		"home": "Головна",
 		"docs": "Документація",
 		"news": "Новини",
+		"download": "Завантажити",
 		"contribute": "Внести внесок у розвиток {FilesName}",
 		"feedback": "Надіслати відгук",
 		"style_guide": "Посібник зі стилю коду",
@@ -91,6 +92,7 @@
 		"home": "Головна",
 		"docs": "Документація",
 		"news": "Новини",
+		"download": "Завантажити",
 		"themes": "Теми",
 		"discord": "Discord",
 		"github": "Github"

@@ -77,6 +77,7 @@
 		"home": "Главная",
 		"docs": "Документация",
 		"news": "Новости",
+		"download": "Скачать",
 		"contribute": "Внести вклад в развитие {FilesName}",
 		"feedback": "Обратная связь",
 		"style_guide": "Руководство по стилю кода",
@@ -91,6 +92,7 @@
 		"home": "Главная",
 		"docs": "Документация",
 		"news": "Новости",
+		"download": "Скачать",
 		"themes": "Темы",
 		"discord": "Discord",
 		"github": "Github"
