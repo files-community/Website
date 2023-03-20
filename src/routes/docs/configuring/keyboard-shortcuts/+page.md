@@ -7,8 +7,10 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | Shortcut                                               | Action                                           |
 | ------------------------------------------------------ | ------------------------------------------------ |
 | <kbd>Ctrl</kbd> + <kbd>C</kbd>                         | Copy                                             |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>      | Copy file/directory path                         |
 | <kbd>Ctrl</kbd> + <kbd>X</kbd>                         | Cut                                              |
 | <kbd>Ctrl</kbd> + <kbd>V</kbd>                         | Paste                                            |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd>      | Paste into selected folder                       |
 | <kbd>Ctrl</kbd> + <kbd>A</kbd>                         | Select all                                       |
 | <kbd>Ctrl</kbd> + <kbd>Z</kbd>                         | Undo operation                                   |
 | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                         | Redo operation                                   |
@@ -34,7 +36,6 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>F</kbd>                         | Search                                           |
 | <kbd>Ctrl</kbd> + <kbd>E</kbd>                         | Extract selected archive                         |
 | <kbd>Ctrl</kbd> + <kbd>L</kbd>                         | Select directory path                            |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>C</kbd>      | Copy file/directory path                         |
 | <kbd>Ctrl</kbd> + <kbd>Space</kbd>                     | Toggle preview pane                              |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>        | Toggle media playback in preview pane            |
 | <kbd>F1</kbd>                                          | Open files docs                                  |
