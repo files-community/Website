@@ -37,3 +37,12 @@ To access theme values that are not exposed in the settings modal
 | `AppThemeAddressBarBackgroundColor`   | `#38343c`                     |
 | `AppThemeSidebarBackgroundColor`      | `#464449`                     |
 | `AppThemeFileAreaBackgroundColor`     | `#221d28`                     |
+
+
+### Nord
+| Key                                   | Value                         |
+| ------------------------------------- | ------------------------------|
+| `AppThemeBackgroundColor`             | `#FF1B1F26`                   |
+| `AppThemeAddressBarBackgroundColor`   | `#2E3440`                     |
+| `AppThemeSidebarBackgroundColor`      | `#2E3440`                     |
+| `AppThemeFileAreaBackgroundColor`     | `#2E3440`                     |
