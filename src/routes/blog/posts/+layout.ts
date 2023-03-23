@@ -11,5 +11,3 @@ export const load: LayoutLoad = async ({ route }) => {
 		throw error(404, "No such blog post was found!");
 	}
 };
-
-export const prerender = "auto";
