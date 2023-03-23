@@ -18,11 +18,7 @@ const config = {
 			$layout: "src/layout",
 			$i18n: "src/i18n"
 		},
-		adapter: adapter({
-			routes: {
-				exclude: ["<files>", "<build>"]
-			}
-		}),
+		adapter: adapter(),
 	},
 	preprocess: [
 		mdsvex({
