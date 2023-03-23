@@ -1,4 +1,4 @@
-import adapter from "@sveltejs/adapter-vercel";
+import adapter from "@sveltejs/adapter-cloudflare";
 import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import remarkGfm from "remark-gfm";
@@ -18,7 +18,7 @@ const config = {
 			$layout: "src/layout",
 			$i18n: "src/i18n"
 		},
-		adapter: adapter({ edge: true })
+		adapter: adapter(),
 	},
 	preprocess: [
 		mdsvex({
