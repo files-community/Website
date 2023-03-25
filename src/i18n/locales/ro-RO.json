@@ -1,22 +1,22 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "{FilesName} • Pornire",
+		"docs_home": "{FilesName} • Documente",
+		"docs_page": "{FilesName} • Documente - {title}",
+		"description": "Construim cel mai bun manager de fișiere pentru Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Comunitate",
+			"title": "Proiectat și dezvoltat de către tine.",
+			"description": "{FilesName} este gratuit și open source, întreținut și proiectat de un colectiv de sute de contribuitori.",
+			"discord": "Alătură-te discuției",
+			"docs": "Devino un contribuitor",
+			"contributions": "{amount, plural, =0 {Nici o contribuţie} one {# contribuţie} few {# contribuţii} other {# contribuţii}}"
 		},
 		"design": {
 			"chip": "Design",
-			"title": "Power meets beauty.",
+			"title": "Puterea întâlneşte frumuseţea.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
 			"download": "Download",
 			"learn_more": "Learn more"
