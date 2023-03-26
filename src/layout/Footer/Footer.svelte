@@ -68,12 +68,6 @@
 		<p>
 			{$_("footer.copyright", { values: { year: new Date().getFullYear(), FilesName: "Files" } })}
 		</p>
-		<a
-			href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss"
-			{...externalLink}
-		>
-			<img src="/branding/vercel-banner.svg" alt="Powered by Vercel" />
-		</a>
 	</div>
 	<div class="column">
 		<p>Pages</p>
