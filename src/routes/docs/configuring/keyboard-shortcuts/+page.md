@@ -30,7 +30,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>      | New file                                         |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>       | Open compact overlay                             |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Down</kbd>     | Close compact overlay                            |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>        | Collapse/Expand sidebar                          |
+| <kbd>Ctrl</kbd> + <kbd>B</kbd>                         | Collapse/Expand sidebar                          |
 | <kbd>Ctrl</kbd> + <kbd>+</kbd>                         | Increase icon size                               |
 | <kbd>Ctrl</kbd> + <kbd>-</kbd>                         | Decrease icon size                               |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd>                         | Delete                                           |
