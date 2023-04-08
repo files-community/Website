@@ -52,6 +52,15 @@
 				</IconButton>
 				<svelte:fragment slot="flyout">
 					<MenuFlyoutItem
+						on:click={
+							() => navigator.share({
+								title,
+								url: window.location.href
+							})}
+					>
+						Browser share options
+					</MenuFlyoutItem>
+					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>
 						Copy URL
