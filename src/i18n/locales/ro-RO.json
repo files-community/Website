@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "Descarcă {FilesName}",
-		"donation_description": "Te rugăm să iei în considerare o donație pentru a sprijini munca noastră la {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Donează",
 		"microsoft_store": {
 			"description": "Achiziționarea {FilesName} prin Microsoft Store ne ajută să sprijinim dezvoltatorii și ne permite să continuăm actualizarea aplicației cu noi caracteristici și îmbunătățiri."
