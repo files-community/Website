@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "הורידו את {FilesName}",
-		"donation_description": "אנא שקלו לתרום כדי לתמוך בעבודה שלנו על {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "תרומה",
 		"microsoft_store": {
 			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."
