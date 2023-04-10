@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "Hãy cân nhắc quyên góp để ủng hộ công sức của chúng tôi cho {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
 			"description": "Mua {FilesName} trên Microsoft Store giúp hỗ trợ lập trình viên và cho phép chúng tôi tiếp tục cập nhật ứng dụng với tính năng mới và những cải thiện."

@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} の活動を支援するために寄付をご検討ください。",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "寄付",
 		"microsoft_store": {
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"

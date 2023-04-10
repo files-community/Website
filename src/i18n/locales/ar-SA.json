@@ -1,46 +1,46 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"home": "{FilesName} • الصفحة الرئيسية",
+		"docs_home": "{FilesName} • الوثائق",
+		"docs_page": "{FilesName} • الوثائق - {title}",
+		"description": "نبني أفضل مدير ملفات لنظام Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "المجتمع",
+			"title": "صممت و طورت من قبلك.",
+			"description": "{FilesName} هي برمجيات مجانية ومفتوحة المصدر، تقام بصيانتها وتصميمها مجموعة من مئات المساهمين.",
+			"discord": "انضم إلى المناقشة",
+			"docs": "كن مساهماً",
+			"contributions": "{amount, plural, zero {}=0 {لا توجد مساهمات} one {# مساهمة} two {# مساهمات}  other {# مساهمات}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "التصميم",
+			"title": "تلتقي القوة بالجمال.",
+			"description": "استكشف تصميم جميل لنظام ويندوز أولاً. إدارة جميع ملفاتك مع زيادة الإنتاجية. العمل عبر مجلدات متعددة مع علامات التبويب. وأكثر من ذلك.",
+			"download": "التحميل",
+			"learn_more": "معرفة المزيد"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "المميزات",
+			"title": "إنها تقوم بذلك بالفعل.",
+			"description": "دمج الملفات السحابية؟ علامات التبويب والتخطيطات المتعددة؟ معاينات الملفات الغنية؟ {FilesName} غطتها بميزات قوية تتوقعها من مدير الملفات الحديث.",
+			"unknown": "غير معروف",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "تكامل سحابي سلس",
+				"description": "التكامل مع الخدمات السحابية مثل OneDrive, Google Drive, وiCloud يسمح لك بإدارة المستندات والصور الخاصة بك في السحابة، مباشرة من الشريط الجانبي."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "معاينة الملف",
+				"description": "معاينة المستندات، الصور، وأكثر من ذلك بدون فتحها. الدعم للمعاينات الغنية، تسليط الضوء على بناء الجملة، Markdown وتشغيل الفيديو، كل ذلك مدمج."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "الملفات والمجلدات المعلمة",
+				"description": "وضع علامة سريعة على الملفات والمجلدات الخاصة بك وتنظيمها في وقت لاحق عن طريق تعيينها بعلامات ملونة ومسماه للتعرف عليها بسهولة. يمكنك حتى إضافة العلامات المخصصة الخاصة بك!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "تعدد المهام مع علامات التبويب",
+				"description": "تجنب نوافذ متعددة والحفاظ على إخلاء سطح المكتب الخاص بك. {FilesName} تحتوي على واجهة تبويب مشابهة للمتصفح كاملة مع اختصارات لوحة المفاتيح."
 			},
 			"columns": {
 				"title": "عرض الأعمدة",
@@ -52,65 +52,65 @@
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "السمات",
+			"title": "متميز شخصيا.",
+			"description": "خذها على طريقتك. {FilesName} تحتوي على واجهة مستخدم قابلة للتخصيص بالكامل، مباشرة إلى الألوان والمواد. جرب المواضيع المخصصة التي تم بناؤها في {FilesName} أو تصفح مباشرة في المستندات وإنشاء الخاص بك.",
+			"grey_blue": "رمادي داكن • أزرق فاتح",
+			"grey_green": "أزرق رمادي • نيون أخضر",
+			"purple": "بنفسجي",
+			"yellow_white": "أصفر • أبيض",
+			"white_teal": "أبيض رائع • التركواز المظلم",
+			"sky_blue": "ازرق سماوي",
+			"select_theme": "اختر السمة #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "المزيد من المشاركات قريباً!",
+		"read_more": "إقرأ المزيد"
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "لم يتم العثور على أي نتائج",
+		"edit_page": "عدل هذه الصفحة"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "حقوق الطبع والنشر © 2021 - {year}، مؤلفو {FilesName}",
+		"home": "الرئيسية",
+		"docs": "وثائق",
+		"news": "أخبار",
+		"download": "التحميل",
+		"contribute": "ساهم في {FilesName}",
+		"feedback": "اعطي ملاحظات",
+		"style_guide": "دليل التنسيق",
+		"translations": "الترجمات",
+		"contribute_site": "ساهم في هذا الموقع",
+		"github": "مستودع GitHub",
+		"report_bug": "وجدت خطأ؟",
+		"web_team": "فريق الويب"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"home": "الرئيسية",
+		"docs": "وثائق",
+		"news": "أخبار",
+		"download": "تحميل",
+		"themes": "سمات",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
-		"donation_button": "Donate",
+		"title": "تحميل {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_button": "تبرع",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "شراء {FilesName} بواسطة متجر مايكروسوفت يساعد في دعم المطورين ويسمح لنا بمواصلة تحديث التطبيق مع الميزات والتحسينات الجديدة."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "معاينة",
+			"description": "يمكن تثبيت النسخة التجريبية إلى جانب الإصدار المستقر وتوفر الوصول المبكر إلى الميزات والتحسينات الجديدة."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "مثبت تقليدي",
+			"description": "ليس لديك إمكانية الوصول إلى متجر مايكروسوفت؟ جرب "
 		}
 	}
 }
