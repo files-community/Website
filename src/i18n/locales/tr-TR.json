@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "{FilesName}'ı İndir",
-		"donation_description": "Lütfen {FilesName} üzerindeki çalışmalarımızı desteklemek için bağış yapın",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Bağış Yap",
 		"microsoft_store": {
 			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
