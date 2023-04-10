@@ -46,7 +46,7 @@
 		<Button
 			slot="action"
 			variant="accent"
-			href="https://paypal.me/yaichenbaum"
+			href="https://github.com/sponsors/yaira2"
 			{...externalLink}
 		>
 			{$_("download.donation_button", defaultI18nValues)}
