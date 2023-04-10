@@ -15,6 +15,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>Z</kbd>                         | Undo operation                                   |
 | <kbd>Ctrl</kbd> + <kbd>Y</kbd>                         | Redo operation                                   |
 | <kbd>Ctrl</kbd> + <kbd>T</kbd>                         | Create new tab                                   |
+| <kbd>Ctrl</kbd> + <kbd>,</kbd>                         | Open settings                                    |
 | <kbd>Ctrl</kbd> + <kbd>Enter</kbd>                     | Open selected folders in new tab                 |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>  | Open selected folder in secondary pane           |
 | <kbd>Ctrl</kbd> + <kbd>`<kbd>                          | Open selected path in Windows Terminal           |
@@ -29,7 +30,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>      | New file                                         |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>       | Open compact overlay                             |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Down</kbd>     | Close compact overlay                            |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd>        | Collapse/Expand sidebar                          |
+| <kbd>Ctrl</kbd> + <kbd>B</kbd>                         | Collapse/Expand sidebar                          |
 | <kbd>Ctrl</kbd> + <kbd>+</kbd>                         | Increase icon size                               |
 | <kbd>Ctrl</kbd> + <kbd>-</kbd>                         | Decrease icon size                               |
 | <kbd>Ctrl</kbd> + <kbd>D</kbd>                         | Delete                                           |
