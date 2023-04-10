@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "Scarica {FilesName}",
-		"donation_description": "Ti preghiamo di considerare la donazione per supportare il nostro lavoro su {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Dona",
 		"microsoft_store": {
 			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
