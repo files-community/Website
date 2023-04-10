@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "{FilesName}dı júklep alıw",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Qollap-quwatlaw",
 		"microsoft_store": {
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
