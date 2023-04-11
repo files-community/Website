@@ -1,5 +1,6 @@
 <script lang="ts">
-	import { externalLink, Metadata } from "$lib";
+	import { defaultI18nValues, externalLink, Metadata } from "$lib";
+	import { _ } from "svelte-i18n";
 	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
 	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
@@ -11,7 +12,7 @@
 	$: ({ title, thumbnail, author, date } = data);
 </script>
 
-<Metadata title="Files • {title}" image={thumbnail} />
+<Metadata title={$_("metadata.blog_page", defaultI18nValues)} image={thumbnail} />
 
 <section class="blog-post">
 	<article>
@@ -58,12 +59,12 @@
 								url: window.location.href
 							})}
 					>
-						Browser share options
+						{$_("blog.share.default", defaultI18nValues)}
 					</MenuFlyoutItem>
 					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>
-						Copy URL
+						{$_("blog.share.url", defaultI18nValues)}
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
 						<a
@@ -72,7 +73,7 @@
 							)}"
 							{...externalLink}
 						>
-							Twitter
+							{$_("blog.share.tweet", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
@@ -82,11 +83,11 @@
 							)}"
 							{...externalLink}
 						>
-							Facebook
+							{$_("blog.share.facebook", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
-						<a href="/blog/feed.rss" {...externalLink}>RSS Feed</a>
+						<a href="/blog/feed.rss" {...externalLink}>{$_("blog.share.rss", defaultI18nValues)}</a>
 					</MenuFlyoutItem>
 				</svelte:fragment>
 			</MenuFlyout>
