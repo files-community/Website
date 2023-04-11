@@ -56,7 +56,7 @@
 						on:click={
 							() => navigator.share({
 								title,
-								url: window.location.href
+								url: $page.url.href
 							})}
 					>
 						{$_("blog.share.default", defaultI18nValues)}
