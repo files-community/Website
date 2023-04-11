@@ -3,6 +3,7 @@
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
+		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
