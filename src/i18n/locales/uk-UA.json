@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "Завантажити {FilesName}",
-		"donation_description": "Будь ласка, пожертвувати для підтримки нашої роботи над {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Підтримати",
 		"microsoft_store": {
 			"description": "Придбання {FilesName} через Microsoft Store допомагає підтримувати розробників і дозволяє нам продовжувати оновлення додатку з новими функціями та покращеннями."

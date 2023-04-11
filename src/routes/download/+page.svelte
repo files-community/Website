@@ -12,7 +12,10 @@
 	const downloadSources = [
 		{
 			name: "Microsoft Store",
-			description: $_("download.microsoft_store.description", defaultI18nValues),
+			description: $_(
+				"download.microsoft_store.description",
+				defaultI18nValues
+			),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/download-sources/msstore_light.svg",
 			darkModeIcon: "/download-sources/msstore_dark.svg",
@@ -40,17 +43,19 @@
 	<TextBlock variant="titleLarge" style="text-align: center;"
 		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
-	<InfoBar severity="success" closable={false}>
-		{$_("download.donation_description", defaultI18nValues)}
+	<InfoBar class="donation-infobar" severity="success" closable={false}>
+		<div style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;">
+			{$_("download.donation_description", defaultI18nValues)}
 
-		<Button
-			slot="action"
-			variant="accent"
-			href="https://paypal.me/yaichenbaum"
-			{...externalLink}
-		>
-			{$_("download.donation_button", defaultI18nValues)}
-		</Button>
+			<Button
+				slot="action"
+				variant="accent"
+				href="https://github.com/sponsors/yaira2"
+				{...externalLink}
+			>
+				{$_("download.donation_button", defaultI18nValues)}
+			</Button>
+		</div>
 
 		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
 	</InfoBar>
@@ -76,6 +81,7 @@
 		align-items: stretch;
 		gap: 2rem;
 		padding: 2rem;
+		max-width: 900px;
 		margin-inline: auto;
 
 		inline-size: fit-content;

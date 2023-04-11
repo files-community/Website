@@ -1,8 +1,8 @@
 {
 	"metadata": {
 		"home": "{FilesName} • Bas bet",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"docs_home": "{FilesName} • Hújjetshilik",
+		"docs_page": "{FilesName} • Hújjetshilik - {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
@@ -59,7 +59,7 @@
 			"grey_green": "Blue Grey • Neon Green",
 			"purple": "Qızǵılt kók",
 			"yellow_white": "Sarı • Aq",
-			"white_teal": "Cool White • Dark Teal",
+			"white_teal": "Suwıq aq • Qoyıw piruza",
 			"sky_blue": "Aqshıl kók",
 			"select_theme": "#{index} temasın tańlaw"
 		}
@@ -75,12 +75,12 @@
 	"footer": {
 		"copyright": "Barlıq huqıqlar qorǵalǵan © 2021 - {year}, {FilesName} Avtorları",
 		"home": "Bas bet",
-		"docs": "Docs",
+		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
 		"download": "Júklep alıw",
 		"contribute": "{FilesName} rawajlanıwına úles qosıw",
 		"feedback": "Qayta baylanıs",
-		"style_guide": "Style Guide",
+		"style_guide": "Kod jazıw boyınsha qollanba",
 		"translations": "Awdarmalar",
 		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
 		"github": "Github Repo",
@@ -90,7 +90,7 @@
 	"navbar": {
 		"ukraine": "#SupportUkraine",
 		"home": "Bas bet",
-		"docs": "Documentation",
+		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
 		"download": "Júklep alıw",
 		"themes": "Temalar",
@@ -99,7 +99,7 @@
 	},
 	"download": {
 		"title": "{FilesName}dı júklep alıw",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Qollap-quwatlaw",
 		"microsoft_store": {
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
