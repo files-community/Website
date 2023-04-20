@@ -70,7 +70,7 @@
 		"coming_soon": "More posts coming soon!",
 		"read_more": "Read More",
 		"share": {
-			"default": "Browser share options",
+			"default": "Native sharing",
 			"url": "Copy URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
