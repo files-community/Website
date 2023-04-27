@@ -11,7 +11,7 @@
 	let scrollY: number;
 </script>
 
-<Metadata title="Files • Blog" image="blog" />
+<Metadata title={$_("metadata.blog_home", defaultI18nValues)} image="blog" />
 
 <svelte:window
 	on:scroll={() =>
