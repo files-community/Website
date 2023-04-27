@@ -3,6 +3,8 @@
 		"home": "{FilesName} • ホーム",
 		"docs_home": "{FilesName} • ドキュメント",
 		"docs_page": "{FilesName} • ドキュメント - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Windowsの最高のファイルマネージャを作る。"
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "その他の投稿は近日公開予定です！",
-		"read_more": "もっと読む"
+		"read_more": "もっと読む",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "結果なし",
