@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Documentazione",
 		"docs_page": "{FilesName} • Documentazione - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Creando il miglior file manager per Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Altri post in arrivo!",
-		"read_more": "Maggiori dettagli"
+		"read_more": "Maggiori dettagli",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nessun risultato trovato",
