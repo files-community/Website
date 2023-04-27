@@ -70,11 +70,11 @@
 		"coming_soon": "Altri post in arrivo!",
 		"read_more": "Maggiori dettagli",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Condivisione nativa",
+			"url": "Copia URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Feed RSS"
 		}
 	},
 	"docs": {
