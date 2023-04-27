@@ -1,17 +1,17 @@
 <script lang="ts">
-	import { getContributors } from "$data/fetchHomepageData";
 	import { links } from "$data/links";
-	import { Contributor, defaultI18nValues, HeaderChip, PageSection } from "$lib";
+	import {
+		Contributor,
+		defaultI18nValues,
+		HeaderChip,
+		PageSection
+	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
+	import type { PageData } from "../../routes/$types";
 
-	// Fetch contributors for the community section
-	const contributorRows = [
-		getContributors(1),
-		getContributors(2),
-		getContributors(3)
-	];
+	export let contributors: PageData["contributors"];
 </script>
 
 <PageSection id="community-section">
@@ -29,33 +29,31 @@
 				</Button>
 			</div>
 		</div>
-		{#if contributorRows.every(it => it)}
-			<div class="contributors-container">
-				{#each contributorRows as contributorsPromise}
-					<div class="contributors-row">
-						{#await contributorsPromise then contributors}
-							{#each contributors.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
-								<Contributor
-									{html_url}
-									{avatar_url}
-									{login}
-									{contributions}
-									{type}
-								/>
-							{/each}
-						{:catch err}
-							{#each Array(35) as _}
-								<Contributor
-									html_url="https://github.com/yaira2"
-									avatar_url="data:image/svg+xml;{encodeURIComponent(Profile)}"
-									contributions={0}
-								/>
-							{/each}
-						{/await}
-					</div>
-				{/each}
-			</div>
-		{/if}
+		<div class="contributors-container">
+			{#each contributors as rowPromise, i (i)}
+				<div class="contributors-row">
+					{#await rowPromise then row}
+						{#each row.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
+							<Contributor
+								{html_url}
+								{avatar_url}
+								{login}
+								{contributions}
+								{type}
+							/>
+						{/each}
+					{:catch err}
+						{#each Array(35) as _}
+							<Contributor
+								html_url="https://github.com/yaira2"
+								avatar_url="data:image/svg+xml;{encodeURIComponent(Profile)}"
+								contributions={0}
+							/>
+						{/each}
+					{/await}
+				</div>
+			{/each}
+		</div>
 		<div class="rainbow-background" />
 	</div>
 </PageSection>
