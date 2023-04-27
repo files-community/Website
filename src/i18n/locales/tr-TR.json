@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Anasayfa",
 		"docs_home": "{FilesName} • Dökümantasyon",
 		"docs_page": "{FilesName} • Dökümantasyon - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Windows için en iyi dosya yöneticisini oluşturun."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Daha fazla gönderi yakında!",
-		"read_more": "Daha Fazla"
+		"read_more": "Daha Fazla",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Sonuç bulunamadı",
