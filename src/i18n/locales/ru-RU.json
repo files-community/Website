@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Главная",
 		"docs_home": "{FilesName} • Документация",
 		"docs_page": "{FilesName} • Документация - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Создание лучшего файлового менеджера для Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Больше новостей совсем скоро!",
-		"read_more": "Читать далее"
+		"read_more": "Читать далее",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Результаты не найдены",
