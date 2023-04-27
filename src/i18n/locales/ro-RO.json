@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Pornire",
 		"docs_home": "{FilesName} • Documentație",
 		"docs_page": "{FilesName} • Documentație - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Construim cel mai bun manager de fișiere pentru Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Mai multe postări în curând!",
-		"read_more": "Citiți mai mult"
+		"read_more": "Citiți mai mult",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nu s-au găsit rezultate",
