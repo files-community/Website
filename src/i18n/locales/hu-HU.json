@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Kezdőlap",
 		"docs_home": "{FilesName} • Dokumentáció",
 		"docs_page": "{FilesName} • Dokumentáció - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Több bejegyzés hamarosan!",
-		"read_more": "Bővebben"
+		"read_more": "Bővebben",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nincs találat",
