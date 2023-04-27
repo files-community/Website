@@ -1,16 +1,21 @@
 <script lang="ts">
 	import { getContributors } from "$data/fetchHomepageData";
 	import { links } from "$data/links";
-	import { Contributor, defaultI18nValues, HeaderChip, PageSection } from "$lib";
+	import {
+		Contributor,
+		defaultI18nValues,
+		HeaderChip,
+		PageSection,
+	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
-	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
+	import Profile from "~icons/fluent/person-32-filled?raw";
 
-	// Fetch contributors for the community section
+	// Fetch contributors for the community sectionc
 	const contributorRows = [
 		getContributors(1),
 		getContributors(2),
-		getContributors(3)
+		getContributors(3),
 	];
 </script>
 

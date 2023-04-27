@@ -2,7 +2,8 @@
 .cloud-files-showcase {
 	inline-size: 416px;
 	max-inline-size: 100%;
-	animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+	animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+		400ms;
 
 	// Cloud provider icons
 	.cloud-provider {
@@ -16,8 +17,9 @@
 		&:nth-child(1) {
 			inset-block-end: 36px;
 			inset-inline-start: -54px;
-			animation: cloud-provider var(--fds-control-normal-duration) cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms,
-			cloud-provider-float 10s ease infinite 1000ms;
+			animation: cloud-provider var(--fds-control-normal-duration)
+					cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms,
+				cloud-provider-float 10s ease infinite 1000ms;
 			--provider-rotate: 5deg;
 		}
 
@@ -25,19 +27,20 @@
 			inset-block-start: 12px;
 			inset-inline-end: -54px;
 			inline-size: 128px;
-			animation: cloud-provider var(--fds-control-normal-duration) cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1000ms,
-			cloud-provider-float 10s ease infinite 1400ms;
+			animation: cloud-provider var(--fds-control-normal-duration)
+					cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1000ms,
+				cloud-provider-float 10s ease infinite 1400ms;
 			--provider-rotate: -8deg;
 		}
 	}
 
 	.files-table tr td {
 		// Sync status icons
-		&.status-success :global(svg path) {
+		&.status-success :global(.fluent-icon path) {
 			fill: var(--fds-system-success);
 		}
 
-		&.status-sync :global(svg path) {
+		&.status-sync :global(.fluent-icon path) {
 			fill: var(--fds-system-attention);
 		}
 	}

@@ -56,11 +56,11 @@
 		border-radius: var(--fds-overlay-corner-radius);
 		background-color: #f9f9f9;
 		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
-		0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
-		0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
-		0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
-		0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
-		0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
+			0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
+			0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
+			0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
+			0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
+			0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 		overflow: hidden;
 
 		.rainbow-background {
@@ -75,14 +75,18 @@
 			animation: rotate-background 15s infinite linear;
 
 			background-color: hsl(282, 23%, 78%);
-			background-image: radial-gradient(at 68% 34%, hsla(233, 72%, 73%, 1) 0, transparent 43%),
-			radial-gradient(at 51% 0%, hsla(254, 79%, 75%, 1) 0, transparent 57%),
-			radial-gradient(at 80% 2%, hsla(274, 88%, 72%, 1) 0, transparent 41%),
-			radial-gradient(at 96% 100%, hsla(254, 89%, 65%, 1) 0, transparent 47%),
-			radial-gradient(at 1% 84%, hsla(233, 72%, 73%, 1) 0, transparent 41%),
-			radial-gradient(at 19% 100%, hsla(262, 73%, 70%, 1) 0, transparent 44%),
-			radial-gradient(at 46% 100%, hsla(254, 79%, 75%, 1) 0, transparent 49%),
-			radial-gradient(at 92% 72%, hsla(282, 24%, 79%, 1) 0, transparent 43%);
+			background-image: radial-gradient(
+					at 68% 34%,
+					hsla(233, 72%, 73%, 1) 0,
+					transparent 43%
+				),
+				radial-gradient(at 51% 0%, hsla(254, 79%, 75%, 1) 0, transparent 57%),
+				radial-gradient(at 80% 2%, hsla(274, 88%, 72%, 1) 0, transparent 41%),
+				radial-gradient(at 96% 100%, hsla(254, 89%, 65%, 1) 0, transparent 47%),
+				radial-gradient(at 1% 84%, hsla(233, 72%, 73%, 1) 0, transparent 41%),
+				radial-gradient(at 19% 100%, hsla(262, 73%, 70%, 1) 0, transparent 44%),
+				radial-gradient(at 46% 100%, hsla(254, 79%, 75%, 1) 0, transparent 49%),
+				radial-gradient(at 92% 72%, hsla(282, 24%, 79%, 1) 0, transparent 43%);
 			background-size: 150% 150%;
 		}
 	}
@@ -133,18 +137,18 @@
 		&::before {
 			inset-inline-start: 0;
 			background-image: linear-gradient(
-							90deg,
-							var(--fds-solid-background-secondary),
-							transparent
+				90deg,
+				var(--fds-solid-background-secondary),
+				transparent
 			);
 		}
 
 		&::after {
 			inset-inline-end: 0;
 			background: linear-gradient(
-							90deg,
-							transparent,
-							var(--fds-solid-background-tertiary)
+				90deg,
+				transparent,
+				var(--fds-solid-background-tertiary)
 			);
 		}
 	}

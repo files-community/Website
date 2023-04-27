@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Copy from "@fluentui/svg-icons/icons/copy_24_regular.svg?raw";
+	import Copy from "~icons/fluent/copy-24-regular";
 
 	export let command = "";
 
@@ -23,9 +23,10 @@
 		on:click={copy}
 		title="Copy Command"
 	>
-		{@html Copy}
+		<Copy />
 	</button>
 </div>
 
-<style lang="scss">@use "./TerminalCommand";
+<style lang="scss">
+	@use "./TerminalCommand";
 </style>

@@ -9,20 +9,23 @@
 		position: absolute;
 		inline-size: 400px;
 		block-size: 300px;
-		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 800ms;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+			800ms;
 		overflow: hidden;
 
 		&:first-child {
 			transform: translate(var(--panel-offset), var(--panel-offset));
-			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms,
-			merge-windows var(--fds-control-normal-duration) ease forwards 2s;
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
+					backwards 400ms,
+				merge-windows var(--fds-control-normal-duration) ease forwards 2s;
 			--panel-offset: -32px;
 		}
 
 		&:last-child {
 			transform: translate(var(--panel-offset), var(--panel-offset));
-			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 1200ms,
-			merge-windows var(--fds-control-normal-duration) ease forwards 2s;
+			animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1)
+					backwards 1200ms,
+				merge-windows var(--fds-control-normal-duration) ease forwards 2s;
 			--panel-offset: 32px;
 		}
 	}
@@ -40,7 +43,8 @@
 	}
 
 	.placeholder-file {
-		animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(2.4s + (100ms * var(--file-index)));
+		animation: var(--fds-control-normal-duration) ease feature-item-scale
+			backwards calc(2.4s + (100ms * var(--file-index)));
 		border-radius: var(--fds-control-corner-radius);
 		background-color: var(--fds-subtle-fill-secondary);
 

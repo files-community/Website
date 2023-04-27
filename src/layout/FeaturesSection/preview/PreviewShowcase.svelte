@@ -25,20 +25,28 @@
 			{#each [previewFiles[currentPreviewFile]] as file}
 				<div class="preview">
 					{#if file?.extension === "html"}
-						<iframe title="Document" style:border="none" src="/preview-samples/{file.name}.{file.extension}"></iframe>
+						<iframe
+							title="Document"
+							style:border="none"
+							src="/preview-samples/{file.name}.{file.extension}"
+						/>
 					{:else if file?.code}
 						<pre class="scroller">
 							<code>{@html file.code}</code>
 						</pre>
-					{:else}<img src={file.icon} alt="File icon">{/if}
+					{:else}<img src={file.icon} alt="File icon" />{/if}
 				</div>
-				<div class="grabber"></div>
+				<div class="grabber" />
 				<div class="metadata scroller">
 					<h4>
-						{file.name}{typeof file.extension !== "undefined" ? "." : ""}{file.extension ?? ""}
+						{file.name}{typeof file.extension !== "undefined"
+							? "."
+							: ""}{file.extension ?? ""}
 					</h4>
 					<h5>
-						{file.extension ? `${file.extension.toUpperCase()} File` : "File Folder"}
+						{file.extension
+							? `${file.extension.toUpperCase()} File`
+							: "File Folder"}
 					</h5>
 					{#if file.bitDepth}
 						<h6>Bit Depth</h6>
@@ -47,7 +55,7 @@
 					{#if file?.dimensions?.horizontal && file?.dimensions?.vertical}
 						<h6>Dimensions</h6>
 						<span
-						>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
+							>{file.dimensions.horizontal} x {file.dimensions.vertical}</span
 						>
 					{/if}
 					{#if file?.dpi?.horizontal}
@@ -90,10 +98,10 @@
 				on:click={() => (currentPreviewFile = i)}
 				style="--file-index: {i};"
 			>
-				<img src={file.icon} alt="File icon">
+				<img src={file.icon} alt="File icon" />
 				{file.name}{typeof file.extension !== "undefined"
-				? "."
-				: ""}{file.extension ?? ""}
+					? "."
+					: ""}{file.extension ?? ""}
 			</div>
 		{/each}
 	</div>

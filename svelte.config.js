@@ -16,7 +16,7 @@ const config = {
 		alias: {
 			$data: "src/data",
 			$layout: "src/layout",
-			$i18n: "src/i18n"
+			$i18n: "src/i18n",
 		},
 		adapter: adapter(),
 	},
@@ -25,17 +25,17 @@ const config = {
 			extensions: [".md"],
 
 			smartypants: {
-				dashes: "oldschool"
+				dashes: "oldschool",
 			},
 
-			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub]
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: [autoprefixer(), cssnano(), mediaMinMax()]
-			}
-		})
-	]
+				plugins: [autoprefixer(), cssnano(), mediaMinMax()],
+			},
+		}),
+	],
 };
 
 // shut up webstorm

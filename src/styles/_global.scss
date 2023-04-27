@@ -42,7 +42,8 @@
  */
 
 :root {
-	--fds-font-family-fallback: "Segoe UI", "Inter", "Open Sans", -apple-system, ui-sans-serif, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+	--fds-font-family-fallback: "Segoe UI", "Inter", "Open Sans", -apple-system,
+		ui-sans-serif, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 	--font-family-sans-serif: var(--fds-font-family-display);
 	--font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
 	overflow-x: hidden;

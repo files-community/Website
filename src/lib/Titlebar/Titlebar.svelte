@@ -54,5 +54,6 @@
 	</div>
 </header>
 
-<style lang="scss">@use "./Titlebar";
+<style lang="scss">
+	@use "./Titlebar";
 </style>

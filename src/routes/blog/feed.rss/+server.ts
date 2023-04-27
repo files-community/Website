@@ -4,19 +4,19 @@ import type { RequestHandler } from "./$types";
 export const GET: RequestHandler = async ({ url, setHeaders }) => {
 	const modules = import.meta.glob<Post["metadata"]>("../posts/*/+page.md", {
 		eager: true,
-		import: "metadata"
+		import: "metadata",
 	});
 
 	const posts = Object.entries(modules).map(
 		([path, metadata]) =>
 			({
 				slug: path.match(/\.\/posts\/([\w-]+)\/\+page\.md$/)?.[1],
-				metadata
+				metadata,
 			} as Post)
 	);
 
 	setHeaders({
-		"Content-Type": "application/rss+xml"
+		"Content-Type": "application/rss+xml",
 	});
 
 	return new Response(`<?xml version="1.0" encoding="UTF-8" ?>

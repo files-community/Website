@@ -9,7 +9,7 @@ export const load: LayoutLoad = () => {
 
 	return {
 		docs: docsTree,
-		docsPages: docsPages
+		docsPages: docsPages,
 	};
 };
 

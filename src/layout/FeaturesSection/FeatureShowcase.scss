@@ -24,9 +24,11 @@
 	border-radius: var(--fds-overlay-corner-radius);
 	background-color: var(--fds-solid-background-base);
 	box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
-	0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%), 0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
-	0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%), 0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
-	0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
+		0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
+		0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
+		0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
+		0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
+		0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
 	font-family: "Segoe UI Variable Text", var(--font-family-sans-serif);
 	user-select: none;
 
@@ -104,9 +106,10 @@
 	}
 
 	td {
-		:global(svg) {
+		:global(.fluent-icon) {
 			@include icon($size: 20px);
-			animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(600ms + (100ms * var(--file-index)));
+			animation: var(--fds-control-normal-duration) ease feature-item-scale
+				backwards calc(600ms + (100ms * var(--file-index)));
 		}
 	}
 }
@@ -117,7 +120,8 @@
 @keyframes feature-panel {
 	from {
 		opacity: 0;
-		transform: translate(var(--panel-offset, 0px), var(--panel-offset, 0px)) scale(calc(0.9 + var(--panel-scale, 0)));
+		transform: translate(var(--panel-offset, 0px), var(--panel-offset, 0px))
+			scale(calc(0.9 + var(--panel-scale, 0)));
 		transform-origin: bottom;
 	}
 }

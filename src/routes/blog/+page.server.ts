@@ -14,14 +14,14 @@ export type Post = {
 export const load: PageServerLoad = async () => {
 	const modules = import.meta.glob<Post["metadata"]>("./posts/*/+page.md", {
 		eager: true,
-		import: "metadata"
+		import: "metadata",
 	});
 
 	const posts = Object.entries(modules).map(
 		([path, metadata]) =>
 			({
 				slug: path.match(/\.\/posts\/([\w-]+)\/\+page\.md$/)?.[1],
-				metadata
+				metadata,
 			} as Post)
 	);
 

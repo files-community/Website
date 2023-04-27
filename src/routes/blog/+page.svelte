@@ -1,5 +1,12 @@
 <script lang="ts">
-	import { BlogCard, defaultI18nValues, HeaderChip, Metadata, PageSection, tilt } from "$lib";
+	import {
+		BlogCard,
+		defaultI18nValues,
+		HeaderChip,
+		Metadata,
+		PageSection,
+		tilt,
+	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
