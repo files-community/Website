@@ -71,7 +71,7 @@
 		"read_more": "もっと読む",
 		"share": {
 			"default": "Native sharing",
-			"url": "Copy URL",
+			"url": "URLをコピー",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
@@ -108,7 +108,7 @@
 	},
 	"download": {
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoftストアから{FilesName} を購入するか、クラシックインストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",
 		"microsoft_store": {
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
