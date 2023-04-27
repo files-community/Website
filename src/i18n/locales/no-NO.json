@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Startside",
 		"docs_home": "{FilesName} • Dokumentasjon",
 		"docs_page": "{FilesName} • Dokumentasjon - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Bygger den beste filutforskeren for Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Flere poster kommer snart!",
-		"read_more": "Les mer"
+		"read_more": "Les mer",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Ingen resultater funnet",
