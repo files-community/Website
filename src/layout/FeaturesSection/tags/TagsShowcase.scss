@@ -2,19 +2,21 @@
 
 // Tags showcase
 .tags-showcase {
-	@include flex($direction: column, $justify: center, $align: center, $gap: 1rem);
+	@include flex(
+		$direction: column,
+		$justify: center,
+		$align: center,
+		$gap: 1rem
+	);
 	position: relative;
 	transition: height 500ms cubic-bezier(0.165, 0.84, 0.44, 1);
 
 	.showcase-panel {
-		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards 400ms;
+		animation: feature-panel 500ms cubic-bezier(0.165, 0.84, 0.44, 1) backwards
+			400ms;
 
 		&:first-child {
-			@include flex(
-					$direction: column,
-					$justify: center,
-					$align: center,
-			);
+			@include flex($direction: column, $justify: center, $align: center);
 		}
 	}
 
@@ -28,7 +30,7 @@
 				td {
 					color: var(--fds-text-on-accent-primary);
 
-					&.tag-cell :global(svg circle) {
+					&.tag-cell :global(.fluent-icon circle) {
 						stroke: var(--fds-control-stroke-on-accent-default);
 					}
 				}
@@ -48,7 +50,8 @@
 		box-shadow: var(--fds-inactive-window-shadow);
 
 		:global(.color-swatch) {
-			animation: var(--fds-control-normal-duration) ease feature-item-scale backwards calc(800ms + (100ms * var(--color-index)));
+			animation: var(--fds-control-normal-duration) ease feature-item-scale
+				backwards calc(800ms + (100ms * var(--color-index)));
 		}
 	}
 }

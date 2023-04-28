@@ -22,7 +22,7 @@
 		style:background-color={colorName.color}
 		type="radio"
 		{value}
-	>
+	/>
 </Tooltip>
 
 <style lang="scss">
