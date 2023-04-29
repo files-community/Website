@@ -15,7 +15,7 @@
 		"@fec/remark-a11y-emoji": "^3.1.0",
 		"@iconify-json/fluent": "^1.1.19",
 		"@neodrag/svelte": "^2.0.3",
-		"@sveltejs/adapter-cloudflare": "^2.2.0",
+		"@sveltejs/adapter-cloudflare": "^2.2.1",
 		"@sveltejs/kit": "^1.15.9",
 		"@typescript-eslint/eslint-plugin": "^5.59.1",
 		"@typescript-eslint/parser": "^5.59.1",
