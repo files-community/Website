@@ -18,12 +18,12 @@ type Locale = {
 export const locales = {
 	en: {
 		values: en,
-		dir: "ltr"
+		dir: "ltr",
 	},
 	"he-IL": {
 		values: heIL,
-		dir: "rtl"
-	}
+		dir: "rtl",
+	},
 } as const satisfies Record<string, Locale>;
 
 export default () => {
@@ -34,6 +34,6 @@ export default () => {
 
 	init({
 		fallbackLocale: "en",
-		initialLocale: getLocaleFromNavigator()
+		initialLocale: getLocaleFromNavigator(),
 	});
 };

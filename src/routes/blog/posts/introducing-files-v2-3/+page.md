@@ -1,6 +1,6 @@
 ---
 title: Introducing the next major release of Files - v2.3
-description: We're excited to not only introduce the next major release of Files, but also a series of future changes to sustain contributor momentum into 2023. 
+description: We're excited to not only introduce the next major release of Files, but also a series of future changes to sustain contributor momentum into 2023.
 thumbnail: /blog-resources/filesv2-3/HeroImage.jpg
 date: 2022-7-5
 author: files-community
@@ -8,33 +8,38 @@ author: files-community
 
 The astounding growth of the project over the last three years serves to motivate our journey to build the best file manager, alongside the community. More than ever, Files plays an important role in demonstrating how impactful the latest user experience improvements in WinUI can be. A notable experience we can reflect on was fixing an issue with screen reader accessibility reported by a blind user. More recently, we were delighted to hear from a seventy-seven-year-old "non-geek" who was impressed that we made file discovery "much easier" compared to the first party solution. Both of these stories highlight the inadvertent achievements that come from engaging the broader community.
 
-Today we're excited to not only introduce the next major release of [Files]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-3'}), but also a series of future changes to sustain contributor momentum into 2023. 
+Today we're excited to not only introduce the next major release of [Files]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-3'}), but also a series of future changes to sustain contributor momentum into 2023.
 
 ## Files v2.3
 
 As part of our mission to create a stable and fully-featured file manager, we added a compact spacing feature, bulk actions experience in the conflicts dialog, and a double click gesture to navigate up one directory. Additionally, we focused on improving the behavior of existing features with the understanding that they're most useful when they perform as expected.
 
 **Compact sizing** allows users to view more items on the screen
+
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/CompactSpacing.png" alt="A screenshot of the new compact spacing option in Files v2.3." />
 </figure>
 
 The **tab control** was redesigned to connect with the tab content.
+
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/Tabs.png" alt="A screenshot of the new tab design in Files v2.3." />
 </figure>
 
 We added an option to display **tags** on the sidebar
+
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/Tags.png" alt="A screenshot of the new tags section on the sidebar in Files v2.3." />
 </figure>
 
 Added support for applying bulk actions in the **conflicts dialog**
+
 <figure class="margin-bottom">
     <img src="/blog-resources/filesv2-3/BulkActions.png" alt="A screenshot of the redesigned conflicts dialog in Files v2.3." />
 </figure>
 
 ## Other changes
+
 - Improved the reliability and speed of drag and drop
 - Added a pull to refresh gesture
 - Removed the minimize and maximize buttons from the properties window
@@ -66,6 +71,7 @@ Added support for applying bulk actions in the **conflicts dialog**
 - Show which process is locking a file
 
 ## Bug fixes
+
 - Fixed an issue where the address toolbar height would sometimes change when clicking on the search box
 - Fixed an issue that would cause the app window to close when dragging a tab to a new window
 - Fixed a crash that would sometimes occur when deleting files
@@ -114,9 +120,6 @@ The Files contributors are pleased to announce that the main application reposit
 Files thrives off community feedback because it helps shape the features worked on and makes the app better for
 everyone. We invite you to submit your feedback through our GitHub repository.
 
-
 Download from
 the [Microsoft Store]({'https://www.microsoft.com/store/apps/9nghp3dx8hdx?cid=AnnouncingV2-3'})
 || See Files on [GitHub](https://github.com/files-community/Files)
-
-

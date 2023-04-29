@@ -1,6 +1,11 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import { ColorSwatch, defaultI18nValues, HeaderChip, PageSection } from "$lib";
+	import {
+		ColorSwatch,
+		defaultI18nValues,
+		HeaderChip,
+		PageSection,
+	} from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { Tag } from "$data/features";
@@ -16,13 +21,28 @@
 	const themeColors: Tag[] = [
 		{
 			name: $_("home.themes.grey_blue", defaultI18nValues),
-			color: "var(--fds-solid-background-tertiary)"
+			color: "var(--fds-solid-background-tertiary)",
 		},
-		{ name: $_("home.themes.grey_green", defaultI18nValues), color: "hsl(219, 15%, 30%)" },
-		{ name: $_("home.themes.purple", defaultI18nValues), color: "hsl(261, 43%, 45%)" },
-		{ name: $_("home.themes.yellow_white", defaultI18nValues), color: "hsl(43, 100%, 50%)" },
-		{ name: $_("home.themes.white_teal", defaultI18nValues), color: "hsl(192, 81%, 14%)" },
-		{ name: $_("home.themes.sky_blue", defaultI18nValues), color: "hsl(193, 43%, 67%)" }
+		{
+			name: $_("home.themes.grey_green", defaultI18nValues),
+			color: "hsl(219, 15%, 30%)",
+		},
+		{
+			name: $_("home.themes.purple", defaultI18nValues),
+			color: "hsl(261, 43%, 45%)",
+		},
+		{
+			name: $_("home.themes.yellow_white", defaultI18nValues),
+			color: "hsl(43, 100%, 50%)",
+		},
+		{
+			name: $_("home.themes.white_teal", defaultI18nValues),
+			color: "hsl(192, 81%, 14%)",
+		},
+		{
+			name: $_("home.themes.sky_blue", defaultI18nValues),
+			color: "hsl(193, 43%, 67%)",
+		},
 	];
 
 	$: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
@@ -56,7 +76,9 @@
 	<div bind:this={anchor} class="scroll-anchor" />
 	<div class="themes-section-content">
 		<HeaderChip>{$_("home.themes.chip", defaultI18nValues)}</HeaderChip>
-		<TextBlock variant="titleLarge">{$_("home.themes.title", defaultI18nValues)}</TextBlock>
+		<TextBlock variant="titleLarge"
+			>{$_("home.themes.title", defaultI18nValues)}</TextBlock
+		>
 		<p>{$_("home.themes.description", defaultI18nValues)}</p>
 		<div class="theme-chooser">
 			{#each themeColors as color, i}
@@ -65,7 +87,7 @@
 					value={i}
 					colorName={color}
 					aria-label={$_("home.themes.select_theme", {
-						values: { index: i + 1 }
+						values: { index: i + 1 },
 					})}
 				/>
 			{/each}

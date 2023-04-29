@@ -1,4 +1,4 @@
- <script lang="ts">
+<script lang="ts">
 	export let type: string = undefined;
 
 	let className = "";
@@ -35,5 +35,6 @@
 	</section>
 {/if}
 
-<style lang="scss">@use "./PageSection";
+<style lang="scss">
+	@use "./PageSection";
 </style>

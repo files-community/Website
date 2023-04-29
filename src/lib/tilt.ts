@@ -1,10 +1,15 @@
 interface TiltSettings {
-	scale?: number,
-	max?: number,
-	reverse?: false,
+	scale?: number;
+	max?: number;
+	reverse?: false;
 }
 
-const getSettings = (settings: TiltSettings = {}) => ({ scale: 1, max: 15, reverse: false, ...settings });
+const getSettings = (settings: TiltSettings = {}) => ({
+	scale: 1,
+	max: 15,
+	reverse: false,
+	...settings,
+});
 
 const TRANSITION_MS = 300;
 
@@ -69,6 +74,6 @@ export default function tilt(node: HTMLElement, settingsObj: TiltSettings) {
 		update(settingsObj: TiltSettings) {
 			settings = getSettings(settingsObj);
 			reverse = settings.reverse ? -1 : 1;
-		}
+		},
 	};
 }

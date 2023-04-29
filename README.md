@@ -52,15 +52,16 @@ This repository contains the source code for the new [Files website](https://fil
 # Development
 
 ## GitHub Codespaces
+
 You can develop this project using GitHub Codespaces.
-For this, click on the "Code" button on the main GitHub page of this repository. 
+For this, click on the "Code" button on the main GitHub page of this repository.
 
 Then click on "Codespaces" and then on "Create codespace on main".
 
 After the Codespace has initialized, you can run `pnpm dev` and are ready to go!
 
-
 ## Local development
+
 ### Prerequisites
 
 - [Git](https://git-scm.com)

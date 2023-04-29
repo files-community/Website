@@ -8,7 +8,7 @@
 	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
-	import Profile from "@fluentui/svg-icons/icons/person_32_filled.svg?raw";
+	import Profile from "~icons/fluent/person-32-filled?raw";
 	import type { PageData } from "../../routes/$types";
 
 	export let contributors: PageData["contributors"];

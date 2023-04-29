@@ -3,7 +3,7 @@
 		CommunitySection,
 		DesignSection,
 		FeaturesSection,
-		ThemesSection
+		ThemesSection,
 	} from "$layout";
 	import { defaultI18nValues, Metadata } from "$lib";
 	import { _ } from "svelte-i18n";

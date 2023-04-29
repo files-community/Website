@@ -27,7 +27,7 @@
 		outline-color: var(--fds-accent-default);
 	}
 
-	:global(svg) {
+	:global(.fluent-icon) {
 		@include icon($size: 24px);
 		color: var(--fds-accent-default);
 	}
