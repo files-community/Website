@@ -105,6 +105,8 @@ This project uses [prettier](https://prettier.io) and [eslint](https://eslint.or
 pnpm run lint
 ```
 
+Additionally, we use [lint-staged](https://github.com/okonet/lint-staged) to automatically format all changed files before committing them, ensuring that all code is formatted consistently.
+
 ### Compiling & Distribution
 
 We currently use [SvelteKit's cloudflare adapter](https://www.npmjs.com/package/@sveltejs/adapter-cloudflare) module, which allows us to deploy to cloudflare. To simply build a production bundle, use the following script:

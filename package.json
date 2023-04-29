@@ -8,8 +8,9 @@
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"lint": "prettier --check --ignore-unknown --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --ignore-unknown --plugin-search-dir=. .",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^3.1.0",
@@ -25,6 +26,8 @@
 		"eslint-config-prettier": "^8.8.0",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"fluent-svelte": "^1.6.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
 		"mdsvex": "^0.10.6",
 		"postcss": "^8.4.23",
 		"postcss-media-minmax": "^5.0.0",
@@ -42,6 +45,9 @@
 		"typescript": "^5.0.4",
 		"unplugin-icons": "0.16.1",
 		"vite": "^4.3.3"
+	},
+	"lint-staged": {
+		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
 	},
 	"type": "module"
 }
