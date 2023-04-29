@@ -1,3 +1,7 @@
 {
-	"recommendations": ["svelte.svelte-vscode", "lokalise.i18n-ally", "antfu.iconify"]
+	"recommendations": [
+		"svelte.svelte-vscode",
+		"lokalise.i18n-ally",
+		"antfu.iconify"
+	]
 }

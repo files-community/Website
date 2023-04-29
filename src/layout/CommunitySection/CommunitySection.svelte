@@ -4,7 +4,7 @@
 		Contributor,
 		defaultI18nValues,
 		HeaderChip,
-		PageSection
+		PageSection,
 	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
