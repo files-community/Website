@@ -8,9 +8,9 @@
 		"preview": "svelte-kit preview",
 		"check": "svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-		"lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-		"format": "prettier --write --plugin-search-dir=. .",
-		"precommit": "lint-staged"
+		"lint": "prettier --check --ignore-unknown --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"format": "prettier --write --ignore-unknown --plugin-search-dir=. .",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^3.1.0",
@@ -47,7 +47,7 @@
 		"vite": "^4.3.3"
 	},
 	"lint-staged": {
-		"*": "prettier --write --plugin-search-dir=."
+		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
 	},
 	"type": "module"
 }
