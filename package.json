@@ -47,7 +47,7 @@
 		"vite": "^4.3.3"
 	},
 	"lint-staged": {
-		"*": "prettier --write"
+		"*": "prettier --write --plugin-search-dir=."
 	},
 	"type": "module"
 }
