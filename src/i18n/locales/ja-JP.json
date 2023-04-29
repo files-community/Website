@@ -3,7 +3,7 @@
 		"home": "{FilesName} • ホーム",
 		"docs_home": "{FilesName} • ドキュメント",
 		"docs_page": "{FilesName} • ドキュメント - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • ブログ",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Windowsの最高のファイルマネージャを作る。"
 	},
@@ -70,7 +70,7 @@
 		"coming_soon": "その他の投稿は近日公開予定です！",
 		"read_more": "もっと読む",
 		"share": {
-			"default": "Native sharing",
+			"default": "システムネイティブの共有",
 			"url": "URLをコピー",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
