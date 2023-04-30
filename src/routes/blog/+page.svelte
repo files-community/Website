@@ -1,5 +1,12 @@
 <script lang="ts">
-	import { BlogCard, defaultI18nValues, HeaderChip, Metadata, PageSection, tilt } from "$lib";
+	import {
+		BlogCard,
+		defaultI18nValues,
+		HeaderChip,
+		Metadata,
+		PageSection,
+		tilt,
+	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
@@ -11,7 +18,7 @@
 	let scrollY: number;
 </script>
 
-<Metadata title="Files • Blog" image="blog" />
+<Metadata title={$_("metadata.blog_home", defaultI18nValues)} image="blog" />
 
 <svelte:window
 	on:scroll={() =>

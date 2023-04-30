@@ -12,7 +12,7 @@ Files is a powerful and user-friendly file manager that can help you organize an
 
 2. **Keyboard shortcuts**: Files has a variety of keyboard shortcuts that can help you quickly navigate and manage your files. For example, you can press **`Ctrl+Shift+Enter`** to open a folder in the secondary pane and **`Ctrl+T`** to open a new tab. Learn more about shortcuts [here](/docs/configuring/keyboard-shortcuts)
 
-3. **Check boxes**: Files allows you to show check boxes next to file names, making it easier to select multiple files at once. This can be useful when you need to move, copy, or delete multiple files at the same time. You can enable this from Settings > Folders > Show selection checkbox next to file names. 
+3. **Check boxes**: Files allows you to show check boxes next to file names, making it easier to select multiple files at once. This can be useful when you need to move, copy, or delete multiple files at the same time. You can enable this from Settings > Folders > Show selection checkbox next to file names.
 
 4. **Change the layout mode**: You can change the layout mode in Files, such as switching between details and tile view.
 
@@ -31,4 +31,5 @@ Files is a powerful and user-friendly file manager that can help you organize an
 These are just a few of the many features and capabilities of Files. By utilizing these features, you can make your experience with Files even more efficient and convenient.
 
 ---
+
 Download Files from our [download page](/download/).

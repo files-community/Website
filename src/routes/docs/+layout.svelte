@@ -45,7 +45,7 @@
 				$page.url.pathname !== `/docs${searchResults[selection].path}`
 			)
 				goto(`/docs${searchResults[selection].path}`, {
-					keepFocus: true
+					keepFocus: true,
 				});
 		} else if (key === "ArrowDown") {
 			selection++;
@@ -68,14 +68,16 @@
 		return {
 			destroy() {
 				document.removeEventListener("click", handleClick);
-			}
+			},
 		};
 	};
 </script>
 
 <Metadata
 	title={pageTitle
-		? $_("metadata.docs_page", { values: { title: pageTitle, FilesName: "Files" } })
+		? $_("metadata.docs_page", {
+				values: { title: pageTitle, FilesName: "Files" },
+		  })
 		: $_("metadata.docs_home", defaultI18nValues)}
 	image="docs"
 />
@@ -100,7 +102,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepFocus: true
+								keepFocus: true,
 							});
 					}}
 					placeholder="Search Documentation"
@@ -115,7 +117,9 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
+							<ListItem
+								>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem
+							>
 						{/if}
 					</div>
 				{/if}
@@ -143,7 +147,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepFocus: true
+								keepFocus: true,
 							});
 					}}
 					placeholder="Search Documentation"
@@ -158,7 +162,9 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
+							<ListItem
+								>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem
+							>
 						{/if}
 					</div>
 				{/if}

@@ -9,20 +9,20 @@
 	const contributors = [
 		{
 			name: "Tropical",
-			link: "https://github.com/Tropix126/"
+			link: "https://github.com/Tropix126/",
 		},
 		{
 			name: "TheOnlyTails",
-			link: "https://www.theonlytails.com/"
+			link: "https://www.theonlytails.com/",
 		},
 		{
 			name: "Marcel Wagner",
-			link: "https://github.com/chingucoding/"
+			link: "https://github.com/chingucoding/",
 		},
 		{
 			name: "Michael West",
-			link: "https://michaelwe.st/"
-		}
+			link: "https://michaelwe.st/",
+		},
 	];
 </script>
 
@@ -66,7 +66,9 @@
 			</IconButton>
 		</div>
 		<p>
-			{$_("footer.copyright", { values: { year: new Date().getFullYear(), FilesName: "Files" } })}
+			{$_("footer.copyright", {
+				values: { year: new Date().getFullYear(), FilesName: "Files" },
+			})}
 		</p>
 	</div>
 	<div class="column">

@@ -9,10 +9,13 @@ export const handle: Handle = ({ event, resolve }) => {
 		() => string | undefined | null
 	>(locale, $locale => () => $locale);
 
-	const localeKey = (unwrapFunctionStore($locale)() ?? "en") as keyof typeof locales;
+	const localeKey = (unwrapFunctionStore($locale)() ??
+		"en") as keyof typeof locales;
 
 	return resolve(event, {
 		transformPageChunk: ({ html }) =>
-			html.replace("%lang%", localeKey).replace("%dir%", locales[localeKey].dir)
+			html
+				.replace("%lang%", localeKey)
+				.replace("%dir%", locales[localeKey].dir),
 	});
 };

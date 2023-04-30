@@ -52,15 +52,16 @@ This repository contains the source code for the new [Files website](https://fil
 # Development
 
 ## GitHub Codespaces
+
 You can develop this project using GitHub Codespaces.
-For this, click on the "Code" button on the main GitHub page of this repository. 
+For this, click on the "Code" button on the main GitHub page of this repository.
 
 Then click on "Codespaces" and then on "Create codespace on main".
 
 After the Codespace has initialized, you can run `pnpm dev` and are ready to go!
 
-
 ## Local development
+
 ### Prerequisites
 
 - [Git](https://git-scm.com)
@@ -103,6 +104,8 @@ This project uses [prettier](https://prettier.io) and [eslint](https://eslint.or
 ```ps
 pnpm run lint
 ```
+
+Additionally, we use [lint-staged](https://github.com/okonet/lint-staged) to automatically format all changed files before committing them, ensuring that all code is formatted consistently.
 
 ### Compiling & Distribution
 

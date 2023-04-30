@@ -1,7 +1,8 @@
 <script lang="ts">
-	import { externalLink, Metadata } from "$lib";
-	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
-	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
+	import { defaultI18nValues, externalLink, Metadata } from "$lib";
+	import { _ } from "svelte-i18n";
+	import Share from "~icons/fluent/share-24-regular";
+	import ArrowLeft from "~icons/fluent/arrow-left-24-regular";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { page } from "$app/stores";
 	import type { LayoutData } from "./$types";
@@ -11,7 +12,10 @@
 	$: ({ title, thumbnail, author, date } = data);
 </script>
 
-<Metadata title="Files • {title}" image={thumbnail} />
+<Metadata
+	title={$_("metadata.blog_page", defaultI18nValues)}
+	image={thumbnail}
+/>
 
 <section class="blog-post">
 	<article>
@@ -23,7 +27,7 @@
 				href="/blog"
 				title="Back to Blog"
 			>
-				{@html ArrowLeft}
+				<ArrowLeft />
 			</IconButton>
 			<h1>{title}</h1>
 		</div>
@@ -38,7 +42,7 @@
 				{
 					year: "numeric",
 					day: "numeric",
-					month: "short"
+					month: "short",
 				}
 			)}
 			<MenuFlyout placement="bottom">
@@ -48,13 +52,22 @@
 					class="share-button"
 					title="Share"
 				>
-					{@html Share}
+					<Share />
 				</IconButton>
 				<svelte:fragment slot="flyout">
 					<MenuFlyoutItem
+						on:click={() =>
+							navigator.share({
+								title,
+								url: $page.url.href,
+							})}
+					>
+						{$_("blog.share.default", defaultI18nValues)}
+					</MenuFlyoutItem>
+					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>
-						Copy URL
+						{$_("blog.share.url", defaultI18nValues)}
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
 						<a
@@ -63,7 +76,7 @@
 							)}"
 							{...externalLink}
 						>
-							Twitter
+							{$_("blog.share.tweet", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
@@ -73,11 +86,13 @@
 							)}"
 							{...externalLink}
 						>
-							Facebook
+							{$_("blog.share.facebook", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
-						<a href="/blog/feed.rss" {...externalLink}>RSS Feed</a>
+						<a href="/blog/feed.rss" {...externalLink}
+							>{$_("blog.share.rss", defaultI18nValues)}</a
+						>
 					</MenuFlyoutItem>
 				</svelte:fragment>
 			</MenuFlyout>

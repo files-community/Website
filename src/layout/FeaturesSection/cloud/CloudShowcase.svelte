@@ -2,8 +2,8 @@
 	import { draw } from "svelte/transition";
 	import { cloudFiles } from "$data/features";
 
-	import Checkmark from "@fluentui/svg-icons/icons/checkmark_20_regular.svg?raw";
-	import ArrowSync from "@fluentui/svg-icons/icons/arrow_sync_20_regular.svg?raw";
+	import Checkmark from "~icons/fluent/checkmark-20-regular";
+	import ArrowSync from "~icons/fluent/arrow-sync-20-regular";
 </script>
 
 <svg
@@ -61,7 +61,7 @@
 	</svg>
 	<table class="files-table">
 		<tr>
-			<th></th>
+			<th />
 			<th>Name</th>
 			<th>Status</th>
 		</tr>
@@ -73,11 +73,15 @@
 						alt={icon === "folder" ? `${icon} file` : "Folder"}
 						width="24"
 						height="24"
-					>
+					/>
 				</td>
 				<td>{name}</td>
 				<td class="status-{status === 'success' ? status : 'sync'}">
-					{@html status === "success" ? Checkmark : ArrowSync}
+					{#if status === "success"}
+						<Checkmark />
+					{:else}
+						<ArrowSync />
+					{/if}
 				</td>
 			</tr>
 		{/each}

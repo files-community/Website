@@ -94,7 +94,8 @@
 		max-block-size: 350px;
 		padding: 2px 0;
 		border: 1px solid var(--fds-surface-stroke-flyout);
-		border-radius: 0 0 var(--fds-overlay-corner-radius) var(--fds-overlay-corner-radius);
+		border-radius: 0 0 var(--fds-overlay-corner-radius)
+			var(--fds-overlay-corner-radius);
 		background-color: var(--fds-solid-background-quarternary);
 		box-shadow: var(--fds-flyout-shadow);
 	}
