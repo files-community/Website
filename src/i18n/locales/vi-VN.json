@@ -51,6 +51,10 @@
 			"archives": {
 				"title": "Xem và chỉnh sửa tệp nén",
 				"description": "Quản lý tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo và thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tạo để tạo tệp nén mã hóa."
+			},
+			"git": {
+				"title": "Git integration (Coming Soon)",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {
