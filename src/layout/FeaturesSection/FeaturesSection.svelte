@@ -51,7 +51,7 @@
 			description: $_("home.features.tags.description", defaultI18nValues),
 			icon: Tag,
 		},		
-		tags: {
+		git: {
 			title: $_("home.features.git.title", defaultI18nValues),
 			description: $_("home.features.git.description", defaultI18nValues),
 			icon: Branch,
