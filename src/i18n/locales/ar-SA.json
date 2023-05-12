@@ -51,6 +51,10 @@
 			"archives": {
 				"title": "عرض وتحرير الأرشيف",
 				"description": "إدارة الأرشيف المضغوط بما في ذلك zip ،WinRar ،7zip وأكثر من ذلك. قم بالسحب والإسقاط للإضافة إلى الأرشيف الموجود، واستخدام خيار إنشاء أرشيف لإنشاء أرشيف مشفر."
+			},
+			"git": {
+				"title": "Git integration (Coming Soon)",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {

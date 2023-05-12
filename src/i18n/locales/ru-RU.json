@@ -51,6 +51,10 @@
 			"archives": {
 				"title": "Просматривайте и редактируйте архивы",
 				"description": "Управляйте различными форматами архивов, включая zip, WinRar, 7zip и другие. Перетащите, чтобы добавить к существующим архивам, и используйте опцию создания архива для создания зашифрованных архивов."
+			},
+			"git": {
+				"title": "Git integration (Coming Soon)",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {

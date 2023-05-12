@@ -51,6 +51,10 @@
 			"archives": {
 				"title": "Vis og rediger arkiver",
 				"description": "Behandle pakkede arkiv inkludert zip, WinRar, 7zip og mer. Dra og slipp for å legge til eksisterende arkiver, og bruk opprettelsen av arkivvalget for å opprette krypterte arkiver."
+			},
+			"git": {
+				"title": "Git integration (Coming Soon)",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {
