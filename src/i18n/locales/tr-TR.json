@@ -51,6 +51,10 @@
 			"archives": {
 				"title": "Arşivleri görüntüle ve düzenle",
 				"description": "Zip, WinRar, 7zip ve daha fazlasını içeren sıkıştırılmış arşivleri yönetin. Mevcut arşivlere eklemek için sürükleyip bırakın ve şifreli arşivler oluşturmak için arşiv oluştur seçeneğini kullanın."
+			},
+			"git": {
+				"title": "Git integration (Coming Soon)",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {
