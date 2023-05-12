@@ -53,8 +53,8 @@
 				"description": "Gérez vos archives zip, WinRar, 7zip et plus encore. Glissez et déposez pour ajouter à des archives existantes, et utilisez l'option de création d'archives pour créer des archives cryptées."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Intégration Git (Bientôt disponible)",
+				"description": "Gérez facilement vos projets git. Créez de nouvelles branches, basculez entre elles et synchronisez vos modifications - le tout sans quitter Files."
 			}
 		},
 		"themes": {
@@ -74,11 +74,11 @@
 		"coming_soon": "De nouveaux posts bientôt !",
 		"read_more": "En Savoir Plus",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Partage natif",
+			"url": "Copier l'URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Flux RSS"
 		}
 	},
 	"docs": {
