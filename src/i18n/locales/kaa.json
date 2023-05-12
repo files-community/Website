@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Bas bet",
 		"docs_home": "{FilesName} • Hújjetshilik",
 		"docs_page": "{FilesName} • Hújjetshilik - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Kóbirek jańalıqlar jaqın arada!",
-		"read_more": "Dawamın oqıw"
+		"read_more": "Dawamın oqıw",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nátiyjeler tabılmadı",

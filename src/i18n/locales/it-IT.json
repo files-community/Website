@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Documentazione",
 		"docs_page": "{FilesName} • Documentazione - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Creando il miglior file manager per Windows."
 	},
 	"home": {
@@ -66,7 +68,14 @@
 	},
 	"blog": {
 		"coming_soon": "Altri post in arrivo!",
-		"read_more": "Maggiori dettagli"
+		"read_more": "Maggiori dettagli",
+		"share": {
+			"default": "Condivisione nativa",
+			"url": "Copia URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "Feed RSS"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nessun risultato trovato",
@@ -99,7 +108,7 @@
 	},
 	"download": {
 		"title": "Scarica {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} è un progetto guidato dalla community che dipende dal tuo supporto per crescere e migliorare. Per favore, considera di comprare {FilesName} attraverso il Microsoft Store oppure di supportarci su GitHub se usi l'installer classico.",
 		"donation_button": "Dona",
 		"microsoft_store": {
 			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
