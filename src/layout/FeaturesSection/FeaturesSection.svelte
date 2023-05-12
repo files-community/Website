@@ -16,6 +16,7 @@
 	import Columns from "~icons/fluent/panel-left-28-regular";
 	import TabDesktop from "~icons/fluent/tab-desktop-20-regular";
 	import Tag from "~icons/fluent/tag-24-regular";
+	import Branch from "~icons/fluent/branch-24-regular";
 
 	let cardPaginationInterval = 16;
 
@@ -49,6 +50,11 @@
 			title: $_("home.features.tags.title", defaultI18nValues),
 			description: $_("home.features.tags.description", defaultI18nValues),
 			icon: Tag,
+		},		
+		tags: {
+			title: $_("home.features.git.title", defaultI18nValues),
+			description: $_("home.features.git.description", defaultI18nValues),
+			icon: Branch,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
 

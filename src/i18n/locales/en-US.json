@@ -3,6 +3,8 @@
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
@@ -49,6 +51,10 @@
 			"archives": {
 				"title": "View and edit archives",
 				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+			},
+			"git": {
+				"title": "Git integration",
+				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
 		"themes": {
@@ -66,7 +72,14 @@
 	},
 	"blog": {
 		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"read_more": "Read More",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "No results found",
