@@ -67,10 +67,15 @@
 			.addEventListener("change", e => {
 				systemTheme = e.matches ? "dark" : "light";
 			});
+
+		const body = document.getElementsByTagName("body")[0];
+		body.addEventListener("scroll", () => {
+			scrollY = body.scrollTop;
+		});
 	});
 </script>
 
-<svelte:window bind:innerHeight bind:scrollY />
+<svelte:window bind:innerHeight />
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
 	<div bind:this={anchor} class="scroll-anchor" />

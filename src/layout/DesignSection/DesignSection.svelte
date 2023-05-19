@@ -1,14 +1,17 @@
 <script lang="ts">
 	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
+	import { onMount } from "svelte";
 	import { _ } from "svelte-i18n";
 	let scrollY: number;
-</script>
 
-<svelte:window
-	on:scroll={() =>
-		window.requestAnimationFrame(() => (scrollY = window.scrollY))}
-/>
+	onMount(() => {
+		const body = document.getElementsByTagName("body")[0];
+		body.addEventListener("scroll", () => {
+			scrollY = body.scrollTop;
+		});
+	});
+</script>
 
 <PageSection id="design-section">
 	<HeaderChip>{$_("home.design.chip", defaultI18nValues)}</HeaderChip>
