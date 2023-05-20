@@ -9,10 +9,11 @@
 	import { TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { Tag } from "$data/features";
+	import { error } from "@sveltejs/kit";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
-	let scrollY = 0;
+	let scrollPositionY = 0;
 	let innerHeight = 0;
 	let visible = true;
 	let noInitialDelay = false;
@@ -50,8 +51,10 @@
 	// Essentially determines if the user has seen the top 1/4th of the themes section or not
 	$: if (
 		anchor &&
-		anchor.getBoundingClientRect().top + anchor.offsetHeight / 4 + scrollY <
-			scrollY + innerHeight
+		anchor.getBoundingClientRect().top +
+			anchor.offsetHeight / 4 +
+			scrollPositionY <
+			scrollPositionY + innerHeight
 	)
 		visible = true;
 
@@ -67,15 +70,11 @@
 			.addEventListener("change", e => {
 				systemTheme = e.matches ? "dark" : "light";
 			});
-
-		const body = document.getElementsByTagName("body")[0];
-		body.addEventListener("scroll", () => {
-			scrollY = body.scrollTop;
-		});
 	});
 </script>
 
 <svelte:window bind:innerHeight />
+<svelte:body on:scroll={() => (scrollPositionY = document.body.scrollTop)} />
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
 	<div bind:this={anchor} class="scroll-anchor" />
