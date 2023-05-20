@@ -13,7 +13,7 @@
 </script>
 
 <Metadata
-	title={$_("metadata.blog_page", defaultI18nValues)}
+	title={$_("metadata.blog_page", { values: { ...defaultI18nValues, title }})}
 	image={thumbnail}
 />
 
