@@ -58,11 +58,11 @@
 	)
 		visible = true;
 
-	const handleThemeChange = (e: MediaQueryListEvent) => {
-		systemTheme = e.matches ? "dark" : "light";
-	};
-
 	onMount(() => {
+		const handleThemeChange = (e: MediaQueryListEvent) => {
+			systemTheme = e.matches ? "dark" : "light";
+		};
+
 		visible = false; // We want SSR to have these visible by default, so we'll just do this.
 
 		systemTheme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches
