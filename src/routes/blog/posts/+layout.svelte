@@ -10,10 +10,15 @@
 	export let data: LayoutData;
 
 	$: ({ title, thumbnail, author, date } = data);
+	$: pageTitle = title;
 </script>
 
 <Metadata
-	title={$_("metadata.blog_page", defaultI18nValues)}
+	title={pageTitle
+		? $_("metadata.blog_page", {
+				values: { title: pageTitle, FilesName: "Files" },
+		  })
+		: $_("metadata.blog_home", defaultI18nValues)}
 	image={thumbnail}
 />
 
