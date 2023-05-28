@@ -53,8 +53,8 @@
 				"description": "Zip, WinRar, 7zip ve daha fazlasını içeren sıkıştırılmış arşivleri yönetin. Mevcut arşivlere eklemek için sürükleyip bırakın ve şifreli arşivler oluşturmak için arşiv oluştur seçeneğini kullanın."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git entegrasyonu (Çok Yakında)",
+				"description": "Git projelerinizi kolayca yönetin. Yeni dallar oluşturun, bunlar arasında geçiş yapın ve değişikliklerinizi senkronize edin - tüm bunları Dosyalar'dan çıkmadan yapın."
 			}
 		},
 		"themes": {
@@ -74,11 +74,11 @@
 		"coming_soon": "Daha fazla gönderi yakında!",
 		"read_more": "Daha Fazla",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Yerel paylaşım",
+			"url": "Bağlantıyı kopyala",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "RSS akışı"
 		}
 	},
 	"docs": {
@@ -90,7 +90,7 @@
 		"home": "Ana sayfa",
 		"docs": "Dokümantasyon",
 		"news": "Haberler",
-		"download": "Download",
+		"download": "İndir",
 		"contribute": "{FilesName}'a Katkıda Bulunun",
 		"feedback": "Geri Bildirimde Bulunun",
 		"style_guide": "Stil Rehberi",
@@ -112,7 +112,7 @@
 	},
 	"download": {
 		"title": "{FilesName}'ı İndir",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} büyümek ve gelişmek için sizin desteğinize bağlı olan, topluluk odaklı bir projedir. Klasik yükleyiciyi kullanıyorsanız lütfen Microsoft Mağazası aracılığıyla {FilesName} satın almayı veya GitHub'da bizi desteklemeyi düşünün.",
 		"donation_button": "Bağış Yap",
 		"microsoft_store": {
 			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
