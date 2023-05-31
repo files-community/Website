@@ -44,11 +44,8 @@
 		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
 	<InfoBar class="donation-infobar" severity="success" closable={false}>
-		<div
-			style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
-		>
+		<div class="donation-infobar-content">
 			{$_("download.donation_description", defaultI18nValues)}
-
 			<Button
 				slot="action"
 				variant="accent"
@@ -97,6 +94,12 @@
 			> p {
 				text-align: center;
 			}
+		}
+		.donation-infobar-content {
+			margin-block: 7px;
+			display: grid;
+			grid-template-columns: 1fr auto;
+			gap: 0.5rem;
 		}
 	}
 </style>
