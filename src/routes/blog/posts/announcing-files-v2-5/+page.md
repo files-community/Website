@@ -2,20 +2,20 @@
 title: Announcing Files, version 2.5
 description: Acrylic, git integration, preview pane & more
 thumbnail: /blog-resources/files2-4-40/HeroImage.jpg
-date: 2/20/2023
+date: 6/14/2023
 author: files-community
 ---
 
-Today we are excited to announce the next major release of Files, version 2.5. If you already have Files, you'll get an notification in the app to update. Otherwise you can download Files for free from our [download page](/download/).
+Today we're excited to announce the next major release of Files, version 2.5. If you already have Files, you'll get an notification in the app to update. Otherwise you can download Files for free from our [download page](/download/).
 
-**TL;DR:** This update brings back support for acrylic, a new git integration, and improvements to the preview pane. Continue reading to learn more about these changes.
+**TL;DR:** This update adds back the option for acrylic, a new git integration, and improvements to the preview pane. Continue reading to learn more about these changes.
 
 
 ## What's new in v2.5
 
 ### Acrylic backdrop material
 
-We heard the feedback loud and clear: users want the option to set the backdrop material to acrylic. This feature was removed when we migrated from UWP to WinAppSdk due to some compatibility issues. Over the last few months, we were able to resolve these issues so we're happy to announce that acrylic is now available again.
+We heard the feedback loud and clear: users want the option to set the backdrop material to acrylic. This feature was removed when we migrated from UWP to WinAppSdk but over the last few months these issues have been resolved and we're happy to announce that acrylic is available again.
 
 ///insert picture
 
@@ -35,6 +35,7 @@ We added a couple of git related features to Files that let you work with git re
 - Check out branches by clicking the branch name on the status bar
 - Pull commits from remote repos using the Pull button on the status bar
 - Create new git branches by clicking the branch name on the status bar
+- Display git columns in the details layout
 - We plan to add more git features in future updates, so stay tuned!
 
 /// insert screenshots
@@ -49,7 +50,7 @@ SeerPro is a popular app for previewing files and documents with a single press 
 
 ### [Preview and Details]
 
-- The preview and detail panes are now separated into two separate tabs. Users can switch between the two panes using the new pivot control we added. Additionally, the thumbnail preview will now stretch to fill the available space in the pane.
+- The preview and detail panes are now separated into two. Users can switch between the two panes using the new pivot control. Additionally, the preview will now stretch to fill the available space in the pane.
 /// insert two screenshots side by side
 - Improved the layout when the preview pane is in the horizontal orientation.
 
@@ -60,14 +61,11 @@ Display and edit metadata of multiple files in the properties window. Previously
 
 
 
-### Other Fixes and Enhancements
+### Bug Fixes
 
-Besides these major features and UI improvements, we’ve also fixed some bugs and added some enhancements:
+Besides these major features and UI improvements, we’ve also fixed some bugs:
 
-- Added a link to our Crowdin project on the about page
-- Added support for grouping items by month
-- Added toolbar button for installing selected certificate files
-- Fixed network locations not appearing on the sidebar
+- Fixed issue with network locations not appearing on the sidebar
 - Fixed crash when previewing large html or svg files
 - Fixed issue where progress bar was overlapping text in ongoing operations
 - Fixed crash that would occur when trying to open the library page on the properties window
