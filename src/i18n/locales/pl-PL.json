@@ -1,33 +1,33 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"home": "{FilesName} • Główna",
+		"docs_home": "{FilesName} • Dokumentowanie",
+		"docs_page": "{FilesName} • Dokumentowanie - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
+			"chip": "Społeczność",
+			"title": "Zaprojektowany i opracowany przez Ciebie.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"discord": "Dołącz do dyskusji",
+			"docs": "Zostań współtwórcą",
+			"contributions": "{amount, plural, =0 {Brak składek} one {# wkład} other {# składek}}"
 		},
 		"design": {
 			"chip": "Design",
 			"title": "Power meets beauty.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"download": "Pobierz",
+			"learn_more": "Dowiedz się więcej"
 		},
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"unknown": "Nie wiadomo",
 			"cloud": {
 				"title": "Seamless cloud integration",
 				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
@@ -53,7 +53,7 @@
 				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
+				"title": "Git integration",
 				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
@@ -63,7 +63,7 @@
 			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
+			"purple": "Fioletowy",
 			"yellow_white": "Yellow • White",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
@@ -75,7 +75,7 @@
 		"read_more": "Read More",
 		"share": {
 			"default": "Native sharing",
-			"url": "Copy URL",
+			"url": "Skopiować URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
@@ -87,10 +87,10 @@
 	},
 	"footer": {
 		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
+		"home": "Główna",
 		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
+		"news": "Aktualności",
+		"download": "Pobierz",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
@@ -102,18 +102,18 @@
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"home": "Główna",
+		"docs": "Dokumentowanie",
+		"news": "Aktualności",
+		"download": "Pobierz",
+		"themes": "Tematy",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
+		"title": "Pobierz {FilesName}",
 		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"donation_button": "Ofiarować",
 		"microsoft_store": {
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
@@ -122,7 +122,7 @@
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
+			"link_text": "klasyczny instalator",
 			"description": "Don't have access to the Microsoft Store? Try our "
 		}
 	}

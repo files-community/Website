@@ -53,7 +53,7 @@
 				"description": "Verwalten Sie Zip-Archive inklusive Zip, WinRAR, 7zip und mehr. Drag-and-drop, um zu existierenden Archiven hinzuzufügen, und verwenden Sie die Option zum Archiv erstellen, um verschlüsselte Archive zu erstellen."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
+				"title": "Git integration",
 				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},

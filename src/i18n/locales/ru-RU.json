@@ -3,7 +3,7 @@
 		"home": "{FilesName} • Главная",
 		"docs_home": "{FilesName} • Документация",
 		"docs_page": "{FilesName} • Документация - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • Блог",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Создание лучшего файлового менеджера для Windows."
 	},
@@ -53,8 +53,8 @@
 				"description": "Управляйте различными форматами архивов, включая zip, WinRar, 7zip и другие. Перетащите, чтобы добавить к существующим архивам, и используйте опцию создания архива для создания зашифрованных архивов."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Интеграция с Git (скоро)",
+				"description": "Легко управляйте вашими проектами Git. Создавайте новые ветки, переключайтесь между ними и синхронизируйте ваши изменения, не выходя из приложения Files."
 			}
 		},
 		"themes": {
@@ -74,11 +74,11 @@
 		"coming_soon": "Больше новостей совсем скоро!",
 		"read_more": "Читать далее",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Поделиться средствами системы",
+			"url": "Скопировать ссылку",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "RSS лента"
 		}
 	},
 	"docs": {
@@ -112,7 +112,7 @@
 	},
 	"download": {
 		"title": "Скачать {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} - это проект сообщества, развитие и улучшение которого зависит от вашей поддержки. Пожалуйста, рассмотрите покупку {FilesName} через Microsoft Store или поддержите нас на GitHub, если вы используете классический способ установки.",
 		"donation_button": "Пожертвовать",
 		"microsoft_store": {
 			"description": "Покупка {FilesName} в Microsoft Store помогает поддерживать разработчиков и позволяет нам продолжать обновлять приложение, добавляя новые функции и улучшения."

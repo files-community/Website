@@ -6,52 +6,56 @@ date: 6/14/2023
 author: files-community
 ---
 
-Today we're excited to announce the next major release of Files, version 2.5. If you already have Files, you'll get an notification in the app to update. Otherwise you can download Files for free from our [download page](/download/).
+Today we're excited to announce the next major release of Files, version 2.5. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/).
 
-**TL;DR:** This update adds back the option for acrylic, a new git integration, and improvements to the preview pane. Continue reading to learn more about these changes.
+**TL;DR:** This update adds back the option for Acrylic, a new Git integration, and improvements to the preview pane. Continue reading to learn more about these changes.
 
 
 ## What's new in v2.5
 
 ### Acrylic backdrop material
 
-We heard the feedback loud and clear: users want the option to set the backdrop material to acrylic. This feature was removed when we migrated from UWP to WinAppSdk but over the last few months these issues have been resolved and we're happy to announce that acrylic is available again.
+We heard the feedback loud and clear: users want the option to set the backdrop material to Acrylic. This feature was removed when we migrated from UWP to WinAppSdk but over the last few months these issues have been resolved and we're happy to announce that Acrylic is available again.
 
-///insert picture
+<figure>
+    <img src="/blog-resources/files2-5/Acrylic.png" alt="Files with Acrylic backdrop." />
+</figure>
 
 
 ### Swiping gestures for navigation
 
 Swiping gestures allows users to navigate in Files with ease. Swipe from the left to go back, and swipe from the right to go forward. These gestures are compatible with both touch screens and touch pads.
 
-/// insert gif
+<figure>
+    <img src="/blog-resources/files2-5/SwipeGestures.gif" alt="Swiping gestures." />
+</figure>
 
 
-### Git integration
+### Manage repositories natively with Git
 
-We added a couple of git related features to Files that let you work with git repositories more easily. You can now:
+We added a couple of Git features to Files that make it easier to work with Git repositories.
 
-- View the current branch name on the status bar
-- Checkout branches by clicking the branch name on the status bar
-- Pull commits from remote repos using the Pull button on the status bar
-- Create new git branches by clicking the branch name on the status bar
-- Display git columns in the details layout
-- We plan to add more git features in future updates, so stay tuned!
+- The branch name is now displayed on the status bar
+- Checkout remote branches, and switch between local branches from the branches flyout
+- Pull commits from remote repositories using the 'Pull' button on the status bar
+- Create new branches
+- Track changes with the Git columns in the details layout
+- We plan to add more Git features in future updates, so stay tuned!
 
-/// insert screenshots
-
+<figure>
+    <img src="/blog-resources/files2-5/GitFeatures.png" alt="Git features." />
+</figure>
 
 ### SeerPro
 
-SeerPro is a popular app for previewing files and documents with a single press of the space bar. We're excited to partner with SeerPro so users with SeerPro can now use this feature from Files. Learn more here https://1218.io/.
+SeerPro is a popular app for previewing files and documents with a single press of the space bar. We're excited to partner with SeerPro so users with SeerPro can now use this feature from Files. Learn more here http://1218.io/.
 
 
 ## Changes and Improvements
 
-### [Preview and Details]
+### [Preview and Details pane]
 
 - The preview and detail panes are now separated into two. Users can switch between the two panes using the new pivot control. Additionally, the preview will now stretch to fill the available space in the pane.
-/// insert two screenshots side by side
 - Improved the layout when the preview pane is in the horizontal orientation.
 
 

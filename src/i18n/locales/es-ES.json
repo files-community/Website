@@ -1,129 +1,129 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"home": "{FilesName} • Inicio",
+		"docs_home": "{FilesName} • Documentos",
+		"docs_page": "{FilesName} • Documentos - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Construyendo el mejor gestor de archivos para Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Comunidad",
+			"title": "Diseñado y desarrollado por ti.",
+			"description": "{FilesName} es software libre y de código abierto, mantenido y diseñado por un colectivo de cientos de colaboradores.",
+			"discord": "Únete al debate",
+			"docs": "Hazte colaborador",
+			"contributions": "{amount, plural, =0 {No hay contribuciones} one {# contribución} other {# contribuciones}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Diseño",
+			"title": "El poder se encuentra con la belleza.",
+			"description": "Explore un atractivo diseño basado en Windows. Administre todos sus archivos con mayor productividad. Utilice pestañas para trabajar en varias carpetas. Y mucho más.",
+			"download": "Descarga",
+			"learn_more": "Más información"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Características",
+			"title": "A esto ya lo hace.",
+			"description": "¿Integración de archivos en la nube? ¿Pestañas y varios diseños? ¿Vista previa de archivos enriquecidos? {FilesName} lo ha resuelto con las características que esperas ver en un administrador de archivos moderno.",
+			"unknown": "Desconocido",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Integración perfecta en la nube",
+				"description": "La integración con servicios en la nube como OneDrive, Google Drive e iCloud le permiten administrar sus documentos y fotos en la nube, directamente desde la barra lateral."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Previsualizar archivos",
+				"description": "Previsualización de documentos, fotos y más sin abrirlos. Soporte para previsualizaciones ricas, resaltado de sintaxis, markdown y reproducción de vídeo."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Etiquetado de archivos y carpetas",
+				"description": "Marque y organice rápidamente sus archivos y carpetas para más adelante asignarles etiquetas de color con nombre, para facilitar la identificación. ¡Incluso puedes añadir tus propias etiquetas personalizadas!"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Multitarea con pestañas",
+				"description": "Evita múltiples ventanas y mantén tu escritorio despejado. {FilesName} tiene una interfaz con pestañas y atajos de teclado."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Vista de columna",
+				"description": "Navega rápidamente a través de columnas para acceder a diferentes niveles del sistema de archivos."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Ver y editar archivos",
+				"description": "Administra archivos comprimidos incluyendo ZIP, WinRAR y 7 ZIP. Arrastre y suelte para añadir a los archivos existentes, y utilice la opción de crear archivo para crear archivos cifrados."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integración con Git (Próximamente)",
+				"description": "Administra fácilmente tus proyectos Git. Crea nuevas ramificaciones, cambia entre ellas y sincroniza tus cambios, todo sin salir de Files."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Temas",
+			"title": "Distintivamente personal.",
+			"description": "Hazlo a tu manera. {FilesName} cuenta con una interfaz de usuario totalmente personalizable, hasta los colores y materiales. Prueba temas personalizados que están incorporados en {FilesName} o sumérgete en los documentos y crea el tuyo propio.",
+			"grey_blue": "Gris Oscuro • Azul claro",
+			"grey_green": "Gris azul • Verde neón",
+			"purple": "Púrpura",
+			"yellow_white": "Amarillo • Blanco",
+			"white_teal": "Blanco frío • Turquesa",
+			"sky_blue": "Azul cielo",
+			"select_theme": "Seleccionar tema #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More",
+		"coming_soon": "¡Próximamente más publicaciones!",
+		"read_more": "Leer más",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Compartir nativo",
+			"url": "Copiar URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Suscripciones RSS"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "No se encontraron resultados",
+		"edit_page": "Editar esta página"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "Copyright ©️ 2021 - {year}, Los autores de {FilesName}",
+		"home": "Inicio",
+		"docs": "Documentación",
+		"news": "Noticias",
+		"download": "Descargar",
+		"contribute": "Contribuir a {FilesName}",
+		"feedback": "Danos tu opinión",
+		"style_guide": "Guía de estilo",
+		"translations": "Traducciones",
+		"contribute_site": "Contribuye con esta página",
+		"github": "Repositorio de Github",
+		"report_bug": "¿Has encontrado un error?",
+		"web_team": "Equipo Web"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"home": "Inicio",
+		"docs": "Documentación",
+		"news": "Noticias",
+		"download": "Descarga",
+		"themes": "Temas",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"title": "Descargar {FilesName}",
+		"donation_description": "{FilesName} es un proyecto impulsado por la comunidad que depende de tu apoyo para crecer y mejorar. Por favor, considere comprar {FilesName} a través de la tienda Microsoft o apoyarnos en GitHub si utiliza el instalador clásico.",
+		"donation_button": "Donar",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "Comprar {FilesName} a través de la tienda Microsoft ayuda a apoyar a los desarrolladores y nos permite continuar actualizando la aplicación con nuevas características y mejoras."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "Vista previa",
+			"description": "La versión de vista previa se puede instalar junto a la versión estable y proporciona acceso anticipado a nuevas características y mejoras."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "instalador clásico",
+			"description": "¿No tiene acceso a Microsoft Store? Pruebe nuestro "
 		}
 	}
 }
