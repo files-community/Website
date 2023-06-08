@@ -14,7 +14,7 @@
 			"description": "{FilesName} 는 수백 명의 기여자가 공동으로 유지 관리하고 설계한 무료 오픈 소스 소프트웨어예요.",
 			"discord": "토론 참여하기",
 			"docs": "이 프로젝트 기여하기",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"contributions": "{amount, plural, =0 {기여 없음} one {# 번 기여함} other {# 번 기여함}}"
 		},
 		"design": {
 			"chip": "디자인",
@@ -60,7 +60,7 @@
 		"themes": {
 			"chip": "테마",
 			"title": "완벽하게 개인적이예요.",
-			"description": "마음대로 바꿔봐요. {FilesName} 는 색상부터 Material까지 사용자 지정이 가능한 사용자 인터페이스를 제공해요. {FilesName} 에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
+			"description": "마음대로 바꿔봐요. {FilesName} 는 색상부터 Material까지 사용자가 지정할 수 있어요. {FilesName} 에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
 			"grey_blue": "짙은 회색 • 라이트 블루",
 			"grey_green": "블루 그레이 • 네온 그린",
 			"purple": "보라색",
@@ -86,7 +86,7 @@
 		"edit_page": "이 페이지 편집하기"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} 기여자",
+		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "홈",
 		"docs": "자습서",
 		"news": "뉴스",
