@@ -76,7 +76,7 @@
 		"share": {
 			"default": "Native sharing",
 			"url": "Copy URL",
-			"tweet": "Twitter",
+			"tweet": "트위터",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
 		}
@@ -90,24 +90,24 @@
 		"home": "Home",
 		"docs": "Docs",
 		"news": "News",
-		"download": "Download",
+		"download": "다운로드",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"contribute_site": "이 사이트에 기여하기",
+		"github": "GitHub 리포지토리",
+		"report_bug": "버그 제보하기",
+		"web_team": "웹 설계"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
+		"home": "홈",
+		"docs": "자습서",
+		"news": "뉴스",
+		"download": "다운로드",
 		"themes": "Themes",
-		"discord": "Discord",
+		"discord": "디스코드",
 		"github": "Github"
 	},
 	"download": {
