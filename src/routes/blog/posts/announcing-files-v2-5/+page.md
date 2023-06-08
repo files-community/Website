@@ -32,7 +32,7 @@ Swiping gestures allows users to navigate in Files with ease. Swipe from the lef
 We added a couple of git related features to Files that let you work with git repositories more easily. You can now:
 
 - View the current branch name on the status bar
-- Check out branches by clicking the branch name on the status bar
+- Checkout branches by clicking the branch name on the status bar
 - Pull commits from remote repos using the Pull button on the status bar
 - Create new git branches by clicking the branch name on the status bar
 - Display git columns in the details layout
