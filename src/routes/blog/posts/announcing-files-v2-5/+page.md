@@ -67,28 +67,24 @@ Besides these major features and UI improvements, we’ve also fixed some bugs:
 
 - Fixed issue with network locations not appearing on the sidebar
 - Fixed crash when previewing large html or svg files
-- Fixed issue where progress bar was overlapping text in ongoing operations
-- Fixed crash that would occur when trying to open the library page on the properties window
-- Fixed issue where icons and names of library items were not displayed
+- Fixed crash when previewing PDFs in RTL languages
+- Fixed issue where the progress bar overlapped the title in ongoing operations
+- Fixed issue where the icons and names of libraries were not displayed in the details layout
 - Fixed issue with some date formats not reflecting the language settings
-- Fixed issue where delete confirmation sometimes took a while to display
-- Fixed an issue where the progress bar overlapped the title when extracting files
-- Fixed an issue where pinned favorites were sometimes displayed twice
-- Fixed an issue where right clicking an empty space didn't clear the selected files
-- Fixed an issue where extracting files sometimes failed
-- Fixed an issue with the focus sometimes changing in the column layout
-- Fixed crash that would occur when previewing PDFs in a RTL environment
+- Fixed issue where the delete confirmation sometimes took a while to open
+- Fixed issue where pinned favorites were sometimes displayed twice
+- Fixed issue where right clicking an empty space didn't clear the selected files
+- Fixed issue where extracting files sometimes failed
+- Fixed issue with the focus sometimes flickering in the column layout
 - Fixed issue with pasting folders from Remote Desktop
 - Fixed issue where the tab sometimes had the wrong icon
 - Fixed contrast issues with the preview pane icon
-- Fixed issue where details pane would sometimes fail to load
-- Fixed issue where renaming folder in the columns layout would open the folder
+- Fixed issue where the details pane would sometimes fail to load
+- Fixed issue where renaming folders in the columns layout would open the folder
 - Fixed issue with selecting multiple items in the column layout
 - Fixed issue where add item was disabled in column layout
 - Fixed position of ongoing operations flyout
-- Fixed crash with properties window
-- Fixed issue where the tab sometimes had the wrong icon
-- Fixed issue with pasting folders from Remote Desktop
+- Fixed crash with the properties window
 
 ### Conclusion
 
