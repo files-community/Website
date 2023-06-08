@@ -61,7 +61,7 @@ Display and edit metadata of multiple files in the properties window. Previously
 
 
 
-### Bug Fixes
+## Bug Fixes
 
 Besides these major features and UI improvements, we’ve also fixed some bugs:
 
@@ -85,6 +85,7 @@ Besides these major features and UI improvements, we’ve also fixed some bugs:
 - Fixed issue where add item was disabled in column layout
 - Fixed position of ongoing operations flyout
 - Fixed crash with the properties window
+
 
 ### Conclusion
 
