@@ -19,7 +19,7 @@
 		"design": {
 			"chip": "디자인",
 			"title": "힘과 아름다움의 조화",
-			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 이 기능들로만 끝나진 않아요.",
+			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 이걸로 끝나지 않아요.",
 			"download": "다운로드",
 			"learn_more": "더 알아보기"
 		},
@@ -60,7 +60,7 @@
 		"themes": {
 			"chip": "테마",
 			"title": "완벽하게 개인적이에요.",
-			"description": "마음대로 바꿔봐요. {FilesName}는 색상부터 Material까지 사용자가 지정할 수 있어요. {FilesName}에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
+			"description": "마음대로 바꿔봐요. {FilesName}는 색상부터 배경 재질까지 사용자가 지정할 수 있어요. {FilesName}에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
 			"grey_blue": "짙은 회색 • 라이트 블루",
 			"grey_green": "푸른 회색 • 네온 그린",
 			"purple": "보라색",
@@ -93,7 +93,7 @@
 		"download": "다운로드",
 		"contribute": "{FilesName}에 기여하기",
 		"feedback": "피드백 보내기",
-		"style_guide": "애플리케이션 코드 구조",
+		"style_guide": "코드 구조",
 		"translations": "번역하기",
 		"contribute_site": "이 사이트 기여하기",
 		"github": "GitHub 리포지토리",
