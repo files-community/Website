@@ -37,7 +37,7 @@
 		"remark-github": "^11.2.4",
 		"remark-slug": "^7.0.1",
 		"sass": "^1.63.2",
-		"svelte": "^3.59.1",
+		"svelte": "4.0.0-next.1",
 		"svelte-check": "^3.4.3",
 		"svelte-i18n": "^3.6.0",
 		"svelte-preprocess": "^5.0.4",

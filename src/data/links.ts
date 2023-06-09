@@ -1,4 +1,4 @@
-import type { SvelteComponentTyped } from "svelte";
+import type { SvelteComponent } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 import type { DocsTree } from "./docs";
 
@@ -16,7 +16,7 @@ export type NavbarItem = {
 	name: string;
 	path: string;
 	external?: boolean;
-	icon: SvelteComponentTyped<SvelteHTMLElements["svg"]>;
+	icon: SvelteComponent<SvelteHTMLElements["svg"]>;
 	type?: string;
 	sidebarTree?: DocsTree;
 };
