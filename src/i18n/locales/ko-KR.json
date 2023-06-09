@@ -1,40 +1,40 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"home": "{FilesName} • 홈",
+		"docs_home": "{FilesName} • 자습서",
+		"docs_page": "{FilesName} • 자습서 - {title}",
+		"blog_home": "{FilesName} • 블로그",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
+			"chip": "커뮤니티",
+			"title": "여러분들이 설계하고 개발했습니다.",
+			"description": "{FilesName} 는 수백 명의 기여자가 공동으로 유지 관리하고 설계한 무료 오픈 소스 소프트웨어입니다.",
+			"discord": "토론에 참여하기",
+			"docs": "이 프로젝트 기여하기",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "디자인",
+			"title": "힘과 아름다움의 조화",
+			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 당신의 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 더 많은 기능이 있습니다.",
+			"download": "다운로드",
+			"learn_more": "더 알아보기"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "특징",
+			"title": "이미 가능합니다.",
+			"description": "클라우드 파일 연동? 탭과 다중 레이아웃? 파일 미리 보기? {FilesName} 에는 최신 파일 관리자가 제공하는 강력한 기능이 포함되어 있습니다.",
+			"unknown": "알 수 없음",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "계속적인 클라우드 연동",
+				"description": "OneDrive, Google Drive 및 iCloud와 같은 클라우드 서비스와 연동해 사이드바에서 바로 클라우드에서 문서 및 사진을 관리할 수 있습니다."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "파일 미리보기",
+				"description": "문서, 사진 등을 열지 않고 미리 볼 수 있습니다. Rich Previews, 구문 강조, 마크다운 및 비디오 재생을 모두 지원합니다."
 			},
 			"tags": {
 				"title": "Tagged Files & Folders",
@@ -61,69 +61,69 @@
 			"chip": "Themes",
 			"title": "Distinctly personal.",
 			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
+			"grey_blue": "짙은 회색 • 라이트 블루",
+			"grey_green": "블루 그레이 • 네온 그린",
+			"purple": "보라색",
+			"yellow_white": "노란색 • 하얀색",
 			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
+			"sky_blue": "하늘색",
 			"select_theme": "Select theme #{index}"
 		}
 	},
 	"blog": {
 		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More",
+		"read_more": "더 알아보기",
 		"share": {
 			"default": "Native sharing",
-			"url": "Copy URL",
-			"tweet": "Twitter",
-			"facebook": "Facebook",
+			"url": "URL 복사",
+			"tweet": "트위터",
+			"facebook": "페이스북",
 			"rss": "RSS Feed"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "결과 없음",
+		"edit_page": "이 페이지 편집하기"
 	},
 	"footer": {
 		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"home": "홈",
+		"docs": "자습서",
+		"news": "뉴스",
+		"download": "다운로드",
+		"contribute": "{FilesName} 에 기여하기",
+		"feedback": "피드백 보내기",
+		"style_guide": "스타일 가이드",
+		"translations": "번역하기",
+		"contribute_site": "이 사이트에 기여하기",
+		"github": "GitHub 리포지토리",
+		"report_bug": "버그 제보하기",
+		"web_team": "웹 설계"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
-		"discord": "Discord",
-		"github": "Github"
+		"home": "홈",
+		"docs": "자습서",
+		"news": "뉴스",
+		"download": "다운로드",
+		"themes": "테마",
+		"discord": "디스코드",
+		"github": "GitHub"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"title": "{FilesName} 다운로드",
+		"donation_description": "{FilesName} 는 확장과 개선을 위한 지원에 의존하는 커뮤니티 기반 프로젝트입니다. Microsoft Store를 통해 {FilesName} 를 구입하거나 기존 설치 관리자를 사용하는 경우 GitHub에서 기여하는 것을 고려해주시기 바랍니다.",
+		"donation_button": "후원하기",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "Microsoft Store 를 통해 {FilesName} 를 구입하면 개발자를 지원하는 것을 돕고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있습니다."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "미리보기",
+			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있으며 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공합니다."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "기존 설치 프로그램을 시도해보세요.",
+			"description": "Microsoft Store에 접근할 수 없나요? "
 		}
 	}
 }

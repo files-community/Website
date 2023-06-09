@@ -3,7 +3,7 @@
 		"home": "{FilesName} • Головна",
 		"docs_home": "{FilesName} • Документація",
 		"docs_page": "{FilesName} • Документація - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • Блог",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Створення найкращого файлового менеджера для Windows."
 	},
@@ -53,8 +53,8 @@
 				"description": "Керування різними форматами архівів, включаючи zip, WinRar, 7zip та інші. Перетягуйте файли до існуючих архівів та створюйте зашифровані архіви за допомогою опції \"Створити архів\"."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Інтеграція Git (Скоро)",
+				"description": "Легко керуйте своїми проєктами git. Створюйте нові гілки, перемикайтеся між ними й синхронізуйте свої зміни - й все це без виходу з Files."
 			}
 		},
 		"themes": {
@@ -74,11 +74,11 @@
 		"coming_soon": "Більше публікацій незабаром!",
 		"read_more": "Читати далі",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Поділитися засобами системи",
+			"url": "Скопіювати URL-посилання",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "RSS канал"
 		}
 	},
 	"docs": {
@@ -112,7 +112,7 @@
 	},
 	"download": {
 		"title": "Завантажити {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} - це проєкт, керований спільнотою, зростання та вдосконалення якого залежать від вашої підтримки. Будь ласка, подумайте про покупку {FilesName} через Microsoft Store або підтримайте нас на GitHub, якщо ви використовуєте класичний інсталятор.",
 		"donation_button": "Підтримати",
 		"microsoft_store": {
 			"description": "Придбання {FilesName} через Microsoft Store допомагає підтримувати розробників і дозволяє нам продовжувати оновлення додатку з новими функціями та покращеннями."
