@@ -5,7 +5,7 @@
 		"docs_page": "{FilesName} • ドキュメント - {title}",
 		"blog_home": "{FilesName} • ブログ",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Windows用の最高のファイルマネージャを作る。"
+		"description": "Windows用の最高のファイル マネージャーを作っています"
 	},
 	"home": {
 		"community": {
@@ -19,13 +19,13 @@
 		"design": {
 			"chip": "デザイン",
 			"title": "機能性と美しさの融合",
-			"description": "Windows ファーストの美しいデザインをあなたに。高い生産性で、あなたのファイルを管理。複数のタブを使い、フォルダーを行き来して作業。その他にも魅力は沢山。",
+			"description": "Windows ファーストの美しいデザインをあなたに。高い生産性で、あなたのファイルを管理。複数のタブを使い、フォルダーを行き来して作業。その他にも魅力はたくさん。",
 			"download": "ダウンロード",
 			"learn_more": "もっと詳しく"
 		},
 		"features": {
 			"chip": "機能",
-			"title": "それはもうできます",
+			"title": "欲しい機能はもうあります",
 			"description": "クラウドドライブとの統合、タブ切り替え、画面分割機能、頼れるファイルプレビュー。{FilesName} は、現代のファイルマネージャーに期待される強力な機能を兼ね備えています。",
 			"unknown": "不明",
 			"cloud": {
