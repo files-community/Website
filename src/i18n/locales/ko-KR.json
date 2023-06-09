@@ -11,15 +11,15 @@
 		"community": {
 			"chip": "커뮤니티",
 			"title": "여러분들이 설계하고 개발했어요.",
-			"description": "{FilesName} 는 수백 명의 기여자가 공동으로 유지 관리하고 설계한 무료 오픈 소스 소프트웨어예요.",
+			"description": "{FilesName}는 수백 명의 사람들이 공동으로 유지, 관리하고 설계한 무료 오픈소스 소프트웨어예요.",
 			"discord": "토론 참여하기",
-			"docs": "이 프로젝트 기여하기",
+			"docs": "Files 기여하기",
 			"contributions": "{amount, plural, =0 {기여 없음} other {#번 기여함}}"
 		},
 		"design": {
 			"chip": "디자인",
 			"title": "힘과 아름다움의 조화",
-			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 당신의 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 더 많은 기능이 있습니다.",
+			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 이 기능들로만 끝나진 않아요.",
 			"download": "다운로드",
 			"learn_more": "더 알아보기"
 		},
@@ -38,11 +38,11 @@
 			},
 			"tags": {
 				"title": "파일과 폴더 태그",
-				"description": "파일 및 폴더에 태그를 지정해 나중에 쉽고 빠르게 사용할 수 있도록 표시할 수 있어요. 태그에는 색상과 이름을 지정할 수도 있고, 사용자 지정 태그를 추가할 수도 있습니다!"
+				"description": "파일 및 폴더에 태그를 지정해 나중에 쉽고 빠르게 사용할 수 있도록 표시할 수 있어요. 태그에는 색상과 이름을 지정할 수도 있고, 사용자 지정 태그를 추가할 수도 있어요!"
 			},
 			"tabs": {
 				"title": "탭 멀티태스킹",
-				"description": "여러 창을 사용하지 않고 데스크톱을 깔끔하게 유지할 수 있어요. {FilesName} 는 바로 가기 키가 포함된 브라우저 모양의 탭 인터페이스를 제공해요."
+				"description": "여러 창을 사용하지 않고 데스크톱을 깔끔하게 유지할 수 있어요. {FilesName}는 바로 가기 키가 포함된 브라우저 모양의 탭 인터페이스를 제공해요."
 			},
 			"columns": {
 				"title": "열 보기",
@@ -59,8 +59,8 @@
 		},
 		"themes": {
 			"chip": "테마",
-			"title": "완벽하게 개인적이예요.",
-			"description": "마음대로 바꿔봐요. {FilesName} 는 색상부터 Material까지 사용자가 지정할 수 있어요. {FilesName} 에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
+			"title": "완벽하게 개인적이에요.",
+			"description": "마음대로 바꿔봐요. {FilesName}는 색상부터 Material까지 사용자가 지정할 수 있어요. {FilesName}에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
 			"grey_blue": "짙은 회색 • 라이트 블루",
 			"grey_green": "블루 그레이 • 네온 그린",
 			"purple": "보라색",
@@ -76,8 +76,8 @@
 		"share": {
 			"default": "네이티브 공유하기",
 			"url": "URL 복사",
-			"tweet": "트위터",
-			"facebook": "페이스북",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
 			"rss": "RSS 피드"
 		}
 	},
@@ -89,11 +89,11 @@
 		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "홈",
 		"docs": "자습서",
-		"news": "뉴스",
+		"news": "소식",
 		"download": "다운로드",
-		"contribute": "{FilesName} 에 기여하기",
+		"contribute": "{FilesName}에 기여하기",
 		"feedback": "피드백 보내기",
-		"style_guide": "스타일 가이드",
+		"style_guide": "애플리케이션 코드 구조",
 		"translations": "번역하기",
 		"contribute_site": "이 사이트 기여하기",
 		"github": "GitHub 리포지토리",
@@ -104,21 +104,21 @@
 		"ukraine": "#SupportUkraine",
 		"home": "홈",
 		"docs": "자습서",
-		"news": "뉴스",
+		"news": "소식",
 		"download": "다운로드",
 		"themes": "테마",
-		"discord": "디스코드",
+		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
 		"title": "{FilesName} 다운로드",
-		"donation_description": "{FilesName} 는 확장과 개선을 위한 지원에 의존하는 커뮤니티 기반 프로젝트예요. Microsoft Store를 통해 {FilesName} 를 구입하거나 기존 설치 관리자를 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
+		"donation_description": "{FilesName}는 여러분들의 지원에 의존하는 커뮤니티 기반 프로젝트예요. Microsoft Store를 통해 {FilesName}를 구입하거나 기존 설치 관리자를 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
 		"donation_button": "후원하기",
 		"microsoft_store": {
-			"description": "Microsoft Store 를 통해 {FilesName} 를 구입하면 개발자를 지원하는 것을 돕고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
+			"description": "Microsoft Store 를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
 		},
 		"preview": {
-			"title": "미리보기",
+			"title": "프리뷰",
 			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있고 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공해요."
 		},
 		"self_signed": {
