@@ -26,15 +26,15 @@
 		"features": {
 			"chip": "機能",
 			"title": "欲しい機能はもうあります",
-			"description": "クラウドドライブとの統合、タブ切り替え、画面分割機能、頼れるファイルプレビュー。{FilesName} は、現代のファイルマネージャーに期待される強力な機能を兼ね備えています。",
+			"description": "クラウド ドライブとの統合、タブ切り替え、画面分割機能、頼れるファイル プレビュー。{FilesName} は、現代のファイル マネージャーに期待される強力な機能を兼ね備えています。",
 			"unknown": "不明",
 			"cloud": {
 				"title": "シームレスなクラウド連携",
-				"description": "OneDrive、Google Drive、iCloudなどのクラウドサービスと連携して、クラウド上のドキュメントや写真をサイドバーから管理。"
+				"description": "OneDrive、Google Drive、iCloudなどのクラウド サービスと連携して、クラウド上のドキュメントや写真をサイド バーから管理。"
 			},
 			"preview": {
 				"title": "ファイルのプレビュー",
-				"description": "ドキュメント、写真などを開かずにプレビュー。リッチなプレビュー、構文の強調表示、マークダウン、動画のプレビューまでサポート。"
+				"description": "ドキュメント、写真などを開かずにプレビュー。リッチなプレビュー、構文の強調表示、マークダウン、動画の再生までサポート。"
 			},
 			"tags": {
 				"title": "ファイルとフォルダのタグ付け",
@@ -42,10 +42,10 @@
 			},
 			"tabs": {
 				"title": "複数のタブでマルチタスク",
-				"description": "複数のウインドウをまとめて、デスクトップをスッキリさせましょう。{FilesName} にはブラウザーのようなタブ機能を搭載しています。キーボードショートカットも使用可能です。"
+				"description": "複数のウィンドウをまとめて、デスクトップをスッキリさせましょう。{FilesName} にはブラウザーのようなタブ機能を搭載しています。キーボード ショートカットも使用可能です。"
 			},
 			"columns": {
-				"title": "カラムビュー",
+				"title": "カラム ビュー",
 				"description": "カラムを素早く操作して、異なる階層のファイルにアクセスできます。"
 			},
 			"archives": {
@@ -112,7 +112,7 @@
 	},
 	"download": {
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から{FilesName} を購入するか、クラシックインストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
+		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から{FilesName} を購入するか、クラシック インストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",
 		"microsoft_store": {
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
@@ -122,8 +122,8 @@
 			"description": "プレビュー版は安定版とともにインストールでき、新機能や改善点への早期アクセスを提供します。"
 		},
 		"self_signed": {
-			"link_text": "クラシックインストーラー",
-			"description": "Microsoft Store にアクセスできない場合: "
+			"link_text": "クラシック インストーラーをダウンロード",
+			"description": "Microsoft Store にアクセスできませんか？ "
 		}
 	}
 }
