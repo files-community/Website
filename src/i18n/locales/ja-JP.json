@@ -38,7 +38,7 @@
 			},
 			"tags": {
 				"title": "ファイルとフォルダのタグ付け",
-				"description": "色付きタグと名前付きタグを割り当ててファイルやフォルダをすばやく整理、後での確認もカンタン。 独自のカスタムタグを追加することも。"
+				"description": "色と名前の付いたタグを割り当ててファイルやフォルダをすばやく整理、後での確認もカンタン。 独自のカスタムタグを追加することもできます。"
 			},
 			"tabs": {
 				"title": "複数のタブでマルチタスク",
@@ -59,7 +59,7 @@
 		},
 		"themes": {
 			"chip": "テーマ",
-			"title": "あなただけのファイラー。",
+			"title": "あなたのお好み通りに。",
 			"description": "カスタマイズ性も抜群。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズしてみましょう。",
 			"grey_blue": "ダークグレー • ライトブルー",
 			"grey_green": "ブルーグレー • ネオングリーン",
@@ -74,15 +74,15 @@
 		"coming_soon": "その他の投稿は近日公開予定です！",
 		"read_more": "もっと読む",
 		"share": {
-			"default": "システムネイティブの共有",
+			"default": "システムの共有機能",
 			"url": "URLをコピー",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "RSS フィード"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "結果なし",
+		"autocomplete_empty": "結果が見つかりません",
 		"edit_page": "このページを編集"
 	},
 	"footer": {
@@ -91,11 +91,11 @@
 		"docs": "ドキュメント",
 		"news": "ニュース",
 		"download": "ダウンロード",
-		"contribute": "{FilesName} に貢献",
+		"contribute": "{FilesName} に貢献する",
 		"feedback": "フィードバックを送信",
 		"style_guide": "コーディング規約",
 		"translations": "翻訳",
-		"contribute_site": "このサイトに貢献",
+		"contribute_site": "このサイトに貢献する",
 		"github": "GitHub リポジトリ",
 		"report_bug": "バグを見つけましたか？",
 		"web_team": "ウェブサイト チーム"
@@ -112,7 +112,7 @@
 	},
 	"download": {
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoftストアから{FilesName} を購入するか、クラシックインストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
+		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から{FilesName} を購入するか、クラシックインストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",
 		"microsoft_store": {
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
