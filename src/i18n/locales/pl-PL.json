@@ -1,8 +1,8 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Główna",
-		"docs_home": "{FilesName} • Dokumentowanie",
-		"docs_page": "{FilesName} • Dokumentowanie - {title}",
+		"home": "{FilesName} • Strona główna",
+		"docs_home": "{FilesName} • Dokumentacja",
+		"docs_page": "{FilesName} • Dokumentacja - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Building the best file manager for Windows."
@@ -14,10 +14,10 @@
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Dołącz do dyskusji",
 			"docs": "Zostań współtwórcą",
-			"contributions": "{amount, plural, =0 {Brak składek} one {# wkład} other {# składek}}"
+			"contributions": "{amount, plural, =0 {Brak udziałów} one {# udział} few {# udziałów} many {# udziałów} other {# udział}}"
 		},
 		"design": {
-			"chip": "Design",
+			"chip": "Wygląd",
 			"title": "Power meets beauty.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
 			"download": "Pobierz",
@@ -27,7 +27,7 @@
 			"chip": "Funkcje",
 			"title": "It already does that.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Nie wiadomo",
+			"unknown": "Nieznane",
 			"cloud": {
 				"title": "Seamless cloud integration",
 				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
@@ -72,10 +72,10 @@
 	},
 	"blog": {
 		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More",
+		"read_more": "Przeczytaj więcej",
 		"share": {
 			"default": "Native sharing",
-			"url": "Skopiować URL",
+			"url": "Skopiuj adres",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
@@ -87,7 +87,7 @@
 	},
 	"footer": {
 		"copyright": "Copyright ©️ 2021 - {year}, Autorzy {FilesName}",
-		"home": "Główna",
+		"home": "Strona główna",
 		"docs": "Dokumentacja",
 		"news": "Aktualności",
 		"download": "Pobierz",
@@ -96,24 +96,24 @@
 		"style_guide": "Style Guide",
 		"translations": "Tłumaczenia",
 		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
+		"github": "Repozytorium na GitHub",
+		"report_bug": "Znalazłeś/aś błąd?",
 		"web_team": "Web Team"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
-		"home": "Główna",
-		"docs": "Dokumentowanie",
+		"home": "Strona główna",
+		"docs": "Dokumentacja",
 		"news": "Aktualności",
 		"download": "Pobierz",
-		"themes": "Tematy",
+		"themes": "Motywy",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
 		"title": "Pobierz {FilesName}",
 		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Ofiarować",
+		"donation_button": "Wspomóż nas",
 		"microsoft_store": {
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
@@ -123,7 +123,7 @@
 		},
 		"self_signed": {
 			"link_text": "klasyczny instalator",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"description": "Nie masz dostępu do Microsoft Store? Wypróbuj naszą "
 		}
 	}
 }
