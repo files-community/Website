@@ -5,13 +5,13 @@
 		"docs_page": "{FilesName} • 자습서 - {title}",
 		"blog_home": "{FilesName} • 블로그",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Windows 용 최고의 파일 관리자 애플리케이션 개발하기"
+		"description": "Windows 용 최고의 파일 관리자 애플리케이션"
 	},
 	"home": {
 		"community": {
 			"chip": "커뮤니티",
 			"title": "여러분들이 설계하고 개발했어요.",
-			"description": "{FilesName}는 수백 명의 사람들이 공동으로 유지, 관리하고 설계한 무료 오픈소스 소프트웨어예요.",
+			"description": "{FilesName}는 수백 명의 사람들이 유지, 관리하고 설계한 무료 오픈소스 소프트웨어예요.",
 			"discord": "토론 참여하기",
 			"docs": "Files 기여하기",
 			"contributions": "{amount, plural, =0 {기여 없음} other {#번 기여함}}"
@@ -62,7 +62,7 @@
 			"title": "완벽하게 개인적이에요.",
 			"description": "마음대로 바꿔봐요. {FilesName}는 색상부터 Material까지 사용자가 지정할 수 있어요. {FilesName}에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
 			"grey_blue": "짙은 회색 • 라이트 블루",
-			"grey_green": "블루 그레이 • 네온 그린",
+			"grey_green": "푸른 회색 • 네온 그린",
 			"purple": "보라색",
 			"yellow_white": "노란색 • 하얀색",
 			"white_teal": "백색 • 짙은 청록색",
