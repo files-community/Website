@@ -53,7 +53,7 @@
 				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
+				"title": "Integracja Git",
 				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
@@ -61,13 +61,13 @@
 			"chip": "Motywy",
 			"title": "Distinctly personal.",
 			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
+			"grey_blue": "Ciemnoszary • Jasnoniebieski",
+			"grey_green": "Niebiesko-szary • Neonowa Zieleń",
 			"purple": "Fioletowy",
-			"yellow_white": "Yellow • White",
+			"yellow_white": "Żółty • Biały",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"select_theme": "Wybierz motyw #{index}"
 		}
 	},
 	"blog": {
@@ -82,17 +82,17 @@
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
+		"autocomplete_empty": "Brak wyników",
 		"edit_page": "Edytuj tę stronę"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"copyright": "Copyright ©️ 2021 - {year}, Autorzy {FilesName}",
 		"home": "Główna",
 		"docs": "Dokumentacja",
 		"news": "Aktualności",
 		"download": "Pobierz",
 		"contribute": "Przyczyń się do {FilesName}",
-		"feedback": "Give Feedback",
+		"feedback": "Podziel się opinią",
 		"style_guide": "Style Guide",
 		"translations": "Tłumaczenia",
 		"contribute_site": "Contribute to this site",
