@@ -14,7 +14,7 @@
 			"description": "{FilesName} 는 수백 명의 기여자가 공동으로 유지 관리하고 설계한 무료 오픈 소스 소프트웨어예요.",
 			"discord": "토론 참여하기",
 			"docs": "이 프로젝트 기여하기",
-			"contributions": "{amount, plural, =0 {기여 없음} one {# 번 기여함} other {# 번 기여함}}"
+			"contributions": "{amount, plural, =0 {기여 없음} other {#번 기여함}}"
 		},
 		"design": {
 			"chip": "디자인",
