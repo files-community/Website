@@ -86,7 +86,7 @@
 		"edit_page": "Edit this page"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"copyright": "Copyright © {year} {FilesName} Community",
 		"home": "Home",
 		"docs": "Docs",
 		"news": "News",
