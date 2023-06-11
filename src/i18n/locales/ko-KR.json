@@ -5,7 +5,7 @@
 		"docs_page": "{FilesName} • 자습서 - {title}",
 		"blog_home": "{FilesName} • 블로그",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Windows 용 최고의 파일 관리자 애플리케이션"
+		"description": "Windows용 최고의 파일 관리자 애플리케이션"
 	},
 	"home": {
 		"community": {
@@ -42,7 +42,7 @@
 			},
 			"tabs": {
 				"title": "탭 멀티태스킹",
-				"description": "여러 창을 사용하지 않고 데스크톱을 깔끔하게 유지할 수 있어요. {FilesName}는 바로 가기 키가 포함된 브라우저 모양의 탭 인터페이스를 제공해요."
+				"description": "여러 창을 사용하지 않고 데스크톱을 깔끔하게 유지할 수 있어요. {FilesName}는 브라우저 모양의 탭 인터페이스를 제공해요."
 			},
 			"columns": {
 				"title": "열 보기",
@@ -54,7 +54,7 @@
 			},
 			"git": {
 				"title": "Git 연동 (출시 예정)",
-				"description": "당신의 Git 프로젝트를 쉽게 관리하세요. 새 분기를 만들고, 분기를 전환하고, 당신의 변경 사항을 연동하세요. Files에서 나가지 않고 말이죠."
+				"description": "Git 프로젝트를 쉽게 관리하세요. 새 분기를 만들고, 분기를 전환하고, 변경 사항을 연동하세요. Files에서 모두 가능해요."
 			}
 		},
 		"themes": {
