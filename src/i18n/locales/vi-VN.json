@@ -5,27 +5,27 @@
 		"docs_page": "{FilesName} • Tài liệu - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Dựng nên trình quản lý tệp tốt nhất cho Windows."
+		"description": "Xây dựng một trình quản lý tệp tốt nhất cho Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Cộng đồng",
-			"title": "Thiết kế và phát triển bởi bạn.",
-			"description": "{FilesName} là phần mềm miễn phí mã nguồn mở, được vận hành và thiết kế bởi hàng trăm cộng tác viên.",
+			"title": "Thiết kế và phát triển bởi những người như bạn.",
+			"description": "{FilesName} là phần mềm miễn phí và mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
 			"discord": "Tham gia thảo luận",
-			"docs": "Trở thành cộng tác viên",
+			"docs": "Trở thành một cộng tác viên",
 			"contributions": "{amount, plural, =0 {Không có đóng góp} other {# đóng góp}}"
 		},
 		"design": {
 			"chip": "Thiết kế",
-			"title": "Sức mạnh đi đôi với vẻ đẹp.",
-			"description": "Khám phá thiết kế đẹp chuẩn Windows. Quản lý tất cả tệp của bạn với hiệu suất tăng cao. Làm việc với nhiều thư mục bằng thẻ. Và nhiều nữa.",
+			"title": "Sức mạnh kết hợp với sự hoàn mĩ.",
+			"description": "Khám phá một thiết kế đẹp mắt dành cho Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Xử lý và làm việc với các thư mục trở nên dễ dàng với hệ thống thẻ. Và hơn thế nữa.",
 			"download": "Tải về",
 			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
 			"chip": "Tính năng",
-			"title": "Nó đã làm được việc đó sẵn rồi.",
+			"title": "Mọi thứ bạn cần ngay trước mắt.",
 			"description": "Tích hợp đám mây? Thẻ và nhiều bố cục? Xem trước nhiều thông tin tệp? {FilesName} làm được hết với các tính năng mạnh mẽ bạn mong đợi từ một trình quản lý tệp hiện đại.",
 			"unknown": "Không rõ",
 			"cloud": {
