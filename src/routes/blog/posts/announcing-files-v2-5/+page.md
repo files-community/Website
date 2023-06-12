@@ -2,7 +2,7 @@
 title: Announcing Files, version 2.5
 description: Acrylic, git integration, preview pane & more
 thumbnail: /blog-resources/files2-5/HeroImage.jpg
-date: 6/14/2023
+date: 6/13/2023
 author: files-community
 ---
 
