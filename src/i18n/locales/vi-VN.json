@@ -53,7 +53,7 @@
 				"description": "Dễ dàng quản lý các loại tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tích hợp để tạo các tệp nén được mã hóa."
 			},
 			"git": {
-				"title": "Tích hợp Git (Sắp ra mắt)",
+				"title": "Git integration",
 				"description": "Dễ dàng quản lý các dự án sử dụng git của bạn. Tạo nhánh mới, chuyển giữa các nhánh và đồng bộ tất cả thay đổi của bạn - tất cả mà không cần rời khỏi Files."
 			}
 		},
