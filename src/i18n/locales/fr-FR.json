@@ -53,7 +53,7 @@
 				"description": "Gérez vos archives zip, WinRar, 7zip et plus encore. Glissez et déposez pour ajouter à des archives existantes, et utilisez l'option de création d'archives pour créer des archives cryptées."
 			},
 			"git": {
-				"title": "Intégration Git (Bientôt disponible)",
+				"title": "Git integration",
 				"description": "Gérez facilement vos projets git. Créez de nouvelles branches, basculez entre elles et synchronisez vos modifications - le tout sans quitter Files."
 			}
 		},
