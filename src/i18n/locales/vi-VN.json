@@ -26,41 +26,41 @@
 		"features": {
 			"chip": "Tính năng",
 			"title": "Mọi thứ bạn cần ngay trước mắt.",
-			"description": "Tích hợp đám mây? Thẻ và nhiều bố cục? Xem trước nhiều thông tin tệp? {FilesName} làm được hết với các tính năng mạnh mẽ bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"description": "Tích hợp đám mây? Thẻ cùng với nhiều bố cục khác nhau? Xem trước tệp với đầy đủ thông tin? {FilesName} tập hợp tất cả tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
 			"unknown": "Không rõ",
 			"cloud": {
-				"title": "Tích hợp đám mây mượt mà",
+				"title": "Tích hợp đám mây một cách liền mạch",
 				"description": "Tích hợp với các dịch vụ đám mây như OneDrive, Google Drive, và iCloud cho phép bạn quản lý tài liệu và ảnh của mình trên đám mây, ngay từ thanh bên."
 			},
 			"preview": {
 				"title": "Xem trước tệp",
-				"description": "Xem trước tài liệu, ảnh, và nhiều hơn nữa mà không cần mở chúng. Hỗ trợ xem trước nhiều thông tin, nổi bật cú pháp, markdown và phát video đều được tích hợp sẵn."
+				"description": "Xem trước tài liệu, ảnh, và hơn thế nữa mà không cần phải mở tệp. Hỗ trợ xem trước với thông tin được hiển thị đầy đủ, tô sáng cú pháp, đánh dấu và phát video, tất cả đều được tích hợp vào một."
 			},
 			"tags": {
-				"title": "Gắn thẻ tệp và thư mục",
-				"description": "Nhanh chóng đánh dấu và sắp xếp các tệp và thư mục của bạn cho sau này bằng cách gán thẻ có màu và tên để dễ nhận dạng. Bạn còn có thể tự thêm thẻ của chính mình!"
+				"title": "Gắn thẻ các tệp và thư mục",
+				"description": "Đánh dấu, sắp xếp các tệp và thư mục của bạn để sử dụng sau một cách nhanh chóng, dễ dàng nhận dạng bằng cách gắn các thẻ với màu sắc và tên riêng biệt. Bạn còn có thể tự tạo thẻ tùy chỉnh cho riêng mình!"
 			},
 			"tabs": {
-				"title": "Đa nhiệm với thẻ",
-				"description": "Hạn chế nhiều cửa sổ và giúp bàn làm việc của bạn không lộn xộn. {FilesName} có giao diện thẻ như trình duyệt với hỗ trợ phím tắt bàn phím."
+				"title": "Đa tác vụ với các thẻ",
+				"description": "Tránh việc phải mở nhiều cửa sổ và giữ cho màn hình làm việc của bạn luôn gọn gàng và thoáng đãng. {FilesName} sử dụng một giao diện với các thẻ tương tự như trình duyệt web, hoàn thiện với bộ phím tắt bàn phím mạnh mẽ."
 			},
 			"columns": {
 				"title": "Hiển thị theo cột",
-				"description": "Nhanh chóng định hướng qua cột để truy cập các tầng khác nhau của tệp hệ thống."
+				"description": "Nhanh chóng duyệt tìm các tệp và thư mục thông qua dạng xem cột để truy cập các tầng khác nhau của hệ thống tệp mà bạn mong muốn."
 			},
 			"archives": {
-				"title": "Xem và chỉnh sửa tệp nén",
-				"description": "Quản lý tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo và thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tạo để tạo tệp nén mã hóa."
+				"title": "Xem và chỉnh sửa các tệp nén",
+				"description": "Dễ dàng quản lý các loại tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tích hợp để tạo các tệp nén được mã hóa."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Tích hợp Git (Sắp ra mắt)",
+				"description": "Dễ dàng quản lý các dự án sử dụng git của bạn. Tạo nhánh mới, chuyển giữa các nhánh và đồng bộ tất cả thay đổi của bạn - tất cả mà không cần rời khỏi Files."
 			}
 		},
 		"themes": {
 			"chip": "Chủ đề",
-			"title": "Cá tính riêng biệt.",
-			"description": "Theo cách của bạn. {FilesName} có giao diện hoàn toàn có thể tùy chỉnh, đến tận màu sắc và chất liệu. Thử chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc đi vào hướng dẫn và tự tay bạn tạo nên.",
+			"title": "Phong cách của riêng bạn.",
+			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp một giao diện có thể hoàn toàn được tùy biến, đến tận sắc thái và chất liệu. Thử trải nghiệm các chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc xem tài liệu hướng dẫn và tự tạo cho mình một chủ đề mang đậm chất riêng.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
 			"purple": "Tím",
@@ -74,11 +74,11 @@
 		"coming_soon": "Nhiều bài đăng mới sẽ sớm ra mắt!",
 		"read_more": "Đọc thêm",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Chia sẻ",
+			"url": "Sao chép URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Nguồn cấp dữ liệu RSS"
 		}
 	},
 	"docs": {
@@ -112,14 +112,14 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} là một dự án hướng đến cộng đồng dựa vào sự hỗ trợ của chính những người như bạn để cải thiện và phát triển. Vui lòng cân nhắc việc mua {FilesName} thông qua Microsoft Store hoặc hỗ trợ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
-			"description": "Mua {FilesName} trên Microsoft Store giúp hỗ trợ lập trình viên và cho phép chúng tôi tiếp tục cập nhật ứng dụng với tính năng mới và những cải thiện."
+			"description": "Mua {FilesName} trên Microsoft Store để thể hiện sự hỗ trợ của bạn đối với các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
 		},
 		"preview": {
 			"title": "Xem trước",
-			"description": "Phiên bản xem trước có thể được cài đặt cùng với bản ổn định và cung cấp quyền truy cập sớm vào các tính năng mới và cải thiện."
+			"description": "Phiên bản xem trước có thể được cài đặt cùng với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
 			"link_text": "trình cài đặt cổ điển của chúng tôi",
