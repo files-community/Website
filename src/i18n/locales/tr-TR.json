@@ -53,7 +53,7 @@
 				"description": "Zip, WinRar, 7zip ve daha fazlasını içeren sıkıştırılmış arşivleri yönetin. Mevcut arşivlere eklemek için sürükleyip bırakın ve şifreli arşivler oluşturmak için arşiv oluştur seçeneğini kullanın."
 			},
 			"git": {
-				"title": "Git entegrasyonu (Çok Yakında)",
+				"title": "Git integration",
 				"description": "Git projelerinizi kolayca yönetin. Yeni dallar oluşturun, bunlar arasında geçiş yapın ve değişikliklerinizi senkronize edin - tüm bunları Dosyalar'dan çıkmadan yapın."
 			}
 		},
