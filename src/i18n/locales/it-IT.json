@@ -53,7 +53,7 @@
 				"description": "Gestisci gli archivi compressi, che siano zip, WinRar, 7zip o di altro tipo. Trascina file e cartelle sopra agli archivi già esistenti per aggiungerli e usa l'opzione \"Crea Archivio\" per creare archivi crittografati."
 			},
 			"git": {
-				"title": "Integrazione di Git (In Arrivo)",
+				"title": "Git integration",
 				"description": "Gestisci facilmente i tuoi progetti che usano git. Crea nuovi branch, passa tra di loro e sincronizza le tue modifiche, tutto senza lasciare Files."
 			}
 		},
