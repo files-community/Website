@@ -53,7 +53,7 @@
 				"description": "Administra archivos comprimidos incluyendo ZIP, WinRAR y 7 ZIP. Arrastre y suelte para añadir a los archivos existentes, y utilice la opción de crear archivo para crear archivos cifrados."
 			},
 			"git": {
-				"title": "Integración con Git (Próximamente)",
+				"title": "Git integration",
 				"description": "Administra fácilmente tus proyectos Git. Crea nuevas ramificaciones, cambia entre ellas y sincroniza tus cambios, todo sin salir de Files."
 			}
 		},
