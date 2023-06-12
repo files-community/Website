@@ -39,7 +39,7 @@ We added a couple of Git features to Files that make it easier to work with Git 
 - Checkout remote branches, and switch between local branches from the branches flyout
 - Pull commits from remote repositories using the 'Pull' button on the status bar
 - Create new branches
-- Track changes with the Git columns in the details layout
+- Track changes with the Git columns in the details layout (coming soon)
 - We plan to add more Git features in future updates, so stay tuned!
 
 <figure>
