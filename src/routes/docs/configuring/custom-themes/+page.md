@@ -4,8 +4,6 @@ title: Custom themes in Files
 
 Files has a number of options for customizing the theme.
 
-## Theming
-
 ### Backdrop Material
 The backdrop is set to Mica Alt by default, but it can be changed to Acrylic from Settings > Appearance > Backdrop Material.
 
