@@ -37,7 +37,7 @@ We put together some popular color combinations to help users create custom them
 | `AppThemeSidebarBackgroundColor`    | `#00000001` |
 | `AppThemeFileAreaBackgroundColor`   | `#00000001` |
 
-**Finder**
+#### **Finder**
 
 | Key                                 | Value     |
 | ----------------------------------- | --------- |
@@ -46,7 +46,7 @@ We put together some popular color combinations to help users create custom them
 | `AppThemeSidebarBackgroundColor`    | `#464449` |
 | `AppThemeFileAreaBackgroundColor`   | `#221d28` |
 
-**Nord**
+#### **Nord**
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
