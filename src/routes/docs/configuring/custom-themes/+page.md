@@ -28,7 +28,7 @@ Files has built-in support for custom fonts, to apply a custom font start by ope
 ### Popular themes
 We put together some popular color combinations to help users create custom themes.
 
-**Glass (requires Windows 11)**
+#### **Glass (requires Windows 11)**
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
