@@ -25,7 +25,8 @@ Files has built-in support for custom fonts, to apply a custom font start by ope
 | `AppThemeSidebarBackgroundColor`    | `#00000000`         |
 | `AppThemeFileAreaBackgroundColor`   | `#00000000`         |
 
-### Sample themes
+### Popular themes
+We put together some popular color combinations to help users create custom themes.
 
 **Glass (requires Windows 11)**
 
