@@ -1,5 +1,5 @@
 ---
-title: Cloud Drives
+title: Using cloud drives in Files
 ---
 
 Files will detect and display drives for most cloud providers as long as the desktop client application is installed. You can use this list to find the supported cloud drives and download links for the respective clients. Please note that Files is not associated nor recommending any of these third party clients.
