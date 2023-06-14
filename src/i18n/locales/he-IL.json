@@ -30,31 +30,39 @@
 			"unknown": "לא ידוע",
 			"cloud": {
 				"title": "חיבור חלק עם הענן",
-				"description": "חיבור עם שירותי ענן כמו OneDrive, Google Drive, וiCloud מאפשרים לך לנהל את המסמכים והתמונות שלך בענן, ישר מהסרגל הצידי."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "תצוגת קבצים מקדימה",
-				"description": "צפה במסמכים, תמונות ועוד בלי לפתוח אותם. תמיכה עבור תצוגות מקדימות עשירות, סימון סינטקס, Markdown וניגון ווידאו נמצאת ישר מהקופסה."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "קבצים ותיקיות מתויגים",
-				"description": "סמן וסדר את הקבצים שלך במהירות בעזרת סימון עם תגיות צבעוניות עבור זיהוי קל. אפשר אפילו להוסיף תגיות משלך!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "עבוד במקביל עם כרטיסיות",
-				"description": "המנעו מריבוי חלונות ושמרו על שולחן העבודה שלכם מסודר. {FilesName} מציג ממשק כרטיסיות כמו בדפדפן, הכולל קיצורי מקלדת."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "תצוגת טורים",
-				"description": "נווטו במהירות דרך טורים כדי לגשת לרמות שונות של מערכת הקבצים."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "צפו וערכו קבצי ארכיון",
-				"description": "נהלו קבצי ארכיון מכווצים כולל zip, WinRar, 7zip, ועוד. גררו ושחררו כדי להוסיף לארכיונים קיימים, והשתמשו באפשרות יצירת ארכיון כדי ליצור ארכיונים מוצפנים."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
 				"title": "חיבור לגיט",
-				"description": "נהלו בקלות את הפרוייקטים שלכם עם גיט. צרו ענפים חדשים, החליפו ביניהם, וסנכרנו את השינויים שלכם, הכל מבלי לעזוב את Files."
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
