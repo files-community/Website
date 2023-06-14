@@ -102,6 +102,11 @@
 					})}
 				/>
 			{/each}
+		</div>		
+		<div class="buttons-spacer">
+			<Button href="/docs/configuring/custom-themes" variant="accent">
+				{$_("home.design.learn_more", defaultI18nValues)}
+			</Button>
 		</div>
 	</div>
 	<div
