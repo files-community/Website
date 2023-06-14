@@ -75,7 +75,7 @@
 			"yellow_white": "Yellow • White",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}",
+			"select_theme": "Select theme #{index}"
 		}
 	},
 	"blog": {
