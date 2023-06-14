@@ -30,31 +30,39 @@
 			"unknown": "Không rõ",
 			"cloud": {
 				"title": "Tích hợp đám mây một cách liền mạch",
-				"description": "Tích hợp với các dịch vụ đám mây như OneDrive, Google Drive, và iCloud cho phép bạn quản lý tài liệu và ảnh của mình trên đám mây, ngay từ thanh bên."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Xem trước tệp",
-				"description": "Xem trước tài liệu, ảnh, và hơn thế nữa mà không cần phải mở tệp. Hỗ trợ xem trước với thông tin được hiển thị đầy đủ, tô sáng cú pháp, đánh dấu và phát video, tất cả đều được tích hợp vào một."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Gắn thẻ các tệp và thư mục",
-				"description": "Đánh dấu, sắp xếp các tệp và thư mục của bạn để sử dụng sau một cách nhanh chóng, dễ dàng nhận dạng bằng cách gắn các thẻ với màu sắc và tên riêng biệt. Bạn còn có thể tự tạo thẻ tùy chỉnh cho riêng mình!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Đa tác vụ với các thẻ",
-				"description": "Tránh việc phải mở nhiều cửa sổ và giữ cho màn hình làm việc của bạn luôn gọn gàng và thoáng đãng. {FilesName} sử dụng một giao diện với các thẻ tương tự như trình duyệt web, hoàn thiện với bộ phím tắt bàn phím mạnh mẽ."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Hiển thị theo cột",
-				"description": "Nhanh chóng duyệt tìm các tệp và thư mục thông qua dạng xem cột để truy cập các tầng khác nhau của hệ thống tệp mà bạn mong muốn."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Xem và chỉnh sửa các tệp nén",
-				"description": "Dễ dàng quản lý các loại tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tích hợp để tạo các tệp nén được mã hóa."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
 				"title": "Tích hợp Git",
-				"description": "Dễ dàng quản lý các dự án sử dụng git của bạn. Tạo nhánh mới, chuyển giữa các nhánh và đồng bộ tất cả thay đổi của bạn - tất cả mà không cần rời khỏi Files."
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
