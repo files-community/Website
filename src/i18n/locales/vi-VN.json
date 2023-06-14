@@ -30,39 +30,39 @@
 			"unknown": "Không rõ",
 			"cloud": {
 				"title": "Tích hợp đám mây một cách liền mạch",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Tích hợp hỗ trợ cho các dịch vụ lưu trữ đám mây như OneDrive, Google Drive và iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Ngăn xem trước",
+				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Gắn thẻ cho các tệp và thư mục",
+				"description": "Quản lý và sắp xếp các tệp và thư mục của bạn sử dụng các thẻ với màu sắc do bạn lựa chọn."
 			},
 			"tabs": {
 				"title": "Đa tác vụ với các thẻ",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Tránh việc phải mở nhiều cửa sổ cùng một lúc và giữ cho màn hình làm việc của bạn luôn gọn gàng với hệ thống thẻ."
 			},
 			"columns": {
 				"title": "Hiển thị theo cột",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Truy cập các tầng khác nhau của hệ thống tệp một cách nhanh chóng với dạng xem cột."
 			},
 			"archives": {
 				"title": "Xem và chỉnh sửa các tệp nén",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Tạo và giải nén các tệp nén phổ biến như zip, WinRar và 7zip."
 			},
 			"git": {
 				"title": "Tích hợp Git",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Dễ dàng quản lý các dự án sử dụng Git của bạn. Tạo nhánh mới, chuyển đổi giữa các nhánh và đồng bộ các thay đổi - tất cả mà không cần phải rời khỏi Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Chế độ hai ngăn",
+				"description": "Xem và quản lý hai thư mục cùng một lúc với chế độ hai ngăn."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Hash",
+				"description": "Xem và so sánh hash của tệp ngay trong cửa sổ thuộc tính."
 			}
 		},
 		"themes": {
