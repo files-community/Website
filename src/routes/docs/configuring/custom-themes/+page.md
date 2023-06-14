@@ -1,5 +1,5 @@
 ---
-title: Custom themes in Files
+title: Appearance and customization
 ---
 
 Files has a number of options for customizing the theme.

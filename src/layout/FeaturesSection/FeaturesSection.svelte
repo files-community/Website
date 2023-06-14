@@ -17,6 +17,8 @@
 	import TabDesktop from "~icons/fluent/tab-desktop-20-regular";
 	import Tag from "~icons/fluent/tag-24-regular";
 	import Branch from "~icons/fluent/branch-24-regular";
+	import DualPane from "~icons/fluent/panel-right-28-regular";
+	import Hash from "~icons/fluent/number-symbol-24-regular";
 
 	let cardPaginationInterval = 16;
 
@@ -25,6 +27,16 @@
 			title: $_("home.features.tabs.title", defaultI18nValues),
 			description: $_("home.features.tabs.description", defaultI18nValues),
 			icon: TabDesktop,
+		},
+		dualPane: {
+			title: $_("home.features.dual-pane.title", defaultI18nValues),
+			description: $_("home.features.dual-pane.description", defaultI18nValues),
+			icon: DualPane,
+		},
+		tags: {
+			title: $_("home.features.tags.title", defaultI18nValues),
+			description: $_("home.features.tags.description", defaultI18nValues),
+			icon: Tag,
 		},
 		columns: {
 			title: $_("home.features.columns.title", defaultI18nValues),
@@ -46,15 +58,15 @@
 			description: $_("home.features.preview.description", defaultI18nValues),
 			icon: EyeVisible,
 		},
-		tags: {
-			title: $_("home.features.tags.title", defaultI18nValues),
-			description: $_("home.features.tags.description", defaultI18nValues),
-			icon: Tag,
-		},		
 		git: {
 			title: $_("home.features.git.title", defaultI18nValues),
 			description: $_("home.features.git.description", defaultI18nValues),
 			icon: Branch,
+		},
+		hashes: {
+			title: $_("home.features.hashes.title", defaultI18nValues),
+			description: $_("home.features.hashes.description", defaultI18nValues),
+			icon: Hash,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
 

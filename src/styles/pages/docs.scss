@@ -4,6 +4,12 @@
 .docs {
 	display: flex;
 	background-color: var(--fds-solid-background-base);
+
+	.markdown-body {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		max-inline-size: 1000px;
+	}
 }
 
 // Docs page
