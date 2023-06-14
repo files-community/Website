@@ -30,31 +30,39 @@
 			"unknown": "알 수 없음",
 			"cloud": {
 				"title": "연속적인 클라우드 연동",
-				"description": "OneDrive, Google Drive 및 iCloud와 같은 클라우드 서비스와 연동해 사이드바에서 바로 클라우드에서 문서 및 사진을 관리할 수 있어요."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "파일 미리보기",
-				"description": "문서, 사진 등을 열지 않고 미리 볼 수 있어요. Rich Previews, 구문 강조, 마크다운 및 비디오 재생을 모두 지원해요."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "파일과 폴더 태그",
-				"description": "파일 및 폴더에 태그를 지정해 나중에 쉽고 빠르게 사용할 수 있도록 표시할 수 있어요. 태그에는 색상과 이름을 지정할 수도 있고, 사용자 지정 태그를 추가할 수도 있어요!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "탭 멀티태스킹",
-				"description": "여러 창을 사용하지 않고 데스크톱을 깔끔하게 유지할 수 있어요. {FilesName}는 브라우저 모양의 탭 인터페이스를 제공해요."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "열 보기",
-				"description": "열을 빠르게 탐색하여 다양한 파일 경로에 액세스할 수 있어요."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "압축 파일 보기 및 편집",
-				"description": "Zip, WinRAR, 7zip 등으로 압축된 파일들을 관리할 수 있어요. 드래그 앤 드롭으로 기존 압축 파일에 추가하고 압축 파일 만들기 옵션을 선택하여 암호화된 압축 파일을 만들 수 있어요."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
 				"title": "Git 연동",
-				"description": "Git 프로젝트를 쉽게 관리하세요. 새 분기를 만들고, 분기를 전환하고, 변경 사항을 연동하세요. Files에서 모두 가능해요."
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
