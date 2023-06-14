@@ -30,31 +30,39 @@
 			"unknown": "Unbekannt",
 			"cloud": {
 				"title": "Nahtlose Cloud-Integration",
-				"description": "Integration mit Cloud-Diensten wie OneDrive, Google Drive, und iCloud ermöglicht es Ihnen Ihre Dokumente und Fotos direkt von der Seitenleiste aus in der Cloud zu verwalten."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Dateivorschau",
-				"description": "Vorschau von Dokumenten, Fotos und mehr ohne sie zu öffnen. Unterstützung für ergiebige Vorschaubilder, Syntaxhervorhebung, Markdown und Videowiedergabe ist vollständig eingebaut."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Markierte Dateien & Ordner",
-				"description": "Markieren und organisieren Sie schnell Ihre Dateien und Ordner für später, indem Sie ihnen farbige und benannte Tags zuordnen, um eine einfache Identifizierung zu ermöglichen. Sie können sogar eigene Tags hinzufügen!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Multitasking mit Tabs",
-				"description": "Vermeiden Sie mehrere Instanzen und halten Sie Ihren Desktop frei von Unordnung. {FilesName} verfügt über eine browserähnliche Registerkarten-Funktion mit Tastaturkürzeln."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Spaltenansicht",
-				"description": "Navigieren Sie schnell durch Spalten um auf verschiedene Ebenen des Dateisystems zuzugreifen."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Dateiarchive anzeigen und bearbeiten",
-				"description": "Verwalten Sie Zip-Archive inklusive Zip, WinRAR, 7zip und mehr. Drag-and-drop, um zu existierenden Archiven hinzuzufügen, und verwenden Sie die Option zum Archiv erstellen, um verschlüsselte Archive zu erstellen."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
 				"title": "Git integration",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
