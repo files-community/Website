@@ -30,39 +30,39 @@
 			"unknown": "不明",
 			"cloud": {
 				"title": "シームレスなクラウド連携",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "OneDrive、Google Drive、iCloudなどのクラウドドライブに対応しています。"
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "プレビュー ペイン",
+				"description": "写真、ビデオ、ドキュメントを開かずにプレビューできます。(現在、一部のファイル形式はサポートされていません。)"
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "ファイルとフォルダーにタグ付け",
+				"description": "色付きタグでファイルやフォルダーを整理し、並べ替えることができます。"
 			},
 			"tabs": {
 				"title": "複数のタブでマルチタスク",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "タブで複数のウインドウをまとめて、デスクトップをスッキリさせることができます。"
 			},
 			"columns": {
 				"title": "カラム ビュー",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "カラムレイアウトを使用して、異なる階層のファイルにすばやくアクセスできます。"
 			},
 			"archives": {
 				"title": "アーカイブの表示と編集",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "zip, WinRar, 7zip を含むアーカイブの作成と展開ができます。"
 			},
 			"git": {
 				"title": "Git との統合",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Git プロジェクトを簡単に管理できます。ブランチの作成や切り替え、変更の同期がすべて Files 上で行えます。"
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "デュアル ペイン",
+				"description": "デュアル ペインを使用することで、2つのフォルダーを並べて表示、管理できます。"
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "ハッシュ値",
+				"description": "プロパティ ウィンドウからファイルのハッシュ値を表示して比較することができます。"
 			}
 		},
 		"themes": {
