@@ -30,31 +30,39 @@
 			"unknown": "不明",
 			"cloud": {
 				"title": "シームレスなクラウド連携",
-				"description": "OneDrive、Google Drive、iCloudなどのクラウド サービスと連携して、クラウド上のドキュメントや写真をサイド バーから管理。"
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "ファイルのプレビュー",
-				"description": "ドキュメント、写真などを開かずにプレビュー。リッチなプレビュー、構文の強調表示、マークダウン、動画の再生までサポート。"
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "ファイルとフォルダのタグ付け",
-				"description": "色と名前の付いたタグを割り当ててファイルやフォルダをすばやく整理、後での確認もカンタン。 独自のカスタムタグを追加することもできます。"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "複数のタブでマルチタスク",
-				"description": "複数のウィンドウをまとめて、デスクトップをスッキリさせましょう。{FilesName} にはブラウザーのようなタブ機能を搭載しています。キーボード ショートカットも使用可能です。"
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "カラム ビュー",
-				"description": "カラムを素早く操作して、異なる階層のファイルにアクセスできます。"
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "アーカイブの表示と編集",
-				"description": "zip, WinRar, 7zip などのアーカイブを管理しましょう。ドラッグ&ドロップで既存のアーカイブにファイルを追加できるほか、暗号化されたアーカイブを作成することもできます。"
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
 				"title": "Git との統合",
-				"description": "Git プロジェクトを簡単に管理できます。ブランチの作成や切り替え、変更の同期がすべて Files 上で行なえます。"
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
