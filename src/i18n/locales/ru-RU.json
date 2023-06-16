@@ -30,31 +30,39 @@
 			"unknown": "Неизвестно",
 			"cloud": {
 				"title": "Полная интеграция с облачными сервисами",
-				"description": "Интеграция с облачными сервисами, такими как OneDrive, Google Drive и iCloud, позволяет вам управлять своими документами и фотографиями в облаке прямо с боковой панели."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Предварительный просмотр файла",
-				"description": "Просматривайте документы, фотографии и многое другое, не открывая их. Встроена поддержка расширенного предварительного просмотра, подсветки синтаксиса, уценки и воспроизведения видео."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Файлы и папки с метками",
-				"description": "Быстро помечайте и упорядочивайте свои файлы и папки на будущее, назначая им цветные и именованные метки для легкой идентификации. Вы даже можете добавить свои собственные метки!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Многозадачность с вкладками",
-				"description": "Избегайте нескольких окон и избавьте свой рабочий стол от беспорядка. {FilesName} имеют браузерный интерфейс с вкладками и сочетаниями клавиш."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Разметка \"Столбцы\"",
-				"description": "Быстро перемещайтесь по столбцам для доступа к различным уровням файловой системы."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Просматривайте и редактируйте архивы",
-				"description": "Управляйте различными форматами архивов, включая zip, WinRar, 7zip и другие. Перетащите, чтобы добавить к существующим архивам, и используйте опцию создания архива для создания зашифрованных архивов."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Интеграция с Git (скоро)",
-				"description": "Легко управляйте вашими проектами Git. Создавайте новые ветки, переключайтесь между ними и синхронизируйте ваши изменения, не выходя из приложения Files."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
