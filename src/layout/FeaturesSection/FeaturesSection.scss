@@ -9,16 +9,7 @@
 		.page-section-inner {
 			display: grid;
 			grid-template-columns: repeat(auto-fill, 1fr);
-			grid-gap: 48px;
-		}
-	}
-
-	// Features section container
-	.features-section- {
-		// Left container
-		&left {
-			@include flex($align: center, $justify: center);
-			position: relative;
+			gap: 48px;
 		}
 	}
 }
@@ -29,7 +20,7 @@
 	--column-count: 3;
 	display: grid;
 	grid-template-columns: repeat(var(--column-count), 1fr);
-	grid-gap: 8px;
+	gap: 8px;
 
 	// Small device support
 	@media screen and (width < 1164px) {
@@ -42,18 +33,5 @@
 @media screen and (width < 924px) {
 	:global(#features-section .page-section-inner) {
 		grid-template-columns: auto;
-	}
-
-	.features-section- {
-		// Hide showcases on mobile
-		&left {
-			display: none;
-		}
-	}
-
-	// HACK: Remove selected card styling on mobile
-	// Figured this was both easier and faster than dealing with bind:innerWidth
-	.feature-cards-container :global(.feature-card.selected) {
-		border-color: transparent;
 	}
 }

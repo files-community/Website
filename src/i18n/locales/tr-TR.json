@@ -30,31 +30,39 @@
 			"unknown": "Bilinmeyen",
 			"cloud": {
 				"title": "Eksiksiz bulut entegrasyonu",
-				"description": "OneDrive, Google Drive ve iCloud gibi bulut hizmetleriyle entegrasyon, buluttaki belgelerinizi ve fotoğraflarınızı doğrudan kenar çubuğundan yönetmenize olanak tanır."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Dosya Önizlemesi",
-				"description": "Belgeleri, fotoğrafları ve daha fazlasını açmadan önizleyin. Zengin önizlemeler, Syntax vurgulama, işaretleme ve video oynatma desteğinin tümü gömülü gelir."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Etiketli Dosyalar ve Klasörler",
-				"description": "Kolay tanımlama için renkli ve adlandırılmış etiketler atayarak dosyalarınızı ve klasörlerinizi daha sonrası için hızla işaretleyin ve düzenleyin. Kendi özel etiketlerinizi bile ekleyebilirsiniz!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Sekmelerle çoklu görev",
-				"description": "Birden çok pencereden kaçının ve masaüstünüzü dağınıklıktan uzak tutun. {FilesName}, klavye kısayollarıyla tamamlanmış tarayıcı benzeri bir sekme arayüzüne sahiptir."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Sütun görünümü",
-				"description": "Dosya sisteminin farklı düzeylerine erişmek için sütunlar arasında hızla gezinin."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Arşivleri görüntüle ve düzenle",
-				"description": "Zip, WinRar, 7zip ve daha fazlasını içeren sıkıştırılmış arşivleri yönetin. Mevcut arşivlere eklemek için sürükleyip bırakın ve şifreli arşivler oluşturmak için arşiv oluştur seçeneğini kullanın."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git entegrasyonu (Çok Yakında)",
-				"description": "Git projelerinizi kolayca yönetin. Yeni dallar oluşturun, bunlar arasında geçiş yapın ve değişikliklerinizi senkronize edin - tüm bunları Dosyalar'dan çıkmadan yapın."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {

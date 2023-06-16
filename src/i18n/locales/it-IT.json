@@ -30,31 +30,39 @@
 			"unknown": "Sconosciuto",
 			"cloud": {
 				"title": "Integrazione fluida del Cloud",
-				"description": "L'integrazione con i servizi cloud come OneDrive, Google Drive e iCloud ti permette di gestire i tuoi documenti e le tue foto salvati nel cloud direttamente dalla barra laterale."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Anteprima dei file",
-				"description": "Visualizza l'anteprima di documenti, foto e di altri file senza aprirli. Le anteprime complete, la colorazione della sintassi, il render del markdown e il playback dei video sono già supportati."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "File & Cartelle Etichettati",
-				"description": "Cataloga e organizza velocemente i tuoi file e le tue cartelle assegnandogli etichette colorate, in modo da accedervi più facilmente. Puoi anche aggiungere etichette personalizzate!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Sfrutta il multitasking grazie alle schede",
-				"description": "Evita finestre multiple e mantieni il tuo desktop ordinato. {FilesName}, come i browser, dispone di un'interfaccia a schede completa di shortcut da tastiera."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Vista a colonne",
-				"description": "Naviga rapidamente attraverso le colonne per accedere ai diversi livelli del file system."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Visualizza e modifica gli archivi",
-				"description": "Gestisci gli archivi compressi, che siano zip, WinRar, 7zip o di altro tipo. Trascina file e cartelle sopra agli archivi già esistenti per aggiungerli e usa l'opzione \"Crea Archivio\" per creare archivi crittografati."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Integrazione di Git (In Arrivo)",
-				"description": "Gestisci facilmente i tuoi progetti che usano git. Crea nuovi branch, passa tra di loro e sincronizza le tue modifiche, tutto senza lasciare Files."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
