@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - pacakge-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "friday" # i have time to review everything on this day
+    commit-message:
+      prefix: "Dependabot: "
+      include: "scope"
+    pull-request-branch-name:
+      seperator: "/"
+    reviewers:
+      - "theonlytails"
