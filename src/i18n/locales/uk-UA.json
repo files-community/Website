@@ -5,14 +5,14 @@
 		"docs_page": "{FilesName} • Документація - {title}",
 		"blog_home": "{FilesName} • Блог",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Створення найкращого файлового менеджера для Windows."
+		"description": "Створюємо найкращий файловий менеджер для Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Спільнота",
-			"title": "Спроектовано та розроблено вами.",
+			"title": "Спроєктовано та розроблено вами.",
 			"description": "{FilesName} є вільним Open-Source програмним забезпеченням, яке підтримується колективом із сотні учасників.",
-			"discord": "Приєднатися до обговорення",
+			"discord": "Долучитися до обговорення",
 			"docs": "Стати учасником",
 			"contributions": "{amount, plural, =0 {Немає вкладів} one {# внесок} few {# вклади} other {# вкладів}}"
 		},
@@ -30,31 +30,39 @@
 			"unknown": "Невідомо",
 			"cloud": {
 				"title": "Повна інтеграція з хмарними сервісами",
-				"description": "Інтеграція з хмарними службами, такими як OneDrive, Google Drive та iCloud, дозволяє керувати документами та фотографіями в хмарі прямо з бічної панелі."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Попередній перегляд файлу",
-				"description": "Переглядайте документи, фотографії та багато іншого, не відкриваючи їх. Вбудована підтримка розширеного попереднього перегляду, підсвічування синтаксису, уцінки та відтворення відео."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Файли та папки з мітками",
-				"description": "Швидко помічайте та впорядковуйте свої файли та папки на майбутнє, призначайте їм кольорові та іменовані мітки для легкої ідентифікації. Ви навіть можете додати свої власні теги!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Багатозадачність з вкладками",
-				"description": "Уникайте кількох вікон і позбавте свій робочий стіл від безладу. {FilesName} мають браузерний інтерфейс із вкладками та сполученнями клавіш."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Макет \"Стовпці\"",
-				"description": "Швидко переміщайтесь по стовпцях для доступу до різних рівнів файлової системи."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Перегляд та редагування архівів",
-				"description": "Керування різними форматами архівів, включаючи zip, WinRar, 7zip та інші. Перетягуйте файли до існуючих архівів та створюйте зашифровані архіви за допомогою опції \"Створити архів\"."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Інтеграція Git (Скоро)",
-				"description": "Легко керуйте своїми проєктами git. Створюйте нові гілки, перемикайтеся між ними й синхронізуйте свої зміни - й все це без виходу з Files."
+				"title": "Інтеграція з Git",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
@@ -95,7 +103,7 @@
 		"feedback": "Надіслати відгук",
 		"style_guide": "Посібник зі стилю коду",
 		"translations": "Переклад",
-		"contribute_site": "Внести внесок у розвиток цього сайту",
+		"contribute_site": "Зробити внесок у розвиток цього сайту",
 		"github": "Репозиторій на Github",
 		"report_bug": "Знайшли помилку?",
 		"web_team": "Команда"
