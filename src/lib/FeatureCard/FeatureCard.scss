@@ -21,9 +21,6 @@
 
 	&:hover {
 		box-shadow: var(--fds-card-shadow), 0 0 0 1px var(--fds-card-stroke-default);
-	}
-
-	&.selected {
 		outline-color: var(--fds-accent-default);
 	}
 
@@ -32,7 +29,7 @@
 		color: var(--fds-accent-default);
 	}
 
-	h4 {
+	h3 {
 		margin: 0;
 		color: var(--fds-text-primary);
 		font: {
