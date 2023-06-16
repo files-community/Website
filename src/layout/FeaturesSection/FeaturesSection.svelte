@@ -20,8 +20,6 @@
 	import DualPane from "~icons/fluent/panel-right-28-regular";
 	import Hash from "~icons/fluent/number-symbol-24-regular";
 
-	let cardPaginationInterval = 16;
-
 	export const featureCards = {
 		tabs: {
 			title: $_("home.features.tabs.title", defaultI18nValues),
@@ -69,8 +67,6 @@
 			icon: Hash,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
-
-	let currentFeature: keyof typeof featureCards = "tabs";
 </script>
 
 <PageSection id="features-section">
@@ -80,16 +76,8 @@
 		<p>{$_("home.features.description", defaultI18nValues)}</p>
 		<hr />
 		<div class="feature-cards-container">
-			{#each entries(featureCards) as [id, feature]}
-				<FeatureCard
-					on:click={() => {
-						currentFeature = id;
-						cardPaginationInterval = 24;
-					}}
-					clickable
-					selected={currentFeature === id}
-					description={feature.description}
-				>
+			{#each entries(featureCards) as [id, feature] (id)}
+				<FeatureCard description={feature.description}>
 					<svelte:component this={feature.icon} slot="icon" />
 					{feature.title}
 				</FeatureCard>
