@@ -1,5 +1,5 @@
 ---
-title: Use tags to organize files on Windows
+title: Organize files and folders with tags
 ---
 
 Tags are a way to organize your files and folders. You can assign one or more tags to any file or folder, and then use the tags to filter and sort your files. You can also use tags to search for your files.

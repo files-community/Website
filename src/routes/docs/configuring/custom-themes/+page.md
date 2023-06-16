@@ -1,17 +1,22 @@
 ---
-title: Custom themes in Files
+title: Appearance and customization
 ---
 
-Files comes with a large collection of custom background colors but additional customization is available for advanced users.
+Files has a number of options for customizing the theme.
 
-## Advanced themeing
+## Backdrop Material
+The backdrop is set to Mica Alt by default, but it can be changed to Acrylic from Settings > Appearance > Backdrop Material.
 
-To access theme values that are not exposed in the settings modal
+## Custom Fonts
+Files has built-in support for custom fonts, to apply a custom font start by opening the settings file from Settings > Advanced > Edit settings file.
+1. Close the Files app before continuing.
+2. Edit the value for `AppThemeFontFamily`
 
-1. Open Files settings > Advanced > Edit settings file. This will open the main settings file in your default text editor.
-2. Close the app before making any changes to the settings file.
+## Advanced themes
 
-### Available resources for themeing
+1. Open the settings file from Settings > Advanced > Edit settings file.
+2. Close the Files app before continuing.
+3. Edit these values as desired
 
 | Key                                 | Default value       |
 | ----------------------------------- | ------------------- |
@@ -19,11 +24,11 @@ To access theme values that are not exposed in the settings modal
 | `AppThemeAddressBarBackgroundColor` | `#00000000`         |
 | `AppThemeSidebarBackgroundColor`    | `#00000000`         |
 | `AppThemeFileAreaBackgroundColor`   | `#00000000`         |
-| `AppThemeFontFamily`                | `Segoe UI Variable` |
 
-## Sample themes
+### Popular themes
+We put together some popular color combinations to help users create custom themes.
 
-### Glass (requires Windows 11)
+#### **Glass (requires Windows 11)**
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
@@ -32,7 +37,7 @@ To access theme values that are not exposed in the settings modal
 | `AppThemeSidebarBackgroundColor`    | `#00000001` |
 | `AppThemeFileAreaBackgroundColor`   | `#00000001` |
 
-### Finder
+#### **Finder**
 
 | Key                                 | Value     |
 | ----------------------------------- | --------- |
@@ -41,7 +46,7 @@ To access theme values that are not exposed in the settings modal
 | `AppThemeSidebarBackgroundColor`    | `#464449` |
 | `AppThemeFileAreaBackgroundColor`   | `#221d28` |
 
-### Nord
+#### **Nord**
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |

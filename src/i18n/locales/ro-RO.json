@@ -53,7 +53,7 @@
 				"description": "Gestionați arhive, inclusiv zip, WinRar, 7zip și mai multe altele. Glisați și fixați pentru a adăuga la o arhivă existentă, și utilizați opțiunea creați o arhivă pentru a crea o arhivă criptată."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
+				"title": "Git integration",
 				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
 			}
 		},
