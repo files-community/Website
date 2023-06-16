@@ -6,7 +6,7 @@
 		HeaderChip,
 		PageSection,
 	} from "$lib";
-	import { TextBlock } from "fluent-svelte";
+	import { Button, TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { Tag } from "$data/features";
 	import { error } from "@sveltejs/kit";
@@ -102,6 +102,11 @@
 					})}
 				/>
 			{/each}
+		</div>
+		<div class="buttons-spacer">
+			<Button href="/docs/configuring/custom-themes/" variant="accent">
+				{$_("home.design.learn_more", defaultI18nValues)}
+			</Button>
 		</div>
 	</div>
 	<div
