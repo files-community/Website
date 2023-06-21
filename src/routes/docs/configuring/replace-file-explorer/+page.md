@@ -10,7 +10,7 @@ _This workaround involves modifying the system registry and while it's been test
 
 1. Open Files settings > Advanced > Set Files as default manager
 
-![Settings dialog](/docs-resources/Settings-Dialog-Experimental.jpg)
+![Settings dialog](/docs-resources/Settings-Dialog-Advanced.png)
 
 ## Known limitations
 
