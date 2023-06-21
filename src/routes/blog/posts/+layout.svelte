@@ -9,9 +9,13 @@
 
 	export let data: LayoutData;
 
-	$: ({ title, thumbnail, author, date } = data);
+	$: ({ title, thumbnail, author, description, date } = data);
 	$: pageTitle = title;
 </script>
+
+<svelte:head>
+	<meta name="description" content={description} />
+</svelte:head>
 
 <Metadata
 	title={pageTitle
