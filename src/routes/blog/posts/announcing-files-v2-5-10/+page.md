@@ -53,14 +53,14 @@ Earlier this year, we announced plans to replace the Bundles widget with the Tag
 Submitting feedback from the About page will automatically fill out the version information on the GitHub issue.
 
 
-### [Separated the archive options in the right click menu]
+### [Separated the archive options in the right-click menu]
 
 The menu items for compressing and extracting files has been separated into two separate menus. Previously the items were grouped together under "Archive".
 
 
 ### [Added an option to hide the Send To menu]
 
-Users looking to customize the right click menu can now hide the Send To menu.
+Users looking to customize the right-click menu can now hide the Send To menu.
 
 
 ## Bug Fixes
@@ -76,7 +76,7 @@ Users looking to customize the right click menu can now hide the Send To menu.
 - Fixed issue where item names in the Tags widget didn't have ellipsis
 - Fixed tab navigation when middle-clicking a sidebar item
 - Fixed issue where middle clicking selected folders would cause a crash
-- Fixed issue where the icon was missing from the "new shortcut" option in the right click menu
+- Fixed issue where the icon was missing from the "new shortcut" option in the right-click menu
 - Fixed an issue where the right-click menu would sometimes freeze the app
 
 
