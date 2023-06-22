@@ -77,6 +77,7 @@ Users looking to customize the right click menu can now hide the Send To menu.
 - Fixed tab navigation when middle-clicking a sidebar item
 - Fixed issue where middle clicking selected folders would cause a crash
 - Fixed issue where the icon was missing from the "new shortcut" option in the right click menu
+- Fixed an issue where the right-click menu would sometimes freeze the app
 
 
 ### Conclusion
