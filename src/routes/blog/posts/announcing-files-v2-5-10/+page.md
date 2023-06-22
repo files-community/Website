@@ -15,7 +15,7 @@ We're excited to announce that version 2.5.10 is now available. If you already h
 
 ### Git columns in the details layout
 
-Opening a Git repo in the details layout will now display additional columns with information about the Git status, last commit, commit hash, and commit author. These columns can be turned on or off by right clicking the column headers.
+Opening a Git repo in the details layout will now display additional columns with information about the Git status, last commit, commit hash, and commit author. These columns can be toggled by right clicking the column headers.
 
 <figure>
     <img src="/blog-resources/files2-5-10/GitColumns.png" alt="Git columns in the details layout." />
