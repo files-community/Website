@@ -1,0 +1,137 @@
+{
+	"metadata": {
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Documentazione",
+		"docs_page": "{FilesName} • Documentazione - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Creando il miglior file manager per Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Community",
+			"title": "Progettato e sviluppato da voi.",
+			"description": "{FilesName} è un software open source gratuito, mantenuto e progettato da centinaia di collaboratori.",
+			"discord": "Partecipa alla discussione",
+			"docs": "Diventa un contributore",
+			"contributions": "{amount, plural, =0 {Nessuna contribuzione} one {# contribuzione} other {# contribuzioni}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "La potenza incontra la bellezza.",
+			"description": "Esplora un design stupendo pensato per Windows. Gestisci i file in modo più produttivo. Lavora tra più cartelle usando le schede. E molto altro ancora.",
+			"download": "Download",
+			"learn_more": "Scopri di più"
+		},
+		"features": {
+			"chip": "Funzionalità",
+			"title": "Questo lo fa di già.",
+			"description": "Integrazione con il Cloud? Schede e più layout? Anteprime complete dei file? {FilesName} offre tutte queste funzionalità come ci si aspetterebbe da un file manager moderno.",
+			"unknown": "Sconosciuto",
+			"cloud": {
+				"title": "Integrazione fluida del Cloud",
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+			},
+			"preview": {
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+			},
+			"tags": {
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
+			},
+			"tabs": {
+				"title": "Sfrutta il multitasking grazie alle schede",
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+			},
+			"columns": {
+				"title": "Vista a colonne",
+				"description": "Quickly navigate through different levels of the file system using the column layout."
+			},
+			"archives": {
+				"title": "Visualizza e modifica gli archivi",
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			},
+			"git": {
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
+			}
+		},
+		"themes": {
+			"chip": "Temi",
+			"title": "Profondamente personale.",
+			"description": "Rendilo tuo. {FilesName} dispone di un'interfaccia utente completamente personalizzabile, persino i colori e i materiali. Prova i temi personalizzati disponibili in {FilesName} oppure esprimi la tua creatività creandone uno unico.",
+			"grey_blue": "Grigio Scuro • Azzurro",
+			"grey_green": "Grigio Blu • Verde Neon",
+			"purple": "Viola",
+			"yellow_white": "Giallo • Bianco",
+			"white_teal": "Bianco Glaciale • Verde Petrolio",
+			"sky_blue": "Azzurro Cielo",
+			"select_theme": "Seleziona il tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Altri post in arrivo!",
+		"read_more": "Maggiori dettagli",
+		"share": {
+			"default": "Condivisione nativa",
+			"url": "Copia URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "Feed RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Nessun risultato trovato",
+		"edit_page": "Modifica questa pagina"
+	},
+	"footer": {
+		"copyright": "Copyright © 2021 - {year}, Gli Autori di {FilesName}",
+		"home": "Home",
+		"docs": "Documentazione",
+		"news": "Novità",
+		"download": "Download",
+		"contribute": "Contribuisci a {FilesName}",
+		"feedback": "Facci sapere la tua opinione",
+		"style_guide": "Guida allo Stile",
+		"translations": "Traduzioni",
+		"contribute_site": "Contribuisci a questo sito",
+		"github": "Repository di Github",
+		"report_bug": "Hai trovato un bug?",
+		"web_team": "Team Web"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "Home",
+		"docs": "Documentazione",
+		"news": "Novità",
+		"download": "Download",
+		"themes": "Temi",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Scarica {FilesName}",
+		"donation_description": "{FilesName} è un progetto guidato dalla community che dipende dal tuo supporto per crescere e migliorare. Per favore, considera di comprare {FilesName} attraverso il Microsoft Store oppure di supportarci su GitHub se usi l'installer classico.",
+		"donation_button": "Dona",
+		"microsoft_store": {
+			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
+		},
+		"preview": {
+			"title": "Anteprima",
+			"description": "La versione in anteprima può essere installata insieme alla versione stabile e fornisce un accesso anticipato alle nuove funzionalità e miglioramenti."
+		},
+		"self_signed": {
+			"link_text": "installatore classico",
+			"description": "Non hai accesso al Microsoft Store? Prova il nostro "
+		}
+	}
+}

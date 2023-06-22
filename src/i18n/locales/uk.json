@@ -1,0 +1,137 @@
+{
+	"metadata": {
+		"home": "{FilesName} • Головна",
+		"docs_home": "{FilesName} • Документація",
+		"docs_page": "{FilesName} • Документація - {title}",
+		"blog_home": "{FilesName} • Блог",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Створюємо найкращий файловий менеджер для Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Спільнота",
+			"title": "Спроєктовано та розроблено вами.",
+			"description": "{FilesName} є вільним Open-Source програмним забезпеченням, яке підтримується колективом із сотні учасників.",
+			"discord": "Долучитися до обговорення",
+			"docs": "Стати учасником",
+			"contributions": "{amount, plural, =0 {Немає вкладів} one {# внесок} few {# вклади} other {# вкладів}}"
+		},
+		"design": {
+			"chip": "Дизайн",
+			"title": "Сила зустрічається з красою.",
+			"description": "Відкрийте для себе вродливий дизайн для Windows. Керуйте всіма файлами з підвищеною продуктивністю. Працюйте з кількома папками за допомогою вкладок. І багато іншого.",
+			"download": "Завантажити",
+			"learn_more": "Дізнатися більше"
+		},
+		"features": {
+			"chip": "Функції",
+			"title": "Це вже зроблено.",
+			"description": "Інтеграція з облачними сервісами? Вкладки і кілька способів розташування? Розширений попередній перегляд файлів? {FilesName} володіє надійними функціями, які ви очікуєте від сучасного файлового менеджера.",
+			"unknown": "Невідомо",
+			"cloud": {
+				"title": "Повна інтеграція з хмарними сервісами",
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+			},
+			"preview": {
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+			},
+			"tags": {
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
+			},
+			"tabs": {
+				"title": "Багатозадачність з вкладками",
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+			},
+			"columns": {
+				"title": "Макет \"Стовпці\"",
+				"description": "Quickly navigate through different levels of the file system using the column layout."
+			},
+			"archives": {
+				"title": "Перегляд та редагування архівів",
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			},
+			"git": {
+				"title": "Інтеграція з Git",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
+			}
+		},
+		"themes": {
+			"chip": "Теми",
+			"title": "Дуже особисте.",
+			"description": "Будь по твоєму. {FilesName} має повністю настроюваний інтерфейс користувача, аж до кольорів і матеріалів. Спробуйте теми користувача, вбудовані в {FilesName}, або зануртесь прямо в інтерфейс і створіть свої власні.",
+			"grey_blue": "Темно-сірий • Світло-блакитний",
+			"grey_green": "Синій сірий • Неоновий зелений",
+			"purple": "Фіолетовий",
+			"yellow_white": "Жовтий • Білий",
+			"white_teal": "Холодний білий • Темний бірюзовий",
+			"sky_blue": "Блакитне небо",
+			"select_theme": "Вибрати тему #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Більше публікацій незабаром!",
+		"read_more": "Читати далі",
+		"share": {
+			"default": "Поділитися засобами системи",
+			"url": "Скопіювати URL-посилання",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS канал"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Нічого не знайдено",
+		"edit_page": "Редагувати цю сторінку"
+	},
+	"footer": {
+		"copyright": "Авторське право © 2021 - {year}, автори {FilesName}",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
+		"download": "Завантажити",
+		"contribute": "Внести внесок у розвиток {FilesName}",
+		"feedback": "Надіслати відгук",
+		"style_guide": "Посібник зі стилю коду",
+		"translations": "Переклад",
+		"contribute_site": "Зробити внесок у розвиток цього сайту",
+		"github": "Репозиторій на Github",
+		"report_bug": "Знайшли помилку?",
+		"web_team": "Команда"
+	},
+	"navbar": {
+		"ukraine": "#SupportUkraine",
+		"home": "Головна",
+		"docs": "Документація",
+		"news": "Новини",
+		"download": "Завантажити",
+		"themes": "Теми",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Завантажити {FilesName}",
+		"donation_description": "{FilesName} - це проєкт, керований спільнотою, зростання та вдосконалення якого залежать від вашої підтримки. Будь ласка, подумайте про покупку {FilesName} через Microsoft Store або підтримайте нас на GitHub, якщо ви використовуєте класичний інсталятор.",
+		"donation_button": "Підтримати",
+		"microsoft_store": {
+			"description": "Придбання {FilesName} через Microsoft Store допомагає підтримувати розробників і дозволяє нам продовжувати оновлення додатку з новими функціями та покращеннями."
+		},
+		"preview": {
+			"title": "Бета-версія",
+			"description": "Бета-версія може бути встановлена разом зі стабільним випуском і надає ранній доступ до нових функцій і покращень."
+		},
+		"self_signed": {
+			"link_text": "класичний встановлювач",
+			"description": "Немає доступу до Microsoft Store? Спробуйте "
+		}
+	}
+}
