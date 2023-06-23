@@ -17,7 +17,7 @@
 		"@iconify-json/fluent": "^1.1.24",
 		"@neodrag/svelte": "^2.0.3",
 		"@sveltejs/adapter-cloudflare": "^2.3.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@sveltejs/kit": "^1.20.5",
 		"@typescript-eslint/eslint-plugin": "^5.59.11",
 		"@typescript-eslint/parser": "^5.60.0",
 		"autoprefixer": "^10.4.14",
