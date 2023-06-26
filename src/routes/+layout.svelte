@@ -78,18 +78,6 @@
 	/>
 
 	<meta
-		content={$_("metadata.description", defaultI18nValues)}
-		name="description"
-	/>
-	<meta
-		content={$_("metadata.description", defaultI18nValues)}
-		name="og:description"
-	/>
-	<meta
-		content={$_("metadata.description", defaultI18nValues)}
-		name="twitter:description"
-	/>
-	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"
 	/>

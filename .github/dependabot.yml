@@ -9,6 +9,6 @@ updates:
       prefix: "Dependabot: "
       include: "scope"
     pull-request-branch-name:
-      seperator: "/"
+      separator: "/"
     reviewers:
       - "theonlytails"
