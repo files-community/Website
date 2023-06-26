@@ -30,31 +30,39 @@
 			"unknown": "غير معروف",
 			"cloud": {
 				"title": "تكامل سحابي سلس",
-				"description": "التكامل مع الخدمات السحابية مثل OneDrive, Google Drive, وiCloud يسمح لك بإدارة المستندات والصور الخاصة بك في السحابة، مباشرة من الشريط الجانبي."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "معاينة الملف",
-				"description": "معاينة المستندات، الصور، وأكثر من ذلك بدون فتحها. الدعم للمعاينات الغنية، تسليط الضوء على بناء الجملة، Markdown وتشغيل الفيديو، كل ذلك مدمج."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "الملفات والمجلدات المعلمة",
-				"description": "وضع علامة سريعة على الملفات والمجلدات الخاصة بك وتنظيمها في وقت لاحق عن طريق تعيينها بعلامات ملونة ومسماه للتعرف عليها بسهولة. يمكنك حتى إضافة العلامات المخصصة الخاصة بك!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "تعدد المهام مع علامات التبويب",
-				"description": "تجنب نوافذ متعددة والحفاظ على إخلاء سطح المكتب الخاص بك. {FilesName} تحتوي على واجهة تبويب مشابهة للمتصفح كاملة مع اختصارات لوحة المفاتيح."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "عرض الأعمدة",
-				"description": "انتقل بسرعة عبر الأعمدة للوصول إلى مختلف مستويات نظام الملفات."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "عرض وتحرير الأرشيف",
-				"description": "إدارة الأرشيف المضغوط بما في ذلك zip ،WinRar ،7zip وأكثر من ذلك. قم بالسحب والإسقاط للإضافة إلى الأرشيف الموجود، واستخدام خيار إنشاء أرشيف لإنشاء أرشيف مشفر."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {

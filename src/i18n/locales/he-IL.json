@@ -3,7 +3,7 @@
 		"home": "{FilesName} • בית",
 		"docs_home": "{FilesName} • תיעוד",
 		"docs_page": "{FilesName} • תיעוד - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • בלוג",
 		"blog_page": "{FilesName} • {title}",
 		"description": "בונים את מנהל הקבצים הטוב ביותר לווינדוס."
 	},
@@ -30,31 +30,39 @@
 			"unknown": "לא ידוע",
 			"cloud": {
 				"title": "חיבור חלק עם הענן",
-				"description": "חיבור עם שירותי ענן כמו OneDrive, Google Drive, וiCloud מאפשרים לך לנהל את המסמכים והתמונות שלך בענן, ישר מהסרגל הצידי."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "תצוגת קבצים מקדימה",
-				"description": "צפה במסמכים, תמונות ועוד בלי לפתוח אותם. תמיכה עבור תצוגות מקדימות עשירות, סימון סינטקס, Markdown וניגון ווידאו נמצאת ישר מהקופסה."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "קבצים ותיקיות מתויגים",
-				"description": "סמן וסדר את הקבצים שלך במהירות בעזרת סימון עם תגיות צבעוניות עבור זיהוי קל. אפשר אפילו להוסיף תגיות משלך!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "עבוד במקביל עם כרטיסיות",
-				"description": "המנעו מריבוי חלונות ושמרו על שולחן העבודה שלכם מסודר. {FilesName} מציג ממשק כרטיסיות כמו בדפדפן, הכולל קיצורי מקלדת."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "תצוגת טורים",
-				"description": "נווטו במהירות דרך טורים כדי לגשת לרמות שונות של מערכת הקבצים."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "צפו וערכו קבצי ארכיון",
-				"description": "נהלו קבצי ארכיון מכווצים כולל zip, WinRar, 7zip, ועוד. גררו ושחררו כדי להוסיף לארכיונים קיימים, והשתמשו באפשרות יצירת ארכיון כדי ליצור ארכיונים מוצפנים."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "חיבור לגיט",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
@@ -74,11 +82,11 @@
 		"coming_soon": "עוד הודעות בקרוב!",
 		"read_more": "קרא עוד",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
-			"tweet": "Twitter",
-			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"default": "שיתוף מובנה",
+			"url": "העתקת כתובת URL",
+			"tweet": "טוויטר",
+			"facebook": "פייסבוק",
+			"rss": "פיד RSS"
 		}
 	},
 	"docs": {
@@ -112,7 +120,7 @@
 	},
 	"download": {
 		"title": "הורידו את {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} הוא פרוייקט המונע על ידי הקהילה שזקוק לתמיכה שלכם כדי לגדול ולהשתפר. בבקשה תשקלו לקנות את {FilesName} דרך החנות של Microsoft או תתמוך בנו בGitHub אם אתם משתמשים במתקין הקלאסי.",
 		"donation_button": "תרומה",
 		"microsoft_store": {
 			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."

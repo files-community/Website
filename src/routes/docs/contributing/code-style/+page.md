@@ -1,5 +1,5 @@
 ---
-title: Code quality standards
+title: Coding styles and conventions
 ---
 
 All code contributed to the repository must follow

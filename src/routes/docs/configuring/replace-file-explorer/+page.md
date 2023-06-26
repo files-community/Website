@@ -1,5 +1,5 @@
 ---
-title: Set Files as the default file manager
+title: Replace File Explorer with Files
 ---
 
 Windows doesn't have an official method for changing the default file manager. In order to work around this limitation, we developed a workaround that works for most scenarios including the `win` + `e` shortcut.
@@ -10,7 +10,7 @@ _This workaround involves modifying the system registry and while it's been test
 
 1. Open Files settings > Advanced > Set Files as default manager
 
-![Settings dialog](/docs-resources/Settings-Dialog-Experimental.jpg)
+![Settings dialog](/docs-resources/Settings-Dialog-Advanced.png)
 
 ## Known limitations
 

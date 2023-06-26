@@ -4,25 +4,17 @@
 	import Question from "~icons/fluent/question-24-regular";
 
 	export let description: string = "";
-	export let clickable = false;
-	export let selected = false;
 </script>
 
-<svelte:element
-	this={clickable ? "button" : "div"}
-	class="feature-card"
-	on:click
-	class:selected
-	{...$$restProps}
->
+<article class="feature-card" {...$$restProps}>
 	<slot name="icon">
 		<Question />
 	</slot>
-	<h4>
+	<h3>
 		<slot>{$_("home.features.unknown", defaultI18nValues)}</slot>
-	</h4>
+	</h3>
 	<p>{description}</p>
-</svelte:element>
+</article>
 
 <style lang="scss">
 	@use "./FeatureCard";

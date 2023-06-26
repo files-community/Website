@@ -1,5 +1,5 @@
 ---
-title: Updates
+title: App updates and environments
 ---
 
 ### How updates work

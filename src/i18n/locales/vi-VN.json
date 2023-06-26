@@ -5,62 +5,70 @@
 		"docs_page": "{FilesName} • Tài liệu - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Dựng nên trình quản lý tệp tốt nhất cho Windows."
+		"description": "Xây dựng một trình quản lý tệp tốt nhất cho Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Cộng đồng",
-			"title": "Thiết kế và phát triển bởi bạn.",
-			"description": "{FilesName} là phần mềm miễn phí mã nguồn mở, được vận hành và thiết kế bởi hàng trăm cộng tác viên.",
+			"title": "Thiết kế và phát triển bởi những người như bạn.",
+			"description": "{FilesName} là phần mềm miễn phí và mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
 			"discord": "Tham gia thảo luận",
-			"docs": "Trở thành cộng tác viên",
+			"docs": "Trở thành một cộng tác viên",
 			"contributions": "{amount, plural, =0 {Không có đóng góp} other {# đóng góp}}"
 		},
 		"design": {
 			"chip": "Thiết kế",
-			"title": "Sức mạnh đi đôi với vẻ đẹp.",
-			"description": "Khám phá thiết kế đẹp chuẩn Windows. Quản lý tất cả tệp của bạn với hiệu suất tăng cao. Làm việc với nhiều thư mục bằng thẻ. Và nhiều nữa.",
+			"title": "Sức mạnh kết hợp với sự hoàn mĩ.",
+			"description": "Khám phá một thiết kế đẹp mắt dành cho Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Xử lý và làm việc với các thư mục trở nên dễ dàng với hệ thống thẻ. Và hơn thế nữa.",
 			"download": "Tải về",
 			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
 			"chip": "Tính năng",
-			"title": "Nó đã làm được việc đó sẵn rồi.",
-			"description": "Tích hợp đám mây? Thẻ và nhiều bố cục? Xem trước nhiều thông tin tệp? {FilesName} làm được hết với các tính năng mạnh mẽ bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"title": "Mọi thứ bạn cần ngay trước mắt.",
+			"description": "Tích hợp đám mây? Thẻ cùng với nhiều bố cục khác nhau? Xem trước tệp với đầy đủ thông tin? {FilesName} tập hợp tất cả tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
 			"unknown": "Không rõ",
 			"cloud": {
-				"title": "Tích hợp đám mây mượt mà",
-				"description": "Tích hợp với các dịch vụ đám mây như OneDrive, Google Drive, và iCloud cho phép bạn quản lý tài liệu và ảnh của mình trên đám mây, ngay từ thanh bên."
+				"title": "Tích hợp đám mây một cách liền mạch",
+				"description": "Tích hợp hỗ trợ cho các dịch vụ lưu trữ đám mây như OneDrive, Google Drive và iCloud."
 			},
 			"preview": {
-				"title": "Xem trước tệp",
-				"description": "Xem trước tài liệu, ảnh, và nhiều hơn nữa mà không cần mở chúng. Hỗ trợ xem trước nhiều thông tin, nổi bật cú pháp, markdown và phát video đều được tích hợp sẵn."
+				"title": "Ngăn xem trước",
+				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
 			},
 			"tags": {
-				"title": "Gắn thẻ tệp và thư mục",
-				"description": "Nhanh chóng đánh dấu và sắp xếp các tệp và thư mục của bạn cho sau này bằng cách gán thẻ có màu và tên để dễ nhận dạng. Bạn còn có thể tự thêm thẻ của chính mình!"
+				"title": "Gắn thẻ cho các tệp và thư mục",
+				"description": "Quản lý và sắp xếp các tệp và thư mục của bạn sử dụng các thẻ với màu sắc do bạn lựa chọn."
 			},
 			"tabs": {
-				"title": "Đa nhiệm với thẻ",
-				"description": "Hạn chế nhiều cửa sổ và giúp bàn làm việc của bạn không lộn xộn. {FilesName} có giao diện thẻ như trình duyệt với hỗ trợ phím tắt bàn phím."
+				"title": "Đa tác vụ với các thẻ",
+				"description": "Tránh việc phải mở nhiều cửa sổ cùng một lúc và giữ cho màn hình làm việc của bạn luôn gọn gàng với hệ thống thẻ."
 			},
 			"columns": {
 				"title": "Hiển thị theo cột",
-				"description": "Nhanh chóng định hướng qua cột để truy cập các tầng khác nhau của tệp hệ thống."
+				"description": "Truy cập các tầng khác nhau của hệ thống tệp một cách nhanh chóng với dạng xem cột."
 			},
 			"archives": {
-				"title": "Xem và chỉnh sửa tệp nén",
-				"description": "Quản lý tệp nén bao gồm zip, WinRAR, 7-Zip và hơn thế nữa. Kéo và thả để thêm vào tệp nén có sẵn, và dùng tùy chọn tạo để tạo tệp nén mã hóa."
+				"title": "Xem và chỉnh sửa các tệp nén",
+				"description": "Tạo và giải nén các tệp nén phổ biến như zip, WinRar và 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Tích hợp Git",
+				"description": "Dễ dàng quản lý các dự án sử dụng Git của bạn. Tạo nhánh mới, chuyển đổi giữa các nhánh và đồng bộ các thay đổi - tất cả mà không cần phải rời khỏi Files."
+			},
+			"dual-pane": {
+				"title": "Chế độ hai ngăn",
+				"description": "Xem và quản lý hai thư mục cùng một lúc với chế độ hai ngăn."
+			},
+			"hashes": {
+				"title": "Hash",
+				"description": "Xem và so sánh hash của tệp ngay trong cửa sổ thuộc tính."
 			}
 		},
 		"themes": {
 			"chip": "Chủ đề",
-			"title": "Cá tính riêng biệt.",
-			"description": "Theo cách của bạn. {FilesName} có giao diện hoàn toàn có thể tùy chỉnh, đến tận màu sắc và chất liệu. Thử chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc đi vào hướng dẫn và tự tay bạn tạo nên.",
+			"title": "Phong cách của riêng bạn.",
+			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp một giao diện có thể hoàn toàn được tùy biến, đến tận sắc thái và chất liệu. Thử trải nghiệm các chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc xem tài liệu hướng dẫn và tự tạo cho mình một chủ đề mang đậm chất riêng.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
 			"purple": "Tím",
@@ -74,11 +82,11 @@
 		"coming_soon": "Nhiều bài đăng mới sẽ sớm ra mắt!",
 		"read_more": "Đọc thêm",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Chia sẻ",
+			"url": "Sao chép URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Nguồn cấp dữ liệu RSS"
 		}
 	},
 	"docs": {
@@ -86,7 +94,7 @@
 		"edit_page": "Chỉnh sửa trang này"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, Tác giả {FilesName}",
+		"copyright": "Bản quyền © 2021 - {year}, Tác giả {FilesName}",
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
 		"news": "Tin tức",
@@ -112,14 +120,14 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} là một dự án hướng đến cộng đồng dựa vào sự hỗ trợ của chính những người như bạn để cải thiện và phát triển. Vui lòng cân nhắc việc mua {FilesName} thông qua Microsoft Store hoặc hỗ trợ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
-			"description": "Mua {FilesName} trên Microsoft Store giúp hỗ trợ lập trình viên và cho phép chúng tôi tiếp tục cập nhật ứng dụng với tính năng mới và những cải thiện."
+			"description": "Mua {FilesName} trên Microsoft Store để thể hiện sự hỗ trợ của bạn đối với các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
 		},
 		"preview": {
 			"title": "Xem trước",
-			"description": "Phiên bản xem trước có thể được cài đặt cùng với bản ổn định và cung cấp quyền truy cập sớm vào các tính năng mới và cải thiện."
+			"description": "Phiên bản xem trước có thể được cài đặt cùng với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
 			"link_text": "trình cài đặt cổ điển của chúng tôi",

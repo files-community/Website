@@ -30,31 +30,39 @@
 			"unknown": "Necunoscut",
 			"cloud": {
 				"title": "Integrare fără întreruperi în cloud",
-				"description": "Integrarea cu servicii cloud precum OneDrive, Google Drive, și iCloud vă permite să vă gestionați documentele și fotografiile în cloud, direct din bara laterală."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Previzualizare fișier",
-				"description": "Previzualizați documente, fotografii și multe altele fără a le deschide. Suport pentru previzualizări bogate, evidențierea sintaxei, marcarea și redarea video sunt toate incluse."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Fișiere și dosare etichetate",
-				"description": "Marcați rapid și organizați fișierele și dosarele pentru mai târziu prin atribuirea lor de etichete colorate și numite pentru o identificare ușoară. Poți chiar să adaugi propriile etichete personalizate!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Multitasking cu file",
-				"description": "Evitați mai multe ferestre și păstrați-vă desktopul ordonat. {FilesName} are o interfață cu file asemănătoare unui browser, completă cu comenzi rapide de la tastatură."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Vizualizare coloană",
-				"description": "Navigați rapid prin coloane pentru a accesa diferite niveluri ale sistemului de fișiere."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Vizualizați și editați arhive",
-				"description": "Gestionați arhive, inclusiv zip, WinRar, 7zip și mai multe altele. Glisați și fixați pentru a adăuga la o arhivă existentă, și utilizați opțiunea creați o arhivă pentru a crea o arhivă criptată."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {

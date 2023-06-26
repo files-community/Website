@@ -30,31 +30,39 @@
 			"unknown": "Ukjent",
 			"cloud": {
 				"title": "Sømløs sky-integrasjon",
-				"description": "Integrering av skytjenester som OneDrive, Google Drive, og iCloud lar deg administrere dine dokumenter og bilder i skyen, rett fra sidepanelet."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "Fil forhåndsvisning",
-				"description": "Forhåndsvisning av dokumenter, bilder og mer uten å åpne dem. Støtte for rike forhåndsvisninger, syntaksutheving, markdown og videoavspilling er alt innebygget."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Merkede filer og mapper",
-				"description": "Merk raskt og organiser filene og mappene dine for senere ved å tilordne dem fargede og navngitte tagger for enkel identifikasjon. Du kan også legge til dine egne tilpassede tagger!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Multitask med faner",
-				"description": "Unngå flere vinduer og å holde skrivebordet helt tomt. {FilesName} fungerer nettleser-lignende fane-grensesnitt komplett med tastatursnarveier."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Kolonne visning",
-				"description": "Gå raskt gjennom kolonner for å få tilgang til forskjellige nivåer i filsystemet."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "Vis og rediger arkiver",
-				"description": "Behandle pakkede arkiv inkludert zip, WinRar, 7zip og mer. Dra og slipp for å legge til eksisterende arkiver, og bruk opprettelsen av arkivvalget for å opprette krypterte arkiver."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {

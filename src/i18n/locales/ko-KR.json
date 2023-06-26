@@ -5,80 +5,88 @@
 		"docs_page": "{FilesName} • 자습서 - {title}",
 		"blog_home": "{FilesName} • 블로그",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Windows용 최고의 파일 관리자 애플리케이션"
 	},
 	"home": {
 		"community": {
 			"chip": "커뮤니티",
-			"title": "여러분들이 설계하고 개발했습니다.",
-			"description": "{FilesName} 는 수백 명의 기여자가 공동으로 유지 관리하고 설계한 무료 오픈 소스 소프트웨어입니다.",
-			"discord": "토론에 참여하기",
-			"docs": "이 프로젝트 기여하기",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"title": "여러분들이 설계하고 개발했어요.",
+			"description": "{FilesName}는 수백 명의 사람들이 유지, 관리하고 설계한 무료 오픈소스 소프트웨어예요.",
+			"discord": "토론 참여하기",
+			"docs": "Files 기여하기",
+			"contributions": "{amount, plural, =0 {기여 없음} other {#번 기여함}}"
 		},
 		"design": {
 			"chip": "디자인",
 			"title": "힘과 아름다움의 조화",
-			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 당신의 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 더 많은 기능이 있습니다.",
+			"description": "아름다운 Windows 우선 디자인을 살펴보세요. 더 생산적으로 모든 파일을 관리해보세요. 탭 기능으로 여러 폴더에서 작업해보세요. 이걸로 끝나지 않아요.",
 			"download": "다운로드",
 			"learn_more": "더 알아보기"
 		},
 		"features": {
 			"chip": "특징",
-			"title": "이미 가능합니다.",
-			"description": "클라우드 파일 연동? 탭과 다중 레이아웃? 파일 미리 보기? {FilesName} 에는 최신 파일 관리자가 제공하는 강력한 기능이 포함되어 있습니다.",
+			"title": "이미 구현되어 있어요.",
+			"description": "클라우드 파일 연동? 탭과 다중 레이아웃? 파일 미리 보기? {FilesName}에는 최신 파일 관리자가 제공하는 강력한 기능이 포함되어 있어요.",
 			"unknown": "알 수 없음",
 			"cloud": {
-				"title": "계속적인 클라우드 연동",
-				"description": "OneDrive, Google Drive 및 iCloud와 같은 클라우드 서비스와 연동해 사이드바에서 바로 클라우드에서 문서 및 사진을 관리할 수 있습니다."
+				"title": "연속적인 클라우드 연동",
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "파일 미리보기",
-				"description": "문서, 사진 등을 열지 않고 미리 볼 수 있습니다. Rich Previews, 구문 강조, 마크다운 및 비디오 재생을 모두 지원합니다."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "탭 멀티태스킹",
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "열 보기",
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "압축 파일 보기 및 편집",
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration (Coming Soon)",
-				"description": "Easily manage your git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git 연동",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"chip": "테마",
+			"title": "완벽하게 개인적이에요.",
+			"description": "마음대로 바꿔봐요. {FilesName}는 색상부터 배경 재질까지 사용자가 지정할 수 있어요. {FilesName}에 기본으로 제공되는 사용자 지정 테마를 사용해 보거나 자습서를 살펴보고 사용자 지정 테마를 만들어 보세요.",
 			"grey_blue": "짙은 회색 • 라이트 블루",
-			"grey_green": "블루 그레이 • 네온 그린",
+			"grey_green": "푸른 회색 • 네온 그린",
 			"purple": "보라색",
 			"yellow_white": "노란색 • 하얀색",
-			"white_teal": "Cool White • Dark Teal",
+			"white_teal": "백색 • 짙은 청록색",
 			"sky_blue": "하늘색",
-			"select_theme": "Select theme #{index}"
+			"select_theme": "테마를 선택해보세요 #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
+		"coming_soon": "더 많은 소식이 곧 올라올 거예요!",
 		"read_more": "더 알아보기",
 		"share": {
-			"default": "Native sharing",
+			"default": "네이티브 공유하기",
 			"url": "URL 복사",
-			"tweet": "트위터",
-			"facebook": "페이스북",
-			"rss": "RSS Feed"
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS 피드"
 		}
 	},
 	"docs": {
@@ -89,13 +97,13 @@
 		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
 		"home": "홈",
 		"docs": "자습서",
-		"news": "뉴스",
+		"news": "소식",
 		"download": "다운로드",
-		"contribute": "{FilesName} 에 기여하기",
+		"contribute": "{FilesName}에 기여하기",
 		"feedback": "피드백 보내기",
-		"style_guide": "스타일 가이드",
+		"style_guide": "코드 구조",
 		"translations": "번역하기",
-		"contribute_site": "이 사이트에 기여하기",
+		"contribute_site": "이 사이트 기여하기",
 		"github": "GitHub 리포지토리",
 		"report_bug": "버그 제보하기",
 		"web_team": "웹 설계"
@@ -104,22 +112,22 @@
 		"ukraine": "#SupportUkraine",
 		"home": "홈",
 		"docs": "자습서",
-		"news": "뉴스",
+		"news": "소식",
 		"download": "다운로드",
 		"themes": "테마",
-		"discord": "디스코드",
+		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
 		"title": "{FilesName} 다운로드",
-		"donation_description": "{FilesName} 는 확장과 개선을 위한 지원에 의존하는 커뮤니티 기반 프로젝트입니다. Microsoft Store를 통해 {FilesName} 를 구입하거나 기존 설치 관리자를 사용하는 경우 GitHub에서 기여하는 것을 고려해주시기 바랍니다.",
+		"donation_description": "{FilesName}는 여러분들의 지원에 의존하는 커뮤니티 기반 프로젝트예요. Microsoft Store를 통해 {FilesName}를 구입하거나 무료로 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
 		"donation_button": "후원하기",
 		"microsoft_store": {
-			"description": "Microsoft Store 를 통해 {FilesName} 를 구입하면 개발자를 지원하는 것을 돕고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있습니다."
+			"description": "Microsoft Store 를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
 		},
 		"preview": {
-			"title": "미리보기",
-			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있으며 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공합니다."
+			"title": "프리뷰",
+			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있고 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공해요."
 		},
 		"self_signed": {
 			"link_text": "기존 설치 프로그램을 시도해보세요.",

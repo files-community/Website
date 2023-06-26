@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts
+title: Keyboard shortcuts
 ---
 
 Files supports a wide range of keyboard shortcuts to help you navigate the app. There is currently no support for remapping the shortcuts.
