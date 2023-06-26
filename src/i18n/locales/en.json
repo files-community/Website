@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",

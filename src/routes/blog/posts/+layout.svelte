@@ -13,18 +13,14 @@
 	$: pageTitle = title;
 </script>
 
-<svelte:head>
-	<meta name="description" content={description} />
-	<meta name="og:description" content={description} />
-</svelte:head>
-
 <Metadata
 	title={pageTitle
 		? $_("metadata.blog_page", {
-				values: { title: pageTitle, FilesName: "Files" },
+				values: { title: pageTitle, ...defaultI18nValues.values },
 		  })
 		: $_("metadata.blog_home", defaultI18nValues)}
 	image={thumbnail}
+	{description}
 />
 
 <section class="blog-post">
