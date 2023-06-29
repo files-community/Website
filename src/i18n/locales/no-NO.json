@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Startside",
 		"docs_home": "{FilesName} • Dokumentasjon",
 		"docs_page": "{FilesName} • Dokumentasjon - {title}",
@@ -126,7 +127,7 @@
 			"description": "Kjøp av {FilesName} gjennom Microsoft Store hjelper oss med å støtte utviklerne og lar oss fortsette å oppdatere appen med nye funksjoner og forbedringer."
 		},
 		"preview": {
-			"title": "Forhåndsvisning",
+			"title": "Insider Preview",
 			"description": "Beta versjonen eller Forhåndsvisningsversjonen kan installeres sammen med den stabile versjonen og gir tidlig tilgang til nye funksjoner og forbedringer."
 		},
 		"self_signed": {
