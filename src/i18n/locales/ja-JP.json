@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • ホーム",
 		"docs_home": "{FilesName} • ドキュメント",
 		"docs_page": "{FilesName} • ドキュメント - {title}",
@@ -10,8 +11,8 @@
 	"home": {
 		"community": {
 			"chip": "コミュニティ",
-			"title": "デザインと開発はあなたの声から",
-			"description": "{FilesName} はフリーでオープンソースのソフトウェアです。多くの開発者によってメンテナンス・デザインされています。",
+			"title": "デザインも開発もあなた次第",
+			"description": "{FilesName} はフリーでオープンソースのソフトウェアです。何百人もの貢献者の共同作業によってメンテナンスおよびデザインされています。",
 			"discord": "議論に参加する",
 			"docs": "開発に貢献する",
 			"contributions": "{amount, plural, =0 {貢献なし} one {# 回の貢献} other {# 回の貢献}}"
@@ -67,8 +68,8 @@
 		},
 		"themes": {
 			"chip": "テーマ",
-			"title": "あなたの望む通りに",
-			"description": "カスタマイズ性も抜群。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズしてみましょう。",
+			"title": "個性を出そう",
+			"description": "あなたの思い通りにしましょう。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズしてみましょう。",
 			"grey_blue": "ダークグレー • ライトブルー",
 			"grey_green": "ブルーグレー • ネオングリーン",
 			"purple": "パープル",
@@ -120,13 +121,13 @@
 	},
 	"download": {
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から{FilesName} を購入するか、クラシック インストーラを使用する場合はGitHubでサポートすることをぜひ検討してください。",
+		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から {FilesName} を購入するか、クラシック インストーラーを使用する場合は GitHub でサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",
 		"microsoft_store": {
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
 		},
 		"preview": {
-			"title": "プレビュー",
+			"title": "Insider Preview",
 			"description": "プレビュー版は安定版とともにインストールでき、新機能や改善点への早期アクセスを提供します。"
 		},
 		"self_signed": {
