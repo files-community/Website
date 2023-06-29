@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Pornire",
 		"docs_home": "{FilesName} • Documentație",
 		"docs_page": "{FilesName} • Documentație - {title}",
@@ -126,7 +127,7 @@
 			"description": "Achiziționarea {FilesName} prin Microsoft Store ne ajută să sprijinim dezvoltatorii și ne permite să continuăm actualizarea aplicației cu noi caracteristici și îmbunătățiri."
 		},
 		"preview": {
-			"title": "Previzualizare",
+			"title": "Insider Preview",
 			"description": "Versiunea de previzualizare poate fi instalată alături de versiunea stabilă și oferă acces rapid la funcții și îmbunătățiri noi."
 		},
 		"self_signed": {
