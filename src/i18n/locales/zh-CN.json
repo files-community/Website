@@ -1,137 +1,138 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
-		"blog_home": "{FilesName} • Blog",
-		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"name": "{FilesName}",
+		"home": "{FilesName} • 首页",
+		"docs_home": "{FilesName} • 文档",
+		"docs_page": "{FilesName} • 文档 - {title}",
+		"blog_home": "{FilesName} • 博客",
+		"blog_page": "{FilesName} • 文档 - {title}",
+		"description": "为Windows建立最好的文件管理器"
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "社区",
+			"title": "设计和开发",
+			"description": "{FilesName} 是自由开放源码软件，由数百个贡献者集体维护和设计。",
+			"discord": "加入讨论吧",
+			"docs": "成为贡献者",
+			"contributions": "{amount, plural, =0 {无贡献} other {# 贡献}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "设计",
+			"title": "力量与美感的结合。",
+			"description": "探索一个美丽的Windows优先设计。管理你的所有文件，提高工作效率。用标签在多个文件夹中工作。还有更多。",
+			"download": "下载",
+			"learn_more": "了解更多"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "功能",
+			"title": "它已经做到了这一点。",
+			"description": "云文件集吗？标签和多个布局？富文件预览？ {FilesName} 包含了你期望一个现代文件管理器提供的强大功能。",
+			"unknown": "未知信息",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"title": "无缝云整合",
+				"description": "内置支持云驱动器，如OneDrive、Google Drive和iCloud。"
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "预览窗格",
+				"description": "预览照片、视频和文件，而无需打开它们。请注意，目前不支持某些文件格式。"
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "标记文件和文件夹",
+				"description": "用彩色标签对你的文件和文件夹进行组织和分类。"
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"title": "用标签进行多任务处理",
+				"description": "避免多个窗口，用标签保持你的桌面无杂乱。"
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"title": "柱状视图",
+				"description": "使用列式布局快速浏览文件系统的不同层次。"
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"title": "查看和编辑档案",
+				"description": "创建和提取压缩包，包括zip、WinRar和7zip。"
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git集成",
+				"description": "轻松地管理你的Git项目。创建新的分支，在它们之间切换，并同步你的变化 - 所有这些都不用离开Files。"
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "双层窗格",
+				"description": "利用双窗格功能查看和管理两个并排的文件夹。"
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "哈希值",
+				"description": "查看和比较属性窗口中的文件哈希。"
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "主题",
+			"title": "鲜明的个人风格。",
+			"description": "用你的方式 {FilesName} 具有完全可定制的用户界面，甚至包括颜色和材料。试试 {FilesName} 内置的自定义主题，或者直接深入到文档中，创建你自己的主题。",
+			"grey_blue": "用你的方式 {FilesName} 具有完全可定制的用户界面，甚至包括颜色和材料。试试 {FilesName} 内置的自定义主题，或者直接深入到文档中，创建你自己的主题。",
+			"grey_green": "蓝灰色 - 霓虹绿色",
+			"purple": "紫色",
+			"yellow_white": "黄色-白色",
+			"white_teal": "冷白-深青色",
+			"sky_blue": "天蓝色",
+			"select_theme": "选择主题#{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More",
+		"coming_soon": "更多功能即将发布!",
+		"read_more": "了解更多",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
-			"tweet": "Twitter",
-			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"default": "本地共享",
+			"url": "复制链接",
+			"tweet": "推特（Twitter）",
+			"facebook": "脸书",
+			"rss": "RSS 订阅源"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "未找到任何结果",
+		"edit_page": "编辑此页面"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "版权所有 ©️ 2021 - {year}, {FilesName} 作者",
+		"home": "主页",
+		"docs": "文档",
+		"news": "新闻",
+		"download": "下载",
+		"contribute": "为 {FilesName} 贡献",
+		"feedback": "发送反馈",
+		"style_guide": "代码规范风格指南",
+		"translations": "翻译",
+		"contribute_site": "为本页面的资源列表做出贡献",
+		"github": "Github仓库",
+		"report_bug": "发现了bug？",
+		"web_team": "Web 团队"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"ukraine": "#支持 乌克兰",
+		"home": "主页",
+		"docs": "文档",
+		"news": "新闻",
+		"download": "下载",
+		"themes": "主题",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"title": "下载 {FilesName}",
+		"donation_description": "{FilesName}是一个社区驱动的项目，依靠你的支持来发展和改进。如果您使用经典安装程序，请考虑通过微软商店购买{FilesName}，或在GitHub上支持我们。",
+		"donation_button": "捐赠",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"description": "通过微软商店购买{FilesName}有助于支持开发人员，使我们能够继续更新应用程序的新功能和改进。"
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "内部预览",
+			"description": "预览版可以与稳定版一起安装，并提供对新功能和改进的早期访问。"
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "经典安装程序",
+			"description": "没有访问 Microsoft Store 的权限？试试我们 "
 		}
 	}
 }
