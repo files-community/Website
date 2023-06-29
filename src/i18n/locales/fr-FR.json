@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Accueil",
 		"docs_home": "{FilesName} • Documentation",
 		"docs_page": "{FilesName} • Documentation - {title}",
@@ -30,39 +31,39 @@
 			"unknown": "Inconnu",
 			"cloud": {
 				"title": "Intégration harmonieuse du cloud",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Prise en charge intégrée des services de stockage en nuage tels que OneDrive, Google Drive et iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Volet de prévisualisation",
+				"description": "Prévisualisez des photos, des vidéos et des documents sans les ouvrir. Veuillez noter que certains formats de fichiers ne sont pas actuellement pris en charge."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Étiqueter des fichiers et des dossiers",
+				"description": "Organisez et classez vos fichiers et dossiers grâce à des étiquettes colorées."
 			},
 			"tabs": {
 				"title": "Multitâche avec les onglets",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Évitez les fenêtres multiples et gardez un bureau sans encombrement grâce aux onglets."
 			},
 			"columns": {
 				"title": "Affichage en colonne",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Naviguez rapidement à travers les différents niveaux du système de fichiers en utilisant la disposition en colonnes."
 			},
 			"archives": {
 				"title": "Affichez et modifiez vos archives",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Créez et extrayez des archives, y compris les formats zip, WinRar et 7zip."
 			},
 			"git": {
 				"title": "Intégration Git",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Gérez facilement vos projets Git. Créez de nouvelles branches, passez de l'une à l'autre et synchronisez vos modifications, le tout sans quitter Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Double panneau",
+				"description": "Affichez et gérez deux dossiers côte à côte grâce à la fonctionnalité Double Panneau."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Hachages",
+				"description": "Affichez et comparez les hachages de fichiers à partir de la fenêtre des propriétés."
 			}
 		},
 		"themes": {
@@ -80,7 +81,7 @@
 	},
 	"blog": {
 		"coming_soon": "De nouveaux posts bientôt !",
-		"read_more": "En Savoir Plus",
+		"read_more": "En savoir plus",
 		"share": {
 			"default": "Partage natif",
 			"url": "Copier l'URL",
@@ -94,7 +95,7 @@
 		"edit_page": "Modifier cette page"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, Les Auteurs de {FilesName}",
+		"copyright": "Copyright © 2021 - {year}, Les auteurs de {FilesName}",
 		"home": "Accueil",
 		"docs": "Documentation",
 		"news": "Actualités",
@@ -105,7 +106,7 @@
 		"translations": "Traductions",
 		"contribute_site": "Contribuer au site",
 		"github": "Dépôt Github",
-		"report_bug": "Un bug?",
+		"report_bug": "Un bug ?",
 		"web_team": "Équipe Web"
 	},
 	"navbar": {
@@ -126,7 +127,7 @@
 			"description": "Acheter {FilesName} via le Microsoft Store soutient les développeurs et nous permet de continuer à mettre à jour l'application avec de nouvelles fonctionnalités et améliorations."
 		},
 		"preview": {
-			"title": "Aperçu",
+			"title": "Insider Preview",
 			"description": "La version d'aperçu peut être installée parallèlement à la version stable et fournit un accès rapide aux nouvelles fonctionnalités et améliorations."
 		},
 		"self_signed": {
