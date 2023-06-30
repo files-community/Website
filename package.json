@@ -56,6 +56,11 @@
 			}
 		}
 	},
+	"overrides": {
+		"svelte-i18n": {
+			"svelte": "^4.0.0"
+		}
+	},
 	"engines": {
 		"pnpm": ">=8"
 	},
