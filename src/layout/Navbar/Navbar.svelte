@@ -15,7 +15,7 @@
 
 	export let items: NavbarItem[] = [];
 	export let buttons: {
-		icon: SvelteComponent<SvelteHTMLElements["svg"]>;
+		icon: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 		href: string;
 		label: string;
 	}[] = [];

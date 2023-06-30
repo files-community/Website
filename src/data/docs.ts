@@ -5,7 +5,7 @@ export type DocsMetadata = { title: string };
 
 export type DocsNode = DocsMetadata & {
 	path: string;
-	icon?: SvelteComponent<SvelteHTMLElements["svg"]>;
+	icon?: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 };
 
 export type DocsCategory = DocsNode & { pages: DocsTree };

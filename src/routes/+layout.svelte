@@ -5,7 +5,7 @@
 	import { defaultI18nValues } from "$lib";
 	import { Footer, Navbar } from "$layout";
 	import { links, type NavbarItem } from "$data/links";
-	import { _ } from "svelte-i18n";
+	import { _, locale } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
 
@@ -18,6 +18,8 @@
 	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 
 	const { github, discord } = links;
+
+	console.log($locale);
 
 	const navbarItems: NavbarItem[] = [
 		{

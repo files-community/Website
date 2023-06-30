@@ -16,7 +16,7 @@ export type NavbarItem = {
 	name: string;
 	path: string;
 	external?: boolean;
-	icon: SvelteComponent<SvelteHTMLElements["svg"]>;
+	icon: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 	type?: string;
 	sidebarTree?: DocsTree;
 };
