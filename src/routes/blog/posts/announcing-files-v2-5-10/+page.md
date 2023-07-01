@@ -10,7 +10,6 @@ We're excited to announce that version 2.5.10 is now available. If you already h
 
 **TL;DR:** This update adds Git columns to the details layout, an open VS Code button in Git repos, and improvements to the details pane. Continue reading to learn more about these changes.
 
-
 ## What's new in v2.5.10
 
 ### Git columns in the details layout
@@ -21,7 +20,6 @@ Opening a Git repo in the details layout will now display additional columns wit
     <img src="/blog-resources/files2-5-10/GitColumns.png" alt="Git columns in the details layout." />
 </figure>
 
-
 ### Open Git repo in VS Code
 
 When viewing a Git repo, the status bar will now show a button to open the folder in VS Code. Support for additional applications is being considered.
@@ -29,7 +27,6 @@ When viewing a Git repo, the status bar will now show a button to open the folde
 <figure>
     <img src="/blog-resources/files2-5-10/OpenVSCode.png" alt="Details pane." />
 </figure>
-
 
 ### Show details about the current directory when no items are selected
 
@@ -39,29 +36,23 @@ The details pane will show information about the current directory when no items
     <img src="/blog-resources/files2-5-10/DetailsPane.png" alt="Details pane." />
 </figure>
 
-
-
 ## Changes and Improvements
 
 ### [Removed the Bundles widget]
 
 Earlier this year, we announced plans to replace the Bundles widget with the Tags widget. Starting in v2.5.10, the Bundles widget is no longer available.
 
-
 ### [Auto-Populate version information when submitting feedback]
 
 Submitting feedback from the About page will automatically fill out the version information on the GitHub issue.
-
 
 ### [Separated the archive options in the right-click menu]
 
 The menu items for compressing and extracting files has been separated into two separate menus. Previously the items were grouped together under "Archive".
 
-
 ### [Added an option to hide the Send To menu]
 
 Users looking to customize the right-click menu can now hide the Send To menu.
-
 
 ## Bug Fixes
 
@@ -78,7 +69,6 @@ Users looking to customize the right-click menu can now hide the Send To menu.
 - Fixed issue where middle clicking selected folders would cause a crash
 - Fixed issue where the icon was missing from the "new shortcut" option in the right-click menu
 - Fixed an issue where the right-click menu would sometimes freeze the app
-
 
 ### Conclusion
 

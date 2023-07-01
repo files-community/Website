@@ -53,7 +53,7 @@
 				{#if !treeViewState?.[title]}
 					<div
 						class="subtree-items"
-						transition:slide|local={{
+						transition:slide={{
 							duration: getCSSDuration("--fds-control-fast-duration"),
 							easing: circOut,
 						}}

@@ -10,7 +10,6 @@ Today we're excited to announce the next major release of Files, version 2.5. If
 
 **TL;DR:** This update adds back the option for Acrylic, a new Git integration, and improvements to the preview pane. Continue reading to learn more about these changes.
 
-
 ## What's new in v2.5
 
 ### Acrylic backdrop material
@@ -21,7 +20,6 @@ We heard the feedback loud and clear: users want the option to set the backdrop 
     <img src="/blog-resources/files2-5/Acrylic.png" alt="Files with Acrylic backdrop." />
 </figure>
 
-
 ### Swiping gestures for navigation
 
 Swiping gestures allows users to navigate in Files with ease. Swipe from the left to go back, and swipe from the right to go forward. These gestures are compatible with both touch screens and touch pads.
@@ -29,7 +27,6 @@ Swiping gestures allows users to navigate in Files with ease. Swipe from the lef
 <figure>
     <img src="/blog-resources/files2-5/SwipeGestures.gif" alt="Swiping gestures." />
 </figure>
-
 
 ### Manage repositories natively with Git
 
@@ -50,7 +47,6 @@ We added a couple of Git features to Files that make it easier to work with Git 
 
 SeerPro is a popular app for previewing files and documents with a single press of the space bar. We're excited to partner with SeerPro so users with SeerPro can now use this feature from Files. Learn more here http://1218.io/.
 
-
 ## Changes and Improvements
 
 ### [Preview and Details pane]
@@ -58,12 +54,9 @@ SeerPro is a popular app for previewing files and documents with a single press 
 - The preview and detail panes are now separated into two. Users can switch between the two panes using the new pivot control. Additionally, the preview will now stretch to fill the available space in the pane.
 - Improved the layout when the preview pane is in the horizontal orientation.
 
-
 ### [Display and edit metadata of multiple files]
 
 Display and edit metadata of multiple files in the properties window. Previously it was only possible to edit metadata for a single file at a time.
-
-
 
 ## Bug Fixes
 
@@ -89,7 +82,6 @@ Besides these major features and UI improvements, we’ve also fixed some bugs:
 - Fixed issue where add item was disabled in column layout
 - Fixed position of ongoing operations flyout
 - Fixed crash with the properties window
-
 
 ### Conclusion
 

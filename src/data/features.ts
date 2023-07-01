@@ -1,7 +1,10 @@
+import type { SvelteComponent } from "svelte";
+import type { SvelteHTMLElements } from "svelte/elements";
+
 export type FeatureCardData = {
 	title: string;
 	description: string;
-	icon: any;
+	icon: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 };
 
 export type Tag = {

@@ -173,8 +173,8 @@
 		{#key pagePath}
 			<div
 				class="page-inner markdown-body"
-				in:fly|local={{ y: 6, duration: 300, delay: 300 }}
-				out:fly|local={{ y: 6, duration: 300 }}
+				in:fly={{ y: 6, duration: 300, delay: 300 }}
+				out:fly={{ y: 6, duration: 300 }}
 			>
 				<header>
 					<span>
