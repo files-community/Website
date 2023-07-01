@@ -17,17 +17,17 @@
 		"@iconify-json/fluent": "^1.1.24",
 		"@neodrag/svelte": "^2.0.3",
 		"@sveltejs/adapter-cloudflare": "^2.3.0",
-		"@sveltejs/kit": "^1.20.5",
-		"@typescript-eslint/eslint-plugin": "^5.60.0",
-		"@typescript-eslint/parser": "^5.60.0",
+		"@sveltejs/kit": "^1.21.0",
+		"@typescript-eslint/eslint-plugin": "^5.60.1",
+		"@typescript-eslint/parser": "^5.60.1",
 		"autoprefixer": "^10.4.14",
 		"cssnano": "^6.0.1",
 		"eslint": "^8.43.0",
 		"eslint-config-prettier": "^8.8.0",
-		"eslint-plugin-svelte": "^2.31.1",
+		"eslint-plugin-svelte": "^2.32.2",
 		"fluent-svelte": "^1.6.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.2.2",
+		"lint-staged": "^13.2.3",
 		"mdsvex": "^0.11.0",
 		"postcss": "^8.4.24",
 		"postcss-media-minmax": "^5.0.0",
@@ -37,17 +37,32 @@
 		"remark-github": "^11.2.4",
 		"remark-slug": "^7.0.1",
 		"sass": "^1.63.6",
-		"svelte": "^3.59.2",
+		"svelte": "^4.0.1",
 		"svelte-check": "^3.4.4",
 		"svelte-i18n": "^3.6.0",
 		"svelte-preprocess": "^5.0.4",
-		"tslib": "^2.5.3",
-		"typescript": "^5.1.3",
+		"tslib": "^2.6.0",
+		"typescript": "^5.1.6",
 		"unplugin-icons": "0.16.3",
 		"vite": "^4.3.9"
 	},
 	"lint-staged": {
 		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"allowedVersions": {
+				"svelte-i18n>svelte": "^4.0.0"
+			}
+		}
+	},
+	"overrides": {
+		"svelte-i18n": {
+			"svelte": "^4.0.0"
+		}
+	},
+	"engines": {
+		"pnpm": ">=8"
 	},
 	"type": "module"
 }

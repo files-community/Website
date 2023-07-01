@@ -10,12 +10,12 @@
 	} from "$lib";
 	import { ListItem, Tooltip } from "fluent-svelte";
 	import Navigation from "~icons/fluent/navigation-24-regular";
-	import type { SvelteComponentTyped } from "svelte";
+	import type { SvelteComponent } from "svelte";
 	import type { SvelteHTMLElements } from "svelte/elements";
 
 	export let items: NavbarItem[] = [];
 	export let buttons: {
-		icon: SvelteComponentTyped<SvelteHTMLElements["svg"]>;
+		icon: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 		href: string;
 		label: string;
 	}[] = [];
