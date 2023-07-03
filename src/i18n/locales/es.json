@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Inicio",
 		"docs_home": "{FilesName} • Documentos",
 		"docs_page": "{FilesName} • Documentos - {title}",
@@ -126,7 +127,7 @@
 			"description": "Comprar {FilesName} a través de la tienda Microsoft ayuda a apoyar a los desarrolladores y nos permite continuar actualizando la aplicación con nuevas características y mejoras."
 		},
 		"preview": {
-			"title": "Vista previa",
+			"title": "Insider Preview",
 			"description": "La versión de vista previa se puede instalar junto a la versión estable y proporciona acceso anticipado a nuevas características y mejoras."
 		},
 		"self_signed": {
