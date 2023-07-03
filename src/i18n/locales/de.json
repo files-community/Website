@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
@@ -126,7 +127,7 @@
 			"description": "Der Kauf von {FilesName} über den Microsoft Store unterstützt die Entwickler und ermöglicht es uns, die App weiterhin mit neuen Funktionen und Verbesserungen zu aktualisieren."
 		},
 		"preview": {
-			"title": "Vorschau",
+			"title": "Insider Preview",
 			"description": "Die Vorschauversion kann neben dem stabilen Release installiert werden und ermöglicht frühzeitigen Zugriff auf neue Funktionen und Verbesserungen."
 		},
 		"self_signed": {
