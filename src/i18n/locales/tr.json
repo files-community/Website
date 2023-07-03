@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Anasayfa",
 		"docs_home": "{FilesName} • Dökümantasyon",
 		"docs_page": "{FilesName} • Dökümantasyon - {title}",
@@ -126,7 +127,7 @@
 			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
 		},
 		"preview": {
-			"title": "Önizleme",
+			"title": "Insider Preview",
 			"description": "Önizleme sürümü, Stabil sürümle birlikte kurulabilir ve yeni özelliklere ve iyileştirmelere erken erişim sağlar."
 		},
 		"self_signed": {
