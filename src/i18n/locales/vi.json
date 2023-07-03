@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Trang chủ",
 		"docs_home": "{FilesName} • Tài liệu",
 		"docs_page": "{FilesName} • Tài liệu - {title}",
@@ -126,7 +127,7 @@
 			"description": "Mua {FilesName} trên Microsoft Store để thể hiện sự hỗ trợ của bạn đối với các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
 		},
 		"preview": {
-			"title": "Xem trước",
+			"title": "Insider Preview",
 			"description": "Phiên bản xem trước có thể được cài đặt cùng với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
