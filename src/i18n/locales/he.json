@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • בית",
 		"docs_home": "{FilesName} • תיעוד",
 		"docs_page": "{FilesName} • תיעוד - {title}",
@@ -126,7 +127,7 @@
 			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."
 		},
 		"preview": {
-			"title": "גרסה מוקדמת",
+			"title": "Insider Preview",
 			"description": "הגרסה המוקדמת ניתנת להתקנה לצד הגרסה היציבה ומספקת גישה מוקדמת לתכונות ושיפורים חדשים."
 		},
 		"self_signed": {
