@@ -17,8 +17,8 @@
 				defaultI18nValues
 			),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
-			icon: "/download-sources/msstore_light.svg",
-			darkModeIcon: "/download-sources/msstore_dark.svg",
+			icon: "/branding/logo-light.svg",
+			darkModeIcon: "/branding/logo-dark.svg",
 			external: true,
 		},
 		{
