@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Documentazione",
 		"docs_page": "{FilesName} • Documentazione - {title}",
@@ -30,39 +31,39 @@
 			"unknown": "Sconosciuto",
 			"cloud": {
 				"title": "Integrazione fluida del Cloud",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Supporto integrato per unità cloud come OneDrive, Google Drive e iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Pannello di anteprima",
+				"description": "Visualizza l'anteprima di foto, video e documenti senza aprirli. Alcuni formati di file non sono attualmente supportati."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Etichetta file e cartelle",
+				"description": "Organizza e ordina i tuoi file e cartelle usando etichette colorate."
 			},
 			"tabs": {
 				"title": "Sfrutta il multitasking grazie alle schede",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Evita di usare più finestre e mantieni il tuo desktop ordinato grazie alle schede."
 			},
 			"columns": {
 				"title": "Vista a colonne",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Naviga rapidamente attraverso diversi livelli del file system usando il layout a colonne."
 			},
 			"archives": {
 				"title": "Visualizza e modifica gli archivi",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Crea ed estrai archivi tra cui zip, WinRar e 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integrazione con Git",
+				"description": "Gestisci facilmente i tuoi progetti che usano Git. Crea nuovi branch, passa tra di loro e sincronizza le tue modifiche, tutto senza lasciare Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Doppio pannello",
+				"description": "Visualizza e gestisci due cartelle fianco a fianco con la funzione Doppio Pannello."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Hash",
+				"description": "Visualizza e confronta gli hash dei file dalla finestra delle proprietà."
 			}
 		},
 		"themes": {
@@ -126,7 +127,7 @@
 			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
 		},
 		"preview": {
-			"title": "Anteprima",
+			"title": "Anteprima Insider",
 			"description": "La versione in anteprima può essere installata insieme alla versione stabile e fornisce un accesso anticipato alle nuove funzionalità e miglioramenti."
 		},
 		"self_signed": {

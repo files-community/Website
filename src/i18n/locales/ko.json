@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • 홈",
 		"docs_home": "{FilesName} • 자습서",
 		"docs_page": "{FilesName} • 자습서 - {title}",
@@ -30,39 +31,39 @@
 			"unknown": "알 수 없음",
 			"cloud": {
 				"title": "연속적인 클라우드 연동",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "OneDrive, Google Drive, iCloud같은 클라우드 드라이브와 연동할 수 있어요."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "미리보기 화면",
+				"description": "사진, 동영상, 문서 파일을 열지 않고 미리 볼 수 있어요. 몇몇 파일 형식을 지원하지 않지만, 점차 개선될 거예요."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "태그 지정",
+				"description": "태그로 파일을 정리하고 분류할 수 있어요. 태그의 이름과 색을 마음대로 바꿀 수 있어요."
 			},
 			"tabs": {
 				"title": "탭 멀티태스킹",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "탭을 이용해 여러 창을 켜두지 않고 데스크톱을 깨끗하게 유지할 수 있어요."
 			},
 			"columns": {
 				"title": "열 보기",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "열 보기 레이아웃으로 파일 경로를 빠르게 탐색할 수 있어요."
 			},
 			"archives": {
 				"title": "압축 파일 보기 및 편집",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "다른 프로그램 없이 Files에서 압축 파일을 만들고, 압축을 해제할 수 있어요. 현재 Zip, WinRAR, 7zip을 지원해요."
 			},
 			"git": {
 				"title": "Git 연동",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Git 프로젝트를 쉽게 관리할 수 있어요. 새 분기를 만들고, 분기를 전환하고, 변경 사항을 동기화할 수 있어요. Files에서 모두 가능해요."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "분할 화면 모드",
+				"description": "분할 화면 모드로 두 개의 폴더를 함께 보고 편집할 수 있어요."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "파일 무결성 확인",
+				"description": "속성 창에서 파일에 대한 해시 값을 보거나 비교할 수 있어요."
 			}
 		},
 		"themes": {
@@ -123,10 +124,10 @@
 		"donation_description": "{FilesName}는 여러분들의 지원에 의존하는 커뮤니티 기반 프로젝트예요. Microsoft Store를 통해 {FilesName}를 구입하거나 무료로 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
 		"donation_button": "후원하기",
 		"microsoft_store": {
-			"description": "Microsoft Store 를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
+			"description": "Microsoft Store를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
 		},
 		"preview": {
-			"title": "프리뷰",
+			"title": "Insider Preview",
 			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있고 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공해요."
 		},
 		"self_signed": {

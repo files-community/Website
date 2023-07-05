@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • الصفحة الرئيسية",
 		"docs_home": "{FilesName} • الوثائق",
 		"docs_page": "{FilesName} • الوثائق - {title}",
@@ -126,7 +127,7 @@
 			"description": "شراء {FilesName} بواسطة متجر مايكروسوفت يساعد في دعم المطورين ويسمح لنا بمواصلة تحديث التطبيق مع الميزات والتحسينات الجديدة."
 		},
 		"preview": {
-			"title": "معاينة",
+			"title": "Insider Preview",
 			"description": "يمكن تثبيت النسخة التجريبية إلى جانب الإصدار المستقر وتوفر الوصول المبكر إلى الميزات والتحسينات الجديدة."
 		},
 		"self_signed": {
