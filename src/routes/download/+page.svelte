@@ -11,7 +11,7 @@
 
 	const downloadSources = [
 		{
-			name: "Microsoft Store",
+			name: $_("download.microsoft_store.title", defaultI18nValues),
 			description: $_(
 				"download.microsoft_store.description",
 				defaultI18nValues
