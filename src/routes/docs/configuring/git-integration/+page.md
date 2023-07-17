@@ -52,4 +52,4 @@ Opening a Git repository in the details layout displays additional columns for G
 
 ### Opening a Git repository in VS Code
 
-When browsing a Git repository, the status bar shows a button that allows you to open a folder in VS Code.
+When browsing a Git repository, the status bar shows a button that allows you to open a folder in VS Code. Opening a folder with a Visual Studio solution file will display an option to open the solution in Visual Studio.
