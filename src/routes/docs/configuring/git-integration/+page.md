@@ -2,7 +2,7 @@
 title: Manage repositories with Git
 ---
 
-Integration with Git allows you to work more easily with your projects. You can create and manage repository branches directly from Files. You can also pull changes from a remote repository and open a repository in VS Code.
+Integration with Git allows you to work more easily with your projects. You can create and manage branches directly from Files. You can pull and push changes to remote repos, and open them in VS Code.```
 
 ## How to see repository branches
 
