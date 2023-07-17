@@ -50,6 +50,6 @@ To pull changes from a remote repository, follow these steps:
 
 Opening a Git repository in the details layout displays additional columns for Git status, last commit, commit hash, and commit author. These columns can be toggled by right-clicking the column headers.
 
-## Opening a Git repository in VS Code
+### Opening a Git repository in VS Code
 
 When browsing a Git repository, the status bar shows a button that allows you to open a folder in VS Code.
