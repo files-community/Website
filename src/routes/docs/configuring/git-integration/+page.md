@@ -20,7 +20,7 @@ To see repository branches, follow these steps:
 
 You will see a list of all local and remote repository branches.
 
-## How to create a new branch
+### How to create a new branch
 
 To create a new branch, follow these steps:
 
