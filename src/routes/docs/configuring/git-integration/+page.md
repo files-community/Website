@@ -4,6 +4,13 @@ title: Manage repositories with Git
 
 Integration with Git allows you to work more easily with your projects. You can create and manage branches directly from Files. You can pull and push changes to remote repos, and open them in VS Code.```
 
+## Using Git in Files
+
+No additional setup is required, opening a Git folder in Files will automatically detect and display the branch name on the Status Bar.
+
+### Switching branches
+
+Clicking the branch name will open a flyout with the list of available branches, you'll also be able to create a new branch from this flyout.
 ## How to see repository branches
 
 To see repository branches, follow these steps:
