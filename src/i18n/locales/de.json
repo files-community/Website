@@ -124,6 +124,7 @@
 		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Spenden",
 		"microsoft_store": {
+			"title": "Download Files",
 			"description": "Der Kauf von {FilesName} über den Microsoft Store unterstützt die Entwickler und ermöglicht es uns, die App weiterhin mit neuen Funktionen und Verbesserungen zu aktualisieren."
 		},
 		"preview": {
