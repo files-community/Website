@@ -124,6 +124,7 @@
 		"donation_description": "{FilesName} là một dự án hướng đến cộng đồng dựa vào sự hỗ trợ của chính những người như bạn để cải thiện và phát triển. Vui lòng cân nhắc việc mua {FilesName} thông qua Microsoft Store hoặc hỗ trợ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
+			"title": "Download Files",
 			"description": "Mua {FilesName} trên Microsoft Store để thể hiện sự hỗ trợ của bạn đối với các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
 		},
 		"preview": {
