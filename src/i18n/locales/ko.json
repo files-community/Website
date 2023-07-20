@@ -124,7 +124,7 @@
 		"donation_description": "{FilesName}는 여러분들의 지원에 의존하는 커뮤니티 기반 프로젝트예요. Microsoft Store를 통해 {FilesName}를 구입하거나 무료로 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
 		"donation_button": "후원하기",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Files 다운로드",
 			"description": "Microsoft Store를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
 		},
 		"preview": {
