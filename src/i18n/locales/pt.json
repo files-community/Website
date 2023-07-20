@@ -6,14 +6,14 @@
 		"docs_page": "{FilesName} • Docs - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Construindo o melhor gerenciador de arquivos para Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
+			"chip": "Comunidade",
+			"title": "Desenvolvido e desenvolvido por você.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
+			"discord": "Participe da discussão",
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
@@ -27,7 +27,7 @@
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"description": "Integração von Nuvem-Bateiense? Taba undo mereré Disposições? Bienergia Dateivorschauen? {FilesName} Sala de conversação alis diese sublegenda Funkeiro, die Sie von ei nem moderne Datei “treinador” pertentar.",
 			"unknown": "Unknown",
 			"cloud": {
 				"title": "Seamless cloud integration",
@@ -128,7 +128,7 @@
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
-			"title": "Download Insider Preview",
+			"title": "Insider Preview",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
