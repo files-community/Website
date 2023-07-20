@@ -142,13 +142,13 @@ Categories can contain page folders (with a `+page.md` file in them), or other c
 ## Using the Blog
 
 Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located
-at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files.
+at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/routes/blog/posts) in `*.md` files.
 Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
 
 To publish a post, create a new folder in
-the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder, and in it place a file
+the [`posts`](https://github.com/files-community/Website/tree/main/src/routes/blog/posts) folder, and in it place a file
 named `+page.md`. It will contain your post's content.
 
 At the top of the file, you'll need to include a few required things before typing the post.
