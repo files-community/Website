@@ -22,7 +22,7 @@ To further improve our integration with Git, we're excited to be adding support 
 
 ### Improvements to the startup experience
 
-Startup performance is one our the highest priorities and something we've been putting a lot of work into improving over the last few months. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.  
+Startup performance is one of our the highest priorities and something we've been putting a lot of work into improving over the last few months. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.  
 
 <figure>
     <img src="/blog-resources/files2-5-20/SplashScreen.png" alt="Splash screen." />
