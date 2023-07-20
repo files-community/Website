@@ -6,7 +6,7 @@ date: 7/24/2023
 author: files-community
 ---
 
-We're excited to announce that version 2.5.20 is now available. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) as a way to support for project.
+We're excited to announce that version 2.5.20 is now available. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) as a way to support the project.
 
 **TL;DR:** This update adds support for pushing Git commits, an improved startup experience, updated toolbar and status icons, support for editing tags from the Details pane, and more. Continue reading to learn more about these changes.
 
