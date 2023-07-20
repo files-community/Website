@@ -1,6 +1,6 @@
 ---
 title: Announcing Files, version 2.5.20
-description: Push Git commits to remote repositories, updated icons, support for ownCloud.
+description: Push Git commits to remote repositories, splash screen, updated icons, support for ownCloud.
 thumbnail: /blog-resources/files2-5-20/HeroImage.jpg
 date: 7/24/2023
 author: files-community
@@ -8,7 +8,7 @@ author: files-community
 
 We're excited to announce that version 2.5.20 is now available. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) as a way to support for project.
 
-**TL;DR:** This update adds support for pushing Git commits, updated toolbar and status icons, support for editing tags from the Details pane, and more. Continue reading to learn more about these changes.
+**TL;DR:** This update adds support for pushing Git commits, an improved startup experience, updated toolbar and status icons, support for editing tags from the Details pane, and more. Continue reading to learn more about these changes.
 
 ## What's new in v2.5.20
 
@@ -18,6 +18,14 @@ To further improve our integration with Git, we're excited to be adding support 
 
 <figure>
     <img src="/blog-resources/files2-5-20/GitPush.png" alt="Push commits to remote repos." />
+</figure>
+
+### Improvements to the startup experience
+
+Startup performance is one our the highest priorities and something we've been putting a lot of work into improving over the last few months. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.  
+
+<figure>
+    <img src="/blog-resources/files2-5-20/SplashScreen.png" alt="Splash screen." />
 </figure>
 
 ### Redesigned layout icons
