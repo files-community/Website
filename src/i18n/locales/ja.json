@@ -124,7 +124,7 @@
 		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から {FilesName} を購入するか、クラシック インストーラーを使用する場合は GitHub でサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Files をダウンロード",
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
 		},
 		"preview": {
