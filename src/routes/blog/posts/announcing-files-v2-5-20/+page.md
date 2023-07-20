@@ -2,7 +2,7 @@
 title: Announcing Files, version 2.5.20
 description: Push Git commits to remote repositories, splash screen, updated icons, support for ownCloud.
 thumbnail: /blog-resources/files2-5-20/HeroImage.jpg
-date: 7/24/2023
+date: 7/20/2023
 author: files-community
 ---
 
