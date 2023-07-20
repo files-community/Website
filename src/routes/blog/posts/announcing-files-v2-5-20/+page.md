@@ -120,6 +120,7 @@ Based on user feedback, we increased the maximum volume label length to 128 char
 - Fixed crash that would occur when an Inf file installation timed out
 - Fixed an issue where it didn't work to open password protected archives
 - Fixed issue where some options were missing in the Google Drive context menu
+- Fixed issue that prevented using dual pane in the Column layout
 
 ### Conclusion
 
