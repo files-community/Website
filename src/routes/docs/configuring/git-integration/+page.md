@@ -33,7 +33,11 @@ To create a new branch, follow these steps:
 - Enter the name of the new branch, select the base of the new branch and choose whether you want to switch to the new branch after creation.
 - Click the "Create" button.
 
-## How to pull changes from a remote repository
+## Managing changes with a remote repository
+
+Files allow changes to be pulled, pushed and synced with a remote repository.
+
+### Pulling changes from a remote repository
 
 To pull changes from a remote repository, follow these steps:
 
@@ -41,7 +45,7 @@ To pull changes from a remote repository, follow these steps:
 - You will see the number of incoming commits in the bottom right corner next to the branch button.
 - Click the Pull button to pull changes from the remote repository.
 
-## How to push changes to a remote repository
+### Pushing changes to a remote repository
 
 To push changes to a remote repository, follow these steps:
 
@@ -49,9 +53,9 @@ To push changes to a remote repository, follow these steps:
 - You will see the number of outgoing commints in the bottom right corner next to the branch button.
 - Click the Push button to push changes to the remote repository.
 
-Before pushing changes to the remote repository, you must connect Files to Github. To do this, see the section above.
+_To sync changes to the remote repository, you must firstly connect Files to Github. To do this, see the section above._
 
-## How to sync changes with a remote repository
+### Syncing changes with a remote repository
 
 To sync changes with a remote repository, follow these steps:
 
@@ -59,13 +63,13 @@ To sync changes with a remote repository, follow these steps:
 - You will see the number of incoming and outgoing commits in the bottom right corner next to the branch button.
 - Click the Sync button to pull changes from the remote repository and push changes to the remote repository.
 
-_To push changes to the remote repository, you must firstly add the Files app to the list of authorised apps on Github. To do this, see the section above._
+_To sync changes to the remote repository, you must firstly connect Files to Github. To do this, see the section above._
 
 ## Git columns in the Details layout
 
 Opening a Git repository in the Details layout displays additional columns for Git status, last commit, commit hash, and commit author. These columns can be toggled by right-clicking the column headers.
 
-## Git details in the Details pane
+### Git details in the Details pane
 
 You can see repository and branch of directory in the Details pane.
 To do this, follow these steps:
@@ -76,3 +80,11 @@ To do this, follow these steps:
 ### Opening a Git repository in VS Code
 
 When browsing a Git repository, the status bar shows a button that allows you to open a folder in VS Code. Opening a folder with a Visual Studio solution file will display an option to open the solution in Visual Studio.
+
+## Initializing a folder as a Git repository
+
+To initialize a folder as a Git repository, follow these steps:
+
+- Assign a custom shortcut to the "Initialize Git repository" action.
+- Open an empty folder.
+- Use the shortcut to initialize the repo.
