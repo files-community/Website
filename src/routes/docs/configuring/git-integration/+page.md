@@ -6,85 +6,28 @@ Integration with Git allows you to work more easily with your projects. You can 
 
 ## Using Git in Files
 
-No additional setup is required, opening a Git folder in Files will automatically detect and display the branch name on the Status Bar.
+The Git integration in Files is available without having to install any third party apps. The integration displays useful information about the current branch and commit details on the Status Bar, support for creating and switching branches, and Git columns in the Details layout.
 
-## Connecting Files to Github
+### Connecting to Github
 
-Connecting Files to Github allows you to push and sync changes with a remote repositories.
-To do this, follow these steps:
+Connecting to Github allows you to push and sync changes with remote repositories. Files will prompt and display instructions when authorization is required.
 
-- Click the Push button to try to push changes to the remote repository.
-  If you are not connected to Github, a dialog with instructions will appear.
-- Copy the access code from the dialog.
-- Open the link shown in the dialog in your browser.
-- Paste the access code in the input field and click the "Authorise" button.
+### Creating and switching branches
 
-### Switching branches
+The current branch name will displayed on the Status Bar. To create a new branch, click the branch name to open the Branches flyout and click the "Create" button. To switch branches, open the "Branches" flyout and select the branch you want to checkout.
 
-Clicking the branch name will open a flyout with the list of available branches, you'll also be able to create a new branch from this flyout.
+### Push, pull, and sync changes from a remote repository
 
-### How to create a new branch
+The number of local and remote commits will be displayed on the Status Bar. To push or pull commits from a remote repo, click on the commit count and select the push or pull option. Syncing with the remote repo will update the commit number on the status bar without taking any actions.
 
-To create a new branch, follow these steps:
+### Git columns in the Details layout
 
-- Navigate to the folder containing the repository.
-- Click the name of the current branch in the bottom right corner.
-- Click the "Create branch" button in the menu that appears.
-- Enter the name of the new branch, select the base of the new branch and choose whether you want to switch to the new branch after creation.
-- Click the "Create" button.
-
-## Managing changes with a remote repository
-
-Files allow changes to be pulled, pushed and synced with a remote repository.
-
-### Pulling changes from a remote repository
-
-To pull changes from a remote repository, follow these steps:
-
-- Navigate to the folder containing the repository.
-- You will see the number of incoming commits in the bottom right corner next to the branch button.
-- Click the Pull button to pull changes from the remote repository.
-
-### Pushing changes to a remote repository
-
-To push changes to a remote repository, follow these steps:
-
-- Navigate to the folder containing the repository.
-- You will see the number of outgoing commints in the bottom right corner next to the branch button.
-- Click the Push button to push changes to the remote repository.
-
-_To sync changes to the remote repository, you must firstly connect Files to Github. To do this, see the section above._
-
-### Syncing changes with a remote repository
-
-To sync changes with a remote repository, follow these steps:
-
-- Navigate to the folder containing the repository.
-- You will see the number of incoming and outgoing commits in the bottom right corner next to the branch button.
-- Click the Sync button to pull changes from the remote repository and push changes to the remote repository.
-
-_To sync changes to the remote repository, you must firstly connect Files to Github. To do this, see the section above._
-
-## Git columns in the Details layout
-
-Opening a Git repository in the Details layout displays additional columns for Git status, last commit, commit hash, and commit author. These columns can be toggled by right-clicking the column headers.
+The Details layout will display additional columns for Git status, last commit, commit hash, and commit author. These columns can be toggled by right-clicking the column headers.
 
 ### Git details in the Details pane
 
-You can see repository and branch of directory in the Details pane.
-To do this, follow these steps:
-
-- Navigate to the folder in your repository.
-- Open the Details pane.
+The Details Pane will display the repository name and current checked out branch in the Details Pane.
 
 ### Opening a Git repository in VS Code
 
-When browsing a Git repository, the status bar shows a button that allows you to open a folder in VS Code. Opening a folder with a Visual Studio solution file will display an option to open the solution in Visual Studio.
-
-## Initializing a folder as a Git repository
-
-To initialize a folder as a Git repository, follow these steps:
-
-- Assign a custom shortcut to the "Initialize Git repository" action.
-- Open an empty folder.
-- Use the shortcut to initialize the repo.
+When browsing a Git repository, the Status Bar will show an option to open the current folder in VS Code. Similarly, browsing a folder with a Visual Studio sln file will display an option to open the solution in Visual Studio.
