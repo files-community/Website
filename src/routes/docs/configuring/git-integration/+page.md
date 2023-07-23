@@ -2,11 +2,9 @@
 title: Manage repositories with Git
 ---
 
-Integration with Git allows you to work more easily with your projects. You can create and manage branches directly from Files. You can pull and push changes to remote repos, and open them in VS Code.```
-
 ## Using Git in Files
 
-The Git integration in Files is available without having to install any third party apps. The integration displays useful information about the current branch and commit details on the Status Bar, support for creating and switching branches, and Git columns in the Details layout.
+The Git integration in Files is designed to make it easier to work with your project. The integration displays useful information about the current branch and commit details on the Status Bar, support for creating and switching branches, and Git columns in the Details layout.
 
 ### Connecting to Github
 
