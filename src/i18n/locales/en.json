@@ -38,7 +38,7 @@
 				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro integration",
+				"title": "QuickLook & SeerPro support",
 				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
 			},
 			"tags": {
