@@ -64,6 +64,10 @@
 			"hashes": {
 				"title": "Hashes",
 				"description": "View and compare file hashes from the properties window."
+			},
+			"command-palette": {
+				"title": "Command Palette",
+				"description": "Quickly access commands, features, and settings from the Command Palette."
 			}
 		},
 		"themes": {
