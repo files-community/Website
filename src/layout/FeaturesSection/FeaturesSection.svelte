@@ -19,7 +19,7 @@
 	import Branch from "~icons/fluent/branch-24-regular";
 	import DualPane from "~icons/fluent/panel-right-28-regular";
 	import Hash from "~icons/fluent/number-symbol-24-regular";
-	import Placeholder from "~icons/fluent/placeholder-24-regular";
+	import Diamond from "~icons/fluent/diamond-24-regular";
 
 	export const featureCards = {
 		tabs: {
@@ -70,7 +70,7 @@
 		command: {
 			title: $_("home.features.command-palette.title", defaultI18nValues),
 			description: $_("home.features.command-palette.description", defaultI18nValues),
-			icon: Placholder,
+			icon: Diamond,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
 </script>
