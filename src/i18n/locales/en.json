@@ -37,6 +37,10 @@
 				"title": "Preview pane",
 				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro integration",
+				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			},
 			"tags": {
 				"title": "Tag files and folders",
 				"description": "Organize and sort your files and folders with colored tags."
