@@ -20,6 +20,7 @@
 	import DualPane from "~icons/fluent/panel-right-28-regular";
 	import Hash from "~icons/fluent/number-symbol-24-regular";
 	import Diamond from "~icons/fluent/diamond-24-regular";
+	import PanelRight from "~icons/fluent/panel-right-24-regular";
 
 	export const featureCards = {
 		tabs: {
@@ -55,6 +56,11 @@
 		preview: {
 			title: $_("home.features.preview.title", defaultI18nValues),
 			description: $_("home.features.preview.description", defaultI18nValues),
+			icon: PanelRight,
+		},
+		popupPreview: {
+			title: $_("home.features.popup-preview.title", defaultI18nValues),
+			description: $_("home.features.popup-preview.description", defaultI18nValues),
 			icon: EyeVisible,
 		},
 		git: {
