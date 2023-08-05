@@ -15,7 +15,11 @@ We also prioritize accessibility, to check whether your pull request meets our a
 encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
 to ensure everyone can take full advantage of Files.
 
-## Code Style
+## Code Style in XAML
+
+To make the codebase consistent and easy to understand, we require you to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML.
+
+## Code Style in C# and C++
 
 To make the codebase consistent and easy to understand, we require you to follow our predefined code style rules:
 
@@ -45,8 +49,8 @@ To make the codebase consistent and easy to understand, we require you to follow
 ### 3. Code readability and clarity
 
 1. Do not use curly brackets for single line `if`, `for` and `foreach` statements
-2. Braces must not be oimitted in method return
-3. Closing brance should be followed by blank line
+2. Do not omit curly braces in method returns
+3. Insert a blank line after closing curly bracket.
 4. Do not use `#region` directives
 5. Align `while();` on the same line of curly bracket of `do..while`
 6. Use the prefixes `Is`, `Has`, `Have`, `Any`, `Can` or similar keywords for boolean names and method names if applicable
@@ -62,8 +66,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 16. Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
 17. Do not use `RelayCommand<Type>`, rather rely on `ICommand`
 18. Any class that implements `IDisposable` must also contain a field `private bool _disposed;`
-19. You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML
-20. Follow single-responsibility principle in classes, modules, and methods
+19. Follow single-responsibility principle in classes, modules, and methods
 
 ### 4. Class structure
 
