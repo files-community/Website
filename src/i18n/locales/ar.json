@@ -4,7 +4,7 @@
 		"home": "{FilesName} • الصفحة الرئيسية",
 		"docs_home": "{FilesName} • الوثائق",
 		"docs_page": "{FilesName} • الوثائق - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • المدونة",
 		"blog_page": "{FilesName} • {title}",
 		"description": "نبني أفضل مدير ملفات لنظام Windows."
 	},
@@ -31,39 +31,39 @@
 			"unknown": "غير معروف",
 			"cloud": {
 				"title": "تكامل سحابي سلس",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "الدعم المدمج لأقراص السحابة مثل OneDrive ، Google Drive ، و iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "لوحة المعاينة",
+				"description": "معاينة الصور، مقاطع الفيديو، والمستندات دون فتحها. يرجى ملاحظة أن بعض صيغ الملفات غير مدعومة حاليا."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "علامات الملفات والمجلدات",
+				"description": "تنظيم وفرز ملفاتك ومجلداتك بعلامات ملونة."
 			},
 			"tabs": {
 				"title": "تعدد المهام مع علامات التبويب",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "تجنب نوافذ متعددة والحفاظ على خلو سطح المكتب مع علامات التبويب."
 			},
 			"columns": {
 				"title": "عرض الأعمدة",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "التنقل بسرعة عبر مختلف مستويات نظام الملفات باستخدام تخطيط العمود."
 			},
 			"archives": {
 				"title": "عرض وتحرير الأرشيف",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "إنشاء واستخراج المحفوظات بما في ذلك zip، WinRar و 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "تكامل Git",
+				"description": "إدارة مشاريع Git بسهولة. إنشاء فروع جديدة، التبديل بينها، ومزامنة التغييرات الخاصة بك - كل ذلك دون ترك Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "لوحة مزدوجة",
+				"description": "عرض وإدارة مجلدين جنبا إلى جنب مع ميزة اللوحة المزدوجة."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "التجزئة",
+				"description": "عرض تجزئة الملفات من نافذة الخصائص ومقارنتها."
 			}
 		},
 		"themes": {
@@ -83,11 +83,11 @@
 		"coming_soon": "المزيد من المشاركات قريباً!",
 		"read_more": "إقرأ المزيد",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
-			"tweet": "Twitter",
-			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"default": "المشاركة الأصلية",
+			"url": "نسخ الرابط",
+			"tweet": "تويتر",
+			"facebook": "الفيسبوك",
+			"rss": "تغذية RSS"
 		}
 	},
 	"docs": {
@@ -121,10 +121,10 @@
 	},
 	"download": {
 		"title": "تحميل {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "مشروع {FilesName} هو مشروع يقوده المجتمع ويعتمد على دعمك للنمو والتحسين. الرجاء النظر في شراء {FilesName} من خلال متجر مايكروسوفت أو دعمنا على GitHub إذا كنت تستخدم المثبت الكلاسيكي.",
 		"donation_button": "تبرع",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "تحميل Files",
 			"description": "شراء {FilesName} بواسطة متجر مايكروسوفت يساعد في دعم المطورين ويسمح لنا بمواصلة تحديث التطبيق مع الميزات والتحسينات الجديدة."
 		},
 		"preview": {
