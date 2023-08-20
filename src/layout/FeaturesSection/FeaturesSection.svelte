@@ -17,8 +17,9 @@
 	import TabDesktop from "~icons/fluent/tab-desktop-20-regular";
 	import Tag from "~icons/fluent/tag-24-regular";
 	import Branch from "~icons/fluent/branch-24-regular";
-	import DualPane from "~icons/fluent/panel-right-28-regular";
 	import Hash from "~icons/fluent/number-symbol-24-regular";
+	import Diamond from "~icons/fluent/diamond-24-regular";
+	import PanelRight from "~icons/fluent/panel-right-24-regular";
 
 	export const featureCards = {
 		tabs: {
@@ -29,7 +30,7 @@
 		dualPane: {
 			title: $_("home.features.dual-pane.title", defaultI18nValues),
 			description: $_("home.features.dual-pane.description", defaultI18nValues),
-			icon: DualPane,
+			icon: PanelRight,
 		},
 		tags: {
 			title: $_("home.features.tags.title", defaultI18nValues),
@@ -54,6 +55,14 @@
 		preview: {
 			title: $_("home.features.preview.title", defaultI18nValues),
 			description: $_("home.features.preview.description", defaultI18nValues),
+			icon: PanelRight,
+		},
+		popupPreview: {
+			title: $_("home.features.popup-preview.title", defaultI18nValues),
+			description: $_(
+				"home.features.popup-preview.description",
+				defaultI18nValues,
+			),
 			icon: EyeVisible,
 		},
 		git: {
@@ -65,6 +74,14 @@
 			title: $_("home.features.hashes.title", defaultI18nValues),
 			description: $_("home.features.hashes.description", defaultI18nValues),
 			icon: Hash,
+		},
+		command: {
+			title: $_("home.features.command-palette.title", defaultI18nValues),
+			description: $_(
+				"home.features.command-palette.description",
+				defaultI18nValues,
+			),
+			icon: Diamond,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
 </script>

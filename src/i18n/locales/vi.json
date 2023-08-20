@@ -20,14 +20,14 @@
 		"design": {
 			"chip": "Thiết kế",
 			"title": "Sức mạnh kết hợp với sự hoàn mĩ.",
-			"description": "Khám phá một thiết kế đẹp mắt dành cho Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Xử lý và làm việc với các thư mục trở nên dễ dàng với hệ thống thẻ. Và hơn thế nữa.",
+			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Dễ dàng xử lý các thư mục với hệ thống nhãn. Và hơn thế nữa.",
 			"download": "Tải về",
 			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
 			"chip": "Tính năng",
 			"title": "Mọi thứ bạn cần ngay trước mắt.",
-			"description": "Tích hợp đám mây? Thẻ cùng với nhiều bố cục khác nhau? Xem trước tệp với đầy đủ thông tin? {FilesName} tập hợp tất cả tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"description": "Tích hợp đám mây? Thẻ cùng nhiều bố cục khác nhau? Xem trước tệp với đầy đủ thông tin? {FilesName} tập hợp tất cả tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
 			"unknown": "Không rõ",
 			"cloud": {
 				"title": "Tích hợp đám mây một cách liền mạch",
@@ -38,8 +38,8 @@
 				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
 			},
 			"tags": {
-				"title": "Gắn thẻ cho các tệp và thư mục",
-				"description": "Quản lý và sắp xếp các tệp và thư mục của bạn sử dụng các thẻ với màu sắc do bạn lựa chọn."
+				"title": "Gắn nhãn cho các tệp và thư mục",
+				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn với màu sắc bạn muốn."
 			},
 			"tabs": {
 				"title": "Đa tác vụ với các thẻ",
@@ -69,7 +69,7 @@
 		"themes": {
 			"chip": "Chủ đề",
 			"title": "Phong cách của riêng bạn.",
-			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp một giao diện có thể hoàn toàn được tùy biến, đến tận sắc thái và chất liệu. Thử trải nghiệm các chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc xem tài liệu hướng dẫn và tự tạo cho mình một chủ đề mang đậm chất riêng.",
+			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Thử trải nghiệm các chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
 			"purple": "Tím",
@@ -121,18 +121,19 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "{FilesName} là một dự án hướng đến cộng đồng dựa vào sự hỗ trợ của chính những người như bạn để cải thiện và phát triển. Vui lòng cân nhắc việc mua {FilesName} thông qua Microsoft Store hoặc hỗ trợ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
+		"donation_description": "{FilesName} là dự án hướng cộng đồng và dựa vào chính cộng đồng để cải thiện và phát triển. Hãy cân nhắc việc mua {FilesName} trên Microsoft Store hoặc ủng hộ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
-			"description": "Mua {FilesName} trên Microsoft Store để thể hiện sự hỗ trợ của bạn đối với các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
+			"title": "Tải xuống Files",
+			"description": "Mua {FilesName} trên Microsoft Store để ủng hộ các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
 		},
 		"preview": {
-			"title": "Insider Preview",
-			"description": "Phiên bản xem trước có thể được cài đặt cùng với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
+			"title": "Tải bản Insider Preview",
+			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
 			"link_text": "trình cài đặt cổ điển của chúng tôi",
-			"description": "Không có quyền truy cập vào Microsoft Store? Hãy thử "
+			"description": "Không thể truy cập vào Microsoft Store? Hãy thử "
 		}
 	}
 }

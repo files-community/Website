@@ -124,6 +124,7 @@
 		"donation_description": "{FilesName} büyümek ve gelişmek için sizin desteğinize bağlı olan, topluluk odaklı bir projedir. Klasik yükleyiciyi kullanıyorsanız lütfen Microsoft Mağazası aracılığıyla {FilesName} satın almayı veya GitHub'da bizi desteklemeyi düşünün.",
 		"donation_button": "Bağış Yap",
 		"microsoft_store": {
+			"title": "Download Files",
 			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
 		},
 		"preview": {
