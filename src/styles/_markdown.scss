@@ -235,4 +235,18 @@
 			}
 		}
 	}
+
+	// color preview chips
+	.color::before {
+		display: inline-block;
+		content: "";
+		background-color: var(--color);
+		margin-inline-end: 1ch;
+		padding: 1ch;
+		aspect-ratio: 1;
+		border-radius: 50%;
+		outline: 1px solid;
+		outline-color: var(--fds-divider-stroke-default);
+		vertical-align: middle;
+	}
 }

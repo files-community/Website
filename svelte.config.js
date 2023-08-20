@@ -5,6 +5,7 @@ import remarkGfm from "remark-gfm";
 import remarkA11yEmoji from "@fec/remark-a11y-emoji";
 import remarkSlug from "remark-slug";
 import remarkGithub from "remark-github";
+import rehypeColorPreview from "rehype-color-preview";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import mediaMinMax from "postcss-media-minmax";
@@ -29,6 +30,7 @@ const config = {
 			},
 
 			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
+			rehypePlugins: [rehypeColorPreview],
 		}),
 		sveltePreprocess({
 			postcss: {
