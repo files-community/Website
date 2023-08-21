@@ -59,7 +59,10 @@
 		},
 		popupPreview: {
 			title: $_("home.features.popup-preview.title", defaultI18nValues),
-			description: $_("home.features.popup-preview.description", defaultI18nValues),
+			description: $_(
+				"home.features.popup-preview.description",
+				defaultI18nValues,
+			),
 			icon: EyeVisible,
 		},
 		git: {
@@ -74,7 +77,10 @@
 		},
 		command: {
 			title: $_("home.features.command-palette.title", defaultI18nValues),
-			description: $_("home.features.command-palette.description", defaultI18nValues),
+			description: $_(
+				"home.features.command-palette.description",
+				defaultI18nValues,
+			),
 			icon: Diamond,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
