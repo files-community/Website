@@ -117,13 +117,14 @@
 		"download": "Téléchargement",
 		"themes": "Thèmes",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	},
 	"download": {
 		"title": "Télécharger {FilesName}",
 		"donation_description": "{FilesName} est un projet conduit par sa communauté, qui dépend de votre soutien pour se développer et s'améliorer. Nous vous invitons à considérer l'achat de {FilesName} via le Microsoft Store ou de nous soutenir sur GitHub si vous utilisez l'installateur classique.",
 		"donation_button": "Faire un don",
 		"microsoft_store": {
+			"title": "Télécharger Files",
 			"description": "Acheter {FilesName} via le Microsoft Store soutient les développeurs et nous permet de continuer à mettre à jour l'application avec de nouvelles fonctionnalités et améliorations."
 		},
 		"preview": {

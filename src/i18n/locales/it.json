@@ -21,7 +21,7 @@
 			"chip": "Design",
 			"title": "La potenza incontra la bellezza.",
 			"description": "Esplora un design stupendo pensato per Windows. Gestisci i file in modo più produttivo. Lavora tra più cartelle usando le schede. E molto altro ancora.",
-			"download": "Download",
+			"download": "Scarica",
 			"learn_more": "Scopri di più"
 		},
 		"features": {
@@ -99,7 +99,7 @@
 		"home": "Home",
 		"docs": "Documentazione",
 		"news": "Novità",
-		"download": "Download",
+		"download": "Scarica",
 		"contribute": "Contribuisci a {FilesName}",
 		"feedback": "Facci sapere la tua opinione",
 		"style_guide": "Guida allo Stile",
@@ -114,7 +114,7 @@
 		"home": "Home",
 		"docs": "Documentazione",
 		"news": "Novità",
-		"download": "Download",
+		"download": "Scarica",
 		"themes": "Temi",
 		"discord": "Discord",
 		"github": "Github"
@@ -124,10 +124,11 @@
 		"donation_description": "{FilesName} è un progetto guidato dalla community che dipende dal tuo supporto per crescere e migliorare. Per favore, considera di comprare {FilesName} attraverso il Microsoft Store oppure di supportarci su GitHub se usi l'installer classico.",
 		"donation_button": "Dona",
 		"microsoft_store": {
+			"title": "Scarica Files",
 			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
 		},
 		"preview": {
-			"title": "Anteprima Insider",
+			"title": "Scarica Anteprima Insider",
 			"description": "La versione in anteprima può essere installata insieme alla versione stabile e fornisce un accesso anticipato alle nuove funzionalità e miglioramenti."
 		},
 		"self_signed": {
