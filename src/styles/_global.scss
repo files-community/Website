@@ -1,42 +1,5 @@
 @use "./mixins" as *;
 
-// Sideload Inter and Open Sans as fallback fonts (inter for english, open sans for everything else)
-@font-face {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter-roman.var.woff2") format("woff2");
-	font-named-instance: "Regular";
-}
-
-@font-face {
-	font-family: "Inter";
-	font-style: italic;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter-italic.var.woff2") format("woff2");
-	font-named-instance: "Italic";
-}
-
-@font-face {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/OpenSans-roman.var.woff2") format("woff2");
-	font-named-instance: "Regular";
-}
-
-@font-face {
-	font-family: "Open Sans";
-	font-style: italic;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/OpenSans-italic.var.woff2") format("woff2");
-	font-named-instance: "Italic";
-}
-
 /*
  * Global Variables
  */
@@ -185,7 +148,8 @@ code {
 		}
 
 		&:hover {
-			background: var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
+			background:
+				var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
 				var(--scrollbar-caret-top) top center/contain no-repeat,
 				hsl(var(--mica-tint), var(--mica-tint-opacity));
 		}

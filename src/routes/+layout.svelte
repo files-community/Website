@@ -7,6 +7,7 @@
 	import { links, type NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
 
+	import { links as fonts } from "unplugin-fonts/head";
 	import "fluent-svelte/theme.css";
 
 	import Chat from "~icons/fluent/chat-24-regular";
@@ -88,6 +89,10 @@
 	<meta content="summary_large_image" name="twitter:card" />
 	<meta content="@FilesForWindows" name="twitter:site" />
 	<meta content="@FilesForWindows" name="twitter:creator" />
+
+	{#each fonts as font}
+		<link {...font.attrs} />
+	{/each}
 
 	{#if !dev && $page.url.host === "files.community"}
 		<script type="text/javascript">

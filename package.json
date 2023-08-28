@@ -22,7 +22,7 @@
 		"@typescript-eslint/parser": "^6.4.1",
 		"autoprefixer": "^10.4.15",
 		"cssnano": "^6.0.1",
-		"eslint": "^8.47.0",
+		"eslint": "^8.48.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-svelte": "^2.33.0",
 		"fluent-svelte": "^1.6.0",
@@ -44,6 +44,7 @@
 		"svelte-preprocess": "^5.0.4",
 		"tslib": "^2.6.2",
 		"typescript": "^5.2.2",
+		"unplugin-fonts": "^1.0.3",
 		"unplugin-icons": "0.16.5",
 		"vite": "^4.4.9"
 	},
