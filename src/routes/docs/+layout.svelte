@@ -26,7 +26,7 @@
 		page.title
 			.toLowerCase()
 			.replace(/ /gi, "")
-			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, ""))
+			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, "")),
 	);
 
 	// Determines if the auto-suggest flyout should be shown
@@ -170,32 +170,26 @@
 				{/if}
 			</div>
 		</div>
-		{#key pagePath}
-			<div
-				class="page-inner markdown-body"
-				in:fly={{ y: 6, duration: 300, delay: 300 }}
-				out:fly={{ y: 6, duration: 300 }}
-			>
-				<header>
-					<span>
-						{$page.url.pathname.split("/").join(" / ").substring(2)}
-						{$page.url.pathname === "/docs" ? " / overview" : ""}
-					</span>
-					<div class="header-right">
-						<Button
-							variant="hyperlink"
-							href="https://github.com/{links.github.owner}/{links.github
-								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
-							{...externalLink}
-						>
-							{$_("docs.edit_page", defaultI18nValues)}
-						</Button>
-					</div>
-				</header>
-				<h1>{pageTitle}</h1>
-				<slot />
-			</div>
-		{/key}
+		<div class="page-inner markdown-body">
+			<header>
+				<span>
+					{$page.url.pathname.split("/").join(" / ").substring(2)}
+					{$page.url.pathname === "/docs" ? " / overview" : ""}
+				</span>
+				<div class="header-right">
+					<Button
+						variant="hyperlink"
+						href="https://github.com/{links.github.owner}/{links.github
+							.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
+						{...externalLink}
+					>
+						{$_("docs.edit_page", defaultI18nValues)}
+					</Button>
+				</div>
+			</header>
+			<h1>{pageTitle}</h1>
+			<slot />
+		</div>
 	</article>
 </section>
 
