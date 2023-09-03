@@ -2,7 +2,7 @@
 title: Connecting to FTP servers
 ---
 
-Files supports connecting to remote FTP and FTPs servers.
+Files has built-in support for connecting to remote FTP and FTPs servers.
 This allows you to effortlessly connect to any server that supports these protocols, browse the directory structure, and perform tasks such as uploading, downloading, renaming, and deleting files or folders according to your needs.
 
 _Currently Files only supports the FTP and FTPs protocols. SFTP is not supported yet._
