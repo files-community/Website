@@ -7,7 +7,7 @@ This allows you to effortlessly connect to any server that supports these protoc
 
 ## How to connect to a FTP server
 
-You can connect to the remote server by typing in the address bar:
+You can connect to remote servers from the address bar
 
 **FTP :** `ftp://<server_address>:<port>`.  
 **FTPs :** `ftps://<server_address>:<port>`.
