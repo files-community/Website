@@ -52,7 +52,7 @@
 
 <header class="navbar">
 	<nav class="inner">
-		<a class="logo" href="/" data-sveltekit-preload-data="hover">
+		<a class="logo" href="/">
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
@@ -80,7 +80,6 @@
 				{:else}
 					<a
 						class="item"
-						data-sveltekit-preload-data="hover"
 						class:selected={isUrlContainPath($page.url.pathname, path)}
 						href={path}
 						target={external ? "_blank" : undefined}
@@ -140,7 +139,6 @@
 			{:else if !sidebarTree}
 				<ListItem
 					type="navigation"
-					data-sveltekit-preload-data="hover"
 					on:click={toggleSidebar}
 					selected={isUrlContainPath($page.url.pathname, path)}
 					href={path}
@@ -170,12 +168,7 @@
 		{/each}
 		<hr />
 		{#each buttons as { icon, href, label }}
-			<ListItem
-				{href}
-				data-sveltekit-preload-data="hover"
-				type="navigation"
-				{...externalLink}
-			>
+			<ListItem {href} type="navigation" {...externalLink}>
 				<svelte:fragment slot="icon">
 					{#if icon}
 						<svelte:component this={icon} />
