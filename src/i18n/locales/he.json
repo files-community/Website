@@ -37,6 +37,10 @@
 				"title": "Preview pane",
 				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro support",
+				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			},
 			"tags": {
 				"title": "Tag files and folders",
 				"description": "Organize and sort your files and folders with colored tags."
@@ -64,6 +68,10 @@
 			"hashes": {
 				"title": "Hashes",
 				"description": "View and compare file hashes from the properties window."
+			},
+			"command-palette": {
+				"title": "Command Palette",
+				"description": "Quickly access commands, features, and settings from the Command Palette."
 			}
 		},
 		"themes": {
