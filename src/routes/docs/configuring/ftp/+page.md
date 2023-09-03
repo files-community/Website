@@ -1,5 +1,5 @@
 ---
-title: Connecting to FTP server
+title: Connecting to FTP servers
 ---
 
 Files supports connecting to remote FTP and FTPs servers.
