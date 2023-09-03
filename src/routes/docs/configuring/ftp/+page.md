@@ -9,7 +9,7 @@ _Currently Files only supports the FTP and FTPs protocols. SFTP is not supported
 
 ## How to connect to a FTP server
 
-You can connect to the remote server by typing in the address bar:
+You can connect to remote servers from the address bar
 
 **FTP :** `ftp://<server_address>:<port>`.
 - `ftps://<server_address>:<port>` if you want to connect via FTPs protocol.
