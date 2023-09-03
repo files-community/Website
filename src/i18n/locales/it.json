@@ -37,6 +37,10 @@
 				"title": "Pannello di anteprima",
 				"description": "Visualizza l'anteprima di foto, video e documenti senza aprirli. Alcuni formati di file non sono attualmente supportati."
 			},
+			"popup-preview": {
+				"title": "Supporto per QuickLook & SeerPro",
+				"description": "Visualizza l'anteprima di file di Office e di altri tipi premendo la barra spaziatrice. Questa funzione richiede l'installazione di QuickLook o SeerPro."
+			},
 			"tags": {
 				"title": "Etichetta file e cartelle",
 				"description": "Organizza e ordina i tuoi file e cartelle usando etichette colorate."
@@ -64,6 +68,10 @@
 			"hashes": {
 				"title": "Hash",
 				"description": "Visualizza e confronta gli hash dei file dalla finestra delle proprietà."
+			},
+			"command-palette": {
+				"title": "Palette dei Comandi",
+				"description": "Accedi rapidamente a comandi, funzioni e impostazioni dalla Palette dei Comandi."
 			}
 		},
 		"themes": {

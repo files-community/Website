@@ -31,39 +31,47 @@
 			"unknown": "Невідомо",
 			"cloud": {
 				"title": "Повна інтеграція з хмарними сервісами",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Підтримка таких хмарних дисків як OneDrive, Google Drive та iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Панель попереднього перегляду",
+				"description": "Переглядайте фотографії, відео та документи, не відкриваючи їх. Зверніть увагу, що деякі формати файлів наразі не підтримуються."
+			},
+			"popup-preview": {
+				"title": "Підтримка QuickLook та Seer Pro",
+				"description": "Переглядайте файли Office, документи та інші типи файлів, натиснувши клавішу пробілу. Ця функція потребує встановлення QuickLook або SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Теги для файлів і папок",
+				"description": "Упорядковуйте та сортуйте файли та папки за допомогою кольорових тегів."
 			},
 			"tabs": {
 				"title": "Багатозадачність з вкладками",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Уникайте багатьох вікон і звільніть робочий стіл за допомогою вкладок."
 			},
 			"columns": {
 				"title": "Макет \"Стовпці\"",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Швидко переходьте між різними рівнями файлової системи за допомогою макета \"Стовпці\"."
 			},
 			"archives": {
 				"title": "Перегляд та редагування архівів",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Створюйте та розпаковуйте архіви, включаючи zip, WinRar та 7zip."
 			},
 			"git": {
 				"title": "Інтеграція з Git",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "Легко керуйте своїми проектами Git. Створюйте нові гілки, перемикайтеся між ними та синхронізуйте зміни – і все це не виходячи з Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Режим подвійної панелі",
+				"description": "Переглядайте та керуйте двома папками одночасно за допомогою функції подвійної панелі."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Хеші",
+				"description": "Переглядайте і порівнюйте хеші файлів у вікні властивостей."
+			},
+			"command-palette": {
+				"title": "Палітра Команд",
+				"description": "Швидкий доступ до команд, функцій і налаштувань за допомогою Палітри Команд."
 			}
 		},
 		"themes": {
@@ -124,7 +132,7 @@
 		"donation_description": "{FilesName} - це проєкт, керований спільнотою, зростання та вдосконалення якого залежать від вашої підтримки. Будь ласка, подумайте про покупку {FilesName} через Microsoft Store або підтримайте нас на GitHub, якщо ви використовуєте класичний інсталятор.",
 		"donation_button": "Підтримати",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Завантажити Files",
 			"description": "Придбання {FilesName} через Microsoft Store допомагає підтримувати розробників і дозволяє нам продовжувати оновлення додатку з новими функціями та покращеннями."
 		},
 		"preview": {
