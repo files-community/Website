@@ -31,39 +31,47 @@
 			"unknown": "Necunoscut",
 			"cloud": {
 				"title": "Integrare fără întreruperi în cloud",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Suport încorporat pentru unitățile cloud, cum ar fi OneDrive, Google Drive și iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Panou de previzualizare",
+				"description": "Previzualizați fotografii, videoclipuri și documente fără a le deschide. Vă rugăm să rețineți că unele formate de fișiere nu sunt acceptate în prezent."
+			},
+			"popup-preview": {
+				"title": "Suport pentru QuickLook & SeerPro",
+				"description": "Previzualizați fișiere Office, documente, și alte tipuri de fișiere apăsând tasta spațiu. Această caracteristică necesită instalarea QuickLook sau SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Etichetați fișiere si foldere",
+				"description": "Organizați și sortați fișierele și dosarele cu etichete colorate."
 			},
 			"tabs": {
 				"title": "Multitasking cu file",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Evitați mai multe ferestre și păstrați-vă desktopul curat cu file."
 			},
 			"columns": {
 				"title": "Vizualizare coloană",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Navigați rapid prin diferite niveluri ale sistemului de fișiere folosind aspectul coloană."
 			},
 			"archives": {
 				"title": "Vizualizați și editați arhive",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Creeați și extrageți arhive inclusiv zip, WinRar și 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integrare Git",
+				"description": "Gestionați cu ușurință proiectele Git. Creați ramuri noi, schimbați între ele și sincronizați modificările - fără a părăsi Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Panou dublu",
+				"description": "Vizualizați și gestionați două foldere unul lângă altul cu caracteristica Panou Dublu."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Hash-uri",
+				"description": "Vizualizați și comparați hash-urile din fereastra de proprietăți."
+			},
+			"command-palette": {
+				"title": "Paletă de comenzi",
+				"description": "Accesați rapid comenzi, caracteristici și setări din Paleta de Comenzi."
 			}
 		},
 		"themes": {
@@ -83,11 +91,11 @@
 		"coming_soon": "Mai multe postări în curând!",
 		"read_more": "Citiți mai mult",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Partajare nativă",
+			"url": "Copiere URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Flux RSS"
 		}
 	},
 	"docs": {
@@ -105,7 +113,7 @@
 		"style_guide": "Ghid Stil",
 		"translations": "Traduceri",
 		"contribute_site": "Contribuiţi la acest site",
-		"github": "Github Repo",
+		"github": "Repo GitHub",
 		"report_bug": "Ați găsit o problema?",
 		"web_team": "Echipa Web"
 	},
@@ -120,15 +128,15 @@
 		"github": "GitHub"
 	},
 	"download": {
-		"title": "Descarcă {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"title": "Descărcați {FilesName}",
+		"donation_description": "{FilesName} este un proiect condus de comunitate care depinde de sprijinul tău pentru a crește și a se îmbunătăți. Vă rugăm să luați în considerare achiziționarea {FilesName} prin Microsoft Store sau sprijiniți-ne pe GitHub dacă folosiți instalarea clasică.",
 		"donation_button": "Donează",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Descărcați Files",
 			"description": "Achiziționarea {FilesName} prin Microsoft Store ne ajută să sprijinim dezvoltatorii și ne permite să continuăm actualizarea aplicației cu noi caracteristici și îmbunătățiri."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "Descărcați versiunea Insider Preview",
 			"description": "Versiunea de previzualizare poate fi instalată alături de versiunea stabilă și oferă acces rapid la funcții și îmbunătățiri noi."
 		},
 		"self_signed": {
