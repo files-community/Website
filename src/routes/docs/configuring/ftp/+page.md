@@ -7,7 +7,7 @@ This allows you to effortlessly connect to any server that supports these protoc
 
 _Currently Files only supports the FTP and FTPs protocols. SFTP is not supported yet._
 
-## Connecting to FTP server
+## How to connect to a FTP server
 
 You can connect to the remote server by typing in the address bar:
 
