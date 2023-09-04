@@ -14,8 +14,8 @@ You can connect to remote servers from the address bar
 
 If you don't specify the port, the default port will be used:
 
-**FTP :** `21`.  
-**FTPs :** `990`.
+**FTP:** `21`.  
+**FTPs:** `990`.
 
 Then if dialog appears, enter your credentials or login as anonymous user.  
 After that, you will be able to view the directory structure of the server.
