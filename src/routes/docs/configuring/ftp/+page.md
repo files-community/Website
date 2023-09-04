@@ -26,5 +26,4 @@ To disconnect from the server, close tab or window with the server.
 
 ## Known limitations
 
-Currently Files only supports the FTP and FTPs protocols.  
-SFTP is not supported yet.
+- SFTP is not currently supported
