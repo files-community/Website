@@ -20,7 +20,7 @@ If you don't specify the port, the default port will be used:
 Then if dialog appears, enter your credentials or login as anonymous user.  
 After that, you will be able to view the directory structure of the server.
 
-## Disconnecting from FTP server
+## How to disconnect from FTP servers
 
 To disconnect from the server, close tab or window with the server.
 
