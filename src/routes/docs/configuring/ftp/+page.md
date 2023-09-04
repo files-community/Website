@@ -9,7 +9,7 @@ This allows you to effortlessly connect to any server that supports these protoc
 
 You can connect to remote servers from the address bar
 
-**FTP :** `ftp://<server_address>:<port>`.  
+**FTP:** `ftp://<server_address>:<port>`.  
 **FTPs :** `ftps://<server_address>:<port>`.
 
 If you don't specify the port, the default port will be used:
