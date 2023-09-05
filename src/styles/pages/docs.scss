@@ -29,6 +29,7 @@
 	// absolute positioning on the mobile search UI.
 	&-inner {
 		padding: 44px 56px;
+		view-transition-name: docs-content;
 	}
 
 	// Page header
@@ -49,13 +50,22 @@
 	}
 }
 
-// Docs sidebar
-// Not much to say here
+// keeps the animation the same length as before
+::view-transition-old(docs-content),
+::view-transition-new(docs-content) {
+	animation-duration: 300ms;
+}
+
 .sidebar {
 	@include flex($direction: column);
 	flex: 0 0 auto;
 	inline-size: 316px;
 	padding: 0 4px;
+
+	// this makes the marker of the selected page move around smoothly
+	:global(.tree-view .list-item.selected::before) {
+		view-transition-name: active-sidebar-marker;
+	}
 }
 
 // Sidebar search wrapper

@@ -37,6 +37,10 @@
 				"title": "Ngăn xem trước",
 				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
 			},
+			"popup-preview": {
+				"title": "Hỗ trợ cho QuickLook & SeerPro",
+				"description": "Xem trước tệp và tài liệu Office cùng nhiều loại tệp khác chỉ bằng việc nhấn phím cách. Tính năng này yêu cầu cài đặt QuickLook hoặc SeerPro."
+			},
 			"tags": {
 				"title": "Gắn nhãn cho các tệp và thư mục",
 				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn với màu sắc bạn muốn."
@@ -64,6 +68,10 @@
 			"hashes": {
 				"title": "Hash",
 				"description": "Xem và so sánh hash của tệp ngay trong cửa sổ thuộc tính."
+			},
+			"command-palette": {
+				"title": "Bảng lệnh",
+				"description": "Truy cập vào các lệnh, tính năng và cài đặt một cách nhanh chóng từ Bảng lệnh."
 			}
 		},
 		"themes": {

@@ -37,6 +37,10 @@
 				"title": "Volet de prévisualisation",
 				"description": "Prévisualisez des photos, des vidéos et des documents sans les ouvrir. Veuillez noter que certains formats de fichiers ne sont pas actuellement pris en charge."
 			},
+			"popup-preview": {
+				"title": "Prise en charge de QuickLook & SeerPro",
+				"description": "Prévisualisez les fichiers Office, les documents et d'autres types de fichiers en appuyant sur la barre d'espace. Cette fonction nécessite l'installation de QuickLook ou de SeerPro."
+			},
 			"tags": {
 				"title": "Étiqueter des fichiers et des dossiers",
 				"description": "Organisez et classez vos fichiers et dossiers grâce à des étiquettes colorées."
@@ -64,6 +68,10 @@
 			"hashes": {
 				"title": "Hachages",
 				"description": "Affichez et comparez les hachages de fichiers à partir de la fenêtre des propriétés."
+			},
+			"command-palette": {
+				"title": "Palette de commandes",
+				"description": "Accédez rapidement aux commandes, aux fonctionnalités et aux paramètres depuis la palette de commandes."
 			}
 		},
 		"themes": {

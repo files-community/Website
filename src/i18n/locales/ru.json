@@ -31,39 +31,47 @@
 			"unknown": "Неизвестно",
 			"cloud": {
 				"title": "Полная интеграция с облачными сервисами",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Встроенная поддержка таких облачных дисков как OneDrive, Google Drive и iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Панель предпросмотра",
+				"description": "Предпросмотр фото, видео и документов без их открытия. Обратите внимание, что некоторые форматы файлов в настоящее время не поддерживаются."
+			},
+			"popup-preview": {
+				"title": "Поддержка QuickLook и SeerPro",
+				"description": "Предпросмотр файлов Office, документов и других типов файлов по нажатию на клавишу пробела. Для этой функции требуется установка QuickLook или SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Группируйте файлы и папки метками",
+				"description": "Организуйте и сортируйте свои файлы и папки с помощью цветных меток."
 			},
 			"tabs": {
 				"title": "Многозадачность с вкладками",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Избегайте множества лишних окон, и наведите порядок на своем рабочем столе с помощью вкладок."
 			},
 			"columns": {
 				"title": "Разметка \"Столбцы\"",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Быстро перемещайтесь по различным уровням файловой системы, используя макет столбцов."
 			},
 			"archives": {
 				"title": "Просматривайте и редактируйте архивы",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Создавайте и извлекайте архивы, включая zip, WinRar и 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Интеграция с Git",
+				"description": "Легко управляйте своими проектами Git. Создавайте новые ветки, переключайтесь между ними и синхронизируйте изменения — и все это, не выходя из Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Двухпанельный режим",
+				"description": "Просматривайте и управляйте двумя папками одновременно с помощью двухпанельного режима."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Хеши",
+				"description": "Просмотрите и сравните хеши файлов в окне свойств."
+			},
+			"command-palette": {
+				"title": "Палитра Команд",
+				"description": "Быстрый доступ к командам, функциям и настройкам из Палитры Команд."
 			}
 		},
 		"themes": {
@@ -124,7 +132,7 @@
 		"donation_description": "{FilesName} - это проект сообщества, развитие и улучшение которого зависит от вашей поддержки. Пожалуйста, рассмотрите покупку {FilesName} через Microsoft Store или поддержите нас на GitHub, если вы используете классический способ установки.",
 		"donation_button": "Пожертвовать",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Скачать Files",
 			"description": "Покупка {FilesName} в Microsoft Store помогает поддерживать разработчиков и позволяет нам продолжать обновлять приложение, добавляя новые функции и улучшения."
 		},
 		"preview": {
