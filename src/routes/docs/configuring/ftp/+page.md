@@ -17,7 +17,7 @@ If you don't specify the port, the default port will be used:
 **FTP:** `21`.  
 **FTPs:** `990`.
 
-Then if dialog appears, enter your credentials or login as anonymous user.  
+If required, you will be prompted to enter your credentials to login.  
 After that, you will be able to view the directory structure of the server.
 
 ## How to disconnect from FTP servers
