@@ -22,7 +22,7 @@ After that, you will be able to view the directory structure of the server.
 
 ## How to disconnect from FTP servers
 
-To disconnect from the server, close tab or window with the server.
+Closing the tab or window will automatically disconnect from the server.
 
 ## Known limitations
 
