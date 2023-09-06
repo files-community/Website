@@ -2,8 +2,6 @@
 title: Overview
 ---
 
-Files is a modern file manager that helps users organize their files and folders. Built and maintained by the open-source community, Files features robust multitasking experiences, file tags, deep integrations, and an intuitive design.
+Files is a modern file manager that helps users organize their files and folders. Our mission with Files is to build the best file manager for Windows, and we're proud to be building it out in the open so everyone can participate. User feedback helps shape the features we work on, & the bug reports on GitHub help to make Files more reliable. Built and maintained by the open-source community, Files features robust multitasking experiences, file tags, deep integrations, and an intuitive design.
 
-Our mission is to create the best file manager for Windows together with the open-source community. Built with the WinAppSdk framework, we're able to take advantage of the latest features and UI libraries from Microsoft.
-
-![Screenshot of Files](/docs-resources/HeroImage.png)
+![Screenshot of Files](/docs-resources/HeroImage.jpg)
