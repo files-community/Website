@@ -28,7 +28,7 @@
 .main-post {
 	position: relative;
 	display: grid;
-	grid-template-columns: 40% 60%;
+	grid-template-columns: 60% 40%;
 	grid-gap: 48px;
 	align-items: center;
 	inline-size: 100%;
@@ -45,8 +45,7 @@
 		block-size: auto;
 		border: 1px solid var(--fds-surface-stroke-default);
 		border-radius: var(--fds-overlay-corner-radius);
-		box-shadow:
-			0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
+		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
 			0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
 			0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
 			0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),

@@ -45,7 +45,6 @@
 		.post-info {
 			@include flex($direction: column);
 			color: var(--fds-text-tertiary);
-
 			font: {
 				size: 1.2rem;
 				weight: 400;
@@ -54,12 +53,10 @@
 			a {
 				margin: 0 0 2px;
 				color: var(--fds-text-primary);
-
 				font: {
 					size: var(--fds-body-font-size);
 					weight: 600;
 				}
-
 				text-decoration: none;
 
 				&:hover {
@@ -84,12 +81,10 @@
 	h5 {
 		margin: 0 0 4px;
 		color: var(--fds-text-primary);
-
 		font: {
 			size: 24px;
 			weight: 600;
 		}
-
 		line-height: 32px;
 	}
 }

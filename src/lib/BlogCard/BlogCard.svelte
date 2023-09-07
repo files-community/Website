@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { onNavigate } from "$app/navigation";
+	import { date as dateFormat, format } from "svelte-i18n";
 	import { externalLink } from "$lib";
-	import { date as dateFormat } from "svelte-i18n";
 
 	export let slug = "";
 	export let date = "";
@@ -9,19 +8,12 @@
 	export let title = "";
 	export let description = "";
 	export let thumbnail = "";
-
-	let postThumbnail: HTMLImageElement;
 </script>
 
 <a class="blog-card" href="/blog/posts/{slug}" {...$$restProps}>
-	<img
-		alt="{title} thumbnail"
-		class="thumbnail"
-		src={thumbnail}
-		style:view-transition-name="post-thumbnail-{slug}"
-	/>
+	<img alt="{title} thumbnail" class="thumbnail" src={thumbnail} />
 	<div class="body">
-		<h5 style:view-transition-name="post-title-{slug}">{title}</h5>
+		<h5>{title}</h5>
 		<span>{description}</span>
 	</div>
 	<footer>

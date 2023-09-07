@@ -15,8 +15,6 @@
 	import Book from "~icons/fluent/book-24-regular";
 	import News from "~icons/fluent/news-24-regular";
 	import Download from "~icons/fluent/arrow-download-24-regular";
-	import { afterNavigate, onNavigate } from "$app/navigation";
-	import { onMount } from "svelte";
 	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 
 	const { github, discord } = links;
@@ -57,17 +55,6 @@
 			icon: Code,
 		},
 	];
-
-	onNavigate(async navigation => {
-		if (!document.startViewTransition) return;
-
-		return new Promise(resolve => {
-			document.startViewTransition(async () => {
-				resolve();
-				await navigation.complete;
-			});
-		});
-	});
 </script>
 
 <svelte:head>

@@ -9,7 +9,7 @@
 
 	export let data: LayoutData;
 
-	$: ({ title, thumbnail, author, description, date, slug } = data);
+	$: ({ title, thumbnail, author, description, date } = data);
 	$: pageTitle = title;
 </script>
 
@@ -35,7 +35,7 @@
 			>
 				<ArrowLeft />
 			</IconButton>
-			<h1 style:view-transition-name="post-title-{slug}">{title}</h1>
+			<h1>{title}</h1>
 		</div>
 		<div class="post-info">
 			<img alt="{author} avatar" src="https://github.com/{author}.png" />
@@ -49,7 +49,7 @@
 					year: "numeric",
 					day: "numeric",
 					month: "short",
-				},
+				}
 			)}
 			<MenuFlyout placement="bottom">
 				<IconButton
@@ -78,7 +78,7 @@
 					<MenuFlyoutItem>
 						<a
 							href="https://twitter.com/intent/tweet?text={encodeURIComponent(
-								$page.url.href,
+								$page.url.href
 							)}"
 							{...externalLink}
 						>
@@ -88,7 +88,7 @@
 					<MenuFlyoutItem>
 						<a
 							href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(
-								$page.url.href,
+								$page.url.href
 							)}"
 							{...externalLink}
 						>
@@ -104,12 +104,7 @@
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img
-				class="post-thumbnail"
-				src={thumbnail}
-				alt="Thumbnail"
-				style:view-transition-name="post-thumbnail-{slug}"
-			/>
+			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
 		{/if}
 		<div class="markdown-body">
 			<slot />
