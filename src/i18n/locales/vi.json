@@ -20,8 +20,8 @@
 		"design": {
 			"chip": "Thiết kế",
 			"title": "Sức mạnh kết hợp với sự hoàn mĩ.",
-			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Dễ dàng xử lý các thư mục với hệ thống nhãn. Và hơn thế nữa.",
-			"download": "Tải về",
+			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Dễ dàng xử lý các thư mục với hệ thống nhãn và hơn thế nữa.",
+			"download": "Tải xuống",
 			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
@@ -38,20 +38,20 @@
 				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
 			},
 			"popup-preview": {
-				"title": "Hỗ trợ cho QuickLook & SeerPro",
+				"title": "Hỗ trợ QuickLook & SeerPro",
 				"description": "Xem trước tệp và tài liệu Office cùng nhiều loại tệp khác chỉ bằng việc nhấn phím cách. Tính năng này yêu cầu cài đặt QuickLook hoặc SeerPro."
 			},
 			"tags": {
 				"title": "Gắn nhãn cho các tệp và thư mục",
-				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn với màu sắc bạn muốn."
+				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn cùng màu sắc bạn muốn."
 			},
 			"tabs": {
 				"title": "Đa tác vụ với các thẻ",
 				"description": "Tránh việc phải mở nhiều cửa sổ cùng một lúc và giữ cho màn hình làm việc của bạn luôn gọn gàng với hệ thống thẻ."
 			},
 			"columns": {
-				"title": "Hiển thị theo cột",
-				"description": "Truy cập các tầng khác nhau của hệ thống tệp một cách nhanh chóng với dạng xem cột."
+				"title": "Hiển thị dạng cột",
+				"description": "Truy cập sâu vào các phần của hệ thống tệp một cách nhanh chóng với dạng xem cột."
 			},
 			"archives": {
 				"title": "Xem và chỉnh sửa các tệp nén",
@@ -59,7 +59,7 @@
 			},
 			"git": {
 				"title": "Tích hợp Git",
-				"description": "Dễ dàng quản lý các dự án sử dụng Git của bạn. Tạo nhánh mới, chuyển đổi giữa các nhánh và đồng bộ các thay đổi - tất cả mà không cần phải rời khỏi Files."
+				"description": "Dễ dàng quản lý các dự án Git của bạn. Tạo nhánh mới, chuyển đổi giữa các nhánh và đồng bộ các thay đổi - tất cả mà không cần phải rời khỏi Files."
 			},
 			"dual-pane": {
 				"title": "Chế độ hai ngăn",
@@ -77,7 +77,7 @@
 		"themes": {
 			"chip": "Chủ đề",
 			"title": "Phong cách của riêng bạn.",
-			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Thử trải nghiệm các chủ đề tùy chỉnh có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
+			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Hãy thử trải nghiệm các chủ đề có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
 			"purple": "Tím",
@@ -107,7 +107,7 @@
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
 		"news": "Tin tức",
-		"download": "Tải về",
+		"download": "Tải xuống",
 		"contribute": "Đóng góp cho {FilesName}",
 		"feedback": "Gửi phản hồi",
 		"style_guide": "Hướng dẫn thiết kế",
@@ -122,7 +122,7 @@
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
 		"news": "Tin tức",
-		"download": "Tải về",
+		"download": "Tải xuống",
 		"themes": "Chủ đề",
 		"discord": "Discord",
 		"github": "GitHub"
