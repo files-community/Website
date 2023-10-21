@@ -51,7 +51,8 @@
 		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
 	},
 	"engines": {
-		"pnpm": ">=8"
+		"pnpm": ">=8",
+  "node": ">=18",
 	},
 	"type": "module"
 }
