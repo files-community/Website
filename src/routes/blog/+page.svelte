@@ -1,17 +1,27 @@
 <script lang="ts">
-	import { BlogCard, defaultI18nValues, HeaderChip, Metadata, PageSection, tilt } from "$lib";
+	import {
+		BlogCard,
+		defaultI18nValues,
+		HeaderChip,
+		Metadata,
+		PageSection,
+		tilt,
+	} from "$lib";
 	import { Button } from "fluent-svelte";
 	import { date, _ } from "svelte-i18n";
 	import type { PageData } from "./$types";
+	import { onNavigate } from "$app/navigation";
 
 	export let data: PageData;
 	$: ({ posts } = data);
 	$: mainPost = posts[0];
 
 	let scrollY: number;
+
+	let mainPostThumbnail: HTMLImageElement;
 </script>
 
-<Metadata title="Files • Blog" image="blog" />
+<Metadata title={$_("metadata.blog_home", defaultI18nValues)} image="blog" />
 
 <svelte:window
 	on:scroll={() =>
@@ -28,25 +38,29 @@
 		/>
 	</div>
 	<div class="main-post">
-		<a href="/blog/posts/{mainPost.slug}/">
-			<img
-				alt="Main post thumbnail"
-				height="422"
-				src={mainPost.metadata.thumbnail}
-				use:tilt={{ max: 2.5, scale: 1.01 }}
-				width="633"
-			/>
-		</a>
 		<div class="main-post-info">
 			<HeaderChip>
 				{$date(new Date(mainPost.metadata.date), { format: "medium" })}
 			</HeaderChip>
-			<h2>{mainPost.metadata.title}</h2>
+			<h2 style:view-transition-name="post-title-{mainPost.slug}">
+				{mainPost.metadata.title}
+			</h2>
 			<p>{mainPost.metadata.description}</p>
 			<Button href="/blog/posts/{mainPost.slug}/" variant="accent">
 				{$_("blog.read_more", defaultI18nValues)}
 			</Button>
 		</div>
+		<a href="/blog/posts/{mainPost.slug}/">
+			<img
+				class="thumbnail"
+				alt="Main post thumbnail"
+				height="422"
+				src={mainPost.metadata.thumbnail}
+				use:tilt={{ max: 2.5, scale: 1.01 }}
+				width="633"
+				style:view-transition-name="post-thumbnail-{mainPost.slug}"
+			/>
+		</a>
 	</div>
 	{#if posts.slice(1).length > 0}
 		<div class="blog-cards">

@@ -3,12 +3,14 @@
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
 		"description": "Construindo o melhor gerenciador de arquivos para Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Comunidade",
-			"title": "Projetado e desenvolvido por você.",
+			"title": "Desenvolvido e desenvolvido por você.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
 			"discord": "Participe da discussão",
 			"docs": "Become a contributor",
@@ -24,31 +26,43 @@
 		"features": {
 			"chip": "Features",
 			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"description": "Integração von Nuvem-Bateiense? Taba undo mereré Disposições? Bienergia Dateivorschauen? {FilesName} Sala de conversação alis diese sublegenda Funkeiro, die Sie von ei nem moderne Datei “treinador” pertentar.",
 			"unknown": "Unknown",
 			"cloud": {
 				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
 			},
 			"tabs": {
 				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
 			},
 			"columns": {
 				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"description": "Quickly navigate through different levels of the file system using the column layout."
 			},
 			"archives": {
 				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			},
+			"git": {
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
 			}
 		},
 		"themes": {
@@ -66,7 +80,14 @@
 	},
 	"blog": {
 		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"read_more": "Read More",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "No results found",
@@ -77,6 +98,7 @@
 		"home": "Home",
 		"docs": "Docs",
 		"news": "News",
+		"download": "Download",
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
@@ -91,13 +113,14 @@
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
+		"download": "Download",
 		"themes": "Themes",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
 		"title": "Download {FilesName}",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Donate",
 		"microsoft_store": {
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."

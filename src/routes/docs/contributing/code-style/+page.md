@@ -1,5 +1,5 @@
 ---
-title: Code quality standards
+title: Coding styles and conventions
 ---
 
 All code contributed to the repository must follow
@@ -15,58 +15,59 @@ We also prioritize accessibility, to check whether your pull request meets our a
 encouraged to use [Accessibility Insights for Windows](https://accessibilityinsights.io/docs/en/windows/overview/)
 to ensure everyone can take full advantage of Files.
 
-## Code Style
+## Code Style in XAML
+
+To make the codebase consistent and easy to understand, we require you to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022) for styling XAML.
+
+## Code Style in C# and C++
 
 To make the codebase consistent and easy to understand, we require you to follow our predefined code style rules:
 
 ### 1. Naming notation for objects and functions
 
-- Use PascalCase for classes
-- Use PascalCase prefixed with `I` for interfaces
-- Use PascalCase for structs
-- Use PascalCase for functions/methods
-- Use "Base" prefix for base classes
-- Use "Service" suffix for service classes and interfaces
-- Use "Model" suffix for model classes
-- Use "ViewModel" suffix for view model classes
-- Use "Dialog" suffix for dialog controls
-- Use "Control" suffix for user controls
-- Use "Page" suffix for pages
+1. Use PascalCase for classes
+2. Use PascalCase prefixed with `I` for interfaces
+3. Use PascalCase for structs
+4. Use PascalCase for functions/methods
+5. Use "Base" prefix for base classes
+6. Use "Service" suffix for service classes and interfaces
+7. Use "Model" suffix for model classes
+8. Use "ViewModel" suffix for view model classes
+9. Use "Dialog" suffix for dialog controls
+10. Use "Page" suffix for pages
+11. Use "Async" suffix for async methods
 
 ### 2. Naming notation for variables
 
-- Use PascalCase for properties and static fields/properties
-- Use PascalCase prefixed with `_` for properties' backing fields
-- Use camelCase for protected, public fields, protected fields backing properties, and method parameters
-- Use camelCase prefixed with `_` for private fields
-- Use Hungarian Notation only for OS functions/API calls
-- Use UPPER_CASE for constant variables
-- Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
+1. Use PascalCase for properties and static fields/properties
+2. Use PascalCase prefixed with `_` for properties' backing fields
+3. Use camelCase for protected, public fields, protected fields backing properties, and method parameters
+4. Use camelCase prefixed with `_` for private fields
+5. Use Hungarian Notation only for OS functions/API calls
+6. Use UPPER_CASE for constant variables
+7. Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
 
 ### 3. Code readability and clarity
 
-- Do not use curly brackets for single line `if`, `for` and `foreach` statements
-- Do not use `#region` directives
-- Align `while();` on the same line of curly bracket of `do..while`
-- Use the prefixes `Is`, `Has`, `Have`, `Any`, `Can` or similar keywords for boolean names and method names if
-  applicable
-- Do not use `Enum` or `Flag(s)` suffixes/prefixes for Enum names
-- Align curly brackets on new lines
-- Fields, properties, methods and constructors must be separated by one line except for property backing fields that are
-  not separated by any amount of lines
-- Do not manually invoke event handling functions or commands
-- Do not use `public` modifiers in interface's properties and functions
-- Define constant types in `Constants` class following its structure
-- Mark classes as `abstract` or `sealed` if applicable
-- Interfaces must be documented
-- Always create new `EventArgs` classes for event arguments
-- Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
-- Do not use `RelayCommand<Type>`, rather rely on `ICommand`
-- Any class that implements `IDisposable` must also contain a field `private bool _disposed;`
-- You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022)
-  for styling XAML
-- Follow single-responsibility principle in classes, modules, and methods
-- Append `Async` in async methods
+1. Do not use curly brackets for single line `if`, `for` and `foreach` statements
+2. Do not omit curly braces in method returns
+3. Insert a blank line after closing curly bracket.
+4. Do not use `#region` directives
+5. Align `while();` on the same line of curly bracket of `do..while`
+6. Use the prefixes `Is`, `Has`, `Have`, `Any`, `Can` or similar keywords for boolean names and method names if applicable
+7. Do not use `Enum` or `Flag(s)` suffixes/prefixes for Enum names
+8. Align curly brackets on new lines
+9. Fields, properties, methods and constructors must be separated by one line except for property backing fields that are not separated by any amount of lines
+10. Do not manually invoke event handling functions or commands
+11. Do not use `public` modifiers in interface's properties and functions
+12. Define constant types in `Constants` class following its structure
+13. Mark classes as `abstract` or `sealed` if applicable
+14. Interfaces must be documented
+15. Always create new `EventArgs` classes for event arguments
+16. Add letter suffix to number values: `0.1d`, `100000000000L`, `1.1f`
+17. Do not use `RelayCommand<Type>`, rather rely on `ICommand`
+18. Any class that implements `IDisposable` must also contain a field `private bool _disposed;`
+19. Follow single-responsibility principle in classes, modules, and methods
 
 ### 4. Class structure
 
@@ -111,5 +112,5 @@ The following presents how an interface structure should be ordered:
 
 ### 6. Helper classes and extensions
 
-- Helper classes must be either static or fully instanced
-- Extension classes must be static and only contain extension functions related to one type or derivatives
+1. Helper classes must be either static or fully instanced
+2. Extension classes must be static and only contain extension functions related to one type or derivatives

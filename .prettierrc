@@ -1,7 +1,5 @@
 {
 	"useTabs": true,
-	"semi": true,
-	"trailingComma": "none",
 	"arrowParens": "avoid",
-	"endOfLine": "lf"
+	"plugins": ["prettier-plugin-svelte"]
 }

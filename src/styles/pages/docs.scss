@@ -4,6 +4,12 @@
 .docs {
 	display: flex;
 	background-color: var(--fds-solid-background-base);
+
+	.markdown-body {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		max-inline-size: 1000px;
+	}
 }
 
 // Docs page
@@ -23,6 +29,7 @@
 	// absolute positioning on the mobile search UI.
 	&-inner {
 		padding: 44px 56px;
+		view-transition-name: docs-content;
 	}
 
 	// Page header
@@ -43,13 +50,22 @@
 	}
 }
 
-// Docs sidebar
-// Not much to say here
+// keeps the animation the same length as before
+::view-transition-old(docs-content),
+::view-transition-new(docs-content) {
+	animation-duration: 300ms;
+}
+
 .sidebar {
 	@include flex($direction: column);
 	flex: 0 0 auto;
 	inline-size: 316px;
 	padding: 0 4px;
+
+	// this makes the marker of the selected page move around smoothly
+	:global(.tree-view .list-item.selected::before) {
+		view-transition-name: active-sidebar-marker;
+	}
 }
 
 // Sidebar search wrapper
@@ -94,7 +110,8 @@
 		max-block-size: 350px;
 		padding: 2px 0;
 		border: 1px solid var(--fds-surface-stroke-flyout);
-		border-radius: 0 0 var(--fds-overlay-corner-radius) var(--fds-overlay-corner-radius);
+		border-radius: 0 0 var(--fds-overlay-corner-radius)
+			var(--fds-overlay-corner-radius);
 		background-color: var(--fds-solid-background-quarternary);
 		box-shadow: var(--fds-flyout-shadow);
 	}

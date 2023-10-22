@@ -1,8 +1,10 @@
+import type { SvelteComponent } from "svelte";
+import type { SvelteHTMLElements } from "svelte/elements";
 
 export type FeatureCardData = {
 	title: string;
 	description: string;
-	icon: any;
+	icon: typeof SvelteComponent<SvelteHTMLElements["svg"]>;
 };
 
 export type Tag = {
@@ -27,38 +29,38 @@ export const cloudFiles: CloudFileData[] = [
 	{
 		name: "GitHub",
 		icon: "folder",
-		status: "success"
+		status: "success",
 	},
 	{
 		name: "electron-v1.4.13-win32-ia32.zip",
 		icon: "zip",
-		status: "sync"
+		status: "sync",
 	},
 	{
 		name: "start.js",
 		icon: "file",
-		status: "success"
+		status: "success",
 	},
 	{
 		name: "2021-08-05 15.03.05.mp4",
 		icon: "video",
-		status: "success"
+		status: "success",
 	},
 	{
 		name: "christmas-card-2017.png",
 		icon: "picture",
-		status: "success"
+		status: "success",
 	},
 	{
 		name: "install.bat",
 		icon: "exe",
-		status: "success"
+		status: "success",
 	},
 	{
 		name: "dQw4w9WgXcQ.mp3",
 		icon: "music",
-		status: "success"
-	}
+		status: "success",
+	},
 ];
 
 export const previewFiles = [
@@ -68,7 +70,7 @@ export const previewFiles = [
 		items: 16,
 		added: "Wednesday, October 6, 2021 42:69 AM",
 		modified: "Thursday, January 1, 1970 00:00",
-		path: "C:\\Users\\Sara\\Desktop\\Files v3"
+		path: "C:\\Users\\Sara\\Desktop\\Files v3",
 	},
 	{
 		name: "waves",
@@ -77,15 +79,15 @@ export const previewFiles = [
 		bitDepth: 24,
 		dimensions: {
 			horizontal: 1496,
-			vertical: 960
+			vertical: 960,
 		},
 		dpi: {
 			horizontal: 72,
-			vertical: 72
+			vertical: 72,
 		},
 		added: "Sunday, August 1, 2021 12:34 AM",
 		modified: "Monday, August 9, 2021 12:34 AM",
-		path: "C:\\Users\\Sara\\Pictures\\waves.png"
+		path: "C:\\Users\\Sara\\Pictures\\waves.png",
 	},
 	{
 		name: "index",
@@ -93,7 +95,7 @@ export const previewFiles = [
 		icon: "/ui/icons/file.png",
 		added: "Wednesday, July 14, 2021 8:47 PM",
 		modified: "Saturday, July 31, 2021 4:32 AM",
-		path: "C:\\Users\\Sara\\Documents\\index.html"
+		path: "C:\\Users\\Sara\\Documents\\index.html",
 	},
 	{
 		name: "main",
@@ -117,62 +119,62 @@ export const previewFiles = [
 cout <span class="operator">&lt;&lt;</span> <span class="string">"Hello World"</span> <span class="operator">&lt;&lt;</span> endl<span class="punctuation">;</span>
 <span class="keyword">return</span> <span class="number">0</span><span class="punctuation">;</span>
 <span class="punctuation">}</span>`,
-		path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png"
-	}
+		path: "C:\\Users\\Sara\\Documents\\GitHub\\\\waves.png",
+	},
 ];
 
 export const tags: Tag[] = [
 	{
 		name: "Blue",
-		color: "#0072bd"
+		color: "#0072bd",
 	},
 	{
 		name: "Yellow",
-		color: "#edb120"
+		color: "#edb120",
 	},
 	{
 		name: "Green",
-		color: "#77ac30"
+		color: "#77ac30",
 	},
 	{
 		name: "Gray",
-		color: "#9ea3a1"
+		color: "#9ea3a1",
 	},
 	{
 		name: "Orange",
-		color: "#d95319"
-	}
+		color: "#d95319",
+	},
 ];
 
 export const taggedFiles: TaggedFileData[] = [
 	{
 		name: "Super Secret Plans - Do Not Publish.docx",
 		icon: "file",
-		tag: "Yellow"
+		tag: "Yellow",
 	},
 	{
 		name: "Presentation - Project Sledgehammer.pptx",
 		icon: "file",
-		tag: "Green"
+		tag: "Green",
 	},
 	{
 		name: "Files (MacOS)",
 		icon: "folder",
-		tag: "Gray"
+		tag: "Gray",
 	},
 	{
 		name: "Estimate_261_2022-01-31.pdf",
 		icon: "file",
-		tag: "Blue"
+		tag: "Blue",
 	},
 	{
 		name: "Files (Linux)",
 		icon: "folder",
-		tag: "Gray"
+		tag: "Gray",
 	},
 	{
 		name: "Files v4.0",
 		icon: "folder",
-		tag: "Orange"
-	}
+		tag: "Orange",
+	},
 ];

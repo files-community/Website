@@ -5,7 +5,7 @@
 
 	const draggableOptions: DragOptions = {
 		bounds: "parent",
-		handle: ".titlebar"
+		handle: ".titlebar",
 	};
 </script>
 

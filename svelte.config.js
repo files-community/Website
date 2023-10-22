@@ -1,10 +1,11 @@
-import adapter from "@sveltejs/adapter-vercel";
+import adapter from "@sveltejs/adapter-cloudflare";
 import sveltePreprocess from "svelte-preprocess";
 import { mdsvex } from "mdsvex";
 import remarkGfm from "remark-gfm";
 import remarkA11yEmoji from "@fec/remark-a11y-emoji";
 import remarkSlug from "remark-slug";
 import remarkGithub from "remark-github";
+import rehypeColorPreview from "rehype-color-preview";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
 import mediaMinMax from "postcss-media-minmax";
@@ -16,26 +17,27 @@ const config = {
 		alias: {
 			$data: "src/data",
 			$layout: "src/layout",
-			$i18n: "src/i18n"
+			$i18n: "src/i18n",
 		},
-		adapter: adapter({ edge: true })
+		adapter: adapter(),
 	},
 	preprocess: [
 		mdsvex({
 			extensions: [".md"],
 
 			smartypants: {
-				dashes: "oldschool"
+				dashes: "oldschool",
 			},
 
-			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub]
+			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
+			rehypePlugins: [rehypeColorPreview],
 		}),
 		sveltePreprocess({
 			postcss: {
-				plugins: [autoprefixer(), cssnano(), mediaMinMax()]
-			}
-		})
-	]
+				plugins: [autoprefixer(), cssnano(), mediaMinMax()],
+			},
+		}),
+	],
 };
 
 // shut up webstorm

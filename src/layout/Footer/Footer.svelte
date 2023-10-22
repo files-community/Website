@@ -9,26 +9,26 @@
 	const contributors = [
 		{
 			name: "Tropical",
-			link: "https://github.com/Tropix126/"
+			link: "https://github.com/Tropix126/",
 		},
 		{
 			name: "TheOnlyTails",
-			link: "https://www.theonlytails.com/"
+			link: "https://www.theonlytails.com/",
 		},
 		{
 			name: "Marcel Wagner",
-			link: "https://github.com/chingucoding/"
+			link: "https://github.com/chingucoding/",
 		},
 		{
 			name: "Michael West",
-			link: "https://michaelwe.st/"
-		}
+			link: "https://michaelwe.st/",
+		},
 	];
 </script>
 
 <PageSection type="footer" id="page-footer">
 	<div class="column">
-		<a class="logo" href="/" data-sveltekit-preload-data="hover">
+		<a class="logo" href="/">
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
@@ -66,39 +66,23 @@
 			</IconButton>
 		</div>
 		<p>
-			{$_("footer.copyright", { values: { year: new Date().getFullYear(), FilesName: "Files" } })}
+			{$_("footer.copyright", {
+				values: { year: new Date().getFullYear(), FilesName: "Files" },
+			})}
 		</p>
-		<a
-			href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss"
-			{...externalLink}
-		>
-			<img src="/branding/vercel-banner.svg" alt="Powered by Vercel" />
-		</a>
 	</div>
 	<div class="column">
 		<p>Pages</p>
-		<Button variant="hyperlink" data-sveltekit-preload-data="hover" href="/">
+		<Button variant="hyperlink" href="/">
 			{$_("footer.home", defaultI18nValues)}
 		</Button>
-		<Button
-			variant="hyperlink"
-			data-sveltekit-preload-data="hover"
-			href="/docs"
-		>
+		<Button variant="hyperlink" href="/docs">
 			{$_("footer.docs", defaultI18nValues)}
 		</Button>
-		<Button
-			variant="hyperlink"
-			data-sveltekit-preload-data="hover"
-			href="/blog"
-		>
+		<Button variant="hyperlink" href="/blog">
 			{$_("footer.news", defaultI18nValues)}
 		</Button>
-		<Button
-			variant="hyperlink"
-			data-sveltekit-preload-data="hover"
-			href="/download"
-		>
+		<Button variant="hyperlink" href="/download">
 			{$_("footer.download", defaultI18nValues)}
 		</Button>
 	</div>

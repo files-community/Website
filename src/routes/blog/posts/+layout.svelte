@@ -1,17 +1,27 @@
 <script lang="ts">
-	import { externalLink, Metadata } from "$lib";
-	import Share from "@fluentui/svg-icons/icons/share_24_regular.svg?raw";
-	import ArrowLeft from "@fluentui/svg-icons/icons/arrow_left_24_regular.svg?raw";
+	import { defaultI18nValues, externalLink, Metadata } from "$lib";
+	import { _ } from "svelte-i18n";
+	import Share from "~icons/fluent/share-24-regular";
+	import ArrowLeft from "~icons/fluent/arrow-left-24-regular";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { page } from "$app/stores";
 	import type { LayoutData } from "./$types";
 
 	export let data: LayoutData;
 
-	$: ({ title, thumbnail, author, date } = data);
+	$: ({ title, thumbnail, author, description, date, slug } = data);
+	$: pageTitle = title;
 </script>
 
-<Metadata title="Files • {title}" image={thumbnail} />
+<Metadata
+	title={pageTitle
+		? $_("metadata.blog_page", {
+				values: { title: pageTitle, ...defaultI18nValues.values },
+		  })
+		: $_("metadata.blog_home", defaultI18nValues)}
+	image={thumbnail}
+	{description}
+/>
 
 <section class="blog-post">
 	<article>
@@ -23,9 +33,9 @@
 				href="/blog"
 				title="Back to Blog"
 			>
-				{@html ArrowLeft}
+				<ArrowLeft />
 			</IconButton>
-			<h1>{title}</h1>
+			<h1 style:view-transition-name="post-title-{slug}">{title}</h1>
 		</div>
 		<div class="post-info">
 			<img alt="{author} avatar" src="https://github.com/{author}.png" />
@@ -38,8 +48,8 @@
 				{
 					year: "numeric",
 					day: "numeric",
-					month: "short"
-				}
+					month: "short",
+				},
 			)}
 			<MenuFlyout placement="bottom">
 				<IconButton
@@ -48,42 +58,58 @@
 					class="share-button"
 					title="Share"
 				>
-					{@html Share}
+					<Share />
 				</IconButton>
 				<svelte:fragment slot="flyout">
 					<MenuFlyoutItem
+						on:click={() =>
+							navigator.share({
+								title,
+								url: $page.url.href,
+							})}
+					>
+						{$_("blog.share.default", defaultI18nValues)}
+					</MenuFlyoutItem>
+					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>
-						Copy URL
+						{$_("blog.share.url", defaultI18nValues)}
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
 						<a
 							href="https://twitter.com/intent/tweet?text={encodeURIComponent(
-								$page.url.href
+								$page.url.href,
 							)}"
 							{...externalLink}
 						>
-							Twitter
+							{$_("blog.share.tweet", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
 						<a
 							href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(
-								$page.url.href
+								$page.url.href,
 							)}"
 							{...externalLink}
 						>
-							Facebook
+							{$_("blog.share.facebook", defaultI18nValues)}
 						</a>
 					</MenuFlyoutItem>
 					<MenuFlyoutItem>
-						<a href="/blog/feed.rss" {...externalLink}>RSS Feed</a>
+						<a href="/blog/feed.rss" {...externalLink}
+							>{$_("blog.share.rss", defaultI18nValues)}</a
+						>
 					</MenuFlyoutItem>
 				</svelte:fragment>
 			</MenuFlyout>
 		</div>
 		{#if thumbnail}
-			<img class="post-thumbnail" src={thumbnail} alt="Thumbnail" />
+			<img
+				class="post-thumbnail"
+				src={thumbnail}
+				alt="Thumbnail"
+				style:view-transition-name="post-thumbnail-{slug}"
+			/>
 		{/if}
 		<div class="markdown-body">
 			<slot />

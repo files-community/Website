@@ -8,6 +8,6 @@ export const load: LayoutServerLoad = async ({ url, route }) => {
 			p => p.path === route.id.substring(route.id.indexOf("/", 2))
 		) ?? { title: "Overview", path: "" },
 		docs: docsTree,
-		docsPages: docsPages
+		docsPages: docsPages,
 	};
 };

@@ -1,114 +1,147 @@
 {
 	"metadata": {
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
-		"description": "Building the best file manager for Windows."
+		"name": "{Fayllar atı}",
+		"home": "{FilesName} • Bas bet",
+		"docs_home": "{FilesName} • Hújjetshilik",
+		"docs_page": "{FilesName} • Hújjetshilik - {title}",
+		"blog_home": "{FilesName}• Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Windows ushın eń jaqsı fayl basqarıwshısın jaratıń."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Birlespe",
+			"title": "Siz tárepten islep shıǵılǵan hám islep shıǵılǵan.",
+			"description": "{FilesName} bul júzlegen qatnasıwshılar jámááti tárepinen basqarılatuǵın biypul Ashıq kodlı programmalıq támiynat.",
+			"discord": "Dodalawǵa qosılıw",
+			"docs": "Aǵza bolıw",
+			"contributions": "{amount, plural,=0 {Úlessiz}one {# Úles} other {# Úlesler}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Júklew",
+			"chip": "Dizayn",
+			"title": "Kúsh gózzallıq penen ushrasadı",
+			"description": "Windows ushın shıraylı dizaynı ushın jańalıq ashıń. Joqarı ónimdarlıq menen barlıq fayllarıńızdı basqarıń. Jarlıqlar járdeminde bir neshe papkalar menen islew.h.t.b",
+			"download": "Júklep alıw",
 			"learn_more": "Tolıǵıraq úyreniw"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Funciyalar",
+			"title": "Bul álleqashan islendi.",
+			"description": "Bultlı fayllar integraciyası? Jarlıqlar hám bir neshe tártipler? Bay fayllardı aldınan kóriwme?{FilesName} zamanagóy fayl basqarıwshısınan kútken kúshli ayrıqshalıqlar menen qamtıp alınǵan.",
+			"unknown": "Belgisiz",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Integration with cloud services such as OneDrive, Google Drive, and iCloud allow you to manage your documents and photos in the cloud, right from the sidebar."
+				"title": "Bultlı xızmetler menen tolıq integraciya",
+				"description": "OneDrive, Google Drive hám iCloud sıyaqlı bultlı drayerler ushın ornatılǵan qollap-quwatlaw."
 			},
 			"preview": {
-				"title": "File preview",
-				"description": "Preview documents, photos, and more without opening them. Support for rich previews, syntax highlighting, markdown and video playback is all built in."
+				"title": "Kórip shıǵıw paneli",
+				"description": "Súwretler, videolar hám hújjetlerdi ashpastan aldınan kóriń. Ayırım fayl formatları házirde qollap -quwatlamaytuǵının unutpań."
+			},
+			"popup-preview": {
+				"title": "QuickLook hám SeerPro-nı qollap-quwatlaw",
+				"description": "Bos jay túymesin basıw arqalı Office faylları, hújjetleri hám basqa fayl túrlerin kóriń. Bul ózgeshelik QuickLook yamasa SeerPro-ni ornatıwdı talap etedi."
 			},
 			"tags": {
-				"title": "Tagged Files & Folders",
-				"description": "Quickly mark and organize your files and folders for later by assigning them colored and named tags for easy identification. You can even add your own custom tags!"
+				"title": "Fayl hám papkalarıdı gruppalaw",
+				"description": "Fayl hám papkalarııńızdı reń menen kodlanǵan tegler menen tártipke salıń hám tártipleń."
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free. {FilesName} features a browser-like tabbing interface complete with keyboard shortcuts."
+				"title": "Jarlıqlar menen kóp wazıypa",
+				"description": "Kóp kereksiz áyneklerden saqlanıń hám jumıs stolıńıdı jarlıqlar menen tártipke salıń."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through columns to access different levels of the file system."
+				"title": "Qatar kórinisi",
+				"description": "Ústin rejiminen paydalanıp, fayl sistemasınıń túrli dárejeleri boylap tez háreketleniń."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Manage zipped archives including zip, WinRar, 7zip and more. Drag & drop to add to existing archives, and use the create archive option to create encrypted archives."
+				"title": "Arxivlerdi kóriń hám ózgertiń",
+				"description": "Arxivlardı, sonday-aq zipti jaratıń hám shıǵarıp alın, WinRar, hám 7zip."
+			},
+			"git": {
+				"title": "Git integraciyası",
+				"description": "Git joybarlarıńızdı ańsatlıq penen basqarıń. Jańa filiallar ashıń, olar ortasında almasıń hám ózgerislerdi sinxronlastırıń - barlıǵı Fayllardan shıqpastan."
+			},
+			"dual-pane": {
+				"title": "Eki panelli rejim",
+				"description": "Dual Pane funksiyası menen eki betti kóriń hám basqarıń."
+			},
+			"hashes": {
+				"title": "Keshler",
+				"description": "Ayrıqshalıqlar aynasınan fayl keshlardi kóriń hám salıstırıń."
+			},
+			"command-palette": {
+				"title": "Buyrıqlar palitrası",
+				"description": "Buyrıqlar palitrasınan buyrıqlar, funksiyalar hám sazlawlarǵa tez kiriń."
 			}
 		},
 		"themes": {
 			"chip": "Temalar",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"title": "Jeke.",
+			"description": "Siz aytqan sıyaqlı boladı. {FilesName} reń hám materiallarǵa shekem tolıq maslastırılǵan paydalanıwshı interfeysine iye. {FilesName} ishine ornatılǵan arnawlı temalardı sınap kóriń yamasa tuwrıdan-tuwrı hújjetlerge kirip, ózińizdikini jaratıń.",
+			"grey_blue": "Qara • Ashıq kók",
+			"grey_green": "Ashıq kók • Ashıq jasıl",
+			"purple": "Qızǵılt kók",
+			"yellow_white": "Sarı • Aq",
+			"white_teal": "Suwıq aq • Qoyıw piruza",
+			"sky_blue": "Aqshıl kók",
+			"select_theme": "#{index} temasın tańlaw"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More"
+		"coming_soon": "Kóbirek jańalıqlar jaqın arada!",
+		"read_more": "Dawamın oqıw",
+		"share": {
+			"default": "Jergilikli jalǵawıshı",
+			"url": "Siltemeni nusqalaw",
+			"tweet": "Twitter",
+			"facebook": "Facebook",
+			"rss": "RSS lentası"
+		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nátiyjeler tabılmadı",
 		"edit_page": "Bul betke ózgeris kirgiziw"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
+		"copyright": "Barlıq huqıqlar qorǵalǵan © 2021 - {year}, {FilesName} Avtorları",
 		"home": "Bas bet",
-		"docs": "Docs",
+		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
+		"download": "Júklep alıw",
+		"contribute": "{FilesName} rawajlanıwına úles qosıw",
+		"feedback": "Qayta baylanıs",
+		"style_guide": "Kod jazıw boyınsha qollanba",
+		"translations": "Awdarmalar",
 		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
-		"github": "Github Repo",
+		"github": "Githubdaǵı baza",
 		"report_bug": "Qátelik tawdıńızba?",
 		"web_team": "Topar"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
+		"ukraine": "Ukraina qollap - quwatladı",
 		"home": "Bas bet",
-		"docs": "Documentation",
+		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
+		"download": "Júklep alıw",
 		"themes": "Temalar",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "Please consider donating to support our work on {FilesName}",
-		"donation_button": "Donate",
+		"title": "{FilesName}dı júklep alıw",
+		"donation_description": "{FilesName} - bul jámiyetshilik tárepinen basqarılatuǵın joybar bolıp, ósiw hám jetilistiriwde sizdiń járdemińizge mútáj. Eger klassik ornatıshıdan paydalansańız, Microsoft dúkanınan {FilesName} satıp alınǵan zat alıń yamasa GitHub arqalı bizge járdem beriń.",
+		"donation_button": "Qollap-quwatlaw",
 		"microsoft_store": {
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"title": "Júklenbekte",
+			"description": "Microsoft dúkanı arqalı {FilesName} satıp alıw islep shıǵıwshılardı qollap - quwatlawǵa járdem beredi hám qosımshanı jańa ózgeshelikler hám jaqsılanıwlar menen jańalawdı dawam ettiriw imkaniyatın beredi."
 		},
 		"preview": {
-			"title": "Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"title": "Insider Preview",
+			"description": "Aldınan kóriw versiyası turaqlı versiya menen birge ornatılıwı múmkin hám jańa  jańalıqlar hám jaqsılanıwlarǵa erte kiriń imkaniyatın beredi."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "klassikalıq ornatıwshı",
+			"description": "Microsoft Storeǵa kiriw múmkinshiligi joq pa? Sınap kórıń: "
 		}
 	}
 }

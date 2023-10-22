@@ -9,13 +9,15 @@
 
 	import "fluent-svelte/theme.css";
 
-	import Chat from "@fluentui/svg-icons/icons/chat_24_regular.svg?raw";
-	import Code from "@fluentui/svg-icons/icons/code_24_regular.svg?raw";
-	import Home from "@fluentui/svg-icons/icons/home_24_regular.svg?raw";
-	import Book from "@fluentui/svg-icons/icons/book_24_regular.svg?raw";
-	import News from "@fluentui/svg-icons/icons/news_24_regular.svg?raw";
-	import Download from "@fluentui/svg-icons/icons/arrow_download_24_regular.svg?raw";
-	// import PaintBrush from "@fluentui/svg-icons/icons/paint_brush_24_regular.svg?raw";
+	import Chat from "~icons/fluent/chat-24-regular";
+	import Code from "~icons/fluent/code-24-regular";
+	import Home from "~icons/fluent/home-24-regular";
+	import Book from "~icons/fluent/book-24-regular";
+	import News from "~icons/fluent/news-24-regular";
+	import Download from "~icons/fluent/arrow-download-24-regular";
+	import { afterNavigate, onNavigate } from "$app/navigation";
+	import { onMount } from "svelte";
+	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 
 	const { github, discord } = links;
 
@@ -23,38 +25,49 @@
 		{
 			name: $_("navbar.home", defaultI18nValues),
 			path: "/",
-			icon: Home
+			icon: Home,
 		},
 		{
 			name: $_("navbar.docs", defaultI18nValues),
 			path: "/docs",
 			sidebarTree: $page.data.docs ?? [],
-			icon: Book
+			icon: Book,
 		},
 		{
 			name: $_("navbar.news", defaultI18nValues),
 			path: "/blog",
-			icon: News
+			icon: News,
 		},
 		{
 			name: $_("navbar.download"),
 			path: "/download",
-			icon: Download
-		}
+			icon: Download,
+		},
 	];
 
 	const navbarButtons = [
 		{
 			label: $_("navbar.discord", defaultI18nValues),
 			href: `https://discord.gg/${discord}`,
-			icon: Chat
+			icon: Chat,
 		},
 		{
 			label: $_("navbar.github", defaultI18nValues),
 			href: `https://github.com/${github.owner}/${github.repo}`,
-			icon: Code
-		}
+			icon: Code,
+		},
 	];
+
+	onNavigate(async navigation => {
+		if (!document.startViewTransition) return;
+
+		return new Promise(resolve => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <svelte:head>
@@ -77,9 +90,6 @@
 		media="(prefers-color-scheme: dark)"
 	/>
 
-	<meta content={$_("metadata.description", defaultI18nValues)} name="description" />
-	<meta content={$_("metadata.description", defaultI18nValues)} name="og:description" />
-	<meta content={$_("metadata.description", defaultI18nValues)} name="twitter:description" />
 	<meta
 		content="Files, File Explorer, Fluent Design, Microsoft, Windows, UWP"
 		name="keywords"

@@ -4,7 +4,7 @@
 	import { circOut } from "svelte/easing";
 
 	import { page } from "$app/stores";
-	import ChevronDown from "@fluentui/svg-icons/icons/chevron_down_16_regular.svg?raw";
+	import ChevronDown from "~icons/fluent/chevron-down-16-regular";
 
 	import { ListItem } from "fluent-svelte";
 	import { getCSSDuration } from "fluent-svelte/internal";
@@ -36,27 +36,26 @@
 <div class="tree-view scroller" class:initial>
 	{#each tree as tree}
 		{@const { title, path, icon } = tree}
-		{#if tree?.pages}
+		{#if "pages" in tree}
 			{@const pages = tree.pages}
 			<div class="subtree" class:expanded={!treeViewState?.[title]}>
 				<ListItem on:click={e => toggleExpansion(e, title)}>
 					<svelte:fragment slot="icon">
-						{@html icon || ""}
+						{#if icon}
+							<svelte:component this={icon} />
+						{/if}
 					</svelte:fragment>
 					<span class="tree-view-item">{title}</span>
-					<div
-						class="expander-icon"
-						class:expanded={!treeViewState?.[title]}
-					>
-						{@html ChevronDown}
+					<div class="expander-icon" class:expanded={!treeViewState?.[title]}>
+						<ChevronDown />
 					</div>
 				</ListItem>
 				{#if !treeViewState?.[title]}
 					<div
 						class="subtree-items"
-						transition:slide|local={{
+						transition:slide={{
 							duration: getCSSDuration("--fds-control-fast-duration"),
-							easing: circOut
+							easing: circOut,
 						}}
 						class:expanded={!treeViewState?.[title]}
 					>
@@ -71,7 +70,9 @@
 				href="/docs{path}"
 			>
 				<svelte:fragment slot="icon">
-					{@html icon || ""}
+					{#if icon}
+						<svelte:component this={icon} />
+					{/if}
 				</svelte:fragment>
 				{title}
 			</ListItem>

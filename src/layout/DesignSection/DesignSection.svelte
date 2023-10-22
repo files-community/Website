@@ -2,13 +2,10 @@
 	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
-	let scrollY: number;
+	let scrollPositionY: number;
 </script>
 
-<svelte:window
-	on:scroll={() =>
-		window.requestAnimationFrame(() => (scrollY = window.scrollY))}
-/>
+<svelte:body on:scroll={() => (scrollPositionY = document.body.scrollTop)} />
 
 <PageSection id="design-section">
 	<HeaderChip>{$_("home.design.chip", defaultI18nValues)}</HeaderChip>
@@ -37,7 +34,7 @@
 				class="files-screenshot"
 				height="768"
 				src="/screenshots/folder-list-light.png"
-				style:transform="translateY({Math.floor(scrollY / +20)}px)"
+				style:transform="translateY({Math.floor(scrollPositionY / +20)}px)"
 				width="1024"
 			/>
 		</picture>

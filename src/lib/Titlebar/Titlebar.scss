@@ -45,7 +45,7 @@
 			}
 		}
 
-		svg {
+		:global(.fluent-icon) {
 			@include icon($size: 10px);
 		}
 	}

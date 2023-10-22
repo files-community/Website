@@ -1,39 +1,60 @@
 ---
-title: Custom themes in Files
+title: Appearance and customization
 ---
 
-Files comes with a large collection of custom background colors but additional customization is available for advanced users.
+Files has a number of options for customizing the theme.
 
-## Advanced themeing
-To access theme values that are not exposed in the settings modal
-1. Open Files settings > Advanced > Edit settings file. This will open the main settings file in your default text editor.
-2. Close the app before making any changes to the settings file.
+## Backdrop Material
 
-### Available resources for themeing
+The backdrop is set to Mica Alt by default, but it can be changed to Acrylic from Settings > Appearance > Backdrop Material.
 
-| Key                                   | Default value                 |
-| ------------------------------------- | ----------------------------- |
-| `AppThemeBackgroundColor`             | `#00000000`                   |
-| `AppThemeAddressBarBackgroundColor`   | `#00000000`                   |
-| `AppThemeSidebarBackgroundColor`      | `#00000000`                   |
-| `AppThemeFileAreaBackgroundColor`     | `#00000000`                   |
-| `AppThemeFontFamily`                  | `Segoe UI Variable`           |
+## Custom Fonts
 
+Files has built-in support for custom fonts, to apply a custom font start by opening the settings file from Settings > Advanced > Edit settings file.
 
-## Sample themes
+1. Close the Files app before continuing.
+2. Edit the value for `AppThemeFontFamily`
 
-### Glass (requires Windows 11)
-| Key                                   | Value                         |
-| ------------------------------------- | ------------------------------|
-| `AppThemeBackgroundColor`             | `#00000000`                   |
-| `AppThemeAddressBarBackgroundColor`   | `#00000001`                   |
-| `AppThemeSidebarBackgroundColor`      | `#00000001`                   |
-| `AppThemeFileAreaBackgroundColor`     | `#00000001`                   |
+## Advanced themes
 
-### Finder
-| Key                                   | Value                         |
-| ------------------------------------- | ------------------------------|
-| `AppThemeBackgroundColor`             | `#221d28`                     |
-| `AppThemeAddressBarBackgroundColor`   | `#38343c`                     |
-| `AppThemeSidebarBackgroundColor`      | `#464449`                     |
-| `AppThemeFileAreaBackgroundColor`     | `#221d28`                     |
+1. Open the settings file from Settings > Advanced > Edit settings file.
+2. Close the Files app before continuing.
+3. Edit these values as desired
+
+| Key                                 | Default value |
+| ----------------------------------- | ------------- |
+| `AppThemeBackgroundColor`           | `#00000000`   |
+| `AppThemeAddressBarBackgroundColor` | `#00000000`   |
+| `AppThemeSidebarBackgroundColor`    | `#00000000`   |
+| `AppThemeFileAreaBackgroundColor`   | `#00000000`   |
+
+### Popular themes
+
+We put together some popular color combinations to help users create custom themes.
+
+#### **Glass (requires Windows 11)**
+
+| Key                                 | Value       |
+| ----------------------------------- | ----------- |
+| `AppThemeBackgroundColor`           | `#00000000` |
+| `AppThemeAddressBarBackgroundColor` | `#00000001` |
+| `AppThemeSidebarBackgroundColor`    | `#00000001` |
+| `AppThemeFileAreaBackgroundColor`   | `#00000001` |
+
+#### **Finder**
+
+| Key                                 | Value     |
+| ----------------------------------- | --------- |
+| `AppThemeBackgroundColor`           | `#221d28` |
+| `AppThemeAddressBarBackgroundColor` | `#38343c` |
+| `AppThemeSidebarBackgroundColor`    | `#464449` |
+| `AppThemeFileAreaBackgroundColor`   | `#221d28` |
+
+#### **Nord**
+
+| Key                                 | Value       |
+| ----------------------------------- | ----------- |
+| `AppThemeBackgroundColor`           | `#FF1B1F26` |
+| `AppThemeAddressBarBackgroundColor` | `#2E3440`   |
+| `AppThemeSidebarBackgroundColor`    | `#2E3440`   |
+| `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |

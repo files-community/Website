@@ -1,9 +1,9 @@
 ---
-title: Use tags to organize files on Windows
+title: Organize files and folders with tags
 ---
 
 Tags are a way to organize your files and folders. You can assign one or more tags to any file or folder, and then use the tags to filter and sort your files. You can also use tags to search for your files.
-	
+
 ## How to assign tags
 
 To assign a tag to a file or folder, follow these steps:
@@ -47,7 +47,6 @@ You can create and edit tags from the advanced page in the settings. To do that,
 
 Note that deleting a tag will not delete the files or folders with that tag but it will remove the tag from those items.
 
-
 ## Tags widget
 
 The Tags widget on the home page helps you organize and access your tagged files and folders. This widget shows you all the tags you have created and the files and folders that have those tags. To enable or disable the Tags widget, go to the preferences page in settings, and toggle the switch under the widgets section.
@@ -55,5 +54,6 @@ The Tags widget on the home page helps you organize and access your tagged files
 ## How do tags work behind the scenes?
 
 Instead of creating a database with a list of files and tags, we store the tag information in the file itself using alternate data streams. This allows:
+
 - Users to move files around without losing their tags.
 - It decouples the tags feature from Files and allows other apps using the same system to support this feature.

@@ -20,13 +20,11 @@
     </a>
 </p>
 
-<p align="center"><a href="https://vercel.com/?utm_source=FilesCommunity&utm_campaign=oss">Powered by Vercel ▲</a></p>
-
 ---
 
 # Overview
 
-This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with Vercel.
+This repository contains the source code for the new [Files website](https://files.community). The site is written using [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.org/) and [SCSS](https://sass-lang.com), and deployed with Cloudflare.
 
 ## Codebase Structure
 
@@ -54,15 +52,16 @@ This repository contains the source code for the new [Files website](https://fil
 # Development
 
 ## GitHub Codespaces
+
 You can develop this project using GitHub Codespaces.
-For this, click on the "Code" button on the main GitHub page of this repository. 
+For this, click on the "Code" button on the main GitHub page of this repository.
 
 Then click on "Codespaces" and then on "Create codespace on main".
 
 After the Codespace has initialized, you can run `pnpm dev` and are ready to go!
 
-
 ## Local development
+
 ### Prerequisites
 
 - [Git](https://git-scm.com)
@@ -106,9 +105,11 @@ This project uses [prettier](https://prettier.io) and [eslint](https://eslint.or
 pnpm run lint
 ```
 
+Additionally, we use [lint-staged](https://github.com/okonet/lint-staged) to automatically format all changed files before committing them, ensuring that all code is formatted consistently.
+
 ### Compiling & Distribution
 
-We currently use [SvelteKit's vercel adapter](https://www.npmjs.com/package/@sveltejs/adapter-vercel) module, which allows us to deploy to vercel. To simply build a production bundle, use the following script:
+We currently use [SvelteKit's cloudflare adapter](https://www.npmjs.com/package/@sveltejs/adapter-cloudflare) module, which allows us to deploy to cloudflare. To simply build a production bundle, use the following script:
 
 ```ps
 pnpm run build
@@ -141,13 +142,13 @@ Categories can contain page folders (with a `+page.md` file in them), or other c
 ## Using the Blog
 
 Similarly to docs pages, the blog also uses [mdsvex](https://mdsvex.pngwn.io/) for it's markdown. Blog posts are located
-at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) in `*.md` files.
+at [`src/routes/blog/posts`](https://github.com/files-community/Website/tree/main/src/routes/blog/posts) in `*.md` files.
 Unlike the docs, a mapping of blog posts doesn't need to be kept.
 
 ### Publishing a Post
 
 To publish a post, create a new folder in
-the [`posts`](https://github.com/files-community/Website/tree/main/src/blog/posts) folder, and in it place a file
+the [`posts`](https://github.com/files-community/Website/tree/main/src/routes/blog/posts) folder, and in it place a file
 named `+page.md`. It will contain your post's content.
 
 At the top of the file, you'll need to include a few required things before typing the post.

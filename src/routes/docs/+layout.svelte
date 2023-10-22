@@ -26,7 +26,7 @@
 		page.title
 			.toLowerCase()
 			.replace(/ /gi, "")
-			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, ""))
+			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, "")),
 	);
 
 	// Determines if the auto-suggest flyout should be shown
@@ -45,7 +45,7 @@
 				$page.url.pathname !== `/docs${searchResults[selection].path}`
 			)
 				goto(`/docs${searchResults[selection].path}`, {
-					keepFocus: true
+					keepFocus: true,
 				});
 		} else if (key === "ArrowDown") {
 			selection++;
@@ -68,14 +68,16 @@
 		return {
 			destroy() {
 				document.removeEventListener("click", handleClick);
-			}
+			},
 		};
 	};
 </script>
 
 <Metadata
 	title={pageTitle
-		? $_("metadata.docs_page", { values: { title: pageTitle, FilesName: "Files" } })
+		? $_("metadata.docs_page", {
+				values: { title: pageTitle, FilesName: "Files" },
+		  })
 		: $_("metadata.docs_home", defaultI18nValues)}
 	image="docs"
 />
@@ -100,7 +102,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepFocus: true
+								keepFocus: true,
 							});
 					}}
 					placeholder="Search Documentation"
@@ -115,7 +117,9 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
+							<ListItem
+								>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem
+							>
 						{/if}
 					</div>
 				{/if}
@@ -143,7 +147,7 @@
 							$page.url.pathname !== `/docs${searchResults[selection].path}`
 						)
 							goto(`/docs${searchResults[selection].path}`, {
-								keepFocus: true
+								keepFocus: true,
 							});
 					}}
 					placeholder="Search Documentation"
@@ -158,38 +162,34 @@
 								</ListItem>
 							{/each}
 						{:else}
-							<ListItem>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem>
+							<ListItem
+								>{$_("docs.autocomplete_empty", defaultI18nValues)}</ListItem
+							>
 						{/if}
 					</div>
 				{/if}
 			</div>
 		</div>
-		{#key pagePath}
-			<div
-				class="page-inner markdown-body"
-				in:fly|local={{ y: 6, duration: 300, delay: 300 }}
-				out:fly|local={{ y: 6, duration: 300 }}
-			>
-				<header>
-					<span>
-						{$page.url.pathname.split("/").join(" / ").substring(2)}
-						{$page.url.pathname === "/docs" ? " / overview" : ""}
-					</span>
-					<div class="header-right">
-						<Button
-							variant="hyperlink"
-							href="https://github.com/{links.github.owner}/{links.github
-								.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
-							{...externalLink}
-						>
-							{$_("docs.edit_page", defaultI18nValues)}
-						</Button>
-					</div>
-				</header>
-				<h1>{pageTitle}</h1>
-				<slot />
-			</div>
-		{/key}
+		<div class="page-inner markdown-body">
+			<header>
+				<span>
+					{$page.url.pathname.split("/").join(" / ").substring(2)}
+					{$page.url.pathname === "/docs" ? " / overview" : ""}
+				</span>
+				<div class="header-right">
+					<Button
+						variant="hyperlink"
+						href="https://github.com/{links.github.owner}/{links.github
+							.siteRepo}/edit/main/src/routes/docs{currentPage.path}/+page.md"
+						{...externalLink}
+					>
+						{$_("docs.edit_page", defaultI18nValues)}
+					</Button>
+				</div>
+			</header>
+			<h1>{pageTitle}</h1>
+			<slot />
+		</div>
 	</article>
 </section>
 

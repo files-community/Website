@@ -17,6 +17,7 @@
 	background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
 	backdrop-filter: blur(20px) saturate(150%);
 	user-select: none;
+	view-transition-name: navbar;
 }
 
 .item {
@@ -25,10 +26,12 @@
 	padding: 5px 11px 6px 11px;
 	border-radius: var(--fds-control-corner-radius);
 	color: var(--fds-text-secondary);
+
 	font: {
 		size: 1.36rem;
 		weight: normal;
 	}
+
 	text-decoration: none;
 	transition: var(--fds-control-faster-duration) linear background-color;
 
@@ -45,7 +48,7 @@
 		background-color: var(--fds-subtle-fill-tertiary);
 	}
 
-	:global(svg) {
+	:global(.fluent-icon) {
 		@include icon($size: 16px);
 		margin-inline-end: 4px;
 	}
@@ -61,10 +64,12 @@
 	@include flex($align: center);
 	margin-inline-end: 8px;
 	color: var(--fds-text-primary);
+
 	font: {
 		size: 2rem;
 		weight: 600;
 	}
+
 	text-decoration: none;
 	transition: 100ms ease;
 
@@ -115,7 +120,7 @@
 		background-color: var(--fds-subtle-fill-tertiary);
 	}
 
-	:global(svg) {
+	:global(.fluent-icon) {
 		transition: 130ms cubic-bezier(0.16, 0.16, 0, 1) transform;
 		@include icon($size: 18px);
 	}
@@ -125,11 +130,11 @@
 	.navbar .button.sidebar-button {
 		inline-size: 38px;
 
-		&:active svg {
+		&:active .fluent-icon {
 			transform: scaleX(0.65);
 		}
 
-		svg {
+		.fluent-icon {
 			inline-size: 16px;
 		}
 	}

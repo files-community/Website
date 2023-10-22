@@ -9,9 +9,8 @@ export const load: LayoutLoad = () => {
 
 	return {
 		docs: docsTree,
-		docsPages: docsPages
-	}
+		docsPages: docsPages,
+	};
 };
 
-export const prerender = true;
-
+export const prerender = false;
