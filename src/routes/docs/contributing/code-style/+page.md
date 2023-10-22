@@ -66,6 +66,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 - You are obliged to use [XAML Styler](https://marketplace.visualstudio.com/items?itemName=TeamXavalon.XAMLStyler2022)
   for styling XAML
 - Follow single-responsibility principle in classes, modules, and methods
+- Append `Async` in async methods
 
 ### 4. Class structure
 
