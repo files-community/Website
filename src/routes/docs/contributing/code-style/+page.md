@@ -35,6 +35,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 8. Use "ViewModel" suffix for view model classes
 9. Use "Dialog" suffix for dialog controls
 10. Use "Page" suffix for pages
+11. Use "Async" suffix for async methods
 
 ### 2. Naming notation for variables
 
