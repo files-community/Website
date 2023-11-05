@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "{FilesName}",
-		"home": "{FilesName} • Home",
+		"home": "{FilesName} • 文档",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
 		"blog_home": "{FilesName} • Blog",
@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "QuickLook & SeerPro support",
@@ -136,7 +136,7 @@
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "Download Insider Preview",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
