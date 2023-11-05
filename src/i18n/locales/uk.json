@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Панель попереднього перегляду",
-				"description": "Переглядайте фотографії, відео та документи, не відкриваючи їх. Зверніть увагу, що деякі формати файлів наразі не підтримуються."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Підтримка QuickLook та Seer Pro",
