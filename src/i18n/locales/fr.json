@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Volet de prévisualisation",
-				"description": "Prévisualisez des photos, des vidéos et des documents sans les ouvrir. Veuillez noter que certains formats de fichiers ne sont pas actuellement pris en charge."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Prise en charge de QuickLook & SeerPro",
