@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Ngăn xem trước",
-				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở tệp một cách thủ công. Lưu ý rằng một số định dạng tệp hiện chưa được hỗ trợ."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Hỗ trợ QuickLook & SeerPro",
