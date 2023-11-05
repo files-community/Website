@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "미리보기 화면",
-				"description": "사진, 동영상, 문서 파일을 열지 않고 미리 볼 수 있어요. 몇몇 파일 형식을 지원하지 않지만, 점차 개선될 거예요."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "QuickLook & SeerPro 지원",
@@ -70,8 +70,8 @@
 				"description": "속성 창에서 파일에 대한 해시 값을 보거나 비교할 수 있어요."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "명령 팔레트",
+				"description": "명령 팔레트에서 명령어, 기능, 설정에 빠르게 접근하세요."
 			}
 		},
 		"themes": {
