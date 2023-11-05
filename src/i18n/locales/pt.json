@@ -1,143 +1,143 @@
 {
 	"metadata": {
 		"name": "{FilesName}",
-		"home": "{FilesName} • Página Inicial",
+		"home": "{FilesName} • Página inicial",
 		"docs_home": "{FilesName} • Documentação",
 		"docs_page": "{FilesName} • Documentação - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Construindo o melhor gestor de ficheiros para Windows."
+		"description": "Construindo o melhor gerenciador de arquivos para Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Comunidade",
-			"title": "Projetado e desenvolvido por si.",
-			"description": "{FilesName} é um programa grátis e de código aberto, mantido e projetado por um coletivo de centenas de colaboradores.",
-			"discord": "Junte-se à discussão",
-			"docs": "Torne-se um contribuidor",
-			"contributions": "{amount, plural, =0 {Sem contribuições} one {# contribuição} other {# contribuições}}"
+			"title": "Projetado e desenvolvido por você.",
+			"description": "{FilesName} é um software de código aberto e gratuito, mantido e projetado por um coletivo de centenas de colaboradores.",
+			"discord": "Participe da discussão",
+			"docs": "Torne-se um colaborador",
+			"contributions": "{amount, plural, =0 {Não há contribuições} one {# contribuição} other {# contribuições}}"
 		},
 		"design": {
 			"chip": "Design",
 			"title": "O poder encontra a beleza.",
-			"description": "Explore um belo design de Windows. Gerencie todos os seus ficheiros com maior produtividade. Trabalhe entre várias pastas com separadores. E muito mais.",
-			"download": "Transferir",
-			"learn_more": "Saber mais"
+			"description": "Explore um belo design do Windows. Gerencie todos os seus arquivos com maior produtividade. Trabalhe entre várias pastas com abas. E muito mais.",
+			"download": "Download",
+			"learn_more": "Saiba mais"
 		},
 		"features": {
 			"chip": "Funcionalidades",
 			"title": "Já faz isso.",
-			"description": "Integração de ficheiros na nuvem? Separadores e vários esquemas? Pré-visualização de ficheiros avançados? {FilesName} possui recursos robustos que espera de um gestor de ficheiros moderno.",
+			"description": "Integração de arquivos na nuvem? Guias e vários layouts? Visualizações avançadas de arquivos? {FilesName} oferece recursos robustos que você espera de um gerenciador de arquivos moderno.",
 			"unknown": "Desconhecido",
 			"cloud": {
 				"title": "Integração perfeita com a nuvem",
-				"description": "Suporte integrado para unidades na nuvem como OneDrive, Google Drive e iCloud."
+				"description": "Suporte integrado para unidades em nuvem como OneDrive, Google Drive e iCloud."
 			},
 			"preview": {
 				"title": "Painel de pré-visualização",
 				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
-				"title": "Suporte QuickLook & SeerPro",
-				"description": "Pré-visualize ficheiros Office, documentos e outros tipos de ficheiros pressionando a barra de espaço. Esta funcionalidade requer a instalação do QuickLook ou SeerPro."
+				"title": "Suporte ao QuickLook & SeerPro",
+				"description": "Visualize arquivos do Office, documentos e outros tipos de arquivo pressionando a barra de espaço. Esta funcionalidade requer a instalação do QuickLook ou SeerPro."
 			},
 			"tags": {
-				"title": "Etiquetar ficheiros e pastas",
-				"description": "Organize e classifique os seus ficheiros e pastas com etiquetas coloridas."
+				"title": "Tags em arquivos e pastas",
+				"description": "Organize e classifique seus arquivos e pastas com tags coloridas."
 			},
 			"tabs": {
-				"title": "Multitarefa com separadores",
-				"description": "Evite várias janelas e mantenha a sua área de trabalho livre com separadores."
+				"title": "Multitarefa com abas",
+				"description": "Evite várias janelas e mantenha sua área de trabalho livre com abas."
 			},
 			"columns": {
 				"title": "Visualização em coluna",
-				"description": "Navegue rapidamente através de diferentes níveis do sistema de ficheiros usando o esquema colunas."
+				"description": "Navegue rapidamente através de diferentes níveis do sistema de arquivos usando o layout das colunas."
 			},
 			"archives": {
-				"title": "Ver e editar ficheiros",
-				"description": "Crie e extraia ficheiros incluindo zip, WinRar e 7zip."
+				"title": "Ver e editar arquivos",
+				"description": "Crie e extraia arquivos incluindo zip, WinRar e 7zip."
 			},
 			"git": {
 				"title": "Integração Git",
-				"description": "Gerencie facilmente os seus projetos Git. Crie novos branches, alterne entre eles e sincronize as suas alterações - tudo sem sair do Files."
+				"description": "Gerencie facilmente seus projetos Git. Crie novas branches, alterne entre eles e sincronize suas alterações - tudo sem sair do Files."
 			},
 			"dual-pane": {
 				"title": "Painel duplo",
-				"description": "Visualize e gerencie duas pastas lado a lado com o recurso Painel Duplo."
+				"description": "Visualize e gerencie duas pastas lado a lado com o recurso do painel duplo."
 			},
 			"hashes": {
 				"title": "Hashes",
-				"description": "Ver e comparar hashes dos ficheiros pela janela propriedades."
+				"description": "Ver e comparar arquivos com hashes pela janela de propriedades."
 			},
 			"command-palette": {
-				"title": "Paleta de Comandos",
-				"description": "Acesso rápido a comandos, funcionalidades, e definições pela Paleta de Comandos."
+				"title": "Paleta de comandos",
+				"description": "Acesso rápido a comandos, recursos, e configurações dentro da Paleta de Comando."
 			}
 		},
 		"themes": {
 			"chip": "Temas",
 			"title": "Distintamente pessoal.",
-			"description": "Tenha-o à sua maneira. {FilesName} possui uma interface de utilizador totalmente personalizável, direto às cores e materiais. Experimente os temas personalizados que são incorporados no {FilesName} ou mergulhe diretamente na documentação e crie os seus próprios temas.",
+			"description": "Faça do seu jeito. {FilesName} possui uma interface de usuário totalmente personalizável, direto às cores e materiais. Experimente os temas personalizados que são incorporados no {FilesName} ou mergulhe diretamente na documentação e crie os seus próprios temas.",
 			"grey_blue": "Cinza Escuro • Azul Claro",
-			"grey_green": "Cinza Azul • Néon Verde",
+			"grey_green": "Cinza Azul • Verde Neon",
 			"purple": "Roxo",
 			"yellow_white": "Amarelo • Branco",
-			"white_teal": "Branco Fresco • Azul-Petróleo",
-			"sky_blue": "Azul Céu",
-			"select_theme": "Selecione o tema #{index}"
+			"white_teal": "Branco fresco • Azul-petróleo",
+			"sky_blue": "Azul celeste",
+			"select_theme": "Selecionar tema #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "Mais publicações em breve!",
-		"read_more": "Ler Mais",
+		"coming_soon": "Mais postagens em breve!",
+		"read_more": "Leia Mais",
 		"share": {
-			"default": "Partilha nativa",
+			"default": "Compartilhamento nativo",
 			"url": "Copiar URL",
-			"tweet": "Twitter",
+			"tweet": "X",
 			"facebook": "Facebook",
 			"rss": "Feed RSS"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "Não foram encontrados resultados",
-		"edit_page": "Editar esta página"
+		"autocomplete_empty": "Nenhum resultado encontrado",
+		"edit_page": "Editar essa página"
 	},
 	"footer": {
-		"copyright": "Copyright ©️ 2021 - {year}, Os Autores do {FilesName}",
-		"home": "Página Inicial",
+		"copyright": "Copyright ©️ 2021 - {year}, Os Autores {FilesName}",
+		"home": "Página inicial",
 		"docs": "Documentação",
-		"news": "Noticias",
-		"download": "Transferir",
+		"news": "Novidades",
+		"download": "Download",
 		"contribute": "Contribua para {FilesName}",
 		"feedback": "Enviar feedback",
-		"style_guide": "Guia de Estilo",
+		"style_guide": "Guia de Estilos",
 		"translations": "Traduções",
-		"contribute_site": "Contribuir para este site",
-		"github": "Repositório de GitΗub",
+		"contribute_site": "Contribua para este site",
+		"github": "Repositório do GitHub",
 		"report_bug": "Encontrou um bug?",
-		"web_team": "Equipa Web"
+		"web_team": "Equipe Web"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
-		"home": "Página Inicial",
+		"ukraine": "#ApoiarUcrânia",
+		"home": "Página inicial",
 		"docs": "Documentação",
-		"news": "Noticias",
-		"download": "Transferir",
+		"news": "Novidades",
+		"download": "Download",
 		"themes": "Temas",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"title": "Transferir {FilesName}",
+		"title": "Download {FilesName}",
 		"donation_description": "{FilesName} é um projeto orientado para a comunidade que depende do seu apoio para crescer e melhorar. Considere comprar {FilesName} através da Microsoft Store ou apoiar-nos no GitHub se você usar o instalador clássico.",
-		"donation_button": "Doar",
+		"donation_button": "Faça uma doação",
 		"microsoft_store": {
-			"title": "Transferir Files",
-			"description": "Comprar o {FilesName} através da Microsoft Store ajuda a apoiar os desenvolvedores e permite-nos continuar a atualizar o aplicação com novas funcionalidades e melhorias."
+			"title": "Download Files",
+			"description": "Comprar o {FilesName} através da Microsoft Store ajuda a apoiar os desenvolvedores e nos permite continuar atualizando o aplicativo com novos recursos e melhorias."
 		},
 		"preview": {
-			"title": "Transferir Insider Preview",
-			"description": "A versão preview pode ser instalada juntamente com a versão estável e fornece acesso antecipado a novas funcionalidades e melhorias."
+			"title": "Download Insider Preview",
+			"description": "A versão de pré-visualização pode ser instalada com o lançamento estável e fornece acesso antecipado a novos recursos e melhorias."
 		},
 		"self_signed": {
 			"link_text": "instalador clássico",
