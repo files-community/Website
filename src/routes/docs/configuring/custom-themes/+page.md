@@ -32,7 +32,9 @@ Files has built-in support for custom fonts, to apply a custom font start by ope
 
 We put together some popular color combinations to help users create custom themes.
 
-#### **Glass (requires Windows 11)**
+#### **Glass**
+
+The glass theme is best paired with the Acrylic backdrop material.
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
