@@ -35,11 +35,11 @@
 			},
 			"preview": {
 				"title": "لوحة المعاينة",
-				"description": "معاينة الصور، مقاطع الفيديو، والمستندات دون فتحها. يرجى ملاحظة أن بعض صيغ الملفات غير مدعومة حاليا."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "QuickLook & SeerPro الدعم",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"description": "معاينة ملفات Office ومستندات وأنواع ملفات أخرى عن طريق الضغط على مفتاح الفضاء. يتطلب هذا الميزة تثبيت QuickLook أو SeerPro."
 			},
 			"tags": {
 				"title": "علامات الملفات والمجلدات",
@@ -70,8 +70,8 @@
 				"description": "عرض تجزئة الملفات من نافذة الخصائص ومقارنتها."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "لوحة الأوامر",
+				"description": "الوصول السريع إلى الأوامر والميزات والإعدادات من لوحة الأوامر."
 			}
 		},
 		"themes": {

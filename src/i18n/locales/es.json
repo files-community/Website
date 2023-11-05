@@ -21,7 +21,7 @@
 			"chip": "Diseño",
 			"title": "El poder se encuentra con la belleza.",
 			"description": "Explore un atractivo diseño basado en Windows. Administre todos sus archivos con mayor productividad. Utilice pestañas para trabajar en varias carpetas. Y mucho más.",
-			"download": "Descarga",
+			"download": "Descargar",
 			"learn_more": "Más información"
 		},
 		"features": {
@@ -31,47 +31,47 @@
 			"unknown": "Desconocido",
 			"cloud": {
 				"title": "Integración perfecta en la nube",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Compatibilidad integrada con servicios de almacenamiento en la nube como OneDrive, Google Drive e iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Panel de vista previa",
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"title": "Soporte para QuickLook y SeerPro",
+				"description": "Previsualiza archivos de Office, documentos y otros tipos de archivos presionando la barra espaciadora. Esta función requiere instalar QuickLook o SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Etiqueta archivos y carpetas",
+				"description": "Organiza y clasifica tus archivos y carpetas con etiquetas de colores."
 			},
 			"tabs": {
 				"title": "Multitarea con pestañas",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Evita múltiples ventanas y mantiene tu escritorio ordenado con pestañas."
 			},
 			"columns": {
 				"title": "Vista de columna",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Navega rápidamente a través de diferentes niveles del sistema de archivos utilizando el diseño de columnas."
 			},
 			"archives": {
 				"title": "Ver y editar archivos",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Crear y extraer archivos, incluyendo zip, WinRar y 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integración con Git",
+				"description": "Gestiona fácilmente tus proyectos de Git. Crea nuevas ramas, cambia entre ellas y sincroniza tus cambios, todo sin salir de Archivos."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Panel dual",
+				"description": "Ver y gestionar dos carpetas lado a lado con la función de Panel Dual."
 			},
 			"hashes": {
 				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"description": "Ver y comparar los hashes de archivos desde la ventana de propiedades."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "Paleta de Comandos",
+				"description": "Accede rápidamente a comandos, funciones y configuraciones desde la Paleta de Comandos."
 			}
 		},
 		"themes": {
@@ -118,7 +118,7 @@
 		"web_team": "Equipo Web"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
+		"ukraine": "#ApoyoAUcrania",
 		"home": "Inicio",
 		"docs": "Documentación",
 		"news": "Noticias",
@@ -132,7 +132,7 @@
 		"donation_description": "{FilesName} es un proyecto impulsado por la comunidad que depende de tu apoyo para crecer y mejorar. Por favor, considere comprar {FilesName} a través de la tienda Microsoft o apoyarnos en GitHub si utiliza el instalador clásico.",
 		"donation_button": "Donar",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Descargar archivos",
 			"description": "Comprar {FilesName} a través de la tienda Microsoft ayuda a apoyar a los desarrolladores y nos permite continuar actualizando la aplicación con nuevas características y mejoras."
 		},
 		"preview": {

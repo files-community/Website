@@ -1,147 +1,147 @@
 {
 	"metadata": {
 		"name": "{FilesName}",
-		"home": "{FilesName} • Home",
-		"docs_home": "{FilesName} • Docs",
-		"docs_page": "{FilesName} • Docs - {title}",
+		"home": "{FilesName} • Inici",
+		"docs_home": "{FilesName} • Documentació",
+		"docs_page": "{FilesName} • Documentació - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Construint el millor gestor de fitxers per a Windows."
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"chip": "Comunitat",
+			"title": "Dissenyat i desenvolupat per tu.",
+			"description": "{FilesName} és un programari gratuït i de codi obert, mantingut i dissenyat per una col·lectiva de centenars de col·laboradors.",
+			"discord": "Uneix-te a la discussió",
+			"docs": "Converteix-te en col·laborador",
+			"contributions": "{amount, plural, =0 {No hi ha contribucions} one {# contribució} other {# contribucions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Disseny",
+			"title": "La potència es troba amb la bellesa.",
+			"description": "Explora un bell disseny pensat per a Windows. Gestiona tots els teus fitxers amb una productivitat incrementada. Treballa en diverses carpetes amb pestanyes. I molt més.",
+			"download": "Descarrega",
+			"learn_more": "Aprèn més"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"chip": "Característiques",
+			"title": "Ja ho fa.",
+			"description": "Integració amb fitxers a la núvol? Pestanyes i més d'un disseny? Previsualitzacions avançades de fitxers? {FilesName} ho té cobert amb característiques robustes que esperes d'un gestor de fitxers modern.",
+			"unknown": "Desconegut",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"title": "Integració a la núvol sense costura",
+				"description": "Suport integrat per a discos a la núvol com OneDrive, Google Drive i iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"title": "Pany de previsualització",
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"title": "Suport per a QuickLook i SeerPro",
+				"description": "Previsualitza fitxers d'Office, documents i altres tipus de fitxers prement la barra d'espai. Aquesta característica requereix instal·lar QuickLook o SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Etiqueta fitxers i carpetes",
+				"description": "Organitza i classifica els teus fitxers i carpetes amb etiquetes de colors."
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"title": "Feu multitasca amb pestanyes",
+				"description": "Evita finestres múltiples i mantén el teu escriptori sense desordre amb pestanyes."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"title": "Vista de columnes",
+				"description": "Navega ràpidament a través de diferents nivells del sistema de fitxers utilitzant la disposició de columnes."
 			},
 			"archives": {
-				"title": "View and edit archives",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"title": "Visualitza i edita arxius comprimits",
+				"description": "Crea i extreu arxius, incloent zip, WinRar i 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integració amb Git",
+				"description": "Gestiona fàcilment els teus projectes Git. Crea noves branques, canvia entre elles i sincronitza els teus canvis, tot sense sortir de Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Panell dual",
+				"description": "Visualitza i gestiona dues carpetes al costat amb la funció de panell dual."
 			},
 			"hashes": {
 				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"description": "Visualitza i compara els hash dels fitxers des de la finestra de propietats."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "Paleta de Comandes",
+				"description": "Accedeix ràpidament a comandes, funcions i configuracions des de la Paleta de Comandes."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+			"chip": "Temes",
+			"title": "Distingitament personal.",
+			"description": "A la teva manera. {FilesName} ofereix una interfície d'usuari totalment personalitzable, fins als colors i materials. Prova els temes personalitzats incorporats a {FilesName} o plongeu a la documentació i crea el teu propi.",
+			"grey_blue": "Gris Fosc • Blau Clar",
+			"grey_green": "Blau Gris • Verd Neó",
+			"purple": "Lila",
+			"yellow_white": "Groc • Blanc",
+			"white_teal": "Blanc Fresc • Teal Fosc",
+			"sky_blue": "Blau Cel",
+			"select_theme": "Selecciona el tema #{index}"
 		}
 	},
 	"blog": {
-		"coming_soon": "More posts coming soon!",
-		"read_more": "Read More",
+		"coming_soon": "Més publicacions aviat!",
+		"read_more": "Llegeix més",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
+			"default": "Compartir de forma nativa",
+			"url": "Copia la URL",
 			"tweet": "Twitter",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Canal RSS"
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"autocomplete_empty": "Cap resultat trobat",
+		"edit_page": "Edita aquesta pàgina"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, The {FilesName} Authors",
-		"home": "Home",
-		"docs": "Docs",
-		"news": "News",
-		"download": "Download",
-		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
-		"style_guide": "Style Guide",
-		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
-		"web_team": "Web Team"
+		"copyright": "Drets d'autor © 2021 - {year}, Els autors de {FilesName}",
+		"home": "Inici",
+		"docs": "Documentació",
+		"news": "Notícies",
+		"download": "Descarregar",
+		"contribute": "Contribueix a {FilesName}",
+		"feedback": "Proporciona retroacció",
+		"style_guide": "Guia d'estil",
+		"translations": "Traduccions",
+		"contribute_site": "Contribueix a aquest lloc",
+		"github": "Repositori de GitHub",
+		"report_bug": "¿Has trobat un error?",
+		"web_team": "Equip web"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
-		"home": "Home",
-		"docs": "Documentation",
-		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"ukraine": "#DonemSuportUcraïna",
+		"home": "Inici",
+		"docs": "Documentació",
+		"news": "Notícies",
+		"download": "Descarrega",
+		"themes": "Temes",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"title": "Descarrega {FilesName}",
+		"donation_description": "{FilesName} és un projecte impulsat per la comunitat que depèn del vostre suport per créixer i millorar. Si us plau, considereu adquirir {FilesName} a través de la Microsoft Store o donar-nos suport a GitHub si feu servir l'instal·lador clàssic.",
+		"donation_button": "Donar",
 		"microsoft_store": {
-			"title": "Download Files",
-			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+			"title": "Descarrega Files",
+			"description": "Adquirir {FilesName} a través de la Microsoft Store ajuda a donar suport als desenvolupadors i ens permet continuar actualitzant l'aplicació amb noves funcionalitats i millores."
 		},
 		"preview": {
 			"title": "Insider Preview",
-			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "instal·lador clàssic",
+			"description": "No tens accés a la Microsoft Store? Prova la nostra "
 		}
 	}
 }

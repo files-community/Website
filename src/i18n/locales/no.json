@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "QuickLook & SeerPro support",

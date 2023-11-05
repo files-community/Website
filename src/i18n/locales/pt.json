@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Painel de pré-visualização",
-				"description": "Pré-visualize fotos, vídeos e documentos sem abri-los. Por favor, note que alguns formatos de arquivo não são atualmente suportados."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Suporte ao QuickLook & SeerPro",

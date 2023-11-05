@@ -10,7 +10,7 @@
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
+			"chip": "Comunità",
 			"title": "Progettato e sviluppato da voi.",
 			"description": "{FilesName} è un software open source gratuito, mantenuto e progettato da centinaia di collaboratori.",
 			"discord": "Partecipa alla discussione",
@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Pannello di anteprima",
-				"description": "Visualizza l'anteprima di foto, video e documenti senza aprirli. Alcuni formati di file non sono attualmente supportati."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Supporto per QuickLook & SeerPro",

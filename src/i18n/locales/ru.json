@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Панель предпросмотра",
-				"description": "Предпросмотр фото, видео и документов без их открытия. Обратите внимание, что некоторые форматы файлов в настоящее время не поддерживаются."
+				"description": "Preview photos, videos, and documents without opening them."
 			},
 			"popup-preview": {
 				"title": "Поддержка QuickLook и SeerPro",
