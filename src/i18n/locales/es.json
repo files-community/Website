@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Panel de vista previa",
-				"description": "Preview photos, videos, and documents without opening them."
+				"description": "Mira fotos, videos y documentos sin tener que abrirlos."
 			},
 			"popup-preview": {
 				"title": "Soporte para QuickLook y SeerPro",
@@ -63,7 +63,7 @@
 			},
 			"dual-pane": {
 				"title": "Panel dual",
-				"description": "Ver y gestionar dos carpetas lado a lado con la función de Panel Dual."
+				"description": "Ve y gestiona dos carpetas lado a lado con la función de Panel Dual."
 			},
 			"hashes": {
 				"title": "Hashes",
