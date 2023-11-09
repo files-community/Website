@@ -28,6 +28,7 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>K</kbd>     | Duplicate tab                                   |
 | <kbd>Ctrl</kbd> + <kbd>N</kbd>                        | New window                                      |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd>     | Create new folder                               |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd>     | Create new item                                 |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Up</kbd>      | Open compact overlay                            |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Down</kbd>    | Close compact overlay                           |
 | <kbd>Ctrl</kbd> + <kbd>B</kbd>                        | Collapse/Expand sidebar                         |
