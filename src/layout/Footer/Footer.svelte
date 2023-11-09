@@ -66,8 +66,8 @@
 			</IconButton>
 		</div>
 		<p>
-			{$_("footer.copyright", {
-				values: { year: new Date().getFullYear(), FilesName: "Files" },
+			{$_("Copyright (c) {year} Files Community", {
+				values: { year: new Date().getFullYear() },
 			})}
 		</p>
 	</div>
