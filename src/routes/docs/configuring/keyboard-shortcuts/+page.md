@@ -40,8 +40,8 @@ Files supports a wide range of keyboard shortcuts to help you navigate the app. 
 | <kbd>Ctrl</kbd> + <kbd>L</kbd>                        | Select directory path                           |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd>       | Open the preview pane                           |
 | <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>D</kbd>       | Open the details pane                           |
-| <kbd>Alt</kbd> + <kbd>Space</kbd>                     | Toggle selection                                |
-| <kbd>Ctrl</kbd> + <kbd>Space</kbd>                    | Toggle media playback in preview pane           |
+| <kbd>Ctrl</kbd> + <kbd>Space</kbd>                    | Toggle selection                                |
+| <kbd>Alt</kbd> + <kbd>Space</kbd>                     | Toggle media playback in preview pane           |
 | <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd>     | Open Command Palette                            |
 | <kbd>F1</kbd>                                         | Open files docs                                 |
 | <kbd>F2</kbd>                                         | Rename file/directory                           |
