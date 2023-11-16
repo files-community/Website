@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Panou de previzualizare",
-				"description": "Preview photos, videos, and documents without opening them."
+				"description": "Previzualizați fotografii, videoclipuri și documente fără a le deschide."
 			},
 			"popup-preview": {
 				"title": "Suport pentru QuickLook & SeerPro",
@@ -93,7 +93,7 @@
 		"share": {
 			"default": "Partajare nativă",
 			"url": "Copiere URL",
-			"tweet": "Twitter",
+			"tweet": "X",
 			"facebook": "Facebook",
 			"rss": "Flux RSS"
 		}

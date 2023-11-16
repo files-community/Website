@@ -6,13 +6,13 @@
 		"docs_page": "{FilesName} • Dokumentacja - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Building the best file manager for Windows."
+		"description": "Tworzymy najlepszy menedżer plików dla systemu Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Społeczność",
 			"title": "Zaprojektowany i opracowany przez Ciebie.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"description": "{FilesName} to darmowy i otwartoźródłowy program, zaprojektowany i utrzymywany wspólnie przez setki wspierających.",
 			"discord": "Dołącz do dyskusji",
 			"docs": "Zostań współtwórcą",
 			"contributions": "{amount, plural, =0 {Brak udziałów} one {# udział} few {# udziałów} many {# udziałów} other {# udział}}"
@@ -20,64 +20,64 @@
 		"design": {
 			"chip": "Wygląd",
 			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+			"description": "Odkrywaj piękny design. Zarządzaj swoimi plikami ze zwiększoną produktywnością. Pracuj na wielu folderach za pomocą kart. I o wiele więcej.",
 			"download": "Pobierz",
 			"learn_more": "Dowiedz się więcej"
 		},
 		"features": {
 			"chip": "Funkcje",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"title": "To już robi.",
+			"description": "Integracja z chmurą? Karty i wiele widoków? Szczegółowy podgląd plików? {FilesName} potrafi to wszystko dzięki zaawansowanym funkcjonalnościom, których oczekujesz od nowoczesnego menedżera plików.",
 			"unknown": "Nieznane",
 			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"title": "Transparentna integracja z chmurą",
+				"description": "Wbudowane wsparcie dla dysków w chmurze, takich jak OneDrive, Dysk Google oraz iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them."
+				"title": "Widok podglądu",
+				"description": "Podglądaj obrazy, filmy oraz dokumenty bez ich otwierania."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"title": "Wsparcie dla QuickLook & SeerPro",
+				"description": "Podglądaj pliki pakietu Office, dokumenty i inne rodzaje plików wciskając przycisk spacji. Ta funkcja wymaga zainstalowanego QuickLook lub SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Taguj pliki i foldery",
+				"description": "Organizuj i sortuj swoje pliki i foldery za pomocą kolorowych tagów."
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"title": "Wielozadaniowość za pomocą kart",
+				"description": "Uniknij wielu okien i utrzymuj porządek na pulpicie za pomocą kart."
 			},
 			"columns": {
 				"title": "Widok kolumn",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Szybko nawiguj między wieloma poziomami systemu plików za pomocą widoku kolumn."
 			},
 			"archives": {
 				"title": "Wyświetlaj i edytuj archiwa",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Twórz i rozpakowuj archiwa, w tym zip, WinRar oraz 7-zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Integracja z Git",
+				"description": "Z łatwością zarządzaj swoimi repozytoriami Git. Twórz nowe gałęzie, przełączaj je i synchronizuj swoje zmiany — to wszystko bez wychodzenia z Files."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Podwójny widok",
+				"description": "Otwórz i zarządzaj dwoma folderami obok siebie z funkcją podwójnego widoku."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Skróty",
+				"description": "Przeglądaj i porównuj skróty plików za pomocą okna właściwości."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "Paleta poleceń",
+				"description": "Szybki dostęp do komend, funkcji oraz ustawień za pomocą palety poleceń."
 			}
 		},
 		"themes": {
 			"chip": "Motywy",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"title": "Niezwykle osobisty.",
+			"description": "Zrób to po swojemu. {FilesName} posiada w pełni konfigurowalny interfejs, włącznie z kolorami i materiałami. Wypróbuj motywy wbudowane w {FilesName} lub sięgnij do dokumentacji i stwórz swój własny.",
 			"grey_blue": "Ciemnoszary • Jasnoniebieski",
 			"grey_green": "Niebiesko-szary • Neonowa Zieleń",
 			"purple": "Fioletowy",
@@ -91,11 +91,11 @@
 		"coming_soon": "Więcej postów już wkrótce!",
 		"read_more": "Przeczytaj więcej",
 		"share": {
-			"default": "Native sharing",
+			"default": "Natywne udostępnianie",
 			"url": "Skopiuj adres",
-			"tweet": "Twitter",
+			"tweet": "X",
 			"facebook": "Facebook",
-			"rss": "RSS Feed"
+			"rss": "Aktualności RSS"
 		}
 	},
 	"docs": {
