@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Ngăn xem trước",
-				"description": "Preview photos, videos, and documents without opening them."
+				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở một cách thủ công."
 			},
 			"popup-preview": {
 				"title": "Hỗ trợ QuickLook & SeerPro",
@@ -93,7 +93,7 @@
 		"share": {
 			"default": "Chia sẻ",
 			"url": "Sao chép URL",
-			"tweet": "Twitter",
+			"tweet": "X",
 			"facebook": "Facebook",
 			"rss": "Nguồn cấp dữ liệu RSS"
 		}
