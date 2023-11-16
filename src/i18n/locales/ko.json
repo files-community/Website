@@ -93,7 +93,7 @@
 		"share": {
 			"default": "네이티브 공유하기",
 			"url": "URL 복사",
-			"tweet": "Twitter",
+			"tweet": "X",
 			"facebook": "Facebook",
 			"rss": "RSS 피드"
 		}
