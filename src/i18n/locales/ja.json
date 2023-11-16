@@ -6,13 +6,13 @@
 		"docs_page": "{FilesName} • ドキュメント - {title}",
 		"blog_home": "{FilesName} • ブログ",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Windows用の最高のファイル マネージャーを作っています"
+		"description": "Windows のための最高のファイル マネージャーを作る"
 	},
 	"home": {
 		"community": {
 			"chip": "コミュニティ",
 			"title": "デザインと開発はあなたの手で",
-			"description": "{FilesName} はフリーでオープンソースのソフトウェアです。何百人もの貢献者の共同作業によってメンテナンスおよびデザインされています。",
+			"description": "{FilesName} はフリーでオープン ソースのソフトウェアです。何百人もの貢献者の共同作業によってメンテナンスおよびデザインされています。",
 			"discord": "議論に参加する",
 			"docs": "開発に貢献する",
 			"contributions": "{amount, plural, =0 {貢献なし} one {# 回の貢献} other {# 回の貢献}}"
@@ -34,7 +34,7 @@
 				"description": "OneDrive、Google Drive、iCloudなどのクラウドドライブに対応しています。"
 			},
 			"preview": {
-				"title": "プレビュー ペイン",
+				"title": "プレビュー ウィンドウ",
 				"description": "写真、ビデオ、ドキュメントを開かずにプレビューできます。"
 			},
 			"popup-preview": {
@@ -51,11 +51,11 @@
 			},
 			"columns": {
 				"title": "カラム ビュー",
-				"description": "カラムレイアウトを使用して、異なる階層のファイルにすばやくアクセスできます。"
+				"description": "カラム レイアウトを使用して、異なる階層のファイルにすばやくアクセスできます。"
 			},
 			"archives": {
 				"title": "アーカイブの表示と編集",
-				"description": "zip, WinRar, 7zip を含むアーカイブの作成と展開ができます。"
+				"description": "zip、rar、7-zip を含むアーカイブの作成と展開ができます。"
 			},
 			"git": {
 				"title": "Git との統合",
@@ -77,23 +77,23 @@
 		"themes": {
 			"chip": "テーマ",
 			"title": "個性を出そう",
-			"description": "あなたの思い通りにしましょう。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタムテーマを作ったり、自由自在にカスタマイズしてみましょう。",
-			"grey_blue": "ダークグレー • ライトブルー",
-			"grey_green": "ブルーグレー • ネオングリーン",
+			"description": "あなたの思い通りにしましょう。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタム テーマを作ったり、自由自在にカスタマイズしてみましょう。",
+			"grey_blue": "ダーク グレー • ライト ブルー",
+			"grey_green": "ブルー グレー • ネオン グリーン",
 			"purple": "パープル",
 			"yellow_white": "イエロー・ホワイト",
-			"white_teal": "クールホワイト • ダークティール",
-			"sky_blue": "スカイブルー",
+			"white_teal": "クール ホワイト • ダーク ティール",
+			"sky_blue": "スカイ ブルー",
 			"select_theme": "テーマ #{index} を選択"
 		}
 	},
 	"blog": {
-		"coming_soon": "その他の投稿は近日公開予定です！",
+		"coming_soon": "その他の投稿は近日公開予定です!",
 		"read_more": "もっと読む",
 		"share": {
 			"default": "システムの共有機能",
-			"url": "URLをコピー",
-			"tweet": "Twitter",
+			"url": "URL をコピー",
+			"tweet": "X",
 			"facebook": "Facebook",
 			"rss": "RSS フィード"
 		}
@@ -114,8 +114,8 @@
 		"translations": "翻訳",
 		"contribute_site": "このサイトに貢献する",
 		"github": "GitHub リポジトリ",
-		"report_bug": "バグを見つけましたか？",
-		"web_team": "ウェブサイト チーム"
+		"report_bug": "バグを見つけましたか?",
+		"web_team": "Web チーム"
 	},
 	"navbar": {
 		"ukraine": "#SupportUkraine",
@@ -141,7 +141,7 @@
 		},
 		"self_signed": {
 			"link_text": "クラシック インストーラーをダウンロード",
-			"description": "Microsoft Store にアクセスできませんか？ "
+			"description": "Microsoft Store にアクセスできませんか? "
 		}
 	}
 }
