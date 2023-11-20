@@ -43,5 +43,5 @@ This is installed from our website and is signed by the Files organization.
 - Display Name: `Files - Preview`
 - Publisher Name: `Files`
 - Package Name: `FilesPreview`
-- Package Family Name: `FilesPreview_wvne1zexy08sa`
+- Package Family Name: `FilesPreview_1y0xx7n9077q4`
 - Auto updates: `True`
