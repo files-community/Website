@@ -4,7 +4,7 @@ title: Keeping Files up to date
 
 ### How to check for updates
 
-Files will automatically check for updates whenever you open the app and display an indicator on the toolbar when the update is ready to install. You can also check for updates manually from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer]((/download/)).
+Files will automatically check for updates whenever you open the app and display an indicator on the toolbar when the update is ready to install. You can also check for updates manually from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
 
 ### How to install updates
 
@@ -18,4 +18,4 @@ If you encounter any problems or errors while updating Files, you can try the fo
 
 ### Updating the preview version to v3.0.9
 
-In order update the preview version to v3.0.9, you'll need to uninstall and [reinstall]((/download/)) Files. We appologize for the inconvenience and hope the process goes smoothly for you.
+In order update the preview version to v3.0.9, you'll need to uninstall and [reinstall](/download/) Files. We appologize for the inconvenience and hope the process goes smoothly for you.
