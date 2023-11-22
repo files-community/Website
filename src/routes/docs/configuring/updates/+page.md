@@ -18,4 +18,4 @@ If you encounter any problems or errors while updating Files, you can try the fo
 
 ### Updating the preview version to v3.0.9
 
-In order update the preview version to v3.0.9, you'll need to uninstall and [reinstall](/download/) Files. We appologize for the inconvenience and hope the process goes smoothly for you.
+In order update the preview version to v3.0.9, you'll need to export your settings by going to Files settings > Advanced > Export. Then uninstall and [reinstall](/download/) Files and import your settings again from Files settings > Advanced > Import > Select previously saved zip. We appologize for the inconvenience and hope the process goes smoothly for you.
