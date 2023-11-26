@@ -21,4 +21,4 @@ If you encounter any problems or errors while updating Files, you can try the fo
 In order update the preview version to v3.0.9 or above, you'll need to one time
 1. Export your settings by going to Files settings > Advanced > Export. 
 2. Uninstall and [reinstall](/download/) Files.
-3. Import your settings again from Files settings > Advanced > Import > Select previously saved zip.
+3. Import your settings from `Settings > Advanced > Import`.
