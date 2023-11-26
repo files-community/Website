@@ -12,13 +12,13 @@ The backdrop is set to Mica Alt by default, but it can be changed to Acrylic fro
 
 Files has built-in support for custom fonts, to apply a custom font start by opening the settings file from Settings > Advanced > Edit settings file.
 
-1. Close the Files app before continuing.
+1. Close the Files app before continuing, either by ending the Files process in Task Manager or turning off Files settings > Advanced > Leave app running in the background when the window is closed > Close Files normally
 2. Edit the value for `AppThemeFontFamily`
 
 ## Advanced themes
 
 1. Open the settings file from Settings > Advanced > Edit settings file.
-2. Close the Files app before continuing.
+2. Close the Files app before continuing, either by ending the Files process in Task Manager or turning off Files settings > Advanced > Leave app running in the background when the window is closed > Close Files normally
 3. Edit these values as desired
 
 | Key                                 | Default value |
