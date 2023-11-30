@@ -8,7 +8,7 @@
 		isUrlContainPath,
 		TreeView,
 	} from "$lib";
-	import { ListItem, Tooltip } from "fluent-svelte";
+	import { ListItem } from "fluent-svelte";
 	import Navigation from "~icons/fluent/navigation-24-regular";
 	import type { SvelteComponent } from "svelte";
 	import type { SvelteHTMLElements } from "svelte/elements";
@@ -95,17 +95,6 @@
 		{/if}
 	</nav>
 	<div class="buttons">
-		<Tooltip
-			text={$_("navbar.ukraine", defaultI18nValues)}
-			placement="bottom"
-			delay={200}
-			offset={0}
-		>
-			<span
-				class="support-ukraine"
-				aria-label="Ukraine flag in support of Ukraine and its people, #supportukraine"
-			/>
-		</Tooltip>
 		{#if innerWidth > 648}
 			{#each buttons as { icon, href, label }}
 				<a
