@@ -10,59 +10,59 @@
 	},
 	"home": {
 		"community": {
-			"chip": "Community",
-			"title": "Designed and developed by you.",
+			"chip": "Κοινότητα",
+			"title": "Σχεδιάστηκε και αναπτύχθηκε από εσάς.",
 			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
+			"discord": "Λάβετε μέρος στη συζήτηση",
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
+			"chip": "Σχεδίαση",
+			"title": "Η δύναμη συναντά την ομορφιά.",
+			"description": "Εξερευνήστε ένα όμορφο, πρωτόγνωρο για τα Windows, σχεδιασμό. Διαχειριστείτε όλα τα αρχεία σας με αυξημένη παραγωγικότητα. Εργαστείτε σε πολλαπλούς φακέλους με καρτέλες, Και πολλά περισσότερα.",
+			"download": "Λήψη",
+			"learn_more": "Μάθε περισσότερα"
 		},
 		"features": {
-			"chip": "Features",
-			"title": "It already does that.",
+			"chip": "Λειτουργίες",
+			"title": "Αυτό ήδη το κάνει.",
 			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
+			"unknown": "Άγνωστο",
 			"cloud": {
 				"title": "Seamless cloud integration",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Ενσωματωμένη υποστήριξη για cloud drives όπως OneDrive, Google Drive, και iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them."
+				"title": "Πλαίσιο προεπισκόπησης",
+				"description": "Προεπισκόπηση φωτογραφιών, βίντεο και εγγράφων χωρίς να τις ανοίξετε."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"title": "Υποστήριξη QuickLook & SeerPro",
+				"description": "Προεπισκόπηση αρχείων του Office και άλλων τύπων αρχείων πατώντας το πλήκτρο διαστήματος. Αυτή η λειτουργία απαιτεί εγκατάσταση του QuickLook ή του SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Βάλε ετικέτα σε αρχεία και φακέλους",
+				"description": "Οργάνωση και ταξινόμηση των αρχείων και των φακέλων σας με χρωματιστές ετικέτες."
 			},
 			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"title": "Πολυδιεργασία με καρτέλες",
+				"description": "Αποφύγετε πολλά παράθυρα και κρατήστε την επιφάνεια εργασίας σας καθαρή χρησιμοποιώντας καρτέλες."
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"title": "Προβολή στηλών",
+				"description": "Περιηγηθείτε γρήγορα σε διαφορετικά επίπεδα του συστήματος αρχείων χρησιμοποιώντας τη διάταξη στήλης."
 			},
 			"archives": {
-				"title": "View and edit archives",
+				"title": "Προβολή και επεξεργασία συμπιεσμένων αρχείων",
 				"description": "Create and extract archives including zip, WinRar, and 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Ενσωμάτωση με Git",
+				"description": "Εύκολη διαχείριση των έργων Git. Δημιουργήστε νέους κλάδους, μεταβείτε μεταξύ τους και συγχρονίστε τις αλλαγές σας - όλα χωρίς να βγείτε από το πρόγραμμα."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
+				"title": "Διπλό παράθυρο",
 				"description": "View and manage two folders side by side with the Dual Pane feature."
 			},
 			"hashes": {
@@ -70,17 +70,17 @@
 				"description": "View and compare file hashes from the properties window."
 			},
 			"command-palette": {
-				"title": "Command Palette",
+				"title": "Παλέτα Εντολών",
 				"description": "Quickly access commands, features, and settings from the Command Palette."
 			}
 		},
 		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
+			"chip": "Θέματα",
+			"title": "Διακριτικά προσωπικό.",
 			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
 			"grey_blue": "Dark Grey • Light Blue",
 			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
+			"purple": "Μωβ",
 			"yellow_white": "Yellow • White",
 			"white_teal": "Cool White • Dark Teal",
 			"sky_blue": "Sky Blue",
@@ -118,17 +118,16 @@
 		"web_team": "Web Team"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
-		"download": "Download",
-		"themes": "Themes",
+		"download": "Λήψη",
+		"themes": "Θέματα",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	},
 	"download": {
-		"title": "Download {FilesName}",
+		"title": "Λήψη {FilesName}",
 		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Donate",
 		"microsoft_store": {
