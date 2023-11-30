@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Панель попереднього перегляду",
-				"description": "Preview photos, videos, and documents without opening them."
+				"description": "Попередній перегляд фотографій, відео та документів, не відкриваючи їх."
 			},
 			"popup-preview": {
 				"title": "Підтримка QuickLook та Seer Pro",
@@ -118,7 +118,6 @@
 		"web_team": "Команда"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
 		"home": "Головна",
 		"docs": "Документація",
 		"news": "Новини",
@@ -136,7 +135,7 @@
 			"description": "Придбання {FilesName} через Microsoft Store допомагає підтримувати розробників і дозволяє нам продовжувати оновлення додатку з новими функціями та покращеннями."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "Завантажити Insider Preview",
 			"description": "Бета-версія може бути встановлена разом зі стабільним випуском і надає ранній доступ до нових функцій і покращень."
 		},
 		"self_signed": {
