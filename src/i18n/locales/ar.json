@@ -1,20 +1,20 @@
 {
 	"metadata": {
 		"name": "{FilesName}",
-		"home": "{FilesName} • الصفحة الرئيسية",
+		"home": "{FilesName} • الرئيسية",
 		"docs_home": "{FilesName} • الوثائق",
 		"docs_page": "{FilesName} • الوثائق - {title}",
 		"blog_home": "{FilesName} • المدونة",
 		"blog_page": "{FilesName} • {title}",
-		"description": "نبني أفضل مدير ملفات لنظام Windows."
+		"description": "بناء أفضل مدير ملفات لنضام ويندوز"
 	},
 	"home": {
 		"community": {
 			"chip": "المجتمع",
-			"title": "صممت و طورت من قبلك.",
-			"description": "{FilesName} هي برمجيات مجانية ومفتوحة المصدر، تقام بصيانتها وتصميمها مجموعة من مئات المساهمين.",
+			"title": "تم تصميمه وتطويره من قِبلك.",
+			"description": "{FilesName} هو برنامج مجاني ومفتوح المصدر، تتم صيانته وتصميمه بواسطة مجموعة من مئات المساهمين.",
 			"discord": "انضم إلى المناقشة",
-			"docs": "كن مساهماً",
+			"docs": "كن مساهمًا",
 			"contributions": "{amount, plural, zero {}=0 {لا توجد مساهمات} one {# مساهمة} two {# مساهمات}  other {# مساهمات}}"
 		},
 		"design": {
@@ -131,11 +131,11 @@
 		"donation_description": "مشروع {FilesName} هو مشروع يقوده المجتمع ويعتمد على دعمك للنمو والتحسين. الرجاء النظر في شراء {FilesName} من خلال متجر مايكروسوفت أو دعمنا على GitHub إذا كنت تستخدم المثبت الكلاسيكي.",
 		"donation_button": "تبرع",
 		"microsoft_store": {
-			"title": "تحميل Files",
+			"title": "تحميل الملفات",
 			"description": "شراء {FilesName} بواسطة متجر مايكروسوفت يساعد في دعم المطورين ويسمح لنا بمواصلة تحديث التطبيق مع الميزات والتحسينات الجديدة."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "معاينة من الداخل",
 			"description": "يمكن تثبيت النسخة التجريبية إلى جانب الإصدار المستقر وتوفر الوصول المبكر إلى الميزات والتحسينات الجديدة."
 		},
 		"self_signed": {
