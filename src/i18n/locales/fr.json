@@ -103,7 +103,6 @@
 		"edit_page": "Modifier cette page"
 	},
 	"footer": {
-		"copyright": "Copyright © 2021 - {year}, Les auteurs de {FilesName}",
 		"home": "Accueil",
 		"docs": "Documentation",
 		"news": "Actualités",
