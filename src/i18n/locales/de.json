@@ -117,6 +117,7 @@
 		"web_team": "Web-Team"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Startseite",
 		"docs": "Dokumentation",
 		"news": "Neuigkeiten",
