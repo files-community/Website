@@ -6,7 +6,7 @@
 		"docs_page": "{FilesName} • Документация - {title}",
 		"blog_home": "{FilesName} • Блог",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Создание лучшего файлового менеджера для Windows."
+		"description": "Создаем лучший файловый менеджер для Windows."
 	},
 	"home": {
 		"community": {
@@ -117,6 +117,7 @@
 		"web_team": "Команда"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Главная",
 		"docs": "Документация",
 		"news": "Новости",
