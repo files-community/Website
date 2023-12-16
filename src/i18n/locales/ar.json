@@ -1,7 +1,7 @@
 {
 	"metadata": {
 		"name": "{FilesName}",
-		"home": "{FilesName} • الصفحة الرئيسية",
+		"home": "{FilesName} • الرئيسية",
 		"docs_home": "{FilesName} • الوثائق",
 		"docs_page": "{FilesName} • الوثائق - {title}",
 		"blog_home": "{FilesName} • المدونة",
@@ -93,7 +93,7 @@
 		"share": {
 			"default": "المشاركة الأصلية",
 			"url": "نسخ الرابط",
-			"tweet": "X",
+			"tweet": "تويتر",
 			"facebook": "الفيسبوك",
 			"rss": "تغذية RSS"
 		}
@@ -122,8 +122,8 @@
 		"news": "أخبار",
 		"download": "تحميل",
 		"themes": "سمات",
-		"discord": "Discord",
-		"github": "Github"
+		"discord": "ديسكورد",
+		"github": "غيت هاب"
 	},
 	"download": {
 		"title": "تحميل {FilesName}",
