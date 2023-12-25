@@ -1,5 +1,5 @@
 ---
-title: Manage repositories with Git
+title: Manage folders with Git
 ---
 
 ## Using Git in Files
