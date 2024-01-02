@@ -24,7 +24,7 @@ With the recently added option to keep Files open in the background, a popular r
 
 Enabling the option to "Open Files on Windows Startup" and the option to "Keep Files running in the background" will now open Files in the background when starting Windows.
 
-### Extract archives with "smart extract"
+### Extract archives with "Smart Extract"
 
 Smart Extract is a new feature that will automatically choose the extraction mode based on the archive contents. If the archive contains a single file or folder, Smart Extract will extract the archive to the current directory, otherwise if there are multiple items, they will be extracted to a new folder. Smart Extract can be accessed via the `ctrl` + `shift` + `e` shortcut as well as the right click context menu.
 
