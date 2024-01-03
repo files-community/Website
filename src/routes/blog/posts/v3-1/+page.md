@@ -6,7 +6,7 @@ date: 1/9/2024
 author: files-community
 ---
 
-We're excited to announce that starting today, v3.1 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
+We're excited to announce that starting today, Files v3.1 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
 
 **TL;DR:** Files v3.1 adds an icon to the system tray, support for opening a minimized window on startup, smart extract, an option to prioritize files when sorting, group files by day, and more. Continue reading to learn more about these changes.
 
