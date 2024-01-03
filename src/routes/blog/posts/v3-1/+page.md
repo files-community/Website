@@ -42,7 +42,7 @@ We added an option to prioritize files when sorting. Enabling this option will s
 
 ### Drag and drop to open folders in a new tab
 
-Dragging & dropping a folder on the title bar will now open the folder in a new tab. This gesture also works with multiple folders, dragging multiple folders will open each folder in it's own tab.
+Dragging & dropping a folder on the title bar will now open the folder in a new tab. This gesture also works with multiple folders, dragging multiple folders will open each folder in its own tab.
 
 <figure>
     <img src="/blog-resources/v3-1/OpenInNewTab.jpg" alt="Open folders in new tab" />
