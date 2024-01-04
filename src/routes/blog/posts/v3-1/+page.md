@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.1
 description: System tray icon, open minimized on startup, Smart Extract, prioritize files when sorting, and a new drag & drop gesture.
-thumbnail: /blog-resources/v3-1/Hero.jpg
+thumbnail: /blog-resources/v3-1/Hero.png
 date: 1/9/2024
 author: files-community
 ---
@@ -17,7 +17,7 @@ We're excited to announce that starting today, Files v3.1 is now available. If y
 With the recently added option to keep Files open in the background, a popular request has been to add an icon to the system tray. Besides for indicating when there is an open process, right clicking the icon provides a shortcut to the documentation site and a way to fully close the background process.
 
 <figure>
-    <img src="/blog-resources/v3-1/SystemTray.jpg" alt="System tray icon" />
+    <img src="/blog-resources/v3-1/SystemTray.png" alt="System tray icon" />
 </figure>
 
 ### Open minimized on Windows Startup
@@ -29,7 +29,7 @@ Enabling the option to "Open Files on Windows Startup" and the option to "Keep F
 Smart Extract is a new feature that will automatically choose the extraction mode based on the archive contents. If the archive contains a single file or folder, Smart Extract will extract the archive to the current directory, otherwise if there are multiple items, they will be extracted to a new folder. Smart Extract can be accessed via the `ctrl` + `shift` + `e` shortcut as well as the right click context menu.
 
 <figure>
-    <img src="/blog-resources/v3-1/SmartExtract.jpg" alt="Smart Extract" />
+    <img src="/blog-resources/v3-1/SmartExtract.png" alt="Smart Extract" />
 </figure>
 
 ### Prioritize files when sorting
@@ -37,7 +37,7 @@ Smart Extract is a new feature that will automatically choose the extraction mod
 We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together". 
 
 <figure>
-    <img src="/blog-resources/v3-1/SortFilesFirst.jpg" alt="Prioritize files when sorting" />
+    <img src="/blog-resources/v3-1/SortFilesFirst.png" alt="Prioritize files when sorting" />
 </figure>
 
 ### Drag and drop to open folders in a new tab
@@ -45,7 +45,7 @@ We added an option to prioritize files when sorting. Enabling this option will s
 Dragging & dropping a folder on the title bar will now open the folder in a new tab. This gesture also works with multiple folders, dragging multiple folders will open each folder in its own tab.
 
 <figure>
-    <img src="/blog-resources/v3-1/OpenInNewTab.jpg" alt="Open folders in new tab" />
+    <img src="/blog-resources/v3-1/OpenInNewTab.png" alt="Open folders in new tab" />
 </figure>
 
 ## Changes and Improvements
