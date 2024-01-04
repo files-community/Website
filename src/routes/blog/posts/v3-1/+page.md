@@ -73,6 +73,11 @@ Dragging & dropping a folder on the title bar will now open the folder in a new 
 - Fixed issue where the column headers weren't always "sticky"
 - Fixed issue where it wouldn't work to open Files if a previous instance crashed
 - Fixed exception that would sometimes occur when sharing items
+- Fixed NullReferenceException when renaming files
+- Fixed NullReferenceException in ColumnShellPage.NavigateToPath
+- Fixed issue where batch files were opened as system32
+- Fixed the taskbar behavior in full screen mode
+- Fixed COMException when removing focus from the path bar
 
 ### Conclusion
 
