@@ -75,7 +75,7 @@ Dragging & dropping a folder on the title bar will now open the folder in a new 
 - Fixed exception that would sometimes occur when sharing items
 - Fixed NullReferenceException when renaming files
 - Fixed NullReferenceException in ColumnShellPage.NavigateToPath
-- Fixed issue where batch files were opened as system32
+- Fixed issue where batch files were opened as system
 - Fixed the taskbar behavior in full screen mode
 - Fixed COMException when removing focus from the path bar
 
