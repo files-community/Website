@@ -2,7 +2,7 @@
 title: Announcing Files v3.1
 description: System tray icon, open minimized on startup, Smart Extract, prioritize files when sorting, and a new drag & drop gesture.
 thumbnail: /blog-resources/v3-1/Hero.png
-date: 1/9/2024
+date: 1/8/2024
 author: files-community
 ---
 
