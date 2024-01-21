@@ -183,6 +183,7 @@ The following presents how an interface structure should be ordered:
 1. Helper classes must be static.
 2. Extension classes must be static and only contain extension functions related to one type or derivatives
 
-### 7. Apendix
+### 7. Duplications
 
-1. Do not use any `Vanara` namespaces because it cannot be trimmed in C# project
+1. Do not use any `Vanara` namespaces
+2. Do not use `DllImport` to import Win32 API
