@@ -73,35 +73,103 @@ To make the codebase consistent and easy to understand, we require you to follow
 
 The following presents how a class structure should be ordered:
 
-- Static fields
-- Static properties
+```cs
+// Copyright (c) 2023 Files Community
+// Licensed under the MIT License. See the LICENSE.
 
-- `readonly` fields
-- Fields
-- `_disposed` field (if applicable)
+using System;
 
-- Service property
+namespace Files.WebsiteDocs
+{
+    public class CodingGuideline // : ObservableObject, IDisposable
+    {
+        // Dependency injections
 
-- Properties
-- UI properties
-- ICommand properties
+        private CommandManager Commands { get; } = Ioc.Default.GetRequiredService<ICommandManager>();
+        private ILogger Logger { get; } = Ioc.Default.GetRequiredService<ILogger>();
 
-- Constructor `{ fields injection, initialization of fields, command implementation }`
+        // Fields
 
-- Command implementation functions (private/protected only, can be virtual but not abstract)
+        private static string _staticPrivateFieled;
 
-- public (virtual/override) methods (with parameters amount descending)
-- protected (virtual/override) methods (with parameters amount descending)
-- private methods
+        private readonly string _readonlyPrivateField;
 
-- `static` methods
+        private string _privateField;
 
-- `abstract` methods
+        // Use if this class is derived from IDisposable
+        private bool _disposed;
 
-- Operators
+        // Properties
 
-- Assertions e.g. `AssertNotDisposed()`, `AssertInitialized()`, `AssertStreamOpened()`
-- IDisposable.Dispose() function
+        public static string StaticPublicProperty { get; }
+
+        public string PublicProperty { get; }
+
+        private MUXCControl _UIProperty;
+        public MUXCControl UIProperty
+        {
+            get => _UIProperty;
+            set => SetProperty(ref _UIProperty, value);
+        }
+
+        // Events
+
+        public event EventHandler? LoadedInvoked;
+        public event EventHandler<RefreshedEventArgs>? RefreshedInvoked;
+
+        // Commands
+
+        public ICommand LoadedCommand { get; }
+
+        // Constructor
+
+        public CodingGuideline(string arg)
+        {
+            // Fields injection
+            _privateField = arg;
+
+            // Initialization of fields
+            _readonlyPrivateField = string.Empty;
+
+            // Initialization of commands
+            LoadedCommand = RelayCommand(ExecuteLoadedCommand);
+        }
+
+        abstract void AbstractMethod()
+        {
+        }
+
+        private void ExecuteLoadedCommand()
+        {
+            // Must be private or protected, and can be vertual but not abstract.
+        }
+
+        public /* in order of `override` and `virtual` */ void PublicMethod()
+        {
+            // Parameters amount descending
+        }
+
+        protected /* in order of `override` and `virtual` */ void ProtectedMethod()
+        {
+            // Parameters amount descending
+        }
+
+        private void PrivateMethod
+        {
+        }
+
+        static void StaticMethod()
+        {
+        }
+
+        public static CodingGuideline operator +(CodingGuideline a) => a;
+
+        // Assertions e.g. `AssertNotDisposed()`, `AssertInitialized()`, `AssertStreamOpened()`
+
+        // IDisposable.Dispose() function
+    }
+}
+```
 
 ### 5. Interface structure
 
@@ -115,4 +183,6 @@ The following presents how an interface structure should be ordered:
 1. Helper classes must be static.
 2. Extension classes must be static and only contain extension functions related to one type or derivatives
 
-### 7. Package references
+### 7. Apendix
+
+1. Do not use any `Vanara` namespaces because it cannot be trimmed in C# project
