@@ -43,7 +43,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 2. Use PascalCase prefixed with `_` for properties' backing fields
 3. Use camelCase for fields, method parameters
 4. Use camelCase prefixed with `_` for fields
-5. Use [Hungarian Notation](#8-hungarian-notation) only for OS functions/API calls
+5. Use [Hungarian Notation](#8-hungarian-notation-in-c) only for OS functions/API calls
 6. Use UPPER_CASE for constant variables
 7. Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
 
@@ -201,7 +201,7 @@ namespace Files.WebsiteDocs.CodingGuidelines
 
 ### 7. Deprecations
 
-1. Do not use any `Vanara` namespaces
+1. Do not refer any `Vanara` namespaces
 2. Do not use `DllImport` to import Win32 API
 
 ### 8. Hungarian Notation in C#
