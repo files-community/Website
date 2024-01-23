@@ -79,9 +79,9 @@ The following presents how a class structure should be ordered:
 
 using System;
 
-namespace Files.WebsiteDocs
+namespace Files.WebsiteDocs.CodingGuidelines
 {
-    public class CodingGuideline // : ObservableObject, IDisposable
+    public class ClassStructure // : ObservableObject, IDisposable
     {
         // Dependency injections
 
@@ -123,7 +123,7 @@ namespace Files.WebsiteDocs
 
         // Constructor
 
-        public CodingGuideline(string arg)
+        public ClassStructure(string arg)
         {
             // Fields injection
             _privateField = arg;
@@ -135,7 +135,7 @@ namespace Files.WebsiteDocs
             LoadedCommand = RelayCommand(ExecuteLoadedCommand);
         }
 
-        [modifier] abstract void AbstractMethod();
+        [modifier]  /* in order of `public` and `private` */ abstract void AbstractMethod();
 
         private void ExecuteLoadedCommand()
         {
@@ -152,7 +152,7 @@ namespace Files.WebsiteDocs
             // Parameters amount descending
         }
 
-        private void PrivateMethod
+        private void PrivateMethod()
         {
         }
 
@@ -160,7 +160,7 @@ namespace Files.WebsiteDocs
         {
         }
 
-        public static CodingGuideline operator +(CodingGuideline a) => a;
+        // Operators
 
         // Assertions e.g. `AssertNotDisposed()`, `AssertInitialized()`, `AssertStreamOpened()`
 
@@ -173,8 +173,26 @@ namespace Files.WebsiteDocs
 
 The following presents how an interface structure should be ordered:
 
-- properties
-- functions (name descending + parameters amount descending)
+```cs
+// Copyright (c) 2023 Files Community
+// Licensed under the MIT License. See the LICENSE.
+
+using System;
+
+namespace Files.WebsiteDocs.CodingGuidelines
+{
+    public class InterfaceStructure
+    {
+        // Properties
+
+        string Property { get; set; }
+
+        // Methods
+
+        void Method(); // Name descending + Parameters amount descending
+    }
+}
+```
 
 ### 6. Helpers and extensions
 
