@@ -135,9 +135,7 @@ namespace Files.WebsiteDocs
             LoadedCommand = RelayCommand(ExecuteLoadedCommand);
         }
 
-        abstract void AbstractMethod()
-        {
-        }
+        [modifier] abstract void AbstractMethod();
 
         private void ExecuteLoadedCommand()
         {
@@ -158,7 +156,7 @@ namespace Files.WebsiteDocs
         {
         }
 
-        static void StaticMethod()
+        [modifier] /* in order of `public` and `private` */ static void StaticMethod()
         {
         }
 
