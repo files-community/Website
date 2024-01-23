@@ -43,7 +43,7 @@ To make the codebase consistent and easy to understand, we require you to follow
 2. Use PascalCase prefixed with `_` for properties' backing fields
 3. Use camelCase for fields, method parameters
 4. Use camelCase prefixed with `_` for fields
-5. Use Hungarian Notation only for OS functions/API calls
+5. Use [Hungarian Notation](#8-hungarian-notation) only for OS functions/API calls
 6. Use UPPER_CASE for constant variables
 7. Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
 
@@ -203,3 +203,16 @@ namespace Files.WebsiteDocs.CodingGuidelines
 
 1. Do not use any `Vanara` namespaces
 2. Do not use `DllImport` to import Win32 API
+
+### 8. Hungarian Notation in C#
+
+Largely refer to this [MS Docs](https://learn.microsoft.com/en-us/windows/win32/stg/coding-style-conventions)
+
+- Do not use `m_` for data members of a class
+- Do not use `g_` for global variables
+- Do not use `tm` for text metrics
+- Do not use `cr` for color reference values
+- Do not use `a` for arrays
+- Do not use `f` for flags
+- Do not use `fn` for functions
+- Do not use `i` for integer types
