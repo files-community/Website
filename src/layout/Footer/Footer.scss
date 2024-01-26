@@ -1,27 +1,25 @@
 @use "src/styles/mixins" as *;
 
-:global {
-	#page-footer {
-		border-block-start: 1px solid var(--fds-divider-stroke-default);
+:global(#page-footer) {
+	border-block-start: 1px solid var(--fds-divider-stroke-default);
+}
 
-		.page-section-inner {
-			@include flex($align: top, $justify: space-between, $gap: 48px);
-		}
+:global(#page-footer .page-section-inner) {
+	@include flex($align: top, $justify: space-between, $gap: 48px);
+}
 
-		p {
-			margin: 12px 0;
-		}
+:global(#page-footer p) {
+	margin: 12px 0;
+}
 
-		:global(.button.style-hyperlink) {
-			display: block;
-			inline-size: fit-content;
-			margin-inline: -11px;
-			margin-block-end: 8px;
+:global(#page-footer .button.style-hyperlink) {
+	display: block;
+	inline-size: fit-content;
+	margin-inline: -11px;
+	margin-block-end: 8px;
 
-			&:last-child {
-				margin-block-end: 0;
-			}
-		}
+	&:last-child {
+		margin-block-end: 0;
 	}
 }
 
@@ -31,6 +29,7 @@
 		gap: 24px;
 		grid-template-columns: 2fr 1fr;
 	}
+
 	.column {
 		inline-size: 100%;
 		min-inline-size: unset;

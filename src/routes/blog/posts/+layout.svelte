@@ -17,7 +17,7 @@
 	title={pageTitle
 		? $_("metadata.blog_page", {
 				values: { title: pageTitle, ...defaultI18nValues.values },
-		  })
+			})
 		: $_("metadata.blog_home", defaultI18nValues)}
 	image={thumbnail}
 	{description}

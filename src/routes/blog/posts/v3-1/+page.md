@@ -34,7 +34,7 @@ Smart Extract is a new feature that will automatically choose the extraction mod
 
 ### Prioritize files when sorting
 
-We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together". 
+We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together".
 
 <figure>
     <img src="/blog-resources/v3-1/SortFilesFirst.png" alt="Prioritize files when sorting" />

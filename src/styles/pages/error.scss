@@ -29,14 +29,20 @@
 		border: none;
 		border-radius: 0;
 		background: silver;
-		box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-			inset -2px -2px grey, inset 2px 2px #dfdfdf;
+		box-shadow:
+			inset -1px -1px #0a0a0a,
+			inset 1px 1px #fff,
+			inset -2px -2px grey,
+			inset 2px 2px #dfdfdf;
 		font-size: 1.2rem;
 
 		&:not(:disabled):active {
 			padding: 2px 11px 0 13px;
-			box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a,
-				inset -2px -2px #dfdfdf, inset 2px 2px grey;
+			box-shadow:
+				inset -1px -1px #fff,
+				inset 1px 1px #0a0a0a,
+				inset -2px -2px #dfdfdf,
+				inset 2px 2px grey;
 		}
 
 		&:focus {
@@ -93,8 +99,11 @@
 
 		&-thumb {
 			background-color: #dfdfdf;
-			box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff,
-				inset -2px -2px #808080, inset 2px 2px #dfdfdf;
+			box-shadow:
+				inset -1px -1px #0a0a0a,
+				inset 1px 1px #fff,
+				inset -2px -2px #808080,
+				inset 2px 2px #dfdfdf;
 		}
 	}
 }
@@ -105,8 +114,11 @@
 	inline-size: clamp(150px, 380px, calc(100% - 48px));
 	padding: 3px;
 	background: silver;
-	box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf,
-		inset -2px -2px grey, inset 2px 2px #fff;
+	box-shadow:
+		inset -1px -1px #0a0a0a,
+		inset 1px 1px #dfdfdf,
+		inset -2px -2px grey,
+		inset 2px 2px #fff;
 	resize: both;
 
 	@media screen and (width < 648px) {

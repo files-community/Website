@@ -17,7 +17,7 @@ If you don't specify the port, the default port will be used:
 **FTP:** `21`.  
 **FTPs:** `990`.
 
-If required, you will be prompted to enter your credentials to login.  
+If required, you will be prompted to enter your credentials to login.
 
 ## How to disconnect from FTP servers
 
