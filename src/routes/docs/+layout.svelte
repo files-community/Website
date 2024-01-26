@@ -77,7 +77,7 @@
 	title={pageTitle
 		? $_("metadata.docs_page", {
 				values: { title: pageTitle, FilesName: "Files" },
-			})
+		  })
 		: $_("metadata.docs_home", defaultI18nValues)}
 	image="docs"
 />

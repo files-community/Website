@@ -85,24 +85,26 @@
 
 	.tree-view {
 		.subtree {
-			:global(.list-item span) {
-				@include flex($align: center, $justify: space-between);
-				inline-size: 100%;
-			}
+			:global {
+				.list-item span {
+					@include flex($align: center, $justify: space-between);
+					inline-size: 100%;
 
-			:global(.list-item span .expander-icon) {
-				@include flex($align: center);
-				transition: transform var(--fds-control-fast-duration)
-					var(--fds-control-fast-out-slow-in-easing);
-				transform-origin: center;
-			}
+					.expander-icon {
+						@include flex($align: center);
+						transition: transform var(--fds-control-fast-duration)
+							var(--fds-control-fast-out-slow-in-easing);
+						transform-origin: center;
 
-			:global(.list-item span .expander-icon.expanded) {
-				transform: rotate(180deg);
-			}
+						&.expanded {
+							transform: rotate(180deg);
+						}
 
-			:global(.list-item span svg) {
-				@include icon;
+						svg {
+							@include icon;
+						}
+					}
+				}
 			}
 		}
 

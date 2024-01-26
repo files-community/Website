@@ -12,7 +12,7 @@ export const GET: RequestHandler = async ({ url, setHeaders }) => {
 			({
 				slug: path.match(/\.\/posts\/([\w-]+)\/\+page\.md$/)?.[1],
 				metadata,
-			}) as Post,
+			} as Post)
 	);
 
 	setHeaders({
@@ -44,7 +44,7 @@ ${posts
 <enclosure url="https://${url.host}${
 			post.metadata.thumbnail
 		}" length="0" type="image/jpeg"/>
-</item>`,
+</item>`
 	)
 	.join("")}
 </channel>

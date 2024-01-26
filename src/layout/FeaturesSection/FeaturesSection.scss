@@ -1,15 +1,17 @@
 @use "src/styles/mixins" as *;
 
 // Outer section
-:global(#features-section) {
-	background-color: var(--fds-solid-background-base);
-}
+:global {
+	#features-section {
+		background-color: var(--fds-solid-background-base);
 
-// Inner section
-:global(#features-section .page-section-inner) {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, 1fr);
-	gap: 48px;
+		// Inner section
+		.page-section-inner {
+			display: grid;
+			grid-template-columns: repeat(auto-fill, 1fr);
+			gap: 48px;
+		}
+	}
 }
 
 // <FeatureCard /> container

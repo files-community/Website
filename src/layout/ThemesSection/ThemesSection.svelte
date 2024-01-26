@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Tag } from "$data/features";
+	import { onMount } from "svelte";
 	import {
 		ColorSwatch,
 		defaultI18nValues,
@@ -7,9 +7,9 @@
 		PageSection,
 	} from "$lib";
 	import { Button, TextBlock } from "fluent-svelte";
-	import { onMount } from "svelte";
 	import { _ } from "svelte-i18n";
-	import "./Theming.scss";
+	import type { Tag } from "$data/features";
+	import { error } from "@sveltejs/kit";
 
 	let systemTheme = "light";
 	let currentTheme = 0;

@@ -25,6 +25,6 @@
 	/>
 </Tooltip>
 
-<style global lang="scss">
+<style lang="scss">
 	@use "ColorSwatch";
 </style>
