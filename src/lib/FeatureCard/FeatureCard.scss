@@ -20,9 +20,7 @@
 	outline: 2px solid transparent;
 
 	&:hover {
-		box-shadow:
-			var(--fds-card-shadow),
-			0 0 0 1px var(--fds-card-stroke-default);
+		box-shadow: var(--fds-card-shadow), 0 0 0 1px var(--fds-card-stroke-default);
 		outline-color: var(--fds-accent-default);
 	}
 

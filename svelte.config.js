@@ -1,14 +1,14 @@
-import remarkA11yEmoji from "@fec/remark-a11y-emoji";
 import adapter from "@sveltejs/adapter-cloudflare";
-import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
+import sveltePreprocess from "svelte-preprocess";
+import { mdsvex } from "mdsvex";
+import remarkGfm from "remark-gfm";
+import remarkA11yEmoji from "@fec/remark-a11y-emoji";
+import remarkSlug from "remark-slug";
+import remarkGithub from "remark-github";
+import rehypeColorPreview from "rehype-color-preview";
 import autoprefixer from "autoprefixer";
 import cssnano from "cssnano";
-import { mdsvex } from "mdsvex";
 import mediaMinMax from "postcss-media-minmax";
-import rehypeColorPreview from "rehype-color-preview";
-import remarkGfm from "remark-gfm";
-import remarkGithub from "remark-github";
-import remarkSlug from "remark-slug";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -32,7 +32,7 @@ const config = {
 			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
 			rehypePlugins: [rehypeColorPreview],
 		}),
-		vitePreprocess({
+		sveltePreprocess({
 			postcss: {
 				plugins: [autoprefixer(), cssnano(), mediaMinMax()],
 			},

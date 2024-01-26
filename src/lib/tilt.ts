@@ -42,7 +42,7 @@ export default function tilt(node: HTMLElement, settingsObj: TiltSettings) {
 		node.style.transition = `${TRANSITION_MS}ms`;
 		transitionId = setTimeout(
 			() => (node.style.transition = "0s"),
-			TRANSITION_MS,
+			TRANSITION_MS
 		);
 	}
 

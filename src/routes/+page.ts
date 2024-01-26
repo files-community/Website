@@ -15,7 +15,7 @@ export const load = async ({ fetch }) => {
 	const data = [1, 2, 3]
 		.map(
 			async (page): Promise<ContributorData[]> =>
-				await (await fetch(githubContribData(page))).json(),
+				await (await fetch(githubContribData(page))).json()
 		)
 		.flat();
 

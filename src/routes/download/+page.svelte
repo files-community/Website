@@ -14,7 +14,7 @@
 			name: $_("download.microsoft_store.title", defaultI18nValues),
 			description: $_(
 				"download.microsoft_store.description",
-				defaultI18nValues,
+				defaultI18nValues
 			),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/branding/logo-light.svg",

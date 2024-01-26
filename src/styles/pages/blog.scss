@@ -1,10 +1,12 @@
-:global(#blog) {
-	position: relative;
-}
+:global {
+	#blog {
+		position: relative;
 
-:global(#blog .page-section-inner) {
-	position: static;
-	max-inline-size: 1200px;
+		.page-section-inner {
+			position: static;
+			max-inline-size: 1200px;
+		}
+	}
 }
 
 .blog-backdrop {

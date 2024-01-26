@@ -23,7 +23,6 @@ Dragging items between tabs is pretty easy. Simply drag the items and hover the 
 ## Shortcuts for interacting with tabs
 
 There are several ways to interact with tabs in Files. Here are some useful shortcuts:
-
 - `ctrl` + `t`: Add a new tab.
 - `ctrl` + `tab`: Switch to the next tab.
 - `ctrl` + `shift` + `tab`: Switch to the previous tab.

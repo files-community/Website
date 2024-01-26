@@ -77,9 +77,11 @@
 			}
 		}
 
-		:global(.download-source-description) {
-			text-align: left;
-			max-width: 50rem;
+		:global {
+			.download-source-description {
+				text-align: left;
+				max-width: 50rem;
+			}
 		}
 
 		.download-source-icon {

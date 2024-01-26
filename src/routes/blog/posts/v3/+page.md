@@ -18,7 +18,7 @@ We're excited to announce that starting today, v3 is now available. If you alrea
 
 When we set out to update the design, we wanted to ensure users would feel at home with the app they love. We were careful not to move the options and commands users are familiar with, whilst modernizing and refreshing core parts of the UI.
 
-- With v3 being one of the larger releases to date, we decided it was a good time to refresh the logo. After exploring a number of ideas and color combinations, we asked the community to help choose a color. It's probably no surprise, but the community overwhelmingly opted in favor of the familiar yellow color. We also updated the icons for the developer and preview versions of Files (purple & blue) to make it easier to identify the different variants of the app.
+- With v3 being one of the larger releases to date, we decided it was a good time to refresh the logo. After exploring a number of ideas and color combinations, we asked the community to help choose a color. It's probably no surprise, but the community overwhelmingly opted in favor of the familiar yellow color. We also updated the icons for the developer and preview versions of Files (purple & blue) to make it easier to identify the different variants of the app. 
 
 <figure>
     <img src="/blog-resources/v3/NewIcon.jpg" alt="Updated Files Icon for all branches" />
@@ -58,6 +58,7 @@ We're excited to introduce a Command Palette that lets you search and execute co
 ### Keep Files in the background
 
 We added an option to keep Files open in the background when closing the last window. This option is designed to improve the startup performance but can be turned on/off from the advanced settings page. Please be advised the using this option will use system resources even when the app is in the background.
+
 
 ## Changes and Improvements
 
