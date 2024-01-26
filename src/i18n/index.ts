@@ -18,14 +18,14 @@ export const locales: Record<string, Locale> = Object.fromEntries(
 		import.meta.glob<LocaleDictionary>("./locales/*.json", {
 			import: "default",
 			eager: true,
-		})
+		}),
 	).map(([locale, values]) => [
 		locale.match(/\.\/locales\/([\w-]+)\.json/)?.[1],
 		{
 			values,
 			dir: ["he-IL", "ar-SA"].includes(locale) ? "rtl" : "ltr",
 		},
-	])
+	]),
 );
 
 export default () => {

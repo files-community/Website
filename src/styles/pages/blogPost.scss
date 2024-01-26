@@ -58,20 +58,18 @@
 			border-radius: 50%;
 		}
 
-		:global {
-			.menu-flyout {
-				min-inline-size: 120px;
+		:global(.menu-flyout) {
+			min-inline-size: 120px;
+		}
 
-				&-container {
-					margin-inline-start: auto;
-				}
+		:global(.menu-flyout-container) {
+			margin-inline-start: auto;
+		}
 
-				&-item :any-link {
-					text-decoration: none;
-					color: currentColor;
-					min-inline-size: 100%;
-				}
-			}
+		:global(.menu-flyout-item :any-link) {
+			text-decoration: none;
+			color: currentColor;
+			min-inline-size: 100%;
 		}
 	}
 

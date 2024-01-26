@@ -6,7 +6,7 @@ const PATH_TRIM = /(?:..\/routes\/docs)((\/[\w-]+)+)\//;
 const getPages = () => {
 	const rawPages = import.meta.glob<DocsMetadata>(
 		["../routes/docs/**/*/+page.md", "../routes/docs/+page.md"], // import all docs pages + base page
-		{ eager: true, import: "metadata" }
+		{ eager: true, import: "metadata" },
 	);
 
 	return Object.entries(rawPages).map(([path, node]) => {
@@ -23,7 +23,7 @@ const getTree = (pages: DocsNode[]) => {
 		{
 			eager: true,
 			import: "metadata",
-		}
+		},
 	);
 
 	const categories: DocsTree = Object.entries(rawCategories).map(
@@ -37,7 +37,7 @@ const getTree = (pages: DocsNode[]) => {
 				path: docsPath,
 				...node,
 			};
-		}
+		},
 	);
 
 	return [

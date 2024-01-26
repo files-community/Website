@@ -84,7 +84,6 @@
 	}
 }
 
-
 .buttons {
 	z-index: 1;
 	display: flex;
@@ -116,18 +115,16 @@
 	}
 }
 
-:global {
-	.navbar .button.sidebar-button {
-		inline-size: 38px;
+:global(.navbar .button.sidebar-button) {
+	inline-size: 38px;
+}
 
-		&:active .fluent-icon {
-			transform: scaleX(0.65);
-		}
+:global(.navbar .button.sidebar-button:active .fluent-icon) {
+	transform: scaleX(0.65);
+}
 
-		.fluent-icon {
-			inline-size: 16px;
-		}
-	}
+:global(.navbar .button.sidebar-button .fluent-icon) {
+	inline-size: 16px;
 }
 
 .sidebar {
