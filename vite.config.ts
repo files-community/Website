@@ -1,8 +1,8 @@
 import { sveltekit } from "@sveltejs/kit/vite";
 import Icons from "unplugin-icons/vite";
-import type { UserConfig } from "vite";
+import { defineConfig } from "vite";
 
-const config: UserConfig = {
+export default defineConfig({
 	plugins: [
 		sveltekit(),
 		Icons({
@@ -10,6 +10,4 @@ const config: UserConfig = {
 			defaultClass: "fluent-icon",
 		}),
 	],
-};
-
-export default config;
+});
