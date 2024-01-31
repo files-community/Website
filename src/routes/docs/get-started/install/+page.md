@@ -17,5 +17,5 @@ Files is a community-driven project that depends on your support to grow and imp
 You can also use the preview version alongside the stable release to get early access to new features and improvements.
 
 <InfoBar title="Note" severity="information">
-	Files requires the Windows Update and Delivery Optimization services to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
+	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
 </InfoBar>
