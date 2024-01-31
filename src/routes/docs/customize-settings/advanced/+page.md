@@ -11,7 +11,7 @@ title: Advanced
 Located on the advanced settings page, this will prompt you to choose a location to export the settings to.
 
 <InfoBar severity="information">
-	Although the exported archive includes a file called "filetags", it doesn't actually contain a list of tagged files. This file only contains the guids that get embedded into the meta data of tagged items.
+	Although the exported archive includes a file called "filetags", it doesn't actually contain a list of tagged files. This file only contains the guids that get embedded into the metadata of tagged items.
 </InfoBar>
 
 ## Import settings
