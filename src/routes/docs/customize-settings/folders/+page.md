@@ -64,27 +64,27 @@ Adjusts the date unit for group by.
 
 ## Layout mode
 
-**Details View**
+### Details View
 
 Arranges items using a Data Grid with resizable columns. Support for rearranging columns isn't supported yet.
 
-**List View**
+### List View
 
 Displays items in a single column with only the icon and file name.
 
-**Tiles View**
+### Tiles View
 
 Displays larger icons and additional information about the items.
 
-**Grid View**
+### Grid View
 
 Grid View allows you to view larger icons.
 
-**Columns View**
+### Columns View
 
 Displays files and folders in a hierarchical structure, with each level shown in a separate column.
 
-**Adaptive**
+### Adaptive
 
 Adaptive automatically chooses the layout based on each folders contents.
 
