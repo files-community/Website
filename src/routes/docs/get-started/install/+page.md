@@ -24,3 +24,25 @@ You can also use the preview version alongside the stable release to get early a
 
 1. Open PowerShell as administrator.
 2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
+
+
+## Keep Files up to date
+
+Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
+
+<InfoBar title="Note" severity="information">
+	Installing an update will automatically restart Files so make sure to save your work before starting an update.
+</InfoBar>
+
+### Troubleshooting updates
+
+If you encounter any problems or errors while updating Files, you can try the following solutions:
+1. Make sure you have a stable internet connection and enough disk space for the update.
+2. Restart your computer and try to update Files again.
+
+### Windows cannot install package because a different package with the same name is already installed
+
+If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
+1. Export your settings by going `Settings > Advanced > Export`. 
+2. Uninstall and [reinstall](/download/) Files.
+3. Import your settings from `Settings > Advanced > Import`.
