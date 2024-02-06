@@ -2,7 +2,7 @@
 title: Announcing Files v3.2
 description: List View layout, edit album covers, higher quality thumbnails.
 thumbnail: /blog-resources/v3-2/Hero.png
-date: 1/8/2024
+date: 1/12/2024
 author: files-community
 ---
 
@@ -57,6 +57,10 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
 - Improved the performance when launching Files in the background at Windows startup
 - Improved support for high contrast themes
 - Updated the cloud status icon in the Columns View
+- Added support for pinning executable shortcuts to the Start Menu
+- Fixed issue where updating the default layout wouldn't refresh open tabs
+- Fixed issue where renaming a tag wouldn't save the new name
+- Fixed issue where certain changes in the Properties Window couldn't be canceled
 - Fixed issue where switching from Details to Tiles would sometimes result in blurry icons
 - Fixed issue where thumbnails would sometimes fail to load for OneDrive items 
 - Fixed issue where folder thumbnails wouldn't display a preview of the contents
@@ -77,6 +81,8 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
 - Fixed issue where exiting from the system tray icon didn't save the open tabs
 - Fixed issue where a new tab would open when trying to open a new window
 - Fixed issue where batch files couldn't be previewed inside archives
+- Fixed issue where installing multiple fonts would trigger multiple UAC prompts
+- Fixed issue where refocusing Details View would sometimes scroll
 - Fixed crash that would occur when displaying a large number of items at the same time
 - Fixed crash that would occur when items were added from an external app
 - Fixed crash that would occur when opening Properties for certain items in the Recent Files list
@@ -84,6 +90,7 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
 - Fixed crash that would occur when renaming items in the Grid View layout
 - Fixed crash that would occur when selecting the address bar via `Shift` + `Tab`
 - Fixed crash that would occur when Git path contained an emoji
+- Fixed crash that could occur when dragging in grouped grid layout
 
 
 ### Conclusion
