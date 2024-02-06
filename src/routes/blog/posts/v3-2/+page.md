@@ -14,7 +14,7 @@ We're excited to announce that starting today, Files v3.2 is now available. If y
 
 ### Browse large folders with confidence
 
-We know how frustrating it can be when Files crashes or freezes while browsing large folders. That’s why we’ve made significant improvements to enhance stability. Our team has worked hard to reduce crashes and improve performance when browsing large folders and when adding and deleting items. We believe these improvements will make your experience smoother and more enjoyable.
+We know how frustrating it can be when Files crashes or freezes while browsing large folders. That’s why we’ve made significant improvements to enhance stability. Our team has worked hard to reduce crashes when browsing large folders and when adding and deleting items. We believe these improvements will make your experience smoother and more enjoyable.
 
 ### Display more items with List View
 
