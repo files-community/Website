@@ -2,7 +2,7 @@
 title: Announcing Files v3.2
 description: List View layout, edit album covers, higher quality thumbnails.
 thumbnail: /blog-resources/v3-2/Hero.png
-date: 1/12/2024
+date: 2/12/2024
 author: files-community
 ---
 
