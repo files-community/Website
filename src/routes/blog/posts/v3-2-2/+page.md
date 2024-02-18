@@ -1,14 +1,14 @@
 ---
-title: Announcing Files v3.2.1
+title: Announcing Files v3.2.2
 description: A notification when app is running in the background, prompt when failing to rename items, and improvements to stability.
-thumbnail: /blog-resources/v3-2-1/Hero.png
+thumbnail: /blog-resources/v3-2-2/Hero.png
 date: 2/19/2024
 author: files-community
 ---
 
-Files v3.2.1 is now available for download, this release contains bug fixes to enhance your file browsing experience. If you already have Files, the toolbar will display a notification to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
+Files v3.2.2 is now available for download, this release contains bug fixes to enhance your file browsing experience. If you already have Files, the toolbar will display a notification to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
 
-## Changes in v3.2.1
+## Changes in v3.2.2
 
 - Added a notification when the app goes to the background for the first time
 - Added a prompt when failing to rename items requiring additional permissions
@@ -26,6 +26,10 @@ Files v3.2.1 is now available for download, this release contains bug fixes to e
 - Fixed NullReferenceException in DirectoryInfoUpdated
 - Fixed issue where icon overlays would update when refreshing a directory
 - Updated Windows App SDK to 1.4.5
+- Fixed InvalidOperationException in ColumnsLayoutPage
+- Fixed ArgumentException when wrong color was specified
+- Fixed COMException loop due to failure to generate notification
+- Fixed crash that would occur when clicking an item in the Tags widget
 
 ### Conclusion
 
