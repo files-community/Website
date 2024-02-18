@@ -12,7 +12,7 @@
 		"community": {
 			"chip": "Comunitate",
 			"title": "Proiectat și dezvoltat de către tine.",
-			"description": "{FilesName} este gratuit și open source, întreținut și proiectat de un colectiv de sute de contribuitori.",
+			"description": "{FilesName} este gratuit și cu sursă deschisă, întreținut și proiectat de un colectiv de sute de contribuitori.",
 			"discord": "Alătură-te discuției",
 			"docs": "Devino un contribuitor",
 			"contributions": "{amount, plural, =0 {Nici o contribuţie} one {# contribuţie} few {# contribuţii} other {# contribuţii}}"
@@ -20,7 +20,7 @@
 		"design": {
 			"chip": "Design",
 			"title": "Puterea întâlneşte frumuseţea.",
-			"description": "Explorați un design frumos creat pentru Windows. Gestionați-vă toate fișierele cu o productivitate sporită. Lucrați in mai multe foldere cu file. Și multe altele.",
+			"description": "Explorați un design frumos creat pentru Windows. Gestionați-vă toate fișierele cu o productivitate sporită. Lucrați în mai multe foldere cu file. Și multe altele.",
 			"download": "Descărcare",
 			"learn_more": "Aflați mai multe"
 		},
