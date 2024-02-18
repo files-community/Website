@@ -4,7 +4,7 @@
 		"home": "{FilesName} • Inici",
 		"docs_home": "{FilesName} • Documentació",
 		"docs_page": "{FilesName} • Documentació - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • Bloc",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Construint el millor gestor de fitxers per a Windows."
 	},
@@ -35,7 +35,7 @@
 			},
 			"preview": {
 				"title": "Pany de previsualització",
-				"description": "Preview photos, videos, and documents without opening them."
+				"description": "Visualitza fotos, vídeos i documents sense obrir-los."
 			},
 			"popup-preview": {
 				"title": "Suport per a QuickLook i SeerPro",
