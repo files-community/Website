@@ -46,7 +46,7 @@ If you get this error code, you'll need to uninstall and [reinstall](/download/)
 
 ### Steps required for the "classic installer" version after 3/21/2024
 
-Starting 3/21/2024, users with the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
+Starting 3/21/2024, users of the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
 
 <InfoBar title="Note" severity="information">
 	This is not required for the Store version of Files.
