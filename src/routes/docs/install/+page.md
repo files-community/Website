@@ -48,11 +48,11 @@ If you get this error code, you'll need to uninstall and [reinstall](/download/)
 
 Starting 3/21/2024, users with the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
 
+<InfoBar title="Note" severity="information">
+	This is not required for the Store version of Files.
+</InfoBar>
+
 1. Export your settings by going to `Settings > Advanced > Export`. 
 2. Uninstall Files and restart Windows
 3. [Reinstall](/download/) Files.
 4. Import your settings from `Settings > Advanced > Import`.
-
-<InfoBar title="Note" severity="information">
-	This is not required for the Store version of Files.
-</InfoBar>
