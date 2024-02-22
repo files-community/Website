@@ -48,6 +48,10 @@ Starting 3/21/2024, users of the sideload version (aka classic installer) will n
 
 ## Troubleshooting
 
+### Cannot open app package
+
+If you see a "Cannot open app package" message when you try to open Files, it means that your device needs an update for the AppInstaller component. You can update it from the Microsoft Store app on your device, or by downloading and running this installer https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer.
+
 ### Updates
 
 If you encounter any problems or errors while updating Files, you can try the following solutions:
@@ -57,8 +61,3 @@ If you encounter any problems or errors while updating Files, you can try the fo
 ### Windows cannot install package because a different package with the same name is already installed
 
 If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
-
-### Cannot open app package
-
-If you see a "Cannot open app package" message when you try to open Files, it means that your device needs an update for the AppInstaller component. You can update it from the Microsoft Store app on your device, or by downloading and running this installer https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer.
-
