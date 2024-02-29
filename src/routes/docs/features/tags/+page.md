@@ -97,4 +97,3 @@ Tags are saved using alternate data streams (and not in a database). We found th
 
 - Tags only work on drives formatted as NTFS
 - Tags may not work with all cloud storage providers
-
