@@ -60,7 +60,7 @@ Available as an option, the Tags widget provides a small preview of your existin
 
 Files includes a couple of default tags but you can edit or create your own from the settings menu. To do that, follow these steps:
 
-- Tap on the "Settings" icon in the top right corner of the screen or use the `ctrl` + `,` keyboard shortcut
+- Open Settings using the toolbar button or with the `ctrl` + `,` keyboard shortcut
 - Navigate to the "Tags" settings page
 
 ### Creating new tags
