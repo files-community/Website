@@ -108,24 +108,6 @@
 		>
 			{$_("footer.translations", defaultI18nValues)}
 		</Button>
-
-		<p>{$_("footer.contribute_site", defaultI18nValues)}</p>
-		<Button
-			variant="hyperlink"
-			{...externalLink}
-			href="https://github.com/{links.github.owner}/{links.github.siteRepo}/"
-		>
-			{$_("footer.github", defaultI18nValues)}
-		</Button>
-
-		<Button
-			variant="hyperlink"
-			{...externalLink}
-			href="https://github.com/{links.github.owner}/{links.github
-				.siteRepo}/issues/new/choose"
-		>
-			{$_("footer.report_bug", defaultI18nValues)}
-		</Button>
 	</div>
 	<div class="column">
 		<p>{$_("footer.web_team", defaultI18nValues)}</p>
