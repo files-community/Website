@@ -25,6 +25,10 @@ You can also use the preview version alongside the stable release to get early a
 1. Open PowerShell as administrator.
 2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
 
+### Install via Chocolatey
+
+The [Chocolatey](https://community.chocolatey.org/packages/files) installation is maintained by a third party but it's another option.
+
 ## Keep Files up to date
 
 Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
