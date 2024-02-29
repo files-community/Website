@@ -91,7 +91,7 @@ In order for the list of tags to be displayed on other devices, you'll need to e
 1. Export your settings by going to `Settings > Advanced > Export`
 2. Import your settings on the second device `Settings > Advanced > Import`
 
-## How tags work behind the scenes
+## Known limitations
 
 Tags are saved using alternate data streams (and not in a database). We found that alternate data streams is the best approach because it allows items to be transferred between locations (even without using Files) without losing their tags. However, this system has some limitations:
 
