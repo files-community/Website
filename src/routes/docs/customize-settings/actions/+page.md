@@ -994,7 +994,7 @@ Switches the layout based on the folder contents
 **Default bindings:**
 
 ```json
-{ "LayoutAdaptive": "Ctrl+Shift+8" }
+{ "LayoutAdaptive": "Ctrl+Shift+6" }
 ```
 
 
