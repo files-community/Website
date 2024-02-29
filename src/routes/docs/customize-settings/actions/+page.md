@@ -959,42 +959,16 @@ Switches to the Tiles View
 ```
 
 
-### Grid View Small Icons
+### Grid View
 
-Switches to the Grid View (small icon sizes)
+Switches to the Grid View
 
-**Action name:** `LayoutGridSmall`
-
-**Default bindings:**
-
-```json
-{ "LayoutGridSmall": "Ctrl+Shift+4" }
-```
-
-
-### Grid View Medium Icons
-
-Switches to the Grid View (medium icon sizes)
-
-**Action name:** `LayoutGridMedium`
+**Action name:** `LayoutGrid`
 
 **Default bindings:**
 
 ```json
-{ "LayoutGridMedium": "Ctrl+Shift+5" }
-```
-
-
-### Grid View Large Icons
-
-Switches to the Grid View (large icon sizes)
-
-**Action name:** `LayoutGridLarge`
-
-**Default bindings:**
-
-```json
-{ "LayoutGridLarge": "Ctrl+Shift+6" }
+{ "LayoutGrid": "Ctrl+Shift+4" }
 ```
 
 
@@ -1007,7 +981,7 @@ Switches to the Columns View
 **Default bindings:**
 
 ```json
-{ "LayoutColumns": "Ctrl+Shift+7" }
+{ "LayoutColumns": "Ctrl+Shift+5" }
 ```
 
 
