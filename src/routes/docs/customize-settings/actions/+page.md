@@ -546,31 +546,31 @@ Unpins selected items from the Start Menu
 { "UnpinFromStart": "" }
 ```
 
-## Favorites
+## Sidebar
 
-### Pin to Favorites
+### Pin to sidebar
 
-Pins selected folders to Favorites
+Pins selected folders to sidebar
 
-**Action name:** `PinItemToFavorites`
+**Action name:** `PinFolderToSidebar`
 
 **Default bindings:**
 
 ```json
-{ "PinItemToFavorites": "" }
+{ "PinFolderToSidebar": "" }
 ```
 
 
-### Unpin from Favorites
+### Unpin from Sidebar
 
-Unpins selected folders from Favorites
+Unpins selected folders from Sidebar
 
-**Action name:** `UnpinItemFromFavorites`
+**Action name:** `UnpinFolderFromSidebar`
 
 **Default bindings:**
 
 ```json
-{ "UnpinItemFromFavorites": "" }
+{ "UnpinFolderFromSidebar": "" }
 ```
 
 ## Backgrounds
