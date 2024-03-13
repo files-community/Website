@@ -111,12 +111,10 @@
 		"feedback": "Обратная связь",
 		"style_guide": "Руководство по стилю кода",
 		"translations": "Перевод",
-		"contribute_site": "Внести вклад в развитие этого сайта",
-		"github": "Репозиторий на Github",
-		"report_bug": "Нашли ошибку?",
 		"web_team": "Команда"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Главная",
 		"docs": "Документация",
 		"news": "Новости",
