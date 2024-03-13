@@ -111,12 +111,10 @@
 		"feedback": "Podziel się opinią",
 		"style_guide": "Siatka styli",
 		"translations": "Tłumaczenia",
-		"contribute_site": "Wesprzyj tę witrynę",
-		"github": "Repozytorium na GitHub",
-		"report_bug": "Znalazłeś/aś błąd?",
 		"web_team": "Zespół sieciowy"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Strona główna",
 		"docs": "Dokumentacja",
 		"news": "Aktualności",
