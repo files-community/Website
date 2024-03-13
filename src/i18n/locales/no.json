@@ -111,12 +111,10 @@
 		"feedback": "Gi tilbakemelding",
 		"style_guide": "Stilguide",
 		"translations": "Oversettelser",
-		"contribute_site": "Forbered denne sida",
-		"github": "Github Repo",
-		"report_bug": "Funnet en feil?",
 		"web_team": "Web lag"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Startside",
 		"docs": "Dokumentasjon",
 		"news": "Nyheter",
