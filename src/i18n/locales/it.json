@@ -77,7 +77,7 @@
 		"themes": {
 			"chip": "Temi",
 			"title": "Profondamente personale.",
-			"description": "Rendilo tuo. {FilesName} dispone di un'interfaccia utente completamente personalizzabile, persino i colori e i materiali. Prova i temi personalizzati disponibili in {FilesName} oppure esprimi la tua creatività creandone uno unico.",
+			"description": "Rendilo tuo. {FilesName} dispone di un'interfaccia utente completamente personalizzabile, persino nei colori e nei materiali. Prova i temi personalizzati disponibili in {FilesName} oppure esprimi la tua creatività creandone uno unico.",
 			"grey_blue": "Grigio Scuro • Azzurro",
 			"grey_green": "Grigio Blu • Verde Neon",
 			"purple": "Viola",
@@ -111,9 +111,6 @@
 		"feedback": "Facci sapere la tua opinione",
 		"style_guide": "Guida allo Stile",
 		"translations": "Traduzioni",
-		"contribute_site": "Contribuisci a questo sito",
-		"github": "Repository di Github",
-		"report_bug": "Hai trovato un bug?",
 		"web_team": "Team Web"
 	},
 	"navbar": {

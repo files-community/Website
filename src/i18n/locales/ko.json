@@ -111,9 +111,6 @@
 		"feedback": "피드백 보내기",
 		"style_guide": "코드 구조",
 		"translations": "번역하기",
-		"contribute_site": "이 사이트 기여하기",
-		"github": "GitHub 리포지토리",
-		"report_bug": "버그 제보하기",
 		"web_team": "웹 설계"
 	},
 	"navbar": {

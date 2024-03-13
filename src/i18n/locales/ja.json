@@ -111,9 +111,6 @@
 		"feedback": "フィードバックを送信",
 		"style_guide": "コーディング規約",
 		"translations": "翻訳",
-		"contribute_site": "このサイトに貢献する",
-		"github": "GitHub リポジトリ",
-		"report_bug": "バグを見つけましたか?",
 		"web_team": "Web チーム"
 	},
 	"navbar": {
