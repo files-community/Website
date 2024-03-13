@@ -111,12 +111,10 @@
 		"feedback": "اعطي ملاحظات",
 		"style_guide": "دليل السمة",
 		"translations": "الترجمات",
-		"contribute_site": "المساهمة في هذا الموقع",
-		"github": "مكتبة جيتهاب",
-		"report_bug": "العثور على خطأ؟",
 		"web_team": "فريق الويب"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "الرئيسية",
 		"docs": "توثيق",
 		"news": "أخبار",
