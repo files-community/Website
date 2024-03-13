@@ -114,7 +114,6 @@
 		"web_team": "Web Team"
 	},
 	"navbar": {
-		"ukraine": "#SupportUkraine",
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
@@ -132,7 +131,7 @@
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "Download Insider Preview",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
