@@ -111,12 +111,10 @@
 		"feedback": "Qayta baylanıs",
 		"style_guide": "Kod jazıw boyınsha qollanba",
 		"translations": "Awdarmalar",
-		"contribute_site": "Bul sayttıń rawajlanıwına úles qosıw",
-		"github": "Githubdaǵı baza",
-		"report_bug": "Qátelik tawdıńızba?",
 		"web_team": "Topar"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Bas bet",
 		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
