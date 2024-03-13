@@ -111,12 +111,10 @@
 		"feedback": "Küldj visszajelzést",
 		"style_guide": "Kódstílus",
 		"translations": "Fordítások",
-		"contribute_site": "Közreműködés - honlap",
-		"github": "GitHub repó",
-		"report_bug": "Hibát találtál?",
 		"web_team": "Web team"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Kezdőlap",
 		"docs": "Dokumentáció",
 		"news": "Hírek",
