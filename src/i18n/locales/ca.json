@@ -111,12 +111,10 @@
 		"feedback": "Proporciona retroacció",
 		"style_guide": "Guia d'estil",
 		"translations": "Traduccions",
-		"contribute_site": "Contribueix a aquest lloc",
-		"github": "Repositori de GitHub",
-		"report_bug": "¿Has trobat un error?",
 		"web_team": "Equip web"
 	},
 	"navbar": {
+		"ukraine": "#SupportUkraine",
 		"home": "Inici",
 		"docs": "Documentació",
 		"news": "Notícies",
