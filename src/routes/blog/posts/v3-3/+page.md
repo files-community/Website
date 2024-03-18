@@ -2,7 +2,7 @@
 title: Announcing Files v3.3
 description: Redesigned layout picker, additional spacing options, thumbnail improvements.
 thumbnail: /blog-resources/v3-3/Hero.png
-date: 3/21/2024
+date: 3/19/2024
 author: files-community
 ---
 
