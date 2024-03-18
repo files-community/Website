@@ -2,6 +2,8 @@
 title: Appearance
 ---
 
+![Settings dialog](/docs-resources/Settings-Appearance.png)
+
 ## Theme
 
 This allows you to switch between dark and light mode. "Default" uses the system theme in Windows.
