@@ -8,6 +8,10 @@
 		background-color: var(--fds-card-background-secondary);
 		overflow: hidden;
 
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+
 		// Inner section
 		.page-section-inner {
 			@include flex($align: center);
@@ -184,11 +188,13 @@
 	inset-block-start: -100px;
 	inset-inline-end: -100px;
 	transform: rotate(30deg);
-	@media screen and (width < 1224px) {
+
+	@media (width < 1224px) {
 		inset-block-start: -100px;
 		inset-inline-end: -156px;
 	}
-	@media screen and (width < 920px) {
+
+	@media (width < 920px) {
 		display: none;
 	}
 
@@ -210,6 +216,7 @@
 			.properties {
 				display: none;
 			}
+
 			.card {
 				order: -1;
 			}
@@ -236,9 +243,11 @@
 		0% {
 			opacity: 0;
 		}
+
 		50% {
 			opacity: 1;
 		}
+
 		100% {
 			transform: scale(1);
 			opacity: 1;

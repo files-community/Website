@@ -10,4 +10,14 @@ export default defineConfig({
 			defaultClass: "fluent-icon",
 		}),
 	],
+	css: {
+		lightningcss: {
+			drafts: {
+				customMedia: true,
+			},
+		},
+	},
+	build: {
+		cssMinify: "lightningcss",
+	},
 });
