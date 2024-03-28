@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="contributors-container">
-			{#each contributors as rowPromise, i (i)}
+			{#each contributors as rowPromise, i}
 				<div class="contributors-row">
 					{#await rowPromise then row}
 						{#each row.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}
@@ -42,7 +42,7 @@
 								{type}
 							/>
 						{/each}
-					{:catch err}
+					{:catch}
 						{#each Array(35) as _}
 							<Contributor
 								html_url="https://github.com/yaira2"
