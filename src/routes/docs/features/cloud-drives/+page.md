@@ -67,3 +67,9 @@ https://drive.autodesk.com/
 ## ownCloud
 
 https://owncloud.com/
+
+## Lucid Link
+
+https://www.lucidlink.com/
+
+Limitation: The folders contents won't show if the client is not open. This is an issue with how Lucid Link client works.
