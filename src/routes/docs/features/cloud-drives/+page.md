@@ -2,6 +2,10 @@
 title: Using cloud drives in Files
 ---
 
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
+
 Files will detect and display drives for most cloud providers as long as the desktop client application is installed. You can use this list to find the supported cloud drives and download links for the respective clients. Please note that Files is not associated nor recommending any of these third party clients.
 
 ## OneDrive
@@ -67,3 +71,11 @@ https://drive.autodesk.com/
 ## ownCloud
 
 https://owncloud.com/
+
+## Lucid Link
+
+<InfoBar severity="information">
+	Please note that the folder contents will only show if the Lucid Link client is running. This is the way Lucid Link is designed and isn't specific to Files. Also, please be aware that this integration requires the Lucid Link folder to be in the default location, we hope to resolve this limitation in the future.
+</InfoBar>
+
+https://www.lucidlink.com/
