@@ -70,3 +70,18 @@ The finder theme is based on the color scheme in Finder.
 | `AppThemeAddressBarBackgroundColor` | `#2E3440`   |
 | `AppThemeSidebarBackgroundColor`    | `#2E3440`   |
 | `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |
+
+
+## Background image
+
+Files allows you to configure a custom background image or gif using the settings UI.
+
+![Custom background image](/docs-resources/Background-Image.png)
+
+### Setting a custom background image
+
+1. Open Files > Settings > Appearance, and scroll down to the "Background image" section.
+2. Click on "Browse" and select the image or gif you wish to use.
+
+![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
+

@@ -20,6 +20,7 @@
 	import Hash from "~icons/fluent/number-symbol-24-regular";
 	import Diamond from "~icons/fluent/diamond-24-regular";
 	import PanelRight from "~icons/fluent/panel-right-24-regular";
+	import Keyboard from "~icons/fluent/Keyboard-24-regular";
 
 	export const featureCards = {
 		tabs: {
@@ -77,11 +78,13 @@
 		},
 		command: {
 			title: $_("home.features.command-palette.title", defaultI18nValues),
-			description: $_(
-				"home.features.command-palette.description",
-				defaultI18nValues,
-			),
+			description: $_("home.features.command-palette.description", defaultI18nValues),
 			icon: Diamond,
+		},
+		keyboard: {
+			title: $_("home.features.remap-key-bindings.title", defaultI18nValues),
+			description: $_("home.features.remap-key-bindings.description", defaultI18nValues),
+			icon: Keyboard,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };
 </script>

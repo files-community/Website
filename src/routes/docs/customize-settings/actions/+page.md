@@ -2,33 +2,57 @@
 title: Actions
 ---
 
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
+
 Actions are commands that you can perform on items, such as files, folders, images, etc. The Command Palette (`Ctrl`+`Shift`+`P`) will show you a list of available actions for the selected item(s), along with their key bindings.
+
+![Command palette](/docs-resources/Command-Palette.png)
 
 
 # Customizing Actions
 
-You can customize the key bindings for actions by modifying the settings file. To do that, follow these steps:
+You can customize the key bindings for actions from the Actions page in Settings (Files > Settings > Actions).
 
-1. Open Files > Settings > Advanced > Edit settings file. This will open the settings file in your default text editor.
-2. Before editing the settings file, you’ll need to close Files by right-clicking the icon in the system tray and clicking on "Quit".
-3. The settings file has a JSON format. You can use any text editor to open and modify it. The file contains a section called "Actions". The "Actions" section is empty by default, but can add any action to this list and change the value of the key binding to any valid key combination.
+![Actions settings page](/docs-resources/Settings-Actions.png)
 
-For example, if you want to change the key binding for the CopyItem action to `Ctrl`+`V`, you can edit the file like this:
 
-```json
-"Actions": {
-    "CopyItem": "Ctrl+V",
-    "PasteItem": "Ctrl+C"
-  }
-```
+## Modifying existing key bindings
 
-For more information about the available actions and their descriptions, please refer to the Actions list section below.
+The default key bindings in Files are largely based on the common shortcuts that users have come to expect from a file manager. To modify a key binding, follow these steps:
+
+1. Click the edit button next to the action you wish to modify (eg. Help).
+2. Input the new key binding using the keyboard (e. F3).
+3. Click the save button and test out the new key binding.
+
+![Edit actions](/docs-resources/Settings-Actions-Edit.png)
+
+In addition to modifying key bindings, you can also delete them and free up the keys for other actions. Please note, deleting an action is immediate and no confirmation is displayed.
+
+## Adding additional key bindings
+
+<InfoBar severity="information">
+	Support for custom args is not currently available but we're exploring this option for the future.
+</InfoBar>
+
+Files has a growing list of actions and as the list continues grows, not all actions come with a default key binding. To assign a key binding, follow these steps:
+
+1. Click the "Add command" button.
+2. Select an action from the list (eg. "Pin to start menu").
+3. Input the key binding (eg. ctrl + shift + s)
+4. Click the save button test out the key binding by selecting a file and using the `ctrl` + `shift` + `s` shortcut.
+
+![Add actions](/docs-resources/Settings-Actions-Add.png)
+
+## Restoring defaults
+
+If you wish to restore the default key key bindings, click the "Restore defaults" button and click on "Yes" to confirm.
 
 
 # Actions
 
 This section provides the complete list of actions and their descriptions. The actions are grouped by categories for easier reference.
-
 
 ## Global
 
@@ -41,7 +65,7 @@ Opens the online documentation in the web browser
 **Default bindings:**
 
 ```json
-{ "Help": "F1" }
+"F1"
 ```
 
 
@@ -54,7 +78,7 @@ Toggles FullScreen mode
 **Default bindings:**
 
 ```json
-{ "ToggleFullScreen": "F11" }
+"F11"
 ```
 
 
@@ -67,7 +91,7 @@ Enters compact overlay
 **Default bindings:**
 
 ```json
-{ "EnterCompactOverlay": "Ctrl+Alt+Up" }
+"Ctrl+Alt+Up" 
 ```
 
 
@@ -80,7 +104,7 @@ Exits compact overlay
 **Default bindings:**
 
 ```json
-{ "ExitCompactOverlay": "Ctrl+Alt+Down" }
+"Ctrl+Alt+Down"
 ```
 
 
@@ -93,7 +117,7 @@ Toggles compact overlay
 **Default bindings:**
 
 ```json
-{ "ToggleCompactOverlay": "F12" }
+"F12"
 ```
 
 
@@ -106,7 +130,8 @@ Focuses the search box
 **Default bindings:**
 
 ```json
-{ "Search": "Ctrl+F,F3" }
+"Ctrl+F"
+"F3"
 ```
 
 
@@ -119,7 +144,7 @@ Redoes the last file operation
 **Default bindings:**
 
 ```json
-{ "Redo": "Ctrl+Y" }
+"Ctrl+Y"
 ```
 
 
@@ -132,7 +157,7 @@ Undoes the last file operation
 **Default bindings:**
 
 ```json
-{ "Undo": "Ctrl+Z" }
+"Ctrl+Z"
 ```
 
 
@@ -145,7 +170,8 @@ Focuses the path bar
 **Default bindings:**
 
 ```json
-{ "EditPath": "Ctrl+L,Alt+D" }
+"Ctrl+L"
+"Alt+D"
 ```
 
 ## Show
@@ -159,7 +185,7 @@ Toggles whether to show hidden items
 **Default bindings:**
 
 ```json
-{ "ToggleShowHiddenItems": "Ctrl+H" }
+"Ctrl+H"
 ```
 
 
@@ -168,12 +194,6 @@ Toggles whether to show hidden items
 Toggles whether to show file extensions
 
 **Action name:** `ToggleShowFileExtensions`
-
-**Default bindings:**
-
-```json
-{ "ToggleShowFileExtensions": "" }
-```
 
 
 ### Toggle Preview Pane
@@ -185,7 +205,7 @@ Toggles the Preview Pane
 **Default bindings:**
 
 ```json
-{ "TogglePreviewPane": "Ctrl+Alt+P" }
+"Ctrl+Alt+P"
 ```
 
 
@@ -198,7 +218,7 @@ Toggles the Details Pane
 **Default bindings:**
 
 ```json
-{ "ToggleDetailsPane": "Ctrl+Alt+D" }
+"Ctrl+Alt+D"
 ```
 
 
@@ -211,7 +231,7 @@ Toggles the Info Pane
 **Default bindings:**
 
 ```json
-{ "ToggleInfoPane": "Ctrl+Alt+I" }
+"Ctrl+Alt+I"
 ```
 
 
@@ -227,7 +247,7 @@ Copy selected items to the clipboard
 **Default bindings:**
 
 ```json
-{ "CopyItem": "Ctrl+C" }
+"Ctrl+C"
 ```
 
 
@@ -240,7 +260,7 @@ Copy paths of selected items to the clipboard
 **Default bindings:**
 
 ```json
-{ "CopyPath": "Ctrl+Shift+C" }
+"Ctrl+Shift+C"
 ```
 
 
@@ -253,7 +273,7 @@ Cut selected items to the clipboard
 **Default bindings:**
 
 ```json
-{ "Cut": "Ctrl+X" }
+"Ctrl+X"
 ```
 
 
@@ -266,7 +286,7 @@ Pastes items from clipboard to current directory
 **Default bindings:**
 
 ```json
-{ "PasteItem": "Ctrl+V" }
+"Ctrl+V"
 ```
 
 
@@ -279,7 +299,7 @@ Pastes items from clipboard to the selected folder
 **Default bindings:**
 
 ```json
-{ "PasteItemToSelection": "Ctrl+Shift+V" }
+"Ctrl+Shift+V"
 ```
 
 
@@ -292,7 +312,8 @@ Deletes selected items
 **Default bindings:**
 
 ```json
-{ "DeleteItem": "Delete,Ctrl+D" }
+"Delete"
+"Ctrl+D"
 ```
 
 
@@ -305,7 +326,7 @@ Permanently deletes selected items
 **Default bindings:**
 
 ```json
-{ "DeleteItemPermanently": "Shift+Delete" }
+"Shift+Delete"
 ```
 
 
@@ -318,7 +339,7 @@ Creates new folder
 **Default bindings:**
 
 ```json
-{ "CreateFolder": "Ctrl+Shift+N" }
+"Ctrl+Shift+N"
 ```
 
 
@@ -327,12 +348,6 @@ Creates new folder
 Creates new folder with the selected items
 
 **Action name:** `CreateFolderWithSelection`
-
-**Default bindings:**
-
-```json
-{ "CreateFolderWithSelection": "" }
-```
 
 
 ### Create item
@@ -344,7 +359,7 @@ Creates new item
 **Default bindings:**
 
 ```json
-{ "AddItem": "Ctrl+Shift+I" }
+"Ctrl+Shift+I"
 ```
 
 
@@ -354,24 +369,12 @@ Creates shortcut targeting the selected item
 
 **Action name:** `CreateShortcut`
 
-**Default bindings:**
-
-```json
-{ "CreateShortcut": "" }
-```
-
 
 ### Create shortcut from dialog
 
 Creates shortcut targeting any item
 
 **Action name:** `CreateShortcutFromDialog`
-
-**Default bindings:**
-
-```json
-{ "CreateShortcutFromDialog": "" }
-```
 
 
 ### Open item
@@ -383,7 +386,7 @@ Opens selected items
 **Default bindings:**
 
 ```json
-{ "OpenItem": "Enter" }
+"Enter"
 ```
 
 
@@ -393,12 +396,6 @@ Opens items with the selected application
 
 **Action name:** `OpenItemWithApplicationPicker`
 
-**Default bindings:**
-
-```json
-{ "OpenItemWithApplicationPicker": "" }
-```
-
 
 ### Open parent folder
 
@@ -406,24 +403,12 @@ Opens parent folder of searched item
 
 **Action name:** `OpenParentFolder`
 
-**Default bindings:**
-
-```json
-{ "OpenParentFolder": "" }
-```
-
 
 ### Open file location
 
 Opens location of the selected item
 
 **Action name:** `OpenFileLocation`
-
-**Default bindings:**
-
-```json
-{ "OpenFileLocation": "" }
-```
 
 
 ### Refresh items
@@ -435,7 +420,8 @@ Refreshes the items of the current directory
 **Default bindings:**
 
 ```json
-{ "RefreshItems": "Ctrl+R,F5" }
+"Ctrl+R"
+"F5" 
 ```
 
 
@@ -448,7 +434,7 @@ Renames selected item
 **Default bindings:**
 
 ```json
-{ "Rename": "F2" }
+"F2"
 ```
 
 
@@ -463,7 +449,7 @@ Selects all items
 **Default bindings:**
 
 ```json
-{ "SelectAll": "Ctrl+A" }
+"Ctrl+A"
 ```
 
 
@@ -473,24 +459,12 @@ Inverts the selected items
 
 **Action name:** `InvertSelection`
 
-**Default bindings:**
-
-```json
-{ "InvertSelection": "" }
-```
-
 
 ### Clear selection
 
 Clears the selected items
 
 **Action name:** `ClearSelection`
-
-**Default bindings:**
-
-```json
-{ "ClearSelection": "" }
-```
 
 
 ### Toggle selection
@@ -502,7 +476,7 @@ Toggles item selection
 **Default bindings:**
 
 ```json
-{ "ToggleSelect": "Ctrl+Space" }
+"Ctrl+Space"
 ```
 
 ## Share
@@ -513,11 +487,6 @@ Shares selected items
 
 **Action name:** `ShareItem`
 
-**Default bindings:**
-
-```json
-{ "ShareItem": "" }
-```
 
 ## Start
 
@@ -527,12 +496,6 @@ Pins selected items to the Start Menu
 
 **Action name:** `PinToStart`
 
-**Default bindings:**
-
-```json
-{ "PinToStart": "" }
-```
-
 
 ### Unpin from start
 
@@ -540,11 +503,6 @@ Unpins selected items from the Start Menu
 
 **Action name:** `UnpinFromStart`
 
-**Default bindings:**
-
-```json
-{ "UnpinFromStart": "" }
-```
 
 ## Sidebar
 
@@ -554,12 +512,6 @@ Pins selected folders to sidebar
 
 **Action name:** `PinFolderToSidebar`
 
-**Default bindings:**
-
-```json
-{ "PinFolderToSidebar": "" }
-```
-
 
 ### Unpin from Sidebar
 
@@ -567,11 +519,6 @@ Unpins selected folders from Sidebar
 
 **Action name:** `UnpinFolderFromSidebar`
 
-**Default bindings:**
-
-```json
-{ "UnpinFolderFromSidebar": "" }
-```
 
 ## Backgrounds
 
@@ -581,24 +528,12 @@ Sets selected picture as the desktop background
 
 **Action name:** `SetAsWallpaperBackground`
 
-**Default bindings:**
-
-```json
-{ "SetAsWallpaperBackground": "" }
-```
-
 
 ### Set as desktop slideshow
 
 Sets selected pictures as the desktop slideshow
 
 **Action name:** `SetAsSlideshowBackground`
-
-**Default bindings:**
-
-```json
-{ "SetAsSlideshowBackground": "" }
-```
 
 
 ### Set as lockscreen slideshow
@@ -607,11 +542,13 @@ Sets selected picture as the lockscreen background
 
 **Action name:** `SetAsLockscreenBackground`
 
-**Default bindings:**
 
-```json
-{ "SetAsLockscreenBackground": "" }
-```
+### Set as app background
+
+Sets selected picture as the app background
+
+**Action name:** `SetAsAppBackground`
+
 
 ## Install
 
@@ -621,24 +558,12 @@ Installs selected fonts
 
 **Action name:** `InstallFont`
 
-**Default bindings:**
-
-```json
-{ "InstallFont": "" }
-```
-
 
 ### Install Inf
 
 Installs selected Inf files
 
 **Action name:** `InstallInfDriver`
-
-**Default bindings:**
-
-```json
-{ "InstallInfDriver": "" }
-```
 
 
 ### Install certificate
@@ -647,11 +572,6 @@ Installs selected certificates
 
 **Action name:** `InstallCertificate`
 
-**Default bindings:**
-
-```json
-{ "InstallCertificate": "" }
-```
 
 ## Run
 
@@ -661,24 +581,12 @@ Runs selected items as admin
 
 **Action name:** `RunAsAdmin`
 
-**Default bindings:**
-
-```json
-{ "RunAsAdmin": "" }
-```
-
 
 ### Run as another user
 
 Runs selected items as another user
 
 **Action name:** `RunAsAnotherUser`
-
-**Default bindings:**
-
-```json
-{ "RunAsAnotherUser": "" }
-```
 
 
 ### Run with Powershell
@@ -687,11 +595,6 @@ Runs selected scripts with Powershell
 
 **Action name:** `RunWithPowershell`
 
-**Default bindings:**
-
-```json
-{ "RunWithPowershell": "" }
-```
 
 ## Preview popups
 
@@ -704,7 +607,7 @@ Opens preview popup when QuickLook or SeerPro is installed
 **Default bindings:**
 
 ```json
-{ "LaunchPreviewPopup": "Space" }
+"Space"
 ```
 
 ## Archives
@@ -715,12 +618,6 @@ Prompts to create archive from selected items
 
 **Action name:** `CompressIntoArchive`
 
-**Default bindings:**
-
-```json
-{ "CompressIntoArchive": "" }
-```
-
 
 ### Create 7z archive
 
@@ -728,24 +625,12 @@ Creates 7z archive with selected items
 
 **Action name:** `CompressIntoSevenZip`
 
-**Default bindings:**
-
-```json
-{ "CompressIntoSevenZip": "" }
-```
-
 
 ### Create zip archive
 
 Creates zip archive with selected items
 
 **Action name:** `CompressIntoZip`
-
-**Default bindings:**
-
-```json
-{ "CompressIntoZip": "" }
-```
 
 
 ### Extract archive
@@ -757,7 +642,7 @@ Prompts to extract items from selected archive
 **Default bindings:**
 
 ```json
-{ "DecompressArchive": "Ctrl+E" }
+"Ctrl+E"
 ```
 
 
@@ -767,24 +652,12 @@ Extracts items from selected archive to current folder
 
 **Action name:** `DecompressArchiveHere`
 
-**Default bindings:**
-
-```json
-{ "DecompressArchiveHere": "" }
-```
-
 
 ### Extract archive to new folder
 
 Extracts items from selected archive to a new folder
 
 **Action name:** `DecompressArchiveToChildFolder`
-
-**Default bindings:**
-
-```json
-{ "DecompressArchiveToChildFolder": "" }
-```
 
 
 ### Smart extract
@@ -796,8 +669,9 @@ Automatically chooses extraction mode based on the selected archives contents
 **Default bindings:**
 
 ```json
-{ "DecompressArchiveHereSmart": "Ctrl+Shift+E" }
+"Ctrl+Shift+E"
 ```
+
 
 ## Image Manipulation
 
@@ -807,12 +681,6 @@ Rotates selected images left
 
 **Action name:** `RotateLeft`
 
-**Default bindings:**
-
-```json
-{ "RotateLeft": "" }
-```
-
 
 ### Rotate right
 
@@ -820,11 +688,6 @@ Rotates selected images right
 
 **Action name:** `RotateRight`
 
-**Default bindings:**
-
-```json
-{ "RotateRight": "" }
-```
 
 ## Open
 
@@ -834,24 +697,12 @@ Opens current folder in Visual Studio
 
 **Action name:** `OpenInVS`
 
-**Default bindings:**
-
-```json
-{ "OpenInVS": "" }
-```
-
 
 ### Open in Visual Studio Code
 
 Opens current folder in Visual Studio Code
 
 **Action name:** `OpenInVSCode`
-
-**Default bindings:**
-
-```json
-{ "OpenInVSCode": "" }
-```
 
 
 ### Open properties
@@ -863,7 +714,7 @@ Opens properties window
 **Default bindings:**
 
 ```json
-{ "OpenProperties": "Alt+Enter" }
+"Alt+Enter"
 ```
 
 
@@ -876,7 +727,7 @@ Opens settings
 **Default bindings:**
 
 ```json
-{ "OpenSettings": "Ctrl+," }
+"Ctrl+,"
 ```
 
 
@@ -889,7 +740,7 @@ Opens folder in Windows Terminal
 **Default bindings:**
 
 ```json
-{ "OpenTerminal": "Ctrl+`" }
+"Ctrl+`"
 ```
 
 
@@ -902,7 +753,7 @@ Opens folder in Windows Terminal as admin
 **Default bindings:**
 
 ```json
-{ "OpenTerminalAsAdmin": "Ctrl+Shift+`" }
+"Ctrl+Shift+`"
 ```
 
 
@@ -915,8 +766,9 @@ Opens the Command Palette
 **Default bindings:**
 
 ```json
-{ "OpenCommandPalette": "Ctrl+Shift+P" }
+"Ctrl+Shift+P"
 ```
+
 
 ## Layouts
 
@@ -929,7 +781,7 @@ Switches to the Details View
 **Default bindings:**
 
 ```json
-{ "LayoutDetails": "Ctrl+Shift+1" }
+"Ctrl+Shift+1"
 ```
 
 
@@ -942,7 +794,7 @@ Switches to the List View
 **Default bindings:**
 
 ```json
-{ "LayoutList": "Ctrl+Shift+2" }
+"Ctrl+Shift+2"
 ```
 
 
@@ -955,7 +807,7 @@ Switches to the Tiles View
 **Default bindings:**
 
 ```json
-{ "LayoutTiles": "Ctrl+Shift+3" }
+"Ctrl+Shift+3"
 ```
 
 
@@ -968,7 +820,7 @@ Switches to the Grid View
 **Default bindings:**
 
 ```json
-{ "LayoutGrid": "Ctrl+Shift+4" }
+"Ctrl+Shift+4"
 ```
 
 
@@ -981,7 +833,7 @@ Switches to the Columns View
 **Default bindings:**
 
 ```json
-{ "LayoutColumns": "Ctrl+Shift+5" }
+"Ctrl+Shift+5"
 ```
 
 
@@ -994,7 +846,7 @@ Switches the layout based on the folder contents
 **Default bindings:**
 
 ```json
-{ "LayoutAdaptive": "Ctrl+Shift+6" }
+"Ctrl+Shift+6"
 ```
 
 
@@ -1007,7 +859,7 @@ Increases the icon size
 **Default bindings:**
 
 ```json
-{ "LayoutIncreaseSize": "Ctrl++" }
+"Ctrl++"
 ```
 
 
@@ -1020,7 +872,7 @@ Decreases the icon size
 **Default bindings:**
 
 ```json
-{ "LayoutDecreaseSize": "Ctrl+-" }
+"Ctrl+-"
 ```
 
 ## Sorting
@@ -1031,24 +883,12 @@ Sorts items alphabetically by their name
 
 **Action name:** `SortByName`
 
-**Default bindings:**
-
-```json
-{ "SortByName": "" }
-```
-
 
 ### Sort by date modified
 
 Sorts items by the date and time they were last modified
 
 **Action name:** `SortByDateModified`
-
-**Default bindings:**
-
-```json
-{ "SortByDateModified": "" }
-```
 
 
 ### Sort by date created
@@ -1057,24 +897,12 @@ Sorts items by the date and time they were created
 
 **Action name:** `SortByDateCreated`
 
-**Default bindings:**
-
-```json
-{ "SortByDateCreated": "" }
-```
-
 
 ### Sort by size
 
 Sorts items by their size
 
 **Action name:** `SortBySize`
-
-**Default bindings:**
-
-```json
-{ "SortBySize": "" }
-```
 
 
 ### Sort by type
@@ -1083,24 +911,12 @@ Sorts items by their type
 
 **Action name:** `SortByType`
 
-**Default bindings:**
-
-```json
-{ "SortByType": "" }
-```
-
 
 ### Sort by sync status
 
 Sorts items by their cloud sync status
 
 **Action name:** `SortBySyncStatus`
-
-**Default bindings:**
-
-```json
-{ "SortBySyncStatus": "" }
-```
 
 
 ### Sort by tags
@@ -1109,24 +925,12 @@ Sorts items by the tags assigned to them
 
 **Action name:** `SortByTag`
 
-**Default bindings:**
-
-```json
-{ "SortByTag": "" }
-```
-
 
 ### Sort by path
 
 Sorts items by their in the file system
 
 **Action name:** `SortByPath`
-
-**Default bindings:**
-
-```json
-{ "SortByPath": "" }
-```
 
 
 ### Sort by original folder
@@ -1135,24 +939,12 @@ Sorts items by the original folder they were deleted from
 
 **Action name:** `SortByOriginalFolder`
 
-**Default bindings:**
-
-```json
-{ "SortByOriginalFolder": "" }
-```
-
 
 ### Sort by date deleted
 
 Sorts items by the date and time they were deleted
 
 **Action name:** `SortByDateDeleted`
-
-**Default bindings:**
-
-```json
-{ "SortByDateDeleted": "" }
-```
 
 
 ### Sort items in ascending order
@@ -1161,24 +953,12 @@ Sorts items in ascending order according to the current sort option
 
 **Action name:** `SortAscending`
 
-**Default bindings:**
-
-```json
-{ "SortAscending": "" }
-```
-
 
 ### Sort items in descending order
 
 Sorts items in descending order according to the current sort option
 
 **Action name:** `SortDescending`
-
-**Default bindings:**
-
-```json
-{ "SortDescending": "" }
-```
 
 
 ### Toggle sort direction
@@ -1187,24 +967,12 @@ Toggles the sort direction between ascending and descending
 
 **Action name:** `ToggleSortDirection`
 
-**Default bindings:**
-
-```json
-{ "ToggleSortDirection": "" }
-```
-
 
 ### Sort folders first
 
 Lists and sorts folders before files
 
 **Action name:** `SortFoldersFirst`
-
-**Default bindings:**
-
-```json
-{ "SortFoldersFirst": "" }
-```
 
 
 ### Sort files first
@@ -1213,12 +981,6 @@ Lists and sorts files before folders
 
 **Action name:** `SortFilesFirst`
 
-**Default bindings:**
-
-```json
-{ "SortFilesFirst": "" }
-```
-
 
 ### Sort folders alongside files
 
@@ -1226,11 +988,6 @@ Lists and sorts folders alongside files
 
 **Action name:** `ToggleSortDirectoriesAlongsideFiles`
 
-**Default bindings:**
-
-```json
-{ "ToggleSortDirectoriesAlongsideFiles": "" }
-```
 
 ## Grouping
 
@@ -1240,24 +997,12 @@ Lists items without grouping them
 
 **Action name:** `GroupByNone`
 
-**Default bindings:**
-
-```json
-{ "GroupByNone": "" }
-```
-
 
 ### Group by name
 
 Groups items by name
 
 **Action name:** `GroupByName`
-
-**Default bindings:**
-
-```json
-{ "GroupByName": "" }
-```
 
 
 ### Group by date modified
@@ -1266,24 +1011,12 @@ Groups items by date modified
 
 **Action name:** `GroupByDateModified`
 
-**Default bindings:**
-
-```json
-{ "GroupByDateModified": "" }
-```
-
 
 ### Group by date created
 
 Groups items by date created
 
 **Action name:** `GroupByDateCreated`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateCreated": "" }
-```
 
 
 ### Group by size
@@ -1292,24 +1025,12 @@ Groups items by size
 
 **Action name:** `GroupBySize`
 
-**Default bindings:**
-
-```json
-{ "GroupBySize": "" }
-```
-
 
 ### Group by type
 
 Groups items by type
 
 **Action name:** `GroupByType`
-
-**Default bindings:**
-
-```json
-{ "GroupByType": "" }
-```
 
 
 ### Group by sync status
@@ -1318,24 +1039,12 @@ Groups items by sync status
 
 **Action name:** `GroupBySyncStatus`
 
-**Default bindings:**
-
-```json
-{ "GroupBySyncStatus": "" }
-```
-
 
 ### Group by tags
 
 Groups items by tags
 
 **Action name:** `GroupByTag`
-
-**Default bindings:**
-
-```json
-{ "GroupByTag": "" }
-```
 
 
 ### Group by original folder
@@ -1344,24 +1053,12 @@ Groups items by original folder
 
 **Action name:** `GroupByOriginalFolder`
 
-**Default bindings:**
-
-```json
-{ "GroupByOriginalFolder": "" }
-```
-
 
 ### Group by date deleted
 
 Groups items by date deleted
 
 **Action name:** `GroupByDateDeleted`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateDeleted": "" }
-```
 
 
 ### Group by folder path
@@ -1370,24 +1067,12 @@ Groups items by folder path
 
 **Action name:** `GroupByFolderPath`
 
-**Default bindings:**
-
-```json
-{ "GroupByFolderPath": "" }
-```
-
 
 ### Group by date modified (year)
 
 Groups items by year of date modified
 
 **Action name:** `GroupByDateModifiedYear`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateModifiedYear": "" }
-```
 
 
 ### Group by date modified (month)
@@ -1396,24 +1081,12 @@ Groups items by month of date modified
 
 **Action name:** `GroupByDateModifiedMonth`
 
-**Default bindings:**
-
-```json
-{ "GroupByDateModifiedMonth": "" }
-```
-
 
 ### Group by date modified (day)
 
 Groups items by day of date modified
 
 **Action name:** `GroupByDateModifiedDay`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateModifiedDay": "" }
-```
 
 
 ### Group by date created (year)
@@ -1422,24 +1095,12 @@ Groups items by year of date created
 
 **Action name:** `GroupByDateCreatedYear`
 
-**Default bindings:**
-
-```json
-{ "GroupByDateCreatedYear": "" }
-```
-
 
 ### Group by date created (month)
 
 Groups items by month of date created
 
 **Action name:** `GroupByDateCreatedMonth`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateCreatedMonth": "" }
-```
 
 
 ### Group by date created (day)
@@ -1448,24 +1109,12 @@ Groups items by day of date created
 
 **Action name:** `GroupByDateCreatedDay`
 
-**Default bindings:**
-
-```json
-{ "GroupByDateCreatedDay": "" }
-```
-
 
 ### Group by date deleted (year)
 
 Groups items by year of date deleted
 
 **Action name:** `GroupByDateDeletedYear`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateDeletedYear": "" }
-```
 
 
 ### Group by date deleted (month)
@@ -1474,24 +1123,12 @@ Groups items by month of date deleted
 
 **Action name:** `GroupByDateDeletedMonth`
 
-**Default bindings:**
-
-```json
-{ "GroupByDateDeletedMonth": "" }
-```
-
 
 ### Group by date deleted (day)
 
 Groups items by day of date deleted
 
 **Action name:** `GroupByDateDeletedDay`
-
-**Default bindings:**
-
-```json
-{ "GroupByDateDeletedDay": "" }
-```
 
 
 ### Group in ascending order
@@ -1500,24 +1137,12 @@ Sorts groups in ascending order
 
 **Action name:** `GroupAscending`
 
-**Default bindings:**
-
-```json
-{ "GroupAscending": "" }
-```
-
 
 ### Group in Descending order
 
 Sorts groups in descending order
 
 **Action name:** `GroupDescending`
-
-**Default bindings:**
-
-```json
-{ "GroupDescending": "" }
-```
 
 
 ### Toggle sort direction
@@ -1526,24 +1151,12 @@ Toggles group sort direction
 
 **Action name:** `ToggleGroupDirection`
 
-**Default bindings:**
-
-```json
-{ "ToggleGroupDirection": "" }
-```
-
 
 ### Group by year
 
 Groups items by year
 
 **Action name:** `GroupByYear`
-
-**Default bindings:**
-
-```json
-{ "GroupByYear": "" }
-```
 
 
 ### Group by month
@@ -1552,12 +1165,6 @@ Groups items by month
 
 **Action name:** `GroupByMonth`
 
-**Default bindings:**
-
-```json
-{ "GroupByMonth": "" }
-```
-
 
 ### Toggle grouping unit
 
@@ -1565,11 +1172,6 @@ Toggles unit for grouping by date
 
 **Action name:** `ToggleGroupByDateUnit`
 
-**Default bindings:**
-
-```json
-{ "ToggleGroupByDateUnit": "" }
-```
 
 ## Navigation
 
@@ -1582,7 +1184,7 @@ Opens a new tab
 **Default bindings:**
 
 ```json
-{ "NewTab": "Ctrl+T" }
+"Ctrl+T"
 ```
 
 
@@ -1595,7 +1197,7 @@ Opens a new tab
 **Default bindings:**
 
 ```json
-{ "NewTab": "Ctrl+T" }
+"Ctrl+T"
 ```
 
 
@@ -1608,7 +1210,7 @@ Opens a new window
 **Default bindings:**
 
 ```json
-{ "NewWindow": "Ctrl+N" }
+"Ctrl+N"
 ```
 
 
@@ -1621,7 +1223,8 @@ Navigates backward in navigation history
 **Default bindings:**
 
 ```json
-{ "NavigateBack": "Alt+Left,Backspace" }
+"Alt+Left"
+"Backspace"
 ```
 
 
@@ -1634,7 +1237,7 @@ Navigates forward in navigation history
 **Default bindings:**
 
 ```json
-{ "NavigateForward": "Alt+Right" }
+"Alt+Right"
 ```
 
 
@@ -1647,7 +1250,7 @@ Navigates up one directory
 **Default bindings:**
 
 ```json
-{ "NavigateUp": "Alt+Up" }
+"Alt+Up"
 ```
 
 ## Other
@@ -1662,7 +1265,7 @@ Duplicates the current tab
 **Default bindings:**
 
 ```json
-{ "DuplicateCurrentTab": "Ctrl+Shift+K" }
+"Ctrl+Shift+K"
 ```
 
 
@@ -1672,24 +1275,12 @@ Closes tabs to the left of the current tab
 
 **Action name:** `CloseTabsToTheLeftCurrent`
 
-**Default bindings:**
-
-```json
-{ "CloseTabsToTheLeftCurrent": "" }
-```
-
 
 ### Close tabs to the right
 
 Closes tabs to the right of the current tab
 
 **Action name:** `CloseTabsToTheRightCurrent`
-
-**Default bindings:**
-
-```json
-{ "CloseTabsToTheRightCurrent": "" }
-```
 
 
 ### Close other tabs
@@ -1698,24 +1289,12 @@ Closes other tabs
 
 **Action name:** `CloseOtherTabsCurrent`
 
-**Default bindings:**
-
-```json
-{ "CloseOtherTabsCurrent": "" }
-```
-
 
 ### Open folder in new pane
 
 Opens selected folder in a new pane
 
 **Action name:** `OpenDirectoryInNewPane`
-
-**Default bindings:**
-
-```json
-{ "OpenDirectoryInNewPane": "" }
-```
 
 
 ### Open folder in new tab
@@ -1724,24 +1303,12 @@ Opens selected folder in a new tab
 
 **Action name:** `OpenDirectoryInNewTab`
 
-**Default bindings:**
-
-```json
-{ "OpenDirectoryInNewTab": "" }
-```
-
 
 ### Open folder in new window
 
 Opens selected folder in a new window
 
 **Action name:** `OpenInNewWindowItem`
-
-**Default bindings:**
-
-```json
-{ "OpenInNewWindowItem": "" }
-```
 
 
 ### Reopen closed tab
@@ -1753,7 +1320,7 @@ Reopens the last closed tab
 **Default bindings:**
 
 ```json
-{ "ReopenClosedTab": "Ctrl+Shift+T" }
+"Ctrl+Shift+T"
 ```
 
 
@@ -1766,7 +1333,7 @@ Switches focus to the previous tab
 **Default bindings:**
 
 ```json
-{ "PreviousTab": "Ctrl+Shift+Tab" }
+"Ctrl+Shift+Tab"
 ```
 
 
@@ -1779,7 +1346,7 @@ Switches focus to the next tab
 **Default bindings:**
 
 ```json
-{ "NextTab": "Ctrl+Tab" }
+"Ctrl+Tab"
 ```
 
 
@@ -1792,7 +1359,8 @@ Closes the current tab
 **Default bindings:**
 
 ```json
-{ "CloseSelectedTab": "Ctrl+W,Ctrl+F4" }
+"Ctrl+W"
+"Ctrl+F4"
 ```
 
 
@@ -1805,7 +1373,7 @@ Opens a new pane
 **Default bindings:**
 
 ```json
-{ "OpenNewPane": "Alt+Shift++" }
+"Alt+Shift++"
 ```
 
 
@@ -1818,8 +1386,9 @@ Closes the right new pane
 **Default bindings:**
 
 ```json
-{ "ClosePane": "Ctrl+Shift+W" }
+"Ctrl+Shift+W"
 ```
+
 
 ## Play
 
@@ -1829,11 +1398,6 @@ Plays the selected media files
 
 **Action name:** `PlayAll`
 
-**Default bindings:**
-
-```json
-{ "PlayAll": "" }
-```
 
 ## Git
 
@@ -1843,24 +1407,12 @@ Runs git fetch
 
 **Action name:** `GitFetch`
 
-**Default bindings:**
-
-```json
-{ "GitFetch": "" }
-```
-
 
 ### Init
 
 Initializes the current folder as a Git repository
 
 **Action name:** `GitInit`
-
-**Default bindings:**
-
-```json
-{ "GitInit": "" }
-```
 
 
 ### Pull
@@ -1869,12 +1421,6 @@ Runs git pull
 
 **Action name:** `GitPull`
 
-**Default bindings:**
-
-```json
-{ "GitPull": "" }
-```
-
 
 ### Push
 
@@ -1882,21 +1428,9 @@ Runs git push
 
 **Action name:** `GitPush`
 
-**Default bindings:**
-
-```json
-{ "GitPush": "" }
-```
-
 
 ### Sync
 
 Runs git pull and then git push
 
 **Action name:** `GitSync`
-
-**Default bindings:**
-
-```json
-{ "GitSync": "" }
-```
