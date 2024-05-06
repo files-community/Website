@@ -10,11 +10,11 @@ This allows you to switch between dark and light mode. "Default" uses the system
 
 ## Backdrop material
 
-The backdrop material is what makes the window background transparent. You can choose between Mica Alt (Mica requires Windows 11) and Acrylic. In order for the backdrop to be visible, the background color needs be transparent.
+The backdrop material is what makes the window background transparent. You can choose between Mica Alt (Mica requires Windows 11) and Acrylic. In order for the backdrop to be visible, the background color needs to be transparent.
 
 ## Background color
 
-This allows you to change background color of the window. There is a large selection or pre-selected colors but you can also enter a custom value or change the transparency using the color picker.
+This allows you to change the background color of the window. There is a large selection of pre-selected colors but you can also enter a custom value or change the transparency using the color picker.
 
 ### Additional background colors
 
@@ -23,7 +23,7 @@ While there isn't an option in the settings UI, you can change the address bar, 
 1. Open Files > Settings > Advanced > Edit settings file. This will open the settings file in your default text editor.
 2. Before editing the settings file, you’ll need to close Files by right-clicking the icon in the system tray and clicking on "Quit".
 3. The settings file has a JSON format. You can use any text editor to open and modify it.
-4. Search for the any of the keys listed bellow and edit the value as desired.
+4. Search for any of the keys listed below and edit the value as desired.
 
 | Key                                 | Default value |
 | ----------------------------------- | ------------- |
