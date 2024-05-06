@@ -2,19 +2,34 @@
 title: Appearance
 ---
 
-![Settings dialog](/docs-resources/Settings-Appearance.png)
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
 
-## Theme
+The Appearance page in settings allows you to personalize your Files experience with a variety of aesthetic options. For those who love to tinker, we’ll even show you how to manually adjust the settings file for additional background colors and fonts.
 
-This allows you to switch between dark and light mode. "Default" uses the system theme in Windows.
+## Theme customization
 
-## Backdrop material
+Toggle effortlessly between dark and light mode to match your style or ambient lighting. The "Default" setting syncs with your Windows system theme, ensuring a cohesive visual experience.
 
-The backdrop material is what makes the window background transparent. You can choose between Mica Alt (Mica requires Windows 11) and Acrylic. In order for the backdrop to be visible, the background color needs to be transparent.
+![Light and dark mode split view](/docs-resources/Dark-Light-Mode.png)
+
+
+## Transparency effects
+
+<InfoBar severity="information">
+  Please note that a completely transparent window isn't available right now.
+</InfoBar>
+
+Choose your preferred backdrop material to add a layer of transparency to your window background. Opt for Mica Alt for a subtle effect (note: Mica requires Windows 11) or Acrylic for a frosted appearance. To fully appreciate these effects, ensure your background color is set to transparent.
+
 
 ## Background color
 
-This allows you to change the background color of the window. There is a large selection of pre-selected colors but you can also enter a custom value or change the transparency using the color picker.
+Personalize the background color of your window from a spectrum of pre-selected shades. For a unique touch, use the color picker to input a custom color or adjust transparency to your liking.
+
+![Settings dialog](/docs-resources/Settings-Appearance.png)
+
 
 ### Additional background colors
 
@@ -74,9 +89,10 @@ The finder theme is based on the color scheme in Finder.
 
 ## Background image
 
-Files allows you to configure a custom background image or gif using the settings UI.
+Files allows you to configure a custom background image or gif using the settings UI. Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
 
 ![Custom background image](/docs-resources/Background-Image.png)
+
 
 ### Setting a custom background image
 

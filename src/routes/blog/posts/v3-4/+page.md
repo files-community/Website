@@ -51,7 +51,7 @@ This real-time filtering saves time and is particularly beneficial for users who
 
 ### Added an integration with Listary
 
-We're excited to announce a new integration with Listary - a powerful search utility renowned for its rapid retrieval of files and folders. This integration can be enabled from the "Integrations" page within Listary’s settings. This integration includes the following features:
+We're excited to announce a new integration with [Listary](https://www.listary.com/) - a powerful search utility renowned for its rapid retrieval of files and folders. This integration can be enabled from the "Integrations" page within Listary’s settings. This integration includes the following features:
 
 **Instant search results**: A double tap of the `ctrl` key brings up the search bar, delivering immediate access to your files.
 
