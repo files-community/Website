@@ -2,7 +2,7 @@
 title: Supercharge Your File Management with Files and Listary
 description: Experience unparalleled file management with the powerful integration of Files and Listary.
 thumbnail: /blog-resources/listary-integration/Hero.png
-date: 3/20/2024
+date: 5/8/2024
 author: files-community
 ---
 

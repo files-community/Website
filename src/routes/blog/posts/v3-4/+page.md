@@ -2,7 +2,7 @@
 title: Announcing Files v3.4
 description: Enhance your Files experience with new features that allow you to filter file names, customize keyboard shortcuts, set a unique background image, and integrate with the powerful search utility, Listary.
 thumbnail: /blog-resources/v3-4/Hero.png
-date: 3/20/2024
+date: 5/8/2024
 author: files-community
 ---
 
