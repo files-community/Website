@@ -2,19 +2,34 @@
 title: Appearance
 ---
 
-![Settings dialog](/docs-resources/Settings-Appearance.png)
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
 
-## Theme
+The Appearance page in settings allows you to personalize your Files experience with a variety of aesthetic options. For those who love to tinker, we’ll even show you how to manually adjust the settings file for additional background colors and fonts.
 
-This allows you to switch between dark and light mode. "Default" uses the system theme in Windows.
+## Theme customization
 
-## Backdrop material
+Toggle effortlessly between dark and light mode to match your style or ambient lighting. The "Default" setting syncs with your Windows system theme, ensuring a cohesive visual experience.
 
-The backdrop material is what makes the window background transparent. You can choose between Mica Alt (Mica requires Windows 11) and Acrylic. In order for the backdrop to be visible, the background color needs be transparent.
+![Light and dark mode split view](/docs-resources/Dark-Light-Mode.png)
+
+
+## Transparency effects
+
+<InfoBar severity="information">
+  Please note that a completely transparent window isn't available right now.
+</InfoBar>
+
+Choose your preferred backdrop material to add a layer of transparency to your window background. Opt for Mica Alt for a subtle effect (note: Mica requires Windows 11) or Acrylic for a frosted appearance. To fully appreciate these effects, ensure your background color is set to transparent.
+
 
 ## Background color
 
-This allows you to change background color of the window. There is a large selection or pre-selected colors but you can also enter a custom value or change the transparency using the color picker.
+Personalize the background color of your window from a spectrum of pre-selected shades. For a unique touch, use the color picker to input a custom color or adjust transparency to your liking.
+
+![Settings dialog](/docs-resources/Settings-Appearance.png)
+
 
 ### Additional background colors
 
@@ -23,7 +38,7 @@ While there isn't an option in the settings UI, you can change the address bar, 
 1. Open Files > Settings > Advanced > Edit settings file. This will open the settings file in your default text editor.
 2. Before editing the settings file, you’ll need to close Files by right-clicking the icon in the system tray and clicking on "Quit".
 3. The settings file has a JSON format. You can use any text editor to open and modify it.
-4. Search for the any of the keys listed bellow and edit the value as desired.
+4. Search for any of the keys listed below and edit the value as desired.
 
 | Key                                 | Default value |
 | ----------------------------------- | ------------- |
@@ -70,3 +85,19 @@ The finder theme is based on the color scheme in Finder.
 | `AppThemeAddressBarBackgroundColor` | `#2E3440`   |
 | `AppThemeSidebarBackgroundColor`    | `#2E3440`   |
 | `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |
+
+
+## Background image
+
+Files allows you to configure a custom background image or gif using the settings UI. Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
+
+![Custom background image](/docs-resources/Background-Image.png)
+
+
+### Setting a custom background image
+
+1. Open Files > Settings > Appearance, and scroll down to the "Background image" section.
+2. Click on "Browse" and select the image or gif you wish to use.
+
+![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
+

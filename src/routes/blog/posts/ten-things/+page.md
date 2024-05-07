@@ -8,15 +8,15 @@ author: files-community
 
 Files is a powerful and user-friendly file manager that can help you organize and manage your files with ease. However, there may be some features and capabilities that you may not know about. In this post, we will highlight the top 10 things you may not know about Files.
 
-1. **Custom backgrounds**: Files allows you to set custom backgrounds for your file manager. This can be a great way to personalize your experience and make it more visually appealing.
+1. **Personalize with custom backgrounds**: Files allows you to personalize your experience by selecting a color or image that resonates with your personal preferences. Learn more about custom backgrounds [here](/docs/customize-settings/appearance)
 
-2. **Keyboard shortcuts**: Files has a variety of keyboard shortcuts that can help you quickly navigate and manage your files. For example, you can press **`Ctrl+Shift+Enter`** to open a folder in the secondary pane and **`Ctrl+T`** to open a new tab. Learn more about shortcuts [here](/docs/configuring/keyboard-shortcuts)
+2. **Customize your keyboard shortcuts**: Files offers a diverse array of keyboard shortcuts designed to help you quickly navigate and manage your files. For example, `Ctrl` + `Shift` + `Enter` swiftly opens the selected folder in a secondary pane, while `Ctrl`+ `T` launches a new tab. To tailor these shortcuts to your preferences, Files provides the flexibility to remap them. Discover how to personalize your shortcuts by visiting our [documentation](/docs/customize-settings/actions)
 
-3. **Check boxes**: Files allows you to show check boxes next to file names, making it easier to select multiple files at once. This can be useful when you need to move, copy, or delete multiple files at the same time. You can enable this from Settings > Folders > Show selection checkbox next to file names.
+3. **Manage Git repositories with ease**: Files includes support for common Git functions, allowing you to view commit statuses, push and pull commits, and manage branches. It’s designed to integrate into your workflow seamlessly, providing the tools you need to collaborate effectively and keep your projects up-to-date in a user-friendly environment. Learn more about this feature [here](/docs/features/git)
 
-4. **Change the layout mode**: You can change the layout mode in Files, such as switching between details and tile view.
+4. **Flexible layout modes**: You can customize your viewing experience in the Files app with multiple layout options. You can switch with ease between details, tiles, grid, columns, and list views to suit your preference, ensuring a more efficient and tailored file management experience.
 
-5. **Set as the default file manager on Windows**: You can set Files as the default file manager on Windows, making it easier to access and manage your files. This is done by going to settings and selecting the option to set as default file manager.
+5. **Set as the default file manager on Windows**: Elevate file management by setting the Files app as the default on Windows. To get started, open Files > Settings > Advanced, and toggle the setting for "Set Files as default".
 
 6. **Double click gesture**: Double clicking a blank space will up one directory in the folder tree. You can turn off the double-click gesture in the settings if you prefer to use other methods of interacting with your files.
 
@@ -26,7 +26,7 @@ Files is a powerful and user-friendly file manager that can help you organize an
 
 9. **Option to calculate folder sizes**: Files allows you to calculate folder sizes, which is normally only done for files.
 
-10. **File tags**: Files allows you to tag your files for easy organization and searching.
+10. **File tags**: Files allows you to tag your files for easy organization and searching. Learn more about tags [here](/docs/features/tags)
 
 These are just a few of the many features and capabilities of Files. By utilizing these features, you can make your experience with Files even more efficient and convenient.
 
