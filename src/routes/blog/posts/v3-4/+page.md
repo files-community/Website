@@ -81,6 +81,7 @@ Responding to user requests, we’ve expanded our language support to include Al
 - Added support to the sidebar for multiple SharePoint drives 
 - Added an integration for the Lucid Link cloud provider
 - Added audio bitrate, and video to the list of properties in the Details Pane
+- Fixed an issue where pinned items weren't displayed in the sidebar
 - Fixed an issue clicking the header in the details view wouldn't change the sort direction
 - Fixed an issue where the adaptive layout option wasn't disabled when syncing layout settings
 - Fixed an issue where changing the sort preferences didn't work properly when syncing layout settings
