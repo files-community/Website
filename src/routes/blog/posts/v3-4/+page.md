@@ -65,6 +65,12 @@ We're excited to announce a new integration with [Listary](https://www.listary.c
     <img src="/blog-resources/v3-4/ListaryMenu.png" alt="Listary context menu" />
 </figure>
 
+**Quick switch**: Seamlessly transition to the active folder in Files when opening or saving documents via another application. Additionally, once the file dialog appears, you can also switch to Files, navigate to your desired folder—such as a pinned location—and upon returning to the dialog, it will automatically update to reflect your chosen folder.
+
+<figure>
+    <img src="/blog-resources/v3-4/ListaryQuickSwitch.png" alt="Listary Quick Switch feature" />
+</figure>
+
 **Folder navigation**: Discover the ease of navigating to folders; a single click on any folder in the search results instantly opens it in the current tab or pane of Files.
 
 For additional details and support regarding Listary, you can visit their website https://help.listary.com/options-integration#third-party-software-adapted-by-listary.
