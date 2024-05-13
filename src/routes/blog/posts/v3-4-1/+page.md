@@ -2,7 +2,7 @@
 title: Announcing Files v3.4.1
 description: A notification when app is running in the background, prompt when failing to rename items, and improvements to stability.
 thumbnail: /blog-resources/v3-4-1/Hero.png
-date: 4/14/2024
+date: 5/14/2024
 author: files-community
 ---
 
