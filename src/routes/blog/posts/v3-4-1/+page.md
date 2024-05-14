@@ -1,6 +1,6 @@
 ---
 title: Announcing Files v3.4.1
-description: A notification when app is running in the background, prompt when failing to rename items, and improvements to stability.
+description: Support for displaying network drives on the sidebar, and general improvements to stability.
 thumbnail: /blog-resources/v3-4-1/Hero.png
 date: 5/14/2024
 author: files-community
