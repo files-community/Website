@@ -15,7 +15,7 @@
 			"description": "{FilesName} je svobodný software s otevřeným zdrojovým kódem, který spravuje a navrhuje kolektiv stovek přispěvatelů.",
 			"discord": "Připojit se k diskuzi",
 			"docs": "Staňte se přispěvatelem",
-			"contributions": "{amount, plural, =0 {Žádní přispěvatelé} one {# přispěvatel} few {# přispěvatelé} many {# přispěvatelů} other {# přispěvatelů}}"
+			"contributions": "{amount, plural, =0 {Žádní přispěvatelé} one {# přispěvatel} few {# přispěvatelé} other {# přispěvatelů}}"
 		},
 		"design": {
 			"chip": "Vzhled",
@@ -74,8 +74,8 @@
 				"description": "Rychlý přístup k příkazům, funkcím a nastavením z palety příkazů."
 			},
 			"remap-key-bindings": {
-				"title": "Odstranit vazbu klíčů",
-				"description": "Streamujte váš pracovní postup vytvořením vazeb vlastních klíčů."
+				"title": "Vlastní klávesové zkratky",
+				"description": "Zjednodušte si pracovní postupy vytvořením vlastních klávesových zkratek."
 			}
 		},
 		"themes": {
@@ -135,7 +135,7 @@
 			"description": "Zakoupením {FilesName} prostřednictvím obchodu Microsoft Store podpoříte vývojáře a umožníte nám pokračovat v aktualizaci aplikace o nové funkce a vylepšení."
 		},
 		"preview": {
-			"title": "Insider Preview",
+			"title": "Předběžná verze",
 			"description": "Preview verzi lze nainstalovat současně se stabilní verzí a poskytuje předběžný přístup k novým funkcím a vylepšením."
 		},
 		"self_signed": {
