@@ -44,8 +44,10 @@ While there isn't an option in the settings UI, you can change the address bar, 
 | ----------------------------------- | ------------- |
 | `AppThemeBackgroundColor`           | `#00000000`   |
 | `AppThemeAddressBarBackgroundColor` | `#00000000`   |
+| `AppThemeToolbarBackgroundColor`    | `#00000000`   |
 | `AppThemeSidebarBackgroundColor`    | `#00000000`   |
 | `AppThemeFileAreaBackgroundColor`   | `#00000000`   |
+| `AppThemeInfoBackgroundColor`       | `#00000000`   |
 
 ## Custom fonts
 
@@ -63,8 +65,10 @@ The glass theme is best paired with the Acrylic backdrop material.
 | ----------------------------------- | ----------- |
 | `AppThemeBackgroundColor`           | `#00000000` |
 | `AppThemeAddressBarBackgroundColor` | `#00000001` |
+| `AppThemeToolbarBackgroundColor`    | `#00000001` |
 | `AppThemeSidebarBackgroundColor`    | `#00000001` |
 | `AppThemeFileAreaBackgroundColor`   | `#00000001` |
+| `AppThemeInfoPaneBackgroundColor`   | `#00000001` |
 
 ### Finder
 
@@ -74,8 +78,10 @@ The finder theme is based on the color scheme in Finder.
 | ----------------------------------- | --------- |
 | `AppThemeBackgroundColor`           | `#221d28` |
 | `AppThemeAddressBarBackgroundColor` | `#38343c` |
+| `AppThemeToolbarBackgroundColor`    | `#38343c` |
 | `AppThemeSidebarBackgroundColor`    | `#464449` |
 | `AppThemeFileAreaBackgroundColor`   | `#221d28` |
+| `AppThemeInfoPaneBackgroundColor`   | `#38343c` |
 
 ### Nord
 
@@ -83,9 +89,10 @@ The finder theme is based on the color scheme in Finder.
 | ----------------------------------- | ----------- |
 | `AppThemeBackgroundColor`           | `#FF1B1F26` |
 | `AppThemeAddressBarBackgroundColor` | `#2E3440`   |
+| `AppThemeToolbarBackgroundColor`    | `#2E3440`   |
 | `AppThemeSidebarBackgroundColor`    | `#2E3440`   |
 | `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |
-
+| `AppThemeInfoPaneBackgroundColor`   | `#2E3440`   |
 
 ## Background image
 
