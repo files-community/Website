@@ -4,39 +4,50 @@ title: Translating Files
 
 Files uses Crowding for translation, which is cloud based SaaS supports globalization of any application on any platform.
 
-## Requirements
+## Getting started with Crowdin
+
+### Requirements
 
 - Any browser that is the latest version.
 - Crowdin account
 
-## Usage
+Files supports many languages and you can choose whatever language(s) you’d happy to translate. Crowdin has the same folder structure as Files source code, so you can go to resources.resw file and open Crowdin editor easily.
+Once you translate a sentence shown, you can go to the next sentences by clicking `Save` button.
 
-Files supports many languages and you can choose whatever language(s) you’d happy to translate. Crowdin has the same folder structure as Files source code and so you can go to resources.resw file and open Crowdin editor.
-Once you translate a sentence shown, you can go to the next sentences by clicking Next button.
+## Policies
+
+What we'd like to ask is just one thing: please try to use phrases used in File Explorer to provide similar translating experience to File Explorer.
+Once you translate something proofreaders or maintainers hardly request changes, but if you have issue with approved translations, use Comments section with Issue check box marked. It'll bring your comments up to us.
 
 ## Proofread
 
 If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations in language(s) you proofread. That role can be re-verified sometimes.
- 
+
+## Screenshots
+
+We add some screenshots where possible to help translators understand under what context strings are used.
+When you're translating a string in Crowdin Editor, Crowdin automatically shows screenshots.
+
 ## See in Files
 
 Maintainer often merges all translations that are approved right before a preview release or stable release. Once gets merged and gets new release published, we can see translated words.
 
 ## Placeholders
 
-Numbers that are curly brackets are placeholder where actual values are set at runtime. Translators may have to consider about contexts of the sentence, therefore we add comments about where sentences are basically shown and what they are for as far as possible.
+Numbers that are curly brackets are placeholder where actual values are set at runtime. Translators may have to consider about contexts of the sentence, therefore we add comments about at which sentences are basically shown and what they are for as far as possible.
 
 For example:
+
 ```
-Are you sure you want to delete {0} from {1}
+Are you sure you want to delete {0} from {1}?
 ```
 
 In this case, the first placeholder is for file name that user wants to delete and second one is for folder name that user wants to delete a file from.
 
 ## ICU message syntax
 
-You may see some strings that have programmatic syntax. It’s called ICU message syntax, which is official syntax advanced by Unicode.
-You might want to change a string below, for example:
+You may see some strings that have programmatic syntax.
+It’s called ICU message syntax, which is official syntax advanced by Unicode to avoid to make duplicated strings and introduce contextual format.
 
 ### Pluralization
 
@@ -68,9 +79,12 @@ For example, Japanese doesn't have plural but `other` tag has to be defined thou
 
 ### Number
 
+The purpose of the number type is to display different number values such as percentage, currency, and decimal numbers independently from the locale conventions for those. This enables adjustment of the message output to the number formats used in different locales.
+
 The placeholder "{0, number}" only specifies the resulting number format, this is never translated, it must always be kept in the same form, but can be moved to positions that require translation.
 
 ### Remarks
+
 If you're not sure what tags should be added, don't worry. Click `i` button and see available tags, or use 'generate skelton' to see preview.
 
 ![image](https://github.com/0x5bfa/Website/assets/62196528/a66edfbc-1bc1-42d0-8843-76af330fc861)
@@ -79,7 +93,18 @@ If you're not sure what tags should be added, don't worry. Click `i` button and 
 
 Also, Crowdin shows an error message if your translation is incorrectly formatted or translated.
 
+## Discussions
+
+If you have conprehensive questions about Files translation, please use [Crowdin Discussions](https://crowdin.com/project/files-app/discussions). Note that when you post a discussion please describe what you'd like to discussion in English.
+
+Otherwise, please use Comments area of each translation in Crowdin Editor. You can your comment as Issue and choose reason why you want bring your issue to Files translation proofreaders and team members. Once your issue is marked as Issue, others can pay attension since the comment will be colored to red.
+
 ## Using translated strings in the app
 
-
-
+We have our own extension to handle ICU message syntax.
+```cs
+"ItemsCount".GetLocalized(itemsCount);
+```
+```cs
+var localized = string.Format("DeleteConfirmation".GetLocalized(), fileName, parentFolderName);
+```
