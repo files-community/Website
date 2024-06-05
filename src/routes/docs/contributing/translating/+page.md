@@ -102,5 +102,5 @@ We have our own extension to handle ICU message syntax.
 "ItemsCount".ToLocalized(itemsCount);
 ```
 ```cs
-var localized = string.Format("DeleteConfirmation".ToLocalized(), fileName, parentFolderName);
+var localized = "DeleteConfirmation".ToLocalized(fileName, parentFolderName);
 ```
