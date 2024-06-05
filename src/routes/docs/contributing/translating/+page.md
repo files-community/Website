@@ -2,39 +2,28 @@
 title: Translating Files
 ---
 
-Files uses Crowding for translation, which is cloud based SaaS supports globalization of any application on any platform.
+Files uses Crowdin for translation, which is cloud-based SaaS that supports globalization of a variety of application platforms.
 
 ## Getting started with Crowdin
 
-### Requirements
-
-- Any browser that is the latest version.
-- Crowdin account
-
-Files supports many languages and you can choose whatever language(s) you’d happy to translate. Crowdin has the same folder structure as Files source code, so you can go to resources.resw file and open Crowdin editor easily.
-Once you translate a sentence shown, you can go to the next sentences by clicking `Save` button.
-
-## Policies
-
-What we'd like to ask is just one thing: please try to use phrases used in File Explorer to provide similar translating experience to File Explorer.
 Once you translate something proofreaders or maintainers hardly request changes, but if you have issue with approved translations, use Comments section with Issue check box marked. It'll bring your comments up to us.
 
 ## Proofread
 
-If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations in language(s) you proofread. That role can be re-verified sometimes.
+If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations in language(s) you proofread. Note that the role can be re-verified sometimes.
 
 ## Screenshots
 
-We add some screenshots where possible to help translators understand under what context strings are used.
+We add some screenshots where possible to help translators understand better under what context strings are used.
 When you're translating a string in Crowdin Editor, Crowdin automatically shows screenshots.
 
 ## See in Files
 
-Maintainer often merges all translations that are approved right before a preview release or stable release. Once gets merged and gets new release published, we can see translated words.
+Maintainers often merge all translations that are approved right before a preview release or stable release. Once gets merged and gets new release published, you can see translated words on your Windows.
 
 ## Placeholders
 
-Numbers that are curly brackets are placeholder where actual values are set at runtime. Translators may have to consider about contexts of the sentence, therefore we add comments about at which sentences are basically shown and what they are for as far as possible.
+Numbers that are surrounded by curly brackets are the placeholder where actual values are set at runtime. Translators may have to consider contexts of the sentence, and so we sometimes add comments about at which sentences are basically shown and what they are for as far as possible.
 
 For example:
 
@@ -75,7 +64,7 @@ Please do care about:
 - In case of a specific translation for a learned value, you can use "=NUMBER {TEXT}". Use only for values that are not specified using predefined tags in source language (`en-US`). This is most commonly used to define for the value `0`.
 - The placeholder `#` indicates where the value will be inserted. This allows you to define a future position according to your translation.
 
-For example, Japanese doesn't have plural but `other` tag has to be defined though source language (`en-US`) ans in Japanese `one` and `other` tag have the same value.
+For example, Japanese doesn't have plural but `other` tag has to be defined though source language (`en-US`) has plural type and in Japanese `one` and `other` tag have the same value.
 
 ### Number
 
@@ -99,7 +88,7 @@ If you have conprehensive questions about Files translation, please use [Crowdin
 
 Otherwise, please use Comments area of each translation in Crowdin Editor. You can your comment as Issue and choose reason why you want bring your issue to Files translation proofreaders and team members. Once your issue is marked as Issue, others can pay attension since the comment will be colored to red.
 
-## Using translated strings in the app
+## Develop with translated strings in the app
 
 We have our own extension to handle ICU message syntax.
 ```cs
