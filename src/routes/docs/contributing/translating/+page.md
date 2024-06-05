@@ -7,7 +7,7 @@ Files uses Crowdin for translation management, which is a cloud-based SaaS that 
 ## Getting started with Crowdin
 
 - Any browser that work on Windows with the latest version
-- Crowdin accont
+- Crowdin account
 
 Once you translate something proofreaders or maintainers hardly request to change, but if you have issue with approved translations, use Comments section in Crowdin Editor with the Issue check box marked. It'll bring your comments up to us.
 
@@ -65,19 +65,22 @@ Please do care about:
 - `other` tag has always to be defined in any languages.
 - If there're tags that have the same value as `other` tag, they can be omitted.
 - In case of a specific translation for a learned value, you can use "=NUMBER {TEXT}". Use only for values that are not specified using predefined tags in source language (`en-US`). This is most commonly used to define for the value `0`.
-- The placeholder `#` indicates where the value will be inserted. This allows you to define a future position according to your translation.
 
-For example, Japanese doesn't have plural but `other` tag has to be defined though source language (`en-US`) has plural type and in Japanese `one` and `other` tag have the same value.
+For example, Japanese doesn't have plural but `other` tag has to be defined though `one` and `other` tag have the same value in Japanese.
 
 ### Number
 
 The purpose of the number type is to display different number values such as percentage, currency, and decimal numbers independently from the locale conventions for those. This enables adjustment of the message output to the number formats used in different locales.
 
-The placeholder "{0, number}" only specifies the resulting number format, this is never translated, it must always be kept in the same form, but can be moved to positions that require translation.
+The placeholder `{0, number}` only specifies the resulting number format, this is never translated, it must always be kept in the same form, but can be moved to positions that require translation.
+
+Please do care about:
+
+- The placeholder `#` indicates where the value will be inserted. This allows you to define a future position according to your translation.
 
 ### Remarks
 
-If you're not sure what tags should be added, don't worry. Click `i` button and see available tags, or use 'generate skelton' to see preview.
+If you're not sure what tags should be added, don't worry. Click `i` button and see available tags, or click 'generate skelton' to see preview.
 
 ![image](https://github.com/0x5bfa/Website/assets/62196528/a66edfbc-1bc1-42d0-8843-76af330fc861)
 
@@ -87,16 +90,17 @@ Also, Crowdin shows an error message if your translation is incorrectly formatte
 
 ## Discussions
 
-If you have conprehensive questions about Files translation, please use [Crowdin Discussions](https://crowdin.com/project/files-app/discussions). Note that when you post a discussion please describe what you'd like to discussion in English.
+If you have conprehensive questions about Files translation, please use [Crowdin Discussions](https://crowdin.com/project/files-app/discussions). Note that when you post a discussion please describe what you'd like to discussion **in English**; otherwise it would be likely to be closed.
 
-Otherwise, please use Comments area of each translation in Crowdin Editor. You can your comment as Issue and choose reason why you want bring your issue to Files translation proofreaders and team members. Once your issue is marked as Issue, others can pay attension since the comment will be colored to red.
+For questions regarding single translation, please use Comments area of each translation in Crowdin Editor. You can mark your comment as Issue and choose a reason why you want bring your issue to us. Once your issue is marked as Issue, others can pay attension since the comment will be colored to red.
 
 ## Develop with translated strings in the app
 
 We have our own extension to handle ICU message syntax.
+`public static Strings.ToLocalized(this source, param parameters);`
 ```cs
-"ItemsCount".GetLocalized(itemsCount);
+"ItemsCount".ToLocalized(itemsCount);
 ```
 ```cs
-var localized = string.Format("DeleteConfirmation".GetLocalized(), fileName, parentFolderName);
+var localized = string.Format("DeleteConfirmation".ToLocalized(), fileName, parentFolderName);
 ```
