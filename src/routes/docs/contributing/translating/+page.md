@@ -2,28 +2,31 @@
 title: Translating Files
 ---
 
-Files uses Crowdin for translation, which is cloud-based SaaS that supports globalization of a variety of application platforms.
+Files uses Crowdin for translation management, which is a cloud-based SaaS that supports globalization of a variety of application platforms.
 
 ## Getting started with Crowdin
 
-Once you translate something proofreaders or maintainers hardly request changes, but if you have issue with approved translations, use Comments section with Issue check box marked. It'll bring your comments up to us.
+- Any browser that work on Windows with the latest version
+- Crowdin accont
+
+Once you translate something proofreaders or maintainers hardly request to change, but if you have issue with approved translations, use Comments section in Crowdin Editor with the Issue check box marked. It'll bring your comments up to us.
 
 ## Proofread
 
-If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations in language(s) you proofread. Note that the role can be re-verified sometimes.
+If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations of language(s) you proofread. Note that the role can be re-verified sometimes.
 
 ## Screenshots
 
 We add some screenshots where possible to help translators understand better under what context strings are used.
-When you're translating a string in Crowdin Editor, Crowdin automatically shows screenshots.
+When you're translating a string in Crowdin Editor, Crowdin automatically shows screenshots and highlightes target.
 
 ## See in Files
 
-Maintainers often merge all translations that are approved right before a preview release or stable release. Once gets merged and gets new release published, you can see translated words on your Windows.
+Maintainers often merge all translations that are approved right before a preview release or stable release published. Once gets merged and gets new release published, you can see translated words on your Windows.
 
 ## Placeholders
 
-Numbers that are surrounded by curly brackets are the placeholder where actual values are set at runtime. Translators may have to consider contexts of the sentence, and so we sometimes add comments about at which sentences are basically shown and what they are for as far as possible.
+Numbers that are surrounded by curly brackets are the placeholder where actual values are set at runtime. Translators may have to consider under what context string are used, and so we sometimes add comments about at which sentences are basically shown and what they are for as long as possible.
 
 For example:
 
@@ -36,7 +39,7 @@ In this case, the first placeholder is for file name that user wants to delete a
 ## ICU message syntax
 
 You may see some strings that have programmatic syntax.
-It’s called ICU message syntax, which is official syntax advanced by Unicode to avoid to make duplicated strings and introduce contextual format.
+It’s called ICU message syntax, which is the standard syntax advanced by Unicode (and the parallel ISO 10646 standard) for efficiently processing text in any language and for maintaining text data integrity
 
 ### Pluralization
 
