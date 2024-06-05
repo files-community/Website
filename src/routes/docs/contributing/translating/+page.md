@@ -84,7 +84,7 @@ If you're not sure what tags should be added, don't worry. Click `i` button and 
 
 ![image](https://github.com/0x5bfa/Website/assets/62196528/a66edfbc-1bc1-42d0-8843-76af330fc861)
 
-![image](https://private-user-images.githubusercontent.com/84145589/336040857-ee954a9b-ef7b-4cf5-8e5e-a6394ebabb1c.png)
+![image](https://private-user-images.githubusercontent.com/84145589/336040857-ee954a9b-ef7b-4cf5-8e5e-a6394ebabb1c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1ODY1ODIsIm5iZiI6MTcxNzU4NjI4MiwicGF0aCI6Ii84NDE0NTU4OS8zMzYwNDA4NTctZWU5NTRhOWItZWY3Yi00Y2Y1LThlNWUtYTYzOTRlYmFiYjFjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjA1VDExMTgwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2ZTJkYThiYzQzM2Q4YzQwOTY5OTY1ZmM1Njc2Mjk1OWRlNzkxNmY5NThkZDU3MjU4MTQxNGI2NTAzNzNiNDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jUppxsC03mbEii6T4l8s7_IHB6vtvCs8nyhNLFuoCvM)
 
 Also, Crowdin shows an error message if your translation is incorrectly formatted or translated.
 
