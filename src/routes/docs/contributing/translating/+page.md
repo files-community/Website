@@ -9,7 +9,7 @@ Files uses Crowdin for translation management, which is a cloud-based SaaS that 
 - Any browser that work on Windows with the latest version
 - Crowdin account
 
-Once you translate something proofreaders or maintainers hardly request to change, but if you have issue with approved translations, use Comments section in Crowdin Editor with the Issue check box marked. It'll bring your comments up to us.
+Once you translate a string, proofreaders or maintainers rarely requests changes, but if you notice an issue with an approved translation, you can use the Comments section in Crowdin Editor with the Issue check box marked.
 
 ## Proofread
 
