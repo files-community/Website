@@ -17,8 +17,7 @@ If you translate Files on a regular basis and would like to have access to proof
 
 ## Screenshots
 
-We add some screenshots where possible to help translators understand better under what context strings are used.
-When you're translating a string in Crowdin Editor, Crowdin automatically shows screenshots and highlightes target.
+A number of screenshots have been uploaded where possible to provide more context on how strings are being used. Please note, Files is actively updated and it's possible that some screenshots are out of date.```
 
 ## See in Files
 
