@@ -2,7 +2,7 @@
 title: Translating Files
 ---
 
-Files uses Crowdin for translation management, which is a cloud-based SaaS that supports globalization of a variety of application platforms.
+Translations for Files are done through the popular cloud based platform Crowdin. Anyone with a Crowdin account can translate strings and help improve existing strings.
 
 ## Getting started with Crowdin
 
