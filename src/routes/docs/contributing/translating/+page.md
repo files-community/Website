@@ -19,9 +19,9 @@ If you translate Files on a regular basis and would like to have access to proof
 
 A number of screenshots have been uploaded where possible to provide more context on how strings are being used. Please note, Files is actively updated and it's possible that some screenshots are out of date.```
 
-## See in Files
+## Including updated strings in Files
 
-Maintainers often merge all translations that are approved right before a preview release or stable release published. Once gets merged and gets new release published, you can see translated words on your Windows.
+Your translations will usually be synced with the main Files project shortly before we release an updated version of Files to the stable branch.
 
 ## Placeholders
 
