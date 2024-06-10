@@ -13,7 +13,7 @@ Once you translate a string, proofreaders or maintainers rarely requests changes
 
 ## Proofread
 
-If you translate Files on a daily basis and want to proofread your language resources, we’ll verify and give you the role, so you can proofread and approve other’s translations of language(s) you proofread. Note that the role can be re-verified sometimes.
+If you translate Files on a regular basis and would like to have access to proofread your language, please start a discussion on Crowdin and we'll review your request at the earliest convenience.
 
 ## Screenshots
 
