@@ -85,6 +85,7 @@ While enhancements in performance and stability typically occur behind the scene
 - Added a setting to configure the "Open in ide" button on the status bar
 - Added support for "Thin acrylic" system backdrop
 - Added support for running AHK files as admin
+- Added support for hiding the toolbar
 - Opening the log location will now close the Settings Dialog when Files is the default file manager
 - Fixed an issue where a resize cursor was incorrectly shown at titlebar edges when Files was maximized
 - Fixed an issue where empty folders could not be compressed into an archive
