@@ -31,4 +31,3 @@ This is on by default and displays file thumbnails. Turning it off will display 
 ## Show checkboxes when selecting items
 
 This is on by default and displays a checkbox when an item is selected.
-

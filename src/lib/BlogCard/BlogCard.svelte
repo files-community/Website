@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onNavigate } from "$app/navigation";
 	import { externalLink } from "$lib";
 	import { date as dateFormat } from "svelte-i18n";
 
@@ -9,8 +8,6 @@
 	export let title = "";
 	export let description = "";
 	export let thumbnail = "";
-
-	let postThumbnail: HTMLImageElement;
 </script>
 
 <a class="blog-card" href="/blog/posts/{slug}" {...$$restProps}>

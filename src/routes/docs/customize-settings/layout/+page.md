@@ -4,7 +4,7 @@ title: Layout
 
 ## Sync layout and sorting preferences across directories
 
-Located on the folders settings page, enabling this option will sync the layout and other folder settings across all directories.  For example, changing the layout in one folder will automatically change the layout for all other folders.
+Located on the folders settings page, enabling this option will sync the layout and other folder settings across all directories. For example, changing the layout in one folder will automatically change the layout for all other folders.
 
 ## Layout type
 
@@ -32,12 +32,12 @@ Displays files and folders in a hierarchical structure, with each level shown in
 
 Adaptive automatically chooses the layout based on each folders contents.
 
-
 ## Sorting and grouping
 
 ### Sort by
 
 Adjusts how items are sorted
+
 - Name
 - Date modified
 - Date created
@@ -58,6 +58,7 @@ Sorts items in descending order.
 ### Group by
 
 Adjusts how items are grouped
+
 - None
 - Name
 - Date modified
@@ -79,6 +80,7 @@ Adjusts the date unit for group by.
 ### Columns
 
 Support for additional columns is being planned but in the meantime you can toggle the defaults for the following columns:
+
 - Tags
 - Size
 - Type

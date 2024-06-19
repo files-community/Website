@@ -10,16 +10,13 @@ title: Third party integrations
 	Please note that the integrations available within Files are provided as a convenience and are not officially endorsed by our team. Files does not receive any commission or compensation for these third-party integrations. While these integrations have been implemented due to popular demand, Files assumes no responsibility for their use. We encourage users to conduct thorough research before utilizing these additions to ensure they meet your standards and requirements.
 </InfoBar>
 
-
 ## QuickLook
 
 QuickLook is a popular tool for previewing files on Windows. If you already have QuickLook installed, there’s no need for additional setup. Just select an item in Files, and press the space key to see a preview. You can also use the arrow keys to navigate through the previews of different items. To learn more about QuickLook, please see their GitHub repo https://github.com/QL-Win/QuickLook.
 
-
 ## SeerPro
 
 SeerPro is a robust tool for previewing files on Windows, offering a similar experience to QuickLook with a key enhancement. Once SeerPro is installed, you can immediately preview items by selecting them in Files and pressing the space key. A standout feature of SeerPro is its ability to copy images or video frames directly to the clipboard.
-
 
 ## Listary
 

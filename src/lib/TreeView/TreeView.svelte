@@ -13,7 +13,7 @@
 	export let tree: DocsTree = [];
 	export let initial = true;
 
-	let treeViewState: any;
+	let treeViewState: Record<string, boolean>;
 
 	onMount(() => {
 		// Check localStorage for an existing treeViewState
@@ -22,7 +22,7 @@
 	});
 
 	// Function for expanding/collapsing docs categories
-	const toggleExpansion = (event: MouseEvent, name: string) => {
+	const toggleExpansion = (name: string) => (event: Event) => {
 		event.stopPropagation();
 
 		// Modify treeViewState to have the opposite of the previous entry for the category
@@ -39,7 +39,7 @@
 		{#if "pages" in tree}
 			{@const pages = tree.pages}
 			<div class="subtree" class:expanded={!treeViewState?.[title]}>
-				<ListItem on:click={e => toggleExpansion(e, title)}>
+				<ListItem on:click={toggleExpansion(title)}>
 					<svelte:fragment slot="icon">
 						{#if icon}
 							<svelte:component this={icon} />

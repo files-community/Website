@@ -45,7 +45,7 @@ Starting 3/21/2024, users of the sideload version (aka classic installer) will n
 	This is not required for the Store version of Files.
 </InfoBar>
 
-1. Export your settings by going to `Settings > Advanced > Export`. 
+1. Export your settings by going to `Settings > Advanced > Export`.
 2. Uninstall Files and restart Windows
 3. [Reinstall](/download/) Files.
 4. Import your settings from `Settings > Advanced > Import`.
@@ -59,6 +59,7 @@ If you see a "Cannot open app package" message when you try to open Files, it me
 ### Updates
 
 If you encounter any problems or errors while updating Files, you can try the following solutions:
+
 1. Make sure you have a stable internet connection and enough disk space for the update.
 2. Restart your computer and try to update Files again.
 

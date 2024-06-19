@@ -44,7 +44,6 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
     <img src="/blog-resources/v3-2/ThumbnailsTwo.png" alt="Thumbnail comparison" />
 </figure>
 
-
 ## Changes and Improvements
 
 - Added options to hide the built-in items from the right click context menu
@@ -62,7 +61,7 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
 - Fixed issue where renaming a tag wouldn't save the new name
 - Fixed issue where certain changes in the Properties Window couldn't be canceled
 - Fixed issue where switching from Details to Tiles would sometimes result in blurry icons
-- Fixed issue where thumbnails would sometimes fail to load for OneDrive items 
+- Fixed issue where thumbnails would sometimes fail to load for OneDrive items
 - Fixed issue where folder thumbnails wouldn't display a preview of the contents
 - Fixed issue where the Properties window was missing its icon
 - Fixed issue where search results would sometimes use the Columns View
@@ -91,7 +90,6 @@ We’ve enhanced the resolution and contrast of our thumbnail previews to make t
 - Fixed crash that would occur when selecting the address bar via `Shift` + `Tab`
 - Fixed crash that would occur when Git path contained an emoji
 - Fixed crash that could occur when dragging in grouped grid layout
-
 
 ### Conclusion
 

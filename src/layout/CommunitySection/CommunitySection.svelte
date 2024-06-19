@@ -30,7 +30,7 @@
 			</div>
 		</div>
 		<div class="contributors-container">
-			{#each contributors as rowPromise, i}
+			{#each contributors as rowPromise}
 				<div class="contributors-row">
 					{#await rowPromise then row}
 						{#each row.sort(() => Math.random() - 0.5) as { html_url, avatar_url, login, contributions, type }}

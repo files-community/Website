@@ -9,7 +9,6 @@
 	import { Button, TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { Tag } from "$data/features";
-	import { error } from "@sveltejs/kit";
 
 	let systemTheme = "light";
 	let currentTheme = 0;

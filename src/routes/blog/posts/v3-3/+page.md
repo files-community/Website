@@ -22,7 +22,6 @@ Beneath the the layout section, we added a slider to control the item sizes of t
     <img src="/blog-resources/v3-3/LayoutPicker.png" alt="Layout picker flyout" />
 </figure>
 
-
 ### Thumbnail performance and DPI support
 
 In v3.3, we continued working on thumbnail handling. While there is always room for improvement, you can anticipate a more reliable experience with fewer overall issues related to thumbnails.
@@ -33,7 +32,6 @@ When a thumbnail takes longer to load, a shimmer animation will be displayed to 
     <img src="/blog-resources/v3-3/SidebarIcons.png" alt="DPI aware sidebar icons" />
 </figure>
 
-
 ### Added a settings page to manage layout preferences
 
 We added a new settings page to simplify the management of your layout preferences. These options, formerly nested within submenus on the "Folders" settings page, are now more accessible and easier to locate. Additionally, the "Folders" page was renamed to "Files & folders".
@@ -42,11 +40,9 @@ We added a new settings page to simplify the management of your layout preferenc
     <img src="/blog-resources/v3-3/LayoutSettings.png" alt="Layout settings page" />
 </figure>
 
-
 ### Continue where you left off when restarting Windows
 
 Continue where you left off now works when Windows is restarted. Previously this feature only worked if you closed Files before restarting Windows.
-
 
 ## Changes and Improvements
 

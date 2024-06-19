@@ -34,7 +34,7 @@ This option will keep Files running in the background even when the window is cl
 
 ### Set Files as the default file manager
 
-Windows doesn't have an official method for changing the default file manager. In order to still provide this option, we developed a workaround that intercepts calls to launch File Explorer and redirect the call to Files instead. This workaround has some limitations but it works for most scenarios including the `win` + `e` shortcut. 
+Windows doesn't have an official method for changing the default file manager. In order to still provide this option, we developed a workaround that intercepts calls to launch File Explorer and redirect the call to Files instead. This workaround has some limitations but it works for most scenarios including the `win` + `e` shortcut.
 
 <InfoBar severity="caution">
 	This option involves modifying the system registry and while it's been tested and improved over time, the Files team takes no responsibility if something goes wrong. If you decide to proceed, we recommend creating a backup of the system registry beforehand.

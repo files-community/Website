@@ -19,7 +19,6 @@ Files v3.4.1 is now available for download, this release contains bug fixes and 
 - Fixed crash when connecting some removable drives
 - Fixed an issue where the string for "Actions" wasn't localize in the Settings menu
 
-
 ### Conclusion
 
 As always, we appreciate your feedback and suggestions on how we improve Files. You can reach us through our GitHub issues page: https://github.com/files-community/Files/issues.

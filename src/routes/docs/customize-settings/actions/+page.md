@@ -10,13 +10,11 @@ Actions are commands that you can perform on items, such as files, folders, imag
 
 ![Command palette](/docs-resources/Command-Palette.png)
 
-
 # Customizing Actions
 
 You can customize the key bindings for actions from the Actions page in Settings (Files > Settings > Actions).
 
 ![Actions settings page](/docs-resources/Settings-Actions.png)
-
 
 ## Modifying existing key bindings
 
@@ -49,7 +47,6 @@ Files has a growing list of actions and as the list continues grows, not all act
 
 If you wish to restore the default key key bindings, click the "Restore defaults" button and click on "Yes" to confirm.
 
-
 # Actions
 
 This section provides the complete list of actions and their descriptions. The actions are grouped by categories for easier reference.
@@ -68,7 +65,6 @@ Opens the online documentation in the web browser
 "F1"
 ```
 
-
 ### Toggle FullScreen
 
 Toggles FullScreen mode
@@ -81,7 +77,6 @@ Toggles FullScreen mode
 "F11"
 ```
 
-
 ### Enter compact overlay
 
 Enters compact overlay
@@ -91,9 +86,8 @@ Enters compact overlay
 **Default bindings:**
 
 ```json
-"Ctrl+Alt+Up" 
+"Ctrl+Alt+Up"
 ```
-
 
 ### Exit compact overlay
 
@@ -107,7 +101,6 @@ Exits compact overlay
 "Ctrl+Alt+Down"
 ```
 
-
 ### Toggle compact overlay
 
 Toggles compact overlay
@@ -119,7 +112,6 @@ Toggles compact overlay
 ```json
 "F12"
 ```
-
 
 ### Search
 
@@ -134,7 +126,6 @@ Focuses the search box
 "F3"
 ```
 
-
 ### Redo
 
 Redoes the last file operation
@@ -147,7 +138,6 @@ Redoes the last file operation
 "Ctrl+Y"
 ```
 
-
 ### Undo
 
 Undoes the last file operation
@@ -159,7 +149,6 @@ Undoes the last file operation
 ```json
 "Ctrl+Z"
 ```
-
 
 ### Edit path
 
@@ -188,13 +177,11 @@ Toggles whether to show hidden items
 "Ctrl+H"
 ```
 
-
 ### Toggle file extensions
 
 Toggles whether to show file extensions
 
 **Action name:** `ToggleShowFileExtensions`
-
 
 ### Toggle Preview Pane
 
@@ -208,7 +195,6 @@ Toggles the Preview Pane
 "Ctrl+Alt+P"
 ```
 
-
 ### Toggle Details Pane
 
 Toggles the Details Pane
@@ -220,7 +206,6 @@ Toggles the Details Pane
 ```json
 "Ctrl+Alt+D"
 ```
-
 
 ### Toggle Info Pane
 
@@ -234,9 +219,7 @@ Toggles the Info Pane
 "Ctrl+Alt+I"
 ```
 
-
 ## File System
-
 
 ### Copy item
 
@@ -250,7 +233,6 @@ Copy selected items to the clipboard
 "Ctrl+C"
 ```
 
-
 ### Copy path
 
 Copy paths of selected items to the clipboard
@@ -262,7 +244,6 @@ Copy paths of selected items to the clipboard
 ```json
 "Ctrl+Shift+C"
 ```
-
 
 ### Cut item
 
@@ -276,7 +257,6 @@ Cut selected items to the clipboard
 "Ctrl+X"
 ```
 
-
 ### Paste item
 
 Pastes items from clipboard to current directory
@@ -289,7 +269,6 @@ Pastes items from clipboard to current directory
 "Ctrl+V"
 ```
 
-
 ### Paste item to selected folder
 
 Pastes items from clipboard to the selected folder
@@ -301,7 +280,6 @@ Pastes items from clipboard to the selected folder
 ```json
 "Ctrl+Shift+V"
 ```
-
 
 ### Delete item
 
@@ -316,7 +294,6 @@ Deletes selected items
 "Ctrl+D"
 ```
 
-
 ### Permanently delete item
 
 Permanently deletes selected items
@@ -328,7 +305,6 @@ Permanently deletes selected items
 ```json
 "Shift+Delete"
 ```
-
 
 ### Create folder
 
@@ -342,13 +318,11 @@ Creates new folder
 "Ctrl+Shift+N"
 ```
 
-
 ### Create folder with selection
 
 Creates new folder with the selected items
 
 **Action name:** `CreateFolderWithSelection`
-
 
 ### Create item
 
@@ -362,20 +336,17 @@ Creates new item
 "Ctrl+Shift+I"
 ```
 
-
 ### Create shortcut
 
 Creates shortcut targeting the selected item
 
 **Action name:** `CreateShortcut`
 
-
 ### Create shortcut from dialog
 
 Creates shortcut targeting any item
 
 **Action name:** `CreateShortcutFromDialog`
-
 
 ### Open item
 
@@ -389,13 +360,11 @@ Opens selected items
 "Enter"
 ```
 
-
 ### Open item with application picker
 
 Opens items with the selected application
 
 **Action name:** `OpenItemWithApplicationPicker`
-
 
 ### Open parent folder
 
@@ -403,13 +372,11 @@ Opens parent folder of searched item
 
 **Action name:** `OpenParentFolder`
 
-
 ### Open file location
 
 Opens location of the selected item
 
 **Action name:** `OpenFileLocation`
-
 
 ### Refresh items
 
@@ -421,9 +388,8 @@ Refreshes the items of the current directory
 
 ```json
 "Ctrl+R"
-"F5" 
+"F5"
 ```
-
 
 ### Rename item
 
@@ -436,7 +402,6 @@ Renames selected item
 ```json
 "F2"
 ```
-
 
 ## Selection
 
@@ -452,20 +417,17 @@ Selects all items
 "Ctrl+A"
 ```
 
-
 ### Invert selection
 
 Inverts the selected items
 
 **Action name:** `InvertSelection`
 
-
 ### Clear selection
 
 Clears the selected items
 
 **Action name:** `ClearSelection`
-
 
 ### Toggle selection
 
@@ -487,7 +449,6 @@ Shares selected items
 
 **Action name:** `ShareItem`
 
-
 ## Start
 
 ### Pin to start
@@ -496,13 +457,11 @@ Pins selected items to the Start Menu
 
 **Action name:** `PinToStart`
 
-
 ### Unpin from start
 
 Unpins selected items from the Start Menu
 
 **Action name:** `UnpinFromStart`
-
 
 ## Sidebar
 
@@ -512,13 +471,11 @@ Pins selected folders to sidebar
 
 **Action name:** `PinFolderToSidebar`
 
-
 ### Unpin from Sidebar
 
 Unpins selected folders from Sidebar
 
 **Action name:** `UnpinFolderFromSidebar`
-
 
 ## Backgrounds
 
@@ -528,13 +485,11 @@ Sets selected picture as the desktop background
 
 **Action name:** `SetAsWallpaperBackground`
 
-
 ### Set as desktop slideshow
 
 Sets selected pictures as the desktop slideshow
 
 **Action name:** `SetAsSlideshowBackground`
-
 
 ### Set as lockscreen slideshow
 
@@ -542,13 +497,11 @@ Sets selected picture as the lockscreen background
 
 **Action name:** `SetAsLockscreenBackground`
 
-
 ### Set as app background
 
 Sets selected picture as the app background
 
 **Action name:** `SetAsAppBackground`
-
 
 ## Install
 
@@ -558,20 +511,17 @@ Installs selected fonts
 
 **Action name:** `InstallFont`
 
-
 ### Install Inf
 
 Installs selected Inf files
 
 **Action name:** `InstallInfDriver`
 
-
 ### Install certificate
 
 Installs selected certificates
 
 **Action name:** `InstallCertificate`
-
 
 ## Run
 
@@ -581,20 +531,17 @@ Runs selected items as admin
 
 **Action name:** `RunAsAdmin`
 
-
 ### Run as another user
 
 Runs selected items as another user
 
 **Action name:** `RunAsAnotherUser`
 
-
 ### Run with Powershell
 
 Runs selected scripts with Powershell
 
 **Action name:** `RunWithPowershell`
-
 
 ## Preview popups
 
@@ -618,20 +565,17 @@ Prompts to create archive from selected items
 
 **Action name:** `CompressIntoArchive`
 
-
 ### Create 7z archive
 
 Creates 7z archive with selected items
 
 **Action name:** `CompressIntoSevenZip`
 
-
 ### Create zip archive
 
 Creates zip archive with selected items
 
 **Action name:** `CompressIntoZip`
-
 
 ### Extract archive
 
@@ -645,20 +589,17 @@ Prompts to extract items from selected archive
 "Ctrl+E"
 ```
 
-
 ### Extract archive here
 
 Extracts items from selected archive to current folder
 
 **Action name:** `DecompressArchiveHere`
 
-
 ### Extract archive to new folder
 
 Extracts items from selected archive to a new folder
 
 **Action name:** `DecompressArchiveToChildFolder`
-
 
 ### Smart extract
 
@@ -672,7 +613,6 @@ Automatically chooses extraction mode based on the selected archives contents
 "Ctrl+Shift+E"
 ```
 
-
 ## Image Manipulation
 
 ### Rotate left
@@ -681,13 +621,11 @@ Rotates selected images left
 
 **Action name:** `RotateLeft`
 
-
 ### Rotate right
 
 Rotates selected images right
 
 **Action name:** `RotateRight`
-
 
 ## Open
 
@@ -697,13 +635,11 @@ Opens current folder in Visual Studio
 
 **Action name:** `OpenInVS`
 
-
 ### Open in Visual Studio Code
 
 Opens current folder in Visual Studio Code
 
 **Action name:** `OpenInVSCode`
-
 
 ### Open properties
 
@@ -717,7 +653,6 @@ Opens properties window
 "Alt+Enter"
 ```
 
-
 ### Open settings
 
 Opens settings
@@ -730,10 +665,9 @@ Opens settings
 "Ctrl+,"
 ```
 
-
 ### Open Terminal
 
-Opens folder in Windows Terminal 
+Opens folder in Windows Terminal
 
 **Action name:** `OpenTerminal`
 
@@ -742,7 +676,6 @@ Opens folder in Windows Terminal
 ```json
 "Ctrl+`"
 ```
-
 
 ### Open Terminal as admin
 
@@ -756,7 +689,6 @@ Opens folder in Windows Terminal as admin
 "Ctrl+Shift+`"
 ```
 
-
 ### Open Command Palette
 
 Opens the Command Palette
@@ -768,7 +700,6 @@ Opens the Command Palette
 ```json
 "Ctrl+Shift+P"
 ```
-
 
 ## Layouts
 
@@ -784,7 +715,6 @@ Switches to the Details View
 "Ctrl+Shift+1"
 ```
 
-
 ### List View
 
 Switches to the List View
@@ -796,7 +726,6 @@ Switches to the List View
 ```json
 "Ctrl+Shift+2"
 ```
-
 
 ### Tiles View
 
@@ -810,7 +739,6 @@ Switches to the Tiles View
 "Ctrl+Shift+3"
 ```
 
-
 ### Grid View
 
 Switches to the Grid View
@@ -822,7 +750,6 @@ Switches to the Grid View
 ```json
 "Ctrl+Shift+4"
 ```
-
 
 ### Columns View
 
@@ -836,7 +763,6 @@ Switches to the Columns View
 "Ctrl+Shift+5"
 ```
 
-
 ### Adaptive Layout
 
 Switches the layout based on the folder contents
@@ -849,7 +775,6 @@ Switches the layout based on the folder contents
 "Ctrl+Shift+6"
 ```
 
-
 ### Increase icon size
 
 Increases the icon size
@@ -861,7 +786,6 @@ Increases the icon size
 ```json
 "Ctrl++"
 ```
-
 
 ### Decrease icon size
 
@@ -883,13 +807,11 @@ Sorts items alphabetically by their name
 
 **Action name:** `SortByName`
 
-
 ### Sort by date modified
 
 Sorts items by the date and time they were last modified
 
 **Action name:** `SortByDateModified`
-
 
 ### Sort by date created
 
@@ -897,13 +819,11 @@ Sorts items by the date and time they were created
 
 **Action name:** `SortByDateCreated`
 
-
 ### Sort by size
 
 Sorts items by their size
 
 **Action name:** `SortBySize`
-
 
 ### Sort by type
 
@@ -911,13 +831,11 @@ Sorts items by their type
 
 **Action name:** `SortByType`
 
-
 ### Sort by sync status
 
 Sorts items by their cloud sync status
 
 **Action name:** `SortBySyncStatus`
-
 
 ### Sort by tags
 
@@ -925,13 +843,11 @@ Sorts items by the tags assigned to them
 
 **Action name:** `SortByTag`
 
-
 ### Sort by path
 
 Sorts items by their in the file system
 
 **Action name:** `SortByPath`
-
 
 ### Sort by original folder
 
@@ -939,13 +855,11 @@ Sorts items by the original folder they were deleted from
 
 **Action name:** `SortByOriginalFolder`
 
-
 ### Sort by date deleted
 
 Sorts items by the date and time they were deleted
 
 **Action name:** `SortByDateDeleted`
-
 
 ### Sort items in ascending order
 
@@ -953,13 +867,11 @@ Sorts items in ascending order according to the current sort option
 
 **Action name:** `SortAscending`
 
-
 ### Sort items in descending order
 
 Sorts items in descending order according to the current sort option
 
 **Action name:** `SortDescending`
-
 
 ### Toggle sort direction
 
@@ -967,13 +879,11 @@ Toggles the sort direction between ascending and descending
 
 **Action name:** `ToggleSortDirection`
 
-
 ### Sort folders first
 
 Lists and sorts folders before files
 
 **Action name:** `SortFoldersFirst`
-
 
 ### Sort files first
 
@@ -981,13 +891,11 @@ Lists and sorts files before folders
 
 **Action name:** `SortFilesFirst`
 
-
 ### Sort folders alongside files
 
 Lists and sorts folders alongside files
 
 **Action name:** `ToggleSortDirectoriesAlongsideFiles`
-
 
 ## Grouping
 
@@ -997,13 +905,11 @@ Lists items without grouping them
 
 **Action name:** `GroupByNone`
 
-
 ### Group by name
 
 Groups items by name
 
 **Action name:** `GroupByName`
-
 
 ### Group by date modified
 
@@ -1011,13 +917,11 @@ Groups items by date modified
 
 **Action name:** `GroupByDateModified`
 
-
 ### Group by date created
 
 Groups items by date created
 
 **Action name:** `GroupByDateCreated`
-
 
 ### Group by size
 
@@ -1025,13 +929,11 @@ Groups items by size
 
 **Action name:** `GroupBySize`
 
-
 ### Group by type
 
 Groups items by type
 
 **Action name:** `GroupByType`
-
 
 ### Group by sync status
 
@@ -1039,13 +941,11 @@ Groups items by sync status
 
 **Action name:** `GroupBySyncStatus`
 
-
 ### Group by tags
 
 Groups items by tags
 
 **Action name:** `GroupByTag`
-
 
 ### Group by original folder
 
@@ -1053,13 +953,11 @@ Groups items by original folder
 
 **Action name:** `GroupByOriginalFolder`
 
-
 ### Group by date deleted
 
 Groups items by date deleted
 
 **Action name:** `GroupByDateDeleted`
-
 
 ### Group by folder path
 
@@ -1067,13 +965,11 @@ Groups items by folder path
 
 **Action name:** `GroupByFolderPath`
 
-
 ### Group by date modified (year)
 
 Groups items by year of date modified
 
 **Action name:** `GroupByDateModifiedYear`
-
 
 ### Group by date modified (month)
 
@@ -1081,13 +977,11 @@ Groups items by month of date modified
 
 **Action name:** `GroupByDateModifiedMonth`
 
-
 ### Group by date modified (day)
 
 Groups items by day of date modified
 
 **Action name:** `GroupByDateModifiedDay`
-
 
 ### Group by date created (year)
 
@@ -1095,13 +989,11 @@ Groups items by year of date created
 
 **Action name:** `GroupByDateCreatedYear`
 
-
 ### Group by date created (month)
 
 Groups items by month of date created
 
 **Action name:** `GroupByDateCreatedMonth`
-
 
 ### Group by date created (day)
 
@@ -1109,13 +1001,11 @@ Groups items by day of date created
 
 **Action name:** `GroupByDateCreatedDay`
 
-
 ### Group by date deleted (year)
 
 Groups items by year of date deleted
 
 **Action name:** `GroupByDateDeletedYear`
-
 
 ### Group by date deleted (month)
 
@@ -1123,13 +1013,11 @@ Groups items by month of date deleted
 
 **Action name:** `GroupByDateDeletedMonth`
 
-
 ### Group by date deleted (day)
 
 Groups items by day of date deleted
 
 **Action name:** `GroupByDateDeletedDay`
-
 
 ### Group in ascending order
 
@@ -1137,13 +1025,11 @@ Sorts groups in ascending order
 
 **Action name:** `GroupAscending`
 
-
 ### Group in Descending order
 
 Sorts groups in descending order
 
 **Action name:** `GroupDescending`
-
 
 ### Toggle sort direction
 
@@ -1151,13 +1037,11 @@ Toggles group sort direction
 
 **Action name:** `ToggleGroupDirection`
 
-
 ### Group by year
 
 Groups items by year
 
 **Action name:** `GroupByYear`
-
 
 ### Group by month
 
@@ -1165,13 +1049,11 @@ Groups items by month
 
 **Action name:** `GroupByMonth`
 
-
 ### Toggle grouping unit
 
 Toggles unit for grouping by date
 
 **Action name:** `ToggleGroupByDateUnit`
-
 
 ## Navigation
 
@@ -1187,7 +1069,6 @@ Opens a new tab
 "Ctrl+T"
 ```
 
-
 ### New tab
 
 Opens a new tab
@@ -1199,7 +1080,6 @@ Opens a new tab
 ```json
 "Ctrl+T"
 ```
-
 
 ### New Window
 
@@ -1213,10 +1093,9 @@ Opens a new window
 "Ctrl+N"
 ```
 
-
 ### Navigate back
 
-Navigates backward in navigation history	
+Navigates backward in navigation history
 
 **Action name:** `NavigateBack`
 
@@ -1227,10 +1106,9 @@ Navigates backward in navigation history
 "Backspace"
 ```
 
-
 ### Navigate forward
 
-Navigates forward in navigation history	
+Navigates forward in navigation history
 
 **Action name:** `NavigateForward`
 
@@ -1239,7 +1117,6 @@ Navigates forward in navigation history
 ```json
 "Alt+Right"
 ```
-
 
 ### Navigate up
 
@@ -1255,7 +1132,6 @@ Navigates up one directory
 
 ## Other
 
-
 ### Duplicate tab
 
 Duplicates the current tab
@@ -1268,13 +1144,11 @@ Duplicates the current tab
 "Ctrl+Shift+K"
 ```
 
-
 ### Close tabs to the left
 
 Closes tabs to the left of the current tab
 
 **Action name:** `CloseTabsToTheLeftCurrent`
-
 
 ### Close tabs to the right
 
@@ -1282,13 +1156,11 @@ Closes tabs to the right of the current tab
 
 **Action name:** `CloseTabsToTheRightCurrent`
 
-
 ### Close other tabs
 
 Closes other tabs
 
 **Action name:** `CloseOtherTabsCurrent`
-
 
 ### Open folder in new pane
 
@@ -1296,20 +1168,17 @@ Opens selected folder in a new pane
 
 **Action name:** `OpenDirectoryInNewPane`
 
-
 ### Open folder in new tab
 
 Opens selected folder in a new tab
 
 **Action name:** `OpenDirectoryInNewTab`
 
-
 ### Open folder in new window
 
 Opens selected folder in a new window
 
 **Action name:** `OpenInNewWindowItem`
-
 
 ### Reopen closed tab
 
@@ -1323,7 +1192,6 @@ Reopens the last closed tab
 "Ctrl+Shift+T"
 ```
 
-
 ### Move to the previous tab
 
 Switches focus to the previous tab
@@ -1336,7 +1204,6 @@ Switches focus to the previous tab
 "Ctrl+Shift+Tab"
 ```
 
-
 ### Move to the next tab
 
 Switches focus to the next tab
@@ -1348,7 +1215,6 @@ Switches focus to the next tab
 ```json
 "Ctrl+Tab"
 ```
-
 
 ### Close tab
 
@@ -1363,7 +1229,6 @@ Closes the current tab
 "Ctrl+F4"
 ```
 
-
 ### New pane
 
 Opens a new pane
@@ -1375,7 +1240,6 @@ Opens a new pane
 ```json
 "Alt+Shift++"
 ```
-
 
 ### Close pane
 
@@ -1389,7 +1253,6 @@ Closes the right new pane
 "Ctrl+Shift+W"
 ```
 
-
 ## Play
 
 ### Play media files
@@ -1397,7 +1260,6 @@ Closes the right new pane
 Plays the selected media files
 
 **Action name:** `PlayAll`
-
 
 ## Git
 
@@ -1407,13 +1269,11 @@ Runs git fetch
 
 **Action name:** `GitFetch`
 
-
 ### Init
 
 Initializes the current folder as a Git repository
 
 **Action name:** `GitInit`
-
 
 ### Pull
 
@@ -1421,13 +1281,11 @@ Runs git pull
 
 **Action name:** `GitPull`
 
-
 ### Push
 
 Runs git push
 
 **Action name:** `GitPush`
-
 
 ### Sync
 

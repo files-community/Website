@@ -1,11 +1,11 @@
-<script lang="ts">
+<script lang="ts" generics="T">
 	import { type Tag } from "$data/features";
 	import { Tooltip } from "fluent-svelte";
 
 	export let type: "standard" | "round" = "standard";
 	export let colorName: Tag = { name: "Black", color: "#000" };
-	export let value: any = undefined;
-	export let group: any = [];
+	export let value: T | undefined = undefined;
+	export let group: T;
 	let className = "";
 	export { className as class };
 </script>

@@ -42,7 +42,6 @@ Once enabled, you'll have access to the following features:
 
 For comprehensive details and support concerning Listary, please visit their integration options page https://help.listary.com/options-integration#third-party-software-adapted-by-listary.
 
-
 ### Conclusion
 
 Your insights and recommendations are invaluable to us as we strive to refine Files. You can reach us through our GitHub issues page: https://github.com/files-community/Files/issues.

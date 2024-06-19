@@ -10,7 +10,6 @@ title: Using cloud drives in Files
   Please note that while we accommodate third-party cloud drives due to popular request, they are not officially endorsed by our team. We advise users to research these services to confirm they meet your individual standards and requirements.
 </InfoBar>
 
-
 Files seamlessly integrates with a variety of cloud providers by detecting and displaying their drives in the sidebar, provided their desktop applications are installed. You can utilize the provided list to identify supported cloud services and access download links for their desktop clients.
 
 ## OneDrive

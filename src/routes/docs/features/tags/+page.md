@@ -55,7 +55,6 @@ There are multiple ways to view or filter previously tagged items
 
 Available as an option, the Tags widget provides a small preview of your existing tags and the items it's assigned to. You can enable the Tags widget by navigating to `Settings > General > Widgets` and toggling the option for "Tags".
 
-
 ## Creating and editing tags
 
 Files includes a couple of default tags but you can edit or create your own from the settings menu. To do that, follow these steps:

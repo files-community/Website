@@ -9,18 +9,18 @@ export type ContributorData = {
 };
 
 export const load = async ({ fetch }) => {
-	const githubContribData = (page: number) =>
-		`https://api.github.com/repos/${links.github.owner}/${links.github.repo}/contributors?per_page=25&page=${page}`;
-
-	const data = [1, 2, 3]
-		.map(async (page): Promise<ContributorData[]> => {
-			const data = await fetch(githubContribData(page));
-			if (!data.ok) throw Error("No data could be fetched from promise");
-			return await data.json();
-		})
-		.flat();
-
 	return {
-		contributors: data,
+		contributors: [1, 2, 3]
+			.map(
+				async page =>
+					await fetch(
+						`https://api.github.com/repos/${links.github.owner}/${links.github.repo}/contributors?per_page=25&page=${page}`,
+					)
+						.then<ContributorData[]>(r => r.json())
+						.catch(() => {
+							throw Error("No data could be fetched from promise");
+						}),
+			)
+			.flat(),
 	};
 };

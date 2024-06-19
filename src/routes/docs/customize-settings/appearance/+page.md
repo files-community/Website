@@ -14,7 +14,6 @@ Toggle effortlessly between dark and light mode to match your style or ambient l
 
 ![Light and dark mode split view](/docs-resources/Dark-Light-Mode.png)
 
-
 ## Transparency effects
 
 <InfoBar severity="information">
@@ -23,13 +22,11 @@ Toggle effortlessly between dark and light mode to match your style or ambient l
 
 Choose your preferred backdrop material to add a layer of transparency to your window background. Opt for Mica Alt for a subtle effect (note: Mica requires Windows 11) or Acrylic for a frosted appearance. To fully appreciate these effects, ensure your background color is set to transparent.
 
-
 ## Background color
 
 Personalize the background color of your window from a spectrum of pre-selected shades. For a unique touch, use the color picker to input a custom color or adjust transparency to your liking.
 
 ![Settings dialog](/docs-resources/Settings-Appearance.png)
-
 
 ### Additional background colors
 
@@ -86,13 +83,11 @@ The finder theme is based on the color scheme in Finder.
 | `AppThemeSidebarBackgroundColor`    | `#2E3440`   |
 | `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |
 
-
 ## Background image
 
 Files allows you to configure a custom background image or gif using the settings UI. Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
 
 ![Custom background image](/docs-resources/Background-Image.png)
-
 
 ### Setting a custom background image
 
@@ -100,4 +95,3 @@ Files allows you to configure a custom background image or gif using the setting
 2. Click on "Browse" and select the image or gif you wish to use.
 
 ![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
-

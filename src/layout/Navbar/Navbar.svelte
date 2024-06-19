@@ -1,17 +1,11 @@
 <script lang="ts">
 	import { navigating, page } from "$app/stores";
 	import type { NavbarItem } from "$data/links";
-	import { _ } from "svelte-i18n";
-	import {
-		defaultI18nValues,
-		externalLink,
-		isUrlContainPath,
-		TreeView,
-	} from "$lib";
+	import { TreeView, externalLink, isUrlContainPath } from "$lib";
 	import { ListItem } from "fluent-svelte";
-	import Navigation from "~icons/fluent/navigation-24-regular";
 	import type { SvelteComponent } from "svelte";
 	import type { SvelteHTMLElements } from "svelte/elements";
+	import Navigation from "~icons/fluent/navigation-24-regular";
 
 	export let items: NavbarItem[] = [];
 	export let buttons: {

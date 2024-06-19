@@ -12,12 +12,14 @@
 
 				&:checked {
 					border-radius: calc(var(--fds-control-corner-radius) + 2px);
-					box-shadow: inset 0 0 0 2px var(--fds-accent-default),
+					box-shadow:
+						inset 0 0 0 2px var(--fds-accent-default),
 						inset 0 0 0 3px var(--fds-solid-background-base);
 				}
 
 				&:focus-visible {
-					box-shadow: inset 0 0 0 2px var(--fds-accent-default),
+					box-shadow:
+						inset 0 0 0 2px var(--fds-accent-default),
 						inset 0 0 0 3px var(--fds-solid-background-base),
 						0 0 0 1px var(--fds-solid-background-base),
 						0 0 0 3px var(--fds-focus-stroke-outer) !important;
@@ -30,7 +32,8 @@
 				border-radius: 36px;
 
 				&:checked {
-					box-shadow: 0 0 0 1px var(--fds-solid-background-base),
+					box-shadow:
+						0 0 0 1px var(--fds-solid-background-base),
 						0 0 0 3px var(--fds-focus-stroke-outer);
 				}
 			}

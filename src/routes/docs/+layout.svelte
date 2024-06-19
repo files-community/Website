@@ -1,16 +1,15 @@
 <script lang="ts">
-	import type { LayoutData } from "./$types";
-	import { fly } from "svelte/transition";
 	import { goto } from "$app/navigation";
 	import { page } from "$app/stores";
 	import { _ } from "svelte-i18n";
+	import type { LayoutData } from "./$types";
 
 	import { links } from "$data/links";
 	import { defaultI18nValues, externalLink, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
-	$: ({ docs, pagePath, docsPages, currentPage } = data);
+	$: ({ docs, docsPages, currentPage } = data);
 
 	let value = "";
 	let searchQuery = "";
@@ -36,8 +35,8 @@
 	const updateSearchQuery = () => (searchQuery = value);
 
 	// Handler for keyboard navigation in the search autocomplete flyout
-	const handleSearchKeys = (e: KeyboardEvent) => {
-		const { key } = e;
+	const handleSearchKeys = (e: Event) => {
+		const { key } = e as KeyboardEvent;
 		if (key === "ArrowUp" || key === "ArrowDown") e.preventDefault();
 		if (key === "Enter") {
 			if (
@@ -77,7 +76,7 @@
 	title={pageTitle
 		? $_("metadata.docs_page", {
 				values: { title: pageTitle, FilesName: "Files" },
-		  })
+			})
 		: $_("metadata.docs_home", defaultI18nValues)}
 	image="docs"
 />

@@ -8,17 +8,14 @@
 		tilt,
 	} from "$lib";
 	import { Button } from "fluent-svelte";
-	import { date, _ } from "svelte-i18n";
+	import { _, date } from "svelte-i18n";
 	import type { PageData } from "./$types";
-	import { onNavigate } from "$app/navigation";
 
 	export let data: PageData;
 	$: ({ posts } = data);
 	$: mainPost = posts[0];
 
 	let scrollY: number;
-
-	let mainPostThumbnail: HTMLImageElement;
 </script>
 
 <Metadata title={$_("metadata.blog_home", defaultI18nValues)} image="blog" />

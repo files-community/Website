@@ -78,12 +78,18 @@
 		},
 		command: {
 			title: $_("home.features.command-palette.title", defaultI18nValues),
-			description: $_("home.features.command-palette.description", defaultI18nValues),
+			description: $_(
+				"home.features.command-palette.description",
+				defaultI18nValues,
+			),
 			icon: Diamond,
 		},
 		keyboard: {
 			title: $_("home.features.remap-key-bindings.title", defaultI18nValues),
-			description: $_("home.features.remap-key-bindings.description", defaultI18nValues),
+			description: $_(
+				"home.features.remap-key-bindings.description",
+				defaultI18nValues,
+			),
 			icon: Keyboard,
 		},
 	} as const satisfies { [name: string]: FeatureCardData };

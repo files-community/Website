@@ -2,21 +2,20 @@
 	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
 
-	import { defaultI18nValues } from "$lib";
-	import { Footer, Navbar } from "$layout";
+	import { onNavigate } from "$app/navigation";
 	import { links, type NavbarItem } from "$data/links";
+	import { Footer, Navbar } from "$layout";
+	import { defaultI18nValues } from "$lib";
 	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
 
+	import Download from "~icons/fluent/arrow-download-24-regular";
+	import Book from "~icons/fluent/book-24-regular";
 	import Chat from "~icons/fluent/chat-24-regular";
 	import Code from "~icons/fluent/code-24-regular";
 	import Home from "~icons/fluent/home-24-regular";
-	import Book from "~icons/fluent/book-24-regular";
 	import News from "~icons/fluent/news-24-regular";
-	import Download from "~icons/fluent/arrow-download-24-regular";
-	import { afterNavigate, onNavigate } from "$app/navigation";
-	import { onMount } from "svelte";
 	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 
 	const { github, discord } = links;

@@ -1,20 +1,16 @@
 <script lang="ts">
-	import { links } from "$data/links";
 	import { defaultI18nValues, externalLink, Metadata } from "$lib";
-	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
-	import { onMount } from "svelte";
+	import { Button, InfoBar, TextBlock } from "fluent-svelte";
+	import { _ } from "svelte-i18n";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
-	import { _ } from "svelte-i18n";
-
-	let isWindows = false;
 
 	const downloadSources = [
 		{
 			name: $_("download.microsoft_store.title", defaultI18nValues),
 			description: $_(
 				"download.microsoft_store.description",
-				defaultI18nValues
+				defaultI18nValues,
 			),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/branding/logo-light.svg",
@@ -29,10 +25,6 @@
 			darkModeIcon: "/download-sources/preview_dark.svg",
 		},
 	] as const satisfies readonly DownloadSource[];
-
-	onMount(() => {
-		isWindows = navigator.userAgent.includes("Windows");
-	});
 </script>
 
 <Metadata title="Files • Download" image="download" />
