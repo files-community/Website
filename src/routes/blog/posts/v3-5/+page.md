@@ -100,6 +100,7 @@ While enhancements in performance and stability typically occur behind the scene
 - Fixed an issue where entering certain commands into the Address Bar would change the format
 - Fixed an issue with Nutstore cloud drive detection
 - Fixed an issue where certain keys couldn't be mapped to Actions
+- Fixed an issue where setting the desktop wallpaper didn't work on multiple monitors
 - Fixed a potential crash when trying to locate the Libraries folder
 - Fixed a potential crash when clicking items in the Quick Access widget
 - Fixed a potential crash from occuring when deleting items
