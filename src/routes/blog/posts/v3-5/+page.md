@@ -54,6 +54,11 @@ We added a "Network Locations" widget on the home page. This feature is designed
 </figure>
 
 
+### Added support for closing the left pane in Dual Pane mode
+
+We’ve added the ability to close the left pane in Dual Pane mode, overcoming previous technical limitations that only allowed closing the right pane. This improvements provides a more versatile and user-friendly experience.
+
+
 ### OneDrive sync status indicator
 
 Experience enhanced clarity when you hover over a file in OneDrive locations. The sync icon will now display a tooltip detailing the file’s current sync status, offering a more direct and informative snapshot of your data synchronization.
