@@ -1,0 +1,333 @@
+@use "src/styles/mixins" as *;
+
+:global {
+	// Outer section
+	#themes-section {
+		border-radius: 0 0 var(--fds-overlay-corner-radius)
+			var(--fds-overlay-corner-radius);
+		background-color: var(--fds-card-background-secondary);
+		overflow: hidden;
+
+		transition-property: all;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+
+		// Inner section
+		.page-section-inner {
+			@include flex($align: center);
+			min-block-size: 600px; // I want to avoid cutting off the component showcase
+		}
+
+		// Fancy-pants dotted background
+		// I want dynamic coloring so we'll have to mask it
+		&::before {
+			content: "";
+			position: absolute;
+			inset-block-start: -50%;
+			inset-inline-start: -50%;
+			inline-size: 200vw;
+			block-size: 200vw;
+			background-image: linear-gradient(
+				90deg,
+				transparent 10%,
+				var(--dots-color, var(--fds-control-stroke-secondary)) 100%
+			);
+			transform: rotate(30deg);
+			mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Ccircle cx='50' cy='50' r='10' fill='%23000' /%3E%3C/svg%3E")
+				center/18px;
+		}
+
+		// HACK: --fds-solid-background-base is a fairly generic variable that makes more sense to style on themes other than default.
+		&:not(.theme-1) {
+			background-color: var(--fds-solid-background-base);
+			--dots-color: var(--fds-subtle-fill-tertiary);
+
+			// Use default accent color instead of dark-1 (see reasoning below)
+			::selection {
+				background-color: var(--fds-accent-default);
+			}
+		}
+
+		// Themes
+		// CSS variable voodoo ahead.
+		//
+		// CSS variables behave rather strange.
+		// Setting a scoped variable that changes the value
+		// in another parent variable's hsl(0, 0%, 0%() function
+		// doesn't actually update the actual parent color.
+		//
+		// This means that we are basically forced to hardcode
+		// hex colors for our accent color, since we use hsl
+		// calcs. That really sucks. /rant
+		&.theme- {
+			&2 {
+				--fds-focus-stroke-outer: white;
+				--fds-accent-default: hsl(160, 58%, 52%);
+				--fds-accent-secondary: hsl(160, 47%, 62%);
+				--fds-accent-tertiary: hsl(160, 50%, 40%);
+				--fds-accent-text-primary: var(--fds-accent-default);
+				--fds-accent-text-tertiary: var(--fds-accent-secondary);
+				--fds-text-primary: var(--fds-accent-default);
+				--fds-text-tertiary: hsl(221, 16%, 70%);
+				--fds-text-secondary: hsl(221, 16%, 70%);
+				--fds-subtle-fill-secondary: hsl(222, 16%, 25%);
+				--fds-subtle-fill-tertiary: hsl(220, 16%, 22%);
+				--fds-solid-background-base: hsl(220, 15%, 20%);
+				--fds-solid-background-quarternary: var(--fds-subtle-fill-secondary);
+				--dots-color: hsl(221, 16%, 30%);
+			}
+
+			&3 {
+				--fds-focus-stroke-outer: white;
+				--fds-accent-default: hsl(261, 43%, 45%);
+				--fds-accent-secondary: hsl(260, 44%, 55%);
+				--fds-accent-tertiary: var(--fds-accent-secondary);
+				--fds-accent-text-primary: var(--fds-text-tertiary);
+				--fds-accent-text-tertiary: var(--fds-accent-secondary);
+				--fds-text-on-accent-primary: white;
+				--fds-text-on-accent-secondary: hsl(white, 0.6);
+				--fds-text-primary: white;
+				--fds-text-secondary: hsl(260, 43%, 73%);
+				--fds-text-tertiary: var(--fds-text-secondary);
+				--fds-subtle-fill-secondary: hsl(253, 27%, 20%);
+				--fds-subtle-fill-tertiary: hsl(253, 24%, 15%);
+				--fds-solid-background-base: hsl(256, 22%, 10%);
+				--fds-solid-background-quarternary: var(--fds-subtle-fill-tertiary);
+				--dots-color: hsl(253, 27%, 20%);
+			}
+
+			&4 {
+				--fds-focus-stroke-outer: black;
+				--fds-accent-default: white;
+				--fds-accent-secondary: hsl(0, 0%, 100%, 0.8);
+				--fds-accent-tertiary: hsl(0, 0%, 100%, 0.6);
+				--fds-accent-text-primary: var(--fds-text-tertiary);
+				--fds-accent-text-tertiary: var(--fds-accent-text-primary);
+				--fds-text-on-accent-primary: black;
+				--fds-text-on-accent-secondary: var(--fds-text-on-accent-primary);
+				--fds-text-primary: black;
+				--fds-text-tertiary: hsl(44, 100%, 10%);
+				--fds-text-secondary: var(--fds-text-primary);
+				--fds-subtle-fill-secondary: white;
+				--fds-subtle-fill-tertiary: hsl(black, 0.1);
+				--fds-solid-background-base: hsl(43, 100%, 50%);
+				--fds-solid-background-quarternary: hsl(43, 100%, 75%);
+				--dots-color: hsl(0, 0%, 0%, 0.2);
+
+				.hyperlink-button {
+					--fds-subtle-fill-secondary: hsl(0, 0%, 0%, 0.05);
+				}
+			}
+
+			&5 {
+				--fds-focus-stroke-outer: white;
+				--fds-accent-default: hsl(46, 42%, 88%);
+				--fds-accent-secondary: hsl(44, 87%, 94%);
+				--fds-accent-tertiary: hsl(46, 40%, 85%);
+				--fds-accent-text-primary: var(--fds-text-tertiary);
+				--fds-accent-text-tertiary: var(--fds-accent-secondary);
+				--fds-text-on-accent-primary: hsl(194, 14%, 40%);
+				--fds-text-on-accent-secondary: hsl(196, 13%, 45%);
+				--fds-text-primary: hsl(44, 87%, 94%);
+				--fds-text-tertiary: hsl(180, 7%, 60%);
+				--fds-text-secondary: hsl(186, 8%, 55%);
+				--fds-subtle-fill-secondary: hsl(192, 81%, 14%);
+				--fds-subtle-fill-tertiary: hsl(192, 79%, 15%);
+				--fds-solid-background-base: hsl(192, 100%, 11%);
+				--fds-solid-background-quarternary: var(--fds-accent-secondary);
+				--dots-color: var(--fds-subtle-fill-tertiary);
+			}
+
+			&6 {
+				--fds-focus-stroke-outer: black;
+				--fds-accent-default: hsl(193, 43%, 67%);
+				--fds-accent-secondary: hsl(193, 43%, 63%);
+				--fds-accent-tertiary: hsl(193, 43%, 59%);
+				--fds-accent-text-primary: var(--fds-text-tertiary);
+				--fds-accent-text-tertiary: var(--fds-text-secondary);
+				--fds-text-on-accent-primary: var(--fds-text-primary);
+				--fds-text-on-accent-secondary: var(--fds-text-tertiary);
+				--fds-text-primary: hsl(220, 16%, 22%);
+				--fds-text-secondary: var(--fds-text-primary);
+				--fds-text-tertiary: hsl(220, 16%, 36%);
+				--fds-subtle-fill-secondary: var(--fds-accent-default);
+				--fds-subtle-fill-tertiary: hsl(219, 27%, 80%);
+				--fds-solid-background-base: hsl(219, 28%, 88%);
+				--fds-solid-background-quarternary: hsl(222, 16%, 28%);
+				--dots-color: hsl(220, 16%, 65%);
+
+				.hyperlink-button {
+					--fds-subtle-fill-secondary: hsl(217, 27%, 85%);
+				}
+			}
+		}
+
+		.buttons-spacer {
+			.button.style-hyperlink {
+				color: var(--fds-accent-text-primary);
+			}
+		}
+	}
+}
+
+.scroll-anchor {
+	position: absolute;
+	inset-block-start: 0;
+	inset-inline-start: 0;
+	visibility: hidden;
+	inline-size: 0;
+	block-size: 100%;
+	pointer-events: none;
+}
+
+// Component showcase
+// Seen on the right side of the section
+.component-showcase {
+	@include flex($gap: 16px);
+	position: absolute;
+	inset-block-start: -100px;
+	inset-inline-end: -100px;
+	transform: rotate(30deg);
+
+	@media (width < 1224px) {
+		inset-block-start: -100px;
+		inset-inline-end: -156px;
+	}
+
+	@media (width < 920px) {
+		display: none;
+	}
+
+	// Main columns
+	.column {
+		@include flex($direction: column, $gap: 16px);
+
+		// Inner row containers
+		> div {
+			@include flex($gap: 16px);
+		}
+
+		&.left {
+			align-items: flex-end;
+		}
+
+		@media screen and (width < 1224px) {
+			.drive,
+			.properties {
+				display: none;
+			}
+
+			.card {
+				order: -1;
+			}
+		}
+	}
+
+	// Items
+	img,
+	.card {
+		border-radius: var(--fds-overlay-corner-radius);
+		box-shadow: var(--fds-flyout-shadow);
+		transform: scale(0.9);
+		opacity: 0;
+	}
+
+	// Placeholder cards
+	.card {
+		inline-size: 100%;
+		background-color: var(--fds-solid-background-quarternary);
+	}
+
+	// Scale animations
+	@keyframes showcase-item {
+		0% {
+			opacity: 0;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		100% {
+			transform: scale(1);
+			opacity: 1;
+		}
+	}
+
+	// Visible state
+	// For animating components on scroll
+	&.visible {
+		--initial-delay: 300ms;
+
+		img,
+		.card {
+			animation: showcase-item var(--fds-control-normal-duration)
+				var(--fds-control-fast-out-slow-in-easing) forwards var(--initial-delay);
+		}
+
+		.layout {
+			animation-delay: calc(var(--initial-delay) + 200ms);
+		}
+
+		.card:last-child {
+			animation-delay: calc(var(--initial-delay) + 275ms);
+		}
+
+		.card:first-child {
+			animation-delay: calc(var(--initial-delay) + 350ms);
+		}
+
+		.properties {
+			animation-delay: calc(var(--initial-delay) + 425ms);
+		}
+
+		.tabs {
+			animation-delay: calc(var(--initial-delay) + 500ms);
+		}
+
+		.drive {
+			animation-delay: calc(var(--initial-delay) + 575ms);
+		}
+	}
+
+	// We don't want the 500ms delay we normally get when replaying them.
+	// &.no-initial-delay {
+	// 	--initial-delay: 0ms;
+	// }
+}
+
+// Main themes section content
+// Encompasses the left side of the section
+.themes-section-content {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	inline-size: 52%;
+	min-inline-size: 478px;
+
+	p {
+		color: var(--fds-text-tertiary);
+	}
+
+	:global(h2) {
+		color: var(--fds-text-primary);
+		font-size: 5rem;
+	}
+
+	// Small device support
+	// Since our component showcase will be hidden at this size, fill 100% of the available width.
+	@media screen and (width < 832px) {
+		inline-size: 100%;
+		min-inline-size: unset;
+	}
+}
+
+// Theme picker
+// Container for <ColorSwatch /> components
+.theme-chooser {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 12px;
+	inline-size: fit-content;
+	margin-block-end: 24px;
+}
