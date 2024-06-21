@@ -93,6 +93,7 @@ While enhancements in performance and stability typically occur behind the scene
 - Added support for hiding the toolbar
 - Opening the log location will now close the Settings Dialog when Files is the default file manager
 - Fixed crash that would occur when two paths were entered from the command line
+- Fixed crash that would occur when ungrouping from zoomed out view
 - Fixed an issue where a resize cursor was incorrectly shown at titlebar edges when Files was maximized
 - Fixed an issue where empty folders could not be compressed into an archive
 - Fixed an issue where it didn't work to switch between panes using a touch screen
