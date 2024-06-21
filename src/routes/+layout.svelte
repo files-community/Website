@@ -1,10 +1,11 @@
 <script lang="ts">
 	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
-
 	import { onNavigate } from "$app/navigation";
+
+	import Footer from "./Footer/Footer.svelte";
+	import Navbar from "./Navbar/Navbar.svelte";
 	import { links, type NavbarItem } from "$data/links";
-	import { Footer, Navbar } from "$layout";
 	import { defaultI18nValues } from "$lib";
 	import { _ } from "svelte-i18n";
 

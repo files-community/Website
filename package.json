@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^4.0.2",
-		"@iconify-json/fluent": "^1.1.57",
+		"@iconify/json": "^2.2.221",
 		"@neodrag/svelte": "^2.0.6",
 		"@sveltejs/adapter-cloudflare": "^4.5.0",
 		"@sveltejs/kit": "^2.5.17",
