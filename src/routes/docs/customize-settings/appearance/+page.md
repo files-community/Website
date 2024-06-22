@@ -16,7 +16,7 @@ Toggle effortlessly between dark and light mode to match your style or ambient l
 
 ## Transparency effects
 
-<InfoBar severity="information">
+<InfoBar severity="information" closable={false}>
   Please note that a completely transparent window isn't available right now.
 </InfoBar>
 

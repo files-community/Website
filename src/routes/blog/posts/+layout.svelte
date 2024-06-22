@@ -51,7 +51,7 @@
 					month: "short",
 				},
 			)}
-			<MenuFlyout placement="bottom">
+			<MenuFlyout class="ms-auto" placement="bottom">
 				<IconButton
 					size={20}
 					aria-label="Share"
@@ -121,4 +121,5 @@
 
 <style lang="scss">
 	@use "src/styles/pages/blogPost";
+	@use "src/styles/markdown";
 </style>

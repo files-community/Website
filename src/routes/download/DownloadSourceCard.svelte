@@ -36,7 +36,7 @@
 		<TextBlock variant="title" style="text-align: center;"
 			>{source.name}</TextBlock
 		>
-		<TextBlock class="download-source-description">
+		<TextBlock class="max-w-96 text-balance">
 			{source.description}
 		</TextBlock>
 		<a
@@ -75,11 +75,6 @@
 					transform: translateY(-2px);
 				}
 			}
-		}
-
-		:global(.download-source-description) {
-			text-align: left;
-			max-width: 30rem;
 		}
 
 		.download-source-icon {

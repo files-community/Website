@@ -30,7 +30,7 @@ In addition to modifying key bindings, you can also delete them and free up the 
 
 ## Adding additional key bindings
 
-<InfoBar severity="information">
+<InfoBar severity="information" closable={false}>
 	Support for custom args is not currently available but we're exploring this option for the future.
 </InfoBar>
 

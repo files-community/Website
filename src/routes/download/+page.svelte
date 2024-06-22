@@ -5,6 +5,8 @@
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
 
+	import HelpIcon from "~icons/fluent/handshake-24-filled";
+
 	const downloadSources = [
 		{
 			name: $_("download.microsoft_store.title", defaultI18nValues),
@@ -36,12 +38,11 @@
 		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
 	<InfoBar class="donation-infobar" severity="success" closable={false}>
-		<div class="me-2 mt-2 flex gap-2">
+		<div class="mb-2 mt-2 flex gap-2">
 			{$_("download.donation_description", defaultI18nValues)}
 
 			<Button
 				slot="action"
-				variant="accent"
 				href="https://github.com/sponsors/yaira2"
 				{...externalLink}
 			>
@@ -49,20 +50,22 @@
 			</Button>
 		</div>
 
-		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
+		<HelpIcon slot="icon"></HelpIcon>
 	</InfoBar>
 
 	<section class="download-sources">
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
-		<p>
-			{$_("download.self_signed.description", defaultI18nValues)}<a
-				href="https://cdn.files.community/files/download/Files.Stable.exe"
-				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
-			>.
-		</p>
 	</section>
+
+	<p class="text-center">
+		{$_("download.self_signed.description", defaultI18nValues)}<a
+			href="https://cdn.files.community/files/download/Files.Stable.exe"
+			class="text-[--fds-accent-text-primary] underline hover:text-[--fds-accent-text-tertiary] hover:no-underline active:text-[--fds-accent-text-secondary] active:no-underline"
+			>{$_("download.self_signed.link_text", defaultI18nValues)}</a
+		>.
+	</p>
 </main>
 
 <style lang="scss">
@@ -83,10 +86,6 @@
 			display: flex;
 			flex-direction: column;
 			gap: 0.6rem;
-
-			> p {
-				text-align: center;
-			}
 		}
 	}
 </style>

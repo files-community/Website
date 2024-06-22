@@ -9,3 +9,14 @@ declare namespace App {
 	// interface Error {}
 	// interface Platform {}
 }
+
+interface Document {
+	startViewTransition(updateCallback?: () => Promise<void>): ViewTransition;
+}
+
+interface ViewTransition {
+	readonly finished: Promise<boolean>;
+	readonly ready: Promise<boolean>;
+	readonly updateCallbackDone: Promise<boolean>;
+	skipTransition(): void;
+}

@@ -16,7 +16,7 @@ Files is a community-driven project that depends on your support to grow and imp
 
 You can also use the preview version alongside the stable release to get early access to new features and improvements.
 
-<InfoBar title="Note" severity="information">
+<InfoBar title="Note" severity="information" closable={false}>
 	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
 </InfoBar>
 
@@ -33,7 +33,7 @@ The [Chocolatey](https://community.chocolatey.org/packages/files) installation i
 
 Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
 
-<InfoBar title="Note" severity="information">
+<InfoBar title="Note" severity="information" closable={false}>
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
 </InfoBar>
 
@@ -41,7 +41,7 @@ Files will automatically check for updates whenever the app is opened and an ind
 
 Starting 3/21/2024, users of the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
 
-<InfoBar title="Note" severity="information">
+<InfoBar title="Note" severity="information" closable={false}>
 	This is not required for the Store version of Files.
 </InfoBar>
 

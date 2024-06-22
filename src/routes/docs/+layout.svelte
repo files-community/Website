@@ -193,5 +193,6 @@
 </section>
 
 <style lang="scss">
+	@use "src/styles/markdown";
 	@use "src/styles/pages/docs";
 </style>

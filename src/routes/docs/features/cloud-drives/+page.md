@@ -6,7 +6,7 @@ title: Using cloud drives in Files
   import { InfoBar } from "fluent-svelte";
 </script>
 
-<InfoBar severity="information">
+<InfoBar severity="information" closable={false}>
   Please note that while we accommodate third-party cloud drives due to popular request, they are not officially endorsed by our team. We advise users to research these services to confirm they meet your individual standards and requirements.
 </InfoBar>
 
@@ -78,7 +78,7 @@ https://owncloud.com/
 
 ## Lucid Link
 
-<InfoBar severity="information">
+<InfoBar severity="information" closable={false}>
 	Please note that the folder contents will only show if the Lucid Link client is running. This is the way Lucid Link is designed and isn't specific to Files. Also, please be aware that this integration requires the Lucid Link folder to be in the default location, we hope to resolve this limitation in the future.
 </InfoBar>
 

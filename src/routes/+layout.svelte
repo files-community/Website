@@ -120,10 +120,6 @@
 	{/if}
 </svelte:head>
 
-<Navbar buttons={navbarButtons} items={navbarItems}></Navbar>
-<slot></slot>
-<Footer></Footer>
-
-<style lang="scss">
-	@use "src/styles/markdown";
-</style>
+<Navbar buttons={navbarButtons} items={navbarItems} />
+<slot />
+<Footer />

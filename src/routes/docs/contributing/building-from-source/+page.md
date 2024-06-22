@@ -2,7 +2,7 @@
 title: Compiling the source code
 ---
 
-### 1: Prerequisites
+### Prerequisites
 
 - [Git](https://git-scm.com)
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) with the following components installed:
@@ -13,7 +13,7 @@ title: Compiling the source code
   - Git for Windows
 - [Windows App SDK 1.2](https://learn.microsoft.com/en-us/windows/apps/windows-app-sdk/downloads#current-releases)
 
-### 2: Clone the Git repository
+### Clone the Git repository
 
 ```ps
 git clone https://github.com/files-community/Files
@@ -21,7 +21,7 @@ git clone https://github.com/files-community/Files
 
 This will create a local copy of the repository.
 
-### 3: Deploy the project in Visual Studio
+### Deploy the project in Visual Studio
 
 To build the app in development mode, open the sln file in Visual Studio (Files.sln) and set the Files.Package project as the startup item by right-clicking on `Files.Package` in the solution explorer & hitting ‘Set as Startup item’.
 

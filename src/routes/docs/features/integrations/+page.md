@@ -6,7 +6,7 @@ title: Third party integrations
   import { InfoBar } from "fluent-svelte";
 </script>
 
-<InfoBar severity="information">
+<InfoBar severity="information" closable={false}>
 	Please note that the integrations available within Files are provided as a convenience and are not officially endorsed by our team. Files does not receive any commission or compensation for these third-party integrations. While these integrations have been implemented due to popular demand, Files assumes no responsibility for their use. We encourage users to conduct thorough research before utilizing these additions to ensure they meet your standards and requirements.
 </InfoBar>
 
