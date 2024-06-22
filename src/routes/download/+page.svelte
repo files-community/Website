@@ -36,9 +36,7 @@
 		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
 	<InfoBar class="donation-infobar" severity="success" closable={false}>
-		<div
-			style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
-		>
+		<div class="me-2 mt-2 flex gap-2">
 			{$_("download.donation_description", defaultI18nValues)}
 
 			<Button
@@ -73,8 +71,8 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: stretch;
-		gap: 2rem;
-		padding: 2rem;
+		gap: 1rem;
+		padding: 1rem;
 		max-width: 900px;
 		margin-inline: auto;
 
@@ -84,7 +82,7 @@
 		.download-sources {
 			display: flex;
 			flex-direction: column;
-			gap: 1rem;
+			gap: 0.6rem;
 
 			> p {
 				text-align: center;

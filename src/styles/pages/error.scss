@@ -4,7 +4,7 @@
 	@include flex($direction: column, $align: center, $justify: center);
 	background-color: var(--fds-layer-background-default);
 	color: #222;
-	font-size: 1.2rem;
+	font-size: 0.75rem;
 	color-scheme: light;
 	position: relative;
 
@@ -34,7 +34,7 @@
 			inset 1px 1px #fff,
 			inset -2px -2px grey,
 			inset 2px 2px #dfdfdf;
-		font-size: 1.2rem;
+		font-size: 0.75rem;
 
 		&:not(:disabled):active {
 			padding: 2px 11px 0 13px;

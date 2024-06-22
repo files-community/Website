@@ -1,14 +1,10 @@
 <script lang="ts">
 	import { onMount } from "svelte";
-	import {
-		ColorSwatch,
-		defaultI18nValues,
-		HeaderChip,
-		PageSection,
-	} from "$lib";
+	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
+	import ColorSwatch from "./ColorSwatch/ColorSwatch.svelte";
 	import { Button, TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
-	import type { Tag } from "$data/features";
+	import type { Color } from "$data/features";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
@@ -18,7 +14,7 @@
 	let noInitialDelay = false;
 	let anchor: HTMLDivElement;
 
-	const themeColors: Tag[] = [
+	const themeColors = [
 		{
 			name: $_("home.themes.grey_blue", defaultI18nValues),
 			color: "var(--fds-solid-background-tertiary)",
@@ -43,7 +39,7 @@
 			name: $_("home.themes.sky_blue", defaultI18nValues),
 			color: "hsl(193, 43%, 67%)",
 		},
-	];
+	] satisfies Color[];
 
 	$: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
 

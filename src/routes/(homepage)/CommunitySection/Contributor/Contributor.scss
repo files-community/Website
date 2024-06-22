@@ -1,9 +1,9 @@
 @use "src/styles/mixins" as *;
 
 .contributor {
-	@include flex($inline: true, $align: center, $gap: 1rem);
+	@include flex($inline: true, $align: center, $gap: 0.75rem);
 	min-inline-size: 150px;
-	padding: 1rem;
+	padding: 0.75rem;
 	border: 1px solid var(--fds-card-stroke-default);
 	border-radius: var(--fds-control-corner-radius);
 	background-color: var(--fds-solid-background-tertiary);
@@ -22,7 +22,7 @@
 .info {
 	color: var(--fds-text-tertiary);
 	font: {
-		size: 1.2rem;
+		size: var(--fds-caption-font-size);
 		weight: normal;
 	}
 	text-overflow: ellipsis;

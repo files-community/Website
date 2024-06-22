@@ -1,6 +1,5 @@
 <script lang="ts">
 	import {
-		BlogCard,
 		defaultI18nValues,
 		HeaderChip,
 		Metadata,
@@ -10,6 +9,7 @@
 	import { Button } from "fluent-svelte";
 	import { _, date } from "svelte-i18n";
 	import type { PageData } from "./$types";
+	import BlogCard from "./BlogCard/BlogCard.svelte";
 
 	export let data: PageData;
 	$: ({ posts } = data);

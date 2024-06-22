@@ -2,7 +2,6 @@
 	import { dev } from "$app/environment";
 	import { page } from "$app/stores";
 	import { onNavigate } from "$app/navigation";
-
 	import Footer from "./Footer/Footer.svelte";
 	import Navbar from "./Navbar/Navbar.svelte";
 	import { links, type NavbarItem } from "$data/links";
@@ -10,6 +9,7 @@
 	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
+	import "../styles/_global.scss";
 
 	import Download from "~icons/fluent/arrow-download-24-regular";
 	import Book from "~icons/fluent/book-24-regular";
@@ -17,8 +17,8 @@
 	import Code from "~icons/fluent/code-24-regular";
 	import Home from "~icons/fluent/home-24-regular";
 	import News from "~icons/fluent/news-24-regular";
-	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 
+	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
 	const { github, discord } = links;
 
 	const navbarItems: NavbarItem[] = [
@@ -120,11 +120,10 @@
 	{/if}
 </svelte:head>
 
-<Navbar buttons={navbarButtons} items={navbarItems} />
-<slot />
-<Footer />
+<Navbar buttons={navbarButtons} items={navbarItems}></Navbar>
+<slot></slot>
+<Footer></Footer>
 
-<style global lang="scss">
-	@use "src/styles/global";
+<style lang="scss">
 	@use "src/styles/markdown";
 </style>

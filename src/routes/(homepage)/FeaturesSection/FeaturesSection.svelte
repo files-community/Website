@@ -2,13 +2,7 @@
 	import { _ } from "svelte-i18n";
 
 	import type { FeatureCardData } from "$data/features";
-	import {
-		defaultI18nValues,
-		entries,
-		FeatureCard,
-		HeaderChip,
-		PageSection,
-	} from "$lib";
+	import { defaultI18nValues, entries, HeaderChip, PageSection } from "$lib";
 
 	import Cloud from "~icons/fluent/cloud-24-regular";
 	import EyeVisible from "~icons/fluent/eye-20-regular";
@@ -21,6 +15,7 @@
 	import Diamond from "~icons/fluent/diamond-24-regular";
 	import PanelRight from "~icons/fluent/panel-right-24-regular";
 	import Keyboard from "~icons/fluent/Keyboard-24-regular";
+	import FeatureCard from "./FeatureCard/FeatureCard.svelte";
 
 	export const featureCards = {
 		tabs: {

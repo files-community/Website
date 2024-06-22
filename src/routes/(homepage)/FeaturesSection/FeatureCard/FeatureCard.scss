@@ -3,7 +3,7 @@
 .feature-card {
 	display: flex;
 	flex-direction: column;
-	gap: 16px;
+	gap: 0.5rem;
 
 	position: relative;
 	padding: 24px;
@@ -35,7 +35,7 @@
 		margin: 0;
 		color: var(--fds-text-primary);
 		font: {
-			size: 1.8rem;
+			size: var(--fds-subtitle-font-size);
 			weight: 600;
 		}
 	}
@@ -44,7 +44,7 @@
 		margin: 0;
 		color: var(--fds-text-tertiary);
 		font: {
-			size: 1.4rem;
+			size: 0.8rem;
 			weight: 400;
 		}
 	}

@@ -66,7 +66,7 @@
 			</IconButton>
 		</div>
 		<p>
-			Copyright (c) {new Date().getFullYear()} Files Community
+			Copyright ⓒ {new Date().getFullYear()} Files Community
 		</p>
 	</div>
 	<div class="column">

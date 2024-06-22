@@ -61,15 +61,17 @@
 					<Share />
 				</IconButton>
 				<svelte:fragment slot="flyout">
-					<MenuFlyoutItem
-						on:click={() =>
-							navigator.share({
-								title,
-								url: $page.url.href,
-							})}
-					>
-						{$_("blog.share.default", defaultI18nValues)}
-					</MenuFlyoutItem>
+					{#if "share" in navigator}
+						<MenuFlyoutItem
+							on:click={() =>
+								navigator.share({
+									title,
+									url: $page.url.href,
+								})}
+						>
+							{$_("blog.share.default", defaultI18nValues)}
+						</MenuFlyoutItem>
+					{/if}
 					<MenuFlyoutItem
 						on:click={() => navigator.clipboard.writeText($page.url.href)}
 					>

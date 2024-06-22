@@ -63,7 +63,7 @@
 		display: flex;
 		flex-direction: row;
 		place-items: center;
-		padding: 3rem 6rem;
+		padding: 2rem 4rem;
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
@@ -79,22 +79,22 @@
 
 		:global(.download-source-description) {
 			text-align: left;
-			max-width: 50rem;
+			max-width: 30rem;
 		}
 
 		.download-source-icon {
-			max-inline-size: 10rem;
+			max-inline-size: 6.25rem;
 			transition: var(--fds-control-normal-duration) ease;
 		}
 
 		.label-container {
-			margin-left: 4rem;
+			margin-left: 2.5rem;
 			display: flex;
 			align-items: flex-start;
 			justify-items: stretch;
 			flex-direction: column;
 			flex-grow: 1;
-			gap: 1rem;
+			gap: 0.5rem;
 		}
 	}
 </style>

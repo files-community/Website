@@ -1,15 +1,11 @@
 <script lang="ts">
 	import { links } from "$data/links";
-	import {
-		Contributor,
-		defaultI18nValues,
-		HeaderChip,
-		PageSection,
-	} from "$lib";
+	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import Profile from "~icons/fluent/person-32-filled?raw";
 	import type { PageData } from "../$types";
+	import Contributor from "./Contributor/Contributor.svelte";
 
 	export let contributors: PageData["contributors"];
 </script>

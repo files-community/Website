@@ -1,52 +1,52 @@
 @use "./mixins" as *;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 // Sideload Inter and Open Sans as fallback fonts (inter for english, open sans for everything else)
-@font-face {
-	font-family: "Inter";
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter-roman.var.woff2") format("woff2");
-	font-named-instance: "Regular";
-}
+@layer base {
+	@font-face {
+		font-family: "Inter";
+		font-style: normal;
+		font-weight: 100 900;
+		font-display: swap;
+		src: url("/fonts/Inter-roman.var.woff2") format("woff2");
+		font-named-instance: "Regular";
+	}
 
-@font-face {
-	font-family: "Inter";
-	font-style: italic;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/Inter-italic.var.woff2") format("woff2");
-	font-named-instance: "Italic";
-}
+	@font-face {
+		font-family: "Inter";
+		font-style: italic;
+		font-weight: 100 900;
+		font-display: swap;
+		src: url("/fonts/Inter-italic.var.woff2") format("woff2");
+		font-named-instance: "Italic";
+	}
 
-@font-face {
-	font-family: "Open Sans";
-	font-style: normal;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/OpenSans-roman.var.woff2") format("woff2");
-	font-named-instance: "Regular";
-}
+	@font-face {
+		font-family: "Open Sans";
+		font-style: normal;
+		font-weight: 100 900;
+		font-display: swap;
+		src: url("/fonts/OpenSans-roman.var.woff2") format("woff2");
+		font-named-instance: "Regular";
+	}
 
-@font-face {
-	font-family: "Open Sans";
-	font-style: italic;
-	font-weight: 100 900;
-	font-display: swap;
-	src: url("/fonts/OpenSans-italic.var.woff2") format("woff2");
-	font-named-instance: "Italic";
-}
+	@font-face {
+		font-family: "Open Sans";
+		font-style: italic;
+		font-weight: 100 900;
+		font-display: swap;
+		src: url("/fonts/OpenSans-italic.var.woff2") format("woff2");
+		font-named-instance: "Italic";
+	}
 
-/*
- * Global Variables
- */
-
-:root {
-	--fds-font-family-fallback: "Segoe UI", "Inter", "Open Sans", -apple-system,
-		ui-sans-serif, system-ui, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
-	--font-family-sans-serif: var(--fds-font-family-display);
-	--font-family-monospace: "Cascadia Code", "Fira Code", "Consolas", monospace;
-	overflow-x: hidden;
+	:root {
+		--fds-font-family-fallback: theme(fontFamily.sans);
+		--font-family-sans-serif: var(--fds-font-family-display);
+		--font-family-monospace: theme(fontFamily.mono);
+		overflow-x: hidden;
+	}
 }
 
 /*
@@ -71,176 +71,120 @@
 		--mica-tint: 0, 0%, 13%;
 		--mica-tint-opacity: 0.8;
 	}
-}
 
-/*
- * Base styles
- */
-
-// Properly size box model
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
-}
-
-// Focus rings
-*:focus-visible:not(.text-box) {
-	outline: none !important;
-	box-shadow: 0 0 0 2px var(--fds-focus-stroke-outer) !important;
-}
-
-// Set font
-::-webkit-input-placeholder,
-body,
-button,
-input,
-select,
-textarea {
-	font-family: var(--font-family-sans-serif);
-}
-
-// Selection colors
-::selection {
-	background-color: hsl(var(--fds-accent-dark-1));
-	color: white;
-}
-
-// Outer elements -- <html> and <body>
-html,
-body {
-	block-size: 100vh;
-	block-size: 100dvh;
-	margin: 0;
-	background-color: var(--fds-solid-background-secondary);
-}
-
-// Setting the font-size to 62.5% will
-// mean 1rem is equal to 10px assuming
-// 100% scaling.
-html {
-	font-size: 62.5%;
-}
-
-body {
-	font-size: 1.4rem;
-}
-
-// Only render inner <img> elements into the DOM
-picture {
-	display: contents;
-}
-
-// Codeblock syntax highlighting
-code {
-	@media (prefers-color-scheme: light) {
-		@include prism-vs-light;
+	html,
+	body {
+		background-color: var(--fds-solid-background-secondary);
 	}
 
-	@media (prefers-color-scheme: dark) {
-		@include prism-vs-dark;
-	}
-}
-
-// Scrollers
-// Utility class to create a styled scroller and scrollbar
-.scroller {
-	overflow: auto;
-
-	@supports (overflow: overlay) {
-		overflow: overlay;
-	}
-}
-
-// An attempt at recreating WinUI 2.6 scrollbars
-// (mixed results)
-::-webkit-scrollbar {
-	display: block;
-	inline-size: 14px;
-	border-radius: 14px;
-
-	// Why does webkit have to be such a pain to work with sometimes?
-	// At least it's not firefox.
-	&:vertical {
+	code {
 		@media (prefers-color-scheme: light) {
-			--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
-			--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+			@include prism-vs-light;
 		}
 
 		@media (prefers-color-scheme: dark) {
-			--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
-			--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+			@include prism-vs-dark;
 		}
 	}
 
-	&:horizontal {
-		@media (prefers-color-scheme: light) {
-			--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
-			--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
-		}
+	.scroller {
+		overflow: auto;
 
-		@media (prefers-color-scheme: dark) {
-			--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
-			--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+		@supports (overflow: overlay) {
+			overflow: overlay;
 		}
 	}
 
-	&:hover {
-		background:
-			var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
-			var(--scrollbar-caret-top) top center/contain no-repeat,
-			hsl(var(--mica-tint), var(--mica-tint-opacity));
-	}
-
-	&-thumb {
-		border: 6px solid transparent;
-		border-block: none;
+	// An attempt at recreating WinUI 2.6 scrollbars
+	// (mixed results)
+	::-webkit-scrollbar {
+		display: block;
+		inline-size: 14px;
 		border-radius: 14px;
-		background: var(--fds-control-strong-fill-default);
-		background-clip: padding-box;
+
+		// Why does webkit have to be such a pain to work with sometimes?
+		// At least it's not firefox.
+		&:vertical {
+			@media (prefers-color-scheme: light) {
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 16.9814C5.0281 16.9814 4.45412 15.7165 5.16132 14.9083L10.6831 8.59765C11.3804 7.80083 12.6199 7.80083 13.3172 8.59765L18.839 14.9083C19.5462 15.7165 18.9722 16.9814 17.8983 16.9814H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M6.10204 8C5.0281 8 4.45412 9.2649 5.16132 10.0731L10.6831 16.3838C11.3804 17.1806 12.6199 17.1806 13.3172 16.3838L18.839 10.0731C19.5462 9.2649 18.9722 8 17.8983 8H6.10204Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+			}
+		}
+
+		&:horizontal {
+			@media (prefers-color-scheme: light) {
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+			}
+
+			@media (prefers-color-scheme: dark) {
+				--scrollbar-caret-top: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M9 17.8983C9 18.9722 10.2649 19.5462 11.0731 18.839L17.3838 13.3172C18.1806 12.6199 18.1806 11.3804 17.3838 10.6831L11.0731 5.16132C10.2649 4.45412 9 5.02809 9 6.10204V17.8983Z' fill='hsl(0, 0%, 0%, 0.447)'/%3E%3C/svg%3E");
+				--scrollbar-caret-bottom: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M15 17.8983C15 18.9722 13.7351 19.5462 12.9268 18.839L6.61617 13.3172C5.81935 12.6199 5.81935 11.3804 6.61617 10.6831L12.9268 5.16132C13.7351 4.45412 15 5.02809 15 6.10204L15 17.8983Z' fill='hsl(0, 0%, 100%, 0.545)'/%3E%3C/svg%3E");
+			}
+		}
 
 		&:hover {
-			border: 4px solid transparent;
+			background:
+				var(--scrollbar-caret-bottom) bottom center/contain no-repeat,
+				var(--scrollbar-caret-top) top center/contain no-repeat,
+				hsl(var(--mica-tint), var(--mica-tint-opacity));
+		}
+
+		&-thumb {
+			border: 6px solid transparent;
+			border-block: none;
+			border-radius: 14px;
+			background: var(--fds-control-strong-fill-default);
+			background-clip: padding-box;
+
+			&:hover {
+				border: 4px solid transparent;
+			}
+		}
+
+		&-button:single-button {
+			display: block;
+			block-size: 14px;
 		}
 	}
 
-	&-button:single-button {
-		display: block;
-		block-size: 14px;
-	}
-}
+	// Utility class to create a styled anchor
+	.hyperlink {
+		color: var(--fds-accent-text-primary);
+		text-decoration: underline;
+		cursor: pointer;
+		text-decoration-skip-ink: none;
 
-// Utility class to create a styled anchor
-.hyperlink {
-	color: var(--fds-accent-text-primary);
-	text-decoration: underline;
-	cursor: pointer;
-	text-decoration-skip-ink: none;
+		&:hover,
+		&:active {
+			text-decoration: none;
+		}
 
-	&:hover,
-	&:active {
-		text-decoration: none;
-	}
+		&:hover {
+			color: var(--fds-accent-text-tertiary);
+		}
 
-	&:hover {
-		color: var(--fds-accent-text-tertiary);
-	}
-
-	&:active {
-		color: var(--fds-accent-text-secondary);
-	}
-}
-
-@keyframes scroll-gradient {
-	from {
-		background-position: 50% 0;
+		&:active {
+			color: var(--fds-accent-text-secondary);
+		}
 	}
 
-	50% {
-		background-position: 50% 100%;
-	}
+	@keyframes scroll-gradient {
+		from {
+			background-position: 50% 0;
+		}
 
-	to {
-		background-position: 50% 0;
+		50% {
+			background-position: 50% 100%;
+		}
+
+		to {
+			background-position: 50% 0;
+		}
 	}
 }
