@@ -88,6 +88,12 @@ Toggles the toolbar
 
 **Action name:** `ToggleToolbar`
 
+*Default bindings:**
+
+```json
+"Ctrl+Shift+B" 
+```
+
 
 ### Enter compact overlay
 
