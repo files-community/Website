@@ -2,7 +2,7 @@
 title: Announcing Files v3.5
 description: Enjoy an updated design, network drive widget, enhanced dual-pane functionality, and improvements to crash analytics.
 thumbnail: /blog-resources/v3-5/Hero.png
-date: 6/25/2024
+date: 6/24/2024
 author: files-community
 ---
 
