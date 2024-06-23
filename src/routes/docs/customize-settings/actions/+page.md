@@ -82,6 +82,13 @@ Toggles FullScreen mode
 ```
 
 
+### Toggle toolbar
+
+Toggles the toolbar
+
+**Action name:** `ToggleToolbar`
+
+
 ### Enter compact overlay
 
 Enters compact overlay
