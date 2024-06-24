@@ -701,6 +701,12 @@ Opens the Command Palette
 "Ctrl+Shift+P"
 ```
 
+### Edit in Notepad
+
+Opens the selected file in Notepad. This action is available for the following file extensions: `.ahk`, `.bat`, and `.cmd`.
+
+**Action name:** `EditInNotepad`
+
 ## Layouts
 
 ### Details View
@@ -1251,6 +1257,54 @@ Closes the right new pane
 
 ```json
 "Ctrl+Shift+W"
+```
+
+### Focus left pane
+
+Switches focus to the left pane
+
+**Action name:** `FocusLeftPane`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+Left"
+```
+
+### Focus right pane
+
+Switches focus to the right pane
+
+**Action name:** `FocusRightPane`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+Right"
+```
+
+### Focus left pane
+
+Switches focus to the left pane
+
+**Action name:** `FocusLeftPane`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+Left"
+```
+
+### Focus right pane
+
+Switches focus to the right pane
+
+**Action name:** `FocusRightPane`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+Right"
 ```
 
 ## Play
