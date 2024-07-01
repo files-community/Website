@@ -82,6 +82,19 @@ Toggles FullScreen mode
 ```
 
 
+### Toggle toolbar
+
+Toggles the toolbar
+
+**Action name:** `ToggleToolbar`
+
+*Default bindings:**
+
+```json
+"Ctrl+Shift+B" 
+```
+
+
 ### Enter compact overlay
 
 Enters compact overlay
@@ -1371,24 +1384,37 @@ Closes the current tab
 ```
 
 
-### New pane
+### Add vertical pane
 
-Opens a new pane
+Adds a vertical pane
 
-**Action name:** `OpenNewPane`
+**Action name:** `AddVerticalPane`
 
 **Default bindings:**
 
 ```json
-"Alt+Shift++"
+"Alt+Shift+V"
 ```
 
 
-### Close pane
+### Add horizontal pane
 
-Closes the right new pane
+Adds a horizontal pane
 
-**Action name:** `ClosePane`
+**Action name:** `AddHorizontalPane`
+
+**Default bindings:**
+
+```json
+"Alt+Shift+H"
+```
+
+
+### Close active pane
+
+Closes the active new pane
+
+**Action name:** `CloseActivePane`
 
 **Default bindings:**
 
@@ -1397,30 +1423,31 @@ Closes the right new pane
 ```
 
 
-### Focus left pane
+### Focus other pane
 
-Switches focus to the left pane
+Switches the focus to the non active pane
 
-**Action name:** `FocusLeftPane`
-
-**Default bindings:**
-
-```json
-"Ctrl+Shift+Left"
-```
-
-
-### Focus right pane
-
-Switches focus to the right pane
-
-**Action name:** `FocusRightPane`
+**Action name:** `FocusOtherPane`
 
 **Default bindings:**
 
 ```json
 "Ctrl+Shift+Right"
 ```
+
+
+### Arrange panes vertically
+
+Arranges panes vertically
+
+**Action name:** `ArrangePanesVertically`
+
+
+### Arrange panes horizontally
+
+Arranges panes horizontally
+
+**Action name:** `ArrangePanesHorizontally`
 
 
 ## Play
