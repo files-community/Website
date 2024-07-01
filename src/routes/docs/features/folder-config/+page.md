@@ -10,6 +10,7 @@ In addition to supporting custom [background](/docs/customize-settings/appearanc
 2. Open the `desktop.ini` file using a text editor (such as Notepad).
 3. Add the following line to the `desktop.ini` file, replacing `"C:\Image.png"` with the actual path to your desired image file:
 ```
+[FilesApp]
 Files_BackgroundImage=C:\\Image.png
 ```
 4. Save the `desktop.ini` file.
