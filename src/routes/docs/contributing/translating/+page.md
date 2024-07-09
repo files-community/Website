@@ -16,7 +16,7 @@ Proofreading and approving strings is done by active community members, if you w
 
 ## Screenshots
 
-A number of screenshots have been uploaded where possible to provide more context on how strings are being used. Please note, Files is actively updated and it's possible that some screenshots are out of date.```
+Where possible, screenshots have been added to provide more context on how strings are being used. Please note, Files is actively updated and it's possible that some screenshots are out of date.```
 
 ## Including updated strings in Files
 
