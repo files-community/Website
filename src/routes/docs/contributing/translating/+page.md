@@ -10,7 +10,7 @@ Translations for Files are done through the popular cloud based platform Crowdin
 - A [Crowdin account](https://accounts.crowdin.com/register)
 
 
-## Proofread
+## Proofreading
 
 If you translate Files on a regular basis and would like to have access to proofread your language, please start a discussion on Crowdin and we'll review your request at the earliest convenience.
 
