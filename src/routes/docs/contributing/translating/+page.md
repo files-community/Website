@@ -55,7 +55,7 @@ The following short tags are used to determine the plural categories:
 
 In the Editor, you don’t have to manually add or delete plural categories to the translations you are making. Just click `Copy Source`, and the source string will be copied to the translation field with the number of plural categories right for the current target language.
 
-![image](https://github.com/0x5bfa/Website/assets/62196528/830ef3f0-945b-4dae-8381-00805c7bd590)
+![image](https://github.com/files-community/Website/tree/main/static/docs-resources/Crowdin-OnlineEditorToolButtons.jpeg)
 
 For complete list of languages with Language Plural Rules, visit [Unicode Org web page](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
@@ -81,9 +81,9 @@ Please do care about:
 
 If you're not sure what tags should be added, don't worry. Click `i` button and see available tags, or click 'generate skelton' to see preview.
 
-![image](https://github.com/0x5bfa/Website/assets/62196528/a66edfbc-1bc1-42d0-8843-76af330fc861)
+![image](https://github.com/files-community/Website/tree/main/static/docs-resources/Crowdin-OnlineEditorSupportedPluralCategoryTooltip.jpeg)
 
-![image](https://private-user-images.githubusercontent.com/84145589/336040857-ee954a9b-ef7b-4cf5-8e5e-a6394ebabb1c.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTc1ODY1ODIsIm5iZiI6MTcxNzU4NjI4MiwicGF0aCI6Ii84NDE0NTU4OS8zMzYwNDA4NTctZWU5NTRhOWItZWY3Yi00Y2Y1LThlNWUtYTYzOTRlYmFiYjFjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDA2MDUlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwNjA1VDExMTgwMlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA2ZTJkYThiYzQzM2Q4YzQwOTY5OTY1ZmM1Njc2Mjk1OWRlNzkxNmY5NThkZDU3MjU4MTQxNGI2NTAzNzNiNDYmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.jUppxsC03mbEii6T4l8s7_IHB6vtvCs8nyhNLFuoCvM)
+![image](https://github.com/files-community/Website/tree/main/static/docs-resources/Crowdin-OnlineEditorGeneratePreviewInfoBar.jpeg)
 
 Also, Crowdin shows an error message if your translation is incorrectly formatted or translated.
 
