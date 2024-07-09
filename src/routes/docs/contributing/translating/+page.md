@@ -76,7 +76,7 @@ Please do care about:
 
 ### Remarks
 
-If you're not sure what tags should be added, don't worry. Click `i` button and see available tags, or click 'generate skelton' to see preview.
+If you're not sure which tags should be added, you can click the `i` button to see available tags. You can also click 'generate skelton' to see preview.
 
 ![image](https://github.com/files-community/Website/tree/main/static/docs-resources/Crowdin-OnlineEditorSupportedPluralCategoryTooltip.jpeg)
 
