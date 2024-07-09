@@ -9,7 +9,6 @@ Translations for Files are done through the popular cloud based platform Crowdin
 - Any browser that work on Windows with the latest version
 - A [Crowdin account](https://accounts.crowdin.com/register)
 
-Once you translate a string, proofreaders or maintainers rarely requests changes, but if you notice an issue with an approved translation, you can use the Comments section in Crowdin Editor with the Issue check box marked.
 
 ## Proofread
 
