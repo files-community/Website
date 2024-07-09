@@ -8,8 +8,6 @@ Translations for Files are done through the popular cloud based platform Crowdin
 
 - Any browser that work on Windows with the latest version
 - A [Crowdin account](https://accounts.crowdin.com/register)
-
-
 ## Proofreading
 
 Proofreading and approving strings is done by active community members, if you would like to proofread your language, please start a discussion on Crowdin, and we'll review your request at the earliest convenience.
