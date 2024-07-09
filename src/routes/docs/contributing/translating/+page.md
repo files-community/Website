@@ -12,7 +12,7 @@ Translations for Files are done through the popular cloud based platform Crowdin
 
 ## Proofreading
 
-If you translate Files on a regular basis and would like to have access to proofread your language, please start a discussion on Crowdin and we'll review your request at the earliest convenience.
+Proofreading and approving strings is done by active community members, if you would like to proofread your language, please start a discussion on Crowdin, and we'll review your request at the earliest convenience.
 
 ## Screenshots
 
