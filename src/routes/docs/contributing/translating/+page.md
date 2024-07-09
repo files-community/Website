@@ -38,7 +38,7 @@ In this case, the first placeholder is for file name that user wants to delete a
 ## ICU message syntax
 
 You may see some strings that have programmatic syntax.
-It’s called ICU message syntax, which is the standard syntax advanced by Unicode (and the parallel ISO 10646 standard) for efficiently processing text in any language and for maintaining text data integrity
+It’s called [ICU message syntax](https://support.crowdin.com/icu-message-syntax), which is the standard syntax advanced by Unicode (and the parallel ISO 10646 standard) for efficiently processing text in any language and for maintaining text data integrity
 
 ### Pluralization
 
@@ -97,9 +97,11 @@ For questions regarding single translation, please use Comments area of each tra
 
 We have our own extension to handle ICU message syntax.
 `public static Strings.ToLocalized(this source, param parameters);`
+
 ```cs
 "ItemsCount".ToLocalized(itemsCount);
 ```
+
 ```cs
 var localized = "DeleteConfirmation".ToLocalized(fileName, parentFolderName);
 ```
