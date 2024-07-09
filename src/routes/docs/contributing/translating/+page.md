@@ -18,7 +18,7 @@ Where possible, screenshots have been added to provide more context on how strin
 
 ## Syncing changes with the Files app
 
-Your translations will usually be synced with the main Files project shortly before we release an updated version of Files to the stable branch.
+Translations are usually synced with the main Files project shortly before releasing an update to the stable branch.
 
 ## Placeholders
 
