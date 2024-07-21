@@ -8,8 +8,8 @@ Powered by [SvelteKit](https://svelte.dev), [TypeScript](https://typescriptlang.
 
 ## Building the source
 
-- **On GitHub Codespaces:**
-- **On your local:**
+- **On GitHub Codespaces:** Run `pnpm dev` on the terminal, then you're ready.
+- **On your local:** See [SETUP.md](./SETUP.md)
 
 ## Contributing to Files Website
 
