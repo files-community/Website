@@ -16,23 +16,43 @@ Before starting contibution to this repository, please read [our code of conduct
 - **Improve docs:** Please refer to [our contributing guidelines](./CONTRIBUTING.md#contributing-to-the-docs).
 - **Improve translations:** Help us out localize the website on [Crowdin](https://crowdin.com/project/files-website).
 
-## Building from source
+## Developing
 
-**On GitHub Codespaces**
+**Setup on GitHub Codespaces**
 
-```console
+```bash
 pnpm dev
 ```
 
-**On your local**
+**Setup on your local**
 
 1. Install [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) with `npm`, and [pnpm](https://pnpm.io).
 2. Prepare terminal.
 3. Run the following commands:
-```console
+```bash
 git clone https://github.com/files-community/Website
 pnpm i
 pnpm run dev
+```
+
+**Linting**
+
+The following command uses [prettier](https://prettier.io) and [eslint](https://eslint.org/).
+<br/>
+[lint-staged](https://github.com/okonet/lint-staged) is also used to automatically format all changed files before committing them
+
+```bash
+pnpm run lint
+```
+
+
+
+**Compiling & distributing**
+
+We use [SvelteKit's cloudflare adapter](https://www.npmjs.com/package/@sveltejs/adapter-cloudflare) module, which allows us to deploy to cloudflare. To simply build a production bundle, run the following command:
+
+```bash
+pnpm run build
 ```
 
 ## Structure of codebase
