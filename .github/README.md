@@ -4,15 +4,17 @@
   <h1 align="center">Website</h1>
 </p>
 
-Powered by [mdsvex](https://mdsvex.pngwn.io), [SvelteKit](https://svelte.dev) and [TypeScript](https://typescriptlang.org). Deployed with [Cloudflare](https://www.cloudflare.com).
+<p align="center">
+  Powered by <a href="https://mdsvex.pngwn.io">mdsvex</a>, <a href="https://svelte.dev">SvelteKit</a> and <a href="https://typescriptlang.org">TypeScript</a>. Deployed with <a href="https://www.cloudflare.com">Cloudflare</a>.
+</p>
 
 ## Contributing to Files Website
 
 Before starting contibution to this repository, please read [our code of conduct](./CODE_OF_CONDUCT.md) first.
 
 - **Report bugs:** [File an issue](https://github.com/files-community/Files/issues/new/choose) when you encounter an unexpected behavior.
-- **Improve Docs:** Please refer to [our contributing guidelines](./CONTRIBUTING.md#contributing-to-the-docs).
-- **Help translations:** Help us out localize the website on [Crowdin](https://crowdin.com/project/files-website).
+- **Improve docs:** Please refer to [our contributing guidelines](./CONTRIBUTING.md#contributing-to-the-docs).
+- **Improve translations:** Help us out localize the website on [Crowdin](https://crowdin.com/project/files-website).
 
 ## Building from source
 
