@@ -19,9 +19,3 @@ Before starting contibution to this repository, please read [our code of conduct
 ## Building from source
 
 Instructions for building the source code and setting up your local host can be found on [our contributing guidelines](./CONTRIBUTING.md#set-up).
-
-## Trademarks
-
-This project contains trademarks or logos for projects or products.
-Authorized use of Files Community trademarks or logos is subject to and must follow our Trademark & Brand Guidelines. Use of Files Community trademarks or logos in modified versions of this project must not cause confusion.
-Any use of third-party trademarks or logos are subject to those third-party's policies.
