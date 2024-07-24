@@ -2,94 +2,9 @@
 
 Files Website also thrives off of the contributions and input from users. There are several ways you can get involved.
 
-1. [Set up](#set-up)
-    1. [On GitHub Codespaces](#on-github-codespaces)
-    2. [On your local](#on-your-local)
-2. [Linting](#linting)
-3. [Compiling & distributing](#compiling--distributing)
-4. [Structure of codebase](#structure-of-codebase)
-5. [Contributing to the docs](#contributing-to-the-docs)
-6. [Contributing to the blog](#contributing-to-the-blog)
-7. [Translating the website](#translating-the-website)
-
-## Set up
-
-### On GitHub Codespaces
-
-Run the command below in the terminal, then you're ready.
-
-```console
-pnpm dev
-```
-
-### On your local
-
-<details><summary>Open to see instructions</summary><p>
-
-#### 1. Prerequisites
-
-- [Git](https://git-scm.com)
-- [Node.js](https://nodejs.org/en/) with `npm`.
-- [pnpm](https://pnpm.io)
-- Shell of your choice.
-
-#### 2. Run commands
-
-Clone, install dependencies and build:
-```console
-git clone https://github.com/files-community/Website
-cd Website
-pnpm i
-pnpm run dev
-```
-
-</p></details>
-
-## Linting
-
-This project uses [prettier](https://prettier.io) and [eslint](https://eslint.org/).
-Run this command to lint your changes:
-
-```console
-pnpm run lint
-```
-
-Additionally, we use [lint-staged](https://github.com/okonet/lint-staged) to automatically format all changed files before committing them, ensuring that all code is formatted consistently.
-
-## Compiling & distributing
-
-We currently use [SvelteKit's cloudflare adapter](https://www.npmjs.com/package/@sveltejs/adapter-cloudflare) module, which allows us to deploy to cloudflare. To simply build a production bundle, use the following script:
-
-```console
-pnpm run build
-```
-
-Alternatively, run following command to preview your changes in a production-like build:
-
-```console
-pnpm run preview
-```
-
-## Structure of codebase
-
-```
-.
-├──static                 // Contains static assets including branding, images, fonts, etc...
-|  ├──branding            // Branding media (logos, banners, etc...)
-|  ├──fonts               // Static font files loaded by the website.
-|  ├──preview-samples     // Sample files used in the preview pane in the features section.
-|  ├──screenshots         // Screenshots and renders of the app used in the website.
-|  └──ui                  // Images other than branding used in the website's user interface.
-└──src                    // The website's source code.
-   ├──lib                 // Re-usable Svelte components used within the website.
-   ├──layout              // Components responsible for defining page layout, such as headers, footers, page sections, etc...
-   ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
-   |  ├──docs             // Documentation and associated files.
-   |  └──blog             // Blog page and associated files.
-   |     └──posts         // Folder containing blog posts in Markdown format.
-   ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
-   └──styles              // SCSS styles that are NOT tied to components in /lib.
-```
+1. [Contributing to the docs](#contributing-to-the-docs)
+2. [Contributing to the blog](#contributing-to-the-blog)
+3. [Translating the website](#translating-the-website)
 
 ## Contributing to the docs
 
