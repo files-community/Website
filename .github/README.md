@@ -5,6 +5,13 @@
 </p>
 
 <p align="center">
+  <a style="text-decoration:none" href="https://files.community/">
+    <img src="https://img.shields.io/badge/Cloudflare-F38020?style=flat&logo=Cloudflare&logoColor=white" alt="Files Website on Cloudflare" /></a>
+  <a style="text-decoration:none" href="https://crowdin.com/project/files-website">
+    <img src="https://badges.crowdin.net/files-website/localized.svg" alt="Files Website on Crowdin" /></a>
+</p>
+
+<p align="center">
   Powered by <a href="https://mdsvex.pngwn.io">mdsvex</a>, <a href="https://svelte.dev">SvelteKit</a>, and <a href="https://typescriptlang.org">TypeScript</a>. Deployed with <a href="https://www.cloudflare.com">Cloudflare</a>.
 </p>
 
