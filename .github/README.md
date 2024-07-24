@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  Powered by <a href="https://mdsvex.pngwn.io">mdsvex</a>, <a href="https://svelte.dev">SvelteKit</a> and <a href="https://typescriptlang.org">TypeScript</a>. Deployed with <a href="https://www.cloudflare.com">Cloudflare</a>.
+  Powered by <a href="https://mdsvex.pngwn.io">mdsvex</a>, <a href="https://svelte.dev">SvelteKit</a>, and <a href="https://typescriptlang.org">TypeScript</a>. Deployed with <a href="https://www.cloudflare.com">Cloudflare</a>.
 </p>
 
 ## Contributing to Files Website
@@ -18,4 +18,40 @@ Before starting contibution to this repository, please read [our code of conduct
 
 ## Building from source
 
-Instructions for building the source code and setting up your local host can be found on [our contributing guidelines](./CONTRIBUTING.md#set-up).
+**On GitHub Codespaces**
+
+```console
+pnpm dev
+```
+
+**On your local**
+
+1. Install [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/) with `npm`, and [pnpm](https://pnpm.io).
+2. Prepare terminal.
+3. Run the following commands:
+```console
+git clone https://github.com/files-community/Website
+pnpm i
+pnpm run dev
+```
+
+## Structure of codebase
+
+```
+.
+├──static                 // Contains static assets including branding, images, fonts, etc...
+│  ├──branding            // Branding media (logos, banners, etc...)
+│  ├──fonts               // Static font files loaded by the website.
+│  ├──preview-samples     // Sample files used in the preview pane in the features section.
+│  ├──screenshots         // Screenshots and renders of the app used in the website.
+│  └──ui                  // Images other than branding used in the website's user interface.
+└──src                    // The website's source code.
+   ├──lib                 // Re-usable Svelte components used within the website.
+   ├──layout              // Components responsible for defining page layout, such as headers, footers, page sections, etc...
+   ├──routes              // SvelteKit's filesystem-based routes. Anything in the folder is registered as a URL on build time.
+   │  ├──docs             // Documentation and associated files.
+   │  └──blog             // Blog page and associated files.
+   │     └──posts         // Folder containing blog posts in Markdown format.
+   ├──data                // Data storage used across various components and routes. NOT stores, just exported variables.
+   └──styles              // SCSS styles that are NOT tied to components in /lib.
+```
