@@ -117,6 +117,12 @@
 			</Button>
 		{/each}
 	</div>
+	<div class="column">
+		<p>Support</p>
+		<Button variant="hyperlink" href="/privacy">
+			Privacy policy
+		</Button>
+	</div>
 </PageSection>
 
 <style lang="scss">
