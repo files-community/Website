@@ -12,9 +12,7 @@
 
 Before starting contibution to this repository, please read [our code of conduct](./CODE_OF_CONDUCT.md) first.
 
-- **Report bugs:** [File an issue](https://github.com/files-community/Files/issues/new/choose) when you encounter an unexpected behavior.
-- **Improve docs:** Please refer to [our contributing guidelines](./CONTRIBUTING.md#contributing-to-the-docs).
-- **Improve translations:** Help us out localize the website on [Crowdin](https://crowdin.com/project/files-website).
+Contributing to this repository involves several valuable activities: filing issues to [report bugs](https://github.com/files-community/Files/issues/new/choose), [improving documentation](./CONTRIBUTING.md#contributing-to-the-docs) for better user comprehension, developing and maintaining the website infrastructure, and [translating the website](https://crowdin.com/project/files-website) to make it accessible to a wider audience.
 
 ## Developing
 
