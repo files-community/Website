@@ -118,9 +118,9 @@
 		{/each}
 	</div>
 	<div class="column">
-		<p>Support</p>
+		<p>{$_("footer.support", defaultI18nValues)}</p>
 		<Button variant="hyperlink" href="/privacy">
-			Privacy policy
+			{$_("footer.privacy", defaultI18nValues)}
 		</Button>
 	</div>
 </PageSection>
