@@ -189,6 +189,13 @@ Toggles whether to show hidden items
 ```
 
 
+### Toggle dot files
+
+Toggles the setting that controls whether dot files are displayed
+
+**Action name:** `ToggleDotFilesSetting`
+
+
 ### Toggle file extensions
 
 Toggles whether to show file extensions
@@ -232,6 +239,19 @@ Toggles the Info Pane
 
 ```json
 "Ctrl+Alt+I"
+```
+
+
+### Toggle Toolbar
+
+Toggles the Toolbar visibility
+
+**Action name:** `ToggleToolbar`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+B"
 ```
 
 
@@ -1195,19 +1215,6 @@ Opens a new tab
 ```
 
 
-### New tab
-
-Opens a new tab
-
-**Action name:** `NewTab`
-
-**Default bindings:**
-
-```json
-"Ctrl+T"
-```
-
-
 ### New Window
 
 Opens a new window
@@ -1371,24 +1378,51 @@ Closes the current tab
 ```
 
 
-### New pane
+### Add horizontal pane
 
-Opens a new pane
+Opens a new pane arranged horizontally
 
-**Action name:** `OpenNewPane`
+**Action name:** `AddHorizontalPane`
 
 **Default bindings:**
 
 ```json
-"Alt+Shift++"
+"Alt+Shift+H"
 ```
 
 
-### Close pane
+### Add vertical pane
 
-Closes the right new pane
+Opens a new pane arranged vertically
 
-**Action name:** `ClosePane`
+**Action name:** `AddVerticalPane`
+
+**Default bindings:**
+
+```json
+"Alt+Shift+V"
+```
+
+
+### Arrange panes horizontally
+
+Arranges open panes horizontally
+
+**Action name:** `ArrangePanesHorizontally`
+
+
+### Arrange panes vertically
+
+Arranges open panes vertically
+
+**Action name:** `ArrangePanesVertically`
+
+
+### Close active pane
+
+Closes the active new pane
+
+**Action name:** `CloseActivePane`
 
 **Default bindings:**
 
@@ -1397,24 +1431,11 @@ Closes the right new pane
 ```
 
 
-### Focus left pane
+### Focus other pane
 
-Switches focus to the left pane
+Switches focus to the non active pane
 
-**Action name:** `FocusLeftPane`
-
-**Default bindings:**
-
-```json
-"Ctrl+Shift+Left"
-```
-
-
-### Focus right pane
-
-Switches focus to the right pane
-
-**Action name:** `FocusRightPane`
+**Action name:** `FocusOtherPane`
 
 **Default bindings:**
 
