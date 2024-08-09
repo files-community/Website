@@ -14,10 +14,10 @@
 	},
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^4.0.2",
-		"@iconify-json/fluent": "^1.1.60",
+		"@iconify-json/fluent": "^1.1.61",
 		"@neodrag/svelte": "^2.0.6",
 		"@sveltejs/adapter-cloudflare": "^4.7.0",
-		"@sveltejs/kit": "^2.5.19",
+		"@sveltejs/kit": "^2.5.20",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/eslint": "^9.6.0",
 		"eslint": "^9.8.0",
@@ -26,8 +26,8 @@
 		"fluent-svelte": "^1.6.0",
 		"globals": "^15.9.0",
 		"husky": "^9.1.4",
-		"lightningcss": "^1.25.1",
-		"lint-staged": "^15.2.7",
+		"lightningcss": "^1.26.0",
+		"lint-staged": "^15.2.8",
 		"mdsvex": "^0.11.2",
 		"prettier": "^3.3.3",
 		"prettier-plugin-svelte": "^3.2.6",
@@ -42,9 +42,9 @@
 		"svelte-preprocess": "^6.0.2",
 		"tslib": "^2.6.3",
 		"typescript": "^5.5.4",
-		"typescript-eslint": "^8.0.0",
-		"unplugin-icons": "0.19.1",
-		"vite": "^5.3.5"
+		"typescript-eslint": "^8.0.1",
+		"unplugin-icons": "0.19.2",
+		"vite": "^5.4.0"
 	},
 	"lint-staged": {
 		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
