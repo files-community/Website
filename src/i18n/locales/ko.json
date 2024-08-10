@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "명령 팔레트",
 				"description": "명령 팔레트에서 명령어, 기능, 설정에 빠르게 접근하세요."
+			},
+			"remap-key-bindings": {
+				"title": "키 바인딩 사용자 지정",
+				"description": "사용자 지정 키 바인딩을 만들어 작업 흐름을 간소화하세요."
 			}
 		},
 		"themes": {
