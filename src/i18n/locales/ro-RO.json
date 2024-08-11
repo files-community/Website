@@ -1,0 +1,146 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Pornire",
+		"docs_home": "{FilesName} • Documentație",
+		"docs_page": "{FilesName} • Documentație - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Construim cel mai bun manager de fișiere pentru Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Comunitate",
+			"title": "Proiectat și dezvoltat de către tine.",
+			"description": "{FilesName} este gratuit și cu sursă deschisă, întreținut și proiectat de un colectiv de sute de contribuitori.",
+			"discord": "Alătură-te discuției",
+			"docs": "Devino un contribuitor",
+			"contributions": "{amount, plural, =0 {Nici o contribuţie} one {# contribuţie} few {# contribuţii} other {# contribuţii}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Puterea întâlneşte frumuseţea.",
+			"description": "Explorați un design frumos creat pentru Windows. Gestionați-vă toate fișierele cu o productivitate sporită. Lucrați în mai multe foldere cu file. Și multe altele.",
+			"download": "Descărcare",
+			"learn_more": "Aflați mai multe"
+		},
+		"features": {
+			"chip": "Caracteristici",
+			"title": "Deja face acest lucru.",
+			"description": "Integrare cu fișiere în Cloud? File și aspecte multiple? Vizualizări bogate de fișiere? {FilesName} deja acoperă astea cu caracteristici robuste pe care le așteptați de la un manager de fișiere modern.",
+			"unknown": "Necunoscut",
+			"cloud": {
+				"title": "Integrare fără întreruperi în cloud",
+				"description": "Suport încorporat pentru unitățile cloud, cum ar fi OneDrive, Google Drive și iCloud."
+			},
+			"preview": {
+				"title": "Panou de previzualizare",
+				"description": "Previzualizați fotografii, videoclipuri și documente fără a le deschide."
+			},
+			"popup-preview": {
+				"title": "Suport pentru QuickLook & SeerPro",
+				"description": "Previzualizați fișiere Office, documente, și alte tipuri de fișiere apăsând tasta spațiu. Această caracteristică necesită instalarea QuickLook sau SeerPro."
+			},
+			"tags": {
+				"title": "Etichetați fișiere si foldere",
+				"description": "Organizați și sortați fișierele și dosarele cu etichete colorate."
+			},
+			"tabs": {
+				"title": "Multitasking cu file",
+				"description": "Evitați mai multe ferestre și păstrați-vă desktopul curat cu file."
+			},
+			"columns": {
+				"title": "Vizualizare coloană",
+				"description": "Navigați rapid prin diferite niveluri ale sistemului de fișiere folosind aspectul coloană."
+			},
+			"archives": {
+				"title": "Vizualizați și editați arhive",
+				"description": "Creeați și extrageți arhive inclusiv zip, WinRar și 7zip."
+			},
+			"git": {
+				"title": "Integrare Git",
+				"description": "Gestionați cu ușurință proiectele Git. Creați ramuri noi, schimbați între ele și sincronizați modificările - fără a părăsi Files."
+			},
+			"dual-pane": {
+				"title": "Panou dublu",
+				"description": "Vizualizați și gestionați două foldere unul lângă altul cu caracteristica Panou Dublu."
+			},
+			"hashes": {
+				"title": "Hash-uri",
+				"description": "Vizualizați și comparați hash-urile din fereastra de proprietăți."
+			},
+			"command-palette": {
+				"title": "Paletă de comenzi",
+				"description": "Accesați rapid comenzi, caracteristici și setări din Paleta de Comenzi."
+			},
+			"remap-key-bindings": {
+				"title": "Reamintire legări cheie",
+				"description": "Streamline you workflow by creating custom key binding. (Automatic Copy)"
+			}
+		},
+		"themes": {
+			"chip": "Teme",
+			"title": "Distinct personal.",
+			"description": "Fie ca tine. {FilesName} oferă o interfață de utilizator complet personalizabilă, până la culori și materiale. Încercați teme personalizate care sunt încorporate în {FilesName} sau accesați direct documentația și creați-vă propriile teme.",
+			"grey_blue": "Gri închis • Albastru deschis",
+			"grey_green": "Gri albastru • Neon Verde",
+			"purple": "Mov",
+			"yellow_white": "Galben • Alb",
+			"white_teal": "Alb Rece • Albastru Verziu închis",
+			"sky_blue": "Albastrul cerului",
+			"select_theme": "Selectați o temă #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Mai multe postări în curând!",
+		"read_more": "Citiți mai mult",
+		"share": {
+			"default": "Partajare nativă",
+			"url": "Copiere URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Flux RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Nu s-au găsit rezultate",
+		"edit_page": "Editați această pagină"
+	},
+	"footer": {
+		"home": "Pornire",
+		"docs": "Documentație",
+		"news": "Noutăți",
+		"download": "Descărcare",
+		"contribute": "Contribuiți la {FilesName}",
+		"feedback": "Oferiți feedback",
+		"style_guide": "Ghid Stil",
+		"translations": "Traduceri",
+		"web_team": "Echipa Web"
+	},
+	"navbar": {
+		"home": "Pornire",
+		"docs": "Documentaţie",
+		"news": "Noutăți",
+		"download": "Descărcare",
+		"themes": "Teme",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Descărcați {FilesName}",
+		"donation_description": "{FilesName} este un proiect condus de comunitate care depinde de sprijinul tău pentru a crește și a se îmbunătăți. Vă rugăm să luați în considerare achiziționarea {FilesName} prin Microsoft Store sau sprijiniți-ne pe GitHub dacă folosiți instalarea clasică.",
+		"donation_button": "Donează",
+		"microsoft_store": {
+			"title": "Descărcați Files",
+			"description": "Achiziționarea {FilesName} prin Microsoft Store ne ajută să sprijinim dezvoltatorii și ne permite să continuăm actualizarea aplicației cu noi caracteristici și îmbunătățiri."
+		},
+		"preview": {
+			"title": "Descărcați versiunea Insider Preview",
+			"description": "Versiunea de previzualizare poate fi instalată alături de versiunea stabilă și oferă acces rapid la funcții și îmbunătățiri noi."
+		},
+		"self_signed": {
+			"link_text": "Instalator clasic",
+			"description": "Nu aveți acces la Microsoft Store? Încercați "
+		}
+	}
+}
