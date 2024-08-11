@@ -1,0 +1,146 @@
+{
+	"metadata": {
+		"name": "{Fayllar atı}",
+		"home": "{FilesName} • Bas bet",
+		"docs_home": "{FilesName} • Hújjetshilik",
+		"docs_page": "{FilesName} • Hújjetshilik - {title}",
+		"blog_home": "{FilesName}• Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Windows ushın eń jaqsı fayl basqarıwshısın jaratıń."
+	},
+	"home": {
+		"community": {
+			"chip": "Birlespe",
+			"title": "Siz tárepten islep shıǵılǵan hám islep shıǵılǵan.",
+			"description": "{FilesName} bul júzlegen qatnasıwshılar jámááti tárepinen basqarılatuǵın biypul Ashıq kodlı programmalıq támiynat.",
+			"discord": "Dodalawǵa qosılıw",
+			"docs": "Aǵza bolıw",
+			"contributions": "{amount, plural,=0 {Úlessiz}one {# Úles} other {# Úlesler}}"
+		},
+		"design": {
+			"chip": "Dizayn",
+			"title": "Kúsh gózzallıq penen ushrasadı",
+			"description": "Windows ushın shıraylı dizaynı ushın jańalıq ashıń. Joqarı ónimdarlıq menen barlıq fayllarıńızdı basqarıń. Jarlıqlar járdeminde bir neshe papkalar menen islew.h.t.b",
+			"download": "Júklep alıw",
+			"learn_more": "Tolıǵıraq úyreniw"
+		},
+		"features": {
+			"chip": "Funciyalar",
+			"title": "Bul álleqashan islendi.",
+			"description": "Bultlı fayllar integraciyası? Jarlıqlar hám bir neshe tártipler? Bay fayllardı aldınan kóriwme?{FilesName} zamanagóy fayl basqarıwshısınan kútken kúshli ayrıqshalıqlar menen qamtıp alınǵan.",
+			"unknown": "Belgisiz",
+			"cloud": {
+				"title": "Bultlı xızmetler menen tolıq integraciya",
+				"description": "OneDrive, Google Drive hám iCloud sıyaqlı bultlı drayerler ushın ornatılǵan qollap-quwatlaw."
+			},
+			"preview": {
+				"title": "Kórip shıǵıw paneli",
+				"description": "Súwretler, videolar hám hújjetlerdi ashpastan kóriń."
+			},
+			"popup-preview": {
+				"title": "QuickLook hám SeerPro-nı qollap-quwatlaw",
+				"description": "Bos jay túymesin basıw arqalı Office faylları, hújjetleri hám basqa fayl túrlerin kóriń. Bul ózgeshelik QuickLook yamasa SeerPro-ni ornatıwdı talap etedi."
+			},
+			"tags": {
+				"title": "Fayl hám papkalarıdı gruppalaw",
+				"description": "Fayl hám papkalarııńızdı reń menen kodlanǵan tegler menen tártipke salıń hám tártipleń."
+			},
+			"tabs": {
+				"title": "Jarlıqlar menen kóp wazıypa",
+				"description": "Kóp kereksiz áyneklerden saqlanıń hám jumıs stolıńıdı jarlıqlar menen tártipke salıń."
+			},
+			"columns": {
+				"title": "Qatar kórinisi",
+				"description": "Ústin rejiminen paydalanıp, fayl sistemasınıń túrli dárejeleri boylap tez háreketleniń."
+			},
+			"archives": {
+				"title": "Arxivlerdi kóriń hám ózgertiń",
+				"description": "Arxivlardı, sonday-aq zipti jaratıń hám shıǵarıp alın, WinRar, hám 7zip."
+			},
+			"git": {
+				"title": "Git integraciyası",
+				"description": "Git joybarlarıńızdı ańsatlıq penen basqarıń. Jańa filiallar ashıń, olar ortasında almasıń hám ózgerislerdi sinxronlastırıń - barlıǵı Fayllardan shıqpastan."
+			},
+			"dual-pane": {
+				"title": "Eki panelli rejim",
+				"description": "Dual Pane funksiyası menen eki betti kóriń hám basqarıń."
+			},
+			"hashes": {
+				"title": "Keshler",
+				"description": "Ayrıqshalıqlar aynasınan fayl keshlardi kóriń hám salıstırıń."
+			},
+			"command-palette": {
+				"title": "Buyrıqlar palitrası",
+				"description": "Buyrıqlar palitrasınan buyrıqlar, funksiyalar hám sazlawlarǵa tez kiriń."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
+			}
+		},
+		"themes": {
+			"chip": "Temalar",
+			"title": "Jeke.",
+			"description": "Siz aytqan sıyaqlı boladı. {FilesName} reń hám materiallarǵa shekem tolıq maslastırılǵan paydalanıwshı interfeysine iye. {FilesName} ishine ornatılǵan arnawlı temalardı sınap kóriń yamasa tuwrıdan-tuwrı hújjetlerge kirip, ózińizdikini jaratıń.",
+			"grey_blue": "Qara • Ashıq kók",
+			"grey_green": "Ashıq kók • Ashıq jasıl",
+			"purple": "Qızǵılt kók",
+			"yellow_white": "Sarı • Aq",
+			"white_teal": "Suwıq aq • Qoyıw piruza",
+			"sky_blue": "Aqshıl kók",
+			"select_theme": "#{index} temasın tańlaw"
+		}
+	},
+	"blog": {
+		"coming_soon": "Kóbirek jańalıqlar jaqın arada!",
+		"read_more": "Dawamın oqıw",
+		"share": {
+			"default": "Jergilikli jalǵawıshı",
+			"url": "Siltemeni nusqalaw",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS lentası"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Nátiyjeler tabılmadı",
+		"edit_page": "Bul betke ózgeris kirgiziw"
+	},
+	"footer": {
+		"home": "Bas bet",
+		"docs": "Hújjetshilik",
+		"news": "Jańalıqlar",
+		"download": "Júklep alıw",
+		"contribute": "{FilesName} rawajlanıwına úles qosıw",
+		"feedback": "Qayta baylanıs",
+		"style_guide": "Kod jazıw boyınsha qollanba",
+		"translations": "Awdarmalar",
+		"web_team": "Topar"
+	},
+	"navbar": {
+		"home": "Bas bet",
+		"docs": "Hújjetshilik",
+		"news": "Jańalıqlar",
+		"download": "Júklep alıw",
+		"themes": "Temalar",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "{FilesName}dı júklep alıw",
+		"donation_description": "{FilesName} - bul jámiyetshilik tárepinen basqarılatuǵın joybar bolıp, ósiw hám jetilistiriwde sizdiń járdemińizge mútáj. Eger klassik ornatıshıdan paydalansańız, Microsoft dúkanınan {FilesName} satıp alınǵan zat alıń yamasa GitHub arqalı bizge járdem beriń.",
+		"donation_button": "Qollap-quwatlaw",
+		"microsoft_store": {
+			"title": "Júklenbekte",
+			"description": "Microsoft dúkanı arqalı {FilesName} satıp alıw islep shıǵıwshılardı qollap - quwatlawǵa járdem beredi hám qosımshanı jańa ózgeshelikler hám jaqsılanıwlar menen jańalawdı dawam ettiriw imkaniyatın beredi."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Aldınan kóriw versiyası turaqlı versiya menen birge ornatılıwı múmkin hám jańa  jańalıqlar hám jaqsılanıwlarǵa erte kiriń imkaniyatın beredi."
+		},
+		"self_signed": {
+			"link_text": "klassikalıq ornatıwshı",
+			"description": "Microsoft Storeǵa kiriw múmkinshiligi joq pa? Sınap kórıń: "
+		}
+	}
+}
