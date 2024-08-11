@@ -1,0 +1,146 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Domů",
+		"docs_home": "{FilesName} • Dokumentace",
+		"docs_page": "{FilesName} • Dokumentace - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Vytvoření nejlepšího správce souborů pro systém Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Komunita",
+			"title": "Navrženo a vyvinuto vámi.",
+			"description": "{FilesName} je svobodný software s otevřeným zdrojovým kódem, který spravuje a navrhuje kolektiv stovek přispěvatelů.",
+			"discord": "Připojit se k diskuzi",
+			"docs": "Staňte se přispěvatelem",
+			"contributions": "{amount, plural, =0 {Žádní přispěvatelé} one {# přispěvatel} few {# přispěvatelé} other {# přispěvatelů}}"
+		},
+		"design": {
+			"chip": "Vzhled",
+			"title": "Síla se setkává s krásou.",
+			"description": "Prozkoumejte krásný design v systému Windows. Spravujte všechny své soubory s vyšší produktivitou. Pracujte ve více složkách s kartami. A mnohem více.",
+			"download": "Stáhnout",
+			"learn_more": "Zjistit více"
+		},
+		"features": {
+			"chip": "Funkce",
+			"title": "Už to umí také.",
+			"description": "Integrace cloudových souborů? Karty a více rozvržení? Bohaté náhledy souborů? {FilesName} je vybaven robustními funkcemi, které očekáváte od moderního správce souborů.",
+			"unknown": "Neznámé",
+			"cloud": {
+				"title": "Bezproblémová integrace cloudu",
+				"description": "Vestavěná podpora cloudových disků, jako je OneDrive, Disk Google a iCloud."
+			},
+			"preview": {
+				"title": "Podokno náhledu",
+				"description": "Prohlížení fotografií, videí a dokumentů bez jejich otevírání."
+			},
+			"popup-preview": {
+				"title": "Podpora QuickLook & SeerPro",
+				"description": "Stisknutím mezerníku zobrazíte náhled souborů Office, dokumentů a dalších typů souborů. Tato funkce vyžaduje instalaci aplikace QuickLook nebo SeerPro."
+			},
+			"tags": {
+				"title": "Štítkování souborů a složek",
+				"description": "Uspořádejte a roztřiďte své soubory a složky pomocí barevných štítků."
+			},
+			"tabs": {
+				"title": "Multitask pomocí karet",
+				"description": "Vyhněte se více oknům a udržujte pracovní plochu bez nepořádku pomocí karet."
+			},
+			"columns": {
+				"title": "Sloupcové zobrazení",
+				"description": "Pomocí sloupcového uspořádání můžete rychle procházet různé úrovně souborového systému."
+			},
+			"archives": {
+				"title": "Prohlížení a úprava archivů",
+				"description": "Vytváření a rozbalování archivů včetně souborů zip, WinRar a 7zip."
+			},
+			"git": {
+				"title": "Integrace systému Git",
+				"description": "Snadná správa projektů Git. Vytvářejte nové větve, přepínejte mezi nimi a synchronizujte změny - a to vše bez nutnosti opouštět aplikaci Files."
+			},
+			"dual-pane": {
+				"title": "Dvojitý panel",
+				"description": "Zobrazte a spravujte dvě složky vedle sebe pomocí funkce Dvojitého panelu."
+			},
+			"hashes": {
+				"title": "Haše",
+				"description": "Zobrazení a porovnání hašů souborů v okně vlastností."
+			},
+			"command-palette": {
+				"title": "Paleta příkazů",
+				"description": "Rychlý přístup k příkazům, funkcím a nastavením z palety příkazů."
+			},
+			"remap-key-bindings": {
+				"title": "Vlastní klávesové zkratky",
+				"description": "Zjednodušte si pracovní postupy vytvořením vlastních klávesových zkratek."
+			}
+		},
+		"themes": {
+			"chip": "Motivy",
+			"title": "Zcela osobní.",
+			"description": "Ať je po vašem. {FilesName} má plně přizpůsobitelné uživatelské rozhraní, ať už barvy a materiály níže. Vyzkoušejte vlastní motivy, které jsou zabudovány do {FilesName}, nebo se ponořte přímo do dokumentace a vytvořte si vlastní.",
+			"grey_blue": "Tmavě šedá • Světle modrá",
+			"grey_green": "Modro šedá • Neonově zelená",
+			"purple": "Fialová",
+			"yellow_white": "Žlutá • Bílá",
+			"white_teal": "Chladně bílá • Tmavě hnědá",
+			"sky_blue": "Modré nebe",
+			"select_theme": "Vybrat motiv #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Další příspěvky se objeví již brzy!",
+		"read_more": "Zobrazit více",
+		"share": {
+			"default": "Přirozené sdílení",
+			"url": "Zkopírovat URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS zdroj"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Nebyly nalezeny žádné výsledky",
+		"edit_page": "Upravit tuto stránku"
+	},
+	"footer": {
+		"home": "Domů",
+		"docs": "Dokumentace",
+		"news": "Novinky",
+		"download": "Stáhnout",
+		"contribute": "Přispějte do {FilesName}",
+		"feedback": "Zanechat zpětnou vazbu",
+		"style_guide": "Příručka stylu",
+		"translations": "Překlad",
+		"web_team": "Webový tým"
+	},
+	"navbar": {
+		"home": "Domů",
+		"docs": "Dokumentace",
+		"news": "Novinky",
+		"download": "Stáhnout",
+		"themes": "Motivy",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Stáhnout {FilesName}",
+		"donation_description": "{FilesName} je komunitní projekt, jehož růst a zlepšování závisí na vaší podpoře. Zvažte prosím zakoupení {FilesName} prostřednictvím obchodu Microsoft Store nebo nás podpořte na GitHubu, pokud používáte klasický instalátor.",
+		"donation_button": "Přispět",
+		"microsoft_store": {
+			"title": "Stáhnout Files",
+			"description": "Zakoupením {FilesName} prostřednictvím obchodu Microsoft Store podpoříte vývojáře a umožníte nám pokračovat v aktualizaci aplikace o nové funkce a vylepšení."
+		},
+		"preview": {
+			"title": "Předběžná verze",
+			"description": "Preview verzi lze nainstalovat současně se stabilní verzí a poskytuje předběžný přístup k novým funkcím a vylepšením."
+		},
+		"self_signed": {
+			"link_text": "klasický instalátor",
+			"description": "Nemáte přístup do obchodu Microsoft Store? Zkuste náš "
+		}
+	}
+}
