@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Cap resultat trobat",
-		"edit_page": "Edita aquesta pàgina"
+		"edit_page": "Edita aquesta pàgina",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Inici",
