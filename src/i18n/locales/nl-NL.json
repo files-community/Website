@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Geen resultaten gevonden",
-		"edit_page": "Deze pagina bewerken"
+		"edit_page": "Deze pagina bewerken",
+		"search_docs": "Documentatie zoeken"
 	},
 	"footer": {
 		"home": "Startpagina",

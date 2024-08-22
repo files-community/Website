@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "결과 없음",
-		"edit_page": "이 페이지 편집하기"
+		"edit_page": "이 페이지 편집하기",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "홈",

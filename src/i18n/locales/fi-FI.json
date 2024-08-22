@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Tuloksia ei löytynyt",
-		"edit_page": "Muokkaa tätä sivua"
+		"edit_page": "Muokkaa tätä sivua",
+		"search_docs": "Hae Dokumentaatiosta"
 	},
 	"footer": {
 		"home": "Koti",

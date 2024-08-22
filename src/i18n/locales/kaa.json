@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nátiyjeler tabılmadı",
-		"edit_page": "Bul betke ózgeris kirgiziw"
+		"edit_page": "Bul betke ózgeris kirgiziw",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Bas bet",

@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Ingen resultater funnet",
-		"edit_page": "Rediger denne siden"
+		"edit_page": "Rediger denne siden",
+		"search_docs": "Søk etter dokumentasjon"
 	},
 	"footer": {
 		"home": "Startside",

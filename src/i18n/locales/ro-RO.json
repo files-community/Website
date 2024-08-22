@@ -15,11 +15,11 @@
 			"description": "{FilesName} este gratuit și cu sursă deschisă, întreținut și proiectat de un colectiv de sute de contribuitori.",
 			"discord": "Alătură-te discuției",
 			"docs": "Devino un contribuitor",
-			"contributions": "{amount, plural, =0 {Nici o contribuţie} one {# contribuţie} few {# contribuţii} other {# contribuţii}}"
+			"contributions": "{amount, plural, =0 {Nici o contribuție} one {# contribuție} few {# contribuții} other {# contribuții}}"
 		},
 		"design": {
 			"chip": "Design",
-			"title": "Puterea întâlneşte frumuseţea.",
+			"title": "Puterea întâlnește frumusețea.",
 			"description": "Explorați un design frumos creat pentru Windows. Gestionați-vă toate fișierele cu o productivitate sporită. Lucrați în mai multe foldere cu file. Și multe altele.",
 			"download": "Descărcare",
 			"learn_more": "Aflați mai multe"
@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nu s-au găsit rezultate",
-		"edit_page": "Editați această pagină"
+		"edit_page": "Editați această pagină",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Pornire",
@@ -119,7 +120,7 @@
 	},
 	"navbar": {
 		"home": "Pornire",
-		"docs": "Documentaţie",
+		"docs": "Documentație",
 		"news": "Noutăți",
 		"download": "Descărcare",
 		"themes": "Teme",
