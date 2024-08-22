@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Không có kết quả",
-		"edit_page": "Chỉnh sửa trang này"
+		"edit_page": "Chỉnh sửa trang này",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Trang chủ",
