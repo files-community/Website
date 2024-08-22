@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nebyly nalezeny žádné výsledky",
-		"edit_page": "Upravit tuto stránku"
+		"edit_page": "Upravit tuto stránku",
+		"search_docs": "Vyhledat dokumentaci"
 	},
 	"footer": {
 		"home": "Domů",
