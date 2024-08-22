@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nessun risultato trovato",
-		"edit_page": "Modifica questa pagina"
+		"edit_page": "Modifica questa pagina",
+		"search_docs": "Cerca Documentazione"
 	},
 	"footer": {
 		"home": "Home",
