@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Sonuç bulunamadı",
-		"edit_page": "Bu sayfayı düzenle"
+		"edit_page": "Bu sayfayı düzenle",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Ana sayfa",
