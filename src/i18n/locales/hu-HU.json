@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nincs találat",
-		"edit_page": "Oldal módosítása"
+		"edit_page": "Oldal módosítása",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Kezdőlap",
