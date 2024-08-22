@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "לא נמצאו תוצאות",
-		"edit_page": "ערוך דף זה"
+		"edit_page": "ערוך דף זה",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "בית",
