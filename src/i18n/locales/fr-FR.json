@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Palette de commandes",
 				"description": "Accédez rapidement aux commandes, aux fonctionnalités et aux paramètres depuis la palette de commandes."
+			},
+			"remap-key-bindings": {
+				"title": "Remapper les raccourcis clavier",
+				"description": "Simplifiez votre flux de travail en créant des raccourcis clavier personnalisés."
 			}
 		},
 		"themes": {

@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Befehlspalette",
 				"description": "Schneller Zugriff auf Befehle, Funktionen und Einstellungen über die Befehlspalette."
+			},
+			"remap-key-bindings": {
+				"title": "Tastenzuordnungen umgehen",
+				"description": "Streamline deinen Workflow durch das Erstellen benutzerdefinierter Tastenbelegungen."
 			}
 		},
 		"themes": {

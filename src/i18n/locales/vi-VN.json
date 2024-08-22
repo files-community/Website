@@ -14,20 +14,20 @@
 			"title": "Thiết kế và phát triển bởi những người như bạn.",
 			"description": "{FilesName} là phần mềm miễn phí và mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
 			"discord": "Tham gia thảo luận",
-			"docs": "Trở thành một cộng tác viên",
-			"contributions": "{amount, plural, =0 {Không có đóng góp} other {# đóng góp}}"
+			"docs": "Bắt đầu đóng góp",
+			"contributions": "{amount, plural, =0 {Chưa có đóng góp} other {# đóng góp}}"
 		},
 		"design": {
 			"chip": "Thiết kế",
-			"title": "Sức mạnh kết hợp với sự hoàn mĩ.",
-			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý tất cả tệp của bạn với hiệu suất làm việc được nâng cao. Dễ dàng xử lý các thư mục với hệ thống nhãn và hơn thế nữa.",
+			"title": "Sức mạnh kết hợp với sự hoàn mỹ.",
+			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý các tệp giờ đây trở nên dễ dàng và nhanh chóng. Đơn giản hóa việc xử lý các thư mục với hệ thống thẻ cùng nhiều tính năng khác.",
 			"download": "Tải xuống",
 			"learn_more": "Tìm hiểu thêm"
 		},
 		"features": {
 			"chip": "Tính năng",
 			"title": "Mọi thứ bạn cần ngay trước mắt.",
-			"description": "Tích hợp đám mây? Thẻ cùng nhiều bố cục khác nhau? Xem trước tệp với đầy đủ thông tin? {FilesName} tập hợp tất cả tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"description": "Từ tích hợp lưu trữ đám mây, hệ thống thẻ đến xem trước tệp với đầy đủ thông tin cùng bố cục hiển thị đa dạng. {FilesName} tập hợp mọi tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
 			"unknown": "Không rõ",
 			"cloud": {
 				"title": "Tích hợp đám mây một cách liền mạch",
@@ -42,7 +42,7 @@
 				"description": "Xem trước tệp và tài liệu Office cùng nhiều loại tệp khác chỉ bằng việc nhấn phím cách. Tính năng này yêu cầu cài đặt QuickLook hoặc SeerPro."
 			},
 			"tags": {
-				"title": "Gắn nhãn cho các tệp và thư mục",
+				"title": "Gắn nhãn cho tệp và thư mục",
 				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn cùng màu sắc bạn muốn."
 			},
 			"tabs": {
@@ -55,7 +55,7 @@
 			},
 			"archives": {
 				"title": "Xem và chỉnh sửa các tệp nén",
-				"description": "Tạo và giải nén các tệp nén phổ biến như zip, WinRar và 7zip."
+				"description": "Tạo và giải nén các tệp nén ở định dạng phổ biến như zip, WinRar và 7zip."
 			},
 			"git": {
 				"title": "Tích hợp Git",
@@ -72,11 +72,15 @@
 			"command-palette": {
 				"title": "Bảng lệnh",
 				"description": "Truy cập vào các lệnh, tính năng và cài đặt một cách nhanh chóng từ Bảng lệnh."
+			},
+			"remap-key-bindings": {
+				"title": "Phím tắt tùy chỉnh",
+				"description": "Đồng bộ quy trình làm việc của bạn bằng việc tùy chỉnh tổ hợp phím theo ý muốn."
 			}
 		},
 		"themes": {
 			"chip": "Chủ đề",
-			"title": "Phong cách của riêng bạn.",
+			"title": "Phong cách riêng biệt.",
 			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Hãy thử trải nghiệm các chủ đề có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
@@ -124,19 +128,19 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "{FilesName} là dự án hướng cộng đồng và dựa vào chính cộng đồng để cải thiện và phát triển. Hãy cân nhắc việc mua {FilesName} trên Microsoft Store hoặc ủng hộ chúng tôi trên GitHub nếu bạn sử dụng trình cài đặt cổ điển.",
+		"donation_description": "{FilesName} là dự án hướng đến cộng đồng để cải thiện và phát triển. Nếu bạn muốn ủng hộ, hãy mua {FilesName} từ Microsoft Store hoặc ủng hộ qua GitHub nếu bạn sử dụng trình cài đặt thông thường.",
 		"donation_button": "Ủng hộ",
 		"microsoft_store": {
 			"title": "Tải xuống Files",
-			"description": "Mua {FilesName} trên Microsoft Store để ủng hộ các nhà phát triển và làm động lực để chúng tôi tiếp tục duy trì ứng dụng với các cải thiện và tính năng mới."
+			"description": "Mua {FilesName} từ Microsoft Store để ủng hộ các nhà phát triển và giúp chúng tôi tiếp tục bổ sung các cải thiện và tính năng mới."
 		},
 		"preview": {
 			"title": "Tải bản Insider Preview",
 			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
-			"link_text": "trình cài đặt cổ điển của chúng tôi",
-			"description": "Không thể truy cập vào Microsoft Store? Hãy thử "
+			"link_text": "trình cài đặt thông thường",
+			"description": "Không thể truy cập vào Microsoft Store? Hãy sử dụng "
 		}
 	}
 }

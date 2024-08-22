@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Paletă de comenzi",
 				"description": "Accesați rapid comenzi, caracteristici și setări din Paleta de Comenzi."
+			},
+			"remap-key-bindings": {
+				"title": "Reamintire legări cheie",
+				"description": "Streamline you workflow by creating custom key binding. (Automatic Copy)"
 			}
 		},
 		"themes": {

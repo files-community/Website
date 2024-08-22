@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "コマンド パレット",
 				"description": "コマンド パレットからコマンド、機能、設定にすばやくアクセスできます。"
+			},
+			"remap-key-bindings": {
+				"title": "ショートカット キーのカスタマイズ",
+				"description": "あなた専用のショートカット キーを定義して作業を効率化しましょう。"
 			}
 		},
 		"themes": {

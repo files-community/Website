@@ -21,7 +21,7 @@
 			"chip": "Disseny",
 			"title": "La potència es troba amb la bellesa.",
 			"description": "Explora un bell disseny pensat per a Windows. Gestiona tots els teus fitxers amb una productivitat incrementada. Treballa en diverses carpetes amb pestanyes. I molt més.",
-			"download": "Descarrega",
+			"download": "Baixa",
 			"learn_more": "Aprèn més"
 		},
 		"features": {
@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Paleta de Comandes",
 				"description": "Accedeix ràpidament a comandes, funcions i configuracions des de la Paleta de Comandes."
+			},
+			"remap-key-bindings": {
+				"title": "Torna a assignar les combinacions de tecles",
+				"description": "Optimitza el teu flux de treball creant combinacions de tecles personalitzades."
 			}
 		},
 		"themes": {
@@ -106,7 +110,7 @@
 		"home": "Inici",
 		"docs": "Documentació",
 		"news": "Notícies",
-		"download": "Descarregar",
+		"download": "Baixa",
 		"contribute": "Contribueix a {FilesName}",
 		"feedback": "Proporciona retroacció",
 		"style_guide": "Guia d'estil",
@@ -117,17 +121,17 @@
 		"home": "Inici",
 		"docs": "Documentació",
 		"news": "Notícies",
-		"download": "Descarrega",
+		"download": "Baixa",
 		"themes": "Temes",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"title": "Descarrega {FilesName}",
+		"title": "Baixa {FilesName}",
 		"donation_description": "{FilesName} és un projecte impulsat per la comunitat que depèn del vostre suport per créixer i millorar. Si us plau, considereu adquirir {FilesName} a través de la Microsoft Store o donar-nos suport a GitHub si feu servir l'instal·lador clàssic.",
 		"donation_button": "Donar",
 		"microsoft_store": {
-			"title": "Descarrega Files",
+			"title": "Baixa el Files",
 			"description": "Adquirir {FilesName} a través de la Microsoft Store ajuda a donar suport als desenvolupadors i ens permet continuar actualitzant l'aplicació amb noves funcionalitats i millores."
 		},
 		"preview": {

@@ -18,31 +18,31 @@
 			"contributions": "{amount, plural, =0 {Não há contribuições} one {# contribuição} other {# contribuições}}"
 		},
 		"design": {
-			"chip": "Design",
-			"title": "O poder encontra a beleza.",
-			"description": "Explore um belo design do Windows. Gerencie todos os seus arquivos com maior produtividade. Trabalhe entre várias pastas com abas. E muito mais.",
-			"download": "Download",
-			"learn_more": "Saiba mais"
+			"chip": "Projetar",
+			"title": "O poder encontra beleza.",
+			"description": "Explore um belo design de Windows. Gerencie todos os seus arquivos com maior produtividade. Trabalhe entre várias pastas com abas. E muito mais.",
+			"download": "BAIXAR",
+			"learn_more": "Mais informações"
 		},
 		"features": {
 			"chip": "Funcionalidades",
 			"title": "Já faz isso.",
-			"description": "Integração de arquivos na nuvem? Guias e vários layouts? Visualizações avançadas de arquivos? {FilesName} oferece recursos robustos que você espera de um gerenciador de arquivos moderno.",
+			"description": "Integração de arquivos na nuvem? Abas e vários layouts? Pré-visualização de arquivos ricos? {FilesName} possui recursos robustos que você espera de um gerenciador de arquivos moderno.",
 			"unknown": "Desconhecido",
 			"cloud": {
-				"title": "Integração perfeita com a nuvem",
+				"title": "Integração para nuvem ininterrupta",
 				"description": "Suporte integrado para unidades em nuvem como OneDrive, Google Drive e iCloud."
 			},
 			"preview": {
 				"title": "Painel de pré-visualização",
-				"description": "Pré-visualize fotos, vídeos e documentos sem precisar abrir."
+				"description": "Pré-visualize fotos, vídeos e documentos sem abri-los."
 			},
 			"popup-preview": {
 				"title": "Suporte ao QuickLook & SeerPro",
-				"description": "Visualize arquivos do Office, documentos e outros tipos de arquivo pressionando a barra de espaço. Esta funcionalidade requer a instalação do QuickLook ou SeerPro."
+				"description": "Visualize arquivos do escritório, documentos e outros tipos de arquivo pressionando a barra de espaço. Esta funcionalidade requer a instalação do QuickLook ou SeerPro."
 			},
 			"tags": {
-				"title": "Tags em arquivos e pastas",
+				"title": "Marcar arquivos e pastas",
 				"description": "Organize e classifique seus arquivos e pastas com tags coloridas."
 			},
 			"tabs": {
@@ -59,7 +59,7 @@
 			},
 			"git": {
 				"title": "Integração Git",
-				"description": "Gerencie facilmente seus projetos Git. Crie novas branches, alterne entre eles e sincronize suas alterações - tudo sem sair do Files."
+				"description": "Gerencie facilmente seus projetos Git. Crie novos branches, alterne entre eles e sincronize suas alterações - tudo sem sair dos Arquivos."
 			},
 			"dual-pane": {
 				"title": "Painel duplo",
@@ -67,76 +67,80 @@
 			},
 			"hashes": {
 				"title": "Hashes",
-				"description": "Ver e comparar arquivos com hashes pela janela de propriedades."
+				"description": "Ver e comparar arquivos com hashes da janela de propriedades."
 			},
 			"command-palette": {
-				"title": "Paleta de comandos",
-				"description": "Acesso rápido a comandos, recursos, e configurações dentro da Paleta de Comando."
+				"title": "Paleta de comando",
+				"description": "Acesso rápido a comandos, recursos, e configurações da Paleta de Comando."
+			},
+			"remap-key-bindings": {
+				"title": "Remapar ligações de teclas",
+				"description": "Agilize seu fluxo de trabalho criando chaves personalizadas."
 			}
 		},
 		"themes": {
 			"chip": "Temas",
 			"title": "Distintamente pessoal.",
-			"description": "Faça do seu jeito. {FilesName} possui uma interface de usuário totalmente personalizável, direto às cores e materiais. Experimente os temas personalizados que são incorporados no {FilesName} ou mergulhe diretamente na documentação e crie os seus próprios temas.",
+			"description": "Entenda da assim mesmo. {FilesName} possui uma interface de usuário totalmente personalizável, direto às cores e materiais. Experimente os temas personalizados que são incorporados no {FilesName} ou mergulhe diretamente na documentação e crie os seus próprios temas.",
 			"grey_blue": "Cinza Escuro • Azul Claro",
-			"grey_green": "Cinza Azul • Verde Neon",
+			"grey_green": "Cinza Azul • Néon Green",
 			"purple": "Roxo",
 			"yellow_white": "Amarelo • Branco",
 			"white_teal": "Branco fresco • Azul-petróleo",
-			"sky_blue": "Azul celeste",
+			"sky_blue": "Azul Céu",
 			"select_theme": "Selecionar tema #{index}"
 		}
 	},
 	"blog": {
 		"coming_soon": "Mais postagens em breve!",
-		"read_more": "Leia Mais",
+		"read_more": "Ler Mais",
 		"share": {
-			"default": "Compartilhamento nativo",
+			"default": "Compartilhamento Nativo",
 			"url": "Copiar URL",
 			"tweet": "X",
-			"facebook": "Facebook",
+			"facebook": "Siga-nos",
 			"rss": "Feed RSS"
 		}
 	},
 	"docs": {
 		"autocomplete_empty": "Nenhum resultado encontrado",
-		"edit_page": "Editar essa página"
+		"edit_page": "Editar esta página"
 	},
 	"footer": {
-		"home": "Página inicial",
+		"home": "Residencial",
 		"docs": "Documentação",
-		"news": "Novidades",
-		"download": "Download",
+		"news": "Notícias",
+		"download": "BAIXAR",
 		"contribute": "Contribua para {FilesName}",
-		"feedback": "Enviar feedback",
-		"style_guide": "Guia de Estilos",
+		"feedback": "Dar feedback",
+		"style_guide": "Style Guide",
 		"translations": "Traduções",
 		"web_team": "Equipe Web"
 	},
 	"navbar": {
-		"home": "Página inicial",
+		"home": "Residencial",
 		"docs": "Documentação",
-		"news": "Novidades",
-		"download": "Download",
+		"news": "Notícias",
+		"download": "BAIXAR",
 		"themes": "Temas",
 		"discord": "Discord",
-		"github": "GitHub"
+		"github": "Github"
 	},
 	"download": {
-		"title": "Download {FilesName}",
+		"title": "Baixar {FilesName}",
 		"donation_description": "{FilesName} é um projeto orientado para a comunidade que depende do seu apoio para crescer e melhorar. Considere comprar {FilesName} através da Microsoft Store ou apoiar-nos no GitHub se você usar o instalador clássico.",
-		"donation_button": "Faça uma doação",
+		"donation_button": "Doar",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Baixar arquivos",
 			"description": "Comprar o {FilesName} através da Microsoft Store ajuda a apoiar os desenvolvedores e nos permite continuar atualizando o aplicativo com novos recursos e melhorias."
 		},
 		"preview": {
-			"title": "Download Insider Preview",
-			"description": "A versão de pré-visualização pode ser instalada com o lançamento estável e fornece acesso antecipado a novos recursos e melhorias."
+			"title": "Baixar visualização interna",
+			"description": "A versão de pré-visualização pode ser instalada juntamente com o lançamento estável e fornece acesso antecipado a novos recursos e melhorias."
 		},
 		"self_signed": {
 			"link_text": "instalador clássico",
-			"description": "Não tem acesso à Microsoft Store? Experimente o nosso "
+			"description": "Não tem acesso à Microsoft Store? Experimente nosso "
 		}
 	}
 }

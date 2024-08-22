@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Paleta poleceń",
 				"description": "Szybki dostęp do komend, funkcji oraz ustawień za pomocą palety poleceń."
+			},
+			"remap-key-bindings": {
+				"title": "Remapuj powiązania kluczy",
+				"description": "Usprawnij workflow, tworząc niestandardowe powiązania z kluczami."
 			}
 		},
 		"themes": {

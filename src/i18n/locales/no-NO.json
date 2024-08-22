@@ -4,7 +4,7 @@
 		"home": "{FilesName} • Startside",
 		"docs_home": "{FilesName} • Dokumentasjon",
 		"docs_page": "{FilesName} • Dokumentasjon - {title}",
-		"blog_home": "{FilesName} • Blog",
+		"blog_home": "{FilesName} • Blogg",
 		"blog_page": "{FilesName} • {title}",
 		"description": "Bygger den beste filutforskeren for Windows."
 	},
@@ -18,7 +18,7 @@
 			"contributions": "{amount, plural, =0 {Ingen bidrag} one {# bidrag} other {# bidrag}}"
 		},
 		"design": {
-			"chip": "Design",
+			"chip": "Utforming",
 			"title": "Makt møter skjønnhet.",
 			"description": "Utforsk et vakkert Windows design. Administrer alle dine filer med økt produktivitet. Gå mellom flere mapper med faner. Og masse mer.",
 			"download": "Last ned",
@@ -31,47 +31,51 @@
 			"unknown": "Ukjent",
 			"cloud": {
 				"title": "Sømløs sky-integrasjon",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "Innebygd støtte for skytjenesten som OneDrive, Google Drive og iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them."
+				"title": "Forhåndsvis panel",
+				"description": "Forhåndsvisning av bilder, videoer og dokumenter uten å åpne dem."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"title": "QuickLook og SeerPro støtte",
+				"description": "Forhåndsvis kontorfiler, dokumenter og andre filtyper ved å trykke på mellomrom og denne funksjonen krever installasjon av QuickLook eller SeerPro."
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"title": "Tagg filer og mapper",
+				"description": "Organiser og sorter filene og mappene dine med fargede emneord."
 			},
 			"tabs": {
 				"title": "Multitask med faner",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "Unngå flere vinduer og hold skrivebordet fritt med faner."
 			},
 			"columns": {
 				"title": "Kolonne visning",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"description": "Raskt navigerer gjennom forskjellige nivåer av filsystemet med kolonneutformingen."
 			},
 			"archives": {
 				"title": "Vis og rediger arkiver",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Opprett og pakk ut arkiv inkludert zip, WinRar, og 7zip."
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"title": "Git integrasjon",
+				"description": "Administrere Git prosjektene dine enkelt. Opprett nye avdelinger, bytt mellom dem og synkroniser endringene - alle uten å forlate filer."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "Dobbel panel",
+				"description": "Se og administrer to mapper ved side av den dobbelt Pan-funksjonen."
 			},
 			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
+				"title": "Hash",
+				"description": "Vis og sammenlign filhashes fra egenskapsvinduet."
 			},
 			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
+				"title": "Kommandobalett palett",
+				"description": "Få tilgang til kommandoer, funksjoner og innstillinger fra kommandoens palette."
+			},
+			"remap-key-bindings": {
+				"title": "Bindinger til omkamp nøkkel",
+				"description": "Strøm dine arbeidsflyt ved å lage egendefinerte hurtigtaster"
 			}
 		},
 		"themes": {
@@ -91,9 +95,9 @@
 		"coming_soon": "Flere poster kommer snart!",
 		"read_more": "Les mer",
 		"share": {
-			"default": "Native sharing",
-			"url": "Copy URL",
-			"tweet": "X",
+			"default": "Innebygd deling",
+			"url": "Kopier URL",
+			"tweet": "Ti",
 			"facebook": "Facebook",
 			"rss": "RSS Feed"
 		}
@@ -119,15 +123,15 @@
 		"news": "Nyheter",
 		"download": "Nedlasting",
 		"themes": "Temaer",
-		"discord": "Discord",
+		"discord": "Splid",
 		"github": "GitHub"
 	},
 	"download": {
 		"title": "Last ned {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_description": "{FilesName} er et samfunns-drevet prosjekt som avhenger av din støtte til å vokse og bli bedre. Vurder å kjøpe {FilesName} gjennom Microsoft Store eller støtte oss på GitHub dersom du bruker den klassiske installatøren.",
 		"donation_button": "Doner",
 		"microsoft_store": {
-			"title": "Download Files",
+			"title": "Last ned filer",
 			"description": "Kjøp av {FilesName} gjennom Microsoft Store hjelper oss med å støtte utviklerne og lar oss fortsette å oppdatere appen med nye funksjoner og forbedringer."
 		},
 		"preview": {

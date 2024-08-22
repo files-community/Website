@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "명령 팔레트",
 				"description": "명령 팔레트에서 명령어, 기능, 설정에 빠르게 접근하세요."
+			},
+			"remap-key-bindings": {
+				"title": "단축키 재설정",
+				"description": "사용자 지정 단축키를 생성하여 워크플로우를 능률화하세요."
 			}
 		},
 		"themes": {

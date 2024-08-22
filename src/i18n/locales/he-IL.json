@@ -31,7 +31,7 @@
 			"unknown": "לא ידוע",
 			"cloud": {
 				"title": "חיבור חלק עם הענן",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+				"description": "תמיכה מובנית בשירותי ענן כמו OneDrive, Google Drive ו-iCloud."
 			},
 			"preview": {
 				"title": "Preview pane",
@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Command Palette",
 				"description": "Quickly access commands, features, and settings from the Command Palette."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
 			}
 		},
 		"themes": {

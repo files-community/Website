@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Palette dei Comandi",
 				"description": "Accedi rapidamente a comandi, funzioni e impostazioni dalla Palette dei Comandi."
+			},
+			"remap-key-bindings": {
+				"title": "Associazioni a tasti Remap",
+				"description": "Semplifica il flusso di lavoro creando combinazioni di tasti personalizzate."
 			}
 		},
 		"themes": {
