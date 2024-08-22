@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Inga resultat hittades",
-		"edit_page": "Redigera denna sida"
+		"edit_page": "Redigera denna sida",
+		"search_docs": "Sök dokumentation"
 	},
 	"footer": {
 		"home": "Hem",
