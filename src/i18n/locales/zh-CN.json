@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "未找到任何结果",
-		"edit_page": "编辑此页面"
+		"edit_page": "编辑此页面",
+		"search_docs": "搜索文档"
 	},
 	"footer": {
 		"home": "主页",
