@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Ingen resultater fundet",
-		"edit_page": "Rediger denne side"
+		"edit_page": "Rediger denne side",
+		"search_docs": "Søg Dokumentation"
 	},
 	"footer": {
 		"home": "Hjem",
