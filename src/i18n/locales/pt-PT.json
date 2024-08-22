@@ -104,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nenhum resultado encontrado",
-		"edit_page": "Editar esta página"
+		"edit_page": "Editar esta página",
+		"search_docs": "Pesquisar documentação"
 	},
 	"footer": {
 		"home": "Residencial",
