@@ -13,11 +13,11 @@
 		},
 		{
 			name: "TheOnlyTails",
-			link: "https://www.theonlytails.com/",
+			link: "https://theonlytails.com/",
 		},
 		{
 			name: "Marcel Wagner",
-			link: "https://github.com/chingucoding/",
+			link: "https://github.com/marcelwgn/",
 		},
 		{
 			name: "Michael West",
