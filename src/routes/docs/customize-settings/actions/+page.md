@@ -1280,6 +1280,14 @@ Navigates up one directory
 "Alt+Up"
 ```
 
+
+### Navigate home
+
+Navigates to the home page
+
+**Action name:** `NavigateHome`
+
+
 ## Other
 
 
