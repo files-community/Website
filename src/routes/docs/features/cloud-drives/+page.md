@@ -84,3 +84,7 @@ https://owncloud.com/
 </InfoBar>
 
 https://www.lucidlink.com/
+
+## Infomaniak kDrive
+
+https://www.infomaniak.com/kdrive

@@ -738,6 +738,19 @@ Opens properties window
 ```
 
 
+### Open File Explorer properties
+
+Opens File Explorer properties window
+
+**Action name:** `OpenClassicProperties`
+
+**Default bindings:**
+
+```json
+"AltShift+Enter"
+```
+
+
 ### Open settings
 
 Opens settings
@@ -1266,6 +1279,14 @@ Navigates up one directory
 ```json
 "Alt+Up"
 ```
+
+
+### Navigate home
+
+Navigates to the home page
+
+**Action name:** `NavigateHome`
+
 
 ## Other
 
