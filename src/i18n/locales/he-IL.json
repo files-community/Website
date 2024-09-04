@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • בית",
+		"docs_home": "{FilesName} • תיעוד",
+		"docs_page": "{FilesName} • תיעוד - {title}",
+		"blog_home": "{FilesName} • בלוג",
+		"blog_page": "{FilesName} • {title}",
+		"description": "בונים את מנהל הקבצים הטוב ביותר לווינדוס."
+	},
+	"home": {
+		"community": {
+			"chip": "קהילה",
+			"title": "מעוצב ומפותח על ידיכם.",
+			"description": "{FilesName} היא תוכנה חופשית עם קוד פתוח, המתוחזקת ומעוצבת על ידי אוסף של מאות תורמים.",
+			"discord": "הצטרף לדיון",
+			"docs": "הצטרף לתרומה",
+			"contributions": "{amount, plural, =0 {אף תרומות} one {# תרומה} two {# תרומות} many {# תרומות} other {# תרומות}}"
+		},
+		"design": {
+			"chip": "עיצוב",
+			"title": "כוח פוגש יופי.",
+			"description": "גלה עיצוב יפהפה עבור ווינדוס. נהל את כל הקבצים שלך עם פרודקטיביות מוגברת. עבוד לאורך תיקיות רבות עם כרטיסיות. וכל כך הרבה יותר.",
+			"download": "הורדה",
+			"learn_more": "ללמוד עוד"
+		},
+		"features": {
+			"chip": "תכונות",
+			"title": "זה כבר עושה את זה.",
+			"description": "שילוב עם שירותי ענן? כרטיסיות ומערכים שונים? תצוגות מקדימות של קבצים? ל{FilesName} יש את זה, עם תכונות שאתם מצפים להן ממנהל קבצים מודרני.",
+			"unknown": "לא ידוע",
+			"cloud": {
+				"title": "חיבור חלק עם הענן",
+				"description": "תמיכה מובנית בשירותי ענן כמו OneDrive, Google Drive ו-iCloud."
+			},
+			"preview": {
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro support",
+				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			},
+			"tags": {
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
+			},
+			"tabs": {
+				"title": "עבוד במקביל עם כרטיסיות",
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+			},
+			"columns": {
+				"title": "תצוגת טורים",
+				"description": "Quickly navigate through different levels of the file system using the column layout."
+			},
+			"archives": {
+				"title": "צפו וערכו קבצי ארכיון",
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			},
+			"git": {
+				"title": "חיבור לגיט",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
+			},
+			"command-palette": {
+				"title": "Command Palette",
+				"description": "Quickly access commands, features, and settings from the Command Palette."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
+			}
+		},
+		"themes": {
+			"chip": "ערכות נושא",
+			"title": "אישי וייחודי.",
+			"description": "עשו את זה בדרככם. {FilesName} מציג ממשק משתמש הניתן להתאמה אישית מוחלטת, עד לצבעים והחומרים. נסו ערכות נושא שבאות עם {FilesName} או צללו אל תוך התיעוד וצרו ערכות משלכם.",
+			"grey_blue": "אפור כהה • תכלת",
+			"grey_green": "אפור כחלחל • ירוק נאון",
+			"purple": "סגול",
+			"yellow_white": "צהוב • לבן",
+			"white_teal": "לבן צונן • כחלחל כהה",
+			"sky_blue": "כחול שמיים",
+			"select_theme": "בחר ערכת נושא #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "עוד הודעות בקרוב!",
+		"read_more": "קרא עוד",
+		"share": {
+			"default": "שיתוף מובנה",
+			"url": "העתקת כתובת URL",
+			"tweet": "X",
+			"facebook": "פייסבוק",
+			"rss": "פיד RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "לא נמצאו תוצאות",
+		"edit_page": "ערוך דף זה",
+		"search_docs": "Search Documentation"
+	},
+	"footer": {
+		"home": "בית",
+		"docs": "תיעוד",
+		"news": "חדשות",
+		"download": "הורדה",
+		"contribute": "תרמו ל{FilesName}",
+		"feedback": "תן משוב",
+		"style_guide": "מדריך עיצוב",
+		"translations": "תרגום",
+		"web_team": "צוות אתר"
+	},
+	"navbar": {
+		"home": "בית",
+		"docs": "תיעוד",
+		"news": "חדשות",
+		"download": "הורדה",
+		"themes": "ערכות נושא",
+		"discord": "דיסקורד",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "הורידו את {FilesName}",
+		"donation_description": "{FilesName} הוא פרוייקט המונע על ידי הקהילה שזקוק לתמיכה שלכם כדי לגדול ולהשתפר. בבקשה תשקלו לקנות את {FilesName} דרך החנות של Microsoft או תתמוך בנו בGitHub אם אתם משתמשים במתקין הקלאסי.",
+		"donation_button": "תרומה",
+		"microsoft_store": {
+			"title": "Download Files",
+			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "הגרסה המוקדמת ניתנת להתקנה לצד הגרסה היציבה ומספקת גישה מוקדמת לתכונות ושיפורים חדשים."
+		},
+		"self_signed": {
+			"link_text": "המתקין הקלאסי",
+			"description": "אין גישה לMicrosoft Store? נסו את "
+		}
+	}
+}

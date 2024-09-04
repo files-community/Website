@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • ホーム",
+		"docs_home": "{FilesName} • ドキュメント",
+		"docs_page": "{FilesName} • ドキュメント - {title}",
+		"blog_home": "{FilesName} • ブログ",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Windows のための最高のファイル マネージャーを作る"
+	},
+	"home": {
+		"community": {
+			"chip": "コミュニティ",
+			"title": "デザインと開発はあなたの手で",
+			"description": "{FilesName} はフリーでオープン ソースのソフトウェアです。何百人もの貢献者の共同作業によってメンテナンスおよびデザインされています。",
+			"discord": "議論に参加する",
+			"docs": "開発に貢献する",
+			"contributions": "{amount, plural, =0 {貢献なし} one {# 回の貢献} other {# 回の貢献}}"
+		},
+		"design": {
+			"chip": "デザイン",
+			"title": "機能性と美しさの融合",
+			"description": "Windows ファーストの美しいデザインをあなたに。高い生産性で、あなたのファイルを管理。複数のタブを使い、フォルダーを行き来して作業。その他にも魅力はたくさん。",
+			"download": "ダウンロード",
+			"learn_more": "もっと詳しく"
+		},
+		"features": {
+			"chip": "機能",
+			"title": "欲しい機能はもうあります",
+			"description": "クラウド ドライブとの統合、タブ切り替え、画面分割機能、頼れるファイル プレビュー。{FilesName} は、現代のファイル マネージャーに期待される強力な機能を兼ね備えています。",
+			"unknown": "不明",
+			"cloud": {
+				"title": "シームレスなクラウド連携",
+				"description": "OneDrive、Google Drive、iCloudなどのクラウドドライブに対応しています。"
+			},
+			"preview": {
+				"title": "プレビュー ウィンドウ",
+				"description": "写真、ビデオ、ドキュメントを開かずにプレビューできます。"
+			},
+			"popup-preview": {
+				"title": "QuickLook と SeerPro のサポート",
+				"description": "スペース バーを押して Office ファイル、ドキュメント、およびその他のファイル タイプをプレビューできます。この機能を利用するには QuickLook または SeerPro のインストールが必要です。"
+			},
+			"tags": {
+				"title": "ファイルとフォルダーにタグ付け",
+				"description": "色付きタグでファイルやフォルダーを整理し、並べ替えることができます。"
+			},
+			"tabs": {
+				"title": "複数のタブでマルチタスク",
+				"description": "タブで複数のウインドウをまとめて、デスクトップをスッキリさせることができます。"
+			},
+			"columns": {
+				"title": "カラム ビュー",
+				"description": "カラム レイアウトを使用して、異なる階層のファイルにすばやくアクセスできます。"
+			},
+			"archives": {
+				"title": "アーカイブの表示と編集",
+				"description": "zip、rar、7-zip を含むアーカイブの作成と展開ができます。"
+			},
+			"git": {
+				"title": "Git との統合",
+				"description": "Git プロジェクトを簡単に管理できます。ブランチの作成や切り替え、変更の同期がすべて Files 上で行えます。"
+			},
+			"dual-pane": {
+				"title": "デュアル ペイン",
+				"description": "デュアル ペインを使用することで、2つのフォルダーを並べて表示、管理できます。"
+			},
+			"hashes": {
+				"title": "ハッシュ値",
+				"description": "プロパティ ウィンドウからファイルのハッシュ値を表示して比較することができます。"
+			},
+			"command-palette": {
+				"title": "コマンド パレット",
+				"description": "コマンド パレットからコマンド、機能、設定にすばやくアクセスできます。"
+			},
+			"remap-key-bindings": {
+				"title": "ショートカット キーのカスタマイズ",
+				"description": "あなた専用のショートカット キーを定義して作業を効率化しましょう。"
+			}
+		},
+		"themes": {
+			"chip": "テーマ",
+			"title": "個性を出そう",
+			"description": "あなたの思い通りにしましょう。{FilesName} は色から細かい見た目まで、さまざまにカスタマイズできます。{FilesName} に標準搭載されたテーマを試したり、ドキュメントを参照してカスタム テーマを作ったり、自由自在にカスタマイズしてみましょう。",
+			"grey_blue": "ダーク グレー • ライト ブルー",
+			"grey_green": "ブルー グレー • ネオン グリーン",
+			"purple": "パープル",
+			"yellow_white": "イエロー・ホワイト",
+			"white_teal": "クール ホワイト • ダーク ティール",
+			"sky_blue": "スカイ ブルー",
+			"select_theme": "テーマ #{index} を選択"
+		}
+	},
+	"blog": {
+		"coming_soon": "その他の投稿は近日公開予定です!",
+		"read_more": "もっと読む",
+		"share": {
+			"default": "システムの共有機能",
+			"url": "URL をコピー",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS フィード"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "結果が見つかりません",
+		"edit_page": "このページを編集",
+		"search_docs": "ドキュメントの検索"
+	},
+	"footer": {
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"download": "ダウンロード",
+		"contribute": "{FilesName} に貢献する",
+		"feedback": "フィードバックを送信",
+		"style_guide": "コーディング規約",
+		"translations": "翻訳",
+		"web_team": "Web チーム"
+	},
+	"navbar": {
+		"home": "ホーム",
+		"docs": "ドキュメント",
+		"news": "ニュース",
+		"download": "ダウンロード",
+		"themes": "テーマ",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "{FilesName} をダウンロード",
+		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から {FilesName} を購入するか、クラシック インストーラーを使用する場合は GitHub でサポートすることをぜひ検討してください。",
+		"donation_button": "寄付",
+		"microsoft_store": {
+			"title": "Files をダウンロード",
+			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "プレビュー版は安定版とともにインストールでき、新機能や改善点への早期アクセスを提供します。"
+		},
+		"self_signed": {
+			"link_text": "クラシック インストーラーをダウンロード",
+			"description": "Microsoft Store にアクセスできませんか? "
+		}
+	}
+}

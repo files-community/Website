@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Strona główna",
+		"docs_home": "{FilesName} • Dokumentacja",
+		"docs_page": "{FilesName} • Dokumentacja - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Tworzymy najlepszy menedżer plików dla systemu Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Społeczność",
+			"title": "Zaprojektowany i opracowany przez Ciebie.",
+			"description": "{FilesName} to darmowy i otwartoźródłowy program, zaprojektowany i utrzymywany wspólnie przez setki wspierających.",
+			"discord": "Dołącz do dyskusji",
+			"docs": "Zostań współtwórcą",
+			"contributions": "{amount, plural, =0 {Brak udziałów} one {# udział} few {# udziałów} many {# udziałów} other {# udział}}"
+		},
+		"design": {
+			"chip": "Wygląd",
+			"title": "Siła spotyka piękno.",
+			"description": "Odkrywaj piękny design. Zarządzaj swoimi plikami ze zwiększoną produktywnością. Pracuj na wielu folderach za pomocą kart. I o wiele więcej.",
+			"download": "Pobierz",
+			"learn_more": "Dowiedz się więcej"
+		},
+		"features": {
+			"chip": "Funkcje",
+			"title": "To już robi.",
+			"description": "Integracja z chmurą? Karty i wiele widoków? Szczegółowy podgląd plików? {FilesName} potrafi to wszystko dzięki zaawansowanym funkcjonalnościom, których oczekujesz od nowoczesnego menedżera plików.",
+			"unknown": "Nieznane",
+			"cloud": {
+				"title": "Transparentna integracja z chmurą",
+				"description": "Wbudowane wsparcie dla dysków w chmurze, takich jak OneDrive, Dysk Google oraz iCloud."
+			},
+			"preview": {
+				"title": "Widok podglądu",
+				"description": "Podglądaj obrazy, filmy oraz dokumenty bez ich otwierania."
+			},
+			"popup-preview": {
+				"title": "Wsparcie dla QuickLook & SeerPro",
+				"description": "Podglądaj pliki pakietu Office, dokumenty i inne rodzaje plików wciskając przycisk spacji. Ta funkcja wymaga zainstalowanego QuickLook lub SeerPro."
+			},
+			"tags": {
+				"title": "Taguj pliki i foldery",
+				"description": "Organizuj i sortuj swoje pliki i foldery za pomocą kolorowych tagów."
+			},
+			"tabs": {
+				"title": "Wielozadaniowość za pomocą kart",
+				"description": "Uniknij wielu okien i utrzymuj porządek na pulpicie za pomocą kart."
+			},
+			"columns": {
+				"title": "Widok kolumn",
+				"description": "Szybko nawiguj między wieloma poziomami systemu plików za pomocą widoku kolumn."
+			},
+			"archives": {
+				"title": "Wyświetlaj i edytuj archiwa",
+				"description": "Twórz i rozpakowuj archiwa, w tym zip, WinRar oraz 7-zip."
+			},
+			"git": {
+				"title": "Integracja z Git",
+				"description": "Z łatwością zarządzaj swoimi repozytoriami Git. Twórz nowe gałęzie, przełączaj je i synchronizuj swoje zmiany — to wszystko bez wychodzenia z Files."
+			},
+			"dual-pane": {
+				"title": "Podwójny widok",
+				"description": "Otwórz i zarządzaj dwoma folderami obok siebie z funkcją podwójnego widoku."
+			},
+			"hashes": {
+				"title": "Skróty",
+				"description": "Przeglądaj i porównuj skróty plików za pomocą okna właściwości."
+			},
+			"command-palette": {
+				"title": "Paleta poleceń",
+				"description": "Szybki dostęp do komend, funkcji oraz ustawień za pomocą palety poleceń."
+			},
+			"remap-key-bindings": {
+				"title": "Remapuj powiązania kluczy",
+				"description": "Usprawnij workflow, tworząc niestandardowe powiązania z kluczami."
+			}
+		},
+		"themes": {
+			"chip": "Motywy",
+			"title": "Niezwykle osobisty.",
+			"description": "Zrób to po swojemu. {FilesName} posiada w pełni konfigurowalny interfejs, włącznie z kolorami i materiałami. Wypróbuj motywy wbudowane w {FilesName} lub sięgnij do dokumentacji i stwórz swój własny.",
+			"grey_blue": "Ciemnoszary • Jasnoniebieski",
+			"grey_green": "Niebiesko-szary • Neonowa Zieleń",
+			"purple": "Fioletowy",
+			"yellow_white": "Żółty • Biały",
+			"white_teal": "Zimna biel",
+			"sky_blue": "Niebieskie Niebo",
+			"select_theme": "Wybierz motyw #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Więcej postów już wkrótce!",
+		"read_more": "Przeczytaj więcej",
+		"share": {
+			"default": "Natywne udostępnianie",
+			"url": "Skopiuj adres",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Aktualności RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Brak wyników",
+		"edit_page": "Edytuj tę stronę",
+		"search_docs": "Szukaj dokumentacji"
+	},
+	"footer": {
+		"home": "Strona główna",
+		"docs": "Dokumentacja",
+		"news": "Aktualności",
+		"download": "Pobierz",
+		"contribute": "Przyczyń się do {FilesName}",
+		"feedback": "Podziel się opinią",
+		"style_guide": "Siatka styli",
+		"translations": "Tłumaczenia",
+		"web_team": "Zespół sieciowy"
+	},
+	"navbar": {
+		"home": "Strona główna",
+		"docs": "Dokumentacja",
+		"news": "Aktualności",
+		"download": "Pobierz",
+		"themes": "Motywy",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Pobierz {FilesName}",
+		"donation_description": "{FilesName} jest projektem kierowanym przez społeczność, który zależy od Twojego wsparcia, aby rozwijać się i ulepszać. Proszę rozważyć zakup {FilesName} przez Microsoft Store lub wsparcie nas na GitHub, jeśli używasz klasycznego instalatora.",
+		"donation_button": "Wspomóż nas",
+		"microsoft_store": {
+			"title": "Pobrane pliki",
+			"description": "Zakupy {FilesName} za pośrednictwem Microsoft Store pomagają programistom i pozwalają nam kontynuować aktualizację aplikacji za pomocą nowych funkcji i ulepszeń."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Wersja podglądowa może być zainstalowana obok stabilnej wersji i zapewnia wczesny dostęp do nowych funkcji i ulepszeń."
+		},
+		"self_signed": {
+			"link_text": "klasyczny instalator",
+			"description": "Nie masz dostępu do Microsoft Store? Wypróbuj naszą "
+		}
+	}
+}

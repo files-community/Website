@@ -68,7 +68,7 @@
 		{/each}
 		<p>
 			{$_("download.self_signed.description", defaultI18nValues)}<a
-				href="https://cdn.files.community/files/download/Files.Stable.exe"
+				href="/appinstallers/Files.stable.appinstaller"
 				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
 			>.
 		</p>

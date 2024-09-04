@@ -72,6 +72,10 @@
 			"command-palette": {
 				"title": "Buyrıqlar palitrası",
 				"description": "Buyrıqlar palitrasınan buyrıqlar, funksiyalar hám sazlawlarǵa tez kiriń."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
 			}
 		},
 		"themes": {
@@ -100,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "Nátiyjeler tabılmadı",
-		"edit_page": "Bul betke ózgeris kirgiziw"
+		"edit_page": "Bul betke ózgeris kirgiziw",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Bas bet",

@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Inicio",
+		"docs_home": "{FilesName} • Documentos",
+		"docs_page": "{FilesName} • Documentos - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Construyendo el mejor gestor de archivos para Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Comunidad",
+			"title": "Diseñado y desarrollado por ti.",
+			"description": "{FilesName} es software libre y de código abierto, mantenido y diseñado por un colectivo de cientos de colaboradores.",
+			"discord": "Únete al debate",
+			"docs": "Hazte colaborador",
+			"contributions": "{amount, plural, =0 {No hay contribuciones} one {# contribución} other {# contribuciones}}"
+		},
+		"design": {
+			"chip": "Diseño",
+			"title": "El poder se encuentra con la belleza.",
+			"description": "Explore un atractivo diseño basado en Windows. Administre todos sus archivos con mayor productividad. Utilice pestañas para trabajar en varias carpetas. Y mucho más.",
+			"download": "Descargar",
+			"learn_more": "Más información"
+		},
+		"features": {
+			"chip": "Características",
+			"title": "A esto ya lo hace.",
+			"description": "¿Integración de archivos en la nube? ¿Pestañas y varios diseños? ¿Vista previa de archivos enriquecidos? {FilesName} lo ha resuelto con las características que esperas ver en un administrador de archivos moderno.",
+			"unknown": "Desconocido",
+			"cloud": {
+				"title": "Integración perfecta en la nube",
+				"description": "Compatibilidad integrada con servicios de almacenamiento en la nube como OneDrive, Google Drive e iCloud."
+			},
+			"preview": {
+				"title": "Panel de vista previa",
+				"description": "Mira fotos, videos y documentos sin tener que abrirlos."
+			},
+			"popup-preview": {
+				"title": "Soporte para QuickLook y SeerPro",
+				"description": "Previsualiza archivos de Office, documentos y otros tipos de archivos presionando la barra espaciadora. Esta función requiere instalar QuickLook o SeerPro."
+			},
+			"tags": {
+				"title": "Etiqueta archivos y carpetas",
+				"description": "Organiza y clasifica tus archivos y carpetas con etiquetas de colores."
+			},
+			"tabs": {
+				"title": "Multitarea con pestañas",
+				"description": "Evita múltiples ventanas y mantiene tu escritorio ordenado con pestañas."
+			},
+			"columns": {
+				"title": "Vista de columna",
+				"description": "Navega rápidamente a través de diferentes niveles del sistema de archivos utilizando el diseño de columnas."
+			},
+			"archives": {
+				"title": "Ver y editar archivos",
+				"description": "Crear y extraer archivos, incluyendo zip, WinRar y 7zip."
+			},
+			"git": {
+				"title": "Integración con Git",
+				"description": "Gestiona fácilmente tus proyectos de Git. Crea nuevas ramas, cambia entre ellas y sincroniza tus cambios, todo sin salir de Archivos."
+			},
+			"dual-pane": {
+				"title": "Panel dual",
+				"description": "Ve y gestiona dos carpetas lado a lado con la función de Panel Dual."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "Ver y comparar los hashes de archivos desde la ventana de propiedades."
+			},
+			"command-palette": {
+				"title": "Paleta de Comandos",
+				"description": "Accede rápidamente a comandos, funciones y configuraciones desde la Paleta de Comandos."
+			},
+			"remap-key-bindings": {
+				"title": "Remap teclas",
+				"description": "Transmitirá su flujo de trabajo creando enlaces de teclas personalizados."
+			}
+		},
+		"themes": {
+			"chip": "Temas",
+			"title": "Distintivamente personal.",
+			"description": "Hazlo a tu manera. {FilesName} cuenta con una interfaz de usuario totalmente personalizable, hasta los colores y materiales. Prueba temas personalizados que están incorporados en {FilesName} o sumérgete en los documentos y crea el tuyo propio.",
+			"grey_blue": "Gris Oscuro • Azul claro",
+			"grey_green": "Gris azul • Verde neón",
+			"purple": "Púrpura",
+			"yellow_white": "Amarillo • Blanco",
+			"white_teal": "Blanco frío • Turquesa",
+			"sky_blue": "Azul cielo",
+			"select_theme": "Seleccionar tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "¡Próximamente más publicaciones!",
+		"read_more": "Leer más",
+		"share": {
+			"default": "Compartir nativo",
+			"url": "Copiar URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Suscripciones RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "No se encontraron resultados",
+		"edit_page": "Editar esta página",
+		"search_docs": "Buscar documentación"
+	},
+	"footer": {
+		"home": "Inicio",
+		"docs": "Documentación",
+		"news": "Noticias",
+		"download": "Descargar",
+		"contribute": "Contribuir a {FilesName}",
+		"feedback": "Danos tu opinión",
+		"style_guide": "Guía de estilo",
+		"translations": "Traducciones",
+		"web_team": "Equipo Web"
+	},
+	"navbar": {
+		"home": "Inicio",
+		"docs": "Documentación",
+		"news": "Noticias",
+		"download": "Descarga",
+		"themes": "Temas",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Descargar {FilesName}",
+		"donation_description": "{FilesName} es un proyecto impulsado por la comunidad que depende de tu apoyo para crecer y mejorar. Por favor, considere comprar {FilesName} a través de la tienda Microsoft o apoyarnos en GitHub si utiliza el instalador clásico.",
+		"donation_button": "Donar",
+		"microsoft_store": {
+			"title": "Descargar archivos",
+			"description": "Comprar {FilesName} a través de la tienda Microsoft ayuda a apoyar a los desarrolladores y nos permite continuar actualizando la aplicación con nuevas características y mejoras."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "La versión de vista previa se puede instalar junto a la versión estable y proporciona acceso anticipado a nuevas características y mejoras."
+		},
+		"self_signed": {
+			"link_text": "instalador clásico",
+			"description": "¿No tiene acceso a Microsoft Store? Pruebe nuestro "
+		}
+	}
+}

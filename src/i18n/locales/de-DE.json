@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "",
+		"home": "{FilesName} • Startseite",
+		"docs_home": "{FilesName} • Dokumentation",
+		"docs_page": "{FilesName} • Dokumentation - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Entwicklung des besten Dateimanagers für Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Gemeinschaft",
+			"title": "Designt und entwickelt von euch.",
+			"description": "{FilesName} ist eine freie und quelloffene Software, gepflegt und designt von hunderten von Mitwirkenden.",
+			"discord": "Nimm an der Diskussion teil",
+			"docs": "Werde Mitwirkender",
+			"contributions": "{amount, plural, =0 {Keine Beiträge} one {# Beitrag} other {# Beiträge}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Funktionalität trifft Schönheit.",
+			"description": "Entdecken Sie ein wundervolles Design für Windows Dateimanager. Verwalten Sie alle Ihre Dateien mit erhöhter Produktivität. Arbeiten Sie mit mehreren Ordnern und Tabs gleichzeitig. Und vieles mehr.",
+			"download": "Herunterladen",
+			"learn_more": "Mehr erfahren"
+		},
+		"features": {
+			"chip": "Funktionen",
+			"title": "Das tut es bereits.",
+			"description": "Integration von Cloud-Dateien? Tabs und mehrere Layouts? Ergiebige Dateivorschauen? {FilesName} hat all diese grundlegenden Funktionen, die Sie von einem modernen Dateimanager erwarten.",
+			"unknown": "Unbekannt",
+			"cloud": {
+				"title": "Nahtlose Cloud-Integration",
+				"description": "Integrierte Unterstützung für Cloudspeicher wie OneDrive, Google Drive und iCloud."
+			},
+			"preview": {
+				"title": "Vorschaufenster",
+				"description": "Vorschau von Fotos, Videos und Dokumenten, ohne sie zu öffnen."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro Unterstützung",
+				"description": "Vorschau von Office-Dateien, Dokumenten und anderen Dateitypen mit einem Druck auf die Leertaste. Diese Funktion erfordert die Installation von QuickLook oder SeerPro."
+			},
+			"tags": {
+				"title": "Dateien und Ordner markieren",
+				"description": "Organisieren und sortieren Sie Ihre Dateien und Ordner mit farbigen Tags."
+			},
+			"tabs": {
+				"title": "Multitasking mit Tabs",
+				"description": "Vermeiden Sie mehrere Fenster und halten Sie Ihren Desktop mit Tabs übersichtlich."
+			},
+			"columns": {
+				"title": "Spaltenansicht",
+				"description": "Navigieren Sie mit Hilfe des Spaltenlayouts schnell durch verschiedene Ebenen des Dateisystems."
+			},
+			"archives": {
+				"title": "Dateiarchive anzeigen und bearbeiten",
+				"description": "Erstellen und extrahieren von Archiven inklusive zip, WinRar und 7zip."
+			},
+			"git": {
+				"title": "Git-Integration",
+				"description": "Verwalten Sie Ihre Git-Projekte ganz unkompliziert. Erstellen Sie neue Zweige, wechseln Sie zwischen ihnen und synchronisieren Sie Ihre Änderungen - alles ohne Files zu verlassen."
+			},
+			"dual-pane": {
+				"title": "Geteilte Ansicht",
+				"description": "Betrachten und verwalten Sie zwei Ordner nebeneinander in einem Zwei-Spalten-Layout."
+			},
+			"hashes": {
+				"title": "Prüfsummen",
+				"description": "Prüfsummen von Dateien über das Eigenschaftsfenster anzeigen und vergleichen."
+			},
+			"command-palette": {
+				"title": "Befehlspalette",
+				"description": "Schneller Zugriff auf Befehle, Funktionen und Einstellungen über die Befehlspalette."
+			},
+			"remap-key-bindings": {
+				"title": "Tastenzuordnungen umgehen",
+				"description": "Streamline deinen Workflow durch das Erstellen benutzerdefinierter Tastenbelegungen."
+			}
+		},
+		"themes": {
+			"chip": "Farbschemas",
+			"title": "Genau an dich angepasst.",
+			"description": "Machen Sie es so, wie Sie es wollen. {FilesName} bietet ein vollständig personalisierbares Design bis hin zu den Farben und Texturen. Probieren Sie benutzerdefinierte Farbschemas eingebaut in {FilesName} oder tauchen Sie in die Dokumentation ein und erstellen Sie Ihre eigenen.",
+			"grey_blue": "Dunkelgrau • Hellblau",
+			"grey_green": "Blaugrau • Neongrün",
+			"purple": "Lila",
+			"yellow_white": "Gelb • Weiß",
+			"white_teal": "Kühles Weiß • Dunkles Türkis",
+			"sky_blue": "Himmelblau",
+			"select_theme": "Theme #{index} auswählen"
+		}
+	},
+	"blog": {
+		"coming_soon": "Weitere Posts kommen demnächst!",
+		"read_more": "Mehr Erfahren",
+		"share": {
+			"default": "Natives Teilen",
+			"url": "URL kopieren",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS-Feed"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Keine Ergebnisse gefunden",
+		"edit_page": "Diese Seite bearbeiten",
+		"search_docs": "Suchdokumentation"
+	},
+	"footer": {
+		"home": "Startseite",
+		"docs": "Dokumentation",
+		"news": "Neuigkeiten",
+		"download": "Herunterladen",
+		"contribute": "Zu {FilesName} beitragen",
+		"feedback": "Feedback geben",
+		"style_guide": "Styleguide",
+		"translations": "Übersetzungen",
+		"web_team": "Web-Team"
+	},
+	"navbar": {
+		"home": "Startseite",
+		"docs": "Dokumentation",
+		"news": "Neuigkeiten",
+		"download": "Herunterladen",
+		"themes": "Farbschemas",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "{FilesName} herunterladen",
+		"donation_description": "{FilesName} ist ein Gemeinschaftsprojekt, das auf Ihre Unterstützung angewiesen ist, um zu wachsen und besser zu werden. Bitte erwägen Sie den Kauf von {FilesName} über den Microsoft Store oder unterstützen Sie uns auf GitHub, wenn Sie das klassische Installationsprogramm verwenden.",
+		"donation_button": "Spenden",
+		"microsoft_store": {
+			"title": "Files herunterladen",
+			"description": "Der Kauf von {FilesName} über den Microsoft Store unterstützt die Entwickler und ermöglicht es uns, die App weiterhin mit neuen Funktionen und Verbesserungen zu aktualisieren."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Die Vorschauversion kann neben dem stabilen Release installiert werden und ermöglicht frühzeitigen Zugriff auf neue Funktionen und Verbesserungen."
+		},
+		"self_signed": {
+			"link_text": "klassischer Installer",
+			"description": "Sie haben keinen Zugriff auf den Microsoft Store? Probieren Sie unseren "
+		}
+	}
+}

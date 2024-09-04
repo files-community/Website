@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Accueil",
+		"docs_home": "{FilesName} • Documentation",
+		"docs_page": "{FilesName} • Documentation - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Construire le meilleur explorateur de fichiers pour Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Communauté",
+			"title": "Conçu et développé par vous.",
+			"description": "{FilesName} est un logiciel gratuit et open source, conçu et maintenu par des centaines de contributeurs.",
+			"discord": "Rejoindre la discussion",
+			"docs": "Devenir un contributeur",
+			"contributions": "{amount, plural, =0 {Aucune contribution} one {# contribution} other {# contributions}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "La puissance rencontre l'élégance.",
+			"description": "Explorez un design pensé pour Windows. Gérez tous vos fichiers avec une productivité accrue. Travaillez sur plusieurs dossiers simultanément avec des onglets. Et bien plus encore.",
+			"download": "Téléchargement",
+			"learn_more": "En apprendre plus"
+		},
+		"features": {
+			"chip": "Fonctionnalités",
+			"title": "Il le fait déjà.",
+			"description": "L'intégration du Cloud ? Des onglets et plusieurs dispositions ? Des aperçus de fichiers enrichis ? {FilesName} vous offre toutes ces fonctionnalités robustes que vous pouvez attendre d'un gestionnaire de fichiers moderne.",
+			"unknown": "Inconnu",
+			"cloud": {
+				"title": "Intégration harmonieuse du cloud",
+				"description": "Prise en charge intégrée des services de stockage en nuage tels que OneDrive, Google Drive et iCloud."
+			},
+			"preview": {
+				"title": "Volet de prévisualisation",
+				"description": "Prévisualisez les photos, vidéos et documents sans les ouvrir."
+			},
+			"popup-preview": {
+				"title": "Prise en charge de QuickLook & SeerPro",
+				"description": "Prévisualisez les fichiers Office, les documents et d'autres types de fichiers en appuyant sur la barre d'espace. Cette fonction nécessite l'installation de QuickLook ou de SeerPro."
+			},
+			"tags": {
+				"title": "Étiqueter des fichiers et des dossiers",
+				"description": "Organisez et classez vos fichiers et dossiers grâce à des étiquettes colorées."
+			},
+			"tabs": {
+				"title": "Multitâche avec les onglets",
+				"description": "Évitez les fenêtres multiples et gardez un bureau sans encombrement grâce aux onglets."
+			},
+			"columns": {
+				"title": "Affichage en colonne",
+				"description": "Naviguez rapidement à travers les différents niveaux du système de fichiers en utilisant la disposition en colonnes."
+			},
+			"archives": {
+				"title": "Affichez et modifiez vos archives",
+				"description": "Créez et extrayez des archives, y compris les formats zip, WinRar et 7zip."
+			},
+			"git": {
+				"title": "Intégration Git",
+				"description": "Gérez facilement vos projets Git. Créez de nouvelles branches, passez de l'une à l'autre et synchronisez vos modifications, le tout sans quitter Files."
+			},
+			"dual-pane": {
+				"title": "Double panneau",
+				"description": "Affichez et gérez deux dossiers côte à côte grâce à la fonctionnalité Double Panneau."
+			},
+			"hashes": {
+				"title": "Hachages",
+				"description": "Affichez et comparez les hachages de fichiers à partir de la fenêtre des propriétés."
+			},
+			"command-palette": {
+				"title": "Palette de commandes",
+				"description": "Accédez rapidement aux commandes, aux fonctionnalités et aux paramètres depuis la palette de commandes."
+			},
+			"remap-key-bindings": {
+				"title": "Remapper les raccourcis clavier",
+				"description": "Simplifiez votre flux de travail en créant des raccourcis clavier personnalisés."
+			}
+		},
+		"themes": {
+			"chip": "Thèmes",
+			"title": "Hautement personnel.",
+			"description": "Faites ce qu'il vous plait. {FilesName} dispose d'une interface utilisateur totalement personnalisable, jusqu'à la moindre couleur et texture. Essayez les thèmes personnalisés intégrés dans {FilesName} ou plongez dans la documentation et créez les vôtres.",
+			"grey_blue": "Gris Foncé • Bleu Clair",
+			"grey_green": "Gris Bleu • Vert Fluo",
+			"purple": "Violet",
+			"yellow_white": "Jaune • Blanc",
+			"white_teal": "Blanc Froid • Bleu Foncé",
+			"sky_blue": "Bleu Ciel",
+			"select_theme": "Choisir le thème #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "De nouveaux articles bientôt !",
+		"read_more": "En savoir plus",
+		"share": {
+			"default": "Partage natif",
+			"url": "Copier l'URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Flux RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Aucun résultat",
+		"edit_page": "Modifier cette page",
+		"search_docs": "Rechercher dans la documentation"
+	},
+	"footer": {
+		"home": "Accueil",
+		"docs": "Documentation",
+		"news": "Actualités",
+		"download": "Téléchargement",
+		"contribute": "Contribuer à {FilesName}",
+		"feedback": "Donner votre avis",
+		"style_guide": "Guide de style",
+		"translations": "Traductions",
+		"web_team": "Équipe Web"
+	},
+	"navbar": {
+		"home": "Accueil",
+		"docs": "Documentation",
+		"news": "Actualités",
+		"download": "Téléchargement",
+		"themes": "Thèmes",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Télécharger {FilesName}",
+		"donation_description": "{FilesName} est un projet conduit par sa communauté, qui dépend de votre soutien pour se développer et s'améliorer. Nous vous invitons à considérer l'achat de {FilesName} via le Microsoft Store ou de nous soutenir sur GitHub si vous utilisez l'installateur classique.",
+		"donation_button": "Faire un don",
+		"microsoft_store": {
+			"title": "Télécharger Files",
+			"description": "Acheter {FilesName} via le Microsoft Store soutient les développeurs et nous permet de continuer à mettre à jour l'application avec de nouvelles fonctionnalités et améliorations."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "La version d'aperçu peut être installée parallèlement à la version stable et fournit un accès rapide aux nouvelles fonctionnalités et améliorations."
+		},
+		"self_signed": {
+			"link_text": "installateur classique",
+			"description": "Vous n'avez pas accès au Microsoft Store ? Essayez notre "
+		}
+	}
+}

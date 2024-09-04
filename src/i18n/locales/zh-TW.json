@@ -1,5 +1,6 @@
 {
 	"metadata": {
+		"name": "{FilesName}",
 		"home": "{FilesName} • Home",
 		"docs_home": "{FilesName} • Docs",
 		"docs_page": "{FilesName} • Docs - {title}",
@@ -36,6 +37,10 @@
 				"title": "Preview pane",
 				"description": "Preview photos, videos, and documents without opening them. Please note that some file formats are not currently supported."
 			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro support",
+				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			},
 			"tags": {
 				"title": "Tag files and folders",
 				"description": "Organize and sort your files and folders with colored tags."
@@ -63,6 +68,14 @@
 			"hashes": {
 				"title": "Hashes",
 				"description": "View and compare file hashes from the properties window."
+			},
+			"command-palette": {
+				"title": "Command Palette",
+				"description": "Quickly access commands, features, and settings from the Command Palette."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
 			}
 		},
 		"themes": {
@@ -91,7 +104,8 @@
 	},
 	"docs": {
 		"autocomplete_empty": "No results found",
-		"edit_page": "Edit this page"
+		"edit_page": "Edit this page",
+		"search_docs": "Search Documentation"
 	},
 	"footer": {
 		"home": "Home",
@@ -102,9 +116,6 @@
 		"feedback": "Give Feedback",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
-		"contribute_site": "Contribute to this site",
-		"github": "Github Repo",
-		"report_bug": "Found a bug?",
 		"web_team": "Web Team"
 	},
 	"navbar": {
@@ -121,6 +132,7 @@
 		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
 		"donation_button": "Donate",
 		"microsoft_store": {
+			"title": "Download Files",
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {

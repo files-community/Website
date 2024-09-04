@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Hem",
+		"docs_home": "{FilesName} • Dokument",
+		"docs_page": "{FilesName} • Dokument - {title}",
+		"blog_home": "{FilesName} • Blogg",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Bygga den bästa filhanteraren för Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Gemenskap",
+			"title": "Designad och utvecklad av dig.",
+			"description": "{FilesName} är fri programvara med öppen källkod, underhållen och designad av ett kollektiv på hundratals bidragsgivare.",
+			"discord": "Gå med i diskussionen",
+			"docs": "Bli en bidragsgivare",
+			"contributions": "{amount, plural, =0 {Inga bidrag} one {# bidrag} other {# bidrag}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Kraft möter skönhet.",
+			"description": "Utforska en vacker Windows-första design. Hantera alla dina filer med ökad produktivitet. Arbeta över flera mappar med flikar. Och så mycket mer.",
+			"download": "Hämta",
+			"learn_more": "Läs mer"
+		},
+		"features": {
+			"chip": "Funktioner",
+			"title": "Det gör man redan.",
+			"description": "Integration med molnfiler? Flikar och flera layouter? Rika filförhandsvisningar? {FilesName} täcks av robusta funktioner som du förväntar dig av en modern filhanterare.",
+			"unknown": "Okänd",
+			"cloud": {
+				"title": "Sömlös molnintegration",
+				"description": "Inbyggt stöd för molnenheter som OneDrive, Google Drive och iCloud."
+			},
+			"preview": {
+				"title": "Förhandsgranska ruta",
+				"description": "Förhandsgranska foton, videor och dokument utan att öppna dem."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro support",
+				"description": "Förhandsgranska Office-filer, dokument och andra filtyper genom att trycka på mellanslagstangenten. Den här funktionen kräver att du installerar QuickLook eller SeerPro."
+			},
+			"tags": {
+				"title": "Tagga filer och mappar",
+				"description": "Organisera och sortera dina filer och mappar med färgade taggar."
+			},
+			"tabs": {
+				"title": "Multitask med flikar",
+				"description": "Undvik flera fönster och håll skrivbordet rörigt fritt med flikar."
+			},
+			"columns": {
+				"title": "Kolumnvy",
+				"description": "Navigera snabbt genom olika nivåer av filsystemet med hjälp av kolumnlayouten."
+			},
+			"archives": {
+				"title": "Visa och redigera arkiv",
+				"description": "Skapa och extrahera arkiv inklusive zip, WinRar, och 7zip."
+			},
+			"git": {
+				"title": "Git integration",
+				"description": "Hantera dina Git-projekt enkelt. Skapa nya grenar, växla mellan dem och synkronisera dina ändringar - allt utan att lämna Filer."
+			},
+			"dual-pane": {
+				"title": "Dubbel ruta",
+				"description": "Visa och hantera två mappar sida vid sida med Dual Pane funktionen."
+			},
+			"hashes": {
+				"title": "Hashar",
+				"description": "Visa och jämför filhashar från fönstret egenskaper."
+			},
+			"command-palette": {
+				"title": "Kommando palett",
+				"description": "Snabbt komma åt kommandon, funktioner och inställningar från kommandot Palette."
+			},
+			"remap-key-bindings": {
+				"title": "Remappa nyckelbindningar",
+				"description": "Effektivisera arbetsflödet genom att skapa anpassade nyckelbindningar."
+			}
+		},
+		"themes": {
+			"chip": "Teman",
+			"title": "Tydligt personlig.",
+			"description": "Ha det på ditt sätt. {FilesName} har ett helt anpassningsbart användargränssnitt, ända ner till färger och material. Prova anpassade teman som är inbyggda i {FilesName} eller dyk rakt in i dokumenten och skapa dina egna.",
+			"grey_blue": "Mörkgrå • ljusblå",
+			"grey_green": "Blå Grå • Neon Grön",
+			"purple": "Lila",
+			"yellow_white": "Gul • Vit",
+			"white_teal": "Cool White • Mörk Kricka",
+			"sky_blue": "Himmel blå",
+			"select_theme": "Välj tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Fler inlägg kommer snart!",
+		"read_more": "Läs mer",
+		"share": {
+			"default": "Inhemsk delning",
+			"url": "Kopiera URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS-flöde"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Inga resultat hittades",
+		"edit_page": "Redigera denna sida",
+		"search_docs": "Sök dokumentation"
+	},
+	"footer": {
+		"home": "Hem",
+		"docs": "Dokument",
+		"news": "Nyheter",
+		"download": "Hämta",
+		"contribute": "Bidra till {FilesName}",
+		"feedback": "Ge feedback",
+		"style_guide": "Style Guide",
+		"translations": "Översättningar",
+		"web_team": "Webb Team"
+	},
+	"navbar": {
+		"home": "Hem",
+		"docs": "Dokumentation",
+		"news": "Nyheter",
+		"download": "Hämta",
+		"themes": "Teman",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Ladda ner {FilesName}",
+		"donation_description": "{FilesName} är ett samhällsstyrt projekt som beror på ditt stöd för att växa och förbättra. Överväg att köpa {FilesName} via Microsoft Store eller stödja oss på GitHub om du använder det klassiska installationsprogrammet.",
+		"donation_button": "Donera",
+		"microsoft_store": {
+			"title": "Ladda ner filer",
+			"description": "Köpa {FilesName} via Microsoft Store hjälper till att stödja utvecklarna och tillåter oss att fortsätta uppdatera appen med nya funktioner och förbättringar."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Förhandsgranskningsversionen kan installeras tillsammans med den stabila utgåvan och ger tidig tillgång till nya funktioner och förbättringar."
+		},
+		"self_signed": {
+			"link_text": "klassisk installatör",
+			"description": "Har du inte tillgång till Microsoft Store? Prova vår "
+		}
+	}
+}

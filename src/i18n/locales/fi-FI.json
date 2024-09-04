@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Koti",
+		"docs_home": "{FilesName} • Dokumentit",
+		"docs_page": "{FilesName} • Docs - {title}",
+		"blog_home": "{FilesName} • Blogi",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Rakennetaan paras tiedostonhallinta Windowsille."
+	},
+	"home": {
+		"community": {
+			"chip": "Yhteisö",
+			"title": "Suunnitellut ja kehittänyt sinua.",
+			"description": "{FilesName} on ilmainen ja avoimen lähdekoodin ohjelmisto, jota ylläpitää ja suunnittelee satojen osallistujien ryhmä.",
+			"discord": "Liity keskusteluun",
+			"docs": "Tule osallistujaksi",
+			"contributions": "{amount, plural, =0 {Ei lisäyksiä} one {# lisäystä} other {# lisäystä}}"
+		},
+		"design": {
+			"chip": "Ulkoasu",
+			"title": "Virta kohtaa kauneuden.",
+			"description": "Tutustu kauniiseen Windows-ensisuunnitteluun. Hallitse kaikkia tiedostoja paremmalla tuottavuudella. Työskentele useissa kansioissa välilehdillä. Ja paljon muuta.",
+			"download": "Lataa",
+			"learn_more": "Lue lisää"
+		},
+		"features": {
+			"chip": "Ominaisuudet",
+			"title": "Näin se jo tekee.",
+			"description": "Cloud files integration? Välilehdet ja useita asetteluja? Rich file previews? {FilesName} on kattanut vankat ominaisuudet, joita odotat nykyaikaiselta tiedostonhallinnalta.",
+			"unknown": "Tuntematon",
+			"cloud": {
+				"title": "Saumaton pilviintegraatio",
+				"description": "Sisäänrakennettu tuki pilviasemille, kuten OneDrivelle, Google Drivelle ja iCloudille."
+			},
+			"preview": {
+				"title": "Esikatsele paneelia",
+				"description": "Esikatsele valokuvia, videoita ja asiakirjoja avaamatta niitä."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro tuki",
+				"description": "Esikatsele Officen tiedostoja, asiakirjoja ja muita tiedostotyyppejä painamalla välilyöntipalkkia. Tämä ominaisuus vaatii QuickLookin tai SeerPro:n asentamisen."
+			},
+			"tags": {
+				"title": "Tunnistetiedostot ja kansiot",
+				"description": "Järjestä ja lajittele tiedostot ja kansiot värillisillä tageilla."
+			},
+			"tabs": {
+				"title": "Monitehtävä välilehdillä",
+				"description": "Vältä useita ikkunoita ja pidä työpöytäsi sykkeettömänä välilehdillä."
+			},
+			"columns": {
+				"title": "Sarakkeen näkymä",
+				"description": "Navigoi nopeasti tiedostojärjestelmän eri tasojen läpi käyttäen sarakkeen asettelua."
+			},
+			"archives": {
+				"title": "Tarkastele ja muokkaa arkistoja",
+				"description": "Luo ja poimia arkistoja kuten zip, WinRar ja 7zip."
+			},
+			"git": {
+				"title": "Git integraatio",
+				"description": "Hallinnoi Git projektejasi helposti. Luo uusia sivukonttoreita, vaihda niiden välillä ja synkronoi muutoksesi - kaikki poistumatta tiedostoista."
+			},
+			"dual-pane": {
+				"title": "Kaksoispaneeli",
+				"description": "Tarkastele ja hallitse kahta kansiota rinnakkain Dual Pane ominaisuuden kanssa."
+			},
+			"hashes": {
+				"title": "Ihottumat",
+				"description": "Tarkastele ja vertaile tiedoston tiivisteitä ominaisuuksien ikkunasta."
+			},
+			"command-palette": {
+				"title": "Komentopaletti",
+				"description": "Käytä komentoja, ominaisuuksia ja asetuksia nopeasti komentopaletista."
+			},
+			"remap-key-bindings": {
+				"title": "Uudelleennimeä näppäinsidokset",
+				"description": "Virtaa työnkulkuasi luomalla mukautettuja näppäinyhdistelmiä."
+			}
+		},
+		"themes": {
+			"chip": "Teemat",
+			"title": "Erityisen henkilökohtainen.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"grey_blue": "Tumma Harmaa • Vaaleansininen",
+			"grey_green": "Sininen Harmaa • Neon Green",
+			"purple": "Violetti",
+			"yellow_white": "Keltainen • Valkoinen",
+			"white_teal": "Viileä Valkoinen • Tumma Teaali",
+			"sky_blue": "Taivas Sininen",
+			"select_theme": "Valitse teema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Lisää viestejä tulossa pian!",
+		"read_more": "Lue Lisää",
+		"share": {
+			"default": "Alkuperäinen jakaminen",
+			"url": "Kopioi URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS-syöte"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Tuloksia ei löytynyt",
+		"edit_page": "Muokkaa tätä sivua",
+		"search_docs": "Hae Dokumentaatiosta"
+	},
+	"footer": {
+		"home": "Koti",
+		"docs": "Asiakirjat",
+		"news": "Uutiset",
+		"download": "Lataa",
+		"contribute": "Osallistu {FilesName}",
+		"feedback": "Anna Palautetta",
+		"style_guide": "Style Guide",
+		"translations": "Käännökset",
+		"web_team": "Web-tiimi"
+	},
+	"navbar": {
+		"home": "Koti",
+		"docs": "Dokumentaatio",
+		"news": "Uutiset",
+		"download": "Lataa",
+		"themes": "Teemat",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Lataa {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_button": "Lahjoita",
+		"microsoft_store": {
+			"title": "Lataa Tiedostoja",
+			"description": "{FilesName} -sovelluksen ostaminen Microsoft Storesta auttaa tukemaan kehittäjiä ja sallii meidän jatkaa sovelluksen päivittämistä uusilla ominaisuuksilla ja parannuksilla."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Esikatseluversio voidaan asentaa vakaan julkaisun rinnalle ja se mahdollistaa varhaisen pääsyn uusiin ominaisuuksiin ja parannuksiin."
+		},
+		"self_signed": {
+			"link_text": "klassinen asentaja",
+			"description": "Eikö sinulla ole pääsyä Microsoft Storeen? Kokeile meidän "
+		}
+	}
+}

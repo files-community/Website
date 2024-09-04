@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Trang chủ",
+		"docs_home": "{FilesName} • Tài liệu",
+		"docs_page": "{FilesName} • Tài liệu - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Xây dựng một trình quản lý tệp tốt nhất cho Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Cộng đồng",
+			"title": "Thiết kế và phát triển bởi những người như bạn.",
+			"description": "{FilesName} là phần mềm miễn phí và mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
+			"discord": "Tham gia thảo luận",
+			"docs": "Bắt đầu đóng góp",
+			"contributions": "{amount, plural, =0 {Chưa có đóng góp} other {# đóng góp}}"
+		},
+		"design": {
+			"chip": "Thiết kế",
+			"title": "Sức mạnh kết hợp với sự hoàn mỹ.",
+			"description": "Khám phá một thiết kế đẹp thuần Windows. Quản lý các tệp giờ đây trở nên dễ dàng và nhanh chóng. Đơn giản hóa việc xử lý các thư mục với hệ thống thẻ cùng nhiều tính năng khác.",
+			"download": "Tải xuống",
+			"learn_more": "Tìm hiểu thêm"
+		},
+		"features": {
+			"chip": "Tính năng",
+			"title": "Mọi thứ bạn cần ngay trước mắt.",
+			"description": "Từ tích hợp lưu trữ đám mây, hệ thống thẻ đến xem trước tệp với đầy đủ thông tin cùng bố cục hiển thị đa dạng. {FilesName} tập hợp mọi tính năng mạnh mẽ mà bạn mong đợi từ một trình quản lý tệp hiện đại.",
+			"unknown": "Không rõ",
+			"cloud": {
+				"title": "Tích hợp đám mây một cách liền mạch",
+				"description": "Tích hợp hỗ trợ cho các dịch vụ lưu trữ đám mây như OneDrive, Google Drive và iCloud."
+			},
+			"preview": {
+				"title": "Ngăn xem trước",
+				"description": "Xem trước ảnh, video và tài liệu mà không cần phải mở một cách thủ công."
+			},
+			"popup-preview": {
+				"title": "Hỗ trợ QuickLook & SeerPro",
+				"description": "Xem trước tệp và tài liệu Office cùng nhiều loại tệp khác chỉ bằng việc nhấn phím cách. Tính năng này yêu cầu cài đặt QuickLook hoặc SeerPro."
+			},
+			"tags": {
+				"title": "Gắn nhãn cho tệp và thư mục",
+				"description": "Quản lý và sắp xếp các tệp hoặc thư mục của bạn bằng cách sử dụng các nhãn cùng màu sắc bạn muốn."
+			},
+			"tabs": {
+				"title": "Đa tác vụ với các thẻ",
+				"description": "Tránh việc phải mở nhiều cửa sổ cùng một lúc và giữ cho màn hình làm việc của bạn luôn gọn gàng với hệ thống thẻ."
+			},
+			"columns": {
+				"title": "Hiển thị dạng cột",
+				"description": "Truy cập sâu vào các phần của hệ thống tệp một cách nhanh chóng với dạng xem cột."
+			},
+			"archives": {
+				"title": "Xem và chỉnh sửa các tệp nén",
+				"description": "Tạo và giải nén các tệp nén ở định dạng phổ biến như zip, WinRar và 7zip."
+			},
+			"git": {
+				"title": "Tích hợp Git",
+				"description": "Dễ dàng quản lý các dự án Git của bạn. Tạo nhánh mới, chuyển đổi giữa các nhánh và đồng bộ các thay đổi - tất cả mà không cần phải rời khỏi Files."
+			},
+			"dual-pane": {
+				"title": "Chế độ hai ngăn",
+				"description": "Xem và quản lý hai thư mục cùng một lúc với chế độ hai ngăn."
+			},
+			"hashes": {
+				"title": "Hash",
+				"description": "Xem và so sánh hash của tệp ngay trong cửa sổ thuộc tính."
+			},
+			"command-palette": {
+				"title": "Bảng lệnh",
+				"description": "Truy cập vào các lệnh, tính năng và cài đặt một cách nhanh chóng từ Bảng lệnh."
+			},
+			"remap-key-bindings": {
+				"title": "Phím tắt tùy chỉnh",
+				"description": "Đồng bộ quy trình làm việc của bạn bằng việc tùy chỉnh tổ hợp phím theo ý muốn."
+			}
+		},
+		"themes": {
+			"chip": "Chủ đề",
+			"title": "Phong cách riêng biệt.",
+			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Hãy thử trải nghiệm các chủ đề có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
+			"grey_blue": "Xám Tối • Xanh Nhạt",
+			"grey_green": "Xám Xanh • Xanh Lá Neon",
+			"purple": "Tím",
+			"yellow_white": "Vàng • Trắng",
+			"white_teal": "Trắng Mát Mẻ • Mòng Két Tối",
+			"sky_blue": "Xanh Da Trời",
+			"select_theme": "Chọn chủ đề #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Nhiều bài đăng mới sẽ sớm ra mắt!",
+		"read_more": "Đọc thêm",
+		"share": {
+			"default": "Chia sẻ",
+			"url": "Sao chép URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Nguồn cấp dữ liệu RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Không có kết quả",
+		"edit_page": "Chỉnh sửa trang này",
+		"search_docs": "Search Documentation"
+	},
+	"footer": {
+		"home": "Trang chủ",
+		"docs": "Tài liệu",
+		"news": "Tin tức",
+		"download": "Tải xuống",
+		"contribute": "Đóng góp cho {FilesName}",
+		"feedback": "Gửi phản hồi",
+		"style_guide": "Hướng dẫn thiết kế",
+		"translations": "Dịch thuật",
+		"web_team": "Đội ngũ Web"
+	},
+	"navbar": {
+		"home": "Trang chủ",
+		"docs": "Tài liệu",
+		"news": "Tin tức",
+		"download": "Tải xuống",
+		"themes": "Chủ đề",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Tải {FilesName}",
+		"donation_description": "{FilesName} là dự án hướng đến cộng đồng để cải thiện và phát triển. Nếu bạn muốn ủng hộ, hãy mua {FilesName} từ Microsoft Store hoặc ủng hộ qua GitHub nếu bạn sử dụng trình cài đặt thông thường.",
+		"donation_button": "Ủng hộ",
+		"microsoft_store": {
+			"title": "Tải xuống Files",
+			"description": "Mua {FilesName} từ Microsoft Store để ủng hộ các nhà phát triển và giúp chúng tôi tiếp tục bổ sung các cải thiện và tính năng mới."
+		},
+		"preview": {
+			"title": "Tải bản Insider Preview",
+			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
+		},
+		"self_signed": {
+			"link_text": "trình cài đặt thông thường",
+			"description": "Không thể truy cập vào Microsoft Store? Hãy sử dụng "
+		}
+	}
+}

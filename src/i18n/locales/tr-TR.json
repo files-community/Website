@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Anasayfa",
+		"docs_home": "{FilesName} • Dökümantasyon",
+		"docs_page": "{FilesName} • Dökümantasyon - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Windows için en iyi dosya yöneticisini oluşturun."
+	},
+	"home": {
+		"community": {
+			"chip": "Topluluk",
+			"title": "Sizin tarafınızdan tasarlandı ve geliştirildi.",
+			"description": "{FilesName}, yüzlerce katılımcı tarafından sağlanan ve tasarlanan ücretsiz ve açık kaynaklı bir yazılımdır.",
+			"discord": "Tartışmaya Katıl",
+			"docs": "Katkıda Bulunun",
+			"contributions": "{amount, plural, =0 {Katkı yok} one {# katkı} other {# katkı}}"
+		},
+		"design": {
+			"chip": "Dizayn",
+			"title": "Güç güzellikle tanıştı.",
+			"description": "Windows'a öncelik veren güzel bir tasarımı keşfedin. Tüm dosyalarınızı daha fazla üretkenlik ile yönetin. Sekmeler ile birden çok klasörde çalışın. Ve çok daha fazlası.",
+			"download": "İndir",
+			"learn_more": "Daha Fazla"
+		},
+		"features": {
+			"chip": "Özellikler",
+			"title": "Bunu zaten yapıyor.",
+			"description": "Bulut dosyaları entegrasyonu? Sekmeler ve çoklu düzen? Zengin dosya önizlemeleri? {FilesName}, modern bir dosya yöneticisinden beklediğiniz güçlü özelliklerle kaplıdır.",
+			"unknown": "Bilinmeyen",
+			"cloud": {
+				"title": "Eksiksiz bulut entegrasyonu",
+				"description": "OneDrive, Google Drive ve iCloud gibi bulut sürücüler için yerleşik destek."
+			},
+			"preview": {
+				"title": "Önizleme bölmesi",
+				"description": "Fotoğrafları, videoları ve belgeleri açmadan önizleyin."
+			},
+			"popup-preview": {
+				"title": "QuickLook ve SeerPro desteği",
+				"description": "Boşluk tuşuna basarak Office dosyalarını, belgeleri ve diğer dosya türlerini önizleyin. Bu özellik, QuickLook veya SeerPro yüklemeyi gerektirir."
+			},
+			"tags": {
+				"title": "Dosyaları ve klasörleri etiketleyin",
+				"description": "Dosya ve klasörlerinizi renkli etiketlerle düzenleyin ve sıralayın."
+			},
+			"tabs": {
+				"title": "Sekmelerle çoklu görev",
+				"description": "Birden fazla pencerelerden kaçının ve masaüstünü sekmeler sayesinde derli toplu tutun."
+			},
+			"columns": {
+				"title": "Sütun görünümü",
+				"description": "Sütun düzenini kullanarak dosya sisteminin farklı seviyelerinde kolayca gezinin."
+			},
+			"archives": {
+				"title": "Arşivleri görüntüleyin ve düzenleyin",
+				"description": "Zip, WinRar ve 7zip kullanarak arşivler oluşturun ve çıkartın."
+			},
+			"git": {
+				"title": "Git entegrasyonu",
+				"description": "Git projelerinizi kolayca yönetin. Yeni dallar açın, aralarında gidip gelin, ve tüm değişiklerinizi eşleyin - hem de Files'tan hiç ayrılmadan."
+			},
+			"dual-pane": {
+				"title": "Çift bölme",
+				"description": "Çift Bölme özelliği ile iki klasörü yan yana görüntüleyin ve düzenleyin."
+			},
+			"hashes": {
+				"title": "Hashler",
+				"description": "Özellikler penceresinden dosya hashlerini görüntüleyin ve karşılaştırın."
+			},
+			"command-palette": {
+				"title": "Komut Paleti",
+				"description": "Komut Paleti'nden komutlara, özelliklere ve ayarlara kolayca erişin."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
+			}
+		},
+		"themes": {
+			"chip": "Temalar",
+			"title": "Kesinlikle kişisel.",
+			"description": "İstediğiniz gibi düzenleyin. {FilesName}, renklere ve malzemelere kadar tamamen özelleştirilebilir bir kullanıcı arayüzüne sahiptir. {FilesName} içinde yerleşik olan özel temaları deneyin veya doğrudan dokümanlara dalın ve kendi temanızı oluşturun.",
+			"grey_blue": "Koyu Gri • Açık Mavi",
+			"grey_green": "Mavi Gri • Neon Yeşili",
+			"purple": "Mor",
+			"yellow_white": "Sarı beyaz",
+			"white_teal": "Soğuk Beyaz • Koyu Deniz Mavisi",
+			"sky_blue": "Gök mavisi",
+			"select_theme": "Tema seç #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Daha fazla gönderi yakında!",
+		"read_more": "Daha Fazla",
+		"share": {
+			"default": "Yerel paylaşım",
+			"url": "Bağlantıyı kopyala",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS akışı"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Sonuç bulunamadı",
+		"edit_page": "Bu sayfayı düzenle",
+		"search_docs": "Search Documentation"
+	},
+	"footer": {
+		"home": "Ana sayfa",
+		"docs": "Dokümantasyon",
+		"news": "Haberler",
+		"download": "İndir",
+		"contribute": "{FilesName}'a Katkıda Bulunun",
+		"feedback": "Geri Bildirimde Bulunun",
+		"style_guide": "Stil Rehberi",
+		"translations": "Tercümeler",
+		"web_team": "Web Ekibi"
+	},
+	"navbar": {
+		"home": "Ana sayfa",
+		"docs": "Dökümantasyon",
+		"news": "Haberler",
+		"download": "İndir",
+		"themes": "Temalar",
+		"discord": "Discord",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "{FilesName}'ı İndir",
+		"donation_description": "{FilesName} büyümek ve gelişmek için sizin desteğinize bağlı olan, topluluk odaklı bir projedir. Klasik yükleyiciyi kullanıyorsanız lütfen Microsoft Mağazası aracılığıyla {FilesName} satın almayı veya GitHub'da bizi desteklemeyi düşünün.",
+		"donation_button": "Bağış Yap",
+		"microsoft_store": {
+			"title": "Files'ı İndir",
+			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Önizleme sürümü, Kararlı sürümle birlikte kurulabilir ve yeni özelliklere ve iyileştirmelere erken erişim sağlar."
+		},
+		"self_signed": {
+			"link_text": "klasik yükleyicimizde olabilir",
+			"description": "Microsoft Store'a erişiminiz yok mu? Çareniz "
+		}
+	}
+}

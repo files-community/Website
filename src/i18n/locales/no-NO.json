@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Startside",
+		"docs_home": "{FilesName} • Dokumentasjon",
+		"docs_page": "{FilesName} • Dokumentasjon - {title}",
+		"blog_home": "{FilesName} • Blogg",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Bygger den beste filutforskeren for Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Fellesskap",
+			"title": "Designet og utviklet av dere.",
+			"description": "{FilesName} er en gratis og åpen kildekode-programvare, vedlikeholdt og designet av et kollektiv med hundrevis av bidragere.",
+			"discord": "Bli med i diskusjonen",
+			"docs": "Bli en bidrager",
+			"contributions": "{amount, plural, =0 {Ingen bidrag} one {# bidrag} other {# bidrag}}"
+		},
+		"design": {
+			"chip": "Utforming",
+			"title": "Makt møter skjønnhet.",
+			"description": "Utforsk et vakkert Windows design. Administrer alle dine filer med økt produktivitet. Gå mellom flere mapper med faner. Og masse mer.",
+			"download": "Last ned",
+			"learn_more": "Finn ut mer"
+		},
+		"features": {
+			"chip": "Egenskaper",
+			"title": "Den gjør allerede det.",
+			"description": "Sky filer integrering? Faner og flere utforminger? Rik fil forhåndsvisning? {FilesName} har den dekket med robuste funksjoner du forventer fra en moderne fil manager.",
+			"unknown": "Ukjent",
+			"cloud": {
+				"title": "Sømløs sky-integrasjon",
+				"description": "Innebygd støtte for skytjenesten som OneDrive, Google Drive og iCloud."
+			},
+			"preview": {
+				"title": "Forhåndsvis panel",
+				"description": "Forhåndsvisning av bilder, videoer og dokumenter uten å åpne dem."
+			},
+			"popup-preview": {
+				"title": "QuickLook og SeerPro støtte",
+				"description": "Forhåndsvis kontorfiler, dokumenter og andre filtyper ved å trykke på mellomrom og denne funksjonen krever installasjon av QuickLook eller SeerPro."
+			},
+			"tags": {
+				"title": "Tagg filer og mapper",
+				"description": "Organiser og sorter filene og mappene dine med fargede emneord."
+			},
+			"tabs": {
+				"title": "Multitask med faner",
+				"description": "Unngå flere vinduer og hold skrivebordet fritt med faner."
+			},
+			"columns": {
+				"title": "Kolonne visning",
+				"description": "Raskt navigerer gjennom forskjellige nivåer av filsystemet med kolonneutformingen."
+			},
+			"archives": {
+				"title": "Vis og rediger arkiver",
+				"description": "Opprett og pakk ut arkiv inkludert zip, WinRar, og 7zip."
+			},
+			"git": {
+				"title": "Git integrasjon",
+				"description": "Administrere Git prosjektene dine enkelt. Opprett nye avdelinger, bytt mellom dem og synkroniser endringene - alle uten å forlate filer."
+			},
+			"dual-pane": {
+				"title": "Dobbel panel",
+				"description": "Se og administrer to mapper ved side av den dobbelt Pan-funksjonen."
+			},
+			"hashes": {
+				"title": "Hash",
+				"description": "Vis og sammenlign filhashes fra egenskapsvinduet."
+			},
+			"command-palette": {
+				"title": "Kommandobalett palett",
+				"description": "Få tilgang til kommandoer, funksjoner og innstillinger fra kommandoens palette."
+			},
+			"remap-key-bindings": {
+				"title": "Bindinger til omkamp nøkkel",
+				"description": "Strøm dine arbeidsflyt ved å lage egendefinerte hurtigtaster"
+			}
+		},
+		"themes": {
+			"chip": "Temaer",
+			"title": "Distinktivt personlig.",
+			"description": "Ha som du vil. {FilesName} har et fullt tilpassbart brukergrensesnitt, rett ned til farger og materialer. Prøv tilpassede temaer som er bygget rett inn i {FilesName} eller dykke inn i dokumentasjonen og lag dine egne.",
+			"grey_blue": "Mørke Grå • Lyseblå",
+			"grey_green": "Blå grå • Neon Grønn",
+			"purple": "Lilla",
+			"yellow_white": "Gul • Hvit",
+			"white_teal": "Kald hvit • Mørk Blågrønn",
+			"sky_blue": "Sky Blå",
+			"select_theme": "Velg tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Flere poster kommer snart!",
+		"read_more": "Les mer",
+		"share": {
+			"default": "Innebygd deling",
+			"url": "Kopier URL",
+			"tweet": "Ti",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Ingen resultater funnet",
+		"edit_page": "Rediger denne siden",
+		"search_docs": "Søk etter dokumentasjon"
+	},
+	"footer": {
+		"home": "Startside",
+		"docs": "Dokumentasjon",
+		"news": "Nyheter",
+		"download": "Last ned",
+		"contribute": "Bidra til {FilesName}",
+		"feedback": "Gi tilbakemelding",
+		"style_guide": "Stilguide",
+		"translations": "Oversettelser",
+		"web_team": "Web lag"
+	},
+	"navbar": {
+		"home": "Startside",
+		"docs": "Dokumentasjon",
+		"news": "Nyheter",
+		"download": "Nedlasting",
+		"themes": "Temaer",
+		"discord": "Splid",
+		"github": "GitHub"
+	},
+	"download": {
+		"title": "Last ned {FilesName}",
+		"donation_description": "{FilesName} er et samfunns-drevet prosjekt som avhenger av din støtte til å vokse og bli bedre. Vurder å kjøpe {FilesName} gjennom Microsoft Store eller støtte oss på GitHub dersom du bruker den klassiske installatøren.",
+		"donation_button": "Doner",
+		"microsoft_store": {
+			"title": "Last ned filer",
+			"description": "Kjøp av {FilesName} gjennom Microsoft Store hjelper oss med å støtte utviklerne og lar oss fortsette å oppdatere appen med nye funksjoner og forbedringer."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "Beta versjonen eller Forhåndsvisningsversjonen kan installeres sammen med den stabile versjonen og gir tidlig tilgang til nye funksjoner og forbedringer."
+		},
+		"self_signed": {
+			"link_text": "klassiske installasjonsprogram",
+			"description": "Har du ikke tilgang til Microsoft Store? Prøv vårt "
+		}
+	}
+}

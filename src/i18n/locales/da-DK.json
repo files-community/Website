@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Hjem",
+		"docs_home": "{FilesName} • Dokumenter",
+		"docs_page": "{FilesName} • Dokumenter - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Vi bygger den bedste filhåndtering til Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Fællesskab",
+			"title": "Designet og udviklet af dig.",
+			"description": "{FilesName} er fri og open source-software, vedligeholdt og designet af et kollektiv af hundredvis af bidragsydere.",
+			"discord": "Vær med i diskussionen",
+			"docs": "Bliv en bidragsyder",
+			"contributions": "{amount, plural, =0 {Ingen bidrag} one {# bidrag} other {# bidrag}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Kraft møder skønhed.",
+			"description": "Udforsk et smukt Windows-først design. Administrer alle dine filer med øget produktivitet. Arbejd på tværs af flere mapper med faner. Og så meget mere.",
+			"download": "Hent",
+			"learn_more": "Lær mere"
+		},
+		"features": {
+			"chip": "Funktioner",
+			"title": "Det gør den allerede.",
+			"description": "Integration af cloud-filer? Faner og flere layouts? Rige filforhåndsvisninger? {FilesName} har det hele med robuste funktioner, som du forventer af en moderne filhåndtering.",
+			"unknown": "Ukendt",
+			"cloud": {
+				"title": "Problemfri cloud-integration",
+				"description": "Indbygget understøttelse af cloud-drev som OneDrive, Google Drev og iCloud."
+			},
+			"preview": {
+				"title": "Forhåndsvisningsrude",
+				"description": "Forhåndsvis billeder, videoer og dokumenter uden at åbne dem."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro-understøttelse",
+				"description": "Forhåndsvis Office-filer, dokumenter og andre filtyper ved at trykke på mellemrumstasten. Denne funktion kræver installation af QuickLook eller SeerPro."
+			},
+			"tags": {
+				"title": "Tag filer og mapper",
+				"description": "Organiser og sortér dine filer og mapper med farvede tags."
+			},
+			"tabs": {
+				"title": "Multitask med faner",
+				"description": "Undgå mange vinduer, og hold dit skrivebord ryddeligt med faner."
+			},
+			"columns": {
+				"title": "Kolonnevisning",
+				"description": "Naviger hurtigt gennem forskellige niveauer af filsystemet med kolonnelayoutet."
+			},
+			"archives": {
+				"title": "Se og rediger arkiver",
+				"description": "Opret og udpak arkiver, herunder zip, WinRar og 7zip."
+			},
+			"git": {
+				"title": "Git-integration",
+				"description": "Administrer nemt dine Git-projekter. Opret nye grene, skift mellem dem, og synkroniser dine ændringer - alt uden at forlade Files."
+			},
+			"dual-pane": {
+				"title": "Dobbelt rude",
+				"description": "Se og administrer to mapper side om side med Dobbelt Rude-funktionen."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "Se og sammenlign filhashes fra egenskabsvinduet."
+			},
+			"command-palette": {
+				"title": "Kommandopalette",
+				"description": "Få hurtigt adgang til kommandoer, funktioner og indstillinger fra Kommandopalette."
+			},
+			"remap-key-bindings": {
+				"title": "Omlæg tastebindinger",
+				"description": "Strømlin din arbejdsgang ved at oprette brugerdefinerede tastebindinger."
+			}
+		},
+		"themes": {
+			"chip": "Temaer",
+			"title": "Særdeles personlig.",
+			"description": "Få det på din måde. {FilesName} har en brugergrænseflade, der kan tilpasses helt ned til farver og materialer. Prøv tilpassede temaer, der er indbygget i {FilesName}, eller dyk direkte ned i dokumenterne og lav dine egne.",
+			"grey_blue": "Mørkegrå • Lyseblå",
+			"grey_green": "Blågrå • Neongrøn",
+			"purple": "Lilla",
+			"yellow_white": "Gul • Hvid",
+			"white_teal": "Cool White • Dark Teal",
+			"sky_blue": "Himmelblå",
+			"select_theme": "Vælg tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Flere indlæg kommer snart!",
+		"read_more": "Læs Mere",
+		"share": {
+			"default": "Indbygget deling",
+			"url": "Kopiér URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS-feed"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Ingen resultater fundet",
+		"edit_page": "Rediger denne side",
+		"search_docs": "Søg Dokumentation"
+	},
+	"footer": {
+		"home": "Hjem",
+		"docs": "Dokumenter",
+		"news": "Nyheder",
+		"download": "Hent",
+		"contribute": "Bidrag til {FilesName}",
+		"feedback": "Giv Feedback",
+		"style_guide": "Stilguide",
+		"translations": "Oversættelser",
+		"web_team": "Web-team"
+	},
+	"navbar": {
+		"home": "Hjem",
+		"docs": "Dokumentation",
+		"news": "Nyheder",
+		"download": "Hent",
+		"themes": "Temaer",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Hent {FilesName}",
+		"donation_description": "{FilesName} er et fællesskabsdrevet projekt, der afhænger af din støtte for at vokse og blive bedre. Overvej venligst at købe {FilesName} via Microsoft Store eller støtte os på GitHub, hvis du bruger den klassiske installatør.",
+		"donation_button": "Donér",
+		"microsoft_store": {
+			"title": "Hent Files",
+			"description": "Køb af {FilesName} via Microsoft Store er med til at støtte udviklerne og gør det muligt for os at fortsætte med at opdatere appen med nye funktioner og forbedringer."
+		},
+		"preview": {
+			"title": "Hent Insider-forhåndsvisning",
+			"description": "Forhåndsvisningsversionen kan installeres sammen med den stabile udgivelse og giver tidlig adgang til nye funktioner og forbedringer."
+		},
+		"self_signed": {
+			"link_text": "klassisk installatør",
+			"description": "Har du ikke adgang til Microsoft Store? Prøv vores "
+		}
+	}
+}

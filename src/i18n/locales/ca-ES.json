@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Inici",
+		"docs_home": "{FilesName} • Documentació",
+		"docs_page": "{FilesName} • Documentació - {title}",
+		"blog_home": "{FilesName} • Bloc",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Construint el millor gestor de fitxers per a Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Comunitat",
+			"title": "Dissenyat i desenvolupat per tu.",
+			"description": "{FilesName} és un programari gratuït i de codi obert, mantingut i dissenyat per una col·lectiva de centenars de col·laboradors.",
+			"discord": "Uneix-te a la discussió",
+			"docs": "Converteix-te en col·laborador",
+			"contributions": "{amount, plural, =0 {No hi ha contribucions} one {# contribució} other {# contribucions}}"
+		},
+		"design": {
+			"chip": "Disseny",
+			"title": "La potència es troba amb la bellesa.",
+			"description": "Explora un bell disseny pensat per a Windows. Gestiona tots els teus fitxers amb una productivitat incrementada. Treballa en diverses carpetes amb pestanyes. I molt més.",
+			"download": "Baixa",
+			"learn_more": "Aprèn més"
+		},
+		"features": {
+			"chip": "Característiques",
+			"title": "Ja ho fa.",
+			"description": "Integració amb fitxers a la núvol? Pestanyes i més d'un disseny? Previsualitzacions avançades de fitxers? {FilesName} ho té cobert amb característiques robustes que esperes d'un gestor de fitxers modern.",
+			"unknown": "Desconegut",
+			"cloud": {
+				"title": "Integració a la núvol sense costura",
+				"description": "Suport integrat per a discos a la núvol com OneDrive, Google Drive i iCloud."
+			},
+			"preview": {
+				"title": "Pany de previsualització",
+				"description": "Visualitza fotos, vídeos i documents sense obrir-los."
+			},
+			"popup-preview": {
+				"title": "Suport per a QuickLook i SeerPro",
+				"description": "Previsualitza fitxers d'Office, documents i altres tipus de fitxers prement la barra d'espai. Aquesta característica requereix instal·lar QuickLook o SeerPro."
+			},
+			"tags": {
+				"title": "Etiqueta fitxers i carpetes",
+				"description": "Organitza i classifica els teus fitxers i carpetes amb etiquetes de colors."
+			},
+			"tabs": {
+				"title": "Feu multitasca amb pestanyes",
+				"description": "Evita finestres múltiples i mantén el teu escriptori sense desordre amb pestanyes."
+			},
+			"columns": {
+				"title": "Vista de columnes",
+				"description": "Navega ràpidament a través de diferents nivells del sistema de fitxers utilitzant la disposició de columnes."
+			},
+			"archives": {
+				"title": "Visualitza i edita arxius comprimits",
+				"description": "Crea i extreu arxius, incloent zip, WinRar i 7zip."
+			},
+			"git": {
+				"title": "Integració amb Git",
+				"description": "Gestiona fàcilment els teus projectes Git. Crea noves branques, canvia entre elles i sincronitza els teus canvis, tot sense sortir de Files."
+			},
+			"dual-pane": {
+				"title": "Panell dual",
+				"description": "Visualitza i gestiona dues carpetes al costat amb la funció de panell dual."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "Visualitza i compara els hash dels fitxers des de la finestra de propietats."
+			},
+			"command-palette": {
+				"title": "Paleta de Comandes",
+				"description": "Accedeix ràpidament a comandes, funcions i configuracions des de la Paleta de Comandes."
+			},
+			"remap-key-bindings": {
+				"title": "Torna a assignar les combinacions de tecles",
+				"description": "Optimitza el teu flux de treball creant combinacions de tecles personalitzades."
+			}
+		},
+		"themes": {
+			"chip": "Temes",
+			"title": "Distingitament personal.",
+			"description": "A la teva manera. {FilesName} ofereix una interfície d'usuari totalment personalitzable, fins als colors i materials. Prova els temes personalitzats incorporats a {FilesName} o plongeu a la documentació i crea el teu propi.",
+			"grey_blue": "Gris Fosc • Blau Clar",
+			"grey_green": "Blau Gris • Verd Neó",
+			"purple": "Lila",
+			"yellow_white": "Groc • Blanc",
+			"white_teal": "Blanc Fresc • Teal Fosc",
+			"sky_blue": "Blau Cel",
+			"select_theme": "Selecciona el tema #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "Més publicacions aviat!",
+		"read_more": "Llegeix més",
+		"share": {
+			"default": "Compartir de forma nativa",
+			"url": "Copia la URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "Canal RSS"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "Cap resultat trobat",
+		"edit_page": "Edita aquesta pàgina",
+		"search_docs": "Search Documentation"
+	},
+	"footer": {
+		"home": "Inici",
+		"docs": "Documentació",
+		"news": "Notícies",
+		"download": "Baixa",
+		"contribute": "Contribueix a {FilesName}",
+		"feedback": "Proporciona retroacció",
+		"style_guide": "Guia d'estil",
+		"translations": "Traduccions",
+		"web_team": "Equip web"
+	},
+	"navbar": {
+		"home": "Inici",
+		"docs": "Documentació",
+		"news": "Notícies",
+		"download": "Baixa",
+		"themes": "Temes",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Baixa {FilesName}",
+		"donation_description": "{FilesName} és un projecte impulsat per la comunitat que depèn del vostre suport per créixer i millorar. Si us plau, considereu adquirir {FilesName} a través de la Microsoft Store o donar-nos suport a GitHub si feu servir l'instal·lador clàssic.",
+		"donation_button": "Donar",
+		"microsoft_store": {
+			"title": "Baixa el Files",
+			"description": "Adquirir {FilesName} a través de la Microsoft Store ajuda a donar suport als desenvolupadors i ens permet continuar actualitzant l'aplicació amb noves funcionalitats i millores."
+		},
+		"preview": {
+			"title": "Insider Preview",
+			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
+		},
+		"self_signed": {
+			"link_text": "instal·lador clàssic",
+			"description": "No tens accés a la Microsoft Store? Prova la nostra "
+		}
+	}
+}
