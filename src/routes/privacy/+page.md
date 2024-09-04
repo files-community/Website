@@ -2,7 +2,7 @@
 
 # Privacy policy
 
-Effective date: June 2, 2024
+Effective date: September 4th, 2024
 
 This Privacy Policy ("Policy") for Files ("we", "us", or "our") describes how and why we collect, store, use, and disclose information about users ("you", "your") when you use our services ("Services"), and our desktop application (the "Application", "Files"). By using our Services, you acknowledge and consent to the practices described in this Policy.
 
