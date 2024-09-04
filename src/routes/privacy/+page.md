@@ -6,12 +6,6 @@ Effective date: September 4th, 2024
 
 This Privacy Policy ("Policy") for Files ("we", "us", or "our") describes how and why we collect, store, use, and disclose information about users ("you", "your") when you use our services ("Services"), and our desktop application (the "Application", "Files"). By using our Services, you acknowledge and consent to the practices described in this Policy.
 
-## Table of Contents
-
-1. Information We Collect
-2. How We Use Your Information
-3. Changes to This Privacy Policy
-
 ## Information We Collect
 
 **Diagnostic Information.** Our Application collects non-personably identifiable diagnostic data such as fault analysis and performance logs. This information may include technical details about your device, such as its make, model, operating system, and Application version. In addition, Files may store log files containing diagnostic information on the user's device. These files are not shared with us by default.
