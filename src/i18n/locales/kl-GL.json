@@ -1,0 +1,147 @@
+{
+	"metadata": {
+		"name": "{FilesName}",
+		"home": "{FilesName} • Home",
+		"docs_home": "{FilesName} • Docs",
+		"docs_page": "{FilesName} • Docs - {title}",
+		"blog_home": "{FilesName} • Blog",
+		"blog_page": "{FilesName} • {title}",
+		"description": "Building the best file manager for Windows."
+	},
+	"home": {
+		"community": {
+			"chip": "Community",
+			"title": "Designed and developed by you.",
+			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
+			"discord": "Join the discussion",
+			"docs": "Become a contributor",
+			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+		},
+		"design": {
+			"chip": "Design",
+			"title": "Power meets beauty.",
+			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+			"download": "Download",
+			"learn_more": "Learn more"
+		},
+		"features": {
+			"chip": "Features",
+			"title": "It already does that.",
+			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
+			"unknown": "Unknown",
+			"cloud": {
+				"title": "Seamless cloud integration",
+				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
+			},
+			"preview": {
+				"title": "Preview pane",
+				"description": "Preview photos, videos, and documents without opening them."
+			},
+			"popup-preview": {
+				"title": "QuickLook & SeerPro support",
+				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			},
+			"tags": {
+				"title": "Tag files and folders",
+				"description": "Organize and sort your files and folders with colored tags."
+			},
+			"tabs": {
+				"title": "Multitask with tabs",
+				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+			},
+			"columns": {
+				"title": "Column view",
+				"description": "Quickly navigate through different levels of the file system using the column layout."
+			},
+			"archives": {
+				"title": "View and edit archives",
+				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			},
+			"git": {
+				"title": "Git integration",
+				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+			},
+			"dual-pane": {
+				"title": "Dual pane",
+				"description": "View and manage two folders side by side with the Dual Pane feature."
+			},
+			"hashes": {
+				"title": "Hashes",
+				"description": "View and compare file hashes from the properties window."
+			},
+			"command-palette": {
+				"title": "Command Palette",
+				"description": "Quickly access commands, features, and settings from the Command Palette."
+			},
+			"remap-key-bindings": {
+				"title": "Remap key bindings",
+				"description": "Streamline you workflow by creating custom key bindings."
+			}
+		},
+		"themes": {
+			"chip": "Themes",
+			"title": "Distinctly personal.",
+			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"grey_blue": "Dark Grey • Light Blue",
+			"grey_green": "Blue Grey • Neon Green",
+			"purple": "Purple",
+			"yellow_white": "Yellow • White",
+			"white_teal": "Cool White • Dark Teal",
+			"sky_blue": "Sky Blue",
+			"select_theme": "Select theme #{index}"
+		}
+	},
+	"blog": {
+		"coming_soon": "More posts coming soon!",
+		"read_more": "Read More",
+		"share": {
+			"default": "Native sharing",
+			"url": "Copy URL",
+			"tweet": "X",
+			"facebook": "Facebook",
+			"rss": "RSS Feed"
+		}
+	},
+	"docs": {
+		"autocomplete_empty": "No results found",
+		"edit_page": "Edit this page",
+		"search_docs": "Search Documentation"
+	},
+	"footer": {
+		"home": "Home",
+		"docs": "Docs",
+		"news": "News",
+		"download": "Download",
+		"contribute": "Contribute to {FilesName}",
+		"feedback": "Give Feedback",
+		"style_guide": "Style Guide",
+		"translations": "Translations",
+		"web_team": "Web Team"
+	},
+	"navbar": {
+		"home": "Home",
+		"docs": "Documentation",
+		"news": "News",
+		"download": "Download",
+		"themes": "Themes",
+		"discord": "Discord",
+		"github": "Github"
+	},
+	"download": {
+		"title": "Download {FilesName}",
+		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
+		"donation_button": "Donate",
+		"microsoft_store": {
+			"title": "Download Files",
+			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
+		},
+		"preview": {
+			"title": "Download Insider Preview",
+			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
+		},
+		"self_signed": {
+			"link_text": "classic installer",
+			"description": "Don't have access to the Microsoft Store? Try our "
+		}
+	}
+}
