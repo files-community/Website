@@ -1,6 +1,6 @@
 ---
 title: Announcing Files v3.7.6
-description: Discover the latest improvements in Files v3.7.6, including improved toolbar settings, the ability to open more than 10 files simultaneously, several important fixes.
+description: Discover the latest improvements in Files v3.7.6, including improved toolbar settings, the ability to open more than 10 files simultaneously, and several important fixes.
 thumbnail: /blog-resources/v3-4-1/Hero.png
 date: 9/13/2024
 author: files-community
@@ -17,8 +17,8 @@ We're excited to announce that Files v3.7.6 is now available! 🎉 Existing user
 - Addressed an OverflowException in UpdateSelectionSize.
 - Fixed a NullReferenceException related to ShellFileOperations2.
 - Fixed a crash when opening folders with invalid Git configurations.
-- Fixed a crash that occured when closing the main window.
-- Fixed a crash that occured when the Windows Event Log service wasn't running.
+- Fixed a crash that occurred when closing the main window.
+- Fixed a crash that occurred when the Windows Event Log service wasn't running.
 
 ### Conclusion
 
