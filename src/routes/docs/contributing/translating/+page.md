@@ -11,7 +11,7 @@ Translations for Files are done through the popular cloud based platform Crowdin
 
 ## Proofreading
 
-Proofreading and approving strings is done by active community members, if you would like to proofread your language, please start a discussion on Crowdin, and we'll review your request at the earliest convenience.
+Proofreading and approving strings is done by active community members; if you would like to proofread your language please start a discussion on Crowdin and we'll review your request at the earliest convenience.
 
 ## Screenshots
 
@@ -31,12 +31,12 @@ For example:
 Are you sure you want to delete {0} from {1}?
 ```
 
-In this case, the first placeholder is for file name that user wants to delete and second one is for folder name that user wants to delete a file from.
+In this case, the first placeholder is for the file name that the user wants to delete and the second one is for the folder name that user wants to delete a file from.
 
 ## ICU message syntax
 
 You may see some strings that have programmatic syntax.
-It’s called [ICU message syntax](https://support.crowdin.com/icu-message-syntax), which is the standard syntax advanced by Unicode (and the parallel ISO 10646 standard) for efficiently processing text in any language and for maintaining text data integrity
+It’s called [ICU message syntax](https://support.crowdin.com/icu-message-syntax), which is the standard syntax advanced by Unicode (and the parallel ISO 10646 standard) for efficiently processing text in any language and for maintaining text data integrity.
 
 ### Pluralization
 
@@ -51,33 +51,33 @@ The following short tags are used to determine the plural categories:
 - many (also used for fractions if they have a separate class)
 - other (required—general plural form—also used if the language only has a single form)
 
-In the Editor, you don’t have to manually add or delete plural categories to the translations you are making. Just click `Copy Source`, and the source string will be copied to the translation field with the number of plural categories right for the current target language.
+In the Crowdin editor, you don’t have to manually add or delete plural categories to the translations you are making. Just click `Copy Source`, and the source string will be copied to the translation field with the number of plural categories right for the current target language.
 
 <img src="/docs-resources/Crowdin-EditorCommandButtons.png" alt="Editor command buttons" />
 
-For a complete list of languages with Language Plural Rules, visit [Unicode Org web page](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
+For a complete list of languages with Language Plural Rules, visit [Unicode web page](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
 Please do care about:
 
-- `other` tag has always to be defined in any languages.
-- If there're tags that have the same value as `other` tag, they can be omitted.
-- In case of a specific translation for a learned value, you can use `=NUMBER {TEXT}`. Use only for values that are not specified using predefined tags in source language (`en-US`). This is most commonly used to define for the value `0`.
+- `other` tag must always be defined in any languages.
+- If there are tags that have the same value as the `other` tag, they can be omitted.
+- In the case of a specific translation for a learned value, you can use `=NUMBER {TEXT}`.You should only use this for values that are not specified using predefined tags in source language (`en-US`). This is most commonly used to define for the value `0`.
 
-For example, Japanese doesn't have plural but `other` tag has to be defined though `one` and `other` tag have the same value in Japanese.
+For example: there are no plurals in Japanese, so the `other` tag has to be defined despite the `one` and `other` tags having the same value in Japanese.
 
 ### Number
 
 The purpose of the number type is to display different number values such as percentage, currency, and decimal numbers independently from the locale conventions for those. This enables adjustment of the message output to the number formats used in different locales.
 
-The placeholder `{0, number}` only specifies the resulting number format, this is never translated, it must always be kept in the same form, but can be moved to positions that require translation.
+The placeholder `{0, number}` only specifies the resulting number format. This is _never_ translated and must always be kept in the same form, but obviously can be moved to positions that require translation.
 
-Please do care about:
+Please mind:
 
 - The placeholder `#` indicates where the value will be inserted. This allows you to define a future position according to your translation.
 
 ### Remarks
 
-If you're not sure which tags should be added, you can click the `i` button to see available tags. You can also click 'generate skelton' to see a preview.
+If you're not sure which tags should be added, you can click the `i` button to see available tags. You can also click the 'generate skelton' button to see a preview.
 
 <img src="/docs-resources/Crowdin-PreviewGenTip.png" alt="Generate skeleton to see preview" />
 
@@ -87,11 +87,11 @@ Also, Crowdin shows an error message if your translation is incorrectly formatte
 
 ## Discussions
 
-If you have conprehensive questions about Files translation, please use [Crowdin Discussions](https://crowdin.com/project/files-app/discussions). Note that when you post a discussion please describe what you'd like to discussion **in English**; otherwise it would be likely to be closed.
+If you have conprehensive questions about Files translation, please use [Crowdin Discussions](https://crowdin.com/project/files-app/discussions). We require that all discussions via Crowdin are **in English**; if otherwise they will be closed at our discretion.
 
-For questions regarding single translation, please use Comments area of each translation in Crowdin Editor. You can mark your comment as Issue and choose a reason why you want bring your issue to us. Once your issue is marked as Issue, others can pay attension since the comment will be colored to red.
+For questions regarding a single translation please use the Comments area of each translation in Crowdin Editor. You can mark your comment as an Issue and choose a reason for why you want bring your issue to us. Once your discussion is marked as an issue by an administrator, your discussion will be highlighted in red so others can chip in.
 
-## Develop with translated strings in the app
+## Localizing the code
 
 We have our own extension to handle ICU message syntax.
 `public static Strings.ToLocalized(this source, param parameters);`
