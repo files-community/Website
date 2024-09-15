@@ -49,7 +49,7 @@ The following short tags are used to determine the plural categories:
 - two (dual)
 - few (paucal)
 - many (also used for fractions if they have a separate class)
-- other (required—general plural form—also used if the language only has a single form)
+- other (required: general plural form — also used if the language only has a single form)
 
 In the Crowdin editor, you don’t have to manually add or delete plural categories to the translations you are making. Just click `Copy Source`, and the source string will be copied to the translation field with the number of plural categories right for the current target language.
 
