@@ -6,8 +6,8 @@ Translations for Files are done through the popular cloud based platform Crowdin
 
 ## Getting started with Crowdin
 
-- Any suitable web browser
-- A [Crowdin account](https://accounts.crowdin.com/register)
+- A suitable web browser
+- An account with [Crowdin](https://accounts.crowdin.com/register)
 
 ## Proofreading
 
