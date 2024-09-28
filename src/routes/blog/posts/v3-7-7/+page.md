@@ -3,7 +3,7 @@ title: Announcing Files v3.7.7
 description: Fixed support for QuickLook.
 thumbnail: /blog-resources/v3-4-1/Hero.png
 date: 9/16/2024
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that Files v3.7.7 is now available! 🎉 Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
