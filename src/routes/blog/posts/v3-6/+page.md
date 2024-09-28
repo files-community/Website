@@ -6,7 +6,7 @@ date: 8/6/2024
 author: yaira2
 ---
 
-We're excited to announce that starting today, Files v3.6 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
+We're excited to announce that starting today, Files v3.6 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](https://apps.microsoft.com/detail/9nghp3dx8hdx?mode=full) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
 
 **TL;DR:** The latest update, Files v3.6, introduces support for changing the pane arrangement in Dual Pane mode, a new "Actions" menu, custom background images for folders, improved performance, and more. Continue reading to learn more about these enhancements.
 
