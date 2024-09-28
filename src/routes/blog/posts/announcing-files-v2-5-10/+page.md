@@ -3,7 +3,7 @@ title: Announcing Files, version 2.5.10
 description: Details pane, Git columns, open in VS Code & more
 thumbnail: /blog-resources/files2-5-10/HeroImage.jpg
 date: 6/27/2023
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that version 2.5.10 is now available. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/).

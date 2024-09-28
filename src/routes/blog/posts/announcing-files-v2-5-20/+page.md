@@ -3,7 +3,7 @@ title: Announcing Files, version 2.5.20
 description: Push Git commits to remote repositories, splash screen, updated icons, support for ownCloud.
 thumbnail: /blog-resources/files2-5-20/HeroImage.jpg
 date: 7/20/2023
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that version 2.5.20 is now available. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) as a way to support the project.
@@ -22,7 +22,7 @@ To further improve our integration with Git, we're excited to be adding support 
 
 ### Improvements to the startup experience
 
-Startup performance is one of our highest priorities and something we're working on improving. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that we hope will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.  
+Startup performance is one of our highest priorities and something we're working on improving. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that we hope will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.
 
 <figure>
     <img src="/blog-resources/files2-5-20/SplashScreen.png" alt="Splash screen." />

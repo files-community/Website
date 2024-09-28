@@ -3,7 +3,7 @@ title: Announcing Files, version 2.5
 description: Acrylic, git integration, preview pane & more
 thumbnail: /blog-resources/files2-5/HeroImage.jpg
 date: 6/13/2023
-author: files-community
+author: yaira2
 ---
 
 Today we're excited to announce the next major release of Files, version 2.5. If you already have Files, you'll get a notification in the app to update. Otherwise, you can download Files for free from our [download page](/download/).

@@ -3,7 +3,7 @@ title: Announcing Files v3.2.2
 description: A notification when app is running in the background, prompt when failing to rename items, and improvements to stability.
 thumbnail: /blog-resources/v3-2-2/Hero.png
 date: 2/19/2024
-author: files-community
+author: yaira2
 ---
 
 Files v3.2.2 is now available for download, this release contains bug fixes to enhance your file browsing experience. If you already have Files, the toolbar will display a notification to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.

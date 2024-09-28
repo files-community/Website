@@ -3,7 +3,7 @@ title: Introducing Files, version 2.4.40
 description: Manage your files with tags
 thumbnail: /blog-resources/files2-4-40/HeroImage.jpg
 date: 2/20/2023
-author: files-community
+author: yaira2
 ---
 
 Files is a modern file manager app for Windows that offers a sleek and intuitive user interface with powerful features. In this post, we’ll take a look at some of the new features and improvements that we’ve added in version 2.4.40.

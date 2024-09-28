@@ -3,7 +3,7 @@ title: Supercharge Your File Management with Files and Listary
 description: Experience unparalleled file management with the powerful integration of Files and Listary.
 thumbnail: /blog-resources/listary-integration/Hero.png
 date: 5/8/2024
-author: files-community
+author: yaira2
 ---
 
 ## Elevate your productivity with Listary
@@ -41,7 +41,6 @@ Once enabled, you'll have access to the following features:
 **Folder navigation**: A single click on a folder within the search results swiftly transports you there, opening it in the current tab or pane of Files.
 
 For comprehensive details and support concerning Listary, please visit their integration options page https://help.listary.com/options-integration#third-party-software-adapted-by-listary.
-
 
 ### Conclusion
 

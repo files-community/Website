@@ -3,7 +3,7 @@ title: Announcing Files v3.1
 description: System tray icon, open minimized on startup, Smart Extract, prioritize files when sorting, and a new drag & drop gesture.
 thumbnail: /blog-resources/v3-1/Hero.png
 date: 1/8/2024
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that starting today, Files v3.1 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
@@ -34,7 +34,7 @@ Smart Extract is a new feature that will automatically choose the extraction mod
 
 ### Prioritize files when sorting
 
-We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together". 
+We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together".
 
 <figure>
     <img src="/blog-resources/v3-1/SortFilesFirst.png" alt="Prioritize files when sorting" />

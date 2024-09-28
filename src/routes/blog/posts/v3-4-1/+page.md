@@ -3,7 +3,7 @@ title: Announcing Files v3.4.1
 description: Support for displaying network drives on the sidebar, and general improvements to stability.
 thumbnail: /blog-resources/v3-4-1/Hero.png
 date: 5/14/2024
-author: files-community
+author: yaira2
 ---
 
 Files v3.4.1 is now available for download, this release contains bug fixes and improvements to enhance your file browsing experience. If you already have Files, the toolbar will display a notification to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
@@ -18,7 +18,6 @@ Files v3.4.1 is now available for download, this release contains bug fixes and 
 - Fixed an issue where the app wouldn’t run as admin
 - Fixed crash when connecting some removable drives
 - Fixed an issue where the string for "Actions" wasn't localize in the Settings menu
-
 
 ### Conclusion
 

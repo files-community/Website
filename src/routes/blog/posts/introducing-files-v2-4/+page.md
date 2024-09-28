@@ -3,7 +3,7 @@ title: Introducing v2.4
 description: Taking a look at the features and improvements in Files v2.4
 thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.jpg
 date: 2022-12-26
-author: files-community
+author: yaira2
 ---
 
 We're pleased to announce that after a couple of weeks, v2.4 is available for all our users. Files has auto update built-in but if you're a new user or looking to manually update, you can download Files from our new [download page](/download/). Improved performance when navigating between directories, new features for managing archives and design changes are just some of the highlights for this release.

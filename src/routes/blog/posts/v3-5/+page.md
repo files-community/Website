@@ -3,7 +3,7 @@ title: Announcing Files v3.5
 description: Enjoy an updated design, network drive widget, enhanced dual-pane functionality, and improvements to crash analytics.
 thumbnail: /blog-resources/v3-5/Hero.png
 date: 6/24/2024
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that starting today, Files v3.5 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
@@ -26,7 +26,6 @@ Additionally, Dual Pane mode now features a more pronounced shadow on the active
     <img src="/blog-resources/v3-5/UpdatedDualPaneDesign.png" alt="Updated design for Dual Pane" />
 </figure>
 
-
 ### View dimensions when hovering over images
 
 When you hover over images, a tooltip will now conveniently show the dimensions. This enhancement greatly improves user experience by providing quick and easy access to size information.
@@ -34,7 +33,6 @@ When you hover over images, a tooltip will now conveniently show the dimensions.
 <figure>
     <img src="/blog-resources/v3-5/ImageSizeTooltip.png" alt="Images tooltip" />
 </figure>
-
 
 ### Open batch files in Notepad directly from the toolbar
 
@@ -44,7 +42,6 @@ Upon selecting a batch (.bat) file, the toolbar will now present an Edit in Note
     <img src="/blog-resources/v3-5/EditInNotepad.png" alt="Edit in notepad toolbar button" />
 </figure>
 
-
 ### Explore network locations on the Home Page
 
 We added a "Network Locations" widget on the home page. This feature is designed to help you navigate and organize network locations with greater efficiency.
@@ -53,35 +50,29 @@ We added a "Network Locations" widget on the home page. This feature is designed
     <img src="/blog-resources/v3-5/NetworkLocations.png" alt="Home page widget for network locations" />
 </figure>
 
-
 ### Added support for closing the left pane in Dual Pane mode
 
 We’ve added the ability to close the left pane in Dual Pane mode, overcoming previous technical limitations that only allowed closing the right pane. This improvements provides a more versatile and user-friendly experience.
-
 
 ### OneDrive sync status indicator
 
 Experience enhanced clarity when you hover over a file in OneDrive locations. The sync icon will now display a tooltip detailing the file’s current sync status, offering a more direct and informative snapshot of your data synchronization.
 
-
 ### View duration for selected video files
 
 When selecting multiple video files, the Details Pane will now display the total duration.
 
-
 ### New localizations added
 
-We’ve expanded our language support to now include Belarusian.  Our localizations are largely maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin https://crowdin.com/project/files-app.
+We’ve expanded our language support to now include Belarusian. Our localizations are largely maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin https://crowdin.com/project/files-app.
 
-
-### Improvements to crash reporting and metrics 
+### Improvements to crash reporting and metrics
 
 While enhancements in performance and stability typically occur behind the scenes, we often get a lot of questions about our work in this area and we wanted to share some highlights.
 
-- We've adopted Sentry for more robust crash reporting (shoutout to Sentry for their support of open-source projects), and we aim to extend its use to monitor performance metrics, ensuring Files gets faster with each update. 
+- We've adopted Sentry for more robust crash reporting (shoutout to Sentry for their support of open-source projects), and we aim to extend its use to monitor performance metrics, ensuring Files gets faster with each update.
 - Our main challenge with startup speed has been the absence of Native AOT in WinAppSdk. Fortunately, Microsoft is working to address this, and we hope to integrate these advancements later in the year.
 - We recently started a new effort to eliminate unnecessary dependencies and streamline app resources, effectively shrinking the app’s footprint on your device.
-
 
 ## Changes and Improvements
 
@@ -114,7 +105,6 @@ While enhancements in performance and stability typically occur behind the scene
 - Fixed a potential crash when trying to locate the Libraries folder
 - Fixed a potential crash when clicking items in the Quick Access widget
 - Fixed a potential crash from occuring when deleting items
-
 
 ### Conclusion
 
