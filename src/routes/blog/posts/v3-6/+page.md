@@ -3,7 +3,7 @@ title: Announcing Files v3.6
 description: Enhance your productivity with Dual Pane's arrangement options, the new "Actions" menu, personalized folder backgrounds, and significant performance improvements.
 thumbnail: /blog-resources/v3-6/Hero.png
 date: 8/6/2024
-author: files-community
+author: yaira2
 ---
 
 We're excited to announce that starting today, Files v3.6 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
