@@ -54,11 +54,11 @@ This repository contains the source code for the new [Files website](https://fil
 ## GitHub Codespaces
 
 You can develop this project using GitHub Codespaces.
-For this, click on the "Code" button on the main GitHub page of this repository.
+For this, click the button below. It will allow you to create a new Codespace with the configuration of your choice.
 
-Then click on "Codespaces" and then on "Create codespace on main".
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new/files-community/website?devcontainer_path=.devcontainer%2Fdevcontainer.json)
 
-After the Codespace has initialized, you can run `pnpm dev` and are ready to go!
+After the Codespace has initialized, you can run `pnpm dev` and you'll be ready to go!
 
 ## Local development
 
