@@ -117,6 +117,12 @@
 			</Button>
 		{/each}
 	</div>
+	<div class="column">
+		<p>{$_("footer.support", defaultI18nValues)}</p>
+		<Button variant="hyperlink" href="/privacy">
+			{$_("footer.privacy", defaultI18nValues)}
+		</Button>
+	</div>
 </PageSection>
 
 <style lang="scss">
