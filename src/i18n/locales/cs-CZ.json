@@ -15,7 +15,7 @@
 			"description": "{FilesName} je svobodný software s otevřeným zdrojovým kódem, který spravuje a navrhuje kolektiv stovek přispěvatelů.",
 			"discord": "Připojit se k diskuzi",
 			"docs": "Staňte se přispěvatelem",
-			"contributions": "{amount, plural, =0 {Žádní přispěvatelé} one {# přispěvatel} few {# přispěvatelé} other {# přispěvatelů}}"
+			"contributions": "{amount, plural, =0 {Žádné příspěvky} one {# příspěvek} few {# přispěvků} other {# přispěvků}}"
 		},
 		"design": {
 			"chip": "Vzhled",
