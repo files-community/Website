@@ -1,6 +1,6 @@
 ---
 title: Announcing Files v3.7.11
-description: "Added support for renaming multiple items, improved the 'Create New Item' dialog, copy your User ID from the About page, and more.
+description: Added support for renaming multiple items, improved the Create New Item dialog, copy your User ID from the About page, and more.
 thumbnail: /blog-resources/v3-4-1/Hero.png
 date: 10/10/2024
 author: files-community
