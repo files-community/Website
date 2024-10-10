@@ -43,7 +43,7 @@
 			},
 			"tags": {
 				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"description": "Organise and sort your files and folders with coloured tags."
 			},
 			"tabs": {
 				"title": "Multitask with tabs",
@@ -55,7 +55,7 @@
 			},
 			"archives": {
 				"title": "View and edit archives",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "Create and extract archives including zip, WinRAR, and 7-Zip."
 			},
 			"git": {
 				"title": "Git integration",
@@ -81,12 +81,12 @@
 		"themes": {
 			"chip": "Themes",
 			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
+			"description": "Have it your way. {FilesName} features a fully customisable user interface, right down to the colours and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
+			"grey_blue": "Dark Gray • Light Blue",
+			"grey_green": "Blue Gray • Neon Green",
 			"purple": "Purple",
 			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
+			"white_teal": "Cool White • Dark Turquoise",
 			"sky_blue": "Sky Blue",
 			"select_theme": "Select theme #{index}"
 		}
