@@ -18,7 +18,7 @@ We've introduced the ability to rename multiple items simultaneously. To get sta
 
 The "Create New Item" dialog now displays the type of item being created, providing more context for your actions. To try this out, click the "New" button on the toolbar and choose an option (e.g., Folder). The dialog will display a confirmation message, such as "Create new folder."
 
-### Added an Option to Copy the User ID from the About Page
+### Added an option to Copy the User ID from the About Page
 To enhance the debugging experience, we've added an option to copy your User ID directly from the About page. Your User ID is a random ID generated when you first install Files and can be used to locate crash reports in Sentry.
 
 
