@@ -2,10 +2,10 @@ import remarkA11yEmoji from "@fec/remark-a11y-emoji";
 import adapter from "@sveltejs/adapter-cloudflare";
 import { mdsvex } from "mdsvex";
 import rehypeColorPreview from "rehype-color-preview";
+import rehypeSlug from "rehype-slug";
 import remarkGfm from "remark-gfm";
 import remarkGithub from "remark-github";
-import remarkSlug from "remark-slug";
-import sveltePreprocess from "svelte-preprocess";
+import { sveltePreprocess } from "svelte-preprocess";
 
 /** @type {import("@sveltejs/kit").Config} */
 const config = {
@@ -26,8 +26,8 @@ const config = {
 				dashes: "oldschool",
 			},
 
-			remarkPlugins: [remarkA11yEmoji, remarkSlug, remarkGfm, remarkGithub],
-			rehypePlugins: [rehypeColorPreview],
+			remarkPlugins: [remarkA11yEmoji, remarkGfm, remarkGithub],
+			rehypePlugins: [rehypeColorPreview, rehypeSlug],
 		}),
 		sveltePreprocess(),
 	],
