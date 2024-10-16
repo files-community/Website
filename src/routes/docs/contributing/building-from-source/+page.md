@@ -6,7 +6,7 @@ title: Compiling the source code
 
 - [Visual Studio 2022](https://visualstudio.microsoft.com/vs/) with the following individual components:
   - Windows 11 SDK (10.0.22621.0)
-  - .NET 8 SDK
+  - .NET 8 SDK (version 8.0.303)
   - MSVC v143 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
   - C++ ATL for latest v143 build tools (x86 & x64 or ARM64)
   - Git for Windows
