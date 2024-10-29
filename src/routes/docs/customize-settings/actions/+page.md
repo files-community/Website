@@ -271,17 +271,44 @@ Copy selected items to the clipboard
 ```
 
 
-### Copy path
+### Copy item path
 
-Copy paths of selected items to the clipboard
+Copy paths of the selected items to the clipboard
 
-**Action name:** `CopyPath`
+**Action name:** `CopyItemPath`
 
 **Default bindings:**
 
 ```json
 "Ctrl+Shift+C"
 ```
+
+
+### Copy item path with quotes
+
+Copy paths of the selected items with quotes to the clipboard
+
+**Action name:** `CopyItemPathWithQuotes`
+
+**Default bindings:**
+
+```json
+"Alt+Ctrl+C"
+```
+
+
+### Copy path
+
+Copy path of the current directory to the clipboard
+
+**Action name:** `CopyPath`
+
+
+### Copy path with quotes
+
+Copy path of the current directory with quotes to the clipboard
+
+**Action name:** `CopyPathWithQuotes`
 
 
 ### Cut item
@@ -321,6 +348,13 @@ Pastes items from clipboard to the selected folder
 ```json
 "Ctrl+Shift+V"
 ```
+
+
+### Paste item as shortcut
+
+Pastes items from clipboard to current directory as shortcuts
+
+**Action name:** `PasteItemAsShortcutAction`
 
 
 ### Delete item
@@ -736,6 +770,13 @@ Opens properties window
 ```json
 "Alt+Enter"
 ```
+
+
+### Cleanup
+
+Opens the Storage Sense page in Windows Settings
+
+**Action name:** `OpenStorageSense`
 
 
 ### Open File Explorer properties
@@ -1325,6 +1366,19 @@ Closes other tabs
 **Action name:** `CloseOtherTabsCurrent`
 
 
+### Close all tabs
+
+Closes all tabs including the current tab
+
+**Action name:** `CloseAllTabs`
+
+**Default bindings:**
+
+```json
+"Ctrl+Shift+W"
+```
+
+
 ### Open folder in new pane
 
 Opens selected folder in a new pane
@@ -1448,7 +1502,7 @@ Closes the active new pane
 **Default bindings:**
 
 ```json
-"Ctrl+Shift+W"
+"Ctrl+Alt+W"
 ```
 
 
