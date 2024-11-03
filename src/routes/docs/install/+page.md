@@ -27,7 +27,19 @@ You can also use the preview version alongside the stable release to get early a
 
 ### Install via Chocolatey
 
-The [Chocolatey](https://community.chocolatey.org/packages/files) installation is maintained by a third party but it's another option.
+The [Chocolatey](https://community.chocolatey.org/packages/files) package is maintained by a third party.
+
+```
+choco install files
+```
+
+### Install via Scoop
+
+The [Scoop](https://scoop.sh) package is maintained by a third party.
+
+```
+scoop install nonportable/files-np
+```
 
 ## Keep Files up to date
 
