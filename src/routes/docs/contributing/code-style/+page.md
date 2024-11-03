@@ -46,6 +46,14 @@ To make the codebase consistent and easy to understand, we require you to follow
 5. Use Hungarian Notation only for OS functions/API calls
 6. Use UPPER_CASE for constant variables
 7. Use predefined primitive types like `int`, `long`, `string` instead of `Int32`, `Int64`, `String`
+8. Use `var` instead of explicitly stating type:
+> ```cs
+> string HelloWorld = "Hello, World!";
+> ```
+> would now be
+> ```cs
+> var HelloWorld = "Hello, World!";
+> ```
 
 ### 3. Code readability and clarity
 
