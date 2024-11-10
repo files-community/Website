@@ -6,6 +6,10 @@ date: 11/10/2024
 author: Lamparter
 ---
 
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
+
 Hello Files Community!
 
 I am thrilled to share some exciting news with you. As part of the ongoing efforts to make Files more accessible and convenient, the team has integrated Scoop as a new installation method.
@@ -45,6 +49,12 @@ In addition to Scoop, you can still install Files using the classic installer or
   ```powershell
   Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
   ```
+
+  <InfoBar severity="attention">
+    You can also <a href="/appinstallers/Files.stable.appinstaller">download</a> the classic installer and install it via the built-in App Installer.
+  </InfoBar>
+
+<br />
 
 - **Chocolatey**:
 
