@@ -50,7 +50,7 @@ In addition to Scoop, you can still install Files using the classic installer or
   choco install files
   ```
 
-Thank you for being a part of the app's journey to success. I hope you enjoy the new Scoop integration and find it useful. Happy file managing! ❤️
+Thank you for being a part of the app's journey to success. I hope you enjoy the new Scoop integration and find it useful. Happy file managing! 🙂
 
 ---
 
