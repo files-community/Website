@@ -44,28 +44,7 @@ Installing Files via Scoop is straightforward. Just follow these simple steps:
 
 And that's it! Files is installed and ready to use. 🎉
 
-### Other Installation Methods
-
-In addition to Scoop, you can still install Files using the classic installer or via Chocolatey:
-
-- **Classic Installer**:
-
-  1. Open PowerShell as administrator.
-  2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
-
-<InfoBar severity="attention">
-  You can also <a href="/appinstallers/Files.stable.appinstaller">download</a> the classic installer and install it via the built-in App Installer.
-</InfoBar>
-
-<br />
-
-- **Chocolatey**:
-
-  ```powershell
-  choco install files
-  ```
-
-Thank you for being a part of the app's journey to success. I hope you enjoy the new Scoop integration and find it useful. Happy file managing! 🙂
+I hope you enjoy the new Scoop integration and find it useful. Happy file managing! 🙂
 
 ---
 
