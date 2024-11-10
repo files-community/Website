@@ -67,5 +67,4 @@ Thank you for being a part of the app's journey to success. I hope you enjoy the
 
 ## Support Files
 
-If you enjoy using Files via Scoop, I implore that you consider purchasing the app on the Microsoft Store. Your support aids the development of the app directly and allows the continuation of improvement and development of new features for Files.
-Even if you don't have access to the Store, you can show your gratitude by [sponsoring the lead developer](https://github.com/sponsors/yaira2).
+If you enjoy using Files, please consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
