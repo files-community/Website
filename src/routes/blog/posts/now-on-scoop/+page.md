@@ -20,7 +20,7 @@ This means you can now install Files using Scoop, a command-line installer for W
 Scoop is a popular package manager for Windows that allows you to install and manage software directly from the command line. It simplifies the installation process and ensures that you always have the latest version of your favourite apps.
 By adding Scoop to the app's list of installation methods, the aim is to provide you with more flexibility and convenience.
 
-### How to Install Files via Scoop
+## How to Install Files via Scoop
 
 Installing Files via Scoop is straightforward. Just follow these simple steps:
 
@@ -65,7 +65,7 @@ Thank you for being a part of the app's journey to success. I hope you enjoy the
 
 ---
 
-### Support Files
+## Support Files
 
 If you enjoy using Files via Scoop, I implore that you consider purchasing the app on the Microsoft Store. Your support aids the development of the app directly and allows the continuation of improvement and development of new features for Files.
 Even if you don't have access to the Store, you can show your gratitude by [sponsoring the lead developer](https://github.com/sponsors/yaira2).
