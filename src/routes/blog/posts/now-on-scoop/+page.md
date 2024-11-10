@@ -22,6 +22,10 @@ By adding Scoop to the app's list of installation methods, the aim is to provide
 
 ## How to install Files via Scoop
 
+<InfoBar severity="information">
+  Please note that while we accommodate Scoop due to popular request, it's not officially endorsed by our team. We advise users to research Scoop to confirm they meet your individual standards and requirements.
+</InfoBar>
+
 Installing Files via Scoop is straightforward. Just follow these simple steps:
 
 1. **Open PowerShell**: Launch PowerShell with administrative privileges.
