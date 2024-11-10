@@ -46,9 +46,8 @@ In addition to Scoop, you can still install Files using the classic installer or
 
 - **Classic Installer**:
 
-  ```powershell
-  Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
-  ```
+  1. Open PowerShell as administrator.
+  2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
 
   <InfoBar severity="attention">
     You can also <a href="/appinstallers/Files.stable.appinstaller">download</a> the classic installer and install it via the built-in App Installer.
