@@ -8,11 +8,13 @@ author: Lamparter
 
 Hello Files Community!
 
-I am thrilled to share some exciting news with you. As part of the ongoing efforts to make Files more accessible and convenient, the team has integrated Scoop as a new installation method. This means you can now install Files using Scoop, a command-line installer for Windows, known for its simplicity and efficiency. 🚀
+I am thrilled to share some exciting news with you. As part of the ongoing efforts to make Files more accessible and convenient, the team has integrated Scoop as a new installation method.
+This means you can now install Files using Scoop, a command-line installer for Windows, known well for its simplicity and efficiency. 🚀
 
 ### Why Scoop?
 
-Scoop is a popular package manager for Windows that allows you to install and manage software directly from the command line. It simplifies the installation process and ensures that you always have the latest version of your favourite apps. By adding Scoop to the app's list of installation methods, the aim is to provide you with more flexibility and convenience.
+Scoop is a popular package manager for Windows that allows you to install and manage software directly from the command line. It simplifies the installation process and ensures that you always have the latest version of your favourite apps.
+By adding Scoop to the app's list of installation methods, the aim is to provide you with more flexibility and convenience.
 
 ### How to Install Files via Scoop
 
