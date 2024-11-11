@@ -25,7 +25,7 @@ By adding Scoop to the app's list of installation methods, the aim is to provide
   Please note that while we accommodate Scoop due to popular request, it's not officially endorsed by our team. We advise users to research Scoop to confirm it meets your individual standards and requirements.
 </InfoBar>
 
-Installing Files via Scoop is straightforward. Just follow these simple steps:
+Installing Files via Scoop is straightforward:
 
 1. **Open PowerShell**: Launch PowerShell with administrative privileges.
 2. **Install Scoop**: If you haven't already installed Scoop, you can do so by running the following command:
@@ -41,9 +41,9 @@ Installing Files via Scoop is straightforward. Just follow these simple steps:
    scoop install nonportable/files-np
    ```
 
-And that's it! Files is installed and ready to use. 🎉
+And that's it! Files should be installed and ready to use. 🎉
 
-I hope you enjoy the new Scoop integration and find it useful. Happy file managing! 🙂
+We hope you find the option to install Files via Scoop useful. Happy file managing! 🙂
 
 ---
 
