@@ -2,29 +2,33 @@
 
 # Privacy policy
 
-Last Updated: November 11th, 2024
+**Last Updated: November 11, 2024**
 
 This privacy policy for Files ("we", "us", or "our") explains how and why we collect, store, use, and disclose information about users ("you", "your") when you use our services or desktop applications. By using our Services, you acknowledge and consent to the practices described in this policy.
 
 ## Data we collect
 
-**Diagnostic information.** Our Application collects non-personably identifiable diagnostic data such as fault analysis and performance logs. This information may include technical details about your device, such as its make, model, operating system, and Application version. In addition, Files may store log files containing diagnostic information on the user's device. These files are not shared with us by default.
+### Diagnostic information
+Our application collects non-personally identifiable diagnostic data such as fault analysis and performance logs. This may include technical details about your device, such as its make, model, operating system, and application version. Additionally, Files may store log files containing diagnostic information on the user's device, which are not shared with us by default.
 
-**Usage data.** We collect non-identifiable information about your use of our Services, including but not limited to interactions within the Application, enabled user preferences (Application settings), and usage patterns. Our Application uses Sentry for error reporting, please review the Sentry Privacy Policy here: https://sentry.io/privacy/.
+### Usage data
+We collect non-identifiable information about your use of our services, including interactions within the application, enabled user preferences (application settings), and usage patterns. Our application uses Sentry for error reporting. Please review the [Sentry Privacy Policy](https://sentry.io/privacy/).
 
-Furthermore, we use certain Microsoft services such as Microsoft Partner Center to collect usage data, to learn more about how data is collected, used, and disclosed by Microsoft and its subsidiaries, please review the Microsoft Privacy Policy Statement available here: https://privacy.microsoft.com/privacystatement
+We also use Microsoft services such as Microsoft Partner Center to collect usage data. To learn more about how data is collected, used, and disclosed by Microsoft and its subsidiaries, please review the [Microsoft Privacy Statement](https://privacy.microsoft.com/privacystatement).
 
-Please note that any information we collect is non-identifiable and does not include any personal data. We do not share collected information with any third parties.
+Please note that all collected information is non-identifiable and does not include any personal data. We do not share collected information with any third parties.
 
 ## How we use collected data
 
-**Mitigate iIssues.** We may use the aggregated information to diagnose and address any unexpected issues that may arise during the use of our Application. This may include analyzing diagnostic data, such as fault analysis and performance logs, to identify the root cause of the issue and develop a solution to resolve it.
+### Mitigate issues
+We use aggregated information to diagnose and address any unexpected issues that may arise during the use of our application. This includes analyzing diagnostic data, such as fault analysis and performance logs, to identify the root cause of issues and develop solutions.
 
-**Identify usage trends.** We may use the information to identify and analyze usage trends for our Services and Application. This may include analyzing aggregated usage data to understand how users interact with our Services and to measure their utilization intensity. We may use this analysis to improve the functionality, usability, and performance of our Services and to inform future development decisions.
+### Identify usage trends
+We use the information to identify and analyze usage trends for our services and application. This includes analyzing aggregated usage data to understand how users interact with our services and to measure utilization intensity. We use this analysis to improve functionality, usability, and performance, and to inform future development decisions.
 
 ## Changes to this privacy policy
 
-We may modify, update, or amend this Privacy Policy from time to time to reflect changes made to our Application. When we change this Policy in a material manner, we will inform you of such changes by updating the 'Effective date' notice. It is your responsibility to review this Privacy Policy periodically to stay informed of any updates. Your continued use of the Services after any modifications to this Policy constitutes your acceptance of such changes.
+We may modify, update, or amend this privacy policy from time to time to reflect changes made to our application. When we make material changes to this policy, we will inform you by updating the "Last Updated" date. It is your responsibility to review this privacy policy periodically to stay informed of any updates. Your continued use of the services after any modifications to this policy constitutes your acceptance of such changes.
 
 </main>
 
