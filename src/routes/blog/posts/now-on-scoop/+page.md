@@ -1,6 +1,6 @@
 ---
 title: Introducing Scoop installation for Files
-description: I'm excited to announce that Files is now available for installation via Scoop! This new integration makes it easier than ever to sideload Files and enjoy its features without any hassle.
+description: Files is now available on Scoop! We are thrilled to announce that Files can now be easily installed via Scoop.
 thumbnail: /blog-resources/now-on-scoop/Hero.png
 date: 11/10/2024
 author: Lamparter
