@@ -12,8 +12,7 @@ author: Lamparter
 
 Hello Files Community!
 
-I am thrilled to share some exciting news with you. As part of the ongoing efforts to make Files more accessible, the team has introduced Scoop as an additional method to install Files on your device.
-This means you can now install Files using Scoop, a command-line installer for Windows, known well for its simplicity and efficiency. 🚀
+I am thrilled to share some exciting news with you. As part of the ongoing efforts to make Files more accessible, the team has introduced Scoop as an additional method to install Files on your device. 🚀
 
 ### Why Scoop?
 
