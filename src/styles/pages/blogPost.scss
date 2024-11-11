@@ -76,6 +76,7 @@
 	}
 
 	&thumbnail {
+		width: 100%;
 		max-inline-size: 100%;
 		margin-block-end: 48px;
 		border: 1px solid var(--fds-card-stroke-default);
