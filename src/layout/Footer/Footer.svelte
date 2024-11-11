@@ -110,14 +110,6 @@
 		</Button>
 	</div>
 	<div class="column">
-		<p>{$_("footer.web_team", defaultI18nValues)}</p>
-		{#each contributors as contributor}
-			<Button variant="hyperlink" href={contributor.link} {...externalLink}>
-				{contributor.name}
-			</Button>
-		{/each}
-	</div>
-	<div class="column">
 		<p>{$_("footer.support", defaultI18nValues)}</p>
 		<Button variant="hyperlink" href="/privacy">
 			{$_("footer.privacy", defaultI18nValues)}
