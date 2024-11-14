@@ -20,12 +20,19 @@ You can also use the preview version alongside the stable release to get early a
 	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
 </InfoBar>
 
-### Install via PowerShell
+### PowerShell
 
 1. Open PowerShell as administrator.
 2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
 
-### Install via Chocolatey
+
+### Winget
+
+```
+winget install -e --id FilesCommunity.Files
+```
+
+### Chocolatey
 
 The [Chocolatey](https://community.chocolatey.org/packages/files) package is maintained by a third party.
 
@@ -33,7 +40,7 @@ The [Chocolatey](https://community.chocolatey.org/packages/files) package is mai
 choco install files
 ```
 
-### Install via Scoop
+### Scoop
 
 The [Scoop](https://scoop.sh) package is maintained by a third party.
 
