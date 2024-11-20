@@ -55,7 +55,7 @@ Archive creation settings are now stored across sessions. This means you won't n
 - Updated the privacy policy URL.
 - Improved responsiveness of the cards in the drives widget.
 - Fixed an issue where a WSL prompt would sometimes display on startup.
-- Fixed an issue where canceling drag & dropped cleared the selected items.
+- Fixed an issue where canceling drag & drop cleared the selected items.
 - Fixed an issue where bulk rename didn't follow the sort order.
 - Fixed the context menu placement on the home page.
 
