@@ -40,7 +40,7 @@ We've also added an [action](/docs/customize-settings/actions/) that allows you 
 
 ### Paste items from the clipboard as shortcuts
 
-We've added a new [action](/docs/customize-settings/actions/) that lets you paste items from the clipboard as shortcuts. You can access this feature via the Command Palette, and for even quicker access, you can assign it a custom keyboard shortcut.
+We've added a new [action](/docs/customize-settings/actions/) that lets you paste items from the clipboard as shortcuts. You can access this feature via the right click context menu, the Command Palette, and for even quicker access, you can assign it a custom keyboard shortcut.
 
 ### Archive creation settings are now stored across sessions
 
