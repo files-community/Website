@@ -24,7 +24,7 @@ We've added a new action to open the Storage Sense feature in Windows, helping y
 
 ### Create alternate data streams
 
-Alternate data streams are a feature on NTFS file systems that allow files to contain multiple streams of data without affecting their primary content. This is an advanced feature, and while most users creating alternate data streams likely do so via the command line, we've made it directly accessible from Files. Not only does Files already support viewing alternate data streams, but we've also added a new [action](/docs/customize-settings/actions/) to create alternate data streams for the selected items. This action can be accessed from the Command Palette, assigned a keyboard shortcut, and for even easier access, added to the context menu from Settings > Context menu options.
+Alternate data streams are a feature on NTFS file systems that allow files to contain multiple streams of data without affecting their primary content. This is an advanced feature, and while most users creating alternate data streams likely do so via the command line, we've made it directly accessible from Files. Not only does Files already support viewing alternate data streams, but we've also added a new [action](/docs/customize-settings/actions/) to create new data streams for the selected items. This action can be accessed from the Command Palette, assigned a keyboard shortcut, and for even easier access, added to the context menu from Settings > Context menu options.
 
 <figure>
     <img src="/blog-resources/v3-8/DataStreams.png" alt="Context menu option to create alternate data streams" />
