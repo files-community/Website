@@ -2,7 +2,7 @@
 title: Announcing Files v3.8
 description: Manage tags from the sidebar, open Storage Sense, create alternate data streams, paste as shortcuts, and remember archive settings across sessions..
 thumbnail: /blog-resources/v3-8/Hero.png
-date: 11/19/2024
+date: 11/24/2024
 author: files-community
 ---
 
