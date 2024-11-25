@@ -17,7 +17,7 @@
 		"@iconify-json/fluent": "^1.2.4",
 		"@neodrag/svelte": "^2.0.6",
 		"@sveltejs/adapter-cloudflare": "^4.7.3",
-		"@sveltejs/kit": "^2.7.1",
+		"@sveltejs/kit": "^2.8.3",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"@types/eslint": "^9.6.1",
 		"eslint": "^9.12.0",
