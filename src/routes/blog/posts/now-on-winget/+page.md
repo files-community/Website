@@ -10,7 +10,7 @@ I'm are excited to announce that the app Files is now available again on WinGet!
 
 ### Files and WinGet
 
-The return of Files to WinGet signifies the continued commitment to providing users with the best experience in offering convenient, friendly installation methods compatible with their device.
+The return of Files to WinGet signifies our continued commitment to providing users with the best experience, allowing them to install and manage their apps the way they desire.
 
 ### How to Install Files via WinGet
 
