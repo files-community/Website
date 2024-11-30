@@ -6,7 +6,7 @@ date: 11/17/2024
 author: Lamparter
 ---
 
-I'm are excited to announce that the app Files is now available again on WinGet! After initially being removed, Files has made a triumphant return, offering users an enhanced and seamless file management experience on Windows.
+I'm excited to announce that Files is now available again on WinGet! After a couple years, we're pleased to bring back this popular installation method for Files.
 
 ### Files and WinGet
 
