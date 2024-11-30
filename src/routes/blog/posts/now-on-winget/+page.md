@@ -12,7 +12,7 @@ I'm excited to announce that Files is now available again on WinGet! After a cou
 
 The return of Files to WinGet signifies our continued commitment to providing users with the best experience, allowing them to install and manage their apps the way they desire.
 
-### How to Install Files via WinGet
+### How to install Files via WinGet
 
 The app is available on WinGet with the following package names:
 
