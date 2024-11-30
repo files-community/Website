@@ -1,5 +1,5 @@
 ---
-title: Files is now available on WinGet again
+title: Files is now available on WinGet
 description: Files is back on WinGet!
 thumbnail: /blog-resources/now-on-winget/Hero.png
 date: 11/30/2024
