@@ -1,6 +1,6 @@
 ---
 title: Files is now available on WinGet again
-description: Files is back on WinGet! I'm pleased to announce that Files can finally be installed from WinGet again.
+description: Files is back on WinGet!
 thumbnail: /blog-resources/now-on-winget/Hero.jpg
 date: 11/17/2024
 author: Lamparter
