@@ -29,6 +29,6 @@ This command will download and install the latest version of Files, making it re
 
 ---
 
-## Supporting Open-Source Development
+## Support Files
 
-Files is developed by a dedicated community of developers who are passionate about creating quality software. If you find Files useful, consider supporting the developer through GitHub Sponsors. Your support helps maintain and improve the app, ensuring it continues to meet the needs of its users.
+If you enjoy using Files, please consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
