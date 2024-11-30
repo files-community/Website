@@ -12,8 +12,6 @@ I'm are excited to announce that the app Files is now available again on WinGet!
 
 The return of Files to WinGet signifies the continued commitment to providing users with the best experience in offering convenient, friendly installation methods compatible with their device.
 
-WinGet allows users to easily install, update, and manage software packages on their Windows devices. By integrating Files into WinGet, users can now enjoy a hassle-free installation process and keep their file manager up to date with the latest features and improvements.
-
 ### How to Install Files via WinGet
 
 The app is available on WinGet with the following package names:
