@@ -78,57 +78,59 @@
 					month: "short",
 				},
 			)}
-			<MenuFlyout placement="bottom">
-				<IconButton
-					size={20}
-					aria-label="Share"
-					class="share-button"
-					title="Share"
-				>
-					<Share />
-				</IconButton>
-				<svelte:fragment slot="flyout">
-					<MenuFlyoutItem
-						on:click={() =>
-							navigator.share({
-								title,
-								url: $page.url.href,
-							})}
+			{#if !minimal}
+				<MenuFlyout placement="bottom">
+					<IconButton
+						size={20}
+						aria-label="Share"
+						class="share-button"
+						title="Share"
 					>
-						{$_("blog.share.default", defaultI18nValues)}
-					</MenuFlyoutItem>
-					<MenuFlyoutItem
-						on:click={() => navigator.clipboard.writeText($page.url.href)}
-					>
-						{$_("blog.share.url", defaultI18nValues)}
-					</MenuFlyoutItem>
-					<MenuFlyoutItem>
-						<a
-							href="https://twitter.com/intent/tweet?text={encodeURIComponent(
-								$page.url.href,
-							)}"
-							{...externalLink}
+						<Share />
+					</IconButton>
+					<svelte:fragment slot="flyout">
+						<MenuFlyoutItem
+							on:click={() =>
+								navigator.share({
+									title,
+									url: $page.url.href,
+								})}
 						>
-							{$_("blog.share.tweet", defaultI18nValues)}
-						</a>
-					</MenuFlyoutItem>
-					<MenuFlyoutItem>
-						<a
-							href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(
-								$page.url.href,
-							)}"
-							{...externalLink}
+							{$_("blog.share.default", defaultI18nValues)}
+						</MenuFlyoutItem>
+						<MenuFlyoutItem
+							on:click={() => navigator.clipboard.writeText($page.url.href)}
 						>
-							{$_("blog.share.facebook", defaultI18nValues)}
-						</a>
-					</MenuFlyoutItem>
-					<MenuFlyoutItem>
-						<a href="/blog/feed.rss" {...externalLink}
-							>{$_("blog.share.rss", defaultI18nValues)}</a
-						>
-					</MenuFlyoutItem>
-				</svelte:fragment>
-			</MenuFlyout>
+							{$_("blog.share.url", defaultI18nValues)}
+						</MenuFlyoutItem>
+						<MenuFlyoutItem>
+							<a
+								href="https://twitter.com/intent/tweet?text={encodeURIComponent(
+									$page.url.href,
+								)}"
+								{...externalLink}
+							>
+								{$_("blog.share.tweet", defaultI18nValues)}
+							</a>
+						</MenuFlyoutItem>
+						<MenuFlyoutItem>
+							<a
+								href="https://www.facebook.com/sharer/sharer.php?u={encodeURIComponent(
+									$page.url.href,
+								)}"
+								{...externalLink}
+							>
+								{$_("blog.share.facebook", defaultI18nValues)}
+							</a>
+						</MenuFlyoutItem>
+						<MenuFlyoutItem>
+							<a href="/blog/feed.rss" {...externalLink}
+								>{$_("blog.share.rss", defaultI18nValues)}</a
+							>
+						</MenuFlyoutItem>
+					</svelte:fragment>
+				</MenuFlyout>
+			{/if}
 		</div>
 		{#if thumbnail}
 			<img
