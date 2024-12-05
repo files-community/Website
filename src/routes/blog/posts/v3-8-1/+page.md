@@ -2,7 +2,7 @@
 title: Announcing Files Preview v3.8.1
 description: Announcing Files Preview v3.8.1 for users of the preview version.
 thumbnail: /blog-resources/v3-8-1/Hero.png
-date: 11/24/2024
+date: 12/5/2024
 author: files-community
 ---
 
