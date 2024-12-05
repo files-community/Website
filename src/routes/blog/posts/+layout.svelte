@@ -4,7 +4,7 @@
 	import { _ } from "svelte-i18n";
 	import Share from "~icons/fluent/share-24-regular";
 	import ArrowLeft from "~icons/fluent/arrow-left-24-regular";
-	import FolderOpen from "~icons/fluent/folder-open-24-regular";
+	import Open from "~icons/fluent/open-24-regular";
 	import { IconButton, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
 	import { page } from "$app/stores";
 	import type { LayoutData } from "./$types";
@@ -59,7 +59,7 @@
 							"",
 						))}
 				>
-					<FolderOpen />
+					<Open />
 				</IconButton>
 			{/if}
 			<h1 style:view-transition-name="post-title-{slug}">{title}</h1>
