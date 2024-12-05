@@ -50,6 +50,11 @@ Today we are releasing **Files Preview v3.8.1** for users of the [preview](/down
 
 - Modifying which columns are enabled in the Settings will now automatically update existing tabs. Previously, this setting only applied to tabs opened after the change.
 
+### Release Notes
+
+- The Release Notes dialog was updated to display changelogs directly from the Files website.
+- Added a new [action](/docs/customize-settings/actions/) to open the Release Notes dialog. Previously, the dialog was only accessible during the session immediately following an update.
+
 ## Fixes
 
 ### Address Bar

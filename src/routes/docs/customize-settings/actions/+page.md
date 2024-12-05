@@ -772,6 +772,13 @@ Opens properties window
 ```
 
 
+### Open Release Notes
+
+Opens the Release Notes dialog
+
+**Action name:** `OpenReleaseNotes`
+
+
 ### Cleanup
 
 Opens the Storage Sense page in Windows Settings
