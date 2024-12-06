@@ -42,24 +42,9 @@
 					class="back-button"
 					href="/blog"
 					title="Back to Blog"
+					style="margin-inline-start: -48px;"
 				>
 					<ArrowLeft />
-				</IconButton>
-			{/if}
-			{#if minimal}
-				<IconButton
-					--icon-color="var(--text-color-secondary)"
-					aria-label="View full post"
-					class="back-button"
-					href={window.location.href.replace("?minimal", "")}
-					title="View full post"
-					on:click={() =>
-						(window.location.href = window.location.href.replace(
-							"?minimal",
-							"",
-						))}
-				>
-					<Open />
 				</IconButton>
 			{/if}
 			<h1 style:view-transition-name="post-title-{slug}">{title}</h1>
