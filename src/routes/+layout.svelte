@@ -68,6 +68,13 @@
 			});
 		});
 	});
+
+	let minimal = false;
+
+	onMount(() => {
+		const params = new URLSearchParams(window.location.search);
+		minimal = params.has("minimal");
+	});
 </script>
 
 <svelte:head>
@@ -124,7 +131,16 @@
 <slot />
 <Footer />
 
-<style global lang="scss">
-	@use "src/styles/global";
-	@use "src/styles/markdown";
-</style>
+{#if !minimal}
+	<style global lang="scss">
+		@use "src/styles/scrollbar";
+		@use "src/styles/global";
+		@use "src/styles/markdown";
+	</style>
+{/if}
+{#if minimal}
+	<style global lang="scss">
+		@use "src/styles/global";
+		@use "src/styles/markdown";
+	</style>
+{/if}
