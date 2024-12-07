@@ -7,6 +7,8 @@
 	import { links, type NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
 
+	import { minimal } from "$data/minimalism";
+
 	import "fluent-svelte/theme.css";
 
 	import Chat from "~icons/fluent/chat-24-regular";
@@ -67,13 +69,6 @@
 				await navigation.complete;
 			});
 		});
-	});
-
-	let minimal = false;
-
-	onMount(() => {
-		const params = new URLSearchParams(window.location.search);
-		minimal = params.has("minimal");
 	});
 </script>
 
