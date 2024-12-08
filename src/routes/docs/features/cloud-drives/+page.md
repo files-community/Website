@@ -77,13 +77,13 @@ https://drive.autodesk.com/
 
 https://owncloud.com/
 
-## Lucid Link
+## Lucid Link Classic (v2.8)
 
 <InfoBar severity="information">
 	Please note that the folder contents will only show if the Lucid Link client is running. This is the way Lucid Link is designed and isn't specific to Files. Also, please be aware that this integration requires the Lucid Link folder to be in the default location, we hope to resolve this limitation in the future.
 </InfoBar>
 
-https://www.lucidlink.com/
+https://www.lucidlink.com/download#other-platforms-classic
 
 ## Infomaniak kDrive
 
