@@ -21,13 +21,13 @@ OneDrive is included with Windows and no additional setup is required.
 
 https://www.google.com/drive/download
 
-## ICloud
+## iCloud
 
-https://support.apple.com/en-us/HT204283
+https://support.apple.com/103232
 
 ## Box
 
-https://www.box.com/resources/download
+https://www.box.com/resources/downloads
 
 ## Dropbox
 
@@ -37,17 +37,13 @@ https://www.dropbox.com/install
 
 https://mega.io/desktop
 
-## Amazon Drive
-
-Amazon Drive requires downloading and installing the desktop client.
-
 ## Nextcloud
 
 https://nextcloud.com/install
 
 ## Yandex
 
-https://disk.yandex.com
+https://360.yandex.com/disk/download
 
 ## Jottacloud
 
@@ -55,7 +51,7 @@ https://www.jottacloud.com/download
 
 ## SynologyDrive
 
-https://www.synology.com/en-us/support/download
+https://www.synology.com/support/download
 
 ## pCloud Drive
 
@@ -63,19 +59,19 @@ https://www.pcloud.com/download-free-online-cloud-file-storage.html
 
 ## Nutstore
 
-https://www.jianguoyun.com/s/download
+https://www.jianguoyun.com/s/downloads
 
 ## Seadrive
 
-https://www.seafile.com/en/download/
+https://www.seafile.com/en/download
 
 ## Autodesk
 
-https://drive.autodesk.com/
+https://drive.autodesk.com
 
 ## ownCloud
 
-https://owncloud.com/
+https://owncloud.com/desktop-app
 
 ## Lucid Link
 
@@ -83,7 +79,7 @@ https://owncloud.com/
 	Please note that the folder contents will only show if the Lucid Link client is running. This is the way Lucid Link is designed and isn't specific to Files. Also, please be aware that this integration requires the Lucid Link folder to be in the default location, we hope to resolve this limitation in the future.
 </InfoBar>
 
-https://www.lucidlink.com/
+https://www.lucidlink.com/download
 
 ## Infomaniak kDrive
 
