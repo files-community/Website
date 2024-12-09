@@ -16,7 +16,17 @@ This is installed when building the app from the source code.
 - Package Family Name: `FilesDev_ykqwq8d6ps0ag`
 - Auto updates: `False`
 
-## Store
+## Store Preview
+
+This is installed from the store and uses the store assigned identity.
+
+- Display Name: `Files - Preview`
+- Publisher Name: `Yair A`
+- Package Name: `49306atecsolution.FilesPreview`
+- Package Family Name: `49306atecsolution.FilesPreview_et10x9a9vyk8t`
+- Auto updates: `True`
+
+## Store Stable
 
 This is installed from the store and uses the store assigned identity.
 
@@ -24,16 +34,6 @@ This is installed from the store and uses the store assigned identity.
 - Publisher Name: `Yair A`
 - Package Name: `49306atecsolution.FilesUWP`
 - Package Family Name: `49306atecsolution.FilesUWP_et10x9a9vyk8t`
-- Auto updates: `True`
-
-## Sideload
-
-This is installed from our website and is signed by the Files organization.
-
-- Display Name: `Files`
-- Publisher Name: `Files`
-- Package Name: `Files`
-- Package Family Name: `Files_1y0xx7n9077q4`
 - Auto updates: `True`
 
 ## Sideload Preview
@@ -44,4 +44,14 @@ This is installed from our website and is signed by the Files organization.
 - Publisher Name: `Files`
 - Package Name: `FilesPreview`
 - Package Family Name: `FilesPreview_1y0xx7n9077q4`
+- Auto updates: `True`
+
+## Sideload Stable
+
+This is installed from our website and is signed by the Files organization.
+
+- Display Name: `Files`
+- Publisher Name: `Files`
+- Package Name: `Files`
+- Package Family Name: `Files_1y0xx7n9077q4`
 - Auto updates: `True`
