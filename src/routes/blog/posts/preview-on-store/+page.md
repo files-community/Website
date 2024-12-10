@@ -1,6 +1,6 @@
 ---
 title: Files Preview now available on the Microsoft Store
-description: Download Files Preview from the Microsoft Store
+description: Download and update Files Preview directly from the Microsoft Store.
 thumbnail: /blog-resources/preview-on-store/Hero.png
 date: 12/10/2024
 author: yaira
