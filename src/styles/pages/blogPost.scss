@@ -25,7 +25,6 @@
 .post- {
 	&title {
 		@include flex($align: center, $gap: 12px);
-		margin-inline-start: -48px;
 
 		h1 {
 			margin: 0;
