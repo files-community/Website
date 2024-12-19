@@ -1,12 +1,12 @@
 ---
-title: Announcing Files Preview v3.8.2
-description: Announcing Files Preview v3.8.2 for users of the preview version.
-thumbnail: /blog-resources/v3-8-2/Hero.png
+title: Announcing Files Preview v3.8.3
+description: Announcing Files Preview v3.8.3 for users of the preview version.
+thumbnail: /blog-resources/v3-8-3/Hero.png
 date: 12/19/2024
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.8.2** for users of the [preview](/download/) version.
+Today we are releasing **Files Preview v3.8.3** for users of the [preview](/download/) version.
 
 ## Changes
 
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.8.2** for users of the [preview](/down
 - Added an option to always switch to newly created tabs. This option can be enabled from the general page in settings.
 
 <figure>
-    <img src="/blog-resources/v3-8-2/AlwaysSwitchTabs.png" alt="Settings dialog" />
+    <img src="/blog-resources/v3-8-3/AlwaysSwitchTabs.png" alt="Settings dialog" />
 </figure>
 
 ### Home Page
@@ -29,6 +29,16 @@ Today we are releasing **Files Preview v3.8.2** for users of the [preview](/down
 ### Cloud drives
 
 - Removed unsupported Amazon Drive from the list of [cloud providers](/docs/features/cloud-drives/).
+
+### Launch protocols
+
+- Added individual launch protocols for each branch of Files.
+
+|Branch|Alias|URI scheme|
+|---|---|---|
+|Dev|files-dev.exe|files-dev:|
+|Preview|files-preview.exe|files-preview:|
+|Stable|files-stable.exe|files-stable:|
 
 ## Fixes
 
