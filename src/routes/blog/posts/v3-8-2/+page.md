@@ -28,7 +28,7 @@ Today we are releasing **Files Preview v3.8.2** for users of the [preview](/down
 
 ### Cloud drives
 
-- Removed unsupported Amazon Drive from the list of cloud providers.
+- Removed unsupported Amazon Drive from the list of [cloud providers](/docs/features/cloud-drives/).
 
 ## Fixes
 
@@ -48,7 +48,7 @@ Today we are releasing **Files Preview v3.8.2** for users of the [preview](/down
 
 ### Actions
 
-- Fixed a crash that would occur when using the 'Storage Sense' action.
+- Fixed a crash that would occur when using the 'Storage Sense' [action](/docs/customize-settings/actions/).
 
 ### Title Bar
 
