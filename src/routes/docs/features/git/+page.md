@@ -1,5 +1,5 @@
 ---
-title: Manage folders with Git
+title: Git integration
 ---
 
 ## Using Git in Files
