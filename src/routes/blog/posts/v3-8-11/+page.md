@@ -22,7 +22,7 @@ Today we are releasing **Files Preview v3.8.11** for users of the preview versio
 
 ### Tags
 
-- Added back support for applying tags by dropping files onto tags in the sidebar.
+- Added back support for applying tags by dropping files or folders onto tags in the sidebar.
 
 ## Fixes
 
