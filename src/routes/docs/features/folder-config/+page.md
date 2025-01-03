@@ -2,66 +2,64 @@
 title: Folder backgrounds
 ---
 
-In addition to supporting custom [background](/docs/customize-settings/appearance) images in Files, you can also apply images and watermarks to individual folder locations.
+In addition to setting a custom [background](/docs/customize-settings/appearance) image for the entire window, Files allows you to assign unique background images for different folders. You can also set the image alignment, such as positioning it in a corner of the file area. This feature is perfect for displaying watermarks to easily differentiate between folders.
 
 ## Set a custom background image for a folder
 
 1. Navigate to the folder where you want to set a custom background image.
-2. Open the `desktop.ini` file using a text editor (such as Notepad).
-3. Add the following line to the `desktop.ini` file, replacing `C:\Image.png` with the actual path to your desired image file:
-```
-[FilesApp]
-Files_BackgroundImage=C:\\Image.png
-```
+2. Open the `desktop.ini` file using a text editor (e.g., Notepad).
+3. Add the following to the `desktop.ini` file, replacing `C:\Image.png` with the actual path to your desired image file:
+    ```ini
+    [FilesApp]
+    Files_BackgroundImage=C:\\Image.png
+    ```
 4. Save the `desktop.ini` file.
 5. Refresh the folder (you can press F5 or right-click and choose "Refresh").
-6. Enjoy the custom background!
+6. Enjoy your custom background!
 
 ![Folder background image](/docs-resources/Folder-Background-Image.png)
 
-## Image properties
+## Additional options
 
-You can enhance your folder customization by adding optional properties to the `desktop.ini` file. These properties allow further fine-tuning of your folder background.
+You can enhance your background image further by adding the following properties to the `desktop.ini` file.
 
 ### Opacity
 
-**Property:** `Files_BackgroundOpacity`
+The opacity property accepts values between `0.0` and `1`. Lower values make the image more transparent, while higher values make it more opaque. Adjust this setting to achieve the desired effect.
 
-**Values:**
-
-The opacity property accepts values between `0.0` and `1`, allowing you to control the transparency of the image. Lower values make the image more transparent, while higher values make it more opaque. Adjust this setting to achieve the desired effect.
-
+```ini
+Files_BackgroundOpacity=0.4
+```
 
 ### Fit
 
-**Property:** `Files_BackgroundFit`
+The `Files_BackgroundFit` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
-| Value | Behavior |
-| --- | ------------- |
-| 0   | Fill          |
-| 1   | None          |
-| 2   | Uniform       |
-| 3   | UniformToFill |
+| Value | Behavior       |
+|-------|----------------|
+| 0     | Fill           |
+| 1     | None           |
+| 2     | Uniform        |
+| 3     | UniformToFill  |
 
 ### Vertical alignment
 
-**Property:** `Files_BackgroundVerticalAlignment`
+The `Files_BackgroundVerticalAlignment` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
 | Value | Behavior  |
-|-----|--------|
-| 0   | Top    |
-| 1   | Center |
-| 2   | Bottom |
-| 3   | Stretch|
-
+|-------|-----------|
+| 0     | Top       |
+| 1     | Center    |
+| 2     | Bottom    |
+| 3     | Stretch   |
 
 ### Horizontal alignment
 
-**Property:** `Files_BackgroundHorizontalAlignment`
+The `Files_BackgroundHorizontalAlignment` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
-| Value | Behavior |
-|-----|--------|
-| 0   | Center |
-| 1   | Left   |
-| 2   | Right  |
-| 3   | Stretch|
+| Value | Behavior  |
+|-------|-----------|
+| 0     | Center    |
+| 1     | Left      |
+| 2     | Right     |
+| 3     | Stretch   |
