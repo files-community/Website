@@ -44,7 +44,7 @@ Today we are releasing **Files Preview v3.8.11** for users of the preview versio
 
 ### Address Bar
 
-- Fixed keyboard navigation in the address path bar
+- Fixed keyboard navigation in the address path bar.
 
 ## Conclusion
 
