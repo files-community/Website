@@ -1,28 +1,27 @@
 ---
-title: Connecting to FTP servers
+title: Connect to FTP servers
 ---
 
-Files has built-in support for connecting to remote FTP and FTPs servers.
-This allows you to effortlessly connect to any server that supports these protocols, browse the directory structure, and perform tasks such as editing, renaming, and deleting files or folders according to your needs.
+Files comes equipped with robust support for connecting to remote FTP and FTPS servers. This feature allows you to seamlessly access any compatible server, explore its directory structure, and perform tasks such as editing, renaming, and deleting files or folders as needed.
 
-## How to connect to FTP servers
+## Establishing a connection with FTP servers
 
-You can connect to remote servers from the address bar
+To connect to remote servers, use the address bar by entering specific paths. Here's how:
 
-**FTP:** `ftp://<server_address>:<port>`.  
-**FTPs:** `ftps://<server_address>:<port>`.
+### FTP
 
-If you don't specify the port, the default port will be used:
+Enter the following in the address bar: `ftp://<server_address>:<port>`. For example, if your server address is `ftp.example.com` and you're using the default port, enter `ftp://ftp.example.com:21`. If you don't specify a port, it defaults to port 21.
 
-**FTP:** `21`.  
-**FTPs:** `990`.
+### FTPS
 
-If required, you will be prompted to enter your credentials to login.  
+For a secure connection using FTPS, use this format: `ftps://<server_address>:<port>`. For example, if your server address is `ftps.example.com` and you're using the default port, enter `ftps://ftps.example.com:990`. If you don't specify a port, it defaults to port 990.
 
-## How to disconnect from FTP servers
+When required, Files will prompt you to enter your credentials (username and password) to log in securely.
 
-Closing the tab or window will automatically disconnect from the server.
+## Disconnecting from FTP servers
 
-## Known limitations
+Disconnecting is straightforward: simply close the tab or window, and you'll automatically be disconnected from the server.
 
-- SFTP is not currently supported
+## Limitations to be aware of
+
+- **Note:** SFTP is not currently supported.
