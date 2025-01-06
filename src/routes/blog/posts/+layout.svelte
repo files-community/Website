@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { defaultI18nValues, externalLink, Metadata } from "$lib";
-	import { minimal } from "$data/minimalism";
+	import { onMount } from "svelte";
 	import { _ } from "svelte-i18n";
 	import Share from "~icons/fluent/share-24-regular";
 	import ArrowLeft from "~icons/fluent/arrow-left-24-regular";
@@ -13,6 +13,12 @@
 
 	$: ({ title, thumbnail, author, description, date, slug } = data);
 	$: pageTitle = title;
+
+	let minimal = false;
+	onMount(() => {
+		const params = new URLSearchParams(window.location.search);
+		minimal = params.has("minimal");
+	});
 </script>
 
 <Metadata
