@@ -7,8 +7,6 @@
 	import { links, type NavbarItem } from "$data/links";
 	import { _ } from "svelte-i18n";
 
-	import { minimal } from "$data/minimalism";
-
 	import "fluent-svelte/theme.css";
 
 	import Chat from "~icons/fluent/chat-24-regular";
@@ -126,16 +124,7 @@
 <slot />
 <Footer />
 
-{#if !minimal}
-	<style global lang="scss">
-		@use "src/styles/scrollbar";
-		@use "src/styles/global";
-		@use "src/styles/markdown";
-	</style>
-{/if}
-{#if minimal}
-	<style global lang="scss">
-		@use "src/styles/global";
-		@use "src/styles/markdown";
-	</style>
-{/if}
+<style global lang="scss">
+	@use "src/styles/global";
+	@use "src/styles/markdown";
+</style>
