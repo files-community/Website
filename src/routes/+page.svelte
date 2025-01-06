@@ -1,6 +1,7 @@
 <script lang="ts">
 	import {
 		CommunitySection,
+		CommunitySection,
 		DesignSection,
 		FeaturesSection,
 		ThemesSection,
@@ -13,6 +14,8 @@
 </script>
 
 <Metadata title={$_("metadata.home", defaultI18nValues)} />
+
+<HeroSection />
 
 <DesignSection />
 

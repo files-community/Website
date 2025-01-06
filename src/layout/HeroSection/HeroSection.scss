@@ -1,0 +1,212 @@
+@use "src/styles/mixins" as *;
+
+/*
+ * Section 1 (Hero)
+ */
+
+:global {
+	// Outer section
+	#hero-section {
+		position: relative;
+		overflow: hidden;
+		block-size: 75vh;
+		min-block-size: 584px;
+		max-block-size: 1024px;
+		border-block-end: 1px solid var(--fds-divider-stroke-default);
+
+		// Inner Section
+		.page-section-inner {
+			position: relative;
+			display: grid;
+			grid-template-columns: 1fr 1.5fr;
+			align-items: center;
+			gap: 4rem;
+		}
+
+		:global {
+			.split-button {
+				display: flex;
+                position: relative;
+
+				.button:first-of-type {
+					border-radius: var(--fds-control-corner-radius) 0 0 var(--fds-control-corner-radius);
+					border-inline-end: 1px solid var(--fds-divider-stroke-default);
+				}
+
+				.menu-flyout-wrapper {
+                    display: contents;
+                    .button {
+                        border-radius: 0 var(--fds-control-corner-radius) var(--fds-control-corner-radius) 0;
+                        block-size: 100%;
+                        padding-inline: 8px;
+                    }
+                }
+			}
+		}
+
+		// Custom button styling
+		// Applied on download and source buttons respectively
+		:global {
+			.button {
+				padding: 7px 12px;
+
+				svg {
+					@include icon($size: 14px);
+				}
+			}
+
+			.style-standard .hero-button-inner {
+				color: var(--fds-text-secondary);
+
+				h5 {
+					color: var(--fds-text-primary);
+				}
+			}
+		}
+
+		@keyframes rainbow-background-hue-rotate {
+			0% {
+				filter: none;
+			}
+			50% {
+				filter: hue-rotate(180deg);
+			}
+			to {
+				filter: none;
+			}
+		}
+
+		// Backdrop canvas
+		.rainbow-background {
+			position: absolute;
+			z-index: -1;
+			background: 800% 800% /* pos */
+			linear-gradient(
+							to bottom right,
+							hsl(133, 67%, 59%),
+							hsl(172, 100%, 42%),
+							hsl(202, 97%, 45%),
+							var(--fds-solid-background-base)
+			);
+			animation: rainbow-background-hue-rotate 15s infinite linear,
+			scroll-gradient 15s infinite linear;
+			inset-inline-end: 0;
+			inset-block-end: 0;
+			inline-size: 60vw;
+			min-inline-size: 100vh;
+			block-size: 100%;
+
+			mask: url("/ui/hero-mask.png") bottom / cover no-repeat;
+
+			@media (prefers-color-scheme: light) {
+				opacity: 0.5;
+			}
+
+			@media screen and (width < 1024px) {
+				inline-size: 100%;
+				transform: rotate(90deg) scale(1.5);
+			}
+
+			@media screen and (width < 648px) {
+				block-size: 60vh;
+				mask-size: 100% 100%;
+			}
+		}
+	}
+}
+
+// Hero container elements
+.hero- {
+	// Left container
+	&left {
+		@include flex($direction: column, $justify: center);
+		flex: 1 1 auto;
+	}
+
+	// Right container
+	&right {
+		@include flex($align: center);
+		block-size: 100%;
+
+		img {
+			position: absolute;
+			inline-size: auto;
+			max-inline-size: 100%;
+			border: 1px solid var(--fds-surface-stroke-default);
+			border-radius: calc(var(--fds-overlay-corner-radius) / 1.5);
+			background-color: hsl(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
+			box-shadow: var(--fds-dialog-shadow);
+			overflow: hidden;
+			user-select: none;
+			inset-inline-end: 0;
+			block-size: auto;
+			max-block-size: 100%;
+			-webkit-user-drag: none;
+			aspect-ratio: 1280 / 960;
+			backdrop-filter: blur(60px) saturate(150%);
+
+			@media screen and (width > 2048px) {
+				border-radius: var(--fds-overlay-corner-radius);
+			}
+		}
+	}
+
+	// Inner hero buttons
+	&button-inner {
+		@include flex($direction: column, $align: start);
+		margin-inline-start: 8px;
+		font-size: 1.1rem;
+		line-height: normal;
+
+		h5 {
+			margin: 0;
+			font-size: 1.25rem;
+			font-weight: 600;
+		}
+	}
+
+	// Hero image container
+	&image-container {
+		@include flex($align: center, $justify: center);
+		position: relative;
+		inline-size: 100%;
+		block-size: 100%;
+		max-block-size: 768px;
+	}
+}
+
+// Hero section small device support
+@media screen and (width < 1024px) {
+	:global {
+		// Remove height constraints on outer container
+		#hero-section {
+			block-size: auto;
+			max-block-size: unset;
+
+			// Position inner containers vertically
+			.page-section-inner {
+				grid-template-columns: auto;
+			}
+		}
+	}
+
+	.hero- {
+		// Centrally align content in the left container
+		&left {
+			align-items: center;
+			text-align: center;
+
+			.buttons-spacer {
+				justify-content: center;
+			}
+		}
+
+		// Properly position hero image
+		&right img {
+			position: relative;
+			inline-size: 100%;
+			max-inline-size: 708px;
+			block-size: auto;
+		}
+	}
+}
