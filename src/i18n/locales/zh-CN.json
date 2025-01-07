@@ -20,18 +20,18 @@
 		"design": {
 			"chip": "设计",
 			"title": "当实用遇上美学。",
-			"description": "探索绚丽的 Windows 设计。在提高工作效率的同时，管理所有文件，更能使用标签在多个文件夹间切换。还有更多功能等待您发现。",
+			"description": "探索美观的窗口设计，高效管理所有文件，在多文件夹标签页中流转。还有更多功能待您体验。",
 			"download": "下载",
 			"learn_more": "了解更多"
 		},
 		"features": {
 			"chip": "特性",
-			"title": "它已经做到了这一点。",
-			"description": "云文件的集成？标签和多种布局？丰富的文件预览？ {FilesName} 拥有您期望从现代文件管理器中获得的所有强大功能。",
+			"title": "它已经做到了",
+			"description": "云盘文件集成、标签页和多种布局、丰富的文件预览……您想要的一切现代文件管理器的强大功能， {FilesName} 都能做到。",
 			"unknown": "未知",
 			"cloud": {
 				"title": "无缝的云端集成",
-				"description": "内置对 OneDrive、Google Drive 和 iCloud 等云驱动器的支持。"
+				"description": "内置对 OneDrive、Google Drive 和 iCloud 等云盘的支持。"
 			},
 			"preview": {
 				"title": "预览面板",
@@ -116,7 +116,8 @@
 		"feedback": "发送反馈",
 		"style_guide": "风格规范",
 		"translations": "翻译",
-		"web_team": "团队"
+		"support": "支持",
+		"privacy": "隐私"
 	},
 	"navbar": {
 		"home": "主页",

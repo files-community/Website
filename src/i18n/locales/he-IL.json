@@ -34,20 +34,20 @@
 				"description": "תמיכה מובנית בשירותי ענן כמו OneDrive, Google Drive ו-iCloud."
 			},
 			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them."
+				"title": "חלונית תצוגה מקדימה",
+				"description": "הצג תמונות, סרטונים ומסמכים בתצוגה מקדימה, מבלי לפתוח אותם."
 			},
 			"popup-preview": {
 				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+				"description": "תצוגה מקדימה של קבצי Office, מסמכים וסוגי קבצים אחרים על ידי לחיצה על מקש הרווח. תכונה זו דורשת התקנת QuickLook או SeerPro."
 			},
 			"tags": {
 				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
+				"description": "ארגן ומיין את הקבצים והתיקיות שלך עם תגים צבעוניים."
 			},
 			"tabs": {
 				"title": "עבוד במקביל עם כרטיסיות",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"description": "הימנע מחלונות מרובים ושמור על שולחן העבודה שלך נקי עם כרטיסיות."
 			},
 			"columns": {
 				"title": "תצוגת טורים",
@@ -55,15 +55,15 @@
 			},
 			"archives": {
 				"title": "צפו וערכו קבצי ארכיון",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+				"description": "צור וחלץ ארכיונים, כולל zip, WinRar ו-7zip."
 			},
 			"git": {
 				"title": "חיבור לגיט",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
+				"description": "נהלו בקלות את הפרוייקטים שלכם עם גיט. צרו ענפים חדשים, החליפו ביניהם, וסנכרנו את השינויים שלכם, והכל מבלי לעזוב את 'קבצים'."
 			},
 			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
+				"title": "כפל חלוניות",
+				"description": "הצג ונהל שתי תיקיות זו לצד זו עם תכונת כפל חלוניות."
 			},
 			"hashes": {
 				"title": "Hashes",
@@ -116,7 +116,8 @@
 		"feedback": "תן משוב",
 		"style_guide": "מדריך עיצוב",
 		"translations": "תרגום",
-		"web_team": "צוות אתר"
+		"support": "Support",
+		"privacy": "Privacy"
 	},
 	"navbar": {
 		"home": "בית",
