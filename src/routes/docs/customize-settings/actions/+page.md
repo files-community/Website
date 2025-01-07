@@ -8,8 +8,6 @@ title: Actions
 
 Actions are commands that you can perform on items, such as files, folders, images, etc. The [Command Palette](/docs/features/command-palette/)  (`Ctrl`+`Shift`+`P`) will show you a list of available actions for the selected item(s), along with their key bindings.
 
-![Command palette](/docs-resources/Command-Palette.png)
-
 
 # Customizing Actions
 
