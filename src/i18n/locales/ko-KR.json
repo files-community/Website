@@ -116,7 +116,8 @@
 		"feedback": "피드백 보내기",
 		"style_guide": "코드 구조",
 		"translations": "번역하기",
-		"web_team": "웹 설계"
+		"support": "지원",
+		"privacy": "개인정보 보호 정책"
 	},
 	"navbar": {
 		"home": "홈",
