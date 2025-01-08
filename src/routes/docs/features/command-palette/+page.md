@@ -25,8 +25,6 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Toggle hidden items**                | <kbd>Ctrl</kbd>+<kbd>H</kbd>        | Toggles whether to show hidden items                 |
 | **Toggle dot files**                   |                                     | Toggles the setting that controls whether dot files are displayed |
 | **Toggle file extensions**             |                                     | Toggles whether to show file extensions              |
-| **Toggle Preview Pane**                | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd>   | Toggles the Preview Pane                             |
-| **Toggle Details Pane**                | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>D</kbd>   | Toggles the Details Pane                             |
 | **Toggle Info Pane**                   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggles the Info Pane                                |
 | **Toggle Toolbar**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>  | Toggles the Toolbar visibility                       |
 | **Copy item**                          | <kbd>Ctrl</kbd>+<kbd>C</kbd>        | Copy selected items to the clipboard                 |
