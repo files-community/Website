@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 - Added a new icon to the 'update Files' button.
 
 <figure>
-    <img src="/blog-resources/v3-8-12/UpdateIcon.png" alt="Update Files button" />
+    <img src="/blog-resources/v3-8-12/UpdateFilesIcon.png" alt="Update Files button" />
 </figure>
 
 - Added a new icon to the 'open release notes' button.
