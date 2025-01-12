@@ -12,13 +12,13 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 
 ### Icons
 
-- Added a new icon to the 'update Files' button.
+- Redesigned the icon on the 'Update Files' button.
 
 <figure>
     <img src="/blog-resources/v3-8-12/UpdateFilesIcon.png" alt="Update Files button" />
 </figure>
 
-- Added a new icon to the 'open release notes' button.
+- Redesigned the icon on the 'Open release notes' button.
 
 <figure>
     <img src="/blog-resources/v3-8-12/ReleaseNotesIcon.png" alt="View release notes button" />
@@ -26,7 +26,7 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 
 ### Properties
 
-- Added run settings to configure window size for shortcut files.
+- Added support for configuring the window size when opening shortcut files.
 
 <figure>
     <img src="/blog-resources/v3-8-12/ShortcutWindowArgs.png" alt="Shortcut properties window" />
@@ -39,11 +39,11 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 ### Tags
 
 - Updated the item styles in the Tags Widget to match the rest of the UI.
-- Updated icons in the Tags Widget to use the correct DPI settings.
+- Updated theicons in the Tags Widget to follow the correct DPI settings.
 
 ### Search
 
-- Updated the icons in the search box suggestions to use the correct DPI settings.
+- Updated icons in the search suggestions to follow the correct DPI settings.
 
 ## Fixes
 
