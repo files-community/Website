@@ -34,7 +34,7 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 
 ### Address Bar
 
-- Added support for opening breadcrumb items using the `space` and `enter` keys.
+- Added support for opening breadcrumb flyouts using the `space` and `enter` keys.
 
 ### Tags
 
