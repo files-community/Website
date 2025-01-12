@@ -39,7 +39,7 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 ### Tags
 
 - Updated the item styles in the Tags Widget to match the rest of the UI.
-- Updated theicons in the Tags Widget to follow the correct DPI settings.
+- Updated the icons in the Tags Widget to follow the correct DPI settings.
 
 ### Search
 
