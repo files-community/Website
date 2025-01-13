@@ -94,6 +94,17 @@ The finder theme is based on the color scheme in Finder.
 | `AppThemeFileAreaBackgroundColor`   | `#2E3440`   |
 | `AppThemeInfoPaneBackgroundColor`   | `#2E3440`   |
 
+### Dracula
+
+| Key                                 | Value       |
+| ----------------------------------- | ----------- |
+| `AppThemeBackgroundColor`           | `#282A36` |
+| `AppThemeAddressBarBackgroundColor` | `#44475A`   |
+| `AppThemeToolbarBackgroundColor`    | `#44475A`   |
+| `AppThemeSidebarBackgroundColor`    | `#44475A`   |
+| `AppThemeFileAreaBackgroundColor`   | `#282A36`   |
+| `AppThemeInfoPaneBackgroundColor`   | `#44475A`   |
+
 ## Background image
 
 Files allows you to configure a custom background image or gif using the settings UI. Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
