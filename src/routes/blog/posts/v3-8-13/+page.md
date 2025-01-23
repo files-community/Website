@@ -37,7 +37,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 ### Thumbnails
 
 - File thumbnails in the Details View, List View, Columns View, and Cards View layouts are now synchronized with the layout size.
-- Files thumbnails in these layouts now have proper DPI awareness.
+- File thumbnails in these layouts now have proper DPI awareness.
 
 <figure>
     <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.png" alt="Details View (extra large size)" />
