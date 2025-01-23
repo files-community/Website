@@ -41,6 +41,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 
 <figure>
     <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.png" alt="Details View (extra large size)" />
+    <figcaption>Large icons in the Details View.</figcaption>
 </figure>
 
 ### Drag & drop
