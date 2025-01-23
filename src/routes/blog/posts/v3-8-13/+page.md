@@ -12,7 +12,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 
 ### Added Cards View layout
 
-- Added a **Cards View** layout which displays an overview of items. This replaces the existing Tiles View.
+- Added a Cards View layout which displays an overview of items. This replaces the existing Tiles View.
 
 <figure>
     <img src="/blog-resources/v3-8-13/CardsViewSmall.png" alt="Cards View (small size)" />
