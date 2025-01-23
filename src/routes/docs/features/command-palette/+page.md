@@ -91,7 +91,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Edit in Notepad**                    |                                     | Opens the selected file in Notepad. This action is available for the following file extensions: `.ahk`, `.bat`, and `.cmd`. |
 | **Details View**                       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>1</kbd>  | Switches to the Details View                         |
 | **List View**                          | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>2</kbd>  | Switches to the List View                            |
-| **Tiles View**                         | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd>  | Switches to the Tiles View                           |
+| **Cards View**                         | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>3</kbd>  | Switches to the Cards View                           |
 | **Grid View**                          | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>4</kbd>  | Switches to the Grid View                            |
 | **Columns View**                       | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>5</kbd>  | Switches to the Columns View                         |
 | **Adaptive Layout**                    | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>6</kbd>  | Switches the layout based on the folder contents     |
