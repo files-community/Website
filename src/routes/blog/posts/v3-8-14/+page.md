@@ -22,6 +22,11 @@ Today we are releasing **Files Preview v3.8.14** for users of the preview versio
 
 - Improved contrast for selected items in the Grid View layout.
 
+<figure>
+    <img src="/blog-resources/v3-8-14/GridViewContrast.png" alt="Improved contrast in Grid View layout" />
+    <figcaption>Improved contrast in the Grid View layout.</figcaption>
+</figure>
+
 ## Fixes
 
 ### Group and sort by
