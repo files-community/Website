@@ -16,7 +16,7 @@ Today we are releasing **Files Preview v3.8.14** for users of the preview versio
 
 ### Cards View layout
 
-- Added storage information to the Cards View layout when viewing browsing connected phones and devices.
+- Added storage information to the Cards View layout when browsing connected phones and devices.
 
 ### Grid View layout
 
