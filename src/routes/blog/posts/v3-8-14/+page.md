@@ -31,7 +31,7 @@ Today we are releasing **Files Preview v3.8.14** for users of the preview versio
 
 ### Group and sort by
 
-- Fixed issue where changing a folder's grouping preference wouldn't update the other open tabs.
+- Fixed issue where changing the grouping and sorting preferences would only update the current tab.
 
 ### Archives
 
