@@ -2,7 +2,7 @@
 title: Announcing General Availability of Files v3.9
 description: Today, we're excited to announce the release of Files v3.9 for all users.
 thumbnail: /blog-resources/v3-9/Hero.png
-date: 1/30/2025
+date: 1/29/2025
 author: files-community
 ---
 
