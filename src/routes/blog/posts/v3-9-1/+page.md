@@ -12,7 +12,7 @@ I'm excited to announce that Files v3.9.1 is now available! 🎉 Existing users 
 
 ### Home Page widgets
 
-We added support for refreshing the Home Page to reload the Drives and Tags widgets.
+Added support for refreshing the Home Page to reload the Drives and Tags widgets.
 
 
 ## Fixes
