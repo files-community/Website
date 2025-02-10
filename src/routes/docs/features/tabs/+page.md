@@ -24,9 +24,10 @@ Dragging items between tabs is pretty easy. Simply drag the items and hover the 
 
 There are several ways to interact with tabs in Files. Here are some useful shortcuts:
 - `ctrl` + `t`: Add a new tab.
+- `ctrl` + `shift` + `t`: Restore closed tab.
 - `ctrl` + `tab`: Switch to the next tab.
 - `ctrl` + `shift` + `tab`: Switch to the previous tab.
 - `ctrl` + `number`: Switch to the tab corresponding to the number. For example, `ctrl` + `3` will switch to the third tab.
 - `ctrl` + `w`: Close the current tab. If there is only one tab, the shortcut will close the window.
-- `ctrl` + `shift` + `w`: Restore recently closed tab.
+- `ctrl` + `shift` + `w`: Close current window.
 - `ctrl` + `shift` + `k`: Duplicate the current tab.
