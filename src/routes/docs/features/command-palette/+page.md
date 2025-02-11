@@ -43,7 +43,8 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Create item**                        | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>  | Creates new item                                     |
 | **Create shortcut**                    |                                     | Creates shortcut targeting the selected item         |
 | **Create shortcut from dialog**        |                                     | Creates shortcut targeting any item                  |
-| **Open item**                          | <kbd>Enter</kbd>                     | Opens selected items                                 |
+| **Create alternate data stream**       |                                     | Creates alternate data stream for the selected items |
+| **Open item**                          | <kbd>Enter</kbd>                    | Opens selected items                                 |
 | **Open item with application picker**  |                                     | Opens items with the selected application            |
 | **Open parent folder**                 |                                     | Opens parent folder of searched item                 |
 | **Open file location**                 |                                     | Opens location of the selected item                  |
