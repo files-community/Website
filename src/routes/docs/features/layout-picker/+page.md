@@ -11,7 +11,7 @@ The layout picker is where you can change the layout type and size for the curre
 Unless the setting to sync layouts preferences is enabled, changing the layout from the layout picker will only apply to the current directory. The available layout types are:
 
 - Details
-- List
+- Cards
 - Tiles
 - Grid
 - Columns
