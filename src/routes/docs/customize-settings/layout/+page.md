@@ -16,7 +16,7 @@ Arranges items using a Data Grid with resizable columns. Support for rearranging
 
 Displays items in a single column with only the icon and file name.
 
-### Tiles
+### Cards
 
 Displays larger icons and additional information about the items.
 
