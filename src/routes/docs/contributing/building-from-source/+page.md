@@ -10,7 +10,7 @@ title: Compiling the source code
   - MSVC v143 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
   - C++ ATL for latest v143 build tools (x86 & x64 or ARM64)
   - Git for Windows
-- [Windows App SDK 1.5](https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads#current-releases)
+- [Windows App SDK 1.6](https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads#current-releases)
 
 ### 2: Clone the Git repository
 
