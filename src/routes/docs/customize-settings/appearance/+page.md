@@ -99,11 +99,11 @@ The finder theme is based on the color scheme in Finder.
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
 | `AppThemeBackgroundColor`           | `#282A36`   |
-| `AppThemeAddressBarBackgroundColor` | `#44475A`   |
-| `AppThemeToolbarBackgroundColor`    | `#44475A`   |
-| `AppThemeSidebarBackgroundColor`    | `#44475A`   |
+| `AppThemeAddressBarBackgroundColor` | `#393d4e`   |
+| `AppThemeToolbarBackgroundColor`    | `#282A36`   |
+| `AppThemeSidebarBackgroundColor`    | `#393d4e`   |
 | `AppThemeFileAreaBackgroundColor`   | `#282A36`   |
-| `AppThemeInfoPaneBackgroundColor`   | `#44475A`   |
+| `AppThemeInfoPaneBackgroundColor`   | `#282A36`   |
 
 ## Background image
 
