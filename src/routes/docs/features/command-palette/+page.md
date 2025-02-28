@@ -79,8 +79,8 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Smart extract**                      | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd>  | Automatically chooses extraction mode based on the selected archives contents |
 | **Rotate left**                        |                                     | Rotates selected images left                         |
 | **Rotate right**                       |                                     | Rotates selected images right                        |
-| **Open in Visual Studio**              |                                     | Opens current folder in Visual Studio                |
-| **Open in Visual Studio Code**         |                                     | Opens current folder in Visual Studio Code           |
+| **Open directory in IDE**              |                                     | Opens current folder in the configued IDE            |
+| **Open repo in IDE**                   |                                     | Opens repo source folder in the configued IDE        |
 | **Open properties**                    | <kbd>Alt</kbd>+<kbd>Enter</kbd>     | Opens properties window                              |
 | **Open Release Notes**                 |                                     | Opens the Release Notes dialog                       |
 | **Cleanup**                            |                                     | Opens the Storage Sense page in Windows Settings     |
