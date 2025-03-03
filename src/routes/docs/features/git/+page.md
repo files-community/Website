@@ -26,6 +26,6 @@ The Details layout will display additional columns for Git status, last commit, 
 
 The Details Pane will display the repository name and current checked out branch in the Details Pane.
 
-### Opening a Git repository in VS Code
+### Opening a Git repository in VS Code (or your IDE of choice)
 
-When browsing a Git repository, the Status Bar will show an option to open the current folder in VS Code. Similarly, browsing a folder with a Visual Studio sln file will display an option to open the solution in Visual Studio.
+When browsing a Git repository, the Status Bar will show an option to open the current folder in your selected IDE.
