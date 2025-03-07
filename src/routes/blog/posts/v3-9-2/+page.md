@@ -20,7 +20,7 @@ Today we are releasing **Files Preview v3.9.2** for users of the preview version
 
 ### Added an option to change the default IDE
 
-We've added a new option to change the default IDE. Previously, this feature was hardcoded to Visual Studio Code, but now you can set your preferred IDE from Developer Tolls in settings.
+We've added a new option to change the default IDE. Previously, this feature was hardcoded to Visual Studio Code, but now you can set your preferred IDE from Developer Tools in settings.
 
 <figure>
     <img src="/blog-resources/v4/IDESettings.png" alt="Developer Settings" />
