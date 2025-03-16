@@ -6,15 +6,12 @@ date: 02/21/2025
 author: Lamparter
 ---
 
-As the built-in File Explorer gets more features and newer File Explorer alternatives release, it's interesting to consider what makes Files different from the Windows File Explorer.
+As the built-in File Explorer has seen some changes in recent version of Windows, it's interesting to consider what makes Files different from Windows File Explorer.
 
-In the recent years, File Explorer has had some major changes, including tabs, more consistent WinUI styles, and the experimental Pizza rewrite of File Explorer in the Windows App SDK.
+Recent updates to File Explorer in Windows 11 have brought significant improvements, including a refreshed design and the long-awaited addition of tabs. Meanwhile, Files has consistently provided a modern interface and tabbed navigation for users on both Windows 10 and Windows 11.
 
-When tabs were introduced to File Explorer in 2022, many members of the Files Community questioned the future of Files. As the lead developer of Files put it:
+However, what truly sets Files apart goes beyond tabs. While this feature has gained popularity, it was never meant to be the sole defining feature. Our aim was to create a modern file manager with an intuitive UX in collaboration with the community—an ambitious goal. Although there are still many exciting features we haven’t yet explored, Files stands out from File Explorer and other file managers through a range of unique differences, not just its tabs and modern styling.
 
-> The simple answer is that tabs was never the main point of Files, in fact, it wasn't even a feature for the first couple releases.
-
-And it's true - there are many differences that make Files an entirely different app than File Explorer, not just tabs and WinUI styles; what makes Files unique is the focus on usable design and features that make it easier to get work done.
 
 So, here are a few key differences that make Files what it is:
 - Available on Windows 10: Files is backwards compatible down to Windows 10, whereas Explorer's newer functionality is only available on Windows 11.
