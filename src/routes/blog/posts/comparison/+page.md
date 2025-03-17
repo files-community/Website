@@ -10,7 +10,7 @@ As the built-in File Explorer has seen some changes in recent version of Windows
 
 Recent updates to File Explorer in Windows 11 have brought significant improvements, including a refreshed design and the long-awaited addition of tabs. Meanwhile, Files has consistently provided a modern interface and tabbed navigation for users on both Windows 10 and Windows 11.
 
-However, what truly sets Files apart goes beyond tabs. While this feature has gained popularity, it was never meant to be the sole defining feature. Our aim was to create a modern file manager with an intuitive UX in collaboration with the community—an ambitious goal. Although there are still many exciting features we haven’t yet explored, Files stands out from File Explorer and other file managers through a range of unique differences, not just its tabs and modern styling.
+However, what truly sets Files apart goes beyond tabs. While this feature has gained popularity, it was never meant to be the sole defining feature. Our aim was to create a modern file manager with an intuitive UX in collaboration with the community. Although there are still many exciting features we haven’t yet explored, Files stands out from File Explorer and other file managers through a range of unique differences, not just its tabs and modern styling.
 
 So, here are a few key differences that make Files what it is:
 
