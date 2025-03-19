@@ -170,3 +170,4 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Pull**                               |                                     | Runs git pull                                        |
 | **Push**                               |                                     | Runs git push                                        |
 | **Sync**                               |                                     | Runs git pull and then git push                      |
+| **Clone**                              |                                     | Clones a git repo                                    |
