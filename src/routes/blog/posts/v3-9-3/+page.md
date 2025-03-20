@@ -31,6 +31,10 @@ We moved the settings button from the address bar to the left-hand sidebar. We r
 
 OneDrive storage details are now available in the Properties window within Files. Please note, this feature is currently supported only on Windows 23H2.
 
+### View status while installing fonts
+
+We added an indicator to the Status Center that's displayed while installing fonts.
+
 ## Fixes
 
 ### Themes
