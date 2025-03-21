@@ -15,13 +15,13 @@ Today we are releasing **Files Preview v3.9.3** for users of the preview version
 We've added a new feature that lets users drag and drop GitHub URLs directly into Files. Upon dropping a URL, a confirmation prompt is displayed asking if the user wants to clone the repository to their device. The cloning progress can be tracked in the Status Center. This feature is also available as a standalone action in the [Command Palette](/docs/features/command-palette/) and can also assigned a custom keyboard shortcut in [settings](/docs/customize-settings/actions).
 
 <figure>
-    <img src="/blog-resources/v4/CloneRepoPrompt.png" alt="Clone repo confirmation prompt" />
-    <figcaption>Clone repo confirmation prompt</figcaption>
+    <img src="/blog-resources/v4/CloneRepoPrompt.png" alt="Clone repo confirmation" />
+    <figcaption>Clone repo confirmation</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog-resources/v4/CloneRepoStatus.png" alt="Clone repo status" />
-    <figcaption>Clone repo status</figcaption>
+    <img src="/blog-resources/v4/CloneRepoStatus.png" alt="Clone status" />
+    <figcaption>Clone status</figcaption>
 </figure>
 
 ### Compare file hashes
