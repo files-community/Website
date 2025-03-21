@@ -12,10 +12,8 @@ Recent updates to File Explorer in Windows 11 have brought significant improveme
 
 However, what truly sets Files apart goes beyond tabs. While this feature has gained popularity, it was never meant to be the sole defining feature. Our aim was to create a modern file manager with an intuitive UX in collaboration with the community. Although there are still many exciting features we haven’t yet explored, Files stands out from File Explorer and other file managers through a range of unique differences, not just its tabs and modern styling.
 
-So, here are a few key differences that make Files what it is:
-
-- Available on Windows 10: Files is backwards compatible down to Windows 10, whereas Explorer's newer functionality is only available on Windows 11.
-- A consistent dark theme: Files uses the latest technologies and a powerful theming engine that makes it heavily customisable.
+Files distinguishes itself in numerous ways, and as it continues to improve, we’re committed to maintaining backward compatibility with Windows 10. This ensures that all the great features and benefits of Files are accessible to more users, not just those running the latest version of Windows 11.
+Another area where Files stand out is in its design and user experience. Built from the ground up with the latest UI frameworks from Microsoft, it looks and feels like a natural extension of Windows. This attention to detail extends beyond the main interface, Files maintains a consistent look and feel across the app, including a proper dark mode. Additionally, it supports custom themes and background images, allowing users to personalize their experience.
 - Customisable keyboard shortcuts: Files has a built-in UI in the settings pane to allow you to customise the keyboard shortcut for every action in the interface, making it truly accessible.
 - SmartExtractionFeature
 - Direct pasting of screenshots: You can paste an image from your clipboard into Files to turn it into an image file, which is very useful.
