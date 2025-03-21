@@ -1,7 +1,7 @@
 ---
 title: What makes Files different?
 description: An overview of the key differences of Files and File Explorer
-thumbnail: /blog-resources/comparison/FilesScreenshot.png
+thumbnail: /docs-resources/HeroImage.jpg
 date: 03/17/2025
 author: Lamparter
 ---
