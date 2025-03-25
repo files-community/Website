@@ -14,7 +14,7 @@ The easiest way to add a second pane is by clicking the 'Actions' button in the 
 
 ## Opening a folder in a new pane
 
- With the dual pane feeature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
+ With the dual pane feature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
 
 ![Add pane flyout](/docs-resources/OpenInNewPaneMeuOption.png)
 
