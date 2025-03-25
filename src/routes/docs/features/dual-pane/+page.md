@@ -2,33 +2,22 @@
 title: Dual pane
 ---
 
-Files lets you view and manage two folders side by side with the Dual Pane feature.
-You can activate this feature by clicking **Open in new pane** in the context menu of a folder or zip archive.
+Dual pane is a powerful feature that allows users to view two different locations within the same tab. This feature is ideal for comparing folder contents, transferring items between directories, or efficiently working across two folders without the need to create additional tabs or windows.
 
-![Context menu](/docs-resources/DualPane-ContextMenu.png)
+![Dual pane](/docs-resources/DualPane.png)
 
-> Tip: You can disable this context menu extension in the settings page.
-> 
-> ![Customize the right click context menu](/blog-resources/files2-4-40/EditContextMenu.png)
+## Creating a new pane
 
-Then, browse your way!
+The easiest way to add a second pane is by clicking the 'Actions' button in the top-left corner of the app. From there, users can also choose how the second pane is arranged. If two panes are already open, the menu will instead offer options to adjust their arrangement. In addition to this menu, you can add or remove panes using keyboard shortcuts or the [Command Palette](/docs/features/command-palette/). By default, new panes will open to the home page.
 
-![Dual pane in action](/blog-resources/v3-5/UpdatedDualPaneDesign.png)
+![Add pane flyout](/docs-resources/AddPaneFlyout.png)
 
-## Create a horizontal or vertical pane
+## Opening a folder in a new pane
 
-Files supports arranging panes horizontally or vertically in the dual pane layout to make organizing files and folders as comfortable as possible.
-This feature was first introduced in [Files v3.6](/blog/posts/v3-6).
+ With the dual pane feeature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
 
-![Horizontal pane](/blog-resources/v3-6/VerticalArrangedPane.png)
+![Add pane flyout](/docs-resources/OpenInNewPaneMeuOption.png)
 
-You can open a new horizontal or vertical pane using the tab actions menu in the top left corner of the title bar.
+## Open new tabs with dual pane
 
-![Tab actions menu](/blog-resources/v3-6/TabActions.png)
-
-## Rearrange open panes
-
-You can also rearrange currently open panes if the app is in dual pane mode.
-This can be activated via the [command palette](/docs/features/command-palette).
-
-![Arrange panes action](/docs-resources/CommandPalette-ArrangePanes.png)
+Though disabled by default, there is an option to open new tabs in dual pane mode. This option can be enabled from the 'General' settings page.
