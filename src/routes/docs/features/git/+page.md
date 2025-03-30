@@ -28,4 +28,8 @@ The Details Pane will display the repository name and current checked out branch
 
 ### Opening a Git repository in VS Code (or your IDE of choice)
 
-When browsing a Git repository, the Status Bar will show an option to open the current folder in your selected IDE.
+When browsing a Git repository, the Status Bar will show an option to open the current folder in your selected IDE. The default IDE can be changed from the dev tools settings page.
+
+### Cloning repositories from GitHub
+
+Repositories can be cloned from GitHub with 'Clone' action. The simplest method is to drag and drop the repository URL from your browser into Files. You can also access this feature through the [Command Palette](/docs/features/command-palette/) or assign it a custom keyboard shortcut via the actions [settings page](/docs/customize-settings/actions/).
