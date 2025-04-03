@@ -86,6 +86,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Cleanup**                            |                                     | Opens the Storage Sense page in Windows Settings     |
 | **Open File Explorer properties**      | <kbd>AltShift</kbd>+<kbd>Enter</kbd>  | Opens File Explorer properties window                |
 | **Open settings**                      | <kbd>Ctrl</kbd>+<kbd>,</kbd>        | Opens settings                                       |
+| **Open settings file**                 | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>,</kbd> | Opens settings file in your default editor           |
 | **Open Terminal**                      | <kbd>Ctrl</kbd>+<kbd>`</kbd>        | Opens folder in Windows Terminal                     |
 | **Open Terminal as admin**             | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>`</kbd>  | Opens folder in Windows Terminal as admin            |
 | **Open Command Palette**               | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd>  | Opens the Command Palette                            |
