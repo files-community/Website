@@ -34,7 +34,7 @@ Right-clicking the settings button now opens a context menu with an option to di
 
 ### Customizable size formats
 
-You can now customize how file size units are displayed. This setting is available on the [Files & Folders](/docs/customize-settings/files-and-folders/) settings page, giving you more control over how information is presented.
+You can now customize how file size units are displayed. This setting is available on the [Files & folders](/docs/customize-settings/files-and-folders/) settings page, giving you more control over how information is presented.
 
 <figure>
     <img src="/blog-resources/v4/SizeFormatSetting.png" alt="Size format setting" />
