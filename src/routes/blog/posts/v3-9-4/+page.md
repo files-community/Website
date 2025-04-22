@@ -58,7 +58,7 @@ When creating ZIP archives, Files now uses UTF-8 encoding by default, ensuring b
 
 ### Updates
 
-- Fixed a crash that would sometimes occur durring updates..
+- Fixed a crash that would sometimes occur durring updates.
 
 ### Toolbar
 
