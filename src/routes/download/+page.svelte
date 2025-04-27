@@ -8,6 +8,7 @@
 	import { _ } from "svelte-i18n";
 
 	let isWindows = false;
+	let innerWidth = 649;
 
 	const downloadSources = [
 		{
@@ -16,7 +17,7 @@
 				"download.microsoft_store.description",
 				defaultI18nValues,
 			),
-			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
+			href: `https://apps.microsoft.com/detail/9nghp3dx8hdx?mode=full`,
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg",
 			external: true,
@@ -24,7 +25,7 @@
 		{
 			name: $_("download.preview.title", defaultI18nValues),
 			description: $_("download.preview.description", defaultI18nValues),
-			href: "/appinstallers/Files.preview.appinstaller",
+			href: "https://apps.microsoft.com/detail/9nsqd9pkv3ss?mode=full",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg",
 		},
@@ -32,6 +33,10 @@
 
 	onMount(() => {
 		isWindows = navigator.userAgent.includes("Windows");
+		innerWidth = window.innerWidth;
+		window.addEventListener("resize", () => {
+			innerWidth = window.innerWidth;
+		});
 	});
 </script>
 
@@ -40,43 +45,47 @@
 <slot />
 
 <main class="download-page">
-	<TextBlock variant="titleLarge" style="text-align: center;"
-		>{$_("download.title", defaultI18nValues)}</TextBlock
-	>
-	<InfoBar
-		style="min-height: 75px; overflow: hidden;"
-		class="donation-infobar"
-		severity="success"
-		closable={false}
-	>
-		<div
-			style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
+	{#if innerWidth > 648}
+		<TextBlock variant="titleLarge" style="text-align: center;"
+			>{$_("download.title", defaultI18nValues)}</TextBlock
 		>
-			{$_("download.donation_description", defaultI18nValues)}
-
-			<Button
-				slot="action"
-				variant="accent"
-				href="https://github.com/sponsors/yaira2"
-				{...externalLink}
+		<InfoBar
+			style="min-height: 75px; overflow: hidden;"
+			class="donation-infobar"
+			severity="success"
+			closable={false}
+		>
+			<div
+				style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
 			>
-				{$_("download.donation_button", defaultI18nValues)}
-			</Button>
-		</div>
+				{$_("download.donation_description", defaultI18nValues)}
 
-		<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
-	</InfoBar>
+				<Button
+					slot="action"
+					variant="accent"
+					href="https://github.com/sponsors/yaira2"
+					{...externalLink}
+				>
+					{$_("download.donation_button", defaultI18nValues)}
+				</Button>
+			</div>
+
+			<svelte:fragment slot="icon">&nbsp;</svelte:fragment>
+		</InfoBar>
+	{/if}
 
 	<section class="download-sources">
 		{#each downloadSources as source}
 			<DownloadSourceCard {source} />
 		{/each}
-		<p>
-			{$_("download.self_signed.description", defaultI18nValues)}<a
-				href="/appinstallers/Files.stable.appinstaller"
-				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
-			>.
-		</p>
+		{#if innerWidth > 648}
+			<p>
+				{$_("download.self_signed.description", defaultI18nValues)}<a
+					href="/appinstallers/Files.stable.appinstaller"
+					>{$_("download.self_signed.link_text", defaultI18nValues)}</a
+				>.
+			</p>
+		{/if}
 	</section>
 </main>
 
