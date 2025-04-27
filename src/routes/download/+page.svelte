@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { links } from "$data/links";
 	import { defaultI18nValues, externalLink, Metadata } from "$lib";
-	import { Button, InfoBadge, InfoBar, TextBlock } from "fluent-svelte";
+	import { Button, InfoBar, TextBlock } from "fluent-svelte";
 	import { onMount } from "svelte";
 	import DownloadSourceCard from "./DownloadSourceCard.svelte";
 	import type { DownloadSource } from "./types";
@@ -45,10 +45,10 @@
 <slot />
 
 <main class="download-page">
-	{#if innerWidth > 648}
-		<TextBlock variant="titleLarge" style="text-align: center;"
-			>{$_("download.title", defaultI18nValues)}</TextBlock
-		>
+	<TextBlock variant="titleLarge" style="text-align: center;"
+		>{$_("download.title", defaultI18nValues)}</TextBlock
+	>
+	{#if innerWidth > 510}
 		<InfoBar
 			style="min-height: 75px; overflow: hidden;"
 			class="donation-infobar"
@@ -59,10 +59,8 @@
 				style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
 			>
 				{$_("download.donation_description", defaultI18nValues)}
-
 				<Button
 					slot="action"
-					variant="accent"
 					href="https://github.com/sponsors/yaira2"
 					{...externalLink}
 				>
