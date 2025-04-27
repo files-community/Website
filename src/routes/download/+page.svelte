@@ -14,7 +14,7 @@
 			name: $_("download.microsoft_store.title", defaultI18nValues),
 			description: $_(
 				"download.microsoft_store.description",
-				defaultI18nValues
+				defaultI18nValues,
 			),
 			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/branding/logo-light.svg",
@@ -43,7 +43,12 @@
 	<TextBlock variant="titleLarge" style="text-align: center;"
 		>{$_("download.title", defaultI18nValues)}</TextBlock
 	>
-	<InfoBar class="donation-infobar" severity="success" closable={false}>
+	<InfoBar
+		style="min-height: 75px; overflow: hidden;"
+		class="donation-infobar"
+		severity="success"
+		closable={false}
+	>
 		<div
 			style="display: flex; gap: 0.5rem; margin-block-end: 7px; margin-block-start: 7px;"
 		>
