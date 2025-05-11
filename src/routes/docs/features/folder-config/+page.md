@@ -35,12 +35,12 @@ Files_BackgroundOpacity=0.4
 
 The `Files_BackgroundFit` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
-| Value | Behavior       |
-|-------|----------------|
-| 0     | Fill           |
-| 1     | None           |
-| 2     | Uniform        |
-| 3     | UniformToFill  |
+| Value | Behavior                                                                                                                          |
+|-------|-----------------------------------------------------------------------------------------------------------------------------------|
+| 0     | The image is stretched to fill the pane without keeping the aspect ratio.                                                         |
+| 1     | The image is not stretched.                                                                                                       |
+| 2     | The image is stretched so that the whole image is visible and the aspect ratio is preserved. There may be unfilled space.         |
+| 3     | The image is stretched so that the image fills the pane and the aspect ratio is preserved. Parts of the image may not be visible. |
 
 ### Vertical alignment
 
