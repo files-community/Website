@@ -23,9 +23,9 @@ We're excited to introduce an updated icon for Files Preview! Additionally, a ne
 
 We've optimized the Quick Access widget on the Home Page to improve performance.  
 
-### Expanded Cloud Provider support  
+### Expanded cloud provider support  
 
-Files now supports additional cloud drive providers, including Magenta and Sync.  
+Files now supports additional [cloud drive](/docs/features/cloud-drives) providers, including Magenta and Sync.  
 
 ## Fixes
 
