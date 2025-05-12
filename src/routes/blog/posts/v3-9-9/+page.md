@@ -31,7 +31,7 @@ Files now supports additional [cloud drive](/docs/features/cloud-drives) provide
 
 ### Shortcuts  
 
-- Resolved an issue preventing folders ending in `.url` from opening properly.  
+- Resolved an issue preventing folders ending in '.url' from opening properly.  
 
 ### Start Menu tile  
 
