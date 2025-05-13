@@ -36,4 +36,4 @@ Files integrates with various cloud providers by detecting and displaying their 
 | Infomaniak kDrive| https://www.infomaniak.com/kdrive                                                 |
 | Proton Drive     | https://proton.me/drive/download                                                  |
 | MagentaCLOUD     | https://cloud.telekom-dienste.de/software-apps                                    |
-| Sync.com         | https://www10.sync.com/install/                                                   |
+| Sync.com         | https://www.sync.com/install/                                                   |
