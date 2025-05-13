@@ -31,8 +31,8 @@ You can also use the preview version alongside the stable release to get early a
    ```
    Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/preview/Files.Package.appinstaller
    ```
-4. Wait until the blue bar at the top doesn't show
-5. Check the Windows Start menu > All apps page for Files
+3. Wait until the blue bar at the top doesn't show
+4. Check the Windows Start menu > All apps page for Files
 
 ### Winget
 
