@@ -22,9 +22,17 @@ You can also use the preview version alongside the stable release to get early a
 
 ### PowerShell
 
-1. Open PowerShell as administrator.
-2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
-
+1. Open the default PowerShell (Powershell 7 will not work) as administrator
+2. For Stable use this command
+   ```
+   Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
+   ```
+   For Preview use this command
+   ```
+   Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/preview/Files.Package.appinstaller
+   ```
+4. Wait until the blue bar at the top doesn't show
+5. Check the Windows Start menu > All apps page for Files
 
 ### Winget
 
@@ -56,18 +64,6 @@ Files will automatically check for updates whenever the app is opened and an ind
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
 </InfoBar>
 
-### Steps required for the "classic installer" version after 3/21/2024
-
-Starting 3/21/2024, users of the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
-
-<InfoBar title="Note" severity="information">
-	This is not required for the Store version of Files.
-</InfoBar>
-
-1. Export your settings by going to `Settings > Advanced > Export`. 
-2. Uninstall Files and restart Windows
-3. [Reinstall](/download/) Files.
-4. Import your settings from `Settings > Advanced > Import`.
 
 ## Troubleshooting
 
@@ -84,3 +80,14 @@ If you encounter any problems or errors while updating Files, you can try the fo
 ### Windows cannot install package because a different package with the same name is already installed
 
 If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
+
+
+### Unoffical Windows installs
+This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, removing the Microsoft store. These are not supported but you can try the below. If they don't work and you have used one of these you won't be able to use Files without reinstalling Windows using the official installer from https://www.microsoft.com/software-download/windows11. 
+
+1. Type Services in Windows start menu
+2. Open the `Windows update` and `Delivery optimization` services properties (Double click)
+3. Set startup type to manual and click OK
+4. Right click the services
+5. Click Start
+6. Try installing again.
