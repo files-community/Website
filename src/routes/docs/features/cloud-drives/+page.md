@@ -34,3 +34,6 @@ Files integrates with various cloud providers by detecting and displaying their 
 | ownCloud         | https://owncloud.com/desktop-app                                                  |
 | Lucid Link       | https://www.lucidlink.com/download                                                |
 | Infomaniak kDrive| https://www.infomaniak.com/kdrive                                                 |
+| Proton Drive     | https://proton.me/drive/download                                                  |
+| MagentaCLOUD     | https://cloud.telekom-dienste.de/software-apps                                    |
+| Sync.com         | https://www.sync.com/install/                                                     |
