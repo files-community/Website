@@ -22,7 +22,7 @@ You can also use the preview version alongside the stable release to get early a
 
 ### PowerShell
 
-1. Open the default PowerShell (Powershell 7 will not work) as administrator
+1. Open the default PowerShell (Powershell 7 will not work) as administrator.
 2. For the stable branch, use the following command
    ```
    Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
