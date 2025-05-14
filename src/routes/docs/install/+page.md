@@ -82,8 +82,9 @@ If you encounter any problems or errors while updating Files, you can try the fo
 If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
 
 
-### Unoffical Windows installs
-This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, removing the Microsoft store. These are not supported but you can try the below. If they don't work and you have used one of these you won't be able to use Files without reinstalling Windows using the official installer from https://www.microsoft.com/software-download/windows11. 
+### Unofficial and modified versions of Windows
+
+This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, removing the Microsoft store. Files is not officially supported on devices with these modifications.
 
 1. Type Services in Windows start menu
 2. Open the `Windows update` and `Delivery optimization` services properties (Double click)
