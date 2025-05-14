@@ -23,16 +23,16 @@ You can also use the preview version alongside the stable release to get early a
 ### PowerShell
 
 1. Open the default PowerShell (Powershell 7 will not work) as administrator
-2. For Stable use this command
+2. For the stable branch, use the following command
    ```
    Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
    ```
-   For Preview use this command
+   For the preview branch, use the following command
    ```
    Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/preview/Files.Package.appinstaller
    ```
-3. Wait until the blue bar at the top doesn't show
-4. Check the Windows Start menu > All apps page for Files
+3. Wait until the blue bar at the top disappears.
+4. Look for Files in the Windows Start Menu.
 
 ### Winget
 
