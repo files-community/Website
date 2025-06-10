@@ -17,7 +17,7 @@
 				"download.microsoft_store.description",
 				defaultI18nValues,
 			),
-			href: `https://apps.microsoft.com/detail/9nghp3dx8hdx?mode=full`,
+			href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 			icon: "/branding/logo-light.svg",
 			darkModeIcon: "/branding/logo-dark.svg",
 			external: true,
@@ -25,7 +25,7 @@
 		{
 			name: $_("download.preview.title", defaultI18nValues),
 			description: $_("download.preview.description", defaultI18nValues),
-			href: "https://apps.microsoft.com/detail/9nsqd9pkv3ss?mode=full",
+			href: "/appinstallers/Files.preview.appinstaller",
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg",
 		},
