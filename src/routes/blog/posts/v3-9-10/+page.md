@@ -30,7 +30,7 @@ Opening the Status Center now automatically clears the notification badge, provi
 
 ### Added option to browse all icon files in file picker
 
-Added the option to browse all supported icon file formats when customizing folder and file icons. Previously, users could only browse one file type at a time and had to manually switch to browse a different format. Now, all supported icon types can be viewed at the same time, streamlining the selection process.
+Added the option to browse all supported icon file formats when customizing folder and file icons.
 
 ### Improved responsive design on the actions page  
 
