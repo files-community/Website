@@ -12,7 +12,7 @@ Today we are releasing **Files Preview v3.9.10** for users of the preview versio
 
 ### Added support for always displaying the Status Center
 
-We added a new setting that lets you control the visibility of the Status Center button. You can now choose to always display the button or keep the existing behavior, where it displays only during active file operations.
+We added a new setting that lets you control the visibility of the Status Center button. You can now choose to always display the button or keep the existing behavior, where it displays only during active file operations. This setting is available under `Settings > Appearance > Toolbars`.
 
 <figure>
     <img src="/blog-resources/v4/StatusCenterButton.png" alt="Always displayed Status Center" />
