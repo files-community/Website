@@ -40,6 +40,11 @@ We've enhanced the responsive design of the actions settings page. On smaller sc
 
 We added a search box to the actions settings page, allowing users to quickly filter and find commands with ease.
 
+<figure>
+    <img src="/blog-resources/v4/FilterActions.png" alt="Search box on the actions page" />
+    <figcaption>Search box on the actions page</figcaption>
+</figure>
+
 ### Added support for long paths  
 
 We've introduced support for long file paths, enabling users to work with deeper directory structures and extended filenames. This feature is currently experimental and subject to change in future builds.
