@@ -45,7 +45,7 @@ We added a search box to the actions settings page, allowing users to quickly fi
     <figcaption>Search box on the actions page</figcaption>
 </figure>
 
-### Added support for long paths  
+### Added support for long paths
 
 We've introduced support for long file paths, enabling users to work with deeper directory structures and extended filenames. This feature is currently experimental and subject to change in future builds.
 
@@ -55,11 +55,11 @@ We've introduced support for long file paths, enabling users to work with deeper
 
 ## Fixes
 
-### Renaming  
+### Renaming
 
 - Fixed an issue where the home key wouldn't move focus when renaming items.  
 
-### Recycle Bine  
+### Recycle Bin
 
 - Fixed an issue with deleting items that don't fit in Recycle Bin.
 
