@@ -49,6 +49,10 @@ We added a search box to the actions settings page, allowing users to quickly fi
 
 We've introduced support for long file paths, enabling users to work with deeper directory structures and extended filenames. This feature is currently experimental and subject to change in future builds.
 
+### Added access keys to the context menu
+
+Access keys are now displayed in the right click context menu when holding down the 'alt' key.
+
 ### Added support for Windows App Actions
 
 ### Experimental Omnibar
