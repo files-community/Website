@@ -53,10 +53,6 @@ We've introduced support for long file paths, enabling users to work with deeper
 
 Access keys are now displayed in the right click context menu when holding down the 'alt' key.
 
-### Added support for Windows App Actions
-
-### Experimental Omnibar
-
 ## Fixes
 
 ### Renaming
