@@ -16,11 +16,9 @@ Files supports over 40 languages, maintained and [translated](/docs/contributing
 
 You can tailor how dates and times are displayed throughout the app. The following formats are available:
 
-| Format      | Example                     |
-|-------------|-----------------------------|
-| Application | Thursday, December 31, 2020 |
-| System      | 12/31/2020 2:30 PM          |
-| Universal   | 2020-12-31 14:30:00         |
+- **Application**: Displays dates in a friendly, long-form style (e.g., "Thursday, December 31, 2020").
+- **System**: Uses your operating system's default format (e.g., "12/31/2020 2:30 PM").
+- **Universal**: Shows dates in a standardized format (e.g., "2020-12-31 14:30:00").
 
 ## Startup settings
 
