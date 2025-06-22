@@ -6,39 +6,43 @@ title: Appearance
   import { InfoBar } from "fluent-svelte";
 </script>
 
-The Appearance page in settings allows you to personalize your Files experience with a variety of aesthetic options. For those who love to tinker, we’ll even show you how to manually adjust the settings file for additional background colors and fonts.
+The **Appearance** page in settings gives you full control over the look and feel of the Files interface. Whether you're syncing with your system theme or crafting your own custom setup, this page guides you through everything from light/dark mode and transparency to fonts, backgrounds, and themes.
+
+For power users, we'll even walk through advanced customization using the settings file.
 
 ## Theme customization
 
-Toggle effortlessly between dark and light mode to match your style or ambient lighting. The "Default" setting syncs with your Windows system theme, ensuring a cohesive visual experience.
+Toggle effortlessly between **light** and **dark** mode to match your personal style or environment. Selecting "Default" will sync Files with your Windows system theme for a consistent appearance across apps.
 
 ![Light and dark mode split view](/docs-resources/Dark-Light-Mode.png)
-
 
 ## Transparency effects
 
 <InfoBar severity="information">
-  Please note that a completely transparent window isn't available right now.
+  A fully transparent window isn't available at this time.
 </InfoBar>
 
-Choose your preferred backdrop material to add a layer of transparency to your window background. Opt for Mica Alt for a subtle effect (note: Mica requires Windows 11) or Acrylic for a frosted appearance. To fully appreciate these effects, ensure your background color is set to transparent.
+You can adjust the visual flair by choosing a backdrop material:
 
+- **Mica** – A soft, dynamic material that subtly incorporates the desktop wallpaper and theme color. Requires Windows 11.
+- **Mica Alt** – A higher-contrast version of Mica for increased visual distinction. Requires Windows 11.
+- **Acrylic** – A frosted, blurred transparency effect that creates a glass-like appearance. Supported on Windows 10 and 11.
+
+Tip: For these effects to shine, be sure the app background includes some level of transparency.
 
 ## Background color
 
-Personalize the background color of your window from a spectrum of pre-selected shades. For a unique touch, use the color picker to input a custom color or adjust transparency to your liking.
+Pick from a curated palette or use the color picker to select a custom color—fully opaque or semi-transparent. You control the vibe.
 
 ![Settings dialog](/docs-resources/Settings-Appearance.png)
 
+### Additional background colors (advanced)
 
-### Additional background colors
+Want to go further? You can modify areas like the address bar and file pane by editing the settings file directly:
 
-While there isn't an option in the settings UI, you can change the address bar, sidebar, and file area backgrounds by manually editing the settings file:
-
-1. Open Files > Settings > Advanced > Edit settings file. This will open the settings file in your default text editor.
-2. Before editing the settings file, you’ll need to close Files by right-clicking the icon in the system tray and clicking on "Quit".
-3. The settings file has a JSON format. You can use any text editor to open and modify it.
-4. Search for any of the keys listed below and edit the value as desired.
+1. Open **Settings > Advanced > Edit settings file**.
+2. Close Files completely via the system tray ("Quit") before making edits.
+3. Use a text editor to find and adjust any of the keys below.
 
 | Key                                 | Default value |
 | ----------------------------------- | ------------- |
@@ -51,15 +55,15 @@ While there isn't an option in the settings UI, you can change the address bar, 
 
 ## Custom fonts
 
-There isn't an option in the settings UI but you can change the default font by manually editing the value for `AppThemeFontFamily` in the settings file.
+While not exposed in the settings UI, you can change the font by modifying the `AppThemeFontFamily` value in the settings file.
 
 ## Popular themes
 
-We put together some popular color combinations to help users create custom themes.
+Here are a few hand-crafted themes to get you started:
 
 ### Glass
 
-The glass theme is best paired with the Acrylic backdrop material.
+Pairs beautifully with Acrylic for that translucent, glass-like finish.
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
@@ -72,7 +76,7 @@ The glass theme is best paired with the Acrylic backdrop material.
 
 ### Finder
 
-The finder theme is based on the color scheme in Finder.
+Inspired by macOS's Finder.
 
 | Key                                 | Value     |
 | ----------------------------------- | --------- |
@@ -85,6 +89,8 @@ The finder theme is based on the color scheme in Finder.
 
 ### Nord
 
+A modern and moody Arctic-inspired color scheme.
+
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
 | `AppThemeBackgroundColor`           | `#FF1B1F26` |
@@ -95,6 +101,8 @@ The finder theme is based on the color scheme in Finder.
 | `AppThemeInfoPaneBackgroundColor`   | `#2E3440`   |
 
 ### Dracula
+
+Bold, vibrant, and perfect for dark-mode enthusiasts.
 
 | Key                                 | Value       |
 | ----------------------------------- | ----------- |
@@ -107,15 +115,15 @@ The finder theme is based on the color scheme in Finder.
 
 ## Background image
 
-Files allows you to configure a custom background image or gif using the settings UI. Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
+You can personalize Files even further by setting a custom background image—or even a GIF.
+
+Once added, Files will use it as your backdrop, allowing additional tweaks to opacity and scaling.
 
 ![Custom background image](/docs-resources/Background-Image.png)
 
-
 ### Setting a custom background image
 
-1. Open Files > Settings > Appearance, and scroll down to the "Background image" section.
-2. Click on "Browse" and select the image or gif you wish to use.
+1. Go to **Settings > Appearance**, then scroll to **Background image**.
+2. Click **Browse**, then pick your image or GIF file.
 
 ![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
-

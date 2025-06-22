@@ -6,7 +6,7 @@ title: General
     import { InfoBar } from "fluent-svelte";
 </script>
 
-The General settings page gives you control over core aspects of the Files app experience—from choosing your language and customizing startup behavior to tweaking the appearance of context menus and widgets on the Home page. This section walks you through each setting category and what you can expect when enabling specific features.
+The **General** settings page gives you control over core aspects of the Files app experience—from choosing your language and customizing startup behavior to tweaking the appearance of context menus and widgets on the Home page. This section walks you through each setting category and what you can expect when enabling specific features.
 
 ## Language
 
