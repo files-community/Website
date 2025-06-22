@@ -14,7 +14,7 @@ To customize individual folder views independently, simply toggle this setting o
 
 Choose from several layout modes based on your workflow or visual preferences:
 
-- **Details** – Presents items in a Data Grid with resizable columns. Ideal for viewing metadata at a glance.  
+- **Details**: Presents items in a Data Grid with resizable columns. Ideal for viewing metadata at a glance.  
   _(Note: Column rearrangement is not yet supported.)_
 - **List**: A minimalist column layout that shows each file's icon and name. Great for quick navigation through large directories.
 - **Cards**: Displays larger icons and additional context such as file type or previews. A more visual and descriptive layout.
