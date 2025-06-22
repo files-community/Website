@@ -127,3 +127,17 @@ Once added, Files will use it as your backdrop, allowing additional tweaks to op
 2. Click **Browse**, then pick your image or GIF file.
 
 ![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
+
+## Tab actions
+
+You can choose whether to show or hide the **actions button** in the top-left corner of the title bar. This button provides quick access to tab-related actions and can be toggled on or off depending on your preference.
+
+## Toolbars
+
+### Show toolbar
+
+The toolbar can be turned on or off to maximize screen real estate.
+
+### Status center button
+
+You can configure the status center visibility to **always** display or only **during file operations**, keeping your interface clean when idle.
