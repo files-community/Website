@@ -6,38 +6,40 @@ title: Advanced
   import { InfoBar } from "fluent-svelte";
 </script>
 
+The **Advanced** settings page offers power-user tools and experimental features. From exporting preferences to editing the settings file directly, this section gives you deeper control over how Files behaves.
+
 ## Export settings
 
-Located on the advanced settings page, this will prompt you to choose a location to export the settings to.
+Prompts you to choose a location to save your current configuration as an archive, making it useful for migrating settings between devices or creating backups.
 
 <InfoBar severity="information">
-	Although the exported archive includes a file called "filetags", it doesn't actually contain a list of tagged files. This file only contains the guids that get embedded into the metadata of tagged items.
+  The exported archive includes a file named `filetags`, but this file only contains GUIDs used for tagging metadata. It does not contain a list of tagged files.
 </InfoBar>
 
 ## Import settings
 
-Prompts to import an archive file containing exported settings.
+Lets you load previously exported settings to restore preferences.
 
 ## Edit settings file
 
-Opens the settings file in the default text editor. Before editing the settings file, you’ll need to close Files by right-clicking the icon in the system tray and clicking on "Quit".
+Opens the configuration file in your default text editor. Before making changes, be sure to close Files by right-clicking the system tray icon and selecting **Quit**. This gives you full access to advanced customization options like colors, fonts, and layout preferences.
 
 ## Open Files on Windows startup
 
-Creates task to start Files when logging into Windows.
+Enables Files to start automatically when you log in to Windows
 
 ## Leave app running in the background
 
-This option will keep Files running in the background even when the window is closed. This helps reduce the startup but it may cause Files to use more system resources.
+Keeps Files running even after the window is closed. This reduces startup time but may use slightly more system resources.
 
 ## Experimental feature flags
 
 ### Set Files as the default file manager
 
-Windows doesn't have an official method for changing the default file manager. In order to still provide this option, we developed a workaround that intercepts calls to launch File Explorer and redirect the call to Files instead. This workaround has some limitations but it works for most scenarios including the `win` + `e` shortcut. 
+By default, Windows doesn't allow changing the system file manager. Files includes an **optional workaround** that intercepts system calls to File Explorer and reroutes them to Files. This feature supports common actions like the `Win + E` shortcut and opening folders from other apps.
 
 <InfoBar severity="caution">
-	This option involves modifying the system registry and while it's been tested and improved over time, the Files team takes no responsibility if something goes wrong. If you decide to proceed, we recommend creating a backup of the system registry beforehand.
+  This feature modifies the Windows registry. While stable in most cases, it can introduce issues. The Files team assumes no responsibility for problems that may arise. We strongly recommend backing up your registry before enabling this option.
 </InfoBar>
 
 <br/>
