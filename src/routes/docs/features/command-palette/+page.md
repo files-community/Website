@@ -27,6 +27,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Toggle file extensions**             |                                     | Toggles whether to show file extensions              |
 | **Toggle Info Pane**                   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggles the Info Pane                                |
 | **Toggle Toolbar**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>  | Toggles the Toolbar visibility                       |
+| **Toggle filter header**               |                                     | Toggles the visibility of the filter header          |
 | **Copy item**                          | <kbd>Ctrl</kbd>+<kbd>C</kbd>        | Copy selected items to the clipboard                 |
 | **Copy item path**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>  | Copy paths of the selected items to the clipboard    |
 | **Copy item path with quotes**         | <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>    | Copy paths of the selected items with quotes to the clipboard |
