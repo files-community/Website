@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.12
 description: Announcing Files Preview v3.9.12 for users of the preview version.
-thumbnail: /blog-resources/v4-preview/v3.9.12.png
+thumbnail: /blog-resources/v4-preview/v3-9-12.png
 date: 7/8/2025
 author: files-community
 ---
