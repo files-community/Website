@@ -15,12 +15,12 @@ Today we are releasing **Files Preview v3.9.3** for users of the preview version
 We've added a new feature that lets users drag and drop GitHub URLs directly into Files. Upon dropping a URL, a confirmation prompt is displayed asking if the user wants to clone the repository to their device. The cloning progress can be tracked in the Status Center. This feature is also available as a standalone action in the [Command Palette](/docs/features/command-palette/) and can also assigned a custom keyboard shortcut in [settings](/docs/customize-settings/actions).
 
 <figure>
-    <img src="/blog-resources/v4/CloneRepoPrompt.png" alt="Clone repo confirmation" />
+    <img src="/blog-resources/v4-preview/CloneRepoPrompt.png" alt="Clone repo confirmation" />
     <figcaption>Clone repo confirmation</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog-resources/v4/CloneRepoStatus.png" alt="Clone status" />
+    <img src="/blog-resources/v4-preview/CloneRepoStatus.png" alt="Clone status" />
     <figcaption>Clone status</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ We've added a new feature that lets users drag and drop GitHub URLs directly int
 Support for comparing hashes has been added to the Hashes Properties page. Users can now paste known hashes or use the "Compare File" button to quickly calculate and compare the hash of another file with the currently selected file.
 
 <figure>
-    <img src="/blog-resources/v4/CompareHashes.png" alt="Hash comparison feature" />
+    <img src="/blog-resources/v4-preview/CompareHashes.png" alt="Hash comparison feature" />
     <figcaption>Hash comparison feature</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ OneDrive storage details are now available in the Properties window within Files
 We added an indicator to the Status Center that's displayed while installing fonts. We also updated the icon for the install font action on the toolbar.
 
 <figure>
-    <img src="/blog-resources/v4/InstallFonts.png" alt="Font installation status" />
+    <img src="/blog-resources/v4-preview/InstallFonts.png" alt="Font installation status" />
     <figcaption>Font installation status</figcaption>
 </figure>
 

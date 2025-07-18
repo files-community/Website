@@ -19,7 +19,7 @@ We've replaced the Release Notes dialog with a dedicated tab that opens automati
 When all sidebar sections are hidden, placeholder content is now displayed to improve usability and provide helpful context.
 
 <figure>
-    <img src="/blog-resources/v4/EmptySidebar.png" alt="Sidebar placeholder content" />
+    <img src="/blog-resources/v4-preview/EmptySidebar.png" alt="Sidebar placeholder content" />
     <figcaption>Sidebar placeholder content</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ When all sidebar sections are hidden, placeholder content is now displayed to im
 Right-clicking the settings button now opens a context menu with an option to directly access the settings JSON file.
 
 <figure>
-    <img src="/blog-resources/v4/SettingsContextMenu.png" alt="Settings context menu" />
+    <img src="/blog-resources/v4-preview/SettingsContextMenu.png" alt="Settings context menu" />
     <figcaption>Settings context menu</figcaption>
 </figure>
 
@@ -37,7 +37,7 @@ Right-clicking the settings button now opens a context menu with an option to di
 You can now customize how file size units are displayed. This setting is available on the [Files & folders](/docs/customize-settings/files-and-folders/) settings page, giving you more control over how information is presented.
 
 <figure>
-    <img src="/blog-resources/v4/SizeFormatSetting.png" alt="Size format setting" />
+    <img src="/blog-resources/v4-preview/SizeFormatSetting.png" alt="Size format setting" />
     <figcaption>Size format setting</figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ You can now customize how file size units are displayed. This setting is availab
 We've added support for automatic encoding detection when extracting ZIP files. If needed, you can override the encoding manually from the extract archive dialog.
 
 <figure>
-    <img src="/blog-resources/v4/ArchiveEncoding.png" alt="Extract archive dialog" />
+    <img src="/blog-resources/v4-preview/ArchiveEncoding.png" alt="Extract archive dialog" />
     <figcaption>Extract archive dialog</figcaption>
 </figure>
 
