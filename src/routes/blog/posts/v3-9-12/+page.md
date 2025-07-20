@@ -26,7 +26,7 @@ We're excited to announce the new Omnibar control, a new design that merges the 
     <figcaption>Quick Access flyout menu</figcaption>
 </figure>
 
-**Edit path:** Switching to edit path mode is done by clicking an empty space in the breadcrumb bar (as before), or by using the `Ctrl + L` keboard shortcut. When activated, the current path is automatically selected making it easy to copy, overwrite, or modify without extra clicks.
+**Edit path:** Switching to edit path mode is done by clicking an empty space in the breadcrumb bar (as before), or by using the `Ctrl + L` keyboard shortcut. When activated, the current path is automatically selected making it easy to copy, overwrite, or modify without extra clicks.
 
 <figure>
     <img src="/blog-resources/v4-preview/OmnibarPathMode.png" alt="Edit path" />
