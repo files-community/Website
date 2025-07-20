@@ -19,7 +19,7 @@ We're excited to announce the new Omnibar control, a new design that merges the 
     <figcaption>Default view in the new Omnibar</figcaption>
 </figure>
 
-**Breadcrumb bar:** The default Omnibar view shows the current path using a familiar breadcrumb layout. Breadcrumbs can be expanded to reveal subfolders via the chevron icon. We've also introduced a new home button and flyout menu, providing quick access to pinned and frequently used folders. 
+**Breadcrumb bar:** The default Omnibar view shows the current path using a familiar breadcrumb layout. Breadcrumbs can be expanded to reveal subfolders via the chevron icon. The breadcrumb flyouts have also been updated to display the icon for each folder. Additionally, we added a new home button and flyout menu, providing quick access to pinned and frequently used folders.
 
 <figure>
     <img src="/blog-resources/v4-preview/OmnibarQuickAccess.png" alt="Quick Access flyout" />
