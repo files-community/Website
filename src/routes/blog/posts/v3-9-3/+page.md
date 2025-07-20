@@ -12,7 +12,7 @@ Today we are releasing **Files Preview v3.9.3** for users of the preview version
 
 ### Drag & drop to clone git repositories
 
-We've added a new feature that lets users drag and drop GitHub URLs directly into Files. Upon dropping a URL, a confirmation prompt is displayed asking if the user wants to clone the repository to their device. The cloning progress can be tracked in the Status Center. This feature is also available as a standalone action in the [Command Palette](/docs/features/command-palette/) and can also assigned a custom keyboard shortcut in [settings](/docs/customize-settings/actions).
+We've added a new feature that lets users drag and drop GitHub URLs directly into Files. Upon dropping a URL, a confirmation prompt is displayed asking if the user wants to clone the repository to their device. The cloning progress can be tracked in the Status Center. This feature is also available as a standalone action in the [Command Palette](/docs/features/command-palette/) and can also be assigned a custom keyboard shortcut in [settings](/docs/customize-settings/actions).
 
 <figure>
     <img src="/blog-resources/v4-preview/CloneRepoPrompt.png" alt="Clone repo confirmation" />
