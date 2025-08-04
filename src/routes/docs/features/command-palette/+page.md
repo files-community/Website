@@ -2,7 +2,7 @@
 title: Command Palette
 ---
 
-The Command Palette is a powerful feature that displays a list of available actions along with their assigned key bindings. Additionally, the Command Palette allows you to search for and access advanced features that aren't displayed in the main interface. You can access the Command Palette by entering `>` in the Address Bar or by using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keyboard shortcut.
+The Command Palette is a powerful feature that displays a list of available actions along with their assigned key bindings. Additionally, the Command Palette allows you to search for and access advanced features that aren't displayed in the main interface. You can access the Command Palette via the [Omnibar](/docs/features/omnibar/) or by using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keyboard shortcut.
 
 Actions are commands that you can perform on items, such as files, folders, images, etc. Files includes support for over 150 actions, many of which have default keyboard shortcuts for easy access. If you're unsure of the keybinding or need to use an action without a keybinding, the Command Palette is a great feature to help you out. For more details on customizing actions and setting up keybindings, check out our documentation on the actions [settings page](/docs/customize-settings/actions/).
 
