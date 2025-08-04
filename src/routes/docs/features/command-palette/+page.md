@@ -28,6 +28,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Toggle Info Pane**                   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggles the Info Pane                                |
 | **Toggle Toolbar**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>  | Toggles the Toolbar visibility                       |
 | **Toggle filter header**               |                                     | Toggles the visibility of the filter header          |
+| **Toggle dual pane**                   |                                     | Toggles dual pane mode                               |
 | **Copy item**                          | <kbd>Ctrl</kbd>+<kbd>C</kbd>        | Copy selected items to the clipboard                 |
 | **Copy item path**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>  | Copy paths of the selected items to the clipboard    |
 | **Copy item path with quotes**         | <kbd>Alt</kbd>+<kbd>Ctrl</kbd>+<kbd>C</kbd>    | Copy paths of the selected items with quotes to the clipboard |
@@ -160,8 +161,8 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Move to the previous tab**           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Tab</kbd>  | Switches focus to the previous tab                   |
 | **Move to the next tab**               | <kbd>Ctrl</kbd>+<kbd>Tab</kbd>      | Switches focus to the next tab                       |
 | **Close tab**                          | <kbd>Ctrl</kbd>+<kbd>W</kbd>, <kbd>Ctrl</kbd>+<kbd>F4</kbd>  | Closes the current tab                               |
-| **Add horizontal pane**                | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd>  | Opens a new pane arranged horizontally               |
-| **Add vertical pane**                  | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>  | Opens a new pane arranged vertically                 |
+| **Split horizontally**                 | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>H</kbd>  | Splits pane horizontally                   |
+| **Split vertically**                   | <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd>  | Splits pane vertically                     |
 | **Arrange panes horizontally**         |                                     | Arranges open panes horizontally                     |
 | **Arrange panes vertically**           |                                     | Arranges open panes vertically                       |
 | **Close active pane**                  | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>  | Closes the active new pane                           |
