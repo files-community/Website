@@ -32,14 +32,6 @@ When launching Files, you have a few choices for how the app behaves on startup:
 
 When this setting is turned on, launching Files from another program (such as Task Manager) will open a new tab in the existing window.
 
-## Open tabs in dual pane mode
-
-If you frequently compare or transfer files between locations, enabling this setting can save time by automatically opening new tabs in [dual pane](/docs/features/dual-pane) mode.
-
-### Default pane arrangement
-
-Tabs can be set to open with a **horizontal** or **vertical** dual pane arrangement.
-
 ## Always switch focus to newly created tab
 
 By default, when you open a folder in a new tab, Files will keep your current tab in focus. If you'd prefer to automatically switch to the newly opened tab, you can enable this option.
@@ -53,6 +45,14 @@ The Files Home page offers customizable widgets to provide quick access to impor
 - Network locations
 - Tags
 - Recent files
+
+## Open tabs in dual pane mode
+
+If you frequently compare or transfer files between locations, enabling this setting can save time by automatically opening new tabs in [dual pane](/docs/features/dual-pane) mode.
+
+### Default dual pane split direction arrangement
+
+Tabs can be set to open with a **horizontal** or **vertical** split.
 
 ## Context menu options
 
