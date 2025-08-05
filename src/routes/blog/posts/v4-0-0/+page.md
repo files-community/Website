@@ -12,6 +12,41 @@ Our mission is to build the best file manager for Windows, and we're proud to do
 
 ## What’s new in Files v4.0
 
+### Improved file operations and system integration
+
+We’ve enhanced file handling and system integration to give you more control and better feedback:
+
+- ZIP file handling now supports automatic encoding detection during extraction, ensuring filenames display correctly. If needed, you can manually override the encoding from the extract archive dialog.
+
+  <figure>
+    <img src="/blog-resources/v4-preview/ArchiveEncoding.png" alt="Extract archive dialog" />
+    <figcaption>Extract archive dialog</figcaption>
+  </figure>
+
+- When creating ZIP archives, Files uses UTF-8 encoding by default for improved cross-platform compatibility.
+
+- Experimental support for long file paths allows you to work with directories and filenames that exceed traditional Windows limits, opening up more possibilities for complex projects.
+
+- You can now customize how file sizes are displayed through settings, letting you choose the units that best fit your workflow.
+
+  <figure>
+    <img src="/blog-resources/v4-preview/SizeFormatSetting.png" alt="Size format setting" />
+    <figcaption>Size format setting</figcaption>
+  </figure>
+
+- A new **Signatures** tab in the Properties window makes it easier to view digital signatures associated with files, helping verify authenticity at a glance.
+
+  <figure>
+    <img src="/blog-resources/v4-preview/Signatures.png" alt="Signatures page" />
+    <figcaption>Signatures page</figcaption>
+  </figure>
+
+- OneDrive storage usage is now visible within the Properties window for supported Windows versions (Windows 23H2 and later), giving you quick insight into cloud storage consumption.
+
+- The icon picker now supports browsing all compatible icon file formats, simplifying customization of folder and file icons.
+
+- Columns in the **Columns View** layout are now resizable. You can drag column dividers to adjust widths or double-click to auto-fit columns to their content.
+
 ### Settings, sidebar & Status Center enhancements
 
 We’ve made several improvements to streamline access and visibility for key UI elements:
@@ -156,35 +191,9 @@ Search results now include a header that clearly displays your current query.
 
 We've expanded our language support to now include Armenian. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
 
-### OneDrive storage info in Properties
-
-OneDrive storage details are now available in the Properties window within Files. Please note, this feature is currently supported only on Windows 23H2.
-
 ### New experience for release notes
 
 We've replaced the Release Notes dialog with a dedicated tab that opens automatically after updating Files. This makes it easier to explore what's new and improved in each release.
-
-### Customizable file size units
-
-You can now customize how file size units are displayed. This setting is available on the [Files & folders](/docs/customize-settings/files-and-folders/) settings page, giving you more control over how information is presented.
-
-<figure>
-    <img src="/blog-resources/v4-preview/SizeFormatSetting.png" alt="Size format setting" />
-    <figcaption>Size format setting</figcaption>
-</figure>
-
-### Better encoding support for ZIP extraction
-
-We've added support for automatic encoding detection when extracting ZIP files. If needed, you can override the encoding manually from the extract archive dialog.
-
-<figure>
-    <img src="/blog-resources/v4-preview/ArchiveEncoding.png" alt="Extract archive dialog" />
-    <figcaption>Extract archive dialog</figcaption>
-</figure>
-
-### UTF-8 encoding for ZIP creation
-
-When creating ZIP archives, Files now uses UTF-8 encoding by default, ensuring better compatibility across different systems.
 
 ### Improved performance on the Home Page
 
@@ -193,10 +202,6 @@ We've optimized the Quick Access widget on the Home Page to improve performance.
 ### Support for more cloud storage providers
 
 Files now supports additional [cloud drive](/docs/features/cloud-drives) providers, including Magenta, Sync, and OX Drive integration. The full list of available providers can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
-
-### Browse all icon types when picking icons
-
-Added the option to browse all supported icon file formats when customizing folder and file icons.
 
 ### Improved responsive layout on the actions page
 
@@ -211,10 +216,6 @@ We added a search box to the actions settings page, allowing users to quickly fi
     <figcaption>Search box on the actions page</figcaption>
 </figure>
 
-### Support for long file paths (experimental)
-
-We've introduced support for long file paths, enabling users to work with deeper directory structures and extended filenames. This feature is currently experimental and subject to change in future builds.
-
 ### Access keys in context menus
 
 Access keys are now displayed in the right click context menu when holding down the 'alt' key.
@@ -226,15 +227,6 @@ The review prompt in the Store version of Files will now appear only once per us
 ### Option to remove "Open in Terminal" from context menu
 
 We added support for turning off the 'Open in Terminal' option in the right click context menu. This setting can be accessed from the [general](/docs/customize-settings/general) settings page.
-
-### Digital signatures in the Properties window
-
-A new **Signatures** page has been added to the properties window, making it easier to view digital signatures associated with a file.
-
-<figure>
-    <img src="/blog-resources/v4-preview/Signatures.png" alt="Signatures page" />
-    <figcaption>Signatures page</figcaption>
-</figure>
 
 ### Enhancements to Dual Pane mode
 
@@ -248,10 +240,6 @@ The Dual Pane feature has been refined to feel more intuitive:
     <img src="/blog-resources/v4-preview/DualPaneSettings.png" alt="Dual pane settings" />
     <figcaption>Dual pane settings</figcaption>
 </figure>
-
-### Resizable columns in Columns View
-
-Columns in the **Columns View** layout are now resizable. You can drag the divider between columns to adjust their width, or double-click the divider to auto-size.
 
 
 ### Code Quality
