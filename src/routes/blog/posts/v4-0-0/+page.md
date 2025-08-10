@@ -23,7 +23,7 @@ We’re excited to unveil the updated design of Files v4, featuring a brand new 
 
 At the center of the redesign is the new Omnibar, a sleek control that merges the path and search box into a single, intuitive interface. It includes buttons for switching between modes, making navigation smoother and more efficient.
 
-The updated layout also adds a dedicated button to open the Command Palette, helping users discover powerful tools that were previously harder to find. You can learn more about the Omnibar on our documentation page for [Omnibar](/docs/features/command-palette/).
+The updated layout also adds a dedicated button to open the Command Palette, helping users discover powerful features that were previously hard to access. You can learn more about the Omnibar on its documentation page [page](/docs/features/omnibar/).
 
 <figure>
     <img src="/blog-resources/v4-preview/Omnibar.png" alt="Omnibar" />
