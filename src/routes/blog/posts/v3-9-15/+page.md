@@ -26,8 +26,8 @@ You can now browse all supported image formats when selecting a background image
 
 We added two new actions to  make it easier to access diagnostic logs:
 
-- Open log file (`ctrl` + `.`)
-- Open log folder (`ctrl` + `shift` + `.`)
+- Open log file
+- Open log folder
 
 ### Updated 7zip dependency
 
