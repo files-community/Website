@@ -354,3 +354,5 @@ We added support for turning off the 'Open in Terminal' option in the right clic
 ### RTL
 
 - RTL support has been added back to Files. Please note that some areas are still missing support (such as content dialogs).
+
+- Fixed issue with clearing selection via touch
