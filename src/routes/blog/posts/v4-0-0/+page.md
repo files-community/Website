@@ -71,6 +71,29 @@ We’ve made several improvements to streamline access and visibility for key UI
   </figure>
 
 
+### Auto sized columns in Columns View
+
+Columns now automatically adjust their width when opened, making navigation cleaner and more intuitive.
+
+### Improved Dual Pane experience
+
+When splitting a pane, the new pane now opens to match the path of the current pane.
+
+### Browse all images formats in file picker
+
+You can now browse all supported image formats when selecting a background image in Settings.
+
+### Added actions to open log file and folder
+
+We added two new actions to  make it easier to access diagnostic logs:
+
+- Open log file
+- Open log folder
+
+### Updated 7zip dependency
+
+We've upgraded the 7zip library to version 25.01.
+
 ### Status Center enhancements
 
 - The Status Center now offers a new setting that lets you control its visibility. You can choose to always display the Status Center button or have it show only during active file operations.
@@ -318,6 +341,15 @@ We added support for turning off the 'Open in Terminal' option in the right clic
 ### About page
 
 - Fixed issue where the Windows version was copied incorrectly.
+
+### Dual Pane
+
+- Fixed an issue where the inactive pane would steal focus during file changes.
+- Resolved a bug where switching layouts incorrectly focused the right pane.
+
+### Toolbar
+
+- Fixed issue where the 'layout' icon didn't match the select layout.
 
 ### RTL
 
