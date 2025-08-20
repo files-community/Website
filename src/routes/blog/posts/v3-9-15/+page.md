@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.15
 description: Announcing Files Preview v3.9.15 for users of the preview version.
-thumbnail: /blog-resources/v4-preview/3-9-15.png
+thumbnail: /blog-resources/v4-preview/3-9-15.webp
 date: 8/13/2025
 author: files-community
 ---
@@ -24,7 +24,7 @@ You can now browse all supported image formats when selecting a background image
 
 ### Added actions to open log file and folder
 
-We added two new actions to  make it easier to access diagnostic logs:
+We added two new actions to make it easier to access diagnostic logs:
 
 - Open log file
 - Open log folder
@@ -43,7 +43,6 @@ We've upgraded the 7zip library to version 25.01.
 ### Toolbar
 
 - Fixed issue where the 'layout' icon didn't match the select layout.
-
 
 ## Conclusion
 
