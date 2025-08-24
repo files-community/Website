@@ -12,6 +12,26 @@ Our mission is to build the best file manager for Windows, and we're proud to do
 
 An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
 
+## Contents
+
+- [What’s new in Files v4.0](#whats-new-in-files-v40)
+  - [Updated icon and design improvements](#updated-icon-and-design-improvements)
+  - [Omnibar](#omnibar)
+  - [Dual Pane](#dual-pane)
+  - [Filtering and search](#filtering-and-search)
+  - [Developer tools and git](#developer-tools-and-git)
+  - [Cloud drives](#cloud-drives)
+  - [Compare hashes](#compare-hashes)
+  - [File signatures](#file-signatures)
+  - [Columns View](#columns-view)
+  - [Status Center](#status-center)
+  - [Actions settings page](#actions-settings-page)
+  - [Archives](#archives)
+  - [Customizable file size units](#customizable-file-size-units)
+  - [Sidebar](#sidebar)
+  - [Context menu](#context-menu)
+  - [Quick access to diagnostics](#quick-access-to-diagnostics)
+  
 ## What's new in Files v4.0
 
 ### Updated icon and design improvements
