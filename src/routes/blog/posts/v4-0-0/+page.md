@@ -14,7 +14,7 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ## Contents
 
-- [What’s new in Files v4.0](#whats-new-in-files-v40)
+- [What's new in Files v4.0](#whats-new-in-files-v40)
   - [Updated icon and design improvements](#updated-icon-and-design-improvements)
   - [Omnibar](#omnibar)
   - [Dual Pane](#dual-pane)
@@ -32,6 +32,7 @@ An update icon should be displayed in the top right corner of the app for existi
   - [Context menu](#context-menu)
   - [Quick access to diagnostics](#quick-access-to-diagnostics)
   - [Other highlights](#other-highlights)
+- [Fixes](#fixes)
 
 
 ## What's new in Files v4.0
