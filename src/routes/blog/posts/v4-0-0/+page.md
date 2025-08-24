@@ -8,7 +8,7 @@ author: files-community
 
 On behalf of the entire Files Community, I'm excited to announce the release of Files v4.0! 🎉
 
-Our mission is to build the best file manager for Windows, and we're proud to do this as an open source project on [GitHub](https://github.com/files-community/Files). A lot of time and effort was put into Files v4, and it wouldn't have been possible without the communities involvement. Over the past year, dozens of contributors worked on design concepts, added new features, fixed bugs, and helped review pull requests on GitHub. Thank you for all your hard work!
+Our mission is to build the best file manager for Windows, and we're proud to do this as an open source project on [GitHub](https://github.com/files-community/Files). A lot of time and effort was put into Files v4, and it wouldn't have been possible without the community's involvement. Over the past year, dozens of contributors worked on design concepts, added new features, fixed bugs, and helped review pull requests on GitHub. Thank you for all your hard work!
 
 An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
 
@@ -83,7 +83,7 @@ When you drop a GitHub URL into Files, you'll be prompted to clone it. Clone pro
 
 ### Cloud drives
 
-- Files now supports Magenta, Sync, and OX Drive integration. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
+- Files now supports MagentaCLOUD, Sync, and OX Drive integration. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
 - OneDrive storage usage is now displayed in the Properties window on supported versions of Windows (Windows 23H2 and later).
 
 
@@ -149,6 +149,11 @@ You can now choose whether file size units are shown in binary units (MiB) or de
 - If you hide all the sidebar sections, you'll now see helpful placeholder content.
 
 
+### Context menu
+
+Access keys are now displayed in the right-click context menu when holding down the 'alt' key.
+
+
 ### Quick access to diagnostics
 
 You can now open the log file and folder with keyboard shortcuts:
@@ -165,7 +170,6 @@ You can now open the log file and folder with keyboard shortcuts:
 - We've expanded our language support to now include Armenian. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
 - We've replaced the Release Notes dialog with a dedicated tab that opens automatically after updating Files. This makes it easier to explore what's new and improved in each release.
 - We've improved the performance of the Quick Access widget on the Home Page.
-- Access keys are now displayed in the right click context menu when holding down the 'alt' key.
 - The review prompt in the Store version of Files will now appear only once per user, and only after 30 sessions. Additionally, the prompt no longer blocks user input and is designed to be less disruptive.
 - Experimental support for long file paths allows you to work with directories and filenames that exceed traditional Windows limits, opening up more possibilities for complex projects.
 
@@ -202,7 +206,7 @@ You can now open the log file and folder with keyboard shortcuts:
 
 - Fixed an issue where text in the permissions page would wrap incorrectly.
 - Fixed an issue where the sidebar would flicker when resizing the properties window.
-- Fixed an issue where **Cleanup** and **Format** options were incorrectly displayed for Cloud Drives.
+- Fixed an issue where the Cleanup and Format options were incorrectly displayed for Cloud Drives.
 
 
 ### Run with PowerShell
