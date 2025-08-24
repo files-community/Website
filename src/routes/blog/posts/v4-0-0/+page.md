@@ -31,7 +31,8 @@ An update icon should be displayed in the top right corner of the app for existi
   - [Sidebar](#sidebar)
   - [Context menu](#context-menu)
   - [Quick access to diagnostics](#quick-access-to-diagnostics)
-  
+
+
 ## What's new in Files v4.0
 
 ### Updated icon and design improvements
