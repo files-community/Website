@@ -91,7 +91,7 @@ The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>
 
 ### Developer tools and git
 
-You can remap the **Open IDE** command to any editor under **Settings → Developer tools**.  
+You can now remap the **Open IDE** command to any editor under **Settings → Developer tools**.  
 
 <figure>
     <img src="/blog-resources/v4/DeveloperTools.png" alt="Developer Settings" />
