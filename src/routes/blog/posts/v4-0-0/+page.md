@@ -196,15 +196,6 @@ You can now open the log file and folder with keyboard shortcuts:
 - Experimental support for long file paths allows you to work with directories and filenames that exceed traditional Windows limits, opening up more possibilities for complex projects.
 
 
-### Code Quality
-
-- Replaced the Visual Studio .sln file with the new .slnx format.
-- Updated to .NET 9
-- Updated to WASDK 1.7
-- Updated to CommunityToolkit.WinUI 8.2
-- Updated to CsWinRT 2.2
-
-
 ## Fixes
 
 ### Updates
