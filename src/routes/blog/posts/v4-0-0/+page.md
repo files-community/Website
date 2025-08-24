@@ -80,7 +80,7 @@ Search is available by pressing <kbd>Ctrl</kbd>+<kbd>F</kbd> or by clicking the 
     <img src="/blog-resources/v4/SearchHeader.png" alt="Search header" />
 </figure>
 
-Filter can be activated via the toolbar button or the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> shortcut. It quickly narrows visible items in the open directory without relying on the index, keeping you in context and delivering rapid, targeted results.
+The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> shortcut. It quickly narrows visible items in the open directory without relying on the index, keeping you in context and delivering targeted results in realtime.
 
 <figure>
     <img src="/blog-resources/v4/FilterHeader.png" alt="Filter header" />
