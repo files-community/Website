@@ -16,7 +16,7 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ### Updated icon and design improvements
 
-Files v4.0 introduces a new, modern icon and an updated interface to align with the latest Windows design language.
+Files v4.0 introduces a new, modern icon and an updated user interface to align with the latest Windows design language.
 
 <figure>
     <img src="/blog-resources/v4/NewIcon.png" alt="Updated icon" />
