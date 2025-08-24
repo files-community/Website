@@ -187,8 +187,8 @@ You can now open the log file and folder with keyboard shortcuts:
 
 ### Other highlights
 
-- You can now browse all supported image formats when selecting a background image in Settings.
-- The icon picker now supports browsing all compatible icon file formats, simplifying customization of folder and file icons.
+- You can now browse all supported image formats when selecting a background in Settings.
+- You can now browse all supported icon file formats when selecting an icon in Properties.
 - We've expanded our language support to now include Armenian. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
 - We've replaced the Release Notes dialog with a dedicated tab that opens automatically after updating Files. This makes it easier to explore what's new and improved in each release.
 - We've improved the performance of the Quick Access widget on the Home Page.
