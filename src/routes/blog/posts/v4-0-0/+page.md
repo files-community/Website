@@ -72,7 +72,7 @@ In Command Palette mode, the Omnibar displays advanced commands and actions. Lea
 
 ### Filtering and search
 
-To reduce confusion between filtering and search, we've separated them into two dedicated features. Search leverages the Windows Search index for comprehensive queries across all indexed locations. Filter refines the items you see within the current folder.
+To reduce confusion between filtering and search, we've separated them into two features. Search leverages the Windows Search index for comprehensive queries across all indexed locations. Filter refines the items you see within the current folder.
 
 Search is available by pressing <kbd>Ctrl</kbd>+<kbd>F</kbd> or by clicking the search icon in the Omnibar.
 
