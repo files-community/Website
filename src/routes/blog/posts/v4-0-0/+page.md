@@ -49,43 +49,6 @@ In Command Palette mode, the Omnibar displays advanced commands and actions. Lea
 </figure>
 
 
-### Columns View
-
-Columns View now automatically adjusts each column's width to fit its file names. You can also drag the dividers to resize columns or double-click a divider to snap it back to the optimal width.
-
-
-### Customizable file size units
-
-You can now choose whether file size units are shown in binary units (MiB) or decimal units (MB). This setting can be adjusted from **Settings → Files & folders → Size format**.
-
-
-### Actions settings page
-
-The Actions settings page now adapts to smaller window sizes, and we added a search box so you can quickly filter commands.
-
-<figure>
-    <img src="/blog-resources/v4/ActionsSettingsPage.png" alt="Search box on the Actions settings page" />
-</figure>
-
-
-### Archives
-
-- The 7-Zip dependency has been updated to version 25.01.  
-- New archives now default to UTF-8 encoding.  
-- When extracting archives, Files auto-detects the encoding. You can still choose a different format if needed.
-
-
-### Status Center
-
-- You can now control when the Status Center icon is visible under **Settings → Appearance → Toolbars → Status Center**. By default, the icon is always visible, but you can configure it to appear only when tasks are in progress. 
-- Notification badges clear automatically when you open the Status Center.  
-- Font installation progress is now displayed in the Status Center.
-
-<figure>
-  <img src="/blog-resources/v4/StatusCenterIcon.png" alt="Status Center icon" />
-</figure>
-
-
 ### Filtering and search
 
 To reduce confusion between filtering and search, we've separated them into two dedicated features. Search leverages the Windows Search index for comprehensive queries across all indexed locations. Filter refines the items you see within the current folder.
@@ -118,6 +81,12 @@ When you drop a GitHub URL into Files, you'll be prompted to clone it. Clone pro
 </figure>
 
 
+### Cloud drives
+
+- Files now supports Magenta, Sync, and OX Drive integration. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
+- OneDrive storage usage is now displayed in the Properties window on supported versions of Windows (Windows 23H2 and later).
+
+
 ### Compare hashes
 
 The **Hashes** tab in Properties has a new **Compare a file** option that lets you quickly verify a file's hash against a known value or another file.
@@ -136,11 +105,49 @@ A new **Signatures** tab in Properties shows digital signatures so you can verif
 </figure>
 
 
+### Columns View
+
+Columns View now automatically adjusts each column's width to fit its file names. You can also drag the dividers to resize columns or double-click a divider to snap it back to the optimal width.
+
+
+### Status Center
+
+- You can now control when the Status Center icon is visible under **Settings → Appearance → Toolbars → Status Center**. By default, the icon is always visible, but you can configure it to appear only when tasks are in progress. 
+- Notification badges clear automatically when you open the Status Center.  
+- Font installation progress is now displayed in the Status Center.
+
+<figure>
+  <img src="/blog-resources/v4/StatusCenterIcon.png" alt="Status Center icon" />
+</figure>
+
+
+### Actions settings page
+
+The Actions settings page now adapts to smaller window sizes, and we added a search box so you can quickly filter commands.
+
+<figure>
+    <img src="/blog-resources/v4/ActionsSettingsPage.png" alt="Search box on the Actions settings page" />
+</figure>
+
+
+### Archives
+
+- The 7-Zip dependency has been updated to version 25.01.  
+- New archives now default to UTF-8 encoding.  
+- When extracting archives, Files auto-detects the encoding. You can still choose a different format if needed.
+
+
+### Customizable file size units
+
+You can now choose whether file size units are shown in binary units (MiB) or decimal units (MB). This setting can be adjusted from **Settings → Files & folders → Size format**.
+
+
 ### Sidebar
 
 - The settings button has been relocated from the address bar to the left‑hand sidebar.
 - Right clicking the settings button displays an option to open the raw JSON file.
 - If you hide all the sidebar sections, you'll now see helpful placeholder content.
+
 
 ### Quick access to diagnostics
 
@@ -148,12 +155,6 @@ You can now open the log file and folder with keyboard shortcuts:
 
 - To open the log file, press <kbd>Ctrl</kbd>+<kbd>.</kbd>  
 - To open the log folder, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
-
-
-### Cloud drives
-
-- Files now supports Magenta, Sync, and OX Drive integration. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
-- OneDrive storage usage is now displayed in the Properties window on supported versions of Windows (Windows 23H2 and later).
 
 
 ### Other highlights
