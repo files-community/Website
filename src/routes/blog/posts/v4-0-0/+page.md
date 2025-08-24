@@ -15,7 +15,7 @@ An update icon should be displayed in the top right corner of the app for existi
 ## Contents
 
 - [What's new in Files v4.0](#whats-new-in-files-v40)
-  - [Updated icon and design improvements](#updated-icon-and-design-improvements)
+  - [Updated icon](#updated-icon)
   - [Omnibar](#omnibar)
   - [Dual Pane](#dual-pane)
   - [Filtering and search](#filtering-and-search)
@@ -37,9 +37,9 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ## What's new in Files v4.0
 
-### Updated icon and design improvements
+### Updated icon
 
-Files v4.0 introduces a new, modern icon and an updated user interface to align with the latest Windows design language.
+Files v4.0 introduces a refreshed logo design with richer color, ensuring it feels right at home with other Fluent designed apps from Microsoft
 
 <figure>
     <img src="/blog-resources/v4/NewIcon.png" alt="Updated icon" />
