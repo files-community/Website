@@ -172,7 +172,8 @@ You can now choose whether file size units are shown in binary units (MiB) or de
 
 ### Context menu
 
-Access keys are now displayed in the right-click context menu when holding down the 'alt' key.
+- Access keys are now displayed in the right-click context menu when holding down the 'alt' key.
+- We added support for turning off the 'Open in Terminal' option in the right click context menu. This setting can be accessed from **Settings → General → Context menu options** .
 
 
 ### Quick access to diagnostics
@@ -185,7 +186,6 @@ You can now open the log file and folder with keyboard shortcuts:
 
 ### Other highlights
 
-- We added support for turning off the 'Open in Terminal' option in the right click context menu. This setting can be accessed from the [general](/docs/customize-settings/general) settings page.
 - You can now browse all supported image formats when selecting a background image in Settings.
 - The icon picker now supports browsing all compatible icon file formats, simplifying customization of folder and file icons.
 - We've expanded our language support to now include Armenian. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
