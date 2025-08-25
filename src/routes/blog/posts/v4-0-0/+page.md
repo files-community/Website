@@ -33,12 +33,6 @@ An update icon should be displayed in the top right corner of the app for existi
   - [Quick access to diagnostics](#quick-access-to-diagnostics)
   - [Other highlights](#other-highlights)
 - [Fixes](#fixes)
-  - [Updates and release notes](#updates-and-release-notes)
-  - [Settings dialog](#settings-dialog)
-  - [Sorting and grouping](#sorting-and-grouping)
-  - [Shortcuts and commands](#shortcuts-and-commands)
-  - [Navigation and layout](#navigation-and-layout)
-  - [Toolbar](#toolbar)
 
 
 ## What's new in Files v4.0
