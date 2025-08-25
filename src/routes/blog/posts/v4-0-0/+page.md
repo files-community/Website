@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v4.0
 description: We're excited to announce the general availability of Files v4.0 for all users.
-thumbnail: /blog-resources/v4/Hero.png
+thumbnail: /blog-resources/v4/Hero.webp
 date: 12/4/2025
 author: files-community
 ---
@@ -42,7 +42,7 @@ An update icon should be displayed in the top right corner of the app for existi
 Files v4.0 introduces a refreshed logo design with richer color, ensuring it feels right at home with other Fluent designed apps from Microsoft
 
 <figure>
-    <img src="/blog-resources/v4/NewIcon.png" alt="Updated icon" />
+    <img src="/blog-resources/v4/NewIcon.webp" alt="Updated icon" />
 </figure>
 
 ### Omnibar
@@ -50,13 +50,13 @@ Files v4.0 introduces a refreshed logo design with richer color, ensuring it fee
 The Omnibar is a major design update in Files v4.0, replacing the traditional Address Bar with a brand new control that merges the path bar and search box into a single, intuitive interface. You can switch between navigation and search modes by clicking the mode buttons or by using their dedicated keyboard shortcuts.
 
 <figure>
-    <img src="/blog-resources/v4/Omnibar.png" alt="Omnibar" />
+    <img src="/blog-resources/v4/Omnibar.webp" alt="Omnibar" />
 </figure>
 
 A powerful Command Palette mode provides access to advanced commands and actions. Learn more in our [Omnibar documentation](/docs/features/omnibar/). 
 
 <figure>
-    <img src="/blog-resources/v4/OmnibarCommandPalette.png" alt="Search" />
+    <img src="/blog-resources/v4/OmnibarCommandPalette.webp" alt="Search" />
 </figure>
 
 
@@ -68,7 +68,7 @@ A powerful Command Palette mode provides access to advanced commands and actions
 - The "Add pane" option is now labeled "Split pane".
 
 <figure>
-    <img src="/blog-resources/v4/SplitPaneMenu.png" alt="Split pane flyout menu" />
+    <img src="/blog-resources/v4/SplitPaneMenu.webp" alt="Split pane flyout menu" />
 </figure>
 
 
@@ -79,13 +79,13 @@ To reduce confusion between filtering and search, we've separated them into two 
 Search is available by pressing <kbd>Ctrl</kbd>+<kbd>F</kbd> or by clicking the search icon in the Omnibar.
 
 <figure>
-    <img src="/blog-resources/v4/SearchHeader.png" alt="Search header" />
+    <img src="/blog-resources/v4/SearchHeader.webp" alt="Search header" />
 </figure>
 
 The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> shortcut. It filters items in the open directory without relying on the index, keeping you in context and displays results in real time.
 
 <figure>
-    <img src="/blog-resources/v4/FilterHeader.png" alt="Filter header" />
+    <img src="/blog-resources/v4/FilterHeader.webp" alt="Filter header" />
 </figure>
 
 
@@ -94,13 +94,13 @@ The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>
 You can now remap the **Open IDE** command to any editor under **Settings → Developer tools**.  
 
 <figure>
-    <img src="/blog-resources/v4/DeveloperTools.png" alt="Developer Settings" />
+    <img src="/blog-resources/v4/DeveloperTools.webp" alt="Developer Settings" />
 </figure>
 
 When you drop a GitHub URL into Files, you'll be prompted to clone it. Clone progress is displayed in the Status Center.
 
 <figure>
-    <img src="/blog-resources/v4/CloningStatus.png" alt="Clone status" />
+    <img src="/blog-resources/v4/CloningStatus.webp" alt="Clone status" />
 </figure>
 
 
@@ -115,7 +115,7 @@ When you drop a GitHub URL into Files, you'll be prompted to clone it. Clone pro
 The **Hashes** tab in Properties has a new **Compare a file** option that lets you quickly verify a file's hash against a known value or another file.
 
 <figure>
-    <img src="/blog-resources/v4/Hashes.png" alt="Hash comparison" />
+    <img src="/blog-resources/v4/Hashes.webp" alt="Hash comparison" />
 </figure>
 
 
@@ -124,7 +124,7 @@ The **Hashes** tab in Properties has a new **Compare a file** option that lets y
 A new **Signatures** tab in Properties shows digital signatures so you can verify a file's authenticity at a glance.
 
 <figure>
-  <img src="/blog-resources/v4/Signatures.png" alt="Signatures page" />
+  <img src="/blog-resources/v4/Signatures.webp" alt="Signatures page" />
 </figure>
 
 
@@ -143,7 +143,7 @@ Columns View now automatically adjusts each column's width to fit its file names
 - Font installation progress is now displayed in the Status Center.
 
 <figure>
-  <img src="/blog-resources/v4/StatusCenterIcon.png" alt="Status Center icon" />
+  <img src="/blog-resources/v4/StatusCenterIcon.webp" alt="Status Center icon" />
 </figure>
 
 
@@ -152,7 +152,7 @@ Columns View now automatically adjusts each column's width to fit its file names
 The Actions settings page now adapts to smaller window sizes, and we added a search box so you can quickly filter commands.
 
 <figure>
-    <img src="/blog-resources/v4/ActionsSettingsPage.png" alt="Search box on the Actions settings page" />
+    <img src="/blog-resources/v4/ActionsSettingsPage.webp" alt="Search box on the Actions settings page" />
 </figure>
 
 
