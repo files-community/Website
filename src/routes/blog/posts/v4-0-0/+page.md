@@ -254,3 +254,14 @@ You can now open the log file and folder with keyboard shortcuts:
 - Fixed an issue where toolbar buttons sometimes displayed the wrong icon state.
 - Fixed an issue where the extract button was sometimes missing from the toolbar.
 - Fixed the menu label for overflow items in the toolbar.
+
+
+## Conclusion
+
+As always, we appreciate your feedback and suggestions on how we improve Files. You can reach us on [Discord](https://discord.gg/files) and on [GitHub](https://github.com/files-community/Files/).
+
+Thank you for using Files! 😊
+
+---
+
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2/)
