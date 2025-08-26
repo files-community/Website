@@ -1,6 +1,6 @@
 ---
 title: Announcing Files v4.0
-description: We're excited to announce the general availability of Files v4.0 for all users.
+description: We're excited to announce the general availability of Files v4.0.
 thumbnail: /blog-resources/v4/Hero.webp
 date: 12/4/2025
 author: files-community
