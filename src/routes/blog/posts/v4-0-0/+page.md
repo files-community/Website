@@ -42,7 +42,7 @@ An update icon should be displayed in the top right corner of the app for existi
 Files v4.0 introduces a refreshed logo design with richer color, ensuring it feels right at home with other Fluent designed apps from Microsoft
 
 <figure>
-    <img src="/blog-resources/v4/NewIcon.webp" alt="Updated icon" />
+    <img src="/blog-resources/v4/NewIcon.webp" alt="Updated Files icon" />
 </figure>
 
 ### Omnibar
@@ -56,11 +56,13 @@ The Omnibar is a major design update in Files v4.0, replacing the traditional Ad
 A powerful Command Palette mode provides access to advanced commands and actions. Learn more in our [Omnibar documentation](/docs/features/omnibar/). 
 
 <figure>
-    <img src="/blog-resources/v4/OmnibarCommandPalette.webp" alt="Search" />
+    <img src="/blog-resources/v4/OmnibarCommandPalette.webp" alt="Command Palette" />
 </figure>
 
 
 ### Dual Pane
+
+Dual Pane mode lets you view and manage two folders side-by-side, perfect for dragging files between locations without switching tabs.
 
 - You can now toggle Dual Pane mode by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>.  
 - We added a dedicated settings section for Dual Pane under **Settings → Layout → Dual Pane**.  
@@ -82,7 +84,7 @@ Search is available by pressing <kbd>Ctrl</kbd>+<kbd>F</kbd> or by clicking the 
     <img src="/blog-resources/v4/SearchHeader.webp" alt="Search header" />
 </figure>
 
-The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> shortcut. It filters items in the open directory without relying on the index, keeping you in context and displays results in real time.
+The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>F</kbd> shortcut. It filters items in the open directory without relying on the index, keeping you in context and displaying results in real time.
 
 <figure>
     <img src="/blog-resources/v4/FilterHeader.webp" alt="Filter header" />
@@ -91,7 +93,7 @@ The filter header can be activated via the toolbar button or the <kbd>Ctrl</kbd>
 
 ### Developer tools and git
 
-You can now remap the **Open IDE** command to any editor under **Settings → Developer tools**.  
+You can now remap the **Open IDE** command to any editor under **Settings → Developer tools**, giving you flexibility to integrate your preferred coding environment.
 
 <figure>
     <img src="/blog-resources/v4/DeveloperTools.webp" alt="Developer Settings" />
@@ -106,7 +108,7 @@ When you drop a GitHub URL into Files, you'll be prompted to clone it. Clone pro
 
 ### Cloud drives
 
-- Files now supports MagentaCLOUD, Sync, and OX Drive integration. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
+- Files now supports MagentaCLOUD, Sync, and OX Drive integration, expanding your options for cloud storage access directly in the app. The full list of available cloud drives can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
 - OneDrive storage usage is now displayed in the Properties window on Windows 11.
 
 
@@ -189,11 +191,15 @@ You can now open the log file and folder with keyboard shortcuts:
 - To open the log folder, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd>
 
 
+### Localization
+
+We've expanded our language support to now include Armenian, broadening accessibility for global users. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
+
+
 ### Other highlights
 
 - You can now browse all supported image formats when selecting a background in Settings.
 - You can now browse all supported icon file formats when selecting an icon in Properties.
-- We've expanded our language support to now include Armenian. Our localizations are maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin: [https://crowdin.com/project/files-app](https://crowdin.com/project/files-app).
 - We've replaced the Release Notes dialog with a dedicated tab that opens automatically after updating Files. This makes it easier to explore what's new and improved in each release.
 - We've improved the performance of the Quick Access widget on the Home Page.
 - The review prompt in the Store version of Files will now appear only once per user, and only after 30 sessions. Additionally, the prompt no longer blocks user input and is designed to be less disruptive.
