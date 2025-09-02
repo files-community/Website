@@ -56,6 +56,25 @@ The [Scoop](https://scoop.sh) package is maintained by a third party.
 scoop install nonportable/files-np
 ```
 
+### Offline installers
+
+<InfoBar title="Note" severity="information">
+	The files will need to be installed in the same order as below
+</InfoBar>
+
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.7.msix
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Files.Package_4.0.0.0_x64_arm64.msixbundle
+```
+
 ## Keep Files up to date
 
 Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
