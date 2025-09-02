@@ -17,7 +17,7 @@ An update icon should be displayed in the top right corner of the app for existi
 - [What's new in Files v4.0](#whats-new-in-files-v40)
   - [Updated icon](#updated-icon)
   - [Omnibar](#omnibar)
-  - [Dual Pane](#dual-pane)
+  - [Improved Dual Pane](#dual-pane)
   - [Filtering and search](#filtering-and-search)
   - [Developer tools and git](#developer-tools-and-git)
   - [Cloud drives](#cloud-drives)
@@ -62,7 +62,7 @@ A powerful Command Palette mode provides access to advanced commands and actions
 
 ### Dual Pane
 
-Dual Pane mode lets you view and manage two folders side-by-side, perfect for dragging files between locations without switching tabs.
+Dual Pane mode lets you view and manage two folders side-by-side, perfect for dragging files between locations without switching tabs. We made a number of enhancements to Dual Pane mode to improve your experience.
 
 - You can now toggle Dual Pane mode by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>.  
 - We added a dedicated settings section for Dual Pane under **Settings → Layout → Dual Pane**.  
