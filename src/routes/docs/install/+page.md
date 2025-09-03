@@ -56,7 +56,7 @@ The [Scoop](https://scoop.sh) package is maintained by a third party.
 scoop install nonportable/files-np
 ```
 
-### Offline installers
+### Offline install
 
 <InfoBar title="Note" severity="information">
 	The files will need to be installed in the same order as below
