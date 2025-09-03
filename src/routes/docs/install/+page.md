@@ -59,7 +59,7 @@ scoop install nonportable/files-np
 ### Offline install
 
 <InfoBar title="Note" severity="information">
-	The files will need to be installed in the same order as below
+	The installation files will need to be installed in the same order as listed below.
 </InfoBar>
 
 
