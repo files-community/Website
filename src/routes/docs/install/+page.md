@@ -62,7 +62,10 @@ scoop install nonportable/files-np
 	The files will need to be installed in the same order as below
 </InfoBar>
 
-### x64 (AMD and Intel)
+
+<details>
+<summary>x64 (AMD and Intel)</summary>
+
 ```
 https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
 ```
@@ -75,8 +78,11 @@ https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies
 ```
 https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Files.Package_4.0.0.0_x64_arm64.msixbundle
 ```
+</details>
 
-### ARM64
+<details>
+<summary>ARM64</summary>
+
 ```
 https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
 ```
@@ -89,6 +95,8 @@ https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies
 ```
 https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Files.Package_4.0.0.0_x64_arm64.msixbundle
 ```
+
+</details>
 
 ## Keep Files up to date
 
