@@ -7,7 +7,7 @@
 	import { _ } from "svelte-i18n";
 
 	import { links } from "$data/links";
-	import { defaultI18nValues, externalLink, Metadata, TreeView } from "$lib";
+	import { defaultI18nValues, externalLink, HeaderAnchor, Metadata, TreeView } from "$lib";
 	import { Button, ListItem, TextBox } from "fluent-svelte";
 
 	export let data: LayoutData;
@@ -181,6 +181,7 @@
 			</div>
 		</div>
 		<div class="page-inner markdown-body">
+			<HeaderAnchor />
 			<header>
 				<span>
 					{$page.url.pathname.split("/").join(" / ").substring(2)}

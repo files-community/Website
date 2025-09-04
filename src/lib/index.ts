@@ -8,6 +8,7 @@ export { default as ColorSwatch } from "./ColorSwatch/ColorSwatch.svelte";
 export { default as TerminalCommand } from "./TerminalCommand/TerminalCommand.svelte";
 export { default as Titlebar } from "./Titlebar/Titlebar.svelte";
 export { default as BlogCard } from "./BlogCard/BlogCard.svelte";
+export { default as HeaderAnchor } from "./HeaderAnchor/HeaderAnchor.svelte";
 export { default as Metadata } from "./Metadata.svelte";
 export { defaultI18nValues } from "./i18n";
 

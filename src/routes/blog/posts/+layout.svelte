@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { defaultI18nValues, externalLink, Metadata } from "$lib";
+	import { defaultI18nValues, externalLink, HeaderAnchor, Metadata } from "$lib";
 	import { onMount } from "svelte";
 	import { _ } from "svelte-i18n";
 	import Share from "~icons/fluent/share-24-regular";
@@ -125,6 +125,7 @@
 			/>
 		{/if}
 		<div class="markdown-body">
+			<HeaderAnchor />
 			<slot />
 		</div>
 	</article>
