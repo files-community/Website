@@ -50,7 +50,7 @@ The Files Home page offers customizable widgets to provide quick access to impor
 
 If you frequently compare or transfer files between locations, enabling this setting can save time by automatically opening new tabs in [dual pane](/docs/features/dual-pane) mode.
 
-### Default dual pane split direction arrangement
+### Default dual pane split direction
 
 Tabs can be set to open with a **horizontal** or **vertical** split.
 
