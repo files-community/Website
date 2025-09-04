@@ -22,9 +22,17 @@ You can also use the preview version alongside the stable release to get early a
 
 ### PowerShell
 
-1. Open PowerShell as administrator.
-2. Run this command `Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller`.
-
+1. Open the default version of PowerShell as administrator (Powershell 7 will **not** work).
+2. For the stable branch, use the following command
+   ```
+   Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/stable/Files.Package.appinstaller
+   ```
+   For the preview branch, use the following command
+   ```
+   Add-AppxPackage -AppInstallerFile https://cdn.files.community/files/preview/Files.Package.appinstaller
+   ```
+3. Wait until the blue bar at the top of the window disappears.
+4. Files should be installed and available in the Start Menu.
 
 ### Winget
 
@@ -48,6 +56,48 @@ The [Scoop](https://scoop.sh) package is maintained by a third party.
 scoop install nonportable/files-np
 ```
 
+### Offline install
+
+<InfoBar title="Note" severity="information">
+	The installation files will need to be installed in the same order as listed below.
+</InfoBar>
+
+
+<details>
+<summary>x64 (AMD and Intel)</summary>
+
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.7.msix
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Files.Package_4.0.0.0_x64_arm64.msixbundle
+```
+</details>
+
+<details>
+<summary>ARM64</summary>
+
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.7.msix
+```
+```
+https://cdn.files.community/files/stable/Files.Package_4.0.0.0_Test/Files.Package_4.0.0.0_x64_arm64.msixbundle
+```
+
+</details>
+
 ## Keep Files up to date
 
 Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
@@ -56,18 +106,6 @@ Files will automatically check for updates whenever the app is opened and an ind
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
 </InfoBar>
 
-### Steps required for the "classic installer" version after 3/21/2024
-
-Starting 3/21/2024, users of the sideload version (aka classic installer) will need to reinstall Files in order to continue receiving automatic updates. This is a one time requirement due to changes in the code signing certificate.
-
-<InfoBar title="Note" severity="information">
-	This is not required for the Store version of Files.
-</InfoBar>
-
-1. Export your settings by going to `Settings > Advanced > Export`. 
-2. Uninstall Files and restart Windows
-3. [Reinstall](/download/) Files.
-4. Import your settings from `Settings > Advanced > Import`.
 
 ## Troubleshooting
 
@@ -84,3 +122,15 @@ If you encounter any problems or errors while updating Files, you can try the fo
 ### Windows cannot install package because a different package with the same name is already installed
 
 If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
+
+
+### Unofficial and modified versions of Windows
+
+This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, removing the Microsoft store. Files is not officially supported on devices with these modifications.
+
+1. Type Services in Windows start menu
+2. Open the `Windows update` and `Delivery optimization` services properties (Double click)
+3. Set startup type to manual and click OK
+4. Right click the services
+5. Click Start
+6. Try installing again.
