@@ -38,4 +38,4 @@ The default settings are designed to deliver the best performance across differe
 
 Resource consumption naturally increases when opening new tabs or navigating to different locations. However, we're aware of several memory leaks that can cause usage to accumulate over extended sessions.
 
-To mitigate this, consider disabling the option to keep Files in the background from **Settings → Advanced → Leave app running in the background when the window is closed.**. Note that turning this off may result in slower launch times for Files. We're investigating these leaks and looking for a long-term solution.
+To mitigate this, consider disabling the option to keep Files in the background from **Settings → Advanced → Leave app running in the background when the window is closed**. Note that turning this off may result in slower launch times for Files. We're investigating these leaks and looking for a long-term solution.
