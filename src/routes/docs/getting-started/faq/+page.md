@@ -32,7 +32,7 @@ If Files launches successfully, the easiest way to access its log file is direct
 
 ## How to Improve Performance
 
-The default settings are designed to deliver the best performance across all environments. We've identified several areas with potential for further optimization and are actively working on improvements behind the scenes.
+The default settings are designed to deliver the best performance across different environments. We've identified several areas with potential for further optimization and are actively working on improvements behind the scenes.
 
 ## How to Reduce Memory Usage
 
