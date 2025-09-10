@@ -12,7 +12,7 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ## What's new in Files v4.0.2
 
-- Fixed an regression introduced in [v4.0.1](/blog/posts/v4-0-1).
+- Fixed a regression introduced in [v4.0.1](/blog/posts/v4-0-1).
 
 ## Conclusion
 
