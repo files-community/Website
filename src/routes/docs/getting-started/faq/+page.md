@@ -40,5 +40,11 @@ Resource consumption naturally increases when opening new tabs or navigating to 
 
 To mitigate this, consider disabling the option to keep Files in the background from **Settings → Advanced → Leave app running in the background when the window is closed**. Note that turning this off may result in slower launch times for Files. We're investigating these leaks and looking for a long-term solution.
 
-## How to open Files from command line
-Use `files-<branch>.exe <folder path (optional)>` replacing `<branch>` with stable, preview or dev depending on what version you have installed.
+## How to Open Files from Command Line
+
+To open Files from command line, run the following command: `files-<branch>.exe`, replacing `<branch>` with the version of Files you have installed:
+- `stable`: Production build
+- `preview`: Beta/preview build
+- `dev`: Development build
+
+You can also use the path parameter to open a folder inside of Files, for example: `files-stable.exe "C:\Users\YourName\Documents"`.
