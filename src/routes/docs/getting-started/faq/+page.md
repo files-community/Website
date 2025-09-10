@@ -4,7 +4,7 @@ title: Frequently Asked Questions
 
 ## How to Locate the Log File
 
-If Files launches successfully, the easiest way to access its log file is directly from **Settings → About → Open log location**. If you're unable to open the UI, you can locate the log manually using File Explorer. The path varies depending on which version of Files is installed:
+If Files launches successfully, the easiest way to access the log file is directly from **Settings → About → Open log location**. If you're unable to open the UI, you can locate the log manually using File Explorer. The path varies depending on which version of Files is installed:
 
 ### Files Stable (Microsoft Store)
 
