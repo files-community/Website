@@ -49,6 +49,6 @@ To open Files from command line, run the following command: `files-<branch>.exe`
 
 You can also use the path parameter to open a folder inside of Files, for example: `files-stable.exe "C:\Users\YourName\Documents"`.
 
-## Is it possible to use a diffrent context menu
+## Is it possible to use other context menus (Nilesoft, File Explorer etc)
 
 Other context menu providers would have to add support for Files, and none currently do. Windows 10 File Explorer/Windows 11 show more version is not possible to get as there are custom options that are added in Files and features like changing layout, copying, pasting etc. are all linked to Windows File Explorer and wouldn't have any effect if used in Files.
