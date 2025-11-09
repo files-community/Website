@@ -203,7 +203,6 @@ We've expanded our language support to now include Armenian, broadening accessib
 - We've replaced the Release Notes dialog with a dedicated tab that opens automatically after updating Files. This makes it easier to explore what's new and improved in each release.
 - We've improved the performance of the Quick Access widget on the Home Page.
 - The review prompt in the Store version of Files will now appear only once per user, and only after 30 sessions. Additionally, the prompt no longer blocks user input and is designed to be less disruptive.
-- Experimental support for long file paths allows you to work with directories and filenames that exceed traditional Windows limits, opening up more possibilities for complex projects.
 
 
 ## Fixes
