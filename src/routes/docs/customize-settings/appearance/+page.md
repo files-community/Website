@@ -141,3 +141,7 @@ The toolbar can be turned on or off to maximize screen real estate.
 ### Status center button
 
 You can configure the status center visibility to **always** display or only **during file operations**, keeping your interface clean when idle.
+
+## Show status bar
+
+The status bar can be turned off to provide more room for viewing files. Please note, hiding the status will prevent access to some of the [Git](/docs/features/git) functionality in Files.
