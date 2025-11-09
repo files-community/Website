@@ -44,7 +44,7 @@
 		"typescript": "^5.6.3",
 		"typescript-eslint": "^8.10.0",
 		"unplugin-icons": "0.19.3",
-		"vite": "^5.4.20"
+		"vite": "^5.4.21"
 	},
 	"lint-staged": {
 		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
