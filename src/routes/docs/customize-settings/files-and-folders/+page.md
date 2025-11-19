@@ -29,8 +29,8 @@ Displays checkboxes for selected files and folders.
 
 ## Opening items
 
-- **Open items with a single click**: Allows opening files or folders with one click instead of double-clicking.
-- **Open folders with a single click in the columns layout**: Applies single-click behavior in columns view only.
+- **Open files with a single click**: Allows opening files with one click instead of double-clicking.
+- **Open folders with a single click**: Allows opening folders with one click instead of double-clicking. This option can also be enabled for just the Columns View.
 - **Open folders in a new tab**: Opens folders in a new tab instead of the current one.
 
 ## Show confirmation dialog when deleting items
