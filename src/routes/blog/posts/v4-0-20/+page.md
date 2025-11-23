@@ -48,7 +48,7 @@ The Cancel button for ongoing operations has been moved into a menu flyout. This
 
 - Fixed opening special shell locations (e.g., Recycle Bin) on startup.
 - Fixed pinned folder icons not loading until Files was restarted.
-- Fixed the Home button not working when viewing tag.
+- Fixed the Home button not working when viewing a tag.
 
 ### Environment & System Integration
 
