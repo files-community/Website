@@ -67,16 +67,16 @@ scoop install nonportable/files-np
 <summary>x64 (AMD and Intel)</summary>
 
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Files.Package_4.0.11.0_x64_arm64.msixbundle
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Files.Package_4.0.21.0_x64_arm64.msixbundle
 ```
 </details>
 
@@ -84,16 +84,16 @@ https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Files.Packa
 <summary>ARM64</summary>
 
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
 ```
 ```
-https://cdn.files.community/files/stable/Files.Package_4.0.11.0_Test/Files.Package_4.0.11.0_x64_arm64.msixbundle
+https://cdn.files.community/files/stable/Files.Package_4.0.21.0_Test/Files.Package_4.0.21.0_x64_arm64.msixbundle
 ```
 
 </details>
