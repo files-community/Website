@@ -11,9 +11,14 @@ title: Third party integrations
 </InfoBar>
 
 
+## PowerToys Peek
+
+PowerToys Peek is a tool for previewing files on Windows. If you already have PowerToys installed, there's no need for additional setup. Just select an item in Files, and press the space key to see a preview. To learn more about PowerToys Peek, please see their documentation site https://learn.microsoft.com/en-us/windows/powertoys/peek.
+
+
 ## QuickLook
 
-QuickLook is a popular tool for previewing files on Windows. If you already have QuickLook installed, there’s no need for additional setup. Just select an item in Files, and press the space key to see a preview. You can also use the arrow keys to navigate through the previews of different items. To learn more about QuickLook, please see their GitHub repo https://github.com/QL-Win/QuickLook.
+QuickLook is a popular tool for previewing files on Windows. If you already have QuickLook installed, ther'’s no need for additional setup. Just select an item in Files, and press the space key to see a preview. You can also use the arrow keys to navigate through the previews of different items. To learn more about QuickLook, please see their GitHub repo https://github.com/QL-Win/QuickLook.
 
 
 ## SeerPro
