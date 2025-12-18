@@ -13,7 +13,7 @@
 	position: relative;
 	inline-size: 80vw;
 	block-size: 100%;
-	margin-block-start: 120px;
+	margin-block-start: 164px;
 	text-align: center;
 }
 
@@ -28,7 +28,7 @@
 
 	&screenshot {
 		position: absolute;
-		inset-block-start: -48px;
+		inset-block-start: -36px;
 		inset-inline-end: 0;
 		inset-inline-start: 0;
 		z-index: 1;
