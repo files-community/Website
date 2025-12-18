@@ -31,6 +31,13 @@
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
 			"download": "Download",
 			"learn_more": "Learn more"
+		},		
+		"dual-pane": {
+			"chip": "Dual Pane",
+			"title": "Dual Pane",
+			"description": "View and manage two folders side by side with Dual Pane mode.",
+			"download": "Download",
+			"learn_more": "Learn more"
 		},
 		"features": {
 			"chip": "Features",

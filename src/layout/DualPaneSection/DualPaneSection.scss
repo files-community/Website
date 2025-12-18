@@ -1,0 +1,95 @@
+@use "src/styles/mixins" as *;
+
+// Inner section
+:global(#dual-pane-section .page-section-inner) {
+	@include flex($direction: column, $align: center);
+	text-align: center;
+	overflow: hidden;
+}
+
+// Image container (Screenshot + Wallpaper)
+.dual-pane-image {
+	@include flex($direction: column, $justify: center, $align: center);
+	position: relative;
+	inline-size: 80vw;
+	block-size: 100%;
+	margin-block-start: 84px;
+	text-align: center;
+}
+
+// Screenshot and wallpaper styling
+.files- {
+	&screenshot,
+	&wallpaper {
+		block-size: auto;
+		user-select: none;
+		-webkit-user-drag: none;
+	}
+
+	&screenshot {
+		position: absolute;
+		inset-block-start: -60px;
+		inset-inline-end: 0;
+		inset-inline-start: 0;
+		z-index: 1;
+		inline-size: 70%;
+		max-inline-size: 1024px;
+		margin: 0 auto;
+		border: 1px solid var(--fds-surface-stroke-default);
+		border-radius: calc(var(--fds-overlay-corner-radius) / 1.25);
+		background-color: hsl(var(--mica-tint), var(--mica-tint-opacity));
+		box-shadow: var(--fds-dialog-shadow);
+		transition: 50ms linear transform;
+		backdrop-filter: blur(60px) saturate(150%);
+		@media screen and (width > 2048px) {
+			border-radius: var(--fds-overlay-corner-radius);
+		}
+	}
+
+	&wallpaper {
+		position: relative;
+		inline-size: 90%;
+		max-inline-size: 1440px;
+		border: 1px solid var(--fds-card-stroke-default);
+		border-radius: calc(var(--fds-overlay-corner-radius) * 1.5);
+	}
+}
+
+// Dual Pane section small device support
+@media screen and (width < 1024px) {
+	// Enlarge wallpaper and screenshot
+	.dual-pane-image,
+	.files-wallpaper {
+		inline-size: 100%;
+	}
+	.files-screenshot {
+		inset-block-start: 0;
+	}
+}
+
+@media screen and (width < 768px) {
+	// Add some margins to account for more space available
+	.dual-pane-image {
+		margin-block-start: 48px;
+	}
+
+	// Screenshot and wallpaper
+	.files- {
+		// Position screenshot within wallpaper
+		&screenshot {
+			inset-block-start: 32px;
+			inset-inline-start: -2.5%;
+			inline-size: 105%;
+			transform: none !important; // Prevent parallax scrolling
+		}
+
+		// Fit wallpaper to viewport
+		&wallpaper {
+			inline-size: 180%;
+			block-size: 80vw;
+			border-radius: 0;
+			object-fit: cover;
+			object-position: bottom;
+		}
+	}
+}
