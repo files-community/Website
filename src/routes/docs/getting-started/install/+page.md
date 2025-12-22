@@ -66,35 +66,26 @@ scoop install nonportable/files-np
 <details>
 <summary>x64 (AMD and Intel)</summary>
 
-```
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
-```
+
 </details>
 
 <details>
 <summary>ARM64</summary>
 
-```
 https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
-```
-```
+
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
-```
 
 </details>
 
