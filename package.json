@@ -15,7 +15,6 @@
 	"devDependencies": {
 		"@fec/remark-a11y-emoji": "^4.0.2",
 		"@iconify-json/fluent": "^1.2.4",
-		"@neodrag/svelte": "^2.0.6",
 		"@sveltejs/adapter-cloudflare": "^4.7.3",
 		"@sveltejs/kit": "^2.20.6",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
