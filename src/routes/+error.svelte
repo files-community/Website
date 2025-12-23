@@ -1,18 +1,12 @@
 <script lang="ts">
-	import { draggable, type DragOptions } from "@neodrag/svelte";
 	import { Metadata } from "$lib";
 	import { page } from "$app/stores";
-
-	const draggableOptions: DragOptions = {
-		bounds: "parent",
-		handle: ".titlebar",
-	};
 </script>
 
 <Metadata />
 
 <section class="error-page">
-	<div class="window" use:draggable={draggableOptions}>
+	<div class="window">
 		<div class="titlebar">
 			<div class="titlebar-text">Error: {$page.status}</div>
 			<div class="titlebar-controls">
