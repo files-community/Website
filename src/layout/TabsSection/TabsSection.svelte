@@ -7,33 +7,33 @@
 
 <svelte:window on:scroll={() => (scrollPositionY = window.scrollY)} />
 
-<PageSection id="dual-pane-section">
-	<HeaderChip>{$_("home.dual-pane.chip", defaultI18nValues)}</HeaderChip>
-	<h2>{$_("home.dual-pane.title", defaultI18nValues)}</h2>
-	<p>{$_("home.dual-pane.description", defaultI18nValues)}</p>
+<PageSection id="tabs-section">
+	<HeaderChip>{$_("home.tabs.chip", defaultI18nValues)}</HeaderChip>
+	<h2>{$_("home.tabs.title", defaultI18nValues)}</h2>
+	<p>{$_("home.tabs.description", defaultI18nValues)}</p>
 	<div class="buttons-spacer">
 		<Button href="/download/" variant="accent">
-			{$_("home.dual-pane.download", defaultI18nValues)}
+			{$_("home.tabs.download", defaultI18nValues)}
 		</Button>
-		<Button variant="hyperlink" href="/docs/features/dual-pane">
-			{$_("home.dual-pane.learn_more", defaultI18nValues)}
+		<Button variant="hyperlink" href="/docs/features/tabs">
+			{$_("home.tabs.learn_more", defaultI18nValues)}
 		</Button>
 	</div>
-	<div class="dual-pane-image">
+	<div class="tabs-image">
 		<picture>
 			<source
 				media="(prefers-color-scheme: dark)"
-				srcset="/screenshots/dual-pane-dark.png"
+				srcset="/screenshots/folder-list-dark.png"
 			/>
 			<source
 				media="(prefers-color-scheme: light)"
-				srcset="/screenshots/dual-pane-light.png"
+				srcset="/screenshots/folder-list-light.png"
 			/>
 			<img
-				alt="Files Dual Pane screenshot"
+				alt="Files screenshot"
 				class="files-screenshot"
 				height="768"
-				src="/screenshots/dual-pane-light.png"
+				src="/screenshots/folder-list-light.png"
 				style:transform="translateY({Math.floor(scrollPositionY / +35)}px)"
 				width="1024"
 			/>
@@ -59,5 +59,5 @@
 </PageSection>
 
 <style lang="scss">
-	@use "DualPaneSection";
+	@use "TabsSection";
 </style>

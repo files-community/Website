@@ -1,19 +1,19 @@
 @use "src/styles/mixins" as *;
 
 // Inner section
-:global(#design-section .page-section-inner) {
+:global(#tabs-section .page-section-inner) {
 	@include flex($direction: column, $align: center);
 	text-align: center;
 	overflow: hidden;
 }
 
 // Image container (Screenshot + Wallpaper)
-.design-image {
+.tabs-image {
 	@include flex($direction: column, $justify: center, $align: center);
 	position: relative;
 	inline-size: 80vw;
 	block-size: 100%;
-	margin-block-start: 164px;
+	margin-block-start: 84px;
 	text-align: center;
 }
 
@@ -28,7 +28,7 @@
 
 	&screenshot {
 		position: absolute;
-		inset-block-start: -36px;
+		inset-block-start: -60px;
 		inset-inline-end: 0;
 		inset-inline-start: 0;
 		z-index: 1;
@@ -55,10 +55,10 @@
 	}
 }
 
-// Design section small device support
+// Tabs section small device support
 @media screen and (width < 1024px) {
 	// Enlarge wallpaper and screenshot
-	.design-image,
+	.tabs-image,
 	.files-wallpaper {
 		inline-size: 100%;
 	}
@@ -69,7 +69,7 @@
 
 @media screen and (width < 768px) {
 	// Add some margins to account for more space available
-	.design-image {
+	.tabs-image {
 		margin-block-start: 48px;
 	}
 

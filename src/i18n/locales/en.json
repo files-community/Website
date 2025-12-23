@@ -25,17 +25,17 @@
 			"files_is_open_source": "Files is open source!",			
 			"install_on_windows": "Install on Windows"
 		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask with tabs",
+			"description": "Easily manage multiple folders within a single window using tabs. Switch between tabs with a click or keyboard shortcut to boost your productivity.",
+			"download": "Download",
+			"learn_more": "Learn more"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "Power meets beauty.",
 			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
-		},		
-		"dual-pane": {
-			"chip": "Dual Pane",
-			"title": "Dual Pane",
-			"description": "View and manage two folders side by side with Dual Pane mode.",
 			"download": "Download",
 			"learn_more": "Learn more"
 		},

@@ -1,9 +1,8 @@
 <script lang="ts">
 	import {
 		HeroSection,
-		DualPaneSection,
+		TabsSection,
 		CommunitySection,
-		DesignSection,
 		FeaturesSection,
 		ThemesSection,
 	} from "$layout";
@@ -18,9 +17,7 @@
 
 <HeroSection />
 
-<DualPaneSection />
-
-<DesignSection />
+<TabsSection />
 
 <FeaturesSection />
 

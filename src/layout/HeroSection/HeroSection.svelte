@@ -40,16 +40,16 @@
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
-					srcset="/screenshots/folder-list-dark.png"
+					srcset="/screenshots/dual-pane-dark.png"
 				>
 				<source
 					media="(prefers-color-scheme: light)"
-					srcset="/screenshots/folder-list-light.png"
+					srcset="/screenshots/dual-pane-light.png"
 				>
 				<img
 					alt="Files new tab screenshot"
 					height="768"
-					src="/screenshots/folder-list-light.png"
+					src="/screenshots/dual-pane-light.png"
 					width="1024"
 				>
 			</picture>
