@@ -13,6 +13,7 @@
 <PageSection id="hero-section">
 	<h2>{$_("home.hero.title", defaultI18nValues)}</h2>
 	<p>{$_("home.hero.description", defaultI18nValues)}</p>
+	<div class="hero-left">
 		<div class="buttons-spacer">
 			<Button
 				href="/download"
@@ -36,6 +37,7 @@
 				</div>
 			</Button>
 		</div>
+	</div>
 	<div class="hero-image">
 		<picture>
 			<source
