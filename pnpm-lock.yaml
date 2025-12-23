@@ -20,9 +20,6 @@ importers:
       "@iconify-json/fluent":
         specifier: ^1.2.4
         version: 1.2.4
-      "@neodrag/svelte":
-        specifier: ^2.0.6
-        version: 2.0.6
       "@sveltejs/adapter-cloudflare":
         specifier: ^4.9.0
         version: 4.9.0(@sveltejs/kit@2.49.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(wrangler@3.61.0(@cloudflare/workers-types@4.20241011.0))
@@ -735,12 +732,6 @@ packages:
     resolution:
       {
         integrity: sha512-xgAyonlVVS+q7Vc7qLW0UrJU7rSFcETRWsqdXZtjzRU8dF+6CkozTK4V4y1LwOX7j8r/vHphjDeMeGI4tNGeGA==,
-      }
-
-  "@neodrag/svelte@2.0.6":
-    resolution:
-      {
-        integrity: sha512-jjmTjRTMJaer2IyEIoS5xbccmFmOpkeoTKpBORkMItCPjHWE19eW3kvH9SuTvZJAKnKERVNGdW3VBuDxZif9Dg==,
       }
 
   "@nodelib/fs.scandir@2.1.5":
@@ -5333,8 +5324,6 @@ snapshots:
       resolve: 1.22.11
 
   "@microsoft/tsdoc@0.16.0": {}
-
-  "@neodrag/svelte@2.0.6": {}
 
   "@nodelib/fs.scandir@2.1.5":
     dependencies:
