@@ -5,6 +5,27 @@
 	@include flex($direction: column, $align: center);
 	text-align: center;
 	overflow: hidden;
+
+	// Custom button styling
+	// Applied on download and source buttons respectively
+	:global {
+		.button {
+			padding: 7px 12px;
+			cursor: pointer;
+
+			svg {
+				@include icon($size: 14px);
+			}
+		}
+
+		.style-standard .hero-button-inner {
+			color: var(--fds-text-secondary);
+
+			h5 {
+				color: var(--fds-text-primary);
+			}
+		}
+	}
 }
 
 // Image container (Screenshot + Wallpaper)
@@ -54,25 +75,6 @@
 		max-inline-size: 1440px;
 		border: 1px solid var(--fds-card-stroke-default);
 		border-radius: calc(var(--fds-overlay-corner-radius) * 1.5);
-	}
-}
-
-// Custom button styling
-// Applied on download and source buttons respectively
-.button {
-	padding: 7px 12px;
-	cursor: pointer;
-
-	svg {
-		@include icon($size: 14px);
-	}
-}
-
-.style-standard .hero-button-inner {
-	color: var(--fds-text-secondary);
-
-	h5 {
-		color: var(--fds-text-primary);
 	}
 }
 
