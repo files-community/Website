@@ -1,7 +1,7 @@
 <script lang="ts">
 	import {
 		CommunitySection,
-		DesignSection,
+		HeroSection,
 		FeaturesSection,
 		ThemesSection,
 	} from "$layout";
@@ -14,7 +14,7 @@
 
 <Metadata title={$_("metadata.home", defaultI18nValues)} />
 
-<DesignSection />
+<HeroSection />
 
 <FeaturesSection />
 

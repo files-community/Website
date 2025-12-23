@@ -1,25 +1,42 @@
 <script lang="ts">
-	import { defaultI18nValues, HeaderChip, PageSection } from "$lib";
+	import { defaultI18nValues, externalLink, HeaderChip, PageSection } from "$lib";
 	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
+	import { links } from "$data/links";
+	import ArrowDownload from "~icons/fluent/arrow-download-24-regular";
+	import Code from "~icons/fluent/code-24-regular";
 	let scrollPositionY: number;
 </script>
 
 <svelte:body on:scroll={() => (scrollPositionY = document.body.scrollTop)} />
 
-<PageSection id="design-section">
-	<HeaderChip>{$_("home.design.chip", defaultI18nValues)}</HeaderChip>
-	<h2>{$_("home.design.title", defaultI18nValues)}</h2>
-	<p>{$_("home.design.description", defaultI18nValues)}</p>
-	<div class="buttons-spacer">
-		<Button href="/download/" variant="accent">
-			{$_("home.design.download", defaultI18nValues)}
-		</Button>
-		<Button variant="hyperlink" href="/docs/">
-			{$_("home.design.learn_more", defaultI18nValues)}
-		</Button>
-	</div>
-	<div class="design-image">
+<PageSection id="hero-section">
+	<h2>{$_("home.hero.title", defaultI18nValues)}</h2>
+	<p>{$_("home.hero.description", defaultI18nValues)}</p>
+		<div class="buttons-spacer">
+			<Button
+				href="/download"
+				id="hero-download-button"
+				variant="accent"
+			>
+				<ArrowDownload />
+				<div class="hero-button-inner">
+					<h5>{$_("home.hero.download", defaultI18nValues)}</h5>
+					<span>{$_("home.hero.install_on_windows", defaultI18nValues)}</span>
+				</div>
+			</Button>
+			<Button
+				href="https://github.com/{links.github.owner}/{links.github.repo}/"
+				{...externalLink}
+			>
+				<Code />
+				<div class="hero-button-inner">
+					<h5>{$_("home.hero.view_on_github", defaultI18nValues)}</h5>
+					<span>{$_("home.hero.files_is_open_source", defaultI18nValues)}</span>
+				</div>
+			</Button>
+		</div>
+	<div class="hero-image">
 		<picture>
 			<source
 				media="(prefers-color-scheme: dark)"
@@ -59,5 +76,5 @@
 </PageSection>
 
 <style lang="scss">
-	@use "DesignSection";
+	@use "HeroSection";
 </style>

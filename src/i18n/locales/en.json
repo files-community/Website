@@ -17,12 +17,13 @@
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
-		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
+		"hero": {
+			"title": "Files",
+			"description": "A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with ease.",
 			"download": "Download",
-			"learn_more": "Learn more"
+			"view_on_github": "View on GitHub",
+			"files_is_open_source": "Files is open source!",			
+			"install_on_windows": "Install on Windows"
 		},
 		"features": {
 			"chip": "Features",

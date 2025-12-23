@@ -1,14 +1,14 @@
 @use "src/styles/mixins" as *;
 
 // Inner section
-:global(#design-section .page-section-inner) {
+:global(#hero-section .page-section-inner) {
 	@include flex($direction: column, $align: center);
 	text-align: center;
 	overflow: hidden;
 }
 
 // Image container (Screenshot + Wallpaper)
-.design-image {
+.hero-image {
 	@include flex($direction: column, $justify: center, $align: center);
 	position: relative;
 	inline-size: 80vw;
@@ -19,6 +19,7 @@
 
 // Screenshot and wallpaper styling
 .files- {
+
 	&screenshot,
 	&wallpaper {
 		block-size: auto;
@@ -41,6 +42,7 @@
 		box-shadow: var(--fds-dialog-shadow);
 		transition: 50ms linear transform;
 		backdrop-filter: blur(60px) saturate(150%);
+
 		@media screen and (width > 2048px) {
 			border-radius: var(--fds-overlay-corner-radius);
 		}
@@ -55,26 +57,49 @@
 	}
 }
 
-// Design section small device support
+// Custom button styling
+// Applied on download and source buttons respectively
+.button {
+	padding: 7px 12px;
+	cursor: pointer;
+
+	svg {
+		@include icon($size: 14px);
+	}
+}
+
+.style-standard .hero-button-inner {
+	color: var(--fds-text-secondary);
+
+	h5 {
+		color: var(--fds-text-primary);
+	}
+}
+
+// Hero section small device support
 @media screen and (width < 1024px) {
+
 	// Enlarge wallpaper and screenshot
-	.design-image,
+	.hero-image,
 	.files-wallpaper {
 		inline-size: 100%;
 	}
+
 	.files-screenshot {
 		inset-block-start: 0;
 	}
 }
 
 @media screen and (width < 768px) {
+
 	// Add some margins to account for more space available
-	.design-image {
+	.hero-image {
 		margin-block-start: 48px;
 	}
 
 	// Screenshot and wallpaper
 	.files- {
+
 		// Position screenshot within wallpaper
 		&screenshot {
 			inset-block-start: 32px;
