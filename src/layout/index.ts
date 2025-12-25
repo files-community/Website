@@ -1,5 +1,6 @@
 // sections
-export { default as DesignSection } from "./DesignSection/DesignSection.svelte";
+export { default as HeroSection } from "./HeroSection/HeroSection.svelte";
+export { default as TabsSection } from "./TabsSection/TabsSection.svelte";
 export { default as FeaturesSection } from "./FeaturesSection/FeaturesSection.svelte";
 export { default as ThemesSection } from "./ThemesSection/ThemesSection.svelte";
 export { default as CommunitySection } from "./CommunitySection/CommunitySection.svelte";
