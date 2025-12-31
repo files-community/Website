@@ -1,6 +1,6 @@
 ---
 title: Announcing Files v4.0.24
-description: Announcing Files Preview v4.0.24 for users of the preview version.
+description: We're excited to announce the general availability of Files v4.0.24.
 thumbnail: /blog-resources/v4-0-24/Hero.webp
 date: 12/26/2025
 author: files-community
