@@ -48,15 +48,6 @@
 	"lint-staged": {
 		"*": "prettier --write --ignore-unknown --plugin-search-dir=."
 	},
-	"pnpm": {
-		"overrides": {
-			"prismjs": ">=1.30.0",
-			"esbuild": ">=0.25.0",
-			"cookie": ">=0.7.0",
-			"vite-plugin-dts": ">=4.5.4",
-			"vite": ">=5.4.21"
-		}
-	},
 	"engines": {
 		"pnpm": ">=8",
 		"node": ">=20"
