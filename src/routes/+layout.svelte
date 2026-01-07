@@ -8,6 +8,7 @@
 	import { _ } from "svelte-i18n";
 
 	import "fluent-svelte/theme.css";
+	import "../styles/scrollbar.scss";
 
 	import Chat from "~icons/fluent/chat-24-regular";
 	import Code from "~icons/fluent/code-24-regular";
@@ -67,6 +68,14 @@
 				await navigation.complete;
 			});
 		});
+	});
+
+	let minimal = false;
+
+	onMount(() => {
+		const params = new URLSearchParams(window.location.search);
+		minimal = params.has("minimal");
+		document.documentElement.classList.toggle("minimal-scroller", !minimal);
 	});
 </script>
 
