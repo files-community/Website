@@ -75,7 +75,7 @@
 	onMount(() => {
 		const params = new URLSearchParams(window.location.search);
 		minimal = params.has("minimal");
-		document.documentElement.classList.toggle("minimal-scroller", !minimal);
+		document.documentElement.classList.toggle("scroller", !minimal);
 	});
 </script>
 

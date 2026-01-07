@@ -1,6 +1,6 @@
 // Scrollers
 // Utility class to create a styled scroller and scrollbar
-.minimal-scroller {
+.scroller {
 	overflow: auto;
 
 	@supports (overflow: overlay) {
@@ -10,7 +10,7 @@
 
 // An attempt at recreating WinUI 2.6 scrollbars
 // (mixed results)
-.minimal-scroller ::-webkit-scrollbar {
+.scroller ::-webkit-scrollbar {
 	display: block;
 	inline-size: 14px;
 	border-radius: 14px;
