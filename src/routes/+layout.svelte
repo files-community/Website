@@ -75,7 +75,8 @@
 	onMount(() => {
 		const params = new URLSearchParams(window.location.search);
 		minimal = params.has("minimal");
-		document.documentElement.classList.toggle("scroller", !minimal);
+		document.documentElement.classList.toggle("scroller", !minimal); // Apply WinUI scroller class when not in minimal mode
+		document.documentElement.classList.toggle("scrollbar"); // Always apply custom scroller settings (not including WinUI scroller styles)
 	});
 </script>
 

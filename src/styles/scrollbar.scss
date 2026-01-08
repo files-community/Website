@@ -1,6 +1,6 @@
 // Scrollers
 // Utility class to create a styled scroller and scrollbar
-.scroller {
+.scrollbar {
 	overflow: auto;
 
 	@supports (overflow: overlay) {
