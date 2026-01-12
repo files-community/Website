@@ -94,7 +94,7 @@
 							rel={external ? "noreferrer noopener" : undefined}
 						>
 							{#if icon}
-								<svelte:component this={icon} />
+								<svelte:component this={icon} aria-hidden="true" />
 							{/if}
 							<span>{name}</span>
 						</a>
@@ -112,7 +112,7 @@
 						title={label}
 						{...externalLink}
 					>
-						<svelte:component this={icon} />
+						<svelte:component this={icon} aria-hidden="true" />
 					</a>
 				{/each}
 			{:else}
@@ -144,7 +144,7 @@
 					>
 						<svelte:fragment slot="icon">
 							{#if icon}
-								<svelte:component this={icon} />
+								<svelte:component this={icon} aria-hidden="true" />
 							{/if}
 						</svelte:fragment>
 						<span>{name}</span>
@@ -168,7 +168,7 @@
 				<ListItem {href} type="navigation" {...externalLink}>
 					<svelte:fragment slot="icon">
 						{#if icon}
-							<svelte:component this={icon} />
+							<svelte:component this={icon} aria-hidden="true" />
 						{/if}
 					</svelte:fragment>
 					<span>{label}</span>
