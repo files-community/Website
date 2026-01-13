@@ -5,10 +5,10 @@ title: Compiling the source code
 ### 1: Prerequisites
 
 - [Visual Studio 2022 17.13 or later](https://visualstudio.microsoft.com/vs/) with the following individual components:
-  - Windows 11 SDK (10.0.22621.0)
+  - Windows 11 SDK (10.0.26100.0)
   - .NET 9 SDK (version 9.0.200)
-  - MSVC v143 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
-  - C++ ATL for latest v143 build tools (x86 & x64 or ARM64)
+  - MSVC v145 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
+  - C++ ATL for latest v145 build tools (x86 & x64 or ARM64)
   - Git for Windows
 - [Windows App SDK 1.8](https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads#current-releases)
 
