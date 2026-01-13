@@ -52,3 +52,11 @@ You can also use the path parameter to open a folder inside of Files, for exampl
 ## Is it possible to use other context menus (Nilesoft, File Explorer etc)
 
 While it's technically possible for us to support the File Explorer context menu, it wouldn't provide the best experience. For example, menu options like changing the layout, copying, pasting, creating new files, viewing properties, and sorting are all linked to File Explorer and wouldn't work if invoked from Files. Additionally, there are many unique features in the Files context menu that you won't find in File Explorer. Support for third party context menus can be added provided the third party makes the necessary changes to integrate with Files. If there's a specific feature you're missing, please feel free to open a feature request, and we'll be happy to take a look!
+
+## Unable to set Files as the default file manager
+
+Try the below steps
+1. Change UAC (User account control) to or above the 2nd level from the bottom
+2. Restart Windows and try change the setting again
+
+If it doesn't turn on after you have done the above then unfortunately you won't be able to use Files as default file manager unless you reinstall Windows.
