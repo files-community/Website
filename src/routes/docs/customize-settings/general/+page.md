@@ -61,3 +61,7 @@ The context menu is where many quick actions live. You can choose to hide defaul
 ## Move shell extensions into sub menu
 
 To enhance performance, shell extensions are placed in a submenu by default. However, you can disable this option if you'd prefer to see all items directly in the main context menu.
+
+## Scrolling
+
+Smooth scrolling is enabled by default, but can be turned off via this setting.
