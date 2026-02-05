@@ -65,7 +65,7 @@ A powerful Command Palette mode provides access to advanced commands and actions
 Dual Pane mode lets you view and manage two folders side-by-side, perfect for dragging files between locations without switching tabs. We made a number of enhancements to Dual Pane mode to improve your experience.
 
 - You can now toggle Dual Pane mode by pressing <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd>.  
-- We added a dedicated settings section for Dual Pane under **Settings → Layout → Dual Pane**.  
+- We added a dedicated settings section for Dual Pane under **Settings → Layout → Dual Pane**.
 - New panes now open with the same path you're currently viewing.  
 - The "Add pane" option is now labeled "Split pane".
 
