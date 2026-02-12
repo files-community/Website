@@ -77,4 +77,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2/)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)

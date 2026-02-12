@@ -6,7 +6,7 @@ date: 2/7/2025
 author: files-community
 ---
 
-I'm excited to announce that Files v3.9.1 is now available! 🎉 Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
+I'm excited to announce that Files v3.9.1 is now available! 🎉 Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -30,4 +30,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)

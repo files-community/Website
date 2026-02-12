@@ -6,7 +6,7 @@ date: 5/8/2024
 author: files-community
 ---
 
-We're excited to announce that starting today, Files v3.4 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
+We're excited to announce that starting today, Files v3.4 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yair100) to help support the project.
 
 **TL;DR:** The latest update, Files v3.4, introduces new features including file name filtering, customizable keyboard shortcuts, personal background images, and a Listary integration, among others. Continue reading to learn more about these enhancements.
 
@@ -126,4 +126,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100)

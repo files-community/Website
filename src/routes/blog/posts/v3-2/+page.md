@@ -6,7 +6,7 @@ date: 2/12/2024
 author: files-community
 ---
 
-We're excited to announce that starting today, Files v3.2 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yaira2) to help support the project.
+We're excited to announce that starting today, Files v3.2 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yair100) to help support the project.
 
 **TL;DR:** Files v3.2 adds a List View layout, support for editing album covers from the properties window, higher quality thumbnails, and more. Continue reading to learn more about these changes.
 
@@ -101,4 +101,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100)

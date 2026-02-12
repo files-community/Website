@@ -6,7 +6,7 @@ date: 7/7/2025
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.9.11** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.9.11** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -28,4 +28,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)

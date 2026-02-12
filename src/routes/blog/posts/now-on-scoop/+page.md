@@ -49,4 +49,4 @@ We hope you find the option to install Files via Scoop useful. Happy file managi
 
 ## Support Files
 
-If you enjoy using Files, please consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
+If you enjoy using Files, please consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.

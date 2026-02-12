@@ -10,7 +10,7 @@ On behalf of the entire Files Community, I'm excited to announce the release of 
 
 Our mission is to build the best file manager for Windows, and we're proud to do this as an open source project on [GitHub](https://github.com/files-community/Files). A lot of time and effort was put into Files v4, and it wouldn't have been possible without the community's involvement. Over the past year, dozens of contributors worked on design concepts, added new features, fixed bugs, and helped review pull requests on GitHub. Thank you for all your hard work!
 
-An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
 ## Contents
 
@@ -269,4 +269,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)

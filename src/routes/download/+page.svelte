@@ -52,7 +52,7 @@
 			<Button
 				slot="action"
 				variant="accent"
-				href="https://github.com/sponsors/yaira2"
+				href="https://github.com/sponsors/yair100"
 				{...externalLink}
 			>
 				{$_("download.donation_button", defaultI18nValues)}

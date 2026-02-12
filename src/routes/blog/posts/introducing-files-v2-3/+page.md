@@ -109,7 +109,7 @@ This milestone marks the beginning of a reinvigorated effort to modernize and im
 
 We hope to share more about this effort in the coming months.
 
-We view these steps as critical to continuing the great work on Files. The best way for you to support current and future efforts is to [sponsor](https://github.com/sponsors/yaira2) us on GitHub.
+We view these steps as critical to continuing the great work on Files. The best way for you to support current and future efforts is to [sponsor](https://github.com/sponsors/yair100) us on GitHub.
 
 ### Giving back to the community
 

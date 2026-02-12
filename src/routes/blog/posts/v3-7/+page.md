@@ -6,7 +6,7 @@ date: 9/5/2024
 author: files-community
 ---
 
-We're excited to announce that Files v3.7 is now available! 🎉 This update brings a host of new features and improvements designed to enhance your experience. Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yaira2). Your support is greatly appreciated but entirely optional.
+We're excited to announce that Files v3.7 is now available! 🎉 This update brings a host of new features and improvements designed to enhance your experience. Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
 **TL;DR:** The latest update, Files v3.7, introduces navigation history for back/forward buttons, folder thumbnails in breadcrumb flyouts, an option to hide the System Tray icon, a customizable home button, and the ability to set CPU threads for creating archives. Additionally, there's experimental support for flattening folders. Continue reading to learn more about these enhancements.
 
@@ -96,4 +96,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yaira2)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100)

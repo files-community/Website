@@ -3,7 +3,7 @@ title: Announcing General Availability of Files v2
 description: Today, we're excited to announce that we are releasing Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the platform, and with v2, we've taken that to a whole new level.
 thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
 date: 2021-10-04
-author: yaira2
+author: files-community
 ---
 
 Today, we're excited to announce that we are releasing Files v2 as

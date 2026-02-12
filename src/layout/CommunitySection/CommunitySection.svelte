@@ -45,7 +45,7 @@
 					{:catch}
 						{#each Array(35) as _}
 							<Contributor
-								html_url="https://github.com/yaira2"
+								html_url="https://github.com/yair100"
 								avatar_url="data:image/svg+xml;{encodeURIComponent(Profile)}"
 								contributions={0}
 							/>
