@@ -40,12 +40,32 @@
 			}
 
 			// match headings -> add heading-specific results that link to section
-			if (page.headings) {
-				for (const h of page.headings) {
-					const hHay = h.text.toLowerCase().replace(/\s+/gi, "");
-					if (hHay.includes(needle)) {
-						results.push({ title: h.text, path: `${page.path}#${h.anchor}` });
+			const headings =
+				page.headings ?? (() => {
+					const list: { text: string; anchor: string }[] = [];
+					if (!page.content) return list;
+					const slugify = (s: string) =>
+						s
+							.normalize("NFKD")
+							.replace(/\p{Diacritic}/gu, "")
+							.toLowerCase()
+							.replace(/[^a-z0-9\s-]/g, "")
+							.trim()
+							.replace(/\s+/g, "-")
+							.replace(/-+/g, "-");
+					const headingRe = /^#{1,6}\s+(.*)$/gm;
+					let m: RegExpExecArray | null;
+					while ((m = headingRe.exec(page.content)) !== null) {
+						const text = m[1].trim();
+						list.push({ text, anchor: slugify(text) });
 					}
+					return list;
+				})();
+
+			for (const h of headings) {
+				const hHay = h.text.toLowerCase().replace(/\s+/gi, "");
+				if (hHay.includes(needle)) {
+					results.push({ title: h.text, path: `${page.path}#${h.anchor}` });
 				}
 			}
 		}
