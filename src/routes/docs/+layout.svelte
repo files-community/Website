@@ -22,13 +22,14 @@
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.title;
 
-	// Basic search matching for filtering docs pages
-	$: searchResults = docsPages.filter(page =>
-		page.title
+	// Basic search matching for filtering docs pages (search title + content)
+	$: searchResults = docsPages.filter(page => {
+		const hay = ((page.title ?? "") + " " + (page.content ?? ""))
 			.toLowerCase()
-			.replace(/ /gi, "")
-			.includes((searchQuery ?? "").toLowerCase().replace(/ /gi, "")),
-	);
+			.replace(/\s+/gi, "");
+		const needle = (searchQuery ?? "").toLowerCase().replace(/\s+/gi, "");
+		return hay.includes(needle);
+	});
 
 	// Determines if the auto-suggest flyout should be shown
 	$: if (searchQuery && searchFocused) autoSuggestVisible = true;

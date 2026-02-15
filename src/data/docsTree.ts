@@ -11,10 +11,19 @@ const getPages = () => {
         { eager: true, import: "metadata" },
     );
 
+    // Import raw markdown for searching page contents
+    const rawContents = import.meta.glob(
+        ["../routes/docs/**/*/+page.md", "../routes/docs/+page.md"],
+        { eager: true, as: "raw" },
+    ) as Record<string, string>;
+
     return Object.entries(rawPages).map(([path, node]) => {
+        const content = rawContents[path] ?? "";
+
         return {
             title: node.title,
             path: path.match(PATH_TRIM)?.[1] ?? "",
+            content,
         } as DocsNode;
     });
 };
