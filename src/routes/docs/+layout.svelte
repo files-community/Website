@@ -22,14 +22,36 @@
 	// Name of the current page used in <title>
 	$: pageTitle = currentPage.title;
 
-	// Basic search matching for filtering docs pages (search title + content)
-	$: searchResults = docsPages.filter(page => {
-		const hay = ((page.title ?? "") + " " + (page.content ?? ""))
-			.toLowerCase()
-			.replace(/\s+/gi, "");
+	// Basic search matching for filtering docs pages (search title, content, and headings)
+	$: searchResults = (() => {
 		const needle = (searchQuery ?? "").toLowerCase().replace(/\s+/gi, "");
-		return hay.includes(needle);
-	});
+		if (!needle) return [];
+
+		const results: { title: string; path: string }[] = [];
+
+		for (const page of docsPages) {
+			const titleHay = (page.title ?? "").toLowerCase().replace(/\s+/gi, "");
+			const contentHay = (page.content ?? "").toLowerCase().replace(/\s+/gi, "");
+
+			// match page title or content -> add page as result
+			if (titleHay.includes(needle) || contentHay.includes(needle)) {
+				results.push({ title: page.title, path: page.path });
+				continue;
+			}
+
+			// match headings -> add heading-specific results that link to section
+			if (page.headings) {
+				for (const h of page.headings) {
+					const hHay = h.text.toLowerCase().replace(/\s+/gi, "");
+					if (hHay.includes(needle)) {
+						results.push({ title: h.text, path: `${page.path}#${h.anchor}` });
+					}
+				}
+			}
+		}
+
+		return results;
+	})();
 
 	// Determines if the auto-suggest flyout should be shown
 	$: if (searchQuery && searchFocused) autoSuggestVisible = true;

@@ -17,13 +17,34 @@ const getPages = () => {
         { eager: true, as: "raw" },
     ) as Record<string, string>;
 
+    const slugify = (s: string) =>
+        s
+            .normalize("NFKD")
+            .replace(/\p{Diacritic}/gu, "")
+            .toLowerCase()
+            .replace(/[^a-z0-9\s-]/g, "")
+            .trim()
+            .replace(/\s+/g, "-")
+            .replace(/-+/g, "-");
+
     return Object.entries(rawPages).map(([path, node]) => {
         const content = rawContents[path] ?? "";
+
+        // parse markdown headings (lines starting with #)
+        const headings: { text: string; anchor: string }[] = [];
+        const headingRe = /^#{1,6}\s+(.*)$/gm;
+        let m: RegExpExecArray | null;
+        while ((m = headingRe.exec(content)) !== null) {
+            const text = m[1].trim();
+            const anchor = slugify(text);
+            headings.push({ text, anchor });
+        }
 
         return {
             title: node.title,
             path: path.match(PATH_TRIM)?.[1] ?? "",
             content,
+            headings,
         } as DocsNode;
     });
 };
