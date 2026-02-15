@@ -1,7 +1,7 @@
 ---
 title: Top Things You Didn't Know About Files
 description: Unlock the full potential of Files and discover features you may have missed
-thumbnail: /blog-resources/ten-things/HeroImage.jpg
+thumbnail: /blog-resources/ten-things/HeroImage.webp
 date: 2/11/2026
 author: files-community
 ---
