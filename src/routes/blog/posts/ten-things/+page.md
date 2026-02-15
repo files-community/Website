@@ -1,34 +1,61 @@
 ---
-title: 10 Things You Didn't Know About Files
-description: Unlock the full potential of Files
-thumbnail: /blog-resources/ten-things/HeroImage.jpg
-date: 1/25/2023
+title: Top Things You Didn't Know About Files
+description: Unlock the full potential of Files and discover features you may have missed
+thumbnail: /blog-resources/ten-things/HeroImage.webp
+date: 2/11/2026
 author: files-community
 ---
 
-Files is a powerful and user-friendly file manager that can help you organize and manage your files with ease. However, there may be some features and capabilities that you may not know about. In this post, we will highlight the top 10 things you may not know about Files.
 
-1. **Personalize with custom backgrounds**: Files allows you to personalize your experience by selecting a color or image that resonates with your personal preferences. Learn more about custom backgrounds [here](/docs/customize-settings/appearance)
+Files is a powerful file manager with many features hidden just below the surface. Here are some features you may not be aware of.
 
-2. **Customize your keyboard shortcuts**: Files offers a diverse array of keyboard shortcuts designed to help you quickly navigate and manage your files. For example, `Ctrl` + `Shift` + `Enter` swiftly opens the selected folder in a secondary pane, while `Ctrl`+ `T` launches a new tab. To tailor these shortcuts to your preferences, Files provides the flexibility to remap them. Discover how to personalize your shortcuts by visiting our [documentation](/docs/customize-settings/actions)
+### Command Palette
 
-3. **Manage Git repositories with ease**: Files includes support for common Git functions, allowing you to view commit statuses, push and pull commits, and manage branches. It’s designed to integrate into your workflow seamlessly, providing the tools you need to collaborate effectively and keep your projects up-to-date in a user-friendly environment. Learn more about this feature [here](/docs/features/git)
+Available from the Omnibar, the Command Palette is a powerful tool for discovering and running commands. See [here](/docs/features/omnibar/#command-palette) for details.
 
-4. **Flexible layout modes**: You can customize your viewing experience in the Files app with multiple layout options. You can switch with ease between details, tiles, grid, columns, and list views to suit your preference, ensuring a more efficient and tailored file management experience.
+### Dual Pane
 
-5. **Set as the default file manager on Windows**: Elevate file management by setting the Files app as the default on Windows. To get started, open Files > Settings > Advanced, and toggle the setting for "Set Files as default".
+Dual Pane mode lets you view two folders side-by-side for quick comparisons and file transfers. See [here](/docs/features/dual-pane) for details.
 
-6. **Double click gesture**: Double clicking a blank space will up one directory in the folder tree. You can turn off the double-click gesture in the settings if you prefer to use other methods of interacting with your files.
+### Quick Preview
 
-7. **Column layout**: Files allows you to view your files in a column layout, making it easier to navigate and find specific files.
+Seamless integrations with QuickLook, SeerPro, and PowerToys Peek allow you to open a preview window for many file formats. See [here](/docs/features/integrations) for details.
 
-8. **Automatically create new image file**: When pasting an image or screenshot from the clipboard, Files will automatically create a new image file in the directory you are currently in.
+### Tags
 
-9. **Option to calculate folder sizes**: Files allows you to calculate folder sizes, which is normally only done for files.
+Tags are a great way to organize and quickly access important files and folders. See [here](/docs/features/tags) for details.
 
-10. **File tags**: Files allows you to tag your files for easy organization and searching. Learn more about tags [here](/docs/features/tags)
+### Folder Backgrounds
 
-These are just a few of the many features and capabilities of Files. By utilizing these features, you can make your experience with Files even more efficient and convenient.
+Support for setting custom background images per folder is another way to personalize your experience. It also allows you to add visual cues or watermarks for different projects or work-related folders. See [here](/docs/features/folder-config) for details.
+
+### Git Integration
+
+Built-in Git support allows you to view repository status, branch information, and run common commands inside Files. You can also clone repositories by dragging a repo URL or using the Clone action. See [here](/docs/features/git) for details.
+
+### Columns Layout
+
+The **Columns Layout** allows you to view your files in a column layout, making it easier to navigate and find specific files. See [here](/docs/features/layout-picker) for details.
+
+### Keyboard Shortcuts
+
+Files offers a wide array of keyboard shortcuts designed to help you quickly navigate and manage your files. The **Actions** page in settings lets you remap shortcuts or assign new ones for frequent actions. Open `Settings > Actions` to edit bindings or add shortcuts. See [here](/docs/customize-settings/actions) for details.
+
+### Paste Screenshots
+
+When pasting an image or screenshot from the clipboard, Files will automatically create a new image file in the directory you are currently in.
+
+### Folder Sizes
+
+Files has a setting to automatically display folder sizes in the file list. This is normally only done files. See [here](/docs/customize-settings/files-and-folders/#calculate-folder-sizes) for details.
+
+### Default File Manager
+
+Make **Files** the default file manager to replace File Explorer. This option is in `Settings > Advanced`. See [here](/docs/customize-settings/advanced/#set-files-as-the-default-file-manager) for details.
+
+### Double Click Gesture
+
+Double-clicking a blank space will move up one directory in the folder tree. You can turn off the double-click gesture in `Settings > Files & folders` if you prefer to use other methods of interacting with your files. See [here](/docs/customize-settings/files-and-folders/#double-click-on-a-blank-space-to-go-up-one-directory) for details.
 
 ---
 
