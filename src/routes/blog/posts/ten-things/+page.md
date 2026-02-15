@@ -7,7 +7,7 @@ author: files-community
 ---
 
 
-Files is a powerful file manager with many features hidden just below the surface. Here are some features you may not be aware of.
+Files is a powerful file manager with many features hidden just below the surface. Here are some features you may have missed.
 
 ### Command Palette
 
@@ -56,6 +56,10 @@ Make **Files** the default file manager to replace File Explorer. This option is
 ### Double Click Gesture
 
 Double-clicking a blank space will move up one directory in the folder tree. You can turn off the double-click gesture in `Settings > Files & folders` if you prefer to use other methods of interacting with your files. See [here](/docs/customize-settings/files-and-folders/#double-click-on-a-blank-space-to-go-up-one-directory) for details.
+
+### Hashes
+
+Right-click a file and open the Properties window to view and copy file hashes. This is helpful to verify downloads or compare files.
 
 ---
 
