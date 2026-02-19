@@ -156,8 +156,8 @@
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
 		"self_signed": {
-			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"link_text": "getting started page",
+			"description": "Don't have access to the Microsoft Store? View more installation options on our "
 		}
 	}
 }
