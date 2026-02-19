@@ -110,11 +110,6 @@ If you encounter any problems or errors while updating Files, you can try the fo
 1. Make sure you have a stable internet connection and enough disk space for the update.
 2. Restart your computer and try to update Files again.
 
-### Windows cannot install package because a different package with the same name is already installed
-
-If you get this error code, you'll need to uninstall and [reinstall](/download/) Files. You can also export/import the settings file to keep your existing settings.
-
-
 ### Unofficial and modified versions of Windows
 
 This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, removing the Microsoft store. Files is not officially supported on devices with these modifications.
