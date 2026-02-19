@@ -101,7 +101,7 @@ https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.m
 
 ## Keep Files up to date
 
-Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the sideload [installer](/download/).
+Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
 
 <InfoBar title="Note" severity="information">
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
