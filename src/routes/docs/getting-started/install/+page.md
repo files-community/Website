@@ -12,13 +12,23 @@ title: Install
 	Install Files
 </Button>
 
-Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the Microsoft Store or supporting us on GitHub if you use the classic installer.
+Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yair100) if you install the free version.
 
-You can also use the preview version alongside the stable release to get early access to new features and improvements.
+You can also use the [preview version](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) alongside the stable release to get early access to new features and improvements.
 
 <InfoBar title="Note" severity="information">
 	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
 </InfoBar>
+
+### Microsoft Store
+
+- [Stable branch](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite)
+- [Preview branch](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite)
+
+### Classic Installer - Free Version
+
+- [Stable branch](/appinstallers/Files.stable.appinstaller)
+- [Preview branch](/appinstallers/Files.preview.appinstaller)
 
 ### PowerShell
 
