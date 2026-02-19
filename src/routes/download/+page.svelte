@@ -24,7 +24,7 @@
 		{
 			name: $_("download.preview.title", defaultI18nValues),
 			description: $_("download.preview.description", defaultI18nValues),
-			href: "/appinstallers/Files.preview.appinstaller",
+			href: `ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite`,
 			icon: "/download-sources/preview_light.svg",
 			darkModeIcon: "/download-sources/preview_dark.svg",
 		},
@@ -68,7 +68,7 @@
 		{/each}
 		<p>
 			{$_("download.self_signed.description", defaultI18nValues)}<a
-				href="/appinstallers/Files.stable.appinstaller"
+				href="/docs/getting-started/install"
 				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
 			>.
 		</p>
