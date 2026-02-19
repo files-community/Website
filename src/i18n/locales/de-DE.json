@@ -17,6 +17,21 @@
 			"docs": "Werde Mitwirkender",
 			"contributions": "{amount, plural, =0 {Keine Beiträge} one {# Beitrag} other {# Beiträge}}"
 		},
+		"hero": {
+			"chip": "Held",
+			"description": "Ein eleganter Open-Source-Dateimanager für Windows, der Ihnen hilft, Dateien und Ordner einfach zu organisieren.",
+			"download": "Download",
+			"view_on_github": "Auf GitHub anzeigen",
+			"files_is_open_source": "Dateien sind Open Source!",
+			"install_on_windows": "Auf Windows installieren"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask mit Tabs",
+			"description": "Verwalten Sie mehrere Ordner innerhalb eines Fensters mit Tabs. Wechseln Sie mit einem Klick oder Tastaturkürzel zwischen Tabs, um Ihre Produktivität zu steigern.",
+			"download": "Download",
+			"learn_more": "Mehr erfahren"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "Funktionalität trifft Schönheit.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klassischer Installer",
-			"description": "Sie haben keinen Zugriff auf den Microsoft Store? Probieren Sie unseren "
+			"description": "Weitere Installationsoptionen anzeigen und die kostenlose Version von unserer "
 		}
 	}
 }

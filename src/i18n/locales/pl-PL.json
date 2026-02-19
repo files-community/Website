@@ -17,6 +17,21 @@
 			"docs": "Zostań współtwórcą",
 			"contributions": "{amount, plural, =0 {Brak udziałów} one {# udział} few {# udziałów} many {# udziałów} other {# udział}}"
 		},
+		"hero": {
+			"chip": "Bohater",
+			"description": "Śpiący, open source eksplorator plików stworzony dla systemu Windows, zaprojektowany z łatwością do zorganizowania plików i folderów.",
+			"download": "Pobierz",
+			"view_on_github": "Zobacz na GitHub",
+			"files_is_open_source": "Pliki są open source!",
+			"install_on_windows": "Zainstaluj na Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Maska wielozadaniowa z kartami",
+			"description": "Łatwo zarządzaj wieloma folderami w jednym oknie za pomocą zakładek. Przełącz się między zakładkami kliknięciem lub skrótem klawiszowym, aby zwiększyć wydajność.",
+			"download": "Pobierz",
+			"learn_more": "Poznaj więcej"
+		},
 		"design": {
 			"chip": "Wygląd",
 			"title": "Siła spotyka piękno.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klasyczny instalator",
-			"description": "Nie masz dostępu do Microsoft Store? Wypróbuj naszą "
+			"description": "Zobacz więcej opcji instalacji i pobierz darmową wersję z naszej "
 		}
 	}
 }

@@ -17,6 +17,21 @@
 			"docs": "開発に貢献する",
 			"contributions": "{amount, plural, =0 {貢献なし} one {# 回の貢献} other {# 回の貢献}}"
 		},
+		"hero": {
+			"chip": "Herói",
+			"description": "ファイルやフォルダを簡単に整理できるように設計された、Windows用のスムーズでオープンソースのファイルエクスプローラ。",
+			"download": "ダウンロード",
+			"view_on_github": "GitHubで見る",
+			"files_is_open_source": "ファイルはオープンソースです！",
+			"install_on_windows": "Windowsにインストール"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "タブ付きマルチタスク",
+			"description": "タブを使用して、単一のウィンドウ内で複数のフォルダを簡単に管理できます。タブをクリックまたはキーボードショートカットで切り替えると、生産性が向上します。",
+			"download": "ダウンロード",
+			"learn_more": "もっと詳しく"
+		},
 		"design": {
 			"chip": "デザイン",
 			"title": "機能性と美しさの融合",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "クラシック インストーラーをダウンロード",
-			"description": "Microsoft Store にアクセスできませんか? "
+			"description": "他のインストールオプションを表示し、無料版をダウンロードする "
 		}
 	}
 }
