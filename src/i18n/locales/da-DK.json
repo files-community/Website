@@ -6,44 +6,59 @@
 		"docs_page": "{FilesName} • Dokumenter - {title}",
 		"blog_home": "{FilesName} • Blog",
 		"blog_page": "{FilesName} • {title}",
-		"description": "Vi bygger den bedste filhåndtering til Windows."
+		"description": "Udvikling af den bedste filhåndtering til Windows."
 	},
 	"home": {
 		"community": {
 			"chip": "Fællesskab",
 			"title": "Designet og udviklet af dig.",
-			"description": "{FilesName} er fri og open source-software, vedligeholdt og designet af et kollektiv af hundredvis af bidragsydere.",
+			"description": "{FilesName} er gratis og open source-software, vedligeholdt og designet af et kollektiv på hundredvis af bidragsydere.",
 			"discord": "Vær med i diskussionen",
-			"docs": "Bliv en bidragsyder",
+			"docs": "Bliv bidragsyder",
 			"contributions": "{amount, plural, =0 {Ingen bidrag} one {# bidrag} other {# bidrag}}"
+		},
+		"hero": {
+			"chip": "Helt",
+			"description": "En slank, open source fil explorer bygget til Windows, designet til at hjælpe dig med at organisere filer og mapper med lethed.",
+			"download": "Hent",
+			"view_on_github": "Se på GitHub",
+			"files_is_open_source": "Filer er open source!",
+			"install_on_windows": "Installer på Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask med faneblade",
+			"description": "Administrer nemt flere mapper i et enkelt vindue ved hjælp af faner. Skift mellem faner med et klik eller tastaturgenvej for at øge din produktivitet.",
+			"download": "Hent",
+			"learn_more": "Lær mere"
 		},
 		"design": {
 			"chip": "Design",
 			"title": "Kraft møder skønhed.",
 			"description": "Udforsk et smukt Windows-først design. Administrer alle dine filer med øget produktivitet. Arbejd på tværs af flere mapper med faner. Og så meget mere.",
-			"download": "Hent",
-			"learn_more": "Lær mere"
+			"download": "Download",
+			"learn_more": "Læs mere"
 		},
 		"features": {
 			"chip": "Funktioner",
 			"title": "Det gør den allerede.",
-			"description": "Integration af cloud-filer? Faner og flere layouts? Rige filforhåndsvisninger? {FilesName} har det hele med robuste funktioner, som du forventer af en moderne filhåndtering.",
+			"description": "Integration af cloud-filer? Faner og flere layouts? Rige filforhåndsvisninger? {FilesName} har det hele med robuste funktioner, som man forventer af en moderne filhåndtering.",
 			"unknown": "Ukendt",
 			"cloud": {
 				"title": "Problemfri cloud-integration",
-				"description": "Indbygget understøttelse af cloud-drev som OneDrive, Google Drev og iCloud."
+				"description": "Indbygget understøttelse af cloud-drev, såsom OneDrive, Google Drev og iCloud."
 			},
 			"preview": {
 				"title": "Forhåndsvisningsrude",
-				"description": "Forhåndsvis billeder, videoer og dokumenter uden at åbne dem."
+				"description": "Forhåndsvis fotos, videoer og dokumenter uden at åbne dem."
 			},
 			"popup-preview": {
-				"title": "QuickLook & SeerPro-understøttelse",
+				"title": "QuickLook- og SeerPro-understøttelse",
 				"description": "Forhåndsvis Office-filer, dokumenter og andre filtyper ved at trykke på mellemrumstasten. Denne funktion kræver installation af QuickLook eller SeerPro."
 			},
 			"tags": {
 				"title": "Tag filer og mapper",
-				"description": "Organiser og sortér dine filer og mapper med farvede tags."
+				"description": "Organisér og sortér filer og mapper med farvede tags."
 			},
 			"tabs": {
 				"title": "Multitask med faner",
@@ -51,10 +66,10 @@
 			},
 			"columns": {
 				"title": "Kolonnevisning",
-				"description": "Naviger hurtigt gennem forskellige niveauer af filsystemet med kolonnelayoutet."
+				"description": "Navigér hurtigt gennem forskellige niveauer af filsystemet med kolonnelayoutet."
 			},
 			"archives": {
-				"title": "Se og rediger arkiver",
+				"title": "Se og redigere arkiver",
 				"description": "Opret og udpak arkiver, herunder zip, WinRar og 7zip."
 			},
 			"git": {
@@ -62,38 +77,38 @@
 				"description": "Administrer nemt dine Git-projekter. Opret nye grene, skift mellem dem, og synkroniser dine ændringer - alt uden at forlade Files."
 			},
 			"dual-pane": {
-				"title": "Dobbelt rude",
-				"description": "Se og administrer to mapper side om side med Dobbelt Rude-funktionen."
+				"title": "Dobbeltrude",
+				"description": "Se og håndter to mapper side om side med Dobbeltrude-funktionen."
 			},
 			"hashes": {
 				"title": "Hashes",
 				"description": "Se og sammenlign filhashes fra egenskabsvinduet."
 			},
 			"command-palette": {
-				"title": "Kommandopalette",
-				"description": "Få hurtigt adgang til kommandoer, funktioner og indstillinger fra Kommandopalette."
+				"title": "Kommandopalet",
+				"description": "Tilgå hurtigt kommandoer, funktioner og indstillinger via Kommandopalet."
 			},
 			"remap-key-bindings": {
 				"title": "Omlæg tastebindinger",
-				"description": "Strømlin din arbejdsgang ved at oprette brugerdefinerede tastebindinger."
+				"description": "Strømlin din arbejdsgang med brugerdefinerede tastebindinger."
 			}
 		},
 		"themes": {
 			"chip": "Temaer",
 			"title": "Særdeles personlig.",
-			"description": "Få det på din måde. {FilesName} har en brugergrænseflade, der kan tilpasses helt ned til farver og materialer. Prøv tilpassede temaer, der er indbygget i {FilesName}, eller dyk direkte ned i dokumenterne og lav dine egne.",
+			"description": "Gør det på din måde. {FilesName} har en fuldt tilpasselig brugergrænseflade – helt ned til farver og materialer. Prøv de indbyggede temaer i {FilesName}, eller dyk ned i dokumentationen og lav dit eget.",
 			"grey_blue": "Mørkegrå • Lyseblå",
 			"grey_green": "Blågrå • Neongrøn",
 			"purple": "Lilla",
 			"yellow_white": "Gul • Hvid",
-			"white_teal": "Cool White • Dark Teal",
+			"white_teal": "Kold hvid • Mørk blågrøn",
 			"sky_blue": "Himmelblå",
 			"select_theme": "Vælg tema #{index}"
 		}
 	},
 	"blog": {
 		"coming_soon": "Flere indlæg kommer snart!",
-		"read_more": "Læs Mere",
+		"read_more": "Læs mere",
 		"share": {
 			"default": "Indbygget deling",
 			"url": "Kopiér URL",
@@ -103,17 +118,17 @@
 		}
 	},
 	"docs": {
-		"autocomplete_empty": "Ingen resultater fundet",
-		"edit_page": "Rediger denne side",
-		"search_docs": "Søg Dokumentation"
+		"autocomplete_empty": "Ingen resultater",
+		"edit_page": "Redigér denne side",
+		"search_docs": "Søg i dokumentation"
 	},
 	"footer": {
 		"home": "Hjem",
 		"docs": "Dokumenter",
 		"news": "Nyheder",
-		"download": "Hent",
+		"download": "Download",
 		"contribute": "Bidrag til {FilesName}",
-		"feedback": "Giv Feedback",
+		"feedback": "Giv feedback",
 		"style_guide": "Stilguide",
 		"translations": "Oversættelser",
 		"support": "Support",
@@ -123,26 +138,26 @@
 		"home": "Hjem",
 		"docs": "Dokumentation",
 		"news": "Nyheder",
-		"download": "Hent",
+		"download": "Download",
 		"themes": "Temaer",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	},
 	"download": {
-		"title": "Hent {FilesName}",
+		"title": "Download {FilesName}",
 		"donation_description": "{FilesName} er et fællesskabsdrevet projekt, der afhænger af din støtte for at vokse og blive bedre. Overvej venligst at købe {FilesName} via Microsoft Store eller støtte os på GitHub, hvis du bruger den klassiske installatør.",
 		"donation_button": "Donér",
 		"microsoft_store": {
-			"title": "Hent Files",
-			"description": "Køb af {FilesName} via Microsoft Store er med til at støtte udviklerne og gør det muligt for os at fortsætte med at opdatere appen med nye funktioner og forbedringer."
+			"title": "Download Files",
+			"description": "Når du køber {FilesName} via Microsoft Store, støtter du udviklerne og gør det muligt for os at fortsætte med at opdatere appen med nye funktioner og forbedringer."
 		},
 		"preview": {
-			"title": "Hent Insider-forhåndsvisning",
+			"title": "Download Insider-forhåndsvisning",
 			"description": "Forhåndsvisningsversionen kan installeres sammen med den stabile udgivelse og giver tidlig adgang til nye funktioner og forbedringer."
 		},
 		"self_signed": {
 			"link_text": "klassisk installatør",
-			"description": "Har du ikke adgang til Microsoft Store? Prøv vores "
+			"description": "Se flere installationsmuligheder, og download den gratis version fra vores "
 		}
 	}
 }

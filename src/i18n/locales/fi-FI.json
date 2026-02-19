@@ -17,6 +17,21 @@
 			"docs": "Tule osallistujaksi",
 			"contributions": "{amount, plural, =0 {Ei lisäyksiä} one {# lisäystä} other {# lisäystä}}"
 		},
+		"hero": {
+			"chip": "Sankari",
+			"description": "Selkä, avoimen lähdekoodin tiedostojen Explorer rakennettu Windows, suunniteltu auttamaan sinua järjestämään tiedostoja ja kansioita helposti.",
+			"download": "Lataa",
+			"view_on_github": "Näytä GitHubissa",
+			"files_is_open_source": "Tiedostot ovat avointa lähdekoodia!",
+			"install_on_windows": "Asenna Windowsiin"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Monitehtävä välilehdillä",
+			"description": "Voit hallita useita kansioita helposti yhden ikkunan sisällä välilehdillä. Vaihda välilehtien välillä klikkauksella tai pikanäppäimellä parantaaksesi tuottavuuttasi.",
+			"download": "Lataa",
+			"learn_more": "Lue lisää"
+		},
 		"design": {
 			"chip": "Ulkoasu",
 			"title": "Virta kohtaa kauneuden.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klassinen asentaja",
-			"description": "Eikö sinulla ole pääsyä Microsoft Storeen? Kokeile meidän "
+			"description": "Näytä lisää asennusvaihtoehtoja, ja lataa ilmainen versio meidän "
 		}
 	}
 }
