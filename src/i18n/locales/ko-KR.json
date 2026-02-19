@@ -17,6 +17,21 @@
 			"docs": "Files 기여하기",
 			"contributions": "{amount, plural, =0 {기여 없음} other {#번 기여함}}"
 		},
+		"hero": {
+			"chip": "Hero",
+			"description": "A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with ease.",
+			"download": "Download",
+			"view_on_github": "View on GitHub",
+			"files_is_open_source": "Files is open source!",
+			"install_on_windows": "Install on Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask with tabs",
+			"description": "Easily manage multiple folders within a single window using tabs. Switch between tabs with a click or keyboard shortcut to boost your productivity.",
+			"download": "Download",
+			"learn_more": "Learn more"
+		},
 		"design": {
 			"chip": "디자인",
 			"title": "힘과 아름다움의 조화",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "기존 설치 프로그램",
-			"description": "Microsoft Store에 접근할 수 없나요?  저희의 "
+			"description": "View more installation options, and download the free version from our "
 		}
 	}
 }
