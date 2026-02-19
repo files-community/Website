@@ -17,6 +17,21 @@
 			"docs": "Become a contributor",
 			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
 		},
+		"hero": {
+			"chip": "Hero",
+			"description": "A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with ease.",
+			"download": "Download",
+			"view_on_github": "View on GitHub",
+			"files_is_open_source": "Files is open source!",
+			"install_on_windows": "Install on Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask with tabs",
+			"description": "Easily manage multiple folders within a single window using tabs. Switch between tabs with a click or keyboard shortcut to boost your productivity.",
+			"download": "Download",
+			"learn_more": "Learn more"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "Power meets beauty.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "classic installer",
-			"description": "Don't have access to the Microsoft Store? Try our "
+			"description": "View more installation options, and download the free version from our "
 		}
 	}
 }

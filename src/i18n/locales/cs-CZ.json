@@ -17,6 +17,21 @@
 			"docs": "Staňte se přispěvatelem",
 			"contributions": "{amount, plural, =0 {Žádné příspěvky} one {# příspěvek} few {# přispěvků} other {# přispěvků}}"
 		},
+		"hero": {
+			"chip": "Hrdina",
+			"description": "Spánkový, open-source průzkumník souborů vytvořený pro Windows, který vám pomůže snadno organizovat soubory a složky.",
+			"download": "Stáhnout",
+			"view_on_github": "Zobrazit na GitHub",
+			"files_is_open_source": "Soubory jsou open source!",
+			"install_on_windows": "Instalovat na Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask s kartami",
+			"description": "Snadno spravujte více složek v jednom okně pomocí karet. Přepněte mezi kartami kliknutím nebo klávesovou zkratkou pro zvýšení vaší produktivity.",
+			"download": "Stáhnout",
+			"learn_more": "Zjistit více"
+		},
 		"design": {
 			"chip": "Vzhled",
 			"title": "Síla se setkává s krásou.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klasický instalátor",
-			"description": "Nemáte přístup do obchodu Microsoft Store? Zkuste náš "
+			"description": "Zobrazit více možností instalace a stáhnout bezplatnou verzi z naší "
 		}
 	}
 }
