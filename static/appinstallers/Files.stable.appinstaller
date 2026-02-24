@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
 	Uri="https://cdn.files.community/files/stable/Files.Package.appinstaller"
-	Version="3.6.0.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
+	Version="4.0.28.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
 	<MainBundle
 		Name="Files"
-		Version="3.6.0.0"
+		Version="4.0.28.0"
 		Publisher="CN=Files, O=Files, S=Washington, C=US"
-		Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Files.Package_3.6.0.0_x64_arm64_Stable.msixbundle" />
+		Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Files.Package_4.0.28.0_x64_arm64.msixbundle" />
 	<Dependencies>
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx"
 			Version="14.0.33519.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx"
 			Version="14.0.33519.0" />
 		<Package
-			Name="Microsoft.WindowsAppRuntime.1.5"
+			Name="Microsoft.WindowsAppRuntime.1.8"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.5.msix"
-			Version="5001.178.1908.0" />
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix"
+			Version="8000.770.947.0" />
 		<Package
-			Name="Microsoft.WindowsAppRuntime.1.5"
+			Name="Microsoft.WindowsAppRuntime.1.8"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.5.msix"
-			Version="5001.178.1908.0" />
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix"
+			Version="8000.770.947.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00.UWPDesktop"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="arm64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx"
 			Version="14.0.33728.0" />
 		<Package
 			Name="Microsoft.VCLibs.140.00.UWPDesktop"
 			Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US"
 			ProcessorArchitecture="x64"
-			Uri="https://cdn.files.community/files/stable/Files.Package_3.6.0.0_Stable_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
+			Uri="https://cdn.files.community/files/stable/Files.Package_4.0.28.0_Test/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx"
 			Version="14.0.33728.0" />
 	</Dependencies>
-	<UpdateSettings>
-		<OnLaunch
-			HoursBetweenUpdateChecks="255" />
-	</UpdateSettings>
 </AppInstaller>
