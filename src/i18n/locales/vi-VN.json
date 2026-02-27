@@ -156,7 +156,7 @@
 			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
-			"link_text": "trình cài đặt thông thường",
+			"link_text": "trang bắt đầu",
 			"description": "View more installation options, and download the free version from our "
 		}
 	}
