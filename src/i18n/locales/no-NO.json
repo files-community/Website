@@ -17,6 +17,21 @@
 			"docs": "Bli en bidrager",
 			"contributions": "{amount, plural, =0 {Ingen bidrag} one {# bidrag} other {# bidrag}}"
 		},
+		"hero": {
+			"chip": "Helt",
+			"description": "En sleek, åpen kildekode fil utforsker bygget for Windows, designet for å hjelpe deg med enkelt å organisere filer og mapper.",
+			"download": "Nedlasting",
+			"view_on_github": "Vis på GitHub",
+			"files_is_open_source": "Filene har åpen kildekode.",
+			"install_on_windows": "Installer på Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask med faner",
+			"description": "Administrere enkelt flere mapper i ett enkelt vindu ved hjelp av faner. Bytt mellom faner med en klikk eller tastatursnarvei for å øke produktiviteten din.",
+			"download": "Nedlasting",
+			"learn_more": "Lær mer"
+		},
 		"design": {
 			"chip": "Utforming",
 			"title": "Makt møter skjønnhet.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klassiske installasjonsprogram",
-			"description": "Har du ikke tilgang til Microsoft Store? Prøv vårt "
+			"description": "Vis flere alternativer for installasjon, og last ned gratis versjon fra vår "
 		}
 	}
 }

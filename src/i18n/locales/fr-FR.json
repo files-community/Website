@@ -17,6 +17,21 @@
 			"docs": "Devenir un contributeur",
 			"contributions": "{amount, plural, =0 {Aucune contribution} one {# contribution} other {# contributions}}"
 		},
+		"hero": {
+			"chip": "Héros",
+			"description": "Un explorateur de fichiers open-source conçu pour Windows, conçu pour vous aider à organiser vos fichiers et dossiers en toute simplicité.",
+			"download": "Télécharger",
+			"view_on_github": "Voir sur GitHub",
+			"files_is_open_source": "Les fichiers sont open source!",
+			"install_on_windows": "Installer sous Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask avec onglets",
+			"description": "Gérez facilement plusieurs dossiers dans une seule fenêtre à l'aide d'onglets. Basculez entre les onglets avec un clic ou un raccourci clavier pour améliorer votre productivité.",
+			"download": "Télécharger",
+			"learn_more": "En savoir plus"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "La puissance rencontre l'élégance.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "installateur classique",
-			"description": "Vous n'avez pas accès au Microsoft Store ? Essayez notre "
+			"description": "Voir plus d'options d'installation et télécharger la version gratuite de notre "
 		}
 	}
 }

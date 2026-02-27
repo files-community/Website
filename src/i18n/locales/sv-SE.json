@@ -17,6 +17,21 @@
 			"docs": "Bli en bidragsgivare",
 			"contributions": "{amount, plural, =0 {Inga bidrag} one {# bidrag} other {# bidrag}}"
 		},
+		"hero": {
+			"chip": "Hjälte",
+			"description": "En elegant, öppen källkod fil Explorer, byggd för Windows, utformad för att hjälpa dig att organisera filer och mappar med lätthet.",
+			"download": "Hämta",
+			"view_on_github": "Visa på GitHub",
+			"files_is_open_source": "Filer är öppen källkod!",
+			"install_on_windows": "Installera på Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask med flikar",
+			"description": "Hantera enkelt flera mappar i ett enda fönster med hjälp av flikar. Växla mellan flikar med ett klick eller kortkommando för att öka produktiviteten.",
+			"download": "Hämta",
+			"learn_more": "Läs mer"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "Kraft möter skönhet.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klassisk installatör",
-			"description": "Har du inte tillgång till Microsoft Store? Prova vår "
+			"description": "Visa fler installationsalternativ och ladda ner gratisversionen från vår "
 		}
 	}
 }

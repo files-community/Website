@@ -17,6 +17,21 @@
 			"docs": "Torne-se um colaborador",
 			"contributions": "{amount, plural, =0 {Não há contribuições} one {# contribuição} other {# contribuições}}"
 		},
+		"hero": {
+			"chip": "Herói",
+			"description": "Um explorador de arquivos de código aberto feito para Windows, projetado para ajudá-lo a organizar arquivos e pastas com facilidade.",
+			"download": "BAIXAR",
+			"view_on_github": "Ver no GitHub",
+			"files_is_open_source": "Os arquivos são de código aberto!",
+			"install_on_windows": "Instalar no Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitarefa com abas",
+			"description": "Gerencie facilmente várias pastas dentro de uma única janela usando abas. Alterne entre abas com um clique ou atalho de teclado para impulsionar sua produtividade.",
+			"download": "BAIXAR",
+			"learn_more": "Mais informações"
+		},
 		"design": {
 			"chip": "Projetar",
 			"title": "O poder encontra a beleza.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "instalador clássico",
-			"description": "Não tem acesso à Microsoft Store? Experimente o nosso "
+			"description": "Veja mais opções de instalação e baixe a versão gratuita a partir de nossos "
 		}
 	}
 }

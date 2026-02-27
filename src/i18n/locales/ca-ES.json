@@ -17,6 +17,21 @@
 			"docs": "Converteix-te en col·laborador",
 			"contributions": "{amount, plural, =0 {No hi ha contribucions} one {# contribució} other {# contribucions}}"
 		},
+		"hero": {
+			"chip": "Heroi",
+			"description": "Un explorador de fitxers elegant i de codi obert creat per al Windows, dissenyat per ajudar-vos a organitzar fitxers i carpetes amb facilitat.",
+			"download": "Baixa",
+			"view_on_github": "Mostra al GitHub",
+			"files_is_open_source": "El Files és de codi obert!",
+			"install_on_windows": "Instal·la al Windows"
+		},
+		"tabs": {
+			"chip": "Pestanyes",
+			"title": "Multitasca amb pestanyes",
+			"description": "Gestioneu fàcilment diverses carpetes dins d'una sola finestra mitjançant les pestanyes. Canvieu entre pestanyes amb un clic o una drecera de teclat per augmentar la vostra productivitat.",
+			"download": "Baixa",
+			"learn_more": "Més informació"
+		},
 		"design": {
 			"chip": "Disseny",
 			"title": "La potència es troba amb la bellesa.",
@@ -116,8 +131,8 @@
 		"feedback": "Proporciona retroacció",
 		"style_guide": "Guia d'estil",
 		"translations": "Traduccions",
-		"support": "Support",
-		"privacy": "Privacy"
+		"support": "Suport",
+		"privacy": "Privadesa"
 	},
 	"navbar": {
 		"home": "Inici",
@@ -141,8 +156,8 @@
 			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
 		},
 		"self_signed": {
-			"link_text": "instal·lador clàssic",
-			"description": "No tens accés a la Microsoft Store? Prova la nostra "
+			"link_text": "pàgina d'inici",
+			"description": "Don't have access to the Microsoft Store? View more installation options on our "
 		}
 	}
 }

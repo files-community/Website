@@ -17,6 +17,21 @@
 			"docs": "Diventa un contributore",
 			"contributions": "{amount, plural, =0 {Nessuna contribuzione} one {# contribuzione} other {# contribuzioni}}"
 		},
+		"hero": {
+			"chip": "Eroe",
+			"description": "Un elegante esploratore di file open-source costruito per Windows, progettato per aiutare a organizzare file e cartelle con facilità.",
+			"download": "Scarica",
+			"view_on_github": "Visualizza su GitHub",
+			"files_is_open_source": "I file sono open source!",
+			"install_on_windows": "Installa su Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask con schede",
+			"description": "Gestisci facilmente più cartelle all'interno di una singola finestra usando le schede. Passa tra le schede con un clic o una scorciatoia da tastiera per aumentare la produttività.",
+			"download": "Scarica",
+			"learn_more": "Scopri di più"
+		},
 		"design": {
 			"chip": "Design",
 			"title": "La potenza incontra la bellezza.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "installatore classico",
-			"description": "Non hai accesso al Microsoft Store? Prova il nostro "
+			"description": "Visualizza più opzioni di installazione e scarica la versione gratuita dal nostro "
 		}
 	}
 }
