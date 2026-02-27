@@ -17,6 +17,21 @@
 			"docs": "Word een bijdrager",
 			"contributions": "{amount, plural, =0 {Geen bijdrage} one {# contributie} other {# bijdrage}}"
 		},
+		"hero": {
+			"chip": "Held",
+			"description": "Een slee, open-source bestandsverkenner gebouwd voor Windows, ontworpen om bestanden en mappen gemakkelijk te organiseren.",
+			"download": "downloaden",
+			"view_on_github": "Bekijk op GitHub",
+			"files_is_open_source": "Bestanden zijn open source!",
+			"install_on_windows": "Installeren op Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitask met tabbladen",
+			"description": "Beheer eenvoudig meerdere mappen binnen één venster met behulp van tabbladen. Schakel over tussen tabbladen met een klik of sneltoets om je productiviteit te verhogen.",
+			"download": "downloaden",
+			"learn_more": "Meer informatie"
+		},
 		"design": {
 			"chip": "Ontwerp",
 			"title": "Kracht ontmoet schoonheid.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "klassieke installer",
-			"description": "Heb je geen toegang tot de Microsoft Store? Probeer onze "
+			"description": "Bekijk meer installatiemogelijkheden en download de gratis versie van onze "
 		}
 	}
 }

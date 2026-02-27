@@ -11,22 +11,37 @@
 	"home": {
 		"community": {
 			"chip": "社区",
-			"title": "由你来进行的设计与开发。",
-			"description": "{FilesName} 是自由开放源码软件，由数百个贡献者集体维护和设计。",
+			"title": "由你设计，任你开发",
+			"description": "{FilesName} 是一款自由开源软件，由数百个贡献者集体维护和设计。",
 			"discord": "加入讨论",
 			"docs": "成为贡献者",
 			"contributions": "{amount, plural, =0 {无贡献} other {# 贡献}}"
 		},
+		"hero": {
+			"chip": "英雄：",
+			"description": "一个为Windows构建的睡眠开源文件浏览器，用于帮助您轻松地整理文件和文件夹。",
+			"download": "下载",
+			"view_on_github": "在 GitHub 上查看",
+			"files_is_open_source": "文件已打开来源！",
+			"install_on_windows": "安装到 Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "带标签的多任务",
+			"description": "使用标签轻松管理多个文件夹。用单击或键盘快捷键在标签间切换以提高生产率。",
+			"download": "下载",
+			"learn_more": "了解更多"
+		},
 		"design": {
 			"chip": "设计",
-			"title": "当实用遇上美学。",
-			"description": "探索美观的窗口设计，高效管理所有文件，在多文件夹标签页中流转。还有更多功能待您体验。",
+			"title": "当实用遇上美学",
+			"description": "探索美观的窗口设计，高效管理所有文件，在多文件夹标签页中流转。还有更多功能有待体验。",
 			"download": "下载",
 			"learn_more": "了解更多"
 		},
 		"features": {
 			"chip": "特性",
-			"title": "它已经做到了",
+			"title": "能做到的有这些",
 			"description": "云盘文件集成、标签页和多种布局、丰富的文件预览……您想要的一切现代文件管理器的强大功能， {FilesName} 都能做到。",
 			"unknown": "未知",
 			"cloud": {
@@ -54,12 +69,12 @@
 				"description": "使用列式布局快速浏览文件系统的不同层级。"
 			},
 			"archives": {
-				"title": "查看和编辑档案",
-				"description": "创建和解压压缩包，包括zip、WinRar和7zip。"
+				"title": "查看和编辑压缩包",
+				"description": "创建和解压压缩包，zip、WinRar和7zip都支持。"
 			},
 			"git": {
 				"title": "Git 集成",
-				"description": "轻松地管理你的Git项目。创建新的分支，在它们之间切换，并同步你的变化 - 所有这些都无需离开Files。"
+				"description": "轻松管理你的Git项目。无论是创建和切换分支，还是同步变化，无需离开Files都能完成。"
 			},
 			"dual-pane": {
 				"title": "双面板",
@@ -74,14 +89,14 @@
 				"description": "通过命令面板快速访问命令、功能和设置。"
 			},
 			"remap-key-bindings": {
-				"title": "重映射键绑定",
-				"description": "通过创建自定义密钥绑定来简化您的工作流。"
+				"title": "重映射按键绑定",
+				"description": "通过创建自定义按键绑定来简化您的工作流。"
 			}
 		},
 		"themes": {
 			"chip": "主题",
-			"title": "个性化",
-			"description": "随心所欲。 {FilesName} 的用户界面可完全自定义，包括颜色和材质。你可以尝试 {FilesName} 内置的自定义主题，也可以查阅文档创建自定义主题。",
+			"title": "独具个性",
+			"description": "{FilesName} 主打完全自定义的用户界面，颜色和材质，你说了算！尝试 {FilesName} 的内置主题，也可以查阅文档创建你自己的主题。",
 			"grey_blue": "深灰 • 浅蓝",
 			"grey_green": "灰蓝 • 荧绿",
 			"purple": "紫色",
@@ -92,7 +107,7 @@
 		}
 	},
 	"blog": {
-		"coming_soon": "更多功能即将发布!",
+		"coming_soon": "更多功能即将发布！",
 		"read_more": "了解更多",
 		"share": {
 			"default": "本地共享",
@@ -133,7 +148,7 @@
 		"donation_description": "{FilesName} 是一个由社区主导的项目，为了持续成长和改进，我们需要大家的支持。请考虑从 Microsoft Store 购买 {FilesName}，或者如果您选择使用经典安装程序，请务必在 GitHub 上给予支持。",
 		"donation_button": "捐赠",
 		"microsoft_store": {
-			"title": "下载文件",
+			"title": "下载 Files",
 			"description": "通过Microsoft Store购买 {FilesName} 有助于支持开发人员，使我们能够继续更新应用程序的新功能和改进。"
 		},
 		"preview": {
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "经典安装程序",
-			"description": "无法通过 Microsoft Store 下载？试试我们 "
+			"description": "查看更多安装选项，并从我们下载免费版本 "
 		}
 	}
 }

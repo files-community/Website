@@ -12,10 +12,25 @@
 		"community": {
 			"chip": "Cộng đồng",
 			"title": "Thiết kế và phát triển bởi những người như bạn.",
-			"description": "{FilesName} là phần mềm miễn phí và mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
+			"description": "{FilesName} là phần mềm miễn phí có mã nguồn mở, được thiết kế và vận hành bởi hàng trăm cộng tác viên sôi nổi.",
 			"discord": "Tham gia thảo luận",
 			"docs": "Bắt đầu đóng góp",
 			"contributions": "{amount, plural, =0 {Chưa có đóng góp} other {# đóng góp}}"
+		},
+		"hero": {
+			"chip": "Hero",
+			"description": "Trình quản lý tệp mở cùng giao diện tinh tế dành cho Windows, được thiết kế để giúp bạn quản lý các tệp và thư mục một cách giản đơn.",
+			"download": "Tải xuống",
+			"view_on_github": "Xem trên GitHub",
+			"files_is_open_source": "Files có mã nguồn mở!",
+			"install_on_windows": "Cài đặt lên Windows"
+		},
+		"tabs": {
+			"chip": "Thẻ",
+			"title": "Đa tác vụ với các thẻ",
+			"description": "Dễ dàng quản lý đa thư mục chỉ trong một cửa sổ bằng các tab. Chuyển qua lại giữa tab chỉ với một cú nhấp chuột hoặc tổ hợp phím, giúp nâng cao hiệu suất làm việc.",
+			"download": "Tải xuống",
+			"learn_more": "Tìm hiểu thêm"
 		},
 		"design": {
 			"chip": "Thiết kế",
@@ -50,12 +65,12 @@
 				"description": "Tránh việc phải mở nhiều cửa sổ cùng một lúc và giữ cho màn hình làm việc của bạn luôn gọn gàng với hệ thống thẻ."
 			},
 			"columns": {
-				"title": "Hiển thị dạng cột",
+				"title": "Bố cục dạng cột",
 				"description": "Truy cập sâu vào các phần của hệ thống tệp một cách nhanh chóng với dạng xem cột."
 			},
 			"archives": {
 				"title": "Xem và chỉnh sửa các tệp nén",
-				"description": "Tạo và giải nén các tệp nén ở định dạng phổ biến như zip, WinRar và 7zip."
+				"description": "Tạo và giải nén các tệp ở định dạng phổ biến như zip, WinRar và 7zip."
 			},
 			"git": {
 				"title": "Tích hợp Git",
@@ -81,7 +96,7 @@
 		"themes": {
 			"chip": "Chủ đề",
 			"title": "Phong cách riêng biệt.",
-			"description": "Tùy chỉnh theo sở thích của bạn. {FilesName} tích hợp giao diện hoàn toàn tùy biến, đến tận sắc thái và chất liệu. Hãy thử trải nghiệm các chủ đề có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
+			"description": "Tùy biến theo cách bạn muốn. {FilesName} tích hợp giao diện hoàn toàn linh động, đến tận sắc thái và chất liệu. Hãy thử trải nghiệm các chủ đề có sẵn trong {FilesName} hoặc tham khảo tài liệu hướng dẫn để tự tạo chủ đề cho riêng mình.",
 			"grey_blue": "Xám Tối • Xanh Nhạt",
 			"grey_green": "Xám Xanh • Xanh Lá Neon",
 			"purple": "Tím",
@@ -110,7 +125,7 @@
 	"footer": {
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
-		"news": "Tin tức",
+		"news": "Bài viết",
 		"download": "Tải xuống",
 		"contribute": "Đóng góp cho {FilesName}",
 		"feedback": "Gửi phản hồi",
@@ -122,7 +137,7 @@
 	"navbar": {
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
-		"news": "Tin tức",
+		"news": "Bài viết",
 		"download": "Tải xuống",
 		"themes": "Chủ đề",
 		"discord": "Discord",
@@ -141,8 +156,8 @@
 			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"self_signed": {
-			"link_text": "trình cài đặt thông thường",
-			"description": "Không thể truy cập vào Microsoft Store? Hãy sử dụng "
+			"link_text": "trang bắt đầu",
+			"description": "Don't have access to the Microsoft Store? View more installation options on ourns on our "
 		}
 	}
 }

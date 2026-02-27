@@ -17,6 +17,21 @@
 			"docs": "Hazte colaborador",
 			"contributions": "{amount, plural, =0 {No hay contribuciones} one {# contribución} other {# contribuciones}}"
 		},
+		"hero": {
+			"chip": "Héroe",
+			"description": "Un explorador de archivos de código abierto diseñado para Windows, diseñado para ayudarle a organizar archivos y carpetas con facilidad.",
+			"download": "Descargar",
+			"view_on_github": "Ver en GitHub",
+			"files_is_open_source": "¡Los archivos son de código abierto!",
+			"install_on_windows": "Instalar en Windows"
+		},
+		"tabs": {
+			"chip": "Tabs",
+			"title": "Multitarea con pestañas",
+			"description": "Administra fácilmente varias carpetas dentro de una sola ventana usando pestañas. Cambia entre pestañas con un clic o acceso directo del teclado para aumentar tu productividad.",
+			"download": "Descargar",
+			"learn_more": "Aprende más"
+		},
 		"design": {
 			"chip": "Diseño",
 			"title": "El poder se encuentra con la belleza.",
@@ -142,7 +157,7 @@
 		},
 		"self_signed": {
 			"link_text": "instalador clásico",
-			"description": "¿No tiene acceso a Microsoft Store? Pruebe nuestro "
+			"description": "Ver más opciones de instalación y descargar la versión gratuita de nuestro "
 		}
 	}
 }
