@@ -156,7 +156,7 @@
 			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
 		},
 		"self_signed": {
-			"link_text": "instal·lador clàssic",
+			"link_text": "pàgina d'inici",
 			"description": "View more installation options, and download the free version from our "
 		}
 	}
