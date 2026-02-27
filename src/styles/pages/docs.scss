@@ -6,6 +6,9 @@
 	background-color: var(--fds-solid-background-base);
 
 	.markdown-body {
+		overflow-y: auto;
+		/* 58px to account for nav bar height and 1px to account for border */
+		max-height: calc(100vh - 59px);
 		font-size: 1.6rem;
 		line-height: 2.6rem;
 		max-inline-size: 1000px;
