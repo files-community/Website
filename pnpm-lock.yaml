@@ -16,10 +16,10 @@ importers:
         version: 1.2.4
       '@sveltejs/adapter-cloudflare':
         specifier: ^4.9.0
-        version: 4.9.0(@sveltejs/kit@2.52.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(wrangler@3.61.0(@cloudflare/workers-types@4.20241011.0))
+        version: 4.9.0(@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(wrangler@3.61.0(@cloudflare/workers-types@4.20241011.0))
       '@sveltejs/kit':
-        specifier: ^2.52.2
-        version: 2.52.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))
+        specifier: ^2.53.3
+        version: 2.53.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))
       '@sveltejs/vite-plugin-svelte':
         specifier: ^3.1.2
         version: 3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))
@@ -1258,16 +1258,16 @@ packages:
       '@sveltejs/kit': ^2.0.0
       wrangler: ^3.28.4
 
-  '@sveltejs/kit@2.52.2':
-    resolution: {integrity: sha512-1in76dftrofUt138rVLvYuwiQLkg9K3cG8agXEE6ksf7gCGs8oIr3+pFrVtbRmY9JvW+psW5fvLM/IwVybOLBA==}
+  '@sveltejs/kit@2.53.3':
+    resolution: {integrity: sha512-tshOeBUid2v5LAblUpatIdFm5Cyykbw2EiKWOunAAX0A/oJaR7DOdC9wLR5Qqh9zUf3QUISA2m9A3suBdQSYQg==}
     engines: {node: '>=18.13'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.0.0
-      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1 || ^5.0.0 || ^6.0.0-next.0
+      '@sveltejs/vite-plugin-svelte': ^3.0.0 || ^4.0.0-next.1 || ^5.0.0 || ^6.0.0-next.0 || ^7.0.0
       svelte: ^4.0.0 || ^5.0.0-next.0
       typescript: ^5.3.3
-      vite: ^5.0.3 || ^6.0.0 || ^7.0.0-beta.0
+      vite: ^5.0.3 || ^6.0.0 || ^7.0.0-beta.0 || ^8.0.0
     peerDependenciesMeta:
       '@opentelemetry/api':
         optional: true
@@ -1337,8 +1337,8 @@ packages:
   '@types/node@20.12.7':
     resolution: {integrity: sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==}
 
-  '@types/node@25.3.0':
-    resolution: {integrity: sha512-4K3bqJpXpqfg2XKGK9bpDTc6xO/xoUP/RBWS7AtRMug6zZFaRekiLzjVtAoZMquxoAbzBvy5nxQ7veS5eYzf8A==}
+  '@types/node@25.3.3':
+    resolution: {integrity: sha512-DpzbrH7wIcBaJibpKo9nnSQL0MTRdnWttGyE5haGwK86xgMOkFLp7vEyfQPGLOJh5wNYiJ3V9PmUMDhV9u8kkQ==}
 
   '@types/parse5@6.0.3':
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
@@ -4285,15 +4285,15 @@ snapshots:
     dependencies:
       acorn: 8.16.0
 
-  '@sveltejs/adapter-cloudflare@4.9.0(@sveltejs/kit@2.52.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(wrangler@3.61.0(@cloudflare/workers-types@4.20241011.0))':
+  '@sveltejs/adapter-cloudflare@4.9.0(@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(wrangler@3.61.0(@cloudflare/workers-types@4.20241011.0))':
     dependencies:
       '@cloudflare/workers-types': 4.20241011.0
-      '@sveltejs/kit': 2.52.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))
+      '@sveltejs/kit': 2.53.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))
       esbuild: 0.24.2
       worktop: 0.8.0-next.18
       wrangler: 3.61.0(@cloudflare/workers-types@4.20241011.0)
 
-  '@sveltejs/kit@2.52.2(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))':
+  '@sveltejs/kit@2.53.3(@sveltejs/vite-plugin-svelte@3.1.2(svelte@4.2.19)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2)))(svelte@4.2.19)(typescript@5.6.3)(vite@5.4.21(@types/node@20.12.7)(lightningcss@1.27.0)(sass@1.80.2))':
     dependencies:
       '@standard-schema/spec': 1.1.0
       '@sveltejs/acorn-typescript': 1.0.9(acorn@8.16.0)
@@ -4381,13 +4381,13 @@ snapshots:
 
   '@types/node-forge@1.3.14':
     dependencies:
-      '@types/node': 25.3.0
+      '@types/node': 25.3.3
 
   '@types/node@20.12.7':
     dependencies:
       undici-types: 5.26.5
 
-  '@types/node@25.3.0':
+  '@types/node@25.3.3':
     dependencies:
       undici-types: 7.18.2
 
