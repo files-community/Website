@@ -121,7 +121,7 @@
 }
 
 // Don't add padding to force scroll bar to the right of window when smaller then content area width
-@media screen and (width < 1385px) {
+@media screen and (width < 1335px) {
 	.page {
 		&-inner {
 			padding: 44px 56px;
@@ -130,7 +130,7 @@
 }
 
 // Small device support
-@media screen and (width < 648px) {
+@media screen and (width < 804px) {
 	// Since we don't have a sidebar anymore, vertically stack the elements in the page
 	.docs {
 		flex-direction: column;
