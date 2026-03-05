@@ -11,7 +11,6 @@
 		max-height: calc(100vh - 59px);
 		font-size: 1.6rem;
 		line-height: 2.6rem;
-		max-inline-size: 1000px;
 	}
 }
 
@@ -31,7 +30,8 @@
 	// This is mainly here because I didn't want to use
 	// absolute positioning on the mobile search UI.
 	&-inner {
-		padding: 44px 56px;
+		// Forces scroll bar to right side of window, Side bar 308px, left padding 56px, content area 914px
+		padding: 44px calc(100vw - 1328px) 44px 56px;
 		view-transition-name: docs-content;
 	}
 
@@ -120,6 +120,15 @@
 	}
 }
 
+// Don't add padding to force scroll bar to the right of window when smaller then content area width
+@media screen and (width < 1385px) {
+	.page {
+		&-inner {
+			padding: 44px 56px;
+		}
+	}
+}
+
 // Small device support
 @media screen and (width < 648px) {
 	// Since we don't have a sidebar anymore, vertically stack the elements in the page
@@ -127,6 +136,11 @@
 		flex-direction: column;
 		margin-block-start: 2px;
 		border-block-start: 1px solid var(--fds-card-stroke-default);
+
+		// Fixes double scroll bar
+		.markdown-body {
+			max-height: calc(100vh - 128px);
+		}
 	}
 
 	// Hide the sidebar
