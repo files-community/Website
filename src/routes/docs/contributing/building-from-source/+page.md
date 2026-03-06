@@ -22,10 +22,10 @@ This will create a local copy of the repository.
 
 ### 3: Deploy the project in Visual Studio
 
-To build the app in development mode, open the slnx file in Visual Studio (Files.slnx) and set the Files.Package project as the startup item by right-clicking on `Files.Package` in the solution explorer & hitting ‘Set as Startup item’.
+To build the app in development mode, open the slnx file in Visual Studio (Files.slnx) and set the Files.App project as the startup item by right-clicking on `Files.App` in the solution explorer & hitting ‘Set as Startup item’.
 
 In the architecture pane, select the correct architecture for your system as `Debug` which should look like this:
 
-![VS Run config: Debug, x64, Files.Package, Local Machine](/docs-resources/vs-architecture-config.png)
+![VS Run config: Debug, x64, Files.App, Local Machine](/docs-resources/vs-architecture-config.png)
 
 You're good to go!

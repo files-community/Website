@@ -1,25 +1,26 @@
 ---
-title: Announcing Files v4.0.29
-description: Announcing Files Preview v4.0.29 for users of the preview version.
-thumbnail: /blog-resources/v4-0-29/Hero.webp
-date: 2/18/2026
+title: Announcing Files v4.0.33
+description: Announcing Files Preview v4.0.33 for users of the preview version.
+thumbnail: /blog-resources/v4-0-33/Hero.webp
+date: 3/5/2026
 author: files-community
 ---
 
-Today we are releasing **Files Preview v4.0.29** for users of the preview version.
+Today we are releasing **Files Preview v4.0.33** for users of the preview version.
 
 An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
-## What's New in Files v4.0.29
+## What's New in Files v4.0.33
 
-### Improved Thumbnail Performance
+### Reduced package size
 
-We're excited to share that thumbnails now display quicker, leading to a more responsive experience.
+Through various changes and optimizations, we reduced the package size by over 30 MB.
 
 
 ## Fixes
 
-- Fixed an issue where the item count was sometimes incorrect in the Details Pane.
+- Fixed a crash that would occur when typing quickly in the Filter header.
+- Fixed a crash that would sometimes occur when using the Preview Pane.
 
 
 ## Conclusion
