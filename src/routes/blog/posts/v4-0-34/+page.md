@@ -22,7 +22,7 @@ We reduced the package size by over 30 MB.
 
 ## Fixes
 
-- Fixed an issue where the items count was sometimes incorrect in the Details Pane.
+- Fixed an issue where the item count was sometimes incorrect in the Details Pane.
 - Fixed a crash that would occur when typing quickly in the Filter header.
 - Fixed a crash that would sometimes occur when using the Preview Pane.
 

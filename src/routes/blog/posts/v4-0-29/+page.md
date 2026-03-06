@@ -19,7 +19,7 @@ We're excited to share that thumbnails now display quicker, leading to a more re
 
 ## Fixes
 
-- Fixed an issue where the items count was sometimes incorrect in the Details Pane.
+- Fixed an issue where the item count was sometimes incorrect in the Details Pane.
 
 
 ## Conclusion
