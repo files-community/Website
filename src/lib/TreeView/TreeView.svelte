@@ -110,7 +110,7 @@
 
 		&.initial {
 			@media screen and (width >= 648px) {
-				block-size: calc(100vh - 58px);
+				block-size: calc(100vh - 120px);
 			}
 		}
 	}
