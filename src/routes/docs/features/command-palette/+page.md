@@ -26,6 +26,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Toggle dot files**                   |                                     | Toggles the setting that controls whether dot files are displayed |
 | **Toggle file extensions**             |                                     | Toggles whether to show file extensions              |
 | **Toggle Info Pane**                   | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>I</kbd>   | Toggles the Info Pane                                |
+| **Toggle Sidebar**                     | <kbd>Ctrl</kbd>+<kbd>B</kbd>        | Toggles the Sidebar visibility                       |
 | **Toggle Toolbar**                     | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd>  | Toggles the Toolbar visibility                       |
 | **Toggle filter header**               |                                     | Toggles the visibility of the filter header          |
 | **Toggle dual pane**                   |                                     | Toggles dual pane mode                               |
