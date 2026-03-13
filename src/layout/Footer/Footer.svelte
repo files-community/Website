@@ -4,6 +4,7 @@
 	import { links } from "$data/links";
 	import { _ } from "svelte-i18n";
 	import { onMount } from "svelte";
+	import { page } from "$app/stores";
 	import Github from "./icons/github.svg?raw";
 	import Discord from "./icons/discord.svg?raw";
 
@@ -34,7 +35,7 @@
 	});
 </script>
 
-{#if !minimal}
+{#if !$page.url.pathname.startsWith("/docs") && !minimal}
 	<PageSection type="footer" id="page-footer">
 		<div class="column">
 			<a class="logo" href="/">
