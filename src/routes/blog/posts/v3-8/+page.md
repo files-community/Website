@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.8
 description: Manage tags from the sidebar, open Storage Sense, create alternate data streams, paste as shortcuts, and remember archive settings across sessions..
-thumbnail: /blog-resources/v3-8/Hero.png
+thumbnail: /blog-resources/v3-8/Hero.webp
 date: 11/24/2024
 author: files-community
 ---
@@ -19,7 +19,7 @@ Users can now create and manage their tags more efficiently by quickly opening t
 We've added a new action to open the Storage Sense feature in Windows, helping you free up space on your drives. As part of our robust [actions](/docs/customize-settings/actions/) feature, you can access it from the Command Palette, assign a custom keyboard shortcut, and, if that's not enough, you can also access this action by right-clicking drives in the sidebar or home page.
 
 <figure>
-    <img src="/blog-resources/v3-8/StorageSense.png" alt="Storage sense action in the Command Palette" />
+    <img src="/blog-resources/v3-8/StorageSense.webp" alt="Storage sense action in the Command Palette" />
 </figure>
 
 ### Create alternate data streams
@@ -27,7 +27,7 @@ We've added a new action to open the Storage Sense feature in Windows, helping y
 Alternate data streams are a feature on NTFS file systems that allow files to contain multiple streams of data without affecting their primary content. This is an advanced feature, and while most users creating alternate data streams likely do so via the command line, we've made it directly accessible from Files. Not only does Files already support viewing alternate data streams, but we've also added a new [action](/docs/customize-settings/actions/) to create new data streams for the selected items. This action can be accessed from the Command Palette, assigned a keyboard shortcut, and for even easier access, added to the context menu from Settings > Context menu options.
 
 <figure>
-    <img src="/blog-resources/v3-8/DataStreams.png" alt="Context menu option to create alternate data streams" />
+    <img src="/blog-resources/v3-8/DataStreams.webp" alt="Context menu option to create alternate data streams" />
 </figure>
 
 ### Copy the path of the current tab
@@ -47,7 +47,7 @@ We've added a new [action](/docs/customize-settings/actions/) that lets you past
 Archive creation settings are now stored across sessions. This means you won't need to reconfigure your preferences each time you create an archive, leading to a smoother and more efficient workflow.
 
 <figure>
-    <img src="/blog-resources/v3-8/ArchiveSettings.png" alt="Create archive dialog" />
+    <img src="/blog-resources/v3-8/ArchiveSettings.webp" alt="Create archive dialog" />
 </figure>
 
 ## Changes and Improvements

@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.7
 description: Discover the latest features in Files v3.7, including navigation history for back/forward buttons, folder thumbnails in breadcrumb flyouts, and an option to hide the System Tray icon. 
-thumbnail: /blog-resources/v3-7/Hero.png
+thumbnail: /blog-resources/v3-7/Hero.webp
 date: 9/5/2024
 author: files-community
 ---
@@ -27,7 +27,7 @@ When opening a location from an external process, Files will now switch to the e
 The back and forward toolbar buttons now display a history flyout when right-clicked. On a touchscreen, you can press and hold for a few seconds to display the menu.
 
 <figure>
-    <img src="/blog-resources/v3-7/NavigationHistory.png" alt="Navigation history flyout" />
+    <img src="/blog-resources/v3-7/NavigationHistory.webp" alt="Navigation history flyout" />
 </figure>
 
 
@@ -36,7 +36,7 @@ The back and forward toolbar buttons now display a history flyout when right-cli
 We've enhanced the breadcrumb flyouts with folder thumbnails, offering better visual navigation and context.
 
 <figure>
-    <img src="/blog-resources/v3-7/BreadcrumbFlyout.png" alt="Breadcrumb flyout" />
+    <img src="/blog-resources/v3-7/BreadcrumbFlyout.webp" alt="Breadcrumb flyout" />
 </figure>
 
 
@@ -45,7 +45,7 @@ We've enhanced the breadcrumb flyouts with folder thumbnails, offering better vi
 We've introduced an optional home button in the toolbar. This feature can be enabled from the Appearance settings page.
 
 <figure>
-    <img src="/blog-resources/v3-7/HomeButton.png" alt="Toolbar home button" />
+    <img src="/blog-resources/v3-7/HomeButton.webp" alt="Toolbar home button" />
 </figure>
 
 
@@ -54,7 +54,7 @@ We've introduced an optional home button in the toolbar. This feature can be ena
 You can now choose the number of CPU threads used when creating archives. This feature allows you to optimize performance and manage system resources more effectively.
 
 <figure>
-    <img src="/blog-resources/v3-7/CpuThreads.png" alt="Create archive modal" />
+    <img src="/blog-resources/v3-7/CpuThreads.webp" alt="Create archive modal" />
 </figure>
 
 

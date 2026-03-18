@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.8.5
 description: Announcing Files Preview v3.8.5 for users of the preview version.
-thumbnail: /blog-resources/v3-8-5/Hero.png
+thumbnail: /blog-resources/v3-8-5/Hero.webp
 date: 12/19/2024
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.8.5** for users of the preview version
 - Added an option to always switch to newly created tabs. This option can be enabled from the general page in settings.
 
 <figure>
-    <img src="/blog-resources/v3-8-5/AlwaysSwitchTabs.png" alt="Settings dialog" />
+    <img src="/blog-resources/v3-8-5/AlwaysSwitchTabs.webp" alt="Settings dialog" />
 </figure>
 
 ### Home Page

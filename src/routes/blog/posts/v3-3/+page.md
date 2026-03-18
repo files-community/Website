@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.3
 description: Redesigned layout picker, additional spacing options, thumbnail improvements.
-thumbnail: /blog-resources/v3-3/Hero.png
+thumbnail: /blog-resources/v3-3/Hero.webp
 date: 3/19/2024
 author: files-community
 ---
@@ -19,7 +19,7 @@ We refreshed the layout picker with a cleaner and more functional design. The la
 Beneath the the layout section, we added a slider to control the item sizes of the various views including Details, List, Grid, & Columns. Whether you prefer larger or smaller items, there is an option for your personal preference.
 
 <figure>
-    <img src="/blog-resources/v3-3/LayoutPicker.png" alt="Layout picker flyout" />
+    <img src="/blog-resources/v3-3/LayoutPicker.webp" alt="Layout picker flyout" />
 </figure>
 
 
@@ -30,7 +30,7 @@ In v3.3, we continued working on thumbnail handling. While there is always room 
 When a thumbnail takes longer to load, a shimmer animation will be displayed to indicate that the content is loading. Additionally, we added DPI support for icons on the home page, tabs, and left-hand sidebar.
 
 <figure>
-    <img src="/blog-resources/v3-3/SidebarIcons.png" alt="DPI aware sidebar icons" />
+    <img src="/blog-resources/v3-3/SidebarIcons.webp" alt="DPI aware sidebar icons" />
 </figure>
 
 
@@ -39,7 +39,7 @@ When a thumbnail takes longer to load, a shimmer animation will be displayed to 
 We added a new settings page to simplify the management of your layout preferences. These options, formerly nested within submenus on the "Folders" settings page, are now more accessible and easier to locate. Additionally, the "Folders" page was renamed to "Files & folders".
 
 <figure>
-    <img src="/blog-resources/v3-3/LayoutSettings.png" alt="Layout settings page" />
+    <img src="/blog-resources/v3-3/LayoutSettings.webp" alt="Layout settings page" />
 </figure>
 
 

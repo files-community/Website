@@ -1,7 +1,7 @@
 ---
 title: Announcing Files, version 2.5
 description: Acrylic, git integration, preview pane & more
-thumbnail: /blog-resources/files2-5/HeroImage.jpg
+thumbnail: /blog-resources/files2-5/HeroImage.webp
 date: 6/13/2023
 author: files-community
 ---
@@ -17,7 +17,7 @@ Today we're excited to announce the next major release of Files, version 2.5. If
 We heard the feedback loud and clear: users want the option to set the backdrop material to Acrylic. This feature was removed when we migrated from UWP to WinAppSdk but over the last few months these issues have been resolved and we're happy to announce that Acrylic is available again.
 
 <figure>
-    <img src="/blog-resources/files2-5/Acrylic.png" alt="Files with Acrylic backdrop." />
+    <img src="/blog-resources/files2-5/Acrylic.webp" alt="Files with Acrylic backdrop." />
 </figure>
 
 ### Swiping gestures for navigation
@@ -40,7 +40,7 @@ We added a couple of Git features to Files that make it easier to work with Git 
 - We plan to add more Git features in future updates, so stay tuned!
 
 <figure>
-    <img src="/blog-resources/files2-5/GitFeatures.png" alt="Git features." />
+    <img src="/blog-resources/files2-5/GitFeatures.webp" alt="Git features." />
 </figure>
 
 ### SeerPro

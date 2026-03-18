@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.7.7
 description: Fixed support for QuickLook.
-thumbnail: /blog-resources/v3-4-1/Hero.png
+thumbnail: /blog-resources/v3-4-1/Hero.webp
 date: 9/16/2024
 author: files-community
 ---

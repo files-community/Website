@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3
 description: A design refresh, faster startup performance, support for previewing Office documents, & and speed graph for file operations.
-thumbnail: /blog-resources/v3/Hero.jpg
+thumbnail: /blog-resources/v3/Hero.webp
 date: 11/8/2023
 author: files-community
 ---
@@ -21,14 +21,14 @@ When we set out to update the design, we wanted to ensure users would feel at ho
 - With v3 being one of the larger releases to date, we decided it was a good time to refresh the logo. After exploring a number of ideas and color combinations, we asked the community to help choose a color. It's probably no surprise, but the community overwhelmingly opted in favor of the familiar yellow color. We also updated the icons for the developer and preview versions of Files (purple & blue) to make it easier to identify the different variants of the app. 
 
 <figure>
-    <img src="/blog-resources/v3/NewIcon.jpg" alt="Updated Files Icon for all branches" />
+    <img src="/blog-resources/v3/NewIcon.webp" alt="Updated Files Icon for all branches" />
 </figure>
 
 - We redesigned the sidebar from the ground up, removing the icons from headers and the indentations from child items. We also added icons to highlight pinned folders.
 - We rounded the corners on the file area and adjusted the background opacity to provide more distinction between the sidebar.
 
 <figure>
-    <img src="/blog-resources/v3/Sidebar.jpg" alt="Redesigned sidebar" />
+    <img src="/blog-resources/v3/Sidebar.webp" alt="Redesigned sidebar" />
 </figure>
 
 ### Improved experience for file operations
@@ -36,7 +36,7 @@ When we set out to update the design, we wanted to ensure users would feel at ho
 You can now track the progress and speed of file operations in the Status Center with the new graph feature.
 
 <figure>
-    <img src="/blog-resources/v3/StatusCenter.jpg" alt="Updated status center with the speed graph" />
+    <img src="/blog-resources/v3/StatusCenter.webp" alt="Updated status center with the speed graph" />
 </figure>
 
 ### Rich previews for your Office documents
@@ -44,7 +44,7 @@ You can now track the progress and speed of file operations in the Status Center
 In addition to support for previewing Office documents, we added support for previewing file formats with a registered shell preview handler.
 
 <figure>
-    <img src="/blog-resources/v3/OfficePreview.jpg" alt="Updated preview pane" />
+    <img src="/blog-resources/v3/OfficePreview.webp" alt="Updated preview pane" />
 </figure>
 
 ### Added a Command Palette
@@ -52,7 +52,7 @@ In addition to support for previewing Office documents, we added support for pre
 We're excited to introduce a Command Palette that lets you search and execute commands quickly and easily. You can access the Command Palette by pressing `ctrl` + `shift` + `p` on your keyboard, or by typing `>` into the address bar. The Command Palette will show you a list of available commands, or you can type in your own query to find the command you need.
 
 <figure>
-    <img src="/blog-resources/v3/CommandPalette.jpg" alt="Command Palette" />
+    <img src="/blog-resources/v3/CommandPalette.webp" alt="Command Palette" />
 </figure>
 
 ### Keep Files in the background

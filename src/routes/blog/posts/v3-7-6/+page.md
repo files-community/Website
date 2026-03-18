@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.7.6
 description: Discover the latest improvements in Files v3.7.6, including improved toolbar settings, the ability to open more than 10 files simultaneously, and several important fixes.
-thumbnail: /blog-resources/v3-4-1/Hero.png
+thumbnail: /blog-resources/v3-4-1/Hero.webp
 date: 9/13/2024
 author: files-community
 ---

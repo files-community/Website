@@ -1,7 +1,7 @@
 ---
 title: Introducing Scoop installation for Files
 description: Files is now available on Scoop! We are thrilled to announce that Files can now be easily installed via Scoop.
-thumbnail: /blog-resources/now-on-scoop/Hero.png
+thumbnail: /blog-resources/now-on-scoop/Hero.webp
 date: 11/10/2024
 author: Lamparter
 ---

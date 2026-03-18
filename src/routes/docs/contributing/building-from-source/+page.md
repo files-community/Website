@@ -26,6 +26,6 @@ To build the app in development mode, open the slnx file in Visual Studio (Files
 
 In the architecture pane, select the correct architecture for your system as `Debug` which should look like this:
 
-![VS Run config: Debug, x64, Files.App, Local Machine](/docs-resources/vs-architecture-config.png)
+![VS Run config: Debug, x64, Files.App, Local Machine](/docs-resources/vs-architecture-config.webp)
 
 You're good to go!

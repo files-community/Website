@@ -1,7 +1,7 @@
 ---
 title: Introducing Files v2.1
 description: Today, we're pleased to announce that Files v2.1 is now available. We focused on improving the performance and behavior of existing features in this update to make it even easier for you to use the app.
-thumbnail: /blog-resources/filesv2-1/HeroImage.jpg
+thumbnail: /blog-resources/filesv2-1/HeroImage.webp
 date: 2022-1-11
 author: files-community
 ---
@@ -23,7 +23,7 @@ option, we recommend turning it off and back on again in order to take advantage
 - Redesigned the properties window
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-1/PropertiesDialog.jpg" alt="A screenshot of the redesigned properties window in Files v2.1." />
+    <img src="/blog-resources/filesv2-1/PropertiesDialog.webp" alt="A screenshot of the redesigned properties window in Files v2.1." />
     <figcaption>The redesigned properties window</figcaption>
 </figure>
 

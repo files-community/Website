@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.6
 description: Enhance your productivity with Dual Pane's arrangement options, the new "Actions" menu, personalized folder backgrounds, and significant performance improvements.
-thumbnail: /blog-resources/v3-6/Hero.png
+thumbnail: /blog-resources/v3-6/Hero.webp
 date: 8/6/2024
 author: files-community
 ---
@@ -17,7 +17,7 @@ We're excited to announce that starting today, Files v3.6 is now available. If y
 When adding a second pane, you now have the option to choose its orientation. Additionally, when Dual Pane is already in use, you can adjust the pane arrangement to suit your preferences.
 
 <figure>
-    <img src="/blog-resources/v3-6/VerticalArrangedPane.png" alt="Vertical pane orientation in Dual Pane mode" />
+    <img src="/blog-resources/v3-6/VerticalArrangedPane.webp" alt="Vertical pane orientation in Dual Pane mode" />
 </figure>
 
 
@@ -26,7 +26,7 @@ When adding a second pane, you now have the option to choose its orientation. Ad
 We've added a new "Actions" menu in the title bar. This menu provides options to open a new window, toggle compact overlay, and manage panes in Dual Pane mode.
 
 <figure>
-    <img src="/blog-resources/v3-6/TabActions.png" alt="Tab Actions flyout menu" />
+    <img src="/blog-resources/v3-6/TabActions.webp" alt="Tab Actions flyout menu" />
 </figure>
 
 
@@ -35,7 +35,7 @@ We've added a new "Actions" menu in the title bar. This menu provides options to
 We're excited to introduce support for customizing locations with unique background images. By assigning images to different paths, you can quickly identify and access your work, personal, and project directories. Additionally, you can adjust the image opacity and alignment to suit your preferences, ensuring a personalized expereince. You can learn how to get started with folder backgrounds on our [documentation page](/docs/features/folder-config).
 
 <figure>
-    <img src="/blog-resources/v3-6/BackgroundImage.png" alt="Custom background image" />
+    <img src="/blog-resources/v3-6/BackgroundImage.webp" alt="Custom background image" />
 </figure>
 
 

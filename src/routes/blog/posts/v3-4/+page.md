@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.4
 description: Enhance your Files experience with new features that allow you to filter file names, customize keyboard shortcuts, set a unique background image, and integrate with the powerful search utility, Listary.
-thumbnail: /blog-resources/v3-4/Hero.png
+thumbnail: /blog-resources/v3-4/Hero.webp
 date: 5/8/2024
 author: files-community
 ---
@@ -19,13 +19,13 @@ We added a new theming feature that allows you to add a personal touch to Files 
 In addition to the Settings page, you can also change the background directly by right-clicking on an image and selecting "Set as app background".
 
 <figure>
-    <img src="/blog-resources/v3-4/BackgroundImageContextMenu.png" alt="Set as application background context menu" />
+    <img src="/blog-resources/v3-4/BackgroundImageContextMenu.webp" alt="Set as application background context menu" />
 </figure>
 
 Once selected, Files will update to display your image as a beautiful background, adding a distinctive touch to your workspace. Additionally, you can adjust the image’s opacity and display settings for a truly customized look.
 
 <figure>
-    <img src="/blog-resources/v3-4/BackgroundImage.png" alt="Custom background image" />
+    <img src="/blog-resources/v3-4/BackgroundImage.webp" alt="Custom background image" />
 </figure>
 
 
@@ -34,7 +34,7 @@ Once selected, Files will update to display your image as a beautiful background
 We added a new settings page for Actions that enables you to personalize keyboard shortcuts. This feature lets you assign shortcuts to any action and offers the flexibility to modify existing key bindings. Customize your keyboard layout to enhance your workflow efficiency.
 
 <figure>
-    <img src="/blog-resources/v3-4/Actions.png" alt="Actions settings page" />
+    <img src="/blog-resources/v3-4/Actions.webp" alt="Actions settings page" />
 </figure>
 
 
@@ -45,7 +45,7 @@ We’ve enhanced our search functionality to allow for more efficient file manag
 This real-time filtering saves time and is particularly beneficial for users who work with large numbers of files and require quick access to specific documents.
 
 <figure>
-    <img src="/blog-resources/v3-4/Filter.png" alt="Filter file names" />
+    <img src="/blog-resources/v3-4/Filter.webp" alt="Filter file names" />
 </figure>
 
 
@@ -56,19 +56,19 @@ We're excited to announce a new integration with [Listary](https://www.listary.c
 **Instant search results**: A double tap of the `ctrl` key brings up the search bar, delivering immediate access to your files.
 
 <figure>
-    <img src="/blog-resources/v3-4/Listary.png" alt="Listary search box" />
+    <img src="/blog-resources/v3-4/Listary.webp" alt="Listary search box" />
 </figure>
 
 **Contextual power**: Engage with Listary’s rich context menu by right-clicking any search result, unlocking a vast array of actions right where you need them.
 
 <figure>
-    <img src="/blog-resources/v3-4/ListaryMenu.png" alt="Listary context menu" />
+    <img src="/blog-resources/v3-4/ListaryMenu.webp" alt="Listary context menu" />
 </figure>
 
 **Quick switch**: Seamlessly transition to the active folder in Files when opening or saving documents via another application. Additionally, once the file dialog appears, you can also switch to Files, navigate to your desired folder—such as a pinned location—and upon returning to the dialog, it will automatically update to reflect your chosen folder.
 
 <figure>
-    <img src="/blog-resources/v3-4/ListaryQuickSwitch.png" alt="Listary Quick Switch feature" />
+    <img src="/blog-resources/v3-4/ListaryQuickSwitch.webp" alt="Listary Quick Switch feature" />
 </figure>
 
 **Folder navigation**: Discover the ease of navigating to folders; a single click on any folder in the search results instantly opens it in the current tab or pane of Files.

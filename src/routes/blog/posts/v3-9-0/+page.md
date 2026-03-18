@@ -1,7 +1,7 @@
 ---
 title: Announcing General Availability of Files v3.9
 description: Today, we're excited to announce the release of Files v3.9 for all users.
-thumbnail: /blog-resources/v3-9/Hero.png
+thumbnail: /blog-resources/v3-9/Hero.webp
 date: 1/29/2025
 author: files-community
 ---
@@ -15,12 +15,12 @@ I'm excited to announce that Files v3.9 is now available! 🎉 Existing users wi
 We've added a new **Cards View** layout that includes standard metadata like the item thumbnail, name, type, and size, along with context specific properties. For instance, images display their dimensions, media files show their duration, and phones and tablets show their storage details. File tags and sync status for cloud drives are also displayed. This new view replaces the former Tiles View.
 
 <figure>
-    <img src="/blog-resources/v3-9/CardsViewMedium.png" alt="Medium cards" />
+    <img src="/blog-resources/v3-9/CardsViewMedium.webp" alt="Medium cards" />
     <figcaption>Medium Cards</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog-resources/v3-9/CardsViewSmall.png" alt="Small cards" />
+    <img src="/blog-resources/v3-9/CardsViewSmall.webp" alt="Small cards" />
     <figcaption>Small Cards</figcaption>
 </figure>
 
@@ -29,7 +29,7 @@ We've added a new **Cards View** layout that includes standard metadata like the
 The **Grid View** layout now features an accent colored border around selected items, improving visibility and contrast.
 
 <figure>
-    <img src="/blog-resources/v3-9/GridViewContrast.png" alt="Improved contrast in Grid View layout" />
+    <img src="/blog-resources/v3-9/GridViewContrast.webp" alt="Improved contrast in Grid View layout" />
     <figcaption>Selected item in the Grid View layout</figcaption>
 </figure>
 
@@ -38,7 +38,7 @@ The **Grid View** layout now features an accent colored border around selected i
 Icon and thumbnail sizes in the Details View, List View, Columns View, and Cards View are now synchronized with the selected layout size.
 
 <figure>
-    <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.png" alt="Large icons in the Details View layout" />
+    <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.webp" alt="Large icons in the Details View layout" />
     <figcaption>Large icons in the Details View layout</figcaption>
 </figure>
 
@@ -47,7 +47,7 @@ Icon and thumbnail sizes in the Details View, List View, Columns View, and Cards
 We've added a new section to the **Details Pane** that displays drive storage details, giving you quick access to this information.
 
 <figure>
-    <img src="/blog-resources/v3-9/DriveDetails.png" alt="Storage information in the Details Pane" />
+    <img src="/blog-resources/v3-9/DriveDetails.webp" alt="Storage information in the Details Pane" />
     <figcaption>Storage information in the Details Pane</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ We've added a new section to the **Details Pane** that displays drive storage de
 You can now assign custom names directly from the **Create New Shortcut** dialog. Previously, shortcut names were automatically assigned and could only be renamed after creation.
 
 <figure>
-    <img src="/blog-resources/v3-9/ShortcutDialog.png" alt="Create shortcut dialog" />
+    <img src="/blog-resources/v3-9/ShortcutDialog.webp" alt="Create shortcut dialog" />
     <figcaption>Create New Shortcut dialog</figcaption>
 </figure>
 
@@ -65,7 +65,7 @@ You can now assign custom names directly from the **Create New Shortcut** dialog
 We've revamped the **Release Notes** experience. The toolbar button that appears after an update now features a fresh new icon. We've also added a new [action](/docs/customize-settings/actions/) that lets you access the Release Notes dialog anytime, not just after an update. Finally, the Release Notes dialog now directly displays changelogs from the Files website.
 
 <figure>
-    <img src="/blog-resources/v3-9/ReleaseNotesIcon.png" alt="What's New toolbar button" />
+    <img src="/blog-resources/v3-9/ReleaseNotesIcon.webp" alt="What's New toolbar button" />
     <figcaption>Open Release Notes button</figcaption>
 </figure>
 
@@ -74,7 +74,7 @@ We've revamped the **Release Notes** experience. The toolbar button that appears
 The **Update Files** toolbar button, which appears when an update is available, has been redesigned with a new accent colored icon. It's now more noticeable, helping you update Files more easily.
 
 <figure>
-    <img src="/blog-resources/v3-9/UpdateFilesIcon.png" alt="Update Files button" />
+    <img src="/blog-resources/v3-9/UpdateFilesIcon.webp" alt="Update Files button" />
     <figcaption>Update Files button</figcaption>
 </figure>
 
@@ -95,7 +95,7 @@ You can now rotate JPEG-XR images using the toolbar or right click context menu.
 We've added a new setting to automatically switch to newly created tabs. This option is available on the General Settings page.
 
 <figure>
-    <img src="/blog-resources/v3-9/AlwaysSwitchTabs.png" alt="Settings dialog" />
+    <img src="/blog-resources/v3-9/AlwaysSwitchTabs.webp" alt="Settings dialog" />
     <figcaption>Auto focus tabs setting</figcaption>
 </figure>
 
@@ -104,12 +104,12 @@ We've added a new setting to automatically switch to newly created tabs. This op
 You can now browse for `.icl` files on the customize page in the **Properties Window**. We've also added support for modifying the 'compress contents' attribute, and the shortcut page now allows you to adjust the window size for opening shortcut files.
 
 <figure>
-    <img src="/blog-resources/v3-9/CompressAttribute.png" alt="Compress attribute" />
+    <img src="/blog-resources/v3-9/CompressAttribute.webp" alt="Compress attribute" />
     <figcaption>Compress contents attribute</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog-resources/v3-9/ShortcutWindowArgs.png" alt="Shortcut window option" />
+    <img src="/blog-resources/v3-9/ShortcutWindowArgs.webp" alt="Shortcut window option" />
     <figcaption>Shortcut window options</figcaption>
 </figure>
 

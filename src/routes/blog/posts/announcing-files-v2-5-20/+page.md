@@ -1,7 +1,7 @@
 ---
 title: Announcing Files, version 2.5.20
 description: Push Git commits to remote repositories, splash screen, updated icons, support for ownCloud.
-thumbnail: /blog-resources/files2-5-20/HeroImage.jpg
+thumbnail: /blog-resources/files2-5-20/HeroImage.webp
 date: 7/20/2023
 author: files-community
 ---
@@ -17,7 +17,7 @@ We're excited to announce that version 2.5.20 is now available. If you already h
 To further improve our integration with Git, we're excited to be adding support for pushing commits to remote repos. The Status Bar will display you how many local and remote commits you have, and you can click on it to access the sync, pull, and push options. We hope this feature makes it easier for you to collaborate with other developers and keep your code up to date.
 
 <figure>
-    <img src="/blog-resources/files2-5-20/GitPush.png" alt="Push commits to remote repos." />
+    <img src="/blog-resources/files2-5-20/GitPush.webp" alt="Push commits to remote repos." />
 </figure>
 
 ### Improvements to the startup experience
@@ -25,7 +25,7 @@ To further improve our integration with Git, we're excited to be adding support 
 Startup performance is one of our highest priorities and something we're working on improving. We'd like the progress to be faster but unfortunately there are some limitations in the WinAppSdk framework. We hope these limitations will be resolved in future versions of WinAppSdk, but in the meantime, we've been working on a lot of smaller optimizations that we hope will add up over time. We're also adding a splash screen when the app is opened to indicate that the app is loading.  
 
 <figure>
-    <img src="/blog-resources/files2-5-20/SplashScreen.png" alt="Splash screen." />
+    <img src="/blog-resources/files2-5-20/SplashScreen.webp" alt="Splash screen." />
 </figure>
 
 ### Redesigned layout icons
@@ -33,7 +33,7 @@ Startup performance is one of our highest priorities and something we're working
 We redesigned the icons in the layout flyout to be more consistent with the design language in Files. Additionally, the icon on the toolbar now changes to match the selected layout.
 
 <figure>
-    <img src="/blog-resources/files2-5-20/ToolbarIcon.png" alt="Toolbar icon." />
+    <img src="/blog-resources/files2-5-20/ToolbarIcon.webp" alt="Toolbar icon." />
 </figure>
 
 ### Edit tags and open Properties from the Details Pane
@@ -43,7 +43,7 @@ We redesigned the icons in the layout flyout to be more consistent with the desi
 - Updated font styles to better utilize the space
 
 <figure>
-    <img src="/blog-resources/files2-5-20/EditTags.png" alt="Details Pane." />
+    <img src="/blog-resources/files2-5-20/EditTags.webp" alt="Details Pane." />
 </figure>
 
 ### Added support for ownCloud

@@ -1,7 +1,7 @@
 ---
 title: Announcing Files, version 2.5.10
 description: Details pane, Git columns, open in VS Code & more
-thumbnail: /blog-resources/files2-5-10/HeroImage.jpg
+thumbnail: /blog-resources/files2-5-10/HeroImage.webp
 date: 6/27/2023
 author: files-community
 ---
@@ -17,7 +17,7 @@ We're excited to announce that version 2.5.10 is now available. If you already h
 Opening a Git repo in the details layout will now display additional columns with information about the Git status, last commit, commit hash, and commit author. These columns can be toggled by right clicking the column headers.
 
 <figure>
-    <img src="/blog-resources/files2-5-10/GitColumns.png" alt="Git columns in the details layout." />
+    <img src="/blog-resources/files2-5-10/GitColumns.webp" alt="Git columns in the details layout." />
 </figure>
 
 ### Open Git repo in VS Code
@@ -25,7 +25,7 @@ Opening a Git repo in the details layout will now display additional columns wit
 When viewing a Git repo, the status bar will now show a button to open the folder in VS Code. Support for additional applications is being considered.
 
 <figure>
-    <img src="/blog-resources/files2-5-10/OpenVSCode.png" alt="Details pane." />
+    <img src="/blog-resources/files2-5-10/OpenVSCode.webp" alt="Details pane." />
 </figure>
 
 ### Show details about the current directory when no items are selected
@@ -33,7 +33,7 @@ When viewing a Git repo, the status bar will now show a button to open the folde
 The details pane will show information about the current directory when no items are currently selected. In the future, we have plans to show storage details when viewing drives.
 
 <figure>
-    <img src="/blog-resources/files2-5-10/DetailsPane.png" alt="Details pane." />
+    <img src="/blog-resources/files2-5-10/DetailsPane.webp" alt="Details pane." />
 </figure>
 
 ## Changes and Improvements

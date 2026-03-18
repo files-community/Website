@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.2
 description: List View layout, edit album covers, higher quality thumbnails.
-thumbnail: /blog-resources/v3-2/Hero.png
+thumbnail: /blog-resources/v3-2/Hero.webp
 date: 2/12/2024
 author: files-community
 ---
@@ -21,7 +21,7 @@ We know how frustrating it can be when Files crashes or freezes while browsing l
 List View is a new layout option that lets you display more items while taking up less space. It only shows the icons and file names of your items, without any extra details. This is perfect for when you want to quickly scan through a large number of files or folders. To use List View, click on the layout icon on the toolbar and choose List View from the flyout menu.
 
 <figure>
-    <img src="/blog-resources/v3-2/ListView.png" alt="List View layout" />
+    <img src="/blog-resources/v3-2/ListView.webp" alt="List View layout" />
 </figure>
 
 ### Customize your album covers
@@ -29,7 +29,7 @@ List View is a new layout option that lets you display more items while taking u
 You can now change the album covers on media files directly from Files. This is a great way to personalize your music collection and make it easier to find your favorite albums. To do this, right-click on any media file and choose Properties. Click on the preview of the current cover and select a new image when prompted.
 
 <figure>
-    <img src="/blog-resources/v3-2/AlbumCovers.png" alt="Album cover preview" />
+    <img src="/blog-resources/v3-2/AlbumCovers.webp" alt="Album cover preview" />
 </figure>
 
 ### Enhanced thumbnails for your files
@@ -37,11 +37,11 @@ You can now change the album covers on media files directly from Files. This is 
 We’ve enhanced the resolution and contrast of our thumbnail previews to make them more visually appealing and easy to identify. We also fixed a bug where thumbnails would sometimes fail to load in OneDrive.
 
 <figure>
-    <img src="/blog-resources/v3-2/ThumbnailsOne.png" alt="Thumbnail comparison" />
+    <img src="/blog-resources/v3-2/ThumbnailsOne.webp" alt="Thumbnail comparison" />
 </figure>
 
 <figure>
-    <img src="/blog-resources/v3-2/ThumbnailsTwo.png" alt="Thumbnail comparison" />
+    <img src="/blog-resources/v3-2/ThumbnailsTwo.webp" alt="Thumbnail comparison" />
 </figure>
 
 

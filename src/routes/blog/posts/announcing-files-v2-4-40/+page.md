@@ -1,7 +1,7 @@
 ---
 title: Introducing Files, version 2.4.40
 description: Manage your files with tags
-thumbnail: /blog-resources/files2-4-40/HeroImage.jpg
+thumbnail: /blog-resources/files2-4-40/HeroImage.webp
 date: 2/20/2023
 author: files-community
 ---
@@ -17,7 +17,7 @@ In Files v2.4.40, we added a new settings page for editing tags allowing you to 
 To add or remove tags from files or folders, simply right click them and use the "edit tags" menu.
 
 <figure>
-    <img src="/blog-resources/files2-4-40/TagsMenu.png" alt="Tags menu." />
+    <img src="/blog-resources/files2-4-40/TagsMenu.webp" alt="Tags menu." />
 </figure>
 
 You can also remove tags from files or folders by clicking on the remove tag icon in the details layout.
@@ -29,7 +29,7 @@ There is also an optional widget for the home page that will list your tagged fi
 We hope you’ll find this feature useful and we’d love to hear your feedback on how we can improve it further.
 
 <figure>
-    <img src="/blog-resources/files2-4-40/EditTags.png" alt="Edit tags." />
+    <img src="/blog-resources/files2-4-40/EditTags.webp" alt="Edit tags." />
 </figure>
 
 ### Right click Context Menu 📎
@@ -43,7 +43,7 @@ Also new in v2.4.40, we added support for shell extensions on the home page widg
 We also added some context menu settings to the preferences page allowing you to hide options such as “Open in new tab” and “Open in new window” if you don’t use them often.
 
 <figure>
-    <img src="/blog-resources/files2-4-40/EditContextMenu.png" alt="Edit context menu." />
+    <img src="/blog-resources/files2-4-40/EditContextMenu.webp" alt="Edit context menu." />
 </figure>
 
 ### Other Fixes and Enhancements 🛠️

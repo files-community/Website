@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.4.1
 description: Support for displaying network drives on the sidebar, and general improvements to stability.
-thumbnail: /blog-resources/v3-4-1/Hero.png
+thumbnail: /blog-resources/v3-4-1/Hero.webp
 date: 5/14/2024
 author: files-community
 ---

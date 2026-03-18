@@ -17,7 +17,7 @@ In addition to setting a custom [background](/docs/customize-settings/appearance
 5. Refresh the folder (you can press F5 or right-click and choose "Refresh").
 6. Enjoy your custom background!
 
-![Folder background image](/docs-resources/Folder-Background-Image.png)
+![Folder background image](/docs-resources/Folder-Background-Image.webp)
 
 ## Additional options
 

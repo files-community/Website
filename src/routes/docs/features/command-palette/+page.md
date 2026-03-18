@@ -7,7 +7,7 @@ The Command Palette is a powerful feature that displays a list of available acti
 Actions are commands that you can perform on items, such as files, folders, images, etc. Files includes support for over 150 actions, many of which have default keyboard shortcuts for easy access. If you're unsure of the keybinding or need to use an action without a keybinding, the Command Palette is a great feature to help you out. For more details on customizing actions and setting up keybindings, check out our documentation on the actions [settings page](/docs/customize-settings/actions/).
 
 
-![Command palette](/docs-resources/Command-Palette.png)
+![Command palette](/docs-resources/Command-Palette.webp)
 
 ## Supported actions
 

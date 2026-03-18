@@ -1,7 +1,7 @@
 ---
 title: Introducing the next major release of Files - v2.3
 description: We're excited to not only introduce the next major release of Files, but also a series of future changes to sustain contributor momentum into 2023.
-thumbnail: /blog-resources/filesv2-3/HeroImage.jpg
+thumbnail: /blog-resources/filesv2-3/HeroImage.webp
 date: 2022-7-5
 author: files-community
 ---
@@ -17,25 +17,25 @@ As part of our mission to create a stable and fully-featured file manager, we ad
 **Compact sizing** allows users to view more items on the screen
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-3/CompactSpacing.png" alt="A screenshot of the new compact spacing option in Files v2.3." />
+    <img src="/blog-resources/filesv2-3/CompactSpacing.webp" alt="A screenshot of the new compact spacing option in Files v2.3." />
 </figure>
 
 The **tab control** was redesigned to connect with the tab content.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-3/Tabs.png" alt="A screenshot of the new tab design in Files v2.3." />
+    <img src="/blog-resources/filesv2-3/Tabs.webp" alt="A screenshot of the new tab design in Files v2.3." />
 </figure>
 
 We added an option to display **tags** on the sidebar
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-3/Tags.png" alt="A screenshot of the new tags section on the sidebar in Files v2.3." />
+    <img src="/blog-resources/filesv2-3/Tags.webp" alt="A screenshot of the new tags section on the sidebar in Files v2.3." />
 </figure>
 
 Added support for applying bulk actions in the **conflicts dialog**
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-3/BulkActions.png" alt="A screenshot of the redesigned conflicts dialog in Files v2.3." />
+    <img src="/blog-resources/filesv2-3/BulkActions.webp" alt="A screenshot of the redesigned conflicts dialog in Files v2.3." />
 </figure>
 
 ## Other changes

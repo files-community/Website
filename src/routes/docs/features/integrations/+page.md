@@ -33,19 +33,19 @@ Listary is a powerful search utility renowned for its rapid retrieval of files a
 **Instant search results**: A double tap of the `ctrl` key brings up the search bar, delivering immediate access to your files.
 
 <figure>
-    <img src="/docs-resources/Listary.png" alt="Listary search box" />
+    <img src="/docs-resources/Listary.webp" alt="Listary search box" />
 </figure>
 
 **Contextual power**: Engage with Listary’s rich context menu by right-clicking any search result, unlocking a vast array of actions right where you need them.
 
 <figure>
-    <img src="/docs-resources/ListaryMenu.png" alt="Listary context menu" />
+    <img src="/docs-resources/ListaryMenu.webp" alt="Listary context menu" />
 </figure>
 
 **Quick switch**: Seamlessly transition to the active folder in Files when opening or saving documents via another application. Additionally, once the file dialog appears, you can also switch to Files, navigate to your desired folder—such as a pinned location—and upon returning to the dialog, it will automatically update to reflect your chosen folder.
 
 <figure>
-    <img src="/docs-resources/ListaryQuickSwitch.png" alt="Listary Quick Switch feature" />
+    <img src="/docs-resources/ListaryQuickSwitch.webp" alt="Listary Quick Switch feature" />
 </figure>
 
 **Folder navigation**: Discover the ease of navigating to folders; a single click on any folder in the search results instantly opens it in the current tab or pane of Files.

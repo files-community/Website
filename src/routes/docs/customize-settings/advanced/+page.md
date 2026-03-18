@@ -44,4 +44,4 @@ By default, Windows doesn't allow changing the system file manager. Files includ
 
 <br/>
 
-![Settings dialog](/docs-resources/Settings-Dialog-Advanced.png)
+![Settings dialog](/docs-resources/Settings-Dialog-Advanced.webp)

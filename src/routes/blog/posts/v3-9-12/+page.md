@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.12
 description: Announcing Files Preview v3.9.12 for users of the preview version.
-thumbnail: /blog-resources/v4-preview/3-9-12.png
+thumbnail: /blog-resources/v4-preview/3-9-12.webp
 date: 7/20/2025
 author: files-community
 ---
@@ -15,28 +15,28 @@ Today we are releasing **Files Preview v3.9.12** for users of the preview versio
 We're excited to announce the new Omnibar control, a new design that merges the breadcrumb path and search box into a unified interface. The Omnibar isn't just a visual refresh. It introduces new functility while maintaining the precision and flexibility users expect.
 
 <figure>
-    <img src="/blog-resources/v4-preview/Omnibar.png" alt="Omnibar" />
+    <img src="/blog-resources/v4-preview/Omnibar.webp" alt="Omnibar" />
     <figcaption>Default view in the new Omnibar</figcaption>
 </figure>
 
 **Breadcrumb bar:** The default Omnibar view shows the current path using a familiar breadcrumb layout. Breadcrumbs can be expanded to reveal subfolders via the chevron icon. The breadcrumb flyouts have also been updated to display the icon for each folder. Additionally, we added a new home button and flyout menu, providing quick access to pinned and frequently used folders.
 
 <figure>
-    <img src="/blog-resources/v4-preview/OmnibarQuickAccess.png" alt="Quick Access flyout" />
+    <img src="/blog-resources/v4-preview/OmnibarQuickAccess.webp" alt="Quick Access flyout" />
     <figcaption>Quick Access flyout menu</figcaption>
 </figure>
 
 **Edit path:** Switching to edit path mode is done by clicking an empty space in the breadcrumb bar (as before), or by using the `Ctrl + L` keyboard shortcut. When activated, the current path is automatically selected making it easy to copy, overwrite, or modify without extra clicks.
 
 <figure>
-    <img src="/blog-resources/v4-preview/OmnibarPathMode.png" alt="Edit path" />
+    <img src="/blog-resources/v4-preview/OmnibarPathMode.webp" alt="Edit path" />
     <figcaption>Edit path in the Omnibar</figcaption>
 </figure>
 
 **Command Palette:** [Command Palette](/docs/features/command-palette/) mode is accessed by clicking the command button or by using the `Ctrl + Shift + P` keyboard shortcut. While the Command Palette was previously available via keyboard shortcuts, many users were unaware and therefore unable to take advantage. Now, this feature has a dedicated button in the UI making advanced commands easier to discover and use.
 
 <figure>
-    <img src="/blog-resources/v4-preview/OmnibarCommandMode.png" alt="Command Palette" />
+    <img src="/blog-resources/v4-preview/OmnibarCommandMode.webp" alt="Command Palette" />
     <figcaption>Command Palette in the Omnibar</figcaption>
 </figure>
 
@@ -45,7 +45,7 @@ We're excited to announce the new Omnibar control, a new design that merges the 
 In earlier versions, typing a query in the search box without pressing 'Enter' would filter items in the current directory rather than performing a full indexed search. We found this behavior was causing confusion. To improve clarity, the filtering functionality has now been moved to a dedicated header (more on that below).
 
 <figure>
-    <img src="/blog-resources/v4-preview/OmnibarSearchMode.png" alt="Search" />
+    <img src="/blog-resources/v4-preview/OmnibarSearchMode.webp" alt="Search" />
     <figcaption>Search mode in the Omnibar</figcaption>
 </figure>
 
@@ -56,7 +56,7 @@ To reduce confusion between the search and filter functionality, we added a dedi
 For even faster access, users can assign a custom keyboard shortcut from the [actions](/docs/customize-settings/actions) settings page. This makes it easy to integrate filtering into your workflow.
 
 <figure>
-    <img src="/blog-resources/v4-preview/FilterHeader.png" alt="Search" />
+    <img src="/blog-resources/v4-preview/FilterHeader.webp" alt="Search" />
     <figcaption>Filter header</figcaption>
 </figure>
 

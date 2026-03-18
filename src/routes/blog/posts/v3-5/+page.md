@@ -1,7 +1,7 @@
 ---
 title: Announcing Files v3.5
 description: Enjoy an updated design, network drive widget, enhanced dual-pane functionality, and improvements to crash analytics.
-thumbnail: /blog-resources/v3-5/Hero.png
+thumbnail: /blog-resources/v3-5/Hero.webp
 date: 6/24/2024
 author: files-community
 ---
@@ -17,13 +17,13 @@ We're excited to announce that starting today, Files v3.5 is now available. If y
 We’ve enhanced Files aesthetics by applying rounded corners to additional UI surfaces, including the toolbar, content area, and preview pane. This refinement improves the overall consistency and visual flow throughout the app.
 
 <figure>
-    <img src="/blog-resources/v3-5/UpdatedDesign.png" alt="Updated design with rounded corners" />
+    <img src="/blog-resources/v3-5/UpdatedDesign.webp" alt="Updated design with rounded corners" />
 </figure>
 
 Additionally, Dual Pane mode now features a more pronounced shadow on the active pane and expanded spacing between panes. These enhancements ensure that the active pane is more visually prominent.
 
 <figure>
-    <img src="/blog-resources/v3-5/UpdatedDualPaneDesign.png" alt="Updated design for Dual Pane" />
+    <img src="/blog-resources/v3-5/UpdatedDualPaneDesign.webp" alt="Updated design for Dual Pane" />
 </figure>
 
 
@@ -32,7 +32,7 @@ Additionally, Dual Pane mode now features a more pronounced shadow on the active
 When you hover over images, a tooltip will now conveniently show the dimensions. This enhancement greatly improves user experience by providing quick and easy access to size information.
 
 <figure>
-    <img src="/blog-resources/v3-5/ImageSizeTooltip.png" alt="Images tooltip" />
+    <img src="/blog-resources/v3-5/ImageSizeTooltip.webp" alt="Images tooltip" />
 </figure>
 
 
@@ -41,7 +41,7 @@ When you hover over images, a tooltip will now conveniently show the dimensions.
 Upon selecting a batch (.bat) file, the toolbar will now present an Edit in Notepad option, streamlining the process of modifying your batch files directly without the need to dig through context menus.
 
 <figure>
-    <img src="/blog-resources/v3-5/EditInNotepad.png" alt="Edit in notepad toolbar button" />
+    <img src="/blog-resources/v3-5/EditInNotepad.webp" alt="Edit in notepad toolbar button" />
 </figure>
 
 
@@ -50,7 +50,7 @@ Upon selecting a batch (.bat) file, the toolbar will now present an Edit in Note
 We added a "Network Locations" widget on the home page. This feature is designed to help you navigate and organize network locations with greater efficiency.
 
 <figure>
-    <img src="/blog-resources/v3-5/NetworkLocations.png" alt="Home page widget for network locations" />
+    <img src="/blog-resources/v3-5/NetworkLocations.webp" alt="Home page widget for network locations" />
 </figure>
 
 

@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.14
 description: Announcing Files Preview v3.9.14 for users of the preview version.
-thumbnail: /blog-resources/v4-preview/3-9-14.png
+thumbnail: /blog-resources/v4-preview/3-9-14.webp
 date: 8/4/2025
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.9.14** for users of the preview versio
 A new **Signatures** page has been added to the properties window, making it easier to view digital signatures associated with a file.
 
 <figure>
-    <img src="/blog-resources/v4-preview/Signatures.png" alt="Signatures page" />
+    <img src="/blog-resources/v4-preview/Signatures.webp" alt="Signatures page" />
     <figcaption>Signatures page</figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ The Dual Pane feature has been refined to feel more intuitive:
 - Dual Pane settings now have a dedicated section in the [general](/docs/customize-settings/general) settings page
 
 <figure>
-    <img src="/blog-resources/v4-preview/DualPaneSettings.png" alt="Dual pane settings" />
+    <img src="/blog-resources/v4-preview/DualPaneSettings.webp" alt="Dual pane settings" />
     <figcaption>Dual pane settings</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ Columns in the **Columns View** layout are now resizable. You can drag the divid
 Search results now include a header that clearly displays your current query.
 
 <figure>
-    <img src="/blog-resources/v4-preview/SearchHeader.png" alt="Search header" />
+    <img src="/blog-resources/v4-preview/SearchHeader.webp" alt="Search header" />
     <figcaption>Search header</figcaption>
 </figure>
 

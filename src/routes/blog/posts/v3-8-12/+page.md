@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.8.12
 description: Announcing Files Preview v3.8.12 for users of the preview version.
-thumbnail: /blog-resources/preview/Hero.png
+thumbnail: /blog-resources/preview/Hero.webp
 date: 1/12/2025
 author: files-community
 ---
@@ -15,13 +15,13 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 - Redesigned the icon on the 'Update Files' button.
 
 <figure>
-    <img src="/blog-resources/v3-8-12/UpdateFilesIcon.png" alt="Update Files button" />
+    <img src="/blog-resources/v3-8-12/UpdateFilesIcon.webp" alt="Update Files button" />
 </figure>
 
 - Redesigned the icon on the 'Open release notes' button.
 
 <figure>
-    <img src="/blog-resources/v3-8-12/ReleaseNotesIcon.png" alt="View release notes button" />
+    <img src="/blog-resources/v3-8-12/ReleaseNotesIcon.webp" alt="View release notes button" />
 </figure>
 
 ### Properties
@@ -29,7 +29,7 @@ Today we are releasing **Files Preview v3.8.12** for users of the preview versio
 - Added support for configuring the window size when opening shortcut files.
 
 <figure>
-    <img src="/blog-resources/v3-8-12/ShortcutWindowArgs.png" alt="Shortcut properties window" />
+    <img src="/blog-resources/v3-8-12/ShortcutWindowArgs.webp" alt="Shortcut properties window" />
 </figure>
 
 ### Address Bar

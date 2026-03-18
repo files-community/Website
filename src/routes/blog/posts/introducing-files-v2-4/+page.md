@@ -1,7 +1,7 @@
 ---
 title: Introducing v2.4
 description: Taking a look at the features and improvements in Files v2.4
-thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.jpg
+thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.webp
 date: 2022-12-26
 author: files-community
 ---
@@ -18,11 +18,11 @@ In an effort to keep maintaining Files, we recently started charging for the Sto
 
 - Switched to using Mica Alt in the title bar for better contrast between the tabs
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/MicaAlt.png" alt="Mica Alt in the title bar." />
+    <img src="/blog-resources/filesv2-4/MicaAlt.webp" alt="Mica Alt in the title bar." />
 </figure>
 - Added round corners to the file area on Windows 10, previously the round corners were only on Windows 11.
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/RoundCorners.png" alt="Round corners in the file area." />
+    <img src="/blog-resources/filesv2-4/RoundCorners.webp" alt="Round corners in the file area." />
 </figure>
 - Further reduced the height of files when using the compact spacing option
 
@@ -32,18 +32,18 @@ In an effort to keep maintaining Files, we recently started charging for the Sto
 - Added support for extracting password encrypted archives
 - Opening or selecting an archive will display a button on the toolbar to extract the files
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/ExtractArchive.png" alt="Extract archive toolbar button." />
+    <img src="/blog-resources/filesv2-4/ExtractArchive.webp" alt="Extract archive toolbar button." />
 </figure>
 - Added support for creating new archives
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/CreateArchive.png" alt="Create archive dialog." />
+    <img src="/blog-resources/filesv2-4/CreateArchive.webp" alt="Create archive dialog." />
 </figure>
 
 ### Drive details
 
 - Hovering over drives on the sidebar will display a tooltip with storage information about the drive
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2-4/StorageInformation.png" alt="Storage information tooltip." />
+    <img src="/blog-resources/filesv2-4/StorageInformation.webp" alt="Storage information tooltip." />
 </figure>
 
 ### Search

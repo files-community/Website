@@ -1,7 +1,7 @@
 ---
 title: Files is now available on WinGet
 description: Files is back on WinGet!
-thumbnail: /blog-resources/now-on-winget/Hero.png
+thumbnail: /blog-resources/now-on-winget/Hero.webp
 date: 11/30/2024
 author: Lamparter
 ---

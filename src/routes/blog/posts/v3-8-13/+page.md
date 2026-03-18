@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.8.13
 description: Announcing Files Preview v3.8.13 for users of the preview version.
-thumbnail: /blog-resources/preview/Hero.png
+thumbnail: /blog-resources/preview/Hero.webp
 date: 1/22/2025
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 - Added a Cards View layout which displays an overview of items. This replaces the existing Tiles View.
 
 <figure>
-    <img src="/blog-resources/v3-8-13/CardsViewSmall.png" alt="Cards View (small size)" />
+    <img src="/blog-resources/v3-8-13/CardsViewSmall.webp" alt="Cards View (small size)" />
     <figcaption>The new Cards View in action.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
     - Sync status
 
 <figure>
-    <img src="/blog-resources/v3-8-13/CardsViewMedium.png" alt="Cards View (medium size)" />
+    <img src="/blog-resources/v3-8-13/CardsViewMedium.webp" alt="Cards View (medium size)" />
     <figcaption>Medium size cards.</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 - File thumbnails in these layouts now have proper DPI awareness.
 
 <figure>
-    <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.png" alt="Details View (extra large size)" />
+    <img src="/blog-resources/v3-8-13/DetailsViewIconSizes.webp" alt="Details View (extra large size)" />
     <figcaption>Large icons in the Details View.</figcaption>
 </figure>
 

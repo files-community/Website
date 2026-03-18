@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.10
 description: Announcing Files Preview v3.9.10 for users of the preview version.
-thumbnail: /blog-resources/preview/Hero.png
+thumbnail: /blog-resources/preview/Hero.webp
 date: 6/16/2025
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.9.10** for users of the preview versio
 We added a new setting that lets you control the visibility of the Status Center button. You can now choose to always display the button or keep the existing behavior, where it displays only during active file operations. This setting is available under `Settings > Appearance > Toolbars`.
 
 <figure>
-    <img src="/blog-resources/v4-preview/StatusCenterButton.png" alt="Always displayed Status Center" />
+    <img src="/blog-resources/v4-preview/StatusCenterButton.webp" alt="Always displayed Status Center" />
     <figcaption>Status Center button</figcaption>
 </figure>
 
@@ -24,7 +24,7 @@ We added a new setting that lets you control the visibility of the Status Center
 Opening the Status Center now automatically clears the notification badge, providing a cleaner interface and minimizing unnecessary alerts.
 
 <figure>
-    <img src="/blog-resources/v4-preview/StatusCenterBadge.png" alt="Status Center badge" />
+    <img src="/blog-resources/v4-preview/StatusCenterBadge.webp" alt="Status Center badge" />
     <figcaption>Status Center badge</figcaption>
 </figure>
 
@@ -41,7 +41,7 @@ We've enhanced the responsive design of the actions settings page. On smaller sc
 We added a search box to the actions settings page, allowing users to quickly filter and find commands with ease.
 
 <figure>
-    <img src="/blog-resources/v4-preview/FilterActions.png" alt="Search box on the actions page" />
+    <img src="/blog-resources/v4-preview/FilterActions.webp" alt="Search box on the actions page" />
     <figcaption>Search box on the actions page</figcaption>
 </figure>
 

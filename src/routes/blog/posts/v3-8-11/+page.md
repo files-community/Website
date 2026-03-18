@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.8.11
 description: Announcing Files Preview v3.8.11 for users of the preview version.
-thumbnail: /blog-resources/preview/Hero.png
+thumbnail: /blog-resources/preview/Hero.webp
 date: 1/2/2025
 author: files-community
 ---

@@ -53,7 +53,7 @@ The following short tags are used to determine the plural categories:
 
 In the Crowdin editor, you don’t have to manually add or delete plural categories to the translations you are making. Just click `Copy Source`, and the source string will be copied to the translation field with the number of plural categories right for the current target language.
 
-<img src="/docs-resources/Crowdin-EditorCommandButtons.png" alt="Editor command buttons" />
+<img src="/docs-resources/Crowdin-EditorCommandButtons.webp" alt="Editor command buttons" />
 
 For a complete list of languages with Language Plural Rules, visit [Unicode web page](https://www.unicode.org/cldr/charts/45/supplemental/language_plural_rules.html).
 
@@ -79,9 +79,9 @@ Please mind:
 
 If you're not sure which tags should be added, you can click the `i` button to see available tags. You can also click the 'generate skelton' button to see a preview.
 
-<img src="/docs-resources/Crowdin-PreviewGenTip.png" alt="Generate skeleton to see preview" />
+<img src="/docs-resources/Crowdin-PreviewGenTip.webp" alt="Generate skeleton to see preview" />
 
-<img src="/docs-resources/Crowdin-AvailablePluralTypesTip.png" alt="See what kinds of plurals are permitted in this language" />
+<img src="/docs-resources/Crowdin-AvailablePluralTypesTip.webp" alt="See what kinds of plurals are permitted in this language" />
 
 Also, Crowdin shows an error message if your translation is incorrectly formatted or translated.
 

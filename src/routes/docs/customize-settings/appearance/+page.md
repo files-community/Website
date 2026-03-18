@@ -14,7 +14,7 @@ For power users, we'll even walk through advanced customization using the settin
 
 Toggle effortlessly between **light** and **dark** mode to match your personal style or environment. Selecting "Default" will sync Files with your Windows system theme for a consistent appearance across apps.
 
-![Light and dark mode split view](/docs-resources/Dark-Light-Mode.png)
+![Light and dark mode split view](/docs-resources/Dark-Light-Mode.webp)
 
 ## Transparency effects
 
@@ -34,7 +34,7 @@ Tip: For these effects to shine, be sure the app background includes some level 
 
 Pick from a curated palette or use the color picker to select a custom color—fully opaque or semi-transparent. You control the vibe.
 
-![Settings dialog](/docs-resources/Settings-Appearance.png)
+![Settings dialog](/docs-resources/Settings-Appearance.webp)
 
 ### Additional background colors (advanced)
 
@@ -119,14 +119,14 @@ You can personalize Files even further by setting a custom background image—or
 
 Once added, Files will use it as your backdrop, allowing additional tweaks to opacity and scaling.
 
-![Custom background image](/docs-resources/Background-Image.png)
+![Custom background image](/docs-resources/Background-Image.webp)
 
 ### Setting a custom background image
 
 1. Go to **Settings > Appearance**, then scroll to **Background image**.
 2. Click **Browse**, then pick your image or GIF file.
 
-![Custom background image](/docs-resources/Settings-Appearance-Background-Image.png)
+![Custom background image](/docs-resources/Settings-Appearance-Background-Image.webp)
 
 ## Tab actions
 

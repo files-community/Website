@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.9.9
 description: Announcing Files Preview v3.9.9 for users of the preview version.
-thumbnail: /blog-resources/preview/Hero.png
+thumbnail: /blog-resources/preview/Hero.webp
 date: 5/12/2025
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.9.9** for users of the preview version
 We're excited to introduce an updated icon for Files Preview! Additionally, a new icon for Files Stable will debut in the v4 update later this year.
 
 <figure>
-    <img src="/blog-resources/v3-9-9/PreviewIcon.png" alt="Updated icon for Files Preview" />
+    <img src="/blog-resources/v3-9-9/PreviewIcon.webp" alt="Updated icon for Files Preview" />
     <figcaption>Updated icon for Files Preview</figcaption>
 </figure>
 

@@ -1,7 +1,7 @@
 ---
 title: Supercharge Your File Management with Files and Listary
 description: Experience unparalleled file management with the powerful integration of Files and Listary.
-thumbnail: /blog-resources/listary-integration/Hero.png
+thumbnail: /blog-resources/listary-integration/Hero.webp
 date: 5/8/2024
 author: files-community
 ---
@@ -23,19 +23,19 @@ Once enabled, you'll have access to the following features:
 **Instant search results**: Simply double-tap the `ctrl` key to summon the search bar, granting you immediate access to your files.
 
 <figure>
-    <img src="/blog-resources/listary-integration/Listary.png" alt="Listary search box" />
+    <img src="/blog-resources/listary-integration/Listary.webp" alt="Listary search box" />
 </figure>
 
 **Contextual power**: Right-click on any search result to explore Listary’s extensive context menu, offering a multitude of actions at your fingertips.
 
 <figure>
-    <img src="/blog-resources/listary-integration/ListaryMenu.png" alt="Listary context menu" />
+    <img src="/blog-resources/listary-integration/ListaryMenu.webp" alt="Listary context menu" />
 </figure>
 
 **Quick switch**: Seamlessly transition to the active folder in Files when opening or saving documents via another application. Additionally, once the file dialog appears, you can also switch to Files, navigate to your desired folder—such as a pinned location—and upon returning to the dialog, it will automatically update to reflect your chosen folder.
 
 <figure>
-    <img src="/blog-resources/listary-integration/ListaryQuickSwitch.png" alt="Listary Quick Switch feature" />
+    <img src="/blog-resources/listary-integration/ListaryQuickSwitch.webp" alt="Listary Quick Switch feature" />
 </figure>
 
 **Folder navigation**: A single click on a folder within the search results swiftly transports you there, opening it in the current tab or pane of Files.

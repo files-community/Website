@@ -14,10 +14,10 @@ By default, the Omnibar displays the current folder path using a breadcrumb layo
 - Folder icons are shown in breadcrumb flyouts for easier identification.
 - A home button and flyout menu provide quick access to pinned and frequently used folders.
 
-![Omnibar](/blog-resources/v4-preview/Omnibar.png)
+![Omnibar](/blog-resources/v4-preview/Omnibar.webp)
 *Default view in the Omnibar*
 
-![Quick Access flyout](/blog-resources/v4-preview/OmnibarQuickAccess.png)
+![Quick Access flyout](/blog-resources/v4-preview/OmnibarQuickAccess.webp)
 *Quick Access flyout menu*
 
 ### Edit path
@@ -29,7 +29,7 @@ Edit path mode allows manual editing of the current folder path.
 
 When activated, the full path is selected automatically, making it easy to copy, overwrite, or modify.
 
-![Edit path](/blog-resources/v4-preview/OmnibarPathMode.png)
+![Edit path](/blog-resources/v4-preview/OmnibarPathMode.webp)
 *Edit path in the Omnibar*
 
 ### Command Palette
@@ -39,7 +39,7 @@ The Command Palette provides access to over 150 actions, many of which have defa
 - Activate by clicking the command button in the Omnibar.
 - Or use the `Ctrl + Shift + P` keyboard shortcut.
 
-![Command Palette](/blog-resources/v4-preview/OmnibarCommandMode.png)
+![Command Palette](/blog-resources/v4-preview/OmnibarCommandMode.webp)
 *Command Palette in the Omnibar*
 
 For more information, see the documentation on the [Command Palette](/docs/features/command-palette/).
@@ -53,5 +53,5 @@ Search mode allows users to search within the current directory or across indexe
 
 The search box is automatically focused when opened. Suggestions appear in a flyout, and pressing `Enter` opens the full search results page.
 
-![Search](/blog-resources/v4-preview/OmnibarSearchMode.png)
+![Search](/blog-resources/v4-preview/OmnibarSearchMode.webp)
 *Search mode in the Omnibar*

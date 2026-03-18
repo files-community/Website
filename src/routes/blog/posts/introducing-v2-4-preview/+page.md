@@ -1,7 +1,7 @@
 ---
 title: Taking an early look at the next generation of Files
 description: We're excited to give you the first look at what we're working on for the next version of Files (v2.4).
-thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.jpg
+thumbnail: /blog-resources/introducing-v2-4-preview/HeroImage.webp
 date: 2022-11-15
 author: files-community
 ---

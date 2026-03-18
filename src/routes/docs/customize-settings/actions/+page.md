@@ -12,7 +12,7 @@ title: Actions
 
 You can customize key bindings from the **Actions** page in Settings. Navigate to **Files > Settings > Actions** to get started.
 
-![Actions settings page](/docs-resources/Settings-Actions.png)
+![Actions settings page](/docs-resources/Settings-Actions.webp)
 
 ### Modifying existing key bindings
 
@@ -20,7 +20,7 @@ You can customize key bindings from the **Actions** page in Settings. Navigate t
 2. Enter the new shortcut using your keyboard (e.g. `F3`).
 3. Click **Save**, and test it out.
 
-![Edit actions](/docs-resources/Settings-Actions-Edit.png)
+![Edit actions](/docs-resources/Settings-Actions-Edit.webp)
 
 You can also **remove** a key binding entirely. This frees up the shortcut for use elsewhere, but note that deletion takes effect immediately and is not confirmed.
 
@@ -37,7 +37,7 @@ Not all actions have default shortcuts, especially as the list continues to grow
 3. Enter your desired shortcut (e.g. `Ctrl + Shift + S`).
 4. Click **Save**, then test it by selecting an item and using the shortcut.
 
-![Add actions](/docs-resources/Settings-Actions-Add.png)
+![Add actions](/docs-resources/Settings-Actions-Add.webp)
 
 ### Restoring defaults
 

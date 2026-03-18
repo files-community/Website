@@ -1,7 +1,7 @@
 ---
 title: Announcing General Availability of Files v2
 description: Today, we're excited to announce that we are releasing Files v2 as a free update to all our users. Our core mission with Files is to create a modern file manager that pushes the boundaries of the platform, and with v2, we've taken that to a whole new level.
-thumbnail: /blog-resources/filesv2/FilesV2Banner.jpg
+thumbnail: /blog-resources/filesv2/FilesV2Banner.webp
 date: 2021-10-04
 author: files-community
 ---
@@ -34,7 +34,7 @@ A new **column view** allow multiple levels of the hierarchy to be open at once,
 the current directory.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_ColumnView_Light_RGB.jpg" alt="A screenshot of column view in Files v2.">
+    <img src="/blog-resources/filesv2/Files21_V2_ColumnView_Light_RGB.webp" alt="A screenshot of column view in Files v2.">
     <figcaption>The new column view in action.</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ the current directory.
 the file system.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_ContextMenu_Light_RGB.jpg" alt="A screenshot of the new context menu in Files v2. In addition to a refined design, the new menu allows users to quickly assign tags to files and folders.">
+    <img src="/blog-resources/filesv2/Files21_V2_ContextMenu_Light_RGB.webp" alt="A screenshot of the new context menu in Files v2. In addition to a refined design, the new menu allows users to quickly assign tags to files and folders.">
     <figcaption>The redesigned context menu in Files v2 allows users to quickly assign tags to files and folders.</figcaption>
 </figure>
 
@@ -50,7 +50,7 @@ the file system.
 look and feel of the app.
 
 <figure class="margin-bottom">
-    <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.jpg" alt="A screenshot of the settings dialog in Files v2, showing custom theme options.">
+    <img src="/blog-resources/filesv2/Files21_V2_Themes_Dark_RGB.webp" alt="A screenshot of the settings dialog in Files v2, showing custom theme options.">
     <figcaption>Custom themes can be selected from the Settings dialog.</figcaption>
 </figure>
 

@@ -1,7 +1,7 @@
 ---
 title: Announcing Files Preview v3.8.1
 description: Announcing Files Preview v3.8.1 for users of the preview version.
-thumbnail: /blog-resources/v3-8-1/Hero.png
+thumbnail: /blog-resources/v3-8-1/Hero.webp
 date: 12/5/2024
 author: files-community
 ---
@@ -15,7 +15,7 @@ Today we are releasing **Files Preview v3.8.1** for users of the [preview](/down
 - Added storage information when viewing drive details in the Details Pane.
 
 <figure>
-    <img src="/blog-resources/v3-8-1/DriveDetails.png" alt="Drive storage details in the Details Pane" />
+    <img src="/blog-resources/v3-8-1/DriveDetails.webp" alt="Drive storage details in the Details Pane" />
 </figure>
 
 ### Shortcut files
@@ -23,7 +23,7 @@ Today we are releasing **Files Preview v3.8.1** for users of the [preview](/down
 - Added support for assigning a custom name when creating a new shortcut.
 
 <figure>
-    <img src="/blog-resources/v3-8-1/ShortcutDialog.png" alt="Create shortcut dialog" />
+    <img src="/blog-resources/v3-8-1/ShortcutDialog.webp" alt="Create shortcut dialog" />
 </figure>
 
 ### Properties window
@@ -31,7 +31,7 @@ Today we are releasing **Files Preview v3.8.1** for users of the [preview](/down
 - Added support for changing the 'compress' attribute from the properties window.
 
 <figure>
-    <img src="/blog-resources/v3-8-1/CompressAttribute.png" alt="Properties window" />
+    <img src="/blog-resources/v3-8-1/CompressAttribute.webp" alt="Properties window" />
 </figure>
 
 ### Taskbar
