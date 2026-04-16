@@ -132,15 +132,23 @@ Once added, Files will use it as your backdrop, allowing additional tweaks to op
 
 You can choose whether to show or hide the **actions button** in the top-left corner of the title bar. This button provides quick access to tab-related actions and can be toggled on or off depending on your preference.
 
-## Toolbars
+## Address bar
+
+The address bar can be configured to show or hide additional elements to suit your preferences.
+
+### Status center button
+
+You can configure the status center visibility to **always** display or only **during file operations**, keeping your interface clean when idle.
+
+## Toolbar
 
 ### Show toolbar
 
 The toolbar can be turned on or off to maximize screen real estate.
 
-### Status center button
+### Customize toolbar
 
-You can configure the status center visibility to **always** display or only **during file operations**, keeping your interface clean when idle.
+You can personalize the toolbar to better fit your workflow. You can also right click the toolbar and select **Customize toolbar** to open the customization window, where you can add or remove buttons from the full list of available actions and control which buttons display labels.
 
 ## Show status bar
 
