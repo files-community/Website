@@ -85,6 +85,8 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Open directory in IDE**              |                                     | Opens current folder in the configued IDE            |
 | **Open repo in IDE**                   |                                     | Opens repo source folder in the configued IDE        |
 | **Open properties**                    | <kbd>Alt</kbd>+<kbd>Enter</kbd>     | Opens properties window                              |
+| **Open log file**                      | <kbd>Ctrl</kbd>+<kbd>.</kbd>        | Opens the Files log file                             |
+| **Open log file location**             | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>.</kbd> | Opens the folder containing Files logs               |
 | **Open Release Notes**                 |                                     | Opens the Release Notes dialog                       |
 | **Cleanup**                            |                                     | Opens the Storage Sense page in Windows Settings     |
 | **Open File Explorer properties**      | <kbd>AltShift</kbd>+<kbd>Enter</kbd>  | Opens File Explorer properties window                |
@@ -144,6 +146,7 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Group by year**                      |                                     | Groups items by year                                 |
 | **Group by month**                     |                                     | Groups items by month                                |
 | **Toggle grouping unit**               |                                     | Toggles unit for grouping by date                    |
+| **Flatten folder**                     |                                     | Flattens the selected folder into the current location |
 | **New tab**                            | <kbd>Ctrl</kbd>+<kbd>T</kbd>        | Opens a new tab                                      |
 | **New Window**                         | <kbd>Ctrl</kbd>+<kbd>N</kbd>        | Opens a new window                                   |
 | **Navigate back**                      | <kbd>Alt</kbd>+<kbd>Left</kbd>, <kbd>Backspace</kbd>  | Navigates backward in navigation history             |
@@ -169,6 +172,17 @@ Actions are commands that you can perform on items, such as files, folders, imag
 | **Close active pane**                  | <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>W</kbd>  | Closes the active new pane                           |
 | **Focus other pane**                   | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Right</kbd>  | Switches focus to the non active pane                |
 | **Play media files**                   |                                     | Plays the selected media files                       |
+| **Format drive**                       |                                     | Opens the format dialog for the current drive        |
+| **Empty recycle bin**                  |                                     | Permanently removes all items from Recycle Bin       |
+| **Restore all recycle bin items**      |                                     | Restores all items in Recycle Bin                    |
+| **Restore recycle bin item**           |                                     | Restores the selected recycle bin item               |
+| **Open all tagged items**              |                                     | Opens all items with the selected tag                |
+| **Add item**                           | <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>I</kbd>  | Opens the create item dialog                      |
+| **Customize toolbar**                  |                                     | Opens toolbar customization                          |
+| **Toggle app theme**                   |                                     | Toggles between light and dark app themes            |
+| **Set default theme**                  |                                     | Switches app theme to Windows default                |
+| **Set light theme**                    |                                     | Switches app theme to light                          |
+| **Set dark theme**                     |                                     | Switches app theme to dark                           |
 | **Fetch**                              |                                     | Runs git fetch                                       |
 | **Init**                               |                                     | Initializes the current folder as a Git repository   |
 | **Pull**                               |                                     | Runs git pull                                        |
