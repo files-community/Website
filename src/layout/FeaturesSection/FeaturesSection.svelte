@@ -21,6 +21,7 @@
 	import Diamond from "~icons/fluent/diamond-24-regular";
 	import PanelRight from "~icons/fluent/panel-right-24-regular";
 	import Keyboard from "~icons/fluent/Keyboard-24-regular";
+	import Wrench from "~icons/fluent/wrench-24-regular";
 
 	export const featureCards = {
 		tabs: {
@@ -85,8 +86,11 @@
 			title: $_("home.features.remap-key-bindings.title", defaultI18nValues),
 			description: $_("home.features.remap-key-bindings.description", defaultI18nValues),
 			icon: Keyboard,
-		},
-	} as const satisfies { [name: string]: FeatureCardData };
+		},		toolbar: {
+			title: $_('home.features.toolbar.title', defaultI18nValues),
+			description: $_('home.features.toolbar.description', defaultI18nValues),
+			icon: Wrench,
+		},	} as const satisfies { [name: string]: FeatureCardData };
 </script>
 
 <PageSection id="features-section">

@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remap key bindings",
 				"description": "Streamline your workflow by creating custom key bindings."
+			},
+			"toolbar": {
+				"title": "Toolbar Customization",
+				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
 			}
 		},
 		"themes": {
