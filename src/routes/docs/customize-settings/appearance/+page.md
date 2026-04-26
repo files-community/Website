@@ -55,7 +55,9 @@ Want to go further? You can modify areas like the address bar and file pane by e
 
 ## Custom fonts
 
-While not exposed in the settings UI, you can change the font by modifying the `AppThemeFontFamily` value in the settings file.
+You can change the app font from **Settings > Appearance** using the built-in font picker.
+
+You can also set `AppThemeFontFamily` manually in the settings file.
 
 ## Popular themes
 
