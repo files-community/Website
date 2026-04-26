@@ -14,9 +14,9 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ### Updated Settings experience
 
-We've replaced the Settings dialog with a dedicated Settings page. Additional improvements including support for searching settings are being worked.
+We've replaced the Settings dialog with a dedicated Settings page. This will allow us to improve various parts of the Settings experience that weren't possible in the previous design.
 
-We also added support for changing the display font in Files directly from Settings.
+We also added support for changing the display font directly from Settings.
 
 <figure>
     <img src="/blog-resources/v4-0-41/SettingsPage.webp" alt="Settings page" />
