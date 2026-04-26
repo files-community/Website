@@ -14,7 +14,7 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ### Updated Settings experience
 
-We've replaced the Settings dialog with a dedicated Settings page. This will allow us to improve various parts of the Settings experience that weren't possible in the previous design.
+We've replaced the Settings dialog with a dedicated Settings page. This will allow us to improve the Settings experience in ways that weren't possible with the previous design.
 
 We also added support for changing the display font directly from Settings.
 
