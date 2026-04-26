@@ -22,7 +22,7 @@ Lets you load previously exported settings to restore preferences.
 
 ## Edit settings file
 
-Opens the configuration file in your default text editor. Before making changes, be sure to close Files by right-clicking the system tray icon and selecting **Quit**. This gives you full access to advanced customization options like colors, fonts, and layout preferences.
+Opens the configuration file in your default text editor. Before making changes, be sure to close Files by right-clicking the system tray icon and selecting **Quit**. This gives you full access to advanced customization options like additional theme colors and layout preferences.
 
 ## Open Files on Windows startup
 
