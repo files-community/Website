@@ -5,9 +5,10 @@ title: Compiling the source code
 ### 1: Prerequisites
 
 - [Visual Studio 2022 17.13 or later](https://visualstudio.microsoft.com/vs/) with the following individual components:
+  - WinUI application development workload
   - Windows 11 SDK (10.0.26100.0)
   - .NET 10 SDK (version 10.0.102)
-  - MSVC v145 - VS 2022 C++ x64/x86 or ARM64 build tools (latest)
+  - MSVC Build tools for x64/x86 or Arm64 (Latest)
   - C++ ATL for latest v145 build tools (x86 & x64 or ARM64)
   - Git for Windows
 - [Windows App SDK 1.8](https://learn.microsoft.com/windows/apps/windows-app-sdk/downloads#current-releases)
