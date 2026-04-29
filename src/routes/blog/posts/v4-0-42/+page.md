@@ -22,7 +22,7 @@ The single click setting now offers additional options: always, never, only for 
 
 ### Default terminal
 
-When opening a folder in a terminal from Files, Files now respects the default terminal configured in Windows Settings.
+When using the Open in Terminal action, Files now respects the default terminal configured in Windows Settings.
 
 
 ## Fixes
