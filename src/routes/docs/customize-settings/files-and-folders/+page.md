@@ -29,16 +29,32 @@ Displays checkboxes for selected files and folders.
 
 ## Opening items
 
-- **Open files with a single click**: Allows opening files with one click instead of double-clicking.
-- **Open folders with a single click**: Allows opening folders with one click instead of double-clicking. This option can also be enabled for just the Columns View.
-- **Open folders in a new tab**: Opens folders in a new tab instead of the current one.
+Choose how files and folders open. Each can be configured independently:
+
+- **Files**
+  - Always use single click
+  - Never use single click
+  - Use single click for touch
+  - Use single click for mouse
+- **Folders**
+  - Always use single click
+  - Never use single click
+  - Use single click for touch
+  - Use single click for mouse
+
+Single click for folders can also be enabled for just the Columns View.
+
+### Open folders in a new tab
+
+Opens folders in a new tab instead of the current one.
 
 ## Show confirmation dialog when deleting items
 
 Choose when to display a confirmation prompt:
-  - Always
-  - Permanent deletion only
-  - Never
+
+- Always
+- Permanent deletion only
+- Never
 
 ## Show warning when changing file extensions
 
@@ -59,8 +75,9 @@ When navigating up one level, automatically scrolls to the folder you just came 
 ## Size format
 
 Choose how file sizes are displayed:
-  - Binary
-  - Decimal
+
+- Binary
+- Decimal
 
 ## Calculate folder sizes
 

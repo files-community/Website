@@ -14,6 +14,8 @@ For power users, we'll even walk through advanced customization using the settin
 
 Toggle effortlessly between **light** and **dark** mode to match your personal style or environment. Selecting "Default" will sync Files with your Windows system theme for a consistent appearance across apps.
 
+You can also press `Ctrl`+`Alt`+`T` to quickly toggle between light and dark mode. Additional actions for switching themes are available on the **Actions** settings page, where you can assign your own keyboard shortcuts.
+
 ![Light and dark mode split view](/docs-resources/Dark-Light-Mode.webp)
 
 ## Transparency effects
@@ -34,7 +36,7 @@ Tip: For these effects to shine, be sure the app background includes some level 
 
 Pick from a curated palette or use the color picker to select a custom color—fully opaque or semi-transparent. You control the vibe.
 
-![Settings dialog](/docs-resources/Settings-Appearance.webp)
+![Appearance settings page](/docs-resources/Settings-Appearance.webp)
 
 ### Additional background colors (advanced)
 
@@ -106,14 +108,14 @@ A modern and moody Arctic-inspired color scheme.
 
 Bold, vibrant, and perfect for dark-mode enthusiasts.
 
-| Key                                 | Value       |
-| ----------------------------------- | ----------- |
-| `AppThemeBackgroundColor`           | `#282A36`   |
-| `AppThemeAddressBarBackgroundColor` | `#393d4e`   |
-| `AppThemeToolbarBackgroundColor`    | `#282A36`   |
-| `AppThemeSidebarBackgroundColor`    | `#393d4e`   |
-| `AppThemeFileAreaBackgroundColor`   | `#282A36`   |
-| `AppThemeInfoPaneBackgroundColor`   | `#282A36`   |
+| Key                                 | Value     |
+| ----------------------------------- | --------- |
+| `AppThemeBackgroundColor`           | `#282A36` |
+| `AppThemeAddressBarBackgroundColor` | `#393d4e` |
+| `AppThemeToolbarBackgroundColor`    | `#282A36` |
+| `AppThemeSidebarBackgroundColor`    | `#393d4e` |
+| `AppThemeFileAreaBackgroundColor`   | `#282A36` |
+| `AppThemeInfoPaneBackgroundColor`   | `#282A36` |
 
 ## Background image
 
@@ -150,7 +152,17 @@ The toolbar can be turned on or off to maximize screen real estate.
 
 ### Customize toolbar
 
-You can personalize the toolbar to better fit your workflow. You can also right click the toolbar and select **Customize toolbar** to open the customization window, where you can add or remove buttons from the full list of available actions and control which buttons display labels.
+You can personalize the toolbar to better fit your workflow — choose which buttons are displayed, rearrange them, and decide whether labels are shown.
+
+To quickly hide a toolbar button, right-click it and select **Unpin**.
+
+To open the customization window, right-click any toolbar item and select **Customize toolbar**. From here you can:
+
+- Add buttons by dragging an action from the list on the left to the list of added items on the right.
+- Rearrange buttons by dragging them up or down within the toolbar list.
+- Toggle labels for individual buttons.
+
+At the top of the customization window, the **Toolbar mode** dropdown selects which toolbar mode you're customizing. The **Always visible** mode covers the buttons shown on the left side of the toolbar at all times. Other modes are context-specific and only appear when their context is active (for example, inside Recycle Bin).
 
 ## Show status bar
 

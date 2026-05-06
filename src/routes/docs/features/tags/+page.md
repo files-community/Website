@@ -19,6 +19,14 @@ Tags are a way to organize your files and folders. You can assign one or more ta
 - Click the "edit tags" button
 - Toggle a tag from the menu
 
+### Using the toolbar
+
+You can add an **Edit Tags** button to the toolbar for quick access:
+
+1. Right-click any toolbar item and select **Customize toolbar**.
+2. Expand the **File System** group on the left.
+3. Drag **Edit Tags...** to the list of added toolbar items.
+
 ### Using drag and drop
 
 - Select the items you wish to tag
@@ -55,10 +63,9 @@ There are multiple ways to view or filter previously tagged items
 
 Available as an option, the Tags widget provides a small preview of your existing tags and the items it's assigned to. You can enable the Tags widget by navigating to `Settings > General > Widgets` and toggling the option for "Tags".
 
-
 ## Creating and editing tags
 
-Files includes a couple of default tags but you can edit or create your own from the settings menu. To do that, follow these steps:
+Files includes a couple of default tags but you can edit or create your own from the Settings page. To do that, follow these steps:
 
 - Open Settings using the toolbar button or with the `ctrl` + `,` keyboard shortcut
 - Navigate to the "Tags" settings page
@@ -86,7 +93,7 @@ Please note that deleting a tag will remove the tag from any items that it was a
 
 ## Viewing tags on other devices
 
-In order for the list of tags to be displayed on other devices, you'll need to export the tags definitions file and import it on the other device. This can be done from the settings menu:
+In order for the list of tags to be displayed on other devices, you'll need to export the tags definitions file and import it on the other device. This can be done from the Settings page:
 
 1. Export your settings by going to `Settings > Advanced > Export`
 2. Import your settings on the second device `Settings > Advanced > Import`

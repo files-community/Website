@@ -22,11 +22,11 @@ First introduced in v3.3, you can adjust the items to be bigger or smaller by us
 
 ### Show hidden items
 
-This toggles hidden items on & off, it's worth noting that changing this toggle will also affect the option in the settings dialog.
+This toggles hidden items on & off, it's worth noting that changing this toggle will also affect the option on the Settings page.
 
 ### Show file extensions
 
-This toggles file extensions on & off. Like the option for hidden files, this toggle will also affect the option in the settings dialog.
+This toggles file extensions on & off. Like the option for hidden files, this toggle will also affect the option on the Settings page.
 
 ### Adaptive layout
 
