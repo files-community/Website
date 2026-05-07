@@ -72,7 +72,6 @@ scoop install nonportable/files-np
 	The installation files will need to be installed in the same order as listed below.
 </InfoBar>
 
-
 <details>
 <summary>x64 (AMD and Intel)</summary>
 
@@ -99,6 +98,24 @@ https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.m
 
 </details>
 
+### Installing without administrator privileges
+
+Files can be installed without administrator privileges, but it requires the .NET 10 runtime to run. If you don't have administrator access on your device, you can follow these steps to install .NET:
+
+1. Download [dotnet-install.ps1](https://dot.net/v1/dotnet-install.ps1) from Microsoft.
+2. Open PowerShell in the folder containing the script and run the following commands:
+
+   ```
+   $dotnetDir = "$env:LOCALAPPDATA\Microsoft\dotnet"
+
+   .\dotnet-install.ps1 -Runtime WindowsDesktop -Channel 10.0 -InstallDir $dotnetDir
+   .\dotnet-install.ps1 -Runtime dotnet         -Channel 10.0 -InstallDir $dotnetDir
+
+   [System.Environment]::SetEnvironmentVariable("DOTNET_ROOT", $dotnetDir, "User")
+   ```
+
+3. Reopen Files.
+
 ## Keep Files up to date
 
 Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
@@ -106,7 +123,6 @@ Files will automatically check for updates whenever the app is opened and an ind
 <InfoBar title="Note" severity="information">
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
 </InfoBar>
-
 
 ## Troubleshooting
 
@@ -117,6 +133,7 @@ If you see a "Cannot open app package" message when you try to open Files, it me
 ### Updates
 
 If you encounter any problems or errors while updating Files, you can try the following solutions:
+
 1. Make sure you have a stable internet connection and enough disk space for the update.
 2. Restart your computer and try to update Files again.
 
