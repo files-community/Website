@@ -3,21 +3,13 @@ title: Install
 ---
 
 <script>
-  import { Button, InfoBar } from "fluent-svelte";
+  import { InfoBar } from "fluent-svelte";
 </script>
-
-## Install and get started with Files
-
-<Button href="/download/" variant="accent">
-	Install Files
-</Button>
 
 Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yair100) if you install the free version.
 
-You can also use the [preview version](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) alongside the stable release to get early access to new features and improvements.
-
 <InfoBar title="Note" severity="information">
-	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported.
+	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported. Check the troubleshooting section below for further details.
 </InfoBar>
 
 ### Microsoft Store
@@ -46,25 +38,41 @@ You can also use the [preview version](ms-windows-store://pdp/?ProductId=9NSQD9P
 
 ### Winget
 
+The [Winget](https://github.com/microsoft/winget-pkgs) package is maintained by a third party.
+
+Stable branch
 ```
 winget install -e --id FilesCommunity.Files
 ```
 
+Preview branch 
+```
+winget install -e --id FilesCommunity.FilesPreview
+```
+
 ### Chocolatey
 
-The [Chocolatey](https://community.chocolatey.org/packages/files) package is maintained by a third party.
+The [Chocolatey](https://community.chocolatey.org) package is maintained by a third party.
 
+Stable branch
 ```
 choco install files
+```
+
+Preview branch
+```
+choco install filespreview
 ```
 
 ### Scoop
 
 The [Scoop](https://scoop.sh) package is maintained by a third party.
 
+Stable branch
 ```
 scoop install nonportable/files-np
 ```
+
 
 ### Offline install
 
@@ -75,6 +83,8 @@ scoop install nonportable/files-np
 <details>
 <summary>x64 (AMD and Intel)</summary>
 
+Stable branch
+
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
 
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
@@ -83,10 +93,22 @@ https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsof
 
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
 
+Preview branch
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.Desktop.appx
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
+
+https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.msixbundle
+
 </details>
 
 <details>
 <summary>ARM64</summary>
+
+Stable branch
 
 https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
 
@@ -96,7 +118,33 @@ https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Micros
 
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
 
+
+Preview branch
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
+
+https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
+
+https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.msixbundle
+
 </details>
+
+
+## Keep Files up to date
+
+Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
+
+<InfoBar title="Note" severity="information">
+	Installing an update will automatically restart Files so make sure to save your work before starting an update.
+</InfoBar>
+
+## Troubleshooting
+
+### Cannot open app package
+
+If you see a "Cannot open app package" message when you try to open Files, it means that your device needs an update for the AppInstaller component. You can update it from the Microsoft Store app on your device, or by downloading and running this [installer](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer).
 
 ### Installing without administrator privileges
 
@@ -115,20 +163,6 @@ Files can be installed without administrator privileges, but it requires the .NE
    ```
 
 3. Reopen Files.
-
-## Keep Files up to date
-
-Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
-
-<InfoBar title="Note" severity="information">
-	Installing an update will automatically restart Files so make sure to save your work before starting an update.
-</InfoBar>
-
-## Troubleshooting
-
-### Cannot open app package
-
-If you see a "Cannot open app package" message when you try to open Files, it means that your device needs an update for the AppInstaller component. You can update it from the Microsoft Store app on your device, or by downloading and running this [installer](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer).
 
 ### Updates
 
