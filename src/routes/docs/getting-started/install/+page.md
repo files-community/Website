@@ -9,7 +9,7 @@ title: Install
 Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yair100) if you install the free version.
 
 <InfoBar title="Note" severity="information">
-	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported. Check the troubleshooting section at the bottom if you have issues installing.
+	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported. Check the troubleshooting section below for further details.
 </InfoBar>
 
 ### Microsoft Store
