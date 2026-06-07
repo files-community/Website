@@ -32,6 +32,22 @@ You can add an **Edit Tags** button to the toolbar for quick access:
 - Select the items you wish to tag
 - Drag and drop the items onto an existing tag in the sidebar
 
+## Removing tags
+
+### Toggling individual tags
+
+To remove specific tags, follow the same steps used for assigning tags (via the context menu, Details Pane, or toolbar button) and toggle the tag off.
+
+### Removing all tags at once
+
+To clear every tag from one or more items in a single step:
+
+- Select the items you wish to clear
+- Right-click the selection and expand the "edit tags" menu
+- Click **Remove tags**
+
+The **Remove tags** action is also available in the Command Palette and can be assigned a custom keyboard shortcut from `Settings > Actions`.
+
 ## Viewing and filtering tagged items
 
 There are multiple ways to view or filter previously tagged items
