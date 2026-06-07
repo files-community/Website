@@ -10,6 +10,12 @@ Today we are releasing **Files Preview v4.1.2** for users of the preview version
 
 An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
 
+## What's Coming Soon
+
+We're excited to share that we're actively working on a new **Tree View** sidebar that displays your folders in an expandable hierarchy, making it easier to navigate deeply nested directories. This change isn't included in today's release, but we hope to begin testing it in the Preview channel in the near future.
+
+Want to hear about updates like this as soon as they happen? Join us on [Discord](https://discord.gg/files), where we share previews, progress updates, and chat with the community.
+
 ## What's New in Files v4.1.2
 
 ### Retain selection across layouts
