@@ -73,6 +73,11 @@ Stable branch
 scoop install nonportable/files-np
 ```
 
+Preview branch
+```
+scoop install nonportable/files-preview-np
+```
+
 
 ### Offline install
 
@@ -89,7 +94,7 @@ https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsof
 
 https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
 
-https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/stable/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.2.msix
 
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
 
@@ -99,7 +104,7 @@ https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microso
 
 https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.VCLibs.x64.14.00.appx
 
-https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/preview/Files.Package/Dependencies/x64/Microsoft.WindowsAppRuntime.2.msix
 
 https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.msixbundle
 
@@ -114,7 +119,7 @@ https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Micros
 
 https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
 
-https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.2.msix
 
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
 
@@ -125,7 +130,7 @@ https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Micro
 
 https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.appx
 
-https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.1.8.msix
+https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.WindowsAppRuntime.2.msix
 
 https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.msixbundle
 
