@@ -14,7 +14,7 @@ There are a couple of ways to open folders in a new tab. If your mouse has a mid
 
 ## Tab tear off
 
-In addition to reordering tabs, you can tear off a tab to create a new window. You can also move tags between windows with drag & drop.
+In addition to reordering tabs, you can tear off a tab to create a new window. You can also move tabs between windows with drag & drop.
 
 ## Drag files between tabs
 
