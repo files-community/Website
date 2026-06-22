@@ -64,4 +64,13 @@ To enhance performance, shell extensions are placed in a submenu by default. How
 
 ## Scrolling
 
+### Enable smooth scrolling
+
 Smooth scrolling is enabled by default, but can be turned off via this setting.
+
+### Reverse tab scroll direction
+
+Controls which direction the tab bar scrolls when using the mouse wheel. Choose between:
+
+- **Down motion scrolls left** – Scrolling down moves to the previous tab (default).
+- **Down motion scrolls right** – Scrolling down moves to the next tab.
