@@ -32,6 +32,10 @@ Enables Files to start automatically when you log in to Windows
 
 Keeps Files running even after the window is closed. This reduces startup time but may use slightly more system resources.
 
+## Show Files icon in the System Tray
+
+Displays the Files icon in the Windows system tray.
+
 ## Experimental feature flags
 
 ### Set Files as the default file manager
@@ -40,6 +44,14 @@ By default, Windows doesn't allow changing the system file manager. Files includ
 
 <InfoBar severity="caution">
   This feature modifies the Windows registry. While stable in most cases, it can introduce issues. The Files team assumes no responsibility for problems that may arise. We strongly recommend backing up your registry before enabling this option.
+</InfoBar>
+
+### Show flatten options
+
+Adds **Flatten folder** entries to the context menu, letting you move every item out of a nested folder into its parent.
+
+<InfoBar severity="caution">
+  Flatten operations are permanent and not recommended. Continue at your own risk.
 </InfoBar>
 
 <br/>
