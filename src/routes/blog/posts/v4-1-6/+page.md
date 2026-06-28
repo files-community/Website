@@ -36,7 +36,7 @@ You can now open a second pane by dragging a tab. Drop the tab on the left or ri
 
 ### Improved continue where you left off
 
-The startup behavior for [**Continue where you left off**](/docs/customize-settings/general/#startup) has been improved so that previously opened tabs are restored more reliably and in the correct order across sessions.
+The startup behavior for [**Continue where you left off**](/docs/customize-settings/general/#startup-settings) has been improved so that previously opened tabs are restored more reliably and in the correct order across sessions.
 
 ### Network Discovery banner
 
