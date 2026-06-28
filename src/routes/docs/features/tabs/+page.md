@@ -16,6 +16,10 @@ There are a couple of ways to open folders in a new tab. If your mouse has a mid
 
 In addition to reordering tabs, you can tear off a tab to create a new window. You can also move tabs between windows with drag & drop.
 
+## Drag a tab to create a new pane
+
+You can drag a tab into the current tab's file area to open it as a second pane. Drop on the left or right side for a vertical split, or on the top or bottom for a horizontal split. See the [dual pane](/docs/features/dual-pane/) docs for more.
+
 ## Drag files between tabs
 
 Dragging items between tabs is pretty easy. Simply drag the items and hover the mouse over the relevant tab. The app will automatically switch tabs, allowing you to drop the files in the desired location.
@@ -23,6 +27,7 @@ Dragging items between tabs is pretty easy. Simply drag the items and hover the 
 ## Shortcuts for interacting with tabs
 
 There are several ways to interact with tabs in Files. Here are some useful shortcuts:
+
 - `ctrl` + `t`: Add a new tab.
 - `ctrl` + `shift` + `t`: Restore closed tab.
 - `ctrl` + `tab`: Switch to the next tab.
