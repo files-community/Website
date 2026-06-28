@@ -46,9 +46,9 @@ When Network Discovery is turned off in Windows, Files now displays a banner in 
     <img src="/blog-resources/v4-1-6/NetworkBanner.webp" alt="Network Discovery banner" />
 </figure>
 
-### Skip buttons in File In Use dialog
+### Skip button in File In Use dialog
 
-The File In Use dialog now includes **Skip** and **Skip All** buttons.
+The File In Use dialog now includes a **Skip** button.
 
 ## Fixes
 
