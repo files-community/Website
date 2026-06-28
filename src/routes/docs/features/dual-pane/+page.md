@@ -14,9 +14,13 @@ The easiest way to add a second pane is by clicking the 'Actions' button in the 
 
 ## Opening a folder in a new pane
 
- With the dual pane feature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
+With the dual pane feature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
 
 ![Open folder in new pane](/docs-resources/OpenInNewPaneMeuOption.webp)
+
+## Drag a tab to create a new pane
+
+You can open a second pane by dragging a tab into the current tab's file area. Drop the tab on the left or right side for a vertical split, or on the top or bottom for a horizontal split.
 
 ## Open new tabs with dual pane
 
