@@ -2,7 +2,7 @@
 title: Announcing Files v4.1.7
 description: Announcing Files Preview v4.1.7 for users of the preview version.
 thumbnail: /blog-resources/v4-1-7/Hero.webp
-date: 7/3/2026
+date: 7/4/2026
 author: files-community
 ---
 
@@ -20,7 +20,7 @@ To open Toolbar Customization, right-click the toolbar and select **Customize to
 
 ### Cycle layouts with the scroll wheel
 
-Holding **Ctrl** and scrolling the mouse wheel over the file area has always increased or decreased the item size within the current layout. Once the size reaches the smallest or largest step, continuing to scroll now cycles to the next [layout mode](/docs/features/layout-modes/) instead of stopping.
+**Ctrl** + scroll on the file area already resizes items within the current layout. Starting with this release, once you reach the smallest or largest size, continuing to scroll now advances to the next [layout mode](/docs/features/layout-modes/) instead of stopping, letting you move between all layouts.
 
 ### Improved tab tear off
 

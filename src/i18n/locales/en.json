@@ -22,7 +22,7 @@
 			"description": "A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with ease.",
 			"download": "Download",
 			"view_on_github": "View on GitHub",
-			"files_is_open_source": "Files is open source!",			
+			"files_is_open_source": "Files is open source!",
 			"install_on_windows": "Install on Windows"
 		},
 		"tabs": {
@@ -132,7 +132,9 @@
 		"news": "News",
 		"download": "Download",
 		"contribute": "Contribute to {FilesName}",
-		"feedback": "Give Feedback",
+		"feedback": "Report Bug",
+		"request_feature": "Request Feature",
+		"sponsor": "Sponsor",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
 		"support": "Support",

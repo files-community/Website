@@ -102,9 +102,9 @@
 				variant="hyperlink"
 				{...externalLink}
 				href="https://github.com/{links.github.owner}/{links.github
-					.repo}/issues/new/choose"
+					.repo}?sponsor"
 			>
-				{$_("footer.feedback", defaultI18nValues)}
+				{$_("footer.sponsor", defaultI18nValues)}
 			</Button>
 
 			<Button variant="hyperlink" href="/docs/contributing/code-style">
@@ -121,6 +121,23 @@
 		</div>
 		<div class="column">
 			<p>{$_("footer.support", defaultI18nValues)}</p>
+			<Button
+				variant="hyperlink"
+				{...externalLink}
+				href="https://github.com/{links.github.owner}/{links.github
+					.repo}/issues/new/choose"
+			>
+				{$_("footer.feedback", defaultI18nValues)}
+			</Button>
+
+			<Button
+				variant="hyperlink"
+				{...externalLink}
+				href="https://discord.gg/{links.discord}"
+			>
+				{$_("footer.request_feature", defaultI18nValues)}
+			</Button>
+
 			<Button variant="hyperlink" href="/privacy">
 				{$_("footer.privacy", defaultI18nValues)}
 			</Button>
