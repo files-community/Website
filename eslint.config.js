@@ -26,6 +26,12 @@ export default [
 				parser: ts.parser,
 			},
 		},
+		rules: {
+			// typescript-eslint's no-unused-vars crashes on svelte-eslint-parser's
+			// reactive-statement definitions; the core rule handles them fine
+			"@typescript-eslint/no-unused-vars": "off",
+			"no-unused-vars": "error",
+		},
 	},
 	{
 		ignores: ["build/", ".svelte-kit/", "package/"],
