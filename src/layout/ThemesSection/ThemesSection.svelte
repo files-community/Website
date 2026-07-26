@@ -9,12 +9,9 @@
 	import { Button, TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { Tag } from "$data/features";
-	import { error } from "@sveltejs/kit";
 
 	let systemTheme = "light";
 	let currentTheme = 0;
-	let scrollPositionY = 0;
-	let innerHeight = 0;
 	let visible = true;
 	let noInitialDelay = false;
 	let anchor: HTMLDivElement;
@@ -48,22 +45,10 @@
 
 	$: themeSrc = currentTheme > 0 ? `theme-${currentTheme + 1}` : systemTheme;
 
-	// Essentially determines if the user has seen the top 1/4th of the themes section or not
-	$: if (
-		anchor &&
-		anchor.getBoundingClientRect().top +
-			anchor.offsetHeight / 4 +
-			scrollPositionY <
-			scrollPositionY + innerHeight
-	)
-		visible = true;
-
 	onMount(() => {
 		const handleThemeChange = (e: MediaQueryListEvent) => {
 			systemTheme = e.matches ? "dark" : "light";
 		};
-
-		visible = false; // We want SSR to have these visible by default, so we'll just do this.
 
 		systemTheme = window?.matchMedia("(prefers-color-scheme: dark)")?.matches
 			? "dark"
@@ -73,15 +58,31 @@
 			.matchMedia("(prefers-color-scheme: dark)")
 			.addEventListener("change", handleThemeChange);
 
-		return () =>
+		// SSR renders the showcase visible by default; only hide it when we
+		// can reveal it again by observing the section entering the viewport.
+		let observer: IntersectionObserver | undefined;
+		if ("IntersectionObserver" in window) {
+			visible = false;
+			observer = new IntersectionObserver(
+				entries => {
+					if (entries.some(entry => entry.isIntersecting)) {
+						visible = true;
+						observer?.disconnect();
+					}
+				},
+				{ rootMargin: "0px 0px -15% 0px" },
+			);
+			observer.observe(anchor);
+		}
+
+		return () => {
+			observer?.disconnect();
 			window
 				.matchMedia("(prefers-color-scheme: dark)")
 				.removeEventListener("change", handleThemeChange);
+		};
 	});
 </script>
-
-<svelte:window bind:innerHeight />
-<svelte:body on:scroll={() => (scrollPositionY = document.body.scrollTop)} />
 
 <PageSection class="theme-{currentTheme + 1}" id="themes-section">
 	<div bind:this={anchor} class="scroll-anchor" />
