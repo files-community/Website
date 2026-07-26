@@ -15,6 +15,7 @@
 	import Book from "~icons/fluent/book-24-regular";
 	import News from "~icons/fluent/news-24-regular";
 	import Download from "~icons/fluent/arrow-download-24-regular";
+	import Heart from "~icons/fluent/heart-24-regular";
 	import { afterNavigate, onNavigate } from "$app/navigation";
 	import { onMount } from "svelte";
 	// import PaintBrush from "~icons/fluent/paint-brush-24-regular";
@@ -37,6 +38,12 @@
 			name: $_("navbar.news", defaultI18nValues),
 			path: "/blog",
 			icon: News,
+		},
+		{
+			name: $_("navbar.donate", defaultI18nValues),
+			path: `https://github.com/${github.owner}/${github.repo}?sponsor`,
+			external: true,
+			icon: Heart,
 		},
 		{
 			name: $_("navbar.download"),

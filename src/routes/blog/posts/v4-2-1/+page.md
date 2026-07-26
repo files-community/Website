@@ -18,7 +18,7 @@ The icons in the sidebar have been updated for a cleaner and more consistent loo
 
 ### Auto size columns to fit
 
-A new setting lets columns in [Details View](/docs/features/layout-modes/#details-view) automatically resize to fit their contents, so long file names and other properties are no longer clipped by the default column widths.
+A new setting lets columns in [Details View](/docs/customize-settings/layout/#details-view) automatically resize to fit their contents, so long file names and other properties are no longer clipped by the default column widths.
 
 ### Improved behavior when opening encrypted archives
 

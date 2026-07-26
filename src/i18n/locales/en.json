@@ -134,7 +134,7 @@
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Report Bug",
 		"request_feature": "Request Feature",
-		"sponsor": "Sponsor",
+		"donate": "Donate",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
 		"support": "Support",
@@ -144,6 +144,7 @@
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
+		"donate": "Donate",
 		"download": "Download",
 		"themes": "Themes",
 		"discord": "Discord",
@@ -151,8 +152,17 @@
 	},
 	"download": {
 		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Donate",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"channels": {
+			"stable": "Stable",
+			"preview": "Preview"
+		},
 		"microsoft_store": {
 			"title": "Download Files",
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
@@ -161,9 +171,15 @@
 			"title": "Download Insider Preview",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
 		"self_signed": {
 			"link_text": "getting started page",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+			"description": "Looking for other installation methods such as WinGet, Chocolatey, or an offline installer? View more options on our "
 		}
 	}
 }

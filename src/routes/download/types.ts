@@ -5,4 +5,6 @@ export type DownloadSource = Readonly<{
 	icon: string;
 	darkModeIcon?: string;
 	external?: boolean;
+	paid?: boolean;
+	version?: string;
 }>;
