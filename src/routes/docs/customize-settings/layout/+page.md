@@ -28,12 +28,12 @@ Choose from several layout modes based on your workflow or visual preferences:
 
 Choose the attribute used to order your items:
 
-- Name  
-- Date modified  
-- Date created  
-- Size  
-- Type  
-- Tag  
+- Name
+- Date modified
+- Date created
+- Size
+- Type
+- Tag
 
 ### Sort in descending order
 
@@ -43,21 +43,21 @@ Enable this to reverse the sorting direction (e.g., Z–A or newest first).
 
 Set the order in which folders and files appear:
 
-- Sort folders before files  
-- Sort files before folders  
-- Sort files and folders together  
+- Sort folders before files
+- Sort files before folders
+- Sort files and folders together
 
 ### Group by
 
 Organize your items into groups by:
 
-- None  
-- Name  
-- Date modified  
-- Date created  
-- Size  
-- Type  
-- Tag  
+- None
+- Name
+- Date modified
+- Date created
+- Size
+- Type
+- Tag
 
 ### Group in descending order
 
@@ -71,10 +71,14 @@ Customize the time interval used for grouping by date (e.g., day, month, year).
 
 When using **Details** layout, you can customize which columns are shown. Support for additional columns is planned, but in the meantime you can toggle the the following columns:
 
-- Tags  
-- Size  
-- Type  
-- Date modified  
-- Date created  
+- Tags
+- Size
+- Type
+- Date modified
+- Date created
 
 Note: To set different columns per folder, make sure **sync layout and sorting preferences** is turned off.
+
+### Auto size columns to fit
+
+When enabled, columns in **Details** layout are automatically resized to fit their contents so that long file names and other properties are not clipped by the default column widths.
