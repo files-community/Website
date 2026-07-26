@@ -104,7 +104,7 @@
 				href="https://github.com/{links.github.owner}/{links.github
 					.repo}?sponsor"
 			>
-				{$_("footer.sponsor", defaultI18nValues)}
+				{$_("footer.donate", defaultI18nValues)}
 			</Button>
 
 			<Button variant="hyperlink" href="/docs/contributing/code-style">

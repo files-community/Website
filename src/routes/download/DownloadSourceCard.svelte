@@ -1,28 +1,20 @@
 <script lang="ts">
-	import { externalLink } from "$lib";
+	import { defaultI18nValues, externalLink } from "$lib";
 	import { TextBlock } from "fluent-svelte";
+	import { _ } from "svelte-i18n";
 	import type { DownloadSource } from "./types";
 
 	export let source: DownloadSource;
 
-	let link: HTMLAnchorElement;
-
 	$: filename = source.href.substring(source.href.lastIndexOf("/") + 1);
-
-	const downloadAppInstaller = () => link.click();
-
-	const downloadWithKeyboard = (e: KeyboardEvent) => {
-		if (e.key === "Enter") downloadAppInstaller();
-	};
 </script>
 
-<!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<article
-	tabindex="0"
+<a
 	class="download-source"
-	on:click={downloadAppInstaller}
-	on:keydown={downloadWithKeyboard}
+	class:promoted={source.paid}
+	href={source.href}
+	download={!source.external ? filename : undefined}
+	{...externalLink}
 >
 	<picture>
 		<source media="(prefers-color-scheme: dark)" srcset={source.darkModeIcon} />
@@ -33,23 +25,55 @@
 		/>
 	</picture>
 	<div class="label-container">
-		<TextBlock variant="title" style="text-align: center;"
-			>{source.name}</TextBlock
-		>
+		<div class="title-container">
+			<div class="title-row">
+				<TextBlock variant="subtitle">{source.name}</TextBlock>
+				{#if source.paid}
+					<span class="recommended-tag">
+						{$_("download.recommended", defaultI18nValues)}
+					</span>
+				{/if}
+			</div>
+			{#if source.version}
+				<TextBlock class="download-source-version">
+					{$_("download.version_label", {
+						values: { version: source.version },
+					})}
+				</TextBlock>
+			{/if}
+		</div>
 		<TextBlock class="download-source-description">
 			{source.description}
 		</TextBlock>
-		<a
-			href={source.href}
-			download={!source.external ? filename : ""}
-			{...externalLink}
-			bind:this={link}
-			style:display="none"
-		>
-			download
-		</a>
 	</div>
-</article>
+	<div class="action-container">
+		{#if source.external}
+			<picture>
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/download-sources/msstore-badge-light.svg"
+				/>
+				<img
+					class="download-source-badge"
+					src="/download-sources/msstore-badge-dark.svg"
+					alt={$_("download.store_badge_alt", defaultI18nValues)}
+				/>
+			</picture>
+		{:else}
+			<picture>
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/download-sources/classic-installer-badge-light.png"
+				/>
+				<img
+					class="download-source-badge"
+					src="/download-sources/classic-installer-badge-dark.png"
+					alt={$_("download.classic_badge_alt", defaultI18nValues)}
+				/>
+			</picture>
+		{/if}
+	</div>
+</a>
 
 <style lang="scss">
 	.download-source {
@@ -59,11 +83,29 @@
 		transition: var(--fds-control-normal-duration) ease;
 		background: var(--fds-card-background-default);
 		cursor: pointer;
+		color: inherit;
+		text-decoration: none;
 
 		display: flex;
 		flex-direction: row;
-		place-items: center;
-		padding: 3rem 6rem;
+		align-items: center;
+		gap: 1.5rem;
+		padding: 1.25rem 1.5rem;
+
+		&.promoted {
+			border-color: color-mix(
+				in srgb,
+				var(--fds-accent-default) 45%,
+				var(--fds-card-stroke-default)
+			);
+			background:
+				linear-gradient(
+					135deg,
+					color-mix(in srgb, var(--fds-accent-default) 9%, transparent),
+					transparent 55%
+				),
+				var(--fds-card-background-default);
+		}
 
 		@media (prefers-reduced-motion: no-preference) {
 			&:hover {
@@ -82,21 +124,80 @@
 				text-align: left;
 				max-width: 50rem;
 			}
+
+			.download-source-version {
+				color: var(--fds-text-secondary);
+			}
+		}
+
+		.recommended-tag {
+			padding: 0.125rem 0.625rem;
+			border-radius: 1rem;
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 16px;
+			white-space: nowrap;
+			color: var(--fds-text-on-accent-primary);
+			background: var(--fds-accent-default);
 		}
 
 		.download-source-icon {
-			max-inline-size: 10rem;
+			max-inline-size: 3.5rem;
 			transition: var(--fds-control-normal-duration) ease;
 		}
 
 		.label-container {
-			margin-left: 4rem;
 			display: flex;
-			align-items: flex-start;
-			justify-items: stretch;
 			flex-direction: column;
+			align-items: flex-start;
+			gap: 0.25rem;
 			flex-grow: 1;
+		}
+
+		.title-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.title-row {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			gap: 0.5rem;
+		}
+
+		.action-container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 0.25rem;
+			flex-shrink: 0;
+
+			.download-source-badge {
+				block-size: 52px;
+			}
+		}
+
+		@media (max-width: 648px) {
+			flex-direction: column;
 			gap: 1rem;
+			padding: 1.5rem 1.25rem;
+
+			:global(.download-source-description) {
+				text-align: center;
+			}
+
+			.label-container {
+				align-items: center;
+			}
+
+			.title-container {
+				align-items: center;
+			}
+
+			.title-row {
+				justify-content: center;
+			}
 		}
 	}
 </style>
