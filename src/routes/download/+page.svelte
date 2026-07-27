@@ -21,27 +21,42 @@
 
 	const { stableVersion, previewVersion } = data;
 
-	type Channel = "stable" | "preview";
+	type Method = "store" | "classic";
 
-	const channels: Channel[] = ["stable", "preview"];
+	const methods: Method[] = ["store", "classic"];
 
-	let channel: Channel = "stable";
+	let method: Method = "store";
 
 	const downloadSources = {
-		stable: [
+		store: [
 			{
 				name: $_("download.stable_name", defaultI18nValues),
 				description: $_(
 					"download.microsoft_store.description",
 					defaultI18nValues,
 				),
-				href: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
+				href: `https://apps.microsoft.com/detail/9nghp3dx8hdx?cid=FilesWebsite`,
+				protocolHref: `ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite`,
 				icon: "/branding/logo-light.svg",
 				darkModeIcon: "/branding/logo-dark.svg",
 				external: true,
 				paid: true,
+				recommended: true,
 				version: stableVersion,
 			},
+			{
+				name: $_("download.preview_name", defaultI18nValues),
+				description: $_("download.preview.description", defaultI18nValues),
+				href: `https://apps.microsoft.com/detail/9NSQD9PKV3SS?cid=FilesWebsite`,
+				protocolHref: `ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite`,
+				icon: "/download-sources/preview_light.svg",
+				darkModeIcon: "/download-sources/preview_dark.svg",
+				external: true,
+				paid: true,
+				version: previewVersion,
+			},
+		],
+		classic: [
 			{
 				name: $_("download.stable_name", defaultI18nValues),
 				description: $_(
@@ -52,18 +67,6 @@
 				icon: "/branding/logo-light.svg",
 				darkModeIcon: "/branding/logo-dark.svg",
 				version: stableVersion,
-			},
-		],
-		preview: [
-			{
-				name: $_("download.preview_name", defaultI18nValues),
-				description: $_("download.preview.description", defaultI18nValues),
-				href: `ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite`,
-				icon: "/download-sources/preview_light.svg",
-				darkModeIcon: "/download-sources/preview_dark.svg",
-				external: true,
-				paid: true,
-				version: previewVersion,
 			},
 			{
 				name: $_("download.preview_name", defaultI18nValues),
@@ -77,7 +80,7 @@
 				version: previewVersion,
 			},
 		],
-	} as const satisfies Record<Channel, readonly DownloadSource[]>;
+	} as const satisfies Record<Method, readonly DownloadSource[]>;
 </script>
 
 <Metadata title="Files • Download" image="download" />
@@ -94,19 +97,19 @@
 		</TextBlock>
 	</header>
 	<div class="channel-selector">
-		{#each channels as ch}
+		{#each methods as m}
 			<button
-				class:selected={channel === ch}
-				aria-pressed={channel === ch}
-				data-text={$_(`download.channels.${ch}`, defaultI18nValues)}
-				on:click={() => (channel = ch)}
+				class:selected={method === m}
+				aria-pressed={method === m}
+				data-text={$_(`download.methods.${m}`, defaultI18nValues)}
+				on:click={() => (method = m)}
 			>
-				{$_(`download.channels.${ch}`, defaultI18nValues)}
+				{$_(`download.methods.${m}`, defaultI18nValues)}
 			</button>
 		{/each}
 	</div>
 	<section class="download-sources">
-		{#each downloadSources[channel] as source, i (source.href)}
+		{#each downloadSources[method] as source, i (source.href)}
 			<div
 				in:fly={{
 					y: 8,

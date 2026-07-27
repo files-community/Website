@@ -159,9 +159,9 @@
 		"classic_badge_alt": "Download Installer",
 		"stable_name": "{FilesName}",
 		"preview_name": "{FilesName} Preview",
-		"channels": {
-			"stable": "Stable",
-			"preview": "Preview"
+		"methods": {
+			"store": "Microsoft Store",
+			"classic": "Classic Installer"
 		},
 		"microsoft_store": {
 			"title": "Download Files",
