@@ -7,6 +7,42 @@
 	export let source: DownloadSource;
 
 	$: filename = source.href.substring(source.href.lastIndexOf("/") + 1);
+
+	// Try the ms-windows-store: protocol first and fall back to the web
+	// listing if nothing handles it. If the Store app opens, this window
+	// loses focus/visibility, which cancels the fallback.
+	const openWithProtocol = (e: MouseEvent) => {
+		const { protocolHref, href } = source;
+
+		if (
+			!protocolHref ||
+			e.button !== 0 ||
+			e.ctrlKey ||
+			e.metaKey ||
+			e.shiftKey ||
+			e.altKey ||
+			!navigator.userAgent.includes("Windows")
+		)
+			return;
+
+		e.preventDefault();
+
+		let cancelled = false;
+		const cancel = () => (cancelled = true);
+		window.addEventListener("blur", cancel, { once: true });
+		document.addEventListener("visibilitychange", cancel, { once: true });
+
+		window.setTimeout(() => {
+			window.removeEventListener("blur", cancel);
+			document.removeEventListener("visibilitychange", cancel);
+			if (cancelled || document.visibilityState !== "visible") return;
+			// Still here: no protocol handler took over, open the web listing.
+			if (!window.open(href, "_blank", "noopener,noreferrer"))
+				location.assign(href);
+		}, 1500);
+
+		location.assign(protocolHref);
+	};
 </script>
 
 <a
@@ -15,6 +51,7 @@
 	href={source.href}
 	download={!source.external ? filename : undefined}
 	{...externalLink}
+	on:click={openWithProtocol}
 >
 	<picture>
 		<source media="(prefers-color-scheme: dark)" srcset={source.darkModeIcon} />
@@ -28,7 +65,7 @@
 		<div class="title-container">
 			<div class="title-row">
 				<TextBlock variant="subtitle">{source.name}</TextBlock>
-				{#if source.paid}
+				{#if source.recommended}
 					<span class="recommended-tag">
 						{$_("download.recommended", defaultI18nValues)}
 					</span>
