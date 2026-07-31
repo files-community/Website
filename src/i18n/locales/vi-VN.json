@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "Khuyên dùng",
+			"classic": "Tùy chọn khác"
+		},
 		"title": "Tải {FilesName}",
 		"donation_description": "{FilesName} là dự án hướng đến cộng đồng để cải thiện và phát triển. Nếu bạn muốn ủng hộ, hãy mua {FilesName} từ Microsoft Store hoặc ủng hộ qua GitHub nếu bạn sử dụng trình cài đặt thông thường.",
 		"donation_button": "Ủng hộ",

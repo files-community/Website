@@ -144,6 +144,10 @@
 		"github": "Github"
 	},
 	"download": {
+		"methods": {
+			"store": "推荐",
+			"classic": "更多选项"
+		},
 		"title": "下载 {FilesName}",
 		"donation_description": "{FilesName} 是一个由社区主导的项目，为了持续成长和改进，我们需要大家的支持。请考虑从 Microsoft Store 购买 {FilesName}，或者如果您选择使用经典安装程序，请务必在 GitHub 上给予支持。",
 		"donation_button": "捐赠",

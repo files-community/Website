@@ -8,7 +8,7 @@ author: files-community
 
 Today we are releasing **Files Preview v4.0.22** for users of the preview version.
 
-An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## What's New in Files v4.0.22
 
@@ -24,13 +24,11 @@ We're excited to be adding support for PowerToys Peek, a popular tool for previe
 
 - Added support for AND OR operators when searching for tags.
 
-
 ## Fixes
 
 - Fixed a crash that would occur when resizing the window in Dual Pane mode.
 - Fixed a crash that would occur when switching git branches during a merge conflict.
 - Fixed an issue where PNG-based .ico files with black backgrounds displayed incorrectly in the sidebar.
-
 
 ## Conclusion
 
@@ -40,4 +38,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

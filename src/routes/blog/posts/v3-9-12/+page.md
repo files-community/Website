@@ -6,7 +6,7 @@ date: 7/20/2025
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.9.12** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.9.12** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -60,8 +60,7 @@ For even faster access, users can assign a custom keyboard shortcut from the [ac
     <figcaption>Filter header</figcaption>
 </figure>
 
-
-### Expanded cloud provider support  
+### Expanded cloud provider support
 
 Files now supports OX Drive integration, the full list of available providers can be viewed on our [cloud drive](/docs/features/cloud-drives) documentation.
 
@@ -79,4 +78,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

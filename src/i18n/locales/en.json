@@ -160,8 +160,8 @@
 		"stable_name": "{FilesName}",
 		"preview_name": "{FilesName} Preview",
 		"methods": {
-			"store": "Microsoft Store",
-			"classic": "Files"
+			"store": "Recommended",
+			"classic": "More options"
 		},
 		"microsoft_store": {
 			"title": "Download Files",

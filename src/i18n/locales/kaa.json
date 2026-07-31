@@ -144,6 +144,10 @@
 		"github": "Github"
 	},
 	"download": {
+		"methods": {
+			"store": "Recommended",
+			"classic": "More options"
+		},
 		"title": "{FilesName}dı júklep alıw",
 		"donation_description": "{FilesName} - bul jámiyetshilik tárepinen basqarılatuǵın joybar bolıp, ósiw hám jetilistiriwde sizdiń járdemińizge mútáj. Eger klassik ornatıshıdan paydalansańız, Microsoft dúkanınan {FilesName} satıp alınǵan zat alıń yamasa GitHub arqalı bizge járdem beriń.",
 		"donation_button": "Qollap-quwatlaw",

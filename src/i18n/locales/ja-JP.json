@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "おすすめ",
+			"classic": "その他のオプション"
+		},
 		"title": "{FilesName} をダウンロード",
 		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から {FilesName} を購入するか、クラシック インストーラーを使用する場合は GitHub でサポートすることをぜひ検討してください。",
 		"donation_button": "寄付",

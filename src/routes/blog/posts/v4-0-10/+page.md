@@ -8,7 +8,7 @@ author: files-community
 
 Today we are releasing **Files v4.0.10** for all users.
 
-An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## What's New in Files v4.0.10
 
@@ -20,7 +20,6 @@ Some users may notice a slight improvement in startup speed.
 
 You can now clone GitLab repositories. Simply drag and drop the repository URL into Files, or use the `Clone a git repo` command from the Command Palette.
 
-
 ## Fixes
 
 - Fixed an issue where clicking the file pane failed to close the Omnibar.
@@ -30,11 +29,9 @@ You can now clone GitLab repositories. Simply drag and drop the repository URL i
 - Fixed an issue where the delete tag button had poor styling.
 - Fixed a crash that sometimes occurred when opening pinned items.
 
-
 ## Known Issues
 
 We're currently investigating a regression in Files v4.0 where opening the context menu sometimes causes the app to crash.
-
 
 ## Conclusion
 
@@ -44,4 +41,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

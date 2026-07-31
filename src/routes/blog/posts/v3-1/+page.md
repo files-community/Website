@@ -6,7 +6,7 @@ date: 1/8/2024
 author: files-community
 ---
 
-We're excited to announce that starting today, Files v3.1 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yair100) to help support the project.
+We're excited to announce that starting today, Files v3.1 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](/sponsor) to help support the project.
 
 **TL;DR:** Files v3.1 adds an icon to the system tray, support for opening a minimized window on startup, smart extract, an option to prioritize files when sorting, group files by day, and more. Continue reading to learn more about these changes.
 
@@ -34,7 +34,7 @@ Smart Extract is a new feature that will automatically choose the extraction mod
 
 ### Prioritize files when sorting
 
-We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together". 
+We added an option to prioritize files when sorting. Enabling this option will sort files and folders separately with files being placed at the top of the list. This feature is an addition to the existing options to "sort folders first" and "sort files and folders together".
 
 <figure>
     <img src="/blog-resources/v3-1/SortFilesFirst.webp" alt="Prioritize files when sorting" />
@@ -87,4 +87,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](/sponsor)

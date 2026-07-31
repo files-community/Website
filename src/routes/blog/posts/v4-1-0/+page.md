@@ -6,7 +6,7 @@ date: 5/11/2026
 author: files-community
 ---
 
-Today we are releasing **Files v4.1** for all users. Existing users will see an update icon in the top-right of the app. New users can grab it from our [download](/download/) page or the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite). If you'd like to support the project, you can also [sponsor us on GitHub](https://github.com/sponsors/yair100).
+Today we are releasing **Files v4.1** for all users. Existing users will see an update icon in the top-right of the app. New users can grab it from our [download](/download/) page or the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite). If you'd like to support the project, you can also [sponsor us on GitHub](/sponsor).
 
 ## Contents
 
@@ -118,4 +118,4 @@ Thank you for using Files! :)
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

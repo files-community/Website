@@ -6,7 +6,7 @@ date: 1/22/2025
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.8.13** for users of the preview version. New users can get started from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.8.13** for users of the preview version. New users can get started from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -20,14 +20,14 @@ Today we are releasing **Files Preview v3.8.13** for users of the preview versio
 </figure>
 
 - Cards include the following metadata:
-    - File name
-    - Type
-    - Size
-    - Modified date (displayd on medium and large cards)
-    - For images, the dimensions are displayed instead of the modification date.
-    - For media files, the duration is displayed instead of the modification date.
-    - Tags
-    - Sync status
+  - File name
+  - Type
+  - Size
+  - Modified date (displayd on medium and large cards)
+  - For images, the dimensions are displayed instead of the modification date.
+  - For media files, the duration is displayed instead of the modification date.
+  - Tags
+  - Sync status
 
 <figure>
     <img src="/blog-resources/v3-8-13/CardsViewMedium.webp" alt="Cards View (medium size)" />
@@ -67,4 +67,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

@@ -8,12 +8,11 @@ author: files-community
 
 Today we are releasing **Files v4.0.28** for all users.
 
-An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## What's Coming Soon
 
 We're excited to share that we're actively working on performance improvements to make thumbnails load faster. These changes aren't included in today's stable release, but we hope to begin testing them in the Preview channel in the near future. We'll share more updates as progress and testing continues.
-
 
 ## What's New in Files v4.0.28
 
@@ -45,7 +44,6 @@ Smooth scrolling can now be disabled from **Settings → General → Scrolling**
   <img src="/blog-resources/v4-0-28/SmoothScrolling.webp" alt="Smooth Scrolling Setting" />
 </figure>
 
-
 ## Fixes
 
 - Fixed an issue where the 'Open With' menu was missing for script files.
@@ -56,7 +54,6 @@ Smooth scrolling can now be disabled from **Settings → General → Scrolling**
 - Fixed an issue with tag searches containing spaces.
 - Fixed inconsistent file type display for hidden items.
 
-
 ## Conclusion
 
 As always, we appreciate your feedback and suggestions on how to improve Files. You can reach us on [Discord](https://discord.gg/files) and on [GitHub](https://github.com/files-community/Files/).
@@ -65,4 +62,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

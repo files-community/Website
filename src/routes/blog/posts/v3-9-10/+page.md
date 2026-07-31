@@ -6,7 +6,7 @@ date: 6/16/2025
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.9.10** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.9.10** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -32,11 +32,11 @@ Opening the Status Center now automatically clears the notification badge, provi
 
 Added the option to browse all supported icon file formats when customizing folder and file icons.
 
-### Improved responsive design on the actions page  
+### Improved responsive design on the actions page
 
 We've enhanced the responsive design of the actions settings page. On smaller screens, text now wraps correctly, and buttons adjust dynamically to remain visible.
 
-### Filter commands on the actions page  
+### Filter commands on the actions page
 
 We added a search box to the actions settings page, allowing users to quickly filter and find commands with ease.
 
@@ -57,7 +57,7 @@ Access keys are now displayed in the right click context menu when holding down 
 
 ### Renaming
 
-- Fixed an issue where the home key wouldn't move focus when renaming items.  
+- Fixed an issue where the home key wouldn't move focus when renaming items.
 
 ### Recycle Bin
 
@@ -71,4 +71,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)
