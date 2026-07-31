@@ -6,7 +6,7 @@ date: 5/8/2024
 author: files-community
 ---
 
-We're excited to announce that starting today, Files v3.4 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](https://github.com/sponsors/yair100) to help support the project.
+We're excited to announce that starting today, Files v3.4 is now available. If you already have Files, there should be a notification on the toolbar to install the update. Otherwise, you can download Files for free from our [download page](/download/). You can also purchase Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsor us on [GitHub](/sponsor) to help support the project.
 
 **TL;DR:** The latest update, Files v3.4, introduces new features including file name filtering, customizable keyboard shortcuts, personal background images, and a Listary integration, among others. Continue reading to learn more about these enhancements.
 
@@ -28,7 +28,6 @@ Once selected, Files will update to display your image as a beautiful background
     <img src="/blog-resources/v3-4/BackgroundImage.webp" alt="Custom background image" />
 </figure>
 
-
 ### Remap keyboard shortcuts
 
 We added a new settings page for Actions that enables you to personalize keyboard shortcuts. This feature lets you assign shortcuts to any action and offers the flexibility to modify existing key bindings. Customize your keyboard layout to enhance your workflow efficiency.
@@ -36,7 +35,6 @@ We added a new settings page for Actions that enables you to personalize keyboar
 <figure>
     <img src="/blog-resources/v3-4/Actions.webp" alt="Actions settings page" />
 </figure>
-
 
 ### Filter file names in real-time
 
@@ -47,7 +45,6 @@ This real-time filtering saves time and is particularly beneficial for users who
 <figure>
     <img src="/blog-resources/v3-4/Filter.webp" alt="Filter file names" />
 </figure>
-
 
 ### Added an integration with Listary
 
@@ -77,14 +74,13 @@ For additional details and support regarding Listary, you can visit their websit
 
 ### New localizations added
 
-Responding to user requests, we’ve expanded our language support to include Albanian, Khmer, Kurdish, and Lithuanian.  Our localizations are largely maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin https://crowdin.com/project/files-app.
-
+Responding to user requests, we’ve expanded our language support to include Albanian, Khmer, Kurdish, and Lithuanian. Our localizations are largely maintained by our dedicated community members. If you'd like to get involved, we invite you to join us on Crowdin https://crowdin.com/project/files-app.
 
 ## Changes and Improvements
 
 - The Recent Files widget now respects the setting for displaying file extensions
 - Improved the display of keyboard shortcuts in the Command Palette
-- Added support to the sidebar for multiple SharePoint drives 
+- Added support to the sidebar for multiple SharePoint drives
 - Added an integration for the Lucid Link cloud provider
 - Added audio bitrate, and video to the list of properties in the Details Pane
 - Fixed an issue where pinned items weren't displayed in the sidebar
@@ -126,4 +122,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from our [download page](/download/) | Sponsor us on [GitHub](https://github.com/sponsors/yair100)
+Download Files from our [download page](/download/) | Sponsor us on [GitHub](/sponsor)

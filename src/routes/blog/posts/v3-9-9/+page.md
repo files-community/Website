@@ -6,11 +6,11 @@ date: 5/12/2025
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.9.9** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.9.9** for users of the preview version. New users can get started from our [download page](/download/). If you'd like to support the project, consider purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
-### Redesigned Files Preview icon  
+### Redesigned Files Preview icon
 
 We're excited to introduce an updated icon for Files Preview! Additionally, a new icon for Files Stable will debut in the v4 update later this year.
 
@@ -19,27 +19,27 @@ We're excited to introduce an updated icon for Files Preview! Additionally, a ne
     <figcaption>Updated icon for Files Preview</figcaption>
 </figure>
 
-### Enhanced Home Page performance  
+### Enhanced Home Page performance
 
-We've optimized the Quick Access widget on the Home Page to improve performance.  
+We've optimized the Quick Access widget on the Home Page to improve performance.
 
-### Expanded cloud provider support  
+### Expanded cloud provider support
 
-Files now supports additional [cloud drive](/docs/features/cloud-drives) providers, including Magenta and Sync.  
+Files now supports additional [cloud drive](/docs/features/cloud-drives) providers, including Magenta and Sync.
 
 ## Fixes
 
-### Shortcuts  
+### Shortcuts
 
-- Resolved an issue preventing folders ending in '.url' from opening properly.  
+- Resolved an issue preventing folders ending in '.url' from opening properly.
 
-### Start Menu tile  
+### Start Menu tile
 
-- Fixed the display name for the 'Files - Preview' tile in the Start Menu.  
+- Fixed the display name for the 'Files - Preview' tile in the Start Menu.
 
-### Properties window  
+### Properties window
 
-- Fixed an issue where the sidebar would flicker when resizing the properties window.  
+- Fixed an issue where the sidebar would flicker when resizing the properties window.
 
 ## Conclusion
 
@@ -49,4 +49,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

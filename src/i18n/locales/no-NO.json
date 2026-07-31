@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "Anbefalt",
+			"classic": "Flere alternativer"
+		},
 		"title": "Last ned {FilesName}",
 		"donation_description": "{FilesName} er et samfunns-drevet prosjekt som avhenger av din støtte til å vokse og bli bedre. Vurder å kjøpe {FilesName} gjennom Microsoft Store eller støtte oss på GitHub dersom du bruker den klassiske installatøren.",
 		"donation_button": "Doner",

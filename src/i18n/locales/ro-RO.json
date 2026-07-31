@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "Recomandat",
+			"classic": "Mai multe opțiuni"
+		},
 		"title": "Descărcați {FilesName}",
 		"donation_description": "{FilesName} este un proiect condus de comunitate care depinde de sprijinul tău pentru a crește și a se îmbunătăți. Vă rugăm să luați în considerare achiziționarea {FilesName} prin Microsoft Store sau sprijiniți-ne pe GitHub dacă folosiți instalarea clasică.",
 		"donation_button": "Donează",

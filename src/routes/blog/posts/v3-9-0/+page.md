@@ -6,7 +6,7 @@ date: 1/29/2025
 author: files-community
 ---
 
-I'm excited to announce that Files v3.9 is now available! 🎉 Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+I'm excited to announce that Files v3.9 is now available! 🎉 Existing users will receive an update notification in the top right corner of the app, while new users can get started for free from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -117,11 +117,11 @@ You can now browse for `.icl` files on the customize page in the **Properties Wi
 
 We've added individual launch protocols for each branch of Files, making it easier to work with different versions.
 
-| Branch  | Alias             | URI Scheme      |
-|---------|-------------------|-----------------|
-| Dev     | files-dev.exe     | files-dev:      |
-| Preview | files-preview.exe | files-preview:  |
-| Stable  | files-stable.exe  | files-stable:   |
+| Branch  | Alias             | URI Scheme     |
+| ------- | ----------------- | -------------- |
+| Dev     | files-dev.exe     | files-dev:     |
+| Preview | files-preview.exe | files-preview: |
+| Stable  | files-stable.exe  | files-stable:  |
 
 ### Performance enhancements
 
@@ -154,7 +154,6 @@ The number of open tabs is no longer displayed in the Windows Taskbar.
 ### Cloud Drive support
 
 Added support for Lucid Link v3.
-
 
 ## Fixes
 
@@ -217,7 +216,6 @@ Added support for Lucid Link v3.
 
 - Fixed an issue where the title bar drag region was sometimes missing.
 
-
 ## Contributors
 
 Files is made possible through the collaborative efforts of the open-source community on GitHub. The following developers have contributed to this release:
@@ -238,7 +236,6 @@ Files is made possible through the collaborative efforts of the open-source comm
 - @wharvex
 - @XTorLukas
 
-
 ## Conclusion
 
 As always, we appreciate your feedback and suggestions on how we improve Files. You can reach us on [Discord](https://discord.gg/files) and on [GitHub](https://github.com/files-community/Files/).
@@ -247,4 +244,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

@@ -6,7 +6,7 @@ title: Install
   import { InfoBar } from "fluent-svelte";
 </script>
 
-Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](https://github.com/sponsors/yair100) if you install the free version.
+Files is a community-driven project that depends on your support to grow and improve. Please consider purchasing Files through the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or supporting us on [GitHub](/sponsor) if you install the free version.
 
 <InfoBar title="Note" severity="information">
 	The Windows Update and Delivery Optimization services will need to be enabled in order for the installation to work. Modified versions of Windows or running "debloat" scripts/programs are often missing these components and aren't supported. Check the troubleshooting section below for further details.
@@ -41,11 +41,13 @@ Files is a community-driven project that depends on your support to grow and imp
 The [Winget](https://github.com/microsoft/winget-pkgs) package is maintained by a third party.
 
 Stable branch
+
 ```
 winget install -e --id FilesCommunity.Files
 ```
 
-Preview branch 
+Preview branch
+
 ```
 winget install -e --id FilesCommunity.FilesPreview
 ```
@@ -55,11 +57,13 @@ winget install -e --id FilesCommunity.FilesPreview
 The [Chocolatey](https://community.chocolatey.org) package is maintained by a third party.
 
 Stable branch
+
 ```
 choco install files
 ```
 
 Preview branch
+
 ```
 choco install filespreview
 ```
@@ -69,15 +73,16 @@ choco install filespreview
 The [Scoop](https://scoop.sh) package is maintained by a third party.
 
 Stable branch
+
 ```
 scoop install nonportable/files-np
 ```
 
 Preview branch
+
 ```
 scoop install nonportable/files-preview-np
 ```
-
 
 ### Offline install
 
@@ -123,7 +128,6 @@ https://cdn.files.community/files/stable/Files.Package/Dependencies/ARM64/Micros
 
 https://cdn.files.community/files/stable/Files.Package/Files.Package_x64_arm64.msixbundle
 
-
 Preview branch
 
 https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Microsoft.VCLibs.ARM64.14.00.Desktop.appx
@@ -135,7 +139,6 @@ https://cdn.files.community/files/preview/Files.Package/Dependencies/ARM64/Micro
 https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.msixbundle
 
 </details>
-
 
 ## Keep Files up to date
 

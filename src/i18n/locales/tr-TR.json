@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "Önerilen",
+			"classic": "Diğer seçenekler"
+		},
 		"title": "{FilesName}'ı İndir",
 		"donation_description": "{FilesName} büyümek ve gelişmek için sizin desteğinize bağlı olan, topluluk odaklı bir projedir. Klasik yükleyiciyi kullanıyorsanız lütfen Microsoft Mağazası aracılığıyla {FilesName} satın almayı veya GitHub'da bizi desteklemeyi düşünün.",
 		"donation_button": "Bağış Yap",

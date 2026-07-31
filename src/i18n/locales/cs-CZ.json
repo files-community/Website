@@ -144,6 +144,10 @@
 		"github": "GitHub"
 	},
 	"download": {
+		"methods": {
+			"store": "Doporučeno",
+			"classic": "Další možnosti"
+		},
 		"title": "Stáhnout {FilesName}",
 		"donation_description": "{FilesName} je komunitní projekt, jehož růst a zlepšování závisí na vaší podpoře. Zvažte prosím zakoupení {FilesName} prostřednictvím obchodu Microsoft Store nebo nás podpořte na GitHubu, pokud používáte klasický instalátor.",
 		"donation_button": "Přispět",

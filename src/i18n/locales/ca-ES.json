@@ -144,6 +144,10 @@
 		"github": "Github"
 	},
 	"download": {
+		"methods": {
+			"store": "Recomanat",
+			"classic": "Més opcions"
+		},
 		"title": "Baixa {FilesName}",
 		"donation_description": "{FilesName} és un projecte impulsat per la comunitat que depèn del vostre suport per créixer i millorar. Si us plau, considereu adquirir {FilesName} a través de la Microsoft Store o donar-nos suport a GitHub si feu servir l'instal·lador clàssic.",
 		"donation_button": "Donar",

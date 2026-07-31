@@ -41,8 +41,7 @@
 		},
 		{
 			name: $_("navbar.donate", defaultI18nValues),
-			path: `https://github.com/${github.owner}/${github.repo}?sponsor`,
-			external: true,
+			path: "/sponsor",
 			icon: Heart,
 		},
 		{

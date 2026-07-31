@@ -6,7 +6,7 @@ date: 12/19/2024
 author: files-community
 ---
 
-Today we are releasing **Files Preview v3.8.5** for users of the preview version. New users can get started from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](https://github.com/sponsors/yair100). Your support is greatly appreciated but entirely optional.
+Today we are releasing **Files Preview v3.8.5** for users of the preview version. New users can get started from our [download page](/download/). Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Changes
 
@@ -34,11 +34,11 @@ Today we are releasing **Files Preview v3.8.5** for users of the preview version
 
 - Added individual launch protocols for each branch of Files.
 
-|Branch|Alias|URI scheme|
-|---|---|---|
-|Dev|files-dev.exe|files-dev:|
-|Preview|files-preview.exe|files-preview:|
-|Stable|files-stable.exe|files-stable:|
+| Branch  | Alias             | URI scheme     |
+| ------- | ----------------- | -------------- |
+| Dev     | files-dev.exe     | files-dev:     |
+| Preview | files-preview.exe | files-preview: |
+| Stable  | files-stable.exe  | files-stable:  |
 
 ## Fixes
 
@@ -72,4 +72,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](https://github.com/sponsors/yair100/)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)

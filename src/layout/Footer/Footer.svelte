@@ -98,12 +98,7 @@
 		</div>
 		<div class="column">
 			<p>{$_("footer.contribute", defaultI18nValues)}</p>
-			<Button
-				variant="hyperlink"
-				{...externalLink}
-				href="https://github.com/{links.github.owner}/{links.github
-					.repo}?sponsor"
-			>
+			<Button variant="hyperlink" href="/sponsor">
 				{$_("footer.donate", defaultI18nValues)}
 			</Button>
 
