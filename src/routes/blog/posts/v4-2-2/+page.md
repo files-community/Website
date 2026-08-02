@@ -50,6 +50,18 @@ Folder listings, particularly for locations with a large number of items, now lo
 
 Compressing and extracting archives that contain a large number of files is now faster thanks to more efficient progress reporting.
 
+### Announcing a new integration with WindowSill
+
+We're excited to announce a new integration with [WindowSill](https://getwindowsill.app/), an AI-powered command bar for Windows. WindowSill now detects when Files is in focus and automatically reads the current folder and your selected items, surfacing context-aware tools right where you need them. There's no setup required — simply select an item in Files and the relevant tools are displayed in WindowSill.
+
+Depending on what you select, WindowSill offers tools such as converting or compressing images and videos, splitting or merging PDFs, converting documents and spreadsheets, and peeking inside archives without extracting them. The integration works with both the Microsoft Store and standalone versions of Files.
+
+<figure>
+    <img src="/blog-resources/v4-2-2/WindowSill.webp" alt="WindowSill showing context-aware tools for a file selected in Files" />
+</figure>
+
+To learn more about this integration, read the [full announcement](https://getwindowsill.app/blog/windowsill-supports-files-and-directory-opus) on the WindowSill website.
+
 ## Fixes
 
 - Fixed an issue where the **Customize** tab was shown in Properties for folders that don't support custom icons.
