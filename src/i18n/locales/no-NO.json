@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Bindinger til omkamp nøkkel",
 				"description": "Strøm dine arbeidsflyt ved å lage egendefinerte hurtigtaster"
+			},
+			"toolbar": {
+				"title": "Tilpasning av verktøylinje",
+				"description": "Tilpass verktøylinjen ved å legge til eller fjerne knapper fra listen over tilgjengelige handlinger."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Nyheter",
 		"download": "Last ned",
 		"contribute": "Bidra til {FilesName}",
-		"feedback": "Gi tilbakemelding",
+		"feedback": "Rapporter feil",
+		"request_feature": "Foreslå ny funksjon",
+		"donate": "Doner",
 		"style_guide": "Stilguide",
 		"translations": "Oversettelser",
 		"support": "Brukerstøtte",
@@ -138,6 +144,7 @@
 		"home": "Startside",
 		"docs": "Dokumentasjon",
 		"news": "Nyheter",
+		"donate": "Doner",
 		"download": "Nedlasting",
 		"themes": "Temaer",
 		"discord": "Splid",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Last ned {FilesName}",
-		"donation_description": "{FilesName} er et samfunns-drevet prosjekt som avhenger av din støtte til å vokse og bli bedre. Vurder å kjøpe {FilesName} gjennom Microsoft Store eller støtte oss på GitHub dersom du bruker den klassiske installatøren.",
-		"donation_button": "Doner",
+		"subtitle": "{FilesName} er et samfunns-drevet prosjekt. Å kjøpe det i Microsoft Store er den beste måten å støtte utviklingen på.",
+		"recommended": "Anbefalt",
+		"version_label": "Versjon {version}",
+		"store_badge_alt": "Få det fra Microsoft",
+		"classic_badge_alt": "Last ned installasjonsprogrammet",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Last ned filer",
 			"description": "Kjøp av {FilesName} gjennom Microsoft Store hjelper oss med å støtte utviklerne og lar oss fortsette å oppdatere appen med nye funksjoner og forbedringer."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Beta versjonen eller Forhåndsvisningsversjonen kan installeres sammen med den stabile versjonen og gir tidlig tilgang til nye funksjoner og forbedringer."
 		},
-		"self_signed": {
-			"link_text": "klassiske installasjonsprogram",
-			"description": "Vis flere alternativer for installasjon, og last ned gratis versjon fra vår "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
