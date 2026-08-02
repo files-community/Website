@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remappa nyckelbindningar",
 				"description": "Effektivisera arbetsflödet genom att skapa anpassade nyckelbindningar."
+			},
+			"toolbar": {
+				"title": "Anpassning av verktygsfält",
+				"description": "Anpassa verktygsfältet genom att lägga till eller ta bort knappar från listan över tillgängliga åtgärder."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Nyheter",
 		"download": "Hämta",
 		"contribute": "Bidra till {FilesName}",
-		"feedback": "Ge feedback",
+		"feedback": "Rapportera bugg",
+		"request_feature": "Begär funktion",
+		"donate": "Donera",
 		"style_guide": "Style Guide",
 		"translations": "Översättningar",
 		"support": "Stöd",
@@ -138,6 +144,7 @@
 		"home": "Hem",
 		"docs": "Dokumentation",
 		"news": "Nyheter",
+		"donate": "Donera",
 		"download": "Hämta",
 		"themes": "Teman",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Ladda ner {FilesName}",
-		"donation_description": "{FilesName} är ett samhällsstyrt projekt som beror på ditt stöd för att växa och förbättra. Överväg att köpa {FilesName} via Microsoft Store eller stödja oss på GitHub om du använder det klassiska installationsprogrammet.",
-		"donation_button": "Donera",
+		"subtitle": "{FilesName} är ett community-drivet projekt. Att köpa det på Microsoft Store är det bästa sättet att stödja dess utveckling.",
+		"recommended": "Rekommenderad",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Hämta det från Microsoft",
+		"classic_badge_alt": "Ladda ner installationsprogrammet",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Förhandsgranska",
+		"more_options": "Fler hämtningsalternativ",
 		"microsoft_store": {
 			"title": "Ladda ner filer",
 			"description": "Köpa {FilesName} via Microsoft Store hjälper till att stödja utvecklarna och tillåter oss att fortsätta uppdatera appen med nya funktioner och förbättringar."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Förhandsgranskningsversionen kan installeras tillsammans med den stabila utgåvan och ger tidig tillgång till nya funktioner och förbättringar."
 		},
-		"self_signed": {
-			"link_text": "klassisk installatör",
-			"description": "Visa fler installationsalternativ och ladda ner gratisversionen från vår "
+		"classic_stable": {
+			"description": "Det klassiska installationsprogrammet är ett gratis alternativ till Microsoft Store-versionen. Det innehåller samma funktioner och får automatiska uppdateringar."
+		},
+		"classic_preview": {
+			"description": "Den kostnadsfria klassiska installationsprogrammet för förhandsgranskningsversionen. Den kan installeras tillsammans med den stabila utgåvan och ger tidig tillgång till nya funktioner."
+		},
+		"other_methods": {
+			"name": "Andra installationsmetoder",
+			"description": "Installera {FilesName} med WinGet, Chocolatey, eller en offline installer genom att följa stegen på vår startsida."
 		}
 	}
 }
