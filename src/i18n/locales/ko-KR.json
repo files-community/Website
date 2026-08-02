@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "단축키 재설정",
 				"description": "사용자 지정 단축키를 생성하여 워크플로우를 능률화하세요."
+			},
+			"toolbar": {
+				"title": "Toolbar Customization",
+				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "소식",
 		"download": "다운로드",
 		"contribute": "{FilesName}에 기여하기",
-		"feedback": "피드백 보내기",
+		"feedback": "Report Bug",
+		"request_feature": "Request Feature",
+		"donate": "Donate",
 		"style_guide": "코드 구조",
 		"translations": "번역하기",
 		"support": "지원",
@@ -138,19 +144,22 @@
 		"home": "홈",
 		"docs": "자습서",
 		"news": "소식",
+		"donate": "Donate",
 		"download": "다운로드",
 		"themes": "테마",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "권장",
-			"classic": "기타 옵션"
-		},
 		"title": "{FilesName} 다운로드",
-		"donation_description": "{FilesName}는 여러분들의 지원에 의존하는 커뮤니티 기반 프로젝트에요. Microsoft Store를 통해 {FilesName}를 구입하거나 무료로 사용하는 경우 GitHub에서 기여하는 것을 고려해주세요.",
-		"donation_button": "후원하기",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Files 다운로드",
 			"description": "Microsoft Store를 통해 {FilesName}를 구입하면 개발자를 지원하고 새로운 기능과 개선 사항을 계속 업데이트 할 수 있어요."
@@ -159,9 +168,15 @@
 			"title": "Insider Preview 다운로드",
 			"description": "프리뷰 버전은 정식 버전과 함께 설치할 수 있고 새로운 기능과 개선 사항에 대한 빠른 액세스를 제공해요."
 		},
-		"self_signed": {
-			"link_text": "기존 설치 프로그램",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
