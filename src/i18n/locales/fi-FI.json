@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Uudelleennimeä näppäinsidokset",
 				"description": "Virtaa työnkulkuasi luomalla mukautettuja näppäinyhdistelmiä."
+			},
+			"toolbar": {
+				"title": "Työkalupalkin Mukautus",
+				"description": "Mukauta työkalupalkki lisäämällä tai poistamalla painikkeita käytettävissä olevista toiminnoista."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Uutiset",
 		"download": "Lataa",
 		"contribute": "Osallistu {FilesName}",
-		"feedback": "Anna Palautetta",
+		"feedback": "Ilmoita Viasta",
+		"request_feature": "Pyydä Ominaisuutta",
+		"donate": "Lahjoita",
 		"style_guide": "Style Guide",
 		"translations": "Käännökset",
 		"support": "Tuki",
@@ -138,6 +144,7 @@
 		"home": "Koti",
 		"docs": "Dokumentaatio",
 		"news": "Uutiset",
+		"donate": "Lahjoita",
 		"download": "Lataa",
 		"themes": "Teemat",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Lataa {FilesName}",
-		"donation_description": "{FilesName} is a community-driven project that depends on your support to grow and improve. Please consider purchasing {FilesName} through the Microsoft Store or supporting us on GitHub if you use the classic installer.",
-		"donation_button": "Lahjoita",
+		"subtitle": "{FilesName} on yhteisölähtöinen projekti. Sen ostaminen Microsoft Storesta on paras tapa tukea sen kehitystä.",
+		"recommended": "Suositeltu",
+		"version_label": "Versio {version}",
+		"store_badge_alt": "Hanki se Microsoftista",
+		"classic_badge_alt": "Lataa Asentaja",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Lataa Tiedostoja",
 			"description": "{FilesName} -sovelluksen ostaminen Microsoft Storesta auttaa tukemaan kehittäjiä ja sallii meidän jatkaa sovelluksen päivittämistä uusilla ominaisuuksilla ja parannuksilla."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Esikatseluversio voidaan asentaa vakaan julkaisun rinnalle ja se mahdollistaa varhaisen pääsyn uusiin ominaisuuksiin ja parannuksiin."
 		},
-		"self_signed": {
-			"link_text": "klassinen asentaja",
-			"description": "Näytä lisää asennusvaihtoehtoja, ja lataa ilmainen versio meidän "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
