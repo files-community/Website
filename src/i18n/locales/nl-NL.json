@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Herkaart toetsbindingen",
 				"description": "Streamline u workflow door aangepaste sleutelbindingen aan te maken."
+			},
+			"toolbar": {
+				"title": "Werkbalk aanpassen",
+				"description": "Personaliseer de werkbalk door knoppen toe te voegen of te verwijderen uit de lijst met beschikbare acties."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Nieuws",
 		"download": "downloaden",
 		"contribute": "Bijdragen aan {FilesName}",
-		"feedback": "Feedback geven",
+		"feedback": "Bug melden",
+		"request_feature": "Functie aanvragen",
+		"donate": "Doneren",
 		"style_guide": "Style Guide",
 		"translations": "Vertalen",
 		"support": "Ondersteuning",
@@ -138,19 +144,22 @@
 		"home": "Startpagina",
 		"docs": "Documentatie",
 		"news": "Nieuws",
+		"donate": "Doneren",
 		"download": "downloaden",
 		"themes": "Thema’s",
 		"discord": "Onenigheid",
 		"github": "Github"
 	},
 	"download": {
-		"methods": {
-			"store": "Aanbevolen",
-			"classic": "Meer opties"
-		},
 		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} is een door de gemeenschap gedreven project dat afhankelijk is van je steun om te groeien en te verbeteren. Overweeg om {FilesName} te kopen via de Microsoft Store of ons te ondersteunen via GitHub als u het klassieke installatieprogramma gebruikt.",
-		"donation_button": "Doneren",
+		"subtitle": "{FilesName} is een community-gedreven project. Het kopen ervan in de Microsoft Store is de beste manier om de ontwikkeling ervan te ondersteunen.",
+		"recommended": "Aanbevolen",
+		"version_label": "Versie {version}",
+		"store_badge_alt": "Download het van Microsoft",
+		"classic_badge_alt": "Installatieprogramma downloaden",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Voorbeeld",
+		"more_options": "Meer downloadopties",
 		"microsoft_store": {
 			"title": "Download bestanden",
 			"description": "{FilesName} kopen via de Microsoft Store helpt de ontwikkelaars te ondersteunen en stelt ons in staat de app te blijven updaten met nieuwe functies en verbeteringen."
@@ -159,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "De voorbeeldversie kan worden geïnstalleerd naast de stabiele versie en biedt snelle toegang tot nieuwe functies en verbeteringen."
 		},
-		"self_signed": {
-			"link_text": "klassieke installer",
-			"description": "Bekijk meer installatiemogelijkheden en download de gratis versie van onze "
+		"classic_stable": {
+			"description": "Het klassieke installatieprogramma is een gratis alternatief voor de versie van de Microsoft Store. Het bevat dezelfde functies en ontvangt automatische updates."
+		},
+		"classic_preview": {
+			"description": "Het gratis klassiek installatieprogramma voor de voorbeeldversie. Het kan worden geïnstalleerd naast de stabiele versie en biedt vroegtijdige toegang tot nieuwe functies."
+		},
+		"other_methods": {
+			"name": "Andere installatiemethoden",
+			"description": "Installeer {FilesName} met behulp van WinGet, Chocolatey of een offline installatieprogramma door de stappen op onze startpagina te volgen."
 		}
 	}
 }
