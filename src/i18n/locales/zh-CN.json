@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "重映射按键绑定",
 				"description": "通过创建自定义按键绑定来简化您的工作流。"
+			},
+			"toolbar": {
+				"title": "工具栏自定义",
+				"description": "通过从可用动作列表中添加或删除按钮来个性化工具栏。"
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "消息",
 		"download": "下载",
 		"contribute": "为 {FilesName} 贡献",
-		"feedback": "发送反馈",
+		"feedback": "报告错误",
+		"request_feature": "请求功能",
+		"donate": "捐助",
 		"style_guide": "风格规范",
 		"translations": "翻译",
 		"support": "支持",
@@ -138,6 +144,7 @@
 		"home": "主页",
 		"docs": "文档",
 		"news": "消息",
+		"donate": "捐助",
 		"download": "下载",
 		"themes": "主题",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "下载 {FilesName}",
-		"donation_description": "{FilesName} 是一个由社区主导的项目，为了持续成长和改进，我们需要大家的支持。请考虑从 Microsoft Store 购买 {FilesName}，或者如果您选择使用经典安装程序，请务必在 GitHub 上给予支持。",
-		"donation_button": "捐赠",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "推荐的",
+		"version_label": "Version {version}",
+		"store_badge_alt": "从 Microsoft 获取",
+		"classic_badge_alt": "下载安装程序",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "更多下载选项",
 		"microsoft_store": {
 			"title": "下载 Files",
 			"description": "通过Microsoft Store购买 {FilesName} 有助于支持开发人员，使我们能够继续更新应用程序的新功能和改进。"
@@ -155,9 +168,15 @@
 			"title": "下载预览版本",
 			"description": "预览版可以与稳定版同时安装，并提供对新功能和改进的早期访问。"
 		},
-		"self_signed": {
-			"link_text": "经典安装程序",
-			"description": "查看更多安装选项，并从我们下载免费版本 "
+		"classic_stable": {
+			"description": "经典安装程序是Microsoft Store 版本的免费替代。它包含相同的功能并接收自动更新。"
+		},
+		"classic_preview": {
+			"description": "预览版本的免费经典安装程序。它可以与稳定的版本一起安装，并且提供早期访问新功能的机会。"
+		},
+		"other_methods": {
+			"name": "其他安装方法",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
