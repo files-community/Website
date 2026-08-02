@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "اربط المفتاح",
 				"description": "تبسيط سير العمل عن طريق إنشاء ارتباطات مفاتيح مخصصة."
+			},
+			"toolbar": {
+				"title": "تخصيص شريط الأدوات",
+				"description": "تخصيص شريط الأدوات عن طريق إضافة أزرار أو إزالتها من قائمة الإجراءات المتاحة."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "الأخبار",
 		"download": "التحميل",
 		"contribute": "ساهم في {FilesName}",
-		"feedback": "اعطي ملاحظات",
+		"feedback": "الإبلاغ عن خطأ",
+		"request_feature": "طلب ميزة",
+		"donate": "Donate",
 		"style_guide": "دليل السمة",
 		"translations": "الترجمات",
 		"support": "الدعم",
@@ -138,6 +144,7 @@
 		"home": "الرئيسية",
 		"docs": "توثيق",
 		"news": "أخبار",
+		"donate": "Donate",
 		"download": "تحميل",
 		"themes": "سمات",
 		"discord": "ديسكورد",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "تحميل {FilesName}",
-		"donation_description": "مشروع {FilesName} هو مشروع-مجتمعي ويعتمد على دعمك للنمو والتحسين. يرجى النظر في شراء {FilesName} من خلال متجر مايكروسوفت أو دعمنا على جيتهاب إذا كنت تستخدم النسخة الكلاسيكية.",
-		"donation_button": "تبرع",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "تحميل الملفات",
 			"description": "شراء {FilesName} عن طريق متجر مايكروسوفت يساعد في دعم المطورين ويسمح لنا بمواصلة تحديث التطبيق مع إضافة مميزات وتحسينات جديدة."
@@ -155,9 +168,15 @@
 			"title": "تحميل نسخة Insider Preview",
 			"description": "يمكن تثبيت النسخة التجريبية إلى جانب الإصدار المستقر وتوفر الوصول المبكر إلى المميزات والتحسينات الجديدة."
 		},
-		"self_signed": {
-			"link_text": "المثبت الكلاسيكي",
-			"description": "عرض المزيد من خيارات التثبيت، وتحميل النسخة المجانية من لدينا "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
