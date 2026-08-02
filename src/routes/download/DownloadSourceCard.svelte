@@ -49,8 +49,8 @@
 	class="download-source"
 	class:promoted={source.paid}
 	href={source.href}
-	download={!source.external ? filename : undefined}
-	{...externalLink}
+	download={source.download ? filename : undefined}
+	{...source.external || source.download ? externalLink : {}}
 	on:click={openWithProtocol}
 >
 	<picture>
@@ -83,33 +83,35 @@
 			{source.description}
 		</TextBlock>
 	</div>
-	<div class="action-container">
-		{#if source.external}
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/download-sources/msstore-badge-light.svg"
-				/>
-				<img
-					class="download-source-badge"
-					src="/download-sources/msstore-badge-dark.svg"
-					alt={$_("download.store_badge_alt", defaultI18nValues)}
-				/>
-			</picture>
-		{:else}
-			<picture>
-				<source
-					media="(prefers-color-scheme: dark)"
-					srcset="/download-sources/classic-installer-badge-light.png"
-				/>
-				<img
-					class="download-source-badge"
-					src="/download-sources/classic-installer-badge-dark.png"
-					alt={$_("download.classic_badge_alt", defaultI18nValues)}
-				/>
-			</picture>
-		{/if}
-	</div>
+	{#if source.external || source.download}
+		<div class="action-container">
+			{#if source.external}
+				<picture>
+					<source
+						media="(prefers-color-scheme: dark)"
+						srcset="/download-sources/msstore-badge-light.svg"
+					/>
+					<img
+						class="download-source-badge"
+						src="/download-sources/msstore-badge-dark.svg"
+						alt={$_("download.store_badge_alt", defaultI18nValues)}
+					/>
+				</picture>
+			{:else}
+				<picture>
+					<source
+						media="(prefers-color-scheme: dark)"
+						srcset="/download-sources/classic-installer-badge-light.png"
+					/>
+					<img
+						class="download-source-badge"
+						src="/download-sources/classic-installer-badge-dark.png"
+						alt={$_("download.classic_badge_alt", defaultI18nValues)}
+					/>
+				</picture>
+			{/if}
+		</div>
+	{/if}
 </a>
 
 <style lang="scss">

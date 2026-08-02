@@ -1,0 +1,81 @@
+---
+title: Announcing Files v4.2.2
+description: We're excited to announce the general availability of Files v4.2.2.
+thumbnail: /blog-resources/v4-2-2/Hero.webp
+date: 8/3/2026
+author: files-community
+---
+
+Today we are releasing **Files v4.2.2** for all users.
+
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
+
+## What's New in Files v4.2.2
+
+### Updated sidebar icons
+
+The icons in the sidebar have been updated for a cleaner and more consistent look across the app.
+
+<img src="/blog-resources/v4-2-2/SidebarIcons.webp" alt="Sidebar icons before and after" />
+
+### Auto size columns to fit
+
+A new setting lets columns in [Details View](/docs/customize-settings/layout/#details-view) automatically resize to fit their contents, so long file names and other properties are no longer clipped by the default column widths.
+
+### Improved behavior when opening encrypted archives
+
+Opening password-protected archives is now more reliable. The password prompt and follow-up actions have been improved, whether you're browsing, extracting, or opening a file from within an encrypted archive.
+
+### Improved messaging when failing to pull from Git
+
+When a Git pull fails, Files now displays a clearer message explaining what went wrong, making it easier to understand why the operation didn't complete.
+
+### Inline 'folder not found' message
+
+The **folder not found** dialog has been replaced with an inline message shown directly in the file area, so navigating to a missing location no longer interrupts your workflow with a modal.
+
+### Prompt when compressing fails
+
+When Files can't compress one or more items, a prompt now appears with details about the problem so you can decide how to proceed.
+
+### Remember the last used folder in the background image picker
+
+When choosing a [background image](/docs/customize-settings/appearance/#background-image), the file picker now opens in the folder you last used, making it quicker to try out different images.
+
+### Improved folder loading performance
+
+Folder listings, particularly for locations with a large number of items, now load faster.
+
+### Improved compression and extraction performance
+
+Compressing and extracting archives that contain a large number of files is now faster thanks to more efficient progress reporting.
+
+## Fixes
+
+- Fixed an issue where the **Customize** tab was shown in Properties for folders that don't support custom icons.
+- Fixed an issue with Git repository status not updating correctly.
+- Fixed an issue with opening archives from network locations.
+- Fixed an issue where folder sizes weren't calculated in network share listings.
+- Fixed an issue where drives were duplicated on the Home page after changing the drive letter.
+- Fixed an issue where the failed status wasn't reported when copying or moving items that no longer exist.
+- Fixed reading `.gz` archives that don't store the original file name.
+- Fixed an issue where no warning was shown when moving an open file.
+- Fixed an issue where the "This app can't run on your PC" dialog was displayed inappropriately.
+- Fixed an issue where folder related actions were enabled for archives.
+- Fixed an issue where Windows Terminal wouldn't open when launched from Files.
+- Fixed an issue where extracted files were not grouped correctly.
+- Fixed an issue where the **Give access** menu option was missing.
+- Fixed an issue where no error was displayed when opening a corrupted executable.
+- Fixed an issue where the Properties window sometimes opened in the background.
+- Fixed an issue where clicking a selected file would switch focus to the main window.
+- Fixed an issue where search continued running after navigating away or closing a tab.
+
+## Conclusion
+
+As always, we appreciate your feedback and suggestions on how to improve Files. You can reach us on [Discord](https://discord.gg/files) and on [GitHub](https://github.com/files-community/Files/).
+
+Thank you for using Files! 😊
+
+---
+
+Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)
