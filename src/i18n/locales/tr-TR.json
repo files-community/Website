@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remap key bindings",
 				"description": "Streamline you workflow by creating custom key bindings."
+			},
+			"toolbar": {
+				"title": "Toolbar Customization",
+				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Haberler",
 		"download": "İndir",
 		"contribute": "{FilesName}'a Katkıda Bulunun",
-		"feedback": "Geri Bildirimde Bulunun",
+		"feedback": "Report Bug",
+		"request_feature": "Request Feature",
+		"donate": "Donate",
 		"style_guide": "Stil Rehberi",
 		"translations": "Tercümeler",
 		"support": "Support",
@@ -138,6 +144,7 @@
 		"home": "Ana sayfa",
 		"docs": "Dökümantasyon",
 		"news": "Haberler",
+		"donate": "Donate",
 		"download": "İndir",
 		"themes": "Temalar",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "{FilesName}'ı İndir",
-		"donation_description": "{FilesName} büyümek ve gelişmek için sizin desteğinize bağlı olan, topluluk odaklı bir projedir. Klasik yükleyiciyi kullanıyorsanız lütfen Microsoft Mağazası aracılığıyla {FilesName} satın almayı veya GitHub'da bizi desteklemeyi düşünün.",
-		"donation_button": "Bağış Yap",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Files'ı İndir",
 			"description": "{FilesName}'ı Microsoft Store aracılığıyla satın almak, geliştiricileri desteklemeye yardımcı olur ve uygulamayı yeni özellikler ve geliştirmelerle güncellemeye devam etmemizi sağlar."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Önizleme sürümü, Kararlı sürümle birlikte kurulabilir ve yeni özelliklere ve iyileştirmelere erken erişim sağlar."
 		},
-		"self_signed": {
-			"link_text": "klasik yükleyicimizde olabilir",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
