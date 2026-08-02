@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remap key bindings",
 				"description": "Streamline you workflow by creating custom key bindings."
+			},
+			"toolbar": {
+				"title": "Toolbar Customization",
+				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Jańalıqlar",
 		"download": "Júklep alıw",
 		"contribute": "{FilesName} rawajlanıwına úles qosıw",
-		"feedback": "Qayta baylanıs",
+		"feedback": "Report Bug",
+		"request_feature": "Request Feature",
+		"donate": "Donate",
 		"style_guide": "Kod jazıw boyınsha qollanba",
 		"translations": "Awdarmalar",
 		"support": "Support",
@@ -138,19 +144,22 @@
 		"home": "Bas bet",
 		"docs": "Hújjetshilik",
 		"news": "Jańalıqlar",
+		"donate": "Donate",
 		"download": "Júklep alıw",
 		"themes": "Temalar",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"methods": {
-			"store": "Recommended",
-			"classic": "More options"
-		},
 		"title": "{FilesName}dı júklep alıw",
-		"donation_description": "{FilesName} - bul jámiyetshilik tárepinen basqarılatuǵın joybar bolıp, ósiw hám jetilistiriwde sizdiń járdemińizge mútáj. Eger klassik ornatıshıdan paydalansańız, Microsoft dúkanınan {FilesName} satıp alınǵan zat alıń yamasa GitHub arqalı bizge járdem beriń.",
-		"donation_button": "Qollap-quwatlaw",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Júklenbekte",
 			"description": "Microsoft dúkanı arqalı {FilesName} satıp alıw islep shıǵıwshılardı qollap - quwatlawǵa járdem beredi hám qosımshanı jańa ózgeshelikler hám jaqsılanıwlar menen jańalawdı dawam ettiriw imkaniyatın beredi."
@@ -159,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Aldınan kóriw versiyası turaqlı versiya menen birge ornatılıwı múmkin hám jańa  jańalıqlar hám jaqsılanıwlarǵa erte kiriń imkaniyatın beredi."
 		},
-		"self_signed": {
-			"link_text": "klassikalıq ornatıwshı",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
