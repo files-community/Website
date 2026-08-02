@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Omlæg tastebindinger",
 				"description": "Strømlin din arbejdsgang med brugerdefinerede tastebindinger."
+			},
+			"toolbar": {
+				"title": "Værktøjslinje Tilpasning",
+				"description": "Tilpas værktøjslinjen ved at tilføje eller fjerne knapper fra listen over tilgængelige handlinger."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Nyheder",
 		"download": "Download",
 		"contribute": "Bidrag til {FilesName}",
-		"feedback": "Giv feedback",
+		"feedback": "Rapportér Fejl",
+		"request_feature": "Anmod Om Funktion",
+		"donate": "Donate",
 		"style_guide": "Stilguide",
 		"translations": "Oversættelser",
 		"support": "Support",
@@ -138,6 +144,7 @@
 		"home": "Hjem",
 		"docs": "Dokumentation",
 		"news": "Nyheder",
+		"donate": "Donate",
 		"download": "Download",
 		"themes": "Temaer",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} er et fællesskabsdrevet projekt, der afhænger af din støtte for at vokse og blive bedre. Overvej venligst at købe {FilesName} via Microsoft Store eller støtte os på GitHub, hvis du bruger den klassiske installatør.",
-		"donation_button": "Donér",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Download Files",
 			"description": "Når du køber {FilesName} via Microsoft Store, støtter du udviklerne og gør det muligt for os at fortsætte med at opdatere appen med nye funktioner og forbedringer."
@@ -155,9 +168,15 @@
 			"title": "Download Insider-forhåndsvisning",
 			"description": "Forhåndsvisningsversionen kan installeres sammen med den stabile udgivelse og giver tidlig adgang til nye funktioner og forbedringer."
 		},
-		"self_signed": {
-			"link_text": "klassisk installatør",
-			"description": "Se flere installationsmuligheder, og download den gratis version fra vores "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
