@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remap key bindings",
 				"description": "Streamline you workflow by creating custom key bindings."
+			},
+			"toolbar": {
+				"title": "Toolbar Customization",
+				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "חדשות",
 		"download": "הורדה",
 		"contribute": "תרמו ל{FilesName}",
-		"feedback": "תן משוב",
+		"feedback": "Report Bug",
+		"request_feature": "Request Feature",
+		"donate": "Donate",
 		"style_guide": "מדריך עיצוב",
 		"translations": "תרגום",
 		"support": "Support",
@@ -138,6 +144,7 @@
 		"home": "בית",
 		"docs": "תיעוד",
 		"news": "חדשות",
+		"donate": "Donate",
 		"download": "הורדה",
 		"themes": "ערכות נושא",
 		"discord": "דיסקורד",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "הורידו את {FilesName}",
-		"donation_description": "{FilesName} הוא פרוייקט המונע על ידי הקהילה שזקוק לתמיכה שלכם כדי לגדול ולהשתפר. בבקשה תשקלו לקנות את {FilesName} דרך החנות של Microsoft או תתמוך בנו בGitHub אם אתם משתמשים במתקין הקלאסי.",
-		"donation_button": "תרומה",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Download Files",
 			"description": "רכישת {FilesName} דרך הMicrosoft Store עוזרת לתמוך במפתחים ומאפשרת לנו להמשיך לעדכן את האפליקציה עם תכונות ושיפורים חדשים."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "הגרסה המוקדמת ניתנת להתקנה לצד הגרסה היציבה ומספקת גישה מוקדמת לתכונות ושיפורים חדשים."
 		},
-		"self_signed": {
-			"link_text": "המתקין הקלאסי",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
