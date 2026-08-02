@@ -2,7 +2,7 @@
 title: Announcing Files v4.2.2
 description: We're excited to announce the general availability of Files v4.2.2.
 thumbnail: /blog-resources/v4-2-2/Hero.webp
-date: 8/2/2026
+date: 8/3/2026
 author: files-community
 ---
 
