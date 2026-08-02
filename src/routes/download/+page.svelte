@@ -5,7 +5,7 @@
 	import type { DownloadSource } from "./types";
 	import type { PageData } from "./$types";
 	import { _ } from "svelte-i18n";
-	import { fly } from "svelte/transition";
+	import { fly, slide } from "svelte/transition";
 	import { quartOut } from "svelte/easing";
 	import { onMount } from "svelte";
 
@@ -23,9 +23,7 @@
 
 	type Method = "store" | "classic";
 
-	const methods: Method[] = ["store", "classic"];
-
-	let method: Method = "store";
+	let showMoreOptions = false;
 
 	const downloadSources = {
 		store: [
@@ -66,6 +64,7 @@
 				href: `/appinstallers/Files.stable.appinstaller`,
 				icon: "/branding/logo-light.svg",
 				darkModeIcon: "/branding/logo-dark.svg",
+				download: true,
 				version: stableVersion,
 			},
 			{
@@ -77,7 +76,17 @@
 				href: `/appinstallers/Files.preview.appinstaller`,
 				icon: "/download-sources/preview_light.svg",
 				darkModeIcon: "/download-sources/preview_dark.svg",
+				download: true,
 				version: previewVersion,
+			},
+			{
+				name: $_("download.other_methods.name", defaultI18nValues),
+				description: $_(
+					"download.other_methods.description",
+					defaultI18nValues,
+				),
+				href: `/docs/getting-started/install`,
+				icon: "/ui/icons/exe.png",
 			},
 		],
 	} as const satisfies Record<Method, readonly DownloadSource[]>;
@@ -96,20 +105,8 @@
 			{$_("download.subtitle", defaultI18nValues)}
 		</TextBlock>
 	</header>
-	<div class="channel-selector">
-		{#each methods as m}
-			<button
-				class:selected={method === m}
-				aria-pressed={method === m}
-				data-text={$_(`download.methods.${m}`, defaultI18nValues)}
-				on:click={() => (method = m)}
-			>
-				{$_(`download.methods.${m}`, defaultI18nValues)}
-			</button>
-		{/each}
-	</div>
 	<section class="download-sources">
-		{#each downloadSources[method] as source, i (source.href)}
+		{#each downloadSources.store as source, i (source.href)}
 			<div
 				in:fly={{
 					y: 8,
@@ -121,12 +118,45 @@
 				<DownloadSourceCard {source} />
 			</div>
 		{/each}
-		<p>
-			{$_("download.self_signed.description", defaultI18nValues)}<a
-				href="/docs/getting-started/install"
-				>{$_("download.self_signed.link_text", defaultI18nValues)}</a
-			>.
-		</p>
+		<button
+			class="more-options-toggle"
+			aria-expanded={showMoreOptions}
+			aria-controls="classic-sources"
+			on:click={() => (showMoreOptions = !showMoreOptions)}
+		>
+			{$_("download.more_options", defaultI18nValues)}
+			<svg
+				class="chevron"
+				class:open={showMoreOptions}
+				width="12"
+				height="12"
+				viewBox="0 0 12 12"
+				fill="none"
+				aria-hidden="true"
+			>
+				<path
+					d="M2.2 4.2 6 8l3.8-3.8"
+					stroke="currentColor"
+					stroke-width="1.5"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</svg>
+		</button>
+		{#if showMoreOptions}
+			<div
+				id="classic-sources"
+				class="classic-sources"
+				transition:slide={{
+					duration: reduceMotion ? 0 : 200,
+					easing: quartOut,
+				}}
+			>
+				{#each downloadSources.classic as source (source.href)}
+					<DownloadSourceCard {source} />
+				{/each}
+			</div>
+		{/if}
 	</section>
 </main>
 
@@ -155,82 +185,57 @@
 			}
 		}
 
-		.channel-selector {
-			display: flex;
-			align-self: center;
-			gap: 0.25rem;
-			padding: 0.25rem;
-			border: 1px solid var(--fds-card-stroke-default);
-			border-radius: var(--fds-overlay-corner-radius);
-			background: var(--fds-card-background-default);
-
-			button {
-				position: relative;
-				display: inline-flex;
-				flex-direction: column;
-				align-items: center;
-				border: none;
-				background: transparent;
-				color: var(--fds-text-secondary);
-				font-family: inherit;
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 22px;
-				padding: 0.625rem 1.25rem;
-				border-radius: var(--fds-control-corner-radius);
-				cursor: pointer;
-				transition: var(--fds-control-normal-duration) ease;
-
-				// Reserve the semibold width so neighbors don't shift on selection
-				&::before {
-					content: attr(data-text);
-					font-weight: 600;
-					block-size: 0;
-					overflow: hidden;
-					visibility: hidden;
-				}
-
-				&:hover:not(.selected) {
-					color: var(--fds-text-primary);
-					background: var(--fds-subtle-fill-secondary);
-				}
-
-				&:active {
-					background: var(--fds-subtle-fill-tertiary);
-				}
-
-				&:focus-visible {
-					outline: 2px solid var(--fds-focus-stroke-outer);
-				}
-
-				&.selected {
-					color: var(--fds-text-primary);
-					font-weight: 600;
-					background: var(--fds-subtle-fill-secondary);
-
-					&::after {
-						content: "";
-						position: absolute;
-						inset-block-end: 0;
-						inset-inline: 0;
-						margin-inline: auto;
-						inline-size: 1rem;
-						block-size: 3px;
-						border-radius: 1.5px;
-						background: var(--fds-accent-default);
-					}
-				}
-			}
-		}
-
 		.download-sources {
 			display: flex;
 			flex-direction: column;
 			gap: 1rem;
+		}
 
-			> p {
-				text-align: center;
+		.more-options-toggle {
+			display: inline-flex;
+			align-items: center;
+			gap: 0.375rem;
+			align-self: center;
+			border: none;
+			background: transparent;
+			color: var(--fds-text-secondary);
+			font-family: inherit;
+			font-size: 14px;
+			line-height: 20px;
+			padding: 0.375rem 0.75rem;
+			border-radius: var(--fds-control-corner-radius);
+			cursor: pointer;
+			transition: var(--fds-control-normal-duration) ease;
+
+			&:hover {
+				color: var(--fds-text-primary);
+				background: var(--fds-subtle-fill-secondary);
 			}
+
+			&:active {
+				background: var(--fds-subtle-fill-tertiary);
+			}
+
+			&:focus-visible {
+				outline: 2px solid var(--fds-focus-stroke-outer);
+			}
+
+			.chevron {
+				display: block;
+				flex-shrink: 0;
+				margin-block-start: 2px;
+				transition: transform var(--fds-control-normal-duration) ease;
+
+				&.open {
+					transform: rotate(180deg);
+				}
+			}
+		}
+
+		.classic-sources {
+			display: flex;
+			flex-direction: column;
+			gap: 1rem;
 		}
 	}
 </style>
