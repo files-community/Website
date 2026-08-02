@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Tastenzuordnungen umgehen",
 				"description": "Streamline deinen Workflow durch das Erstellen benutzerdefinierter Tastenbelegungen."
+			},
+			"toolbar": {
+				"title": "Symbolleiste Anpassung",
+				"description": "Personalisieren Sie die Symbolleiste, indem Sie Schaltflächen aus der Liste der verfügbaren Aktionen hinzufügen oder entfernen."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Neuigkeiten",
 		"download": "Herunterladen",
 		"contribute": "Zu {FilesName} beitragen",
-		"feedback": "Feedback geben",
+		"feedback": "Fehler melden",
+		"request_feature": "Feature anfordern",
+		"donate": "Donate",
 		"style_guide": "Styleguide",
 		"translations": "Übersetzungen",
 		"support": "Unterstützung",
@@ -138,6 +144,7 @@
 		"home": "Startseite",
 		"docs": "Dokumentation",
 		"news": "Neuigkeiten",
+		"donate": "Donate",
 		"download": "Herunterladen",
 		"themes": "Farbschemas",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "{FilesName} herunterladen",
-		"donation_description": "{FilesName} ist ein Gemeinschaftsprojekt, das auf Ihre Unterstützung angewiesen ist, um zu wachsen und besser zu werden. Bitte erwägen Sie den Kauf von {FilesName} über den Microsoft Store oder unterstützen Sie uns auf GitHub, wenn Sie das klassische Installationsprogramm verwenden.",
-		"donation_button": "Spenden",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Files herunterladen",
 			"description": "Der Kauf von {FilesName} über den Microsoft Store unterstützt die Entwickler und ermöglicht es uns, die App weiterhin mit neuen Funktionen und Verbesserungen zu aktualisieren."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Die Vorschauversion kann neben dem stabilen Release installiert werden und ermöglicht frühzeitigen Zugriff auf neue Funktionen und Verbesserungen."
 		},
-		"self_signed": {
-			"link_text": "klassischer Installer",
-			"description": "Weitere Installationsoptionen anzeigen und die kostenlose Version von unserer "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
