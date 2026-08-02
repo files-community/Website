@@ -19,7 +19,7 @@
 		},
 		"hero": {
 			"chip": "Hero",
-			"description": "Trình quản lý tệp mở cùng giao diện tinh tế dành cho Windows, được thiết kế để giúp bạn quản lý các tệp và thư mục một cách giản đơn.",
+			"description": "Trình quản lý tệp mở cùng giao diện tinh tế dành cho Windows, được thiết kế để giúp bạn quản lý các tệp và thư mục dễ dàng hơn.",
 			"download": "Tải xuống",
 			"view_on_github": "Xem trên GitHub",
 			"files_is_open_source": "Files có mã nguồn mở!",
@@ -28,7 +28,7 @@
 		"tabs": {
 			"chip": "Thẻ",
 			"title": "Đa tác vụ với các thẻ",
-			"description": "Dễ dàng quản lý đa thư mục chỉ trong một cửa sổ bằng các tab. Chuyển qua lại giữa tab chỉ với một cú nhấp chuột hoặc tổ hợp phím, giúp nâng cao hiệu suất làm việc.",
+			"description": "Dễ dàng quản lý đa thư mục chỉ trong một cửa sổ bằng các thẻ. Chuyển qua lại giữa thẻ chỉ với một cú nhấp chuột hoặc tổ hợp phím, giúp nâng cao hiệu suất làm việc.",
 			"download": "Tải xuống",
 			"learn_more": "Tìm hiểu thêm"
 		},
@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Phím tắt tùy chỉnh",
 				"description": "Đồng bộ quy trình làm việc của bạn bằng việc tùy chỉnh tổ hợp phím theo ý muốn."
+			},
+			"toolbar": {
+				"title": "Tùy biến thanh công cụ",
+				"description": "Cá nhân hóa thanh công cụ bằng việc thêm hoặc bỏ các nút từ danh sách thao tác sẵn có."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Bài viết",
 		"download": "Tải xuống",
 		"contribute": "Đóng góp cho {FilesName}",
-		"feedback": "Gửi phản hồi",
+		"feedback": "Báo lỗi",
+		"request_feature": "Yêu cầu tính năng",
+		"donate": "Donate",
 		"style_guide": "Hướng dẫn thiết kế",
 		"translations": "Dịch thuật",
 		"support": "Hỗ trợ",
@@ -138,6 +144,7 @@
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
 		"news": "Bài viết",
+		"donate": "Donate",
 		"download": "Tải xuống",
 		"themes": "Chủ đề",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"donation_description": "{FilesName} là dự án hướng đến cộng đồng để cải thiện và phát triển. Nếu bạn muốn ủng hộ, hãy mua {FilesName} từ Microsoft Store hoặc ủng hộ qua GitHub nếu bạn sử dụng trình cài đặt thông thường.",
-		"donation_button": "Ủng hộ",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Tải xuống Files",
 			"description": "Mua {FilesName} từ Microsoft Store để ủng hộ các nhà phát triển và giúp chúng tôi tiếp tục bổ sung các cải thiện và tính năng mới."
@@ -155,9 +168,15 @@
 			"title": "Tải bản Insider Preview",
 			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
-		"self_signed": {
-			"link_text": "trang bắt đầu",
-			"description": "Don't have access to the Microsoft Store? View more installation options on ourns on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
