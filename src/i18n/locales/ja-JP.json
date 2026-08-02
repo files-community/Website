@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "ショートカット キーのカスタマイズ",
 				"description": "あなた専用のショートカット キーを定義して作業を効率化しましょう。"
+			},
+			"toolbar": {
+				"title": "ツールバーのカスタマイズ",
+				"description": "使用可能なアクションのリストからボタンを追加または削除することで、ツールバーをカスタマイズします。"
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "ニュース",
 		"download": "ダウンロード",
 		"contribute": "{FilesName} に貢献する",
-		"feedback": "フィードバックを送信",
+		"feedback": "バグの報告",
+		"request_feature": "機能を要求する",
+		"donate": "寄付",
 		"style_guide": "コーディング規約",
 		"translations": "翻訳",
 		"support": "サポート",
@@ -138,19 +144,22 @@
 		"home": "ホーム",
 		"docs": "ドキュメント",
 		"news": "ニュース",
+		"donate": "寄付",
 		"download": "ダウンロード",
 		"themes": "テーマ",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "おすすめ",
-			"classic": "その他のオプション"
-		},
 		"title": "{FilesName} をダウンロード",
-		"donation_description": "{FilesName} はコミュニティ主導のプロジェクトであり、成長し改善するためには皆様のサポートが必要です。Microsoft Store から {FilesName} を購入するか、クラシック インストーラーを使用する場合は GitHub でサポートすることをぜひ検討してください。",
-		"donation_button": "寄付",
+		"subtitle": "{FilesName} はコミュニティ主導のプロジェクトです。Microsoft Storeで購入することは、その開発をサポートする最善の方法です。",
+		"recommended": "Recommended",
+		"version_label": "バージョン {version}",
+		"store_badge_alt": "Microsoftから入手する",
+		"classic_badge_alt": "インストーラをダウンロード",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} プレビュー",
+		"more_options": "その他のダウンロードオプション",
 		"microsoft_store": {
 			"title": "Files をダウンロード",
 			"description": "{FilesName} を Microsoft Store 経由で購入することで、開発者をサポートし、新機能の追加やアプリの修正を継続できるようになります。"
@@ -159,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "プレビュー版は安定版とともにインストールでき、新機能や改善点への早期アクセスを提供します。"
 		},
-		"self_signed": {
-			"link_text": "クラシック インストーラーをダウンロード",
-			"description": "他のインストールオプションを表示し、無料版をダウンロードする "
+		"classic_stable": {
+			"description": "古典的なインストーラは、Microsoft Storeのバージョンに無料の代替です. これは、同じ機能が含まれており、自動更新を受け取ります."
+		},
+		"classic_preview": {
+			"description": "プレビュー版のための無料の古典的なインストーラ. これは、安定したリリースと一緒にインストールすることができ、新機能への早期アクセスを提供します."
+		},
+		"other_methods": {
+			"name": "その他のインストール方法",
+			"description": "WinGet、Chocolatey、またはオフラインインストーラを使用して {FilesName} をインストールするには、開始ページの手順に従ってください。"
 		}
 	}
 }

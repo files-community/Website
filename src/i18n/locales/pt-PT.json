@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remapar ligações de teclas",
 				"description": "Agilize seu fluxo de trabalho criando chaves personalizadas."
+			},
+			"toolbar": {
+				"title": "Personalização da barra de ferramentas",
+				"description": "Personalize a barra de ferramentas adicionando ou removendo botões da lista de ações disponíveis."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Notícias",
 		"download": "BAIXAR",
 		"contribute": "Contribua para {FilesName}",
-		"feedback": "Dar feedback",
+		"feedback": "Relatar erro",
+		"request_feature": "Solicitar recurso",
+		"donate": "Doar",
 		"style_guide": "Style Guide",
 		"translations": "Traduções",
 		"support": "SUPORTE",
@@ -138,19 +144,22 @@
 		"home": "Residencial",
 		"docs": "Documentação",
 		"news": "Notícias",
+		"donate": "Doar",
 		"download": "BAIXAR",
 		"themes": "Temas",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"methods": {
-			"store": "Recomendado",
-			"classic": "Mais opções"
-		},
 		"title": "Baixar {FilesName}",
-		"donation_description": "{FilesName} é um projeto orientado para a comunidade que depende do seu apoio para crescer e melhorar. Considere comprar {FilesName} através da Microsoft Store ou apoiar-nos no GitHub se você usar o instalador clássico.",
-		"donation_button": "Doar",
+		"subtitle": "{FilesName} é um projeto orientado pela comunidade. Comprá-lo na Microsoft Store é a melhor maneira de apoiar seu desenvolvimento.",
+		"recommended": "Recomendados",
+		"version_label": "Versão {version}",
+		"store_badge_alt": "Obter da Microsoft",
+		"classic_badge_alt": "Baixar o instalador",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "Mais opções de download",
 		"microsoft_store": {
 			"title": "Baixar arquivos",
 			"description": "Comprar o {FilesName} através da Microsoft Store ajuda a apoiar os desenvolvedores e nos permite continuar atualizando o aplicativo com novos recursos e melhorias."
@@ -159,9 +168,15 @@
 			"title": "Baixar visualização interna",
 			"description": "A versão de pré-visualização pode ser instalada juntamente com o lançamento estável e fornece acesso antecipado a novos recursos e melhorias."
 		},
-		"self_signed": {
-			"link_text": "instalador clássico",
-			"description": "Veja mais opções de instalação e baixe a versão gratuita a partir de nossos "
+		"classic_stable": {
+			"description": "O instalador clássico é uma alternativa gratuita para a versão da Microsoft Store. Inclui os mesmos recursos e recebe atualizações automáticas."
+		},
+		"classic_preview": {
+			"description": "O instalador do clássico gratuito para a versão de pré-visualização. Ele pode ser instalado juntamente com o lançamento estável e fornece acesso antecipado a novos recursos."
+		},
+		"other_methods": {
+			"name": "Outros métodos de instalação",
+			"description": "Instale o {FilesName} usando o WinGet, o Chocolatey, ou um instalador offline, seguindo as etapas da nossa página inicial."
 		}
 	}
 }

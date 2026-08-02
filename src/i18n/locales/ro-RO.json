@@ -15,7 +15,7 @@
 			"description": "{FilesName} este gratuit și cu sursă deschisă, întreținut și proiectat de un colectiv de sute de contribuitori.",
 			"discord": "Alătură-te discuției",
 			"docs": "Devino un contribuitor",
-			"contributions": "{amount, plural, =0 {Nici o contribuție} one {# contribuție} few {# contribuții} other {# contribuții}}"
+			"contributions": "{amount, plural, =0 {Nici o contribuție} one {# contribuție} few {# contribuții} other {# de contribuții}}"
 		},
 		"hero": {
 			"chip": "Erou",
@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Reamintire legări cheie",
 				"description": "Streamline you workflow by creating custom key binding. (Automatic Copy)"
+			},
+			"toolbar": {
+				"title": "Personalizare bară de instrumente",
+				"description": "Personalizați bara de instrumente prin adăugarea sau eliminarea butoanelor din lista de acțiuni disponibile."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Noutăți",
 		"download": "Descărcare",
 		"contribute": "Contribuiți la {FilesName}",
-		"feedback": "Oferiți feedback",
+		"feedback": "Raportare eroare",
+		"request_feature": "Solicitare caracteristică",
+		"donate": "Donează",
 		"style_guide": "Ghid Stil",
 		"translations": "Traduceri",
 		"support": "Suport",
@@ -138,19 +144,22 @@
 		"home": "Pornire",
 		"docs": "Documentație",
 		"news": "Noutăți",
+		"donate": "Donează",
 		"download": "Descărcare",
 		"themes": "Teme",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "Recomandat",
-			"classic": "Mai multe opțiuni"
-		},
 		"title": "Descărcați {FilesName}",
-		"donation_description": "{FilesName} este un proiect condus de comunitate care depinde de sprijinul tău pentru a crește și a se îmbunătăți. Vă rugăm să luați în considerare achiziționarea {FilesName} prin Microsoft Store sau sprijiniți-ne pe GitHub dacă folosiți instalarea clasică.",
-		"donation_button": "Donează",
+		"subtitle": "{FilesName} este un proiect condus de comunitate. Achiziționarea acestuia de pe magazinul Microsoft este cea mai bună modalitate de a sprijini dezvoltarea sa.",
+		"recommended": "Recomandat",
+		"version_label": "{version} versiune",
+		"store_badge_alt": "Ia-l de la Microsoft",
+		"classic_badge_alt": "Descarcă Instalare",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Previzualizare",
+		"more_options": "Mai multe opțiuni de descărcare",
 		"microsoft_store": {
 			"title": "Descărcați Files",
 			"description": "Achiziționarea {FilesName} prin Microsoft Store ne ajută să sprijinim dezvoltatorii și ne permite să continuăm actualizarea aplicației cu noi caracteristici și îmbunătățiri."
@@ -159,9 +168,15 @@
 			"title": "Descărcați versiunea Insider Preview",
 			"description": "Versiunea de previzualizare poate fi instalată alături de versiunea stabilă și oferă acces rapid la funcții și îmbunătățiri noi."
 		},
-		"self_signed": {
-			"link_text": "Instalator clasic",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "Instalatorul clasic este o alternativă gratuită la versiunea Microsoft Store. Include aceleași caracteristici și primește actualizări automate."
+		},
+		"classic_preview": {
+			"description": "Instalatorul clasic gratuit pentru versiunea de previzualizare. Acesta poate fi instalat alături de versiunea stabilă și oferă acces rapid la funcții noi."
+		},
+		"other_methods": {
+			"name": "Alte metode de instalare",
+			"description": "Instalați {FilesName} folosind WinGet, Chocolatey sau un instalator offline urmărind pașii de pe pagina noastră de început."
 		}
 	}
 }

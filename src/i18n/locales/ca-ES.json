@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Torna a assignar les combinacions de tecles",
 				"description": "Optimitza el teu flux de treball creant combinacions de tecles personalitzades."
+			},
+			"toolbar": {
+				"title": "Personalització de la barra d'eines",
+				"description": "Personalitzeu la barra d'eines afegint o eliminant botons de la llista d'accions disponibles."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Notícies",
 		"download": "Baixa",
 		"contribute": "Contribueix a {FilesName}",
-		"feedback": "Proporciona retroacció",
+		"feedback": "Informa d'un error",
+		"request_feature": "Sol·licitud de característica",
+		"donate": "Donate",
 		"style_guide": "Guia d'estil",
 		"translations": "Traduccions",
 		"support": "Suport",
@@ -138,19 +144,22 @@
 		"home": "Inici",
 		"docs": "Documentació",
 		"news": "Notícies",
+		"donate": "Donate",
 		"download": "Baixa",
 		"themes": "Temes",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"methods": {
-			"store": "Recomanat",
-			"classic": "Més opcions"
-		},
 		"title": "Baixa {FilesName}",
-		"donation_description": "{FilesName} és un projecte impulsat per la comunitat que depèn del vostre suport per créixer i millorar. Si us plau, considereu adquirir {FilesName} a través de la Microsoft Store o donar-nos suport a GitHub si feu servir l'instal·lador clàssic.",
-		"donation_button": "Donar",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Baixa el Files",
 			"description": "Adquirir {FilesName} a través de la Microsoft Store ajuda a donar suport als desenvolupadors i ens permet continuar actualitzant l'aplicació amb noves funcionalitats i millores."
@@ -159,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
 		},
-		"self_signed": {
-			"link_text": "pàgina d'inici",
-			"description": "Don't have access to the Microsoft Store? View more installation options on our "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }

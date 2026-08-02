@@ -18,55 +18,55 @@
 			"contributions": "{amount, plural, =0 {Brak udziałów} one {# udział} few {# udziałów} many {# udziałów} other {# udział}}"
 		},
 		"hero": {
-			"chip": "Bohater",
-			"description": "Śpiący, open source eksplorator plików stworzony dla systemu Windows, zaprojektowany z łatwością do zorganizowania plików i folderów.",
+			"chip": "Baner",
+			"description": "Elegancki, otwartoźródłowy menedżer plików stworzony dla systemu Windows, zaprojektowany z myślą o łatwości organizowania plików i folderów.",
 			"download": "Pobierz",
 			"view_on_github": "Zobacz na GitHub",
-			"files_is_open_source": "Pliki są open source!",
+			"files_is_open_source": "Files jest otwartoźródłowy!",
 			"install_on_windows": "Zainstaluj na Windows"
 		},
 		"tabs": {
-			"chip": "Tabs",
-			"title": "Maska wielozadaniowa z kartami",
-			"description": "Łatwo zarządzaj wieloma folderami w jednym oknie za pomocą zakładek. Przełącz się między zakładkami kliknięciem lub skrótem klawiszowym, aby zwiększyć wydajność.",
+			"chip": "Karty",
+			"title": "Wielozadaniowość z kartami",
+			"description": "Zarządzaj wieloma folderami z łatwością w jednym oknie za pomocą zakładek. Przełączaj się między zakładkami kliknięciem lub skrótem klawiszowym.",
 			"download": "Pobierz",
-			"learn_more": "Poznaj więcej"
+			"learn_more": "Dowiedz się więcej"
 		},
 		"design": {
 			"chip": "Wygląd",
-			"title": "Siła spotyka piękno.",
-			"description": "Odkrywaj piękny design. Zarządzaj swoimi plikami ze zwiększoną produktywnością. Pracuj na wielu folderach za pomocą kart. I o wiele więcej.",
+			"title": "Moc spotyka piękno.",
+			"description": "Odkrywaj piękny design. Zarządzaj swoimi plikami ze zwiększoną produktywnością. Pracuj na wielu folderach za pomocą kart i wiele więcej.",
 			"download": "Pobierz",
 			"learn_more": "Dowiedz się więcej"
 		},
 		"features": {
 			"chip": "Funkcje",
-			"title": "To już robi.",
+			"title": "Już to robi.",
 			"description": "Integracja z chmurą? Karty i wiele widoków? Szczegółowy podgląd plików? {FilesName} potrafi to wszystko dzięki zaawansowanym funkcjonalnościom, których oczekujesz od nowoczesnego menedżera plików.",
 			"unknown": "Nieznane",
 			"cloud": {
-				"title": "Transparentna integracja z chmurą",
+				"title": "Przejrzysta integracja z chmurą",
 				"description": "Wbudowane wsparcie dla dysków w chmurze, takich jak OneDrive, Dysk Google oraz iCloud."
 			},
 			"preview": {
 				"title": "Widok podglądu",
-				"description": "Podglądaj obrazy, filmy oraz dokumenty bez ich otwierania."
+				"description": "Szybko podglądaj obrazy, filmy oraz dokumenty bez ich otwierania."
 			},
 			"popup-preview": {
 				"title": "Wsparcie dla QuickLook & SeerPro",
-				"description": "Podglądaj pliki pakietu Office, dokumenty i inne rodzaje plików wciskając przycisk spacji. Ta funkcja wymaga zainstalowanego QuickLook lub SeerPro."
+				"description": "Podglądaj pliki pakietu Office, dokumenty i inne rodzaje plików, wciskając przycisk Spacji. Ta funkcja wymaga zainstalowania QuickLook lub SeerPro."
 			},
 			"tags": {
-				"title": "Taguj pliki i foldery",
-				"description": "Organizuj i sortuj swoje pliki i foldery za pomocą kolorowych tagów."
+				"title": "Oznaczaj pliki i foldery",
+				"description": "Organizuj i sortuj swoje pliki i foldery za pomocą kolorowych oznaczeń."
 			},
 			"tabs": {
-				"title": "Wielozadaniowość za pomocą kart",
-				"description": "Uniknij wielu okien i utrzymuj porządek na pulpicie za pomocą kart."
+				"title": "Pracuj wielozadaniowo z kartami",
+				"description": "Unikaj wielu okien i utrzymuj porządek na pulpicie za pomocą kart."
 			},
 			"columns": {
 				"title": "Widok kolumn",
-				"description": "Szybko nawiguj między wieloma poziomami systemu plików za pomocą widoku kolumn."
+				"description": "Szybko nawiguj między wieloma poziomami folderów za pomocą widoku kolumn."
 			},
 			"archives": {
 				"title": "Wyświetlaj i edytuj archiwa",
@@ -74,15 +74,15 @@
 			},
 			"git": {
 				"title": "Integracja z Git",
-				"description": "Z łatwością zarządzaj swoimi repozytoriami Git. Twórz nowe gałęzie, przełączaj je i synchronizuj swoje zmiany — to wszystko bez wychodzenia z Files."
+				"description": "Zarządzaj swoimi repozytoriami Git z łatwością. Twórz nowe gałęzie, przełączaj się między nimi i synchronizuj swoje zmiany — to wszystko bez wychodzenia z Files."
 			},
 			"dual-pane": {
 				"title": "Podwójny widok",
 				"description": "Otwórz i zarządzaj dwoma folderami obok siebie z funkcją podwójnego widoku."
 			},
 			"hashes": {
-				"title": "Skróty",
-				"description": "Przeglądaj i porównuj skróty plików za pomocą okna właściwości."
+				"title": "Funkcje skrótowe",
+				"description": "Przeglądaj i porównuj funkcje skrótowe plików za pomocą okna właściwości."
 			},
 			"command-palette": {
 				"title": "Paleta poleceń",
@@ -90,18 +90,22 @@
 			},
 			"remap-key-bindings": {
 				"title": "Remapuj powiązania kluczy",
-				"description": "Usprawnij workflow, tworząc niestandardowe powiązania z kluczami."
+				"description": "Usprawnij swoją pracę, tworząc niestandardowe skróty klawiszowe."
+			},
+			"toolbar": {
+				"title": "Dostosowywanie paska narzędzi",
+				"description": "Spersonalizuj pasek narzędzi, dodając lub usuwając przyciski z listy dostępnych akcji."
 			}
 		},
 		"themes": {
 			"chip": "Motywy",
-			"title": "Niezwykle osobisty.",
-			"description": "Zrób to po swojemu. {FilesName} posiada w pełni konfigurowalny interfejs, włącznie z kolorami i materiałami. Wypróbuj motywy wbudowane w {FilesName} lub sięgnij do dokumentacji i stwórz swój własny.",
+			"title": "Niezwykle osobiste.",
+			"description": "Zrób to po swojemu. {FilesName} posiada w pełni konfigurowalny interfejs, włącznie z kolorami i widokami. Wypróbuj motywy wbudowane w {FilesName} lub sięgnij do dokumentacji i stwórz swój własny.",
 			"grey_blue": "Ciemnoszary • Jasnoniebieski",
 			"grey_green": "Niebiesko-szary • Neonowa Zieleń",
 			"purple": "Fioletowy",
 			"yellow_white": "Żółty • Biały",
-			"white_teal": "Zimna biel",
+			"white_teal": "Zimna biel • Ciemno-turkusowy",
 			"sky_blue": "Niebieskie Niebo",
 			"select_theme": "Wybierz motyw #{index}"
 		}
@@ -128,8 +132,10 @@
 		"news": "Aktualności",
 		"download": "Pobierz",
 		"contribute": "Przyczyń się do {FilesName}",
-		"feedback": "Podziel się opinią",
-		"style_guide": "Siatka styli",
+		"feedback": "Zgłoś błąd",
+		"request_feature": "Poproś o funkcję",
+		"donate": "Wesprzyj",
+		"style_guide": "Przewodnik styli",
 		"translations": "Tłumaczenia",
 		"support": "Wsparcie",
 		"privacy": "Prywatność"
@@ -138,30 +144,39 @@
 		"home": "Strona główna",
 		"docs": "Dokumentacja",
 		"news": "Aktualności",
+		"donate": "Wesprzyj",
 		"download": "Pobierz",
 		"themes": "Motywy",
 		"discord": "Discord",
-		"github": "Github"
+		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "Zalecane",
-			"classic": "Więcej opcji"
-		},
 		"title": "Pobierz {FilesName}",
-		"donation_description": "{FilesName} jest projektem kierowanym przez społeczność, który zależy od Twojego wsparcia, aby rozwijać się i ulepszać. Proszę rozważyć zakup {FilesName} przez Microsoft Store lub wsparcie nas na GitHub, jeśli używasz klasycznego instalatora.",
-		"donation_button": "Wspomóż nas",
+		"subtitle": "{FilesName} jest projektem kierowanym przez społeczność. Kupno go w Microsoft Store jest najlepszym sposobem wspierania jego rozwoju.",
+		"recommended": "Rekomendowane",
+		"version_label": "Wersja {version}",
+		"store_badge_alt": "Pobierz z Microsoft",
+		"classic_badge_alt": "Pobierz Instalator",
+		"stable_name": "{FilesName}",
+		"preview_name": "Podgląd {FilesName}",
+		"more_options": "Więcej opcji pobierania",
 		"microsoft_store": {
-			"title": "Pobrane pliki",
-			"description": "Zakupy {FilesName} za pośrednictwem Microsoft Store pomagają programistom i pozwalają nam kontynuować aktualizację aplikacji za pomocą nowych funkcji i ulepszeń."
+			"title": "Pobierz Files",
+			"description": "Zakup {FilesName} za pośrednictwem Microsoft Store pomaga programistom i pozwala nam kontynuować aktualizację aplikacji z nowymi funkcjami i ulepszeniami."
 		},
 		"preview": {
-			"title": "Insider Preview",
-			"description": "Wersja podglądowa może być zainstalowana obok stabilnej wersji i zapewnia wczesny dostęp do nowych funkcji i ulepszeń."
+			"title": "Pobierz Insider Preview",
+			"description": "Wersję preview można zainstalować obok wersji stabilnej, aby wcześniej uzyskać dostęp do nowych funkcji i ulepszeń."
 		},
-		"self_signed": {
-			"link_text": "klasyczny instalator",
-			"description": "Zobacz więcej opcji instalacji i pobierz darmową wersję z naszej "
+		"classic_stable": {
+			"description": "Klasyczny instalator jest darmową alternatywą dla wersji Microsoft Store. Zawiera te same funkcje i otrzymuje automatyczne aktualizacje."
+		},
+		"classic_preview": {
+			"description": "Darmowy klasyczny instalator dla podglądu wersji. Może być zainstalowany obok stabilnego wydania i zapewnia wczesny dostęp do nowych funkcji."
+		},
+		"other_methods": {
+			"name": "Inne metody instalacji",
+			"description": "Zainstaluj {FilesName} za pomocą WinGet, Chocolatey lub instalatora offline, wykonując kroki na naszej stronie."
 		}
 	}
 }

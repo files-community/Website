@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Associazioni a tasti Remap",
 				"description": "Semplifica il flusso di lavoro creando combinazioni di tasti personalizzate."
+			},
+			"toolbar": {
+				"title": "Personalizzazione Barra Strumenti",
+				"description": "Personalizza la barra degli strumenti aggiungendo o rimuovendo i pulsanti dall'elenco delle azioni disponibili."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Novità",
 		"download": "Scarica",
 		"contribute": "Contribuisci a {FilesName}",
-		"feedback": "Facci sapere la tua opinione",
+		"feedback": "Segnala Un Bug",
+		"request_feature": "Richiedi Funzione",
+		"donate": "Dona",
 		"style_guide": "Guida allo Stile",
 		"translations": "Traduzioni",
 		"support": "Supporto",
@@ -138,19 +144,22 @@
 		"home": "Home",
 		"docs": "Documentazione",
 		"news": "Novità",
+		"donate": "Dona",
 		"download": "Scarica",
 		"themes": "Temi",
 		"discord": "Discord",
 		"github": "Github"
 	},
 	"download": {
-		"methods": {
-			"store": "Consigliato",
-			"classic": "Altre opzioni"
-		},
 		"title": "Scarica {FilesName}",
-		"donation_description": "{FilesName} è un progetto guidato dalla community che dipende dal tuo supporto per crescere e migliorare. Per favore, considera di comprare {FilesName} attraverso il Microsoft Store oppure di supportarci su GitHub se usi l'installer classico.",
-		"donation_button": "Dona",
+		"subtitle": "{FilesName} è un progetto guidato dalla comunità. Acquistarlo sul Microsoft Store è il modo migliore per supportarne lo sviluppo.",
+		"recommended": "Consigliato",
+		"version_label": "Versione {version}",
+		"store_badge_alt": "Ricevilo da Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "Anteprima {FilesName}",
+		"more_options": "Altre opzioni di download",
 		"microsoft_store": {
 			"title": "Scarica Files",
 			"description": "L'acquisto di {FilesName} attraverso il Microsoft Store aiuta a supportare gli sviluppatori e ci permette di continuare ad aggiornare l'app con nuove funzionalità e miglioramenti."
@@ -159,9 +168,15 @@
 			"title": "Scarica Anteprima Insider",
 			"description": "La versione in anteprima può essere installata insieme alla versione stabile e fornisce un accesso anticipato alle nuove funzionalità e miglioramenti."
 		},
-		"self_signed": {
-			"link_text": "installatore classico",
-			"description": "Visualizza più opzioni di installazione e scarica la versione gratuita dal nostro "
+		"classic_stable": {
+			"description": "Il classico programma di installazione è un'alternativa gratuita alla versione di Microsoft Store, che include le stesse funzionalità e riceve aggiornamenti automatici."
+		},
+		"classic_preview": {
+			"description": "Il classico programma di installazione gratuito per la versione di anteprima. Può essere installato insieme alla versione stabile e fornisce un accesso anticipato alle nuove funzionalità."
+		},
+		"other_methods": {
+			"name": "Altri metodi di installazione",
+			"description": "Installare {FilesName} usando WinGet, Chocolatey, o un installatore offline seguendo i passaggi sulla nostra pagina iniziale."
 		}
 	}
 }

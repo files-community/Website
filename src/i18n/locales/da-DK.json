@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Omlæg tastebindinger",
 				"description": "Strømlin din arbejdsgang med brugerdefinerede tastebindinger."
+			},
+			"toolbar": {
+				"title": "Værktøjslinje Tilpasning",
+				"description": "Tilpas værktøjslinjen ved at tilføje eller fjerne knapper fra listen over tilgængelige handlinger."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Nyheder",
 		"download": "Download",
 		"contribute": "Bidrag til {FilesName}",
-		"feedback": "Giv feedback",
+		"feedback": "Rapportér Fejl",
+		"request_feature": "Anmod Om Funktion",
+		"donate": "Donér",
 		"style_guide": "Stilguide",
 		"translations": "Oversættelser",
 		"support": "Support",
@@ -138,19 +144,22 @@
 		"home": "Hjem",
 		"docs": "Dokumentation",
 		"news": "Nyheder",
+		"donate": "Donér",
 		"download": "Download",
 		"themes": "Temaer",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "Recommended",
-			"classic": "More options"
-		},
 		"title": "Download {FilesName}",
-		"donation_description": "{FilesName} er et fællesskabsdrevet projekt, der afhænger af din støtte for at vokse og blive bedre. Overvej venligst at købe {FilesName} via Microsoft Store eller støtte os på GitHub, hvis du bruger den klassiske installatør.",
-		"donation_button": "Donér",
+		"subtitle": "{FilesName} er et fællesskabsdrevet projekt. Køb af det i Microsoft Store er den bedste måde at støtte udviklingen på.",
+		"recommended": "Anbefalet",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Få det fra Microsoft",
+		"classic_badge_alt": "Download Installationsprogram",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Forhåndsvisning",
+		"more_options": "Flere download-muligheder",
 		"microsoft_store": {
 			"title": "Download Files",
 			"description": "Når du køber {FilesName} via Microsoft Store, støtter du udviklerne og gør det muligt for os at fortsætte med at opdatere appen med nye funktioner og forbedringer."
@@ -159,9 +168,15 @@
 			"title": "Download Insider-forhåndsvisning",
 			"description": "Forhåndsvisningsversionen kan installeres sammen med den stabile udgivelse og giver tidlig adgang til nye funktioner og forbedringer."
 		},
-		"self_signed": {
-			"link_text": "klassisk installatør",
-			"description": "Se flere installationsmuligheder, og download den gratis version fra vores "
+		"classic_stable": {
+			"description": "Den klassiske installatør er et gratis alternativ til Microsoft Store-versionen. Den indeholder de samme funktioner og modtager automatiske opdateringer."
+		},
+		"classic_preview": {
+			"description": "Den gratis klassiske installatør til preview version. Det kan installeres sammen med den stabile udgivelse og giver tidlig adgang til nye funktioner."
+		},
+		"other_methods": {
+			"name": "Andre installationsmetoder",
+			"description": "Installer {FilesName} ved hjælp af WinGet, Chokolade eller et offline installationsprogram ved at følge trinene på vores startside."
 		}
 	}
 }
