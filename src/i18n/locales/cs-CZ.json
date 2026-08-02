@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Vlastní klávesové zkratky",
 				"description": "Zjednodušte si pracovní postupy vytvořením vlastních klávesových zkratek."
+			},
+			"toolbar": {
+				"title": "Přizpůsobení panelu nástrojů",
+				"description": "Přizpůsobte si panel nástrojů přidáním nebo odstraněním tlačítek ze seznamu dostupných akcí."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Novinky",
 		"download": "Stáhnout",
 		"contribute": "Přispějte do {FilesName}",
-		"feedback": "Zanechat zpětnou vazbu",
+		"feedback": "Nahlásit chybu",
+		"request_feature": "Žádost o funkci",
+		"donate": "Přispět",
 		"style_guide": "Příručka stylu",
 		"translations": "Překlad",
 		"support": "Podpora",
@@ -138,19 +144,22 @@
 		"home": "Domů",
 		"docs": "Dokumentace",
 		"news": "Novinky",
+		"donate": "Přispět",
 		"download": "Stáhnout",
 		"themes": "Motivy",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "Doporučeno",
-			"classic": "Další možnosti"
-		},
 		"title": "Stáhnout {FilesName}",
-		"donation_description": "{FilesName} je komunitní projekt, jehož růst a zlepšování závisí na vaší podpoře. Zvažte prosím zakoupení {FilesName} prostřednictvím obchodu Microsoft Store nebo nás podpořte na GitHubu, pokud používáte klasický instalátor.",
-		"donation_button": "Přispět",
+		"subtitle": "{FilesName} je komunitní projekt. Zakoupení na Microsoft Store je nejlepší způsob, jak podpořit jeho vývoj.",
+		"recommended": "Doporučené",
+		"version_label": "Verze {version}",
+		"store_badge_alt": "Získat od Microsoft",
+		"classic_badge_alt": "Stáhnout instalační program",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Náhled",
+		"more_options": "Další možnosti stahování",
 		"microsoft_store": {
 			"title": "Stáhnout Files",
 			"description": "Zakoupením {FilesName} prostřednictvím obchodu Microsoft Store podpoříte vývojáře a umožníte nám pokračovat v aktualizaci aplikace o nové funkce a vylepšení."
@@ -159,9 +168,15 @@
 			"title": "Předběžná verze",
 			"description": "Preview verzi lze nainstalovat současně se stabilní verzí a poskytuje předběžný přístup k novým funkcím a vylepšením."
 		},
-		"self_signed": {
-			"link_text": "klasický instalátor",
-			"description": "Zobrazit více možností instalace a stáhnout bezplatnou verzi z naší "
+		"classic_stable": {
+			"description": "Klasický instalátor je bezplatná alternativa k verzi Microsoft Store. Obsahuje stejné funkce a přijímá automatické aktualizace."
+		},
+		"classic_preview": {
+			"description": "Klasický instalační program zdarma pro náhledovou verzi. Může být nainstalován vedle stabilní verze a umožňuje včasný přístup k novým funkcím."
+		},
+		"other_methods": {
+			"name": "Jiné metody instalace",
+			"description": "Nainstalujte {FilesName} pomocí WinGet, Chocolatey, nebo offline instalačního programu a postupujte podle kroků na naší úvodní stránce."
 		}
 	}
 }
