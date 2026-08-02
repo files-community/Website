@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Remapper les raccourcis clavier",
 				"description": "Simplifiez votre flux de travail en créant des raccourcis clavier personnalisés."
+			},
+			"toolbar": {
+				"title": "Personnalisation de la barre d'outils",
+				"description": "Personnalisez la barre d'outils en ajoutant ou en retirant des boutons de la liste des actions disponibles."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Actualités",
 		"download": "Téléchargement",
 		"contribute": "Contribuer à {FilesName}",
-		"feedback": "Donner votre avis",
+		"feedback": "Signaler un bug",
+		"request_feature": "Demander une fonctionnalité",
+		"donate": "Faire un don",
 		"style_guide": "Guide de style",
 		"translations": "Traductions",
 		"support": "Soutien",
@@ -138,19 +144,22 @@
 		"home": "Accueil",
 		"docs": "Documentation",
 		"news": "Actualités",
+		"donate": "Faire un don",
 		"download": "Téléchargement",
 		"themes": "Thèmes",
 		"discord": "Discord",
 		"github": "GitHub"
 	},
 	"download": {
-		"methods": {
-			"store": "Recommandé",
-			"classic": "Plus d'options"
-		},
 		"title": "Télécharger {FilesName}",
-		"donation_description": "{FilesName} est un projet conduit par sa communauté, qui dépend de votre soutien pour se développer et s'améliorer. Nous vous invitons à considérer l'achat de {FilesName} via le Microsoft Store ou de nous soutenir sur GitHub si vous utilisez l'installateur classique.",
-		"donation_button": "Faire un don",
+		"subtitle": "{FilesName} est un projet axé sur la communauté. L'acheter sur Microsoft Store est le meilleur moyen de soutenir son développement.",
+		"recommended": "Recommandé",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Obtenez-le depuis Microsoft",
+		"classic_badge_alt": "Télécharger l'installateur",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Aperçu",
+		"more_options": "Plus d'options de téléchargement",
 		"microsoft_store": {
 			"title": "Télécharger Files",
 			"description": "Acheter {FilesName} via le Microsoft Store soutient les développeurs et nous permet de continuer à mettre à jour l'application avec de nouvelles fonctionnalités et améliorations."
@@ -159,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "La version d'aperçu peut être installée parallèlement à la version stable et fournit un accès rapide aux nouvelles fonctionnalités et améliorations."
 		},
-		"self_signed": {
-			"link_text": "installateur classique",
-			"description": "Voir plus d'options d'installation et télécharger la version gratuite de notre "
+		"classic_stable": {
+			"description": "L'installateur classique est une alternative gratuite à la version Microsoft Store, qui inclut les mêmes fonctionnalités et reçoit les mises à jour automatiques."
+		},
+		"classic_preview": {
+			"description": "L'installateur classique gratuit pour la version d'aperçu. Il peut être installé parallèlement à la version stable et fournit un accès rapide à de nouvelles fonctionnalités."
+		},
+		"other_methods": {
+			"name": "Autres méthodes d'installation",
+			"description": "Installez {FilesName} en utilisant WinGet, Chocolatey ou un installateur hors ligne en suivant les étapes de notre page de démarrage."
 		}
 	}
 }
