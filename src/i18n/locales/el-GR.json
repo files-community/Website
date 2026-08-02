@@ -91,6 +91,10 @@
 			"remap-key-bindings": {
 				"title": "Αφαίρεση συντομεύσεων πλήκτρων",
 				"description": "Μεταδώστε τη ροή εργασίας δημιουργώντας προσαρμοσμένες συνδέσεις κλειδιών."
+			},
+			"toolbar": {
+				"title": "Προσαρμογή Γραμμής Εργαλείων",
+				"description": "Προσαρμόστε τη γραμμή εργαλείων προσθέτοντας ή αφαιρώντας τα κουμπιά από τη λίστα των διαθέσιμων ενεργειών."
 			}
 		},
 		"themes": {
@@ -128,7 +132,9 @@
 		"news": "Νέα",
 		"download": "Λήψη",
 		"contribute": "Συνεισφέρετε στο {FilesName}",
-		"feedback": "Δώστε Σχόλια",
+		"feedback": "Αναφορά Σφάλματος",
+		"request_feature": "Λειτουργία Αίτησης",
+		"donate": "Donate",
 		"style_guide": "Style Guide",
 		"translations": "Μεταφράσεις",
 		"support": "Υποστήριξη",
@@ -138,6 +144,7 @@
 		"home": "Αρχική",
 		"docs": "Τεκμηρίωση",
 		"news": "Νέα",
+		"donate": "Donate",
 		"download": "Λήψη",
 		"themes": "Θέματα",
 		"discord": "Discord",
@@ -145,8 +152,14 @@
 	},
 	"download": {
 		"title": "Λήψη {FilesName}",
-		"donation_description": "Το {FilesName} είναι ένα έργο βασισμένο στην κοινότητα που εξαρτάται από την υποστήριξή σας για να αναπτυχθεί και να βελτιωθεί. Παρακαλούμε σκεφτείτε να αγοράσετε το {FilesName} μέσω του Microsoft Store ή να μας υποστηρίξετε στο GitHub αν χρησιμοποιήσετε το κλασικό πρόγραμμα εγκατάστασης.",
-		"donation_button": "Δωρεά",
+		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
+		"recommended": "Recommended",
+		"version_label": "Version {version}",
+		"store_badge_alt": "Get it from Microsoft",
+		"classic_badge_alt": "Download Installer",
+		"stable_name": "{FilesName}",
+		"preview_name": "{FilesName} Preview",
+		"more_options": "More download options",
 		"microsoft_store": {
 			"title": "Λήψη Αρχείων",
 			"description": "Αγοράζοντας το {FilesName} μέσω του Microsoft Store βοηθά στην υποστήριξη των προγραμματιστών και μας επιτρέπει να συνεχίσουμε την ενημέρωση της εφαρμογής με νέες δυνατότητες και βελτιώσεις."
@@ -155,9 +168,15 @@
 			"title": "Insider Preview",
 			"description": "Η έκδοση προεπισκόπησης μπορεί να εγκατασταθεί παράλληλα με τη σταθερή απελευθέρωση και παρέχει έγκαιρη πρόσβαση σε νέες δυνατότητες και βελτιώσεις."
 		},
-		"self_signed": {
-			"link_text": "κλασικός εγκαταστάτης",
-			"description": "Δείτε περισσότερες επιλογές εγκατάστασης και κατεβάστε την δωρεάν έκδοση από μας "
+		"classic_stable": {
+			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		},
+		"classic_preview": {
+			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		},
+		"other_methods": {
+			"name": "Other install methods",
+			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
 		}
 	}
 }
