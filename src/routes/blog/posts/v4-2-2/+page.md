@@ -52,7 +52,7 @@ Compressing and extracting archives that contain a large number of files is now 
 
 ### Announcing a new integration with WindowSill
 
-We're excited to announce a new integration with [WindowSill](https://getwindowsill.app/), an AI-powered command bar for Windows. WindowSill now detects when Files is in focus and automatically reads the current folder and your selected items, surfacing context-aware tools right where you need them. There's no setup required — simply select an item in Files and the relevant tools are displayed in WindowSill.
+We're excited to announce a new integration with [WindowSill](https://getwindowsill.app/), an AI-powered command bar for Windows. WindowSill now detects when Files is in focus and automatically reads the current folder and your selected items, surfacing context-aware tools right where you need them. When both programs are installed — simply select an item in Files and the relevant tools are displayed in WindowSill.
 
 Depending on what you select, WindowSill offers tools such as converting or compressing images and videos, splitting or merging PDFs, converting documents and spreadsheets, and peeking inside archives without extracting them. The integration works with both the Microsoft Store and standalone versions of Files.
 
