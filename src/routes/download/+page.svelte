@@ -56,30 +56,6 @@
 		],
 		classic: [
 			{
-				name: $_("download.stable_name", defaultI18nValues),
-				description: $_(
-					"download.classic_stable.description",
-					defaultI18nValues,
-				),
-				href: `/appinstallers/Files.stable.appinstaller`,
-				icon: "/branding/logo-light.svg",
-				darkModeIcon: "/branding/logo-dark.svg",
-				download: true,
-				version: stableVersion,
-			},
-			{
-				name: $_("download.preview_name", defaultI18nValues),
-				description: $_(
-					"download.classic_preview.description",
-					defaultI18nValues,
-				),
-				href: `/appinstallers/Files.preview.appinstaller`,
-				icon: "/download-sources/preview_light.svg",
-				darkModeIcon: "/download-sources/preview_dark.svg",
-				download: true,
-				version: previewVersion,
-			},
-			{
 				name: $_("download.other_methods.name", defaultI18nValues),
 				description: $_(
 					"download.other_methods.description",
