@@ -134,7 +134,7 @@
 		"contribute": "Đóng góp cho {FilesName}",
 		"feedback": "Báo lỗi",
 		"request_feature": "Yêu cầu tính năng",
-		"donate": "Donate",
+		"donate": "Ủng hộ",
 		"style_guide": "Hướng dẫn thiết kế",
 		"translations": "Dịch thuật",
 		"support": "Hỗ trợ",
@@ -144,7 +144,7 @@
 		"home": "Trang chủ",
 		"docs": "Tài liệu",
 		"news": "Bài viết",
-		"donate": "Donate",
+		"donate": "Ủng hộ",
 		"download": "Tải xuống",
 		"themes": "Chủ đề",
 		"discord": "Discord",
@@ -152,14 +152,14 @@
 	},
 	"download": {
 		"title": "Tải {FilesName}",
-		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
-		"recommended": "Recommended",
-		"version_label": "Version {version}",
-		"store_badge_alt": "Get it from Microsoft",
-		"classic_badge_alt": "Download Installer",
+		"subtitle": "{FilesName} là một dự án hướng tới cộng đồng. Mua ứng dụng trên Microsoft Store là cách tốt nhất để hỗ trợ phát triển dự án.",
+		"recommended": "Đề xuất",
+		"version_label": "Phiên bản {version}",
+		"store_badge_alt": "Tải từ Microsoft",
+		"classic_badge_alt": "Tải trình cài đặt",
 		"stable_name": "{FilesName}",
 		"preview_name": "{FilesName} Preview",
-		"more_options": "More download options",
+		"more_options": "Thêm tuỳ chọn tải xuống",
 		"microsoft_store": {
 			"title": "Tải xuống Files",
 			"description": "Mua {FilesName} từ Microsoft Store để ủng hộ các nhà phát triển và giúp chúng tôi tiếp tục bổ sung các cải thiện và tính năng mới."
@@ -169,14 +169,14 @@
 			"description": "Phiên bản xem trước có thể được cài đặt song song với phiên bản ổn định và cung cấp quyền truy cập sớm vào các cải thiện và tính năng mới."
 		},
 		"classic_stable": {
-			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+			"description": "Trình cài đặt cổ điển là phiên bản miễn phí bên cạnh phiên bản Microsoft Store, bao gồm các tính năng tương đương và cập nhật tự động."
 		},
 		"classic_preview": {
-			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+			"description": "Trình cài đặt cổ điển miễn phí cho phiên bản xem trước. Có thể cài đặt song song với bản ổn định và cung cấp quyền truy cập sớm vào các tính năng mới."
 		},
 		"other_methods": {
-			"name": "Other install methods",
-			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
+			"name": "Phương thức cài đặt khác",
+			"description": "Cài đặt {FilesName} bằng WinGet, Chocolatey hoặc trình cài đặt ngoại tuyến bằng cách làm theo các bước trong trang bắt đầu."
 		}
 	}
 }
