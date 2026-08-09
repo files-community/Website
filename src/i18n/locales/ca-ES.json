@@ -11,8 +11,8 @@
 	"home": {
 		"community": {
 			"chip": "Comunitat",
-			"title": "Dissenyat i desenvolupat per tu.",
-			"description": "{FilesName} és un programari gratuït i de codi obert, mantingut i dissenyat per una col·lectiva de centenars de col·laboradors.",
+			"title": "Dissenyat i desenvolupat per a vos.",
+			"description": "El {FilesName} és un programari gratuït i de codi obert, mantingut i dissenyat per un col·lectiu de centenars de col·laboradors.",
 			"discord": "Uneix-te a la discussió",
 			"docs": "Converteix-te en col·laborador",
 			"contributions": "{amount, plural, =0 {No hi ha contribucions} one {# contribució} other {# contribucions}}"
@@ -41,56 +41,56 @@
 		},
 		"features": {
 			"chip": "Característiques",
-			"title": "Ja ho fa.",
-			"description": "Integració amb fitxers a la núvol? Pestanyes i més d'un disseny? Previsualitzacions avançades de fitxers? {FilesName} ho té cobert amb característiques robustes que esperes d'un gestor de fitxers modern.",
+			"title": "Això ja ho fa.",
+			"description": "Integració de fitxers al núvol? Pestanyes i múltiples dissenys? Previsualitzacions de fitxers enriquides? El {FilesName} ho té tot cobert amb les funcions robustes que espereu d'un gestor de fitxers modern.",
 			"unknown": "Desconegut",
 			"cloud": {
-				"title": "Integració a la núvol sense costura",
-				"description": "Suport integrat per a discos a la núvol com OneDrive, Google Drive i iCloud."
+				"title": "Integració perfecta amb el núvol",
+				"description": "Compatibilitat integrada amb unitats de núvol com ara el OneDrive, Google Drive i iCloud."
 			},
 			"preview": {
-				"title": "Pany de previsualització",
-				"description": "Visualitza fotos, vídeos i documents sense obrir-los."
+				"title": "Panell de previsualització",
+				"description": "Visualitzeua fotos, vídeos i documents sense obrir-los."
 			},
 			"popup-preview": {
-				"title": "Suport per a QuickLook i SeerPro",
-				"description": "Previsualitza fitxers d'Office, documents i altres tipus de fitxers prement la barra d'espai. Aquesta característica requereix instal·lar QuickLook o SeerPro."
+				"title": "Suport per al QuickLook i SeerPro",
+				"description": "Previsualitzeu fitxers d'Office, documents i altres tipus de fitxers prement la barra espaiadora. Aquesta funció requereix la instal·lació del QuickLook o SeerPro."
 			},
 			"tags": {
-				"title": "Etiqueta fitxers i carpetes",
-				"description": "Organitza i classifica els teus fitxers i carpetes amb etiquetes de colors."
+				"title": "Etiqueteu fitxers i carpetes",
+				"description": "Organitzeu i ordeneu fitxers i carpetes amb etiquetes de colors."
 			},
 			"tabs": {
-				"title": "Feu multitasca amb pestanyes",
-				"description": "Evita finestres múltiples i mantén el teu escriptori sense desordre amb pestanyes."
+				"title": "Multitasca amb pestanyes",
+				"description": "Eviteu diverses finestres i manteniu l'escriptori net amb pestanyes."
 			},
 			"columns": {
 				"title": "Vista de columnes",
-				"description": "Navega ràpidament a través de diferents nivells del sistema de fitxers utilitzant la disposició de columnes."
+				"description": "Navegueu ràpidament pels diferents nivells del sistema de fitxers mitjançant la disposició de columnes."
 			},
 			"archives": {
-				"title": "Visualitza i edita arxius comprimits",
-				"description": "Crea i extreu arxius, incloent zip, WinRar i 7zip."
+				"title": "Visualitzeu i editeu arxius comprimits",
+				"description": "Creu i extreu arxius comprimits, incloent-hi zip, WinRar i 7zip."
 			},
 			"git": {
-				"title": "Integració amb Git",
-				"description": "Gestiona fàcilment els teus projectes Git. Crea noves branques, canvia entre elles i sincronitza els teus canvis, tot sense sortir de Files."
+				"title": "Integració amb el Git",
+				"description": "Gestioneu fàcilment els projectes del Git. Creu noves branques, canvieu entre elles i sincronitzeu els canvis, tot sense sortir del Files."
 			},
 			"dual-pane": {
 				"title": "Panell dual",
-				"description": "Visualitza i gestiona dues carpetes al costat amb la funció de panell dual."
+				"description": "Visualitzeu i gestioneu dues carpetes una al costat de l'altra amb la funció del panell dual."
 			},
 			"hashes": {
 				"title": "Hashes",
-				"description": "Visualitza i compara els hash dels fitxers des de la finestra de propietats."
+				"description": "Visualitzeu i compareu els hashes dels fitxers des de la finestra de propietats."
 			},
 			"command-palette": {
-				"title": "Paleta de Comandes",
-				"description": "Accedeix ràpidament a comandes, funcions i configuracions des de la Paleta de Comandes."
+				"title": "Paleta d'ordres",
+				"description": "Accediu ràpidament a ordres, funcions i configuracions des de la paleta d'ordres."
 			},
 			"remap-key-bindings": {
-				"title": "Torna a assignar les combinacions de tecles",
-				"description": "Optimitza el teu flux de treball creant combinacions de tecles personalitzades."
+				"title": "Reassignació de combinacions de tecles",
+				"description": "Optimitzeu el vostre flux de treball creant combinacions de tecles personalitzades."
 			},
 			"toolbar": {
 				"title": "Personalització de la barra d'eines",
@@ -99,8 +99,8 @@
 		},
 		"themes": {
 			"chip": "Temes",
-			"title": "Distingitament personal.",
-			"description": "A la teva manera. {FilesName} ofereix una interfície d'usuari totalment personalitzable, fins als colors i materials. Prova els temes personalitzats incorporats a {FilesName} o plongeu a la documentació i crea el teu propi.",
+			"title": "Clarament personal.",
+			"description": "Feu-lo a la vostra manera. El {FilesName} té una interfície d'usuari totalment personalitzable, fins i tot els colors i els materials. Proveu els temes personalitzats que estan integrats al {FilesName} o submergiu-vos directament a la documentació i creeu-ne el vostre propi.",
 			"grey_blue": "Gris Fosc • Blau Clar",
 			"grey_green": "Blau Gris • Verd Neó",
 			"purple": "Lila",
@@ -131,10 +131,10 @@
 		"docs": "Documentació",
 		"news": "Notícies",
 		"download": "Baixa",
-		"contribute": "Contribueix a {FilesName}",
+		"contribute": "Contribueix al {FilesName}",
 		"feedback": "Informa d'un error",
 		"request_feature": "Sol·licitud de característica",
-		"donate": "Donate",
+		"donate": "Donatiu",
 		"style_guide": "Guia d'estil",
 		"translations": "Traduccions",
 		"support": "Suport",
@@ -144,7 +144,7 @@
 		"home": "Inici",
 		"docs": "Documentació",
 		"news": "Notícies",
-		"donate": "Donate",
+		"donate": "Donatiu",
 		"download": "Baixa",
 		"themes": "Temes",
 		"discord": "Discord",
@@ -152,14 +152,14 @@
 	},
 	"download": {
 		"title": "Baixa {FilesName}",
-		"subtitle": "{FilesName} is a community-driven project. Purchasing it on the Microsoft Store is the best way to support its development.",
-		"recommended": "Recommended",
-		"version_label": "Version {version}",
-		"store_badge_alt": "Get it from Microsoft",
-		"classic_badge_alt": "Download Installer",
+		"subtitle": "El {FilesName} és un projecte impulsat per la comunitat. Comprar-lo a la Microsoft Store és la millor manera de donar suport al seu desenvolupament.",
+		"recommended": "Recomanat",
+		"version_label": "Versió {version}",
+		"store_badge_alt": "Obtén-ho de Microsoft",
+		"classic_badge_alt": "Baixa l'instal·lador",
 		"stable_name": "{FilesName}",
-		"preview_name": "{FilesName} Preview",
-		"more_options": "More download options",
+		"preview_name": "{FilesName} Versió preliminar",
+		"more_options": "Més opcions de baixada",
 		"microsoft_store": {
 			"title": "Baixa el Files",
 			"description": "Adquirir {FilesName} a través de la Microsoft Store ajuda a donar suport als desenvolupadors i ens permet continuar actualitzant l'aplicació amb noves funcionalitats i millores."
@@ -169,14 +169,14 @@
 			"description": "La versió de previsualització es pot instal·lar al costat de la versió estable i ofereix accés anticipat a noves funcionalitats i millores."
 		},
 		"classic_stable": {
-			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+			"description": "L'instal·lador clàssic és una alternativa gratuïta a la versió de la Microsoft Store. Inclou les mateixes funcions i rep actualitzacions automàtiques."
 		},
 		"classic_preview": {
-			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+			"description": "L'instal·lador clàssic gratuït per a la versió preliminar. Es pot instal·lar juntament amb la versió estable i proporciona accés anticipat a les noves funcions."
 		},
 		"other_methods": {
-			"name": "Other install methods",
-			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
+			"name": "Altres mètodes d'instal·lació",
+			"description": "Instal·la el {FilesName} amb WinGet, Chocolatey o un instal·lador sense connexió seguint els passos de la nostra pàgina d'inici."
 		}
 	}
 }
