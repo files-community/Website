@@ -23,10 +23,14 @@ export const load: PageServerLoad = async () => {
 				({
 					slug: path.match(/\.\/posts\/([\w-]+)\/\+page\.md$/)?.[1],
 					metadata,
-				} as Post)
+				}) as Post,
 		)
 		.filter(post => Date.now() >= +new Date(post.metadata.date))
-		.sort((a, b) => +new Date(b.metadata.date) - +new Date(a.metadata.date));
+		.sort(
+			(a, b) =>
+				+new Date(b.metadata.date) - +new Date(a.metadata.date) ||
+				b.slug.localeCompare(a.slug, undefined, { numeric: true }),
+		);
 
 	return { posts };
 };
