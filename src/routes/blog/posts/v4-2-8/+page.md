@@ -1,14 +1,14 @@
 ---
 title: Announcing Files v4.2.8
-description: We're excited to announce the general availability of Files v4.2.8.
+description: Announcing Files Preview v4.2.8 for users of the preview version.
 thumbnail: /blog-resources/v4-2-8/Hero.webp
 date: 8/17/2026
 author: files-community
 ---
 
-Today we are releasing **Files v4.2.8** for all users.
+Today we are releasing **Files Preview v4.2.8** for users of the preview version.
 
-An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
+An update icon should be displayed in the top right corner of the app for existing users, while new users can get started from our [download](/download/) page. Additionally, you can help support the project by purchasing Files on the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) or by sponsoring us on [GitHub](/sponsor). Your support is greatly appreciated but entirely optional.
 
 ## Fixes
 
@@ -22,4 +22,4 @@ Thank you for using Files! 😊
 
 ---
 
-Download Files from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)
+Download Files Preview from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9NSQD9PKV3SS&cid=FilesWebsite) | Sponsor us on [GitHub](/sponsor)
