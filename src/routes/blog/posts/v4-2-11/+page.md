@@ -14,7 +14,7 @@ An update icon should be displayed in the top right corner of the app for existi
 
 ### Improved startup performance
 
-Building on the optimizations in the last release, we've made additional improvements to startup speed and reduced the download speed by another 30mb. This work is still ongoing, please share any feedback you have on the [Files Discord](https://discord.gg/files).
+Building on the optimizations in the [previous build](/blog/posts/v4-2-10), we've made additional improvements to startup speed and reduced the download speed by another 30mb. This work is still ongoing, please share any feedback you have on the [Files Discord](https://discord.gg/files).
 
 ## Conclusion
 
