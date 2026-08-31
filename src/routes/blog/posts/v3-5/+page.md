@@ -71,7 +71,6 @@ We’ve expanded our language support to now include Belarusian. Our localizatio
 While enhancements in performance and stability typically occur behind the scenes, we often get a lot of questions about our work in this area and we wanted to share some highlights.
 
 - We've adopted Sentry for more robust crash reporting (shoutout to Sentry for their support of open-source projects), and we aim to extend its use to monitor performance metrics, ensuring Files gets faster with each update.
-- Our main challenge with startup speed has been the absence of Native AOT in WinAppSdk. Fortunately, Microsoft is working to address this, and we hope to integrate these advancements later in the year.
 - We recently started a new effort to eliminate unnecessary dependencies and streamline app resources, effectively shrinking the app’s footprint on your device.
 
 ## Changes and Improvements
