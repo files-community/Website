@@ -22,7 +22,7 @@ You can drag a tab into the current tab's file area to open it as a second pane.
 
 ## Drag files between tabs
 
-Dragging items between tabs is pretty easy. Simply drag the items and hover the mouse over the relevant tab. The app will automatically switch tabs, allowing you to drop the files in the desired location.
+Dragging items between tabs is pretty easy. Simply drag the items and hover the mouse over the relevant tab. The tab you are hovering over is outlined in your accent color, and after holding there for a moment the app will switch to that tab, allowing you to drop the files in the desired location.
 
 ## Shortcuts for interacting with tabs
 

@@ -50,7 +50,8 @@
 		}
 	}
 
-	img {
+	img,
+	video {
 		max-inline-size: 100%;
 		block-size: auto;
 		border-radius: var(--fds-overlay-corner-radius);

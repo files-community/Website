@@ -18,6 +18,8 @@ The current branch name will displayed on the Status Bar. To create a new branch
 
 The number of local and remote commits will be displayed on the Status Bar. To push or pull commits from a remote repo, click on the commit count and select the push or pull option. Syncing with the remote repo will update the commit number on the status bar without taking any actions.
 
+Push, pull, sync, fetch, and checkout operations report their progress in the Status Center while they run. If an operation fails, the message from Git is shown so you can see what went wrong.
+
 ### Git columns in the Details layout
 
 The Details layout will display additional columns for Git status, last commit, commit hash, and commit author. These columns can be toggled by right-clicking the column headers.

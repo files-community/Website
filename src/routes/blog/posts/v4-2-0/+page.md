@@ -109,7 +109,7 @@ To open Toolbar Customization, right-click the toolbar and select **Customize to
 
 ### Cycle layouts with the scroll wheel
 
-**Ctrl** + scroll on the file area already resizes items within the current layout. Starting with this release, once you reach the smallest or largest size, continuing to scroll now advances to the next [layout mode](/docs/features/layout-modes/) instead of stopping, letting you move between all layouts.
+**Ctrl** + scroll on the file area already resizes items within the current layout. Starting with this release, once you reach the smallest or largest size, continuing to scroll now advances to the next [layout mode](/docs/features/layout-picker/) instead of stopping, letting you move between all layouts.
 
 ### Reverse tab scroll direction
 
@@ -154,7 +154,7 @@ When Network Discovery is turned off in Windows, Files now displays a banner in 
 - Fixed an issue where launching Files from the command line didn't work correctly in some scenarios.
 - Fixed an issue where keyboard shortcuts didn't work on the Release Notes page.
 - Fixed an issue where toolbar buttons were sometimes missing.
-- Fixed an issue with keyboard focus in [Columns View](/docs/features/layout-modes/#columns-view).
+- Fixed an issue with keyboard focus in [Columns View](/docs/features/layout-picker/#layout-type).
 - Fixed an issue where archives weren't displayed in the Recent Files widget.
 - Fixed an issue where a pinned library didn't display correctly in the sidebar.
 - Fixed an issue where shortcuts weren't displayed in search results.
