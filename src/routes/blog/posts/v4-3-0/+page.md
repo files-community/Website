@@ -48,7 +48,7 @@ Navigating between folders is now noticeably quicker and more responsive. Thumbn
 
 ### Sharper icons and thumbnails
 
-Icons and thumbnails in the grid layout are now DPI aware, so they render crisply on high-resolution and scaled displays. (Thanks @yair100!)
+Icons and thumbnails in the grid layout are now DPI aware. (Thanks @yair100!)
 
 ### Lower memory usage
 
