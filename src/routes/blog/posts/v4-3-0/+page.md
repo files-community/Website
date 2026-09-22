@@ -42,9 +42,8 @@ Files is now quicker to download and set up on a new PC. The .NET Desktop Runtim
 
 Navigating between folders is now noticeably quicker and more responsive. Thumbnails and icons also load slightly faster when opening a folder. (Thanks @hez2010 and @yair100!)
 
-<figure class="margin-bottom">
+<figure>
     <video src="/blog-resources/v4-3-0/NavigationComparison.mp4" width="1920" height="768" autoplay loop muted playsinline aria-label="Navigation and scrolling comparison of Files v4.2 and Files v4.3"></video>
-    <figcaption>Navigation and scrolling</figcaption>
 </figure>
 
 ### Sharper icons and thumbnails
