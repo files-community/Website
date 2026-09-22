@@ -142,7 +142,7 @@ https://cdn.files.community/files/preview/Files.Package/Files.Package_x64_arm64.
 
 ## Keep Files up to date
 
-Files will automatically check for updates whenever the app is opened and an indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
+Files will automatically check for updates when the app is opened and periodically while it is running. An indicator will be displayed on the toolbar if an update is available. You can also manually check for updates from the [Microsoft Store](ms-windows-store://pdp/?ProductId=9nghp3dx8hdx&cid=FilesWebsite) or by downloading the classic installer.
 
 <InfoBar title="Note" severity="information">
 	Installing an update will automatically restart Files so make sure to save your work before starting an update.
@@ -153,24 +153,6 @@ Files will automatically check for updates whenever the app is opened and an ind
 ### Cannot open app package
 
 If you see a "Cannot open app package" message when you try to open Files, it means that your device needs an update for the AppInstaller component. You can update it from the Microsoft Store app on your device, or by downloading and running this [installer](https://learn.microsoft.com/en-us/windows/msix/app-installer/install-update-app-installer).
-
-### Installing without administrator privileges
-
-Files can be installed without administrator privileges, but it requires the .NET 10 runtime to run. If you don't have administrator access on your device, you can follow these steps to install .NET:
-
-1. Download [dotnet-install.ps1](https://dot.net/v1/dotnet-install.ps1) from Microsoft.
-2. Open PowerShell in the folder containing the script and run the following commands:
-
-   ```
-   $dotnetDir = "$env:LOCALAPPDATA\Microsoft\dotnet"
-
-   .\dotnet-install.ps1 -Runtime WindowsDesktop -Channel 10.0 -InstallDir $dotnetDir
-   .\dotnet-install.ps1 -Runtime dotnet         -Channel 10.0 -InstallDir $dotnetDir
-
-   [System.Environment]::SetEnvironmentVariable("DOTNET_ROOT", $dotnetDir, "User")
-   ```
-
-3. Reopen Files.
 
 ### Updates
 

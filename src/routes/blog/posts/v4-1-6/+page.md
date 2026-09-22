@@ -55,7 +55,7 @@ The File In Use dialog now includes a **Skip** button.
 - Fixed an issue where launching Files from the command line didn't work correctly in some scenarios.
 - Fixed an issue where keyboard shortcuts didn't work on the Release Notes page.
 - Fixed an issue where toolbar buttons were sometimes missing.
-- Fixed an issue with keyboard focus in [Columns View](/docs/features/layout-modes/#columns-view).
+- Fixed an issue with keyboard focus in [Columns View](/docs/features/layout-picker/#layout-type).
 - Fixed an issue where archives weren't displayed in the Recent Files widget.
 - Fixed an issue where a pinned library didn't display correctly in the sidebar.
 - Fixed an issue where shortcuts weren't displayed in search results.

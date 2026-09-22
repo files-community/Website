@@ -4,7 +4,9 @@ title: Frequently Asked Questions
 
 ## How to Locate the Log File
 
-If Files launches successfully, the easiest way to access the log file is directly from **Settings → About → Open log location**. If you're unable to open the UI, you can locate the log manually using File Explorer. The path varies depending on which version of Files is installed:
+If Files launches successfully, the easiest way to access the log file is directly from **Settings → About → Open log location**. If you're unable to open the UI, you can locate the log manually using File Explorer. Your username and the paths of your files are masked in the log, so it can be shared when reporting an issue.
+
+The path varies depending on which version of Files is installed:
 
 ### Files Stable (Microsoft Store)
 
@@ -36,13 +38,12 @@ The default settings are designed to deliver the best performance across differe
 
 ## How to Reduce Memory Usage
 
-Resource consumption naturally increases when opening new tabs or navigating to different locations. However, we're aware of several memory leaks that can cause usage to accumulate over extended sessions.
-
-To mitigate this, consider disabling the option to keep Files in the background from **Settings → Advanced → Leave app running in the background when the window is closed**. Note that turning this off may result in slower launch times for Files. We're investigating these leaks and looking for a long-term solution.
+Resource consumption naturally increases when opening new tabs or navigating to different locations. Memory usage should drop again after letting Files sit idle for a little while.
 
 ## How to Open Files from Command Line
 
 To open Files from command line, run the following command: `files-<branch>.exe`, replacing `<branch>` with the version of Files you have installed:
+
 - `stable`: Production build
 - `preview`: Beta/preview build
 - `dev`: Development build

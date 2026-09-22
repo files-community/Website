@@ -30,7 +30,7 @@ Enables Files to start automatically when you log in to Windows
 
 ## Leave app running in the background
 
-Keeps Files running even after the window is closed. This reduces startup time but may use slightly more system resources.
+Keeps Files running even after the window is closed, so the app opens again almost instantly.
 
 ## Show Files icon in the System Tray
 
