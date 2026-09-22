@@ -90,7 +90,7 @@ Folders in the sidebar and breadcrumb Omnibar are now sorted naturally, so folde
 - Fixed an issue where the move operation was offered when dragging items within the root directory of a drive.
 - Fixed an issue where sidebar items could be dragged onto themselves.
 - Fixed an issue where the app would freeze on startup while loading network drives.
-- Fixed an issue where the Release Notes tab would change the order of restored tabs when using [**Continue where you left off**](/docs/customize-settings/general/#startup-settings).
+- Fixed an issue where the Release Notes tab would change the order of restored tabs when using **Continue where you left off**.
 - Fixed an issue where folder names briefly showed the untranslated name on first launch.
 - Fixed a crash when creating a new file while using a non-English display language.
 - Improved the click to rename behavior.
