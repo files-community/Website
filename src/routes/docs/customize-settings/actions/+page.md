@@ -22,7 +22,7 @@ You can customize key bindings from the **Actions** page in Settings. Navigate t
 
 ![Edit actions](/docs-resources/Settings-Actions-Edit.webp)
 
-You can also **remove** a key binding entirely. This frees up the shortcut for use elsewhere, but note that deletion takes effect immediately and is not confirmed.
+You can also **remove** a key binding entirely by clicking the **delete** button next to it and confirming the prompt. This frees up the shortcut for use elsewhere.
 
 ### Adding additional key bindings
 
@@ -43,5 +43,5 @@ Not all actions have default shortcuts, especially as the list continues to grow
 
 If you want to revert to the original key bindings:
 
-1. Click the **Restore defaults** button.
+1. Click the chevron next to the **Add command** button and select **Restore defaults**.
 2. Confirm the reset by selecting **Yes** in the prompt.
