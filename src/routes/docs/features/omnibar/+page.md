@@ -39,6 +39,8 @@ The Command Palette provides access to over 150 actions, many of which have defa
 - Activate by clicking the command button in the Omnibar.
 - Or use the `Ctrl + Shift + P` keyboard shortcut.
 
+The first matching action is selected automatically as you type, so pressing `Enter` runs it. Use the arrow keys to select a different action.
+
 ![Command Palette](/blog-resources/v4-preview/OmnibarCommandMode.webp)
 _Command Palette in the Omnibar_
 
@@ -51,7 +53,7 @@ Search mode allows users to search within the current directory or across indexe
 - Activate by clicking the search icon.
 - Or use the `Ctrl + F` keyboard shortcut.
 
-The search box is automatically focused when opened. Suggestions appear in a flyout, and pressing `Enter` opens the full search results page.
+The search box is automatically focused when opened. Suggestions appear in a flyout, with the first suggestion selected automatically as you type. The first suggestion is a **Search for** entry for the text you've typed, so pressing `Enter` opens the full search results page. Use the arrow keys to select a different suggestion.
 
 When you're on the Settings page, search mode switches to searching settings instead of files — type a setting name and pick it from the suggestions to jump straight to that location.
 

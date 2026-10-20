@@ -26,11 +26,11 @@ Files now starts faster. Cloud drives, libraries, WSL distributions, and the ite
 
 ### Omnibar suggestions
 
-The first suggestion in the Omnibar is now selected automatically, so pressing Enter opens it without needing to select it first. (Thanks @yair100!)
+The first suggestion in the Command Palette and search modes of the Omnibar is now selected automatically, so pressing Enter uses it without needing to select it first. Search now also includes a **Search for** suggestion at the top of the list. (Thanks @yair100!)
 
 ### Separate file and folder counts
 
-A new setting in **Appearance** allows the status bar to show the number of files and folders separately instead of a single total item count. (Thanks @yair100!)
+A new **Item count format** option under **Show status bar** in the Appearance settings allows the status bar to show the number of files and folders separately instead of a single total item count. (Thanks @yair100!)
 
 ## Fixes
 

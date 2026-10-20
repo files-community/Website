@@ -167,3 +167,10 @@ At the top of the customization window, the **Toolbar mode** dropdown selects wh
 ## Show status bar
 
 The status bar can be turned off to provide more room for viewing files. Please note, hiding the status will prevent access to some of the [Git](/docs/features/git) functionality in Files.
+
+### Item count format
+
+Choose how the number of items in the current folder is displayed on the status bar.
+
+- **Total count**: shows a single count of all items, for example "12 items".
+- **Separate file and folder counts**: shows the number of files and folders individually.
