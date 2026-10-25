@@ -1,47 +1,14 @@
 <script lang="ts">
-	import { defaultI18nValues, externalLink } from "$lib";
+	import { defaultI18nValues, externalLink, openWithStoreProtocol } from "$lib";
 	import { TextBlock } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
 	import type { DownloadSource } from "./types";
 
 	export let source: DownloadSource;
 
-	$: filename = source.href.substring(source.href.lastIndexOf("/") + 1);
-
-	// Try the ms-windows-store: protocol first and fall back to the web
-	// listing if nothing handles it. If the Store app opens, this window
-	// loses focus/visibility, which cancels the fallback.
 	const openWithProtocol = (e: MouseEvent) => {
-		const { protocolHref, href } = source;
-
-		if (
-			!protocolHref ||
-			e.button !== 0 ||
-			e.ctrlKey ||
-			e.metaKey ||
-			e.shiftKey ||
-			e.altKey ||
-			!navigator.userAgent.includes("Windows")
-		)
-			return;
-
-		e.preventDefault();
-
-		let cancelled = false;
-		const cancel = () => (cancelled = true);
-		window.addEventListener("blur", cancel, { once: true });
-		document.addEventListener("visibilitychange", cancel, { once: true });
-
-		window.setTimeout(() => {
-			window.removeEventListener("blur", cancel);
-			document.removeEventListener("visibilitychange", cancel);
-			if (cancelled || document.visibilityState !== "visible") return;
-			// Still here: no protocol handler took over, open the web listing.
-			if (!window.open(href, "_blank", "noopener,noreferrer"))
-				location.assign(href);
-		}, 1500);
-
-		location.assign(protocolHref);
+		if (source.protocolHref)
+			openWithStoreProtocol(e, source.protocolHref, source.href);
 	};
 </script>
 
@@ -49,17 +16,12 @@
 	class="download-source"
 	class:promoted={source.paid}
 	href={source.href}
-	download={source.download ? filename : undefined}
-	{...source.external || source.download ? externalLink : {}}
+	{...source.external ? externalLink : {}}
 	on:click={openWithProtocol}
 >
 	<picture>
 		<source media="(prefers-color-scheme: dark)" srcset={source.darkModeIcon} />
-		<img
-			class="download-source-icon"
-			src={source.icon}
-			alt="{source.name} logo"
-		/>
+		<img class="download-source-icon" src={source.icon} alt="" />
 	</picture>
 	<div class="label-container">
 		<div class="title-container">
@@ -83,33 +45,19 @@
 			{source.description}
 		</TextBlock>
 	</div>
-	{#if source.external || source.download}
+	{#if source.external}
 		<div class="action-container">
-			{#if source.external}
-				<picture>
-					<source
-						media="(prefers-color-scheme: dark)"
-						srcset="/download-sources/msstore-badge-light.svg"
-					/>
-					<img
-						class="download-source-badge"
-						src="/download-sources/msstore-badge-dark.svg"
-						alt={$_("download.store_badge_alt", defaultI18nValues)}
-					/>
-				</picture>
-			{:else}
-				<picture>
-					<source
-						media="(prefers-color-scheme: dark)"
-						srcset="/download-sources/classic-installer-badge-light.png"
-					/>
-					<img
-						class="download-source-badge"
-						src="/download-sources/classic-installer-badge-dark.png"
-						alt={$_("download.classic_badge_alt", defaultI18nValues)}
-					/>
-				</picture>
-			{/if}
+			<picture>
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/download-sources/msstore-badge-light.svg"
+				/>
+				<img
+					class="download-source-badge"
+					src="/download-sources/msstore-badge-dark.svg"
+					alt={$_("download.store_badge_alt", defaultI18nValues)}
+				/>
+			</picture>
 		</div>
 	{/if}
 </a>

@@ -40,8 +40,9 @@
 			icon: News,
 		},
 		{
-			name: $_("navbar.donate", defaultI18nValues),
-			path: "/sponsor",
+			name: $_("navbar.sponsor", defaultI18nValues),
+			path: links.sponsor,
+			external: true,
 			icon: Heart,
 		},
 		{

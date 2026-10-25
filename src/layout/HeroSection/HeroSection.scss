@@ -9,38 +9,21 @@
 	#hero-section {
 		position: relative;
 		overflow: hidden;
-		block-size: 75vh;
-		min-block-size: 584px;
-		max-block-size: 1024px;
 		border-block-end: 1px solid var(--fds-divider-stroke-default);
 
-		// Inner Section
 		.page-section-inner {
 			position: relative;
 			display: grid;
-			grid-template-columns: 1fr 1.5fr;
-			align-items: center;
-			gap: 4rem;
-		}
+			grid-template-columns: minmax(0, 1fr);
+			justify-items: center;
+			gap: 56px;
+			block-size: auto; // Taller than the viewport; 100% would clip the render
+			padding-block: 88px 80px;
+			text-align: center;
 
-		:global {
-			.split-button {
-				display: flex;
-                position: relative;
-
-				.button:first-of-type {
-					border-radius: var(--fds-control-corner-radius) 0 0 var(--fds-control-corner-radius);
-					border-inline-end: 1px solid var(--fds-divider-stroke-default);
-				}
-
-				.menu-flyout-wrapper {
-                    display: contents;
-                    .button {
-                        border-radius: 0 var(--fds-control-corner-radius) var(--fds-control-corner-radius) 0;
-                        block-size: 100%;
-                        padding-inline: 8px;
-                    }
-                }
+			@media screen and (width < 1164px) {
+				gap: 40px;
+				padding-block: 64px 48px;
 			}
 		}
 
@@ -56,11 +39,40 @@
 				}
 			}
 
-			.style-standard .hero-button-inner {
-				color: var(--fds-text-secondary);
+			.hero-store-button {
+				padding: 10px 20px 10px 16px;
 
-				h5 {
-					color: var(--fds-text-primary);
+				.hero-button-title {
+					font-size: 1.6rem;
+				}
+			}
+
+			.hero-buttons .button {
+				min-block-size: 56px;
+			}
+
+			// Reads as a link, and fills in as a button the same size as the Store one on hover
+			.hero-more {
+				align-self: stretch;
+				padding-inline: 20px;
+				font-size: 1.4rem;
+
+				// The standard button surface; an inset ring, so nothing shifts
+				&:hover {
+					background-color: var(--fds-control-fill-default);
+					box-shadow: inset 0 0 0 1px var(--fds-control-border-default);
+				}
+
+				&:active {
+					background-color: var(--fds-control-fill-tertiary);
+				}
+			}
+
+			// Phones have no room beside the Store button, and the link would wrap
+			// under it; the download section further down has the same link
+			@media screen and (width < 440px) {
+				.hero-more {
+					display: none;
 				}
 			}
 		}
@@ -82,35 +94,23 @@
 			position: absolute;
 			z-index: -1;
 			background: 800% 800% /* pos */
-			linear-gradient(
-							to bottom right,
-							hsl(133, 67%, 59%),
-							hsl(172, 100%, 42%),
-							hsl(202, 97%, 45%),
-							var(--fds-solid-background-base)
-			);
-			animation: rainbow-background-hue-rotate 15s infinite linear,
-			scroll-gradient 15s infinite linear;
-			inset-inline-end: 0;
-			inset-block-end: 0;
-			inline-size: 60vw;
-			min-inline-size: 100vh;
-			block-size: 100%;
+				linear-gradient(
+					to bottom right,
+					hsl(133, 67%, 59%),
+					hsl(172, 100%, 42%),
+					hsl(202, 97%, 45%),
+					var(--fds-solid-background-base)
+				);
+			animation:
+				rainbow-background-hue-rotate 15s infinite linear,
+				scroll-gradient 15s infinite linear;
+			inset: 0;
+			opacity: 0.6;
 
-			mask: url("/ui/hero-mask.png") bottom / cover no-repeat;
+			mask: linear-gradient(to bottom, rgb(0 0 0 / 15%) 25%, #000 75%);
 
 			@media (prefers-color-scheme: light) {
-				opacity: 0.5;
-			}
-
-			@media screen and (width < 1024px) {
-				inline-size: 100%;
-				transform: rotate(90deg) scale(1.5);
-			}
-
-			@media screen and (width < 648px) {
-				block-size: 60vh;
-				mask-size: 100% 100%;
+				opacity: 0.4;
 			}
 		}
 	}
@@ -118,38 +118,78 @@
 
 // Hero container elements
 .hero- {
-	// Left container
-	&left {
-		@include flex($direction: column, $justify: center);
-		flex: 1 1 auto;
+	&text {
+		@include flex($direction: column, $align: center);
+
+		h1 {
+			max-inline-size: 14ch;
+			font-size: clamp(4rem, 7vw, 7.2rem);
+			line-height: 1.08;
+			letter-spacing: -0.02em;
+			text-wrap: balance;
+		}
+
+		p {
+			max-inline-size: 48ch;
+			margin-block: 20px 32px;
+			font-size: 1.8rem;
+			text-wrap: balance;
+		}
+
+		.buttons-spacer {
+			align-items: center;
+			justify-content: center;
+		}
 	}
 
-	// Right container
-	&right {
-		@include flex($align: center);
-		block-size: 100%;
+	&note {
+		margin-block-start: 8px;
+		color: var(--fds-text-secondary);
+		font-size: 1.3rem;
+	}
+
+	// The window image is 1240x880: a 1040x680 window with 100px of shadow,
+	// centered on the 1152x800 desktop above the taskbar.
+	&visual {
+		align-self: center;
+		inline-size: 100%;
+		max-inline-size: 1152px;
+		padding-block-start: 32px;
 
 		img {
-			position: absolute;
-			inline-size: auto;
-			max-inline-size: 100%;
-			border: 1px solid var(--fds-surface-stroke-default);
-			border-radius: calc(var(--fds-overlay-corner-radius) / 1.5);
-			background-color: hsl(var(--mica-tint), calc(var(--mica-tint-opacity) / 1.5));
-			box-shadow: var(--fds-dialog-shadow);
-			overflow: hidden;
+			display: block;
 			user-select: none;
-			inset-inline-end: 0;
-			block-size: auto;
-			max-block-size: 100%;
 			-webkit-user-drag: none;
-			aspect-ratio: 1280 / 960;
-			backdrop-filter: blur(60px) saturate(150%);
-
-			@media screen and (width > 2048px) {
-				border-radius: var(--fds-overlay-corner-radius);
-			}
 		}
+
+		@media screen and (width < 1164px) {
+			margin-inline: auto;
+		}
+	}
+
+	&desktop {
+		position: relative;
+
+		&-image {
+			inline-size: 100%;
+			block-size: auto;
+			border: 1px solid var(--fds-surface-stroke-default);
+			border-radius: var(--fds-overlay-corner-radius);
+			box-shadow: var(--fds-dialog-shadow);
+			transform: translateY(calc(var(--lift, 0) * 3%));
+		}
+	}
+
+	&window {
+		position: absolute;
+		inset-block-start: -7.5%;
+		left: -3.819%; // Physical: the render is the same in right-to-left languages
+		inline-size: 107.639%;
+		max-inline-size: none; // Wider than the desktop: its shadow runs past the edges
+		block-size: auto;
+		transform: translateY(calc(var(--lift, 0) * -5%))
+			scale(calc(1 + var(--lift, 0) * 0.025));
+		will-change: transform;
 	}
 
 	// Inner hero buttons
@@ -159,55 +199,9 @@
 		font-size: 1.1rem;
 		line-height: normal;
 
-		h5 {
-			margin: 0;
+		.hero-button-title {
 			font-size: 1.25rem;
 			font-weight: 600;
-		}
-	}
-
-	// Hero image container
-	&image-container {
-		@include flex($align: center, $justify: center);
-		position: relative;
-		inline-size: 100%;
-		block-size: 100%;
-		max-block-size: 768px;
-	}
-}
-
-// Hero section small device support
-@media screen and (width < 1024px) {
-	:global {
-		// Remove height constraints on outer container
-		#hero-section {
-			block-size: auto;
-			max-block-size: unset;
-
-			// Position inner containers vertically
-			.page-section-inner {
-				grid-template-columns: auto;
-			}
-		}
-	}
-
-	.hero- {
-		// Centrally align content in the left container
-		&left {
-			align-items: center;
-			text-align: center;
-
-			.buttons-spacer {
-				justify-content: center;
-			}
-		}
-
-		// Properly position hero image
-		&right img {
-			position: relative;
-			inline-size: 100%;
-			max-inline-size: 708px;
-			block-size: auto;
 		}
 	}
 }

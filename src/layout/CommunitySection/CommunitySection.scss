@@ -1,201 +1,270 @@
 @use "src/styles/mixins" as *;
 
-@keyframes rotate-background {
-	from {
-		background-position: 0 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	to {
-		background-position: 0 50%;
+:global(#community-section) {
+	border-block-end: 1px solid var(--fds-divider-stroke-default);
+
+	:global(.page-section-inner) {
+		@include flex($direction: column, $align: stretch);
+		gap: 40px;
 	}
 }
 
-// Center our buttons
-:global(#community-section .buttons-spacer) {
-	justify-content: center;
+.community-header {
+	@include flex($direction: column, $align: center);
+	max-inline-size: 720px;
+	margin-inline: auto;
+	text-align: center;
 
-	:global(.button.style-hyperlink) {
-		color: var(--fds-accent-text-primary);
+	p {
+		margin-block-end: 0;
 	}
 }
 
-.community-section- {
-	// Since we need to always contrast against a
-	// light-ish background, we'll need to hardcode
-	// some variables.
-	&text {
-		text-align: center;
-		--fds-solid-background-base: hsl(0, 0%, 95%);
-		--fds-text-primary: hsl(0, 0%, 13%);
-		--fds-text-secondary: hsl(0, 0%, 16%);
-		--fds-text-tertiary: var(--fds-text-secondary);
-		--fds-subtle-fill-secondary: hsl(0, 0%, 0%, 0.095);
-		--fds-subtle-fill-tertiary: hsl(0, 0%, 0%, 0.024);
-		--fds-subtle-fill-disabled: transparent;
-		--fds-accent-text-primary: hsl(var(--fds-accent-dark-3));
-		--fds-accent-text-tertiary: hsl(var(--fds-accent-dark-2));
+.stats {
+	display: grid;
+	grid-template-columns: repeat(var(--count), minmax(0, 1fr));
+	margin: 0;
+	overflow: hidden;
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-overlay-corner-radius);
+	background-color: var(--fds-card-background-default);
+	box-shadow: var(--fds-card-shadow);
 
-		// Align descriptions to center
-		p {
-			margin-inline: auto;
-		}
-	}
-
-	// Inner card element
-	// Encompasses the content of the community section
-	&card {
-		@include flex($direction: column, $justify: center, $align: center);
-		position: relative;
-		z-index: 0;
-		inline-size: 100%;
-		max-inline-size: 2048px;
-		min-block-size: 600px;
-		padding: 72px 48px;
-		border-radius: var(--fds-overlay-corner-radius);
-		background-color: #f9f9f9;
-		box-shadow: 0 2.74416px 2.74416px hsl(0, 0%, 0%, 3%),
-			0 5.48831px 5.48831px hsl(0, 0%, 0%, 4%),
-			0 13.7208px 10.9766px hsl(0, 0%, 0%, 5%),
-			0 20.5812px 20.5812px hsl(0, 0%, 0%, 6%),
-			0 41.1623px 41.1623px hsl(0, 0%, 0%, 7%),
-			0 96.0454px 89.1851px hsl(0, 0%, 0%, 9%);
-		overflow: hidden;
-
-		.rainbow-background {
-			position: absolute;
-			inset-block-start: 0;
-			inset-inline-start: 0;
-			z-index: -1;
-			inline-size: 100%;
-			block-size: 100%;
-			border-radius: var(--fds-overlay-corner-radius);
-
-			animation: rotate-background 15s infinite linear;
-
-			background-color: hsl(282, 23%, 78%);
-			background-image: radial-gradient(
-					at 68% 34%,
-					hsla(233, 72%, 73%, 1) 0,
-					transparent 43%
-				),
-				radial-gradient(at 51% 0%, hsla(254, 79%, 75%, 1) 0, transparent 57%),
-				radial-gradient(at 80% 2%, hsla(274, 88%, 72%, 1) 0, transparent 41%),
-				radial-gradient(at 96% 100%, hsla(254, 89%, 65%, 1) 0, transparent 47%),
-				radial-gradient(at 1% 84%, hsla(233, 72%, 73%, 1) 0, transparent 41%),
-				radial-gradient(at 19% 100%, hsla(262, 73%, 70%, 1) 0, transparent 44%),
-				radial-gradient(at 46% 100%, hsla(254, 79%, 75%, 1) 0, transparent 49%),
-				radial-gradient(at 92% 72%, hsla(282, 24%, 79%, 1) 0, transparent 43%);
-			background-size: 150% 150%;
-		}
+	@media screen and (width < 648px) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
-// Contributors
-// Left scroller animation
-@keyframes contributors-left {
-	to {
-		transform: translateX(50%);
-	}
-}
+.stat {
+	@include flex($direction: column-reverse, $align: center);
+	gap: 4px;
+	padding: 28px 16px;
+	text-align: center;
 
-// Right scroller animation
-@keyframes contributors-right {
-	to {
-		transform: translateX(-50%);
-	}
-}
-
-// Contributor cards
-.contributors- {
-	// Contributors container
-	// Serves no other purpose other than spacing it from the main text.
-	&container {
-		position: relative;
-		inline-size: 100vw;
-		max-inline-size: 2800px;
-
-		// Preserve box-shadows when overflow is hidden
-		margin-block-end: -128px;
-		padding: 64px 0 128px 0;
-		overflow: hidden;
-
-		// Fade gutters
-		// Seamlessly fades incoming/outgoing cards into the section at large resolutions.
-		&::before,
-		&::after {
-			position: absolute;
-			z-index: 1;
-			inline-size: 96px;
-			block-size: 100%;
-			@media screen and (width > 2800px) {
-				content: "";
-			}
-		}
-
-		&::before {
-			inset-inline-start: 0;
-			background-image: linear-gradient(
-				90deg,
-				var(--fds-solid-background-secondary),
-				transparent
-			);
-		}
-
-		&::after {
-			inset-inline-end: 0;
-			background: linear-gradient(
-				90deg,
-				transparent,
-				var(--fds-solid-background-tertiary)
-			);
-		}
+	& + & {
+		border-inline-start: 1px solid var(--fds-divider-stroke-default);
 	}
 
-	// Contributor rows
-	&row {
-		position: relative;
-		margin-block-end: 12px;
-		white-space: nowrap;
-
-		// Space out contributor cards
-		:global(.contributor) {
-			margin-inline-end: 12px;
-		}
-
-		// Add some variation between rows
-		&:nth-child(even) {
-			inset-inline-start: 24px;
-			float: left;
-			animation: contributors-right 80s linear infinite alternate;
-		}
+	@media screen and (width < 648px) {
+		padding: 20px 12px;
 
 		&:nth-child(odd) {
-			inset-inline-start: -24px;
-			float: right;
-			animation: contributors-left 80s linear infinite alternate;
+			border-inline-start: none;
 		}
 
-		// Prevent extra bottom margins
-		&:last-child {
-			margin: 0;
-			animation-delay: 2s;
+		&:nth-child(n + 3) {
+			border-block-start: 1px solid var(--fds-divider-stroke-default);
+		}
+	}
+
+	dd {
+		margin: 0;
+		color: var(--fds-text-primary);
+		font-size: 4rem;
+		font-weight: 600;
+		line-height: 1.1;
+
+		@media screen and (width < 648px) {
+			font-size: 3.2rem;
+		}
+	}
+
+	dt {
+		color: var(--fds-text-secondary);
+		font-size: 1.4rem;
+	}
+}
+
+.community {
+	display: grid;
+	grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+	align-items: stretch;
+	gap: 24px;
+
+	@media screen and (width < 1024px) {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.card {
+	@include flex($direction: column, $align: stretch);
+	padding: 28px;
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-overlay-corner-radius);
+	background-color: var(--fds-card-background-default);
+	box-shadow: var(--fds-card-shadow);
+
+	@media screen and (width < 648px) {
+		padding: 20px;
+	}
+
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	> p {
+		margin: 4px 0 20px;
+		color: var(--fds-text-secondary);
+		font-size: 1.4rem;
+	}
+}
+
+.people {
+	@include flex($direction: column, $align: center);
+	gap: 8px;
+	text-align: center;
+
+	p {
+		margin: 8px 0 0;
+		color: var(--fds-text-secondary);
+		font-size: 1.4rem;
+	}
+}
+
+.facepile {
+	@include flex($align: center, $justify: center);
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	padding-inline-start: 10px;
+	list-style: none;
+
+	li {
+		margin-inline-start: -10px;
+	}
+
+	a {
+		display: grid;
+		place-items: center;
+		border: 3px solid var(--fds-solid-background-secondary);
+		border-radius: 50%;
+		background-color: var(--fds-solid-background-secondary);
+		transition: var(--fds-control-normal-duration) ease transform;
+
+		&:hover {
+			position: relative;
+			transform: translateY(-3px);
+		}
+
+		&:focus-visible {
+			box-shadow: var(--fds-focus-stroke);
+			outline: none;
+		}
+	}
+
+	@media screen and (width < 648px) {
+		li:nth-child(n + 9) {
+			display: none;
 		}
 	}
 }
 
-// Community section small device support
-@media screen and (width < 768px) {
-	// We have less space to work with here,
-	// so we'll decrease the padding of the card.
-	.community-section-card {
-		padding: 24px;
+.sponsor {
+	align-items: start;
+	border-color: color-mix(
+		in srgb,
+		var(--fds-accent-default) 45%,
+		var(--fds-card-stroke-default)
+	);
+	background:
+		linear-gradient(
+			135deg,
+			color-mix(in srgb, var(--fds-accent-default) 9%, transparent),
+			transparent 60%
+		),
+		var(--fds-card-background-default);
 
-		// The header also starts to look bad when it
-		// wraps too much, so decrease the font-size
-		h2 {
-			font-size: 3.2rem;
-		}
+	> p {
+		max-inline-size: 44ch;
+	}
+
+	:global(.button) {
+		margin-block-start: auto;
+	}
+}
+
+.sponsor-icon {
+	display: grid;
+	place-items: center;
+	inline-size: 48px;
+	block-size: 48px;
+	margin-block-end: 16px;
+	border-radius: 50%;
+	background-color: color-mix(in srgb, #e3405c 14%, transparent);
+	color: #e3405c;
+
+	:global(svg) {
+		@include icon($size: 24px);
+	}
+}
+
+.involved h3 {
+	margin-block-end: 12px !important;
+}
+
+.ways {
+	@include flex($direction: column, $align: stretch);
+	gap: 4px;
+}
+
+.way {
+	@include flex($align: center);
+	gap: 16px;
+	padding: 12px;
+	margin-inline: -12px;
+	border-radius: var(--fds-control-corner-radius);
+	color: var(--fds-text-primary);
+	text-decoration: none;
+	transition: var(--fds-control-faster-duration) ease background-color;
+
+	&:hover {
+		background-color: var(--fds-subtle-fill-secondary);
+	}
+
+	&:active {
+		background-color: var(--fds-subtle-fill-tertiary);
+	}
+
+	&:focus-visible {
+		box-shadow: var(--fds-focus-stroke);
+		outline: none;
+	}
+
+	:global(.way-chevron) {
+		@include icon($size: 16px);
+		flex: none;
+		margin-inline-start: auto;
+		color: var(--fds-text-secondary);
+	}
+}
+
+.way-icon {
+	display: grid;
+	flex: none;
+	place-items: center;
+	inline-size: 40px;
+	block-size: 40px;
+	border-radius: var(--fds-control-corner-radius);
+	background-color: var(--fds-subtle-fill-secondary);
+	color: var(--fds-accent-default);
+
+	:global(svg) {
+		@include icon($size: 20px);
+	}
+}
+
+.way-text {
+	@include flex($direction: column);
+	gap: 2px;
+	font-size: 1.4rem;
+
+	b {
+		font-size: 1.5rem;
+		font-weight: 600;
+	}
+
+	span {
+		color: var(--fds-text-secondary);
 	}
 }

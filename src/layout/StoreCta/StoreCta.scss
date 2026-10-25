@@ -1,0 +1,12 @@
+@use "src/styles/mixins" as *;
+
+.store-cta {
+	@include flex($align: center, $justify: center);
+
+	:global(.store-cta-button) {
+		gap: 8px;
+		min-block-size: 40px;
+		padding-inline: 16px 20px;
+		font-size: 1.5rem;
+	}
+}

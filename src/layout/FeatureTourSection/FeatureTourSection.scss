@@ -1,0 +1,144 @@
+@use "src/styles/mixins" as *;
+
+:global(#tour-section) {
+	border-block-end: 1px solid var(--fds-divider-stroke-default);
+
+	:global(.page-section-inner) {
+		@include flex($direction: column, $align: stretch);
+		gap: 48px;
+	}
+}
+
+.tour-header {
+	@include flex($direction: column, $align: center);
+	max-inline-size: 720px;
+	margin-inline: auto;
+	text-align: center;
+
+	p {
+		margin-block-end: 0;
+	}
+}
+
+.feature-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 16px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	@media screen and (width < 900px) {
+		grid-template-columns: minmax(0, 1fr);
+		inline-size: 100%;
+		max-inline-size: 560px;
+		margin-inline: auto;
+	}
+}
+
+.feature-card {
+	@include flex($direction: column, $align: stretch);
+	overflow: hidden;
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-overlay-corner-radius);
+	background-color: var(--fds-card-background-default);
+	box-shadow: var(--fds-card-shadow);
+}
+
+.feature-text {
+	padding: 24px 24px 0;
+
+	h3 {
+		margin: 0 0 6px;
+		font-size: 2rem;
+		font-weight: 600;
+		line-height: 1.3;
+	}
+
+	p {
+		margin: 0 !important;
+		color: var(--fds-text-secondary);
+		font-size: 1.4rem !important;
+	}
+
+	.learn-more {
+		display: inline-flex;
+		align-items: center;
+		gap: 4px;
+		margin-block-start: 8px;
+		color: var(--fds-accent-text-primary);
+		font-size: 1.4rem;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		:global(svg) {
+			inline-size: 12px;
+			block-size: 12px;
+		}
+	}
+}
+
+.more {
+	@include flex($direction: column, $align: stretch);
+	gap: 20px;
+
+	h3 {
+		margin: 0;
+		font-size: 2rem;
+		font-weight: 600;
+		text-align: center;
+	}
+}
+
+.more-grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 24px 32px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	@media screen and (width < 900px) {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+
+	@media screen and (width < 560px) {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	li {
+		@include flex($align: start);
+		gap: 14px;
+	}
+
+	h4 {
+		margin: 0 0 2px;
+		font-size: 1.6rem;
+		font-weight: 600;
+	}
+
+	p {
+		margin: 0 !important;
+		color: var(--fds-text-secondary);
+		font-size: 1.4rem !important;
+	}
+}
+
+.more-icon {
+	display: grid;
+	flex: none;
+	place-items: center;
+	inline-size: 40px;
+	block-size: 40px;
+	border: 1px solid var(--fds-card-stroke-default);
+	border-radius: var(--fds-control-corner-radius);
+	background-color: var(--fds-card-background-default);
+	color: var(--fds-accent-text-primary);
+
+	:global(svg) {
+		@include icon($size: 20px);
+	}
+}

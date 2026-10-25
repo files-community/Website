@@ -11,103 +11,140 @@
 	"home": {
 		"community": {
 			"chip": "Community",
-			"title": "Designed and developed by you.",
-			"description": "{FilesName} is free and open source software, maintained and designed by a collective of hundreds of contributors.",
-			"discord": "Join the discussion",
-			"docs": "Become a contributor",
-			"contributions": "{amount, plural, =0 {No contributions} one {# contribution} other {# contributions}}"
+			"heading": "Made in the open by the people who use it",
+			"intro": "{FilesName} is open source. The code is on GitHub, where anyone can report issues, suggest ideas and contribute.",
+			"stats": {
+				"stars": "stars on GitHub",
+				"contributors": "contributors",
+				"languages": "languages",
+				"releases": "updates in the past year"
+			},
+			"people_description": "Every update is designed, built and translated by people like these.",
+			"involved_title": "Get involved",
+			"discord_title": "Join the Discord",
+			"discord_description": "Talk with the team, share feedback and get help.",
+			"code_title": "Contribute code",
+			"code_description": "Build {FilesName} from source and open your first pull request.",
+			"translate_title": "Help translate",
+			"translate_description": "Bring {FilesName} to more people in their own language.",
+			"sponsor_title": "Sponsor {FilesName}",
+			"sponsor_description": "Sponsorships on GitHub pay for the time that goes into every update. Even a small monthly amount helps keep {FilesName} growing.",
+			"sponsor_button": "Sponsor on GitHub",
+			"all_contributors": "See all contributors"
 		},
 		"hero": {
-			"chip": "Hero",
-			"description": "A sleek, open-source file explorer built for Windows, designed to help you organize files and folders with ease.",
-			"download": "Download",
-			"view_on_github": "View on GitHub",
-			"files_is_open_source": "Files is open source!",
-			"install_on_windows": "Install on Windows"
+			"title": "The file manager Windows deserves",
+			"tagline": "A cleaner, more modern way to browse your files, with tabs and tags when you need them. Use it alongside File Explorer for a better everyday experience.",
+			"from_store": "From the Microsoft Store",
+			"store_note": "Open source. Your Store purchase funds development.",
+			"screenshot_alt": "{FilesName} with the Downloads folder in one pane and road trip photos in the other, with three tabs open"
 		},
-		"tabs": {
-			"chip": "Tabs",
-			"title": "Multitask with tabs",
-			"description": "Easily manage multiple folders within a single window using tabs. Switch between tabs with a click or keyboard shortcut to boost your productivity.",
-			"download": "Download",
-			"learn_more": "Learn more"
-		},
-		"design": {
-			"chip": "Design",
-			"title": "Power meets beauty.",
-			"description": "Explore a beautiful Windows-first design. Manage all your files with increased productivity. Work across multiple folders with tabs. And so much more.",
-			"download": "Download",
-			"learn_more": "Learn more"
-		},
-		"features": {
+		"tour": {
 			"chip": "Features",
-			"title": "It already does that.",
-			"description": "Cloud files integration? Tabs and multiple layouts? Rich file previews? {FilesName} has it covered with robust features you expect from a modern file manager.",
-			"unknown": "Unknown",
-			"cloud": {
-				"title": "Seamless cloud integration",
-				"description": "Built-in support for cloud drives such as OneDrive, Google Drive, and iCloud."
-			},
-			"preview": {
-				"title": "Preview pane",
-				"description": "Preview photos, videos, and documents without opening them."
-			},
-			"popup-preview": {
-				"title": "QuickLook & SeerPro support",
-				"description": "Preview Office files, documents, and other file types by pressing the space bar. This feature requires installing QuickLook or SeerPro."
+			"title": "Get more done with your files.",
+			"description": "Work in two folders at once, color-code what matters and find any command in the Omnibar.",
+			"dualpane": {
+				"title": "Dual pane",
+				"description": "Open two folders next to each other in one window, then drag files from one to the other.",
+				"alt": "{FilesName} with the Music folder in one pane and wallpapers in the other"
 			},
 			"tags": {
-				"title": "Tag files and folders",
-				"description": "Organize and sort your files and folders with colored tags."
-			},
-			"tabs": {
-				"title": "Multitask with tabs",
-				"description": "Avoid multiple windows and keep your desktop clutter-free with tabs."
+				"title": "Color tags",
+				"description": "Mark files and folders with tags like Work or Photos. Click a tag in the sidebar to see everything that has it.",
+				"alt": "Files and folders with color tags in the Tag column"
 			},
 			"columns": {
-				"title": "Column view",
-				"description": "Quickly navigate through different levels of the file system using the column layout."
+				"title": "Columns layout",
+				"description": "Each folder you open shows up in a new column next to the last one, so you can see the whole path at a glance.",
+				"alt": "Folders opened one per column in the columns layout"
 			},
-			"archives": {
-				"title": "View and edit archives",
-				"description": "Create and extract archives including zip, WinRar, and 7zip."
+			"palette": {
+				"title": "Command palette",
+				"description": "Open it from the Omnibar and type what you want to do, like “dual pane” or “hidden items”. Every command has a shortcut you can change.",
+				"alt": "The command palette listing commands and their key bindings"
 			},
 			"git": {
-				"title": "Git integration",
-				"description": "Easily manage your Git projects. Create new branches, switch between them, and sync your changes - all without leaving Files."
-			},
-			"dual-pane": {
-				"title": "Dual pane",
-				"description": "View and manage two folders side by side with the Dual Pane feature."
-			},
-			"hashes": {
-				"title": "Hashes",
-				"description": "View and compare file hashes from the properties window."
-			},
-			"command-palette": {
-				"title": "Command Palette",
-				"description": "Quickly access commands, features, and settings from the Command Palette."
-			},
-			"remap-key-bindings": {
-				"title": "Remap key bindings",
-				"description": "Streamline your workflow by creating custom key bindings."
+				"title": "Built-in Git",
+				"description": "Inside a repository, see which files changed and each one's last commit, author and SHA. Switch branches, pull or push from the status bar.",
+				"alt": "A Git repository showing Git status, commit message, author and commit SHA columns, with the branch list open"
 			},
 			"toolbar": {
-				"title": "Toolbar Customization",
-				"description": "Personalize the toolbar by adding or removing buttons from the list of available actions."
+				"title": "Custom toolbar",
+				"description": "Put the commands you use most on the toolbar, like Copy path, and remove the ones you don't. Pick which ones show a label.",
+				"alt": "The Customize toolbar window with Copy path, Create zip archive and Split vertically added"
+			},
+			"extract": {
+				"title": "Smart extract",
+				"description": "Press Ctrl+Shift+E on an archive and {FilesName} picks where it goes. A single item lands right here, and many items get a new folder.",
+				"alt": "A zip file selected in Downloads with the toolbar's Extract menu open, Extract here (Smart) and its Ctrl+Shift+E shortcut highlighted"
+			},
+			"foldersizes": {
+				"title": "Folder sizes",
+				"description": "See how big each folder is right in the file list. Click View size on one folder, or turn on folder sizes in Settings.",
+				"alt": "The Videos folder with the size of every subfolder in the Size column"
+			},
+			"backgrounds": {
+				"title": "Custom backgrounds",
+				"description": "Put your own picture behind {FilesName} and choose how it fits and how much shows through. You can also give a single folder its own background.",
+				"alt": "Settings, Appearance with a mountain photo set as the background image, showing its opacity, fit and alignment options"
+			},
+			"learn_more": "Learn more",
+			"more": {
+				"title": "And there's more",
+				"reopen_tab": {
+					"title": "Reopen closed tabs",
+					"description": "Closed a tab by mistake? Press Ctrl+Shift+T to bring it back."
+				},
+				"hashes": {
+					"title": "File hashes",
+					"description": "Check a file's MD5, SHA-1 or SHA-256 hash right in Properties."
+				},
+				"shortcuts": {
+					"title": "Your own shortcuts",
+					"description": "Change any keyboard shortcut, or give one to a command that has none."
+				},
+				"compact_overlay": {
+					"title": "Compact overlay",
+					"description": "Keep a small {FilesName} window on top of your other apps."
+				},
+				"go_up": {
+					"title": "Double-click to go up",
+					"description": "Double-click an empty spot in a folder to go up one level."
+				},
+				"sort_together": {
+					"title": "Sort files and folders together",
+					"description": "Mix folders in with your files instead of always listing them first."
+				},
+				"filter": {
+					"title": "Filter a folder",
+					"description": "Press Ctrl+Shift+F and type part of a name to show only the items that match."
+				},
+				"archives": {
+					"title": "Password-protected archives",
+					"description": "Protect a new 7z or ZIP file with a password, or split a 7z into smaller parts."
+				},
+				"ide": {
+					"title": "Open in your code editor",
+					"description": "Open the current folder in VS Code or the editor you pick in Settings."
+				}
 			}
 		},
-		"themes": {
-			"chip": "Themes",
-			"title": "Distinctly personal.",
-			"description": "Have it your way. {FilesName} features a fully customizable user interface, right down to the colors and materials. Try custom themes that are built into {FilesName} or dive right into the docs and create your own.",
-			"grey_blue": "Dark Grey • Light Blue",
-			"grey_green": "Blue Grey • Neon Green",
-			"purple": "Purple",
-			"yellow_white": "Yellow • White",
-			"white_teal": "Cool White • Dark Teal",
-			"sky_blue": "Sky Blue",
-			"select_theme": "Select theme #{index}"
+		"download": {
+			"chip": "Download",
+			"title": "Get {FilesName} today.",
+			"description": "It installs in seconds and runs alongside File Explorer, with the folders you already have. Nothing changes until you open it.",
+			"recommended": "Recommended",
+			"store_title": "Get {FilesName} from the Microsoft Store",
+			"store_description": "The easiest way to install {FilesName}, and the one that keeps the project going.",
+			"store_button": "Get it from Microsoft Store",
+			"benefits": {
+				"support": "Your purchase funds ongoing development",
+				"updates": "New features and fixes install automatically",
+				"install": "One click to install, one click to remove"
+			}
+		},
+		"cta": {
+			"get_files": "Get {FilesName}"
 		}
 	},
 	"blog": {
@@ -134,7 +171,7 @@
 		"contribute": "Contribute to {FilesName}",
 		"feedback": "Report Bug",
 		"request_feature": "Request Feature",
-		"donate": "Donate",
+		"sponsor": "Sponsor",
 		"style_guide": "Style Guide",
 		"translations": "Translations",
 		"support": "Support",
@@ -144,9 +181,8 @@
 		"home": "Home",
 		"docs": "Documentation",
 		"news": "News",
-		"donate": "Donate",
+		"sponsor": "Sponsor",
 		"download": "Download",
-		"themes": "Themes",
 		"discord": "Discord",
 		"github": "Github"
 	},
@@ -156,27 +192,70 @@
 		"recommended": "Recommended",
 		"version_label": "Version {version}",
 		"store_badge_alt": "Get it from Microsoft",
-		"classic_badge_alt": "Download Installer",
 		"stable_name": "{FilesName}",
 		"preview_name": "{FilesName} Preview",
-		"more_options": "More download options",
 		"microsoft_store": {
-			"title": "Download Files",
 			"description": "Purchasing {FilesName} through the Microsoft Store helps support the developers and allows us to continue updating the app with new features and improvements."
 		},
 		"preview": {
-			"title": "Download Insider Preview",
 			"description": "The preview version can be installed alongside the stable release and provides early access to new features and improvements."
 		},
-		"classic_stable": {
-			"description": "The classic installer is a free alternative to the Microsoft Store version. It includes the same features and receives automatic updates."
+		"other_options": "Other ways to install",
+		"channel": {
+			"stable": "Stable",
+			"preview": "Preview"
 		},
-		"classic_preview": {
-			"description": "The free classic installer for the preview version. It can be installed alongside the stable release and provides early access to new features."
+		"dialog": {
+			"version": "Version",
+			"source": "Install from",
+			"architecture": "Processor",
+			"free": "Free",
+			"classic_title": "Download the installer",
+			"classic_benefits": {
+				"features": "The same app as the Microsoft Store version",
+				"updates": "{FilesName} checks for new versions and updates in one click",
+				"app_installer": "Opens in App Installer, which comes with Windows"
+			},
+			"sponsor": "This way is free. If {FilesName} is useful to you, please consider sponsoring the people who build it.",
+			"sponsor_link": "Sponsor on GitHub",
+			"classic_button": "Download installer",
+			"copy_command": "Copy command",
+			"copied": "Copied",
+			"close": "Close"
 		},
-		"other_methods": {
-			"name": "Other install methods",
-			"description": "Install {FilesName} using WinGet, Chocolatey, or an offline installer by following the steps on our getting started page."
+		"methods": {
+			"store": {
+				"name": "Microsoft Store"
+			},
+			"classic": {
+				"name": "Classic installer"
+			},
+			"winget": {
+				"name": "WinGet",
+				"description": "The package is maintained by a third party."
+			},
+			"chocolatey": {
+				"name": "Chocolatey",
+				"description": "The package is maintained by a third party."
+			},
+			"scoop": {
+				"name": "Scoop",
+				"description": "The package is maintained by a third party."
+			},
+			"powershell": {
+				"name": "PowerShell",
+				"description": "Run it in Windows PowerShell as administrator. PowerShell 7 won't work."
+			},
+			"offline": {
+				"name": "Offline install",
+				"description": "Download these files and install them in the order listed.",
+				"x64": "x64 (AMD and Intel)",
+				"arm64": "ARM64"
+			}
+		},
+		"requirements": {
+			"message": "Installing needs the Windows Update and Delivery Optimization services. Modified versions of Windows that remove them aren't supported.",
+			"troubleshooting": "Troubleshooting"
 		}
 	}
 }

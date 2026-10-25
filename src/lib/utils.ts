@@ -32,22 +32,32 @@ export const isUrlContainPath = (url: string, path: string) =>
 		!(path === "" || path === "/")) ||
 	(path === "/" && url === "");
 
+export const storeHref = (productId: string) =>
+	`https://apps.microsoft.com/detail/${productId}?cid=FilesWebsite`;
+
+export const storeProtocolHref = (productId: string) =>
+	`ms-windows-store://pdp/?ProductId=${productId}&cid=FilesWebsite`;
+
 /**
  * Try the ms-windows-store: protocol first and fall back to the web
  * listing if nothing handles it. If the Store app opens, this window
  * loses focus/visibility, which cancels the fallback.
+ *
+ * Takes any Event because fluent-svelte types its forwarded clicks as
+ * CustomEvent; at runtime they are the native MouseEvent.
  */
 export const openWithStoreProtocol = (
-	e: MouseEvent,
+	e: Event,
 	protocolHref: string,
 	href: string,
 ) => {
+	const { button, ctrlKey, metaKey, shiftKey, altKey } = e as MouseEvent;
 	if (
-		e.button !== 0 ||
-		e.ctrlKey ||
-		e.metaKey ||
-		e.shiftKey ||
-		e.altKey ||
+		button !== 0 ||
+		ctrlKey ||
+		metaKey ||
+		shiftKey ||
+		altKey ||
 		!navigator.userAgent.includes("Windows")
 	)
 		return;
