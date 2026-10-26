@@ -86,27 +86,27 @@
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
-					srcset="/screenshots/home/hero-desktop-dark.jpg"
+					srcset="/screenshots/home/hero-desktop-dark.webp"
 				/>
 				<img
 					alt=""
 					class="hero-desktop-image"
 					height="800"
-					src="/screenshots/home/hero-desktop-light.jpg"
+					src="/screenshots/home/hero-desktop-light.webp"
 					width="1152"
 				/>
 			</picture>
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
-					srcset="/screenshots/home/hero-app-dark.png"
+					srcset="/screenshots/home/hero-app-dark.webp"
 				/>
 				<img
 					alt={$_("home.hero.screenshot_alt", defaultI18nValues)}
 					class="hero-window"
 					fetchpriority="high"
 					height="880"
-					src="/screenshots/home/hero-app-light.png"
+					src="/screenshots/home/hero-app-light.webp"
 					width="1240"
 				/>
 			</picture>

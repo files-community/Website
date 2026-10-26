@@ -24,13 +24,13 @@
 		{alt}
 		class="light"
 		loading="lazy"
-		src="/screenshots/home/feature-{id}-light.png"
+		src="/screenshots/home/feature-{id}-light.webp"
 	/>
 	<img
 		{alt}
 		class="dark"
 		loading="lazy"
-		src="/screenshots/home/feature-{id}-dark.png"
+		src="/screenshots/home/feature-{id}-dark.webp"
 	/>
 </div>
 
