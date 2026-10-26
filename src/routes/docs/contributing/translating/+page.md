@@ -1,5 +1,6 @@
 ---
 title: Translating Files
+order: 3
 ---
 
 Translations for Files are done through the popular cloud based platform Crowdin. Anyone with a Crowdin account can translate strings and help improve existing strings.

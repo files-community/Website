@@ -1,3 +1,4 @@
 ---
-title: Customize settings
+title: Settings
+order: 3
 ---

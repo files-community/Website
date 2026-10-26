@@ -1,5 +1,6 @@
 ---
 title: App updates and environments
+order: 4
 ---
 
 ### How updates work

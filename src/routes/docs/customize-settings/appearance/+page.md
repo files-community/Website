@@ -1,12 +1,13 @@
 ---
 title: Appearance
+order: 2
 ---
 
 <script>
   import { InfoBar } from "fluent-svelte";
 </script>
 
-The **Appearance** page in settings gives you full control over the look and feel of the Files interface. Whether you're syncing with your system theme or crafting your own custom setup, this page guides you through everything from light/dark mode and transparency to fonts, backgrounds, and themes.
+The **Appearance** page in settings gives you full control over the look and feel of the Files interface. Whether you're syncing with your system theme or crafting your own custom setup, this page guides you through everything from light/dark mode and transparency to fonts, [backgrounds](/docs/features/background-image), and themes.
 
 For power users, we'll even walk through advanced customization using the settings file.
 
@@ -117,21 +118,6 @@ Bold, vibrant, and perfect for dark-mode enthusiasts.
 | `AppThemeFileAreaBackgroundColor`   | `#282A36` |
 | `AppThemeInfoPaneBackgroundColor`   | `#282A36` |
 
-## Background image
-
-You can personalize Files even further by setting a custom background image—or even a GIF.
-
-Once added, Files will use it as your backdrop, allowing additional tweaks to opacity and scaling.
-
-![Custom background image](/docs-resources/Background-Image.webp)
-
-### Setting a custom background image
-
-1. Go to **Settings > Appearance**, then scroll to **Background image**.
-2. Click **Browse**, then pick your image or GIF file.
-
-![Custom background image](/docs-resources/Settings-Appearance-Background-Image.webp)
-
 ## Tab actions
 
 You can choose whether to show or hide the **actions button** in the top-left corner of the title bar. This button provides quick access to tab-related actions and can be toggled on or off depending on your preference.
@@ -148,21 +134,7 @@ You can configure the status center visibility to **always** display or only **d
 
 ### Show toolbar
 
-The toolbar can be turned on or off to maximize screen real estate.
-
-### Customize toolbar
-
-You can personalize the toolbar to better fit your workflow — choose which buttons are displayed, rearrange them, and decide whether labels are shown.
-
-To quickly hide a toolbar button, right-click it and select **Unpin**.
-
-To open the customization window, right-click any toolbar item and select **Customize toolbar**. From here you can:
-
-- Add buttons by dragging an action from the list on the left to the list of added items on the right.
-- Rearrange buttons by dragging them up or down within the toolbar list.
-- Toggle labels for individual buttons.
-
-At the top of the customization window, the **Toolbar mode** dropdown selects which toolbar mode you're customizing. The **Always visible** mode covers the buttons shown on the left side of the toolbar at all times. Other modes are context-specific and only appear when their context is active (for example, inside Recycle Bin).
+The [toolbar](/docs/features/toolbar) can be turned on or off to maximize screen real estate.
 
 ## Show status bar
 

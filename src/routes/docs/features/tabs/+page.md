@@ -1,5 +1,6 @@
 ---
-title: Multitask with tabs
+title: Tabs
+order: 3
 ---
 
 The tabs feature in the Files app allows you to work on multiple folders simultaneously without cluttering your desktop with multiple windows. You can easily switch between different folders by clicking on the corresponding tab.

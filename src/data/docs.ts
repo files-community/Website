@@ -1,7 +1,7 @@
 import type { SvelteComponent } from "svelte";
 import type { SvelteHTMLElements } from "svelte/elements";
 
-export type DocsMetadata = { title: string };
+export type DocsMetadata = { title: string; order?: number };
 
 export type DocsNode = DocsMetadata & {
 	path: string;

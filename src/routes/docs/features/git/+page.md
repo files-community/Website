@@ -1,5 +1,6 @@
 ---
-title: Git integration
+title: Git
+order: 11
 ---
 
 ## Using Git in Files

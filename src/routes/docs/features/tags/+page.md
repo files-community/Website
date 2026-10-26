@@ -1,6 +1,11 @@
 ---
-title: Tag files and folders
+title: Tags
+order: 8
 ---
+
+<script>
+  import { InfoBar } from "fluent-svelte";
+</script>
 
 Tags are a way to organize your files and folders. You can assign one or more tags to any file or folder, and then use the tags to filter and sort your files. You can also use tags to search for your files.
 
@@ -88,24 +93,38 @@ Files includes a couple of default tags but you can edit or create your own from
 
 ### Creating new tags
 
-- Click the "New tag" button
-- Type the name you wish to use for the new tag
-- A random color is selected by default but you can change it to your preference
-- Click "Create" to complete the action
+Create tags that reflect your workflow:
+
+1. Click the **New tag** button.
+2. Type in a name that describes your tag.
+3. Choose a color—or stick with the randomly selected one.
+4. Click **Create** to save it.
+
+You'll now see the tag available when tagging files and folders throughout the app.
 
 ### Editing existing tags
 
-- Click the "Edit tag" button
-- Type the new name you wish to use for the tag
-- Click "Save" to complete the action
+Fine-tune your tags as your needs evolve:
+
+1. Click the **Edit** button beside the tag you'd like to change.
+2. Update the name to better reflect its purpose.
+3. Select a new color, if desired.
+4. Click **Save** to apply your changes.
+
+<InfoBar severity="information">
+  Tag changes will reflect across existing items with those tags.
+</InfoBar>
 
 ### Deleting existing tags
 
-Please note that deleting a tag will remove the tag from any items that it was assigned to.
+Clean up old or unused tags:
 
-- Click the "Delete" button
-- A confirmation menu will appear
-- Click "Delete" to confirm and delete the tag
+1. Click the **Delete** button next to the tag you want to remove.
+2. Confirm the deletion in the prompt.
+
+<InfoBar severity="information">
+  Deleting a tag removes it from all associated files and folders, but don't worry, the items themselves will not be deleted.
+</InfoBar>
 
 ## Viewing tags on other devices
 

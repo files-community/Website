@@ -1,5 +1,6 @@
 ---
-title: Compiling the source code
+title: Building from source
+order: 1
 ---
 
 ### 1: Prerequisites

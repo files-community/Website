@@ -1,5 +1,6 @@
 ---
 title: Troubleshooting
+order: 2
 ---
 
 <script>
@@ -39,3 +40,33 @@ This includes but is not limited to AtlasOS, ReviOS, disabling Windows update, r
 4. Right click the services
 5. Click Start
 6. Try installing again.
+
+## How to Locate the Log File
+
+If Files launches successfully, the easiest way to access the log file is directly from **Settings → About → Open log location**. If you're unable to open the UI, you can locate the log manually using File Explorer. Your username and the paths of your files are masked in the log, so it can be shared when reporting an issue.
+
+The path varies depending on which version of Files is installed:
+
+### Files Stable (Microsoft Store)
+
+```text
+%LocalAppData%\\Packages\\49306atecsolution.FilesUWP_et10x9a9vyk8t\\LocalState
+```
+
+### Files Stable (Sideload)
+
+```text
+%LocalAppData%\\Packages\\Files_1y0xx7n9077q4\\LocalState
+```
+
+### Files Preview (Microsoft Store)
+
+```text
+%LocalAppData%\\Packages\\49306atecsolution.FilesPreview_et10x9a9vyk8t\\LocalState
+```
+
+### Files Preview (Sideload)
+
+```text
+%LocalAppData%\\Packages\\FilesPreview_1y0xx7n9077q4\\LocalState
+```

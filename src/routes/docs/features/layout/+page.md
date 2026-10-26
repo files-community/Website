@@ -1,14 +1,11 @@
 ---
 title: Layout
+order: 7
 ---
 
+The layout picker is where you can change the layout type and size for the current directory.
+
 The **Layout** settings page lets you control how items are displayed across folders, offering a range of view modes, sorting behavior, and grouping options. Whether you prefer a Columns View or a Details View, this page helps you build your ideal browsing experience.
-
-## Sync layout and sorting preferences across directories
-
-Enabling this option ensures consistency across all folders. For example, if you switch one folder to Grid View, all other directories will automatically follow suit.
-
-To customize individual folder views independently, simply toggle this setting off.
 
 ## Layout type
 
@@ -21,6 +18,30 @@ Choose from several layout modes based on your workflow or visual preferences:
 - **Grid**: Emphasizes icons and spacing, offering a visual overview that's perfect for images and media-heavy folders.
 - **Columns**: Shows files and folders in a cascading column structure, with each directory level displayed in its own vertical pane.
 - **Adaptive**: Automatically chooses the most suitable layout based on the folder's content type.
+
+Unless the setting to sync layouts preferences is enabled, changing the layout from the layout picker will only apply to the current directory.
+
+### Adaptive layout
+
+Enabling this option will automatically select the best layout for the folder contents. It's important to note that this option is only available when syncing layouts preferences is off.
+
+## Size
+
+First introduced in v3.3, you can adjust the items to be bigger or smaller by using the size slider. This option isn't available for Tiles, but we're exploring different ideas and hope to add this option in the future.
+
+## Show hidden items
+
+This toggles hidden items on & off, it's worth noting that changing this toggle will also affect the option on the Settings page.
+
+## Show file extensions
+
+This toggles file extensions on & off. Like the option for hidden files, this toggle will also affect the option on the Settings page.
+
+## Sync layout and sorting preferences across directories
+
+Enabling this option ensures consistency across all folders. For example, if you switch one folder to Grid View, all other directories will automatically follow suit.
+
+To customize individual folder views independently, simply toggle this setting off.
 
 ## Sorting and grouping
 

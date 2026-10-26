@@ -1,5 +1,6 @@
 ---
 title: Dual pane
+order: 4
 ---
 
 Dual pane is a powerful feature that allows users to view two different locations within the same tab. This feature is ideal for comparing folder contents, transferring items between directories, or efficiently working across two folders without the need to create additional tabs or windows.
@@ -14,7 +15,7 @@ The easiest way to add a second pane is by clicking the 'Actions' button in the 
 
 ## Opening a folder in a new pane
 
-With the dual pane feature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the 'General' settings page if needed.
+With the dual pane feature, you can right click any folder to open it in a new pane. This option is displayed in the context menu by default, but you can disable it from the ['General' settings page](/docs/customize-settings/general) if needed.
 
 ![Open folder in new pane](/docs-resources/OpenInNewPaneMeuOption.webp)
 
@@ -24,4 +25,4 @@ You can open a second pane by dragging a tab into the current tab's file area. D
 
 ## Open new tabs with dual pane
 
-Though disabled by default, there is an option to open new tabs in dual pane mode. This option can be enabled from the 'General' settings page.
+Though disabled by default, there is an option to open new tabs in dual pane mode. This option can be enabled from the ['General' settings page](/docs/customize-settings/general).

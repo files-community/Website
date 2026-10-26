@@ -1,5 +1,6 @@
 ---
-title: Connect to FTP servers
+title: FTP servers
+order: 13
 ---
 
 Files comes equipped with robust support for connecting to remote FTP and FTPS servers. This feature allows you to seamlessly access any compatible server, explore its directory structure, and perform tasks such as editing, renaming, and deleting files or folders as needed.

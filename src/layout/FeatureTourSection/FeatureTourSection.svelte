@@ -32,7 +32,7 @@
 			docs: "/docs/features/dual-pane",
 		},
 		{ id: "tags", edges: ["top", "left"], docs: "/docs/features/tags" },
-		{ id: "columns", edges: ["top"], docs: "/docs/features/layout-picker" },
+		{ id: "columns", edges: ["top"], docs: "/docs/features/layout" },
 		{
 			id: "palette",
 			edges: ["top", "right"],
@@ -47,7 +47,7 @@
 		{
 			id: "toolbar",
 			edges: ["left"],
-			docs: "/docs/customize-settings/appearance#customize-toolbar",
+			docs: "/docs/features/toolbar",
 		},
 		{ id: "extract", edges: [], bare: true },
 		{
@@ -58,7 +58,7 @@
 		{
 			id: "backgrounds",
 			edges: ["top", "right"],
-			docs: "/docs/customize-settings/appearance#background-image",
+			docs: "/docs/features/background-image",
 		},
 	];
 

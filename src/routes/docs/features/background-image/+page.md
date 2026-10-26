@@ -1,18 +1,32 @@
 ---
-title: Folder backgrounds
+title: Background image
+order: 9
 ---
 
-In addition to setting a custom [background](/docs/customize-settings/appearance) image for the entire window, Files allows you to assign unique background images for different folders. You can also set the image alignment, such as positioning it in a corner of the file area. This feature is perfect for displaying watermarks to easily differentiate between folders.
+You can personalize Files even further by setting a custom background image—or even a GIF.
+
+Once added, Files will use it as your backdrop, allowing additional tweaks to opacity and scaling.
+
+![Custom background image](/docs-resources/Background-Image.webp)
+
+## Setting a custom background image
+
+1. Go to **Settings > Appearance**, then scroll to **Background image**.
+2. Click **Browse**, then pick your image or GIF file.
+
+![Custom background image](/docs-resources/Settings-Appearance-Background-Image.webp)
 
 ## Set a custom background image for a folder
+
+In addition to setting a custom background image for the entire window, Files allows you to assign unique background images for different folders. You can also set the image alignment, such as positioning it in a corner of the file area. This feature is perfect for displaying watermarks to easily differentiate between folders.
 
 1. Navigate to the folder where you want to set a custom background image.
 2. Open the `desktop.ini` file using a text editor (e.g., Notepad).
 3. Add the following to the `desktop.ini` file, replacing `C:\Image.png` with the actual path to your desired image file:
-    ```ini
-    [FilesApp]
-    Files_BackgroundImage=C:\\Image.png
-    ```
+   ```ini
+   [FilesApp]
+   Files_BackgroundImage=C:\\Image.png
+   ```
 4. Save the `desktop.ini` file.
 5. Refresh the folder (you can press F5 or right-click and choose "Refresh").
 6. Enjoy your custom background!
@@ -36,7 +50,7 @@ Files_BackgroundOpacity=0.4
 The `Files_BackgroundFit` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
 | Value | Behavior                                                                                                                          |
-|-------|-----------------------------------------------------------------------------------------------------------------------------------|
+| ----- | --------------------------------------------------------------------------------------------------------------------------------- |
 | 0     | The image is stretched to fill the pane without keeping the aspect ratio.                                                         |
 | 1     | The image is not stretched.                                                                                                       |
 | 2     | The image is stretched so that the whole image is visible and the aspect ratio is preserved. There may be unfilled space.         |
@@ -46,20 +60,20 @@ The `Files_BackgroundFit` property accepts values between `0` and `3`, correspon
 
 The `Files_BackgroundVerticalAlignment` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
-| Value | Behavior  |
-|-------|-----------|
-| 0     | Top       |
-| 1     | Center    |
-| 2     | Bottom    |
-| 3     | Stretch   |
+| Value | Behavior |
+| ----- | -------- |
+| 0     | Top      |
+| 1     | Center   |
+| 2     | Bottom   |
+| 3     | Stretch  |
 
 ### Horizontal alignment
 
 The `Files_BackgroundHorizontalAlignment` property accepts values between `0` and `3`, corresponding to the behaviors listed in the table below.
 
-| Value | Behavior  |
-|-------|-----------|
-| 0     | Center    |
-| 1     | Left      |
-| 2     | Right     |
-| 3     | Stretch   |
+| Value | Behavior |
+| ----- | -------- |
+| 0     | Center   |
+| 1     | Left     |
+| 2     | Right    |
+| 3     | Stretch  |

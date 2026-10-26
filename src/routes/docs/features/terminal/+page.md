@@ -1,5 +1,6 @@
 ---
 title: Terminal
+order: 10
 ---
 
 Files can open the folder you are browsing in a terminal, so you can run commands without navigating there again by hand.

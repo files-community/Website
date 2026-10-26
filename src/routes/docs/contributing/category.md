@@ -1,3 +1,4 @@
 ---
-title: Contributing to Files
+title: Contributing
+order: 4
 ---

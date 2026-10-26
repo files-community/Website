@@ -1,5 +1,6 @@
 ---
-title: Coding styles and conventions
+title: Code style
+order: 2
 ---
 
 All code contributed to the repository must follow

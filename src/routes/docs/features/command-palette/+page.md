@@ -1,5 +1,6 @@
 ---
 title: Command Palette
+order: 2
 ---
 
 The Command Palette is a powerful feature that displays a list of available actions along with their assigned key bindings. Additionally, the Command Palette allows you to search for and access advanced features that aren't displayed in the main interface. You can access the Command Palette via the [Omnibar](/docs/features/omnibar/) or by using the <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> keyboard shortcut.

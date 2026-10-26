@@ -2,8 +2,11 @@ import type { DocsMetadata, DocsNode, DocsTree } from "$data/docs";
 import { error } from "@sveltejs/kit";
 
 const PATH_TRIM = /(?:\.\.\/routes\/docs)((\/[\w-]+)+)\//;
-const PRIORITY_CATEGORY = "Getting Started";
-const PRIORITY_PAGES = ["Overview"];
+
+// Sorts by the `order` frontmatter field, falling back to the title
+const byOrder = (a: DocsMetadata, b: DocsMetadata) =>
+	(a.order ?? Infinity) - (b.order ?? Infinity) ||
+	a.title.localeCompare(b.title);
 
 const getPages = () => {
 	const rawPages = import.meta.glob<DocsMetadata>(
@@ -14,6 +17,7 @@ const getPages = () => {
 	return Object.entries(rawPages).map(([path, node]) => {
 		return {
 			title: node.title,
+			order: node.order,
 			path: path.match(PATH_TRIM)?.[1] ?? "",
 		} as DocsNode;
 	});
@@ -35,16 +39,7 @@ const getTree = (pages: DocsNode[]) => {
 
 			const categoryPages = pages
 				.filter(page => page.path.startsWith(docsPath))
-				.sort((a, b) => {
-					const aIndex = PRIORITY_PAGES.indexOf(a.title);
-					const bIndex = PRIORITY_PAGES.indexOf(b.title);
-
-					if (aIndex !== -1 && bIndex !== -1) return aIndex - bIndex;
-					if (aIndex !== -1) return -1;
-					if (bIndex !== -1) return 1;
-
-					return a.title.localeCompare(b.title);
-				});
+				.sort(byOrder);
 
 			return {
 				pages: categoryPages,
@@ -74,11 +69,7 @@ const getTree = (pages: DocsNode[]) => {
 	);
 
 	// Combine and apply category-level sort
-	return [...topLevelData, ...categories].sort((a, b) => {
-		if (a.title === PRIORITY_CATEGORY) return -1;
-		if (b.title === PRIORITY_CATEGORY) return 1;
-		return a.title.localeCompare(b.title);
-	});
+	return [...topLevelData, ...categories].sort(byOrder);
 };
 
 export const docsPages = getPages();

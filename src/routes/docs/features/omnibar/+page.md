@@ -1,5 +1,6 @@
 ---
 title: Omnibar
+order: 1
 ---
 
 The Omnibar is a unified interface that combines the breadcrumb path and search box into a single control. Users can switch between breadcrumb modes as desired.

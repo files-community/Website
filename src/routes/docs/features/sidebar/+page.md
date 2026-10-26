@@ -1,5 +1,6 @@
 ---
 title: Sidebar
+order: 5
 ---
 
 The sidebar gives you quick access to the locations you use most. It can be shown or hidden with the **Toggle Sidebar** action from the [Command Palette](/docs/features/command-palette/), and resized by dragging its edge.
