@@ -2,89 +2,120 @@
 	import {
 		defaultI18nValues,
 		externalLink,
-		HeaderChip,
 		openWithStoreProtocol,
 		PageSection,
+		storeHref,
+		storeProtocolHref,
 	} from "$lib";
-	import { Button, MenuFlyout, MenuFlyoutItem } from "fluent-svelte";
+	import { onMount } from "svelte";
+	import { Button } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
-	import { goto } from "$app/navigation";
 	import { links } from "$data/links";
-	import ArrowDownload from "~icons/fluent/arrow-download-24-regular";
-	import ChevronDown from "~icons/fluent/chevron-down-16-regular";
-	import Code from "~icons/fluent/code-24-regular";
+	import StoreLogo from "../StoreCta/StoreLogo.svelte";
+	import InstallDialog from "../InstallDialog/InstallDialog.svelte";
 
-	const storeHref = `https://apps.microsoft.com/detail/${links.storeId}?cid=FilesWebsite`;
-	const storeProtocolHref = `ms-windows-store://pdp/?ProductId=${links.storeId}&cid=FilesWebsite`;
+	const href = storeHref(links.storeId);
+	const protocolHref = storeProtocolHref(links.storeId);
+
+	let installOpen = false;
+
+	// 0 at the top of the page, 1 once it has scrolled a bit
+	let lift = 0;
+
+	onMount(() => {
+		const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+		let frame = 0;
+
+		const update = () => {
+			frame = 0;
+			lift = reducedMotion.matches
+				? 0
+				: Math.min(1, Math.max(0, scrollY / 320));
+		};
+		const onScroll = () => {
+			if (!frame) frame = requestAnimationFrame(update);
+		};
+
+		update();
+		addEventListener("scroll", onScroll, { passive: true });
+		reducedMotion.addEventListener("change", update);
+		return () => {
+			removeEventListener("scroll", onScroll);
+			reducedMotion.removeEventListener("change", update);
+			cancelAnimationFrame(frame);
+		};
+	});
 </script>
 
 <PageSection id="hero-section">
-	<div class="hero-left">
-		<h1>Files</h1>
-		<p>{$_("home.hero.description", defaultI18nValues)}</p>
-		<div class="buttons-spacer">
-			<div class="split-button">
-				<Button
-					href={storeHref}
-					id="hero-download-button"
-					variant="accent"
-					{...externalLink}
-					on:click={e => openWithStoreProtocol(e, storeProtocolHref, storeHref)}
-				>
-					<ArrowDownload />
-					<div class="hero-button-inner">
-						<h5>{$_("home.hero.download", defaultI18nValues)}</h5>
-						<span>{$_("home.hero.install_on_windows", defaultI18nValues)}</span>
-					</div>
-				</Button>
-				<MenuFlyout placement="bottom" alignment="end">
-					<Button
-						variant="accent"
-						aria-label={$_("download.more_options", defaultI18nValues)}
-					>
-						<ChevronDown />
-					</Button>
-					<svelte:fragment slot="flyout">
-						<MenuFlyoutItem on:click={() => goto("/download")}>
-							{$_("download.more_options", defaultI18nValues)}
-						</MenuFlyoutItem>
-					</svelte:fragment>
-				</MenuFlyout>
-			</div>
+	<div class="hero-text">
+		<h1>{$_("home.hero.title", defaultI18nValues)}</h1>
+		<p>{$_("home.hero.tagline", defaultI18nValues)}</p>
+		<div class="buttons-spacer hero-buttons">
 			<Button
-				href="https://github.com/{links.github.owner}/{links.github.repo}/"
+				{href}
+				id="hero-download-button"
+				class="hero-store-button"
+				variant="accent"
 				{...externalLink}
+				on:click={e => openWithStoreProtocol(e, protocolHref, href)}
 			>
-				<Code />
+				<StoreLogo size={24} />
 				<div class="hero-button-inner">
-					<h5>{$_("home.hero.view_on_github", defaultI18nValues)}</h5>
-					<span>{$_("home.hero.files_is_open_source", defaultI18nValues)}</span>
+					<span class="hero-button-title"
+						>{$_("home.cta.get_files", defaultI18nValues)}</span
+					>
+					<span>{$_("home.hero.from_store", defaultI18nValues)}</span>
 				</div>
 			</Button>
+			<!-- Beside the Store button, not under it, to keep the hero short -->
+			<Button
+				variant="hyperlink"
+				class="hero-more"
+				on:click={() => (installOpen = true)}
+			>
+				{$_("download.other_options", defaultI18nValues)}
+			</Button>
 		</div>
+		<span class="hero-note"
+			>{$_("home.hero.store_note", defaultI18nValues)}</span
+		>
 	</div>
-	<div class="hero-right">
-		<div class="hero-image-container">
+	<div class="hero-visual" style:--lift={lift}>
+		<div class="hero-desktop">
 			<picture>
 				<source
 					media="(prefers-color-scheme: dark)"
-					srcset="/screenshots/dual-pane-dark.png"
-				/>
-				<source
-					media="(prefers-color-scheme: light)"
-					srcset="/screenshots/dual-pane-light.png"
+					srcset="/screenshots/home/hero-desktop-dark.jpg"
 				/>
 				<img
-					alt="Files new tab screenshot"
-					height="768"
-					src="/screenshots/dual-pane-light.png"
-					width="1024"
+					alt=""
+					class="hero-desktop-image"
+					height="800"
+					src="/screenshots/home/hero-desktop-light.jpg"
+					width="1152"
+				/>
+			</picture>
+			<picture>
+				<source
+					media="(prefers-color-scheme: dark)"
+					srcset="/screenshots/home/hero-app-dark.png"
+				/>
+				<img
+					alt={$_("home.hero.screenshot_alt", defaultI18nValues)}
+					class="hero-window"
+					fetchpriority="high"
+					height="880"
+					src="/screenshots/home/hero-app-light.png"
+					width="1240"
 				/>
 			</picture>
 		</div>
 	</div>
 	<div class="rainbow-background" slot="outer"></div>
 </PageSection>
+
+<InstallDialog bind:open={installOpen} />
 
 <style lang="scss">
 	@use "HeroSection";

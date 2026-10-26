@@ -98,8 +98,8 @@
 		</div>
 		<div class="column">
 			<p>{$_("footer.contribute", defaultI18nValues)}</p>
-			<Button variant="hyperlink" href="/sponsor">
-				{$_("footer.donate", defaultI18nValues)}
+			<Button variant="hyperlink" href={links.sponsor} {...externalLink}>
+				{$_("footer.sponsor", defaultI18nValues)}
 			</Button>
 
 			<Button variant="hyperlink" href="/docs/contributing/code-style">

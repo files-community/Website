@@ -1,26 +1,23 @@
 <script lang="ts">
 	import {
 		HeroSection,
-		TabsSection,
+		FeatureTourSection,
+		DownloadSection,
 		CommunitySection,
-		FeaturesSection,
-		ThemesSection,
 	} from "$layout";
 	import { defaultI18nValues, Metadata } from "$lib";
 	import { _ } from "svelte-i18n";
 
 	export let data;
-	$: ({ contributors } = data);
+	$: ({ contributors, stats } = data);
 </script>
 
 <Metadata title={$_("metadata.home", defaultI18nValues)} />
 
 <HeroSection />
 
-<TabsSection />
+<FeatureTourSection />
 
-<FeaturesSection />
+<CommunitySection {contributors} {stats} />
 
-<ThemesSection />
-
-<CommunitySection {contributors} />
+<DownloadSection />
