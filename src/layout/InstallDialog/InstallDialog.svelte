@@ -9,6 +9,8 @@
 	} from "$lib";
 	import { Button, ComboBox, ContentDialog } from "fluent-svelte";
 	import { _ } from "svelte-i18n";
+	import { onDestroy } from "svelte";
+	import { browser } from "$app/environment";
 	import StoreLogo from "../StoreCta/StoreLogo.svelte";
 	import { links } from "$data/links";
 	import ArrowDownload from "~icons/fluent/arrow-download-24-regular";
@@ -18,6 +20,13 @@
 	import CopiedIcon from "~icons/fluent/checkmark-24-regular";
 
 	export let open = false;
+
+	// Keep the page behind the dialog from scrolling while it's open
+	$: if (browser)
+		document.documentElement.classList.toggle("scroll-locked", open);
+	onDestroy(() => {
+		if (browser) document.documentElement.classList.remove("scroll-locked");
+	});
 
 	type Channel = "stable" | "preview";
 	type Source =
@@ -264,7 +273,7 @@
 				href="/appinstallers/Files.{channel}.appinstaller"
 				class="primary-action"
 				variant="accent"
-				download
+				download="Files.{channel}.appinstaller"
 			>
 				<ArrowDownload />
 				{$_("download.dialog.classic_button", defaultI18nValues)}
@@ -287,6 +296,17 @@
 </ContentDialog>
 
 <style lang="scss">
+	// The gutter stays reserved so the page doesn't shift when the scrollbar hides
+	:global(html.scroll-locked) {
+		overflow: hidden;
+		scrollbar-gutter: stable;
+	}
+
+	// fluent-svelte's 30% smoke barely shows over the light hero background
+	:global(.content-dialog-smoke.darken:has(> .content-dialog.install-dialog)) {
+		background-color: rgb(0 0 0 / 50%);
+	}
+
 	// The dropdowns open past the dialog's edges, so it can't clip them; the
 	// body and footer round their own corners instead. Scoped under the
 	// backdrop to outweigh fluent-svelte's width for size-standard
