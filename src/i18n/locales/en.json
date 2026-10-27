@@ -66,7 +66,7 @@
 			"git": {
 				"title": "Built-in Git",
 				"description": "Inside a repository, see which files changed and each one's last commit, author and SHA. Switch branches, pull or push from the status bar.",
-				"alt": "A Git repository showing Git status, commit message, author and commit SHA columns, with the branch list open"
+				"alt": "A Git repository showing commit message, author and commit SHA columns, with the branch list open"
 			},
 			"toolbar": {
 				"title": "Custom toolbar",
@@ -86,7 +86,7 @@
 			"backgrounds": {
 				"title": "Custom backgrounds",
 				"description": "Put your own picture behind {FilesName} and choose how it fits and how much shows through. You can also give a single folder its own background.",
-				"alt": "Settings, Appearance with a mountain photo set as the background image, showing its opacity, fit and alignment options"
+				"alt": "Settings, Appearance with a photo set as the background image"
 			},
 			"learn_more": "Learn more",
 			"more": {

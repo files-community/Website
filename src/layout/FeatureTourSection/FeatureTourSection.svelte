@@ -14,50 +14,32 @@
 	import Overlay from "~icons/fluent/picture-in-picture-24-regular";
 	import ChevronRight from "~icons/fluent/chevron-right-12-regular";
 
-	type Edge = "top" | "right" | "bottom" | "left";
-
-	// `edges` are the sides of the crop where the window ends; the other sides
-	// run off the card.
-	const features: {
-		id: string;
-		edges: Edge[];
-		zoom?: boolean;
-		/** Hard crop with no fade */
-		bare?: boolean;
-		docs?: string;
-	}[] = [
+	const features: { id: string; docs?: string }[] = [
 		{
 			id: "dualpane",
-			edges: ["top", "left"],
 			docs: "/docs/features/dual-pane",
 		},
-		{ id: "tags", edges: ["top", "left"], docs: "/docs/features/tags" },
-		{ id: "columns", edges: ["top"], docs: "/docs/features/layout" },
+		{ id: "tags", docs: "/docs/features/tags" },
+		{ id: "columns", docs: "/docs/features/layout" },
 		{
 			id: "palette",
-			edges: ["top", "right"],
-			zoom: true,
 			docs: "/docs/features/command-palette",
 		},
 		{
 			id: "git",
-			edges: ["right", "bottom"],
 			docs: "/docs/features/git",
 		},
 		{
 			id: "toolbar",
-			edges: ["left"],
 			docs: "/docs/features/toolbar",
 		},
-		{ id: "extract", edges: [], bare: true },
+		{ id: "extract" },
 		{
 			id: "foldersizes",
-			edges: ["left", "right", "bottom"],
 			docs: "/docs/customize-settings/files-and-folders#calculate-folder-sizes",
 		},
 		{
 			id: "backgrounds",
-			edges: ["top", "right"],
 			docs: "/docs/features/background-image",
 		},
 	];
@@ -97,9 +79,6 @@
 				</div>
 				<FeatureShot
 					id={feature.id}
-					edges={feature.edges}
-					zoom={feature.zoom}
-					fade={!feature.bare}
 					alt={$_(`home.tour.${feature.id}.alt`, defaultI18nValues)}
 				/>
 			</li>
