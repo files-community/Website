@@ -59,9 +59,7 @@ Tabs can be set to open with a **horizontal** or **vertical** split.
 
 The context menu is where many quick actions live. You can choose to hide default options you don't use often, or enable additional ones that are hidden by default.
 
-## Move shell extensions into sub menu
-
-To enhance performance, shell extensions are placed in a submenu by default. However, you can disable this option if you'd prefer to see all items directly in the main context menu.
+Context menu items added by other apps, such as Windows Terminal and PowerToys, and by cloud providers, such as OneDrive, are shown in the context menu grouped by app. Items from the classic context menu are available under **Show more options**.
 
 ## Scrolling
 

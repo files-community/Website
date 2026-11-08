@@ -33,6 +33,14 @@ When activated, the full path is selected automatically, making it easy to copy,
 ![Edit path](/blog-resources/v4-preview/OmnibarPathMode.webp)
 _Edit path in the Omnibar_
 
+#### Folder aliases
+
+Folder aliases provide a quick way to jump to frequently used folders. Any folder can be assigned an alias, which is a short name that opens the folder from anywhere in Files when typed after `@` in the Omnibar. For example, assigning the alias `work` to a project folder means `@work` opens that folder.
+
+Typing `@` on its own lists every alias, and the list narrows as you type. Pressing `Enter` opens the selected alias.
+
+Aliases are created and managed under **Folder aliases** in the [Files & folders](/docs/customize-settings/files-and-folders#folder-aliases) settings. A few built-in aliases for common folders, such as `@documents` and `@downloads`, are included to start with.
+
 ### Command Palette
 
 The Command Palette provides access to over 150 actions, many of which have default keyboard shortcuts for quick access.

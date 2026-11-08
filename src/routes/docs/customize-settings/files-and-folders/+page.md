@@ -87,3 +87,15 @@ When enabled, Files calculates and displays the total size of folders.
 <InfoBar severity="caution">
   Calculating folder sizes is resource intensive and may increase CPU usage.
 </InfoBar>
+
+## Use natural language search
+
+Allows searching with everyday phrases such as "pdfs from last month over 5 mb" in the [Omnibar](/docs/features/omnibar#search). The phrase is converted into search filters using the on-device language model included with Windows on Copilot+ PCs.
+
+## Folder aliases
+
+Any folder can be assigned an alias, which is a short name that opens the folder from anywhere in Files when typed after `@` in the [Omnibar](/docs/features/omnibar#folder-aliases). For example, assigning the alias `work` to a project folder means `@work` opens it. Built-in aliases for the Desktop, Documents, Downloads, Pictures, Music, and Videos folders are included to start with.
+
+- **Add alias**: Assigns a short name to a folder. Names can't contain `\` or `/`.
+- Each alias in the list can be edited or deleted.
+- **Restore defaults**: Replaces the list with the built-in aliases.
